@@ -11,15 +11,15 @@ public final class Lscala/collection/TraversableViewLike$$anon$3; extends Ljava/
   protected I; bitmap$0 = 0;
   
   public Ljava/lang/Object; underlying() {
-    if (((this.(I;)bitmap$0 & 1) == 0))
+    if (((this.(Lscala/collection/TraversableViewLike$$anon$3;)bitmap$0 & 1) == 0))
       {
-        if (((this.(I;)bitmap$0 & 1) == 0))
+        if (((this.(Lscala/collection/TraversableViewLike$$anon$3;)bitmap$0 & 1) == 0))
           {
-            this.(Ljava/lang/Object;)underlying$u0020 = Lscala/collection/TraversableViewLike$Transformed$class;.(Lscala/collection/TraversableViewLike$Transformed$class;::underlying(Lscala/collection/TraversableViewLike$Transformed;)Ljava/lang/Object;)(this);
-            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 1);
+            this.(Lscala/collection/TraversableViewLike$$anon$3;)underlying$u0020 = Lscala/collection/TraversableViewLike$Transformed$class;.(Lscala/collection/TraversableViewLike$Transformed$class;::underlying(Lscala/collection/TraversableViewLike$Transformed;)Ljava/lang/Object;)(this);
+            this.(Lscala/collection/TraversableViewLike$$anon$3;)bitmap$0 = (this.(Lscala/collection/TraversableViewLike$$anon$3;)bitmap$0 | 1);
           }
       }
-    return this.(Ljava/lang/Object;)underlying$u0020;
+    return this.(Lscala/collection/TraversableViewLike$$anon$3;)underlying$u0020;
   }
   
   private Ljava/lang/Object; underlying$u0020;
@@ -383,17 +383,17 @@ public final class Lscala/collection/TraversableViewLike$$anon$3; extends Ljava/
   private Lscala/Function1; mapping$u0020;
   
   public Lscala/Function1; mapping() {
-    return this.(Lscala/Function1;)mapping$u0020;
+    return this.(Lscala/collection/TraversableViewLike$$anon$3;)mapping$u0020;
   }
   
   private Lscala/collection/TraversableViewLike; $outer$u0020;
   
   public Lscala/collection/TraversableViewLike; scala$collection$TraversableViewLike$Mapped$$$outer() {
-    return this.(Lscala/collection/TraversableViewLike;)$outer$u0020;
+    return this.(Lscala/collection/TraversableViewLike$$anon$3;)$outer$u0020;
   }
   
   public Lscala/collection/TraversableViewLike; scala$collection$TraversableViewLike$Transformed$$$outer() {
-    return this.(Lscala/collection/TraversableViewLike;)$outer$u0020;
+    return this.(Lscala/collection/TraversableViewLike$$anon$3;)$outer$u0020;
   }
   
   public Ljava/lang/Object; takeWhile(Lscala/Function1; p) {
@@ -435,7 +435,7 @@ public final class Lscala/collection/TraversableViewLike$$anon$3; extends Ljava/
       }
     else
       {
-        this.(Lscala/collection/TraversableViewLike;)$outer$u0020 = $outer;
+        this.(Lscala/collection/TraversableViewLike$$anon$3;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
@@ -445,6 +445,6 @@ public final class Lscala/collection/TraversableViewLike$$anon$3; extends Ljava/
     Lscala/collection/TraversableViewLike$class;.(Lscala/collection/TraversableViewLike$class;::$init$(Lscala/collection/TraversableViewLike;)V;)(this);
     Lscala/collection/TraversableViewLike$Transformed$class;.(Lscala/collection/TraversableViewLike$Transformed$class;::$init$(Lscala/collection/TraversableViewLike$Transformed;)V;)(this);
     Lscala/collection/TraversableViewLike$Mapped$class;.(Lscala/collection/TraversableViewLike$Mapped$class;::$init$(Lscala/collection/TraversableViewLike$Mapped;)V;)(this);
-    this.(Lscala/Function1;)mapping$u0020 = f$2;
+    this.(Lscala/collection/TraversableViewLike$$anon$3;)mapping$u0020 = f$2;
   }
 }

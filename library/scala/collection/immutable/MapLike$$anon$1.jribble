@@ -497,26 +497,26 @@ public final class Lscala/collection/immutable/MapLike$$anon$1; extends Ljava/la
   }
   
   public V; foreach(Lscala/Function1; f$3) {
-    this.(Lscala/collection/immutable/MapLike;)$outer$u0020.(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/MapLike$$anon$1$$anonfun$foreach$1;::this(Lscala/collection/immutable/MapLike$$anon$1;Lscala/Function1;)V;)(this, f$3)));
+    this.(Lscala/collection/immutable/MapLike$$anon$1;)$outer$u0020.(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/MapLike$$anon$1$$anonfun$foreach$1;::this(Lscala/collection/immutable/MapLike$$anon$1;Lscala/Function1;)V;)(this, f$3)));
   }
   
   public Lscala/collection/Iterator; iterator() {
-    return this.(Lscala/collection/immutable/MapLike;)$outer$u0020.(Lscala/collection/MapLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::filter(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/collection/immutable/MapLike$$anon$1$$anonfun$iterator$1;::this(Lscala/collection/immutable/MapLike$$anon$1;)V;)(this)));
+    return this.(Lscala/collection/immutable/MapLike$$anon$1;)$outer$u0020.(Lscala/collection/MapLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::filter(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/collection/immutable/MapLike$$anon$1$$anonfun$iterator$1;::this(Lscala/collection/immutable/MapLike$$anon$1;)V;)(this)));
   }
   
   public Z; contains(Ljava/lang/Object; key) {
-    return (this.(Lscala/collection/immutable/MapLike;)$outer$u0020.(Lscala/collection/MapLike;::contains(Ljava/lang/Object;)Z;)(key) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Function1;)p$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(key)));
+    return (this.(Lscala/collection/immutable/MapLike$$anon$1;)$outer$u0020.(Lscala/collection/MapLike;::contains(Ljava/lang/Object;)Z;)(key) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/MapLike$$anon$1;)p$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(key)));
   }
   
   public Lscala/Option; get(Ljava/lang/Object; key) {
     Lscala/Option; $2$;
-    if (!(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Function1;)p$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(key))))
+    if (!(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/MapLike$$anon$1;)p$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(key))))
       {
         $2$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $2$ = this.(Lscala/collection/immutable/MapLike;)$outer$u0020.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key);
+        $2$ = this.(Lscala/collection/immutable/MapLike$$anon$1;)$outer$u0020.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key);
       }
     return $2$;
   }
@@ -596,9 +596,9 @@ public final class Lscala/collection/immutable/MapLike$$anon$1; extends Ljava/la
       }
     else
       {
-        this.(Lscala/collection/immutable/MapLike;)$outer$u0020 = $outer;
+        this.(Lscala/collection/immutable/MapLike$$anon$1;)$outer$u0020 = $outer;
       }
-    this.(Lscala/Function1;)p$1 = p$1;
+    this.(Lscala/collection/immutable/MapLike$$anon$1;)p$1 = p$1;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$init$(Lscala/collection/TraversableLike;)V;)(this);

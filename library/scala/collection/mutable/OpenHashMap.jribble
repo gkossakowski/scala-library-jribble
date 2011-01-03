@@ -541,41 +541,41 @@ public class Lscala/collection/mutable/OpenHashMap; extends Ljava/lang/Object; i
   private I; scala$collection$mutable$OpenHashMap$$mask$u0020;
   
   public final I; scala$collection$mutable$OpenHashMap$$mask() {
-    return this.(I;)scala$collection$mutable$OpenHashMap$$mask$u0020;
+    return this.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$mask$u0020;
   }
   
   private V; scala$collection$mutable$OpenHashMap$$mask_$eq(I; x$1) {
-    this.(I;)scala$collection$mutable$OpenHashMap$$mask$u0020 = x$1;
+    this.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$mask$u0020 = x$1;
   }
   
   private Lscala/collection/mutable/OpenHashMap$OpenEntry;[ scala$collection$mutable$OpenHashMap$$table$u0020;
   
   public final Lscala/collection/mutable/OpenHashMap$OpenEntry;[ scala$collection$mutable$OpenHashMap$$table() {
-    return this.(Lscala/collection/mutable/OpenHashMap$OpenEntry;[)scala$collection$mutable$OpenHashMap$$table$u0020;
+    return this.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$table$u0020;
   }
   
   private V; scala$collection$mutable$OpenHashMap$$table_$eq(Lscala/collection/mutable/OpenHashMap$OpenEntry;[ x$1) {
-    this.(Lscala/collection/mutable/OpenHashMap$OpenEntry;[)scala$collection$mutable$OpenHashMap$$table$u0020 = x$1;
+    this.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$table$u0020 = x$1;
   }
   
   private I; _size$u0020;
   
   private I; _size() {
-    return this.(I;)_size$u0020;
+    return this.(Lscala/collection/mutable/OpenHashMap;)_size$u0020;
   }
   
   private V; _size_$eq(I; x$1) {
-    this.(I;)_size$u0020 = x$1;
+    this.(Lscala/collection/mutable/OpenHashMap;)_size$u0020 = x$1;
   }
   
   private I; scala$collection$mutable$OpenHashMap$$deleted$u0020;
   
   public final I; scala$collection$mutable$OpenHashMap$$deleted() {
-    return this.(I;)scala$collection$mutable$OpenHashMap$$deleted$u0020;
+    return this.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$deleted$u0020;
   }
   
   public final V; scala$collection$mutable$OpenHashMap$$deleted_$eq(I; x$1) {
-    this.(I;)scala$collection$mutable$OpenHashMap$$deleted$u0020 = x$1;
+    this.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$deleted$u0020 = x$1;
   }
   
   public I; scala$collection$mutable$OpenHashMap$$modCount;
@@ -675,7 +675,7 @@ public class Lscala/collection/mutable/OpenHashMap; extends Ljava/lang/Object; i
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(entry, null))
       {
         this.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$table()Lscala/collection/mutable/OpenHashMap$OpenEntry;[)()[index] = (new (Lscala/collection/mutable/OpenHashMap$OpenEntry;::this(Ljava/lang/Object;I;Lscala/Option;)V;)(key, hash, (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(value))));
-        this.(I;)scala$collection$mutable$OpenHashMap$$modCount = (this.(I;)scala$collection$mutable$OpenHashMap$$modCount + 1);
+        this.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$modCount = (this.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$modCount + 1);
         this.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$size_$eq(I;)V;)((this.(Lscala/collection/mutable/OpenHashMap;::size()I;)() + 1));
         $1$ = Lscala/None$;.MODULE$;
       }
@@ -685,7 +685,7 @@ public class Lscala/collection/mutable/OpenHashMap; extends Ljava/lang/Object; i
         if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(entry.(Lscala/collection/mutable/OpenHashMap$OpenEntry;::value()Lscala/Option;)(), Lscala/None$;.MODULE$))
           {
             this.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$size_$eq(I;)V;)((this.(Lscala/collection/mutable/OpenHashMap;::size()I;)() + 1));
-            this.(I;)scala$collection$mutable$OpenHashMap$$modCount = (this.(I;)scala$collection$mutable$OpenHashMap$$modCount + 1);
+            this.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$modCount = (this.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$modCount + 1);
           }
         else
           {
@@ -760,7 +760,7 @@ public class Lscala/collection/mutable/OpenHashMap; extends Ljava/lang/Object; i
   }
   
   public V; foreach(Lscala/Function1; f$2) {
-    I; startModCount$1 = this.(I;)scala$collection$mutable$OpenHashMap$$modCount;
+    I; startModCount$1 = this.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$modCount;
     this.(Lscala/collection/mutable/OpenHashMap;::foreachUndeletedEntry(Lscala/Function1;)V;)((new (Lscala/collection/mutable/OpenHashMap$$anonfun$foreach$1;::this(Lscala/collection/mutable/OpenHashMap;Lscala/Function1;I;)V;)(this, f$2, startModCount$1)));
   }
   
@@ -911,11 +911,11 @@ public class Lscala/collection/mutable/OpenHashMap; extends Ljava/lang/Object; i
     Lscala/collection/mutable/Cloneable$class;.(Lscala/collection/mutable/Cloneable$class;::$init$(Lscala/collection/mutable/Cloneable;)V;)(this);
     Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::$init$(Lscala/collection/mutable/MapLike;)V;)(this);
     Lscala/collection/mutable/Map$class;.(Lscala/collection/mutable/Map$class;::$init$(Lscala/collection/mutable/Map;)V;)(this);
-    this.(I;)actualInitialSize = Lscala/collection/mutable/OpenHashMap$;.MODULE$.(Lscala/collection/mutable/OpenHashMap$;::nextPowerOfTwo(I;)I;)(initialSize);
-    this.(I;)scala$collection$mutable$OpenHashMap$$mask$u0020 = (this.(I;)actualInitialSize - 1);
-    this.(Lscala/collection/mutable/OpenHashMap$OpenEntry;[)scala$collection$mutable$OpenHashMap$$table$u0020 = new Lscala/collection/mutable/OpenHashMap$OpenEntry;[this.(I;)actualInitialSize];
-    this.(I;)_size$u0020 = 0;
-    this.(I;)scala$collection$mutable$OpenHashMap$$deleted$u0020 = 0;
-    this.(I;)scala$collection$mutable$OpenHashMap$$modCount = 0;
+    this.(Lscala/collection/mutable/OpenHashMap;)actualInitialSize = Lscala/collection/mutable/OpenHashMap$;.MODULE$.(Lscala/collection/mutable/OpenHashMap$;::nextPowerOfTwo(I;)I;)(initialSize);
+    this.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$mask$u0020 = (this.(Lscala/collection/mutable/OpenHashMap;)actualInitialSize - 1);
+    this.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$table$u0020 = new Lscala/collection/mutable/OpenHashMap$OpenEntry;[this.(Lscala/collection/mutable/OpenHashMap;)actualInitialSize];
+    this.(Lscala/collection/mutable/OpenHashMap;)_size$u0020 = 0;
+    this.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$deleted$u0020 = 0;
+    this.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$modCount = 0;
   }
 }

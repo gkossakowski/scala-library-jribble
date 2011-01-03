@@ -1,14 +1,14 @@
 public final class Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2; extends Lscala/runtime/AbstractFunction1; {
   
   public final V; apply(Lscala/collection/immutable/BitSet; Q) {
-    I; q = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/runtime/ObjectRef;)indexMap$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Q));
-    Lscala/collection/mutable/HashMap; trans = this.(Lscala/collection/mutable/HashMap;)delta$1.(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Q).<cast>(Lscala/collection/mutable/HashMap;);
-    Lscala/collection/immutable/BitSet; transDef = this.(Lscala/runtime/ObjectRef;)deftrans$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Q).<cast>(Lscala/collection/immutable/BitSet;);
-    I; qDef$1 = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/runtime/ObjectRef;)indexMap$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(transDef));
+    I; q = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2;)indexMap$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Q));
+    Lscala/collection/mutable/HashMap; trans = this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2;)delta$1.(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Q).<cast>(Lscala/collection/mutable/HashMap;);
+    Lscala/collection/immutable/BitSet; transDef = this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2;)deftrans$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Q).<cast>(Lscala/collection/immutable/BitSet;);
+    I; qDef$1 = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2;)indexMap$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(transDef));
     Lscala/collection/mutable/HashMap; ntrans$1 = (new (Lscala/collection/mutable/HashMap;::this()V;)());
     trans.(Lscala/collection/mutable/HashMap;::foreach(Lscala/Function1;)V;)((new (Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2$$anonfun$apply$1;::this(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2;I;Lscala/collection/mutable/HashMap;)V;)(this, qDef$1, ntrans$1)));
-    this.(Lscala/collection/Map;[)deltaR$1[q] = ntrans$1;
-    this.(I;[)defaultR$1[q] = qDef$1;
+    this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2;)deltaR$1[q] = ntrans$1;
+    this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2;)defaultR$1[q] = qDef$1;
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
@@ -27,11 +27,11 @@ public final class Lscala/util/automata/SubsetConstruction$$anonfun$determinize$
   private I;[ defaultR$1;
   
   public this(Lscala/util/automata/SubsetConstruction; $outer, Lscala/runtime/ObjectRef; indexMap$1, Lscala/collection/mutable/HashMap; delta$1, Lscala/runtime/ObjectRef; deftrans$1, Lscala/collection/Map;[ deltaR$1, I;[ defaultR$1) {
-    this.(Lscala/runtime/ObjectRef;)indexMap$1 = indexMap$1;
-    this.(Lscala/collection/mutable/HashMap;)delta$1 = delta$1;
-    this.(Lscala/runtime/ObjectRef;)deftrans$1 = deftrans$1;
-    this.(Lscala/collection/Map;[)deltaR$1 = deltaR$1;
-    this.(I;[)defaultR$1 = defaultR$1;
+    this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2;)indexMap$1 = indexMap$1;
+    this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2;)delta$1 = delta$1;
+    this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2;)deftrans$1 = deftrans$1;
+    this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2;)deltaR$1 = deltaR$1;
+    this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2;)defaultR$1 = defaultR$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

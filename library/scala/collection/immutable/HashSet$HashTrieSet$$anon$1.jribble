@@ -329,17 +329,17 @@ public final class Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1; exte
   private Lscala/collection/Iterator; subIter;
   
   public Z; hasNext() {
-    return ((this.(Lscala/collection/Iterator;)subIter != null) || (this.(I;)depth >= 0));
+    return ((this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)subIter != null) || (this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)depth >= 0));
   }
   
   public Ljava/lang/Object; next() {
     Ljava/lang/Object; $9$;
-    if ((this.(Lscala/collection/Iterator;)subIter != null))
+    if ((this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)subIter != null))
       {
-        Ljava/lang/Object; el = this.(Lscala/collection/Iterator;)subIter.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
-        if (!(this.(Lscala/collection/Iterator;)subIter.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        Ljava/lang/Object; el = this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)subIter.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+        if (!(this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)subIter.(Lscala/collection/Iterator;::hasNext()Z;)()))
           {
-            this.(Lscala/collection/Iterator;)subIter = null;
+            this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)subIter = null;
           }
         else
           {
@@ -349,7 +349,7 @@ public final class Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1; exte
       }
     else
       {
-        $9$ = this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;::next0(Lscala/collection/immutable/HashSet;[I;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/HashSet;[)arrayD, this.(I;)posD);
+        $9$ = this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;::next0(Lscala/collection/immutable/HashSet;[I;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)arrayD, this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)posD);
       }
     return $9$;
   }
@@ -357,22 +357,22 @@ public final class Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1; exte
   private Ljava/lang/Object; next0(Lscala/collection/immutable/HashSet;[ elems, I; i) {
     if ((i == (elems.<length> - 1)))
       {
-        this.(I;)depth = (this.(I;)depth - 1);
-        if ((this.(I;)depth >= 0))
+        this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)depth = (this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)depth - 1);
+        if ((this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)depth >= 0))
           {
-            this.(Lscala/collection/immutable/HashSet;[)arrayD = this.(Lscala/collection/immutable/HashSet;[[)arrayStack[this.(I;)depth];
-            this.(I;)posD = this.(I;[)posStack[this.(I;)depth];
-            this.(Lscala/collection/immutable/HashSet;[[)arrayStack[this.(I;)depth] = null;
+            this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)arrayD = this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)arrayStack[this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)depth];
+            this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)posD = this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)posStack[this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)depth];
+            this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)arrayStack[this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)depth] = null;
           }
         else
           {
-            this.(Lscala/collection/immutable/HashSet;[)arrayD = null;
-            this.(I;)posD = 0;
+            this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)arrayD = null;
+            this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)posD = 0;
           }
       }
     else
       {
-        this.(I;)posD = (this.(I;)posD + 1);
+        this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)posD = (this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)posD + 1);
       }
     Lscala/collection/immutable/HashSet; temp1 = elems[i];
     Ljava/lang/Object; $10$;
@@ -380,18 +380,18 @@ public final class Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1; exte
       {
         Lscala/collection/immutable/HashSet$HashTrieSet; temp2 = temp1.<cast>(Lscala/collection/immutable/HashSet$HashTrieSet;);
         Lscala/collection/immutable/HashSet$HashTrieSet; m = temp2;
-        if ((this.(I;)depth >= 0))
+        if ((this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)depth >= 0))
           {
-            this.(Lscala/collection/immutable/HashSet;[[)arrayStack[this.(I;)depth] = this.(Lscala/collection/immutable/HashSet;[)arrayD;
-            this.(I;[)posStack[this.(I;)depth] = this.(I;)posD;
+            this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)arrayStack[this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)depth] = this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)arrayD;
+            this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)posStack[this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)depth] = this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)posD;
           }
         else
           {
             
           }
-        this.(I;)depth = (this.(I;)depth + 1);
-        this.(Lscala/collection/immutable/HashSet;[)arrayD = m.(Lscala/collection/immutable/HashSet$HashTrieSet;::scala$collection$immutable$HashSet$HashTrieSet$$elems()Lscala/collection/immutable/HashSet;[)();
-        this.(I;)posD = 0;
+        this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)depth = (this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)depth + 1);
+        this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)arrayD = m.(Lscala/collection/immutable/HashSet$HashTrieSet;::scala$collection$immutable$HashSet$HashTrieSet$$elems()Lscala/collection/immutable/HashSet;[)();
+        this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)posD = 0;
         $10$ = this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;::next0(Lscala/collection/immutable/HashSet;[I;)Ljava/lang/Object;)(m.(Lscala/collection/immutable/HashSet$HashTrieSet;::scala$collection$immutable$HashSet$HashTrieSet$$elems()Lscala/collection/immutable/HashSet;[)(), 0);
       }
     else
@@ -403,8 +403,8 @@ public final class Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1; exte
           }
         else
           {
-            this.(Lscala/collection/Iterator;)subIter = temp1.(Lscala/collection/immutable/HashSet;::iterator()Lscala/collection/Iterator;)();
-            $11$ = this.(Lscala/collection/Iterator;)subIter.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+            this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)subIter = temp1.(Lscala/collection/immutable/HashSet;::iterator()Lscala/collection/Iterator;)();
+            $11$ = this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)subIter.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
           }
         $10$ = $11$;
       }
@@ -415,11 +415,11 @@ public final class Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1; exte
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(I;)depth = 0;
-    this.(Lscala/collection/immutable/HashSet;[[)arrayStack = new Lscala/collection/immutable/HashSet;[6][];
-    this.(I;[)posStack = new I;[6];
-    this.(Lscala/collection/immutable/HashSet;[)arrayD = $outer.(Lscala/collection/immutable/HashSet$HashTrieSet;::scala$collection$immutable$HashSet$HashTrieSet$$elems()Lscala/collection/immutable/HashSet;[)();
-    this.(I;)posD = 0;
-    this.(Lscala/collection/Iterator;)subIter = null;
+    this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)depth = 0;
+    this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)arrayStack = new Lscala/collection/immutable/HashSet;[6][];
+    this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)posStack = new I;[6];
+    this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)arrayD = $outer.(Lscala/collection/immutable/HashSet$HashTrieSet;::scala$collection$immutable$HashSet$HashTrieSet$$elems()Lscala/collection/immutable/HashSet;[)();
+    this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)posD = 0;
+    this.(Lscala/collection/immutable/HashSet$HashTrieSet$$anon$1;)subIter = null;
   }
 }

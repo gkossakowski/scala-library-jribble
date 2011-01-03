@@ -467,13 +467,13 @@ public class Lscala/collection/immutable/TreeSet; extends Lscala/collection/immu
   private I; size$u0020;
   
   public I; size() {
-    return this.(I;)size$u0020;
+    return this.(Lscala/collection/immutable/TreeSet;)size$u0020;
   }
   
   private Lscala/math/Ordering; ordering$u0020;
   
   public Lscala/math/Ordering; ordering() {
-    return this.(Lscala/math/Ordering;)ordering$u0020;
+    return this.(Lscala/collection/immutable/TreeSet;)ordering$u0020;
   }
   
   public Ljava/lang/String; stringPrefix() {
@@ -491,7 +491,7 @@ public class Lscala/collection/immutable/TreeSet; extends Lscala/collection/immu
   private Lscala/collection/immutable/RedBlack$Tree; tree$u0020;
   
   protected Lscala/collection/immutable/RedBlack$Tree; tree() {
-    return this.(Lscala/collection/immutable/RedBlack$Tree;)tree$u0020;
+    return this.(Lscala/collection/immutable/TreeSet;)tree$u0020;
   }
   
   private Lscala/collection/immutable/TreeSet; newSet(I; s, Lscala/collection/immutable/RedBlack$Tree; t) {
@@ -644,8 +644,8 @@ public class Lscala/collection/immutable/TreeSet; extends Lscala/collection/immu
   }
   
   public this(I; size, Lscala/collection/immutable/RedBlack$Tree; t, Lscala/math/Ordering; ordering) {
-    this.(I;)size$u0020 = size;
-    this.(Lscala/math/Ordering;)ordering$u0020 = ordering;
+    this.(Lscala/collection/immutable/TreeSet;)size$u0020 = size;
+    this.(Lscala/collection/immutable/TreeSet;)ordering$u0020 = ordering;
     (Lscala/collection/immutable/RedBlack;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$init$(Lscala/collection/TraversableLike;)V;)(this);
@@ -675,6 +675,6 @@ public class Lscala/collection/immutable/TreeSet; extends Lscala/collection/immu
       {
         $3$ = t;
       }
-    this.(Lscala/collection/immutable/RedBlack$Tree;)tree$u0020 = $3$;
+    this.(Lscala/collection/immutable/TreeSet;)tree$u0020 = $3$;
   }
 }

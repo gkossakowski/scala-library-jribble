@@ -1,22 +1,22 @@
 public final class Lscala/util/automata/Inclusion$$anonfun$inclusion$1; extends Lscala/runtime/AbstractFunction1; {
   
   public final V; apply(Ljava/lang/Object; letter) {
-    I; r1 = this.(Lscala/util/automata/DetWordAutom;)dfa1$1.(Lscala/util/automata/DetWordAutom;::next(I;Ljava/lang/Object;)I;)(this.(Lscala/runtime/IntRef;)q1$1.(I;)elem, letter);
-    I; r2 = this.(Lscala/util/automata/DetWordAutom;)dfa2$1.(Lscala/util/automata/DetWordAutom;::next(I;Ljava/lang/Object;)I;)(this.(Lscala/runtime/IntRef;)q2$1.(I;)elem, letter);
-    if ((this.(Lscala/util/automata/DetWordAutom;)dfa1$1.(Lscala/util/automata/DetWordAutom;::isFinal(I;)Z;)(r1) && !(this.(Lscala/util/automata/DetWordAutom;)dfa2$1.(Lscala/util/automata/DetWordAutom;::isFinal(I;)Z;)(r2))))
+    I; r1 = this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)dfa1$1.(Lscala/util/automata/DetWordAutom;::next(I;Ljava/lang/Object;)I;)(this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)q1$1.(Lscala/runtime/IntRef;)elem, letter);
+    I; r2 = this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)dfa2$1.(Lscala/util/automata/DetWordAutom;::next(I;Ljava/lang/Object;)I;)(this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)q2$1.(Lscala/runtime/IntRef;)elem, letter);
+    if ((this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)dfa1$1.(Lscala/util/automata/DetWordAutom;::isFinal(I;)Z;)(r1) && !(this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)dfa2$1.(Lscala/util/automata/DetWordAutom;::isFinal(I;)Z;)(r2))))
       {
-        this.(Lscala/runtime/BooleanRef;)result$1.(Z;)elem = false;
+        this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)result$1.(Lscala/runtime/BooleanRef;)elem = false;
       }
     else
       {
         
       }
-    I; test = Lscala/util/automata/Inclusion$class;.(Lscala/util/automata/Inclusion$class;::encode$1(Lscala/util/automata/Inclusion;I;I;Lscala/util/automata/DetWordAutom;)I;)(this.(Lscala/util/automata/Inclusion;)$outer$u0020, r1, r2, this.(Lscala/util/automata/DetWordAutom;)dfa1$1);
-    if ((this.(I;[)mark$1[test] == 0))
+    I; test = Lscala/util/automata/Inclusion$class;.(Lscala/util/automata/Inclusion$class;::encode$1(Lscala/util/automata/Inclusion;I;I;Lscala/util/automata/DetWordAutom;)I;)(this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)$outer$u0020, r1, r2, this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)dfa1$1);
+    if ((this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)mark$1[test] == 0))
       {
-        this.(I;[)mark$1[this.(Lscala/runtime/IntRef;)last$1.(I;)elem] = test;
-        this.(I;[)mark$1[test] = this.(I;)max$1;
-        this.(Lscala/runtime/IntRef;)last$1.(I;)elem = test;
+        this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)mark$1[this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)last$1.(Lscala/runtime/IntRef;)elem] = test;
+        this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)mark$1[test] = this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)max$1;
+        this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)last$1.(Lscala/runtime/IntRef;)elem = test;
       }
     else
       {
@@ -54,16 +54,16 @@ public final class Lscala/util/automata/Inclusion$$anonfun$inclusion$1; extends 
       }
     else
       {
-        this.(Lscala/util/automata/Inclusion;)$outer$u0020 = $outer;
+        this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)$outer$u0020 = $outer;
       }
-    this.(Lscala/util/automata/DetWordAutom;)dfa1$1 = dfa1$1;
-    this.(Lscala/util/automata/DetWordAutom;)dfa2$1 = dfa2$1;
-    this.(Lscala/runtime/IntRef;)q1$1 = q1$1;
-    this.(Lscala/runtime/IntRef;)q2$1 = q2$1;
-    this.(I;)max$1 = max$1;
-    this.(I;[)mark$1 = mark$1;
-    this.(Lscala/runtime/BooleanRef;)result$1 = result$1;
-    this.(Lscala/runtime/IntRef;)last$1 = last$1;
+    this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)dfa1$1 = dfa1$1;
+    this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)dfa2$1 = dfa2$1;
+    this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)q1$1 = q1$1;
+    this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)q2$1 = q2$1;
+    this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)max$1 = max$1;
+    this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)mark$1 = mark$1;
+    this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)result$1 = result$1;
+    this.(Lscala/util/automata/Inclusion$$anonfun$inclusion$1;)last$1 = last$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

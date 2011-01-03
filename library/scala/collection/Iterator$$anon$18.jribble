@@ -319,15 +319,15 @@ public final class Lscala/collection/Iterator$$anon$18; extends Ljava/lang/Objec
   private I; remaining$u0020;
   
   private I; remaining() {
-    return this.(I;)remaining$u0020;
+    return this.(Lscala/collection/Iterator$$anon$18;)remaining$u0020;
   }
   
   private V; remaining_$eq(I; x$1) {
-    this.(I;)remaining$u0020 = x$1;
+    this.(Lscala/collection/Iterator$$anon$18;)remaining$u0020 = x$1;
   }
   
   public Z; hasNext() {
-    return ((this.(Lscala/collection/Iterator$$anon$18;::remaining()I;)() > 0) && this.(Lscala/collection/Iterator;)$outer$u0020.(Lscala/collection/Iterator;::hasNext()Z;)());
+    return ((this.(Lscala/collection/Iterator$$anon$18;::remaining()I;)() > 0) && this.(Lscala/collection/Iterator$$anon$18;)$outer$u0020.(Lscala/collection/Iterator;::hasNext()Z;)());
   }
   
   public Ljava/lang/Object; next() {
@@ -335,7 +335,7 @@ public final class Lscala/collection/Iterator$$anon$18; extends Ljava/lang/Objec
     if (this.(Lscala/collection/Iterator$$anon$18;::hasNext()Z;)())
       {
         this.(Lscala/collection/Iterator$$anon$18;::remaining_$eq(I;)V;)((this.(Lscala/collection/Iterator$$anon$18;::remaining()I;)() - 1));
-        $22$ = this.(Lscala/collection/Iterator;)$outer$u0020.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+        $22$ = this.(Lscala/collection/Iterator$$anon$18;)$outer$u0020.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
       }
     else
       {
@@ -353,11 +353,11 @@ public final class Lscala/collection/Iterator$$anon$18; extends Ljava/lang/Objec
       }
     else
       {
-        this.(Lscala/collection/Iterator;)$outer$u0020 = $outer;
+        this.(Lscala/collection/Iterator$$anon$18;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(I;)remaining$u0020 = n$1;
+    this.(Lscala/collection/Iterator$$anon$18;)remaining$u0020 = n$1;
   }
 }

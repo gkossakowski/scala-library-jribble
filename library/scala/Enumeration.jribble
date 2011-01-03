@@ -19,33 +19,33 @@ public abstract class Lscala/Enumeration; extends Ljava/lang/Object; implements 
   private Lscala/collection/mutable/Map; scala$Enumeration$$vmap$u0020;
   
   public final Lscala/collection/mutable/Map; scala$Enumeration$$vmap() {
-    return this.(Lscala/collection/mutable/Map;)scala$Enumeration$$vmap$u0020;
+    return this.(Lscala/Enumeration;)scala$Enumeration$$vmap$u0020;
   }
   
   private Lscala/Enumeration$ValueSet; vset$u0020;
   
   private Lscala/Enumeration$ValueSet; vset() {
-    return this.(Lscala/Enumeration$ValueSet;)vset$u0020;
+    return this.(Lscala/Enumeration;)vset$u0020;
   }
   
   private V; vset_$eq(Lscala/Enumeration$ValueSet; x$1) {
-    this.(Lscala/Enumeration$ValueSet;)vset$u0020 = x$1;
+    this.(Lscala/Enumeration;)vset$u0020 = x$1;
   }
   
   private Z; scala$Enumeration$$vsetDefined$u0020;
   
   private Z; scala$Enumeration$$vsetDefined() {
-    return this.(Z;)scala$Enumeration$$vsetDefined$u0020;
+    return this.(Lscala/Enumeration;)scala$Enumeration$$vsetDefined$u0020;
   }
   
   public final V; scala$Enumeration$$vsetDefined_$eq(Z; x$1) {
-    this.(Z;)scala$Enumeration$$vsetDefined$u0020 = x$1;
+    this.(Lscala/Enumeration;)scala$Enumeration$$vsetDefined$u0020 = x$1;
   }
   
   private Lscala/collection/mutable/Map; scala$Enumeration$$nmap$u0020;
   
   public final Lscala/collection/mutable/Map; scala$Enumeration$$nmap() {
-    return this.(Lscala/collection/mutable/Map;)scala$Enumeration$$nmap$u0020;
+    return this.(Lscala/Enumeration;)scala$Enumeration$$nmap$u0020;
   }
   
   public Lscala/Enumeration$ValueSet; values() {
@@ -64,21 +64,21 @@ public abstract class Lscala/Enumeration; extends Ljava/lang/Object; implements 
   private I; nextId$u0020;
   
   public I; nextId() {
-    return this.(I;)nextId$u0020;
+    return this.(Lscala/Enumeration;)nextId$u0020;
   }
   
   public V; nextId_$eq(I; x$1) {
-    this.(I;)nextId$u0020 = x$1;
+    this.(Lscala/Enumeration;)nextId$u0020 = x$1;
   }
   
   private Lscala/collection/Iterator; nextName$u0020;
   
   protected Lscala/collection/Iterator; nextName() {
-    return this.(Lscala/collection/Iterator;)nextName$u0020;
+    return this.(Lscala/Enumeration;)nextName$u0020;
   }
   
   protected V; nextName_$eq(Lscala/collection/Iterator; x$1) {
-    this.(Lscala/collection/Iterator;)nextName$u0020 = x$1;
+    this.(Lscala/Enumeration;)nextName$u0020 = x$1;
   }
   
   public final Ljava/lang/String; scala$Enumeration$$nextNameOrElse(Lscala/Function0; orElse) {
@@ -97,11 +97,11 @@ public abstract class Lscala/Enumeration; extends Ljava/lang/Object; implements 
   private I; scala$Enumeration$$topId$u0020;
   
   public final I; scala$Enumeration$$topId() {
-    return this.(I;)scala$Enumeration$$topId$u0020;
+    return this.(Lscala/Enumeration;)scala$Enumeration$$topId$u0020;
   }
   
   public final V; scala$Enumeration$$topId_$eq(I; x$1) {
-    this.(I;)scala$Enumeration$$topId$u0020 = x$1;
+    this.(Lscala/Enumeration;)scala$Enumeration$$topId$u0020 = x$1;
   }
   
   public final I; maxId() {
@@ -143,11 +143,11 @@ public abstract class Lscala/Enumeration; extends Ljava/lang/Object; implements 
   private Lscala/Enumeration$ValueSet$; ValueSet$module;
   
   public final Lscala/Enumeration$ValueSet$; ValueSet() {
-    if ((this.(Lscala/Enumeration$ValueSet$;)ValueSet$module == null))
+    if ((this.(Lscala/Enumeration;)ValueSet$module == null))
       {
-        this.(Lscala/Enumeration$ValueSet$;)ValueSet$module = (new (Lscala/Enumeration$ValueSet$;::this(Lscala/Enumeration;)V;)(this));
+        this.(Lscala/Enumeration;)ValueSet$module = (new (Lscala/Enumeration$ValueSet$;::this(Lscala/Enumeration;)V;)(this));
       }
-    return this.(Lscala/Enumeration$ValueSet$;)ValueSet$module;
+    return this.(Lscala/Enumeration;)ValueSet$module;
   }
   
   public Ljava/lang/String; name() {
@@ -188,12 +188,12 @@ public abstract class Lscala/Enumeration; extends Ljava/lang/Object; implements 
   
   public this(I; initial, Lscala/collection/Seq; names) {
     (Ljava/lang/Object;::super()V;)();
-    this.(Lscala/collection/mutable/Map;)scala$Enumeration$$vmap$u0020 = (new (Lscala/collection/mutable/HashMap;::this()V;)());
-    this.(Lscala/Enumeration$ValueSet;)vset$u0020 = null;
-    this.(Z;)scala$Enumeration$$vsetDefined$u0020 = false;
-    this.(Lscala/collection/mutable/Map;)scala$Enumeration$$nmap$u0020 = (new (Lscala/collection/mutable/HashMap;::this()V;)());
-    this.(I;)nextId$u0020 = initial;
-    this.(Lscala/collection/Iterator;)nextName$u0020 = names.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    this.(I;)scala$Enumeration$$topId$u0020 = initial;
+    this.(Lscala/Enumeration;)scala$Enumeration$$vmap$u0020 = (new (Lscala/collection/mutable/HashMap;::this()V;)());
+    this.(Lscala/Enumeration;)vset$u0020 = null;
+    this.(Lscala/Enumeration;)scala$Enumeration$$vsetDefined$u0020 = false;
+    this.(Lscala/Enumeration;)scala$Enumeration$$nmap$u0020 = (new (Lscala/collection/mutable/HashMap;::this()V;)());
+    this.(Lscala/Enumeration;)nextId$u0020 = initial;
+    this.(Lscala/Enumeration;)nextName$u0020 = names.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    this.(Lscala/Enumeration;)scala$Enumeration$$topId$u0020 = initial;
   }
 }

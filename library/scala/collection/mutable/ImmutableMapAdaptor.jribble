@@ -503,11 +503,11 @@ public class Lscala/collection/mutable/ImmutableMapAdaptor; extends Ljava/lang/O
   private Lscala/collection/immutable/Map; imap$u0020;
   
   protected Lscala/collection/immutable/Map; imap() {
-    return this.(Lscala/collection/immutable/Map;)imap$u0020;
+    return this.(Lscala/collection/mutable/ImmutableMapAdaptor;)imap$u0020;
   }
   
   protected V; imap_$eq(Lscala/collection/immutable/Map; x$1) {
-    this.(Lscala/collection/immutable/Map;)imap$u0020 = x$1;
+    this.(Lscala/collection/mutable/ImmutableMapAdaptor;)imap$u0020 = x$1;
   }
   
   public I; size() {
@@ -699,7 +699,7 @@ public class Lscala/collection/mutable/ImmutableMapAdaptor; extends Ljava/lang/O
   }
   
   public this(Lscala/collection/immutable/Map; imap) {
-    this.(Lscala/collection/immutable/Map;)imap$u0020 = imap;
+    this.(Lscala/collection/mutable/ImmutableMapAdaptor;)imap$u0020 = imap;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$init$(Lscala/collection/TraversableLike;)V;)(this);

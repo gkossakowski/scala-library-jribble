@@ -2,14 +2,14 @@ public final class Lscala/Tuple2$Zipped$$anonfun$filter$1; extends Lscala/runtim
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; el1) {
     Ljava/lang/Object; $6$;
-    if (this.(Lscala/collection/Iterator;)elems2$4.(Lscala/collection/Iterator;::hasNext()Z;)())
+    if (this.(Lscala/Tuple2$Zipped$$anonfun$filter$1;)elems2$4.(Lscala/collection/Iterator;::hasNext()Z;)())
       {
-        Ljava/lang/Object; el2 = this.(Lscala/collection/Iterator;)elems2$4.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+        Ljava/lang/Object; el2 = this.(Lscala/Tuple2$Zipped$$anonfun$filter$1;)elems2$4.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
         Ljava/lang/Object; $7$;
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Function2;)f$3.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(el1, el2)))
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Tuple2$Zipped$$anonfun$filter$1;)f$3.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(el1, el2)))
           {
-            this.(Lscala/collection/mutable/Builder;)b1$2.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(el1);
-            $7$ = this.(Lscala/collection/mutable/Builder;)b2$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(el2);
+            this.(Lscala/Tuple2$Zipped$$anonfun$filter$1;)b1$2.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(el1);
+            $7$ = this.(Lscala/Tuple2$Zipped$$anonfun$filter$1;)b2$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(el2);
           }
         else
           {
@@ -33,10 +33,10 @@ public final class Lscala/Tuple2$Zipped$$anonfun$filter$1; extends Lscala/runtim
   private Lscala/collection/Iterator; elems2$4;
   
   public this(Lscala/Tuple2$Zipped; $outer, Lscala/Function2; f$3, Lscala/collection/mutable/Builder; b1$2, Lscala/collection/mutable/Builder; b2$1, Lscala/collection/Iterator; elems2$4) {
-    this.(Lscala/Function2;)f$3 = f$3;
-    this.(Lscala/collection/mutable/Builder;)b1$2 = b1$2;
-    this.(Lscala/collection/mutable/Builder;)b2$1 = b2$1;
-    this.(Lscala/collection/Iterator;)elems2$4 = elems2$4;
+    this.(Lscala/Tuple2$Zipped$$anonfun$filter$1;)f$3 = f$3;
+    this.(Lscala/Tuple2$Zipped$$anonfun$filter$1;)b1$2 = b1$2;
+    this.(Lscala/Tuple2$Zipped$$anonfun$filter$1;)b2$1 = b2$1;
+    this.(Lscala/Tuple2$Zipped$$anonfun$filter$1;)elems2$4 = elems2$4;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

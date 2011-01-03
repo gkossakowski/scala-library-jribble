@@ -33,11 +33,11 @@ public class Lscala/collection/mutable/GrowingBuilder; extends Ljava/lang/Object
   private Lscala/collection/generic/Growable; elems$u0020;
   
   protected Lscala/collection/generic/Growable; elems() {
-    return this.(Lscala/collection/generic/Growable;)elems$u0020;
+    return this.(Lscala/collection/mutable/GrowingBuilder;)elems$u0020;
   }
   
   protected V; elems_$eq(Lscala/collection/generic/Growable; x$1) {
-    this.(Lscala/collection/generic/Growable;)elems$u0020 = x$1;
+    this.(Lscala/collection/mutable/GrowingBuilder;)elems$u0020 = x$1;
   }
   
   public Lscala/collection/mutable/GrowingBuilder; $plus$eq(Ljava/lang/Object; x) {
@@ -46,7 +46,7 @@ public class Lscala/collection/mutable/GrowingBuilder; extends Ljava/lang/Object
   }
   
   public V; clear() {
-    this.(Lscala/collection/mutable/GrowingBuilder;::elems_$eq(Lscala/collection/generic/Growable;)V;)(this.(Lscala/collection/generic/Growable;)empty);
+    this.(Lscala/collection/mutable/GrowingBuilder;::elems_$eq(Lscala/collection/generic/Growable;)V;)(this.(Lscala/collection/mutable/GrowingBuilder;)empty);
   }
   
   public Lscala/collection/generic/Growable; result() {
@@ -66,10 +66,10 @@ public class Lscala/collection/mutable/GrowingBuilder; extends Ljava/lang/Object
   }
   
   public this(Lscala/collection/generic/Growable; empty) {
-    this.(Lscala/collection/generic/Growable;)empty = empty;
+    this.(Lscala/collection/mutable/GrowingBuilder;)empty = empty;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$init$(Lscala/collection/generic/Growable;)V;)(this);
     Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::$init$(Lscala/collection/mutable/Builder;)V;)(this);
-    this.(Lscala/collection/generic/Growable;)elems$u0020 = empty;
+    this.(Lscala/collection/mutable/GrowingBuilder;)elems$u0020 = empty;
   }
 }

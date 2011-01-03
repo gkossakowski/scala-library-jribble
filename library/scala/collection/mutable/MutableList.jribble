@@ -595,31 +595,31 @@ public class Lscala/collection/mutable/MutableList; extends Ljava/lang/Object; i
   private Lscala/collection/mutable/LinkedList; first0$u0020;
   
   protected Lscala/collection/mutable/LinkedList; first0() {
-    return this.(Lscala/collection/mutable/LinkedList;)first0$u0020;
+    return this.(Lscala/collection/mutable/MutableList;)first0$u0020;
   }
   
   protected V; first0_$eq(Lscala/collection/mutable/LinkedList; x$1) {
-    this.(Lscala/collection/mutable/LinkedList;)first0$u0020 = x$1;
+    this.(Lscala/collection/mutable/MutableList;)first0$u0020 = x$1;
   }
   
   private Lscala/collection/mutable/LinkedList; last0$u0020;
   
   protected Lscala/collection/mutable/LinkedList; last0() {
-    return this.(Lscala/collection/mutable/LinkedList;)last0$u0020;
+    return this.(Lscala/collection/mutable/MutableList;)last0$u0020;
   }
   
   protected V; last0_$eq(Lscala/collection/mutable/LinkedList; x$1) {
-    this.(Lscala/collection/mutable/LinkedList;)last0$u0020 = x$1;
+    this.(Lscala/collection/mutable/MutableList;)last0$u0020 = x$1;
   }
   
   private I; len$u0020;
   
   protected I; len() {
-    return this.(I;)len$u0020;
+    return this.(Lscala/collection/mutable/MutableList;)len$u0020;
   }
   
   protected V; len_$eq(I; x$1) {
-    this.(I;)len$u0020 = x$1;
+    this.(Lscala/collection/mutable/MutableList;)len$u0020 = x$1;
   }
   
   public Z; isEmpty() {
@@ -853,7 +853,7 @@ public class Lscala/collection/mutable/MutableList; extends Ljava/lang/Object; i
     Lscala/collection/LinearSeqOptimized$class;.(Lscala/collection/LinearSeqOptimized$class;::$init$(Lscala/collection/LinearSeqOptimized;)V;)(this);
     Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$init$(Lscala/collection/generic/Growable;)V;)(this);
     Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::$init$(Lscala/collection/mutable/Builder;)V;)(this);
-    this.(Lscala/collection/mutable/LinkedList;)first0$u0020 = (new (Lscala/collection/mutable/LinkedList;::this()V;)());
-    this.(I;)len$u0020 = 0;
+    this.(Lscala/collection/mutable/MutableList;)first0$u0020 = (new (Lscala/collection/mutable/LinkedList;::this()V;)());
+    this.(Lscala/collection/mutable/MutableList;)len$u0020 = 0;
   }
 }

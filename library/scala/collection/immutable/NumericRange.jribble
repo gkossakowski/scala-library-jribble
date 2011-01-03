@@ -557,25 +557,25 @@ public abstract class Lscala/collection/immutable/NumericRange; extends Ljava/la
   private Ljava/lang/Object; start$u0020;
   
   public Ljava/lang/Object; start() {
-    return this.(Ljava/lang/Object;)start$u0020;
+    return this.(Lscala/collection/immutable/NumericRange;)start$u0020;
   }
   
   private Ljava/lang/Object; end$u0020;
   
   public Ljava/lang/Object; end() {
-    return this.(Ljava/lang/Object;)end$u0020;
+    return this.(Lscala/collection/immutable/NumericRange;)end$u0020;
   }
   
   private Ljava/lang/Object; step$u0020;
   
   public Ljava/lang/Object; step() {
-    return this.(Ljava/lang/Object;)step$u0020;
+    return this.(Lscala/collection/immutable/NumericRange;)step$u0020;
   }
   
   private Z; isInclusive$u0020;
   
   public Z; isInclusive() {
-    return this.(Z;)isInclusive$u0020;
+    return this.(Lscala/collection/immutable/NumericRange;)isInclusive$u0020;
   }
   
   private Lscala/math/Integral; num;
@@ -585,7 +585,7 @@ public abstract class Lscala/collection/immutable/NumericRange; extends Ljava/la
   }
   
   protected Z; limitTest(Ljava/lang/Object; x) {
-    return ((!(this.(Lscala/collection/immutable/NumericRange;::isEmpty()Z;)()) && this.(Lscala/collection/immutable/NumericRange;::isInclusive()Z;)()) && this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::equiv(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()));
+    return ((!(this.(Lscala/collection/immutable/NumericRange;::isEmpty()Z;)()) && this.(Lscala/collection/immutable/NumericRange;::isInclusive()Z;)()) && this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::equiv(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()));
   }
   
   protected Lscala/collection/immutable/IndexedSeq; underlying() {
@@ -600,14 +600,14 @@ public abstract class Lscala/collection/immutable/NumericRange; extends Ljava/la
   
   public V; foreach(Lscala/Function1; f) {
     Ljava/lang/Object; i = this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)();
-    if (this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/math/Integral;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)()))
+    if (this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)()))
       {
         while$1: while(true) {
-          if (this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(i).(Lscala/math/Ordering$Ops;::$less(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()))
+          if (this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(i).(Lscala/math/Ordering$Ops;::$less(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()))
             {
               {
                 f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(i);
-                i = this.(Lscala/math/Integral;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(i).(Lscala/math/Numeric$Ops;::$plus(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)());
+                i = this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(i).(Lscala/math/Numeric$Ops;::$plus(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)());
               }
               continue while$1;
             }
@@ -621,11 +621,11 @@ public abstract class Lscala/collection/immutable/NumericRange; extends Ljava/la
     else
       {
         while$2: while(true) {
-          if (this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(i).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()))
+          if (this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(i).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()))
             {
               {
                 f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(i);
-                i = this.(Lscala/math/Integral;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(i).(Lscala/math/Numeric$Ops;::$plus(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)());
+                i = this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(i).(Lscala/math/Numeric$Ops;::$plus(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)());
               }
               continue while$2;
             }
@@ -648,20 +648,20 @@ public abstract class Lscala/collection/immutable/NumericRange; extends Ljava/la
   
   public Ljava/lang/Object; genericLength() {
     Ljava/lang/Object; $1$;
-    if (((this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$less(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()) && this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$less(Ljava/lang/Object;)Z;)(this.(Lscala/math/Integral;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)())) || (this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()) && this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/math/Integral;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)()))))
+    if (((this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$less(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()) && this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$less(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)())) || (this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()) && this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)()))))
       {
-        $1$ = this.(Lscala/math/Integral;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)();
+        $1$ = this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)();
       }
     else
       {
         Ljava/lang/Object; $2$;
-        if (this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::equiv(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()))
+        if (this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::equiv(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()))
           {
             $2$ = this.(Lscala/collection/immutable/NumericRange;::lim$1()Ljava/lang/Object;)();
           }
         else
           {
-            Lscala/Tuple2; temp1 = this.(Lscala/math/Integral;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(this.(Lscala/math/Integral;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()).(Lscala/math/Numeric$Ops;::$minus(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)())).(Lscala/math/Integral$IntegralOps;::$div$percent(Ljava/lang/Object;)Lscala/Tuple2;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)());
+            Lscala/Tuple2; temp1 = this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()).(Lscala/math/Numeric$Ops;::$minus(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)())).(Lscala/math/Integral$IntegralOps;::$div$percent(Ljava/lang/Object;)Lscala/Tuple2;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)());
             Lscala/Tuple2; $3$;
             if ((temp1 != null))
               {
@@ -675,16 +675,16 @@ public abstract class Lscala/collection/immutable/NumericRange; extends Ljava/la
             Ljava/lang/Object; steps = x$1.(Lscala/Tuple2;::_1()Ljava/lang/Object;)();
             Ljava/lang/Object; left = x$1.(Lscala/Tuple2;::_2()Ljava/lang/Object;)();
             Ljava/lang/Object; $4$;
-            if ((!(this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::equiv(Ljava/lang/Object;Ljava/lang/Object;)Z;)(left, this.(Lscala/math/Integral;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)())) || this.(Lscala/collection/immutable/NumericRange;::isInclusive()Z;)()))
+            if ((!(this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::equiv(Ljava/lang/Object;Ljava/lang/Object;)Z;)(left, this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)())) || this.(Lscala/collection/immutable/NumericRange;::isInclusive()Z;)()))
               {
-                $4$ = this.(Lscala/math/Integral;)num.(Lscala/math/Numeric;::one()Ljava/lang/Object;)();
+                $4$ = this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Numeric;::one()Ljava/lang/Object;)();
               }
             else
               {
-                $4$ = this.(Lscala/math/Integral;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)();
+                $4$ = this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)();
               }
             Ljava/lang/Object; last = $4$;
-            $2$ = this.(Lscala/math/Integral;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(steps).(Lscala/math/Numeric$Ops;::$plus(Ljava/lang/Object;)Ljava/lang/Object;)(last);
+            $2$ = this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(steps).(Lscala/math/Numeric$Ops;::$plus(Ljava/lang/Object;)Ljava/lang/Object;)(last);
           }
         $1$ = $2$;
       }
@@ -692,21 +692,21 @@ public abstract class Lscala/collection/immutable/NumericRange; extends Ljava/la
   }
   
   public I; length() {
-    return this.(Lscala/math/Integral;)num.(Lscala/math/Numeric;::toInt(Ljava/lang/Object;)I;)(this.(Lscala/collection/immutable/NumericRange;::genericLength()Ljava/lang/Object;)());
+    return this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Numeric;::toInt(Ljava/lang/Object;)I;)(this.(Lscala/collection/immutable/NumericRange;::genericLength()Ljava/lang/Object;)());
   }
   
   public Z; isEmpty() {
     Z; $5$;
-    if (this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/math/Integral;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)()))
+    if (this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)()))
       {
         Z; $6$;
         if (this.(Lscala/collection/immutable/NumericRange;::isInclusive()Z;)())
           {
-            $6$ = this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$less(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)());
+            $6$ = this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$less(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)());
           }
         else
           {
-            $6$ = this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$less$eq(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)());
+            $6$ = this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$less$eq(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)());
           }
         $5$ = $6$;
       }
@@ -715,11 +715,11 @@ public abstract class Lscala/collection/immutable/NumericRange; extends Ljava/la
         Z; $7$;
         if (this.(Lscala/collection/immutable/NumericRange;::isInclusive()Z;)())
           {
-            $7$ = this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)());
+            $7$ = this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)());
           }
         else
           {
-            $7$ = this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater$eq(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)());
+            $7$ = this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater$eq(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)());
           }
         $5$ = $7$;
       }
@@ -734,7 +734,7 @@ public abstract class Lscala/collection/immutable/NumericRange; extends Ljava/la
       }
     else
       {
-        $8$ = this.(Lscala/math/Integral;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)()).(Lscala/math/Numeric$Ops;::$plus(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/math/Integral;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(this.(Lscala/math/Integral;)num.(Lscala/math/Numeric;::fromInt(I;)Ljava/lang/Object;)(idx)).(Lscala/math/Numeric$Ops;::$times(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()));
+        $8$ = this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)()).(Lscala/math/Numeric$Ops;::$plus(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Numeric;::fromInt(I;)Ljava/lang/Object;)(idx)).(Lscala/math/Numeric$Ops;::$times(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()));
       }
     return $8$;
   }
@@ -746,13 +746,13 @@ public abstract class Lscala/collection/immutable/NumericRange; extends Ljava/la
   
   public Z; containsTyped(Ljava/lang/Object; x) {
     Z; $9$;
-    if (this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/math/Integral;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)()))
+    if (this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)()))
       {
-        $9$ = ((this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$less$eq(Ljava/lang/Object;)Z;)(x) && this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(x).(Lscala/math/Ordering$Ops;::$less(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)())) && this.(Lscala/collection/immutable/NumericRange;::divides$1(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/math/Integral;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(x).(Lscala/math/Numeric$Ops;::$minus(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)()), this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()));
+        $9$ = ((this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$less$eq(Ljava/lang/Object;)Z;)(x) && this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(x).(Lscala/math/Ordering$Ops;::$less(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)())) && this.(Lscala/collection/immutable/NumericRange;::divides$1(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(x).(Lscala/math/Numeric$Ops;::$minus(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)()), this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()));
       }
     else
       {
-        $9$ = ((this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater$eq(Ljava/lang/Object;)Z;)(x) && this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(x).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)())) && this.(Lscala/collection/immutable/NumericRange;::divides$1(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/math/Integral;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)()).(Lscala/math/Numeric$Ops;::$minus(Ljava/lang/Object;)Ljava/lang/Object;)(x), this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()));
+        $9$ = ((this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)()).(Lscala/math/Ordering$Ops;::$greater$eq(Ljava/lang/Object;)Z;)(x) && this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(x).(Lscala/math/Ordering$Ops;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)())) && this.(Lscala/collection/immutable/NumericRange;::divides$1(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(this.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)()).(Lscala/math/Numeric$Ops;::$minus(Ljava/lang/Object;)Ljava/lang/Object;)(x), this.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()));
       }
     return (this.(Lscala/collection/immutable/NumericRange;::limitTest(Ljava/lang/Object;)Z;)(x) || $9$);
   }
@@ -770,15 +770,15 @@ public abstract class Lscala/collection/immutable/NumericRange; extends Ljava/la
   private I; hashCode$u0020;
   
   public I; hashCode() {
-    if (((this.(I;)bitmap$0 & 1) == 0))
+    if (((this.(Lscala/collection/immutable/NumericRange;)bitmap$0 & 1) == 0))
       {
-        if (((this.(I;)bitmap$0 & 1) == 0))
+        if (((this.(Lscala/collection/immutable/NumericRange;)bitmap$0 & 1) == 0))
           {
-            this.(I;)hashCode$u0020 = Lscala/collection/SeqLike$class;.(Lscala/collection/SeqLike$class;::hashCode(Lscala/collection/SeqLike;)I;)(this);
-            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 1);
+            this.(Lscala/collection/immutable/NumericRange;)hashCode$u0020 = Lscala/collection/SeqLike$class;.(Lscala/collection/SeqLike$class;::hashCode(Lscala/collection/SeqLike;)I;)(this);
+            this.(Lscala/collection/immutable/NumericRange;)bitmap$0 = (this.(Lscala/collection/immutable/NumericRange;)bitmap$0 | 1);
           }
       }
-    return this.(I;)hashCode$u0020;
+    return this.(Lscala/collection/immutable/NumericRange;)hashCode$u0020;
   }
   
   public Z; equals(Ljava/lang/Object; other) {
@@ -891,25 +891,25 @@ public abstract class Lscala/collection/immutable/NumericRange; extends Ljava/la
     Ljava/lang/Object; $14$;
     if (this.(Lscala/collection/immutable/NumericRange;::limitTest(Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()))
       {
-        $14$ = this.(Lscala/math/Integral;)num.(Lscala/math/Numeric;::one()Ljava/lang/Object;)();
+        $14$ = this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Numeric;::one()Ljava/lang/Object;)();
       }
     else
       {
-        $14$ = this.(Lscala/math/Integral;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)();
+        $14$ = this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)();
       }
     return $14$;
   }
   
   private final Z; divides$1(Ljava/lang/Object; d, Ljava/lang/Object; by) {
-    return this.(Lscala/math/Integral;)num.(Lscala/math/Ordering;::equiv(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/math/Integral;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(d).(Lscala/math/Integral$IntegralOps;::$percent(Ljava/lang/Object;)Ljava/lang/Object;)(by), this.(Lscala/math/Integral;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)());
+    return this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Ordering;::equiv(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(d).(Lscala/math/Integral$IntegralOps;::$percent(Ljava/lang/Object;)Ljava/lang/Object;)(by), this.(Lscala/collection/immutable/NumericRange;)num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)());
   }
   
   public this(Ljava/lang/Object; start, Ljava/lang/Object; end, Ljava/lang/Object; step, Z; isInclusive, Lscala/math/Integral; num) {
-    this.(Ljava/lang/Object;)start$u0020 = start;
-    this.(Ljava/lang/Object;)end$u0020 = end;
-    this.(Ljava/lang/Object;)step$u0020 = step;
-    this.(Z;)isInclusive$u0020 = isInclusive;
-    this.(Lscala/math/Integral;)num = num;
+    this.(Lscala/collection/immutable/NumericRange;)start$u0020 = start;
+    this.(Lscala/collection/immutable/NumericRange;)end$u0020 = end;
+    this.(Lscala/collection/immutable/NumericRange;)step$u0020 = step;
+    this.(Lscala/collection/immutable/NumericRange;)isInclusive$u0020 = isInclusive;
+    this.(Lscala/collection/immutable/NumericRange;)num = num;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$init$(Lscala/collection/TraversableLike;)V;)(this);

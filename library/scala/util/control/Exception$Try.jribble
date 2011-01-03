@@ -5,11 +5,11 @@ public class Lscala/util/control/Exception$Try; extends Ljava/lang/Object; imple
   private Lscala/util/control/Exception$Catch; catcher$u0020;
   
   public Lscala/util/control/Exception$Catch; catcher() {
-    return this.(Lscala/util/control/Exception$Catch;)catcher$u0020;
+    return this.(Lscala/util/control/Exception$Try;)catcher$u0020;
   }
   
   public Ljava/lang/Object; apply() {
-    return this.(Lscala/util/control/Exception$Try;::catcher()Lscala/util/control/Exception$Catch;)().(Lscala/util/control/Exception$Catch;::apply(Lscala/Function0;)Ljava/lang/Object;)(this.(Lscala/Function0;)body);
+    return this.(Lscala/util/control/Exception$Try;::catcher()Lscala/util/control/Exception$Catch;)().(Lscala/util/control/Exception$Catch;::apply(Lscala/Function0;)Ljava/lang/Object;)(this.(Lscala/util/control/Exception$Try;)body);
   }
   
   public Ljava/lang/Object; apply(Lscala/Function0; other) {
@@ -17,7 +17,7 @@ public class Lscala/util/control/Exception$Try; extends Ljava/lang/Object; imple
   }
   
   public Lscala/Option; opt() {
-    return this.(Lscala/util/control/Exception$Try;::catcher()Lscala/util/control/Exception$Catch;)().(Lscala/util/control/Exception$Catch;::opt(Lscala/Function0;)Lscala/Option;)(this.(Lscala/Function0;)body);
+    return this.(Lscala/util/control/Exception$Try;::catcher()Lscala/util/control/Exception$Catch;)().(Lscala/util/control/Exception$Catch;::opt(Lscala/Function0;)Lscala/Option;)(this.(Lscala/util/control/Exception$Try;)body);
   }
   
   public Lscala/Option; opt(Lscala/Function0; other) {
@@ -25,7 +25,7 @@ public class Lscala/util/control/Exception$Try; extends Ljava/lang/Object; imple
   }
   
   public Lscala/Either; either() {
-    return this.(Lscala/util/control/Exception$Try;::catcher()Lscala/util/control/Exception$Catch;)().(Lscala/util/control/Exception$Catch;::either(Lscala/Function0;)Lscala/Either;)(this.(Lscala/Function0;)body);
+    return this.(Lscala/util/control/Exception$Try;::catcher()Lscala/util/control/Exception$Catch;)().(Lscala/util/control/Exception$Catch;::either(Lscala/Function0;)Lscala/Either;)(this.(Lscala/util/control/Exception$Try;)body);
   }
   
   public Lscala/Either; either(Lscala/Function0; other) {
@@ -37,11 +37,11 @@ public class Lscala/util/control/Exception$Try; extends Ljava/lang/Object; imple
   }
   
   public Lscala/util/control/Exception$Try; or(Lscala/PartialFunction; pf) {
-    return (new (Lscala/util/control/Exception$Try;::this(Lscala/Function0;Lscala/util/control/Exception$Catch;)V;)(this.(Lscala/Function0;)body, this.(Lscala/util/control/Exception$Try;::catcher()Lscala/util/control/Exception$Catch;)().(Lscala/util/control/Exception$Catch;::or(Lscala/PartialFunction;)Lscala/util/control/Exception$Catch;)(pf)));
+    return (new (Lscala/util/control/Exception$Try;::this(Lscala/Function0;Lscala/util/control/Exception$Catch;)V;)(this.(Lscala/util/control/Exception$Try;)body, this.(Lscala/util/control/Exception$Try;::catcher()Lscala/util/control/Exception$Catch;)().(Lscala/util/control/Exception$Catch;::or(Lscala/PartialFunction;)Lscala/util/control/Exception$Catch;)(pf)));
   }
   
   public Lscala/util/control/Exception$Try; andFinally(Lscala/Function0; fin) {
-    return (new (Lscala/util/control/Exception$Try;::this(Lscala/Function0;Lscala/util/control/Exception$Catch;)V;)(this.(Lscala/Function0;)body, this.(Lscala/util/control/Exception$Try;::catcher()Lscala/util/control/Exception$Catch;)().(Lscala/util/control/Exception$Catch;::andFinally(Lscala/Function0;)Lscala/util/control/Exception$Catch;)(fin)));
+    return (new (Lscala/util/control/Exception$Try;::this(Lscala/Function0;Lscala/util/control/Exception$Catch;)V;)(this.(Lscala/util/control/Exception$Try;)body, this.(Lscala/util/control/Exception$Try;::catcher()Lscala/util/control/Exception$Catch;)().(Lscala/util/control/Exception$Catch;::andFinally(Lscala/Function0;)Lscala/util/control/Exception$Catch;)(fin)));
   }
   
   public Ljava/lang/String; toString() {
@@ -49,8 +49,8 @@ public class Lscala/util/control/Exception$Try; extends Ljava/lang/Object; imple
   }
   
   public this(Lscala/Function0; body, Lscala/util/control/Exception$Catch; catcher) {
-    this.(Lscala/Function0;)body = body;
-    this.(Lscala/util/control/Exception$Catch;)catcher$u0020 = catcher;
+    this.(Lscala/util/control/Exception$Try;)body = body;
+    this.(Lscala/util/control/Exception$Try;)catcher$u0020 = catcher;
     (Ljava/lang/Object;::super()V;)();
   }
 }

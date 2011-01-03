@@ -33,11 +33,11 @@ public class Lscala/collection/mutable/MapBuilder; extends Ljava/lang/Object; im
   private Lscala/collection/Map; elems$u0020;
   
   protected Lscala/collection/Map; elems() {
-    return this.(Lscala/collection/Map;)elems$u0020;
+    return this.(Lscala/collection/mutable/MapBuilder;)elems$u0020;
   }
   
   protected V; elems_$eq(Lscala/collection/Map; x$1) {
-    this.(Lscala/collection/Map;)elems$u0020 = x$1;
+    this.(Lscala/collection/mutable/MapBuilder;)elems$u0020 = x$1;
   }
   
   public Lscala/collection/mutable/MapBuilder; $plus$eq(Lscala/Tuple2; x) {
@@ -46,7 +46,7 @@ public class Lscala/collection/mutable/MapBuilder; extends Ljava/lang/Object; im
   }
   
   public V; clear() {
-    this.(Lscala/collection/mutable/MapBuilder;::elems_$eq(Lscala/collection/Map;)V;)(this.(Lscala/collection/Map;)empty);
+    this.(Lscala/collection/mutable/MapBuilder;::elems_$eq(Lscala/collection/Map;)V;)(this.(Lscala/collection/mutable/MapBuilder;)empty);
   }
   
   public Lscala/collection/Map; result() {
@@ -66,10 +66,10 @@ public class Lscala/collection/mutable/MapBuilder; extends Ljava/lang/Object; im
   }
   
   public this(Lscala/collection/Map; empty) {
-    this.(Lscala/collection/Map;)empty = empty;
+    this.(Lscala/collection/mutable/MapBuilder;)empty = empty;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$init$(Lscala/collection/generic/Growable;)V;)(this);
     Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::$init$(Lscala/collection/mutable/Builder;)V;)(this);
-    this.(Lscala/collection/Map;)elems$u0020 = empty;
+    this.(Lscala/collection/mutable/MapBuilder;)elems$u0020 = empty;
   }
 }

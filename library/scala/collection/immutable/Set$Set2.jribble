@@ -453,7 +453,7 @@ public class Lscala/collection/immutable/Set$Set2; extends Ljava/lang/Object; im
   }
   
   public Z; contains(Ljava/lang/Object; elem) {
-    return (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(elem, this.(Ljava/lang/Object;)elem1) || Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(elem, this.(Ljava/lang/Object;)elem2));
+    return (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(elem, this.(Lscala/collection/immutable/Set$Set2;)elem1) || Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(elem, this.(Lscala/collection/immutable/Set$Set2;)elem2));
   }
   
   public Lscala/collection/immutable/Set; $plus(Ljava/lang/Object; elem) {
@@ -464,23 +464,23 @@ public class Lscala/collection/immutable/Set$Set2; extends Ljava/lang/Object; im
       }
     else
       {
-        $3$ = (new (Lscala/collection/immutable/Set$Set3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Ljava/lang/Object;)elem1, this.(Ljava/lang/Object;)elem2, elem));
+        $3$ = (new (Lscala/collection/immutable/Set$Set3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/Set$Set2;)elem1, this.(Lscala/collection/immutable/Set$Set2;)elem2, elem));
       }
     return $3$;
   }
   
   public Lscala/collection/immutable/Set; $minus(Ljava/lang/Object; elem) {
     Lscala/collection/immutable/Set; $4$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(elem, this.(Ljava/lang/Object;)elem1))
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(elem, this.(Lscala/collection/immutable/Set$Set2;)elem1))
       {
-        $4$ = (new (Lscala/collection/immutable/Set$Set1;::this(Ljava/lang/Object;)V;)(this.(Ljava/lang/Object;)elem2));
+        $4$ = (new (Lscala/collection/immutable/Set$Set1;::this(Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/Set$Set2;)elem2));
       }
     else
       {
         Lscala/collection/immutable/Set; $5$;
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(elem, this.(Ljava/lang/Object;)elem2))
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(elem, this.(Lscala/collection/immutable/Set$Set2;)elem2))
           {
-            $5$ = (new (Lscala/collection/immutable/Set$Set1;::this(Ljava/lang/Object;)V;)(this.(Ljava/lang/Object;)elem1));
+            $5$ = (new (Lscala/collection/immutable/Set$Set1;::this(Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/Set$Set2;)elem1));
           }
         else
           {
@@ -492,12 +492,12 @@ public class Lscala/collection/immutable/Set$Set2; extends Ljava/lang/Object; im
   }
   
   public Lscala/collection/Iterator; iterator() {
-    return Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::apply(Lscala/collection/Seq;)Lscala/collection/Iterator;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{this.(Ljava/lang/Object;)elem1, this.(Ljava/lang/Object;)elem2}));
+    return Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::apply(Lscala/collection/Seq;)Lscala/collection/Iterator;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{this.(Lscala/collection/immutable/Set$Set2;)elem1, this.(Lscala/collection/immutable/Set$Set2;)elem2}));
   }
   
   public V; foreach(Lscala/Function1; f) {
-    f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Ljava/lang/Object;)elem1);
-    f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Ljava/lang/Object;)elem2);
+    f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/Set$Set2;)elem1);
+    f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/Set$Set2;)elem2);
   }
   
   public Lscala/collection/generic/Addable; repr() {
@@ -545,8 +545,8 @@ public class Lscala/collection/immutable/Set$Set2; extends Ljava/lang/Object; im
   }
   
   public this(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2) {
-    this.(Ljava/lang/Object;)elem1 = elem1;
-    this.(Ljava/lang/Object;)elem2 = elem2;
+    this.(Lscala/collection/immutable/Set$Set2;)elem1 = elem1;
+    this.(Lscala/collection/immutable/Set$Set2;)elem2 = elem2;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$init$(Lscala/collection/TraversableLike;)V;)(this);

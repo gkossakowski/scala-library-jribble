@@ -319,16 +319,16 @@ public final class Lscala/collection/mutable/FlatHashTable$$anon$1; extends Ljav
   private I; i$u0020;
   
   private I; i() {
-    return this.(I;)i$u0020;
+    return this.(Lscala/collection/mutable/FlatHashTable$$anon$1;)i$u0020;
   }
   
   private V; i_$eq(I; x$1) {
-    this.(I;)i$u0020 = x$1;
+    this.(Lscala/collection/mutable/FlatHashTable$$anon$1;)i$u0020 = x$1;
   }
   
   public Z; hasNext() {
     while$7: while(true) {
-      if (((this.(Lscala/collection/mutable/FlatHashTable$$anon$1;::i()I;)() < this.(Lscala/collection/mutable/FlatHashTable;)$outer$u0020.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length>) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(null, this.(Lscala/collection/mutable/FlatHashTable;)$outer$u0020.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[this.(Lscala/collection/mutable/FlatHashTable$$anon$1;::i()I;)()])))
+      if (((this.(Lscala/collection/mutable/FlatHashTable$$anon$1;::i()I;)() < this.(Lscala/collection/mutable/FlatHashTable$$anon$1;)$outer$u0020.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length>) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(null, this.(Lscala/collection/mutable/FlatHashTable$$anon$1;)$outer$u0020.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[this.(Lscala/collection/mutable/FlatHashTable$$anon$1;::i()I;)()])))
         {
           this.(Lscala/collection/mutable/FlatHashTable$$anon$1;::i_$eq(I;)V;)((this.(Lscala/collection/mutable/FlatHashTable$$anon$1;::i()I;)() + 1));
           continue while$7;
@@ -339,7 +339,7 @@ public final class Lscala/collection/mutable/FlatHashTable$$anon$1; extends Ljav
         }
       break;
     }
-    return (this.(Lscala/collection/mutable/FlatHashTable$$anon$1;::i()I;)() < this.(Lscala/collection/mutable/FlatHashTable;)$outer$u0020.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length>);
+    return (this.(Lscala/collection/mutable/FlatHashTable$$anon$1;::i()I;)() < this.(Lscala/collection/mutable/FlatHashTable$$anon$1;)$outer$u0020.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length>);
   }
   
   public Ljava/lang/Object; next() {
@@ -347,7 +347,7 @@ public final class Lscala/collection/mutable/FlatHashTable$$anon$1; extends Ljav
     if (this.(Lscala/collection/mutable/FlatHashTable$$anon$1;::hasNext()Z;)())
       {
         this.(Lscala/collection/mutable/FlatHashTable$$anon$1;::i_$eq(I;)V;)((this.(Lscala/collection/mutable/FlatHashTable$$anon$1;::i()I;)() + 1));
-        $5$ = this.(Lscala/collection/mutable/FlatHashTable;)$outer$u0020.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[(this.(Lscala/collection/mutable/FlatHashTable$$anon$1;::i()I;)() - 1)];
+        $5$ = this.(Lscala/collection/mutable/FlatHashTable$$anon$1;)$outer$u0020.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[(this.(Lscala/collection/mutable/FlatHashTable$$anon$1;::i()I;)() - 1)];
       }
     else
       {
@@ -365,11 +365,11 @@ public final class Lscala/collection/mutable/FlatHashTable$$anon$1; extends Ljav
       }
     else
       {
-        this.(Lscala/collection/mutable/FlatHashTable;)$outer$u0020 = $outer;
+        this.(Lscala/collection/mutable/FlatHashTable$$anon$1;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(I;)i$u0020 = 0;
+    this.(Lscala/collection/mutable/FlatHashTable$$anon$1;)i$u0020 = 0;
   }
 }

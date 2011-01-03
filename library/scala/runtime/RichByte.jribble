@@ -35,19 +35,19 @@ public final class Lscala/runtime/RichByte; extends Ljava/lang/Object; implement
   private B; x;
   
   public Ljava/lang/Object; self() {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToByte(B;)Ljava/lang/Byte;)(this.(B;)x);
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToByte(B;)Ljava/lang/Byte;)(this.(Lscala/runtime/RichByte;)x);
   }
   
   public I; compare(B; y) {
     I; $1$;
-    if ((this.(B;)x < y))
+    if ((this.(Lscala/runtime/RichByte;)x < y))
       {
         $1$ = -1;
       }
     else
       {
         I; $2$;
-        if ((this.(B;)x > y))
+        if ((this.(Lscala/runtime/RichByte;)x > y))
           {
             $2$ = 1;
           }
@@ -65,7 +65,7 @@ public final class Lscala/runtime/RichByte; extends Ljava/lang/Object; implement
   }
   
   public this(B; x) {
-    this.(B;)x = x;
+    this.(Lscala/runtime/RichByte;)x = x;
     (Ljava/lang/Object;::super()V;)();
     Lscala/Proxy$class;.(Lscala/Proxy$class;::$init$(Lscala/Proxy;)V;)(this);
     Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$init$(Lscala/math/Ordered;)V;)(this);

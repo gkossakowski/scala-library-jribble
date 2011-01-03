@@ -19,13 +19,13 @@ public class Lscala/xml/dtd/ElemDecl; extends Lscala/xml/dtd/MarkupDecl; impleme
   private Ljava/lang/String; name$u0020;
   
   public Ljava/lang/String; name() {
-    return this.(Ljava/lang/String;)name$u0020;
+    return this.(Lscala/xml/dtd/ElemDecl;)name$u0020;
   }
   
   private Lscala/xml/dtd/ContentModel; contentModel$u0020;
   
   public Lscala/xml/dtd/ContentModel; contentModel() {
-    return this.(Lscala/xml/dtd/ContentModel;)contentModel$u0020;
+    return this.(Lscala/xml/dtd/ElemDecl;)contentModel$u0020;
   }
   
   public Lscala/collection/mutable/StringBuilder; buildString(Lscala/collection/mutable/StringBuilder; sb) {
@@ -115,8 +115,8 @@ public class Lscala/xml/dtd/ElemDecl; extends Lscala/xml/dtd/MarkupDecl; impleme
   }
   
   public this(Ljava/lang/String; name, Lscala/xml/dtd/ContentModel; contentModel) {
-    this.(Ljava/lang/String;)name$u0020 = name;
-    this.(Lscala/xml/dtd/ContentModel;)contentModel$u0020 = contentModel;
+    this.(Lscala/xml/dtd/ElemDecl;)name$u0020 = name;
+    this.(Lscala/xml/dtd/ElemDecl;)contentModel$u0020 = contentModel;
     (Lscala/xml/dtd/MarkupDecl;::super()V;)();
     Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
   }

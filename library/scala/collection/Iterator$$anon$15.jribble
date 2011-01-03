@@ -319,17 +319,17 @@ public final class Lscala/collection/Iterator$$anon$15; extends Ljava/lang/Objec
   private I; c$u0020;
   
   private I; c() {
-    return this.(I;)c$u0020;
+    return this.(Lscala/collection/Iterator$$anon$15;)c$u0020;
   }
   
   private V; c_$eq(I; x$1) {
-    this.(I;)c$u0020 = x$1;
+    this.(Lscala/collection/Iterator$$anon$15;)c$u0020 = x$1;
   }
   
   private I; cmax$u0020;
   
   private I; cmax() {
-    return this.(I;)cmax$u0020;
+    return this.(Lscala/collection/Iterator$$anon$15;)cmax$u0020;
   }
   
   public Z; hasNext() {
@@ -337,7 +337,7 @@ public final class Lscala/collection/Iterator$$anon$15; extends Ljava/lang/Objec
   }
   
   public Ljava/lang/Object; next() {
-    Ljava/lang/Object; a = this.(Lscala/Product;)n$2.(Lscala/Product;::productElement(I;)Ljava/lang/Object;)(this.(Lscala/collection/Iterator$$anon$15;::c()I;)());
+    Ljava/lang/Object; a = this.(Lscala/collection/Iterator$$anon$15;)n$2.(Lscala/Product;::productElement(I;)Ljava/lang/Object;)(this.(Lscala/collection/Iterator$$anon$15;::c()I;)());
     this.(Lscala/collection/Iterator$$anon$15;::c_$eq(I;)V;)((this.(Lscala/collection/Iterator$$anon$15;::c()I;)() + 1));
     return a;
   }
@@ -345,11 +345,11 @@ public final class Lscala/collection/Iterator$$anon$15; extends Ljava/lang/Objec
   private Lscala/Product; n$2;
   
   public this(Lscala/Product; n$2) {
-    this.(Lscala/Product;)n$2 = n$2;
+    this.(Lscala/collection/Iterator$$anon$15;)n$2 = n$2;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(I;)c$u0020 = 0;
-    this.(I;)cmax$u0020 = n$2.(Lscala/Product;::productArity()I;)();
+    this.(Lscala/collection/Iterator$$anon$15;)c$u0020 = 0;
+    this.(Lscala/collection/Iterator$$anon$15;)cmax$u0020 = n$2.(Lscala/Product;::productArity()I;)();
   }
 }

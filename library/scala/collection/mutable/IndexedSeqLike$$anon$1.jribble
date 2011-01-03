@@ -681,31 +681,31 @@ public final class Lscala/collection/mutable/IndexedSeqLike$$anon$1; extends Lja
   private Ljava/lang/Object; underlying$u0020;
   
   protected Ljava/lang/Object; underlying() {
-    if (((this.(I;)bitmap$0 & 1) == 0))
+    if (((this.(Lscala/collection/mutable/IndexedSeqLike$$anon$1;)bitmap$0 & 1) == 0))
       {
-        if (((this.(I;)bitmap$0 & 1) == 0))
+        if (((this.(Lscala/collection/mutable/IndexedSeqLike$$anon$1;)bitmap$0 & 1) == 0))
           {
-            this.(Ljava/lang/Object;)underlying$u0020 = this.(Lscala/collection/mutable/IndexedSeqLike;)$outer$u0020.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)();
-            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 1);
+            this.(Lscala/collection/mutable/IndexedSeqLike$$anon$1;)underlying$u0020 = this.(Lscala/collection/mutable/IndexedSeqLike$$anon$1;)$outer$u0020.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)();
+            this.(Lscala/collection/mutable/IndexedSeqLike$$anon$1;)bitmap$0 = (this.(Lscala/collection/mutable/IndexedSeqLike$$anon$1;)bitmap$0 | 1);
           }
       }
-    return this.(Ljava/lang/Object;)underlying$u0020;
+    return this.(Lscala/collection/mutable/IndexedSeqLike$$anon$1;)underlying$u0020;
   }
   
   public Lscala/collection/Iterator; iterator() {
-    return this.(Lscala/collection/mutable/IndexedSeqLike;)$outer$u0020.(Lscala/collection/IndexedSeqLike;::iterator()Lscala/collection/Iterator;)();
+    return this.(Lscala/collection/mutable/IndexedSeqLike$$anon$1;)$outer$u0020.(Lscala/collection/IndexedSeqLike;::iterator()Lscala/collection/Iterator;)();
   }
   
   public I; length() {
-    return this.(Lscala/collection/mutable/IndexedSeqLike;)$outer$u0020.(Lscala/collection/SeqLike;::length()I;)();
+    return this.(Lscala/collection/mutable/IndexedSeqLike$$anon$1;)$outer$u0020.(Lscala/collection/SeqLike;::length()I;)();
   }
   
   public Ljava/lang/Object; apply(I; idx) {
-    return this.(Lscala/collection/mutable/IndexedSeqLike;)$outer$u0020.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(idx);
+    return this.(Lscala/collection/mutable/IndexedSeqLike$$anon$1;)$outer$u0020.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(idx);
   }
   
   public V; update(I; idx, Ljava/lang/Object; elem) {
-    this.(Lscala/collection/mutable/IndexedSeqLike;)$outer$u0020.(Lscala/collection/mutable/IndexedSeqLike;::update(I;Ljava/lang/Object;)V;)(idx, elem);
+    this.(Lscala/collection/mutable/IndexedSeqLike$$anon$1;)$outer$u0020.(Lscala/collection/mutable/IndexedSeqLike;::update(I;Ljava/lang/Object;)V;)(idx, elem);
   }
   
   private Lscala/collection/mutable/IndexedSeqLike; $outer$u0020;
@@ -961,7 +961,7 @@ public final class Lscala/collection/mutable/IndexedSeqLike$$anon$1; extends Lja
       }
     else
       {
-        this.(Lscala/collection/mutable/IndexedSeqLike;)$outer$u0020 = $outer;
+        this.(Lscala/collection/mutable/IndexedSeqLike$$anon$1;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);

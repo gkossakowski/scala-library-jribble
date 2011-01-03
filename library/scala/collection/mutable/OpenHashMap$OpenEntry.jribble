@@ -1,41 +1,41 @@
 public final class Lscala/collection/mutable/OpenHashMap$OpenEntry; extends Ljava/lang/Object; implements Lscala/collection/mutable/HashEntry;, Lscala/ScalaObject; {
   
   public Ljava/lang/Object; next() {
-    return this.(Ljava/lang/Object;)next$u0020;
+    return this.(Lscala/collection/mutable/OpenHashMap$OpenEntry;)next$u0020;
   }
   
   private Ljava/lang/Object; next$u0020;
   
   public V; next_$eq(Ljava/lang/Object; x$1) {
-    this.(Ljava/lang/Object;)next$u0020 = x$1;
+    this.(Lscala/collection/mutable/OpenHashMap$OpenEntry;)next$u0020 = x$1;
   }
   
   private Ljava/lang/Object; key$u0020;
   
   public Ljava/lang/Object; key() {
-    return this.(Ljava/lang/Object;)key$u0020;
+    return this.(Lscala/collection/mutable/OpenHashMap$OpenEntry;)key$u0020;
   }
   
   private I; hash$u0020;
   
   public I; hash() {
-    return this.(I;)hash$u0020;
+    return this.(Lscala/collection/mutable/OpenHashMap$OpenEntry;)hash$u0020;
   }
   
   private Lscala/Option; value$u0020;
   
   public Lscala/Option; value() {
-    return this.(Lscala/Option;)value$u0020;
+    return this.(Lscala/collection/mutable/OpenHashMap$OpenEntry;)value$u0020;
   }
   
   public V; value_$eq(Lscala/Option; x$1) {
-    this.(Lscala/Option;)value$u0020 = x$1;
+    this.(Lscala/collection/mutable/OpenHashMap$OpenEntry;)value$u0020 = x$1;
   }
   
   public this(Ljava/lang/Object; key, I; hash, Lscala/Option; value) {
-    this.(Ljava/lang/Object;)key$u0020 = key;
-    this.(I;)hash$u0020 = hash;
-    this.(Lscala/Option;)value$u0020 = value;
+    this.(Lscala/collection/mutable/OpenHashMap$OpenEntry;)key$u0020 = key;
+    this.(Lscala/collection/mutable/OpenHashMap$OpenEntry;)hash$u0020 = hash;
+    this.(Lscala/collection/mutable/OpenHashMap$OpenEntry;)value$u0020 = value;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/mutable/HashEntry$class;.(Lscala/collection/mutable/HashEntry$class;::$init$(Lscala/collection/mutable/HashEntry;)V;)(this);
   }

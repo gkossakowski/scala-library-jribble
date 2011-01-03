@@ -764,15 +764,15 @@ public abstract class Lscala/xml/NodeSeq; extends Ljava/lang/Object; implements 
   }
   
   private final Lscala/xml/Node; y$1(Lscala/runtime/ObjectRef; y$lzy$1, Lscala/runtime/VolatileIntRef; bitmap$0$1) {
-    if (((bitmap$0$1.(I;)elem & 1) == 0))
+    if (((bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem & 1) == 0))
       {
-        if (((bitmap$0$1.(I;)elem & 1) == 0))
+        if (((bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem & 1) == 0))
           {
-            y$lzy$1.(Ljava/lang/Object;)elem = this.(Lscala/xml/NodeSeq;::apply(I;)Lscala/xml/Node;)(0);
-            bitmap$0$1.(I;)elem = (bitmap$0$1.(I;)elem | 1);
+            y$lzy$1.(Lscala/runtime/ObjectRef;)elem = this.(Lscala/xml/NodeSeq;::apply(I;)Lscala/xml/Node;)(0);
+            bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem = (bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem | 1);
           }
       }
-    return y$lzy$1.(Ljava/lang/Object;)elem.<cast>(Lscala/xml/Node;);
+    return y$lzy$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/xml/Node;);
   }
   
   private final Lscala/xml/NodeSeq; atResult$1(Ljava/lang/String; that$1) {

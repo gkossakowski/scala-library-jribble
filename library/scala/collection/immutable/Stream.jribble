@@ -573,15 +573,15 @@ public abstract class Lscala/collection/immutable/Stream; extends Ljava/lang/Obj
     else
       {
         Lscala/runtime/ObjectRef; nonEmptyPrefix$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(this));
-        Lscala/collection/immutable/Stream; prefix = f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(nonEmptyPrefix$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)()).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::toStream()Lscala/collection/immutable/Stream;)();
+        Lscala/collection/immutable/Stream; prefix = f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(nonEmptyPrefix$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)()).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::toStream()Lscala/collection/immutable/Stream;)();
         while$3: while(true) {
-          if ((!(nonEmptyPrefix$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/IterableLike;::isEmpty()Z;)()) && prefix.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
+          if ((!(nonEmptyPrefix$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/IterableLike;::isEmpty()Z;)()) && prefix.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
             {
               {
-                nonEmptyPrefix$1.(Ljava/lang/Object;)elem = nonEmptyPrefix$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Stream;);
-                if (!(nonEmptyPrefix$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/IterableLike;::isEmpty()Z;)()))
+                nonEmptyPrefix$1.(Lscala/runtime/ObjectRef;)elem = nonEmptyPrefix$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Stream;);
+                if (!(nonEmptyPrefix$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/IterableLike;::isEmpty()Z;)()))
                   {
-                    prefix = f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(nonEmptyPrefix$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)()).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::toStream()Lscala/collection/immutable/Stream;)();
+                    prefix = f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(nonEmptyPrefix$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)()).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::toStream()Lscala/collection/immutable/Stream;)();
                   }
                 else
                   {
@@ -597,7 +597,7 @@ public abstract class Lscala/collection/immutable/Stream; extends Ljava/lang/Obj
           break;
         }
         Ljava/lang/Object; $6$;
-        if (nonEmptyPrefix$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/IterableLike;::isEmpty()Z;)())
+        if (nonEmptyPrefix$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/IterableLike;::isEmpty()Z;)())
           {
             $6$ = Lscala/collection/immutable/Stream$;.MODULE$.(Lscala/collection/immutable/Stream$;::empty()Lscala/collection/immutable/Stream;)();
           }
@@ -840,7 +840,7 @@ public abstract class Lscala/collection/immutable/Stream; extends Ljava/lang/Obj
           {
             Lscala/collection/immutable/Stream; r = Lscala/collection/immutable/Stream$;.MODULE$.(Lscala/collection/immutable/Stream$;::consWrapper(Lscala/Function0;)Lscala/collection/immutable/Stream$ConsWrapper;)((new (Lscala/collection/immutable/Stream$$anonfun$1;::this(Lscala/collection/immutable/Stream;Lscala/runtime/ObjectRef;)V;)(this, result$1))).(Lscala/collection/immutable/Stream$ConsWrapper;::$hash$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/Stream;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)());
             r.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)();
-            result$1.(Ljava/lang/Object;)elem = r;
+            result$1.(Lscala/runtime/ObjectRef;)elem = r;
             these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Stream;);
           }
           continue while$7;
@@ -851,7 +851,7 @@ public abstract class Lscala/collection/immutable/Stream; extends Ljava/lang/Obj
         }
       break;
     }
-    return result$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/immutable/Stream;);
+    return result$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Stream;);
   }
   
   public Lscala/collection/immutable/Stream; flatten(Lscala/Function1; asTraversable$1) {

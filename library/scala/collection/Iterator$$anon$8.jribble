@@ -319,22 +319,22 @@ public final class Lscala/collection/Iterator$$anon$8; extends Ljava/lang/Object
   private I; i$u0020;
   
   private I; i() {
-    return this.(I;)i$u0020;
+    return this.(Lscala/collection/Iterator$$anon$8;)i$u0020;
   }
   
   private V; i_$eq(I; x$1) {
-    this.(I;)i$u0020 = x$1;
+    this.(Lscala/collection/Iterator$$anon$8;)i$u0020 = x$1;
   }
   
   public Z; hasNext() {
-    return (this.(Lscala/collection/Iterator$$anon$8;::i()I;)() < this.(I;)end$1);
+    return (this.(Lscala/collection/Iterator$$anon$8;::i()I;)() < this.(Lscala/collection/Iterator$$anon$8;)end$1);
   }
   
   public Ljava/lang/Object; next() {
     Ljava/lang/Object; $9$;
     if (this.(Lscala/collection/Iterator$$anon$8;::hasNext()Z;)())
       {
-        Ljava/lang/Object; result = this.(Lscala/Function1;)f$3.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/collection/Iterator$$anon$8;::i()I;)()));
+        Ljava/lang/Object; result = this.(Lscala/collection/Iterator$$anon$8;)f$3.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/collection/Iterator$$anon$8;::i()I;)()));
         this.(Lscala/collection/Iterator$$anon$8;::i_$eq(I;)V;)((this.(Lscala/collection/Iterator$$anon$8;::i()I;)() + 1));
         $9$ = result;
       }
@@ -350,11 +350,11 @@ public final class Lscala/collection/Iterator$$anon$8; extends Ljava/lang/Object
   private Lscala/Function1; f$3;
   
   public this(I; end$1, Lscala/Function1; f$3) {
-    this.(I;)end$1 = end$1;
-    this.(Lscala/Function1;)f$3 = f$3;
+    this.(Lscala/collection/Iterator$$anon$8;)end$1 = end$1;
+    this.(Lscala/collection/Iterator$$anon$8;)f$3 = f$3;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(I;)i$u0020 = 0;
+    this.(Lscala/collection/Iterator$$anon$8;)i$u0020 = 0;
   }
 }

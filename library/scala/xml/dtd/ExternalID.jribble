@@ -92,27 +92,27 @@ public abstract class Lscala/xml/dtd/ExternalID; extends Ljava/lang/Object; impl
   public abstract Ljava/lang/String; publicId();
   
   private final Ljava/lang/String; quotedSystemLiteral$1(Lscala/runtime/ObjectRef; quotedSystemLiteral$lzy$1, Lscala/runtime/VolatileIntRef; bitmap$0$1) {
-    if (((bitmap$0$1.(I;)elem & 1) == 0))
+    if (((bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem & 1) == 0))
       {
-        if (((bitmap$0$1.(I;)elem & 1) == 0))
+        if (((bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem & 1) == 0))
           {
-            quotedSystemLiteral$lzy$1.(Ljava/lang/Object;)elem = this.(Lscala/xml/dtd/ExternalID;::quoted(Ljava/lang/String;)Ljava/lang/String;)(this.(Lscala/xml/dtd/ExternalID;::systemId()Ljava/lang/String;)());
-            bitmap$0$1.(I;)elem = (bitmap$0$1.(I;)elem | 1);
+            quotedSystemLiteral$lzy$1.(Lscala/runtime/ObjectRef;)elem = this.(Lscala/xml/dtd/ExternalID;::quoted(Ljava/lang/String;)Ljava/lang/String;)(this.(Lscala/xml/dtd/ExternalID;::systemId()Ljava/lang/String;)());
+            bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem = (bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem | 1);
           }
       }
-    return quotedSystemLiteral$lzy$1.(Ljava/lang/Object;)elem.<cast>(Ljava/lang/String;);
+    return quotedSystemLiteral$lzy$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Ljava/lang/String;);
   }
   
   private final Ljava/lang/String; quotedPublicLiteral$1(Lscala/runtime/ObjectRef; quotedPublicLiteral$lzy$1, Lscala/runtime/VolatileIntRef; bitmap$0$1) {
-    if (((bitmap$0$1.(I;)elem & 2) == 0))
+    if (((bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem & 2) == 0))
       {
-        if (((bitmap$0$1.(I;)elem & 2) == 0))
+        if (((bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem & 2) == 0))
           {
-            quotedPublicLiteral$lzy$1.(Ljava/lang/Object;)elem = this.(Lscala/xml/dtd/ExternalID;::quoted(Ljava/lang/String;)Ljava/lang/String;)(this.(Lscala/xml/dtd/ExternalID;::publicId()Ljava/lang/String;)());
-            bitmap$0$1.(I;)elem = (bitmap$0$1.(I;)elem | 2);
+            quotedPublicLiteral$lzy$1.(Lscala/runtime/ObjectRef;)elem = this.(Lscala/xml/dtd/ExternalID;::quoted(Ljava/lang/String;)Ljava/lang/String;)(this.(Lscala/xml/dtd/ExternalID;::publicId()Ljava/lang/String;)());
+            bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem = (bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem | 2);
           }
       }
-    return quotedPublicLiteral$lzy$1.(Ljava/lang/Object;)elem.<cast>(Ljava/lang/String;);
+    return quotedPublicLiteral$lzy$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Ljava/lang/String;);
   }
   
   public this() {

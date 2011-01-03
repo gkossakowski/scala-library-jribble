@@ -16,7 +16,7 @@ public final class Lscala/collection/immutable/StringLike$$anonfun$stripMargin$1
       break;
     }
     Ljava/lang/String; $13$;
-    if (((index < len) && (line.(Ljava/lang/String;::charAt(I;)C;)(index) == this.(C;)marginChar$1)))
+    if (((index < len) && (line.(Ljava/lang/String;::charAt(I;)C;)(index) == this.(Lscala/collection/immutable/StringLike$$anonfun$stripMargin$1;)marginChar$1)))
       {
         $13$ = line.(Ljava/lang/String;::substring(I;)Ljava/lang/String;)((index + 1));
       }
@@ -24,7 +24,7 @@ public final class Lscala/collection/immutable/StringLike$$anonfun$stripMargin$1
       {
         $13$ = line;
       }
-    return this.(Lscala/collection/mutable/StringBuilder;)buf$2.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)($13$);
+    return this.(Lscala/collection/immutable/StringLike$$anonfun$stripMargin$1;)buf$2.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)($13$);
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
@@ -36,8 +36,8 @@ public final class Lscala/collection/immutable/StringLike$$anonfun$stripMargin$1
   private Lscala/collection/mutable/StringBuilder; buf$2;
   
   public this(Lscala/collection/immutable/StringLike; $outer, C; marginChar$1, Lscala/collection/mutable/StringBuilder; buf$2) {
-    this.(C;)marginChar$1 = marginChar$1;
-    this.(Lscala/collection/mutable/StringBuilder;)buf$2 = buf$2;
+    this.(Lscala/collection/immutable/StringLike$$anonfun$stripMargin$1;)marginChar$1 = marginChar$1;
+    this.(Lscala/collection/immutable/StringLike$$anonfun$stripMargin$1;)buf$2 = buf$2;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

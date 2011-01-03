@@ -1,8 +1,8 @@
 public final class Lscala/util/Random$$anonfun$shuffle$1; extends Lscala/runtime/AbstractFunction1; {
   
   public final V; apply(I; n) {
-    I; k = this.(Lscala/util/Random;)$outer$u0020.(Lscala/util/Random;::nextInt(I;)I;)(n);
-    this.(Lscala/util/Random;)$outer$u0020.(Lscala/util/Random;::swap$1(I;I;Lscala/collection/mutable/ArrayBuffer;)V;)((n - 1), k, this.(Lscala/collection/mutable/ArrayBuffer;)buf$1);
+    I; k = this.(Lscala/util/Random$$anonfun$shuffle$1;)$outer$u0020.(Lscala/util/Random;::nextInt(I;)I;)(n);
+    this.(Lscala/util/Random$$anonfun$shuffle$1;)$outer$u0020.(Lscala/util/Random;::swap$1(I;I;Lscala/collection/mutable/ArrayBuffer;)V;)((n - 1), k, this.(Lscala/util/Random$$anonfun$shuffle$1;)buf$1);
   }
   
   private Lscala/util/Random; $outer$u0020;
@@ -21,9 +21,9 @@ public final class Lscala/util/Random$$anonfun$shuffle$1; extends Lscala/runtime
       }
     else
       {
-        this.(Lscala/util/Random;)$outer$u0020 = $outer;
+        this.(Lscala/util/Random$$anonfun$shuffle$1;)$outer$u0020 = $outer;
       }
-    this.(Lscala/collection/mutable/ArrayBuffer;)buf$1 = buf$1;
+    this.(Lscala/util/Random$$anonfun$shuffle$1;)buf$1 = buf$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

@@ -319,21 +319,21 @@ public final class Lscala/collection/mutable/OpenHashMap$$anon$1; extends Ljava/
   private I; index$u0020;
   
   private I; index() {
-    return this.(I;)index$u0020;
+    return this.(Lscala/collection/mutable/OpenHashMap$$anon$1;)index$u0020;
   }
   
   private V; index_$eq(I; x$1) {
-    this.(I;)index$u0020 = x$1;
+    this.(Lscala/collection/mutable/OpenHashMap$$anon$1;)index$u0020 = x$1;
   }
   
   private I; initialModCount$u0020;
   
   private I; initialModCount() {
-    return this.(I;)initialModCount$u0020;
+    return this.(Lscala/collection/mutable/OpenHashMap$$anon$1;)initialModCount$u0020;
   }
   
   private V; advance() {
-    if ((this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::initialModCount()I;)() != this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020.(I;)scala$collection$mutable$OpenHashMap$$modCount))
+    if ((this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::initialModCount()I;)() != this.(Lscala/collection/mutable/OpenHashMap$$anon$1;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$modCount))
       {
         Lscala/Predef$;.MODULE$.(Lscala/Predef$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("Concurrent modification");
       }
@@ -342,7 +342,7 @@ public final class Lscala/collection/mutable/OpenHashMap$$anon$1; extends Ljava/
         
       }
     while$3: while(true) {
-      if (((this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::index()I;)() <= this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$mask()I;)()) && (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$table()Lscala/collection/mutable/OpenHashMap$OpenEntry;[)()[this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::index()I;)()], null) || Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$table()Lscala/collection/mutable/OpenHashMap$OpenEntry;[)()[this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::index()I;)()].(Lscala/collection/mutable/OpenHashMap$OpenEntry;::value()Lscala/Option;)(), Lscala/None$;.MODULE$))))
+      if (((this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::index()I;)() <= this.(Lscala/collection/mutable/OpenHashMap$$anon$1;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$mask()I;)()) && (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/OpenHashMap$$anon$1;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$table()Lscala/collection/mutable/OpenHashMap$OpenEntry;[)()[this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::index()I;)()], null) || Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/OpenHashMap$$anon$1;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$table()Lscala/collection/mutable/OpenHashMap$OpenEntry;[)()[this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::index()I;)()].(Lscala/collection/mutable/OpenHashMap$OpenEntry;::value()Lscala/Option;)(), Lscala/None$;.MODULE$))))
         {
           this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::index_$eq(I;)V;)((this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::index()I;)() + 1));
           continue while$3;
@@ -357,12 +357,12 @@ public final class Lscala/collection/mutable/OpenHashMap$$anon$1; extends Ljava/
   
   public Z; hasNext() {
     this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::advance()V;)();
-    return (this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::index()I;)() <= this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$mask()I;)());
+    return (this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::index()I;)() <= this.(Lscala/collection/mutable/OpenHashMap$$anon$1;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$mask()I;)());
   }
   
   public Lscala/Tuple2; next() {
     this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::advance()V;)();
-    Lscala/collection/mutable/OpenHashMap$OpenEntry; result = this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$table()Lscala/collection/mutable/OpenHashMap$OpenEntry;[)()[this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::index()I;)()];
+    Lscala/collection/mutable/OpenHashMap$OpenEntry; result = this.(Lscala/collection/mutable/OpenHashMap$$anon$1;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$table()Lscala/collection/mutable/OpenHashMap$OpenEntry;[)()[this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::index()I;)()];
     this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::index_$eq(I;)V;)((this.(Lscala/collection/mutable/OpenHashMap$$anon$1;::index()I;)() + 1));
     return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(result.(Lscala/collection/mutable/OpenHashMap$OpenEntry;::key()Ljava/lang/Object;)(), result.(Lscala/collection/mutable/OpenHashMap$OpenEntry;::value()Lscala/Option;)().(Lscala/Option;::get()Ljava/lang/Object;)()));
   }
@@ -380,12 +380,12 @@ public final class Lscala/collection/mutable/OpenHashMap$$anon$1; extends Ljava/
       }
     else
       {
-        this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020 = $outer;
+        this.(Lscala/collection/mutable/OpenHashMap$$anon$1;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(I;)index$u0020 = 0;
-    this.(I;)initialModCount$u0020 = $outer.(I;)scala$collection$mutable$OpenHashMap$$modCount;
+    this.(Lscala/collection/mutable/OpenHashMap$$anon$1;)index$u0020 = 0;
+    this.(Lscala/collection/mutable/OpenHashMap$$anon$1;)initialModCount$u0020 = $outer.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$modCount;
   }
 }

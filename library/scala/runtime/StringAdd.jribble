@@ -3,15 +3,15 @@ public final class Lscala/runtime/StringAdd; extends Ljava/lang/Object; implemen
   private Ljava/lang/Object; self;
   
   public Ljava/lang/String; $plus(Ljava/lang/String; other) {
-    return (Ljava/lang/String;.(Ljava/lang/String;::valueOf(Ljava/lang/Object;)Ljava/lang/String;)(this.(Ljava/lang/Object;)self) + other);
+    return (Ljava/lang/String;.(Ljava/lang/String;::valueOf(Ljava/lang/Object;)Ljava/lang/String;)(this.(Lscala/runtime/StringAdd;)self) + other);
   }
   
   public Ljava/lang/String; formatted(Ljava/lang/String; fmtstr) {
-    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(fmtstr).(Lscala/collection/immutable/StringLike;::format(Lscala/collection/Seq;)Ljava/lang/String;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{this.(Ljava/lang/Object;)self}));
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(fmtstr).(Lscala/collection/immutable/StringLike;::format(Lscala/collection/Seq;)Ljava/lang/String;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{this.(Lscala/runtime/StringAdd;)self}));
   }
   
   public this(Ljava/lang/Object; self) {
-    this.(Ljava/lang/Object;)self = self;
+    this.(Lscala/runtime/StringAdd;)self = self;
     (Ljava/lang/Object;::super()V;)();
   }
 }

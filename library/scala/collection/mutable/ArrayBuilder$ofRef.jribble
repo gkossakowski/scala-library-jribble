@@ -5,35 +5,35 @@ public class Lscala/collection/mutable/ArrayBuilder$ofRef; extends Lscala/collec
   private Ljava/lang/Object;[ elems$u0020;
   
   private Ljava/lang/Object;[ elems() {
-    return this.(Ljava/lang/Object;[)elems$u0020;
+    return this.(Lscala/collection/mutable/ArrayBuilder$ofRef;)elems$u0020;
   }
   
   private V; elems_$eq(Ljava/lang/Object;[ x$1) {
-    this.(Ljava/lang/Object;[)elems$u0020 = x$1;
+    this.(Lscala/collection/mutable/ArrayBuilder$ofRef;)elems$u0020 = x$1;
   }
   
   private I; capacity$u0020;
   
   private I; capacity() {
-    return this.(I;)capacity$u0020;
+    return this.(Lscala/collection/mutable/ArrayBuilder$ofRef;)capacity$u0020;
   }
   
   private V; capacity_$eq(I; x$1) {
-    this.(I;)capacity$u0020 = x$1;
+    this.(Lscala/collection/mutable/ArrayBuilder$ofRef;)capacity$u0020 = x$1;
   }
   
   private I; size$u0020;
   
   private I; size() {
-    return this.(I;)size$u0020;
+    return this.(Lscala/collection/mutable/ArrayBuilder$ofRef;)size$u0020;
   }
   
   private V; size_$eq(I; x$1) {
-    this.(I;)size$u0020 = x$1;
+    this.(Lscala/collection/mutable/ArrayBuilder$ofRef;)size$u0020 = x$1;
   }
   
   private Ljava/lang/Object;[ mkArray(I; size) {
-    Ljava/lang/Object;[ newelems = this.(Lscala/reflect/ClassManifest;)evidence$2.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)(size).<cast>(Ljava/lang/Object;[);
+    Ljava/lang/Object;[ newelems = this.(Lscala/collection/mutable/ArrayBuilder$ofRef;)evidence$2.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)(size).<cast>(Ljava/lang/Object;[);
     if ((this.(Lscala/collection/mutable/ArrayBuilder$ofRef;::size()I;)() > 0))
       {
         Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/mutable/ArrayBuilder$ofRef;::elems()Ljava/lang/Object;[)(), 0, newelems, 0, this.(Lscala/collection/mutable/ArrayBuilder$ofRef;::size()I;)());
@@ -173,9 +173,9 @@ public class Lscala/collection/mutable/ArrayBuilder$ofRef; extends Lscala/collec
   }
   
   public this(Lscala/reflect/ClassManifest; evidence$2) {
-    this.(Lscala/reflect/ClassManifest;)evidence$2 = evidence$2;
+    this.(Lscala/collection/mutable/ArrayBuilder$ofRef;)evidence$2 = evidence$2;
     (Lscala/collection/mutable/ArrayBuilder;::super()V;)();
-    this.(I;)capacity$u0020 = 0;
-    this.(I;)size$u0020 = 0;
+    this.(Lscala/collection/mutable/ArrayBuilder$ofRef;)capacity$u0020 = 0;
+    this.(Lscala/collection/mutable/ArrayBuilder$ofRef;)size$u0020 = 0;
   }
 }

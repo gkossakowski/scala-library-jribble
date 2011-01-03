@@ -379,13 +379,13 @@ public class Lscala/collection/mutable/History; extends Ljava/lang/Object; imple
   private Lscala/collection/mutable/Queue; log$u0020;
   
   protected Lscala/collection/mutable/Queue; log() {
-    return this.(Lscala/collection/mutable/Queue;)log$u0020;
+    return this.(Lscala/collection/mutable/History;)log$u0020;
   }
   
   private I; maxHistory$u0020;
   
   public I; maxHistory() {
-    return this.(I;)maxHistory$u0020;
+    return this.(Lscala/collection/mutable/History;)maxHistory$u0020;
   }
   
   public V; notify(Ljava/lang/Object; pub, Ljava/lang/Object; event) {
@@ -456,7 +456,7 @@ public class Lscala/collection/mutable/History; extends Ljava/lang/Object; imple
     Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::$init$(Lscala/collection/IterableLike;)V;)(this);
     Lscala/collection/Iterable$class;.(Lscala/collection/Iterable$class;::$init$(Lscala/collection/Iterable;)V;)(this);
     Lscala/collection/mutable/Iterable$class;.(Lscala/collection/mutable/Iterable$class;::$init$(Lscala/collection/mutable/Iterable;)V;)(this);
-    this.(Lscala/collection/mutable/Queue;)log$u0020 = (new (Lscala/collection/mutable/Queue;::this()V;)());
-    this.(I;)maxHistory$u0020 = 1000;
+    this.(Lscala/collection/mutable/History;)log$u0020 = (new (Lscala/collection/mutable/Queue;::this()V;)());
+    this.(Lscala/collection/mutable/History;)maxHistory$u0020 = 1000;
   }
 }

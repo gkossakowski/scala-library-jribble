@@ -27,11 +27,11 @@ public abstract class Lscala/collection/mutable/LazyBuilder; extends Ljava/lang/
   private Lscala/collection/mutable/ListBuffer; parts$u0020;
   
   protected Lscala/collection/mutable/ListBuffer; parts() {
-    return this.(Lscala/collection/mutable/ListBuffer;)parts$u0020;
+    return this.(Lscala/collection/mutable/LazyBuilder;)parts$u0020;
   }
   
   protected V; parts_$eq(Lscala/collection/mutable/ListBuffer; x$1) {
-    this.(Lscala/collection/mutable/ListBuffer;)parts$u0020 = x$1;
+    this.(Lscala/collection/mutable/LazyBuilder;)parts$u0020 = x$1;
   }
   
   public Lscala/collection/mutable/LazyBuilder; $plus$eq(Ljava/lang/Object; x) {
@@ -66,6 +66,6 @@ public abstract class Lscala/collection/mutable/LazyBuilder; extends Ljava/lang/
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$init$(Lscala/collection/generic/Growable;)V;)(this);
     Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::$init$(Lscala/collection/mutable/Builder;)V;)(this);
-    this.(Lscala/collection/mutable/ListBuffer;)parts$u0020 = (new (Lscala/collection/mutable/ListBuffer;::this()V;)());
+    this.(Lscala/collection/mutable/LazyBuilder;)parts$u0020 = (new (Lscala/collection/mutable/ListBuffer;::this()V;)());
   }
 }

@@ -1,25 +1,25 @@
 public final class Lscala/Predef$$anon$5; extends Ljava/lang/Object; implements Ljava/lang/CharSequence; {
   
   public I; length() {
-    return this.(Lscala/collection/IndexedSeq;)xs$2.(Lscala/collection/SeqLike;::length()I;)();
+    return this.(Lscala/Predef$$anon$5;)xs$2.(Lscala/collection/SeqLike;::length()I;)();
   }
   
   public C; charAt(I; index) {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(this.(Lscala/collection/IndexedSeq;)xs$2.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(index));
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(this.(Lscala/Predef$$anon$5;)xs$2.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(index));
   }
   
   public Ljava/lang/CharSequence; subSequence(I; start, I; end) {
-    return this.(Lscala/Predef$;::seqToCharSequence(Lscala/collection/IndexedSeq;)Ljava/lang/CharSequence;)(this.(Lscala/collection/IndexedSeq;)xs$2.(Lscala/collection/IterableLike;::slice(I;I;)Ljava/lang/Object;)(start, end).<cast>(Lscala/collection/IndexedSeq;));
+    return this.(Lscala/Predef$;::seqToCharSequence(Lscala/collection/IndexedSeq;)Ljava/lang/CharSequence;)(this.(Lscala/Predef$$anon$5;)xs$2.(Lscala/collection/IterableLike;::slice(I;I;)Ljava/lang/Object;)(start, end).<cast>(Lscala/collection/IndexedSeq;));
   }
   
   public Ljava/lang/String; toString() {
-    return this.(Lscala/collection/IndexedSeq;)xs$2.(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;)Ljava/lang/String;)("");
+    return this.(Lscala/Predef$$anon$5;)xs$2.(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;)Ljava/lang/String;)("");
   }
   
   private Lscala/collection/IndexedSeq; xs$2;
   
   public this(Lscala/collection/IndexedSeq; xs$2) {
-    this.(Lscala/collection/IndexedSeq;)xs$2 = xs$2;
+    this.(Lscala/Predef$$anon$5;)xs$2 = xs$2;
     (Ljava/lang/Object;::super()V;)();
   }
 }

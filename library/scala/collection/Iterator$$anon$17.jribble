@@ -319,18 +319,18 @@ public final class Lscala/collection/Iterator$$anon$17; extends Ljava/lang/Objec
   private Lscala/collection/Iterator; cur$u0020;
   
   private Lscala/collection/Iterator; cur() {
-    return this.(Lscala/collection/Iterator;)cur$u0020;
+    return this.(Lscala/collection/Iterator$$anon$17;)cur$u0020;
   }
   
   private V; cur_$eq(Lscala/collection/Iterator; x$1) {
-    this.(Lscala/collection/Iterator;)cur$u0020 = x$1;
+    this.(Lscala/collection/Iterator$$anon$17;)cur$u0020 = x$1;
   }
   
   public Z; hasNext() {
     while$1: while(true) {
-      if ((!(this.(Lscala/collection/Iterator$$anon$17;::cur()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::hasNext()Z;)()) && this.(Lscala/collection/Iterator;)its$1.(Lscala/collection/Iterator;::hasNext()Z;)()))
+      if ((!(this.(Lscala/collection/Iterator$$anon$17;::cur()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::hasNext()Z;)()) && this.(Lscala/collection/Iterator$$anon$17;)its$1.(Lscala/collection/Iterator;::hasNext()Z;)()))
         {
-          this.(Lscala/collection/Iterator$$anon$17;::cur_$eq(Lscala/collection/Iterator;)V;)(this.(Lscala/collection/Iterator;)its$1.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)().<cast>(Lscala/collection/Iterator;));
+          this.(Lscala/collection/Iterator$$anon$17;::cur_$eq(Lscala/collection/Iterator;)V;)(this.(Lscala/collection/Iterator$$anon$17;)its$1.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)().<cast>(Lscala/collection/Iterator;));
           continue while$1;
         }
       else
@@ -358,10 +358,10 @@ public final class Lscala/collection/Iterator$$anon$17; extends Ljava/lang/Objec
   private Lscala/collection/Iterator; its$1;
   
   public this(Lscala/collection/Iterator; its$1) {
-    this.(Lscala/collection/Iterator;)its$1 = its$1;
+    this.(Lscala/collection/Iterator$$anon$17;)its$1 = its$1;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(Lscala/collection/Iterator;)cur$u0020 = its$1.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)().<cast>(Lscala/collection/Iterator;);
+    this.(Lscala/collection/Iterator$$anon$17;)cur$u0020 = its$1.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)().<cast>(Lscala/collection/Iterator;);
   }
 }

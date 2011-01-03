@@ -48,15 +48,15 @@ public final class Lscala/xml/MetaData$; extends Ljava/lang/Object; implements L
   }
   
   private final Ljava/lang/String; key$1(Lscala/xml/NamespaceBinding; scope$1, Lscala/xml/MetaData; md$1, Lscala/runtime/ObjectRef; key$lzy$1, Lscala/runtime/VolatileIntRef; bitmap$0$1) {
-    if (((bitmap$0$1.(I;)elem & 1) == 0))
+    if (((bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem & 1) == 0))
       {
-        if (((bitmap$0$1.(I;)elem & 1) == 0))
+        if (((bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem & 1) == 0))
           {
-            key$lzy$1.(Ljava/lang/Object;)elem = this.(Lscala/xml/MetaData$;::getUniversalKey(Lscala/xml/MetaData;Lscala/xml/NamespaceBinding;)Ljava/lang/String;)(md$1, scope$1);
-            bitmap$0$1.(I;)elem = (bitmap$0$1.(I;)elem | 1);
+            key$lzy$1.(Lscala/runtime/ObjectRef;)elem = this.(Lscala/xml/MetaData$;::getUniversalKey(Lscala/xml/MetaData;Lscala/xml/NamespaceBinding;)Ljava/lang/String;)(md$1, scope$1);
+            bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem = (bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem | 1);
           }
       }
-    return key$lzy$1.(Ljava/lang/Object;)elem.<cast>(Ljava/lang/String;);
+    return key$lzy$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Ljava/lang/String;);
   }
   
   private final Lscala/xml/MetaData; iterate$1(Lscala/xml/MetaData; md$1, Lscala/xml/MetaData; normalized_attribs, Lscala/collection/immutable/Set; set, Lscala/xml/NamespaceBinding; scope$1) {

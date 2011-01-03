@@ -15,13 +15,13 @@ public class Lscala/xml/dtd/SystemID; extends Lscala/xml/dtd/ExternalID; impleme
   private Ljava/lang/String; systemId$u0020;
   
   public Ljava/lang/String; systemId() {
-    return this.(Ljava/lang/String;)systemId$u0020;
+    return this.(Lscala/xml/dtd/SystemID;)systemId$u0020;
   }
   
   private Lscala/runtime/Null$; publicId$u0020;
   
   public Lscala/runtime/Null$; publicId() {
-    return this.(Lscala/runtime/Null$;)publicId$u0020;
+    return this.(Lscala/xml/dtd/SystemID;)publicId$u0020;
   }
   
   public Lscala/xml/dtd/SystemID; copy(Ljava/lang/String; systemId) {
@@ -93,10 +93,10 @@ public class Lscala/xml/dtd/SystemID; extends Lscala/xml/dtd/ExternalID; impleme
   }
   
   public this(Ljava/lang/String; systemId) {
-    this.(Ljava/lang/String;)systemId$u0020 = systemId;
+    this.(Lscala/xml/dtd/SystemID;)systemId$u0020 = systemId;
     (Lscala/xml/dtd/ExternalID;::super()V;)();
     Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
-    this.(Lscala/runtime/Null$;)publicId$u0020 = null;
+    this.(Lscala/xml/dtd/SystemID;)publicId$u0020 = null;
     if (!(this.(Lscala/xml/parsing/TokenTests;::checkSysID(Ljava/lang/String;)Z;)(systemId)))
       {
         throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)("can\'t use both \" and \' in systemId"));

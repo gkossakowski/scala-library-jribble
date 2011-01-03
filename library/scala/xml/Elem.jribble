@@ -23,31 +23,31 @@ public class Lscala/xml/Elem; extends Lscala/xml/Node; implements Lscala/ScalaOb
   private Ljava/lang/String; prefix$u0020;
   
   public Ljava/lang/String; prefix() {
-    return this.(Ljava/lang/String;)prefix$u0020;
+    return this.(Lscala/xml/Elem;)prefix$u0020;
   }
   
   private Ljava/lang/String; label$u0020;
   
   public Ljava/lang/String; label() {
-    return this.(Ljava/lang/String;)label$u0020;
+    return this.(Lscala/xml/Elem;)label$u0020;
   }
   
   private Lscala/xml/MetaData; attributes$u0020;
   
   public Lscala/xml/MetaData; attributes() {
-    return this.(Lscala/xml/MetaData;)attributes$u0020;
+    return this.(Lscala/xml/Elem;)attributes$u0020;
   }
   
   private Lscala/xml/NamespaceBinding; scope$u0020;
   
   public Lscala/xml/NamespaceBinding; scope() {
-    return this.(Lscala/xml/NamespaceBinding;)scope$u0020;
+    return this.(Lscala/xml/Elem;)scope$u0020;
   }
   
   private Lscala/collection/Seq; child$u0020;
   
   public Lscala/collection/Seq; child() {
-    return this.(Lscala/collection/Seq;)child$u0020;
+    return this.(Lscala/xml/Elem;)child$u0020;
   }
   
   public final Z; doCollectNamespaces() {
@@ -83,11 +83,11 @@ public class Lscala/xml/Elem; extends Lscala/xml/Node; implements Lscala/ScalaOb
   }
   
   public this(Ljava/lang/String; prefix, Ljava/lang/String; label, Lscala/xml/MetaData; attributes, Lscala/xml/NamespaceBinding; scope, Lscala/collection/Seq; child) {
-    this.(Ljava/lang/String;)prefix$u0020 = prefix;
-    this.(Ljava/lang/String;)label$u0020 = label;
-    this.(Lscala/xml/MetaData;)attributes$u0020 = attributes;
-    this.(Lscala/xml/NamespaceBinding;)scope$u0020 = scope;
-    this.(Lscala/collection/Seq;)child$u0020 = child;
+    this.(Lscala/xml/Elem;)prefix$u0020 = prefix;
+    this.(Lscala/xml/Elem;)label$u0020 = label;
+    this.(Lscala/xml/Elem;)attributes$u0020 = attributes;
+    this.(Lscala/xml/Elem;)scope$u0020 = scope;
+    this.(Lscala/xml/Elem;)child$u0020 = child;
     (Lscala/xml/Node;::super()V;)();
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(prefix, ""))
       {

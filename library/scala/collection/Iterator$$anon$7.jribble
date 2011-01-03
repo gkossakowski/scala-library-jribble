@@ -319,15 +319,15 @@ public final class Lscala/collection/Iterator$$anon$7; extends Ljava/lang/Object
   private I; i$u0020;
   
   private I; i() {
-    return this.(I;)i$u0020;
+    return this.(Lscala/collection/Iterator$$anon$7;)i$u0020;
   }
   
   private V; i_$eq(I; x$1) {
-    this.(I;)i$u0020 = x$1;
+    this.(Lscala/collection/Iterator$$anon$7;)i$u0020 = x$1;
   }
   
   public Z; hasNext() {
-    return (this.(Lscala/collection/Iterator$$anon$7;::i()I;)() < this.(I;)len$1);
+    return (this.(Lscala/collection/Iterator$$anon$7;::i()I;)() < this.(Lscala/collection/Iterator$$anon$7;)len$1);
   }
   
   public Ljava/lang/Object; next() {
@@ -335,7 +335,7 @@ public final class Lscala/collection/Iterator$$anon$7; extends Ljava/lang/Object
     if (this.(Lscala/collection/Iterator$$anon$7;::hasNext()Z;)())
       {
         this.(Lscala/collection/Iterator$$anon$7;::i_$eq(I;)V;)((this.(Lscala/collection/Iterator$$anon$7;::i()I;)() + 1));
-        $8$ = this.(Lscala/Function0;)elem$2.(Lscala/Function0;::apply()Ljava/lang/Object;)();
+        $8$ = this.(Lscala/collection/Iterator$$anon$7;)elem$2.(Lscala/Function0;::apply()Ljava/lang/Object;)();
       }
     else
       {
@@ -349,11 +349,11 @@ public final class Lscala/collection/Iterator$$anon$7; extends Ljava/lang/Object
   private Lscala/Function0; elem$2;
   
   public this(I; len$1, Lscala/Function0; elem$2) {
-    this.(I;)len$1 = len$1;
-    this.(Lscala/Function0;)elem$2 = elem$2;
+    this.(Lscala/collection/Iterator$$anon$7;)len$1 = len$1;
+    this.(Lscala/collection/Iterator$$anon$7;)elem$2 = elem$2;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(I;)i$u0020 = 0;
+    this.(Lscala/collection/Iterator$$anon$7;)i$u0020 = 0;
   }
 }

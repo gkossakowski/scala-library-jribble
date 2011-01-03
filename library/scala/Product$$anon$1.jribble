@@ -319,17 +319,17 @@ public final class Lscala/Product$$anon$1; extends Ljava/lang/Object; implements
   private I; c$u0020;
   
   private I; c() {
-    return this.(I;)c$u0020;
+    return this.(Lscala/Product$$anon$1;)c$u0020;
   }
   
   private V; c_$eq(I; x$1) {
-    this.(I;)c$u0020 = x$1;
+    this.(Lscala/Product$$anon$1;)c$u0020 = x$1;
   }
   
   private I; cmax$u0020;
   
   private I; cmax() {
-    return this.(I;)cmax$u0020;
+    return this.(Lscala/Product$$anon$1;)cmax$u0020;
   }
   
   public Z; hasNext() {
@@ -337,7 +337,7 @@ public final class Lscala/Product$$anon$1; extends Ljava/lang/Object; implements
   }
   
   public Ljava/lang/Object; next() {
-    Ljava/lang/Object; result = this.(Lscala/Product;)$outer$u0020.(Lscala/Product;::productElement(I;)Ljava/lang/Object;)(this.(Lscala/Product$$anon$1;::c()I;)());
+    Ljava/lang/Object; result = this.(Lscala/Product$$anon$1;)$outer$u0020.(Lscala/Product;::productElement(I;)Ljava/lang/Object;)(this.(Lscala/Product$$anon$1;::c()I;)());
     this.(Lscala/Product$$anon$1;::c_$eq(I;)V;)((this.(Lscala/Product$$anon$1;::c()I;)() + 1));
     return result;
   }
@@ -351,12 +351,12 @@ public final class Lscala/Product$$anon$1; extends Ljava/lang/Object; implements
       }
     else
       {
-        this.(Lscala/Product;)$outer$u0020 = $outer;
+        this.(Lscala/Product$$anon$1;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(I;)c$u0020 = 0;
-    this.(I;)cmax$u0020 = $outer.(Lscala/Product;::productArity()I;)();
+    this.(Lscala/Product$$anon$1;)c$u0020 = 0;
+    this.(Lscala/Product$$anon$1;)cmax$u0020 = $outer.(Lscala/Product;::productArity()I;)();
   }
 }

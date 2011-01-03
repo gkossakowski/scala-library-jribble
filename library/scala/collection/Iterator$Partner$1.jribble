@@ -317,38 +317,38 @@ public class Lscala/collection/Iterator$Partner$1; extends Ljava/lang/Object; im
   }
   
   public Z; hasNext() {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)((((this != this.(Lscala/runtime/ObjectRef;)ahead$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/Iterator;)) && !(this.(Lscala/collection/mutable/Queue;)gap$1.(Lscala/collection/mutable/MutableList;::isEmpty()Z;)())) || this.(Lscala/collection/Iterator$Partner$1;::scala$collection$Iterator$Partner$$$outer()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::hasNext()Z;)())));
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)((((this != this.(Lscala/collection/Iterator$Partner$1;)ahead$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/Iterator;)) && !(this.(Lscala/collection/Iterator$Partner$1;)gap$1.(Lscala/collection/mutable/MutableList;::isEmpty()Z;)())) || this.(Lscala/collection/Iterator$Partner$1;::scala$collection$Iterator$Partner$$$outer()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::hasNext()Z;)())));
   }
   
   public Ljava/lang/Object; next() {
-    if (this.(Lscala/collection/mutable/Queue;)gap$1.(Lscala/collection/mutable/MutableList;::isEmpty()Z;)())
+    if (this.(Lscala/collection/Iterator$Partner$1;)gap$1.(Lscala/collection/mutable/MutableList;::isEmpty()Z;)())
       {
-        this.(Lscala/runtime/ObjectRef;)ahead$1.(Ljava/lang/Object;)elem = this;
+        this.(Lscala/collection/Iterator$Partner$1;)ahead$1.(Lscala/runtime/ObjectRef;)elem = this;
       }
     else
       {
         
       }
     Ljava/lang/Object; $33$;
-    if ((this == this.(Lscala/runtime/ObjectRef;)ahead$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/Iterator;)))
+    if ((this == this.(Lscala/collection/Iterator$Partner$1;)ahead$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/Iterator;)))
       {
         Ljava/lang/Object; e = this.(Lscala/collection/Iterator$Partner$1;::scala$collection$Iterator$Partner$$$outer()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
-        this.(Lscala/collection/mutable/Queue;)gap$1.(Lscala/collection/mutable/Queue;::enqueue(Lscala/collection/Seq;)V;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{e}));
+        this.(Lscala/collection/Iterator$Partner$1;)gap$1.(Lscala/collection/mutable/Queue;::enqueue(Lscala/collection/Seq;)V;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{e}));
         $33$ = e;
       }
     else
       {
-        $33$ = this.(Lscala/collection/mutable/Queue;)gap$1.(Lscala/collection/mutable/Queue;::dequeue()Ljava/lang/Object;)();
+        $33$ = this.(Lscala/collection/Iterator$Partner$1;)gap$1.(Lscala/collection/mutable/Queue;::dequeue()Ljava/lang/Object;)();
       }
     return $33$;
   }
   
   private Z; compareGap(Lscala/collection/mutable/Queue; queue) {
-    return (this.(Lscala/collection/mutable/Queue;)gap$1 == queue);
+    return (this.(Lscala/collection/Iterator$Partner$1;)gap$1 == queue);
   }
   
   public I; hashCode() {
-    return this.(Lscala/collection/mutable/Queue;)gap$1.(Lscala/collection/SeqLike;::hashCode()I;)();
+    return this.(Lscala/collection/Iterator$Partner$1;)gap$1.(Lscala/collection/SeqLike;::hashCode()I;)();
   }
   
   public Z; equals(Ljava/lang/Object; other) {
@@ -356,7 +356,7 @@ public class Lscala/collection/Iterator$Partner$1; extends Ljava/lang/Object; im
     Z; $34$;
     if (temp1.<instanceof>(Lscala/collection/Iterator$Partner$1;))
       {
-        $34$ = (temp1.<cast>(Lscala/collection/Iterator$Partner$1;).(Lscala/collection/Iterator$Partner$1;::compareGap(Lscala/collection/mutable/Queue;)Z;)(this.(Lscala/collection/mutable/Queue;)gap$1) && this.(Lscala/collection/mutable/Queue;)gap$1.(Lscala/collection/mutable/MutableList;::isEmpty()Z;)());
+        $34$ = (temp1.<cast>(Lscala/collection/Iterator$Partner$1;).(Lscala/collection/Iterator$Partner$1;::compareGap(Lscala/collection/mutable/Queue;)Z;)(this.(Lscala/collection/Iterator$Partner$1;)gap$1) && this.(Lscala/collection/Iterator$Partner$1;)gap$1.(Lscala/collection/mutable/MutableList;::isEmpty()Z;)());
       }
     else
       {
@@ -368,7 +368,7 @@ public class Lscala/collection/Iterator$Partner$1; extends Ljava/lang/Object; im
   protected Lscala/collection/Iterator; $outer$u0020;
   
   public Lscala/collection/Iterator; scala$collection$Iterator$Partner$$$outer() {
-    return this.(Lscala/collection/Iterator;)$outer$u0020;
+    return this.(Lscala/collection/Iterator$Partner$1;)$outer$u0020;
   }
   
   private Lscala/collection/mutable/Queue; gap$1;
@@ -382,10 +382,10 @@ public class Lscala/collection/Iterator$Partner$1; extends Ljava/lang/Object; im
       }
     else
       {
-        this.(Lscala/collection/Iterator;)$outer$u0020 = $outer;
+        this.(Lscala/collection/Iterator$Partner$1;)$outer$u0020 = $outer;
       }
-    this.(Lscala/collection/mutable/Queue;)gap$1 = gap$1;
-    this.(Lscala/runtime/ObjectRef;)ahead$1 = ahead$1;
+    this.(Lscala/collection/Iterator$Partner$1;)gap$1 = gap$1;
+    this.(Lscala/collection/Iterator$Partner$1;)ahead$1 = ahead$1;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);

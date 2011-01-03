@@ -1,73 +1,73 @@
 public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object; implements Lscala/collection/immutable/IndexedSeq;, Lscala/collection/generic/GenericTraversableTemplate;, Lscala/collection/IndexedSeqLike;, Lscala/collection/immutable/VectorPointer;, Lscala/ScalaObject; {
   
   public I; depth() {
-    return this.(I;)depth$u0020;
+    return this.(Lscala/collection/immutable/Vector;)depth$u0020;
   }
   
   private I; depth$u0020;
   
   public V; depth_$eq(I; x$1) {
-    this.(I;)depth$u0020 = x$1;
+    this.(Lscala/collection/immutable/Vector;)depth$u0020 = x$1;
   }
   
   public Ljava/lang/Object;[ display0() {
-    return this.(Ljava/lang/Object;[)display0$u0020;
+    return this.(Lscala/collection/immutable/Vector;)display0$u0020;
   }
   
   private Ljava/lang/Object;[ display0$u0020;
   
   public V; display0_$eq(Ljava/lang/Object;[ x$1) {
-    this.(Ljava/lang/Object;[)display0$u0020 = x$1;
+    this.(Lscala/collection/immutable/Vector;)display0$u0020 = x$1;
   }
   
   public Ljava/lang/Object;[ display1() {
-    return this.(Ljava/lang/Object;[)display1$u0020;
+    return this.(Lscala/collection/immutable/Vector;)display1$u0020;
   }
   
   private Ljava/lang/Object;[ display1$u0020;
   
   public V; display1_$eq(Ljava/lang/Object;[ x$1) {
-    this.(Ljava/lang/Object;[)display1$u0020 = x$1;
+    this.(Lscala/collection/immutable/Vector;)display1$u0020 = x$1;
   }
   
   public Ljava/lang/Object;[ display2() {
-    return this.(Ljava/lang/Object;[)display2$u0020;
+    return this.(Lscala/collection/immutable/Vector;)display2$u0020;
   }
   
   private Ljava/lang/Object;[ display2$u0020;
   
   public V; display2_$eq(Ljava/lang/Object;[ x$1) {
-    this.(Ljava/lang/Object;[)display2$u0020 = x$1;
+    this.(Lscala/collection/immutable/Vector;)display2$u0020 = x$1;
   }
   
   public Ljava/lang/Object;[ display3() {
-    return this.(Ljava/lang/Object;[)display3$u0020;
+    return this.(Lscala/collection/immutable/Vector;)display3$u0020;
   }
   
   private Ljava/lang/Object;[ display3$u0020;
   
   public V; display3_$eq(Ljava/lang/Object;[ x$1) {
-    this.(Ljava/lang/Object;[)display3$u0020 = x$1;
+    this.(Lscala/collection/immutable/Vector;)display3$u0020 = x$1;
   }
   
   public Ljava/lang/Object;[ display4() {
-    return this.(Ljava/lang/Object;[)display4$u0020;
+    return this.(Lscala/collection/immutable/Vector;)display4$u0020;
   }
   
   private Ljava/lang/Object;[ display4$u0020;
   
   public V; display4_$eq(Ljava/lang/Object;[ x$1) {
-    this.(Ljava/lang/Object;[)display4$u0020 = x$1;
+    this.(Lscala/collection/immutable/Vector;)display4$u0020 = x$1;
   }
   
   public Ljava/lang/Object;[ display5() {
-    return this.(Ljava/lang/Object;[)display5$u0020;
+    return this.(Lscala/collection/immutable/Vector;)display5$u0020;
   }
   
   private Ljava/lang/Object;[ display5$u0020;
   
   public V; display5_$eq(Ljava/lang/Object;[ x$1) {
-    this.(Ljava/lang/Object;[)display5$u0020 = x$1;
+    this.(Lscala/collection/immutable/Vector;)display5$u0020 = x$1;
   }
   
   public final V; initFrom(Lscala/collection/immutable/VectorPointer; that) {
@@ -651,15 +651,15 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
   private Z; dirty$u0020;
   
   public Z; dirty() {
-    return this.(Z;)dirty$u0020;
+    return this.(Lscala/collection/immutable/Vector;)dirty$u0020;
   }
   
   public V; dirty_$eq(Z; x$1) {
-    this.(Z;)dirty$u0020 = x$1;
+    this.(Lscala/collection/immutable/Vector;)dirty$u0020 = x$1;
   }
   
   public I; length() {
-    return (this.(I;)endIndex - this.(I;)startIndex);
+    return (this.(Lscala/collection/immutable/Vector;)endIndex - this.(Lscala/collection/immutable/Vector;)startIndex);
   }
   
   public I; lengthCompare(I; len) {
@@ -667,11 +667,11 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
   }
   
   public Lscala/collection/immutable/VectorIterator; iterator() {
-    Lscala/collection/immutable/VectorIterator; s = (new (Lscala/collection/immutable/VectorIterator;::this(I;I;)V;)(this.(I;)startIndex, this.(I;)endIndex));
+    Lscala/collection/immutable/VectorIterator; s = (new (Lscala/collection/immutable/VectorIterator;::this(I;I;)V;)(this.(Lscala/collection/immutable/Vector;)startIndex, this.(Lscala/collection/immutable/Vector;)endIndex));
     s.(Lscala/collection/immutable/VectorPointer;::initFrom(Lscala/collection/immutable/VectorPointer;)V;)(this);
     if (this.(Lscala/collection/immutable/Vector;::dirty()Z;)())
       {
-        s.(Lscala/collection/immutable/VectorPointer;::stabilize(I;)V;)(this.(I;)focus);
+        s.(Lscala/collection/immutable/VectorPointer;::stabilize(I;)V;)(this.(Lscala/collection/immutable/Vector;)focus);
       }
     else
       {
@@ -679,7 +679,7 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
       }
     if ((s.(Lscala/collection/immutable/VectorPointer;::depth()I;)() > 1))
       {
-        s.(Lscala/collection/immutable/VectorPointer;::gotoPos(I;I;)V;)(this.(I;)startIndex, (this.(I;)startIndex ^ this.(I;)focus));
+        s.(Lscala/collection/immutable/VectorPointer;::gotoPos(I;I;)V;)(this.(Lscala/collection/immutable/Vector;)startIndex, (this.(Lscala/collection/immutable/Vector;)startIndex ^ this.(Lscala/collection/immutable/Vector;)focus));
       }
     else
       {
@@ -704,13 +704,13 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
   
   public Ljava/lang/Object; apply(I; index) {
     I; idx = this.(Lscala/collection/immutable/Vector;::checkRangeConvert(I;)I;)(index);
-    return this.(Lscala/collection/immutable/VectorPointer;::getElem(I;I;)Ljava/lang/Object;)(idx, (idx ^ this.(I;)focus));
+    return this.(Lscala/collection/immutable/VectorPointer;::getElem(I;I;)Ljava/lang/Object;)(idx, (idx ^ this.(Lscala/collection/immutable/Vector;)focus));
   }
   
   private I; checkRangeConvert(I; index) {
-    I; idx = (index + this.(I;)startIndex);
+    I; idx = (index + this.(Lscala/collection/immutable/Vector;)startIndex);
     I; $1$;
-    if (((0 <= index) && (idx < this.(I;)endIndex)))
+    if (((0 <= index) && (idx < this.(Lscala/collection/immutable/Vector;)endIndex)))
       {
         $1$ = idx;
       }
@@ -742,9 +742,9 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
     else
       {
         Lscala/collection/immutable/Vector; $3$;
-        if (((this.(I;)startIndex + n) < this.(I;)endIndex))
+        if (((this.(Lscala/collection/immutable/Vector;)startIndex + n) < this.(Lscala/collection/immutable/Vector;)endIndex))
           {
-            $3$ = this.(Lscala/collection/immutable/Vector;::dropBack0(I;)Lscala/collection/immutable/Vector;)((this.(I;)startIndex + n));
+            $3$ = this.(Lscala/collection/immutable/Vector;::dropBack0(I;)Lscala/collection/immutable/Vector;)((this.(Lscala/collection/immutable/Vector;)startIndex + n));
           }
         else
           {
@@ -764,9 +764,9 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
     else
       {
         Lscala/collection/immutable/Vector; $5$;
-        if (((this.(I;)startIndex + n) < this.(I;)endIndex))
+        if (((this.(Lscala/collection/immutable/Vector;)startIndex + n) < this.(Lscala/collection/immutable/Vector;)endIndex))
           {
-            $5$ = this.(Lscala/collection/immutable/Vector;::dropFront0(I;)Lscala/collection/immutable/Vector;)((this.(I;)startIndex + n));
+            $5$ = this.(Lscala/collection/immutable/Vector;::dropFront0(I;)Lscala/collection/immutable/Vector;)((this.(Lscala/collection/immutable/Vector;)startIndex + n));
           }
         else
           {
@@ -786,9 +786,9 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
     else
       {
         Lscala/collection/immutable/Vector; $7$;
-        if (((this.(I;)endIndex - n) > this.(I;)startIndex))
+        if (((this.(Lscala/collection/immutable/Vector;)endIndex - n) > this.(Lscala/collection/immutable/Vector;)startIndex))
           {
-            $7$ = this.(Lscala/collection/immutable/Vector;::dropFront0(I;)Lscala/collection/immutable/Vector;)((this.(I;)endIndex - n));
+            $7$ = this.(Lscala/collection/immutable/Vector;::dropFront0(I;)Lscala/collection/immutable/Vector;)((this.(Lscala/collection/immutable/Vector;)endIndex - n));
           }
         else
           {
@@ -808,9 +808,9 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
     else
       {
         Lscala/collection/immutable/Vector; $9$;
-        if (((this.(I;)endIndex - n) > this.(I;)startIndex))
+        if (((this.(Lscala/collection/immutable/Vector;)endIndex - n) > this.(Lscala/collection/immutable/Vector;)startIndex))
           {
-            $9$ = this.(Lscala/collection/immutable/Vector;::dropBack0(I;)Lscala/collection/immutable/Vector;)((this.(I;)endIndex - n));
+            $9$ = this.(Lscala/collection/immutable/Vector;::dropBack0(I;)Lscala/collection/immutable/Vector;)((this.(Lscala/collection/immutable/Vector;)endIndex - n));
           }
         else
           {
@@ -879,10 +879,10 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
   
   public Lscala/collection/immutable/Vector; updateAt(I; index, Ljava/lang/Object; elem) {
     I; idx = this.(Lscala/collection/immutable/Vector;::checkRangeConvert(I;)I;)(index);
-    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)(this.(I;)startIndex, this.(I;)endIndex, idx));
+    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)(this.(Lscala/collection/immutable/Vector;)startIndex, this.(Lscala/collection/immutable/Vector;)endIndex, idx));
     s.(Lscala/collection/immutable/VectorPointer;::initFrom(Lscala/collection/immutable/VectorPointer;)V;)(this);
     s.(Lscala/collection/immutable/Vector;::dirty_$eq(Z;)V;)(this.(Lscala/collection/immutable/Vector;::dirty()Z;)());
-    s.(Lscala/collection/immutable/Vector;::gotoPosWritable(I;I;I;)V;)(this.(I;)focus, idx, (this.(I;)focus ^ idx));
+    s.(Lscala/collection/immutable/Vector;::gotoPosWritable(I;I;I;)V;)(this.(Lscala/collection/immutable/Vector;)focus, idx, (this.(Lscala/collection/immutable/Vector;)focus ^ idx));
     s.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)()[(idx & 31)] = elem;
     return s;
   }
@@ -913,23 +913,23 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
   
   public Lscala/collection/immutable/Vector; appendFront(Ljava/lang/Object; value) {
     Lscala/collection/immutable/Vector; $10$;
-    if ((this.(I;)endIndex != this.(I;)startIndex))
+    if ((this.(Lscala/collection/immutable/Vector;)endIndex != this.(Lscala/collection/immutable/Vector;)startIndex))
       {
-        I; blockIndex = ((this.(I;)startIndex - 1) & ~(31));
-        I; lo = ((this.(I;)startIndex - 1) & 31);
+        I; blockIndex = ((this.(Lscala/collection/immutable/Vector;)startIndex - 1) & ~(31));
+        I; lo = ((this.(Lscala/collection/immutable/Vector;)startIndex - 1) & 31);
         Lscala/collection/immutable/Vector; $11$;
-        if ((this.(I;)startIndex != (blockIndex + 32)))
+        if ((this.(Lscala/collection/immutable/Vector;)startIndex != (blockIndex + 32)))
           {
-            Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)((this.(I;)startIndex - 1), this.(I;)endIndex, blockIndex));
+            Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)((this.(Lscala/collection/immutable/Vector;)startIndex - 1), this.(Lscala/collection/immutable/Vector;)endIndex, blockIndex));
             s.(Lscala/collection/immutable/VectorPointer;::initFrom(Lscala/collection/immutable/VectorPointer;)V;)(this);
             s.(Lscala/collection/immutable/Vector;::dirty_$eq(Z;)V;)(this.(Lscala/collection/immutable/Vector;::dirty()Z;)());
-            s.(Lscala/collection/immutable/Vector;::gotoPosWritable(I;I;I;)V;)(this.(I;)focus, blockIndex, (this.(I;)focus ^ blockIndex));
+            s.(Lscala/collection/immutable/Vector;::gotoPosWritable(I;I;I;)V;)(this.(Lscala/collection/immutable/Vector;)focus, blockIndex, (this.(Lscala/collection/immutable/Vector;)focus ^ blockIndex));
             s.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)()[lo] = value;
             $11$ = s;
           }
         else
           {
-            I; freeSpace = ((1 << (5 * this.(Lscala/collection/immutable/VectorPointer;::depth()I;)())) - this.(I;)endIndex);
+            I; freeSpace = ((1 << (5 * this.(Lscala/collection/immutable/VectorPointer;::depth()I;)())) - this.(Lscala/collection/immutable/Vector;)endIndex);
             I; shift = (freeSpace & ~(((1 << (5 * (this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() - 1))) - 1)));
             I; shiftBlocks = (freeSpace >> (5 * (this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() - 1)));
             Lscala/collection/immutable/Vector; $12$;
@@ -940,8 +940,8 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
                 if ((this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() > 1))
                   {
                     I; newBlockIndex = (blockIndex + shift);
-                    I; newFocus = (this.(I;)focus + shift);
-                    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)(((this.(I;)startIndex - 1) + shift), (this.(I;)endIndex + shift), newBlockIndex));
+                    I; newFocus = (this.(Lscala/collection/immutable/Vector;)focus + shift);
+                    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)(((this.(Lscala/collection/immutable/Vector;)startIndex - 1) + shift), (this.(Lscala/collection/immutable/Vector;)endIndex + shift), newBlockIndex));
                     s.(Lscala/collection/immutable/VectorPointer;::initFrom(Lscala/collection/immutable/VectorPointer;)V;)(this);
                     s.(Lscala/collection/immutable/Vector;::dirty_$eq(Z;)V;)(this.(Lscala/collection/immutable/Vector;::dirty()Z;)());
                     s.(Lscala/collection/immutable/Vector;::shiftTopLevel(I;I;)V;)(0, shiftBlocks);
@@ -953,8 +953,8 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
                 else
                   {
                     I; newBlockIndex = (blockIndex + 32);
-                    I; newFocus = this.(I;)focus;
-                    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)(((this.(I;)startIndex - 1) + shift), (this.(I;)endIndex + shift), newBlockIndex));
+                    I; newFocus = this.(Lscala/collection/immutable/Vector;)focus;
+                    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)(((this.(Lscala/collection/immutable/Vector;)startIndex - 1) + shift), (this.(Lscala/collection/immutable/Vector;)endIndex + shift), newBlockIndex));
                     s.(Lscala/collection/immutable/VectorPointer;::initFrom(Lscala/collection/immutable/VectorPointer;)V;)(this);
                     s.(Lscala/collection/immutable/Vector;::dirty_$eq(Z;)V;)(this.(Lscala/collection/immutable/Vector;::dirty()Z;)());
                     s.(Lscala/collection/immutable/Vector;::shiftTopLevel(I;I;)V;)(0, shiftBlocks);
@@ -972,8 +972,8 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
                   {
                     I; move = ((1 << (5 * (this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() + 1))) - (1 << (5 * this.(Lscala/collection/immutable/VectorPointer;::depth()I;)())));
                     I; newBlockIndex = (blockIndex + move);
-                    I; newFocus = (this.(I;)focus + move);
-                    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)(((this.(I;)startIndex - 1) + move), (this.(I;)endIndex + move), newBlockIndex));
+                    I; newFocus = (this.(Lscala/collection/immutable/Vector;)focus + move);
+                    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)(((this.(Lscala/collection/immutable/Vector;)startIndex - 1) + move), (this.(Lscala/collection/immutable/Vector;)endIndex + move), newBlockIndex));
                     s.(Lscala/collection/immutable/VectorPointer;::initFrom(Lscala/collection/immutable/VectorPointer;)V;)(this);
                     s.(Lscala/collection/immutable/Vector;::dirty_$eq(Z;)V;)(this.(Lscala/collection/immutable/Vector;::dirty()Z;)());
                     s.(Lscala/collection/immutable/VectorPointer;::debug()V;)();
@@ -985,8 +985,8 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
                 else
                   {
                     I; newBlockIndex = blockIndex;
-                    I; newFocus = this.(I;)focus;
-                    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)((this.(I;)startIndex - 1), this.(I;)endIndex, newBlockIndex));
+                    I; newFocus = this.(Lscala/collection/immutable/Vector;)focus;
+                    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)((this.(Lscala/collection/immutable/Vector;)startIndex - 1), this.(Lscala/collection/immutable/Vector;)endIndex, newBlockIndex));
                     s.(Lscala/collection/immutable/VectorPointer;::initFrom(Lscala/collection/immutable/VectorPointer;)V;)(this);
                     s.(Lscala/collection/immutable/Vector;::dirty_$eq(Z;)V;)(this.(Lscala/collection/immutable/Vector;::dirty()Z;)());
                     s.(Lscala/collection/immutable/Vector;::gotoFreshPosWritable(I;I;I;)V;)(newFocus, newBlockIndex, (newFocus ^ newBlockIndex));
@@ -1013,24 +1013,24 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
   
   public Lscala/collection/immutable/Vector; appendBack(Ljava/lang/Object; value) {
     Lscala/collection/immutable/Vector; $15$;
-    if ((this.(I;)endIndex != this.(I;)startIndex))
+    if ((this.(Lscala/collection/immutable/Vector;)endIndex != this.(Lscala/collection/immutable/Vector;)startIndex))
       {
-        I; blockIndex = (this.(I;)endIndex & ~(31));
-        I; lo = (this.(I;)endIndex & 31);
+        I; blockIndex = (this.(Lscala/collection/immutable/Vector;)endIndex & ~(31));
+        I; lo = (this.(Lscala/collection/immutable/Vector;)endIndex & 31);
         Lscala/collection/immutable/Vector; $16$;
-        if ((this.(I;)endIndex != blockIndex))
+        if ((this.(Lscala/collection/immutable/Vector;)endIndex != blockIndex))
           {
-            Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)(this.(I;)startIndex, (this.(I;)endIndex + 1), blockIndex));
+            Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)(this.(Lscala/collection/immutable/Vector;)startIndex, (this.(Lscala/collection/immutable/Vector;)endIndex + 1), blockIndex));
             s.(Lscala/collection/immutable/VectorPointer;::initFrom(Lscala/collection/immutable/VectorPointer;)V;)(this);
             s.(Lscala/collection/immutable/Vector;::dirty_$eq(Z;)V;)(this.(Lscala/collection/immutable/Vector;::dirty()Z;)());
-            s.(Lscala/collection/immutable/Vector;::gotoPosWritable(I;I;I;)V;)(this.(I;)focus, blockIndex, (this.(I;)focus ^ blockIndex));
+            s.(Lscala/collection/immutable/Vector;::gotoPosWritable(I;I;I;)V;)(this.(Lscala/collection/immutable/Vector;)focus, blockIndex, (this.(Lscala/collection/immutable/Vector;)focus ^ blockIndex));
             s.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)()[lo] = value;
             $16$ = s;
           }
         else
           {
-            I; shift = (this.(I;)startIndex & ~(((1 << (5 * (this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() - 1))) - 1)));
-            I; shiftBlocks = (this.(I;)startIndex >> (5 * (this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() - 1)));
+            I; shift = (this.(Lscala/collection/immutable/Vector;)startIndex & ~(((1 << (5 * (this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() - 1))) - 1)));
+            I; shiftBlocks = (this.(Lscala/collection/immutable/Vector;)startIndex >> (5 * (this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() - 1)));
             Lscala/collection/immutable/Vector; $17$;
             if ((shift != 0))
               {
@@ -1039,8 +1039,8 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
                 if ((this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() > 1))
                   {
                     I; newBlockIndex = (blockIndex - shift);
-                    I; newFocus = (this.(I;)focus - shift);
-                    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)((this.(I;)startIndex - shift), ((this.(I;)endIndex + 1) - shift), newBlockIndex));
+                    I; newFocus = (this.(Lscala/collection/immutable/Vector;)focus - shift);
+                    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)((this.(Lscala/collection/immutable/Vector;)startIndex - shift), ((this.(Lscala/collection/immutable/Vector;)endIndex + 1) - shift), newBlockIndex));
                     s.(Lscala/collection/immutable/VectorPointer;::initFrom(Lscala/collection/immutable/VectorPointer;)V;)(this);
                     s.(Lscala/collection/immutable/Vector;::dirty_$eq(Z;)V;)(this.(Lscala/collection/immutable/Vector;::dirty()Z;)());
                     s.(Lscala/collection/immutable/Vector;::shiftTopLevel(I;I;)V;)(shiftBlocks, 0);
@@ -1053,8 +1053,8 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
                 else
                   {
                     I; newBlockIndex = (blockIndex - 32);
-                    I; newFocus = this.(I;)focus;
-                    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)((this.(I;)startIndex - shift), ((this.(I;)endIndex + 1) - shift), newBlockIndex));
+                    I; newFocus = this.(Lscala/collection/immutable/Vector;)focus;
+                    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)((this.(Lscala/collection/immutable/Vector;)startIndex - shift), ((this.(Lscala/collection/immutable/Vector;)endIndex + 1) - shift), newBlockIndex));
                     s.(Lscala/collection/immutable/VectorPointer;::initFrom(Lscala/collection/immutable/VectorPointer;)V;)(this);
                     s.(Lscala/collection/immutable/Vector;::dirty_$eq(Z;)V;)(this.(Lscala/collection/immutable/Vector;::dirty()Z;)());
                     s.(Lscala/collection/immutable/Vector;::shiftTopLevel(I;I;)V;)(shiftBlocks, 0);
@@ -1068,8 +1068,8 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
             else
               {
                 I; newBlockIndex = blockIndex;
-                I; newFocus = this.(I;)focus;
-                Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)(this.(I;)startIndex, (this.(I;)endIndex + 1), newBlockIndex));
+                I; newFocus = this.(Lscala/collection/immutable/Vector;)focus;
+                Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)(this.(Lscala/collection/immutable/Vector;)startIndex, (this.(Lscala/collection/immutable/Vector;)endIndex + 1), newBlockIndex));
                 s.(Lscala/collection/immutable/VectorPointer;::initFrom(Lscala/collection/immutable/VectorPointer;)V;)(this);
                 s.(Lscala/collection/immutable/Vector;::dirty_$eq(Z;)V;)(this.(Lscala/collection/immutable/Vector;::dirty()Z;)());
                 s.(Lscala/collection/immutable/Vector;::gotoFreshPosWritable(I;I;I;)V;)(newFocus, newBlockIndex, (newFocus ^ newBlockIndex));
@@ -1426,13 +1426,13 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
   private Lscala/collection/immutable/Vector; dropFront0(I; cutIndex) {
     I; blockIndex = (cutIndex & ~(31));
     I; lo = (cutIndex & 31);
-    I; xor = (cutIndex ^ (this.(I;)endIndex - 1));
+    I; xor = (cutIndex ^ (this.(Lscala/collection/immutable/Vector;)endIndex - 1));
     I; d = this.(Lscala/collection/immutable/Vector;::requiredDepth(I;)I;)(xor);
     I; shift = (cutIndex & ~(((1 << (5 * d)) - 1)));
-    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)((cutIndex - shift), (this.(I;)endIndex - shift), (blockIndex - shift)));
+    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)((cutIndex - shift), (this.(Lscala/collection/immutable/Vector;)endIndex - shift), (blockIndex - shift)));
     s.(Lscala/collection/immutable/VectorPointer;::initFrom(Lscala/collection/immutable/VectorPointer;)V;)(this);
     s.(Lscala/collection/immutable/Vector;::dirty_$eq(Z;)V;)(this.(Lscala/collection/immutable/Vector;::dirty()Z;)());
-    s.(Lscala/collection/immutable/Vector;::gotoPosWritable(I;I;I;)V;)(this.(I;)focus, blockIndex, (this.(I;)focus ^ blockIndex));
+    s.(Lscala/collection/immutable/Vector;::gotoPosWritable(I;I;I;)V;)(this.(Lscala/collection/immutable/Vector;)focus, blockIndex, (this.(Lscala/collection/immutable/Vector;)focus ^ blockIndex));
     s.(Lscala/collection/immutable/Vector;::preClean(I;)V;)(d);
     s.(Lscala/collection/immutable/Vector;::cleanLeftEdge(I;)V;)((cutIndex - shift));
     return s;
@@ -1441,13 +1441,13 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
   private Lscala/collection/immutable/Vector; dropBack0(I; cutIndex) {
     I; blockIndex = ((cutIndex - 1) & ~(31));
     I; lo = (((cutIndex - 1) & 31) + 1);
-    I; xor = (this.(I;)startIndex ^ (cutIndex - 1));
+    I; xor = (this.(Lscala/collection/immutable/Vector;)startIndex ^ (cutIndex - 1));
     I; d = this.(Lscala/collection/immutable/Vector;::requiredDepth(I;)I;)(xor);
-    I; shift = (this.(I;)startIndex & ~(((1 << (5 * d)) - 1)));
-    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)((this.(I;)startIndex - shift), (cutIndex - shift), (blockIndex - shift)));
+    I; shift = (this.(Lscala/collection/immutable/Vector;)startIndex & ~(((1 << (5 * d)) - 1)));
+    Lscala/collection/immutable/Vector; s = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)((this.(Lscala/collection/immutable/Vector;)startIndex - shift), (cutIndex - shift), (blockIndex - shift)));
     s.(Lscala/collection/immutable/VectorPointer;::initFrom(Lscala/collection/immutable/VectorPointer;)V;)(this);
     s.(Lscala/collection/immutable/Vector;::dirty_$eq(Z;)V;)(this.(Lscala/collection/immutable/Vector;::dirty()Z;)());
-    s.(Lscala/collection/immutable/Vector;::gotoPosWritable(I;I;I;)V;)(this.(I;)focus, blockIndex, (this.(I;)focus ^ blockIndex));
+    s.(Lscala/collection/immutable/Vector;::gotoPosWritable(I;I;I;)V;)(this.(Lscala/collection/immutable/Vector;)focus, blockIndex, (this.(Lscala/collection/immutable/Vector;)focus ^ blockIndex));
     s.(Lscala/collection/immutable/Vector;::preClean(I;)V;)(d);
     s.(Lscala/collection/immutable/Vector;::cleanRightEdge(I;)V;)((cutIndex - shift));
     return s;
@@ -1542,9 +1542,9 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
   }
   
   public this(I; startIndex, I; endIndex, I; focus) {
-    this.(I;)startIndex = startIndex;
-    this.(I;)endIndex = endIndex;
-    this.(I;)focus = focus;
+    this.(Lscala/collection/immutable/Vector;)startIndex = startIndex;
+    this.(Lscala/collection/immutable/Vector;)endIndex = endIndex;
+    this.(Lscala/collection/immutable/Vector;)focus = focus;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$init$(Lscala/collection/TraversableLike;)V;)(this);
@@ -1563,6 +1563,6 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
     Lscala/collection/IndexedSeq$class;.(Lscala/collection/IndexedSeq$class;::$init$(Lscala/collection/IndexedSeq;)V;)(this);
     Lscala/collection/immutable/IndexedSeq$class;.(Lscala/collection/immutable/IndexedSeq$class;::$init$(Lscala/collection/immutable/IndexedSeq;)V;)(this);
     Lscala/collection/immutable/VectorPointer$class;.(Lscala/collection/immutable/VectorPointer$class;::$init$(Lscala/collection/immutable/VectorPointer;)V;)(this);
-    this.(Z;)dirty$u0020 = false;
+    this.(Lscala/collection/immutable/Vector;)dirty$u0020 = false;
   }
 }

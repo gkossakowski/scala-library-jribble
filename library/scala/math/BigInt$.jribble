@@ -4,31 +4,31 @@ public final class Lscala/math/BigInt$; extends Ljava/lang/Object; implements Ls
   private I; minCached$u0020;
   
   private I; minCached() {
-    return this.(I;)minCached$u0020;
+    return this.(Lscala/math/BigInt$;)minCached$u0020;
   }
   
   private I; maxCached$u0020;
   
   private I; maxCached() {
-    return this.(I;)maxCached$u0020;
+    return this.(Lscala/math/BigInt$;)maxCached$u0020;
   }
   
   private Lscala/math/BigInt;[ cache$u0020;
   
   private Lscala/math/BigInt;[ cache() {
-    return this.(Lscala/math/BigInt;[)cache$u0020;
+    return this.(Lscala/math/BigInt$;)cache$u0020;
   }
   
   private Lscala/math/BigInt; MinLong$u0020;
   
   public Lscala/math/BigInt; MinLong() {
-    return this.(Lscala/math/BigInt;)MinLong$u0020;
+    return this.(Lscala/math/BigInt$;)MinLong$u0020;
   }
   
   private Lscala/math/BigInt; MaxLong$u0020;
   
   public Lscala/math/BigInt; MaxLong() {
-    return this.(Lscala/math/BigInt;)MaxLong$u0020;
+    return this.(Lscala/math/BigInt$;)MaxLong$u0020;
   }
   
   public Lscala/math/BigInt; apply(I; i) {
@@ -106,10 +106,10 @@ public final class Lscala/math/BigInt$; extends Ljava/lang/Object; implements Ls
   
   public this() {
     (Ljava/lang/Object;::super()V;)();
-    this.(I;)minCached$u0020 = -1024;
-    this.(I;)maxCached$u0020 = 1024;
-    this.(Lscala/math/BigInt;[)cache$u0020 = new Lscala/math/BigInt;[((this.(Lscala/math/BigInt$;::maxCached()I;)() - this.(Lscala/math/BigInt$;::minCached()I;)()) + 1)];
-    this.(Lscala/math/BigInt;)MinLong$u0020 = Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::apply(J;)Lscala/math/BigInt;)(-9223372036854775808L);
-    this.(Lscala/math/BigInt;)MaxLong$u0020 = Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::apply(J;)Lscala/math/BigInt;)(9223372036854775807L);
+    this.(Lscala/math/BigInt$;)minCached$u0020 = -1024;
+    this.(Lscala/math/BigInt$;)maxCached$u0020 = 1024;
+    this.(Lscala/math/BigInt$;)cache$u0020 = new Lscala/math/BigInt;[((this.(Lscala/math/BigInt$;::maxCached()I;)() - this.(Lscala/math/BigInt$;::minCached()I;)()) + 1)];
+    this.(Lscala/math/BigInt$;)MinLong$u0020 = Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::apply(J;)Lscala/math/BigInt;)(-9223372036854775808L);
+    this.(Lscala/math/BigInt$;)MaxLong$u0020 = Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::apply(J;)Lscala/math/BigInt;)(9223372036854775807L);
   }
 }

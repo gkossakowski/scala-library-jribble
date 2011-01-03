@@ -65,27 +65,27 @@ public final class Lscala/reflect/Manifest$$anon$17; extends Ljava/lang/Object; 
   }
   
   public Ljava/lang/Class; erasure() {
-    return this.(Lscala/reflect/Manifest;)upperBound$1.(Lscala/reflect/ClassManifest;::erasure()Ljava/lang/Class;)();
+    return this.(Lscala/reflect/Manifest$$anon$17;)upperBound$1.(Lscala/reflect/ClassManifest;::erasure()Ljava/lang/Class;)();
   }
   
   public Ljava/lang/String; toString() {
     Ljava/lang/Object; $7$;
-    if ((this.(Lscala/reflect/Manifest;)lowerBound$1 == this.(Lscala/reflect/Manifest$;::Nothing()Lscala/reflect/Manifest;)()))
+    if ((this.(Lscala/reflect/Manifest$$anon$17;)lowerBound$1 == this.(Lscala/reflect/Manifest$;::Nothing()Lscala/reflect/Manifest;)()))
       {
         $7$ = "";
       }
     else
       {
-        $7$ = (" >: " + this.(Lscala/reflect/Manifest;)lowerBound$1);
+        $7$ = (" >: " + this.(Lscala/reflect/Manifest$$anon$17;)lowerBound$1);
       }
     Ljava/lang/Object; $8$;
-    if ((this.(Lscala/reflect/Manifest;)upperBound$1 == this.(Lscala/reflect/Manifest$;::Nothing()Lscala/reflect/Manifest;)()))
+    if ((this.(Lscala/reflect/Manifest$$anon$17;)upperBound$1 == this.(Lscala/reflect/Manifest$;::Nothing()Lscala/reflect/Manifest;)()))
       {
         $8$ = "";
       }
     else
       {
-        $8$ = (" <: " + this.(Lscala/reflect/Manifest;)upperBound$1);
+        $8$ = (" <: " + this.(Lscala/reflect/Manifest$$anon$17;)upperBound$1);
       }
     return (("_" + $7$) + $8$);
   }
@@ -99,8 +99,8 @@ public final class Lscala/reflect/Manifest$$anon$17; extends Ljava/lang/Object; 
   private Lscala/reflect/Manifest; upperBound$1;
   
   public this(Lscala/reflect/Manifest; lowerBound$1, Lscala/reflect/Manifest; upperBound$1) {
-    this.(Lscala/reflect/Manifest;)lowerBound$1 = lowerBound$1;
-    this.(Lscala/reflect/Manifest;)upperBound$1 = upperBound$1;
+    this.(Lscala/reflect/Manifest$$anon$17;)lowerBound$1 = lowerBound$1;
+    this.(Lscala/reflect/Manifest$$anon$17;)upperBound$1 = upperBound$1;
     (Ljava/lang/Object;::super()V;)();
     Lscala/reflect/ClassManifest$class;.(Lscala/reflect/ClassManifest$class;::$init$(Lscala/reflect/ClassManifest;)V;)(this);
     Lscala/reflect/Manifest$class;.(Lscala/reflect/Manifest$class;::$init$(Lscala/reflect/Manifest;)V;)(this);

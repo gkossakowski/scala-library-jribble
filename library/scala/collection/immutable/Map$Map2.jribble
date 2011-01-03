@@ -498,16 +498,16 @@ public class Lscala/collection/immutable/Map$Map2; extends Ljava/lang/Object; im
   
   public Lscala/Option; get(Ljava/lang/Object; key) {
     Lscala/Option; $4$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, this.(Ljava/lang/Object;)key1))
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, this.(Lscala/collection/immutable/Map$Map2;)key1))
       {
-        $4$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(this.(Ljava/lang/Object;)value1));
+        $4$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/Map$Map2;)value1));
       }
     else
       {
         Lscala/Option; $5$;
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, this.(Ljava/lang/Object;)key2))
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, this.(Lscala/collection/immutable/Map$Map2;)key2))
           {
-            $5$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(this.(Ljava/lang/Object;)value2));
+            $5$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/Map$Map2;)value2));
           }
         else
           {
@@ -519,25 +519,25 @@ public class Lscala/collection/immutable/Map$Map2; extends Ljava/lang/Object; im
   }
   
   public Lscala/collection/Iterator; iterator() {
-    return Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::apply(Lscala/collection/Seq;)Lscala/collection/Iterator;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/Tuple2;>{(new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Ljava/lang/Object;)key1, this.(Ljava/lang/Object;)value1)), (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Ljava/lang/Object;)key2, this.(Ljava/lang/Object;)value2))}.<cast>(Ljava/lang/Object;[)));
+    return Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::apply(Lscala/collection/Seq;)Lscala/collection/Iterator;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/Tuple2;>{(new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/Map$Map2;)key1, this.(Lscala/collection/immutable/Map$Map2;)value1)), (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/Map$Map2;)key2, this.(Lscala/collection/immutable/Map$Map2;)value2))}.<cast>(Ljava/lang/Object;[)));
   }
   
   public Lscala/collection/immutable/Map; updated(Ljava/lang/Object; key, Ljava/lang/Object; value) {
     Lscala/collection/immutable/Map; $6$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, this.(Ljava/lang/Object;)key1))
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, this.(Lscala/collection/immutable/Map$Map2;)key1))
       {
-        $6$ = (new (Lscala/collection/immutable/Map$Map2;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Ljava/lang/Object;)key1, value, this.(Ljava/lang/Object;)key2, this.(Ljava/lang/Object;)value2));
+        $6$ = (new (Lscala/collection/immutable/Map$Map2;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/Map$Map2;)key1, value, this.(Lscala/collection/immutable/Map$Map2;)key2, this.(Lscala/collection/immutable/Map$Map2;)value2));
       }
     else
       {
         Lscala/collection/immutable/Map; $7$;
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, this.(Ljava/lang/Object;)key2))
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, this.(Lscala/collection/immutable/Map$Map2;)key2))
           {
-            $7$ = (new (Lscala/collection/immutable/Map$Map2;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Ljava/lang/Object;)key1, this.(Ljava/lang/Object;)value1, this.(Ljava/lang/Object;)key2, value));
+            $7$ = (new (Lscala/collection/immutable/Map$Map2;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/Map$Map2;)key1, this.(Lscala/collection/immutable/Map$Map2;)value1, this.(Lscala/collection/immutable/Map$Map2;)key2, value));
           }
         else
           {
-            $7$ = (new (Lscala/collection/immutable/Map$Map3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Ljava/lang/Object;)key1, this.(Ljava/lang/Object;)value1, this.(Ljava/lang/Object;)key2, this.(Ljava/lang/Object;)value2, key, value));
+            $7$ = (new (Lscala/collection/immutable/Map$Map3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/Map$Map2;)key1, this.(Lscala/collection/immutable/Map$Map2;)value1, this.(Lscala/collection/immutable/Map$Map2;)key2, this.(Lscala/collection/immutable/Map$Map2;)value2, key, value));
           }
         $6$ = $7$;
       }
@@ -550,16 +550,16 @@ public class Lscala/collection/immutable/Map$Map2; extends Ljava/lang/Object; im
   
   public Lscala/collection/immutable/Map; $minus(Ljava/lang/Object; key) {
     Lscala/collection/immutable/Map; $8$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, this.(Ljava/lang/Object;)key1))
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, this.(Lscala/collection/immutable/Map$Map2;)key1))
       {
-        $8$ = (new (Lscala/collection/immutable/Map$Map1;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Ljava/lang/Object;)key2, this.(Ljava/lang/Object;)value2));
+        $8$ = (new (Lscala/collection/immutable/Map$Map1;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/Map$Map2;)key2, this.(Lscala/collection/immutable/Map$Map2;)value2));
       }
     else
       {
         Lscala/collection/immutable/Map; $9$;
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, this.(Ljava/lang/Object;)key2))
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, this.(Lscala/collection/immutable/Map$Map2;)key2))
           {
-            $9$ = (new (Lscala/collection/immutable/Map$Map1;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Ljava/lang/Object;)key1, this.(Ljava/lang/Object;)value1));
+            $9$ = (new (Lscala/collection/immutable/Map$Map1;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/Map$Map2;)key1, this.(Lscala/collection/immutable/Map$Map2;)value1));
           }
         else
           {
@@ -571,8 +571,8 @@ public class Lscala/collection/immutable/Map$Map2; extends Ljava/lang/Object; im
   }
   
   public V; foreach(Lscala/Function1; f) {
-    f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Ljava/lang/Object;)key1, this.(Ljava/lang/Object;)value1)));
-    f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Ljava/lang/Object;)key2, this.(Ljava/lang/Object;)value2)));
+    f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/Map$Map2;)key1, this.(Lscala/collection/immutable/Map$Map2;)value1)));
+    f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/Map$Map2;)key2, this.(Lscala/collection/immutable/Map$Map2;)value2)));
   }
   
   public Lscala/collection/generic/Subtractable; repr() {
@@ -640,10 +640,10 @@ public class Lscala/collection/immutable/Map$Map2; extends Ljava/lang/Object; im
   }
   
   public this(Ljava/lang/Object; key1, Ljava/lang/Object; value1, Ljava/lang/Object; key2, Ljava/lang/Object; value2) {
-    this.(Ljava/lang/Object;)key1 = key1;
-    this.(Ljava/lang/Object;)value1 = value1;
-    this.(Ljava/lang/Object;)key2 = key2;
-    this.(Ljava/lang/Object;)value2 = value2;
+    this.(Lscala/collection/immutable/Map$Map2;)key1 = key1;
+    this.(Lscala/collection/immutable/Map$Map2;)value1 = value1;
+    this.(Lscala/collection/immutable/Map$Map2;)key2 = key2;
+    this.(Lscala/collection/immutable/Map$Map2;)value2 = value2;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$init$(Lscala/collection/TraversableLike;)V;)(this);

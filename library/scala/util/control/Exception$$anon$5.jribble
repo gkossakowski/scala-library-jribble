@@ -1,7 +1,7 @@
 public final class Lscala/util/control/Exception$$anon$5; extends Lscala/util/control/Exception$Catch; {
   
   public Ljava/lang/Object; apply(Lscala/Function0; body) {
-    this.(Lscala/Function1;)setter$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Ljava/lang/Object;)newVal$1);
+    this.(Lscala/util/control/Exception$$anon$5;)setter$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/util/control/Exception$$anon$5;)newVal$1);
     return super.(Lscala/util/control/Exception$Catch;::apply(Lscala/Function0;)Ljava/lang/Object;)(body);
   }
   
@@ -10,8 +10,8 @@ public final class Lscala/util/control/Exception$$anon$5; extends Lscala/util/co
   private Lscala/Function1; setter$1;
   
   public this(Ljava/lang/Object; oldVal$1, Ljava/lang/Object; newVal$1, Lscala/Function1; setter$1) {
-    this.(Ljava/lang/Object;)newVal$1 = newVal$1;
-    this.(Lscala/Function1;)setter$1 = setter$1;
+    this.(Lscala/util/control/Exception$$anon$5;)newVal$1 = newVal$1;
+    this.(Lscala/util/control/Exception$$anon$5;)setter$1 = setter$1;
     (Lscala/util/control/Exception$Catch;::super(Lscala/PartialFunction;Lscala/Option;)V;)(this.(Lscala/util/control/Exception$;::nothingCatcher()Lscala/PartialFunction;)(), (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/util/control/Exception$Finally;::this(Lscala/Function0;)V;)((new (Lscala/util/control/Exception$$anon$5$$anonfun$$init$$1;::this(Ljava/lang/Object;Lscala/Function1;)V;)(oldVal$1, setter$1)))))));
   }
 }

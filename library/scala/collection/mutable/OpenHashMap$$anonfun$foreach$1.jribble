@@ -1,7 +1,7 @@
 public final class Lscala/collection/mutable/OpenHashMap$$anonfun$foreach$1; extends Lscala/runtime/AbstractFunction1; {
   
   public final V; apply(Lscala/collection/mutable/OpenHashMap$OpenEntry; entry) {
-    if ((this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020.(I;)scala$collection$mutable$OpenHashMap$$modCount != this.(I;)startModCount$1))
+    if ((this.(Lscala/collection/mutable/OpenHashMap$$anonfun$foreach$1;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$modCount != this.(Lscala/collection/mutable/OpenHashMap$$anonfun$foreach$1;)startModCount$1))
       {
         Lscala/Predef$;.MODULE$.(Lscala/Predef$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("Concurrent Modification");
       }
@@ -9,7 +9,7 @@ public final class Lscala/collection/mutable/OpenHashMap$$anonfun$foreach$1; ext
       {
         
       }
-    this.(Lscala/Function1;)f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(entry.(Lscala/collection/mutable/OpenHashMap$OpenEntry;::key()Ljava/lang/Object;)(), entry.(Lscala/collection/mutable/OpenHashMap$OpenEntry;::value()Lscala/Option;)().(Lscala/Option;::get()Ljava/lang/Object;)())));
+    this.(Lscala/collection/mutable/OpenHashMap$$anonfun$foreach$1;)f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(entry.(Lscala/collection/mutable/OpenHashMap$OpenEntry;::key()Ljava/lang/Object;)(), entry.(Lscala/collection/mutable/OpenHashMap$OpenEntry;::value()Lscala/Option;)().(Lscala/Option;::get()Ljava/lang/Object;)())));
   }
   
   private Lscala/collection/mutable/OpenHashMap; $outer$u0020;
@@ -30,10 +30,10 @@ public final class Lscala/collection/mutable/OpenHashMap$$anonfun$foreach$1; ext
       }
     else
       {
-        this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020 = $outer;
+        this.(Lscala/collection/mutable/OpenHashMap$$anonfun$foreach$1;)$outer$u0020 = $outer;
       }
-    this.(Lscala/Function1;)f$2 = f$2;
-    this.(I;)startModCount$1 = startModCount$1;
+    this.(Lscala/collection/mutable/OpenHashMap$$anonfun$foreach$1;)f$2 = f$2;
+    this.(Lscala/collection/mutable/OpenHashMap$$anonfun$foreach$1;)startModCount$1 = startModCount$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

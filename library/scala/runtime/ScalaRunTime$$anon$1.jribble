@@ -3,25 +3,25 @@ public final class Lscala/runtime/ScalaRunTime$$anon$1; extends Lscala/runtime/S
   private Ljava/lang/Object; result$u0020;
   
   private Ljava/lang/Object; result() {
-    return this.(Ljava/lang/Object;)result$u0020;
+    return this.(Lscala/runtime/ScalaRunTime$$anon$1;)result$u0020;
   }
   
   private V; result_$eq(Ljava/lang/Object; x$1) {
-    this.(Ljava/lang/Object;)result$u0020 = x$1;
+    this.(Lscala/runtime/ScalaRunTime$$anon$1;)result$u0020 = x$1;
   }
   
   private Ljava/lang/Throwable; exception$u0020;
   
   private Ljava/lang/Throwable; exception() {
-    return this.(Ljava/lang/Throwable;)exception$u0020;
+    return this.(Lscala/runtime/ScalaRunTime$$anon$1;)exception$u0020;
   }
   
   private V; exception_$eq(Ljava/lang/Throwable; x$1) {
-    this.(Ljava/lang/Throwable;)exception$u0020 = x$1;
+    this.(Lscala/runtime/ScalaRunTime$$anon$1;)exception$u0020 = x$1;
   }
   
   public V; run() {
-    this.(Lscala/runtime/ScalaRunTime$$anon$1;::result_$eq(Ljava/lang/Object;)V;)(this.(Lscala/Function0;)block$1.(Lscala/Function0;::apply()Ljava/lang/Object;)());
+    this.(Lscala/runtime/ScalaRunTime$$anon$1;::result_$eq(Ljava/lang/Object;)V;)(this.(Lscala/runtime/ScalaRunTime$$anon$1;)block$1.(Lscala/Function0;::apply()Ljava/lang/Object;)());
   }
   
   public Ljava/lang/Object; Catch(Lscala/PartialFunction; handler) {
@@ -93,8 +93,8 @@ public final class Lscala/runtime/ScalaRunTime$$anon$1; extends Lscala/runtime/S
   }
   
   public this(Lscala/Function0; block$1) {
-    this.(Lscala/Function0;)block$1 = block$1;
+    this.(Lscala/runtime/ScalaRunTime$$anon$1;)block$1 = block$1;
     (Lscala/runtime/ScalaRunTime$Try;::super()V;)();
-    this.(Ljava/lang/Throwable;)exception$u0020 = this.(Lscala/runtime/ScalaRunTime$$anon$1;::liftedTree1$1()Ljava/lang/Throwable;)();
+    this.(Lscala/runtime/ScalaRunTime$$anon$1;)exception$u0020 = this.(Lscala/runtime/ScalaRunTime$$anon$1;::liftedTree1$1()Ljava/lang/Throwable;)();
   }
 }
