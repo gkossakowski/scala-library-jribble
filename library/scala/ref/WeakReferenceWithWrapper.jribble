@@ -3,7 +3,7 @@ public class Lscala/ref/WeakReferenceWithWrapper; extends Ljava/lang/ref/WeakRef
   private Lscala/ref/WeakReference; wrapper$u0020;
   
   public Lscala/ref/WeakReference; wrapper() {
-    return this.(Lscala/ref/WeakReference;)wrapper$u0020;
+    return this.(Lscala/ref/WeakReferenceWithWrapper;)wrapper$u0020;
   }
   
   public Lscala/ref/ReferenceWrapper; wrapper() {
@@ -11,7 +11,7 @@ public class Lscala/ref/WeakReferenceWithWrapper; extends Ljava/lang/ref/WeakRef
   }
   
   public this(Ljava/lang/Object; value, Lscala/ref/ReferenceQueue; queue, Lscala/ref/WeakReference; wrapper) {
-    this.(Lscala/ref/WeakReference;)wrapper$u0020 = wrapper;
+    this.(Lscala/ref/WeakReferenceWithWrapper;)wrapper$u0020 = wrapper;
     Ljava/lang/Object; $2$ = value;
     Ljava/lang/ref/ReferenceQueue; $1$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(queue, null))

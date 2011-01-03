@@ -3,7 +3,7 @@ public class Lscala/util/automata/SubsetConstruction; extends Ljava/lang/Object;
   private Lscala/util/automata/NondetWordAutom; nfa$u0020;
   
   public Lscala/util/automata/NondetWordAutom; nfa() {
-    return this.(Lscala/util/automata/NondetWordAutom;)nfa$u0020;
+    return this.(Lscala/util/automata/SubsetConstruction;)nfa$u0020;
   }
   
   public I; selectTag(Lscala/collection/immutable/BitSet; Q, I;[ finals) {
@@ -28,14 +28,14 @@ public class Lscala/util/automata/SubsetConstruction; extends Ljava/lang/Object;
         {
           {
             Lscala/collection/immutable/BitSet; P$1 = rest$1.(Lscala/collection/mutable/Stack;::pop()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/BitSet;);
-            indexMap$1.(Ljava/lang/Object;)elem = indexMap$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/MapLike;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/Map;)(P$1, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(ix));
+            indexMap$1.(Lscala/runtime/ObjectRef;)elem = indexMap$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/MapLike;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/Map;)(P$1, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(ix));
             invIndexMap = invIndexMap.(Lscala/collection/MapLike;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/Map;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(ix), P$1);
             ix = (ix + 1);
             Lscala/collection/mutable/HashMap; Pdelta$1 = (new (Lscala/collection/mutable/HashMap;::this()V;)());
             delta$1.(Lscala/collection/mutable/HashMap;::update(Ljava/lang/Object;Ljava/lang/Object;)V;)(P$1, Pdelta$1);
             this.(Lscala/util/automata/SubsetConstruction;::nfa()Lscala/util/automata/NondetWordAutom;)().(Lscala/util/automata/NondetWordAutom;::labels()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/util/automata/SubsetConstruction$$anonfun$determinize$1;::this(Lscala/util/automata/SubsetConstruction;Lscala/runtime/ObjectRef;Lscala/runtime/ObjectRef;Lscala/collection/mutable/Stack;Lscala/collection/immutable/BitSet;Lscala/collection/mutable/HashMap;)V;)(this, states$1, finals$1, rest$1, P$1, Pdelta$1)));
             Lscala/collection/immutable/BitSet; Pdef = this.(Lscala/util/automata/SubsetConstruction;::nfa()Lscala/util/automata/NondetWordAutom;)().(Lscala/util/automata/NondetWordAutom;::nextDefault(Lscala/collection/immutable/BitSet;)Lscala/collection/immutable/BitSet;)(P$1);
-            deftrans$1.(Ljava/lang/Object;)elem = deftrans$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/MapLike;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/Map;)(P$1, Pdef);
+            deftrans$1.(Lscala/runtime/ObjectRef;)elem = deftrans$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/MapLike;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/Map;)(P$1, Pdef);
             this.(Lscala/util/automata/SubsetConstruction;::add$1(Lscala/collection/immutable/BitSet;Lscala/runtime/ObjectRef;Lscala/runtime/ObjectRef;Lscala/collection/mutable/Stack;)V;)(Pdef, states$1, finals$1, rest$1);
           }
           continue while$1;
@@ -46,19 +46,19 @@ public class Lscala/util/automata/SubsetConstruction; extends Ljava/lang/Object;
         }
       break;
     }
-    I; nstatesR$1 = states$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/immutable/Set;).(Lscala/collection/TraversableOnce;::size()I;)();
+    I; nstatesR$1 = states$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Set;).(Lscala/collection/TraversableOnce;::size()I;)();
     Lscala/collection/Map;[ deltaR$1 = new Lscala/collection/Map;[nstatesR$1];
     I;[ defaultR$1 = new I;[nstatesR$1];
     I;[ finalsR$1 = new I;[nstatesR$1];
-    states$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/immutable/Set;).(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2;::this(Lscala/util/automata/SubsetConstruction;Lscala/runtime/ObjectRef;Lscala/collection/mutable/HashMap;Lscala/runtime/ObjectRef;Lscala/collection/Map;[I;[)V;)(this, indexMap$1, delta$1, deftrans$1, deltaR$1, defaultR$1)));
-    finals$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/util/automata/SubsetConstruction$$anonfun$determinize$3;::this(Lscala/util/automata/SubsetConstruction;Lscala/runtime/ObjectRef;I;[)V;)(this, indexMap$1, finalsR$1)));
+    states$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Set;).(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2;::this(Lscala/util/automata/SubsetConstruction;Lscala/runtime/ObjectRef;Lscala/collection/mutable/HashMap;Lscala/runtime/ObjectRef;Lscala/collection/Map;[I;[)V;)(this, indexMap$1, delta$1, deftrans$1, deltaR$1, defaultR$1)));
+    finals$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/util/automata/SubsetConstruction$$anonfun$determinize$3;::this(Lscala/util/automata/SubsetConstruction;Lscala/runtime/ObjectRef;I;[)V;)(this, indexMap$1, finalsR$1)));
     return (new (Lscala/util/automata/SubsetConstruction$$anon$1;::this(Lscala/util/automata/SubsetConstruction;I;Lscala/collection/Map;[I;[I;[)V;)(this, nstatesR$1, deltaR$1, defaultR$1, finalsR$1));
   }
   
   private final V; addFinal$1(Lscala/collection/immutable/BitSet; q, Lscala/runtime/ObjectRef; finals$1) {
     if (this.(Lscala/util/automata/SubsetConstruction;::nfa()Lscala/util/automata/NondetWordAutom;)().(Lscala/util/automata/NondetWordAutom;::containsFinal(Lscala/collection/immutable/BitSet;)Z;)(q))
       {
-        finals$1.(Ljava/lang/Object;)elem = finals$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/MapLike;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/Map;)(q, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/util/automata/SubsetConstruction;::selectTag(Lscala/collection/immutable/BitSet;I;[)I;)(q, this.(Lscala/util/automata/SubsetConstruction;::nfa()Lscala/util/automata/NondetWordAutom;)().(Lscala/util/automata/NondetWordAutom;::finals()I;[)())));
+        finals$1.(Lscala/runtime/ObjectRef;)elem = finals$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/MapLike;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/Map;)(q, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/util/automata/SubsetConstruction;::selectTag(Lscala/collection/immutable/BitSet;I;[)I;)(q, this.(Lscala/util/automata/SubsetConstruction;::nfa()Lscala/util/automata/NondetWordAutom;)().(Lscala/util/automata/NondetWordAutom;::finals()I;[)())));
       }
     else
       {
@@ -67,9 +67,9 @@ public class Lscala/util/automata/SubsetConstruction; extends Ljava/lang/Object;
   }
   
   public final V; add$1(Lscala/collection/immutable/BitSet; Q, Lscala/runtime/ObjectRef; states$1, Lscala/runtime/ObjectRef; finals$1, Lscala/collection/mutable/Stack; rest$1) {
-    if (!(states$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/immutable/Set;).(Lscala/collection/SetLike;::contains(Ljava/lang/Object;)Z;)(Q)))
+    if (!(states$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Set;).(Lscala/collection/SetLike;::contains(Ljava/lang/Object;)Z;)(Q)))
       {
-        states$1.(Ljava/lang/Object;)elem = states$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/immutable/Set;).(Lscala/collection/SetLike;::$plus(Ljava/lang/Object;)Lscala/collection/Set;)(Q).<cast>(Lscala/collection/immutable/Set;);
+        states$1.(Lscala/runtime/ObjectRef;)elem = states$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Set;).(Lscala/collection/SetLike;::$plus(Ljava/lang/Object;)Lscala/collection/Set;)(Q).<cast>(Lscala/collection/immutable/Set;);
         rest$1.(Lscala/collection/mutable/Stack;::push(Ljava/lang/Object;)Lscala/collection/mutable/Stack;)(Q);
         this.(Lscala/util/automata/SubsetConstruction;::addFinal$1(Lscala/collection/immutable/BitSet;Lscala/runtime/ObjectRef;)V;)(Q, finals$1);
       }
@@ -80,7 +80,7 @@ public class Lscala/util/automata/SubsetConstruction; extends Ljava/lang/Object;
   }
   
   public this(Lscala/util/automata/NondetWordAutom; nfa) {
-    this.(Lscala/util/automata/NondetWordAutom;)nfa$u0020 = nfa;
+    this.(Lscala/util/automata/SubsetConstruction;)nfa$u0020 = nfa;
     (Ljava/lang/Object;::super()V;)();
   }
 }

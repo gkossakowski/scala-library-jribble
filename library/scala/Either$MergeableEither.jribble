@@ -3,7 +3,7 @@ public class Lscala/Either$MergeableEither; extends Ljava/lang/Object; implement
   private Lscala/Either; x;
   
   public Ljava/lang/Object; merge() {
-    Lscala/Either; temp29 = this.(Lscala/Either;)x;
+    Lscala/Either; temp29 = this.(Lscala/Either$MergeableEither;)x;
     Ljava/lang/Object; $20$;
     if (temp29.<instanceof>(Lscala/Left;))
       {
@@ -26,7 +26,7 @@ public class Lscala/Either$MergeableEither; extends Ljava/lang/Object; implement
   }
   
   public this(Lscala/Either; x) {
-    this.(Lscala/Either;)x = x;
+    this.(Lscala/Either$MergeableEither;)x = x;
     (Ljava/lang/Object;::super()V;)();
   }
 }

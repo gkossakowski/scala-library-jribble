@@ -637,27 +637,27 @@ public final class Lscala/collection/SeqLike$$anon$2; extends Ljava/lang/Object;
   private Ljava/lang/Object; underlying$u0020;
   
   protected Ljava/lang/Object; underlying() {
-    if (((this.(I;)bitmap$0 & 1) == 0))
+    if (((this.(Lscala/collection/SeqLike$$anon$2;)bitmap$0 & 1) == 0))
       {
-        if (((this.(I;)bitmap$0 & 1) == 0))
+        if (((this.(Lscala/collection/SeqLike$$anon$2;)bitmap$0 & 1) == 0))
           {
-            this.(Ljava/lang/Object;)underlying$u0020 = this.(Lscala/collection/SeqLike;)$outer$u0020.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)();
-            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 1);
+            this.(Lscala/collection/SeqLike$$anon$2;)underlying$u0020 = this.(Lscala/collection/SeqLike$$anon$2;)$outer$u0020.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)();
+            this.(Lscala/collection/SeqLike$$anon$2;)bitmap$0 = (this.(Lscala/collection/SeqLike$$anon$2;)bitmap$0 | 1);
           }
       }
-    return this.(Ljava/lang/Object;)underlying$u0020;
+    return this.(Lscala/collection/SeqLike$$anon$2;)underlying$u0020;
   }
   
   public Lscala/collection/Iterator; iterator() {
-    return this.(Lscala/collection/SeqLike;)$outer$u0020.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    return this.(Lscala/collection/SeqLike$$anon$2;)$outer$u0020.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
   }
   
   public I; length() {
-    return this.(Lscala/collection/SeqLike;)$outer$u0020.(Lscala/collection/SeqLike;::length()I;)();
+    return this.(Lscala/collection/SeqLike$$anon$2;)$outer$u0020.(Lscala/collection/SeqLike;::length()I;)();
   }
   
   public Ljava/lang/Object; apply(I; idx) {
-    return this.(Lscala/collection/SeqLike;)$outer$u0020.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(idx);
+    return this.(Lscala/collection/SeqLike$$anon$2;)$outer$u0020.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(idx);
   }
   
   private Lscala/collection/SeqLike; $outer$u0020;
@@ -837,7 +837,7 @@ public final class Lscala/collection/SeqLike$$anon$2; extends Ljava/lang/Object;
       }
     else
       {
-        this.(Lscala/collection/SeqLike;)$outer$u0020 = $outer;
+        this.(Lscala/collection/SeqLike$$anon$2;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
     Lscala/Function1$class;.(Lscala/Function1$class;::$init$(Lscala/Function1;)V;)(this);

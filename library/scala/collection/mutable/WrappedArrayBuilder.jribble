@@ -29,35 +29,35 @@ public class Lscala/collection/mutable/WrappedArrayBuilder; extends Ljava/lang/O
   private Lscala/collection/mutable/WrappedArray; elems$u0020;
   
   private Lscala/collection/mutable/WrappedArray; elems() {
-    return this.(Lscala/collection/mutable/WrappedArray;)elems$u0020;
+    return this.(Lscala/collection/mutable/WrappedArrayBuilder;)elems$u0020;
   }
   
   private V; elems_$eq(Lscala/collection/mutable/WrappedArray; x$1) {
-    this.(Lscala/collection/mutable/WrappedArray;)elems$u0020 = x$1;
+    this.(Lscala/collection/mutable/WrappedArrayBuilder;)elems$u0020 = x$1;
   }
   
   private I; capacity$u0020;
   
   private I; capacity() {
-    return this.(I;)capacity$u0020;
+    return this.(Lscala/collection/mutable/WrappedArrayBuilder;)capacity$u0020;
   }
   
   private V; capacity_$eq(I; x$1) {
-    this.(I;)capacity$u0020 = x$1;
+    this.(Lscala/collection/mutable/WrappedArrayBuilder;)capacity$u0020 = x$1;
   }
   
   private I; size$u0020;
   
   private I; size() {
-    return this.(I;)size$u0020;
+    return this.(Lscala/collection/mutable/WrappedArrayBuilder;)size$u0020;
   }
   
   private V; size_$eq(I; x$1) {
-    this.(I;)size$u0020 = x$1;
+    this.(Lscala/collection/mutable/WrappedArrayBuilder;)size$u0020 = x$1;
   }
   
   private Lscala/collection/mutable/WrappedArray; mkArray(I; size) {
-    Lscala/collection/mutable/WrappedArray; newelems = this.(Lscala/reflect/ClassManifest;)manifest.(Lscala/reflect/ClassManifest;::newWrappedArray(I;)Lscala/collection/mutable/WrappedArray;)(size);
+    Lscala/collection/mutable/WrappedArray; newelems = this.(Lscala/collection/mutable/WrappedArrayBuilder;)manifest.(Lscala/reflect/ClassManifest;::newWrappedArray(I;)Lscala/collection/mutable/WrappedArray;)(size);
     if ((this.(Lscala/collection/mutable/WrappedArrayBuilder;::size()I;)() > 0))
       {
         Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/mutable/WrappedArrayBuilder;::elems()Lscala/collection/mutable/WrappedArray;)().(Lscala/collection/mutable/WrappedArray;::array()Ljava/lang/Object;)(), 0, newelems.(Lscala/collection/mutable/WrappedArray;::array()Ljava/lang/Object;)(), 0, this.(Lscala/collection/mutable/WrappedArrayBuilder;::size()I;)());
@@ -155,11 +155,11 @@ public class Lscala/collection/mutable/WrappedArrayBuilder; extends Ljava/lang/O
   }
   
   public this(Lscala/reflect/ClassManifest; manifest) {
-    this.(Lscala/reflect/ClassManifest;)manifest = manifest;
+    this.(Lscala/collection/mutable/WrappedArrayBuilder;)manifest = manifest;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$init$(Lscala/collection/generic/Growable;)V;)(this);
     Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::$init$(Lscala/collection/mutable/Builder;)V;)(this);
-    this.(I;)capacity$u0020 = 0;
-    this.(I;)size$u0020 = 0;
+    this.(Lscala/collection/mutable/WrappedArrayBuilder;)capacity$u0020 = 0;
+    this.(Lscala/collection/mutable/WrappedArrayBuilder;)size$u0020 = 0;
   }
 }

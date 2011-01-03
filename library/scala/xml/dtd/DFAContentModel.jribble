@@ -7,16 +7,16 @@ public abstract class Lscala/xml/dtd/DFAContentModel; extends Lscala/xml/dtd/Con
   private Lscala/util/automata/DetWordAutom; dfa$u0020;
   
   public Lscala/util/automata/DetWordAutom; dfa() {
-    if (((this.(I;)bitmap$0 & 1) == 0))
+    if (((this.(Lscala/xml/dtd/DFAContentModel;)bitmap$0 & 1) == 0))
       {
-        if (((this.(I;)bitmap$0 & 1) == 0))
+        if (((this.(Lscala/xml/dtd/DFAContentModel;)bitmap$0 & 1) == 0))
           {
             Lscala/util/automata/NondetWordAutom; nfa = Lscala/xml/dtd/ContentModel$Translator$;.MODULE$.(Lscala/util/automata/WordBerrySethi;::automatonFrom(Lscala/util/regexp/Base$RegExp;I;)Lscala/util/automata/NondetWordAutom;)(this.(Lscala/xml/dtd/DFAContentModel;::r()Lscala/util/regexp/Base$RegExp;)(), 1);
-            this.(Lscala/util/automata/DetWordAutom;)dfa$u0020 = (new (Lscala/util/automata/SubsetConstruction;::this(Lscala/util/automata/NondetWordAutom;)V;)(nfa)).(Lscala/util/automata/SubsetConstruction;::determinize()Lscala/util/automata/DetWordAutom;)();
-            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 1);
+            this.(Lscala/xml/dtd/DFAContentModel;)dfa$u0020 = (new (Lscala/util/automata/SubsetConstruction;::this(Lscala/util/automata/NondetWordAutom;)V;)(nfa)).(Lscala/util/automata/SubsetConstruction;::determinize()Lscala/util/automata/DetWordAutom;)();
+            this.(Lscala/xml/dtd/DFAContentModel;)bitmap$0 = (this.(Lscala/xml/dtd/DFAContentModel;)bitmap$0 | 1);
           }
       }
-    return this.(Lscala/util/automata/DetWordAutom;)dfa$u0020;
+    return this.(Lscala/xml/dtd/DFAContentModel;)dfa$u0020;
   }
   
   public this() {

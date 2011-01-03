@@ -3,7 +3,7 @@ public class Lscala/ref/PhantomReferenceWithWrapper; extends Ljava/lang/ref/Phan
   private Lscala/ref/PhantomReference; wrapper$u0020;
   
   public Lscala/ref/PhantomReference; wrapper() {
-    return this.(Lscala/ref/PhantomReference;)wrapper$u0020;
+    return this.(Lscala/ref/PhantomReferenceWithWrapper;)wrapper$u0020;
   }
   
   public Lscala/ref/ReferenceWrapper; wrapper() {
@@ -11,7 +11,7 @@ public class Lscala/ref/PhantomReferenceWithWrapper; extends Ljava/lang/ref/Phan
   }
   
   public this(Ljava/lang/Object; value, Lscala/ref/ReferenceQueue; queue, Lscala/ref/PhantomReference; wrapper) {
-    this.(Lscala/ref/PhantomReference;)wrapper$u0020 = wrapper;
+    this.(Lscala/ref/PhantomReferenceWithWrapper;)wrapper$u0020 = wrapper;
     (Ljava/lang/ref/PhantomReference;::super(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V;)(value, queue.(Lscala/ref/ReferenceQueue;::underlying()Ljava/lang/ref/ReferenceQueue;)());
   }
 }

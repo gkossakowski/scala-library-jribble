@@ -507,11 +507,11 @@ public class Lscala/collection/mutable/ImmutableSetAdaptor; extends Ljava/lang/O
   private Lscala/collection/immutable/Set; set$u0020;
   
   protected Lscala/collection/immutable/Set; set() {
-    return this.(Lscala/collection/immutable/Set;)set$u0020;
+    return this.(Lscala/collection/mutable/ImmutableSetAdaptor;)set$u0020;
   }
   
   protected V; set_$eq(Lscala/collection/immutable/Set; x$1) {
-    this.(Lscala/collection/immutable/Set;)set$u0020 = x$1;
+    this.(Lscala/collection/mutable/ImmutableSetAdaptor;)set$u0020 = x$1;
   }
   
   public I; size() {
@@ -653,7 +653,7 @@ public class Lscala/collection/mutable/ImmutableSetAdaptor; extends Ljava/lang/O
   }
   
   public this(Lscala/collection/immutable/Set; set) {
-    this.(Lscala/collection/immutable/Set;)set$u0020 = set;
+    this.(Lscala/collection/mutable/ImmutableSetAdaptor;)set$u0020 = set;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$init$(Lscala/collection/TraversableLike;)V;)(this);

@@ -563,21 +563,21 @@ public class Lscala/collection/mutable/ListMap; extends Ljava/lang/Object; imple
   private Lscala/collection/immutable/List; elems$u0020;
   
   private Lscala/collection/immutable/List; elems() {
-    return this.(Lscala/collection/immutable/List;)elems$u0020;
+    return this.(Lscala/collection/mutable/ListMap;)elems$u0020;
   }
   
   private V; elems_$eq(Lscala/collection/immutable/List; x$1) {
-    this.(Lscala/collection/immutable/List;)elems$u0020 = x$1;
+    this.(Lscala/collection/mutable/ListMap;)elems$u0020 = x$1;
   }
   
   private I; siz$u0020;
   
   private I; siz() {
-    return this.(I;)siz$u0020;
+    return this.(Lscala/collection/mutable/ListMap;)siz$u0020;
   }
   
   private V; siz_$eq(I; x$1) {
-    this.(I;)siz$u0020 = x$1;
+    this.(Lscala/collection/mutable/ListMap;)siz$u0020 = x$1;
   }
   
   public Lscala/Option; get(Ljava/lang/Object; key$1) {
@@ -750,7 +750,7 @@ public class Lscala/collection/mutable/ListMap; extends Ljava/lang/Object; imple
     Lscala/collection/mutable/Cloneable$class;.(Lscala/collection/mutable/Cloneable$class;::$init$(Lscala/collection/mutable/Cloneable;)V;)(this);
     Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::$init$(Lscala/collection/mutable/MapLike;)V;)(this);
     Lscala/collection/mutable/Map$class;.(Lscala/collection/mutable/Map$class;::$init$(Lscala/collection/mutable/Map;)V;)(this);
-    this.(Lscala/collection/immutable/List;)elems$u0020 = Lscala/collection/immutable/Nil$;.MODULE$;
-    this.(I;)siz$u0020 = 0;
+    this.(Lscala/collection/mutable/ListMap;)elems$u0020 = Lscala/collection/immutable/Nil$;.MODULE$;
+    this.(Lscala/collection/mutable/ListMap;)siz$u0020 = 0;
   }
 }

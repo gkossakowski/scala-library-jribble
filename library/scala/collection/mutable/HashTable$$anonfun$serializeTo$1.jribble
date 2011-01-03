@@ -1,8 +1,8 @@
 public final class Lscala/collection/mutable/HashTable$$anonfun$serializeTo$1; extends Lscala/runtime/AbstractFunction1; {
   
   public final V; apply(Lscala/collection/mutable/HashEntry; entry) {
-    this.(Ljava/io/ObjectOutputStream;)out$1.(Ljava/io/ObjectOutputStream;::writeObject(Ljava/lang/Object;)V;)(entry.(Lscala/collection/mutable/HashEntry;::key()Ljava/lang/Object;)());
-    this.(Ljava/io/ObjectOutputStream;)out$1.(Ljava/io/ObjectOutputStream;::writeObject(Ljava/lang/Object;)V;)(this.(Lscala/Function1;)value$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(entry));
+    this.(Lscala/collection/mutable/HashTable$$anonfun$serializeTo$1;)out$1.(Ljava/io/ObjectOutputStream;::writeObject(Ljava/lang/Object;)V;)(entry.(Lscala/collection/mutable/HashEntry;::key()Ljava/lang/Object;)());
+    this.(Lscala/collection/mutable/HashTable$$anonfun$serializeTo$1;)out$1.(Ljava/io/ObjectOutputStream;::writeObject(Ljava/lang/Object;)V;)(this.(Lscala/collection/mutable/HashTable$$anonfun$serializeTo$1;)value$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(entry));
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
@@ -15,8 +15,8 @@ public final class Lscala/collection/mutable/HashTable$$anonfun$serializeTo$1; e
   private Lscala/Function1; value$1;
   
   public this(Lscala/collection/mutable/HashTable; $outer, Ljava/io/ObjectOutputStream; out$1, Lscala/Function1; value$1) {
-    this.(Ljava/io/ObjectOutputStream;)out$1 = out$1;
-    this.(Lscala/Function1;)value$1 = value$1;
+    this.(Lscala/collection/mutable/HashTable$$anonfun$serializeTo$1;)out$1 = out$1;
+    this.(Lscala/collection/mutable/HashTable$$anonfun$serializeTo$1;)value$1 = value$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

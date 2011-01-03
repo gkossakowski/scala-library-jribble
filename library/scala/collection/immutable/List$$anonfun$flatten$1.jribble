@@ -6,7 +6,7 @@ public final class Lscala/collection/immutable/List$$anonfun$flatten$1; extends 
       if (!(xc.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
         {
           {
-            this.(Lscala/collection/mutable/ListBuffer;)b$1.(Lscala/collection/mutable/ListBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ListBuffer;)(xc.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)());
+            this.(Lscala/collection/immutable/List$$anonfun$flatten$1;)b$1.(Lscala/collection/mutable/ListBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ListBuffer;)(xc.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)());
             xc = xc.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;);
           }
           continue while$17;
@@ -27,7 +27,7 @@ public final class Lscala/collection/immutable/List$$anonfun$flatten$1; extends 
   private Lscala/collection/mutable/ListBuffer; b$1;
   
   public this(Lscala/collection/mutable/ListBuffer; b$1) {
-    this.(Lscala/collection/mutable/ListBuffer;)b$1 = b$1;
+    this.(Lscala/collection/immutable/List$$anonfun$flatten$1;)b$1 = b$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

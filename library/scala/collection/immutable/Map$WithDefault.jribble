@@ -485,23 +485,23 @@ public class Lscala/collection/immutable/Map$WithDefault; extends Ljava/lang/Obj
   private Lscala/Function1; d;
   
   public I; size() {
-    return this.(Lscala/collection/immutable/Map;)underlying.(Lscala/collection/TraversableOnce;::size()I;)();
+    return this.(Lscala/collection/immutable/Map$WithDefault;)underlying.(Lscala/collection/TraversableOnce;::size()I;)();
   }
   
   public Lscala/Option; get(Ljava/lang/Object; key$1) {
-    return this.(Lscala/collection/immutable/Map;)underlying.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key$1).(Lscala/Option;::orElse(Lscala/Function0;)Lscala/Option;)((new (Lscala/collection/immutable/Map$WithDefault$$anonfun$get$1;::this(Lscala/collection/immutable/Map$WithDefault;Ljava/lang/Object;)V;)(this, key$1)));
+    return this.(Lscala/collection/immutable/Map$WithDefault;)underlying.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key$1).(Lscala/Option;::orElse(Lscala/Function0;)Lscala/Option;)((new (Lscala/collection/immutable/Map$WithDefault$$anonfun$get$1;::this(Lscala/collection/immutable/Map$WithDefault;Ljava/lang/Object;)V;)(this, key$1)));
   }
   
   public Lscala/collection/Iterator; iterator() {
-    return this.(Lscala/collection/immutable/Map;)underlying.(Lscala/collection/MapLike;::iterator()Lscala/collection/Iterator;)();
+    return this.(Lscala/collection/immutable/Map$WithDefault;)underlying.(Lscala/collection/MapLike;::iterator()Lscala/collection/Iterator;)();
   }
   
   public Lscala/collection/immutable/Map$WithDefault; empty() {
-    return (new (Lscala/collection/immutable/Map$WithDefault;::this(Lscala/collection/immutable/Map;Lscala/Function1;)V;)(this.(Lscala/collection/immutable/Map;)underlying.(Lscala/collection/immutable/Map;::empty()Lscala/collection/immutable/Map;)(), this.(Lscala/Function1;)d));
+    return (new (Lscala/collection/immutable/Map$WithDefault;::this(Lscala/collection/immutable/Map;Lscala/Function1;)V;)(this.(Lscala/collection/immutable/Map$WithDefault;)underlying.(Lscala/collection/immutable/Map;::empty()Lscala/collection/immutable/Map;)(), this.(Lscala/collection/immutable/Map$WithDefault;)d));
   }
   
   public Lscala/collection/immutable/Map$WithDefault; updated(Ljava/lang/Object; key, Ljava/lang/Object; value) {
-    return (new (Lscala/collection/immutable/Map$WithDefault;::this(Lscala/collection/immutable/Map;Lscala/Function1;)V;)(this.(Lscala/collection/immutable/Map;)underlying.(Lscala/collection/immutable/MapLike;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/Map;)(key, value), this.(Lscala/Function1;)d));
+    return (new (Lscala/collection/immutable/Map$WithDefault;::this(Lscala/collection/immutable/Map;Lscala/Function1;)V;)(this.(Lscala/collection/immutable/Map$WithDefault;)underlying.(Lscala/collection/immutable/MapLike;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/Map;)(key, value), this.(Lscala/collection/immutable/Map$WithDefault;)d));
   }
   
   public Lscala/collection/immutable/Map$WithDefault; $plus(Lscala/Tuple2; kv) {
@@ -509,11 +509,11 @@ public class Lscala/collection/immutable/Map$WithDefault; extends Ljava/lang/Obj
   }
   
   public Lscala/collection/immutable/Map$WithDefault; $minus(Ljava/lang/Object; key) {
-    return (new (Lscala/collection/immutable/Map$WithDefault;::this(Lscala/collection/immutable/Map;Lscala/Function1;)V;)(this.(Lscala/collection/immutable/Map;)underlying.(Lscala/collection/MapLike;::$minus(Ljava/lang/Object;)Lscala/collection/Map;)(key).<cast>(Lscala/collection/immutable/Map;), this.(Lscala/Function1;)d));
+    return (new (Lscala/collection/immutable/Map$WithDefault;::this(Lscala/collection/immutable/Map;Lscala/Function1;)V;)(this.(Lscala/collection/immutable/Map$WithDefault;)underlying.(Lscala/collection/MapLike;::$minus(Ljava/lang/Object;)Lscala/collection/Map;)(key).<cast>(Lscala/collection/immutable/Map;), this.(Lscala/collection/immutable/Map$WithDefault;)d));
   }
   
   public Ljava/lang/Object; `default`(Ljava/lang/Object; key) {
-    return this.(Lscala/Function1;)d.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(key);
+    return this.(Lscala/collection/immutable/Map$WithDefault;)d.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(key);
   }
   
   public Lscala/collection/generic/Subtractable; repr() {
@@ -593,8 +593,8 @@ public class Lscala/collection/immutable/Map$WithDefault; extends Ljava/lang/Obj
   }
   
   public this(Lscala/collection/immutable/Map; underlying, Lscala/Function1; d) {
-    this.(Lscala/collection/immutable/Map;)underlying = underlying;
-    this.(Lscala/Function1;)d = d;
+    this.(Lscala/collection/immutable/Map$WithDefault;)underlying = underlying;
+    this.(Lscala/collection/immutable/Map$WithDefault;)d = d;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$init$(Lscala/collection/TraversableLike;)V;)(this);

@@ -319,15 +319,15 @@ public final class Lscala/collection/mutable/ListBuffer$$anon$1; extends Ljava/l
   private Lscala/collection/immutable/List; cursor$u0020;
   
   private Lscala/collection/immutable/List; cursor() {
-    return this.(Lscala/collection/immutable/List;)cursor$u0020;
+    return this.(Lscala/collection/mutable/ListBuffer$$anon$1;)cursor$u0020;
   }
   
   private V; cursor_$eq(Lscala/collection/immutable/List; x$1) {
-    this.(Lscala/collection/immutable/List;)cursor$u0020 = x$1;
+    this.(Lscala/collection/mutable/ListBuffer$$anon$1;)cursor$u0020 = x$1;
   }
   
   public Z; hasNext() {
-    return (!(this.(Lscala/collection/mutable/ListBuffer;)$outer$u0020.(Lscala/collection/mutable/ListBuffer;::scala$collection$mutable$ListBuffer$$start()Lscala/collection/immutable/List;)().(Lscala/collection/IterableLike;::isEmpty()Z;)()) && (this.(Lscala/collection/mutable/ListBuffer$$anon$1;::cursor()Lscala/collection/immutable/List;)() != this.(Lscala/collection/mutable/ListBuffer;)$outer$u0020.(Lscala/collection/mutable/ListBuffer;::scala$collection$mutable$ListBuffer$$last0()Lscala/collection/immutable/$colon$colon;)()));
+    return (!(this.(Lscala/collection/mutable/ListBuffer$$anon$1;)$outer$u0020.(Lscala/collection/mutable/ListBuffer;::scala$collection$mutable$ListBuffer$$start()Lscala/collection/immutable/List;)().(Lscala/collection/IterableLike;::isEmpty()Z;)()) && (this.(Lscala/collection/mutable/ListBuffer$$anon$1;::cursor()Lscala/collection/immutable/List;)() != this.(Lscala/collection/mutable/ListBuffer$$anon$1;)$outer$u0020.(Lscala/collection/mutable/ListBuffer;::scala$collection$mutable$ListBuffer$$last0()Lscala/collection/immutable/$colon$colon;)()));
   }
   
   public Ljava/lang/Object; next() {
@@ -340,7 +340,7 @@ public final class Lscala/collection/mutable/ListBuffer$$anon$1; extends Ljava/l
       {
         if ((this.(Lscala/collection/mutable/ListBuffer$$anon$1;::cursor()Lscala/collection/immutable/List;)() == null))
           {
-            this.(Lscala/collection/mutable/ListBuffer$$anon$1;::cursor_$eq(Lscala/collection/immutable/List;)V;)(this.(Lscala/collection/mutable/ListBuffer;)$outer$u0020.(Lscala/collection/mutable/ListBuffer;::scala$collection$mutable$ListBuffer$$start()Lscala/collection/immutable/List;)());
+            this.(Lscala/collection/mutable/ListBuffer$$anon$1;::cursor_$eq(Lscala/collection/immutable/List;)V;)(this.(Lscala/collection/mutable/ListBuffer$$anon$1;)$outer$u0020.(Lscala/collection/mutable/ListBuffer;::scala$collection$mutable$ListBuffer$$start()Lscala/collection/immutable/List;)());
           }
         else
           {
@@ -360,11 +360,11 @@ public final class Lscala/collection/mutable/ListBuffer$$anon$1; extends Ljava/l
       }
     else
       {
-        this.(Lscala/collection/mutable/ListBuffer;)$outer$u0020 = $outer;
+        this.(Lscala/collection/mutable/ListBuffer$$anon$1;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(Lscala/collection/immutable/List;)cursor$u0020 = null;
+    this.(Lscala/collection/mutable/ListBuffer$$anon$1;)cursor$u0020 = null;
   }
 }

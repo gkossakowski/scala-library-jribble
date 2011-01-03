@@ -3,17 +3,17 @@ public final class Lscala/collection/JavaConversions$SetWrapper$$anon$4; extends
   private Lscala/collection/Iterator; ui$u0020;
   
   private Lscala/collection/Iterator; ui() {
-    return this.(Lscala/collection/Iterator;)ui$u0020;
+    return this.(Lscala/collection/JavaConversions$SetWrapper$$anon$4;)ui$u0020;
   }
   
   private Lscala/Option; prev$u0020;
   
   private Lscala/Option; prev() {
-    return this.(Lscala/Option;)prev$u0020;
+    return this.(Lscala/collection/JavaConversions$SetWrapper$$anon$4;)prev$u0020;
   }
   
   private V; prev_$eq(Lscala/Option; x$1) {
-    this.(Lscala/Option;)prev$u0020 = x$1;
+    this.(Lscala/collection/JavaConversions$SetWrapper$$anon$4;)prev$u0020 = x$1;
   }
   
   public Z; hasNext() {
@@ -30,7 +30,7 @@ public final class Lscala/collection/JavaConversions$SetWrapper$$anon$4; extends
     Lscala/Option; temp97 = this.(Lscala/collection/JavaConversions$SetWrapper$$anon$4;::prev()Lscala/Option;)();
     if (temp97.<instanceof>(Lscala/Some;))
       {
-        Lscala/collection/Set; temp95 = this.(Lscala/collection/JavaConversions$SetWrapper;)$outer$u0020.(Lscala/collection/Set;)scala$collection$JavaConversions$SetWrapper$$underlying;
+        Lscala/collection/Set; temp95 = this.(Lscala/collection/JavaConversions$SetWrapper$$anon$4;)$outer$u0020.(Lscala/collection/JavaConversions$SetWrapper;)scala$collection$JavaConversions$SetWrapper$$underlying;
         if (temp95.<instanceof>(Lscala/collection/mutable/Set;))
           {
             temp95.<cast>(Lscala/collection/mutable/Set;).(Lscala/collection/mutable/SetLike;::remove(Ljava/lang/Object;)Z;)(temp97.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)());
@@ -56,10 +56,10 @@ public final class Lscala/collection/JavaConversions$SetWrapper$$anon$4; extends
       }
     else
       {
-        this.(Lscala/collection/JavaConversions$SetWrapper;)$outer$u0020 = $outer;
+        this.(Lscala/collection/JavaConversions$SetWrapper$$anon$4;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
-    this.(Lscala/collection/Iterator;)ui$u0020 = $outer.(Lscala/collection/Set;)scala$collection$JavaConversions$SetWrapper$$underlying.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    this.(Lscala/Option;)prev$u0020 = Lscala/None$;.MODULE$;
+    this.(Lscala/collection/JavaConversions$SetWrapper$$anon$4;)ui$u0020 = $outer.(Lscala/collection/JavaConversions$SetWrapper;)scala$collection$JavaConversions$SetWrapper$$underlying.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    this.(Lscala/collection/JavaConversions$SetWrapper$$anon$4;)prev$u0020 = Lscala/None$;.MODULE$;
   }
 }

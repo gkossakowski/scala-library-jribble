@@ -35,19 +35,19 @@ public final class Lscala/runtime/RichBoolean; extends Ljava/lang/Object; implem
   private Z; x;
   
   public Ljava/lang/Object; self() {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Z;)x);
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/runtime/RichBoolean;)x);
   }
   
   public I; compare(Z; y) {
     I; $1$;
-    if ((this.(Z;)x == y))
+    if ((this.(Lscala/runtime/RichBoolean;)x == y))
       {
         $1$ = 0;
       }
     else
       {
         I; $2$;
-        if (this.(Z;)x)
+        if (this.(Lscala/runtime/RichBoolean;)x)
           {
             $2$ = 1;
           }
@@ -65,7 +65,7 @@ public final class Lscala/runtime/RichBoolean; extends Ljava/lang/Object; implem
   }
   
   public this(Z; x) {
-    this.(Z;)x = x;
+    this.(Lscala/runtime/RichBoolean;)x = x;
     (Ljava/lang/Object;::super()V;)();
     Lscala/Proxy$class;.(Lscala/Proxy$class;::$init$(Lscala/Proxy;)V;)(this);
     Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$init$(Lscala/math/Ordered;)V;)(this);

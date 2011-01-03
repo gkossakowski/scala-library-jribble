@@ -319,27 +319,27 @@ public final class Lscala/collection/mutable/HashTable$$anon$1; extends Ljava/la
   private Lscala/collection/mutable/HashEntry;[ iterTable$u0020;
   
   private Lscala/collection/mutable/HashEntry;[ iterTable() {
-    return this.(Lscala/collection/mutable/HashEntry;[)iterTable$u0020;
+    return this.(Lscala/collection/mutable/HashTable$$anon$1;)iterTable$u0020;
   }
   
   private I; idx$u0020;
   
   private I; idx() {
-    return this.(I;)idx$u0020;
+    return this.(Lscala/collection/mutable/HashTable$$anon$1;)idx$u0020;
   }
   
   private V; idx_$eq(I; x$1) {
-    this.(I;)idx$u0020 = x$1;
+    this.(Lscala/collection/mutable/HashTable$$anon$1;)idx$u0020 = x$1;
   }
   
   private Lscala/collection/mutable/HashEntry; es$u0020;
   
   private Lscala/collection/mutable/HashEntry; es() {
-    return this.(Lscala/collection/mutable/HashEntry;)es$u0020;
+    return this.(Lscala/collection/mutable/HashTable$$anon$1;)es$u0020;
   }
   
   private V; es_$eq(Lscala/collection/mutable/HashEntry; x$1) {
-    this.(Lscala/collection/mutable/HashEntry;)es$u0020 = x$1;
+    this.(Lscala/collection/mutable/HashTable$$anon$1;)es$u0020 = x$1;
   }
   
   public Z; hasNext() {
@@ -379,9 +379,9 @@ public final class Lscala/collection/mutable/HashTable$$anon$1; extends Ljava/la
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(Lscala/collection/mutable/HashEntry;[)iterTable$u0020 = $outer.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)();
-    this.(I;)idx$u0020 = ($outer.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)().<length> - 1);
-    this.(Lscala/collection/mutable/HashEntry;)es$u0020 = this.(Lscala/collection/mutable/HashTable$$anon$1;::iterTable()Lscala/collection/mutable/HashEntry;[)()[this.(Lscala/collection/mutable/HashTable$$anon$1;::idx()I;)()];
+    this.(Lscala/collection/mutable/HashTable$$anon$1;)iterTable$u0020 = $outer.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)();
+    this.(Lscala/collection/mutable/HashTable$$anon$1;)idx$u0020 = ($outer.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)().<length> - 1);
+    this.(Lscala/collection/mutable/HashTable$$anon$1;)es$u0020 = this.(Lscala/collection/mutable/HashTable$$anon$1;::iterTable()Lscala/collection/mutable/HashEntry;[)()[this.(Lscala/collection/mutable/HashTable$$anon$1;::idx()I;)()];
     this.(Lscala/collection/mutable/HashTable$$anon$1;::scan()V;)();
   }
 }

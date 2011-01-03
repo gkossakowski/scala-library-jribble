@@ -319,11 +319,11 @@ public final class Lscala/collection/Iterator$$anon$12; extends Ljava/lang/Objec
   private I; i$u0020;
   
   private I; i() {
-    return this.(I;)i$u0020;
+    return this.(Lscala/collection/Iterator$$anon$12;)i$u0020;
   }
   
   private V; i_$eq(I; x$1) {
-    this.(I;)i$u0020 = x$1;
+    this.(Lscala/collection/Iterator$$anon$12;)i$u0020 = x$1;
   }
   
   public Z; hasNext() {
@@ -332,7 +332,7 @@ public final class Lscala/collection/Iterator$$anon$12; extends Ljava/lang/Objec
   
   public I; next() {
     I; result = this.(Lscala/collection/Iterator$$anon$12;::i()I;)();
-    this.(Lscala/collection/Iterator$$anon$12;::i_$eq(I;)V;)((this.(Lscala/collection/Iterator$$anon$12;::i()I;)() + this.(I;)step$4));
+    this.(Lscala/collection/Iterator$$anon$12;::i_$eq(I;)V;)((this.(Lscala/collection/Iterator$$anon$12;::i()I;)() + this.(Lscala/collection/Iterator$$anon$12;)step$4));
     return result;
   }
   
@@ -343,10 +343,10 @@ public final class Lscala/collection/Iterator$$anon$12; extends Ljava/lang/Objec
   private I; step$4;
   
   public this(I; start$5, I; step$4) {
-    this.(I;)step$4 = step$4;
+    this.(Lscala/collection/Iterator$$anon$12;)step$4 = step$4;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(I;)i$u0020 = start$5;
+    this.(Lscala/collection/Iterator$$anon$12;)i$u0020 = start$5;
   }
 }

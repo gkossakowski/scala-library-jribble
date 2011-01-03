@@ -5,43 +5,43 @@ public class Lscala/collection/mutable/LinkedHashSet; extends Ljava/lang/Object;
   }
   
   public I; _loadFactor() {
-    return this.(I;)_loadFactor$u0020;
+    return this.(Lscala/collection/mutable/LinkedHashSet;)_loadFactor$u0020;
   }
   
   private I; _loadFactor$u0020;
   
   public V; _loadFactor_$eq(I; x$1) {
-    this.(I;)_loadFactor$u0020 = x$1;
+    this.(Lscala/collection/mutable/LinkedHashSet;)_loadFactor$u0020 = x$1;
   }
   
   public Ljava/lang/Object;[ table() {
-    return this.(Ljava/lang/Object;[)table$u0020;
+    return this.(Lscala/collection/mutable/LinkedHashSet;)table$u0020;
   }
   
   private Ljava/lang/Object;[ table$u0020;
   
   public V; table_$eq(Ljava/lang/Object;[ x$1) {
-    this.(Ljava/lang/Object;[)table$u0020 = x$1;
+    this.(Lscala/collection/mutable/LinkedHashSet;)table$u0020 = x$1;
   }
   
   public I; tableSize() {
-    return this.(I;)tableSize$u0020;
+    return this.(Lscala/collection/mutable/LinkedHashSet;)tableSize$u0020;
   }
   
   private I; tableSize$u0020;
   
   public V; tableSize_$eq(I; x$1) {
-    this.(I;)tableSize$u0020 = x$1;
+    this.(Lscala/collection/mutable/LinkedHashSet;)tableSize$u0020 = x$1;
   }
   
   public I; threshold() {
-    return this.(I;)threshold$u0020;
+    return this.(Lscala/collection/mutable/LinkedHashSet;)threshold$u0020;
   }
   
   private I; threshold$u0020;
   
   public V; threshold_$eq(I; x$1) {
-    this.(I;)threshold$u0020 = x$1;
+    this.(Lscala/collection/mutable/LinkedHashSet;)threshold$u0020 = x$1;
   }
   
   public I; loadFactor() {
@@ -636,7 +636,7 @@ public class Lscala/collection/mutable/LinkedHashSet; extends Ljava/lang/Object;
     Z; $1$;
     if (this.(Lscala/collection/mutable/FlatHashTable;::addEntry(Ljava/lang/Object;)Z;)(elem))
       {
-        this.(Lscala/collection/mutable/ListBuffer;)ordered.(Lscala/collection/mutable/ListBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ListBuffer;)(elem);
+        this.(Lscala/collection/mutable/LinkedHashSet;)ordered.(Lscala/collection/mutable/ListBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ListBuffer;)(elem);
         $1$ = true;
       }
     else
@@ -655,23 +655,23 @@ public class Lscala/collection/mutable/LinkedHashSet; extends Ljava/lang/Object;
       }
     else
       {
-        this.(Lscala/collection/mutable/ListBuffer;)ordered.(Lscala/collection/mutable/ListBuffer;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ListBuffer;)(elem);
+        this.(Lscala/collection/mutable/LinkedHashSet;)ordered.(Lscala/collection/mutable/ListBuffer;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ListBuffer;)(elem);
         $2$ = true;
       }
     return $2$;
   }
   
   public V; clear() {
-    this.(Lscala/collection/mutable/ListBuffer;)ordered.(Lscala/collection/mutable/ListBuffer;::clear()V;)();
+    this.(Lscala/collection/mutable/LinkedHashSet;)ordered.(Lscala/collection/mutable/ListBuffer;::clear()V;)();
     this.(Lscala/collection/mutable/FlatHashTable;::clearTable()V;)();
   }
   
   public Lscala/collection/Iterator; iterator() {
-    return this.(Lscala/collection/mutable/ListBuffer;)ordered.(Lscala/collection/mutable/ListBuffer;::iterator()Lscala/collection/Iterator;)();
+    return this.(Lscala/collection/mutable/LinkedHashSet;)ordered.(Lscala/collection/mutable/ListBuffer;::iterator()Lscala/collection/Iterator;)();
   }
   
   public V; foreach(Lscala/Function1; f) {
-    this.(Lscala/collection/mutable/ListBuffer;)ordered.(Lscala/collection/generic/TraversableForwarder;::foreach(Lscala/Function1;)V;)(f);
+    this.(Lscala/collection/mutable/LinkedHashSet;)ordered.(Lscala/collection/generic/TraversableForwarder;::foreach(Lscala/Function1;)V;)(f);
   }
   
   private V; writeObject(Ljava/io/ObjectOutputStream; s) {
@@ -679,9 +679,9 @@ public class Lscala/collection/mutable/LinkedHashSet; extends Ljava/lang/Object;
   }
   
   private V; readObject(Ljava/io/ObjectInputStream; in) {
-    this.(Lscala/collection/mutable/ListBuffer;)ordered = (new (Lscala/collection/mutable/ListBuffer;::this()V;)());
+    this.(Lscala/collection/mutable/LinkedHashSet;)ordered = (new (Lscala/collection/mutable/ListBuffer;::this()V;)());
     Ljava/io/ObjectInputStream; $3$ = in;
-    Lscala/collection/mutable/ListBuffer; eta$0$1$1 = this.(Lscala/collection/mutable/ListBuffer;)ordered;
+    Lscala/collection/mutable/ListBuffer; eta$0$1$1 = this.(Lscala/collection/mutable/LinkedHashSet;)ordered;
     this.(Lscala/collection/mutable/FlatHashTable;::init(Ljava/io/ObjectInputStream;Lscala/Function1;)V;)($3$, (new (Lscala/collection/mutable/LinkedHashSet$$anonfun$readObject$1;::this(Lscala/collection/mutable/LinkedHashSet;Lscala/collection/mutable/ListBuffer;)V;)(this, eta$0$1$1)));
   }
   
@@ -796,6 +796,6 @@ public class Lscala/collection/mutable/LinkedHashSet; extends Ljava/lang/Object;
     Lscala/collection/mutable/SetLike$class;.(Lscala/collection/mutable/SetLike$class;::$init$(Lscala/collection/mutable/SetLike;)V;)(this);
     Lscala/collection/mutable/Set$class;.(Lscala/collection/mutable/Set$class;::$init$(Lscala/collection/mutable/Set;)V;)(this);
     Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::$init$(Lscala/collection/mutable/FlatHashTable;)V;)(this);
-    this.(Lscala/collection/mutable/ListBuffer;)ordered = (new (Lscala/collection/mutable/ListBuffer;::this()V;)());
+    this.(Lscala/collection/mutable/LinkedHashSet;)ordered = (new (Lscala/collection/mutable/ListBuffer;::this()V;)());
   }
 }

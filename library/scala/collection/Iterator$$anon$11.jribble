@@ -325,25 +325,25 @@ public final class Lscala/collection/Iterator$$anon$11; extends Ljava/lang/Objec
   }
   
   public Ljava/lang/Object; next() {
-    if (this.(Z;)first)
+    if (this.(Lscala/collection/Iterator$$anon$11;)first)
       {
-        this.(Z;)first = false;
+        this.(Lscala/collection/Iterator$$anon$11;)first = false;
       }
     else
       {
-        this.(Ljava/lang/Object;)acc = this.(Lscala/Function1;)f$4.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Ljava/lang/Object;)acc);
+        this.(Lscala/collection/Iterator$$anon$11;)acc = this.(Lscala/collection/Iterator$$anon$11;)f$4.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/Iterator$$anon$11;)acc);
       }
-    return this.(Ljava/lang/Object;)acc;
+    return this.(Lscala/collection/Iterator$$anon$11;)acc;
   }
   
   private Lscala/Function1; f$4;
   
   public this(Ljava/lang/Object; start$3, Lscala/Function1; f$4) {
-    this.(Lscala/Function1;)f$4 = f$4;
+    this.(Lscala/collection/Iterator$$anon$11;)f$4 = f$4;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(Z;)first = true;
-    this.(Ljava/lang/Object;)acc = start$3;
+    this.(Lscala/collection/Iterator$$anon$11;)first = true;
+    this.(Lscala/collection/Iterator$$anon$11;)acc = start$3;
   }
 }

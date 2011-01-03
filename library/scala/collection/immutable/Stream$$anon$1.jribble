@@ -637,27 +637,27 @@ public final class Lscala/collection/immutable/Stream$$anon$1; extends Ljava/lan
   private Lscala/collection/immutable/Stream; underlying$u0020;
   
   protected Lscala/collection/immutable/Stream; underlying() {
-    if (((this.(I;)bitmap$0 & 1) == 0))
+    if (((this.(Lscala/collection/immutable/Stream$$anon$1;)bitmap$0 & 1) == 0))
       {
-        if (((this.(I;)bitmap$0 & 1) == 0))
+        if (((this.(Lscala/collection/immutable/Stream$$anon$1;)bitmap$0 & 1) == 0))
           {
-            this.(Lscala/collection/immutable/Stream;)underlying$u0020 = this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Stream;);
-            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 1);
+            this.(Lscala/collection/immutable/Stream$$anon$1;)underlying$u0020 = this.(Lscala/collection/immutable/Stream$$anon$1;)$outer$u0020.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Stream;);
+            this.(Lscala/collection/immutable/Stream$$anon$1;)bitmap$0 = (this.(Lscala/collection/immutable/Stream$$anon$1;)bitmap$0 | 1);
           }
       }
-    return this.(Lscala/collection/immutable/Stream;)underlying$u0020;
+    return this.(Lscala/collection/immutable/Stream$$anon$1;)underlying$u0020;
   }
   
   public Lscala/collection/Iterator; iterator() {
-    return this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/LinearSeqLike;::iterator()Lscala/collection/Iterator;)();
+    return this.(Lscala/collection/immutable/Stream$$anon$1;)$outer$u0020.(Lscala/collection/LinearSeqLike;::iterator()Lscala/collection/Iterator;)();
   }
   
   public I; length() {
-    return this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/immutable/Stream;::length()I;)();
+    return this.(Lscala/collection/immutable/Stream$$anon$1;)$outer$u0020.(Lscala/collection/immutable/Stream;::length()I;)();
   }
   
   public Ljava/lang/Object; apply(I; idx) {
-    return this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/LinearSeqOptimized;::apply(I;)Ljava/lang/Object;)(idx);
+    return this.(Lscala/collection/immutable/Stream$$anon$1;)$outer$u0020.(Lscala/collection/LinearSeqOptimized;::apply(I;)Ljava/lang/Object;)(idx);
   }
   
   private Lscala/collection/immutable/Stream; $outer$u0020;
@@ -893,7 +893,7 @@ public final class Lscala/collection/immutable/Stream$$anon$1; extends Ljava/lan
       }
     else
       {
-        this.(Lscala/collection/immutable/Stream;)$outer$u0020 = $outer;
+        this.(Lscala/collection/immutable/Stream$$anon$1;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
     Lscala/Function1$class;.(Lscala/Function1$class;::$init$(Lscala/Function1;)V;)(this);

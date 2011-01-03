@@ -3,21 +3,21 @@ public class Lscala/collection/immutable/HashMap$HashMapCollision1; extends Lsca
   private I; hash$u0020;
   
   public I; hash() {
-    return this.(I;)hash$u0020;
+    return this.(Lscala/collection/immutable/HashMap$HashMapCollision1;)hash$u0020;
   }
   
   public V; hash_$eq(I; x$1) {
-    this.(I;)hash$u0020 = x$1;
+    this.(Lscala/collection/immutable/HashMap$HashMapCollision1;)hash$u0020 = x$1;
   }
   
   private Lscala/collection/immutable/ListMap; kvs$u0020;
   
   public Lscala/collection/immutable/ListMap; kvs() {
-    return this.(Lscala/collection/immutable/ListMap;)kvs$u0020;
+    return this.(Lscala/collection/immutable/HashMap$HashMapCollision1;)kvs$u0020;
   }
   
   public V; kvs_$eq(Lscala/collection/immutable/ListMap; x$1) {
-    this.(Lscala/collection/immutable/ListMap;)kvs$u0020 = x$1;
+    this.(Lscala/collection/immutable/HashMap$HashMapCollision1;)kvs$u0020 = x$1;
   }
   
   public I; size() {
@@ -47,7 +47,7 @@ public class Lscala/collection/immutable/HashMap$HashMapCollision1; extends Lsca
       {
         Lscala/runtime/ObjectRef; m$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)((new (Lscala/collection/immutable/HashMap$HashTrieMap;::this(I;Lscala/collection/immutable/HashMap;[I;)V;)(0, new Lscala/collection/immutable/HashMap;[0], 0))));
         this.(Lscala/collection/immutable/HashMap$HashMapCollision1;::kvs()Lscala/collection/immutable/ListMap;)().(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$updated0$1;::this(Lscala/collection/immutable/HashMap$HashMapCollision1;I;Lscala/runtime/ObjectRef;)V;)(this, level$1, m$1)));
-        $11$ = m$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/immutable/HashMap;).(Lscala/collection/immutable/HashMap;::updated0(Ljava/lang/Object;I;I;Ljava/lang/Object;Lscala/Tuple2;)Lscala/collection/immutable/HashMap;)(key, hash, level$1, value, kv);
+        $11$ = m$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/HashMap;).(Lscala/collection/immutable/HashMap;::updated0(Ljava/lang/Object;I;I;Ljava/lang/Object;Lscala/Tuple2;)Lscala/collection/immutable/HashMap;)(key, hash, level$1, value, kv);
       }
     return $11$;
   }
@@ -103,7 +103,7 @@ public class Lscala/collection/immutable/HashMap$HashMapCollision1; extends Lsca
   protected Lscala/collection/immutable/HashMap; merge0(Lscala/collection/immutable/HashMap; that, I; level$2) {
     Lscala/runtime/ObjectRef; m$2 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(that));
     this.(Lscala/collection/immutable/HashMap$HashMapCollision1;::kvs()Lscala/collection/immutable/ListMap;)().(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1;::this(Lscala/collection/immutable/HashMap$HashMapCollision1;I;Lscala/runtime/ObjectRef;)V;)(this, level$2, m$2)));
-    return m$2.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/immutable/HashMap;);
+    return m$2.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/HashMap;);
   }
   
   private final Lscala/collection/immutable/HashMap$HashMapCollision1; newhm$1(Lscala/collection/immutable/ListMap; lm) {
@@ -111,8 +111,8 @@ public class Lscala/collection/immutable/HashMap$HashMapCollision1; extends Lsca
   }
   
   public this(I; hash, Lscala/collection/immutable/ListMap; kvs) {
-    this.(I;)hash$u0020 = hash;
-    this.(Lscala/collection/immutable/ListMap;)kvs$u0020 = kvs;
+    this.(Lscala/collection/immutable/HashMap$HashMapCollision1;)hash$u0020 = hash;
+    this.(Lscala/collection/immutable/HashMap$HashMapCollision1;)kvs$u0020 = kvs;
     (Lscala/collection/immutable/HashMap;::super()V;)();
   }
 }

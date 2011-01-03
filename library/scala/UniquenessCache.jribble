@@ -3,25 +3,25 @@ public abstract class Lscala/UniquenessCache; extends Ljava/lang/Object; impleme
   private Ljava/util/concurrent/locks/ReentrantReadWriteLock; rwl$u0020;
   
   private Ljava/util/concurrent/locks/ReentrantReadWriteLock; rwl() {
-    return this.(Ljava/util/concurrent/locks/ReentrantReadWriteLock;)rwl$u0020;
+    return this.(Lscala/UniquenessCache;)rwl$u0020;
   }
   
   private Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock; rlock$u0020;
   
   private Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock; rlock() {
-    return this.(Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;)rlock$u0020;
+    return this.(Lscala/UniquenessCache;)rlock$u0020;
   }
   
   private Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock; wlock$u0020;
   
   private Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock; wlock() {
-    return this.(Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;)wlock$u0020;
+    return this.(Lscala/UniquenessCache;)wlock$u0020;
   }
   
   private Ljava/util/WeakHashMap; map$u0020;
   
   private Ljava/util/WeakHashMap; map() {
-    return this.(Ljava/util/WeakHashMap;)map$u0020;
+    return this.(Lscala/UniquenessCache;)map$u0020;
   }
   
   protected abstract Ljava/lang/Object; valueFromKey(Ljava/lang/Object; k);
@@ -92,9 +92,9 @@ public abstract class Lscala/UniquenessCache; extends Ljava/lang/Object; impleme
   
   public this() {
     (Ljava/lang/Object;::super()V;)();
-    this.(Ljava/util/concurrent/locks/ReentrantReadWriteLock;)rwl$u0020 = (new (Ljava/util/concurrent/locks/ReentrantReadWriteLock;::this()V;)());
-    this.(Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;)rlock$u0020 = this.(Lscala/UniquenessCache;::rwl()Ljava/util/concurrent/locks/ReentrantReadWriteLock;)().(Ljava/util/concurrent/locks/ReentrantReadWriteLock;::readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;)();
-    this.(Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;)wlock$u0020 = this.(Lscala/UniquenessCache;::rwl()Ljava/util/concurrent/locks/ReentrantReadWriteLock;)().(Ljava/util/concurrent/locks/ReentrantReadWriteLock;::writeLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;)();
-    this.(Ljava/util/WeakHashMap;)map$u0020 = (new (Ljava/util/WeakHashMap;::this()V;)());
+    this.(Lscala/UniquenessCache;)rwl$u0020 = (new (Ljava/util/concurrent/locks/ReentrantReadWriteLock;::this()V;)());
+    this.(Lscala/UniquenessCache;)rlock$u0020 = this.(Lscala/UniquenessCache;::rwl()Ljava/util/concurrent/locks/ReentrantReadWriteLock;)().(Ljava/util/concurrent/locks/ReentrantReadWriteLock;::readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;)();
+    this.(Lscala/UniquenessCache;)wlock$u0020 = this.(Lscala/UniquenessCache;::rwl()Ljava/util/concurrent/locks/ReentrantReadWriteLock;)().(Ljava/util/concurrent/locks/ReentrantReadWriteLock;::writeLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;)();
+    this.(Lscala/UniquenessCache;)map$u0020 = (new (Ljava/util/WeakHashMap;::this()V;)());
   }
 }

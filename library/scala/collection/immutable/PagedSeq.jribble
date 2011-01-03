@@ -581,25 +581,25 @@ public class Lscala/collection/immutable/PagedSeq; extends Ljava/lang/Object; im
   private Lscala/collection/immutable/Page; current$u0020;
   
   private Lscala/collection/immutable/Page; current() {
-    return this.(Lscala/collection/immutable/Page;)current$u0020;
+    return this.(Lscala/collection/immutable/PagedSeq;)current$u0020;
   }
   
   private V; current_$eq(Lscala/collection/immutable/Page; x$1) {
-    this.(Lscala/collection/immutable/Page;)current$u0020 = x$1;
+    this.(Lscala/collection/immutable/PagedSeq;)current$u0020 = x$1;
   }
   
   private Lscala/collection/immutable/Page; latest() {
-    return this.(Lscala/collection/immutable/Page;)first1.(Lscala/collection/immutable/Page;::latest()Lscala/collection/immutable/Page;)();
+    return this.(Lscala/collection/immutable/PagedSeq;)first1.(Lscala/collection/immutable/Page;::latest()Lscala/collection/immutable/Page;)();
   }
   
   private Lscala/collection/immutable/Page; addMore() {
-    return this.(Lscala/collection/immutable/PagedSeq;::latest()Lscala/collection/immutable/Page;)().(Lscala/collection/immutable/Page;::addMore(Lscala/Function3;)Lscala/collection/immutable/Page;)(this.(Lscala/Function3;)more);
+    return this.(Lscala/collection/immutable/PagedSeq;::latest()Lscala/collection/immutable/Page;)().(Lscala/collection/immutable/Page;::addMore(Lscala/Function3;)Lscala/collection/immutable/Page;)(this.(Lscala/collection/immutable/PagedSeq;)more);
   }
   
   private Lscala/collection/immutable/Page; page(I; absindex) {
     if ((absindex < this.(Lscala/collection/immutable/PagedSeq;::current()Lscala/collection/immutable/Page;)().(Lscala/collection/immutable/Page;::start()I;)()))
       {
-        this.(Lscala/collection/immutable/PagedSeq;::current_$eq(Lscala/collection/immutable/Page;)V;)(this.(Lscala/collection/immutable/Page;)first1);
+        this.(Lscala/collection/immutable/PagedSeq;::current_$eq(Lscala/collection/immutable/Page;)V;)(this.(Lscala/collection/immutable/PagedSeq;)first1);
       }
     else
       {
@@ -645,14 +645,14 @@ public class Lscala/collection/immutable/PagedSeq; extends Ljava/lang/Object; im
         }
       break;
     }
-    return (Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(this.(Lscala/collection/immutable/PagedSeq;::latest()Lscala/collection/immutable/Page;)().(Lscala/collection/immutable/Page;::end()I;)()).(Lscala/runtime/RichInt;::min(I;)I;)(this.(I;)end) - this.(I;)start);
+    return (Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(this.(Lscala/collection/immutable/PagedSeq;::latest()Lscala/collection/immutable/Page;)().(Lscala/collection/immutable/Page;::end()I;)()).(Lscala/runtime/RichInt;::min(I;)I;)(this.(Lscala/collection/immutable/PagedSeq;)end) - this.(Lscala/collection/immutable/PagedSeq;)start);
   }
   
   public Ljava/lang/Object; apply(I; index) {
     Ljava/lang/Object; $4$;
     if (this.(Lscala/collection/immutable/PagedSeq;::isDefinedAt(I;)Z;)(index))
       {
-        $4$ = this.(Lscala/collection/immutable/PagedSeq;::page(I;)Lscala/collection/immutable/Page;)((index + this.(I;)start)).(Lscala/collection/immutable/Page;::apply(I;)Ljava/lang/Object;)((index + this.(I;)start));
+        $4$ = this.(Lscala/collection/immutable/PagedSeq;::page(I;)Lscala/collection/immutable/Page;)((index + this.(Lscala/collection/immutable/PagedSeq;)start)).(Lscala/collection/immutable/Page;::apply(I;)Ljava/lang/Object;)((index + this.(Lscala/collection/immutable/PagedSeq;)start));
       }
     else
       {
@@ -662,13 +662,13 @@ public class Lscala/collection/immutable/PagedSeq; extends Ljava/lang/Object; im
   }
   
   public Z; isDefinedAt(I; index) {
-    Lscala/collection/immutable/Page; p = this.(Lscala/collection/immutable/PagedSeq;::page(I;)Lscala/collection/immutable/Page;)((index + this.(I;)start));
-    return (((index >= 0) && (index < (this.(I;)end - this.(I;)start))) && ((index + this.(I;)start) < p.(Lscala/collection/immutable/Page;::end()I;)()));
+    Lscala/collection/immutable/Page; p = this.(Lscala/collection/immutable/PagedSeq;::page(I;)Lscala/collection/immutable/Page;)((index + this.(Lscala/collection/immutable/PagedSeq;)start));
+    return (((index >= 0) && (index < (this.(Lscala/collection/immutable/PagedSeq;)end - this.(Lscala/collection/immutable/PagedSeq;)start))) && ((index + this.(Lscala/collection/immutable/PagedSeq;)start) < p.(Lscala/collection/immutable/Page;::end()I;)()));
   }
   
   public Lscala/collection/immutable/PagedSeq; slice(I; _start, I; _end) {
-    this.(Lscala/collection/immutable/PagedSeq;::page(I;)Lscala/collection/immutable/Page;)(this.(I;)start);
-    I; s = (this.(I;)start + _start);
+    this.(Lscala/collection/immutable/PagedSeq;::page(I;)Lscala/collection/immutable/Page;)(this.(Lscala/collection/immutable/PagedSeq;)start);
+    I; s = (this.(Lscala/collection/immutable/PagedSeq;)start + _start);
     I; $5$;
     if ((_end == 2147483647))
       {
@@ -676,10 +676,10 @@ public class Lscala/collection/immutable/PagedSeq; extends Ljava/lang/Object; im
       }
     else
       {
-        $5$ = (this.(I;)start + _end);
+        $5$ = (this.(Lscala/collection/immutable/PagedSeq;)start + _end);
       }
     I; e = $5$;
-    Lscala/collection/immutable/Page; f = this.(Lscala/collection/immutable/Page;)first1;
+    Lscala/collection/immutable/Page; f = this.(Lscala/collection/immutable/PagedSeq;)first1;
     while$5: while(true) {
       if (((f.(Lscala/collection/immutable/Page;::end()I;)() <= s) && !(f.(Lscala/collection/immutable/Page;::isLast()Z;)())))
         {
@@ -692,7 +692,7 @@ public class Lscala/collection/immutable/PagedSeq; extends Ljava/lang/Object; im
         }
       break;
     }
-    return (new (Lscala/collection/immutable/PagedSeq;::this(Lscala/Function3;Lscala/collection/immutable/Page;I;I;Lscala/reflect/ClassManifest;)V;)(this.(Lscala/Function3;)more, f, s, e, this.(Lscala/reflect/ClassManifest;)evidence$3));
+    return (new (Lscala/collection/immutable/PagedSeq;::this(Lscala/Function3;Lscala/collection/immutable/Page;I;I;Lscala/reflect/ClassManifest;)V;)(this.(Lscala/collection/immutable/PagedSeq;)more, f, s, e, this.(Lscala/collection/immutable/PagedSeq;)evidence$3));
   }
   
   public Lscala/collection/immutable/PagedSeq; slice(I; start) {
@@ -766,11 +766,11 @@ public class Lscala/collection/immutable/PagedSeq; extends Ljava/lang/Object; im
   }
   
   protected this(Lscala/Function3; more, Lscala/collection/immutable/Page; first1, I; start, I; end, Lscala/reflect/ClassManifest; evidence$3) {
-    this.(Lscala/Function3;)more = more;
-    this.(Lscala/collection/immutable/Page;)first1 = first1;
-    this.(I;)start = start;
-    this.(I;)end = end;
-    this.(Lscala/reflect/ClassManifest;)evidence$3 = evidence$3;
+    this.(Lscala/collection/immutable/PagedSeq;)more = more;
+    this.(Lscala/collection/immutable/PagedSeq;)first1 = first1;
+    this.(Lscala/collection/immutable/PagedSeq;)start = start;
+    this.(Lscala/collection/immutable/PagedSeq;)end = end;
+    this.(Lscala/collection/immutable/PagedSeq;)evidence$3 = evidence$3;
     (Ljava/lang/Object;::super()V;)();
     Lscala/Function1$class;.(Lscala/Function1$class;::$init$(Lscala/Function1;)V;)(this);
     Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::$init$(Lscala/PartialFunction;)V;)(this);
@@ -784,6 +784,6 @@ public class Lscala/collection/immutable/PagedSeq; extends Ljava/lang/Object; im
     Lscala/collection/Seq$class;.(Lscala/collection/Seq$class;::$init$(Lscala/collection/Seq;)V;)(this);
     Lscala/collection/IndexedSeqLike$class;.(Lscala/collection/IndexedSeqLike$class;::$init$(Lscala/collection/IndexedSeqLike;)V;)(this);
     Lscala/collection/IndexedSeq$class;.(Lscala/collection/IndexedSeq$class;::$init$(Lscala/collection/IndexedSeq;)V;)(this);
-    this.(Lscala/collection/immutable/Page;)current$u0020 = first1;
+    this.(Lscala/collection/immutable/PagedSeq;)current$u0020 = first1;
   }
 }

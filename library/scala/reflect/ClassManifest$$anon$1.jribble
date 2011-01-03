@@ -61,17 +61,17 @@ public final class Lscala/reflect/ClassManifest$$anon$1; extends Ljava/lang/Obje
   }
   
   public Ljava/lang/Class; erasure() {
-    return this.(Ljava/lang/Class;)clazz$1;
+    return this.(Lscala/reflect/ClassManifest$$anon$1;)clazz$1;
   }
   
   private Lscala/collection/immutable/List; typeArguments$u0020;
   
   public Lscala/collection/immutable/List; typeArguments() {
-    return this.(Lscala/collection/immutable/List;)typeArguments$u0020;
+    return this.(Lscala/reflect/ClassManifest$$anon$1;)typeArguments$u0020;
   }
   
   public Ljava/lang/String; toString() {
-    return (((this.(Lscala/reflect/OptManifest;)prefix$1.(Ljava/lang/Object;::toString()Ljava/lang/String;)() + "#") + this.(Ljava/lang/String;)name$1) + this.(Lscala/reflect/ClassManifest;::argString()Ljava/lang/String;)());
+    return (((this.(Lscala/reflect/ClassManifest$$anon$1;)prefix$1.(Ljava/lang/Object;::toString()Ljava/lang/String;)() + "#") + this.(Lscala/reflect/ClassManifest$$anon$1;)name$1) + this.(Lscala/reflect/ClassManifest;::argString()Ljava/lang/String;)());
   }
   
   private Lscala/reflect/OptManifest; prefix$1;
@@ -81,11 +81,11 @@ public final class Lscala/reflect/ClassManifest$$anon$1; extends Ljava/lang/Obje
   private Ljava/lang/Class; clazz$1;
   
   public this(Lscala/reflect/OptManifest; prefix$1, Ljava/lang/String; name$1, Ljava/lang/Class; clazz$1, Lscala/collection/Seq; args$1) {
-    this.(Lscala/reflect/OptManifest;)prefix$1 = prefix$1;
-    this.(Ljava/lang/String;)name$1 = name$1;
-    this.(Ljava/lang/Class;)clazz$1 = clazz$1;
+    this.(Lscala/reflect/ClassManifest$$anon$1;)prefix$1 = prefix$1;
+    this.(Lscala/reflect/ClassManifest$$anon$1;)name$1 = name$1;
+    this.(Lscala/reflect/ClassManifest$$anon$1;)clazz$1 = clazz$1;
     (Ljava/lang/Object;::super()V;)();
     Lscala/reflect/ClassManifest$class;.(Lscala/reflect/ClassManifest$class;::$init$(Lscala/reflect/ClassManifest;)V;)(this);
-    this.(Lscala/collection/immutable/List;)typeArguments$u0020 = args$1.(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)();
+    this.(Lscala/reflect/ClassManifest$$anon$1;)typeArguments$u0020 = args$1.(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)();
   }
 }

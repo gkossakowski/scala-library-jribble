@@ -69,29 +69,29 @@ public final class Lscala/reflect/Manifest$$anon$15; extends Ljava/lang/Object; 
   private Ljava/lang/Class; erasure$u0020;
   
   public Ljava/lang/Class; erasure() {
-    if (((this.(I;)bitmap$0 & 1) == 0))
+    if (((this.(Lscala/reflect/Manifest$$anon$15;)bitmap$0 & 1) == 0))
       {
-        if (((this.(I;)bitmap$0 & 1) == 0))
+        if (((this.(Lscala/reflect/Manifest$$anon$15;)bitmap$0 & 1) == 0))
           {
-            this.(Ljava/lang/Class;)erasure$u0020 = this.(Ljava/lang/Object;)value$1.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)();
-            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 1);
+            this.(Lscala/reflect/Manifest$$anon$15;)erasure$u0020 = this.(Lscala/reflect/Manifest$$anon$15;)value$1.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)();
+            this.(Lscala/reflect/Manifest$$anon$15;)bitmap$0 = (this.(Lscala/reflect/Manifest$$anon$15;)bitmap$0 | 1);
           }
       }
-    return this.(Ljava/lang/Class;)erasure$u0020;
+    return this.(Lscala/reflect/Manifest$$anon$15;)erasure$u0020;
   }
   
   private Ljava/lang/String; toString$u0020;
   
   public Ljava/lang/String; toString() {
-    if (((this.(I;)bitmap$0 & 4) == 0))
+    if (((this.(Lscala/reflect/Manifest$$anon$15;)bitmap$0 & 4) == 0))
       {
-        if (((this.(I;)bitmap$0 & 4) == 0))
+        if (((this.(Lscala/reflect/Manifest$$anon$15;)bitmap$0 & 4) == 0))
           {
-            this.(Ljava/lang/String;)toString$u0020 = (this.(Ljava/lang/Object;)value$1.(Ljava/lang/Object;::toString()Ljava/lang/String;)() + ".type");
-            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 4);
+            this.(Lscala/reflect/Manifest$$anon$15;)toString$u0020 = (this.(Lscala/reflect/Manifest$$anon$15;)value$1.(Ljava/lang/Object;::toString()Ljava/lang/String;)() + ".type");
+            this.(Lscala/reflect/Manifest$$anon$15;)bitmap$0 = (this.(Lscala/reflect/Manifest$$anon$15;)bitmap$0 | 4);
           }
       }
-    return this.(Ljava/lang/String;)toString$u0020;
+    return this.(Lscala/reflect/Manifest$$anon$15;)toString$u0020;
   }
   
   public Lscala/reflect/ClassManifest; arrayManifest() {
@@ -101,7 +101,7 @@ public final class Lscala/reflect/Manifest$$anon$15; extends Ljava/lang/Object; 
   private Ljava/lang/Object; value$1;
   
   public this(Ljava/lang/Object; value$1) {
-    this.(Ljava/lang/Object;)value$1 = value$1;
+    this.(Lscala/reflect/Manifest$$anon$15;)value$1 = value$1;
     (Ljava/lang/Object;::super()V;)();
     Lscala/reflect/ClassManifest$class;.(Lscala/reflect/ClassManifest$class;::$init$(Lscala/reflect/ClassManifest;)V;)(this);
     Lscala/reflect/Manifest$class;.(Lscala/reflect/Manifest$class;::$init$(Lscala/reflect/Manifest;)V;)(this);

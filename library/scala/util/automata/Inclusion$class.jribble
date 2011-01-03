@@ -6,19 +6,19 @@ public abstract class Lscala/util/automata/Inclusion$class; {
     I; max$1 = (1 + (dfa1$1.(Lscala/util/automata/DetWordAutom;::nstates()I;)() * dfa2$1.(Lscala/util/automata/DetWordAutom;::nstates()I;)()));
     I;[ mark$1 = new I;[max$1];
     Lscala/runtime/BooleanRef; result$1 = (new (Lscala/runtime/BooleanRef;::this(Z;)V;)(true));
-    I; current = Lscala/util/automata/Inclusion$class;.(Lscala/util/automata/Inclusion$class;::encode$1(Lscala/util/automata/Inclusion;I;I;Lscala/util/automata/DetWordAutom;)I;)($this, q1$1.(I;)elem, q2$1.(I;)elem, dfa1$1);
+    I; current = Lscala/util/automata/Inclusion$class;.(Lscala/util/automata/Inclusion$class;::encode$1(Lscala/util/automata/Inclusion;I;I;Lscala/util/automata/DetWordAutom;)I;)($this, q1$1.(Lscala/runtime/IntRef;)elem, q2$1.(Lscala/runtime/IntRef;)elem, dfa1$1);
     Lscala/runtime/IntRef; last$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(current));
-    mark$1[last$1.(I;)elem] = max$1;
+    mark$1[last$1.(Lscala/runtime/IntRef;)elem] = max$1;
     while$1: while(true) {
-      if (((current != 0) && result$1.(Z;)elem))
+      if (((current != 0) && result$1.(Lscala/runtime/BooleanRef;)elem))
         {
           {
             $this.(Lscala/util/automata/Inclusion;::labels()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/util/automata/Inclusion$$anonfun$inclusion$1;::this(Lscala/util/automata/Inclusion;Lscala/util/automata/DetWordAutom;Lscala/util/automata/DetWordAutom;Lscala/runtime/IntRef;Lscala/runtime/IntRef;I;I;[Lscala/runtime/BooleanRef;Lscala/runtime/IntRef;)V;)($this, dfa1$1, dfa2$1, q1$1, q2$1, max$1, mark$1, result$1, last$1)));
             I; ncurrent = mark$1[current];
             if ((ncurrent != max$1))
               {
-                q1$1.(I;)elem = Lscala/util/automata/Inclusion$class;.(Lscala/util/automata/Inclusion$class;::decode1$1(Lscala/util/automata/Inclusion;I;Lscala/util/automata/DetWordAutom;)I;)($this, ncurrent, dfa1$1);
-                q2$1.(I;)elem = Lscala/util/automata/Inclusion$class;.(Lscala/util/automata/Inclusion$class;::decode2$1(Lscala/util/automata/Inclusion;I;Lscala/util/automata/DetWordAutom;)I;)($this, ncurrent, dfa1$1);
+                q1$1.(Lscala/runtime/IntRef;)elem = Lscala/util/automata/Inclusion$class;.(Lscala/util/automata/Inclusion$class;::decode1$1(Lscala/util/automata/Inclusion;I;Lscala/util/automata/DetWordAutom;)I;)($this, ncurrent, dfa1$1);
+                q2$1.(Lscala/runtime/IntRef;)elem = Lscala/util/automata/Inclusion$class;.(Lscala/util/automata/Inclusion$class;::decode2$1(Lscala/util/automata/Inclusion;I;Lscala/util/automata/DetWordAutom;)I;)($this, ncurrent, dfa1$1);
                 current = ncurrent;
               }
             else
@@ -34,7 +34,7 @@ public abstract class Lscala/util/automata/Inclusion$class; {
         }
       break;
     }
-    return result$1.(Z;)elem;
+    return result$1.(Lscala/runtime/BooleanRef;)elem;
   }
   
   public static final I; encode$1(Lscala/util/automata/Inclusion; $this, I; q1, I; q2, Lscala/util/automata/DetWordAutom; dfa1$1) {

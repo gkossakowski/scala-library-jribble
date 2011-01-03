@@ -17,22 +17,22 @@ public class Lscala/Enumeration$Val; extends Lscala/Enumeration$Value; implement
   }
   
   public I; id() {
-    return this.(I;)scala$Enumeration$Val$$i;
+    return this.(Lscala/Enumeration$Val;)scala$Enumeration$Val$$i;
   }
   
   public Ljava/lang/String; toString() {
     Ljava/lang/String; $3$;
-    if ((this.(Ljava/lang/String;)name != null))
+    if ((this.(Lscala/Enumeration$Val;)name != null))
       {
-        $3$ = this.(Ljava/lang/String;)name;
+        $3$ = this.(Lscala/Enumeration$Val;)name;
       }
     else
       {
         Ljava/lang/String; exceptionResult1;
         try {
-          exceptionResult1 = this.(Lscala/Enumeration$Val;::scala$Enumeration$Val$$$outer()Lscala/Enumeration;)().(Lscala/Enumeration;::scala$Enumeration$$nameOf(I;)Ljava/lang/String;)(this.(I;)scala$Enumeration$Val$$i);
+          exceptionResult1 = this.(Lscala/Enumeration$Val;::scala$Enumeration$Val$$$outer()Lscala/Enumeration;)().(Lscala/Enumeration;::scala$Enumeration$$nameOf(I;)Ljava/lang/String;)(this.(Lscala/Enumeration$Val;)scala$Enumeration$Val$$i);
         } catch(Ljava/util/NoSuchElementException; $WILDCARD) {
-          exceptionResult1 = (("<Invalid enum: no field for #" + Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(I;)scala$Enumeration$Val$$i)) + ">");
+          exceptionResult1 = (("<Invalid enum: no field for #" + Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/Enumeration$Val;)scala$Enumeration$Val$$i)) + ">");
         }
         $3$ = exceptionResult1;
       }
@@ -48,18 +48,18 @@ public class Lscala/Enumeration$Val; extends Lscala/Enumeration$Value; implement
       }
     else
       {
-        $4$ = enum.(Lscala/Enumeration;::scala$Enumeration$$vmap()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(I;)scala$Enumeration$Val$$i));
+        $4$ = enum.(Lscala/Enumeration;::scala$Enumeration$$vmap()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/Enumeration$Val;)scala$Enumeration$Val$$i));
       }
     return $4$;
   }
   
   public Lscala/Enumeration; scala$Enumeration$Val$$$outer() {
-    return this.(Lscala/Enumeration;)$outer$u0020;
+    return this.(Lscala/Enumeration$Val;)$outer$u0020;
   }
   
   public this(Lscala/Enumeration; $outer, I; i, Ljava/lang/String; name) {
-    this.(I;)scala$Enumeration$Val$$i = i;
-    this.(Ljava/lang/String;)name = name;
+    this.(Lscala/Enumeration$Val;)scala$Enumeration$Val$$i = i;
+    this.(Lscala/Enumeration$Val;)name = name;
     (Lscala/Enumeration$Value;::super(Lscala/Enumeration;)V;)($outer);
     Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;Lscala/Function0;)V;)(!($outer.(Lscala/Enumeration;::scala$Enumeration$$vmap()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::isDefinedAt(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i))), (new (Lscala/Enumeration$Val$$anonfun$2;::this(Lscala/Enumeration$Val;)V;)(this)));
     $outer.(Lscala/Enumeration;::scala$Enumeration$$vmap()Lscala/collection/mutable/Map;)().(Lscala/collection/mutable/MapLike;::update(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i), this);

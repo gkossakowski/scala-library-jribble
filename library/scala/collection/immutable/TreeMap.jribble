@@ -491,7 +491,7 @@ public class Lscala/collection/immutable/TreeMap; extends Lscala/collection/immu
   private I; size$u0020;
   
   public I; size() {
-    return this.(I;)size$u0020;
+    return this.(Lscala/collection/immutable/TreeMap;)size$u0020;
   }
   
   private Lscala/collection/immutable/RedBlack$Tree; t;
@@ -499,7 +499,7 @@ public class Lscala/collection/immutable/TreeMap; extends Lscala/collection/immu
   private Lscala/math/Ordering; ordering$u0020;
   
   public Lscala/math/Ordering; ordering() {
-    return this.(Lscala/math/Ordering;)ordering$u0020;
+    return this.(Lscala/collection/immutable/TreeMap;)ordering$u0020;
   }
   
   public Z; isSmaller(Ljava/lang/Object; x, Ljava/lang/Object; y) {
@@ -517,7 +517,7 @@ public class Lscala/collection/immutable/TreeMap; extends Lscala/collection/immu
   private Lscala/collection/immutable/RedBlack$Tree; tree$u0020;
   
   protected Lscala/collection/immutable/RedBlack$Tree; tree() {
-    return this.(Lscala/collection/immutable/RedBlack$Tree;)tree$u0020;
+    return this.(Lscala/collection/immutable/TreeMap;)tree$u0020;
   }
   
   public Lscala/collection/immutable/TreeMap; rangeImpl(Lscala/Option; from, Lscala/Option; until) {
@@ -526,11 +526,11 @@ public class Lscala/collection/immutable/TreeMap; extends Lscala/collection/immu
   }
   
   public Ljava/lang/Object; firstKey() {
-    return this.(Lscala/collection/immutable/RedBlack$Tree;)t.(Lscala/collection/immutable/RedBlack$Tree;::first()Ljava/lang/Object;)();
+    return this.(Lscala/collection/immutable/TreeMap;)t.(Lscala/collection/immutable/RedBlack$Tree;::first()Ljava/lang/Object;)();
   }
   
   public Ljava/lang/Object; lastKey() {
-    return this.(Lscala/collection/immutable/RedBlack$Tree;)t.(Lscala/collection/immutable/RedBlack$Tree;::last()Ljava/lang/Object;)();
+    return this.(Lscala/collection/immutable/TreeMap;)t.(Lscala/collection/immutable/RedBlack$Tree;::last()Ljava/lang/Object;)();
   }
   
   public I; compare(Ljava/lang/Object; k0, Ljava/lang/Object; k1) {
@@ -740,9 +740,9 @@ public class Lscala/collection/immutable/TreeMap; extends Lscala/collection/immu
   }
   
   public this(I; size, Lscala/collection/immutable/RedBlack$Tree; t, Lscala/math/Ordering; ordering) {
-    this.(I;)size$u0020 = size;
-    this.(Lscala/collection/immutable/RedBlack$Tree;)t = t;
-    this.(Lscala/math/Ordering;)ordering$u0020 = ordering;
+    this.(Lscala/collection/immutable/TreeMap;)size$u0020 = size;
+    this.(Lscala/collection/immutable/TreeMap;)t = t;
+    this.(Lscala/collection/immutable/TreeMap;)ordering$u0020 = ordering;
     (Lscala/collection/immutable/RedBlack;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$init$(Lscala/collection/TraversableLike;)V;)(this);
@@ -772,6 +772,6 @@ public class Lscala/collection/immutable/TreeMap; extends Lscala/collection/immu
       {
         $4$ = t;
       }
-    this.(Lscala/collection/immutable/RedBlack$Tree;)tree$u0020 = $4$;
+    this.(Lscala/collection/immutable/TreeMap;)tree$u0020 = $4$;
   }
 }

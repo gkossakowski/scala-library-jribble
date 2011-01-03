@@ -319,11 +319,11 @@ public final class Lscala/collection/mutable/ArrayStack$$anon$1; extends Ljava/l
   private I; currentIndex$u0020;
   
   private I; currentIndex() {
-    return this.(I;)currentIndex$u0020;
+    return this.(Lscala/collection/mutable/ArrayStack$$anon$1;)currentIndex$u0020;
   }
   
   private V; currentIndex_$eq(I; x$1) {
-    this.(I;)currentIndex$u0020 = x$1;
+    this.(Lscala/collection/mutable/ArrayStack$$anon$1;)currentIndex$u0020 = x$1;
   }
   
   public Z; hasNext() {
@@ -332,7 +332,7 @@ public final class Lscala/collection/mutable/ArrayStack$$anon$1; extends Ljava/l
   
   public Ljava/lang/Object; next() {
     this.(Lscala/collection/mutable/ArrayStack$$anon$1;::currentIndex_$eq(I;)V;)((this.(Lscala/collection/mutable/ArrayStack$$anon$1;::currentIndex()I;)() - 1));
-    return this.(Lscala/collection/mutable/ArrayStack;)$outer$u0020.(Lscala/collection/mutable/ArrayStack;::scala$collection$mutable$ArrayStack$$table()Ljava/lang/Object;[)()[this.(Lscala/collection/mutable/ArrayStack$$anon$1;::currentIndex()I;)()];
+    return this.(Lscala/collection/mutable/ArrayStack$$anon$1;)$outer$u0020.(Lscala/collection/mutable/ArrayStack;::scala$collection$mutable$ArrayStack$$table()Ljava/lang/Object;[)()[this.(Lscala/collection/mutable/ArrayStack$$anon$1;::currentIndex()I;)()];
   }
   
   private Lscala/collection/mutable/ArrayStack; $outer$u0020;
@@ -344,11 +344,11 @@ public final class Lscala/collection/mutable/ArrayStack$$anon$1; extends Ljava/l
       }
     else
       {
-        this.(Lscala/collection/mutable/ArrayStack;)$outer$u0020 = $outer;
+        this.(Lscala/collection/mutable/ArrayStack$$anon$1;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(I;)currentIndex$u0020 = $outer.(Lscala/collection/mutable/ArrayStack;::scala$collection$mutable$ArrayStack$$index()I;)();
+    this.(Lscala/collection/mutable/ArrayStack$$anon$1;)currentIndex$u0020 = $outer.(Lscala/collection/mutable/ArrayStack;::scala$collection$mutable$ArrayStack$$index()I;)();
   }
 }

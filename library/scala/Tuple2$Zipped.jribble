@@ -5,63 +5,63 @@ public class Lscala/Tuple2$Zipped; extends Ljava/lang/Object; implements Lscala/
   private Lscala/collection/IterableLike; coll2;
   
   public Ljava/lang/Object; map(Lscala/Function2; f$1, Lscala/collection/generic/CanBuildFrom; cbf) {
-    Lscala/collection/mutable/Builder; b$1 = cbf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/collection/TraversableLike;)coll1.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
-    b$1.(Lscala/collection/mutable/Builder;::sizeHint(Lscala/collection/TraversableLike;I;)V;)(this.(Lscala/collection/TraversableLike;)coll1, b$1.(Lscala/collection/mutable/Builder;::sizeHint$default$2()I;)());
-    Lscala/collection/Iterator; elems2$2 = this.(Lscala/collection/IterableLike;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    this.(Lscala/collection/TraversableLike;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$map$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;)V;)(this, f$1, b$1, elems2$2)));
+    Lscala/collection/mutable/Builder; b$1 = cbf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
+    b$1.(Lscala/collection/mutable/Builder;::sizeHint(Lscala/collection/TraversableLike;I;)V;)(this.(Lscala/Tuple2$Zipped;)coll1, b$1.(Lscala/collection/mutable/Builder;::sizeHint$default$2()I;)());
+    Lscala/collection/Iterator; elems2$2 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$map$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;)V;)(this, f$1, b$1, elems2$2)));
     return b$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
   }
   
   public Ljava/lang/Object; flatMap(Lscala/Function2; f$2, Lscala/collection/generic/CanBuildFrom; cbf) {
-    Lscala/collection/mutable/Builder; b$2 = cbf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/collection/TraversableLike;)coll1.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
-    Lscala/collection/Iterator; elems2$3 = this.(Lscala/collection/IterableLike;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    this.(Lscala/collection/TraversableLike;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$flatMap$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;)V;)(this, f$2, b$2, elems2$3)));
+    Lscala/collection/mutable/Builder; b$2 = cbf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
+    Lscala/collection/Iterator; elems2$3 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$flatMap$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;)V;)(this, f$2, b$2, elems2$3)));
     return b$2.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
   }
   
   public Lscala/Tuple2; filter(Lscala/Function2; f$3, Lscala/collection/generic/CanBuildFrom; cbf1, Lscala/collection/generic/CanBuildFrom; cbf2) {
-    Lscala/collection/mutable/Builder; b1$2 = cbf1.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/collection/TraversableLike;)coll1.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
-    Lscala/collection/mutable/Builder; b2$1 = cbf2.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/collection/IterableLike;)coll2.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
-    Lscala/collection/Iterator; elems2$4 = this.(Lscala/collection/IterableLike;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    this.(Lscala/collection/TraversableLike;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$filter$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/mutable/Builder;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;)V;)(this, f$3, b1$2, b2$1, elems2$4)));
+    Lscala/collection/mutable/Builder; b1$2 = cbf1.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
+    Lscala/collection/mutable/Builder; b2$1 = cbf2.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
+    Lscala/collection/Iterator; elems2$4 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$filter$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/mutable/Builder;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;)V;)(this, f$3, b1$2, b2$1, elems2$4)));
     return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(b1$2.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)(), b2$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)()));
   }
   
   public Z; exists(Lscala/Function2; f$4) {
     Lscala/runtime/BooleanRef; acc$1 = (new (Lscala/runtime/BooleanRef;::this(Z;)V;)(false));
-    Lscala/collection/Iterator; elems2$5 = this.(Lscala/collection/IterableLike;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    this.(Lscala/collection/TraversableLike;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$exists$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/runtime/BooleanRef;Lscala/collection/Iterator;)V;)(this, f$4, acc$1, elems2$5)));
-    return acc$1.(Z;)elem;
+    Lscala/collection/Iterator; elems2$5 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$exists$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/runtime/BooleanRef;Lscala/collection/Iterator;)V;)(this, f$4, acc$1, elems2$5)));
+    return acc$1.(Lscala/runtime/BooleanRef;)elem;
   }
   
   public Z; forall(Lscala/Function2; f$5) {
     Lscala/runtime/BooleanRef; acc$2 = (new (Lscala/runtime/BooleanRef;::this(Z;)V;)(true));
-    Lscala/collection/Iterator; elems2$6 = this.(Lscala/collection/IterableLike;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    this.(Lscala/collection/TraversableLike;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$forall$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/runtime/BooleanRef;Lscala/collection/Iterator;)V;)(this, f$5, acc$2, elems2$6)));
-    return acc$2.(Z;)elem;
+    Lscala/collection/Iterator; elems2$6 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$forall$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/runtime/BooleanRef;Lscala/collection/Iterator;)V;)(this, f$5, acc$2, elems2$6)));
+    return acc$2.(Lscala/runtime/BooleanRef;)elem;
   }
   
   public V; foreach(Lscala/Function2; f$6) {
-    Lscala/collection/Iterator; elems2$7 = this.(Lscala/collection/IterableLike;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    this.(Lscala/collection/TraversableLike;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$foreach$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/Iterator;)V;)(this, f$6, elems2$7)));
+    Lscala/collection/Iterator; elems2$7 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$foreach$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/Iterator;)V;)(this, f$6, elems2$7)));
   }
   
   protected Lscala/Tuple2; $outer$u0020;
   
   public Lscala/Tuple2; scala$Tuple2$Zipped$$$outer() {
-    return this.(Lscala/Tuple2;)$outer$u0020;
+    return this.(Lscala/Tuple2$Zipped;)$outer$u0020;
   }
   
   public this(Lscala/Tuple2; $outer, Lscala/collection/TraversableLike; coll1, Lscala/collection/IterableLike; coll2) {
-    this.(Lscala/collection/TraversableLike;)coll1 = coll1;
-    this.(Lscala/collection/IterableLike;)coll2 = coll2;
+    this.(Lscala/Tuple2$Zipped;)coll1 = coll1;
+    this.(Lscala/Tuple2$Zipped;)coll2 = coll2;
     if (($outer == null))
       {
         throw (new (Ljava/lang/NullPointerException;::this()V;)());
       }
     else
       {
-        this.(Lscala/Tuple2;)$outer$u0020 = $outer;
+        this.(Lscala/Tuple2$Zipped;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
   }

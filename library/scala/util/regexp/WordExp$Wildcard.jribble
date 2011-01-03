@@ -13,25 +13,25 @@ public class Lscala/util/regexp/WordExp$Wildcard; extends Lscala/util/regexp/Bas
   private final Z; isNullable$u0020;
   
   public final Z; isNullable() {
-    if (((this.(I;)bitmap$0 & 1) == 0))
+    if (((this.(Lscala/util/regexp/WordExp$Wildcard;)bitmap$0 & 1) == 0))
       {
-        if (((this.(I;)bitmap$0 & 1) == 0))
+        if (((this.(Lscala/util/regexp/WordExp$Wildcard;)bitmap$0 & 1) == 0))
           {
-            this.(Z;)isNullable$u0020 = false;
-            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 1);
+            this.(Lscala/util/regexp/WordExp$Wildcard;)isNullable$u0020 = false;
+            this.(Lscala/util/regexp/WordExp$Wildcard;)bitmap$0 = (this.(Lscala/util/regexp/WordExp$Wildcard;)bitmap$0 | 1);
           }
       }
-    return this.(Z;)isNullable$u0020;
+    return this.(Lscala/util/regexp/WordExp$Wildcard;)isNullable$u0020;
   }
   
   private I; pos$u0020;
   
   public I; pos() {
-    return this.(I;)pos$u0020;
+    return this.(Lscala/util/regexp/WordExp$Wildcard;)pos$u0020;
   }
   
   public V; pos_$eq(I; x$1) {
-    this.(I;)pos$u0020 = x$1;
+    this.(Lscala/util/regexp/WordExp$Wildcard;)pos$u0020 = x$1;
   }
   
   public I; hashCode() {
@@ -76,7 +76,7 @@ public class Lscala/util/regexp/WordExp$Wildcard; extends Lscala/util/regexp/Bas
   protected Lscala/util/regexp/WordExp; $outer$u0020;
   
   public Lscala/util/regexp/WordExp; scala$util$regexp$WordExp$Wildcard$$$outer() {
-    return this.(Lscala/util/regexp/WordExp;)$outer$u0020;
+    return this.(Lscala/util/regexp/WordExp$Wildcard;)$outer$u0020;
   }
   
   public this(Lscala/util/regexp/WordExp; $outer) {
@@ -86,10 +86,10 @@ public class Lscala/util/regexp/WordExp$Wildcard; extends Lscala/util/regexp/Bas
       }
     else
       {
-        this.(Lscala/util/regexp/WordExp;)$outer$u0020 = $outer;
+        this.(Lscala/util/regexp/WordExp$Wildcard;)$outer$u0020 = $outer;
       }
     (Lscala/util/regexp/Base$RegExp;::super(Lscala/util/regexp/Base;)V;)($outer);
     Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
-    this.(I;)pos$u0020 = -1;
+    this.(Lscala/util/regexp/WordExp$Wildcard;)pos$u0020 = -1;
   }
 }

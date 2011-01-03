@@ -3,11 +3,11 @@ public final class Lscala/runtime/RichException; extends Ljava/lang/Object; impl
   private Ljava/lang/Throwable; exc;
   
   public Ljava/lang/String; getStackTraceString() {
-    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(this.(Ljava/lang/Throwable;)exc.(Ljava/lang/Throwable;::getStackTrace()Ljava/lang/StackTraceElement;[)().<cast>(Ljava/lang/Object;[)).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)("", Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::EOL()Ljava/lang/String;)(), Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::EOL()Ljava/lang/String;)());
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(this.(Lscala/runtime/RichException;)exc.(Ljava/lang/Throwable;::getStackTrace()Ljava/lang/StackTraceElement;[)().<cast>(Ljava/lang/Object;[)).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)("", Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::EOL()Ljava/lang/String;)(), Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::EOL()Ljava/lang/String;)());
   }
   
   public this(Ljava/lang/Throwable; exc) {
-    this.(Ljava/lang/Throwable;)exc = exc;
+    this.(Lscala/runtime/RichException;)exc = exc;
     (Ljava/lang/Object;::super()V;)();
   }
 }

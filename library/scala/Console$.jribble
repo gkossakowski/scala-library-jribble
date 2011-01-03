@@ -92,19 +92,19 @@ public final class Lscala/Console$; extends Ljava/lang/Object; implements Lscala
   private Lscala/util/DynamicVariable; outVar$u0020;
   
   private Lscala/util/DynamicVariable; outVar() {
-    return this.(Lscala/util/DynamicVariable;)outVar$u0020;
+    return this.(Lscala/Console$;)outVar$u0020;
   }
   
   private Lscala/util/DynamicVariable; errVar$u0020;
   
   private Lscala/util/DynamicVariable; errVar() {
-    return this.(Lscala/util/DynamicVariable;)errVar$u0020;
+    return this.(Lscala/Console$;)errVar$u0020;
   }
   
   private Lscala/util/DynamicVariable; inVar$u0020;
   
   private Lscala/util/DynamicVariable; inVar() {
-    return this.(Lscala/util/DynamicVariable;)inVar$u0020;
+    return this.(Lscala/Console$;)inVar$u0020;
   }
   
   public Ljava/io/PrintStream; out() {
@@ -470,8 +470,8 @@ public final class Lscala/Console$; extends Ljava/lang/Object; implements Lscala
   
   public this() {
     (Ljava/lang/Object;::super()V;)();
-    this.(Lscala/util/DynamicVariable;)outVar$u0020 = (new (Lscala/util/DynamicVariable;::this(Ljava/lang/Object;)V;)(Ljava/lang/System;.MODULE$.(Ljava/io/PrintStream;)out));
-    this.(Lscala/util/DynamicVariable;)errVar$u0020 = (new (Lscala/util/DynamicVariable;::this(Ljava/lang/Object;)V;)(Ljava/lang/System;.MODULE$.(Ljava/io/PrintStream;)err));
-    this.(Lscala/util/DynamicVariable;)inVar$u0020 = (new (Lscala/util/DynamicVariable;::this(Ljava/lang/Object;)V;)((new (Ljava/io/BufferedReader;::this(Ljava/io/Reader;)V;)((new (Ljava/io/InputStreamReader;::this(Ljava/io/InputStream;)V;)(Ljava/lang/System;.MODULE$.(Ljava/io/InputStream;)in))))));
+    this.(Lscala/Console$;)outVar$u0020 = (new (Lscala/util/DynamicVariable;::this(Ljava/lang/Object;)V;)(Ljava/lang/System;.MODULE$.(Ljava/lang/System;)out));
+    this.(Lscala/Console$;)errVar$u0020 = (new (Lscala/util/DynamicVariable;::this(Ljava/lang/Object;)V;)(Ljava/lang/System;.MODULE$.(Ljava/lang/System;)err));
+    this.(Lscala/Console$;)inVar$u0020 = (new (Lscala/util/DynamicVariable;::this(Ljava/lang/Object;)V;)((new (Ljava/io/BufferedReader;::this(Ljava/io/Reader;)V;)((new (Ljava/io/InputStreamReader;::this(Ljava/io/InputStream;)V;)(Ljava/lang/System;.MODULE$.(Ljava/lang/System;)in))))));
   }
 }

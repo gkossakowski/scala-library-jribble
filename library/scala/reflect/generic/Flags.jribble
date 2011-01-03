@@ -259,19 +259,19 @@ public class Lscala/reflect/generic/Flags; extends Ljava/lang/Object; implements
   private final J; PickledFlags$u0020;
   
   public final J; PickledFlags() {
-    return this.(J;)PickledFlags$u0020;
+    return this.(Lscala/reflect/generic/Flags;)PickledFlags$u0020;
   }
   
   private I;[ r2p$u0020;
   
   private I;[ r2p() {
-    return this.(I;[)r2p$u0020;
+    return this.(Lscala/reflect/generic/Flags;)r2p$u0020;
   }
   
   private I;[ p2r$u0020;
   
   private I;[ p2r() {
-    return this.(I;[)p2r$u0020;
+    return this.(Lscala/reflect/generic/Flags;)p2r$u0020;
   }
   
   public J; rawFlagsToPickled(J; flags) {
@@ -285,7 +285,7 @@ public class Lscala/reflect/generic/Flags; extends Ljava/lang/Object; implements
   private Lscala/collection/immutable/List; pickledListOrder$u0020;
   
   protected Lscala/collection/immutable/List; pickledListOrder() {
-    return this.(Lscala/collection/immutable/List;)pickledListOrder$u0020;
+    return this.(Lscala/reflect/generic/Flags;)pickledListOrder$u0020;
   }
   
   private final I; rawFlagsToPickledAux$1(I; flags) {
@@ -521,7 +521,7 @@ public class Lscala/reflect/generic/Flags; extends Ljava/lang/Object; implements
   
   public this() {
     (Ljava/lang/Object;::super()V;)();
-    this.(J;)PickledFlags$u0020 = 4294967295L;
+    this.(Lscala/reflect/generic/Flags;)PickledFlags$u0020 = 4294967295L;
     I;[ v = new I;[4096];
     I; i = 0;
     while$1: while(true) {
@@ -539,7 +539,7 @@ public class Lscala/reflect/generic/Flags; extends Ljava/lang/Object; implements
         }
       break;
     }
-    this.(I;[)r2p$u0020 = v;
+    this.(Lscala/reflect/generic/Flags;)r2p$u0020 = v;
     I;[ v = new I;[4096];
     I; i = 0;
     while$2: while(true) {
@@ -557,7 +557,7 @@ public class Lscala/reflect/generic/Flags; extends Ljava/lang/Object; implements
         }
       break;
     }
-    this.(I;[)p2r$u0020 = v;
+    this.(Lscala/reflect/generic/Flags;)p2r$u0020 = v;
     J;[ v = new J;[63];
     v[this.(Lscala/reflect/generic/Flags;::findBit$1(J;)I;)(1L)] = 512L;
     v[this.(Lscala/reflect/generic/Flags;::findBit$1(J;)I;)(2L)] = 32L;
@@ -587,6 +587,6 @@ public class Lscala/reflect/generic/Flags; extends Ljava/lang/Object; implements
         }
       break;
     }
-    this.(Lscala/collection/immutable/List;)pickledListOrder$u0020 = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::longArrayOps(J;[)Lscala/collection/mutable/ArrayOps;)(v).(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)();
+    this.(Lscala/reflect/generic/Flags;)pickledListOrder$u0020 = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::longArrayOps(J;[)Lscala/collection/mutable/ArrayOps;)(v).(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)();
   }
 }

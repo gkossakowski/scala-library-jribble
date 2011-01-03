@@ -3,11 +3,11 @@ public class Lscala/xml/HasKeyValue; extends Ljava/lang/Object; implements Lscal
   private Ljava/lang/String; key;
   
   public Lscala/Option; unapplySeq(Lscala/xml/MetaData; x) {
-    return x.(Lscala/xml/MetaData;::get(Ljava/lang/String;)Lscala/Option;)(this.(Ljava/lang/String;)key);
+    return x.(Lscala/xml/MetaData;::get(Ljava/lang/String;)Lscala/Option;)(this.(Lscala/xml/HasKeyValue;)key);
   }
   
   public this(Ljava/lang/String; key) {
-    this.(Ljava/lang/String;)key = key;
+    this.(Lscala/xml/HasKeyValue;)key = key;
     (Ljava/lang/Object;::super()V;)();
   }
 }

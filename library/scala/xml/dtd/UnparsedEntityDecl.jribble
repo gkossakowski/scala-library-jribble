@@ -23,19 +23,19 @@ public class Lscala/xml/dtd/UnparsedEntityDecl; extends Lscala/xml/dtd/EntityDec
   private Ljava/lang/String; name$u0020;
   
   public Ljava/lang/String; name() {
-    return this.(Ljava/lang/String;)name$u0020;
+    return this.(Lscala/xml/dtd/UnparsedEntityDecl;)name$u0020;
   }
   
   private Lscala/xml/dtd/ExternalID; extID$u0020;
   
   public Lscala/xml/dtd/ExternalID; extID() {
-    return this.(Lscala/xml/dtd/ExternalID;)extID$u0020;
+    return this.(Lscala/xml/dtd/UnparsedEntityDecl;)extID$u0020;
   }
   
   private Ljava/lang/String; notation$u0020;
   
   public Ljava/lang/String; notation() {
-    return this.(Ljava/lang/String;)notation$u0020;
+    return this.(Lscala/xml/dtd/UnparsedEntityDecl;)notation$u0020;
   }
   
   public Lscala/collection/mutable/StringBuilder; buildString(Lscala/collection/mutable/StringBuilder; sb) {
@@ -131,9 +131,9 @@ public class Lscala/xml/dtd/UnparsedEntityDecl; extends Lscala/xml/dtd/EntityDec
   }
   
   public this(Ljava/lang/String; name, Lscala/xml/dtd/ExternalID; extID, Ljava/lang/String; notation) {
-    this.(Ljava/lang/String;)name$u0020 = name;
-    this.(Lscala/xml/dtd/ExternalID;)extID$u0020 = extID;
-    this.(Ljava/lang/String;)notation$u0020 = notation;
+    this.(Lscala/xml/dtd/UnparsedEntityDecl;)name$u0020 = name;
+    this.(Lscala/xml/dtd/UnparsedEntityDecl;)extID$u0020 = extID;
+    this.(Lscala/xml/dtd/UnparsedEntityDecl;)notation$u0020 = notation;
     (Lscala/xml/dtd/EntityDecl;::super()V;)();
     Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
   }

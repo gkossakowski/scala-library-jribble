@@ -15,36 +15,36 @@ public abstract class Lscala/reflect/generic/Trees$Tree; extends Ljava/lang/Obje
   private I; id$u0020;
   
   public I; id() {
-    return this.(I;)id$u0020;
+    return this.(Lscala/reflect/generic/Trees$Tree;)id$u0020;
   }
   
   private Ljava/lang/Object; rawpos;
   
   public Ljava/lang/Object; pos() {
-    return this.(Ljava/lang/Object;)rawpos;
+    return this.(Lscala/reflect/generic/Trees$Tree;)rawpos;
   }
   
   public V; pos_$eq(Ljava/lang/Object; pos) {
-    this.(Ljava/lang/Object;)rawpos = pos;
+    this.(Lscala/reflect/generic/Trees$Tree;)rawpos = pos;
   }
   
   public Lscala/reflect/generic/Trees$Tree; setPos(Ljava/lang/Object; pos) {
-    this.(Ljava/lang/Object;)rawpos = pos;
+    this.(Lscala/reflect/generic/Trees$Tree;)rawpos = pos;
     return this;
   }
   
   private Lscala/reflect/generic/Types$AbsType; rawtpe;
   
   public Lscala/reflect/generic/Types$AbsType; tpe() {
-    return this.(Lscala/reflect/generic/Types$AbsType;)rawtpe;
+    return this.(Lscala/reflect/generic/Trees$Tree;)rawtpe;
   }
   
   public V; tpe_$eq(Lscala/reflect/generic/Types$AbsType; t) {
-    this.(Lscala/reflect/generic/Types$AbsType;)rawtpe = t;
+    this.(Lscala/reflect/generic/Trees$Tree;)rawtpe = t;
   }
   
   public Lscala/reflect/generic/Trees$Tree; setType(Lscala/reflect/generic/Types$AbsType; tp) {
-    this.(Lscala/reflect/generic/Types$AbsType;)rawtpe = tp;
+    this.(Lscala/reflect/generic/Trees$Tree;)rawtpe = tp;
     return this;
   }
   
@@ -128,7 +128,7 @@ public abstract class Lscala/reflect/generic/Trees$Tree; extends Ljava/lang/Obje
   protected Lscala/reflect/generic/Universe; $outer$u0020;
   
   public Lscala/reflect/generic/Universe; scala$reflect$generic$Trees$Tree$$$outer() {
-    return this.(Lscala/reflect/generic/Universe;)$outer$u0020;
+    return this.(Lscala/reflect/generic/Trees$Tree;)$outer$u0020;
   }
   
   public final Lscala/collection/immutable/List; subtrees$1(Ljava/lang/Object; x) {
@@ -175,12 +175,12 @@ public abstract class Lscala/reflect/generic/Trees$Tree; extends Ljava/lang/Obje
       }
     else
       {
-        this.(Lscala/reflect/generic/Universe;)$outer$u0020 = $outer;
+        this.(Lscala/reflect/generic/Trees$Tree;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
     Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
-    this.(I;)id$u0020 = $outer.(Lscala/reflect/generic/Trees;::nodeCount()I;)();
+    this.(Lscala/reflect/generic/Trees$Tree;)id$u0020 = $outer.(Lscala/reflect/generic/Trees;::nodeCount()I;)();
     $outer.(Lscala/reflect/generic/Trees;::nodeCount_$eq(I;)V;)(($outer.(Lscala/reflect/generic/Trees;::nodeCount()I;)() + 1));
-    this.(Ljava/lang/Object;)rawpos = $outer.(Lscala/reflect/generic/Universe;::NoPosition()Ljava/lang/Object;)();
+    this.(Lscala/reflect/generic/Trees$Tree;)rawpos = $outer.(Lscala/reflect/generic/Universe;::NoPosition()Ljava/lang/Object;)();
   }
 }

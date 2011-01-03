@@ -319,27 +319,27 @@ public final class Lscala/collection/Iterator$$anon$22; extends Ljava/lang/Objec
   private Ljava/lang/Object; hd$u0020;
   
   private Ljava/lang/Object; hd() {
-    return this.(Ljava/lang/Object;)hd$u0020;
+    return this.(Lscala/collection/Iterator$$anon$22;)hd$u0020;
   }
   
   private V; hd_$eq(Ljava/lang/Object; x$1) {
-    this.(Ljava/lang/Object;)hd$u0020 = x$1;
+    this.(Lscala/collection/Iterator$$anon$22;)hd$u0020 = x$1;
   }
   
   private Z; hdDefined$u0020;
   
   private Z; hdDefined() {
-    return this.(Z;)hdDefined$u0020;
+    return this.(Lscala/collection/Iterator$$anon$22;)hdDefined$u0020;
   }
   
   private V; hdDefined_$eq(Z; x$1) {
-    this.(Z;)hdDefined$u0020 = x$1;
+    this.(Lscala/collection/Iterator$$anon$22;)hdDefined$u0020 = x$1;
   }
   
   public Z; hasNext() {
     doWhile$1: while(true) {
       {
-        if (!(this.(Lscala/collection/Iterator;)$outer$u0020.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        if (!(this.(Lscala/collection/Iterator$$anon$22;)$outer$u0020.(Lscala/collection/Iterator;::hasNext()Z;)()))
           {
             return false;
           }
@@ -347,9 +347,9 @@ public final class Lscala/collection/Iterator$$anon$22; extends Ljava/lang/Objec
           {
             
           }
-        this.(Lscala/collection/Iterator$$anon$22;::hd_$eq(Ljava/lang/Object;)V;)(this.(Lscala/collection/Iterator;)$outer$u0020.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
+        this.(Lscala/collection/Iterator$$anon$22;::hd_$eq(Ljava/lang/Object;)V;)(this.(Lscala/collection/Iterator$$anon$22;)$outer$u0020.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
       }
-      if (!(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Function1;)p$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/Iterator$$anon$22;::hd()Ljava/lang/Object;)()))))
+      if (!(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/collection/Iterator$$anon$22;)p$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/Iterator$$anon$22;::hd()Ljava/lang/Object;)()))))
         {
           continue doWhile$1;
         }
@@ -388,12 +388,12 @@ public final class Lscala/collection/Iterator$$anon$22; extends Ljava/lang/Objec
       }
     else
       {
-        this.(Lscala/collection/Iterator;)$outer$u0020 = $outer;
+        this.(Lscala/collection/Iterator$$anon$22;)$outer$u0020 = $outer;
       }
-    this.(Lscala/Function1;)p$1 = p$1;
+    this.(Lscala/collection/Iterator$$anon$22;)p$1 = p$1;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(Z;)hdDefined$u0020 = false;
+    this.(Lscala/collection/Iterator$$anon$22;)hdDefined$u0020 = false;
   }
 }

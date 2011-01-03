@@ -17,31 +17,31 @@ public class Lscala/util/regexp/WordExp$Letter; extends Lscala/util/regexp/Base$
   private Lscala/util/regexp/WordExp$Label; a$u0020;
   
   public Lscala/util/regexp/WordExp$Label; a() {
-    return this.(Lscala/util/regexp/WordExp$Label;)a$u0020;
+    return this.(Lscala/util/regexp/WordExp$Letter;)a$u0020;
   }
   
   private final Z; isNullable$u0020;
   
   public final Z; isNullable() {
-    if (((this.(I;)bitmap$0 & 1) == 0))
+    if (((this.(Lscala/util/regexp/WordExp$Letter;)bitmap$0 & 1) == 0))
       {
-        if (((this.(I;)bitmap$0 & 1) == 0))
+        if (((this.(Lscala/util/regexp/WordExp$Letter;)bitmap$0 & 1) == 0))
           {
-            this.(Z;)isNullable$u0020 = false;
-            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 1);
+            this.(Lscala/util/regexp/WordExp$Letter;)isNullable$u0020 = false;
+            this.(Lscala/util/regexp/WordExp$Letter;)bitmap$0 = (this.(Lscala/util/regexp/WordExp$Letter;)bitmap$0 | 1);
           }
       }
-    return this.(Z;)isNullable$u0020;
+    return this.(Lscala/util/regexp/WordExp$Letter;)isNullable$u0020;
   }
   
   private I; pos$u0020;
   
   public I; pos() {
-    return this.(I;)pos$u0020;
+    return this.(Lscala/util/regexp/WordExp$Letter;)pos$u0020;
   }
   
   public V; pos_$eq(I; x$1) {
-    this.(I;)pos$u0020 = x$1;
+    this.(Lscala/util/regexp/WordExp$Letter;)pos$u0020 = x$1;
   }
   
   public Lscala/util/regexp/WordExp$Letter; copy(Lscala/util/regexp/WordExp$Label; a) {
@@ -111,7 +111,7 @@ public class Lscala/util/regexp/WordExp$Letter; extends Lscala/util/regexp/Base$
   protected Lscala/util/regexp/WordExp; $outer$u0020;
   
   public Lscala/util/regexp/WordExp; scala$util$regexp$WordExp$Letter$$$outer() {
-    return this.(Lscala/util/regexp/WordExp;)$outer$u0020;
+    return this.(Lscala/util/regexp/WordExp$Letter;)$outer$u0020;
   }
   
   private final Z; gd1$1(Lscala/util/regexp/WordExp$Label; x$1) {
@@ -119,17 +119,17 @@ public class Lscala/util/regexp/WordExp$Letter; extends Lscala/util/regexp/Base$
   }
   
   public this(Lscala/util/regexp/WordExp; $outer, Lscala/util/regexp/WordExp$Label; a) {
-    this.(Lscala/util/regexp/WordExp$Label;)a$u0020 = a;
+    this.(Lscala/util/regexp/WordExp$Letter;)a$u0020 = a;
     if (($outer == null))
       {
         throw (new (Ljava/lang/NullPointerException;::this()V;)());
       }
     else
       {
-        this.(Lscala/util/regexp/WordExp;)$outer$u0020 = $outer;
+        this.(Lscala/util/regexp/WordExp$Letter;)$outer$u0020 = $outer;
       }
     (Lscala/util/regexp/Base$RegExp;::super(Lscala/util/regexp/Base;)V;)($outer);
     Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
-    this.(I;)pos$u0020 = -1;
+    this.(Lscala/util/regexp/WordExp$Letter;)pos$u0020 = -1;
   }
 }

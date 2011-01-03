@@ -5,21 +5,21 @@ public final class Lscala/collection/mutable/WrappedArray$ofRef; extends Lscala/
   private Ljava/lang/Object;[ array$u0020;
   
   public Ljava/lang/Object;[ array() {
-    return this.(Ljava/lang/Object;[)array$u0020;
+    return this.(Lscala/collection/mutable/WrappedArray$ofRef;)array$u0020;
   }
   
   private Lscala/reflect/ClassManifest; elemManifest$u0020;
   
   public Lscala/reflect/ClassManifest; elemManifest() {
-    if (((this.(I;)bitmap$0 & 1) == 0))
+    if (((this.(Lscala/collection/mutable/WrappedArray$ofRef;)bitmap$0 & 1) == 0))
       {
-        if (((this.(I;)bitmap$0 & 1) == 0))
+        if (((this.(Lscala/collection/mutable/WrappedArray$ofRef;)bitmap$0 & 1) == 0))
           {
-            this.(Lscala/reflect/ClassManifest;)elemManifest$u0020 = Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;)Lscala/reflect/ClassManifest;)(this.(Lscala/collection/mutable/WrappedArray$ofRef;::array()Ljava/lang/Object;[)().(Ljava/lang/Object;::getClass()Ljava/lang/Class;)().(Ljava/lang/Class;::getComponentType()Ljava/lang/Class;)());
-            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 1);
+            this.(Lscala/collection/mutable/WrappedArray$ofRef;)elemManifest$u0020 = Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;)Lscala/reflect/ClassManifest;)(this.(Lscala/collection/mutable/WrappedArray$ofRef;::array()Ljava/lang/Object;[)().(Ljava/lang/Object;::getClass()Ljava/lang/Class;)().(Ljava/lang/Class;::getComponentType()Ljava/lang/Class;)());
+            this.(Lscala/collection/mutable/WrappedArray$ofRef;)bitmap$0 = (this.(Lscala/collection/mutable/WrappedArray$ofRef;)bitmap$0 | 1);
           }
       }
-    return this.(Lscala/reflect/ClassManifest;)elemManifest$u0020;
+    return this.(Lscala/collection/mutable/WrappedArray$ofRef;)elemManifest$u0020;
   }
   
   public I; length() {
@@ -43,7 +43,7 @@ public final class Lscala/collection/mutable/WrappedArray$ofRef; extends Lscala/
   }
   
   public this(Ljava/lang/Object;[ array) {
-    this.(Ljava/lang/Object;[)array$u0020 = array;
+    this.(Lscala/collection/mutable/WrappedArray$ofRef;)array$u0020 = array;
     (Lscala/collection/mutable/WrappedArray;::super()V;)();
   }
 }

@@ -3,13 +3,13 @@ public class Lscala/collection/JavaConversions$MapWrapper; extends Ljava/util/Ab
   public Lscala/collection/Map; scala$collection$JavaConversions$MapWrapper$$underlying;
   
   public I; size() {
-    return this.(Lscala/collection/Map;)scala$collection$JavaConversions$MapWrapper$$underlying.(Lscala/collection/TraversableOnce;::size()I;)();
+    return this.(Lscala/collection/JavaConversions$MapWrapper;)scala$collection$JavaConversions$MapWrapper$$underlying.(Lscala/collection/TraversableOnce;::size()I;)();
   }
   
   public Ljava/lang/Object; get(Ljava/lang/Object; key) {
     Ljava/lang/Object; exceptionResult2;
     try {
-      Lscala/Option; temp102 = this.(Lscala/collection/Map;)scala$collection$JavaConversions$MapWrapper$$underlying.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key);
+      Lscala/Option; temp102 = this.(Lscala/collection/JavaConversions$MapWrapper;)scala$collection$JavaConversions$MapWrapper$$underlying.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key);
       Ljava/lang/Object; $49$;
       if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp102))
         {
@@ -40,7 +40,7 @@ public class Lscala/collection/JavaConversions$MapWrapper; extends Ljava/util/Ab
   }
   
   public this(Lscala/collection/Map; underlying) {
-    this.(Lscala/collection/Map;)scala$collection$JavaConversions$MapWrapper$$underlying = underlying;
+    this.(Lscala/collection/JavaConversions$MapWrapper;)scala$collection$JavaConversions$MapWrapper$$underlying = underlying;
     (Ljava/util/AbstractMap;::super()V;)();
   }
 }

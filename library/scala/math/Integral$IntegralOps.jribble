@@ -3,32 +3,32 @@ public class Lscala/math/Integral$IntegralOps; extends Lscala/math/Numeric$Ops; 
   private Ljava/lang/Object; lhs;
   
   public Ljava/lang/Object; $div(Ljava/lang/Object; rhs) {
-    return this.(Lscala/math/Integral$IntegralOps;::scala$math$Integral$IntegralOps$$$outer()Lscala/math/Integral;)().(Lscala/math/Integral;::quot(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Ljava/lang/Object;)lhs, rhs);
+    return this.(Lscala/math/Integral$IntegralOps;::scala$math$Integral$IntegralOps$$$outer()Lscala/math/Integral;)().(Lscala/math/Integral;::quot(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/math/Integral$IntegralOps;)lhs, rhs);
   }
   
   public Ljava/lang/Object; $percent(Ljava/lang/Object; rhs) {
-    return this.(Lscala/math/Integral$IntegralOps;::scala$math$Integral$IntegralOps$$$outer()Lscala/math/Integral;)().(Lscala/math/Integral;::rem(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Ljava/lang/Object;)lhs, rhs);
+    return this.(Lscala/math/Integral$IntegralOps;::scala$math$Integral$IntegralOps$$$outer()Lscala/math/Integral;)().(Lscala/math/Integral;::rem(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/math/Integral$IntegralOps;)lhs, rhs);
   }
   
   public Lscala/Tuple2; $div$percent(Ljava/lang/Object; rhs) {
-    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/math/Integral$IntegralOps;::scala$math$Integral$IntegralOps$$$outer()Lscala/math/Integral;)().(Lscala/math/Integral;::quot(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Ljava/lang/Object;)lhs, rhs), this.(Lscala/math/Integral$IntegralOps;::scala$math$Integral$IntegralOps$$$outer()Lscala/math/Integral;)().(Lscala/math/Integral;::rem(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Ljava/lang/Object;)lhs, rhs)));
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/math/Integral$IntegralOps;::scala$math$Integral$IntegralOps$$$outer()Lscala/math/Integral;)().(Lscala/math/Integral;::quot(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/math/Integral$IntegralOps;)lhs, rhs), this.(Lscala/math/Integral$IntegralOps;::scala$math$Integral$IntegralOps$$$outer()Lscala/math/Integral;)().(Lscala/math/Integral;::rem(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/math/Integral$IntegralOps;)lhs, rhs)));
   }
   
   protected Lscala/math/Integral; $outer$u0020;
   
   public Lscala/math/Integral; scala$math$Integral$IntegralOps$$$outer() {
-    return this.(Lscala/math/Integral;)$outer$u0020;
+    return this.(Lscala/math/Integral$IntegralOps;)$outer$u0020;
   }
   
   public this(Lscala/math/Integral; $outer, Ljava/lang/Object; lhs) {
-    this.(Ljava/lang/Object;)lhs = lhs;
+    this.(Lscala/math/Integral$IntegralOps;)lhs = lhs;
     if (($outer == null))
       {
         throw (new (Ljava/lang/NullPointerException;::this()V;)());
       }
     else
       {
-        this.(Lscala/math/Integral;)$outer$u0020 = $outer;
+        this.(Lscala/math/Integral$IntegralOps;)$outer$u0020 = $outer;
       }
     (Lscala/math/Numeric$Ops;::super(Lscala/math/Numeric;Ljava/lang/Object;)V;)($outer, lhs);
   }

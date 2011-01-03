@@ -579,11 +579,11 @@ public class Lscala/collection/immutable/IndexedSeq$Impl; extends Ljava/lang/Obj
   private Lscala/collection/mutable/ArrayBuffer; buf;
   
   public I; length() {
-    return this.(Lscala/collection/mutable/ArrayBuffer;)buf.(Lscala/collection/mutable/ResizableArray;::length()I;)();
+    return this.(Lscala/collection/immutable/IndexedSeq$Impl;)buf.(Lscala/collection/mutable/ResizableArray;::length()I;)();
   }
   
   public Ljava/lang/Object; apply(I; idx) {
-    return this.(Lscala/collection/mutable/ArrayBuffer;)buf.(Lscala/collection/mutable/ResizableArray;::apply(I;)Ljava/lang/Object;)(idx);
+    return this.(Lscala/collection/immutable/IndexedSeq$Impl;)buf.(Lscala/collection/mutable/ResizableArray;::apply(I;)Ljava/lang/Object;)(idx);
   }
   
   public Lscala/Function1; andThen(Lscala/Function1; g) {
@@ -643,7 +643,7 @@ public class Lscala/collection/immutable/IndexedSeq$Impl; extends Ljava/lang/Obj
   }
   
   public this(Lscala/collection/mutable/ArrayBuffer; buf) {
-    this.(Lscala/collection/mutable/ArrayBuffer;)buf = buf;
+    this.(Lscala/collection/immutable/IndexedSeq$Impl;)buf = buf;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$init$(Lscala/collection/TraversableLike;)V;)(this);

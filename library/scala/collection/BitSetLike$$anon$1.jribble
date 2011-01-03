@@ -319,22 +319,22 @@ public final class Lscala/collection/BitSetLike$$anon$1; extends Ljava/lang/Obje
   private I; current$u0020;
   
   private I; current() {
-    return this.(I;)current$u0020;
+    return this.(Lscala/collection/BitSetLike$$anon$1;)current$u0020;
   }
   
   private V; current_$eq(I; x$1) {
-    this.(I;)current$u0020 = x$1;
+    this.(Lscala/collection/BitSetLike$$anon$1;)current$u0020 = x$1;
   }
   
   private I; end$u0020;
   
   private I; end() {
-    return this.(I;)end$u0020;
+    return this.(Lscala/collection/BitSetLike$$anon$1;)end$u0020;
   }
   
   public Z; hasNext() {
     while$2: while(true) {
-      if (((this.(Lscala/collection/BitSetLike$$anon$1;::current()I;)() < this.(Lscala/collection/BitSetLike$$anon$1;::end()I;)()) && !(this.(Lscala/collection/BitSetLike;)$outer$u0020.(Lscala/collection/BitSetLike;::contains(I;)Z;)(this.(Lscala/collection/BitSetLike$$anon$1;::current()I;)()))))
+      if (((this.(Lscala/collection/BitSetLike$$anon$1;::current()I;)() < this.(Lscala/collection/BitSetLike$$anon$1;::end()I;)()) && !(this.(Lscala/collection/BitSetLike$$anon$1;)$outer$u0020.(Lscala/collection/BitSetLike;::contains(I;)Z;)(this.(Lscala/collection/BitSetLike$$anon$1;::current()I;)()))))
         {
           this.(Lscala/collection/BitSetLike$$anon$1;::current_$eq(I;)V;)((this.(Lscala/collection/BitSetLike$$anon$1;::current()I;)() + 1));
           continue while$2;
@@ -376,12 +376,12 @@ public final class Lscala/collection/BitSetLike$$anon$1; extends Ljava/lang/Obje
       }
     else
       {
-        this.(Lscala/collection/BitSetLike;)$outer$u0020 = $outer;
+        this.(Lscala/collection/BitSetLike$$anon$1;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(I;)current$u0020 = 0;
-    this.(I;)end$u0020 = ($outer.(Lscala/collection/BitSetLike;::nwords()I;)() * Lscala/collection/BitSetLike$;.MODULE$.(Lscala/collection/BitSetLike$;::scala$collection$BitSetLike$$WordLength()I;)());
+    this.(Lscala/collection/BitSetLike$$anon$1;)current$u0020 = 0;
+    this.(Lscala/collection/BitSetLike$$anon$1;)end$u0020 = ($outer.(Lscala/collection/BitSetLike;::nwords()I;)() * Lscala/collection/BitSetLike$;.MODULE$.(Lscala/collection/BitSetLike$;::scala$collection$BitSetLike$$WordLength()I;)());
   }
 }

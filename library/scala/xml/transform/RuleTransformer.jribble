@@ -3,11 +3,11 @@ public class Lscala/xml/transform/RuleTransformer; extends Lscala/xml/transform/
   private Lscala/collection/Seq; rules;
   
   public Lscala/collection/Seq; transform(Lscala/xml/Node; n) {
-    return this.(Lscala/collection/Seq;)rules.(Lscala/collection/TraversableOnce;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(super.(Lscala/xml/transform/BasicTransformer;::transform(Lscala/xml/Node;)Lscala/collection/Seq;)(n), (new (Lscala/xml/transform/RuleTransformer$$anonfun$transform$1;::this(Lscala/xml/transform/RuleTransformer;)V;)(this))).<cast>(Lscala/collection/Seq;);
+    return this.(Lscala/xml/transform/RuleTransformer;)rules.(Lscala/collection/TraversableOnce;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(super.(Lscala/xml/transform/BasicTransformer;::transform(Lscala/xml/Node;)Lscala/collection/Seq;)(n), (new (Lscala/xml/transform/RuleTransformer$$anonfun$transform$1;::this(Lscala/xml/transform/RuleTransformer;)V;)(this))).<cast>(Lscala/collection/Seq;);
   }
   
   public this(Lscala/collection/Seq; rules) {
-    this.(Lscala/collection/Seq;)rules = rules;
+    this.(Lscala/xml/transform/RuleTransformer;)rules = rules;
     (Lscala/xml/transform/BasicTransformer;::super()V;)();
   }
 }

@@ -319,15 +319,15 @@ public final class Lscala/collection/Iterator$$anon$10; extends Ljava/lang/Objec
   private I; i$u0020;
   
   private I; i() {
-    return this.(I;)i$u0020;
+    return this.(Lscala/collection/Iterator$$anon$10;)i$u0020;
   }
   
   private V; i_$eq(I; x$1) {
-    this.(I;)i$u0020 = x$1;
+    this.(Lscala/collection/Iterator$$anon$10;)i$u0020 = x$1;
   }
   
   public Z; hasNext() {
-    return (((this.(I;)step$2 <= 0) || (this.(Lscala/collection/Iterator$$anon$10;::i()I;)() < this.(I;)end$3)) && ((this.(I;)step$2 >= 0) || (this.(Lscala/collection/Iterator$$anon$10;::i()I;)() > this.(I;)end$3)));
+    return (((this.(Lscala/collection/Iterator$$anon$10;)step$2 <= 0) || (this.(Lscala/collection/Iterator$$anon$10;::i()I;)() < this.(Lscala/collection/Iterator$$anon$10;)end$3)) && ((this.(Lscala/collection/Iterator$$anon$10;)step$2 >= 0) || (this.(Lscala/collection/Iterator$$anon$10;::i()I;)() > this.(Lscala/collection/Iterator$$anon$10;)end$3)));
   }
   
   public I; next() {
@@ -335,7 +335,7 @@ public final class Lscala/collection/Iterator$$anon$10; extends Ljava/lang/Objec
     if (this.(Lscala/collection/Iterator$$anon$10;::hasNext()Z;)())
       {
         I; result = this.(Lscala/collection/Iterator$$anon$10;::i()I;)();
-        this.(Lscala/collection/Iterator$$anon$10;::i_$eq(I;)V;)((this.(Lscala/collection/Iterator$$anon$10;::i()I;)() + this.(I;)step$2));
+        this.(Lscala/collection/Iterator$$anon$10;::i_$eq(I;)V;)((this.(Lscala/collection/Iterator$$anon$10;::i()I;)() + this.(Lscala/collection/Iterator$$anon$10;)step$2));
         $10$ = result;
       }
     else
@@ -354,8 +354,8 @@ public final class Lscala/collection/Iterator$$anon$10; extends Ljava/lang/Objec
   private I; step$2;
   
   public this(I; start$2, I; end$3, I; step$2) {
-    this.(I;)end$3 = end$3;
-    this.(I;)step$2 = step$2;
+    this.(Lscala/collection/Iterator$$anon$10;)end$3 = end$3;
+    this.(Lscala/collection/Iterator$$anon$10;)step$2 = step$2;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
@@ -367,6 +367,6 @@ public final class Lscala/collection/Iterator$$anon$10; extends Ljava/lang/Objec
       {
         
       }
-    this.(I;)i$u0020 = start$2;
+    this.(Lscala/collection/Iterator$$anon$10;)i$u0020 = start$2;
   }
 }

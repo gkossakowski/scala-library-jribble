@@ -3,7 +3,7 @@ public class Lscala/collection/immutable/Page; extends Ljava/lang/Object; implem
   private I; num$u0020;
   
   public I; num() {
-    return this.(I;)num$u0020;
+    return this.(Lscala/collection/immutable/Page;)num$u0020;
   }
   
   private Lscala/reflect/ClassManifest; evidence$5;
@@ -35,27 +35,27 @@ public class Lscala/collection/immutable/Page; extends Ljava/lang/Object; implem
   private I; filled$u0020;
   
   public I; filled() {
-    return this.(I;)filled$u0020;
+    return this.(Lscala/collection/immutable/Page;)filled$u0020;
   }
   
   public V; filled_$eq(I; x$1) {
-    this.(I;)filled$u0020 = x$1;
+    this.(Lscala/collection/immutable/Page;)filled$u0020 = x$1;
   }
   
   private Z; isLast$u0020;
   
   public Z; isLast() {
-    return this.(Z;)isLast$u0020;
+    return this.(Lscala/collection/immutable/Page;)isLast$u0020;
   }
   
   public V; isLast_$eq(Z; x$1) {
-    this.(Z;)isLast$u0020 = x$1;
+    this.(Lscala/collection/immutable/Page;)isLast$u0020 = x$1;
   }
   
   private final Ljava/lang/Object; data$u0020;
   
   public final Ljava/lang/Object; data() {
-    return this.(Ljava/lang/Object;)data$u0020;
+    return this.(Lscala/collection/immutable/Page;)data$u0020;
   }
   
   public final I; start() {
@@ -94,7 +94,7 @@ public class Lscala/collection/immutable/Page; extends Ljava/lang/Object; implem
     Lscala/collection/immutable/Page; $6$;
     if ((this.(Lscala/collection/immutable/Page;::filled()I;)() == 4096))
       {
-        this.(Lscala/collection/immutable/Page;::next_$eq(Lscala/collection/immutable/Page;)V;)((new (Lscala/collection/immutable/Page;::this(I;Lscala/reflect/ClassManifest;)V;)((this.(Lscala/collection/immutable/Page;::num()I;)() + 1), this.(Lscala/reflect/ClassManifest;)evidence$5)));
+        this.(Lscala/collection/immutable/Page;::next_$eq(Lscala/collection/immutable/Page;)V;)((new (Lscala/collection/immutable/Page;::this(I;Lscala/reflect/ClassManifest;)V;)((this.(Lscala/collection/immutable/Page;::num()I;)() + 1), this.(Lscala/collection/immutable/Page;)evidence$5)));
         $6$ = this.(Lscala/collection/immutable/Page;::next()Lscala/collection/immutable/Page;)().(Lscala/collection/immutable/Page;::addMore(Lscala/Function3;)Lscala/collection/immutable/Page;)(more);
       }
     else
@@ -114,13 +114,13 @@ public class Lscala/collection/immutable/Page; extends Ljava/lang/Object; implem
   }
   
   public this(I; num, Lscala/reflect/ClassManifest; evidence$5) {
-    this.(I;)num$u0020 = num;
-    this.(Lscala/reflect/ClassManifest;)evidence$5 = evidence$5;
+    this.(Lscala/collection/immutable/Page;)num$u0020 = num;
+    this.(Lscala/collection/immutable/Page;)evidence$5 = evidence$5;
     (Ljava/lang/Object;::super()V;)();
     this.(Lscala/collection/immutable/Page;)next$u0020 = null;
     this.(Lscala/collection/immutable/Page;)later$u0020 = this;
-    this.(I;)filled$u0020 = 0;
-    this.(Z;)isLast$u0020 = false;
-    this.(Ljava/lang/Object;)data$u0020 = evidence$5.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)(4096);
+    this.(Lscala/collection/immutable/Page;)filled$u0020 = 0;
+    this.(Lscala/collection/immutable/Page;)isLast$u0020 = false;
+    this.(Lscala/collection/immutable/Page;)data$u0020 = evidence$5.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)(4096);
   }
 }

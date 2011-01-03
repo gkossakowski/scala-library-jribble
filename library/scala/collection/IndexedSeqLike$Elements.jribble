@@ -313,20 +313,20 @@ public class Lscala/collection/IndexedSeqLike$Elements; extends Ljava/lang/Objec
   private I; i$u0020;
   
   private I; i() {
-    return this.(I;)i$u0020;
+    return this.(Lscala/collection/IndexedSeqLike$Elements;)i$u0020;
   }
   
   private V; i_$eq(I; x$1) {
-    this.(I;)i$u0020 = x$1;
+    this.(Lscala/collection/IndexedSeqLike$Elements;)i$u0020 = x$1;
   }
   
   public Z; hasNext() {
-    return (this.(Lscala/collection/IndexedSeqLike$Elements;::i()I;)() < this.(I;)end);
+    return (this.(Lscala/collection/IndexedSeqLike$Elements;::i()I;)() < this.(Lscala/collection/IndexedSeqLike$Elements;)end);
   }
   
   public Ljava/lang/Object; next() {
     Ljava/lang/Object; $1$;
-    if ((this.(Lscala/collection/IndexedSeqLike$Elements;::i()I;)() < this.(I;)end))
+    if ((this.(Lscala/collection/IndexedSeqLike$Elements;::i()I;)() < this.(Lscala/collection/IndexedSeqLike$Elements;)end))
       {
         Ljava/lang/Object; x = this.(Lscala/collection/IndexedSeqLike$Elements;::scala$collection$IndexedSeqLike$Elements$$$outer()Lscala/collection/IndexedSeqLike;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(this.(Lscala/collection/IndexedSeqLike$Elements;::i()I;)());
         this.(Lscala/collection/IndexedSeqLike$Elements;::i_$eq(I;)V;)((this.(Lscala/collection/IndexedSeqLike$Elements;::i()I;)() + 1));
@@ -341,7 +341,7 @@ public class Lscala/collection/IndexedSeqLike$Elements; extends Ljava/lang/Objec
   
   public Ljava/lang/Object; head() {
     Ljava/lang/Object; $2$;
-    if ((this.(Lscala/collection/IndexedSeqLike$Elements;::i()I;)() < this.(I;)end))
+    if ((this.(Lscala/collection/IndexedSeqLike$Elements;::i()I;)() < this.(Lscala/collection/IndexedSeqLike$Elements;)end))
       {
         $2$ = this.(Lscala/collection/IndexedSeqLike$Elements;::scala$collection$IndexedSeqLike$Elements$$$outer()Lscala/collection/IndexedSeqLike;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(this.(Lscala/collection/IndexedSeqLike$Elements;::i()I;)());
       }
@@ -356,7 +356,7 @@ public class Lscala/collection/IndexedSeqLike$Elements; extends Ljava/lang/Objec
     Lscala/collection/Iterator; $3$;
     if ((n > 0))
       {
-        $3$ = (new (Lscala/collection/IndexedSeqLike$Elements;::this(Lscala/collection/IndexedSeqLike;I;I;)V;)(this.(Lscala/collection/IndexedSeqLike$Elements;::scala$collection$IndexedSeqLike$Elements$$$outer()Lscala/collection/IndexedSeqLike;)(), (this.(Lscala/collection/IndexedSeqLike$Elements;::i()I;)() + n), this.(I;)end));
+        $3$ = (new (Lscala/collection/IndexedSeqLike$Elements;::this(Lscala/collection/IndexedSeqLike;I;I;)V;)(this.(Lscala/collection/IndexedSeqLike$Elements;::scala$collection$IndexedSeqLike$Elements$$$outer()Lscala/collection/IndexedSeqLike;)(), (this.(Lscala/collection/IndexedSeqLike$Elements;::i()I;)() + n), this.(Lscala/collection/IndexedSeqLike$Elements;)end));
       }
     else
       {
@@ -374,7 +374,7 @@ public class Lscala/collection/IndexedSeqLike$Elements; extends Ljava/lang/Objec
     else
       {
         Lscala/collection/Iterator; $5$;
-        if (((this.(Lscala/collection/IndexedSeqLike$Elements;::i()I;)() + n) < this.(I;)end))
+        if (((this.(Lscala/collection/IndexedSeqLike$Elements;::i()I;)() + n) < this.(Lscala/collection/IndexedSeqLike$Elements;)end))
           {
             $5$ = (new (Lscala/collection/IndexedSeqLike$Elements;::this(Lscala/collection/IndexedSeqLike;I;I;)V;)(this.(Lscala/collection/IndexedSeqLike$Elements;::scala$collection$IndexedSeqLike$Elements$$$outer()Lscala/collection/IndexedSeqLike;)(), this.(Lscala/collection/IndexedSeqLike$Elements;::i()I;)(), (this.(Lscala/collection/IndexedSeqLike$Elements;::i()I;)() + n)));
           }
@@ -390,23 +390,23 @@ public class Lscala/collection/IndexedSeqLike$Elements; extends Ljava/lang/Objec
   protected Lscala/collection/IndexedSeqLike; $outer$u0020;
   
   public Lscala/collection/IndexedSeqLike; scala$collection$IndexedSeqLike$Elements$$$outer() {
-    return this.(Lscala/collection/IndexedSeqLike;)$outer$u0020;
+    return this.(Lscala/collection/IndexedSeqLike$Elements;)$outer$u0020;
   }
   
   public this(Lscala/collection/IndexedSeqLike; $outer, I; start, I; end) {
-    this.(I;)end = end;
+    this.(Lscala/collection/IndexedSeqLike$Elements;)end = end;
     if (($outer == null))
       {
         throw (new (Ljava/lang/NullPointerException;::this()V;)());
       }
     else
       {
-        this.(Lscala/collection/IndexedSeqLike;)$outer$u0020 = $outer;
+        this.(Lscala/collection/IndexedSeqLike$Elements;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
     Lscala/collection/BufferedIterator$class;.(Lscala/collection/BufferedIterator$class;::$init$(Lscala/collection/BufferedIterator;)V;)(this);
-    this.(I;)i$u0020 = start;
+    this.(Lscala/collection/IndexedSeqLike$Elements;)i$u0020 = start;
   }
 }

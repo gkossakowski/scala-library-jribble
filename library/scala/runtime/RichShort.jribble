@@ -35,19 +35,19 @@ public final class Lscala/runtime/RichShort; extends Ljava/lang/Object; implemen
   private S; start;
   
   public Ljava/lang/Object; self() {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToShort(S;)Ljava/lang/Short;)(this.(S;)start);
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToShort(S;)Ljava/lang/Short;)(this.(Lscala/runtime/RichShort;)start);
   }
   
   public I; compare(S; that) {
     I; $1$;
-    if ((this.(S;)start < that))
+    if ((this.(Lscala/runtime/RichShort;)start < that))
       {
         $1$ = -1;
       }
     else
       {
         I; $2$;
-        if ((this.(S;)start > that))
+        if ((this.(Lscala/runtime/RichShort;)start > that))
           {
             $2$ = 1;
           }
@@ -65,7 +65,7 @@ public final class Lscala/runtime/RichShort; extends Ljava/lang/Object; implemen
   }
   
   public this(S; start) {
-    this.(S;)start = start;
+    this.(Lscala/runtime/RichShort;)start = start;
     (Ljava/lang/Object;::super()V;)();
     Lscala/Proxy$class;.(Lscala/Proxy$class;::$init$(Lscala/Proxy;)V;)(this);
     Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$init$(Lscala/math/Ordered;)V;)(this);

@@ -567,13 +567,13 @@ public class Lscala/collection/mutable/PriorityQueue; extends Ljava/lang/Object;
   public Lscala/math/Ordering; scala$collection$mutable$PriorityQueue$$ord;
   
   protected Lscala/collection/mutable/PriorityQueue; newBuilder() {
-    return (new (Lscala/collection/mutable/PriorityQueue;::this(Lscala/math/Ordering;)V;)(this.(Lscala/math/Ordering;)scala$collection$mutable$PriorityQueue$$ord));
+    return (new (Lscala/collection/mutable/PriorityQueue;::this(Lscala/math/Ordering;)V;)(this.(Lscala/collection/mutable/PriorityQueue;)scala$collection$mutable$PriorityQueue$$ord));
   }
   
   private Lscala/collection/mutable/PriorityQueue$ResizableArrayAccess; scala$collection$mutable$PriorityQueue$$resarr$u0020;
   
   public final Lscala/collection/mutable/PriorityQueue$ResizableArrayAccess; scala$collection$mutable$PriorityQueue$$resarr() {
-    return this.(Lscala/collection/mutable/PriorityQueue$ResizableArrayAccess;)scala$collection$mutable$PriorityQueue$$resarr$u0020;
+    return this.(Lscala/collection/mutable/PriorityQueue;)scala$collection$mutable$PriorityQueue$$resarr$u0020;
   }
   
   public I; length() {
@@ -689,7 +689,7 @@ public class Lscala/collection/mutable/PriorityQueue; extends Ljava/lang/Object;
   protected V; fixUp(Ljava/lang/Object;[ as, I; m) {
     I; k = m;
     while$4: while(true) {
-      if (((k > 1) && this.(Lscala/math/Ordering;)scala$collection$mutable$PriorityQueue$$ord.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/mutable/PriorityQueue;::scala$collection$mutable$PriorityQueue$$toA(Ljava/lang/Object;)Ljava/lang/Object;)(as[(k / 2)])).(Lscala/math/Ordering$Ops;::$less(Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/PriorityQueue;::scala$collection$mutable$PriorityQueue$$toA(Ljava/lang/Object;)Ljava/lang/Object;)(as[k]))))
+      if (((k > 1) && this.(Lscala/collection/mutable/PriorityQueue;)scala$collection$mutable$PriorityQueue$$ord.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/mutable/PriorityQueue;::scala$collection$mutable$PriorityQueue$$toA(Ljava/lang/Object;)Ljava/lang/Object;)(as[(k / 2)])).(Lscala/math/Ordering$Ops;::$less(Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/PriorityQueue;::scala$collection$mutable$PriorityQueue$$toA(Ljava/lang/Object;)Ljava/lang/Object;)(as[k]))))
         {
           {
             this.(Lscala/collection/mutable/PriorityQueue;::scala$collection$mutable$PriorityQueue$$resarr()Lscala/collection/mutable/PriorityQueue$ResizableArrayAccess;)().(Lscala/collection/mutable/PriorityQueue$ResizableArrayAccess;::p_swap(I;I;)V;)(k, (k / 2));
@@ -712,7 +712,7 @@ public class Lscala/collection/mutable/PriorityQueue; extends Ljava/lang/Object;
         {
           {
             I; j = (2 * k);
-            if (((j < n) && this.(Lscala/math/Ordering;)scala$collection$mutable$PriorityQueue$$ord.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/mutable/PriorityQueue;::scala$collection$mutable$PriorityQueue$$toA(Ljava/lang/Object;)Ljava/lang/Object;)(as[j])).(Lscala/math/Ordering$Ops;::$less(Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/PriorityQueue;::scala$collection$mutable$PriorityQueue$$toA(Ljava/lang/Object;)Ljava/lang/Object;)(as[(j + 1)]))))
+            if (((j < n) && this.(Lscala/collection/mutable/PriorityQueue;)scala$collection$mutable$PriorityQueue$$ord.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/mutable/PriorityQueue;::scala$collection$mutable$PriorityQueue$$toA(Ljava/lang/Object;)Ljava/lang/Object;)(as[j])).(Lscala/math/Ordering$Ops;::$less(Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/PriorityQueue;::scala$collection$mutable$PriorityQueue$$toA(Ljava/lang/Object;)Ljava/lang/Object;)(as[(j + 1)]))))
               {
                 j = (j + 1);
               }
@@ -720,7 +720,7 @@ public class Lscala/collection/mutable/PriorityQueue; extends Ljava/lang/Object;
               {
                 
               }
-            if (this.(Lscala/math/Ordering;)scala$collection$mutable$PriorityQueue$$ord.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/mutable/PriorityQueue;::scala$collection$mutable$PriorityQueue$$toA(Ljava/lang/Object;)Ljava/lang/Object;)(as[k])).(Lscala/math/Ordering$Ops;::$greater$eq(Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/PriorityQueue;::scala$collection$mutable$PriorityQueue$$toA(Ljava/lang/Object;)Ljava/lang/Object;)(as[j])))
+            if (this.(Lscala/collection/mutable/PriorityQueue;)scala$collection$mutable$PriorityQueue$$ord.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this.(Lscala/collection/mutable/PriorityQueue;::scala$collection$mutable$PriorityQueue$$toA(Ljava/lang/Object;)Ljava/lang/Object;)(as[k])).(Lscala/math/Ordering$Ops;::$greater$eq(Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/PriorityQueue;::scala$collection$mutable$PriorityQueue$$toA(Ljava/lang/Object;)Ljava/lang/Object;)(as[j])))
               {
                 return;
               }
@@ -830,7 +830,7 @@ public class Lscala/collection/mutable/PriorityQueue; extends Ljava/lang/Object;
   }
   
   public Lscala/collection/mutable/PriorityQueue; clone() {
-    return (new (Lscala/collection/mutable/PriorityQueue;::this(Lscala/math/Ordering;)V;)(this.(Lscala/math/Ordering;)scala$collection$mutable$PriorityQueue$$ord)).(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this.(Lscala/collection/mutable/PriorityQueue;::iterator()Lscala/collection/Iterator;)()).<cast>(Lscala/collection/mutable/PriorityQueue;);
+    return (new (Lscala/collection/mutable/PriorityQueue;::this(Lscala/math/Ordering;)V;)(this.(Lscala/collection/mutable/PriorityQueue;)scala$collection$mutable$PriorityQueue$$ord)).(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this.(Lscala/collection/mutable/PriorityQueue;::iterator()Lscala/collection/Iterator;)()).<cast>(Lscala/collection/mutable/PriorityQueue;);
   }
   
   public Lscala/Function1; andThen(Lscala/Function1; g) {
@@ -910,7 +910,7 @@ public class Lscala/collection/mutable/PriorityQueue; extends Ljava/lang/Object;
   }
   
   public this(Lscala/math/Ordering; ord) {
-    this.(Lscala/math/Ordering;)scala$collection$mutable$PriorityQueue$$ord = ord;
+    this.(Lscala/collection/mutable/PriorityQueue;)scala$collection$mutable$PriorityQueue$$ord = ord;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$init$(Lscala/collection/TraversableLike;)V;)(this);
@@ -928,7 +928,7 @@ public class Lscala/collection/mutable/PriorityQueue; extends Ljava/lang/Object;
     Lscala/collection/mutable/Seq$class;.(Lscala/collection/mutable/Seq$class;::$init$(Lscala/collection/mutable/Seq;)V;)(this);
     Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$init$(Lscala/collection/generic/Growable;)V;)(this);
     Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::$init$(Lscala/collection/mutable/Builder;)V;)(this);
-    this.(Lscala/collection/mutable/PriorityQueue$ResizableArrayAccess;)scala$collection$mutable$PriorityQueue$$resarr$u0020 = (new (Lscala/collection/mutable/PriorityQueue$ResizableArrayAccess;::this(Lscala/collection/mutable/PriorityQueue;)V;)(this));
+    this.(Lscala/collection/mutable/PriorityQueue;)scala$collection$mutable$PriorityQueue$$resarr$u0020 = (new (Lscala/collection/mutable/PriorityQueue$ResizableArrayAccess;::this(Lscala/collection/mutable/PriorityQueue;)V;)(this));
     this.(Lscala/collection/mutable/PriorityQueue;::scala$collection$mutable$PriorityQueue$$resarr()Lscala/collection/mutable/PriorityQueue$ResizableArrayAccess;)().(Lscala/collection/mutable/PriorityQueue$ResizableArrayAccess;::p_size0_$eq(I;)V;)((this.(Lscala/collection/mutable/PriorityQueue;::scala$collection$mutable$PriorityQueue$$resarr()Lscala/collection/mutable/PriorityQueue$ResizableArrayAccess;)().(Lscala/collection/mutable/PriorityQueue$ResizableArrayAccess;::p_size0()I;)() + 1));
   }
 }

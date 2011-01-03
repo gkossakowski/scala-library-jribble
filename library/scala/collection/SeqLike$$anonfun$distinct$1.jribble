@@ -1,10 +1,10 @@
 public final class Lscala/collection/SeqLike$$anonfun$distinct$1; extends Lscala/runtime/AbstractFunction1; {
   
   public final V; apply(Ljava/lang/Object; x) {
-    if (!(this.(Lscala/runtime/ObjectRef;)seen$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/Set;).(Lscala/collection/SetLike;::contains(Ljava/lang/Object;)Z;)(x)))
+    if (!(this.(Lscala/collection/SeqLike$$anonfun$distinct$1;)seen$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/Set;).(Lscala/collection/SetLike;::contains(Ljava/lang/Object;)Z;)(x)))
       {
-        this.(Lscala/collection/mutable/Builder;)b$5.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
-        this.(Lscala/runtime/ObjectRef;)seen$1.(Ljava/lang/Object;)elem = this.(Lscala/runtime/ObjectRef;)seen$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/Set;).(Lscala/collection/SetLike;::$plus(Ljava/lang/Object;)Lscala/collection/Set;)(x);
+        this.(Lscala/collection/SeqLike$$anonfun$distinct$1;)b$5.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
+        this.(Lscala/collection/SeqLike$$anonfun$distinct$1;)seen$1.(Lscala/runtime/ObjectRef;)elem = this.(Lscala/collection/SeqLike$$anonfun$distinct$1;)seen$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/Set;).(Lscala/collection/SetLike;::$plus(Ljava/lang/Object;)Lscala/collection/Set;)(x);
       }
     else
       {
@@ -22,8 +22,8 @@ public final class Lscala/collection/SeqLike$$anonfun$distinct$1; extends Lscala
   private Lscala/runtime/ObjectRef; seen$1;
   
   public this(Lscala/collection/SeqLike; $outer, Lscala/collection/mutable/Builder; b$5, Lscala/runtime/ObjectRef; seen$1) {
-    this.(Lscala/collection/mutable/Builder;)b$5 = b$5;
-    this.(Lscala/runtime/ObjectRef;)seen$1 = seen$1;
+    this.(Lscala/collection/SeqLike$$anonfun$distinct$1;)b$5 = b$5;
+    this.(Lscala/collection/SeqLike$$anonfun$distinct$1;)seen$1 = seen$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

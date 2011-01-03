@@ -365,19 +365,19 @@ public final class Lscala/collection/TraversableLike$$anon$1; extends Ljava/lang
   private Ljava/lang/Object; underlying$u0020;
   
   protected Ljava/lang/Object; underlying() {
-    if (((this.(I;)bitmap$0 & 1) == 0))
+    if (((this.(Lscala/collection/TraversableLike$$anon$1;)bitmap$0 & 1) == 0))
       {
-        if (((this.(I;)bitmap$0 & 1) == 0))
+        if (((this.(Lscala/collection/TraversableLike$$anon$1;)bitmap$0 & 1) == 0))
           {
-            this.(Ljava/lang/Object;)underlying$u0020 = this.(Lscala/collection/TraversableLike;)$outer$u0020.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)();
-            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 1);
+            this.(Lscala/collection/TraversableLike$$anon$1;)underlying$u0020 = this.(Lscala/collection/TraversableLike$$anon$1;)$outer$u0020.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)();
+            this.(Lscala/collection/TraversableLike$$anon$1;)bitmap$0 = (this.(Lscala/collection/TraversableLike$$anon$1;)bitmap$0 | 1);
           }
       }
-    return this.(Ljava/lang/Object;)underlying$u0020;
+    return this.(Lscala/collection/TraversableLike$$anon$1;)underlying$u0020;
   }
   
   public V; foreach(Lscala/Function1; f) {
-    this.(Lscala/collection/TraversableLike;)$outer$u0020.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)(f);
+    this.(Lscala/collection/TraversableLike$$anon$1;)$outer$u0020.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)(f);
   }
   
   private Lscala/collection/TraversableLike; $outer$u0020;
@@ -421,7 +421,7 @@ public final class Lscala/collection/TraversableLike$$anon$1; extends Ljava/lang
       }
     else
       {
-        this.(Lscala/collection/TraversableLike;)$outer$u0020 = $outer;
+        this.(Lscala/collection/TraversableLike$$anon$1;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);

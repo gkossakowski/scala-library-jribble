@@ -8,7 +8,7 @@ public final class Lscala/util/control/Exception$; extends Ljava/lang/Object; im
   private final Lscala/PartialFunction; nothingCatcher$u0020;
   
   public final Lscala/PartialFunction; nothingCatcher() {
-    return this.(Lscala/PartialFunction;)nothingCatcher$u0020;
+    return this.(Lscala/util/control/Exception$;)nothingCatcher$u0020;
   }
   
   public final Lscala/util/control/Exception$Catch; allCatch() {
@@ -18,7 +18,7 @@ public final class Lscala/util/control/Exception$; extends Ljava/lang/Object; im
   private final Lscala/util/control/Exception$Catch; noCatch$u0020;
   
   public final Lscala/util/control/Exception$Catch; noCatch() {
-    return this.(Lscala/util/control/Exception$Catch;)noCatch$u0020;
+    return this.(Lscala/util/control/Exception$;)noCatch$u0020;
   }
   
   public Lscala/util/control/Exception$Catch; catching(Lscala/collection/Seq; exceptions) {
@@ -80,7 +80,7 @@ public final class Lscala/util/control/Exception$; extends Ljava/lang/Object; im
   
   public this() {
     (Ljava/lang/Object;::super()V;)();
-    this.(Lscala/PartialFunction;)nothingCatcher$u0020 = (new (Lscala/util/control/Exception$$anon$3;::this()V;)());
-    this.(Lscala/util/control/Exception$Catch;)noCatch$u0020 = (new (Lscala/util/control/Exception$Catch;::this(Lscala/PartialFunction;)V;)(this.(Lscala/util/control/Exception$;::nothingCatcher()Lscala/PartialFunction;)())).(Lscala/util/control/Exception$Described;::withDesc(Ljava/lang/String;)Lscala/util/control/Exception$Described;)("<nothing>").<cast>(Lscala/util/control/Exception$Catch;);
+    this.(Lscala/util/control/Exception$;)nothingCatcher$u0020 = (new (Lscala/util/control/Exception$$anon$3;::this()V;)());
+    this.(Lscala/util/control/Exception$;)noCatch$u0020 = (new (Lscala/util/control/Exception$Catch;::this(Lscala/PartialFunction;)V;)(this.(Lscala/util/control/Exception$;::nothingCatcher()Lscala/PartialFunction;)())).(Lscala/util/control/Exception$Described;::withDesc(Ljava/lang/String;)Lscala/util/control/Exception$Described;)("<nothing>").<cast>(Lscala/util/control/Exception$Catch;);
   }
 }
