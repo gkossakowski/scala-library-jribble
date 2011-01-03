@@ -56,14 +56,6 @@ public class Lscala/collection/mutable/LinkedHashMap; extends Ljava/lang/Object;
     return Lscala/collection/mutable/HashTable$class;.(Lscala/collection/mutable/HashTable$class;::initialThreshold(Lscala/collection/mutable/HashTable;)I;)(this);
   }
   
-  public V; init(Ljava/io/ObjectInputStream; in, Lscala/Function2; f) {
-    Lscala/collection/mutable/HashTable$class;.(Lscala/collection/mutable/HashTable$class;::init(Lscala/collection/mutable/HashTable;Ljava/io/ObjectInputStream;Lscala/Function2;)V;)(this, in, f);
-  }
-  
-  public V; serializeTo(Ljava/io/ObjectOutputStream; out, Lscala/Function1; value) {
-    Lscala/collection/mutable/HashTable$class;.(Lscala/collection/mutable/HashTable$class;::serializeTo(Lscala/collection/mutable/HashTable;Ljava/io/ObjectOutputStream;Lscala/Function1;)V;)(this, out, value);
-  }
-  
   public Lscala/collection/mutable/HashEntry; findEntry(Ljava/lang/Object; key) {
     return Lscala/collection/mutable/HashTable$class;.(Lscala/collection/mutable/HashTable$class;::findEntry(Lscala/collection/mutable/HashTable;Ljava/lang/Object;)Lscala/collection/mutable/HashEntry;)(this, key);
   }
@@ -792,14 +784,6 @@ public class Lscala/collection/mutable/LinkedHashMap; extends Ljava/lang/Object;
   public V; clear() {
     this.(Lscala/collection/mutable/HashTable;::clearTable()V;)();
     this.(Lscala/collection/mutable/LinkedHashMap;::firstEntry_$eq(Lscala/collection/mutable/LinkedEntry;)V;)(null);
-  }
-  
-  private V; writeObject(Ljava/io/ObjectOutputStream; out) {
-    this.(Lscala/collection/mutable/HashTable;::serializeTo(Ljava/io/ObjectOutputStream;Lscala/Function1;)V;)(out, (new (Lscala/collection/mutable/LinkedHashMap$$anonfun$writeObject$1;::this(Lscala/collection/mutable/LinkedHashMap;)V;)(this)));
-  }
-  
-  private V; readObject(Ljava/io/ObjectInputStream; in) {
-    this.(Lscala/collection/mutable/HashTable;::init(Ljava/io/ObjectInputStream;Lscala/Function2;)V;)(in, (new (Lscala/collection/mutable/LinkedHashMap$$anonfun$readObject$1;::this(Lscala/collection/mutable/LinkedHashMap;)V;)(this)));
   }
   
   public Lscala/collection/generic/Subtractable; repr() {

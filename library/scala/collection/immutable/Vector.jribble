@@ -1182,14 +1182,12 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
   
   private Ljava/lang/Object;[ copyLeft(Ljava/lang/Object;[ array, I; right) {
     Ljava/lang/Object;[ a2 = new Ljava/lang/Object;[array.<length>];
-    Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::arraycopy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(array, 0, a2, 0, right);
-    return a2;
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
   }
   
   private Ljava/lang/Object;[ copyRight(Ljava/lang/Object;[ array, I; left) {
     Ljava/lang/Object;[ a2 = new Ljava/lang/Object;[array.<length>];
-    Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::arraycopy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(array, left, a2, left, (a2.<length> - left));
-    return a2;
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
   }
   
   private V; preClean(I; depth) {

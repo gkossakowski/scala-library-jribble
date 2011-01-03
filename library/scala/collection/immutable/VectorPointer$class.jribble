@@ -354,7 +354,7 @@ public abstract class Lscala/collection/immutable/VectorPointer$class; {
         
       }
     Ljava/lang/Object;[ b = new Ljava/lang/Object;[a.<length>];
-    Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::arraycopy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(a, 0, b, 0, a.<length>);
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
     return b;
   }
   
@@ -576,8 +576,7 @@ public abstract class Lscala/collection/immutable/VectorPointer$class; {
   
   public static final Ljava/lang/Object;[ copyRange(Lscala/collection/immutable/VectorPointer; $this, Ljava/lang/Object;[ array, I; oldLeft, I; newLeft) {
     Ljava/lang/Object;[ elems = new Ljava/lang/Object;[32];
-    Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::arraycopy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(array, oldLeft, elems, newLeft, (32 - Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::max(I;I;)I;)(newLeft, oldLeft)));
-    return elems;
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
   }
   
   public static final V; gotoFreshPosWritable0(Lscala/collection/immutable/VectorPointer; $this, I; oldIndex, I; newIndex, I; xor) {

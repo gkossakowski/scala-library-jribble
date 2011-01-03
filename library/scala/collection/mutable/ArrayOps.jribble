@@ -1,4 +1,4 @@
-public abstract class Lscala/collection/mutable/ArrayOps; extends Ljava/lang/Object; implements Lscala/collection/mutable/ArrayLike;, Lscala/collection/Parallelizable;, Lscala/ScalaObject; {
+public abstract class Lscala/collection/mutable/ArrayOps; extends Ljava/lang/Object; implements Lscala/collection/mutable/ArrayLike;, Lscala/ScalaObject; {
   
   public Lscala/collection/IndexedSeq; deep() {
     return Lscala/collection/mutable/ArrayLike$class;.(Lscala/collection/mutable/ArrayLike$class;::deep(Lscala/collection/mutable/ArrayLike;)Lscala/collection/IndexedSeq;)(this);
@@ -622,10 +622,6 @@ public abstract class Lscala/collection/mutable/ArrayOps; extends Ljava/lang/Obj
     return $1$;
   }
   
-  public Lscala/collection/parallel/mutable/ParallelArray; par() {
-    return Lscala/collection/parallel/mutable/ParallelArray$;.MODULE$.(Lscala/collection/parallel/mutable/ParallelArray$;::handoff(Ljava/lang/Object;)Lscala/collection/parallel/mutable/ParallelArray;)(this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
-  }
-  
   public Ljava/lang/Object; flatten(Lscala/Function1; asArray$1) {
     Lscala/collection/mutable/Builder; b$1 = this.(Lscala/collection/mutable/ArrayOps;::scala$collection$mutable$ArrayOps$$rowBuilder()Lscala/collection/mutable/Builder;)();
     this.(Lscala/collection/IndexedSeqOptimized;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/mutable/ArrayOps$$anonfun$flatten$1;::this(Lscala/collection/mutable/ArrayOps;Lscala/Function1;Lscala/collection/mutable/Builder;)V;)(this, asArray$1, b$1)));
@@ -698,10 +694,6 @@ public abstract class Lscala/collection/mutable/ArrayOps; extends Ljava/lang/Obj
   
   public Lscala/collection/IndexedSeq; thisCollection() {
     return this.(Lscala/collection/mutable/IndexedSeqLike;::thisCollection()Lscala/collection/mutable/IndexedSeq;)();
-  }
-  
-  public Lscala/collection/Parallel; par() {
-    return this.(Lscala/collection/mutable/ArrayOps;::par()Lscala/collection/parallel/mutable/ParallelArray;)();
   }
   
   public this() {

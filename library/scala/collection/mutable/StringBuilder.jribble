@@ -660,16 +660,16 @@ public final class Lscala/collection/mutable/StringBuilder; extends Ljava/lang/O
   
   public C;[ toArray() {
     C;[ arr = new C;[this.(Lscala/collection/mutable/StringBuilder;::length()I;)()];
-    this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/AbstractStringBuilder;::getChars(I;I;C;[I;)V;)(0, this.(Lscala/collection/mutable/StringBuilder;::length()I;)(), arr, 0);
+    this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/StringBuilder;::getChars(I;I;C;[I;)V;)(0, this.(Lscala/collection/mutable/StringBuilder;::length()I;)(), arr, 0);
     return arr;
   }
   
   public I; length() {
-    return this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/AbstractStringBuilder;::length()I;)();
+    return this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/StringBuilder;::length()I;)();
   }
   
   public V; length_$eq(I; n) {
-    this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/AbstractStringBuilder;::setLength(I;)V;)(n);
+    this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/StringBuilder;::setLength(I;)V;)(n);
   }
   
   public V; clear() {
@@ -677,11 +677,11 @@ public final class Lscala/collection/mutable/StringBuilder; extends Ljava/lang/O
   }
   
   public V; setLength(I; len) {
-    this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/AbstractStringBuilder;::setLength(I;)V;)(len);
+    this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/StringBuilder;::setLength(I;)V;)(len);
   }
   
   public I; capacity() {
-    return this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/AbstractStringBuilder;::capacity()I;)();
+    return this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/StringBuilder;::capacity()I;)();
   }
   
   public V; capacity_$eq(I; n) {
@@ -689,15 +689,15 @@ public final class Lscala/collection/mutable/StringBuilder; extends Ljava/lang/O
   }
   
   public V; ensureCapacity(I; newCapacity) {
-    this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/AbstractStringBuilder;::ensureCapacity(I;)V;)(newCapacity);
+    this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/StringBuilder;::ensureCapacity(I;)V;)(newCapacity);
   }
   
   public C; charAt(I; index) {
-    return this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/AbstractStringBuilder;::charAt(I;)C;)(index);
+    return this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/StringBuilder;::charAt(I;)C;)(index);
   }
   
   public C; apply(I; index) {
-    return this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/AbstractStringBuilder;::charAt(I;)C;)(index);
+    return this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/StringBuilder;::charAt(I;)C;)(index);
   }
   
   public Lscala/collection/mutable/StringBuilder; deleteCharAt(I; index) {
@@ -706,7 +706,7 @@ public final class Lscala/collection/mutable/StringBuilder; extends Ljava/lang/O
   }
   
   public V; setCharAt(I; index, C; ch) {
-    this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/AbstractStringBuilder;::setCharAt(I;C;)V;)(index, ch);
+    this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/StringBuilder;::setCharAt(I;C;)V;)(index, ch);
   }
   
   public V; update(I; i, C; c) {
@@ -718,7 +718,7 @@ public final class Lscala/collection/mutable/StringBuilder; extends Ljava/lang/O
   }
   
   public Ljava/lang/String; substring(I; start, I; end) {
-    return this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/AbstractStringBuilder;::substring(I;I;)Ljava/lang/String;)(start, end);
+    return this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/StringBuilder;::substring(I;I;)Ljava/lang/String;)(start, end);
   }
   
   public Ljava/lang/CharSequence; subSequence(I; start, I; end) {

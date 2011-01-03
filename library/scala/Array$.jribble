@@ -35,7 +35,7 @@ public final class Lscala/Array$; extends Lscala/FallbackArrayBuilding; implemen
     Ljava/lang/Class; srcClass = src.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)();
     if ((srcClass.(Ljava/lang/Class;::isArray()Z;)() && dest.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)().(Ljava/lang/Class;::isAssignableFrom(Ljava/lang/Class;)Z;)(srcClass)))
       {
-        Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::arraycopy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(src, srcPos, dest, destPos, length);
+        throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
       }
     else
       {

@@ -1621,16 +1621,8 @@ public abstract class Lscala/collection/immutable/LongMap; extends Ljava/lang/Ob
     Lscala/collection/immutable/Map$class;.(Lscala/collection/immutable/Map$class;::$init$(Lscala/collection/immutable/Map;)V;)(this);
   }
   
-  private final Lscala/collection/immutable/LongMap; body$percent4$percent1(Lscala/collection/immutable/LongMap; x) {
-    return x;
-  }
-  
   private final Lscala/collection/immutable/LongMap; body$percent3$percent1() {
     return Lscala/collection/immutable/LongMap$Nil$;.MODULE$;
-  }
-  
-  private final Lscala/collection/immutable/LongMap; body$percent2$percent1(Lscala/collection/immutable/LongMap; x, J; key$2, Ljava/lang/Object; value) {
-    return x.(Lscala/collection/immutable/LongMap;::updateWith(J;Ljava/lang/Object;Lscala/Function2;)Lscala/collection/immutable/LongMap;)(key$2, value, (new (Lscala/collection/immutable/LongMap$$anonfun$unionWith$2;::this(Lscala/collection/immutable/LongMap;Lscala/Function3;J;)V;)(this, f$1, key$2)));
   }
   
   private final Lscala/collection/immutable/LongMap; body$percent2$percent2(J; key, Ljava/lang/Object; value) {
@@ -1654,5 +1646,13 @@ public abstract class Lscala/collection/immutable/LongMap; extends Ljava/lang/Ob
         $90$ = $91$;
       }
     return $90$;
+  }
+  
+  private final Lscala/collection/immutable/LongMap; body$percent4$percent1(Lscala/collection/immutable/LongMap; x) {
+    return x;
+  }
+  
+  private final Lscala/collection/immutable/LongMap; body$percent2$percent1(Lscala/collection/immutable/LongMap; x, J; key$2, Ljava/lang/Object; value) {
+    return x.(Lscala/collection/immutable/LongMap;::updateWith(J;Ljava/lang/Object;Lscala/Function2;)Lscala/collection/immutable/LongMap;)(key$2, value, (new (Lscala/collection/immutable/LongMap$$anonfun$unionWith$2;::this(Lscala/collection/immutable/LongMap;Lscala/Function3;J;)V;)(this, f$1, key$2)));
   }
 }

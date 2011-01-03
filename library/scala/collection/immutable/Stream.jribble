@@ -488,14 +488,6 @@ public abstract class Lscala/collection/immutable/Stream; extends Ljava/lang/Obj
     return this;
   }
   
-  public V; print() {
-    this.(Lscala/collection/immutable/Stream;::print(Ljava/lang/String;)V;)(", ");
-  }
-  
-  public V; print(Ljava/lang/String; sep$1) {
-    this.(Lscala/collection/immutable/Stream;::loop$1(Lscala/collection/immutable/Stream;Ljava/lang/String;Ljava/lang/String;)V;)(this, "", sep$1);
-  }
-  
   public I; length() {
     I; len = 0;
     Lscala/collection/immutable/Stream; left = this;

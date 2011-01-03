@@ -95,7 +95,7 @@ public abstract class Lscala/reflect/ClassManifest$class; {
   }
   
   public static Ljava/lang/Class; arrayClass(Lscala/reflect/ClassManifest; $this, Ljava/lang/Class; tp) {
-    return Ljava/lang/reflect/Array;.(Ljava/lang/reflect/Array;::newInstance(Ljava/lang/Class;I;)Ljava/lang/Object;)(tp, 0).(Ljava/lang/Object;::getClass()Ljava/lang/Class;)();
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("ClassManifest.arrayClass"));
   }
   
   public static Lscala/reflect/ClassManifest; arrayManifest(Lscala/reflect/ClassManifest; $this) {
@@ -103,23 +103,23 @@ public abstract class Lscala/reflect/ClassManifest$class; {
   }
   
   public static Ljava/lang/Object; newArray(Lscala/reflect/ClassManifest; $this, I; len) {
-    return Ljava/lang/reflect/Array;.(Ljava/lang/reflect/Array;::newInstance(Ljava/lang/Class;I;)Ljava/lang/Object;)($this.(Lscala/reflect/ClassManifest;::erasure()Ljava/lang/Class;)(), len);
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("ClassManifest.newArray"));
   }
   
   public static Ljava/lang/Object;[ newArray2(Lscala/reflect/ClassManifest; $this, I; len) {
-    return Ljava/lang/reflect/Array;.(Ljava/lang/reflect/Array;::newInstance(Ljava/lang/Class;I;)Ljava/lang/Object;)($this.(Lscala/reflect/ClassManifest;::arrayClass(Ljava/lang/Class;)Ljava/lang/Class;)($this.(Lscala/reflect/ClassManifest;::erasure()Ljava/lang/Class;)()), len).<cast>(Ljava/lang/Object;[);
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("ClassManifest.newArray2"));
   }
   
   public static Ljava/lang/Object;[[ newArray3(Lscala/reflect/ClassManifest; $this, I; len) {
-    return Ljava/lang/reflect/Array;.(Ljava/lang/reflect/Array;::newInstance(Ljava/lang/Class;I;)Ljava/lang/Object;)($this.(Lscala/reflect/ClassManifest;::arrayClass(Ljava/lang/Class;)Ljava/lang/Class;)($this.(Lscala/reflect/ClassManifest;::arrayClass(Ljava/lang/Class;)Ljava/lang/Class;)($this.(Lscala/reflect/ClassManifest;::erasure()Ljava/lang/Class;)())), len).<cast>(Ljava/lang/Object;[[);
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("ClassManifest.newArray3"));
   }
   
   public static Ljava/lang/Object;[[[ newArray4(Lscala/reflect/ClassManifest; $this, I; len) {
-    return Ljava/lang/reflect/Array;.(Ljava/lang/reflect/Array;::newInstance(Ljava/lang/Class;I;)Ljava/lang/Object;)($this.(Lscala/reflect/ClassManifest;::arrayClass(Ljava/lang/Class;)Ljava/lang/Class;)($this.(Lscala/reflect/ClassManifest;::arrayClass(Ljava/lang/Class;)Ljava/lang/Class;)($this.(Lscala/reflect/ClassManifest;::arrayClass(Ljava/lang/Class;)Ljava/lang/Class;)($this.(Lscala/reflect/ClassManifest;::erasure()Ljava/lang/Class;)()))), len).<cast>(Ljava/lang/Object;[[[);
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("ClassManifest.newArray4"));
   }
   
   public static Ljava/lang/Object;[[[[ newArray5(Lscala/reflect/ClassManifest; $this, I; len) {
-    return Ljava/lang/reflect/Array;.(Ljava/lang/reflect/Array;::newInstance(Ljava/lang/Class;I;)Ljava/lang/Object;)($this.(Lscala/reflect/ClassManifest;::arrayClass(Ljava/lang/Class;)Ljava/lang/Class;)($this.(Lscala/reflect/ClassManifest;::arrayClass(Ljava/lang/Class;)Ljava/lang/Class;)($this.(Lscala/reflect/ClassManifest;::arrayClass(Ljava/lang/Class;)Ljava/lang/Class;)($this.(Lscala/reflect/ClassManifest;::arrayClass(Ljava/lang/Class;)Ljava/lang/Class;)($this.(Lscala/reflect/ClassManifest;::erasure()Ljava/lang/Class;)())))), len).<cast>(Ljava/lang/Object;[[[[);
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("ClassManifest.newArray5"));
   }
   
   public static Lscala/collection/mutable/WrappedArray; newWrappedArray(Lscala/reflect/ClassManifest; $this, I; len) {

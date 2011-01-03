@@ -903,6 +903,10 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
     Lscala/xml/parsing/TokenTests$class;.(Lscala/xml/parsing/TokenTests$class;::$init$(Lscala/xml/parsing/TokenTests;)V;)(this);
   }
   
+  private final Lscala/collection/Seq; body$percent1$percent1(Ljava/lang/String; s) {
+    return (new (Lscala/xml/TextBuffer;::this()V;)()).(Lscala/xml/TextBuffer;::append(Lscala/collection/Seq;)Lscala/xml/TextBuffer;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapString(Ljava/lang/String;)Lscala/collection/immutable/WrappedString;)(s)).(Lscala/xml/TextBuffer;::toText()Lscala/collection/Seq;)();
+  }
+  
   private final Lscala/xml/Node; body$percent1$percent2() {
     return n;
   }
@@ -911,8 +915,8 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
     i = ((i * base) + Lscala/Predef$;.MODULE$.(Lscala/Predef$;::charWrapper(C;)Lscala/runtime/RichChar;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(ch.(Lscala/Function0;::apply()Ljava/lang/Object;)())).(Lscala/runtime/RichChar;::asDigit()I;)());
   }
   
-  private final Lscala/collection/Seq; body$percent1$percent1(Ljava/lang/String; s) {
-    return (new (Lscala/xml/TextBuffer;::this()V;)()).(Lscala/xml/TextBuffer;::append(Lscala/collection/Seq;)Lscala/xml/TextBuffer;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapString(Ljava/lang/String;)Lscala/collection/immutable/WrappedString;)(s)).(Lscala/xml/TextBuffer;::toText()Lscala/collection/Seq;)();
+  private final Lscala/collection/Seq; body$percent2$percent1() {
+    return x;
   }
   
   private final V; body$percent1$percent3() {
@@ -924,9 +928,5 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
       {
         i = ((i * base) + Lscala/Predef$;.MODULE$.(Lscala/Predef$;::charWrapper(C;)Lscala/runtime/RichChar;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(ch.(Lscala/Function0;::apply()Ljava/lang/Object;)())).(Lscala/runtime/RichChar;::asDigit()I;)());
       }
-  }
-  
-  private final Lscala/collection/Seq; body$percent2$percent1() {
-    return x;
   }
 }

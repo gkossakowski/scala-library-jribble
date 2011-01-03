@@ -16,39 +16,6 @@ public abstract class Lscala/collection/mutable/HashTable$class; {
     return Lscala/collection/mutable/HashTable$class;.(Lscala/collection/mutable/HashTable$class;::capacity(Lscala/collection/mutable/HashTable;I;)I;)($this, $this.(Lscala/collection/mutable/HashTable;::initialSize()I;)());
   }
   
-  public static V; init(Lscala/collection/mutable/HashTable; $this, Ljava/io/ObjectInputStream; in, Lscala/Function2; f) {
-    in.(Ljava/io/ObjectInputStream;::defaultReadObject()V;)();
-    $this.(Lscala/collection/mutable/HashTable;::_loadFactor_$eq(I;)V;)(in.(Ljava/io/ObjectInputStream;::readInt()I;)());
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;)V;)(($this.(Lscala/collection/mutable/HashTable;::_loadFactor()I;)() > 0));
-    I; size = in.(Ljava/io/ObjectInputStream;::readInt()I;)();
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;)V;)((size >= 0));
-    $this.(Lscala/collection/mutable/HashTable;::table_$eq(Lscala/collection/mutable/HashEntry;[)V;)(new Lscala/collection/mutable/HashEntry;[Lscala/collection/mutable/HashTable$class;.(Lscala/collection/mutable/HashTable$class;::capacity(Lscala/collection/mutable/HashTable;I;)I;)($this, ((size * 1000) / $this.(Lscala/collection/mutable/HashTable;::_loadFactor()I;)()))]);
-    $this.(Lscala/collection/mutable/HashTable;::threshold_$eq(I;)V;)(Lscala/collection/mutable/HashTable$class;.(Lscala/collection/mutable/HashTable$class;::newThreshold(Lscala/collection/mutable/HashTable;I;)I;)($this, Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)($this.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)().<cast>(Ljava/lang/Object;[)).(Lscala/collection/SeqLike;::size()I;)()));
-    I; index = 0;
-    while$1: while(true) {
-      if ((index < size))
-        {
-          {
-            $this.(Lscala/collection/mutable/HashTable;::addEntry(Lscala/collection/mutable/HashEntry;)V;)(f.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(in.(Ljava/io/ObjectInputStream;::readObject()Ljava/lang/Object;)(), in.(Ljava/io/ObjectInputStream;::readObject()Ljava/lang/Object;)()).<cast>(Lscala/collection/mutable/HashEntry;));
-            index = (index + 1);
-          }
-          continue while$1;
-        }
-      else
-        {
-          
-        }
-      break;
-    }
-  }
-  
-  public static V; serializeTo(Lscala/collection/mutable/HashTable; $this, Ljava/io/ObjectOutputStream; out$1, Lscala/Function1; value$1) {
-    out$1.(Ljava/io/ObjectOutputStream;::defaultWriteObject()V;)();
-    out$1.(Ljava/io/ObjectOutputStream;::writeInt(I;)V;)($this.(Lscala/collection/mutable/HashTable;::loadFactor()I;)());
-    out$1.(Ljava/io/ObjectOutputStream;::writeInt(I;)V;)($this.(Lscala/collection/mutable/HashTable;::tableSize()I;)());
-    $this.(Lscala/collection/mutable/HashTable;::foreachEntry(Lscala/Function1;)V;)((new (Lscala/collection/mutable/HashTable$$anonfun$serializeTo$1;::this(Lscala/collection/mutable/HashTable;Ljava/io/ObjectOutputStream;Lscala/Function1;)V;)($this, out$1, value$1)));
-  }
-  
   private static I; capacity(Lscala/collection/mutable/HashTable; $this, I; expectedSize) {
     I; $1$;
     if ((expectedSize == 0))

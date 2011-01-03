@@ -145,10 +145,6 @@ public abstract class Lscala/collection/immutable/StringLike$class; {
     return $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::split(Ljava/lang/String;)Ljava/lang/String;[)(re);
   }
   
-  public static Lscala/util/matching/Regex; r(Lscala/collection/immutable/StringLike; $this) {
-    return (new (Lscala/util/matching/Regex;::this(Ljava/lang/String;Lscala/collection/Seq;)V;)($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)(), Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/String;>{}.<cast>(Ljava/lang/Object;[))));
-  }
-  
   public static Z; toBoolean(Lscala/collection/immutable/StringLike; $this) {
     return Lscala/collection/immutable/StringLike$class;.(Lscala/collection/immutable/StringLike$class;::parseBoolean(Lscala/collection/immutable/StringLike;Ljava/lang/String;)Z;)($this, $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)());
   }
@@ -225,10 +221,6 @@ public abstract class Lscala/collection/immutable/StringLike$class; {
   
   public static Ljava/lang/String; format(Lscala/collection/immutable/StringLike; $this, Lscala/collection/Seq; args) {
     return Ljava/lang/String;.(Ljava/lang/String;::format(Ljava/lang/String;Ljava/lang/Object;[)Ljava/lang/String;)($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)(), args.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/collection/immutable/StringLike$$anonfun$format$1;::this(Lscala/collection/immutable/StringLike;)V;)($this)), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::toArray(Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Object()Lscala/reflect/Manifest;)()).<cast>(Ljava/lang/Object;[));
-  }
-  
-  public static Ljava/lang/String; formatLocal(Lscala/collection/immutable/StringLike; $this, Ljava/util/Locale; l, Lscala/collection/Seq; args) {
-    return Ljava/lang/String;.(Ljava/lang/String;::format(Ljava/util/Locale;Ljava/lang/String;Ljava/lang/Object;[)Ljava/lang/String;)(l, $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)(), args.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/collection/immutable/StringLike$$anonfun$formatLocal$1;::this(Lscala/collection/immutable/StringLike;)V;)($this)), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::toArray(Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Object()Lscala/reflect/Manifest;)()).<cast>(Ljava/lang/Object;[));
   }
   
   public static V; $init$(Lscala/collection/immutable/StringLike; $this) {

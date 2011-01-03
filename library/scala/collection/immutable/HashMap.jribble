@@ -1,4 +1,4 @@
-public class Lscala/collection/immutable/HashMap; extends Ljava/lang/Object; implements Lscala/collection/immutable/Map;, Lscala/collection/immutable/MapLike;, Lscala/collection/Parallelizable;, Lscala/ScalaObject; {
+public class Lscala/collection/immutable/HashMap; extends Ljava/lang/Object; implements Lscala/collection/immutable/Map;, Lscala/collection/immutable/MapLike;, Lscala/ScalaObject; {
   
   public Lscala/collection/immutable/Map; withDefault(Lscala/Function1; d) {
     return Lscala/collection/immutable/Map$class;.(Lscala/collection/immutable/Map$class;::withDefault(Lscala/collection/immutable/Map;Lscala/Function1;)Lscala/collection/immutable/Map;)(this, d);
@@ -548,10 +548,6 @@ public class Lscala/collection/immutable/HashMap; extends Ljava/lang/Object; imp
     return this;
   }
   
-  protected Ljava/lang/Object; writeReplace() {
-    return (new (Lscala/collection/immutable/HashMap$SerializationProxy;::this(Lscala/collection/immutable/HashMap;)V;)(this));
-  }
-  
   public Lscala/collection/immutable/Seq; split() {
     return Lscala/collection/immutable/Seq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/collection/immutable/HashMap;>{this}.<cast>(Ljava/lang/Object;[))).<cast>(Lscala/collection/immutable/Seq;);
   }
@@ -562,10 +558,6 @@ public class Lscala/collection/immutable/HashMap; extends Ljava/lang/Object; imp
   
   public Lscala/collection/immutable/HashMap; merge0(Lscala/collection/immutable/HashMap; that, I; level) {
     return that;
-  }
-  
-  public Lscala/collection/parallel/immutable/ParallelHashTrie; par() {
-    return Lscala/collection/parallel/immutable/ParallelHashTrie$;.MODULE$.(Lscala/collection/parallel/immutable/ParallelHashTrie$;::fromTrie(Lscala/collection/immutable/HashMap;)Lscala/collection/parallel/immutable/ParallelHashTrie;)(this);
   }
   
   public Lscala/collection/generic/Subtractable; repr() {
@@ -606,10 +598,6 @@ public class Lscala/collection/immutable/HashMap; extends Ljava/lang/Object; imp
   
   public Lscala/collection/Map; $plus$plus(Lscala/collection/TraversableOnce; xs) {
     return this.(Lscala/collection/immutable/MapLike;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/immutable/Map;)(xs);
-  }
-  
-  public Lscala/collection/Parallel; par() {
-    return this.(Lscala/collection/immutable/HashMap;::par()Lscala/collection/parallel/immutable/ParallelHashTrie;)();
   }
   
   public Lscala/collection/generic/Subtractable; $minus(Ljava/lang/Object; elem) {

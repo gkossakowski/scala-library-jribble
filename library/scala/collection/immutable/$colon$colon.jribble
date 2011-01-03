@@ -40,57 +40,6 @@ public final class Lscala/collection/immutable/$colon$colon; extends Lscala/coll
     return false;
   }
   
-  private V; writeObject(Ljava/io/ObjectOutputStream; out) {
-    Lscala/collection/immutable/List; xs = this;
-    while$13: while(true) {
-      if (!(xs.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
-        {
-          {
-            out.(Ljava/io/ObjectOutputStream;::writeObject(Ljava/lang/Object;)V;)(xs.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)());
-            xs = xs.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;);
-          }
-          continue while$13;
-        }
-      else
-        {
-          
-        }
-      break;
-    }
-    out.(Ljava/io/ObjectOutputStream;::writeObject(Ljava/lang/Object;)V;)(Lscala/collection/immutable/ListSerializeEnd$;.MODULE$);
-  }
-  
-  private V; readObject(Ljava/io/ObjectInputStream; in) {
-    this.(Lscala/collection/immutable/$colon$colon;::scala$collection$immutable$$colon$colon$$hd_$eq(Ljava/lang/Object;)V;)(in.(Ljava/io/ObjectInputStream;::readObject()Ljava/lang/Object;)());
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;)V;)((this.(Lscala/collection/immutable/$colon$colon;::scala$collection$immutable$$colon$colon$$hd()Ljava/lang/Object;)() != Lscala/collection/immutable/ListSerializeEnd$;.MODULE$));
-    Lscala/collection/immutable/$colon$colon; current = this;
-    while$14: while(true) {
-      {
-        Ljava/lang/Object; temp24 = in.(Ljava/io/ObjectInputStream;::readObject()Ljava/lang/Object;)();
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/ListSerializeEnd$;.MODULE$, temp24))
-          {
-            current.(Lscala/collection/immutable/$colon$colon;::tl_$eq(Lscala/collection/immutable/List;)V;)(Lscala/collection/immutable/Nil$;.MODULE$);
-            return;
-          }
-        else
-          {
-            if ((temp24 != null))
-              {
-                Ljava/lang/Object; a = temp24;
-                Lscala/collection/immutable/$colon$colon; list = (new (Lscala/collection/immutable/$colon$colon;::this(Ljava/lang/Object;Lscala/collection/immutable/List;)V;)(a, Lscala/collection/immutable/Nil$;.MODULE$));
-                current.(Lscala/collection/immutable/$colon$colon;::tl_$eq(Lscala/collection/immutable/List;)V;)(list);
-                current = list;
-              }
-            else
-              {
-                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp24));
-              }
-          }
-      }
-      continue while$14;
-    }
-  }
-  
   public Lscala/collection/immutable/$colon$colon; copy(Ljava/lang/Object; hd, Lscala/collection/immutable/List; tl) {
     return (new (Lscala/collection/immutable/$colon$colon;::this(Ljava/lang/Object;Lscala/collection/immutable/List;)V;)(hd, tl));
   }

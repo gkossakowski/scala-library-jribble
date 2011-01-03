@@ -1,4 +1,4 @@
-public class Lscala/collection/mutable/ArrayBuffer; extends Ljava/lang/Object; implements Lscala/collection/mutable/Buffer;, Lscala/collection/generic/GenericTraversableTemplate;, Lscala/collection/mutable/BufferLike;, Lscala/collection/mutable/IndexedSeqOptimized;, Lscala/collection/mutable/Builder;, Lscala/collection/mutable/ResizableArray;, Lscala/collection/Parallelizable;, Lscala/ScalaObject; {
+public class Lscala/collection/mutable/ArrayBuffer; extends Ljava/lang/Object; implements Lscala/collection/mutable/Buffer;, Lscala/collection/generic/GenericTraversableTemplate;, Lscala/collection/mutable/BufferLike;, Lscala/collection/mutable/IndexedSeqOptimized;, Lscala/collection/mutable/Builder;, Lscala/collection/mutable/ResizableArray;, Lscala/ScalaObject; {
   
   public Ljava/lang/Object;[ array() {
     return this.(Ljava/lang/Object;[)array$u0020;
@@ -791,10 +791,6 @@ public class Lscala/collection/mutable/ArrayBuffer; extends Ljava/lang/Object; i
       }
   }
   
-  public Lscala/collection/parallel/mutable/ParallelArray; par() {
-    return Lscala/collection/parallel/mutable/ParallelArray$;.MODULE$.(Lscala/collection/parallel/mutable/ParallelArray$;::handoff(Ljava/lang/Object;I;)Lscala/collection/parallel/mutable/ParallelArray;)(this.(Lscala/collection/mutable/ResizableArray;::array()Ljava/lang/Object;[)(), this.(Lscala/collection/SeqLike;::size()I;)());
-  }
-  
   public Lscala/collection/mutable/ArrayBuffer; $plus$eq(Ljava/lang/Object; elem) {
     this.(Lscala/collection/mutable/ResizableArray;::ensureSize(I;)V;)((this.(Lscala/collection/mutable/ResizableArray;::size0()I;)() + 1));
     this.(Lscala/collection/mutable/ResizableArray;::array()Ljava/lang/Object;[)()[this.(Lscala/collection/mutable/ResizableArray;::size0()I;)()] = elem;
@@ -1006,10 +1002,6 @@ public class Lscala/collection/mutable/ArrayBuffer; extends Ljava/lang/Object; i
   
   public Lscala/collection/mutable/Builder; $plus$eq(Ljava/lang/Object; elem) {
     return this.(Lscala/collection/mutable/ArrayBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ArrayBuffer;)(elem);
-  }
-  
-  public Lscala/collection/Parallel; par() {
-    return this.(Lscala/collection/mutable/ArrayBuffer;::par()Lscala/collection/parallel/mutable/ParallelArray;)();
   }
   
   public this(I; initialSize) {

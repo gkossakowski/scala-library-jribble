@@ -83,14 +83,6 @@ public class Lscala/collection/immutable/HashSet$HashSetCollision1; extends Lsca
     this.(Lscala/collection/immutable/HashSet$HashSetCollision1;::ks()Lscala/collection/immutable/ListSet;)().(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)(f);
   }
   
-  private V; writeObject(Ljava/io/ObjectOutputStream; out) {
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("cannot serialize an immutable.HashSet where all items have the same 32-bit hash code");
-  }
-  
-  private V; readObject(Ljava/io/ObjectInputStream; in) {
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("cannot deserialize an immutable.HashSet where all items have the same 32-bit hash code");
-  }
-  
   public this(I; hash, Lscala/collection/immutable/ListSet; ks) {
     this.(I;)hash$u0020 = hash;
     this.(Lscala/collection/immutable/ListSet;)ks$u0020 = ks;

@@ -56,14 +56,6 @@ public class Lscala/collection/mutable/HashSet; extends Ljava/lang/Object; imple
     return Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::initialSize(Lscala/collection/mutable/FlatHashTable;)I;)(this);
   }
   
-  public V; init(Ljava/io/ObjectInputStream; in, Lscala/Function1; f) {
-    Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::init(Lscala/collection/mutable/FlatHashTable;Ljava/io/ObjectInputStream;Lscala/Function1;)V;)(this, in, f);
-  }
-  
-  public V; serializeTo(Ljava/io/ObjectOutputStream; out) {
-    Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::serializeTo(Lscala/collection/mutable/FlatHashTable;Ljava/io/ObjectOutputStream;)V;)(this, out);
-  }
-  
   public Lscala/Option; findEntry(Ljava/lang/Object; elem) {
     return Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::findEntry(Lscala/collection/mutable/FlatHashTable;Ljava/lang/Object;)Lscala/Option;)(this, elem);
   }
@@ -672,14 +664,6 @@ public class Lscala/collection/mutable/HashSet; extends Ljava/lang/Object; imple
   
   public Lscala/collection/mutable/HashSet; clone() {
     return (new (Lscala/collection/mutable/HashSet;::this()V;)()).(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this).<cast>(Lscala/collection/mutable/HashSet;);
-  }
-  
-  private V; writeObject(Ljava/io/ObjectOutputStream; s) {
-    this.(Lscala/collection/mutable/FlatHashTable;::serializeTo(Ljava/io/ObjectOutputStream;)V;)(s);
-  }
-  
-  private V; readObject(Ljava/io/ObjectInputStream; in) {
-    this.(Lscala/collection/mutable/FlatHashTable;::init(Ljava/io/ObjectInputStream;Lscala/Function1;)V;)(in, (new (Lscala/collection/mutable/HashSet$$anonfun$readObject$1;::this(Lscala/collection/mutable/HashSet;)V;)(this)));
   }
   
   public Lscala/collection/generic/Addable; repr() {

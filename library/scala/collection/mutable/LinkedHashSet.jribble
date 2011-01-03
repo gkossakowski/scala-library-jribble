@@ -56,14 +56,6 @@ public class Lscala/collection/mutable/LinkedHashSet; extends Ljava/lang/Object;
     return Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::initialSize(Lscala/collection/mutable/FlatHashTable;)I;)(this);
   }
   
-  public V; init(Ljava/io/ObjectInputStream; in, Lscala/Function1; f) {
-    Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::init(Lscala/collection/mutable/FlatHashTable;Ljava/io/ObjectInputStream;Lscala/Function1;)V;)(this, in, f);
-  }
-  
-  public V; serializeTo(Ljava/io/ObjectOutputStream; out) {
-    Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::serializeTo(Lscala/collection/mutable/FlatHashTable;Ljava/io/ObjectOutputStream;)V;)(this, out);
-  }
-  
   public Lscala/Option; findEntry(Ljava/lang/Object; elem) {
     return Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::findEntry(Lscala/collection/mutable/FlatHashTable;Ljava/lang/Object;)Lscala/Option;)(this, elem);
   }
@@ -672,17 +664,6 @@ public class Lscala/collection/mutable/LinkedHashSet; extends Ljava/lang/Object;
   
   public V; foreach(Lscala/Function1; f) {
     this.(Lscala/collection/mutable/ListBuffer;)ordered.(Lscala/collection/generic/TraversableForwarder;::foreach(Lscala/Function1;)V;)(f);
-  }
-  
-  private V; writeObject(Ljava/io/ObjectOutputStream; s) {
-    this.(Lscala/collection/mutable/FlatHashTable;::serializeTo(Ljava/io/ObjectOutputStream;)V;)(s);
-  }
-  
-  private V; readObject(Ljava/io/ObjectInputStream; in) {
-    this.(Lscala/collection/mutable/ListBuffer;)ordered = (new (Lscala/collection/mutable/ListBuffer;::this()V;)());
-    Ljava/io/ObjectInputStream; $3$ = in;
-    Lscala/collection/mutable/ListBuffer; eta$0$1$1 = this.(Lscala/collection/mutable/ListBuffer;)ordered;
-    this.(Lscala/collection/mutable/FlatHashTable;::init(Ljava/io/ObjectInputStream;Lscala/Function1;)V;)($3$, (new (Lscala/collection/mutable/LinkedHashSet$$anonfun$readObject$1;::this(Lscala/collection/mutable/LinkedHashSet;Lscala/collection/mutable/ListBuffer;)V;)(this, eta$0$1$1)));
   }
   
   public Lscala/collection/generic/Addable; repr() {

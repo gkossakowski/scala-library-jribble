@@ -504,10 +504,6 @@ public class Lscala/collection/immutable/HashSet; extends Ljava/lang/Object; imp
     return this;
   }
   
-  protected Ljava/lang/Object; writeReplace() {
-    return (new (Lscala/collection/immutable/HashSet$SerializationProxy;::this(Lscala/collection/immutable/HashSet;)V;)(this));
-  }
-  
   public Lscala/collection/generic/Addable; repr() {
     return this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/generic/Addable;);
   }
