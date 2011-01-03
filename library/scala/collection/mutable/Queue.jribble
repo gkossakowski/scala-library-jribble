@@ -1,0 +1,210 @@
+public class Lscala/collection/mutable/Queue; extends Lscala/collection/mutable/MutableList; implements Lscala/collection/mutable/Cloneable;, Lscala/ScalaObject; {
+  
+  public V; enqueue(Lscala/collection/Seq; elems) {
+    this.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(elems);
+  }
+  
+  public Ljava/lang/Object; dequeue() {
+    Ljava/lang/Object; $1$;
+    if (this.(Lscala/collection/mutable/MutableList;::isEmpty()Z;)())
+      {
+        throw (new (Ljava/util/NoSuchElementException;::this(Ljava/lang/String;)V;)("queue empty"));
+      }
+    else
+      {
+        Ljava/lang/Object; res = this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)().(Lscala/collection/mutable/LinkedListLike;::elem()Ljava/lang/Object;)();
+        this.(Lscala/collection/mutable/MutableList;::first0_$eq(Lscala/collection/mutable/LinkedList;)V;)(this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)().(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedList;));
+        this.(Lscala/collection/mutable/MutableList;::len_$eq(I;)V;)((this.(Lscala/collection/mutable/MutableList;::len()I;)() - 1));
+        $1$ = res;
+      }
+    return $1$;
+  }
+  
+  public Lscala/Option; dequeueFirst(Lscala/Function1; p) {
+    Lscala/Option; $2$;
+    if (this.(Lscala/collection/mutable/MutableList;::isEmpty()Z;)())
+      {
+        $2$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        Lscala/Option; $3$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)().(Lscala/collection/mutable/LinkedListLike;::elem()Ljava/lang/Object;)())))
+          {
+            Lscala/Option; res = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)().(Lscala/collection/mutable/LinkedListLike;::elem()Ljava/lang/Object;)()));
+            this.(Lscala/collection/mutable/MutableList;::first0_$eq(Lscala/collection/mutable/LinkedList;)V;)(this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)().(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedList;));
+            this.(Lscala/collection/mutable/MutableList;::len_$eq(I;)V;)((this.(Lscala/collection/mutable/MutableList;::len()I;)() - 1));
+            $3$ = res;
+          }
+        else
+          {
+            Lscala/Option; optElem = this.(Lscala/collection/mutable/Queue;::removeFromList(Lscala/Function1;)Lscala/Option;)(p);
+            if ((optElem != Lscala/None$;.MODULE$))
+              {
+                this.(Lscala/collection/mutable/MutableList;::len_$eq(I;)V;)((this.(Lscala/collection/mutable/MutableList;::len()I;)() - 1));
+              }
+            else
+              {
+                
+              }
+            $3$ = optElem;
+          }
+        $2$ = $3$;
+      }
+    return $2$;
+  }
+  
+  private Lscala/Option; removeFromList(Lscala/Function1; p) {
+    Lscala/collection/mutable/LinkedList; leftlst = this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)();
+    Lscala/Option; res = Lscala/None$;.MODULE$;
+    while$1: while(true) {
+      if ((leftlst.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().(Lscala/collection/TraversableOnce;::nonEmpty()Z;)() && !(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(leftlst.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedListLike;).(Lscala/collection/mutable/LinkedListLike;::elem()Ljava/lang/Object;)())))))
+        {
+          leftlst = leftlst.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedList;);
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    if (leftlst.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().(Lscala/collection/TraversableOnce;::nonEmpty()Z;)())
+      {
+        res = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(leftlst.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedListLike;).(Lscala/collection/mutable/LinkedListLike;::elem()Ljava/lang/Object;)()));
+        if ((leftlst.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)() == this.(Lscala/collection/mutable/MutableList;::last0()Lscala/collection/mutable/LinkedList;)()))
+          {
+            this.(Lscala/collection/mutable/MutableList;::last0_$eq(Lscala/collection/mutable/LinkedList;)V;)(leftlst);
+          }
+        else
+          {
+            
+          }
+        leftlst.(Lscala/collection/mutable/LinkedListLike;::next_$eq(Lscala/collection/mutable/Seq;)V;)(leftlst.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedListLike;).(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)());
+      }
+    else
+      {
+        
+      }
+    return res;
+  }
+  
+  public Lscala/collection/mutable/Seq; dequeueAll(Lscala/Function1; p) {
+    Lscala/collection/mutable/Seq; $4$;
+    if (this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)().(Lscala/collection/mutable/LinkedListLike;::isEmpty()Z;)())
+      {
+        $4$ = Lscala/collection/mutable/Seq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::empty()Lscala/collection/Traversable;)().<cast>(Lscala/collection/mutable/Seq;);
+      }
+    else
+      {
+        Lscala/collection/mutable/ArrayBuffer; res = (new (Lscala/collection/mutable/ArrayBuffer;::this()V;)());
+        while$2: while(true) {
+          if ((this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)().(Lscala/collection/TraversableOnce;::nonEmpty()Z;)() && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)().(Lscala/collection/mutable/LinkedListLike;::elem()Ljava/lang/Object;)()))))
+            {
+              {
+                res.(Lscala/collection/mutable/ArrayBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ArrayBuffer;)(this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)().(Lscala/collection/mutable/LinkedListLike;::elem()Ljava/lang/Object;)());
+                this.(Lscala/collection/mutable/MutableList;::first0_$eq(Lscala/collection/mutable/LinkedList;)V;)(this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)().(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedList;));
+                this.(Lscala/collection/mutable/MutableList;::len_$eq(I;)V;)((this.(Lscala/collection/mutable/MutableList;::len()I;)() - 1));
+              }
+              continue while$2;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+        Lscala/collection/mutable/Seq; $5$;
+        if (this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)().(Lscala/collection/mutable/LinkedListLike;::isEmpty()Z;)())
+          {
+            $5$ = res;
+          }
+        else
+          {
+            $5$ = this.(Lscala/collection/mutable/Queue;::removeAllFromList(Lscala/Function1;Lscala/collection/mutable/ArrayBuffer;)Lscala/collection/mutable/ArrayBuffer;)(p, res);
+          }
+        $4$ = $5$;
+      }
+    return $4$;
+  }
+  
+  private Lscala/collection/mutable/ArrayBuffer; removeAllFromList(Lscala/Function1; p, Lscala/collection/mutable/ArrayBuffer; res) {
+    Lscala/collection/mutable/LinkedList; leftlst = this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)();
+    while$3: while(true) {
+      if (leftlst.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().(Lscala/collection/TraversableOnce;::nonEmpty()Z;)())
+        {
+          if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(leftlst.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedListLike;).(Lscala/collection/mutable/LinkedListLike;::elem()Ljava/lang/Object;)())))
+            {
+              res.(Lscala/collection/mutable/ArrayBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ArrayBuffer;)(leftlst.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedListLike;).(Lscala/collection/mutable/LinkedListLike;::elem()Ljava/lang/Object;)());
+              if ((leftlst.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)() == this.(Lscala/collection/mutable/MutableList;::last0()Lscala/collection/mutable/LinkedList;)()))
+                {
+                  this.(Lscala/collection/mutable/MutableList;::last0_$eq(Lscala/collection/mutable/LinkedList;)V;)(leftlst);
+                }
+              else
+                {
+                  
+                }
+              leftlst.(Lscala/collection/mutable/LinkedListLike;::next_$eq(Lscala/collection/mutable/Seq;)V;)(leftlst.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedListLike;).(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)());
+              this.(Lscala/collection/mutable/MutableList;::len_$eq(I;)V;)((this.(Lscala/collection/mutable/MutableList;::len()I;)() - 1));
+            }
+          else
+            {
+              leftlst = leftlst.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedList;);
+            }
+          continue while$3;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return res;
+  }
+  
+  public Lscala/Option; extractFirst(Lscala/collection/mutable/LinkedList; start, Lscala/Function1; p) {
+    Lscala/Option; $6$;
+    if (this.(Lscala/collection/mutable/MutableList;::isEmpty()Z;)())
+      {
+        $6$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        Lscala/collection/mutable/LinkedList; cell = start;
+        while$4: while(true) {
+          if ((cell.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().(Lscala/collection/TraversableOnce;::nonEmpty()Z;)() && !(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(cell.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedListLike;).(Lscala/collection/mutable/LinkedListLike;::elem()Ljava/lang/Object;)())))))
+            {
+              cell = cell.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedList;);
+              continue while$4;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+        Lscala/Option; $7$;
+        if (cell.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedListLike;).(Lscala/collection/mutable/LinkedListLike;::isEmpty()Z;)())
+          {
+            $7$ = Lscala/None$;.MODULE$;
+          }
+        else
+          {
+            Lscala/Option; res = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(cell.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)()));
+            cell.(Lscala/collection/mutable/LinkedListLike;::next_$eq(Lscala/collection/mutable/Seq;)V;)(cell.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedListLike;).(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)());
+            this.(Lscala/collection/mutable/MutableList;::len_$eq(I;)V;)((this.(Lscala/collection/mutable/MutableList;::len()I;)() - 1));
+            $7$ = res;
+          }
+        $6$ = $7$;
+      }
+    return $6$;
+  }
+  
+  public Ljava/lang/Object; front() {
+    return this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)().(Lscala/collection/mutable/LinkedListLike;::elem()Ljava/lang/Object;)();
+  }
+  
+  public this() {
+    (Lscala/collection/mutable/MutableList;::super()V;)();
+  }
+}

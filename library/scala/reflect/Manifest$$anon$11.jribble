@@ -1,0 +1,26 @@
+public final class Lscala/reflect/Manifest$$anon$11; extends Lscala/reflect/Manifest$ClassTypeManifest; {
+  
+  public Ljava/lang/String; toString() {
+    return "Object";
+  }
+  
+  public Z; $less$colon$less(Lscala/reflect/ClassManifest; that) {
+    return ((that == this) || (that == this.(Lscala/reflect/Manifest$;::Any()Lscala/reflect/Manifest;)()));
+  }
+  
+  public Z; equals(Ljava/lang/Object; that) {
+    return (this == that);
+  }
+  
+  public I; hashCode() {
+    return Ljava/lang/System;.(Ljava/lang/System;::identityHashCode(Ljava/lang/Object;)I;)(this);
+  }
+  
+  private Ljava/lang/Object; readResolve() {
+    return Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Object()Lscala/reflect/Manifest;)();
+  }
+  
+  public this() {
+    (Lscala/reflect/Manifest$ClassTypeManifest;::super(Lscala/Option;Ljava/lang/Class;Lscala/collection/immutable/List;)V;)(Lscala/None$;.MODULE$, Ljava/lang/Object;.class, Lscala/collection/immutable/Nil$;.MODULE$);
+  }
+}

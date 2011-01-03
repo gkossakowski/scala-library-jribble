@@ -1,0 +1,99 @@
+public class Lscala/collection/immutable/HashSet$HashSetCollision1; extends Lscala/collection/immutable/HashSet; implements Lscala/ScalaObject; {
+  
+  private I; hash$u0020;
+  
+  public I; hash() {
+    return this.(I;)hash$u0020;
+  }
+  
+  public V; hash_$eq(I; x$1) {
+    this.(I;)hash$u0020 = x$1;
+  }
+  
+  private Lscala/collection/immutable/ListSet; ks$u0020;
+  
+  public Lscala/collection/immutable/ListSet; ks() {
+    return this.(Lscala/collection/immutable/ListSet;)ks$u0020;
+  }
+  
+  public V; ks_$eq(Lscala/collection/immutable/ListSet; x$1) {
+    this.(Lscala/collection/immutable/ListSet;)ks$u0020 = x$1;
+  }
+  
+  public I; size() {
+    return this.(Lscala/collection/immutable/HashSet$HashSetCollision1;::ks()Lscala/collection/immutable/ListSet;)().(Lscala/collection/immutable/ListSet;::size()I;)();
+  }
+  
+  public Z; get0(Ljava/lang/Object; key, I; hash, I; level) {
+    Z; $5$;
+    if ((hash == this.(Lscala/collection/immutable/HashSet$HashSetCollision1;::hash()I;)()))
+      {
+        $5$ = this.(Lscala/collection/immutable/HashSet$HashSetCollision1;::ks()Lscala/collection/immutable/ListSet;)().(Lscala/collection/immutable/ListSet;::contains(Ljava/lang/Object;)Z;)(key);
+      }
+    else
+      {
+        $5$ = false;
+      }
+    return $5$;
+  }
+  
+  public Lscala/collection/immutable/HashSet; updated0(Ljava/lang/Object; key, I; hash, I; level$1) {
+    Lscala/collection/immutable/HashSet; $6$;
+    if ((hash == this.(Lscala/collection/immutable/HashSet$HashSetCollision1;::hash()I;)()))
+      {
+        $6$ = (new (Lscala/collection/immutable/HashSet$HashSetCollision1;::this(I;Lscala/collection/immutable/ListSet;)V;)(hash, this.(Lscala/collection/immutable/HashSet$HashSetCollision1;::ks()Lscala/collection/immutable/ListSet;)().(Lscala/collection/immutable/ListSet;::$plus(Ljava/lang/Object;)Lscala/collection/immutable/ListSet;)(key)));
+      }
+    else
+      {
+        Lscala/runtime/ObjectRef; m$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)((new (Lscala/collection/immutable/HashSet$HashTrieSet;::this(I;Lscala/collection/immutable/HashSet;[I;)V;)(0, new Lscala/collection/immutable/HashSet;[0], 0))));
+        this.(Lscala/collection/immutable/HashSet$HashSetCollision1;::ks()Lscala/collection/immutable/ListSet;)().(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/HashSet$HashSetCollision1$$anonfun$updated0$1;::this(Lscala/collection/immutable/HashSet$HashSetCollision1;I;Lscala/runtime/ObjectRef;)V;)(this, level$1, m$1)));
+        $6$ = m$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/immutable/HashSet;).(Lscala/collection/immutable/HashSet;::updated0(Ljava/lang/Object;I;I;)Lscala/collection/immutable/HashSet;)(key, hash, level$1);
+      }
+    return $6$;
+  }
+  
+  public Lscala/collection/immutable/HashSet; removed0(Ljava/lang/Object; key, I; hash, I; level) {
+    Lscala/collection/immutable/HashSet; $7$;
+    if ((hash == this.(Lscala/collection/immutable/HashSet$HashSetCollision1;::hash()I;)()))
+      {
+        Lscala/collection/immutable/ListSet; ks1 = this.(Lscala/collection/immutable/HashSet$HashSetCollision1;::ks()Lscala/collection/immutable/ListSet;)().(Lscala/collection/immutable/ListSet;::$minus(Ljava/lang/Object;)Lscala/collection/immutable/ListSet;)(key);
+        Lscala/collection/immutable/HashSet; $8$;
+        if (!(ks1.(Lscala/collection/immutable/ListSet;::isEmpty()Z;)()))
+          {
+            $8$ = (new (Lscala/collection/immutable/HashSet$HashSetCollision1;::this(I;Lscala/collection/immutable/ListSet;)V;)(hash, ks1));
+          }
+        else
+          {
+            $8$ = Lscala/collection/immutable/HashSet$;.MODULE$.(Lscala/collection/immutable/HashSet$;::empty()Lscala/collection/immutable/HashSet;)();
+          }
+        $7$ = $8$;
+      }
+    else
+      {
+        $7$ = this;
+      }
+    return $7$;
+  }
+  
+  public Lscala/collection/Iterator; iterator() {
+    return this.(Lscala/collection/immutable/HashSet$HashSetCollision1;::ks()Lscala/collection/immutable/ListSet;)().(Lscala/collection/immutable/ListSet;::iterator()Lscala/collection/Iterator;)();
+  }
+  
+  public V; foreach(Lscala/Function1; f) {
+    this.(Lscala/collection/immutable/HashSet$HashSetCollision1;::ks()Lscala/collection/immutable/ListSet;)().(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)(f);
+  }
+  
+  private V; writeObject(Ljava/io/ObjectOutputStream; out) {
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("cannot serialize an immutable.HashSet where all items have the same 32-bit hash code");
+  }
+  
+  private V; readObject(Ljava/io/ObjectInputStream; in) {
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("cannot deserialize an immutable.HashSet where all items have the same 32-bit hash code");
+  }
+  
+  public this(I; hash, Lscala/collection/immutable/ListSet; ks) {
+    this.(I;)hash$u0020 = hash;
+    this.(Lscala/collection/immutable/ListSet;)ks$u0020 = ks;
+    (Lscala/collection/immutable/HashSet;::super()V;)();
+  }
+}

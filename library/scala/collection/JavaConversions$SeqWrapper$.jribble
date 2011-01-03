@@ -1,0 +1,28 @@
+public final class Lscala/collection/JavaConversions$SeqWrapper$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/JavaConversions$SeqWrapper$; MODULE$ = new (Lscala/collection/JavaConversions$SeqWrapper$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "SeqWrapper";
+  }
+  
+  public Lscala/Option; unapply(Lscala/collection/JavaConversions$SeqWrapper; x$0) {
+    Lscala/Option; $93$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $93$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $93$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/collection/JavaConversions$SeqWrapper;::underlying()Lscala/collection/Seq;)()));
+      }
+    return $93$;
+  }
+  
+  public Lscala/collection/JavaConversions$SeqWrapper; apply(Lscala/collection/Seq; underlying) {
+    return (new (Lscala/collection/JavaConversions$SeqWrapper;::this(Lscala/collection/Seq;)V;)(underlying));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

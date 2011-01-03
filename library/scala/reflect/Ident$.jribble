@@ -1,0 +1,32 @@
+public final class Lscala/reflect/Ident$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+  public static Lscala/reflect/Ident$; MODULE$ = new (Lscala/reflect/Ident$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "Ident";
+  }
+  
+  public Lscala/Option; unapply(Lscala/reflect/Ident; x$0) {
+    Lscala/Option; $77$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $77$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $77$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/reflect/Ident;::sym()Lscala/reflect/Symbol;)()));
+      }
+    return $77$;
+  }
+  
+  public Lscala/reflect/Ident; apply(Lscala/reflect/Symbol; sym) {
+    return (new (Lscala/reflect/Ident;::this(Lscala/reflect/Symbol;)V;)(sym));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/reflect/Ident$;::apply(Lscala/reflect/Symbol;)Lscala/reflect/Ident;)(v1.<cast>(Lscala/reflect/Symbol;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

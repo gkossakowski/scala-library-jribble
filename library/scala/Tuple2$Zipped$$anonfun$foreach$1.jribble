@@ -1,0 +1,25 @@
+public final class Lscala/Tuple2$Zipped$$anonfun$foreach$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; el1) {
+    Ljava/lang/Object; $8$;
+    if (this.(Lscala/collection/Iterator;)elems2$7.(Lscala/collection/Iterator;::hasNext()Z;)())
+      {
+        $8$ = this.(Lscala/Function2;)f$6.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(el1, this.(Lscala/collection/Iterator;)elems2$7.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
+      }
+    else
+      {
+        $8$ = Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+      }
+    return $8$;
+  }
+  
+  private Lscala/Function2; f$6;
+  
+  private Lscala/collection/Iterator; elems2$7;
+  
+  public this(Lscala/Tuple2$Zipped; $outer, Lscala/Function2; f$6, Lscala/collection/Iterator; elems2$7) {
+    this.(Lscala/Function2;)f$6 = f$6;
+    this.(Lscala/collection/Iterator;)elems2$7 = elems2$7;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

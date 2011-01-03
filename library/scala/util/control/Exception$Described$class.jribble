@@ -1,0 +1,19 @@
+public abstract class Lscala/util/control/Exception$Described$class; {
+  
+  public static Ljava/lang/String; desc(Lscala/util/control/Exception$Described; $this) {
+    return $this.(Lscala/util/control/Exception$Described;::scala$util$control$Exception$Described$$_desc()Ljava/lang/String;)();
+  }
+  
+  public static Lscala/util/control/Exception$Described; withDesc(Lscala/util/control/Exception$Described; $this, Ljava/lang/String; s) {
+    $this.(Lscala/util/control/Exception$Described;::scala$util$control$Exception$Described$$_desc_$eq(Ljava/lang/String;)V;)(s);
+    return $this;
+  }
+  
+  public static Ljava/lang/String; toString(Lscala/util/control/Exception$Described; $this) {
+    return ((($this.(Lscala/util/control/Exception$Described;::name()Ljava/lang/String;)() + "(") + $this.(Lscala/util/control/Exception$Described;::desc()Ljava/lang/String;)()) + ")");
+  }
+  
+  public static V; $init$(Lscala/util/control/Exception$Described; $this) {
+    $this.(Lscala/util/control/Exception$Described;::scala$util$control$Exception$Described$$_desc_$eq(Ljava/lang/String;)V;)("");
+  }
+}

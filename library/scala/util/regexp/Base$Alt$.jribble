@@ -1,0 +1,33 @@
+public final class Lscala/util/regexp/Base$Alt$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  public Lscala/util/regexp/Base$Alt; apply(Lscala/collection/Seq; rs) {
+    Lscala/util/regexp/Base$Alt; $1$;
+    if ((rs.(Lscala/collection/SeqLike;::size()I;)() < 2))
+      {
+        throw (new (Lscala/util/regexp/SyntaxError;::this(Ljava/lang/String;)V;)("need at least 2 branches in Alt"));
+      }
+    else
+      {
+        $1$ = (new (Lscala/util/regexp/Base$Alt;::this(Lscala/util/regexp/Base;Lscala/collection/Seq;)V;)(this.(Lscala/util/regexp/Base;)$outer$u0020, rs));
+      }
+    return $1$;
+  }
+  
+  public Lscala/Some; unapplySeq(Lscala/util/regexp/Base$Alt; x) {
+    return (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x.(Lscala/util/regexp/Base$Alt;::rs()Lscala/collection/Seq;)()));
+  }
+  
+  private Lscala/util/regexp/Base; $outer$u0020;
+  
+  public this(Lscala/util/regexp/Base; $outer) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/util/regexp/Base;)$outer$u0020 = $outer;
+      }
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

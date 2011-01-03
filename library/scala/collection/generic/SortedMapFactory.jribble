@@ -1,0 +1,16 @@
+public abstract class Lscala/collection/generic/SortedMapFactory; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  public abstract Lscala/collection/SortedMap; empty(Lscala/math/Ordering; ord);
+  
+  public Lscala/collection/SortedMap; apply(Lscala/collection/Seq; elems, Lscala/math/Ordering; ord) {
+    return this.(Lscala/collection/generic/SortedMapFactory;::newBuilder(Lscala/math/Ordering;)Lscala/collection/mutable/Builder;)(ord).(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(elems).<cast>(Lscala/collection/mutable/Builder;).(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/SortedMap;);
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder(Lscala/math/Ordering; ord) {
+    return (new (Lscala/collection/mutable/MapBuilder;::this(Lscala/collection/Map;)V;)(this.(Lscala/collection/generic/SortedMapFactory;::empty(Lscala/math/Ordering;)Lscala/collection/SortedMap;)(ord)));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

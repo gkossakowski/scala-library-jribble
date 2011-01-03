@@ -1,0 +1,20 @@
+public abstract class Lscala/collection/generic/SortedSetFactory; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  public abstract Lscala/collection/SortedSet; empty(Lscala/math/Ordering; ord);
+  
+  public Lscala/collection/SortedSet; apply(Lscala/collection/Seq; elems, Lscala/math/Ordering; ord) {
+    return this.(Lscala/collection/generic/SortedSetFactory;::newBuilder(Lscala/math/Ordering;)Lscala/collection/mutable/Builder;)(ord).(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(elems).<cast>(Lscala/collection/mutable/Builder;).(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/SortedSet;);
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder(Lscala/math/Ordering; ord) {
+    return (new (Lscala/collection/mutable/SetBuilder;::this(Lscala/collection/generic/Addable;)V;)(this.(Lscala/collection/generic/SortedSetFactory;::empty(Lscala/math/Ordering;)Lscala/collection/SortedSet;)(ord)));
+  }
+  
+  public Lscala/collection/generic/CanBuildFrom; newCanBuildFrom(Lscala/math/Ordering; ord) {
+    return (new (Lscala/collection/generic/SortedSetFactory$SortedSetCanBuildFrom;::this(Lscala/collection/generic/SortedSetFactory;Lscala/math/Ordering;)V;)(this, ord));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

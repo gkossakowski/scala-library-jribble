@@ -1,0 +1,47 @@
+public abstract class Lscala/util/automata/DetWordAutom; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  public abstract I; nstates();
+  
+  public abstract I;[ finals();
+  
+  public abstract Lscala/collection/Map;[ delta();
+  
+  public abstract I;[ `default`();
+  
+  public Z; isFinal(I; q) {
+    return (this.(Lscala/util/automata/DetWordAutom;::finals()I;[)()[q] != 0);
+  }
+  
+  public Z; isSink(I; q) {
+    return (this.(Lscala/util/automata/DetWordAutom;::delta()Lscala/collection/Map;[)()[q].(Lscala/collection/MapLike;::isEmpty()Z;)() && (this.(Lscala/util/automata/DetWordAutom;::`default`()I;[)()[q] == q));
+  }
+  
+  public I; next(I; q, Ljava/lang/Object; label) {
+    Lscala/Option; temp1 = this.(Lscala/util/automata/DetWordAutom;::delta()Lscala/collection/Map;[)()[q].(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(label);
+    I; $1$;
+    if (temp1.<instanceof>(Lscala/Some;))
+      {
+        $1$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp1.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)());
+      }
+    else
+      {
+        $1$ = this.(Lscala/util/automata/DetWordAutom;::`default`()I;[)()[q];
+      }
+    return $1$;
+  }
+  
+  public Ljava/lang/String; toString() {
+    Lscala/collection/mutable/StringBuilder; sb$1 = (new (Lscala/collection/mutable/StringBuilder;::this(Ljava/lang/String;)V;)("[DetWordAutom  nstates="));
+    sb$1.(Lscala/collection/mutable/StringBuilder;::append(I;)Lscala/collection/mutable/StringBuilder;)(this.(Lscala/util/automata/DetWordAutom;::nstates()I;)());
+    sb$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(" finals=");
+    Lscala/collection/Map; map = Lscala/collection/Map$;.MODULE$.(Lscala/collection/generic/MapFactory;::apply(Lscala/collection/Seq;)Lscala/collection/Map;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intArrayOps(I;[)Lscala/collection/mutable/ArrayOps;)(this.(Lscala/util/automata/DetWordAutom;::finals()I;[)()).(Lscala/collection/IndexedSeqOptimized;::zipWithIndex(Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(Lscala/Array$;.MODULE$.(Lscala/Array$;::canBuildFrom(Lscala/reflect/ClassManifest;)Lscala/collection/generic/CanBuildFrom;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;Lscala/reflect/OptManifest;Lscala/collection/Seq;)Lscala/reflect/ClassManifest;)(Lscala/Tuple2;.class, Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Int()Lscala/reflect/AnyValManifest;)(), Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/reflect/OptManifest;>{Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Int()Lscala/reflect/AnyValManifest;)()}.<cast>(Ljava/lang/Object;[))))).<cast>(Ljava/lang/Object;[)).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/util/automata/DetWordAutom$$anonfun$1;::this(Lscala/util/automata/DetWordAutom;)V;)(this)), Lscala/Array$;.MODULE$.(Lscala/Array$;::canBuildFrom(Lscala/reflect/ClassManifest;)Lscala/collection/generic/CanBuildFrom;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;Lscala/reflect/OptManifest;Lscala/collection/Seq;)Lscala/reflect/ClassManifest;)(Lscala/Tuple2;.class, Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Int()Lscala/reflect/AnyValManifest;)(), Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/reflect/OptManifest;>{Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Int()Lscala/reflect/AnyValManifest;)()}.<cast>(Ljava/lang/Object;[))))).<cast>(Ljava/lang/Object;[)));
+    sb$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(map.(Lscala/collection/MapLike;::toString()Ljava/lang/String;)());
+    sb$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(" delta=\012");
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(this.(Lscala/util/automata/DetWordAutom;::nstates()I;)()).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/util/automata/DetWordAutom$$anonfun$toString$1;::this(Lscala/util/automata/DetWordAutom;Lscala/collection/mutable/StringBuilder;)V;)(this, sb$1)));
+    return sb$1.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)();
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

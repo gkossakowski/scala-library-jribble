@@ -1,0 +1,213 @@
+public abstract class Lscala/util/automata/WordBerrySethi; extends Lscala/util/automata/BaseBerrySethi; implements Lscala/ScalaObject; {
+  
+  public abstract Lscala/util/regexp/WordExp; lang();
+  
+  private Lscala/collection/mutable/HashSet; labels$u0020;
+  
+  public Lscala/collection/mutable/HashSet; labels() {
+    return this.(Lscala/collection/mutable/HashSet;)labels$u0020;
+  }
+  
+  protected V; labels_$eq(Lscala/collection/mutable/HashSet; x$1) {
+    this.(Lscala/collection/mutable/HashSet;)labels$u0020 = x$1;
+  }
+  
+  private Lscala/collection/immutable/Map; labelAt$u0020;
+  
+  public Lscala/collection/immutable/Map; labelAt() {
+    return this.(Lscala/collection/immutable/Map;)labelAt$u0020;
+  }
+  
+  protected V; labelAt_$eq(Lscala/collection/immutable/Map; x$1) {
+    this.(Lscala/collection/immutable/Map;)labelAt$u0020 = x$1;
+  }
+  
+  private Lscala/collection/mutable/HashMap;[ deltaq$u0020;
+  
+  public Lscala/collection/mutable/HashMap;[ deltaq() {
+    return this.(Lscala/collection/mutable/HashMap;[)deltaq$u0020;
+  }
+  
+  protected V; deltaq_$eq(Lscala/collection/mutable/HashMap;[ x$1) {
+    this.(Lscala/collection/mutable/HashMap;[)deltaq$u0020 = x$1;
+  }
+  
+  private Lscala/collection/immutable/List;[ defaultq$u0020;
+  
+  public Lscala/collection/immutable/List;[ defaultq() {
+    return this.(Lscala/collection/immutable/List;[)defaultq$u0020;
+  }
+  
+  protected V; defaultq_$eq(Lscala/collection/immutable/List;[ x$1) {
+    this.(Lscala/collection/immutable/List;[)defaultq$u0020 = x$1;
+  }
+  
+  private Lscala/collection/immutable/Set; initials$u0020;
+  
+  protected Lscala/collection/immutable/Set; initials() {
+    return this.(Lscala/collection/immutable/Set;)initials$u0020;
+  }
+  
+  protected V; initials_$eq(Lscala/collection/immutable/Set; x$1) {
+    this.(Lscala/collection/immutable/Set;)initials$u0020 = x$1;
+  }
+  
+  protected Lscala/collection/immutable/Set; compFirst(Lscala/util/regexp/Base$RegExp; r) {
+    Lscala/util/regexp/Base$RegExp; temp1 = r;
+    Lscala/collection/immutable/Set; $1$;
+    if (temp1.<instanceof>(Lscala/util/regexp/WordExp$Letter;))
+      {
+        $1$ = Lscala/collection/immutable/Set$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapIntArray(I;[)Lscala/collection/mutable/WrappedArray;)(<I;>{temp1.<cast>(Lscala/util/regexp/WordExp$Letter;).(Lscala/util/regexp/WordExp$Letter;::pos()I;)()})).<cast>(Lscala/collection/immutable/Set;);
+      }
+    else
+      {
+        $1$ = super.(Lscala/util/automata/BaseBerrySethi;::compFirst(Lscala/util/regexp/Base$RegExp;)Lscala/collection/immutable/Set;)(r);
+      }
+    return $1$;
+  }
+  
+  protected Lscala/collection/immutable/Set; compLast(Lscala/util/regexp/Base$RegExp; r) {
+    Lscala/util/regexp/Base$RegExp; temp4 = r;
+    Lscala/collection/immutable/Set; $2$;
+    if (temp4.<instanceof>(Lscala/util/regexp/WordExp$Letter;))
+      {
+        $2$ = Lscala/collection/immutable/Set$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapIntArray(I;[)Lscala/collection/mutable/WrappedArray;)(<I;>{temp4.<cast>(Lscala/util/regexp/WordExp$Letter;).(Lscala/util/regexp/WordExp$Letter;::pos()I;)()})).<cast>(Lscala/collection/immutable/Set;);
+      }
+    else
+      {
+        $2$ = super.(Lscala/util/automata/BaseBerrySethi;::compLast(Lscala/util/regexp/Base$RegExp;)Lscala/collection/immutable/Set;)(r);
+      }
+    return $2$;
+  }
+  
+  protected Lscala/collection/immutable/Set; compFollow1(Lscala/collection/immutable/Set; fol1, Lscala/util/regexp/Base$RegExp; r) {
+    Lscala/util/regexp/Base$RegExp; temp7 = r;
+    Lscala/collection/immutable/Set; $3$;
+    if (temp7.<instanceof>(Lscala/util/regexp/WordExp$Letter;))
+      {
+        Lscala/util/regexp/WordExp$Letter; temp8 = temp7.<cast>(Lscala/util/regexp/WordExp$Letter;);
+        Lscala/util/regexp/WordExp$Letter; x = temp8;
+        this.(Lscala/util/automata/BaseBerrySethi;::follow()Lscala/collection/mutable/HashMap;)().(Lscala/collection/mutable/HashMap;::update(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x.(Lscala/util/regexp/WordExp$Letter;::pos()I;)()), fol1);
+        $3$ = Lscala/collection/immutable/Set$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapIntArray(I;[)Lscala/collection/mutable/WrappedArray;)(<I;>{x.(Lscala/util/regexp/WordExp$Letter;::pos()I;)()})).<cast>(Lscala/collection/immutable/Set;);
+      }
+    else
+      {
+        Lscala/collection/immutable/Set; $4$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp7, this.(Lscala/util/automata/WordBerrySethi;::lang()Lscala/util/regexp/WordExp;)().(Lscala/util/regexp/Base;::Eps()Lscala/util/regexp/Base$Eps$;)()))
+          {
+            $4$ = this.(Lscala/util/automata/BaseBerrySethi;::emptySet()Lscala/collection/immutable/Set;)();
+          }
+        else
+          {
+            Lscala/collection/immutable/Set; $5$;
+            failCont$percent1: while(true) {
+              $5$ = super.(Lscala/util/automata/BaseBerrySethi;::compFollow1(Lscala/collection/immutable/Set;Lscala/util/regexp/Base$RegExp;)Lscala/collection/immutable/Set;)(fol1, r);
+              break;
+            }
+            $4$ = $5$;
+          }
+        $3$ = $4$;
+      }
+    return $3$;
+  }
+  
+  protected V; seenLabel(Lscala/util/regexp/Base$RegExp; r, I; i, Lscala/util/regexp/WordExp$Label; label) {
+    this.(Lscala/util/automata/WordBerrySethi;::labelAt_$eq(Lscala/collection/immutable/Map;)V;)(this.(Lscala/util/automata/WordBerrySethi;::labelAt()Lscala/collection/immutable/Map;)().(Lscala/collection/immutable/MapLike;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/Map;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i), label));
+    this.(Lscala/util/automata/WordBerrySethi;::labels()Lscala/collection/mutable/HashSet;)().(Lscala/collection/mutable/HashSet;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/HashSet;)(label);
+  }
+  
+  protected I; seenLabel(Lscala/util/regexp/Base$RegExp; r, Lscala/util/regexp/WordExp$Label; label) {
+    this.(Lscala/util/automata/BaseBerrySethi;::pos_$eq(I;)V;)((this.(Lscala/util/automata/BaseBerrySethi;::pos()I;)() + 1));
+    this.(Lscala/util/automata/WordBerrySethi;::seenLabel(Lscala/util/regexp/Base$RegExp;I;Lscala/util/regexp/WordExp$Label;)V;)(r, this.(Lscala/util/automata/BaseBerrySethi;::pos()I;)(), label);
+    return this.(Lscala/util/automata/BaseBerrySethi;::pos()I;)();
+  }
+  
+  public V; traverse(Lscala/util/regexp/Base$RegExp; r) {
+    Lscala/util/regexp/Base$RegExp; temp10 = r;
+    if (temp10.<instanceof>(Lscala/util/regexp/WordExp$Letter;))
+      {
+        Lscala/util/regexp/WordExp$Letter; temp11 = temp10.<cast>(Lscala/util/regexp/WordExp$Letter;);
+        temp11.(Lscala/util/regexp/WordExp$Letter;::pos_$eq(I;)V;)(this.(Lscala/util/automata/WordBerrySethi;::seenLabel(Lscala/util/regexp/Base$RegExp;Lscala/util/regexp/WordExp$Label;)I;)(r, temp11.(Lscala/util/regexp/WordExp$Letter;::a()Lscala/util/regexp/WordExp$Label;)()));
+      }
+    else
+      {
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp10, this.(Lscala/util/automata/WordBerrySethi;::lang()Lscala/util/regexp/WordExp;)().(Lscala/util/regexp/Base;::Eps()Lscala/util/regexp/Base$Eps$;)()))
+          {
+            
+          }
+        else
+          {
+            failCont$percent2: while(true) {
+              super.(Lscala/util/automata/BaseBerrySethi;::traverse(Lscala/util/regexp/Base$RegExp;)V;)(r);
+              break;
+            }
+          }
+      }
+  }
+  
+  public V; makeTransition(I; src, I; dest, Lscala/util/regexp/WordExp$Label; label) {
+    Lscala/collection/mutable/HashMap; q = this.(Lscala/util/automata/WordBerrySethi;::deltaq()Lscala/collection/mutable/HashMap;[)()[src];
+    Lscala/util/regexp/WordExp$Label; $6$ = label;
+    I; x$1 = dest;
+    q.(Lscala/collection/mutable/HashMap;::update(Ljava/lang/Object;Ljava/lang/Object;)V;)($6$, q.(Lscala/collection/MapLike;::getOrElse(Ljava/lang/Object;Lscala/Function0;)Ljava/lang/Object;)(label, (new (Lscala/util/automata/WordBerrySethi$$anonfun$makeTransition$1;::this(Lscala/util/automata/WordBerrySethi;)V;)(this))).<cast>(Lscala/collection/immutable/List;).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1)));
+  }
+  
+  protected V; initialize(Lscala/collection/Seq; subexpr) {
+    this.(Lscala/util/automata/WordBerrySethi;::labelAt_$eq(Lscala/collection/immutable/Map;)V;)(Lscala/collection/immutable/Map$;.MODULE$.(Lscala/collection/generic/MapFactory;::apply(Lscala/collection/Seq;)Lscala/collection/Map;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/Tuple2;>{}.<cast>(Ljava/lang/Object;[))).<cast>(Lscala/collection/immutable/Map;));
+    this.(Lscala/util/automata/BaseBerrySethi;::follow_$eq(Lscala/collection/mutable/HashMap;)V;)(Lscala/collection/mutable/HashMap$;.MODULE$.(Lscala/collection/generic/MapFactory;::apply(Lscala/collection/Seq;)Lscala/collection/Map;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/Tuple2;>{}.<cast>(Ljava/lang/Object;[))).<cast>(Lscala/collection/mutable/HashMap;));
+    this.(Lscala/util/automata/WordBerrySethi;::labels_$eq(Lscala/collection/mutable/HashSet;)V;)(Lscala/collection/mutable/HashSet$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/util/regexp/WordExp$Label;>{}.<cast>(Ljava/lang/Object;[))).<cast>(Lscala/collection/mutable/HashSet;));
+    this.(Lscala/util/automata/BaseBerrySethi;::pos_$eq(I;)V;)(0);
+    subexpr.(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/util/automata/WordBerrySethi$$anonfun$initialize$1;::this(Lscala/util/automata/WordBerrySethi;)V;)(this)));
+    this.(Lscala/util/automata/WordBerrySethi;::initials_$eq(Lscala/collection/immutable/Set;)V;)(Lscala/collection/immutable/Set$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapIntArray(I;[)Lscala/collection/mutable/WrappedArray;)(<I;>{0})).<cast>(Lscala/collection/immutable/Set;));
+  }
+  
+  protected V; initializeAutom() {
+    this.(Lscala/util/automata/BaseBerrySethi;::finals_$eq(Lscala/collection/immutable/Map;)V;)(Lscala/collection/immutable/Map$;.MODULE$.(Lscala/collection/immutable/Map$;::empty()Lscala/collection/immutable/Map;)());
+    this.(Lscala/util/automata/WordBerrySethi;::deltaq_$eq(Lscala/collection/mutable/HashMap;[)V;)(new Lscala/collection/mutable/HashMap;[this.(Lscala/util/automata/BaseBerrySethi;::pos()I;)()]);
+    this.(Lscala/util/automata/WordBerrySethi;::defaultq_$eq(Lscala/collection/immutable/List;[)V;)(new Lscala/collection/immutable/List;[this.(Lscala/util/automata/BaseBerrySethi;::pos()I;)()]);
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(this.(Lscala/util/automata/BaseBerrySethi;::pos()I;)()).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/util/automata/WordBerrySethi$$anonfun$initializeAutom$1;::this(Lscala/util/automata/WordBerrySethi;)V;)(this)));
+  }
+  
+  protected V; collectTransitions() {
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(this.(Lscala/util/automata/BaseBerrySethi;::pos()I;)()).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/util/automata/WordBerrySethi$$anonfun$collectTransitions$1;::this(Lscala/util/automata/WordBerrySethi;)V;)(this)), Lscala/collection/immutable/IndexedSeq$;.MODULE$.(Lscala/collection/immutable/IndexedSeq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/util/automata/WordBerrySethi$$anonfun$collectTransitions$2;::this(Lscala/util/automata/WordBerrySethi;)V;)(this)));
+  }
+  
+  public Lscala/util/automata/NondetWordAutom; automatonFrom(Lscala/util/regexp/Base$RegExp; pat, I; finalTag) {
+    this.(Lscala/util/automata/BaseBerrySethi;::finalTag_$eq(I;)V;)(finalTag);
+    Lscala/util/regexp/Base$RegExp; temp19 = pat;
+    Lscala/util/automata/NondetWordAutom; $7$;
+    if (temp19.<instanceof>(Lscala/util/regexp/Base$Sequ;))
+      {
+        Lscala/util/regexp/Base$Sequ; temp20 = temp19.<cast>(Lscala/util/regexp/Base$Sequ;);
+        Lscala/util/regexp/Base$Sequ; x = temp20;
+        this.(Lscala/util/automata/WordBerrySethi;::initialize(Lscala/collection/Seq;)V;)(x.(Lscala/util/regexp/Base$Sequ;::rs()Lscala/collection/Seq;)());
+        this.(Lscala/util/automata/BaseBerrySethi;::pos_$eq(I;)V;)((this.(Lscala/util/automata/BaseBerrySethi;::pos()I;)() + 1));
+        this.(Lscala/util/automata/BaseBerrySethi;::compFollow(Lscala/collection/Seq;)Lscala/collection/immutable/Set;)(x.(Lscala/util/regexp/Base$Sequ;::rs()Lscala/collection/Seq;)());
+        this.(Lscala/util/automata/WordBerrySethi;::initializeAutom()V;)();
+        this.(Lscala/util/automata/WordBerrySethi;::collectTransitions()V;)();
+        if (x.(Lscala/util/regexp/Base$Sequ;::isNullable()Z;)())
+          {
+            this.(Lscala/util/automata/BaseBerrySethi;::finals_$eq(Lscala/collection/immutable/Map;)V;)(this.(Lscala/util/automata/BaseBerrySethi;::finals()Lscala/collection/immutable/Map;)().(Lscala/collection/immutable/MapLike;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/Map;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(0), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(finalTag)));
+          }
+        else
+          {
+            
+          }
+        Lscala/collection/immutable/Map; delta1$1 = Lscala/collection/immutable/Map$;.MODULE$.(Lscala/collection/generic/MapFactory;::apply(Lscala/collection/Seq;)Lscala/collection/Map;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(this.(Lscala/util/automata/WordBerrySethi;::deltaq()Lscala/collection/mutable/HashMap;[)().<cast>(Ljava/lang/Object;[)).(Lscala/collection/IndexedSeqOptimized;::zipWithIndex(Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(Lscala/Array$;.MODULE$.(Lscala/Array$;::canBuildFrom(Lscala/reflect/ClassManifest;)Lscala/collection/generic/CanBuildFrom;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;Lscala/reflect/OptManifest;Lscala/collection/Seq;)Lscala/reflect/ClassManifest;)(Lscala/Tuple2;.class, Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;Lscala/reflect/OptManifest;Lscala/collection/Seq;)Lscala/reflect/ClassManifest;)(Lscala/collection/mutable/HashMap;.class, Lscala/reflect/NoManifest$;.MODULE$, Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/reflect/OptManifest;>{Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;Lscala/reflect/OptManifest;Lscala/collection/Seq;)Lscala/reflect/ClassManifest;)(Lscala/collection/immutable/List;.class, Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Int()Lscala/reflect/AnyValManifest;)(), Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/reflect/OptManifest;>{}.<cast>(Ljava/lang/Object;[)))}.<cast>(Ljava/lang/Object;[))), Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/reflect/OptManifest;>{Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Int()Lscala/reflect/AnyValManifest;)()}.<cast>(Ljava/lang/Object;[))))).<cast>(Ljava/lang/Object;[)).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/util/automata/WordBerrySethi$$anonfun$1;::this(Lscala/util/automata/WordBerrySethi;)V;)(this)), Lscala/Array$;.MODULE$.(Lscala/Array$;::canBuildFrom(Lscala/reflect/ClassManifest;)Lscala/collection/generic/CanBuildFrom;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;Lscala/reflect/OptManifest;Lscala/collection/Seq;)Lscala/reflect/ClassManifest;)(Lscala/Tuple2;.class, Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Int()Lscala/reflect/AnyValManifest;)(), Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/reflect/OptManifest;>{Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;Lscala/reflect/OptManifest;Lscala/collection/Seq;)Lscala/reflect/ClassManifest;)(Lscala/collection/mutable/HashMap;.class, Lscala/reflect/NoManifest$;.MODULE$, Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/reflect/OptManifest;>{Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;Lscala/reflect/OptManifest;Lscala/collection/Seq;)Lscala/reflect/ClassManifest;)(Lscala/collection/immutable/List;.class, Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Int()Lscala/reflect/AnyValManifest;)(), Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/reflect/OptManifest;>{}.<cast>(Ljava/lang/Object;[)))}.<cast>(Ljava/lang/Object;[)))}.<cast>(Ljava/lang/Object;[))))).<cast>(Ljava/lang/Object;[))).<cast>(Lscala/collection/immutable/Map;);
+        I;[ finalsArr$1 = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(this.(Lscala/util/automata/BaseBerrySethi;::pos()I;)()).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/util/automata/WordBerrySethi$$anonfun$2;::this(Lscala/util/automata/WordBerrySethi;)V;)(this)), Lscala/collection/immutable/IndexedSeq$;.MODULE$.(Lscala/collection/immutable/IndexedSeq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::toArray(Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Int()Lscala/reflect/AnyValManifest;)()).<cast>(I;[);
+        I;[ initialsArr$1 = this.(Lscala/util/automata/WordBerrySethi;::initials()Lscala/collection/immutable/Set;)().(Lscala/collection/TraversableOnce;::toArray(Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Int()Lscala/reflect/AnyValManifest;)()).<cast>(I;[);
+        Lscala/collection/Map;[ deltaArr$1 = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(this.(Lscala/util/automata/BaseBerrySethi;::pos()I;)()).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/util/automata/WordBerrySethi$$anonfun$3;::this(Lscala/util/automata/WordBerrySethi;Lscala/collection/immutable/Map;)V;)(this, delta1$1)), Lscala/collection/immutable/IndexedSeq$;.MODULE$.(Lscala/collection/immutable/IndexedSeq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::toArray(Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;Lscala/reflect/OptManifest;Lscala/collection/Seq;)Lscala/reflect/ClassManifest;)(Lscala/collection/Map;.class, Lscala/reflect/NoManifest$;.MODULE$, Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/reflect/OptManifest;>{Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;)Lscala/reflect/ClassManifest;)(Lscala/collection/immutable/BitSet;.class)}.<cast>(Ljava/lang/Object;[)))).<cast>(Lscala/collection/Map;[);
+        Lscala/collection/immutable/BitSet;[ defaultArr$1 = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(this.(Lscala/util/automata/BaseBerrySethi;::pos()I;)()).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/util/automata/WordBerrySethi$$anonfun$4;::this(Lscala/util/automata/WordBerrySethi;)V;)(this)), Lscala/collection/immutable/IndexedSeq$;.MODULE$.(Lscala/collection/immutable/IndexedSeq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::toArray(Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;)Lscala/reflect/ClassManifest;)(Lscala/collection/immutable/BitSet;.class)).<cast>(Lscala/collection/immutable/BitSet;[);
+        $7$ = (new (Lscala/util/automata/WordBerrySethi$$anon$1;::this(Lscala/util/automata/WordBerrySethi;I;[I;[Lscala/collection/Map;[Lscala/collection/immutable/BitSet;[)V;)(this, finalsArr$1, initialsArr$1, deltaArr$1, defaultArr$1));
+      }
+    else
+      {
+        $7$ = this.(Lscala/util/automata/WordBerrySethi;::automatonFrom(Lscala/util/regexp/Base$RegExp;I;)Lscala/util/automata/NondetWordAutom;)(this.(Lscala/util/automata/WordBerrySethi;::lang()Lscala/util/regexp/WordExp;)().(Lscala/util/regexp/Base;::Sequ()Lscala/util/regexp/Base$Sequ$;)().(Lscala/util/regexp/Base$Sequ$;::apply(Lscala/collection/Seq;)Lscala/util/regexp/Base$RegExp;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/util/regexp/Base$RegExp;>{temp19}.<cast>(Ljava/lang/Object;[))), finalTag);
+      }
+    return $7$;
+  }
+  
+  public this() {
+    (Lscala/util/automata/BaseBerrySethi;::super()V;)();
+  }
+}

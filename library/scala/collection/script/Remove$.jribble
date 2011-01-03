@@ -1,0 +1,28 @@
+public final class Lscala/collection/script/Remove$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/script/Remove$; MODULE$ = new (Lscala/collection/script/Remove$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "Remove";
+  }
+  
+  public Lscala/Option; unapply(Lscala/collection/script/Remove; x$0) {
+    Lscala/Option; $16$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $16$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $16$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/collection/script/Remove;::location()Lscala/collection/script/Location;)(), x$0.(Lscala/collection/script/Remove;::elem()Ljava/lang/Object;)()))));
+      }
+    return $16$;
+  }
+  
+  public Lscala/collection/script/Remove; apply(Lscala/collection/script/Location; location, Ljava/lang/Object; elem) {
+    return (new (Lscala/collection/script/Remove;::this(Lscala/collection/script/Location;Ljava/lang/Object;)V;)(location, elem));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

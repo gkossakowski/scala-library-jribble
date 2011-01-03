@@ -1,0 +1,90 @@
+public abstract class Lscala/collection/mutable/PriorityQueueProxy; extends Lscala/collection/mutable/PriorityQueue; implements Lscala/Proxy;, Lscala/ScalaObject; {
+  
+  public I; hashCode() {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::hashCode(Lscala/Proxy;)I;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; that) {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::equals(Lscala/Proxy;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::toString(Lscala/Proxy;)Ljava/lang/String;)(this);
+  }
+  
+  public Lscala/math/Ordering; scala$collection$mutable$PriorityQueueProxy$$ord;
+  
+  public abstract Lscala/collection/mutable/PriorityQueue; self();
+  
+  public Lscala/collection/Iterator; iterator() {
+    return this.(Lscala/collection/mutable/PriorityQueueProxy;::self()Lscala/collection/mutable/PriorityQueue;)().(Lscala/collection/mutable/PriorityQueue;::iterator()Lscala/collection/Iterator;)();
+  }
+  
+  public I; length() {
+    return this.(Lscala/collection/mutable/PriorityQueueProxy;::self()Lscala/collection/mutable/PriorityQueue;)().(Lscala/collection/mutable/PriorityQueue;::length()I;)();
+  }
+  
+  public Z; isEmpty() {
+    return this.(Lscala/collection/mutable/PriorityQueueProxy;::self()Lscala/collection/mutable/PriorityQueue;)().(Lscala/collection/mutable/PriorityQueue;::isEmpty()Z;)();
+  }
+  
+  public Lscala/collection/mutable/PriorityQueueProxy; $plus$eq(Ljava/lang/Object; elem) {
+    this.(Lscala/collection/mutable/PriorityQueueProxy;::self()Lscala/collection/mutable/PriorityQueue;)().(Lscala/collection/mutable/PriorityQueue;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/PriorityQueue;)(elem);
+    return this;
+  }
+  
+  public Lscala/collection/mutable/PriorityQueueProxy; $plus$plus$eq(Lscala/collection/TraversableOnce; it) {
+    this.(Lscala/collection/mutable/PriorityQueueProxy;::self()Lscala/collection/mutable/PriorityQueue;)().(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(it);
+    return this;
+  }
+  
+  public V; enqueue(Lscala/collection/Seq; elems) {
+    this.(Lscala/collection/mutable/PriorityQueueProxy;::self()Lscala/collection/mutable/PriorityQueue;)().(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(elems);
+  }
+  
+  public Ljava/lang/Object; dequeue() {
+    return this.(Lscala/collection/mutable/PriorityQueueProxy;::self()Lscala/collection/mutable/PriorityQueue;)().(Lscala/collection/mutable/PriorityQueue;::dequeue()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; max() {
+    return this.(Lscala/collection/mutable/PriorityQueueProxy;::self()Lscala/collection/mutable/PriorityQueue;)().(Lscala/collection/mutable/PriorityQueue;::max()Ljava/lang/Object;)();
+  }
+  
+  public V; clear() {
+    this.(Lscala/collection/mutable/PriorityQueueProxy;::self()Lscala/collection/mutable/PriorityQueue;)().(Lscala/collection/mutable/PriorityQueue;::clear()V;)();
+  }
+  
+  public Lscala/collection/mutable/Queue; toQueue() {
+    return this.(Lscala/collection/mutable/PriorityQueueProxy;::self()Lscala/collection/mutable/PriorityQueue;)().(Lscala/collection/mutable/PriorityQueue;::toQueue()Lscala/collection/mutable/Queue;)();
+  }
+  
+  public Lscala/collection/mutable/PriorityQueue; clone() {
+    return (new (Lscala/collection/mutable/PriorityQueueProxy$$anon$1;::this(Lscala/collection/mutable/PriorityQueueProxy;)V;)(this));
+  }
+  
+  public Ljava/lang/Object; clone() {
+    return this.(Lscala/collection/mutable/PriorityQueueProxy;::clone()Lscala/collection/mutable/PriorityQueue;)();
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    return this.(Lscala/collection/mutable/PriorityQueueProxy;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/PriorityQueueProxy;)(xs);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/PriorityQueueProxy;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/PriorityQueueProxy;)(elem);
+  }
+  
+  public Lscala/collection/mutable/Builder; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/PriorityQueueProxy;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/PriorityQueueProxy;)(elem);
+  }
+  
+  public Lscala/collection/mutable/PriorityQueue; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/PriorityQueueProxy;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/PriorityQueueProxy;)(elem);
+  }
+  
+  public this(Lscala/math/Ordering; ord) {
+    this.(Lscala/math/Ordering;)scala$collection$mutable$PriorityQueueProxy$$ord = ord;
+    (Lscala/collection/mutable/PriorityQueue;::super(Lscala/math/Ordering;)V;)(ord);
+    Lscala/Proxy$class;.(Lscala/Proxy$class;::$init$(Lscala/Proxy;)V;)(this);
+  }
+}

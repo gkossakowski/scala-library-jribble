@@ -1,0 +1,237 @@
+public abstract class Lscala/collection/immutable/StringLike$class; {
+  
+  public static C; apply(Lscala/collection/immutable/StringLike; $this, I; n) {
+    return $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::charAt(I;)C;)(n);
+  }
+  
+  public static I; length(Lscala/collection/immutable/StringLike; $this) {
+    return $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::length()I;)();
+  }
+  
+  public static Ljava/lang/String; mkString(Lscala/collection/immutable/StringLike; $this) {
+    return $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)();
+  }
+  
+  public static Ljava/lang/String; $times(Lscala/collection/immutable/StringLike; $this, I; n) {
+    Lscala/collection/mutable/StringBuilder; buf$1 = (new (Lscala/collection/mutable/StringBuilder;::this()V;)());
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(n).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/StringLike$$anonfun$$times$1;::this(Lscala/collection/immutable/StringLike;Lscala/collection/mutable/StringBuilder;)V;)($this, buf$1)));
+    return buf$1.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)();
+  }
+  
+  public static I; compare(Lscala/collection/immutable/StringLike; $this, Ljava/lang/String; other) {
+    return $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::compareTo(Ljava/lang/String;)I;)(other);
+  }
+  
+  public static final Z; scala$collection$immutable$StringLike$$isLineBreak(Lscala/collection/immutable/StringLike; $this, C; c) {
+    return ((c == Lscala/collection/immutable/StringLike$;.MODULE$.(Lscala/collection/immutable/StringLike$;::scala$collection$immutable$StringLike$$LF()C;)()) || (c == Lscala/collection/immutable/StringLike$;.MODULE$.(Lscala/collection/immutable/StringLike$;::scala$collection$immutable$StringLike$$FF()C;)()));
+  }
+  
+  public static Ljava/lang/String; stripLineEnd(Lscala/collection/immutable/StringLike; $this) {
+    I; len = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::length()I;)();
+    Ljava/lang/String; $1$;
+    if ((len == 0))
+      {
+        $1$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)();
+      }
+    else
+      {
+        C; last = $this.(Lscala/collection/immutable/StringLike;::apply(I;)C;)((len - 1));
+        Ljava/lang/String; $2$;
+        if (Lscala/collection/immutable/StringLike$class;.(Lscala/collection/immutable/StringLike$class;::scala$collection$immutable$StringLike$$isLineBreak(Lscala/collection/immutable/StringLike;C;)Z;)($this, last))
+          {
+            I; $4$ = 0;
+            I; $3$;
+            if ((((last == Lscala/collection/immutable/StringLike$;.MODULE$.(Lscala/collection/immutable/StringLike$;::scala$collection$immutable$StringLike$$LF()C;)()) && (len >= 2)) && ($this.(Lscala/collection/immutable/StringLike;::apply(I;)C;)((len - 2)) == Lscala/collection/immutable/StringLike$;.MODULE$.(Lscala/collection/immutable/StringLike$;::scala$collection$immutable$StringLike$$CR()C;)())))
+              {
+                $3$ = (len - 2);
+              }
+            else
+              {
+                $3$ = (len - 1);
+              }
+            $2$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)($4$, $3$);
+          }
+        else
+          {
+            $2$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)();
+          }
+        $1$ = $2$;
+      }
+    return $1$;
+  }
+  
+  public static Lscala/collection/Iterator; linesWithSeparators(Lscala/collection/immutable/StringLike; $this) {
+    return (new (Lscala/collection/immutable/StringLike$$anon$1;::this(Lscala/collection/immutable/StringLike;)V;)($this));
+  }
+  
+  public static Lscala/collection/Iterator; lines(Lscala/collection/immutable/StringLike; $this) {
+    return $this.(Lscala/collection/immutable/StringLike;::linesWithSeparators()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/collection/immutable/StringLike$$anonfun$lines$1;::this(Lscala/collection/immutable/StringLike;)V;)($this)));
+  }
+  
+  public static Lscala/collection/Iterator; linesIterator(Lscala/collection/immutable/StringLike; $this) {
+    return $this.(Lscala/collection/immutable/StringLike;::linesWithSeparators()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/collection/immutable/StringLike$$anonfun$linesIterator$1;::this(Lscala/collection/immutable/StringLike;)V;)($this)));
+  }
+  
+  public static Ljava/lang/String; capitalize(Lscala/collection/immutable/StringLike; $this) {
+    Ljava/lang/String; $5$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)(), null))
+      {
+        $5$ = null;
+      }
+    else
+      {
+        Ljava/lang/String; $6$;
+        if (($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::length()I;)() == 0))
+          {
+            $6$ = "";
+          }
+        else
+          {
+            C;[ chars = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::toCharArray()C;[)();
+            chars[0] = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::charWrapper(C;)Lscala/runtime/RichChar;)(chars[0]).(Lscala/runtime/RichChar;::toUpper()C;)();
+            $6$ = (new (Ljava/lang/String;::this(C;[)V;)(chars));
+          }
+        $5$ = $6$;
+      }
+    return $5$;
+  }
+  
+  public static Ljava/lang/String; stripPrefix(Lscala/collection/immutable/StringLike; $this, Ljava/lang/String; prefix) {
+    Ljava/lang/String; $7$;
+    if ($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::startsWith(Ljava/lang/String;)Z;)(prefix))
+      {
+        $7$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::substring(I;)Ljava/lang/String;)(prefix.(Ljava/lang/String;::length()I;)());
+      }
+    else
+      {
+        $7$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)();
+      }
+    return $7$;
+  }
+  
+  public static Ljava/lang/String; stripSuffix(Lscala/collection/immutable/StringLike; $this, Ljava/lang/String; suffix) {
+    Ljava/lang/String; $8$;
+    if ($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::endsWith(Ljava/lang/String;)Z;)(suffix))
+      {
+        $8$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)(0, ($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::length()I;)() - suffix.(Ljava/lang/String;::length()I;)()));
+      }
+    else
+      {
+        $8$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)();
+      }
+    return $8$;
+  }
+  
+  public static Ljava/lang/String; stripMargin(Lscala/collection/immutable/StringLike; $this, C; marginChar$1) {
+    Lscala/collection/mutable/StringBuilder; buf$2 = (new (Lscala/collection/mutable/StringBuilder;::this()V;)());
+    $this.(Lscala/collection/immutable/StringLike;::linesWithSeparators()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/StringLike$$anonfun$stripMargin$1;::this(Lscala/collection/immutable/StringLike;C;Lscala/collection/mutable/StringBuilder;)V;)($this, marginChar$1, buf$2)));
+    return buf$2.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)();
+  }
+  
+  public static Ljava/lang/String; stripMargin(Lscala/collection/immutable/StringLike; $this) {
+    return $this.(Lscala/collection/immutable/StringLike;::stripMargin(C;)Ljava/lang/String;)('|');
+  }
+  
+  public static final Ljava/lang/String; scala$collection$immutable$StringLike$$escape(Lscala/collection/immutable/StringLike; $this, C; ch) {
+    return (("\\Q" + Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(ch)) + "\\E");
+  }
+  
+  public static Ljava/lang/String;[ split(Lscala/collection/immutable/StringLike; $this, C; separator) {
+    return $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::split(Ljava/lang/String;)Ljava/lang/String;[)(Lscala/collection/immutable/StringLike$class;.(Lscala/collection/immutable/StringLike$class;::scala$collection$immutable$StringLike$$escape(Lscala/collection/immutable/StringLike;C;)Ljava/lang/String;)($this, separator));
+  }
+  
+  public static Ljava/lang/String;[ split(Lscala/collection/immutable/StringLike; $this, C;[ separators) {
+    Ljava/lang/String; re = (Lscala/Predef$;.MODULE$.(Lscala/Predef$;::charArrayOps(C;[)Lscala/collection/mutable/ArrayOps;)(separators).(Lscala/collection/IndexedSeqOptimized;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)("[", (new (Lscala/collection/immutable/StringLike$$anonfun$1;::this(Lscala/collection/immutable/StringLike;)V;)($this))).<cast>(Ljava/lang/String;) + "]");
+    return $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::split(Ljava/lang/String;)Ljava/lang/String;[)(re);
+  }
+  
+  public static Lscala/util/matching/Regex; r(Lscala/collection/immutable/StringLike; $this) {
+    return (new (Lscala/util/matching/Regex;::this(Ljava/lang/String;Lscala/collection/Seq;)V;)($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)(), Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/String;>{}.<cast>(Ljava/lang/Object;[))));
+  }
+  
+  public static Z; toBoolean(Lscala/collection/immutable/StringLike; $this) {
+    return Lscala/collection/immutable/StringLike$class;.(Lscala/collection/immutable/StringLike$class;::parseBoolean(Lscala/collection/immutable/StringLike;Ljava/lang/String;)Z;)($this, $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)());
+  }
+  
+  public static B; toByte(Lscala/collection/immutable/StringLike; $this) {
+    return Ljava/lang/Byte;.(Ljava/lang/Byte;::parseByte(Ljava/lang/String;)B;)($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)());
+  }
+  
+  public static S; toShort(Lscala/collection/immutable/StringLike; $this) {
+    return Ljava/lang/Short;.(Ljava/lang/Short;::parseShort(Ljava/lang/String;)S;)($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)());
+  }
+  
+  public static I; toInt(Lscala/collection/immutable/StringLike; $this) {
+    return Ljava/lang/Integer;.(Ljava/lang/Integer;::parseInt(Ljava/lang/String;)I;)($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)());
+  }
+  
+  public static J; toLong(Lscala/collection/immutable/StringLike; $this) {
+    return Ljava/lang/Long;.(Ljava/lang/Long;::parseLong(Ljava/lang/String;)J;)($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)());
+  }
+  
+  public static F; toFloat(Lscala/collection/immutable/StringLike; $this) {
+    return Ljava/lang/Float;.(Ljava/lang/Float;::parseFloat(Ljava/lang/String;)F;)($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)());
+  }
+  
+  public static D; toDouble(Lscala/collection/immutable/StringLike; $this) {
+    return Ljava/lang/Double;.(Ljava/lang/Double;::parseDouble(Ljava/lang/String;)D;)($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)());
+  }
+  
+  private static Z; parseBoolean(Lscala/collection/immutable/StringLike; $this, Ljava/lang/String; s) {
+    Z; $9$;
+    if ((s != null))
+      {
+        Ljava/lang/String; temp1 = s.(Ljava/lang/String;::toLowerCase()Ljava/lang/String;)();
+        Z; $10$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp1, "true"))
+          {
+            $10$ = true;
+          }
+        else
+          {
+            Z; $11$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp1, "false"))
+              {
+                $11$ = false;
+              }
+            else
+              {
+                throw (new (Ljava/lang/NumberFormatException;::this(Ljava/lang/String;)V;)((("For input string: \"" + s) + "\"")));
+              }
+            $10$ = $11$;
+          }
+        $9$ = $10$;
+      }
+    else
+      {
+        throw (new (Ljava/lang/NumberFormatException;::this(Ljava/lang/String;)V;)("For input string: \"null\""));
+      }
+    return $9$;
+  }
+  
+  public static final Ljava/lang/Object; scala$collection$immutable$StringLike$$unwrapArg(Lscala/collection/immutable/StringLike; $this, Ljava/lang/Object; arg) {
+    Ljava/lang/Object; temp4 = arg;
+    Ljava/lang/Object; $12$;
+    if (temp4.<instanceof>(Lscala/math/ScalaNumber;))
+      {
+        $12$ = temp4.<cast>(Lscala/math/ScalaNumber;).(Lscala/math/ScalaNumber;::underlying()Ljava/lang/Object;)();
+      }
+    else
+      {
+        $12$ = temp4;
+      }
+    return $12$;
+  }
+  
+  public static Ljava/lang/String; format(Lscala/collection/immutable/StringLike; $this, Lscala/collection/Seq; args) {
+    return Ljava/lang/String;.(Ljava/lang/String;::format(Ljava/lang/String;Ljava/lang/Object;[)Ljava/lang/String;)($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)(), args.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/collection/immutable/StringLike$$anonfun$format$1;::this(Lscala/collection/immutable/StringLike;)V;)($this)), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::toArray(Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Object()Lscala/reflect/Manifest;)()).<cast>(Ljava/lang/Object;[));
+  }
+  
+  public static Ljava/lang/String; formatLocal(Lscala/collection/immutable/StringLike; $this, Ljava/util/Locale; l, Lscala/collection/Seq; args) {
+    return Ljava/lang/String;.(Ljava/lang/String;::format(Ljava/util/Locale;Ljava/lang/String;Ljava/lang/Object;[)Ljava/lang/String;)(l, $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)(), args.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/collection/immutable/StringLike$$anonfun$formatLocal$1;::this(Lscala/collection/immutable/StringLike;)V;)($this)), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::toArray(Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Object()Lscala/reflect/Manifest;)()).<cast>(Ljava/lang/Object;[));
+  }
+  
+  public static V; $init$(Lscala/collection/immutable/StringLike; $this) {
+    
+  }
+}

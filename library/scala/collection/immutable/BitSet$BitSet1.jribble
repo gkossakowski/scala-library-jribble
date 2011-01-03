@@ -1,0 +1,52 @@
+public class Lscala/collection/immutable/BitSet$BitSet1; extends Lscala/collection/immutable/BitSet; implements Lscala/ScalaObject; {
+  
+  private J; elems$u0020;
+  
+  public J; elems() {
+    return this.(J;)elems$u0020;
+  }
+  
+  protected I; nwords() {
+    return 1;
+  }
+  
+  protected J; word(I; idx) {
+    J; $6$;
+    if ((idx == 0))
+      {
+        $6$ = this.(Lscala/collection/immutable/BitSet$BitSet1;::elems()J;)();
+      }
+    else
+      {
+        $6$ = 0L;
+      }
+    return $6$;
+  }
+  
+  protected Lscala/collection/immutable/BitSet; updateWord(I; idx, J; w) {
+    Lscala/collection/immutable/BitSet; $7$;
+    if ((idx == 0))
+      {
+        $7$ = (new (Lscala/collection/immutable/BitSet$BitSet1;::this(J;)V;)(w));
+      }
+    else
+      {
+        Lscala/collection/immutable/BitSet; $8$;
+        if ((idx == 1))
+          {
+            $8$ = (new (Lscala/collection/immutable/BitSet$BitSet2;::this(J;J;)V;)(this.(Lscala/collection/immutable/BitSet$BitSet1;::elems()J;)(), w));
+          }
+        else
+          {
+            $8$ = this.(Lscala/collection/immutable/BitSet;::fromArray(J;[)Lscala/collection/immutable/BitSet;)(Lscala/collection/BitSetLike$;.MODULE$.(Lscala/collection/BitSetLike$;::updateArray(J;[I;J;)J;[)(Lscala/Array$;.MODULE$.(Lscala/Array$;::apply(J;Lscala/collection/Seq;)J;[)(this.(Lscala/collection/immutable/BitSet$BitSet1;::elems()J;)(), Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapLongArray(J;[)Lscala/collection/mutable/WrappedArray;)(<J;>{})), idx, w));
+          }
+        $7$ = $8$;
+      }
+    return $7$;
+  }
+  
+  public this(J; elems) {
+    this.(J;)elems$u0020 = elems;
+    (Lscala/collection/immutable/BitSet;::super()V;)();
+  }
+}

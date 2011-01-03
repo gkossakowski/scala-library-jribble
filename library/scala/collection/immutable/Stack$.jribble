@@ -1,0 +1,22 @@
+public final class Lscala/collection/immutable/Stack$; extends Lscala/collection/generic/SeqFactory; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/Stack$; MODULE$ = new (Lscala/collection/immutable/Stack$;::this()V;)();
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return (new (Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;::this(Lscala/collection/generic/TraversableFactory;)V;)(this));
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return (new (Lscala/collection/mutable/ArrayBuffer;::this()V;)()).(Lscala/collection/mutable/Builder;::mapResult(Lscala/Function1;)Lscala/collection/mutable/Builder;)((new (Lscala/collection/immutable/Stack$$anonfun$newBuilder$1;::this()V;)()));
+  }
+  
+  private Lscala/collection/immutable/Stack; Empty$u0020;
+  
+  public Lscala/collection/immutable/Stack; Empty() {
+    return this.(Lscala/collection/immutable/Stack;)Empty$u0020;
+  }
+  
+  public this() {
+    (Lscala/collection/generic/SeqFactory;::super()V;)();
+    this.(Lscala/collection/immutable/Stack;)Empty$u0020 = Lscala/collection/immutable/Stack$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Lscala/runtime/Nothing$;>{})).<cast>(Lscala/collection/immutable/Stack;);
+  }
+}

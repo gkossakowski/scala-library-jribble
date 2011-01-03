@@ -1,0 +1,94 @@
+public class Lscala/reflect/Super; extends Lscala/reflect/Tree; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/reflect/Symbol; copy$default$1() {
+    return this.(Lscala/reflect/Super;::psym()Lscala/reflect/Symbol;)();
+  }
+  
+  private Lscala/reflect/Symbol; psym$u0020;
+  
+  public Lscala/reflect/Symbol; psym() {
+    return this.(Lscala/reflect/Symbol;)psym$u0020;
+  }
+  
+  public Lscala/reflect/Super; copy(Lscala/reflect/Symbol; psym) {
+    return (new (Lscala/reflect/Super;::this(Lscala/reflect/Symbol;)V;)(psym));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp80 = x$1;
+    Z; $60$;
+    if (temp80.<instanceof>(Lscala/reflect/Super;))
+      {
+        Lscala/reflect/Super; temp81 = temp80.<cast>(Lscala/reflect/Super;);
+        Lscala/reflect/Symbol; temp82 = temp81.(Lscala/reflect/Super;::psym()Lscala/reflect/Symbol;)();
+        Lscala/reflect/Symbol; psym$1 = temp82;
+        Z; $61$;
+        if (this.(Lscala/reflect/Super;::gd17$1(Lscala/reflect/Symbol;)Z;)(psym$1))
+          {
+            $61$ = x$1.<cast>(Lscala/reflect/Super;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $61$ = false;
+          }
+        $60$ = $61$;
+      }
+    else
+      {
+        $60$ = false;
+      }
+    return ((this == x$1) || $60$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Super";
+  }
+  
+  public I; productArity() {
+    return 1;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp83 = x$1;
+    Ljava/lang/Object; $62$;
+    if ((temp83 == 0))
+      {
+        $62$ = this.(Lscala/reflect/Super;::psym()Lscala/reflect/Symbol;)();
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $62$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/reflect/Super;);
+  }
+  
+  private final Z; gd17$1(Lscala/reflect/Symbol; x$1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/reflect/Super;::psym()Lscala/reflect/Symbol;)());
+  }
+  
+  public this(Lscala/reflect/Symbol; psym) {
+    this.(Lscala/reflect/Symbol;)psym$u0020 = psym;
+    (Lscala/reflect/Tree;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

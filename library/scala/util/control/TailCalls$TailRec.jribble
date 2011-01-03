@@ -1,0 +1,33 @@
+public abstract class Lscala/util/control/TailCalls$TailRec; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  public Ljava/lang/Object; result() {
+    return this.(Lscala/util/control/TailCalls$TailRec;::loop$1(Lscala/util/control/TailCalls$TailRec;)Ljava/lang/Object;)(this);
+  }
+  
+  private final Ljava/lang/Object; loop$1(Lscala/util/control/TailCalls$TailRec; body) {
+    Lscala/util/control/TailCalls$TailRec; temp1 = body;
+    Ljava/lang/Object; $1$;
+    if (temp1.<instanceof>(Lscala/util/control/TailCalls$Call;))
+      {
+        $1$ = this.(Lscala/util/control/TailCalls$TailRec;::loop$1(Lscala/util/control/TailCalls$TailRec;)Ljava/lang/Object;)(temp1.<cast>(Lscala/util/control/TailCalls$Call;).(Lscala/util/control/TailCalls$Call;::rest()Lscala/Function0;)().(Lscala/Function0;::apply()Ljava/lang/Object;)().<cast>(Lscala/util/control/TailCalls$TailRec;));
+      }
+    else
+      {
+        Ljava/lang/Object; $2$;
+        if (temp1.<instanceof>(Lscala/util/control/TailCalls$Done;))
+          {
+            $2$ = temp1.<cast>(Lscala/util/control/TailCalls$Done;).(Lscala/util/control/TailCalls$Done;::result()Ljava/lang/Object;)();
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp1));
+          }
+        $1$ = $2$;
+      }
+    return $1$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

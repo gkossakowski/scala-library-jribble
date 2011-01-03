@@ -1,0 +1,32 @@
+public final class Lscala/xml/dtd/ParsedEntityDecl$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject; {
+  public static Lscala/xml/dtd/ParsedEntityDecl$; MODULE$ = new (Lscala/xml/dtd/ParsedEntityDecl$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "ParsedEntityDecl";
+  }
+  
+  public Lscala/Option; unapply(Lscala/xml/dtd/ParsedEntityDecl; x$0) {
+    Lscala/Option; $44$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $44$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $44$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/ParsedEntityDecl;::name()Ljava/lang/String;)(), x$0.(Lscala/xml/dtd/ParsedEntityDecl;::entdef()Lscala/xml/dtd/EntityDef;)()))));
+      }
+    return $44$;
+  }
+  
+  public Lscala/xml/dtd/ParsedEntityDecl; apply(Ljava/lang/String; name, Lscala/xml/dtd/EntityDef; entdef) {
+    return (new (Lscala/xml/dtd/ParsedEntityDecl;::this(Ljava/lang/String;Lscala/xml/dtd/EntityDef;)V;)(name, entdef));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {
+    return this.(Lscala/xml/dtd/ParsedEntityDecl$;::apply(Ljava/lang/String;Lscala/xml/dtd/EntityDef;)Lscala/xml/dtd/ParsedEntityDecl;)(v1.<cast>(Ljava/lang/String;), v2.<cast>(Lscala/xml/dtd/EntityDef;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
+  }
+}

@@ -1,0 +1,61 @@
+public final class Lscala/collection/immutable/List$$anonfun$separate$1; extends Lscala/runtime/AbstractFunction2; {
+  
+  public final Lscala/Tuple2; apply(Lscala/Either; x0$2, Lscala/Tuple2; x1$2) {
+    Lscala/Either; tp3 = x0$2;
+    Lscala/Tuple2; tp4 = x1$2;
+    Lscala/Tuple2; $33$;
+    if (tp3.<instanceof>(Lscala/Left;))
+      {
+        Lscala/Left; temp41 = tp3.<cast>(Lscala/Left;);
+        Ljava/lang/Object; temp42 = temp41.(Lscala/Left;::a()Ljava/lang/Object;)();
+        Lscala/Tuple2; $34$;
+        if ((tp4 != null))
+          {
+            Ljava/lang/Object; a = temp42;
+            Ljava/lang/Object; x$13 = a;
+            $34$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp4.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$13), tp4.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()));
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp3, tp4))));
+          }
+        $33$ = $34$;
+      }
+    else
+      {
+        Lscala/Tuple2; $35$;
+        if (tp3.<instanceof>(Lscala/Right;))
+          {
+            Lscala/Right; temp45 = tp3.<cast>(Lscala/Right;);
+            Ljava/lang/Object; temp46 = temp45.(Lscala/Right;::b()Ljava/lang/Object;)();
+            Lscala/Tuple2; $36$;
+            if ((tp4 != null))
+              {
+                Ljava/lang/Object; b = temp46;
+                Ljava/lang/Object; $37$ = tp4.(Lscala/Tuple2;::_1()Ljava/lang/Object;)();
+                Ljava/lang/Object; x$14 = b;
+                $36$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)($37$, tp4.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$14)));
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp3, tp4))));
+              }
+            $35$ = $36$;
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp3, tp4))));
+          }
+        $33$ = $35$;
+      }
+    return $33$;
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {
+    return this.(Lscala/collection/immutable/List$$anonfun$separate$1;::apply(Lscala/Either;Lscala/Tuple2;)Lscala/Tuple2;)(v1.<cast>(Lscala/Either;), v2.<cast>(Lscala/Tuple2;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
+  }
+}

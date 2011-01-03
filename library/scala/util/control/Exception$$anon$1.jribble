@@ -1,0 +1,90 @@
+public final class Lscala/util/control/Exception$$anon$1; extends Ljava/lang/Object; implements Lscala/PartialFunction; {
+  
+  public Lscala/PartialFunction; orElse(Lscala/PartialFunction; that) {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::orElse(Lscala/PartialFunction;Lscala/PartialFunction;)Lscala/PartialFunction;)(this, that);
+  }
+  
+  public Lscala/PartialFunction; andThen(Lscala/Function1; k) {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::andThen(Lscala/PartialFunction;Lscala/Function1;)Lscala/PartialFunction;)(this, k);
+  }
+  
+  public Lscala/Function1; lift() {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::lift(Lscala/PartialFunction;)Lscala/Function1;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::toString(Lscala/Function1;)Ljava/lang/String;)(this);
+  }
+  
+  public Lscala/Function1; compose(Lscala/Function1; g) {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::compose(Lscala/Function1;Lscala/Function1;)Lscala/Function1;)(this, g);
+  }
+  
+  public Z; isDefinedAt(Ljava/lang/Throwable; x) {
+    Ljava/lang/Throwable; temp1 = x;
+    Z; $5$;
+    if (temp1.<instanceof>(Ljava/lang/Exception;))
+      {
+        $5$ = this.(Lscala/util/control/Exception$$anon$1;::gd1$1(Ljava/lang/Exception;)Z;)(temp1.<cast>(Ljava/lang/Exception;));
+      }
+    else
+      {
+        $5$ = false;
+      }
+    return $5$;
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Throwable; x) {
+    Ljava/lang/Throwable; temp3 = x;
+    Ljava/lang/Object; $6$;
+    if (temp3.<instanceof>(Ljava/lang/Exception;))
+      {
+        Ljava/lang/Exception; temp4 = temp3.<cast>(Ljava/lang/Exception;);
+        Ljava/lang/Exception; e = temp4;
+        Ljava/lang/Object; $7$;
+        if (this.(Lscala/util/control/Exception$$anon$1;::gd2$1(Ljava/lang/Exception;)Z;)(e))
+          {
+            $7$ = this.(Lscala/PartialFunction;)pf$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp4);
+          }
+        else
+          {
+            throw temp4;
+          }
+        $6$ = $7$;
+      }
+    else
+      {
+        throw temp3;
+      }
+    return $6$;
+  }
+  
+  public Lscala/Function1; andThen(Lscala/Function1; g) {
+    return this.(Lscala/PartialFunction;::andThen(Lscala/Function1;)Lscala/PartialFunction;)(g);
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/util/control/Exception$$anon$1;::apply(Ljava/lang/Throwable;)Ljava/lang/Object;)(v1.<cast>(Ljava/lang/Throwable;));
+  }
+  
+  public Z; isDefinedAt(Ljava/lang/Object; x) {
+    return this.(Lscala/util/control/Exception$$anon$1;::isDefinedAt(Ljava/lang/Throwable;)Z;)(x.<cast>(Ljava/lang/Throwable;));
+  }
+  
+  private Lscala/PartialFunction; pf$1;
+  
+  private final Z; gd1$1(Ljava/lang/Exception; x$1) {
+    return this.(Lscala/PartialFunction;)pf$1.(Lscala/PartialFunction;::isDefinedAt(Ljava/lang/Object;)Z;)(x$1);
+  }
+  
+  private final Z; gd2$1(Ljava/lang/Exception; x$1) {
+    return this.(Lscala/PartialFunction;)pf$1.(Lscala/PartialFunction;::isDefinedAt(Ljava/lang/Object;)Z;)(x$1);
+  }
+  
+  public this(Lscala/PartialFunction; pf$1) {
+    this.(Lscala/PartialFunction;)pf$1 = pf$1;
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Function1$class;.(Lscala/Function1$class;::$init$(Lscala/Function1;)V;)(this);
+    Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::$init$(Lscala/PartialFunction;)V;)(this);
+  }
+}

@@ -1,0 +1,28 @@
+public final class Lscala/xml/Utility$$anonfun$appendEscapedQuoted$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Lscala/collection/mutable/StringBuilder; apply(C; c) {
+    C; temp45 = c;
+    Lscala/collection/mutable/StringBuilder; $36$;
+    if ((temp45 == 34))
+      {
+        this.(Lscala/collection/mutable/StringBuilder;)sb$3.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('\\');
+        $36$ = this.(Lscala/collection/mutable/StringBuilder;)sb$3.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('\"');
+      }
+    else
+      {
+        $36$ = this.(Lscala/collection/mutable/StringBuilder;)sb$3.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(c);
+      }
+    return $36$;
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/xml/Utility$$anonfun$appendEscapedQuoted$1;::apply(C;)Lscala/collection/mutable/StringBuilder;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(v1));
+  }
+  
+  private Lscala/collection/mutable/StringBuilder; sb$3;
+  
+  public this(Lscala/collection/mutable/StringBuilder; sb$3) {
+    this.(Lscala/collection/mutable/StringBuilder;)sb$3 = sb$3;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

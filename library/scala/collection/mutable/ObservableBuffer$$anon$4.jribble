@@ -1,0 +1,26 @@
+public final class Lscala/collection/mutable/ObservableBuffer$$anon$4; extends Lscala/collection/script/Remove; implements Lscala/collection/mutable/Undoable; {
+  
+  public V; undo() {
+    this.(Lscala/collection/mutable/ObservableBuffer;)$outer$u0020.(Lscala/collection/mutable/BufferLike;::insert(I;Lscala/collection/Seq;)V;)(this.(I;)n$2, Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{this.(Ljava/lang/Object;)oldelement$2}));
+  }
+  
+  private Lscala/collection/mutable/ObservableBuffer; $outer$u0020;
+  
+  private I; n$2;
+  
+  private Ljava/lang/Object; oldelement$2;
+  
+  public this(Lscala/collection/mutable/ObservableBuffer; $outer, I; n$2, Ljava/lang/Object; oldelement$2) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/ObservableBuffer;)$outer$u0020 = $outer;
+      }
+    this.(I;)n$2 = n$2;
+    this.(Ljava/lang/Object;)oldelement$2 = oldelement$2;
+    (Lscala/collection/script/Remove;::super(Lscala/collection/script/Location;Ljava/lang/Object;)V;)((new (Lscala/collection/script/Index;::this(I;)V;)(n$2)), oldelement$2);
+  }
+}

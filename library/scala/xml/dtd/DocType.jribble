@@ -1,0 +1,156 @@
+public class Lscala/xml/dtd/DocType; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Seq; copy$default$3() {
+    return this.(Lscala/xml/dtd/DocType;::intSubset()Lscala/collection/Seq;)();
+  }
+  
+  public Lscala/xml/dtd/ExternalID; copy$default$2() {
+    return this.(Lscala/xml/dtd/DocType;::extID()Lscala/xml/dtd/ExternalID;)();
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/dtd/DocType;::name()Ljava/lang/String;)();
+  }
+  
+  private Ljava/lang/String; name$u0020;
+  
+  public Ljava/lang/String; name() {
+    return this.(Ljava/lang/String;)name$u0020;
+  }
+  
+  private Lscala/xml/dtd/ExternalID; extID$u0020;
+  
+  public Lscala/xml/dtd/ExternalID; extID() {
+    return this.(Lscala/xml/dtd/ExternalID;)extID$u0020;
+  }
+  
+  private Lscala/collection/Seq; intSubset$u0020;
+  
+  public Lscala/collection/Seq; intSubset() {
+    return this.(Lscala/collection/Seq;)intSubset$u0020;
+  }
+  
+  public final Ljava/lang/String; toString() {
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)("<!DOCTYPE %s %s%s>").(Lscala/collection/immutable/StringLike;::format(Lscala/collection/Seq;)Ljava/lang/String;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{this.(Lscala/xml/dtd/DocType;::name()Ljava/lang/String;)(), this.(Lscala/xml/dtd/DocType;::extID()Lscala/xml/dtd/ExternalID;)().(Lscala/xml/dtd/ExternalID;::toString()Ljava/lang/String;)(), this.(Lscala/xml/dtd/DocType;::intString$1()Ljava/lang/String;)()}));
+  }
+  
+  public Lscala/xml/dtd/DocType; copy(Ljava/lang/String; name, Lscala/xml/dtd/ExternalID; extID, Lscala/collection/Seq; intSubset) {
+    return (new (Lscala/xml/dtd/DocType;::this(Ljava/lang/String;Lscala/xml/dtd/ExternalID;Lscala/collection/Seq;)V;)(name, extID, intSubset));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp1 = x$1;
+    Z; $1$;
+    if (temp1.<instanceof>(Lscala/xml/dtd/DocType;))
+      {
+        Lscala/xml/dtd/DocType; temp2 = temp1.<cast>(Lscala/xml/dtd/DocType;);
+        Ljava/lang/String; temp3 = temp2.(Lscala/xml/dtd/DocType;::name()Ljava/lang/String;)();
+        Lscala/xml/dtd/ExternalID; temp4 = temp2.(Lscala/xml/dtd/DocType;::extID()Lscala/xml/dtd/ExternalID;)();
+        Lscala/collection/Seq; temp5 = temp2.(Lscala/xml/dtd/DocType;::intSubset()Lscala/collection/Seq;)();
+        Lscala/collection/Seq; intSubset$1 = temp5;
+        Lscala/xml/dtd/ExternalID; extID$1 = temp4;
+        Ljava/lang/String; name$1 = temp3;
+        Z; $2$;
+        if (this.(Lscala/xml/dtd/DocType;::gd1$1(Ljava/lang/String;Lscala/xml/dtd/ExternalID;Lscala/collection/Seq;)Z;)(name$1, extID$1, intSubset$1))
+          {
+            $2$ = x$1.<cast>(Lscala/xml/dtd/DocType;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $2$ = false;
+          }
+        $1$ = $2$;
+      }
+    else
+      {
+        $1$ = false;
+      }
+    return ((this == x$1) || $1$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "DocType";
+  }
+  
+  public I; productArity() {
+    return 3;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp6 = x$1;
+    I; $3$ = temp6;
+    Ljava/lang/Object; $4$;
+    switch ($3$) {
+      0: {
+        $4$ = this.(Lscala/xml/dtd/DocType;::name()Ljava/lang/String;)();
+        break;
+      }
+      
+      1: {
+        $4$ = this.(Lscala/xml/dtd/DocType;::extID()Lscala/xml/dtd/ExternalID;)();
+        break;
+      }
+      
+      2: {
+        $4$ = this.(Lscala/xml/dtd/DocType;::intSubset()Lscala/collection/Seq;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $4$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/xml/dtd/DocType;);
+  }
+  
+  private final Ljava/lang/String; intString$1() {
+    Ljava/lang/String; $5$;
+    if (this.(Lscala/xml/dtd/DocType;::intSubset()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::isEmpty()Z;)())
+      {
+        $5$ = "";
+      }
+    else
+      {
+        $5$ = this.(Lscala/xml/dtd/DocType;::intSubset()Lscala/collection/Seq;)().(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)("[", "", "]");
+      }
+    return $5$;
+  }
+  
+  private final Z; gd1$1(Ljava/lang/String; x$1, Lscala/xml/dtd/ExternalID; x$2, Lscala/collection/Seq; x$3) {
+    return ((Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/xml/dtd/DocType;::name()Ljava/lang/String;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$2, this.(Lscala/xml/dtd/DocType;::extID()Lscala/xml/dtd/ExternalID;)())) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$3, this.(Lscala/xml/dtd/DocType;::intSubset()Lscala/collection/Seq;)()));
+  }
+  
+  public this(Ljava/lang/String; name, Lscala/xml/dtd/ExternalID; extID, Lscala/collection/Seq; intSubset) {
+    this.(Ljava/lang/String;)name$u0020 = name;
+    this.(Lscala/xml/dtd/ExternalID;)extID$u0020 = extID;
+    this.(Lscala/collection/Seq;)intSubset$u0020 = intSubset;
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+    if (!(Lscala/xml/Utility$;.MODULE$.(Lscala/xml/parsing/TokenTests;::isName(Ljava/lang/String;)Z;)(name)))
+      {
+        throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)((name + " must be an XML Name")));
+      }
+    else
+      {
+        
+      }
+  }
+}

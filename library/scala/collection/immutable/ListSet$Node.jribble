@@ -1,0 +1,90 @@
+public class Lscala/collection/immutable/ListSet$Node; extends Lscala/collection/immutable/ListSet; implements Lscala/ScalaObject; {
+  
+  private Ljava/lang/Object; elem$u0020;
+  
+  protected Ljava/lang/Object; elem() {
+    return this.(Ljava/lang/Object;)elem$u0020;
+  }
+  
+  public I; size() {
+    return (this.(Lscala/collection/immutable/ListSet$Node;::scala$collection$immutable$ListSet$Node$$$outer()Lscala/collection/immutable/ListSet;)().(Lscala/collection/immutable/ListSet;::size()I;)() + 1);
+  }
+  
+  public Z; isEmpty() {
+    return false;
+  }
+  
+  public Z; contains(Ljava/lang/Object; e) {
+    return (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(e, this.(Lscala/collection/immutable/ListSet$Node;::elem()Ljava/lang/Object;)()) || this.(Lscala/collection/immutable/ListSet$Node;::scala$collection$immutable$ListSet$Node$$$outer()Lscala/collection/immutable/ListSet;)().(Lscala/collection/immutable/ListSet;::contains(Ljava/lang/Object;)Z;)(e));
+  }
+  
+  public Lscala/collection/immutable/ListSet; $plus(Ljava/lang/Object; e) {
+    Lscala/collection/immutable/ListSet; $1$;
+    if (this.(Lscala/collection/immutable/ListSet$Node;::contains(Ljava/lang/Object;)Z;)(e))
+      {
+        $1$ = this;
+      }
+    else
+      {
+        $1$ = (new (Lscala/collection/immutable/ListSet$Node;::this(Lscala/collection/immutable/ListSet;Ljava/lang/Object;)V;)(this, e));
+      }
+    return $1$;
+  }
+  
+  public Lscala/collection/immutable/ListSet; $minus(Ljava/lang/Object; e) {
+    Lscala/collection/immutable/ListSet; $2$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(e, this.(Lscala/collection/immutable/ListSet$Node;::elem()Ljava/lang/Object;)()))
+      {
+        $2$ = this.(Lscala/collection/immutable/ListSet$Node;::scala$collection$immutable$ListSet$Node$$$outer()Lscala/collection/immutable/ListSet;)();
+      }
+    else
+      {
+        Lscala/collection/immutable/ListSet; tail = this.(Lscala/collection/immutable/ListSet$Node;::scala$collection$immutable$ListSet$Node$$$outer()Lscala/collection/immutable/ListSet;)().(Lscala/collection/immutable/ListSet;::$minus(Ljava/lang/Object;)Lscala/collection/immutable/ListSet;)(e);
+        $2$ = (new (Lscala/collection/immutable/ListSet$Node;::this(Lscala/collection/immutable/ListSet;Ljava/lang/Object;)V;)(tail, this.(Lscala/collection/immutable/ListSet$Node;::elem()Ljava/lang/Object;)()));
+      }
+    return $2$;
+  }
+  
+  protected Lscala/collection/immutable/ListSet; next() {
+    return this.(Lscala/collection/immutable/ListSet$Node;::scala$collection$immutable$ListSet$Node$$$outer()Lscala/collection/immutable/ListSet;)();
+  }
+  
+  public Ljava/lang/String; stringPrefix() {
+    return "Set";
+  }
+  
+  protected Lscala/collection/immutable/ListSet; $outer$u0020;
+  
+  public Lscala/collection/immutable/ListSet; scala$collection$immutable$ListSet$Node$$$outer() {
+    return this.(Lscala/collection/immutable/ListSet;)$outer$u0020;
+  }
+  
+  public Lscala/collection/generic/Subtractable; $minus(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/immutable/ListSet$Node;::$minus(Ljava/lang/Object;)Lscala/collection/immutable/ListSet;)(elem);
+  }
+  
+  public Lscala/collection/Set; $minus(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/immutable/ListSet$Node;::$minus(Ljava/lang/Object;)Lscala/collection/immutable/ListSet;)(elem);
+  }
+  
+  public Lscala/collection/generic/Addable; $plus(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/immutable/ListSet$Node;::$plus(Ljava/lang/Object;)Lscala/collection/immutable/ListSet;)(elem);
+  }
+  
+  public Lscala/collection/Set; $plus(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/immutable/ListSet$Node;::$plus(Ljava/lang/Object;)Lscala/collection/immutable/ListSet;)(elem);
+  }
+  
+  public this(Lscala/collection/immutable/ListSet; $outer, Ljava/lang/Object; elem) {
+    this.(Ljava/lang/Object;)elem$u0020 = elem;
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/immutable/ListSet;)$outer$u0020 = $outer;
+      }
+    (Lscala/collection/immutable/ListSet;::super()V;)();
+  }
+}

@@ -1,0 +1,20 @@
+public final class Lscala/math/Ordering$$anonfun$by$1; extends Lscala/runtime/AbstractFunction2; {
+  
+  public final Z; apply(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::implicitly(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/math/Ordering;)evidence$1$1).<cast>(Lscala/math/Ordering;).(Lscala/math/Ordering;::lt(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/Function1;)f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x), this.(Lscala/Function1;)f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(y));
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/math/Ordering$$anonfun$by$1;::apply(Ljava/lang/Object;Ljava/lang/Object;)Z;)(v1, v2));
+  }
+  
+  private Lscala/Function1; f$2;
+  
+  private Lscala/math/Ordering; evidence$1$1;
+  
+  public this(Lscala/Function1; f$2, Lscala/math/Ordering; evidence$1$1) {
+    this.(Lscala/Function1;)f$2 = f$2;
+    this.(Lscala/math/Ordering;)evidence$1$1 = evidence$1$1;
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
+  }
+}

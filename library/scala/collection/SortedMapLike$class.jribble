@@ -1,0 +1,28 @@
+public abstract class Lscala/collection/SortedMapLike$class; {
+  
+  public static Ljava/lang/Object; firstKey(Lscala/collection/SortedMapLike; $this) {
+    return $this.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)().<cast>(Lscala/Tuple2;).(Lscala/Tuple2;::_1()Ljava/lang/Object;)();
+  }
+  
+  public static Ljava/lang/Object; lastKey(Lscala/collection/SortedMapLike; $this) {
+    return $this.(Lscala/collection/TraversableLike;::last()Ljava/lang/Object;)().<cast>(Lscala/Tuple2;).(Lscala/Tuple2;::_1()Ljava/lang/Object;)();
+  }
+  
+  public static Lscala/collection/SortedSet; keySet(Lscala/collection/SortedMapLike; $this) {
+    return (new (Lscala/collection/SortedMapLike$DefaultKeySortedSet;::this(Lscala/collection/SortedMapLike;)V;)($this));
+  }
+  
+  public static Lscala/collection/SortedMap; updated(Lscala/collection/SortedMapLike; $this, Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    return $this.(Lscala/collection/SortedMapLike;::$plus(Lscala/Tuple2;)Lscala/collection/SortedMap;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(key, value)));
+  }
+  
+  public static Lscala/collection/SortedMap; $plus(Lscala/collection/SortedMapLike; $this, Lscala/Tuple2; elem1, Lscala/Tuple2; elem2, Lscala/collection/Seq; elems) {
+    Lscala/runtime/ObjectRef; m$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)($this.(Lscala/collection/SortedMapLike;::$plus(Lscala/Tuple2;)Lscala/collection/SortedMap;)(elem1).(Lscala/collection/SortedMapLike;::$plus(Lscala/Tuple2;)Lscala/collection/SortedMap;)(elem2)));
+    elems.(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/SortedMapLike$$anonfun$$plus$1;::this(Lscala/collection/SortedMapLike;Lscala/runtime/ObjectRef;)V;)($this, m$1)));
+    return m$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/SortedMap;);
+  }
+  
+  public static V; $init$(Lscala/collection/SortedMapLike; $this) {
+    
+  }
+}

@@ -1,0 +1,32 @@
+public final class Lscala/reflect/Target$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject; {
+  public static Lscala/reflect/Target$; MODULE$ = new (Lscala/reflect/Target$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "Target";
+  }
+  
+  public Lscala/Option; unapply(Lscala/reflect/Target; x$0) {
+    Lscala/Option; $71$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $71$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $71$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/reflect/Target;::sym()Lscala/reflect/LabelSymbol;)(), x$0.(Lscala/reflect/Target;::body()Lscala/reflect/Tree;)()))));
+      }
+    return $71$;
+  }
+  
+  public Lscala/reflect/Target; apply(Lscala/reflect/LabelSymbol; sym, Lscala/reflect/Tree; body) {
+    return (new (Lscala/reflect/Target;::this(Lscala/reflect/LabelSymbol;Lscala/reflect/Tree;)V;)(sym, body));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {
+    return this.(Lscala/reflect/Target$;::apply(Lscala/reflect/LabelSymbol;Lscala/reflect/Tree;)Lscala/reflect/Target;)(v1.<cast>(Lscala/reflect/LabelSymbol;), v2.<cast>(Lscala/reflect/Tree;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
+  }
+}

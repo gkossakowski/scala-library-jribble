@@ -1,0 +1,28 @@
+public final class Lscala/collection/JavaConversions$JDictionaryWrapper$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/JavaConversions$JDictionaryWrapper$; MODULE$ = new (Lscala/collection/JavaConversions$JDictionaryWrapper$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "JDictionaryWrapper";
+  }
+  
+  public Lscala/Option; unapply(Lscala/collection/JavaConversions$JDictionaryWrapper; x$0) {
+    Lscala/Option; $83$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $83$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $83$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/collection/JavaConversions$JDictionaryWrapper;::underlying()Ljava/util/Dictionary;)()));
+      }
+    return $83$;
+  }
+  
+  public Lscala/collection/JavaConversions$JDictionaryWrapper; apply(Ljava/util/Dictionary; underlying) {
+    return (new (Lscala/collection/JavaConversions$JDictionaryWrapper;::this(Ljava/util/Dictionary;)V;)(underlying));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

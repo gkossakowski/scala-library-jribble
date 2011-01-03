@@ -1,0 +1,21 @@
+public final class Lscala/xml/dtd/ContentModel$$anonfun$buildString$2; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Lscala/collection/mutable/StringBuilder; apply(Lscala/util/regexp/Base$RegExp; z) {
+    this.(Lscala/collection/mutable/StringBuilder;)sb$1.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(this.(C;)sep$1);
+    return this.(Lscala/xml/dtd/ContentModel$;::buildString(Lscala/util/regexp/Base$RegExp;Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(z, this.(Lscala/collection/mutable/StringBuilder;)sb$1);
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/xml/dtd/ContentModel$$anonfun$buildString$2;::apply(Lscala/util/regexp/Base$RegExp;)Lscala/collection/mutable/StringBuilder;)(v1.<cast>(Lscala/util/regexp/Base$RegExp;));
+  }
+  
+  private Lscala/collection/mutable/StringBuilder; sb$1;
+  
+  private C; sep$1;
+  
+  public this(Lscala/collection/mutable/StringBuilder; sb$1, C; sep$1) {
+    this.(Lscala/collection/mutable/StringBuilder;)sb$1 = sb$1;
+    this.(C;)sep$1 = sep$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

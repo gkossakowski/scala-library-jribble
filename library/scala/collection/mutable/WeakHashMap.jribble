@@ -1,0 +1,106 @@
+public class Lscala/collection/mutable/WeakHashMap; extends Lscala/collection/JavaConversions$JMapWrapper; implements Lscala/collection/JavaConversions$JMapWrapperLike;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/mutable/WeakHashMap; empty() {
+    return (new (Lscala/collection/mutable/WeakHashMap;::this()V;)());
+  }
+  
+  public Lscala/collection/generic/Subtractable; repr() {
+    return this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/generic/Subtractable;);
+  }
+  
+  public Lscala/collection/TraversableView; view(I; from, I; until) {
+    return this.(Lscala/collection/IterableLike;::view(I;I;)Lscala/collection/IterableView;)(from, until);
+  }
+  
+  public Lscala/collection/TraversableView; view() {
+    return this.(Lscala/collection/IterableLike;::view()Lscala/collection/IterableView;)();
+  }
+  
+  public Lscala/collection/Traversable; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/IterableLike;::toCollection(Ljava/lang/Object;)Lscala/collection/Iterable;)(repr);
+  }
+  
+  public Lscala/collection/Traversable; thisCollection() {
+    return this.(Lscala/collection/IterableLike;::thisCollection()Lscala/collection/Iterable;)();
+  }
+  
+  public Ljava/lang/Object; filterNot(Lscala/Function1; p) {
+    return this.(Lscala/collection/MapLike;::filterNot(Lscala/Function1;)Lscala/collection/Map;)(p);
+  }
+  
+  public Lscala/collection/generic/Subtractable; $minus$minus(Lscala/collection/TraversableOnce; xs) {
+    return this.(Lscala/collection/mutable/MapLike;::$minus$minus(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Map;)(xs);
+  }
+  
+  public Lscala/collection/generic/Subtractable; $minus(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
+    return this.(Lscala/collection/mutable/MapLike;::$minus(Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/Seq;)Lscala/collection/mutable/Map;)(elem1, elem2, elems);
+  }
+  
+  public Ljava/lang/Object; result() {
+    return this.(Lscala/collection/mutable/MapLike;::result()Lscala/collection/mutable/Map;)();
+  }
+  
+  public Ljava/lang/Object; clone() {
+    return this.(Lscala/collection/mutable/MapLike;::clone()Lscala/collection/mutable/Map;)();
+  }
+  
+  public Lscala/collection/generic/Subtractable; $minus(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/MapLike;::$minus(Ljava/lang/Object;)Lscala/collection/mutable/Map;)(elem);
+  }
+  
+  public Lscala/collection/Map; $minus(Ljava/lang/Object; key) {
+    return this.(Lscala/collection/mutable/MapLike;::$minus(Ljava/lang/Object;)Lscala/collection/mutable/Map;)(key);
+  }
+  
+  public Lscala/collection/Map; $plus$plus(Lscala/collection/TraversableOnce; xs) {
+    return this.(Lscala/collection/mutable/MapLike;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Map;)(xs);
+  }
+  
+  public Lscala/collection/Map; $plus(Lscala/Tuple2; kv1, Lscala/Tuple2; kv2, Lscala/collection/Seq; kvs) {
+    return this.(Lscala/collection/mutable/MapLike;::$plus(Lscala/Tuple2;Lscala/Tuple2;Lscala/collection/Seq;)Lscala/collection/mutable/Map;)(kv1, kv2, kvs);
+  }
+  
+  public Lscala/collection/Map; $plus(Lscala/Tuple2; kv) {
+    return this.(Lscala/collection/mutable/MapLike;::$plus(Lscala/Tuple2;)Lscala/collection/mutable/Map;)(kv);
+  }
+  
+  public Lscala/collection/Map; updated(Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    return this.(Lscala/collection/mutable/MapLike;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/mutable/Map;)(key, value);
+  }
+  
+  public Lscala/collection/generic/Shrinkable; $minus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/JavaConversions$JMapWrapperLike;::$minus$eq(Ljava/lang/Object;)Lscala/collection/JavaConversions$JMapWrapperLike;)(elem);
+  }
+  
+  public Lscala/collection/mutable/MapLike; $minus$eq(Ljava/lang/Object; key) {
+    return this.(Lscala/collection/JavaConversions$JMapWrapperLike;::$minus$eq(Ljava/lang/Object;)Lscala/collection/JavaConversions$JMapWrapperLike;)(key);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/JavaConversions$JMapWrapperLike;::$plus$eq(Lscala/Tuple2;)Lscala/collection/JavaConversions$JMapWrapperLike;)(elem.<cast>(Lscala/Tuple2;));
+  }
+  
+  public Lscala/collection/mutable/Builder; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/JavaConversions$JMapWrapperLike;::$plus$eq(Lscala/Tuple2;)Lscala/collection/JavaConversions$JMapWrapperLike;)(elem.<cast>(Lscala/Tuple2;));
+  }
+  
+  public Lscala/collection/mutable/MapLike; $plus$eq(Lscala/Tuple2; kv) {
+    return this.(Lscala/collection/JavaConversions$JMapWrapperLike;::$plus$eq(Lscala/Tuple2;)Lscala/collection/JavaConversions$JMapWrapperLike;)(kv);
+  }
+  
+  public Lscala/collection/Map; empty() {
+    return this.(Lscala/collection/mutable/WeakHashMap;::empty()Lscala/collection/mutable/WeakHashMap;)();
+  }
+  
+  public Lscala/collection/mutable/Map; empty() {
+    return this.(Lscala/collection/mutable/WeakHashMap;::empty()Lscala/collection/mutable/WeakHashMap;)();
+  }
+  
+  public Lscala/collection/JavaConversions$JMapWrapper; empty() {
+    return this.(Lscala/collection/mutable/WeakHashMap;::empty()Lscala/collection/mutable/WeakHashMap;)();
+  }
+  
+  public this() {
+    (Lscala/collection/JavaConversions$JMapWrapper;::super(Ljava/util/Map;)V;)((new (Ljava/util/WeakHashMap;::this()V;)()));
+  }
+}

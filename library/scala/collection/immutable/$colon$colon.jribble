@@ -1,0 +1,151 @@
+public final class Lscala/collection/immutable/$colon$colon; extends Lscala/collection/immutable/List; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/immutable/List; copy$default$2() {
+    return this.(Lscala/collection/immutable/$colon$colon;::tl()Lscala/collection/immutable/List;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$1() {
+    return this.(Lscala/collection/immutable/$colon$colon;::scala$collection$immutable$$colon$colon$$hd()Ljava/lang/Object;)();
+  }
+  
+  private Ljava/lang/Object; scala$collection$immutable$$colon$colon$$hd$u0020;
+  
+  public final Ljava/lang/Object; scala$collection$immutable$$colon$colon$$hd() {
+    return this.(Ljava/lang/Object;)scala$collection$immutable$$colon$colon$$hd$u0020;
+  }
+  
+  private V; scala$collection$immutable$$colon$colon$$hd_$eq(Ljava/lang/Object; x$1) {
+    this.(Ljava/lang/Object;)scala$collection$immutable$$colon$colon$$hd$u0020 = x$1;
+  }
+  
+  private Lscala/collection/immutable/List; tl$u0020;
+  
+  public Lscala/collection/immutable/List; tl() {
+    return this.(Lscala/collection/immutable/List;)tl$u0020;
+  }
+  
+  public V; tl_$eq(Lscala/collection/immutable/List; x$1) {
+    this.(Lscala/collection/immutable/List;)tl$u0020 = x$1;
+  }
+  
+  public Ljava/lang/Object; head() {
+    return this.(Lscala/collection/immutable/$colon$colon;::scala$collection$immutable$$colon$colon$$hd()Ljava/lang/Object;)();
+  }
+  
+  public Lscala/collection/immutable/List; tail() {
+    return this.(Lscala/collection/immutable/$colon$colon;::tl()Lscala/collection/immutable/List;)();
+  }
+  
+  public Z; isEmpty() {
+    return false;
+  }
+  
+  private V; writeObject(Ljava/io/ObjectOutputStream; out) {
+    Lscala/collection/immutable/List; xs = this;
+    while$13: while(true) {
+      if (!(xs.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
+        {
+          {
+            out.(Ljava/io/ObjectOutputStream;::writeObject(Ljava/lang/Object;)V;)(xs.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)());
+            xs = xs.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;);
+          }
+          continue while$13;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    out.(Ljava/io/ObjectOutputStream;::writeObject(Ljava/lang/Object;)V;)(Lscala/collection/immutable/ListSerializeEnd$;.MODULE$);
+  }
+  
+  private V; readObject(Ljava/io/ObjectInputStream; in) {
+    this.(Lscala/collection/immutable/$colon$colon;::scala$collection$immutable$$colon$colon$$hd_$eq(Ljava/lang/Object;)V;)(in.(Ljava/io/ObjectInputStream;::readObject()Ljava/lang/Object;)());
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;)V;)((this.(Lscala/collection/immutable/$colon$colon;::scala$collection$immutable$$colon$colon$$hd()Ljava/lang/Object;)() != Lscala/collection/immutable/ListSerializeEnd$;.MODULE$));
+    Lscala/collection/immutable/$colon$colon; current = this;
+    while$14: while(true) {
+      {
+        Ljava/lang/Object; temp24 = in.(Ljava/io/ObjectInputStream;::readObject()Ljava/lang/Object;)();
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/ListSerializeEnd$;.MODULE$, temp24))
+          {
+            current.(Lscala/collection/immutable/$colon$colon;::tl_$eq(Lscala/collection/immutable/List;)V;)(Lscala/collection/immutable/Nil$;.MODULE$);
+            return;
+          }
+        else
+          {
+            if ((temp24 != null))
+              {
+                Ljava/lang/Object; a = temp24;
+                Lscala/collection/immutable/$colon$colon; list = (new (Lscala/collection/immutable/$colon$colon;::this(Ljava/lang/Object;Lscala/collection/immutable/List;)V;)(a, Lscala/collection/immutable/Nil$;.MODULE$));
+                current.(Lscala/collection/immutable/$colon$colon;::tl_$eq(Lscala/collection/immutable/List;)V;)(list);
+                current = list;
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp24));
+              }
+          }
+      }
+      continue while$14;
+    }
+  }
+  
+  public Lscala/collection/immutable/$colon$colon; copy(Ljava/lang/Object; hd, Lscala/collection/immutable/List; tl) {
+    return (new (Lscala/collection/immutable/$colon$colon;::this(Ljava/lang/Object;Lscala/collection/immutable/List;)V;)(hd, tl));
+  }
+  
+  public Ljava/lang/Object; hd$1() {
+    return this.(Ljava/lang/Object;)scala$collection$immutable$$colon$colon$$hd$u0020;
+  }
+  
+  public Lscala/collection/immutable/List; tl$1() {
+    return this.(Lscala/collection/immutable/List;)tl$u0020;
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "::";
+  }
+  
+  public I; productArity() {
+    return 2;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp26 = x$1;
+    I; $20$ = temp26;
+    Ljava/lang/Object; $21$;
+    switch ($20$) {
+      0: {
+        $21$ = this.(Lscala/collection/immutable/$colon$colon;::hd$1()Ljava/lang/Object;)();
+        break;
+      }
+      
+      1: {
+        $21$ = this.(Lscala/collection/immutable/$colon$colon;::tl$1()Lscala/collection/immutable/List;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $21$;
+  }
+  
+  public Lscala/collection/LinearSeqOptimized; tail() {
+    return this.(Lscala/collection/immutable/$colon$colon;::tail()Lscala/collection/immutable/List;)();
+  }
+  
+  public Ljava/lang/Object; tail() {
+    return this.(Lscala/collection/immutable/$colon$colon;::tail()Lscala/collection/immutable/List;)();
+  }
+  
+  public this(Ljava/lang/Object; hd, Lscala/collection/immutable/List; tl) {
+    this.(Ljava/lang/Object;)scala$collection$immutable$$colon$colon$$hd$u0020 = hd;
+    this.(Lscala/collection/immutable/List;)tl$u0020 = tl;
+    (Lscala/collection/immutable/List;::super()V;)();
+  }
+}

@@ -1,0 +1,25 @@
+public final class Lscala/collection/TraversableLike$$anonfun$collect$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; x) {
+    Ljava/lang/Object; $7$;
+    if (this.(Lscala/PartialFunction;)pf$1.(Lscala/PartialFunction;::isDefinedAt(Ljava/lang/Object;)Z;)(x))
+      {
+        $7$ = this.(Lscala/collection/mutable/Builder;)b$4.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/PartialFunction;)pf$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x));
+      }
+    else
+      {
+        $7$ = Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+      }
+    return $7$;
+  }
+  
+  private Lscala/PartialFunction; pf$1;
+  
+  private Lscala/collection/mutable/Builder; b$4;
+  
+  public this(Lscala/collection/TraversableLike; $outer, Lscala/PartialFunction; pf$1, Lscala/collection/mutable/Builder; b$4) {
+    this.(Lscala/PartialFunction;)pf$1 = pf$1;
+    this.(Lscala/collection/mutable/Builder;)b$4 = b$4;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

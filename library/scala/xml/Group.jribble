@@ -1,0 +1,119 @@
+public final class Lscala/xml/Group; extends Lscala/xml/Node; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Seq; copy$default$1() {
+    return this.(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)();
+  }
+  
+  private Lscala/collection/Seq; nodes$u0020;
+  
+  public Lscala/collection/Seq; nodes() {
+    return this.(Lscala/collection/Seq;)nodes$u0020;
+  }
+  
+  public Lscala/collection/Seq; theSeq() {
+    return this.(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)();
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; other) {
+    Ljava/lang/Object; temp1 = other;
+    return temp1.<instanceof>(Lscala/xml/Group;);
+  }
+  
+  public Z; strict_$eq$eq(Lscala/xml/Equality; other) {
+    Lscala/xml/Equality; temp4 = other;
+    Z; $1$;
+    if (temp4.<instanceof>(Lscala/xml/Group;))
+      {
+        $1$ = this.(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::sameElements(Lscala/collection/Iterable;)Z;)(temp4.<cast>(Lscala/xml/Group;).(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)());
+      }
+    else
+      {
+        $1$ = false;
+      }
+    return $1$;
+  }
+  
+  public Lscala/collection/Seq; basisForHashCode() {
+    return this.(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)();
+  }
+  
+  private Lscala/runtime/Nothing$; fail(Ljava/lang/String; msg) {
+    throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)("class Group does not support method \'%s\'").(Lscala/collection/immutable/StringLike;::format(Lscala/collection/Seq;)Ljava/lang/String;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{msg}))));
+  }
+  
+  public Lscala/runtime/Nothing$; label() {
+    this.(Lscala/xml/Group;::fail(Ljava/lang/String;)Lscala/runtime/Nothing$;)("label");
+  }
+  
+  public Lscala/runtime/Nothing$; attributes() {
+    this.(Lscala/xml/Group;::fail(Ljava/lang/String;)Lscala/runtime/Nothing$;)("attributes");
+  }
+  
+  public Lscala/runtime/Nothing$; namespace() {
+    this.(Lscala/xml/Group;::fail(Ljava/lang/String;)Lscala/runtime/Nothing$;)("namespace");
+  }
+  
+  public Lscala/runtime/Nothing$; child() {
+    this.(Lscala/xml/Group;::fail(Ljava/lang/String;)Lscala/runtime/Nothing$;)("child");
+  }
+  
+  public Lscala/runtime/Nothing$; buildString(Lscala/collection/mutable/StringBuilder; sb) {
+    this.(Lscala/xml/Group;::fail(Ljava/lang/String;)Lscala/runtime/Nothing$;)("toString(StringBuilder)");
+  }
+  
+  public Lscala/xml/Group; copy(Lscala/collection/Seq; nodes) {
+    return (new (Lscala/xml/Group;::this(Lscala/collection/Seq;)V;)(nodes));
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Group";
+  }
+  
+  public I; productArity() {
+    return 1;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp7 = x$1;
+    Ljava/lang/Object; $2$;
+    if ((temp7 == 0))
+      {
+        $2$ = this.(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)();
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $2$;
+  }
+  
+  public Lscala/collection/Seq; child() {
+    this.(Lscala/xml/Group;::child()Lscala/runtime/Nothing$;)();
+  }
+  
+  public Ljava/lang/String; namespace() {
+    this.(Lscala/xml/Group;::namespace()Lscala/runtime/Nothing$;)();
+  }
+  
+  public Lscala/xml/MetaData; attributes() {
+    this.(Lscala/xml/Group;::attributes()Lscala/runtime/Nothing$;)();
+  }
+  
+  public Ljava/lang/String; label() {
+    this.(Lscala/xml/Group;::label()Lscala/runtime/Nothing$;)();
+  }
+  
+  public this(Lscala/collection/Seq; nodes) {
+    this.(Lscala/collection/Seq;)nodes$u0020 = nodes;
+    (Lscala/xml/Node;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

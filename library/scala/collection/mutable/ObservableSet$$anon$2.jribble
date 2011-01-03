@@ -1,0 +1,20 @@
+public final class Lscala/collection/mutable/ObservableSet$$anon$2; extends Lscala/collection/script/Remove; implements Lscala/collection/mutable/Undoable; {
+  
+  public V; undo() {
+    this.(Lscala/collection/mutable/ObservableSet;)$outer$u0020.(Lscala/collection/mutable/ObservableSet;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ObservableSet;)(this.(Lscala/collection/script/Remove;::elem()Ljava/lang/Object;)());
+  }
+  
+  private Lscala/collection/mutable/ObservableSet; $outer$u0020;
+  
+  public this(Lscala/collection/mutable/ObservableSet; $outer, Ljava/lang/Object; elem$2) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/ObservableSet;)$outer$u0020 = $outer;
+      }
+    (Lscala/collection/script/Remove;::super(Ljava/lang/Object;)V;)(elem$2);
+  }
+}

@@ -1,0 +1,31 @@
+public final class Lscala/collection/BitSet$; extends Ljava/lang/Object; implements Lscala/collection/generic/BitSetFactory;, Lscala/ScalaObject; {
+  public static Lscala/collection/BitSet$; MODULE$ = new (Lscala/collection/BitSet$;::this()V;)();
+  
+  public Lscala/collection/BitSet; apply(Lscala/collection/Seq; elems) {
+    return Lscala/collection/generic/BitSetFactory$class;.(Lscala/collection/generic/BitSetFactory$class;::apply(Lscala/collection/generic/BitSetFactory;Lscala/collection/Seq;)Lscala/collection/BitSet;)(this, elems);
+  }
+  
+  public Lscala/collection/generic/CanBuildFrom; bitsetCanBuildFrom() {
+    return Lscala/collection/generic/BitSetFactory$class;.(Lscala/collection/generic/BitSetFactory$class;::bitsetCanBuildFrom(Lscala/collection/generic/BitSetFactory;)Lscala/collection/generic/CanBuildFrom;)(this);
+  }
+  
+  private Lscala/collection/BitSet; empty$u0020;
+  
+  public Lscala/collection/BitSet; empty() {
+    return this.(Lscala/collection/BitSet;)empty$u0020;
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return Lscala/collection/immutable/BitSet$;.MODULE$.(Lscala/collection/immutable/BitSet$;::newBuilder()Lscala/collection/mutable/Builder;)();
+  }
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return this.(Lscala/collection/generic/BitSetFactory;::bitsetCanBuildFrom()Lscala/collection/generic/CanBuildFrom;)();
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/collection/generic/BitSetFactory$class;.(Lscala/collection/generic/BitSetFactory$class;::$init$(Lscala/collection/generic/BitSetFactory;)V;)(this);
+    this.(Lscala/collection/BitSet;)empty$u0020 = Lscala/collection/immutable/BitSet$;.MODULE$.(Lscala/collection/immutable/BitSet$;::empty()Lscala/collection/immutable/BitSet;)();
+  }
+}

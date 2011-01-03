@@ -1,0 +1,17 @@
+public final class Lscala/xml/Utility$$anonfun$2; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Z; apply(Lscala/xml/MetaData; m) {
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(m.(Lscala/xml/MetaData;::key()Ljava/lang/String;)()).(Lscala/math/Ordered;::$greater(Ljava/lang/Object;)Z;)(this.(Ljava/lang/String;)key$1);
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/xml/Utility$$anonfun$2;::apply(Lscala/xml/MetaData;)Z;)(v1.<cast>(Lscala/xml/MetaData;)));
+  }
+  
+  private Ljava/lang/String; key$1;
+  
+  public this(Ljava/lang/String; key$1) {
+    this.(Ljava/lang/String;)key$1 = key$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

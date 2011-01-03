@@ -1,0 +1,31 @@
+public final class Lscala/collection/TraversableOnce$$anonfun$addString$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; x) {
+    Ljava/lang/Object; $6$;
+    if (this.(Lscala/runtime/BooleanRef;)first$2.(Z;)elem)
+      {
+        this.(Lscala/collection/mutable/StringBuilder;)b$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;)(x);
+        this.(Lscala/runtime/BooleanRef;)first$2.(Z;)elem = false;
+        $6$ = Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/StringBuilder;)b$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(this.(Ljava/lang/String;)sep$1);
+        $6$ = this.(Lscala/collection/mutable/StringBuilder;)b$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;)(x);
+      }
+    return $6$;
+  }
+  
+  private Lscala/collection/mutable/StringBuilder; b$1;
+  
+  private Ljava/lang/String; sep$1;
+  
+  private Lscala/runtime/BooleanRef; first$2;
+  
+  public this(Lscala/collection/TraversableOnce; $outer, Lscala/collection/mutable/StringBuilder; b$1, Ljava/lang/String; sep$1, Lscala/runtime/BooleanRef; first$2) {
+    this.(Lscala/collection/mutable/StringBuilder;)b$1 = b$1;
+    this.(Ljava/lang/String;)sep$1 = sep$1;
+    this.(Lscala/runtime/BooleanRef;)first$2 = first$2;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

@@ -1,0 +1,219 @@
+public class Lscala/LowPriorityImplicits; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  public Lscala/collection/mutable/WrappedArray; genericWrapArray(Ljava/lang/Object; xs) {
+    Lscala/collection/mutable/WrappedArray; $1$;
+    if ((xs != null))
+      {
+        $1$ = Lscala/collection/mutable/WrappedArray$;.MODULE$.(Lscala/collection/mutable/WrappedArray$;::make(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(xs);
+      }
+    else
+      {
+        $1$ = null;
+      }
+    return $1$;
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapRefArray(Ljava/lang/Object;[ xs) {
+    Lscala/collection/mutable/WrappedArray; $2$;
+    if ((xs != null))
+      {
+        $2$ = (new (Lscala/collection/mutable/WrappedArray$ofRef;::this(Ljava/lang/Object;[)V;)(xs));
+      }
+    else
+      {
+        $2$ = null;
+      }
+    return $2$;
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapIntArray(I;[ xs) {
+    Lscala/collection/mutable/WrappedArray; $3$;
+    if ((xs != null))
+      {
+        $3$ = (new (Lscala/collection/mutable/WrappedArray$ofInt;::this(I;[)V;)(xs));
+      }
+    else
+      {
+        $3$ = null;
+      }
+    return $3$;
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapDoubleArray(D;[ xs) {
+    Lscala/collection/mutable/WrappedArray; $4$;
+    if ((xs != null))
+      {
+        $4$ = (new (Lscala/collection/mutable/WrappedArray$ofDouble;::this(D;[)V;)(xs));
+      }
+    else
+      {
+        $4$ = null;
+      }
+    return $4$;
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapLongArray(J;[ xs) {
+    Lscala/collection/mutable/WrappedArray; $5$;
+    if ((xs != null))
+      {
+        $5$ = (new (Lscala/collection/mutable/WrappedArray$ofLong;::this(J;[)V;)(xs));
+      }
+    else
+      {
+        $5$ = null;
+      }
+    return $5$;
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapFloatArray(F;[ xs) {
+    Lscala/collection/mutable/WrappedArray; $6$;
+    if ((xs != null))
+      {
+        $6$ = (new (Lscala/collection/mutable/WrappedArray$ofFloat;::this(F;[)V;)(xs));
+      }
+    else
+      {
+        $6$ = null;
+      }
+    return $6$;
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapCharArray(C;[ xs) {
+    Lscala/collection/mutable/WrappedArray; $7$;
+    if ((xs != null))
+      {
+        $7$ = (new (Lscala/collection/mutable/WrappedArray$ofChar;::this(C;[)V;)(xs));
+      }
+    else
+      {
+        $7$ = null;
+      }
+    return $7$;
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapByteArray(B;[ xs) {
+    Lscala/collection/mutable/WrappedArray; $8$;
+    if ((xs != null))
+      {
+        $8$ = (new (Lscala/collection/mutable/WrappedArray$ofByte;::this(B;[)V;)(xs));
+      }
+    else
+      {
+        $8$ = null;
+      }
+    return $8$;
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapShortArray(S;[ xs) {
+    Lscala/collection/mutable/WrappedArray; $9$;
+    if ((xs != null))
+      {
+        $9$ = (new (Lscala/collection/mutable/WrappedArray$ofShort;::this(S;[)V;)(xs));
+      }
+    else
+      {
+        $9$ = null;
+      }
+    return $9$;
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapBooleanArray(Z;[ xs) {
+    Lscala/collection/mutable/WrappedArray; $10$;
+    if ((xs != null))
+      {
+        $10$ = (new (Lscala/collection/mutable/WrappedArray$ofBoolean;::this(Z;[)V;)(xs));
+      }
+    else
+      {
+        $10$ = null;
+      }
+    return $10$;
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapUnitArray(Lscala/runtime/BoxedUnit;[ xs) {
+    Lscala/collection/mutable/WrappedArray; $11$;
+    if ((xs != null))
+      {
+        $11$ = (new (Lscala/collection/mutable/WrappedArray$ofUnit;::this(Lscala/runtime/BoxedUnit;[)V;)(xs));
+      }
+    else
+      {
+        $11$ = null;
+      }
+    return $11$;
+  }
+  
+  public Lscala/collection/immutable/WrappedString; wrapString(Ljava/lang/String; s) {
+    Lscala/collection/immutable/WrappedString; $12$;
+    if ((s != null))
+      {
+        $12$ = (new (Lscala/collection/immutable/WrappedString;::this(Ljava/lang/String;)V;)(s));
+      }
+    else
+      {
+        $12$ = null;
+      }
+    return $12$;
+  }
+  
+  public Ljava/lang/String; unwrapString(Lscala/collection/immutable/WrappedString; ws) {
+    Ljava/lang/String; $13$;
+    if ((ws != null))
+      {
+        $13$ = ws.(Lscala/collection/immutable/WrappedString;::self()Ljava/lang/String;)();
+      }
+    else
+      {
+        $13$ = null;
+      }
+    return $13$;
+  }
+  
+  public Lscala/collection/generic/CanBuildFrom; fallbackStringCanBuildFrom() {
+    return (new (Lscala/LowPriorityImplicits$$anon$1;::this(Lscala/LowPriorityImplicits;)V;)(this));
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapArray(Ljava/lang/Object;[ xs) {
+    return (new (Lscala/collection/mutable/WrappedArray$ofRef;::this(Ljava/lang/Object;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapArray(I;[ xs) {
+    return (new (Lscala/collection/mutable/WrappedArray$ofInt;::this(I;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapArray(D;[ xs) {
+    return (new (Lscala/collection/mutable/WrappedArray$ofDouble;::this(D;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapArray(J;[ xs) {
+    return (new (Lscala/collection/mutable/WrappedArray$ofLong;::this(J;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapArray(F;[ xs) {
+    return (new (Lscala/collection/mutable/WrappedArray$ofFloat;::this(F;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapArray(C;[ xs) {
+    return (new (Lscala/collection/mutable/WrappedArray$ofChar;::this(C;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapArray(B;[ xs) {
+    return (new (Lscala/collection/mutable/WrappedArray$ofByte;::this(B;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapArray(S;[ xs) {
+    return (new (Lscala/collection/mutable/WrappedArray$ofShort;::this(S;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapArray(Z;[ xs) {
+    return (new (Lscala/collection/mutable/WrappedArray$ofBoolean;::this(Z;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; wrapArray(Lscala/runtime/BoxedUnit;[ xs) {
+    return (new (Lscala/collection/mutable/WrappedArray$ofUnit;::this(Lscala/runtime/BoxedUnit;[)V;)(xs));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

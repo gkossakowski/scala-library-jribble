@@ -1,0 +1,311 @@
+public class Lscala/reflect/generic/Trees$Modifiers; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/immutable/Map; copy$default$4() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::positions()Lscala/collection/immutable/Map;)();
+  }
+  
+  public Lscala/collection/immutable/List; copy$default$3() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::annotations()Lscala/collection/immutable/List;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$2() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::privateWithin()Ljava/lang/Object;)();
+  }
+  
+  public J; copy$default$1() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::flags()J;)();
+  }
+  
+  private J; flags$u0020;
+  
+  public J; flags() {
+    return this.(J;)flags$u0020;
+  }
+  
+  private Ljava/lang/Object; privateWithin$u0020;
+  
+  public Ljava/lang/Object; privateWithin() {
+    return this.(Ljava/lang/Object;)privateWithin$u0020;
+  }
+  
+  private Lscala/collection/immutable/List; annotations$u0020;
+  
+  public Lscala/collection/immutable/List; annotations() {
+    return this.(Lscala/collection/immutable/List;)annotations$u0020;
+  }
+  
+  private Lscala/collection/immutable/Map; positions$u0020;
+  
+  public Lscala/collection/immutable/Map; positions() {
+    return this.(Lscala/collection/immutable/Map;)positions$u0020;
+  }
+  
+  public Z; isAbstract() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(8L);
+  }
+  
+  public Z; isAccessor() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(134217728L);
+  }
+  
+  public Z; isArgument() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(8192L);
+  }
+  
+  public Z; isCase() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(2048L);
+  }
+  
+  public Z; isContravariant() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(131072L);
+  }
+  
+  public Z; isCovariant() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(65536L);
+  }
+  
+  public Z; isDeferred() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(16L);
+  }
+  
+  public Z; isFinal() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(32L);
+  }
+  
+  public Z; isImplicit() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(512L);
+  }
+  
+  public Z; isLazy() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(2147483648L);
+  }
+  
+  public Z; isOverride() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(2L);
+  }
+  
+  public Z; isPrivate() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(4L);
+  }
+  
+  public Z; isProtected() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(1L);
+  }
+  
+  public Z; isPublic() {
+    return (!(this.(Lscala/reflect/generic/Trees$Modifiers;::isPrivate()Z;)()) && !(this.(Lscala/reflect/generic/Trees$Modifiers;::isProtected()Z;)()));
+  }
+  
+  public Z; isSealed() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(1024L);
+  }
+  
+  public Z; isSynthetic() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(2097152L);
+  }
+  
+  public Z; isTrait() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(33554432L);
+  }
+  
+  public Z; isVariable() {
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::hasFlag(J;)Z;)(4096L);
+  }
+  
+  public Z; hasFlag(J; flag) {
+    return ((flag & this.(Lscala/reflect/generic/Trees$Modifiers;::flags()J;)()) != 0L);
+  }
+  
+  public Lscala/reflect/generic/Trees$Modifiers; $amp(J; flag) {
+    J; flags1 = (this.(Lscala/reflect/generic/Trees$Modifiers;::flags()J;)() & flag);
+    Lscala/reflect/generic/Trees$Modifiers; $1$;
+    if ((flags1 == this.(Lscala/reflect/generic/Trees$Modifiers;::flags()J;)()))
+      {
+        $1$ = this;
+      }
+    else
+      {
+        $1$ = (new (Lscala/reflect/generic/Trees$Modifiers;::this(Lscala/reflect/generic/Universe;J;Ljava/lang/Object;Lscala/collection/immutable/List;Lscala/collection/immutable/Map;)V;)(this.(Lscala/reflect/generic/Trees$Modifiers;::scala$reflect$generic$Trees$Modifiers$$$outer()Lscala/reflect/generic/Universe;)(), flags1, this.(Lscala/reflect/generic/Trees$Modifiers;::privateWithin()Ljava/lang/Object;)(), this.(Lscala/reflect/generic/Trees$Modifiers;::annotations()Lscala/collection/immutable/List;)(), this.(Lscala/reflect/generic/Trees$Modifiers;::positions()Lscala/collection/immutable/Map;)()));
+      }
+    return $1$;
+  }
+  
+  public Lscala/reflect/generic/Trees$Modifiers; $amp$tilde(J; flag) {
+    J; flags1 = (this.(Lscala/reflect/generic/Trees$Modifiers;::flags()J;)() & ~(flag));
+    Lscala/reflect/generic/Trees$Modifiers; $2$;
+    if ((flags1 == this.(Lscala/reflect/generic/Trees$Modifiers;::flags()J;)()))
+      {
+        $2$ = this;
+      }
+    else
+      {
+        $2$ = (new (Lscala/reflect/generic/Trees$Modifiers;::this(Lscala/reflect/generic/Universe;J;Ljava/lang/Object;Lscala/collection/immutable/List;Lscala/collection/immutable/Map;)V;)(this.(Lscala/reflect/generic/Trees$Modifiers;::scala$reflect$generic$Trees$Modifiers$$$outer()Lscala/reflect/generic/Universe;)(), flags1, this.(Lscala/reflect/generic/Trees$Modifiers;::privateWithin()Ljava/lang/Object;)(), this.(Lscala/reflect/generic/Trees$Modifiers;::annotations()Lscala/collection/immutable/List;)(), this.(Lscala/reflect/generic/Trees$Modifiers;::positions()Lscala/collection/immutable/Map;)()));
+      }
+    return $2$;
+  }
+  
+  public Lscala/reflect/generic/Trees$Modifiers; $bar(J; flag) {
+    J; flags1 = (this.(Lscala/reflect/generic/Trees$Modifiers;::flags()J;)() | flag);
+    Lscala/reflect/generic/Trees$Modifiers; $3$;
+    if ((flags1 == this.(Lscala/reflect/generic/Trees$Modifiers;::flags()J;)()))
+      {
+        $3$ = this;
+      }
+    else
+      {
+        $3$ = (new (Lscala/reflect/generic/Trees$Modifiers;::this(Lscala/reflect/generic/Universe;J;Ljava/lang/Object;Lscala/collection/immutable/List;Lscala/collection/immutable/Map;)V;)(this.(Lscala/reflect/generic/Trees$Modifiers;::scala$reflect$generic$Trees$Modifiers$$$outer()Lscala/reflect/generic/Universe;)(), flags1, this.(Lscala/reflect/generic/Trees$Modifiers;::privateWithin()Ljava/lang/Object;)(), this.(Lscala/reflect/generic/Trees$Modifiers;::annotations()Lscala/collection/immutable/List;)(), this.(Lscala/reflect/generic/Trees$Modifiers;::positions()Lscala/collection/immutable/Map;)()));
+      }
+    return $3$;
+  }
+  
+  public Lscala/reflect/generic/Trees$Modifiers; withAnnotations(Lscala/collection/immutable/List; annots) {
+    Lscala/reflect/generic/Trees$Modifiers; $4$;
+    if (annots.(Lscala/collection/IterableLike;::isEmpty()Z;)())
+      {
+        $4$ = this;
+      }
+    else
+      {
+        Lscala/collection/immutable/List; x$1 = this.(Lscala/reflect/generic/Trees$Modifiers;::annotations()Lscala/collection/immutable/List;)();
+        Lscala/collection/immutable/List; x$2 = annots.(Lscala/collection/immutable/List;::$colon$colon$colon(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;)(x$1);
+        J; x$3 = this.(Lscala/reflect/generic/Trees$Modifiers;::copy$default$1()J;)();
+        Ljava/lang/Object; x$4 = this.(Lscala/reflect/generic/Trees$Modifiers;::copy$default$2()Ljava/lang/Object;)();
+        Lscala/collection/immutable/Map; x$5 = this.(Lscala/reflect/generic/Trees$Modifiers;::copy$default$4()Lscala/collection/immutable/Map;)();
+        $4$ = this.(Lscala/reflect/generic/Trees$Modifiers;::copy(J;Ljava/lang/Object;Lscala/collection/immutable/List;Lscala/collection/immutable/Map;)Lscala/reflect/generic/Trees$Modifiers;)(x$3, x$4, x$2, x$5);
+      }
+    return $4$;
+  }
+  
+  public Lscala/reflect/generic/Trees$Modifiers; withPosition(J; flag, Ljava/lang/Object; position) {
+    Lscala/collection/immutable/Map; x$6 = this.(Lscala/reflect/generic/Trees$Modifiers;::positions()Lscala/collection/immutable/Map;)().(Lscala/collection/immutable/Map;::$plus(Lscala/Tuple2;)Lscala/collection/immutable/Map;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::any2ArrowAssoc(Ljava/lang/Object;)Lscala/Predef$ArrowAssoc;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(flag)).(Lscala/Predef$ArrowAssoc;::$minus$greater(Ljava/lang/Object;)Lscala/Tuple2;)(position));
+    J; x$7 = this.(Lscala/reflect/generic/Trees$Modifiers;::copy$default$1()J;)();
+    Ljava/lang/Object; x$8 = this.(Lscala/reflect/generic/Trees$Modifiers;::copy$default$2()Ljava/lang/Object;)();
+    Lscala/collection/immutable/List; x$9 = this.(Lscala/reflect/generic/Trees$Modifiers;::copy$default$3()Lscala/collection/immutable/List;)();
+    return this.(Lscala/reflect/generic/Trees$Modifiers;::copy(J;Ljava/lang/Object;Lscala/collection/immutable/List;Lscala/collection/immutable/Map;)Lscala/reflect/generic/Trees$Modifiers;)(x$7, x$8, x$9, x$6);
+  }
+  
+  public Lscala/reflect/generic/Trees$Modifiers; copy(J; flags, Ljava/lang/Object; privateWithin, Lscala/collection/immutable/List; annotations, Lscala/collection/immutable/Map; positions) {
+    return (new (Lscala/reflect/generic/Trees$Modifiers;::this(Lscala/reflect/generic/Universe;J;Ljava/lang/Object;Lscala/collection/immutable/List;Lscala/collection/immutable/Map;)V;)(this.(Lscala/reflect/generic/Trees$Modifiers;::scala$reflect$generic$Trees$Modifiers$$$outer()Lscala/reflect/generic/Universe;)(), flags, privateWithin, annotations, positions));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp1 = x$1;
+    Z; $5$;
+    if ((temp1.<instanceof>(Lscala/reflect/generic/Trees$Modifiers;) && (temp1.<cast>(Lscala/reflect/generic/Trees$Modifiers;).(Lscala/reflect/generic/Trees$Modifiers;::scala$reflect$generic$Trees$Modifiers$$$outer()Lscala/reflect/generic/Universe;)() == this.(Lscala/reflect/generic/Trees$Modifiers;::scala$reflect$generic$Trees$Modifiers$$$outer()Lscala/reflect/generic/Universe;)())))
+      {
+        Lscala/reflect/generic/Trees$Modifiers; temp2 = temp1.<cast>(Lscala/reflect/generic/Trees$Modifiers;);
+        J; temp3 = temp2.(Lscala/reflect/generic/Trees$Modifiers;::flags()J;)();
+        Ljava/lang/Object; temp4 = temp2.(Lscala/reflect/generic/Trees$Modifiers;::privateWithin()Ljava/lang/Object;)();
+        Lscala/collection/immutable/List; temp5 = temp2.(Lscala/reflect/generic/Trees$Modifiers;::annotations()Lscala/collection/immutable/List;)();
+        Lscala/collection/immutable/Map; temp6 = temp2.(Lscala/reflect/generic/Trees$Modifiers;::positions()Lscala/collection/immutable/Map;)();
+        Lscala/collection/immutable/Map; positions$1 = temp6;
+        Lscala/collection/immutable/List; annotations$1 = temp5;
+        Ljava/lang/Object; privateWithin$1 = temp4;
+        J; flags$1 = temp3;
+        Z; $6$;
+        if (this.(Lscala/reflect/generic/Trees$Modifiers;::gd1$1(J;Ljava/lang/Object;Lscala/collection/immutable/List;Lscala/collection/immutable/Map;)Z;)(flags$1, privateWithin$1, annotations$1, positions$1))
+          {
+            $6$ = x$1.<cast>(Lscala/reflect/generic/Trees$Modifiers;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $6$ = false;
+          }
+        $5$ = $6$;
+      }
+    else
+      {
+        $5$ = false;
+      }
+    return ((this == x$1) || $5$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Modifiers";
+  }
+  
+  public I; productArity() {
+    return 4;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp7 = x$1;
+    I; $7$ = temp7;
+    Ljava/lang/Object; $8$;
+    switch ($7$) {
+      0: {
+        $8$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(this.(Lscala/reflect/generic/Trees$Modifiers;::flags()J;)());
+        break;
+      }
+      
+      1: {
+        $8$ = this.(Lscala/reflect/generic/Trees$Modifiers;::privateWithin()Ljava/lang/Object;)();
+        break;
+      }
+      
+      2: {
+        $8$ = this.(Lscala/reflect/generic/Trees$Modifiers;::annotations()Lscala/collection/immutable/List;)();
+        break;
+      }
+      
+      3: {
+        $8$ = this.(Lscala/reflect/generic/Trees$Modifiers;::positions()Lscala/collection/immutable/Map;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $8$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/reflect/generic/Trees$Modifiers;);
+  }
+  
+  protected Lscala/reflect/generic/Universe; $outer$u0020;
+  
+  public Lscala/reflect/generic/Universe; scala$reflect$generic$Trees$Modifiers$$$outer() {
+    return this.(Lscala/reflect/generic/Universe;)$outer$u0020;
+  }
+  
+  private final Z; gd1$1(J; x$1, Ljava/lang/Object; x$2, Lscala/collection/immutable/List; x$3, Lscala/collection/immutable/Map; x$4) {
+    return ((((x$1 == this.(Lscala/reflect/generic/Trees$Modifiers;::flags()J;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$2, this.(Lscala/reflect/generic/Trees$Modifiers;::privateWithin()Ljava/lang/Object;)())) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$3, this.(Lscala/reflect/generic/Trees$Modifiers;::annotations()Lscala/collection/immutable/List;)())) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$4, this.(Lscala/reflect/generic/Trees$Modifiers;::positions()Lscala/collection/immutable/Map;)()));
+  }
+  
+  public this(Lscala/reflect/generic/Universe; $outer, J; flags, Ljava/lang/Object; privateWithin, Lscala/collection/immutable/List; annotations, Lscala/collection/immutable/Map; positions) {
+    this.(J;)flags$u0020 = flags;
+    this.(Ljava/lang/Object;)privateWithin$u0020 = privateWithin;
+    this.(Lscala/collection/immutable/List;)annotations$u0020 = annotations;
+    this.(Lscala/collection/immutable/Map;)positions$u0020 = positions;
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/reflect/generic/Universe;)$outer$u0020 = $outer;
+      }
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

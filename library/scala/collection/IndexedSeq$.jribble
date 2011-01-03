@@ -1,0 +1,15 @@
+public final class Lscala/collection/IndexedSeq$; extends Lscala/collection/generic/SeqFactory; implements Lscala/ScalaObject; {
+  public static Lscala/collection/IndexedSeq$; MODULE$ = new (Lscala/collection/IndexedSeq$;::this()V;)();
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return (new (Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;::this(Lscala/collection/generic/TraversableFactory;)V;)(this));
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return Lscala/collection/immutable/IndexedSeq$;.MODULE$.(Lscala/collection/immutable/IndexedSeq$;::newBuilder()Lscala/collection/mutable/Builder;)();
+  }
+  
+  public this() {
+    (Lscala/collection/generic/SeqFactory;::super()V;)();
+  }
+}

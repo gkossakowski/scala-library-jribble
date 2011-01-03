@@ -1,0 +1,81 @@
+public final class Lscala/xml/dtd/ElementValidator$$anonfun$isAllWhitespace$1$1; extends Ljava/lang/Object; implements Lscala/PartialFunction; {
+  
+  public Lscala/PartialFunction; orElse(Lscala/PartialFunction; that) {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::orElse(Lscala/PartialFunction;Lscala/PartialFunction;)Lscala/PartialFunction;)(this, that);
+  }
+  
+  public Lscala/PartialFunction; andThen(Lscala/Function1; k) {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::andThen(Lscala/PartialFunction;Lscala/Function1;)Lscala/PartialFunction;)(this, k);
+  }
+  
+  public Lscala/Function1; lift() {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::lift(Lscala/PartialFunction;)Lscala/Function1;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::toString(Lscala/Function1;)Ljava/lang/String;)(this);
+  }
+  
+  public Lscala/Function1; compose(Lscala/Function1; g) {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::compose(Lscala/Function1;Lscala/Function1;)Lscala/Function1;)(this, g);
+  }
+  
+  public final Z; apply(Ljava/lang/Object; x0$1) {
+    Ljava/lang/Object; temp4 = x0$1;
+    Z; $10$;
+    if (temp4.<instanceof>(Ljava/lang/String;))
+      {
+        Z; $11$;
+        if (this.(Lscala/xml/dtd/ElementValidator$$anonfun$isAllWhitespace$1$1;::gd1$1(Ljava/lang/String;)Z;)(temp4.<cast>(Ljava/lang/String;)))
+          {
+            $11$ = true;
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp4));
+          }
+        $10$ = $11$;
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp4));
+      }
+    return $10$;
+  }
+  
+  public final Z; isDefinedAt(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp6 = x$1;
+    Z; $12$;
+    if (temp6.<instanceof>(Ljava/lang/String;))
+      {
+        $12$ = this.(Lscala/xml/dtd/ElementValidator$$anonfun$isAllWhitespace$1$1;::gd2$1(Ljava/lang/String;)Z;)(temp6.<cast>(Ljava/lang/String;));
+      }
+    else
+      {
+        $12$ = false;
+      }
+    return $12$;
+  }
+  
+  public Lscala/Function1; andThen(Lscala/Function1; g) {
+    return this.(Lscala/PartialFunction;::andThen(Lscala/Function1;)Lscala/PartialFunction;)(g);
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/xml/dtd/ElementValidator$$anonfun$isAllWhitespace$1$1;::apply(Ljava/lang/Object;)Z;)(v1));
+  }
+  
+  private final Z; gd1$1(Ljava/lang/String; x$1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1.(Ljava/lang/String;::trim()Ljava/lang/String;)(), "");
+  }
+  
+  private final Z; gd2$1(Ljava/lang/String; x$1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1.(Ljava/lang/String;::trim()Ljava/lang/String;)(), "");
+  }
+  
+  public this(Lscala/xml/dtd/ElementValidator; $outer) {
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Function1$class;.(Lscala/Function1$class;::$init$(Lscala/Function1;)V;)(this);
+    Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::$init$(Lscala/PartialFunction;)V;)(this);
+  }
+}

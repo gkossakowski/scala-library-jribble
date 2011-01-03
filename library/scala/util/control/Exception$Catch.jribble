@@ -1,0 +1,133 @@
+public class Lscala/util/control/Exception$Catch; extends Ljava/lang/Object; implements Lscala/util/control/Exception$Described;, Lscala/ScalaObject; {
+  
+  public final Ljava/lang/String; scala$util$control$Exception$Described$$_desc() {
+    return this.(Ljava/lang/String;)scala$util$control$Exception$Described$$_desc$u0020;
+  }
+  
+  private Ljava/lang/String; scala$util$control$Exception$Described$$_desc$u0020;
+  
+  public final V; scala$util$control$Exception$Described$$_desc_$eq(Ljava/lang/String; x$1) {
+    this.(Ljava/lang/String;)scala$util$control$Exception$Described$$_desc$u0020 = x$1;
+  }
+  
+  public Ljava/lang/String; desc() {
+    return Lscala/util/control/Exception$Described$class;.(Lscala/util/control/Exception$Described$class;::desc(Lscala/util/control/Exception$Described;)Ljava/lang/String;)(this);
+  }
+  
+  public Lscala/util/control/Exception$Described; withDesc(Ljava/lang/String; s) {
+    return Lscala/util/control/Exception$Described$class;.(Lscala/util/control/Exception$Described$class;::withDesc(Lscala/util/control/Exception$Described;Ljava/lang/String;)Lscala/util/control/Exception$Described;)(this, s);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/util/control/Exception$Described$class;.(Lscala/util/control/Exception$Described$class;::toString(Lscala/util/control/Exception$Described;)Ljava/lang/String;)(this);
+  }
+  
+  private Lscala/PartialFunction; pf$u0020;
+  
+  public Lscala/PartialFunction; pf() {
+    return this.(Lscala/PartialFunction;)pf$u0020;
+  }
+  
+  private Lscala/Option; fin$u0020;
+  
+  public Lscala/Option; fin() {
+    return this.(Lscala/Option;)fin$u0020;
+  }
+  
+  public this(Lscala/PartialFunction; pf) {
+    (Lscala/util/control/Exception$Catch;::this(Lscala/PartialFunction;Lscala/Option;)V;)(pf, Lscala/None$;.MODULE$);
+  }
+  
+  private Ljava/lang/String; name$u0020;
+  
+  protected Ljava/lang/String; name() {
+    return this.(Ljava/lang/String;)name$u0020;
+  }
+  
+  public Lscala/util/control/Exception$Catch; or(Lscala/PartialFunction; pf2) {
+    return (new (Lscala/util/control/Exception$Catch;::this(Lscala/PartialFunction;Lscala/Option;)V;)(this.(Lscala/util/control/Exception$Catch;::pf()Lscala/PartialFunction;)().(Lscala/PartialFunction;::orElse(Lscala/PartialFunction;)Lscala/PartialFunction;)(pf2), this.(Lscala/util/control/Exception$Catch;::fin()Lscala/Option;)()));
+  }
+  
+  public Lscala/util/control/Exception$Catch; or(Lscala/util/control/Exception$Catch; other) {
+    return this.(Lscala/util/control/Exception$Catch;::or(Lscala/PartialFunction;)Lscala/util/control/Exception$Catch;)(other.(Lscala/util/control/Exception$Catch;::pf()Lscala/PartialFunction;)());
+  }
+  
+  public Ljava/lang/Object; apply(Lscala/Function0; body) {
+    Ljava/lang/Object; exceptionResult1;
+    try {
+      exceptionResult1 = body.(Lscala/Function0;::apply()Ljava/lang/Object;)();
+    } catch(Ljava/lang/Throwable; ex$1) {
+      Ljava/lang/Throwable; temp5 = ex$1;
+      Ljava/lang/Throwable; e = temp5;
+      Ljava/lang/Object; $2$;
+      if (this.(Lscala/util/control/Exception$Catch;::gd3$1(Ljava/lang/Throwable;)Z;)(e))
+        {
+          $2$ = this.(Lscala/util/control/Exception$Catch;::pf()Lscala/PartialFunction;)().(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp5);
+        }
+      else
+        {
+          throw ex$1;
+        }
+      exceptionResult1 = $2$;
+    } finally {
+      this.(Lscala/util/control/Exception$Catch;::fin()Lscala/Option;)().(Lscala/Option;::map(Lscala/Function1;)Lscala/Option;)((new (Lscala/util/control/Exception$Catch$$anonfun$apply$1;::this(Lscala/util/control/Exception$Catch;)V;)(this)));
+    }
+    return exceptionResult1;
+  }
+  
+  public Lscala/util/control/Exception$Catch; andFinally(Lscala/Function0; body) {
+    Lscala/Option; temp6 = this.(Lscala/util/control/Exception$Catch;::fin()Lscala/Option;)();
+    Lscala/util/control/Exception$Catch; $3$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp6))
+      {
+        $3$ = (new (Lscala/util/control/Exception$Catch;::this(Lscala/PartialFunction;Lscala/Option;)V;)(this.(Lscala/util/control/Exception$Catch;::pf()Lscala/PartialFunction;)(), (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/util/control/Exception$Finally;::this(Lscala/Function0;)V;)(body))))));
+      }
+    else
+      {
+        Lscala/util/control/Exception$Catch; $4$;
+        if (temp6.<instanceof>(Lscala/Some;))
+          {
+            $4$ = (new (Lscala/util/control/Exception$Catch;::this(Lscala/PartialFunction;Lscala/Option;)V;)(this.(Lscala/util/control/Exception$Catch;::pf()Lscala/PartialFunction;)(), (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(temp6.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)().<cast>(Lscala/util/control/Exception$Finally;).(Lscala/util/control/Exception$Finally;::and(Lscala/Function0;)Lscala/util/control/Exception$Finally;)(body)))));
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp6));
+          }
+        $3$ = $4$;
+      }
+    return $3$;
+  }
+  
+  public Lscala/Option; opt(Lscala/Function0; body$1) {
+    return this.(Lscala/util/control/Exception$Catch;::toOption()Lscala/util/control/Exception$Catch;)().(Lscala/util/control/Exception$Catch;::apply(Lscala/Function0;)Ljava/lang/Object;)((new (Lscala/util/control/Exception$Catch$$anonfun$opt$1;::this(Lscala/util/control/Exception$Catch;Lscala/Function0;)V;)(this, body$1))).<cast>(Lscala/Option;);
+  }
+  
+  public Lscala/Either; either(Lscala/Function0; body$2) {
+    return this.(Lscala/util/control/Exception$Catch;::toEither()Lscala/util/control/Exception$Catch;)().(Lscala/util/control/Exception$Catch;::apply(Lscala/Function0;)Ljava/lang/Object;)((new (Lscala/util/control/Exception$Catch$$anonfun$either$1;::this(Lscala/util/control/Exception$Catch;Lscala/Function0;)V;)(this, body$2))).<cast>(Lscala/Either;);
+  }
+  
+  public Lscala/util/control/Exception$Catch; withApply(Lscala/Function1; f$1) {
+    Lscala/PartialFunction; pf2 = (new (Lscala/util/control/Exception$Catch$$anon$2;::this(Lscala/util/control/Exception$Catch;Lscala/Function1;)V;)(this, f$1));
+    return (new (Lscala/util/control/Exception$Catch;::this(Lscala/PartialFunction;Lscala/Option;)V;)(pf2, this.(Lscala/util/control/Exception$Catch;::fin()Lscala/Option;)()));
+  }
+  
+  public Lscala/util/control/Exception$Catch; toOption() {
+    return this.(Lscala/util/control/Exception$Catch;::withApply(Lscala/Function1;)Lscala/util/control/Exception$Catch;)((new (Lscala/util/control/Exception$Catch$$anonfun$toOption$1;::this(Lscala/util/control/Exception$Catch;)V;)(this)));
+  }
+  
+  public Lscala/util/control/Exception$Catch; toEither() {
+    return this.(Lscala/util/control/Exception$Catch;::withApply(Lscala/Function1;)Lscala/util/control/Exception$Catch;)((new (Lscala/util/control/Exception$Catch$$anonfun$toEither$1;::this(Lscala/util/control/Exception$Catch;)V;)(this)));
+  }
+  
+  private final Z; gd3$1(Ljava/lang/Throwable; x$1) {
+    return this.(Lscala/util/control/Exception$Catch;::pf()Lscala/PartialFunction;)().(Lscala/PartialFunction;::isDefinedAt(Ljava/lang/Object;)Z;)(x$1);
+  }
+  
+  public this(Lscala/PartialFunction; pf, Lscala/Option; fin) {
+    this.(Lscala/PartialFunction;)pf$u0020 = pf;
+    this.(Lscala/Option;)fin$u0020 = fin;
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/util/control/Exception$Described$class;.(Lscala/util/control/Exception$Described$class;::$init$(Lscala/util/control/Exception$Described;)V;)(this);
+    this.(Ljava/lang/String;)name$u0020 = "Catch";
+  }
+}

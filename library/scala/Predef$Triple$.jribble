@@ -1,0 +1,15 @@
+public final class Lscala/Predef$Triple$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/Predef$Triple$; MODULE$ = new (Lscala/Predef$Triple$;::this()V;)();
+  
+  public Lscala/Tuple3; apply(Ljava/lang/Object; x, Ljava/lang/Object; y, Ljava/lang/Object; z) {
+    return (new (Lscala/Tuple3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x, y, z));
+  }
+  
+  public Lscala/Option; unapply(Lscala/Tuple3; x) {
+    return (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

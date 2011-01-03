@@ -1,0 +1,10 @@
+public abstract class Lscala/collection/generic/MutableSetFactory; extends Lscala/collection/generic/SetFactory; implements Lscala/ScalaObject; {
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return (new (Lscala/collection/mutable/GrowingBuilder;::this(Lscala/collection/generic/Growable;)V;)(this.(Lscala/collection/generic/GenericCompanion;::empty()Lscala/collection/Traversable;)().<cast>(Lscala/collection/generic/Growable;)));
+  }
+  
+  public this() {
+    (Lscala/collection/generic/SetFactory;::super()V;)();
+  }
+}

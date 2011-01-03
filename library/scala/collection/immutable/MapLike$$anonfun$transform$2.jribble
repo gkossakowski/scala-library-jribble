@@ -1,0 +1,32 @@
+public final class Lscala/collection/immutable/MapLike$$anonfun$transform$2; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Lscala/collection/mutable/Builder; apply(Lscala/Tuple2; x$6) {
+    Lscala/Tuple2; temp13 = x$6;
+    Lscala/collection/mutable/Builder; $5$;
+    if ((temp13 != null))
+      {
+        Ljava/lang/Object; temp14 = temp13.(Lscala/Tuple2;::_1()Ljava/lang/Object;)();
+        Ljava/lang/Object; key = temp14;
+        $5$ = this.(Lscala/collection/mutable/Builder;)b$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(key, this.(Lscala/Function2;)f$2.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(key, temp13.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()))));
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp13));
+      }
+    return $5$;
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/collection/immutable/MapLike$$anonfun$transform$2;::apply(Lscala/Tuple2;)Lscala/collection/mutable/Builder;)(v1.<cast>(Lscala/Tuple2;));
+  }
+  
+  private Lscala/Function2; f$2;
+  
+  private Lscala/collection/mutable/Builder; b$1;
+  
+  public this(Lscala/collection/immutable/MapLike; $outer, Lscala/Function2; f$2, Lscala/collection/mutable/Builder; b$1) {
+    this.(Lscala/Function2;)f$2 = f$2;
+    this.(Lscala/collection/mutable/Builder;)b$1 = b$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

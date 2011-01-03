@@ -1,0 +1,29 @@
+public final class Lscala/collection/SeqLike$$anonfun$intersect$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(Ljava/lang/Object; x) {
+    if ((Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/collection/mutable/Map;)occ$2.(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x)) > 0))
+      {
+        this.(Lscala/collection/mutable/Builder;)b$4.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
+        this.(Lscala/collection/mutable/Map;)occ$2.(Lscala/collection/mutable/MapLike;::update(Ljava/lang/Object;Ljava/lang/Object;)V;)(x, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)((Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/collection/mutable/Map;)occ$2.(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x)) - 1)));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/SeqLike$$anonfun$intersect$1;::apply(Ljava/lang/Object;)V;)(v1);
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/collection/mutable/Map; occ$2;
+  
+  private Lscala/collection/mutable/Builder; b$4;
+  
+  public this(Lscala/collection/SeqLike; $outer, Lscala/collection/mutable/Map; occ$2, Lscala/collection/mutable/Builder; b$4) {
+    this.(Lscala/collection/mutable/Map;)occ$2 = occ$2;
+    this.(Lscala/collection/mutable/Builder;)b$4 = b$4;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

@@ -1,0 +1,15 @@
+public abstract class Lscala/collection/generic/BitSetFactory$class; {
+  
+  public static Lscala/collection/BitSet; apply(Lscala/collection/generic/BitSetFactory; $this, Lscala/collection/Seq; elems) {
+    Lscala/collection/BitSet; x$1 = $this.(Lscala/collection/generic/BitSetFactory;::empty()Lscala/collection/BitSet;)();
+    return elems.(Lscala/collection/TraversableOnce;::$div$colon(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(x$1, (new (Lscala/collection/generic/BitSetFactory$$anonfun$apply$1;::this(Lscala/collection/generic/BitSetFactory;)V;)($this))).<cast>(Lscala/collection/BitSet;);
+  }
+  
+  public static Lscala/collection/generic/CanBuildFrom; bitsetCanBuildFrom(Lscala/collection/generic/BitSetFactory; $this) {
+    return (new (Lscala/collection/generic/BitSetFactory$$anon$1;::this(Lscala/collection/generic/BitSetFactory;)V;)($this));
+  }
+  
+  public static V; $init$(Lscala/collection/generic/BitSetFactory; $this) {
+    
+  }
+}

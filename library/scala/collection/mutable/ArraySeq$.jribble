@@ -1,0 +1,15 @@
+public final class Lscala/collection/mutable/ArraySeq$; extends Lscala/collection/generic/SeqFactory; implements Lscala/ScalaObject; {
+  public static Lscala/collection/mutable/ArraySeq$; MODULE$ = new (Lscala/collection/mutable/ArraySeq$;::this()V;)();
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return (new (Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;::this(Lscala/collection/generic/TraversableFactory;)V;)(this));
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return (new (Lscala/collection/mutable/ArrayBuffer;::this()V;)()).(Lscala/collection/mutable/Builder;::mapResult(Lscala/Function1;)Lscala/collection/mutable/Builder;)((new (Lscala/collection/mutable/ArraySeq$$anonfun$newBuilder$1;::this()V;)()));
+  }
+  
+  public this() {
+    (Lscala/collection/generic/SeqFactory;::super()V;)();
+  }
+}

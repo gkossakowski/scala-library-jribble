@@ -1,0 +1,14 @@
+public class Lscala/collection/immutable/LongMapEntryIterator; extends Lscala/collection/immutable/LongMapIterator; implements Lscala/ScalaObject; {
+  
+  public Lscala/Tuple2; valueOf(Lscala/collection/immutable/LongMap$Tip; tip) {
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(tip.(Lscala/collection/immutable/LongMap$Tip;::key()J;)()), tip.(Lscala/collection/immutable/LongMap$Tip;::value()Ljava/lang/Object;)()));
+  }
+  
+  public Ljava/lang/Object; valueOf(Lscala/collection/immutable/LongMap$Tip; tip) {
+    return this.(Lscala/collection/immutable/LongMapEntryIterator;::valueOf(Lscala/collection/immutable/LongMap$Tip;)Lscala/Tuple2;)(tip);
+  }
+  
+  public this(Lscala/collection/immutable/LongMap; it) {
+    (Lscala/collection/immutable/LongMapIterator;::super(Lscala/collection/immutable/LongMap;)V;)(it);
+  }
+}

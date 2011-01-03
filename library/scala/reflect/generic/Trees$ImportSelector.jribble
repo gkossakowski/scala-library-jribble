@@ -1,0 +1,167 @@
+public class Lscala/reflect/generic/Trees$ImportSelector; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public I; copy$default$4() {
+    return this.(Lscala/reflect/generic/Trees$ImportSelector;::renamePos()I;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$3() {
+    return this.(Lscala/reflect/generic/Trees$ImportSelector;::rename()Ljava/lang/Object;)();
+  }
+  
+  public I; copy$default$2() {
+    return this.(Lscala/reflect/generic/Trees$ImportSelector;::namePos()I;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$1() {
+    return this.(Lscala/reflect/generic/Trees$ImportSelector;::name()Ljava/lang/Object;)();
+  }
+  
+  private Ljava/lang/Object; name$u0020;
+  
+  public Ljava/lang/Object; name() {
+    return this.(Ljava/lang/Object;)name$u0020;
+  }
+  
+  private I; namePos$u0020;
+  
+  public I; namePos() {
+    return this.(I;)namePos$u0020;
+  }
+  
+  private Ljava/lang/Object; rename$u0020;
+  
+  public Ljava/lang/Object; rename() {
+    return this.(Ljava/lang/Object;)rename$u0020;
+  }
+  
+  private I; renamePos$u0020;
+  
+  public I; renamePos() {
+    return this.(I;)renamePos$u0020;
+  }
+  
+  public Lscala/reflect/generic/Trees$ImportSelector; copy(Ljava/lang/Object; name, I; namePos, Ljava/lang/Object; rename, I; renamePos) {
+    return (new (Lscala/reflect/generic/Trees$ImportSelector;::this(Lscala/reflect/generic/Universe;Ljava/lang/Object;I;Ljava/lang/Object;I;)V;)(this.(Lscala/reflect/generic/Trees$ImportSelector;::scala$reflect$generic$Trees$ImportSelector$$$outer()Lscala/reflect/generic/Universe;)(), name, namePos, rename, renamePos));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp51 = x$1;
+    Z; $36$;
+    if ((temp51.<instanceof>(Lscala/reflect/generic/Trees$ImportSelector;) && (temp51.<cast>(Lscala/reflect/generic/Trees$ImportSelector;).(Lscala/reflect/generic/Trees$ImportSelector;::scala$reflect$generic$Trees$ImportSelector$$$outer()Lscala/reflect/generic/Universe;)() == this.(Lscala/reflect/generic/Trees$ImportSelector;::scala$reflect$generic$Trees$ImportSelector$$$outer()Lscala/reflect/generic/Universe;)())))
+      {
+        Lscala/reflect/generic/Trees$ImportSelector; temp52 = temp51.<cast>(Lscala/reflect/generic/Trees$ImportSelector;);
+        Ljava/lang/Object; temp53 = temp52.(Lscala/reflect/generic/Trees$ImportSelector;::name()Ljava/lang/Object;)();
+        I; temp54 = temp52.(Lscala/reflect/generic/Trees$ImportSelector;::namePos()I;)();
+        Ljava/lang/Object; temp55 = temp52.(Lscala/reflect/generic/Trees$ImportSelector;::rename()Ljava/lang/Object;)();
+        I; temp56 = temp52.(Lscala/reflect/generic/Trees$ImportSelector;::renamePos()I;)();
+        I; renamePos$1 = temp56;
+        Ljava/lang/Object; rename$1 = temp55;
+        I; namePos$1 = temp54;
+        Ljava/lang/Object; name$1 = temp53;
+        Z; $37$;
+        if (this.(Lscala/reflect/generic/Trees$ImportSelector;::gd2$1(Ljava/lang/Object;I;Ljava/lang/Object;I;)Z;)(name$1, namePos$1, rename$1, renamePos$1))
+          {
+            $37$ = x$1.<cast>(Lscala/reflect/generic/Trees$ImportSelector;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $37$ = false;
+          }
+        $36$ = $37$;
+      }
+    else
+      {
+        $36$ = false;
+      }
+    return ((this == x$1) || $36$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "ImportSelector";
+  }
+  
+  public I; productArity() {
+    return 4;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp57 = x$1;
+    I; $38$ = temp57;
+    Ljava/lang/Object; $39$;
+    switch ($38$) {
+      0: {
+        $39$ = this.(Lscala/reflect/generic/Trees$ImportSelector;::name()Ljava/lang/Object;)();
+        break;
+      }
+      
+      1: {
+        $39$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/reflect/generic/Trees$ImportSelector;::namePos()I;)());
+        break;
+      }
+      
+      2: {
+        $39$ = this.(Lscala/reflect/generic/Trees$ImportSelector;::rename()Ljava/lang/Object;)();
+        break;
+      }
+      
+      3: {
+        $39$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/reflect/generic/Trees$ImportSelector;::renamePos()I;)());
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $39$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/reflect/generic/Trees$ImportSelector;);
+  }
+  
+  protected Lscala/reflect/generic/Universe; $outer$u0020;
+  
+  public Lscala/reflect/generic/Universe; scala$reflect$generic$Trees$ImportSelector$$$outer() {
+    return this.(Lscala/reflect/generic/Universe;)$outer$u0020;
+  }
+  
+  private final Z; gd2$1(Ljava/lang/Object; x$1, I; x$2, Ljava/lang/Object; x$3, I; x$4) {
+    return (((Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/reflect/generic/Trees$ImportSelector;::name()Ljava/lang/Object;)()) && (x$2 == this.(Lscala/reflect/generic/Trees$ImportSelector;::namePos()I;)())) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$3, this.(Lscala/reflect/generic/Trees$ImportSelector;::rename()Ljava/lang/Object;)())) && (x$4 == this.(Lscala/reflect/generic/Trees$ImportSelector;::renamePos()I;)()));
+  }
+  
+  public this(Lscala/reflect/generic/Universe; $outer, Ljava/lang/Object; name, I; namePos, Ljava/lang/Object; rename, I; renamePos) {
+    this.(Ljava/lang/Object;)name$u0020 = name;
+    this.(I;)namePos$u0020 = namePos;
+    this.(Ljava/lang/Object;)rename$u0020 = rename;
+    this.(I;)renamePos$u0020 = renamePos;
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/reflect/generic/Universe;)$outer$u0020 = $outer;
+      }
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

@@ -1,0 +1,28 @@
+public final class Lscala/collection/immutable/$colon$colon$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/$colon$colon$; MODULE$ = new (Lscala/collection/immutable/$colon$colon$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "::";
+  }
+  
+  public Lscala/Option; unapply(Lscala/collection/immutable/$colon$colon; x$0) {
+    Lscala/Option; $25$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $25$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $25$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/collection/immutable/$colon$colon;::scala$collection$immutable$$colon$colon$$hd()Ljava/lang/Object;)(), x$0.(Lscala/collection/immutable/$colon$colon;::tl()Lscala/collection/immutable/List;)()))));
+      }
+    return $25$;
+  }
+  
+  public Lscala/collection/immutable/$colon$colon; apply(Ljava/lang/Object; hd, Lscala/collection/immutable/List; tl) {
+    return (new (Lscala/collection/immutable/$colon$colon;::this(Ljava/lang/Object;Lscala/collection/immutable/List;)V;)(hd, tl));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

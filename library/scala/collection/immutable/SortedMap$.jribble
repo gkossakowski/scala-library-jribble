@@ -1,0 +1,19 @@
+public final class Lscala/collection/immutable/SortedMap$; extends Lscala/collection/generic/ImmutableSortedMapFactory; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/SortedMap$; MODULE$ = new (Lscala/collection/immutable/SortedMap$;::this()V;)();
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom(Lscala/math/Ordering; ord) {
+    return (new (Lscala/collection/generic/SortedMapFactory$SortedMapCanBuildFrom;::this(Lscala/collection/generic/SortedMapFactory;Lscala/math/Ordering;)V;)(this, ord));
+  }
+  
+  public Lscala/collection/immutable/SortedMap; empty(Lscala/math/Ordering; ord) {
+    return Lscala/collection/immutable/TreeMap$;.MODULE$.(Lscala/collection/immutable/TreeMap$;::empty(Lscala/math/Ordering;)Lscala/collection/immutable/TreeMap;)(ord);
+  }
+  
+  public Lscala/collection/SortedMap; empty(Lscala/math/Ordering; ord) {
+    return this.(Lscala/collection/immutable/SortedMap$;::empty(Lscala/math/Ordering;)Lscala/collection/immutable/SortedMap;)(ord);
+  }
+  
+  public this() {
+    (Lscala/collection/generic/ImmutableSortedMapFactory;::super()V;)();
+  }
+}

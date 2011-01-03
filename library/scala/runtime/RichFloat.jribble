@@ -1,0 +1,99 @@
+public final class Lscala/runtime/RichFloat; extends Ljava/lang/Object; implements Lscala/Proxy;, Lscala/math/Ordered;, Lscala/ScalaObject; {
+  
+  public Z; $less(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Z; $greater(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$greater(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Z; $less$eq(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less$eq(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Z; $greater$eq(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$greater$eq(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public I; compareTo(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::compareTo(Lscala/math/Ordered;Ljava/lang/Object;)I;)(this, that);
+  }
+  
+  public I; hashCode() {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::hashCode(Lscala/Proxy;)I;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; that) {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::equals(Lscala/Proxy;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::toString(Lscala/Proxy;)Ljava/lang/String;)(this);
+  }
+  
+  private F; x;
+  
+  public Ljava/lang/Object; self() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(this.(F;)x);
+  }
+  
+  public I; compare(F; y) {
+    return Ljava/lang/Float;.(Ljava/lang/Float;::compare(F;F;)I;)(this.(F;)x, y);
+  }
+  
+  public F; min(F; y) {
+    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::min(F;F;)F;)(this.(F;)x, y);
+  }
+  
+  public F; max(F; y) {
+    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::max(F;F;)F;)(this.(F;)x, y);
+  }
+  
+  public F; abs() {
+    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::abs(F;)F;)(this.(F;)x);
+  }
+  
+  public I; round() {
+    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::round(F;)I;)(this.(F;)x);
+  }
+  
+  public F; ceil() {
+    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::ceil(D;)D;)(this.(F;)x.<cast>(D;)).<cast>(F;);
+  }
+  
+  public F; floor() {
+    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::floor(D;)D;)(this.(F;)x.<cast>(D;)).<cast>(F;);
+  }
+  
+  public F; toRadians() {
+    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::toRadians(D;)D;)(this.(F;)x.<cast>(D;)).<cast>(F;);
+  }
+  
+  public F; toDegrees() {
+    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::toDegrees(D;)D;)(this.(F;)x.<cast>(D;)).<cast>(F;);
+  }
+  
+  public Z; isInfinity() {
+    return Ljava/lang/Float;.(Ljava/lang/Float;::isInfinite(F;)Z;)(this.(F;)x);
+  }
+  
+  public Z; isPosInfinity() {
+    return (this.(Lscala/runtime/RichFloat;::isInfinity()Z;)() && (this.(F;)x > 0.0F));
+  }
+  
+  public Z; isNegInfinity() {
+    return (this.(Lscala/runtime/RichFloat;::isInfinity()Z;)() && (this.(F;)x < 0.0F));
+  }
+  
+  public I; compare(Ljava/lang/Object; that) {
+    return this.(Lscala/runtime/RichFloat;::compare(F;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(that));
+  }
+  
+  public this(F; x) {
+    this.(F;)x = x;
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Proxy$class;.(Lscala/Proxy$class;::$init$(Lscala/Proxy;)V;)(this);
+    Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$init$(Lscala/math/Ordered;)V;)(this);
+  }
+}

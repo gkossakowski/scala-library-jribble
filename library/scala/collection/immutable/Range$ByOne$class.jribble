@@ -1,0 +1,34 @@
+public abstract class Lscala/collection/immutable/Range$ByOne$class; {
+  
+  public static final V; foreach(Lscala/collection/immutable/Range$ByOne; $this, Lscala/Function1; f) {
+    if (($this.<cast>(Lscala/collection/immutable/Range;).(Lscala/collection/immutable/Range;::length()I;)() > 0))
+      {
+        I; last = $this.<cast>(Lscala/collection/immutable/Range;).(Lscala/collection/immutable/Range;::last()I;)();
+        I; i = $this.<cast>(Lscala/collection/immutable/Range;).(Lscala/collection/immutable/Range;::start()I;)();
+        while$3: while(true) {
+          if ((i != last))
+            {
+              {
+                f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i));
+                i = (i + 1);
+              }
+              continue while$3;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+        f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public static V; $init$(Lscala/collection/immutable/Range$ByOne; $this) {
+    
+  }
+}

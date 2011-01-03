@@ -1,0 +1,86 @@
+public class Lscala/collection/immutable/IntMap$Tip; extends Lscala/collection/immutable/IntMap; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Ljava/lang/Object; copy$default$2() {
+    return this.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)();
+  }
+  
+  public I; copy$default$1() {
+    return this.(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
+  }
+  
+  private I; key$u0020;
+  
+  public I; key() {
+    return this.(I;)key$u0020;
+  }
+  
+  private Ljava/lang/Object; value$u0020;
+  
+  public Ljava/lang/Object; value() {
+    return this.(Ljava/lang/Object;)value$u0020;
+  }
+  
+  public Lscala/collection/immutable/IntMap$Tip; withValue(Ljava/lang/Object; s) {
+    Lscala/collection/immutable/IntMap$Tip; $101$;
+    if ((s == this.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)()))
+      {
+        $101$ = this;
+      }
+    else
+      {
+        $101$ = (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/IntMap$Tip;::key()I;)(), s));
+      }
+    return $101$;
+  }
+  
+  public Lscala/collection/immutable/IntMap$Tip; copy(I; key, Ljava/lang/Object; value) {
+    return (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, value));
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Tip";
+  }
+  
+  public I; productArity() {
+    return 2;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp7 = x$1;
+    I; $102$ = temp7;
+    Ljava/lang/Object; $103$;
+    switch ($102$) {
+      0: {
+        $103$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/collection/immutable/IntMap$Tip;::key()I;)());
+        break;
+      }
+      
+      1: {
+        $103$ = this.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $103$;
+  }
+  
+  public this(I; key, Ljava/lang/Object; value) {
+    this.(I;)key$u0020 = key;
+    this.(Ljava/lang/Object;)value$u0020 = value;
+    (Lscala/collection/immutable/IntMap;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

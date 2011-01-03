@@ -1,0 +1,58 @@
+public abstract class Lscala/util/automata/NondetWordAutom; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  public abstract I; nstates();
+  
+  public abstract Lscala/collection/Seq; labels();
+  
+  public abstract I;[ finals();
+  
+  public abstract Lscala/collection/Map;[ delta();
+  
+  public abstract Lscala/collection/immutable/BitSet;[ `default`();
+  
+  public final Z; isFinal(I; state) {
+    return (this.(Lscala/util/automata/NondetWordAutom;::finals()I;[)()[state] > 0);
+  }
+  
+  public final I; finalTag(I; state) {
+    return this.(Lscala/util/automata/NondetWordAutom;::finals()I;[)()[state];
+  }
+  
+  public final Z; containsFinal(Lscala/collection/immutable/BitSet; Q) {
+    return Q.(Lscala/collection/IterableLike;::exists(Lscala/Function1;)Z;)((new (Lscala/util/automata/NondetWordAutom$$anonfun$containsFinal$1;::this(Lscala/util/automata/NondetWordAutom;)V;)(this)));
+  }
+  
+  public final Z; isEmpty() {
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(this.(Lscala/util/automata/NondetWordAutom;::nstates()I;)()).<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::forall(Lscala/Function1;)Z;)((new (Lscala/util/automata/NondetWordAutom$$anonfun$isEmpty$1;::this(Lscala/util/automata/NondetWordAutom;)V;)(this)));
+  }
+  
+  public Lscala/collection/immutable/BitSet; next(I; q$1, Ljava/lang/Object; a) {
+    return this.(Lscala/util/automata/NondetWordAutom;::delta()Lscala/collection/Map;[)()[q$1].(Lscala/collection/MapLike;::getOrElse(Ljava/lang/Object;Lscala/Function0;)Ljava/lang/Object;)(a, (new (Lscala/util/automata/NondetWordAutom$$anonfun$next$1;::this(Lscala/util/automata/NondetWordAutom;I;)V;)(this, q$1))).<cast>(Lscala/collection/immutable/BitSet;);
+  }
+  
+  public Lscala/collection/immutable/BitSet; next(Lscala/collection/immutable/BitSet; Q, Ljava/lang/Object; a$1) {
+    return this.(Lscala/util/automata/NondetWordAutom;::next(Lscala/collection/immutable/BitSet;Lscala/Function1;)Lscala/collection/immutable/BitSet;)(Q, (new (Lscala/util/automata/NondetWordAutom$$anonfun$next$2;::this(Lscala/util/automata/NondetWordAutom;Ljava/lang/Object;)V;)(this, a$1)));
+  }
+  
+  public Lscala/collection/immutable/BitSet; nextDefault(Lscala/collection/immutable/BitSet; Q) {
+    return this.(Lscala/util/automata/NondetWordAutom;::next(Lscala/collection/immutable/BitSet;Lscala/Function1;)Lscala/collection/immutable/BitSet;)(Q, Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(this.(Lscala/util/automata/NondetWordAutom;::`default`()Lscala/collection/immutable/BitSet;[)().<cast>(Ljava/lang/Object;[)));
+  }
+  
+  private Lscala/collection/immutable/BitSet; next(Lscala/collection/immutable/BitSet; Q, Lscala/Function1; f) {
+    return Q.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(f, Lscala/collection/immutable/Set$;.MODULE$.(Lscala/collection/immutable/Set$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(Lscala/collection/immutable/BitSet$;.MODULE$.(Lscala/collection/immutable/BitSet$;::empty()Lscala/collection/immutable/BitSet;)(), (new (Lscala/util/automata/NondetWordAutom$$anonfun$next$3;::this(Lscala/util/automata/NondetWordAutom;)V;)(this))).<cast>(Lscala/collection/immutable/BitSet;);
+  }
+  
+  private Lscala/collection/immutable/IndexedSeq; finalStates() {
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(this.(Lscala/util/automata/NondetWordAutom;::nstates()I;)()).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::filter(Lscala/Function1;)Ljava/lang/Object;)((new (Lscala/util/automata/NondetWordAutom$$anonfun$finalStates$1;::this(Lscala/util/automata/NondetWordAutom;)V;)(this))).<cast>(Lscala/collection/immutable/IndexedSeq;);
+  }
+  
+  public Ljava/lang/String; toString() {
+    Ljava/lang/String; finalString = Lscala/collection/Map$;.MODULE$.(Lscala/collection/generic/MapFactory;::apply(Lscala/collection/Seq;)Lscala/collection/Map;)(this.(Lscala/util/automata/NondetWordAutom;::finalStates()Lscala/collection/immutable/IndexedSeq;)().(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/util/automata/NondetWordAutom$$anonfun$1;::this(Lscala/util/automata/NondetWordAutom;)V;)(this)), Lscala/collection/immutable/IndexedSeq$;.MODULE$.(Lscala/collection/immutable/IndexedSeq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/Seq;)).(Lscala/collection/MapLike;::toString()Ljava/lang/String;)();
+    Ljava/lang/String; deltaString = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(this.(Lscala/util/automata/NondetWordAutom;::nstates()I;)()).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/util/automata/NondetWordAutom$$anonfun$2;::this(Lscala/util/automata/NondetWordAutom;)V;)(this)), Lscala/collection/immutable/IndexedSeq$;.MODULE$.(Lscala/collection/immutable/IndexedSeq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::mkString()Ljava/lang/String;)();
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)("[NondetWordAutom  nstates=%d  finals=%s  delta=\012%s").(Lscala/collection/immutable/StringLike;::format(Lscala/collection/Seq;)Ljava/lang/String;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/util/automata/NondetWordAutom;::nstates()I;)()), finalString, deltaString}));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

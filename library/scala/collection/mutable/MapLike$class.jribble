@@ -1,0 +1,105 @@
+public abstract class Lscala/collection/mutable/MapLike$class; {
+  
+  public static Lscala/collection/mutable/Builder; newBuilder(Lscala/collection/mutable/MapLike; $this) {
+    return $this.(Lscala/collection/MapLike;::empty()Lscala/collection/Map;)().<cast>(Lscala/collection/mutable/Builder;);
+  }
+  
+  public static Lscala/Option; put(Lscala/collection/mutable/MapLike; $this, Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    Lscala/Option; r = $this.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key);
+    $this.(Lscala/collection/mutable/MapLike;::update(Ljava/lang/Object;Ljava/lang/Object;)V;)(key, value);
+    return r;
+  }
+  
+  public static V; update(Lscala/collection/mutable/MapLike; $this, Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    $this.(Lscala/collection/mutable/MapLike;::$plus$eq(Lscala/Tuple2;)Lscala/collection/mutable/MapLike;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(key, value)));
+  }
+  
+  public static Lscala/collection/mutable/Map; updated(Lscala/collection/mutable/MapLike; $this, Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    return $this.(Lscala/collection/mutable/MapLike;::$plus(Lscala/Tuple2;)Lscala/collection/mutable/Map;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(key, value)));
+  }
+  
+  public static Lscala/collection/mutable/Map; $plus(Lscala/collection/mutable/MapLike; $this, Lscala/Tuple2; kv) {
+    return $this.(Lscala/collection/mutable/MapLike;::clone()Lscala/collection/mutable/Map;)().(Lscala/collection/mutable/MapLike;::$plus$eq(Lscala/Tuple2;)Lscala/collection/mutable/MapLike;)(kv).<cast>(Lscala/collection/mutable/Map;);
+  }
+  
+  public static Lscala/collection/mutable/Map; $plus(Lscala/collection/mutable/MapLike; $this, Lscala/Tuple2; elem1, Lscala/Tuple2; elem2, Lscala/collection/Seq; elems) {
+    return $this.(Lscala/collection/mutable/MapLike;::clone()Lscala/collection/mutable/Map;)().(Lscala/collection/mutable/MapLike;::$plus$eq(Lscala/Tuple2;)Lscala/collection/mutable/MapLike;)(elem1).(Lscala/collection/mutable/MapLike;::$plus$eq(Lscala/Tuple2;)Lscala/collection/mutable/MapLike;)(elem2).(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(elems).<cast>(Lscala/collection/mutable/Map;);
+  }
+  
+  public static Lscala/collection/mutable/Map; $plus$plus(Lscala/collection/mutable/MapLike; $this, Lscala/collection/TraversableOnce; xs) {
+    return $this.(Lscala/collection/mutable/MapLike;::clone()Lscala/collection/mutable/Map;)().(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(xs).<cast>(Lscala/collection/mutable/Map;);
+  }
+  
+  public static Lscala/Option; remove(Lscala/collection/mutable/MapLike; $this, Ljava/lang/Object; key) {
+    Lscala/Option; r = $this.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key);
+    $this.(Lscala/collection/mutable/MapLike;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/MapLike;)(key);
+    return r;
+  }
+  
+  public static Lscala/collection/mutable/Map; $minus(Lscala/collection/mutable/MapLike; $this, Ljava/lang/Object; key) {
+    return $this.(Lscala/collection/mutable/MapLike;::clone()Lscala/collection/mutable/Map;)().(Lscala/collection/mutable/MapLike;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/MapLike;)(key).<cast>(Lscala/collection/mutable/Map;);
+  }
+  
+  public static Lscala/Option; removeKey(Lscala/collection/mutable/MapLike; $this, Ljava/lang/Object; key) {
+    return $this.(Lscala/collection/mutable/MapLike;::remove(Ljava/lang/Object;)Lscala/Option;)(key);
+  }
+  
+  public static V; clear(Lscala/collection/mutable/MapLike; $this) {
+    $this.(Lscala/collection/MapLike;::keysIterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/mutable/MapLike$$anonfun$clear$1;::this(Lscala/collection/mutable/MapLike;)V;)($this)));
+  }
+  
+  public static Ljava/lang/Object; getOrElseUpdate(Lscala/collection/mutable/MapLike; $this, Ljava/lang/Object; key, Lscala/Function0; op) {
+    Lscala/Option; temp1 = $this.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key);
+    Ljava/lang/Object; $1$;
+    if (temp1.<instanceof>(Lscala/Some;))
+      {
+        $1$ = temp1.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)();
+      }
+    else
+      {
+        Ljava/lang/Object; $2$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp1))
+          {
+            Ljava/lang/Object; d = op.(Lscala/Function0;::apply()Ljava/lang/Object;)();
+            $this.(Lscala/collection/mutable/MapLike;::update(Ljava/lang/Object;Ljava/lang/Object;)V;)(key, d);
+            $2$ = d;
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp1));
+          }
+        $1$ = $2$;
+      }
+    return $1$;
+  }
+  
+  public static Lscala/collection/mutable/MapLike; transform(Lscala/collection/mutable/MapLike; $this, Lscala/Function2; f$1) {
+    $this.(Lscala/collection/MapLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/mutable/MapLike$$anonfun$transform$1;::this(Lscala/collection/mutable/MapLike;Lscala/Function2;)V;)($this, f$1)));
+    return $this;
+  }
+  
+  public static Lscala/collection/mutable/MapLike; retain(Lscala/collection/mutable/MapLike; $this, Lscala/Function2; p$1) {
+    $this.(Lscala/collection/TraversableLike;::filter(Lscala/Function1;)Ljava/lang/Object;)((new (Lscala/collection/mutable/MapLike$$anonfun$retain$1;::this(Lscala/collection/mutable/MapLike;)V;)($this))).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::withFilter(Lscala/Function1;)Lscala/collection/generic/FilterMonadic;)((new (Lscala/collection/mutable/MapLike$$anonfun$retain$2;::this(Lscala/collection/mutable/MapLike;Lscala/Function2;)V;)($this, p$1))).(Lscala/collection/generic/FilterMonadic;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/mutable/MapLike$$anonfun$retain$3;::this(Lscala/collection/mutable/MapLike;)V;)($this)));
+    return $this;
+  }
+  
+  public static Lscala/collection/mutable/Map; clone(Lscala/collection/mutable/MapLike; $this) {
+    return $this.(Lscala/collection/MapLike;::empty()Lscala/collection/Map;)().<cast>(Lscala/collection/generic/Growable;).(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)($this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/TraversableOnce;)).<cast>(Lscala/collection/mutable/Map;);
+  }
+  
+  public static Lscala/collection/mutable/Map; result(Lscala/collection/mutable/MapLike; $this) {
+    return $this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/mutable/Map;);
+  }
+  
+  public static Lscala/collection/mutable/Map; $minus(Lscala/collection/mutable/MapLike; $this, Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
+    return $this.(Lscala/collection/mutable/MapLike;::clone()Lscala/collection/mutable/Map;)().(Lscala/collection/mutable/MapLike;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/MapLike;)(elem1).(Lscala/collection/mutable/MapLike;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/MapLike;)(elem2).(Lscala/collection/generic/Shrinkable;::$minus$minus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Shrinkable;)(elems).<cast>(Lscala/collection/mutable/Map;);
+  }
+  
+  public static Lscala/collection/mutable/Map; $minus$minus(Lscala/collection/mutable/MapLike; $this, Lscala/collection/TraversableOnce; xs) {
+    return $this.(Lscala/collection/mutable/MapLike;::clone()Lscala/collection/mutable/Map;)().(Lscala/collection/generic/Shrinkable;::$minus$minus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Shrinkable;)(xs).<cast>(Lscala/collection/mutable/Map;);
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/MapLike; $this) {
+    
+  }
+}

@@ -1,0 +1,165 @@
+public class Lscala/collection/mutable/WrappedArrayBuilder; extends Ljava/lang/Object; implements Lscala/collection/mutable/Builder;, Lscala/ScalaObject; {
+  
+  public V; sizeHint(Lscala/collection/TraversableLike; coll, I; delta) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint(Lscala/collection/mutable/Builder;Lscala/collection/TraversableLike;I;)V;)(this, coll, delta);
+  }
+  
+  public V; sizeHintBounded(I; size, Lscala/collection/TraversableLike; boundingColl) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHintBounded(Lscala/collection/mutable/Builder;I;Lscala/collection/TraversableLike;)V;)(this, size, boundingColl);
+  }
+  
+  public Lscala/collection/mutable/Builder; mapResult(Lscala/Function1; f) {
+    return Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::mapResult(Lscala/collection/mutable/Builder;Lscala/Function1;)Lscala/collection/mutable/Builder;)(this, f);
+  }
+  
+  public I; sizeHint$default$2() {
+    return Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint$default$2(Lscala/collection/mutable/Builder;)I;)(this);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
+    return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$eq(Lscala/collection/generic/Growable;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/Seq;)Lscala/collection/generic/Growable;)(this, elem1, elem2, elems);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, xs);
+  }
+  
+  private Lscala/reflect/ClassManifest; manifest;
+  
+  private Lscala/collection/mutable/WrappedArray; elems$u0020;
+  
+  private Lscala/collection/mutable/WrappedArray; elems() {
+    return this.(Lscala/collection/mutable/WrappedArray;)elems$u0020;
+  }
+  
+  private V; elems_$eq(Lscala/collection/mutable/WrappedArray; x$1) {
+    this.(Lscala/collection/mutable/WrappedArray;)elems$u0020 = x$1;
+  }
+  
+  private I; capacity$u0020;
+  
+  private I; capacity() {
+    return this.(I;)capacity$u0020;
+  }
+  
+  private V; capacity_$eq(I; x$1) {
+    this.(I;)capacity$u0020 = x$1;
+  }
+  
+  private I; size$u0020;
+  
+  private I; size() {
+    return this.(I;)size$u0020;
+  }
+  
+  private V; size_$eq(I; x$1) {
+    this.(I;)size$u0020 = x$1;
+  }
+  
+  private Lscala/collection/mutable/WrappedArray; mkArray(I; size) {
+    Lscala/collection/mutable/WrappedArray; newelems = this.(Lscala/reflect/ClassManifest;)manifest.(Lscala/reflect/ClassManifest;::newWrappedArray(I;)Lscala/collection/mutable/WrappedArray;)(size);
+    if ((this.(Lscala/collection/mutable/WrappedArrayBuilder;::size()I;)() > 0))
+      {
+        Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/mutable/WrappedArrayBuilder;::elems()Lscala/collection/mutable/WrappedArray;)().(Lscala/collection/mutable/WrappedArray;::array()Ljava/lang/Object;)(), 0, newelems.(Lscala/collection/mutable/WrappedArray;::array()Ljava/lang/Object;)(), 0, this.(Lscala/collection/mutable/WrappedArrayBuilder;::size()I;)());
+      }
+    else
+      {
+        
+      }
+    return newelems;
+  }
+  
+  private V; resize(I; size) {
+    this.(Lscala/collection/mutable/WrappedArrayBuilder;::elems_$eq(Lscala/collection/mutable/WrappedArray;)V;)(this.(Lscala/collection/mutable/WrappedArrayBuilder;::mkArray(I;)Lscala/collection/mutable/WrappedArray;)(size));
+    this.(Lscala/collection/mutable/WrappedArrayBuilder;::capacity_$eq(I;)V;)(size);
+  }
+  
+  public V; sizeHint(I; size) {
+    if ((this.(Lscala/collection/mutable/WrappedArrayBuilder;::capacity()I;)() < size))
+      {
+        this.(Lscala/collection/mutable/WrappedArrayBuilder;::resize(I;)V;)(size);
+      }
+    else
+      {
+        
+      }
+  }
+  
+  private V; ensureSize(I; size) {
+    if ((this.(Lscala/collection/mutable/WrappedArrayBuilder;::capacity()I;)() < size))
+      {
+        I; $1$;
+        if ((this.(Lscala/collection/mutable/WrappedArrayBuilder;::capacity()I;)() == 0))
+          {
+            $1$ = 16;
+          }
+        else
+          {
+            $1$ = (this.(Lscala/collection/mutable/WrappedArrayBuilder;::capacity()I;)() * 2);
+          }
+        I; newsize = $1$;
+        while$1: while(true) {
+          if ((newsize < size))
+            {
+              newsize = (newsize * 2);
+              continue while$1;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+        this.(Lscala/collection/mutable/WrappedArrayBuilder;::resize(I;)V;)(newsize);
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public Lscala/collection/mutable/WrappedArrayBuilder; $plus$eq(Ljava/lang/Object; elem) {
+    this.(Lscala/collection/mutable/WrappedArrayBuilder;::ensureSize(I;)V;)((this.(Lscala/collection/mutable/WrappedArrayBuilder;::size()I;)() + 1));
+    this.(Lscala/collection/mutable/WrappedArrayBuilder;::elems()Lscala/collection/mutable/WrappedArray;)().(Lscala/collection/mutable/WrappedArray;::update(I;Ljava/lang/Object;)V;)(this.(Lscala/collection/mutable/WrappedArrayBuilder;::size()I;)(), elem);
+    this.(Lscala/collection/mutable/WrappedArrayBuilder;::size_$eq(I;)V;)((this.(Lscala/collection/mutable/WrappedArrayBuilder;::size()I;)() + 1));
+    return this;
+  }
+  
+  public V; clear() {
+    this.(Lscala/collection/mutable/WrappedArrayBuilder;::size_$eq(I;)V;)(0);
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; result() {
+    Lscala/collection/mutable/WrappedArray; $2$;
+    if (((this.(Lscala/collection/mutable/WrappedArrayBuilder;::capacity()I;)() != 0) && (this.(Lscala/collection/mutable/WrappedArrayBuilder;::capacity()I;)() == this.(Lscala/collection/mutable/WrappedArrayBuilder;::size()I;)())))
+      {
+        $2$ = this.(Lscala/collection/mutable/WrappedArrayBuilder;::elems()Lscala/collection/mutable/WrappedArray;)();
+      }
+    else
+      {
+        $2$ = this.(Lscala/collection/mutable/WrappedArrayBuilder;::mkArray(I;)Lscala/collection/mutable/WrappedArray;)(this.(Lscala/collection/mutable/WrappedArrayBuilder;::size()I;)());
+      }
+    return $2$;
+  }
+  
+  public Ljava/lang/Object; result() {
+    return this.(Lscala/collection/mutable/WrappedArrayBuilder;::result()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/WrappedArrayBuilder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArrayBuilder;)(elem);
+  }
+  
+  public Lscala/collection/mutable/Builder; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/WrappedArrayBuilder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArrayBuilder;)(elem);
+  }
+  
+  public this(Lscala/reflect/ClassManifest; manifest) {
+    this.(Lscala/reflect/ClassManifest;)manifest = manifest;
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$init$(Lscala/collection/generic/Growable;)V;)(this);
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::$init$(Lscala/collection/mutable/Builder;)V;)(this);
+    this.(I;)capacity$u0020 = 0;
+    this.(I;)size$u0020 = 0;
+  }
+}

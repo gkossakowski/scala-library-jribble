@@ -1,0 +1,37 @@
+public final class Lscala/collection/generic/GenericTraversableTemplate$$anonfun$unzip$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Lscala/collection/mutable/Builder; apply(Ljava/lang/Object; xy) {
+    Lscala/Tuple2; temp1 = this.(Lscala/Function1;)asPair$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(xy).<cast>(Lscala/Tuple2;);
+    Lscala/Tuple2; $1$;
+    if ((temp1 != null))
+      {
+        $1$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(temp1.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), temp1.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()));
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp1));
+      }
+    Lscala/Tuple2; x$1 = $1$;
+    Ljava/lang/Object; x = x$1.(Lscala/Tuple2;::_1()Ljava/lang/Object;)();
+    Ljava/lang/Object; y = x$1.(Lscala/Tuple2;::_2()Ljava/lang/Object;)();
+    this.(Lscala/collection/mutable/Builder;)b1$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
+    return this.(Lscala/collection/mutable/Builder;)b2$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(y);
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$unzip$1;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(v1);
+  }
+  
+  private Lscala/Function1; asPair$1;
+  
+  private Lscala/collection/mutable/Builder; b1$1;
+  
+  private Lscala/collection/mutable/Builder; b2$1;
+  
+  public this(Lscala/collection/generic/GenericTraversableTemplate; $outer, Lscala/Function1; asPair$1, Lscala/collection/mutable/Builder; b1$1, Lscala/collection/mutable/Builder; b2$1) {
+    this.(Lscala/Function1;)asPair$1 = asPair$1;
+    this.(Lscala/collection/mutable/Builder;)b1$1 = b1$1;
+    this.(Lscala/collection/mutable/Builder;)b2$1 = b2$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

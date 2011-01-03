@@ -1,0 +1,180 @@
+public abstract class Lscala/Option; extends Ljava/lang/Object; implements Lscala/Product;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productPrefix(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public abstract Z; isEmpty();
+  
+  public Z; isDefined() {
+    return !(this.(Lscala/Option;::isEmpty()Z;)());
+  }
+  
+  public abstract Ljava/lang/Object; get();
+  
+  public Ljava/lang/Object; getOrElse(Lscala/Function0; `default`) {
+    Ljava/lang/Object; $2$;
+    if (this.(Lscala/Option;::isEmpty()Z;)())
+      {
+        $2$ = `default`.(Lscala/Function0;::apply()Ljava/lang/Object;)();
+      }
+    else
+      {
+        $2$ = this.(Lscala/Option;::get()Ljava/lang/Object;)();
+      }
+    return $2$;
+  }
+  
+  public Ljava/lang/Object; orNull(Lscala/Predef$$less$colon$less; ev$1) {
+    return this.(Lscala/Option;::getOrElse(Lscala/Function0;)Ljava/lang/Object;)((new (Lscala/Option$$anonfun$orNull$1;::this(Lscala/Option;Lscala/Predef$$less$colon$less;)V;)(this, ev$1)));
+  }
+  
+  public Lscala/Option; map(Lscala/Function1; f) {
+    Lscala/Option; $3$;
+    if (this.(Lscala/Option;::isEmpty()Z;)())
+      {
+        $3$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $3$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/Option;::get()Ljava/lang/Object;)())));
+      }
+    return $3$;
+  }
+  
+  public Lscala/Option; flatMap(Lscala/Function1; f) {
+    Lscala/Option; $4$;
+    if (this.(Lscala/Option;::isEmpty()Z;)())
+      {
+        $4$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $4$ = f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/Option;::get()Ljava/lang/Object;)()).<cast>(Lscala/Option;);
+      }
+    return $4$;
+  }
+  
+  public Lscala/Option; filter(Lscala/Function1; p) {
+    Lscala/Option; $5$;
+    if ((this.(Lscala/Option;::isEmpty()Z;)() || Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/Option;::get()Ljava/lang/Object;)()))))
+      {
+        $5$ = this;
+      }
+    else
+      {
+        $5$ = Lscala/None$;.MODULE$;
+      }
+    return $5$;
+  }
+  
+  public Lscala/Option$WithFilter; withFilter(Lscala/Function1; p) {
+    return (new (Lscala/Option$WithFilter;::this(Lscala/Option;Lscala/Function1;)V;)(this, p));
+  }
+  
+  public Z; exists(Lscala/Function1; p) {
+    return (!(this.(Lscala/Option;::isEmpty()Z;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/Option;::get()Ljava/lang/Object;)())));
+  }
+  
+  public V; foreach(Lscala/Function1; f) {
+    if (!(this.(Lscala/Option;::isEmpty()Z;)()))
+      {
+        f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/Option;::get()Ljava/lang/Object;)());
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public Lscala/Option; collect(Lscala/PartialFunction; pf) {
+    Lscala/Option; $6$;
+    if ((!(this.(Lscala/Option;::isEmpty()Z;)()) && pf.(Lscala/PartialFunction;::isDefinedAt(Ljava/lang/Object;)Z;)(this.(Lscala/Option;::get()Ljava/lang/Object;)())))
+      {
+        $6$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(pf.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/Option;::get()Ljava/lang/Object;)())));
+      }
+    else
+      {
+        $6$ = Lscala/None$;.MODULE$;
+      }
+    return $6$;
+  }
+  
+  public Lscala/Option; orElse(Lscala/Function0; alternative) {
+    Lscala/Option; $7$;
+    if (this.(Lscala/Option;::isEmpty()Z;)())
+      {
+        $7$ = alternative.(Lscala/Function0;::apply()Ljava/lang/Object;)().<cast>(Lscala/Option;);
+      }
+    else
+      {
+        $7$ = this;
+      }
+    return $7$;
+  }
+  
+  public Lscala/collection/Iterator; iterator() {
+    Lscala/collection/Iterator; $8$;
+    if (this.(Lscala/Option;::isEmpty()Z;)())
+      {
+        $8$ = Lscala/package$;.MODULE$.(Lscala/package$;::Iterator()Lscala/collection/Iterator$;)().(Lscala/collection/Iterator$;::empty()Lscala/collection/Iterator;)();
+      }
+    else
+      {
+        $8$ = Lscala/package$;.MODULE$.(Lscala/package$;::Iterator()Lscala/collection/Iterator$;)().(Lscala/collection/Iterator$;::single(Ljava/lang/Object;)Lscala/collection/Iterator;)(this.(Lscala/Option;::get()Ljava/lang/Object;)());
+      }
+    return $8$;
+  }
+  
+  public Lscala/collection/immutable/List; toList() {
+    Lscala/collection/immutable/List; $9$;
+    if (this.(Lscala/Option;::isEmpty()Z;)())
+      {
+        $9$ = Lscala/collection/immutable/Nil$;.MODULE$;
+      }
+    else
+      {
+        $9$ = Lscala/collection/immutable/List$;.MODULE$.(Lscala/collection/immutable/List$;::apply(Lscala/collection/Seq;)Lscala/collection/immutable/List;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{this.(Lscala/Option;::get()Ljava/lang/Object;)()}));
+      }
+    return $9$;
+  }
+  
+  public Lscala/Either; toRight(Lscala/Function0; left) {
+    Lscala/Either; $10$;
+    if (this.(Lscala/Option;::isEmpty()Z;)())
+      {
+        $10$ = (new (Lscala/Left;::this(Ljava/lang/Object;)V;)(left.(Lscala/Function0;::apply()Ljava/lang/Object;)()));
+      }
+    else
+      {
+        $10$ = (new (Lscala/Right;::this(Ljava/lang/Object;)V;)(this.(Lscala/Option;::get()Ljava/lang/Object;)()));
+      }
+    return $10$;
+  }
+  
+  public Lscala/Either; toLeft(Lscala/Function0; right) {
+    Lscala/Either; $11$;
+    if (this.(Lscala/Option;::isEmpty()Z;)())
+      {
+        $11$ = (new (Lscala/Right;::this(Ljava/lang/Object;)V;)(right.(Lscala/Function0;::apply()Ljava/lang/Object;)()));
+      }
+    else
+      {
+        $11$ = (new (Lscala/Left;::this(Ljava/lang/Object;)V;)(this.(Lscala/Option;::get()Ljava/lang/Object;)()));
+      }
+    return $11$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

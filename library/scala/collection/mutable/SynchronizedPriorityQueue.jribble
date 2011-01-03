@@ -1,0 +1,64 @@
+public class Lscala/collection/mutable/SynchronizedPriorityQueue; extends Lscala/collection/mutable/PriorityQueue; implements Lscala/ScalaObject; {
+  
+  public Z; isEmpty() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(super.(Lscala/collection/mutable/PriorityQueue;::isEmpty()Z;)()));
+  }
+  
+  public Lscala/collection/mutable/SynchronizedPriorityQueue; $plus$eq(Ljava/lang/Object; elem) {
+    super.(Lscala/collection/mutable/PriorityQueue;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/PriorityQueue;)(elem);
+    return this;
+  }
+  
+  public Lscala/collection/mutable/SynchronizedPriorityQueue; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, xs);
+    return this;
+  }
+  
+  public V; enqueue(Lscala/collection/Seq; elems) {
+    Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, elems);
+  }
+  
+  public Ljava/lang/Object; dequeue() {
+    return super.(Lscala/collection/mutable/PriorityQueue;::dequeue()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; max() {
+    return super.(Lscala/collection/mutable/PriorityQueue;::max()Ljava/lang/Object;)();
+  }
+  
+  public V; clear() {
+    super.(Lscala/collection/mutable/PriorityQueue;::clear()V;)();
+  }
+  
+  public Lscala/collection/Iterator; iterator() {
+    return super.(Lscala/collection/mutable/PriorityQueue;::iterator()Lscala/collection/Iterator;)().<cast>(Lscala/collection/Iterator;);
+  }
+  
+  public Z; equals(Ljava/lang/Object; that) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(Lscala/collection/SeqLike$class;.(Lscala/collection/SeqLike$class;::equals(Lscala/collection/SeqLike;Ljava/lang/Object;)Z;)(this, that)));
+  }
+  
+  public Ljava/lang/String; toString() {
+    return super.(Lscala/collection/mutable/PriorityQueue;::toString()Ljava/lang/String;)().<cast>(Ljava/lang/String;);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    return this.(Lscala/collection/mutable/SynchronizedPriorityQueue;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/SynchronizedPriorityQueue;)(xs);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/SynchronizedPriorityQueue;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SynchronizedPriorityQueue;)(elem);
+  }
+  
+  public Lscala/collection/mutable/Builder; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/SynchronizedPriorityQueue;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SynchronizedPriorityQueue;)(elem);
+  }
+  
+  public Lscala/collection/mutable/PriorityQueue; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/SynchronizedPriorityQueue;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SynchronizedPriorityQueue;)(elem);
+  }
+  
+  public this(Lscala/math/Ordering; ord) {
+    (Lscala/collection/mutable/PriorityQueue;::super(Lscala/math/Ordering;)V;)(ord);
+  }
+}

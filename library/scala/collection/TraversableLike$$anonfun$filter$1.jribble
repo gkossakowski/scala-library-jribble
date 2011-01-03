@@ -1,0 +1,25 @@
+public final class Lscala/collection/TraversableLike$$anonfun$filter$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; x) {
+    Ljava/lang/Object; $6$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Function1;)p$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x)))
+      {
+        $6$ = this.(Lscala/collection/mutable/Builder;)b$3.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
+      }
+    else
+      {
+        $6$ = Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+      }
+    return $6$;
+  }
+  
+  private Lscala/Function1; p$2;
+  
+  private Lscala/collection/mutable/Builder; b$3;
+  
+  public this(Lscala/collection/TraversableLike; $outer, Lscala/Function1; p$2, Lscala/collection/mutable/Builder; b$3) {
+    this.(Lscala/Function1;)p$2 = p$2;
+    this.(Lscala/collection/mutable/Builder;)b$3 = b$3;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

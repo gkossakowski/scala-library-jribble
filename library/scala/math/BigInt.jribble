@@ -1,0 +1,319 @@
+public class Lscala/math/BigInt; extends Lscala/math/ScalaNumber; implements Lscala/math/ScalaNumericConversions;, Lscala/ScalaObject; {
+  
+  public C; toChar() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toChar(Lscala/math/ScalaNumericConversions;)C;)(this);
+  }
+  
+  public B; toByte() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toByte(Lscala/math/ScalaNumericConversions;)B;)(this);
+  }
+  
+  public S; toShort() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toShort(Lscala/math/ScalaNumericConversions;)S;)(this);
+  }
+  
+  public I; toInt() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toInt(Lscala/math/ScalaNumericConversions;)I;)(this);
+  }
+  
+  public J; toLong() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toLong(Lscala/math/ScalaNumericConversions;)J;)(this);
+  }
+  
+  public F; toFloat() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toFloat(Lscala/math/ScalaNumericConversions;)F;)(this);
+  }
+  
+  public D; toDouble() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toDouble(Lscala/math/ScalaNumericConversions;)D;)(this);
+  }
+  
+  public Z; isValidByte() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidByte(Lscala/math/ScalaNumericConversions;)Z;)(this);
+  }
+  
+  public Z; isValidShort() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidShort(Lscala/math/ScalaNumericConversions;)Z;)(this);
+  }
+  
+  public Z; isValidInt() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidInt(Lscala/math/ScalaNumericConversions;)Z;)(this);
+  }
+  
+  public Z; isValidChar() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidChar(Lscala/math/ScalaNumericConversions;)Z;)(this);
+  }
+  
+  public I; unifiedPrimitiveHashcode() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::unifiedPrimitiveHashcode(Lscala/math/ScalaNumericConversions;)I;)(this);
+  }
+  
+  public Z; unifiedPrimitiveEquals(Ljava/lang/Object; x) {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::unifiedPrimitiveEquals(Lscala/math/ScalaNumericConversions;Ljava/lang/Object;)Z;)(this, x);
+  }
+  
+  public Lscala/math/BigInt; to$default$2() {
+    return Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::apply(I;)Lscala/math/BigInt;)(1);
+  }
+  
+  public Lscala/math/BigInt; until$default$2() {
+    return Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::apply(I;)Lscala/math/BigInt;)(1);
+  }
+  
+  private Ljava/math/BigInteger; bigInteger$u0020;
+  
+  public Ljava/math/BigInteger; bigInteger() {
+    return this.(Ljava/math/BigInteger;)bigInteger$u0020;
+  }
+  
+  public I; hashCode() {
+    I; $3$;
+    if ((this.(Lscala/math/BigInt;::$greater$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::MinLong()Lscala/math/BigInt;)()) && this.(Lscala/math/BigInt;::$less$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::MaxLong()Lscala/math/BigInt;)())))
+      {
+        $3$ = this.(Lscala/math/ScalaNumericConversions;::unifiedPrimitiveHashcode()I;)();
+      }
+    else
+      {
+        $3$ = this.(Lscala/runtime/ScalaRunTime$;::hash(Ljava/lang/Number;)I;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)());
+      }
+    return $3$;
+  }
+  
+  public Z; equals(Ljava/lang/Object; that) {
+    Ljava/lang/Object; temp1 = that;
+    Z; $4$;
+    if (temp1.<instanceof>(Lscala/math/BigInt;))
+      {
+        $4$ = this.(Lscala/math/BigInt;::equals(Lscala/math/BigInt;)Z;)(temp1.<cast>(Lscala/math/BigInt;));
+      }
+    else
+      {
+        Z; $5$;
+        if (temp1.<instanceof>(Lscala/math/BigDecimal;))
+          {
+            $5$ = temp1.<cast>(Lscala/math/BigDecimal;).(Lscala/math/BigDecimal;::toBigIntExact()Lscala/Option;)().(Lscala/Option;::exists(Lscala/Function1;)Z;)((new (Lscala/math/BigInt$$anonfun$equals$1;::this(Lscala/math/BigInt;)V;)(this)));
+          }
+        else
+          {
+            $5$ = ((this.(Lscala/math/BigInt;::$less$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::MaxLong()Lscala/math/BigInt;)()) && this.(Lscala/math/BigInt;::$greater$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::MinLong()Lscala/math/BigInt;)())) && this.(Lscala/math/ScalaNumericConversions;::unifiedPrimitiveEquals(Ljava/lang/Object;)Z;)(temp1));
+          }
+        $4$ = $5$;
+      }
+    return $4$;
+  }
+  
+  protected Z; isWhole() {
+    return true;
+  }
+  
+  public Ljava/math/BigInteger; underlying() {
+    return this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)();
+  }
+  
+  public Z; equals(Lscala/math/BigInt; that) {
+    return (this.(Lscala/math/BigInt;::compare(Lscala/math/BigInt;)I;)(that) == 0);
+  }
+  
+  public I; compare(Lscala/math/BigInt; that) {
+    return this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::compareTo(Ljava/math/BigInteger;)I;)(that.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)());
+  }
+  
+  public Z; $less$eq(Lscala/math/BigInt; that) {
+    return (this.(Lscala/math/BigInt;::compare(Lscala/math/BigInt;)I;)(that) <= 0);
+  }
+  
+  public Z; $greater$eq(Lscala/math/BigInt; that) {
+    return (this.(Lscala/math/BigInt;::compare(Lscala/math/BigInt;)I;)(that) >= 0);
+  }
+  
+  public Z; $less(Lscala/math/BigInt; that) {
+    return (this.(Lscala/math/BigInt;::compare(Lscala/math/BigInt;)I;)(that) < 0);
+  }
+  
+  public Z; $greater(Lscala/math/BigInt; that) {
+    return (this.(Lscala/math/BigInt;::compare(Lscala/math/BigInt;)I;)(that) > 0);
+  }
+  
+  public Lscala/math/BigInt; $plus(Lscala/math/BigInt; that) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::add(Ljava/math/BigInteger;)Ljava/math/BigInteger;)(that.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)())));
+  }
+  
+  public Lscala/math/BigInt; $minus(Lscala/math/BigInt; that) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;)(that.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)())));
+  }
+  
+  public Lscala/math/BigInt; $times(Lscala/math/BigInt; that) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;)(that.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)())));
+  }
+  
+  public Lscala/math/BigInt; $div(Lscala/math/BigInt; that) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;)(that.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)())));
+  }
+  
+  public Lscala/math/BigInt; $percent(Lscala/math/BigInt; that) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::remainder(Ljava/math/BigInteger;)Ljava/math/BigInteger;)(that.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)())));
+  }
+  
+  public Lscala/Tuple2; $div$percent(Lscala/math/BigInt; that) {
+    Ljava/math/BigInteger;[ dr = this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::divideAndRemainder(Ljava/math/BigInteger;)Ljava/math/BigInteger;[)(that.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)());
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)((new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(dr[0])), (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(dr[1]))));
+  }
+  
+  public Lscala/math/BigInt; $less$less(I; n) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::shiftLeft(I;)Ljava/math/BigInteger;)(n)));
+  }
+  
+  public Lscala/math/BigInt; $greater$greater(I; n) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::shiftRight(I;)Ljava/math/BigInteger;)(n)));
+  }
+  
+  public Lscala/math/BigInt; $amp(Lscala/math/BigInt; that) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::and(Ljava/math/BigInteger;)Ljava/math/BigInteger;)(that.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)())));
+  }
+  
+  public Lscala/math/BigInt; $bar(Lscala/math/BigInt; that) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::or(Ljava/math/BigInteger;)Ljava/math/BigInteger;)(that.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)())));
+  }
+  
+  public Lscala/math/BigInt; $up(Lscala/math/BigInt; that) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::xor(Ljava/math/BigInteger;)Ljava/math/BigInteger;)(that.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)())));
+  }
+  
+  public Lscala/math/BigInt; $amp$tilde(Lscala/math/BigInt; that) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::andNot(Ljava/math/BigInteger;)Ljava/math/BigInteger;)(that.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)())));
+  }
+  
+  public Lscala/math/BigInt; gcd(Lscala/math/BigInt; that) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::gcd(Ljava/math/BigInteger;)Ljava/math/BigInteger;)(that.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)())));
+  }
+  
+  public Lscala/math/BigInt; mod(Lscala/math/BigInt; that) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;)(that.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)())));
+  }
+  
+  public Lscala/math/BigInt; min(Lscala/math/BigInt; that) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::min(Ljava/math/BigInteger;)Ljava/math/BigInteger;)(that.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)())));
+  }
+  
+  public Lscala/math/BigInt; max(Lscala/math/BigInt; that) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::max(Ljava/math/BigInteger;)Ljava/math/BigInteger;)(that.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)())));
+  }
+  
+  public Lscala/math/BigInt; pow(I; exp) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::pow(I;)Ljava/math/BigInteger;)(exp)));
+  }
+  
+  public Lscala/math/BigInt; modPow(Lscala/math/BigInt; exp, Lscala/math/BigInt; m) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;)(exp.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)(), m.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)())));
+  }
+  
+  public Lscala/math/BigInt; modInverse(Lscala/math/BigInt; m) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::modInverse(Ljava/math/BigInteger;)Ljava/math/BigInteger;)(m.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)())));
+  }
+  
+  public Lscala/math/BigInt; unary_$minus() {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::negate()Ljava/math/BigInteger;)()));
+  }
+  
+  public Lscala/math/BigInt; abs() {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::abs()Ljava/math/BigInteger;)()));
+  }
+  
+  public I; signum() {
+    return this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::signum()I;)();
+  }
+  
+  public Lscala/math/BigInt; $tilde() {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::not()Ljava/math/BigInteger;)()));
+  }
+  
+  public Z; testBit(I; n) {
+    return this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::testBit(I;)Z;)(n);
+  }
+  
+  public Lscala/math/BigInt; setBit(I; n) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::setBit(I;)Ljava/math/BigInteger;)(n)));
+  }
+  
+  public Lscala/math/BigInt; clearBit(I; n) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::clearBit(I;)Ljava/math/BigInteger;)(n)));
+  }
+  
+  public Lscala/math/BigInt; flipBit(I; n) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::flipBit(I;)Ljava/math/BigInteger;)(n)));
+  }
+  
+  public I; lowestSetBit() {
+    return this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::getLowestSetBit()I;)();
+  }
+  
+  public I; bitLength() {
+    return this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::bitLength()I;)();
+  }
+  
+  public I; bitCount() {
+    return this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::bitCount()I;)();
+  }
+  
+  public Z; isProbablePrime(I; certainty) {
+    return this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::isProbablePrime(I;)Z;)(certainty);
+  }
+  
+  public B; byteValue() {
+    return this.(Lscala/math/BigInt;::intValue()I;)().<cast>(B;);
+  }
+  
+  public S; shortValue() {
+    return this.(Lscala/math/BigInt;::intValue()I;)().<cast>(S;);
+  }
+  
+  public C; charValue() {
+    return this.(Lscala/math/BigInt;::intValue()I;)().<cast>(C;);
+  }
+  
+  public I; intValue() {
+    return this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::intValue()I;)();
+  }
+  
+  public J; longValue() {
+    return this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::longValue()J;)();
+  }
+  
+  public F; floatValue() {
+    return this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::floatValue()F;)();
+  }
+  
+  public D; doubleValue() {
+    return this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::doubleValue()D;)();
+  }
+  
+  public Lscala/collection/immutable/NumericRange$Exclusive; until(Lscala/math/BigInt; end, Lscala/math/BigInt; step) {
+    return Lscala/collection/immutable/Range$BigInt$;.MODULE$.(Lscala/collection/immutable/Range$BigInt$;::apply(Lscala/math/BigInt;Lscala/math/BigInt;Lscala/math/BigInt;)Lscala/collection/immutable/NumericRange$Exclusive;)(this, end, step);
+  }
+  
+  public Lscala/collection/immutable/NumericRange$Inclusive; to(Lscala/math/BigInt; end, Lscala/math/BigInt; step) {
+    return Lscala/collection/immutable/Range$BigInt$;.MODULE$.(Lscala/collection/immutable/Range$BigInt$;::inclusive(Lscala/math/BigInt;Lscala/math/BigInt;Lscala/math/BigInt;)Lscala/collection/immutable/NumericRange$Inclusive;)(this, end, step);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::toString()Ljava/lang/String;)();
+  }
+  
+  public Ljava/lang/String; toString(I; radix) {
+    return this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::toString(I;)Ljava/lang/String;)(radix);
+  }
+  
+  public B;[ toByteArray() {
+    return this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::toByteArray()B;[)();
+  }
+  
+  public Ljava/lang/Object; underlying() {
+    return this.(Lscala/math/BigInt;::underlying()Ljava/math/BigInteger;)();
+  }
+  
+  public this(Ljava/math/BigInteger; bigInteger) {
+    this.(Ljava/math/BigInteger;)bigInteger$u0020 = bigInteger;
+    (Lscala/math/ScalaNumber;::super()V;)();
+    Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::$init$(Lscala/math/ScalaNumericConversions;)V;)(this);
+  }
+}

@@ -1,0 +1,15 @@
+public abstract class Lscala/collection/generic/Growable$class; {
+  
+  public static Lscala/collection/generic/Growable; $plus$eq(Lscala/collection/generic/Growable; $this, Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
+    return $this.(Lscala/collection/generic/Growable;::$plus$eq(Ljava/lang/Object;)Lscala/collection/generic/Growable;)(elem1).(Lscala/collection/generic/Growable;::$plus$eq(Ljava/lang/Object;)Lscala/collection/generic/Growable;)(elem2).(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(elems);
+  }
+  
+  public static Lscala/collection/generic/Growable; $plus$plus$eq(Lscala/collection/generic/Growable; $this, Lscala/collection/TraversableOnce; xs) {
+    xs.(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/generic/Growable$$anonfun$$plus$plus$eq$1;::this(Lscala/collection/generic/Growable;)V;)($this)));
+    return $this;
+  }
+  
+  public static V; $init$(Lscala/collection/generic/Growable; $this) {
+    
+  }
+}

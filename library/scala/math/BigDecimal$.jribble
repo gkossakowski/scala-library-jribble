@@ -1,0 +1,179 @@
+public final class Lscala/math/BigDecimal$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/math/BigDecimal$; MODULE$ = new (Lscala/math/BigDecimal$;::this()V;)();
+  
+  protected I; bitmap$0 = 0;
+  
+  private I; minCached$u0020;
+  
+  private I; minCached() {
+    return this.(I;)minCached$u0020;
+  }
+  
+  private I; maxCached$u0020;
+  
+  private I; maxCached() {
+    return this.(I;)maxCached$u0020;
+  }
+  
+  private Ljava/math/MathContext; defaultMathContext$u0020;
+  
+  public Ljava/math/MathContext; defaultMathContext() {
+    return this.(Ljava/math/MathContext;)defaultMathContext$u0020;
+  }
+  
+  private Lscala/math/BigDecimal; MinLong$u0020;
+  
+  public Lscala/math/BigDecimal; MinLong() {
+    return this.(Lscala/math/BigDecimal;)MinLong$u0020;
+  }
+  
+  private Lscala/math/BigDecimal; MaxLong$u0020;
+  
+  public Lscala/math/BigDecimal; MaxLong() {
+    return this.(Lscala/math/BigDecimal;)MaxLong$u0020;
+  }
+  
+  private Lscala/math/BigDecimal;[ cache$u0020;
+  
+  private Lscala/math/BigDecimal;[ cache() {
+    if (((this.(I;)bitmap$0 & 1) == 0))
+      {
+        if (((this.(I;)bitmap$0 & 1) == 0))
+          {
+            this.(Lscala/math/BigDecimal;[)cache$u0020 = new Lscala/math/BigDecimal;[((this.(Lscala/math/BigDecimal$;::maxCached()I;)() - this.(Lscala/math/BigDecimal$;::minCached()I;)()) + 1)];
+            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 1);
+          }
+      }
+    return this.(Lscala/math/BigDecimal;[)cache$u0020;
+  }
+  
+  public Lscala/math/BigDecimal; valueOf(D; d) {
+    return this.(Lscala/math/BigDecimal$;::apply(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(Ljava/math/BigDecimal;.(Ljava/math/BigDecimal;::valueOf(D;)Ljava/math/BigDecimal;)(d));
+  }
+  
+  public Lscala/math/BigDecimal; valueOf(D; d, Ljava/math/MathContext; mc) {
+    return this.(Lscala/math/BigDecimal$;::apply(Ljava/math/BigDecimal;Ljava/math/MathContext;)Lscala/math/BigDecimal;)(Ljava/math/BigDecimal;.(Ljava/math/BigDecimal;::valueOf(D;)Ljava/math/BigDecimal;)(d), mc);
+  }
+  
+  public Lscala/math/BigDecimal; apply(I; i) {
+    return this.(Lscala/math/BigDecimal$;::apply(I;Ljava/math/MathContext;)Lscala/math/BigDecimal;)(i, this.(Lscala/math/BigDecimal$;::defaultMathContext()Ljava/math/MathContext;)());
+  }
+  
+  public Lscala/math/BigDecimal; apply(I; i, Ljava/math/MathContext; mc) {
+    Lscala/math/BigDecimal; $1$;
+    if (((Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(mc, this.(Lscala/math/BigDecimal$;::defaultMathContext()Ljava/math/MathContext;)()) && (this.(Lscala/math/BigDecimal$;::minCached()I;)() <= i)) && (i <= this.(Lscala/math/BigDecimal$;::maxCached()I;)())))
+      {
+        I; offset = (i - this.(Lscala/math/BigDecimal$;::minCached()I;)());
+        Lscala/math/BigDecimal; n = this.(Lscala/math/BigDecimal$;::cache()Lscala/math/BigDecimal;[)()[offset];
+        if ((n == null))
+          {
+            n = (new (Lscala/math/BigDecimal;::this(Ljava/math/BigDecimal;Ljava/math/MathContext;)V;)(Ljava/math/BigDecimal;.(Ljava/math/BigDecimal;::valueOf(J;)Ljava/math/BigDecimal;)(i.<cast>(J;)), mc));
+            this.(Lscala/math/BigDecimal$;::cache()Lscala/math/BigDecimal;[)()[offset] = n;
+          }
+        else
+          {
+            
+          }
+        $1$ = n;
+      }
+    else
+      {
+        $1$ = (new (Lscala/math/BigDecimal;::this(Ljava/math/BigDecimal;Ljava/math/MathContext;)V;)(Ljava/math/BigDecimal;.(Ljava/math/BigDecimal;::valueOf(J;)Ljava/math/BigDecimal;)(i.<cast>(J;)), mc));
+      }
+    return $1$;
+  }
+  
+  public Lscala/math/BigDecimal; apply(J; l) {
+    Lscala/math/BigDecimal; $2$;
+    if (((this.(Lscala/math/BigDecimal$;::minCached()I;)() <= l) && (l <= this.(Lscala/math/BigDecimal$;::maxCached()I;)())))
+      {
+        $2$ = this.(Lscala/math/BigDecimal$;::apply(I;)Lscala/math/BigDecimal;)(l.<cast>(I;));
+      }
+    else
+      {
+        $2$ = (new (Lscala/math/BigDecimal;::this(Ljava/math/BigDecimal;Ljava/math/MathContext;)V;)(Ljava/math/BigDecimal;.(Ljava/math/BigDecimal;::valueOf(J;)Ljava/math/BigDecimal;)(l), this.(Lscala/math/BigDecimal$;::defaultMathContext()Ljava/math/MathContext;)()));
+      }
+    return $2$;
+  }
+  
+  public Lscala/math/BigDecimal; apply(J; l, Ljava/math/MathContext; mc) {
+    return (new (Lscala/math/BigDecimal;::this(Ljava/math/BigDecimal;Ljava/math/MathContext;)V;)((new (Ljava/math/BigDecimal;::this(J;Ljava/math/MathContext;)V;)(l, mc)), mc));
+  }
+  
+  public Lscala/math/BigDecimal; apply(J; unscaledVal, I; scale) {
+    return this.(Lscala/math/BigDecimal$;::apply(Lscala/math/BigInt;I;)Lscala/math/BigDecimal;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::apply(J;)Lscala/math/BigInt;)(unscaledVal), scale);
+  }
+  
+  public Lscala/math/BigDecimal; apply(J; unscaledVal, I; scale, Ljava/math/MathContext; mc) {
+    return this.(Lscala/math/BigDecimal$;::apply(Lscala/math/BigInt;I;Ljava/math/MathContext;)Lscala/math/BigDecimal;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::apply(J;)Lscala/math/BigInt;)(unscaledVal), scale, mc);
+  }
+  
+  public Lscala/math/BigDecimal; apply(D; d) {
+    return this.(Lscala/math/BigDecimal$;::apply(D;Ljava/math/MathContext;)Lscala/math/BigDecimal;)(d, this.(Lscala/math/BigDecimal$;::defaultMathContext()Ljava/math/MathContext;)());
+  }
+  
+  public Lscala/math/BigDecimal; apply(D; d, Ljava/math/MathContext; mc) {
+    return (new (Lscala/math/BigDecimal;::this(Ljava/math/BigDecimal;Ljava/math/MathContext;)V;)((new (Ljava/math/BigDecimal;::this(Ljava/lang/String;Ljava/math/MathContext;)V;)(Ljava/lang/Double;.(Ljava/lang/Double;::toString(D;)Ljava/lang/String;)(d), mc)), mc));
+  }
+  
+  public Lscala/math/BigDecimal; apply(C;[ x) {
+    return this.(Lscala/math/BigDecimal$;::apply(C;[Ljava/math/MathContext;)Lscala/math/BigDecimal;)(x, this.(Lscala/math/BigDecimal$;::defaultMathContext()Ljava/math/MathContext;)());
+  }
+  
+  public Lscala/math/BigDecimal; apply(C;[ x, Ljava/math/MathContext; mc) {
+    return (new (Lscala/math/BigDecimal;::this(Ljava/math/BigDecimal;Ljava/math/MathContext;)V;)((new (Ljava/math/BigDecimal;::this(Ljava/lang/String;Ljava/math/MathContext;)V;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::charArrayOps(C;[)Lscala/collection/mutable/ArrayOps;)(x).(Lscala/collection/TraversableOnce;::mkString()Ljava/lang/String;)(), mc)), mc));
+  }
+  
+  public Lscala/math/BigDecimal; apply(Ljava/lang/String; x) {
+    return this.(Lscala/math/BigDecimal$;::apply(Ljava/lang/String;Ljava/math/MathContext;)Lscala/math/BigDecimal;)(x, this.(Lscala/math/BigDecimal$;::defaultMathContext()Ljava/math/MathContext;)());
+  }
+  
+  public Lscala/math/BigDecimal; apply(Ljava/lang/String; x, Ljava/math/MathContext; mc) {
+    return (new (Lscala/math/BigDecimal;::this(Ljava/math/BigDecimal;Ljava/math/MathContext;)V;)((new (Ljava/math/BigDecimal;::this(Ljava/lang/String;Ljava/math/MathContext;)V;)(x, mc)), mc));
+  }
+  
+  public Lscala/math/BigDecimal; apply(Lscala/math/BigInt; x) {
+    return this.(Lscala/math/BigDecimal$;::apply(Lscala/math/BigInt;Ljava/math/MathContext;)Lscala/math/BigDecimal;)(x, this.(Lscala/math/BigDecimal$;::defaultMathContext()Ljava/math/MathContext;)());
+  }
+  
+  public Lscala/math/BigDecimal; apply(Lscala/math/BigInt; x, Ljava/math/MathContext; mc) {
+    return (new (Lscala/math/BigDecimal;::this(Ljava/math/BigDecimal;Ljava/math/MathContext;)V;)((new (Ljava/math/BigDecimal;::this(Ljava/math/BigInteger;Ljava/math/MathContext;)V;)(x.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)(), mc)), mc));
+  }
+  
+  public Lscala/math/BigDecimal; apply(Lscala/math/BigInt; unscaledVal, I; scale) {
+    return this.(Lscala/math/BigDecimal$;::apply(Lscala/math/BigInt;I;Ljava/math/MathContext;)Lscala/math/BigDecimal;)(unscaledVal, scale, this.(Lscala/math/BigDecimal$;::defaultMathContext()Ljava/math/MathContext;)());
+  }
+  
+  public Lscala/math/BigDecimal; apply(Lscala/math/BigInt; unscaledVal, I; scale, Ljava/math/MathContext; mc) {
+    return (new (Lscala/math/BigDecimal;::this(Ljava/math/BigDecimal;Ljava/math/MathContext;)V;)((new (Ljava/math/BigDecimal;::this(Ljava/math/BigInteger;I;Ljava/math/MathContext;)V;)(unscaledVal.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)(), scale, mc)), mc));
+  }
+  
+  public Lscala/math/BigDecimal; apply(Ljava/math/BigDecimal; bd) {
+    return this.(Lscala/math/BigDecimal$;::apply(Ljava/math/BigDecimal;Ljava/math/MathContext;)Lscala/math/BigDecimal;)(bd, this.(Lscala/math/BigDecimal$;::defaultMathContext()Ljava/math/MathContext;)());
+  }
+  
+  public Lscala/math/BigDecimal; apply(Ljava/math/BigDecimal; bd, Ljava/math/MathContext; mc) {
+    return (new (Lscala/math/BigDecimal;::this(Ljava/math/BigDecimal;Ljava/math/MathContext;)V;)(bd, mc));
+  }
+  
+  public Lscala/math/BigDecimal; int2bigDecimal(I; i) {
+    return this.(Lscala/math/BigDecimal$;::apply(I;)Lscala/math/BigDecimal;)(i);
+  }
+  
+  public Lscala/math/BigDecimal; long2bigDecimal(J; l) {
+    return this.(Lscala/math/BigDecimal$;::apply(J;)Lscala/math/BigDecimal;)(l);
+  }
+  
+  public Lscala/math/BigDecimal; double2bigDecimal(D; d) {
+    return this.(Lscala/math/BigDecimal$;::valueOf(D;Ljava/math/MathContext;)Lscala/math/BigDecimal;)(d, this.(Lscala/math/BigDecimal$;::defaultMathContext()Ljava/math/MathContext;)());
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(I;)minCached$u0020 = -512;
+    this.(I;)maxCached$u0020 = 512;
+    this.(Ljava/math/MathContext;)defaultMathContext$u0020 = Ljava/math/MathContext;.MODULE$.(Ljava/math/MathContext;)UNLIMITED;
+    this.(Lscala/math/BigDecimal;)MinLong$u0020 = (new (Lscala/math/BigDecimal;::this(Ljava/math/BigDecimal;Ljava/math/MathContext;)V;)(Ljava/math/BigDecimal;.(Ljava/math/BigDecimal;::valueOf(J;)Ljava/math/BigDecimal;)(-9223372036854775808L), this.(Lscala/math/BigDecimal$;::defaultMathContext()Ljava/math/MathContext;)()));
+    this.(Lscala/math/BigDecimal;)MaxLong$u0020 = (new (Lscala/math/BigDecimal;::this(Ljava/math/BigDecimal;Ljava/math/MathContext;)V;)(Ljava/math/BigDecimal;.(Ljava/math/BigDecimal;::valueOf(J;)Ljava/math/BigDecimal;)(9223372036854775807L), this.(Lscala/math/BigDecimal$;::defaultMathContext()Ljava/math/MathContext;)()));
+  }
+}

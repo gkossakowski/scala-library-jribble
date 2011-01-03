@@ -1,0 +1,833 @@
+public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/runtime/ScalaRunTime$; MODULE$ = new (Lscala/runtime/ScalaRunTime$;::this()V;)();
+  
+  public Z; isArray(Ljava/lang/Object; x) {
+    return this.(Lscala/runtime/ScalaRunTime$;::isArray(Ljava/lang/Object;I;)Z;)(x, 1);
+  }
+  
+  public Z; isArray(Ljava/lang/Object; x, I; atLevel) {
+    return ((x != null) && this.(Lscala/runtime/ScalaRunTime$;::isArrayClass(Ljava/lang/Class;I;)Z;)(x.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)(), atLevel));
+  }
+  
+  private Z; isArrayClass(Ljava/lang/Class; clazz, I; atLevel) {
+    return (clazz.(Ljava/lang/Class;::isArray()Z;)() && ((atLevel == 1) || this.(Lscala/runtime/ScalaRunTime$;::isArrayClass(Ljava/lang/Class;I;)Z;)(clazz.(Ljava/lang/Class;::getComponentType()Ljava/lang/Class;)(), (atLevel - 1))));
+  }
+  
+  public Z; isValueClass(Ljava/lang/Class; clazz) {
+    return clazz.(Ljava/lang/Class;::isPrimitive()Z;)();
+  }
+  
+  public Ljava/lang/Object; array_apply(Ljava/lang/Object; xs, I; idx) {
+    Ljava/lang/Object; temp1 = xs;
+    Ljava/lang/Object; $1$;
+    if (temp1.<instanceof>(Ljava/lang/Object;[))
+      {
+        $1$ = temp1.<cast>(Ljava/lang/Object;[)[idx];
+      }
+    else
+      {
+        Ljava/lang/Object; $2$;
+        if (temp1.<instanceof>(I;[))
+          {
+            $2$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(temp1.<cast>(I;[)[idx]);
+          }
+        else
+          {
+            Ljava/lang/Object; $3$;
+            if (temp1.<instanceof>(D;[))
+              {
+                $3$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToDouble(D;)Ljava/lang/Double;)(temp1.<cast>(D;[)[idx]);
+              }
+            else
+              {
+                Ljava/lang/Object; $4$;
+                if (temp1.<instanceof>(J;[))
+                  {
+                    $4$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(temp1.<cast>(J;[)[idx]);
+                  }
+                else
+                  {
+                    Ljava/lang/Object; $5$;
+                    if (temp1.<instanceof>(F;[))
+                      {
+                        $5$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(temp1.<cast>(F;[)[idx]);
+                      }
+                    else
+                      {
+                        Ljava/lang/Object; $6$;
+                        if (temp1.<instanceof>(C;[))
+                          {
+                            $6$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(temp1.<cast>(C;[)[idx]);
+                          }
+                        else
+                          {
+                            Ljava/lang/Object; $7$;
+                            if (temp1.<instanceof>(B;[))
+                              {
+                                $7$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToByte(B;)Ljava/lang/Byte;)(temp1.<cast>(B;[)[idx]);
+                              }
+                            else
+                              {
+                                Ljava/lang/Object; $8$;
+                                if (temp1.<instanceof>(S;[))
+                                  {
+                                    $8$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToShort(S;)Ljava/lang/Short;)(temp1.<cast>(S;[)[idx]);
+                                  }
+                                else
+                                  {
+                                    Ljava/lang/Object; $9$;
+                                    if (temp1.<instanceof>(Z;[))
+                                      {
+                                        $9$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(temp1.<cast>(Z;[)[idx]);
+                                      }
+                                    else
+                                      {
+                                        Ljava/lang/Object; $10$;
+                                        if (temp1.<instanceof>(Lscala/runtime/BoxedUnit;[))
+                                          {
+                                            $10$ = temp1.<cast>(Lscala/runtime/BoxedUnit;[)[idx];
+                                          }
+                                        else
+                                          {
+                                            Lscala/runtime/Nothing$; $11$;
+                                            if ((temp1 == null))
+                                              {
+                                                throw (new (Ljava/lang/NullPointerException;::this()V;)());
+                                              }
+                                            else
+                                              {
+                                                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp1));
+                                              }
+                                          }
+                                        $9$ = $10$;
+                                      }
+                                    $8$ = $9$;
+                                  }
+                                $7$ = $8$;
+                              }
+                            $6$ = $7$;
+                          }
+                        $5$ = $6$;
+                      }
+                    $4$ = $5$;
+                  }
+                $3$ = $4$;
+              }
+            $2$ = $3$;
+          }
+        $1$ = $2$;
+      }
+    return $1$;
+  }
+  
+  public V; array_update(Ljava/lang/Object; xs, I; idx, Ljava/lang/Object; value) {
+    Ljava/lang/Object; temp13 = xs;
+    if (temp13.<instanceof>(Ljava/lang/Object;[))
+      {
+        temp13.<cast>(Ljava/lang/Object;[)[idx] = value;
+      }
+    else
+      {
+        if (temp13.<instanceof>(I;[))
+          {
+            temp13.<cast>(I;[)[idx] = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(value);
+          }
+        else
+          {
+            if (temp13.<instanceof>(D;[))
+              {
+                temp13.<cast>(D;[)[idx] = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(value);
+              }
+            else
+              {
+                if (temp13.<instanceof>(J;[))
+                  {
+                    temp13.<cast>(J;[)[idx] = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToLong(Ljava/lang/Object;)J;)(value);
+                  }
+                else
+                  {
+                    if (temp13.<instanceof>(F;[))
+                      {
+                        temp13.<cast>(F;[)[idx] = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(value);
+                      }
+                    else
+                      {
+                        if (temp13.<instanceof>(C;[))
+                          {
+                            temp13.<cast>(C;[)[idx] = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(value);
+                          }
+                        else
+                          {
+                            if (temp13.<instanceof>(B;[))
+                              {
+                                temp13.<cast>(B;[)[idx] = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToByte(Ljava/lang/Object;)B;)(value);
+                              }
+                            else
+                              {
+                                if (temp13.<instanceof>(S;[))
+                                  {
+                                    temp13.<cast>(S;[)[idx] = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToShort(Ljava/lang/Object;)S;)(value);
+                                  }
+                                else
+                                  {
+                                    if (temp13.<instanceof>(Z;[))
+                                      {
+                                        temp13.<cast>(Z;[)[idx] = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(value);
+                                      }
+                                    else
+                                      {
+                                        if (temp13.<instanceof>(Lscala/runtime/BoxedUnit;[))
+                                          {
+                                            temp13.<cast>(Lscala/runtime/BoxedUnit;[)[idx] = value.<cast>(Lscala/runtime/BoxedUnit;);
+                                          }
+                                        else
+                                          {
+                                            Lscala/runtime/Nothing$; $12$;
+                                            if ((temp13 == null))
+                                              {
+                                                throw (new (Ljava/lang/NullPointerException;::this()V;)());
+                                              }
+                                            else
+                                              {
+                                                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp13));
+                                              }
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+  
+  public I; array_length(Ljava/lang/Object; xs) {
+    Ljava/lang/Object; temp25 = xs;
+    I; $13$;
+    if (temp25.<instanceof>(Ljava/lang/Object;[))
+      {
+        $13$ = temp25.<cast>(Ljava/lang/Object;[).<length>;
+      }
+    else
+      {
+        I; $14$;
+        if (temp25.<instanceof>(I;[))
+          {
+            $14$ = temp25.<cast>(I;[).<length>;
+          }
+        else
+          {
+            I; $15$;
+            if (temp25.<instanceof>(D;[))
+              {
+                $15$ = temp25.<cast>(D;[).<length>;
+              }
+            else
+              {
+                I; $16$;
+                if (temp25.<instanceof>(J;[))
+                  {
+                    $16$ = temp25.<cast>(J;[).<length>;
+                  }
+                else
+                  {
+                    I; $17$;
+                    if (temp25.<instanceof>(F;[))
+                      {
+                        $17$ = temp25.<cast>(F;[).<length>;
+                      }
+                    else
+                      {
+                        I; $18$;
+                        if (temp25.<instanceof>(C;[))
+                          {
+                            $18$ = temp25.<cast>(C;[).<length>;
+                          }
+                        else
+                          {
+                            I; $19$;
+                            if (temp25.<instanceof>(B;[))
+                              {
+                                $19$ = temp25.<cast>(B;[).<length>;
+                              }
+                            else
+                              {
+                                I; $20$;
+                                if (temp25.<instanceof>(S;[))
+                                  {
+                                    $20$ = temp25.<cast>(S;[).<length>;
+                                  }
+                                else
+                                  {
+                                    I; $21$;
+                                    if (temp25.<instanceof>(Z;[))
+                                      {
+                                        $21$ = temp25.<cast>(Z;[).<length>;
+                                      }
+                                    else
+                                      {
+                                        I; $22$;
+                                        if (temp25.<instanceof>(Lscala/runtime/BoxedUnit;[))
+                                          {
+                                            $22$ = temp25.<cast>(Lscala/runtime/BoxedUnit;[).<length>;
+                                          }
+                                        else
+                                          {
+                                            Lscala/runtime/Nothing$; $23$;
+                                            if ((temp25 == null))
+                                              {
+                                                throw (new (Ljava/lang/NullPointerException;::this()V;)());
+                                              }
+                                            else
+                                              {
+                                                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp25));
+                                              }
+                                          }
+                                        $21$ = $22$;
+                                      }
+                                    $20$ = $21$;
+                                  }
+                                $19$ = $20$;
+                              }
+                            $18$ = $19$;
+                          }
+                        $17$ = $18$;
+                      }
+                    $16$ = $17$;
+                  }
+                $15$ = $16$;
+              }
+            $14$ = $15$;
+          }
+        $13$ = $14$;
+      }
+    return $13$;
+  }
+  
+  public Ljava/lang/Object; array_clone(Ljava/lang/Object; xs) {
+    Ljava/lang/Object; temp37 = xs;
+    Ljava/lang/Object; $24$;
+    if (temp37.<instanceof>(Ljava/lang/Object;[))
+      {
+        $24$ = Lscala/runtime/ArrayRuntime;.(Lscala/runtime/ArrayRuntime;::cloneArray(Ljava/lang/Object;[)Ljava/lang/Object;[)(temp37.<cast>(Ljava/lang/Object;[));
+      }
+    else
+      {
+        Ljava/lang/Object; $25$;
+        if (temp37.<instanceof>(I;[))
+          {
+            $25$ = Lscala/runtime/ArrayRuntime;.(Lscala/runtime/ArrayRuntime;::cloneArray(I;[)I;[)(temp37.<cast>(I;[));
+          }
+        else
+          {
+            Ljava/lang/Object; $26$;
+            if (temp37.<instanceof>(D;[))
+              {
+                $26$ = Lscala/runtime/ArrayRuntime;.(Lscala/runtime/ArrayRuntime;::cloneArray(D;[)D;[)(temp37.<cast>(D;[));
+              }
+            else
+              {
+                Ljava/lang/Object; $27$;
+                if (temp37.<instanceof>(J;[))
+                  {
+                    $27$ = Lscala/runtime/ArrayRuntime;.(Lscala/runtime/ArrayRuntime;::cloneArray(J;[)J;[)(temp37.<cast>(J;[));
+                  }
+                else
+                  {
+                    Ljava/lang/Object; $28$;
+                    if (temp37.<instanceof>(F;[))
+                      {
+                        $28$ = Lscala/runtime/ArrayRuntime;.(Lscala/runtime/ArrayRuntime;::cloneArray(F;[)F;[)(temp37.<cast>(F;[));
+                      }
+                    else
+                      {
+                        Ljava/lang/Object; $29$;
+                        if (temp37.<instanceof>(C;[))
+                          {
+                            $29$ = Lscala/runtime/ArrayRuntime;.(Lscala/runtime/ArrayRuntime;::cloneArray(C;[)C;[)(temp37.<cast>(C;[));
+                          }
+                        else
+                          {
+                            Ljava/lang/Object; $30$;
+                            if (temp37.<instanceof>(B;[))
+                              {
+                                $30$ = Lscala/runtime/ArrayRuntime;.(Lscala/runtime/ArrayRuntime;::cloneArray(B;[)B;[)(temp37.<cast>(B;[));
+                              }
+                            else
+                              {
+                                Ljava/lang/Object; $31$;
+                                if (temp37.<instanceof>(S;[))
+                                  {
+                                    $31$ = Lscala/runtime/ArrayRuntime;.(Lscala/runtime/ArrayRuntime;::cloneArray(S;[)S;[)(temp37.<cast>(S;[));
+                                  }
+                                else
+                                  {
+                                    Ljava/lang/Object; $32$;
+                                    if (temp37.<instanceof>(Z;[))
+                                      {
+                                        $32$ = Lscala/runtime/ArrayRuntime;.(Lscala/runtime/ArrayRuntime;::cloneArray(Z;[)Z;[)(temp37.<cast>(Z;[));
+                                      }
+                                    else
+                                      {
+                                        Ljava/lang/Object; $33$;
+                                        if (temp37.<instanceof>(Lscala/runtime/BoxedUnit;[))
+                                          {
+                                            $33$ = temp37.<cast>(Lscala/runtime/BoxedUnit;[);
+                                          }
+                                        else
+                                          {
+                                            Lscala/runtime/Nothing$; $34$;
+                                            if ((temp37 == null))
+                                              {
+                                                throw (new (Ljava/lang/NullPointerException;::this()V;)());
+                                              }
+                                            else
+                                              {
+                                                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp37));
+                                              }
+                                          }
+                                        $32$ = $33$;
+                                      }
+                                    $31$ = $32$;
+                                  }
+                                $30$ = $31$;
+                              }
+                            $29$ = $30$;
+                          }
+                        $28$ = $29$;
+                      }
+                    $27$ = $28$;
+                  }
+                $26$ = $27$;
+              }
+            $25$ = $26$;
+          }
+        $24$ = $25$;
+      }
+    return $24$;
+  }
+  
+  public Ljava/lang/Object;[ toObjectArray(Ljava/lang/Object; src$1) {
+    I; length = this.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(src$1);
+    Ljava/lang/Object;[ dest$1 = new Ljava/lang/Object;[length];
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(length).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/runtime/ScalaRunTime$$anonfun$toObjectArray$1;::this(Ljava/lang/Object;Ljava/lang/Object;[)V;)(src$1, dest$1)));
+    return dest$1;
+  }
+  
+  public Ljava/lang/Object;[ toArray(Lscala/collection/Seq; xs) {
+    Ljava/lang/Object;[ arr$1 = new Ljava/lang/Object;[xs.(Lscala/collection/SeqLike;::length()I;)()];
+    Lscala/runtime/IntRef; i$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(0));
+    xs.(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/runtime/ScalaRunTime$$anonfun$toArray$1;::this(Ljava/lang/Object;[Lscala/runtime/IntRef;)V;)(arr$1, i$1)));
+    return arr$1;
+  }
+  
+  public Ljava/lang/Object; checkInitialized(Ljava/lang/Object; x) {
+    Ljava/lang/Object; $35$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, null))
+      {
+        throw (new (Lscala/UninitializedError;::this()V;)());
+      }
+    else
+      {
+        $35$ = x;
+      }
+    return $35$;
+  }
+  
+  public Lscala/runtime/ScalaRunTime$Try; Try(Lscala/Function0; block$1) {
+    return (new (Lscala/runtime/ScalaRunTime$$anon$1;::this(Lscala/Function0;)V;)(block$1));
+  }
+  
+  public Ljava/lang/String; _toString(Lscala/Product; x) {
+    return x.(Lscala/Product;::productIterator()Lscala/collection/Iterator;)().(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)((x.(Lscala/Product;::productPrefix()Ljava/lang/String;)() + "("), ",", ")");
+  }
+  
+  public I; _hashCode(Lscala/Product; x) {
+    I; arr = x.(Lscala/Product;::productArity()I;)();
+    I; code = arr;
+    I; i = 0;
+    while$1: while(true) {
+      if ((i < arr))
+        {
+          {
+            Ljava/lang/Object; elem = x.(Lscala/Product;::productElement(I;)Ljava/lang/Object;)(i);
+            I; $36$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(elem, null))
+              {
+                $36$ = 0;
+              }
+            else
+              {
+                $36$ = this.(Lscala/runtime/ScalaRunTime$;::hash(Ljava/lang/Object;)I;)(elem);
+              }
+            code = ((code * 41) + $36$);
+            i = (i + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return code;
+  }
+  
+  public Z; inlinedEquals(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    Z; $37$;
+    if ((x == y))
+      {
+        $37$ = true;
+      }
+    else
+      {
+        Z; $38$;
+        if ((x == null))
+          {
+            $38$ = false;
+          }
+        else
+          {
+            Z; $39$;
+            if (x.<instanceof>(Ljava/lang/Number;))
+              {
+                $39$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equalsNumObject(Ljava/lang/Number;Ljava/lang/Object;)Z;)(x.<cast>(Ljava/lang/Number;), y);
+              }
+            else
+              {
+                Z; $40$;
+                if (x.<instanceof>(Ljava/lang/Character;))
+                  {
+                    $40$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equalsCharObject(Ljava/lang/Character;Ljava/lang/Object;)Z;)(x.<cast>(Ljava/lang/Character;), y);
+                  }
+                else
+                  {
+                    $40$ = x.(Ljava/lang/Object;::equals(Ljava/lang/Object;)Z;)(y);
+                  }
+                $39$ = $40$;
+              }
+            $38$ = $39$;
+          }
+        $37$ = $38$;
+      }
+    return $37$;
+  }
+  
+  public Z; _equals(Lscala/Product; x$1, Ljava/lang/Object; y) {
+    Ljava/lang/Object; temp51 = y;
+    Z; $41$;
+    if (temp51.<instanceof>(Lscala/Product;))
+      {
+        Lscala/Product; temp52 = temp51.<cast>(Lscala/Product;);
+        Lscala/Product; y = temp52;
+        Z; $42$;
+        if (this.(Lscala/runtime/ScalaRunTime$;::gd1$1(Lscala/Product;Lscala/Product;)Z;)(y, x$1))
+          {
+            $42$ = x$1.(Lscala/Product;::productIterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::sameElements(Lscala/collection/Iterator;)Z;)(temp52.(Lscala/Product;::productIterator()Lscala/collection/Iterator;)());
+          }
+        else
+          {
+            $42$ = false;
+          }
+        $41$ = $42$;
+      }
+    else
+      {
+        $41$ = false;
+      }
+    return $41$;
+  }
+  
+  public I; hash(Ljava/lang/Object; x) {
+    I; $43$;
+    if (x.<instanceof>(Ljava/lang/Number;))
+      {
+        $43$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::hashFromNumber(Ljava/lang/Number;)I;)(x.<cast>(Ljava/lang/Number;));
+      }
+    else
+      {
+        $43$ = x.(Ljava/lang/Object;::hashCode()I;)();
+      }
+    return $43$;
+  }
+  
+  public I; hash(D; dv) {
+    I; iv = dv.<cast>(I;);
+    if ((iv == dv))
+      {
+        return iv;
+      }
+    else
+      {
+        
+      }
+    J; lv = dv.<cast>(J;);
+    I; $44$;
+    if ((lv == dv))
+      {
+        return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(lv).(Ljava/lang/Object;::hashCode()I;)();
+      }
+    else
+      {
+        $44$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToDouble(D;)Ljava/lang/Double;)(dv).(Ljava/lang/Object;::hashCode()I;)();
+      }
+    return $44$;
+  }
+  
+  public I; hash(F; fv) {
+    I; iv = fv.<cast>(I;);
+    if ((iv == fv))
+      {
+        return iv;
+      }
+    else
+      {
+        
+      }
+    J; lv = fv.<cast>(J;);
+    I; $45$;
+    if ((lv == fv))
+      {
+        return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(lv).(Ljava/lang/Object;::hashCode()I;)();
+      }
+    else
+      {
+        $45$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(fv).(Ljava/lang/Object;::hashCode()I;)();
+      }
+    return $45$;
+  }
+  
+  public I; hash(J; lv) {
+    I; iv = lv.<cast>(I;);
+    I; $46$;
+    if ((iv == lv))
+      {
+        $46$ = iv;
+      }
+    else
+      {
+        $46$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(lv).(Ljava/lang/Object;::hashCode()I;)();
+      }
+    return $46$;
+  }
+  
+  public I; hash(I; x) {
+    return x;
+  }
+  
+  public I; hash(S; x) {
+    return x.<cast>(I;);
+  }
+  
+  public I; hash(B; x) {
+    return x.<cast>(I;);
+  }
+  
+  public I; hash(C; x) {
+    return x.<cast>(I;);
+  }
+  
+  public I; hash(Ljava/lang/Number; x) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::hashFromNumber(Ljava/lang/Number;)I;)(x);
+  }
+  
+  public I; hash(Ljava/lang/Long; x) {
+    I; iv = x.(Ljava/lang/Long;::intValue()I;)();
+    I; $47$;
+    if ((iv == x.(Ljava/lang/Long;::longValue()J;)()))
+      {
+        $47$ = iv;
+      }
+    else
+      {
+        $47$ = x.(Ljava/lang/Long;::hashCode()I;)();
+      }
+    return $47$;
+  }
+  
+  public Z; sameElements(Lscala/collection/Seq; xs1, Lscala/collection/Seq; xs2) {
+    return xs1.(Lscala/collection/IterableLike;::sameElements(Lscala/collection/Iterable;)Z;)(xs2);
+  }
+  
+  public Ljava/lang/String; stringOf(Ljava/lang/Object; arg) {
+    Ljava/lang/String; s = this.(Lscala/runtime/ScalaRunTime$;::inner$1(Ljava/lang/Object;)Ljava/lang/String;)(arg);
+    Ljava/lang/String; $48$;
+    if (s.(Ljava/lang/String;::contains(Ljava/lang/CharSequence;)Z;)("\012"))
+      {
+        $48$ = "\012";
+      }
+    else
+      {
+        $48$ = "";
+      }
+    Ljava/lang/String; nl = $48$;
+    return ((nl + s) + "\012");
+  }
+  
+  private final Z; gd1$1(Lscala/Product; x$1, Lscala/Product; x$1) {
+    return (x$1.(Lscala/Product;::productArity()I;)() == x$1.(Lscala/Product;::productArity()I;)());
+  }
+  
+  private final Lscala/collection/Traversable; mapTraversable$1(Lscala/collection/Traversable; x, Lscala/Function1; f) {
+    Lscala/collection/Traversable; temp53 = x;
+    Lscala/collection/Traversable; $49$;
+    if (temp53.<instanceof>(Lscala/collection/SortedSet;))
+      {
+        $49$ = temp53.<cast>(Lscala/collection/SortedSet;).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(f, Lscala/collection/SortedSet$;.MODULE$.(Lscala/collection/SortedSet$;::canBuildFrom(Lscala/math/Ordering;)Lscala/collection/generic/CanBuildFrom;)(Lscala/math/Ordering$String$;.MODULE$)).<cast>(Lscala/collection/Traversable;);
+      }
+    else
+      {
+        Lscala/collection/Traversable; $50$;
+        if ((temp53.<instanceof>(Lscala/collection/Traversable;) && temp53.<instanceof>(Lscala/collection/SortedMap;)))
+          {
+            $50$ = temp53.<cast>(Lscala/collection/SortedMap;).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(f, Lscala/collection/Iterable$;.MODULE$.(Lscala/collection/Iterable$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/Traversable;);
+          }
+        else
+          {
+            $50$ = x.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(f, Lscala/collection/Traversable$;.MODULE$.(Lscala/collection/Traversable$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/Traversable;);
+          }
+        $49$ = $50$;
+      }
+    return $49$;
+  }
+  
+  private final Z; gd2$1(Ljava/lang/Object; x$1) {
+    return this.(Lscala/runtime/ScalaRunTime$;::isArray(Ljava/lang/Object;)Z;)(x$1);
+  }
+  
+  private final Z; gd3$1(Lscala/collection/Traversable; x$1) {
+    return !(x$1.(Lscala/collection/TraversableLike;::hasDefiniteSize()Z;)());
+  }
+  
+  public final Ljava/lang/String; inner$1(Ljava/lang/Object; arg) {
+    Ljava/lang/Object; temp56 = arg;
+    Ljava/lang/String; $51$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp56, null))
+      {
+        $51$ = "null";
+      }
+    else
+      {
+        Ljava/lang/String; $52$;
+        if (temp56.<instanceof>(Lscala/xml/Node;))
+          {
+            $52$ = temp56.<cast>(Lscala/xml/Node;).(Lscala/xml/Node;::toString()Ljava/lang/String;)();
+          }
+        else
+          {
+            Ljava/lang/String; $53$;
+            if (temp56.<instanceof>(Lscala/xml/MetaData;))
+              {
+                $53$ = temp56.<cast>(Lscala/xml/MetaData;).(Lscala/xml/MetaData;::toString()Ljava/lang/String;)();
+              }
+            else
+              {
+                Ljava/lang/String; $54$;
+                if (temp56.<instanceof>(Lscala/collection/immutable/Range;))
+                  {
+                    $54$ = temp56.<cast>(Lscala/collection/immutable/Range;).(Lscala/collection/immutable/Range;::toString()Ljava/lang/String;)();
+                  }
+                else
+                  {
+                    Ljava/lang/String; $55$;
+                    if (temp56.<instanceof>(Lscala/collection/immutable/NumericRange;))
+                      {
+                        $55$ = temp56.<cast>(Lscala/collection/immutable/NumericRange;).(Lscala/collection/immutable/NumericRange;::toString()Ljava/lang/String;)();
+                      }
+                    else
+                      {
+                        Ljava/lang/String; $56$;
+                        if (temp56.<instanceof>(Ljava/lang/Object;))
+                          {
+                            Ljava/lang/Object; temp62 = temp56;
+                            Ljava/lang/Object; x = temp62;
+                            Ljava/lang/String; $57$;
+                            if (this.(Lscala/runtime/ScalaRunTime$;::gd2$1(Ljava/lang/Object;)Z;)(x))
+                              {
+                                $57$ = Lscala/collection/mutable/WrappedArray$;.MODULE$.(Lscala/collection/mutable/WrappedArray$;::make(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(temp62).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/runtime/ScalaRunTime$$anonfun$inner$1$1;::this()V;)()), Lscala/collection/mutable/WrappedArray$;.MODULE$.(Lscala/collection/mutable/WrappedArray$;::canBuildFrom(Lscala/reflect/ClassManifest;)Lscala/collection/generic/CanBuildFrom;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;)Lscala/reflect/ClassManifest;)(Ljava/lang/String;.class))).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)("Array(", ", ", ")");
+                              }
+                            else
+                              {
+                                Ljava/lang/String; $58$;
+                                if (temp62.<instanceof>(Lscala/collection/TraversableView;))
+                                  {
+                                    $58$ = temp62.<cast>(Lscala/collection/TraversableView;).(Lscala/collection/TraversableLike;::toString()Ljava/lang/String;)();
+                                  }
+                                else
+                                  {
+                                    Ljava/lang/String; $59$;
+                                    if (temp62.<instanceof>(Lscala/collection/Traversable;))
+                                      {
+                                        Lscala/collection/Traversable; temp64 = temp62.<cast>(Lscala/collection/Traversable;);
+                                        Lscala/collection/Traversable; x = temp64;
+                                        Lscala/collection/Traversable; x = temp62.<cast>(Lscala/collection/Traversable;);
+                                        Ljava/lang/String; $60$;
+                                        if (this.(Lscala/runtime/ScalaRunTime$;::gd3$1(Lscala/collection/Traversable;)Z;)(x))
+                                          {
+                                            $60$ = temp64.(Lscala/collection/TraversableLike;::toString()Ljava/lang/String;)();
+                                          }
+                                        else
+                                          {
+                                            Ljava/lang/String; $61$;
+                                            if (temp64.<instanceof>(Lscala/collection/Traversable;))
+                                              {
+                                                Lscala/collection/Traversable; temp65 = temp64;
+                                                Lscala/collection/Traversable; x = temp65;
+                                                Ljava/lang/String; $62$;
+                                                if (x.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)().(Ljava/lang/Class;::getName()Ljava/lang/String;)().(Ljava/lang/String;::startsWith(Ljava/lang/String;)Z;)("scala.tools.nsc.io"))
+                                                  {
+                                                    $62$ = x.(Lscala/collection/TraversableLike;::toString()Ljava/lang/String;)();
+                                                  }
+                                                else
+                                                  {
+                                                    $62$ = this.(Lscala/runtime/ScalaRunTime$;::mapTraversable$1(Lscala/collection/Traversable;Lscala/Function1;)Lscala/collection/Traversable;)(x, (new (Lscala/runtime/ScalaRunTime$$anonfun$inner$1$2;::this()V;)())).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)((x.(Lscala/collection/TraversableLike;::stringPrefix()Ljava/lang/String;)() + "("), ", ", ")");
+                                                  }
+                                                $61$ = $62$;
+                                              }
+                                            else
+                                              {
+                                                Ljava/lang/Object; x = temp62;
+                                                $61$ = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::body$percent9$percent1(Ljava/lang/Object;)Ljava/lang/String;)(x);
+                                              }
+                                            $60$ = $61$;
+                                          }
+                                        $59$ = $60$;
+                                      }
+                                    else
+                                      {
+                                        $59$ = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::body$percent9$percent1(Ljava/lang/Object;)Ljava/lang/String;)(temp62);
+                                      }
+                                    $58$ = $59$;
+                                  }
+                                $57$ = $58$;
+                              }
+                            $56$ = $57$;
+                          }
+                        else
+                          {
+                            $56$ = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::body$percent9$percent1(Ljava/lang/Object;)Ljava/lang/String;)(temp56);
+                          }
+                        $55$ = $56$;
+                      }
+                    $54$ = $55$;
+                  }
+                $53$ = $54$;
+              }
+            $52$ = $53$;
+          }
+        $51$ = $52$;
+      }
+    return $51$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+  
+  private final Ljava/lang/String; body$percent9$percent1(Ljava/lang/Object; x) {
+    return x.(Ljava/lang/Object;::toString()Ljava/lang/String;)();
+  }
+}

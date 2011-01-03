@@ -1,0 +1,28 @@
+public final class Lscala/Left$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/Left$; MODULE$ = new (Lscala/Left$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "Left";
+  }
+  
+  public Lscala/Option; unapply(Lscala/Left; x$0) {
+    Lscala/Option; $19$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $19$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $19$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/Left;::a()Ljava/lang/Object;)()));
+      }
+    return $19$;
+  }
+  
+  public Lscala/Left; apply(Ljava/lang/Object; a) {
+    return (new (Lscala/Left;::this(Ljava/lang/Object;)V;)(a));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

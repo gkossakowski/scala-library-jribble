@@ -1,0 +1,31 @@
+public final class Lscala/Tuple2$Zipped$$anonfun$forall$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(Ljava/lang/Object; el1) {
+    if ((this.(Lscala/runtime/BooleanRef;)acc$2.(Z;)elem && this.(Lscala/collection/Iterator;)elems2$6.(Lscala/collection/Iterator;::hasNext()Z;)()))
+      {
+        this.(Lscala/runtime/BooleanRef;)acc$2.(Z;)elem = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Function2;)f$5.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(el1, this.(Lscala/collection/Iterator;)elems2$6.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)()));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/Tuple2$Zipped$$anonfun$forall$1;::apply(Ljava/lang/Object;)V;)(v1);
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/Function2; f$5;
+  
+  private Lscala/runtime/BooleanRef; acc$2;
+  
+  private Lscala/collection/Iterator; elems2$6;
+  
+  public this(Lscala/Tuple2$Zipped; $outer, Lscala/Function2; f$5, Lscala/runtime/BooleanRef; acc$2, Lscala/collection/Iterator; elems2$6) {
+    this.(Lscala/Function2;)f$5 = f$5;
+    this.(Lscala/runtime/BooleanRef;)acc$2 = acc$2;
+    this.(Lscala/collection/Iterator;)elems2$6 = elems2$6;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

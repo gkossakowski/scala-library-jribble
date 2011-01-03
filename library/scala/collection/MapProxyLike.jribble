@@ -1,0 +1,46 @@
+public interface Lscala/collection/MapProxyLike; extends Lscala/collection/MapLike;, Lscala/collection/IterableProxyLike;, Lscala/ScalaObject; {
+  
+  public Lscala/Option; get(Ljava/lang/Object; key);
+  
+  public Lscala/collection/Iterator; iterator();
+  
+  public Lscala/collection/Map; $plus(Lscala/Tuple2; kv);
+  
+  public Lscala/collection/Map; $minus(Ljava/lang/Object; key);
+  
+  public Z; isEmpty();
+  
+  public Ljava/lang/Object; getOrElse(Ljava/lang/Object; key, Lscala/Function0; `default`);
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; key);
+  
+  public Z; contains(Ljava/lang/Object; key);
+  
+  public Z; isDefinedAt(Ljava/lang/Object; key);
+  
+  public Lscala/collection/Set; keySet();
+  
+  public Lscala/collection/Iterator; keysIterator();
+  
+  public Lscala/collection/Iterable; keys();
+  
+  public Lscala/collection/Iterable; values();
+  
+  public Lscala/collection/Iterator; valuesIterator();
+  
+  public Ljava/lang/Object; `default`(Ljava/lang/Object; key);
+  
+  public Lscala/collection/Map; filterKeys(Lscala/Function1; p);
+  
+  public Lscala/collection/Map; mapValues(Lscala/Function1; f);
+  
+  public Lscala/collection/Map; updated(Ljava/lang/Object; key, Ljava/lang/Object; value);
+  
+  public Lscala/collection/Map; $plus(Lscala/Tuple2; kv1, Lscala/Tuple2; kv2, Lscala/collection/Seq; kvs);
+  
+  public Lscala/collection/Map; $plus$plus(Lscala/collection/TraversableOnce; xs);
+  
+  public Lscala/collection/Map; filterNot(Lscala/Function1; p);
+  
+  public Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/mutable/StringBuilder; b, Ljava/lang/String; start, Ljava/lang/String; sep, Ljava/lang/String; end);
+}

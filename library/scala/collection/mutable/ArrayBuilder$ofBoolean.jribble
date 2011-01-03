@@ -1,0 +1,178 @@
+public class Lscala/collection/mutable/ArrayBuilder$ofBoolean; extends Lscala/collection/mutable/ArrayBuilder; implements Lscala/ScalaObject; {
+  
+  private Z;[ elems$u0020;
+  
+  private Z;[ elems() {
+    return this.(Z;[)elems$u0020;
+  }
+  
+  private V; elems_$eq(Z;[ x$1) {
+    this.(Z;[)elems$u0020 = x$1;
+  }
+  
+  private I; capacity$u0020;
+  
+  private I; capacity() {
+    return this.(I;)capacity$u0020;
+  }
+  
+  private V; capacity_$eq(I; x$1) {
+    this.(I;)capacity$u0020 = x$1;
+  }
+  
+  private I; size$u0020;
+  
+  private I; size() {
+    return this.(I;)size$u0020;
+  }
+  
+  private V; size_$eq(I; x$1) {
+    this.(I;)size$u0020 = x$1;
+  }
+  
+  private Z;[ mkArray(I; size) {
+    Z;[ newelems = new Z;[size];
+    if ((this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::size()I;)() > 0))
+      {
+        Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::elems()Z;[)(), 0, newelems, 0, this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::size()I;)());
+      }
+    else
+      {
+        
+      }
+    return newelems;
+  }
+  
+  private V; resize(I; size) {
+    this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::elems_$eq(Z;[)V;)(this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::mkArray(I;)Z;[)(size));
+    this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::capacity_$eq(I;)V;)(size);
+  }
+  
+  public V; sizeHint(I; size) {
+    if ((this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::capacity()I;)() < size))
+      {
+        this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::resize(I;)V;)(size);
+      }
+    else
+      {
+        
+      }
+  }
+  
+  private V; ensureSize(I; size) {
+    if ((this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::capacity()I;)() == 0))
+      {
+        this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::resize(I;)V;)(16);
+      }
+    else
+      {
+        
+      }
+    if ((this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::capacity()I;)() < size))
+      {
+        I; newsize = (this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::capacity()I;)() * 2);
+        while$9: while(true) {
+          if ((newsize < size))
+            {
+              newsize = (newsize * 2);
+              continue while$9;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+        this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::resize(I;)V;)(newsize);
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public Lscala/collection/mutable/ArrayBuilder$ofBoolean; $plus$eq(Z; elem) {
+    this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::ensureSize(I;)V;)((this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::size()I;)() + 1));
+    this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::elems()Z;[)()[this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::size()I;)()] = elem;
+    this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::size_$eq(I;)V;)((this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::size()I;)() + 1));
+    return this;
+  }
+  
+  public Lscala/collection/mutable/ArrayBuilder$ofBoolean; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    Lscala/collection/TraversableOnce; temp33 = xs;
+    Lscala/collection/mutable/ArrayBuilder$ofBoolean; $25$;
+    if (temp33.<instanceof>(Lscala/collection/mutable/WrappedArray$ofBoolean;))
+      {
+        Lscala/collection/mutable/WrappedArray$ofBoolean; temp34 = temp33.<cast>(Lscala/collection/mutable/WrappedArray$ofBoolean;);
+        Lscala/collection/mutable/WrappedArray$ofBoolean; xs = temp34;
+        this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::ensureSize(I;)V;)((this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::size()I;)() + xs.(Lscala/collection/mutable/WrappedArray$ofBoolean;::length()I;)()));
+        Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(xs.(Lscala/collection/mutable/WrappedArray$ofBoolean;::array()Z;[)(), 0, this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::elems()Z;[)(), this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::size()I;)(), xs.(Lscala/collection/mutable/WrappedArray$ofBoolean;::length()I;)());
+        this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::size_$eq(I;)V;)((this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::size()I;)() + xs.(Lscala/collection/mutable/WrappedArray$ofBoolean;::length()I;)()));
+        $25$ = this;
+      }
+    else
+      {
+        $25$ = Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, xs).<cast>(Lscala/collection/mutable/ArrayBuilder$ofBoolean;);
+      }
+    return $25$;
+  }
+  
+  public V; clear() {
+    this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::size_$eq(I;)V;)(0);
+  }
+  
+  public Z;[ result() {
+    Z;[ $26$;
+    if (((this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::capacity()I;)() != 0) && (this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::capacity()I;)() == this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::size()I;)())))
+      {
+        $26$ = this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::elems()Z;[)();
+      }
+    else
+      {
+        $26$ = this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::mkArray(I;)Z;[)(this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::size()I;)());
+      }
+    return $26$;
+  }
+  
+  public Z; equals(Ljava/lang/Object; other) {
+    Ljava/lang/Object; temp35 = other;
+    Z; $27$;
+    if (temp35.<instanceof>(Lscala/collection/mutable/ArrayBuilder$ofBoolean;))
+      {
+        Lscala/collection/mutable/ArrayBuilder$ofBoolean; temp36 = temp35.<cast>(Lscala/collection/mutable/ArrayBuilder$ofBoolean;);
+        Lscala/collection/mutable/ArrayBuilder$ofBoolean; x = temp36;
+        $27$ = ((this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::size()I;)() == x.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::size()I;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::elems()Z;[)(), x.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::elems()Z;[)()));
+      }
+    else
+      {
+        $27$ = false;
+      }
+    return $27$;
+  }
+  
+  public Ljava/lang/String; toString() {
+    return "ArrayBuilder.ofBoolean";
+  }
+  
+  public Ljava/lang/Object; result() {
+    return this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::result()Z;[)();
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    return this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/ArrayBuilder$ofBoolean;)(xs);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::$plus$eq(Z;)Lscala/collection/mutable/ArrayBuilder$ofBoolean;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(elem));
+  }
+  
+  public Lscala/collection/mutable/Builder; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/ArrayBuilder$ofBoolean;::$plus$eq(Z;)Lscala/collection/mutable/ArrayBuilder$ofBoolean;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(elem));
+  }
+  
+  public this() {
+    (Lscala/collection/mutable/ArrayBuilder;::super()V;)();
+    this.(I;)capacity$u0020 = 0;
+    this.(I;)size$u0020 = 0;
+  }
+}

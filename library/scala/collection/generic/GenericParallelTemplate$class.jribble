@@ -1,0 +1,26 @@
+public abstract class Lscala/collection/generic/GenericParallelTemplate$class; {
+  
+  public static Lscala/collection/mutable/Builder; newBuilder(Lscala/collection/generic/GenericParallelTemplate; $this) {
+    return $this.(Lscala/collection/generic/GenericParallelTemplate;::newCombiner()Lscala/collection/parallel/Combiner;)();
+  }
+  
+  public static Lscala/collection/parallel/Combiner; newCombiner(Lscala/collection/generic/GenericParallelTemplate; $this) {
+    Lscala/collection/parallel/Combiner; cb = $this.(Lscala/collection/generic/GenericParallelTemplate;::companion()Lscala/collection/generic/GenericCompanion;)().<cast>(Lscala/collection/generic/GenericParallelCompanion;).(Lscala/collection/generic/GenericParallelCompanion;::newCombiner()Lscala/collection/parallel/Combiner;)();
+    cb.(Lscala/collection/parallel/ForkJoinTasks;::environment_$eq(Lscala/concurrent/forkjoin/ForkJoinPool;)V;)($this.(Lscala/collection/parallel/ForkJoinTasks;::environment()Lscala/concurrent/forkjoin/ForkJoinPool;)());
+    return cb;
+  }
+  
+  public static Lscala/collection/parallel/Combiner; genericBuilder(Lscala/collection/generic/GenericParallelTemplate; $this) {
+    return $this.(Lscala/collection/generic/GenericParallelTemplate;::genericCombiner()Lscala/collection/parallel/Combiner;)();
+  }
+  
+  public static Lscala/collection/parallel/Combiner; genericCombiner(Lscala/collection/generic/GenericParallelTemplate; $this) {
+    Lscala/collection/parallel/Combiner; cb = $this.(Lscala/collection/generic/GenericParallelTemplate;::companion()Lscala/collection/generic/GenericCompanion;)().<cast>(Lscala/collection/generic/GenericParallelCompanion;).(Lscala/collection/generic/GenericParallelCompanion;::newCombiner()Lscala/collection/parallel/Combiner;)();
+    cb.(Lscala/collection/parallel/ForkJoinTasks;::environment_$eq(Lscala/concurrent/forkjoin/ForkJoinPool;)V;)($this.(Lscala/collection/parallel/ForkJoinTasks;::environment()Lscala/concurrent/forkjoin/ForkJoinPool;)());
+    return cb;
+  }
+  
+  public static V; $init$(Lscala/collection/generic/GenericParallelTemplate; $this) {
+    
+  }
+}

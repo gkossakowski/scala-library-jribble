@@ -1,0 +1,14 @@
+public abstract class Lscala/collection/SortedMap$class; {
+  
+  public static Lscala/collection/SortedMap; empty(Lscala/collection/SortedMap; $this) {
+    return Lscala/collection/SortedMap$;.MODULE$.(Lscala/collection/SortedMap$;::empty(Lscala/math/Ordering;)Lscala/collection/immutable/SortedMap;)($this.(Lscala/collection/SortedMapLike;::ordering()Lscala/math/Ordering;)());
+  }
+  
+  public static Lscala/collection/mutable/Builder; newBuilder(Lscala/collection/SortedMap; $this) {
+    return Lscala/collection/immutable/SortedMap$;.MODULE$.(Lscala/collection/generic/SortedMapFactory;::newBuilder(Lscala/math/Ordering;)Lscala/collection/mutable/Builder;)($this.(Lscala/collection/SortedMapLike;::ordering()Lscala/math/Ordering;)());
+  }
+  
+  public static V; $init$(Lscala/collection/SortedMap; $this) {
+    
+  }
+}

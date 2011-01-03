@@ -1,0 +1,165 @@
+public abstract class Lscala/collection/immutable/package$RangeUtils$class; {
+  
+  private static final I; inclusiveLast(Lscala/collection/immutable/package$RangeUtils; $this) {
+    J; size = ($this.(Lscala/collection/immutable/package$RangeUtils;::end()I;)().<cast>(J;) - $this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)().<cast>(J;));
+    return (((size / $this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)().<cast>(J;)) * $this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)().<cast>(J;)) + $this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)().<cast>(J;)).<cast>(I;);
+  }
+  
+  public static final I; _last(Lscala/collection/immutable/package$RangeUtils; $this) {
+    I; $1$;
+    if (!($this.(Lscala/collection/immutable/package$RangeUtils;::inclusive()Z;)()))
+      {
+        I; $2$;
+        if ((($this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)() == 1) || ($this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)() == -1)))
+          {
+            $2$ = ($this.(Lscala/collection/immutable/package$RangeUtils;::end()I;)() - $this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)());
+          }
+        else
+          {
+            I; inclast = Lscala/collection/immutable/package$RangeUtils$class;.(Lscala/collection/immutable/package$RangeUtils$class;::inclusiveLast(Lscala/collection/immutable/package$RangeUtils;)I;)($this);
+            I; $3$;
+            if (((($this.(Lscala/collection/immutable/package$RangeUtils;::end()I;)().<cast>(J;) - $this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)().<cast>(J;)) % $this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)()) == 0))
+              {
+                $3$ = (inclast - $this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)());
+              }
+            else
+              {
+                $3$ = inclast;
+              }
+            $2$ = $3$;
+          }
+        $1$ = $2$;
+      }
+    else
+      {
+        I; $4$;
+        if ((($this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)() == 1) || ($this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)() == -1)))
+          {
+            $4$ = $this.(Lscala/collection/immutable/package$RangeUtils;::end()I;)();
+          }
+        else
+          {
+            $4$ = Lscala/collection/immutable/package$RangeUtils$class;.(Lscala/collection/immutable/package$RangeUtils$class;::inclusiveLast(Lscala/collection/immutable/package$RangeUtils;)I;)($this);
+          }
+        $1$ = $4$;
+      }
+    return $1$;
+  }
+  
+  public static final V; _foreach(Lscala/collection/immutable/package$RangeUtils; $this, Lscala/Function1; f) {
+    if (($this.(Lscala/collection/immutable/package$RangeUtils;::_length()I;)() > 0))
+      {
+        I; i = $this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)();
+        I; last = $this.(Lscala/collection/immutable/package$RangeUtils;::_last()I;)();
+        while$1: while(true) {
+          if ((i != last))
+            {
+              {
+                f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i));
+                i = (i + $this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)());
+              }
+              continue while$1;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public static final I; _length(Lscala/collection/immutable/package$RangeUtils; $this) {
+    I; $5$;
+    if (!($this.(Lscala/collection/immutable/package$RangeUtils;::inclusive()Z;)()))
+      {
+        J; $6$;
+        if (((($this.(Lscala/collection/immutable/package$RangeUtils;::end()I;)() > $this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)()) == ($this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)() > 0)) && ($this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)() != $this.(Lscala/collection/immutable/package$RangeUtils;::end()I;)())))
+          {
+            $6$ = ((($this.(Lscala/collection/immutable/package$RangeUtils;::_last()I;)().<cast>(J;) - $this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)().<cast>(J;)) / $this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)().<cast>(J;)) + 1);
+          }
+        else
+          {
+            $6$ = 0L;
+          }
+        $5$ = $6$.<cast>(I;);
+      }
+    else
+      {
+        J; $7$;
+        if (((($this.(Lscala/collection/immutable/package$RangeUtils;::end()I;)() > $this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)()) == ($this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)() > 0)) || ($this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)() == $this.(Lscala/collection/immutable/package$RangeUtils;::end()I;)())))
+          {
+            $7$ = ((($this.(Lscala/collection/immutable/package$RangeUtils;::_last()I;)().<cast>(J;) - $this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)().<cast>(J;)) / $this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)().<cast>(J;)) + 1);
+          }
+        else
+          {
+            $7$ = 0L;
+          }
+        $5$ = $7$.<cast>(I;);
+      }
+    return $5$;
+  }
+  
+  public static final I; _apply(Lscala/collection/immutable/package$RangeUtils; $this, I; idx) {
+    if (((idx < 0) || (idx >= $this.(Lscala/collection/immutable/package$RangeUtils;::_length()I;)())))
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(idx).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    else
+      {
+        
+      }
+    return ($this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)() + (idx * $this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)()));
+  }
+  
+  private static I; locationAfterN(Lscala/collection/immutable/package$RangeUtils; $this, I; n) {
+    I; $8$;
+    if ((n > 0))
+      {
+        I; $9$;
+        if (($this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)() > 0))
+          {
+            $9$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::longWrapper(J;)Lscala/runtime/RichLong;)(($this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)().<cast>(J;) + ($this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)().<cast>(J;) * n.<cast>(J;)))).(Lscala/runtime/RichLong;::min(J;)J;)($this.(Lscala/collection/immutable/package$RangeUtils;::_last()I;)().<cast>(J;)).<cast>(I;);
+          }
+        else
+          {
+            $9$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::longWrapper(J;)Lscala/runtime/RichLong;)(($this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)().<cast>(J;) + ($this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)().<cast>(J;) * n.<cast>(J;)))).(Lscala/runtime/RichLong;::max(J;)J;)($this.(Lscala/collection/immutable/package$RangeUtils;::_last()I;)().<cast>(J;)).<cast>(I;);
+          }
+        $8$ = $9$;
+      }
+    else
+      {
+        $8$ = $this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)();
+      }
+    return $8$;
+  }
+  
+  public static final Lscala/collection/immutable/package$RangeUtils; _take(Lscala/collection/immutable/package$RangeUtils; $this, I; n) {
+    Lscala/collection/immutable/package$RangeUtils; $10$;
+    if (((n > 0) && ($this.(Lscala/collection/immutable/package$RangeUtils;::_length()I;)() > 0)))
+      {
+        $10$ = $this.(Lscala/collection/immutable/package$RangeUtils;::create(I;I;I;Z;)Lscala/collection/immutable/package$RangeUtils;)($this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)(), Lscala/collection/immutable/package$RangeUtils$class;.(Lscala/collection/immutable/package$RangeUtils$class;::locationAfterN(Lscala/collection/immutable/package$RangeUtils;I;)I;)($this, n), $this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)(), true);
+      }
+    else
+      {
+        $10$ = $this.(Lscala/collection/immutable/package$RangeUtils;::create(I;I;I;Z;)Lscala/collection/immutable/package$RangeUtils;)($this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)(), $this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)(), $this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)(), false);
+      }
+    return $10$;
+  }
+  
+  public static final Lscala/collection/immutable/package$RangeUtils; _drop(Lscala/collection/immutable/package$RangeUtils; $this, I; n) {
+    return $this.(Lscala/collection/immutable/package$RangeUtils;::create(I;I;I;Z;)Lscala/collection/immutable/package$RangeUtils;)(Lscala/collection/immutable/package$RangeUtils$class;.(Lscala/collection/immutable/package$RangeUtils$class;::locationAfterN(Lscala/collection/immutable/package$RangeUtils;I;)I;)($this, n), $this.(Lscala/collection/immutable/package$RangeUtils;::end()I;)(), $this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)(), $this.(Lscala/collection/immutable/package$RangeUtils;::inclusive()Z;)());
+  }
+  
+  public static final Lscala/collection/immutable/package$RangeUtils; _slice(Lscala/collection/immutable/package$RangeUtils; $this, I; from, I; until) {
+    return $this.(Lscala/collection/immutable/package$RangeUtils;::_drop(I;)Lscala/collection/immutable/package$RangeUtils;)(from).(Lscala/collection/immutable/package$RangeUtils;::_take(I;)Lscala/collection/immutable/package$RangeUtils;)((until - from));
+  }
+  
+  public static V; $init$(Lscala/collection/immutable/package$RangeUtils; $this) {
+    
+  }
+}

@@ -1,0 +1,108 @@
+public final class Lscala/xml/dtd/ElementValidator$$anonfun$check$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(Lscala/xml/MetaData; attr$1) {
+    Lscala/Option; temp19 = this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1;::find$1(Ljava/lang/String;)Lscala/Option;)(attr$1.(Lscala/xml/MetaData;::key()Ljava/lang/String;)());
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp19))
+      {
+        this.(Lscala/xml/dtd/ElementValidator;)$outer$u0020.(Lscala/xml/dtd/ElementValidator;::scala$xml$dtd$ElementValidator$$exc_$eq(Lscala/collection/immutable/List;)V;)(this.(Lscala/xml/dtd/ElementValidator;)$outer$u0020.(Lscala/xml/dtd/ElementValidator;::scala$xml$dtd$ElementValidator$$exc()Lscala/collection/immutable/List;)().(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(Lscala/xml/dtd/MakeValidationException$;.MODULE$.(Lscala/xml/dtd/MakeValidationException$;::fromUndefinedAttribute(Ljava/lang/String;)Lscala/xml/dtd/ValidationException;)(attr$1.(Lscala/xml/MetaData;::key()Ljava/lang/String;)())));
+      }
+    else
+      {
+        if (temp19.<instanceof>(Lscala/Some;))
+          {
+            Lscala/Some; temp21 = temp19.<cast>(Lscala/Some;);
+            Lscala/xml/dtd/AttrDecl; temp22 = temp21.(Lscala/Some;::x()Ljava/lang/Object;)().<cast>(Lscala/xml/dtd/AttrDecl;);
+            if ((temp22 != null))
+              {
+                Ljava/lang/String; temp24 = temp22.(Lscala/xml/dtd/AttrDecl;::tpe()Ljava/lang/String;)();
+                Lscala/xml/dtd/DefaultDecl; temp25 = temp22.(Lscala/xml/dtd/AttrDecl;::`default`()Lscala/xml/dtd/DefaultDecl;)();
+                if (temp25.<instanceof>(Lscala/xml/dtd/DEFAULT;))
+                  {
+                    Lscala/xml/dtd/DEFAULT; temp26 = temp25.<cast>(Lscala/xml/dtd/DEFAULT;);
+                    Ljava/lang/String; temp28 = temp26.(Lscala/xml/dtd/DEFAULT;::attValue()Ljava/lang/String;)();
+                    if ((temp26.(Lscala/xml/dtd/DEFAULT;::fixed()Z;)() == true))
+                      {
+                        Ljava/lang/String; tpe = temp24;
+                        Ljava/lang/String; fixedValue = temp28;
+                        if (this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1;::gd4$1(Ljava/lang/String;Ljava/lang/String;Lscala/xml/MetaData;)Z;)(tpe, fixedValue, attr$1))
+                          {
+                            this.(Lscala/xml/dtd/ElementValidator;)$outer$u0020.(Lscala/xml/dtd/ElementValidator;::scala$xml$dtd$ElementValidator$$exc_$eq(Lscala/collection/immutable/List;)V;)(this.(Lscala/xml/dtd/ElementValidator;)$outer$u0020.(Lscala/xml/dtd/ElementValidator;::scala$xml$dtd$ElementValidator$$exc()Lscala/collection/immutable/List;)().(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(Lscala/xml/dtd/MakeValidationException$;.MODULE$.(Lscala/xml/dtd/MakeValidationException$;::fromFixedAttribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lscala/xml/dtd/ValidationException;)(attr$1.(Lscala/xml/MetaData;::key()Ljava/lang/String;)(), temp28, this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1;::attrStr$1(Lscala/xml/MetaData;)Ljava/lang/String;)(attr$1))));
+                          }
+                        else
+                          {
+                            
+                          }
+                      }
+                    else
+                      {
+                        
+                      }
+                  }
+                else
+                  {
+                    
+                  }
+              }
+            else
+              {
+                
+              }
+          }
+        else
+          {
+            
+          }
+      }
+  }
+  
+  private Lscala/xml/dtd/ElementValidator; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1;::apply(Lscala/xml/MetaData;)V;)(v1.<cast>(Lscala/xml/MetaData;));
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  public Lscala/runtime/ObjectRef; ok$1;
+  
+  private final Ljava/lang/String; attrStr$1(Lscala/xml/MetaData; attr$1) {
+    return attr$1.(Lscala/xml/MetaData;::value()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)();
+  }
+  
+  private final Lscala/Option; find$1(Ljava/lang/String; Key$1) {
+    Ljava/lang/Object; nonLocalReturnKey1$1 = (new (Ljava/lang/Object;::this()V;)());
+    Lscala/Option; exceptionResult1;
+    try {
+      this.(Lscala/xml/dtd/ElementValidator;)$outer$u0020.(Lscala/xml/dtd/ElementValidator;::adecls()Lscala/collection/immutable/List;)().(Lscala/collection/IterableLike;::zipWithIndex(Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(Lscala/collection/immutable/List$;.MODULE$.(Lscala/collection/immutable/List$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/LinearSeqOptimized;).(Lscala/collection/LinearSeqOptimized;::find(Lscala/Function1;)Lscala/Option;)((new (Lscala/xml/dtd/ElementValidator$$anonfun$check$1$$anonfun$find$1$1;::this(Lscala/xml/dtd/ElementValidator$$anonfun$check$1;Ljava/lang/String;Ljava/lang/Object;)V;)(this, Key$1, nonLocalReturnKey1$1)));
+      exceptionResult1 = Lscala/None$;.MODULE$;
+    } catch(Lscala/runtime/NonLocalReturnControl; ex) {
+      Lscala/Option; $19$;
+      if ((ex.(Lscala/runtime/NonLocalReturnControl;::key()Ljava/lang/Object;)() == nonLocalReturnKey1$1))
+        {
+          $19$ = ex.(Lscala/runtime/NonLocalReturnControl;::value()Ljava/lang/Object;)().<cast>(Lscala/Option;);
+        }
+      else
+        {
+          throw ex;
+        }
+      exceptionResult1 = $19$;
+    }
+    return exceptionResult1;
+  }
+  
+  private final Z; gd4$1(Ljava/lang/String; x$1, Ljava/lang/String; x$2, Lscala/xml/MetaData; attr$1) {
+    return (this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1;::attrStr$1(Lscala/xml/MetaData;)Ljava/lang/String;)(attr$1) != x$2);
+  }
+  
+  public this(Lscala/xml/dtd/ElementValidator; $outer, Lscala/runtime/ObjectRef; ok$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/xml/dtd/ElementValidator;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/runtime/ObjectRef;)ok$1 = ok$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

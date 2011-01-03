@@ -1,0 +1,28 @@
+public final class Lscala/collection/generic/BitSetFactory$$anon$1; extends Ljava/lang/Object; implements Lscala/collection/generic/CanBuildFrom; {
+  
+  public Lscala/collection/mutable/Builder; apply(Lscala/collection/BitSet; from) {
+    return this.(Lscala/collection/generic/BitSetFactory;)$outer$u0020.(Lscala/collection/generic/BitSetFactory;::newBuilder()Lscala/collection/mutable/Builder;)();
+  }
+  
+  public Lscala/collection/mutable/Builder; apply() {
+    return this.(Lscala/collection/generic/BitSetFactory;)$outer$u0020.(Lscala/collection/generic/BitSetFactory;::newBuilder()Lscala/collection/mutable/Builder;)();
+  }
+  
+  private Lscala/collection/generic/BitSetFactory; $outer$u0020;
+  
+  public Lscala/collection/mutable/Builder; apply(Ljava/lang/Object; from) {
+    return this.(Lscala/collection/generic/BitSetFactory$$anon$1;::apply(Lscala/collection/BitSet;)Lscala/collection/mutable/Builder;)(from.<cast>(Lscala/collection/BitSet;));
+  }
+  
+  public this(Lscala/collection/generic/BitSetFactory; $outer) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/generic/BitSetFactory;)$outer$u0020 = $outer;
+      }
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

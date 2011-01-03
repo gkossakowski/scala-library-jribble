@@ -1,0 +1,36 @@
+public final class Lscala/collection/TraversableLike$$anonfun$dropWhile$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; x) {
+    if (!(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Function1;)p$6.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x))))
+      {
+        this.(Lscala/runtime/BooleanRef;)go$1.(Z;)elem = true;
+      }
+    else
+      {
+        
+      }
+    Ljava/lang/Object; $10$;
+    if (this.(Lscala/runtime/BooleanRef;)go$1.(Z;)elem)
+      {
+        $10$ = this.(Lscala/collection/mutable/Builder;)b$13.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
+      }
+    else
+      {
+        $10$ = Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+      }
+    return $10$;
+  }
+  
+  private Lscala/Function1; p$6;
+  
+  private Lscala/collection/mutable/Builder; b$13;
+  
+  private Lscala/runtime/BooleanRef; go$1;
+  
+  public this(Lscala/collection/TraversableLike; $outer, Lscala/Function1; p$6, Lscala/collection/mutable/Builder; b$13, Lscala/runtime/BooleanRef; go$1) {
+    this.(Lscala/Function1;)p$6 = p$6;
+    this.(Lscala/collection/mutable/Builder;)b$13 = b$13;
+    this.(Lscala/runtime/BooleanRef;)go$1 = go$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

@@ -1,0 +1,117 @@
+public class Lscala/reflect/Function; extends Lscala/reflect/Tree; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/reflect/Tree; copy$default$2() {
+    return this.(Lscala/reflect/Function;::body()Lscala/reflect/Tree;)();
+  }
+  
+  public Lscala/collection/immutable/List; copy$default$1() {
+    return this.(Lscala/reflect/Function;::params()Lscala/collection/immutable/List;)();
+  }
+  
+  private Lscala/collection/immutable/List; params$u0020;
+  
+  public Lscala/collection/immutable/List; params() {
+    return this.(Lscala/collection/immutable/List;)params$u0020;
+  }
+  
+  private Lscala/reflect/Tree; body$u0020;
+  
+  public Lscala/reflect/Tree; body() {
+    return this.(Lscala/reflect/Tree;)body$u0020;
+  }
+  
+  public Lscala/reflect/Function; copy(Lscala/collection/immutable/List; params, Lscala/reflect/Tree; body) {
+    return (new (Lscala/reflect/Function;::this(Lscala/collection/immutable/List;Lscala/reflect/Tree;)V;)(params, body));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp24 = x$1;
+    Z; $19$;
+    if (temp24.<instanceof>(Lscala/reflect/Function;))
+      {
+        Lscala/reflect/Function; temp25 = temp24.<cast>(Lscala/reflect/Function;);
+        Lscala/collection/immutable/List; temp26 = temp25.(Lscala/reflect/Function;::params()Lscala/collection/immutable/List;)();
+        Lscala/reflect/Tree; temp27 = temp25.(Lscala/reflect/Function;::body()Lscala/reflect/Tree;)();
+        Lscala/reflect/Tree; body$1 = temp27;
+        Lscala/collection/immutable/List; params$1 = temp26;
+        Z; $20$;
+        if (this.(Lscala/reflect/Function;::gd6$1(Lscala/collection/immutable/List;Lscala/reflect/Tree;)Z;)(params$1, body$1))
+          {
+            $20$ = x$1.<cast>(Lscala/reflect/Function;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $20$ = false;
+          }
+        $19$ = $20$;
+      }
+    else
+      {
+        $19$ = false;
+      }
+    return ((this == x$1) || $19$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Function";
+  }
+  
+  public I; productArity() {
+    return 2;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp28 = x$1;
+    I; $21$ = temp28;
+    Ljava/lang/Object; $22$;
+    switch ($21$) {
+      0: {
+        $22$ = this.(Lscala/reflect/Function;::params()Lscala/collection/immutable/List;)();
+        break;
+      }
+      
+      1: {
+        $22$ = this.(Lscala/reflect/Function;::body()Lscala/reflect/Tree;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $22$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/reflect/Function;);
+  }
+  
+  private final Z; gd6$1(Lscala/collection/immutable/List; x$1, Lscala/reflect/Tree; x$2) {
+    return (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/reflect/Function;::params()Lscala/collection/immutable/List;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$2, this.(Lscala/reflect/Function;::body()Lscala/reflect/Tree;)()));
+  }
+  
+  public this(Lscala/collection/immutable/List; params, Lscala/reflect/Tree; body) {
+    this.(Lscala/collection/immutable/List;)params$u0020 = params;
+    this.(Lscala/reflect/Tree;)body$u0020 = body;
+    (Lscala/reflect/Tree;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

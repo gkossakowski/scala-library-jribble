@@ -1,0 +1,37 @@
+public abstract class Lscala/collection/immutable/MapLike$class; {
+  
+  public static Lscala/collection/immutable/Map; updated(Lscala/collection/immutable/MapLike; $this, Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    return $this.(Lscala/collection/immutable/MapLike;::$plus(Lscala/Tuple2;)Lscala/collection/immutable/Map;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(key, value)));
+  }
+  
+  public static Lscala/collection/immutable/Map; $plus(Lscala/collection/immutable/MapLike; $this, Lscala/Tuple2; elem1, Lscala/Tuple2; elem2, Lscala/collection/Seq; elems) {
+    return $this.(Lscala/collection/immutable/MapLike;::$plus(Lscala/Tuple2;)Lscala/collection/immutable/Map;)(elem1).(Lscala/collection/immutable/Map;::$plus(Lscala/Tuple2;)Lscala/collection/immutable/Map;)(elem2).(Lscala/collection/immutable/MapLike;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/immutable/Map;)(elems);
+  }
+  
+  public static Lscala/collection/immutable/Map; $plus$plus(Lscala/collection/immutable/MapLike; $this, Lscala/collection/TraversableOnce; xs) {
+    Lscala/collection/immutable/Map; x$1 = $this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Map;);
+    return xs.(Lscala/collection/TraversableOnce;::$div$colon(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(x$1, (new (Lscala/collection/immutable/MapLike$$anonfun$$plus$plus$1;::this(Lscala/collection/immutable/MapLike;)V;)($this))).<cast>(Lscala/collection/immutable/Map;);
+  }
+  
+  public static Lscala/collection/immutable/Map; filterKeys(Lscala/collection/immutable/MapLike; $this, Lscala/Function1; p$1) {
+    return (new (Lscala/collection/immutable/MapLike$$anon$1;::this(Lscala/collection/immutable/MapLike;Lscala/Function1;)V;)($this, p$1));
+  }
+  
+  public static Lscala/collection/immutable/Map; mapValues(Lscala/collection/immutable/MapLike; $this, Lscala/Function1; f$1) {
+    return (new (Lscala/collection/immutable/MapLike$$anon$2;::this(Lscala/collection/immutable/MapLike;Lscala/Function1;)V;)($this, f$1));
+  }
+  
+  public static Ljava/lang/Object; transform(Lscala/collection/immutable/MapLike; $this, Lscala/Function2; f$2, Lscala/collection/generic/CanBuildFrom; bf) {
+    Lscala/collection/mutable/Builder; b$1 = bf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)($this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
+    $this.(Lscala/collection/TraversableLike;::filter(Lscala/Function1;)Ljava/lang/Object;)((new (Lscala/collection/immutable/MapLike$$anonfun$transform$1;::this(Lscala/collection/immutable/MapLike;)V;)($this))).<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/MapLike$$anonfun$transform$2;::this(Lscala/collection/immutable/MapLike;Lscala/Function2;Lscala/collection/mutable/Builder;)V;)($this, f$2, b$1)));
+    return b$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public static Lscala/collection/immutable/Map; update(Lscala/collection/immutable/MapLike; $this, Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    return $this.(Lscala/collection/immutable/MapLike;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/Map;)(key, value);
+  }
+  
+  public static V; $init$(Lscala/collection/immutable/MapLike; $this) {
+    
+  }
+}

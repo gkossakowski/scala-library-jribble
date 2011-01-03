@@ -1,0 +1,82 @@
+public abstract class Lscala/collection/mutable/SynchronizedSet$class; {
+  
+  public static I; size(Lscala/collection/mutable/SynchronizedSet; $this) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)($this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$size()I;)()));
+  }
+  
+  public static Z; isEmpty(Lscala/collection/mutable/SynchronizedSet; $this) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)($this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$isEmpty()Z;)()));
+  }
+  
+  public static Z; contains(Lscala/collection/mutable/SynchronizedSet; $this, Ljava/lang/Object; elem) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)($this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$contains(Ljava/lang/Object;)Z;)(elem)));
+  }
+  
+  public static Lscala/collection/mutable/SynchronizedSet; $plus$eq(Lscala/collection/mutable/SynchronizedSet; $this, Ljava/lang/Object; elem) {
+    return $this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SynchronizedSet;)(elem).<cast>(Lscala/collection/mutable/SynchronizedSet;);
+  }
+  
+  public static Lscala/collection/mutable/SynchronizedSet; $plus$plus$eq(Lscala/collection/mutable/SynchronizedSet; $this, Lscala/collection/TraversableOnce; xs) {
+    return $this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/SynchronizedSet;)(xs).<cast>(Lscala/collection/mutable/SynchronizedSet;);
+  }
+  
+  public static Lscala/collection/mutable/SynchronizedSet; $minus$eq(Lscala/collection/mutable/SynchronizedSet; $this, Ljava/lang/Object; elem) {
+    return $this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SynchronizedSet;)(elem).<cast>(Lscala/collection/mutable/SynchronizedSet;);
+  }
+  
+  public static Lscala/collection/mutable/SynchronizedSet; $minus$minus$eq(Lscala/collection/mutable/SynchronizedSet; $this, Lscala/collection/TraversableOnce; xs) {
+    return $this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$$minus$minus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/SynchronizedSet;)(xs).<cast>(Lscala/collection/mutable/SynchronizedSet;);
+  }
+  
+  public static V; update(Lscala/collection/mutable/SynchronizedSet; $this, Ljava/lang/Object; elem, Z; included) {
+    $this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$update(Ljava/lang/Object;Z;)V;)(elem, included);
+  }
+  
+  public static Z; add(Lscala/collection/mutable/SynchronizedSet; $this, Ljava/lang/Object; elem) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)($this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$add(Ljava/lang/Object;)Z;)(elem)));
+  }
+  
+  public static Z; remove(Lscala/collection/mutable/SynchronizedSet; $this, Ljava/lang/Object; elem) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)($this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$remove(Ljava/lang/Object;)Z;)(elem)));
+  }
+  
+  public static Lscala/collection/mutable/Set; intersect(Lscala/collection/mutable/SynchronizedSet; $this, Lscala/collection/Set; that) {
+    return $this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$intersect(Lscala/collection/Set;)Lscala/collection/mutable/Set;)(that).<cast>(Lscala/collection/mutable/Set;);
+  }
+  
+  public static V; clear(Lscala/collection/mutable/SynchronizedSet; $this) {
+    $this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$clear()V;)();
+  }
+  
+  public static Z; subsetOf(Lscala/collection/mutable/SynchronizedSet; $this, Lscala/collection/Set; that) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)($this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$subsetOf(Lscala/collection/Set;)Z;)(that)));
+  }
+  
+  public static V; foreach(Lscala/collection/mutable/SynchronizedSet; $this, Lscala/Function1; f) {
+    $this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$foreach(Lscala/Function1;)V;)(f);
+  }
+  
+  public static V; retain(Lscala/collection/mutable/SynchronizedSet; $this, Lscala/Function1; p) {
+    $this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$retain(Lscala/Function1;)V;)(p);
+  }
+  
+  public static Lscala/collection/immutable/List; toList(Lscala/collection/mutable/SynchronizedSet; $this) {
+    return $this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$toList()Lscala/collection/immutable/List;)().<cast>(Lscala/collection/immutable/List;);
+  }
+  
+  public static Ljava/lang/String; toString(Lscala/collection/mutable/SynchronizedSet; $this) {
+    return $this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$toString()Ljava/lang/String;)().<cast>(Ljava/lang/String;);
+  }
+  
+  public static V; $less$less(Lscala/collection/mutable/SynchronizedSet; $this, Lscala/collection/script/Message; cmd) {
+    $this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$$less$less(Lscala/collection/script/Message;)V;)(cmd);
+  }
+  
+  public static Lscala/collection/mutable/Set; clone(Lscala/collection/mutable/SynchronizedSet; $this) {
+    return $this.(Lscala/collection/mutable/SynchronizedSet;::scala$collection$mutable$SynchronizedSet$$super$clone()Lscala/collection/mutable/Set;)().<cast>(Lscala/collection/mutable/Set;);
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/SynchronizedSet; $this) {
+    
+  }
+}

@@ -1,0 +1,28 @@
+public abstract class Lscala/collection/SeqViewLike$Reversed$class; {
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/SeqViewLike$Reversed; $this) {
+    return Lscala/collection/SeqViewLike$Reversed$class;.(Lscala/collection/SeqViewLike$Reversed$class;::createReversedIterator(Lscala/collection/SeqViewLike$Reversed;)Lscala/collection/Iterator;)($this);
+  }
+  
+  public static I; length(Lscala/collection/SeqViewLike$Reversed; $this) {
+    return $this.(Lscala/collection/SeqViewLike$Reversed;::scala$collection$SeqViewLike$Reversed$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::length()I;)();
+  }
+  
+  public static Ljava/lang/Object; apply(Lscala/collection/SeqViewLike$Reversed; $this, I; idx) {
+    return $this.(Lscala/collection/SeqViewLike$Reversed;::scala$collection$SeqViewLike$Reversed$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)((($this.(Lscala/collection/SeqViewLike$Reversed;::length()I;)() - 1) - idx));
+  }
+  
+  public static Ljava/lang/String; stringPrefix(Lscala/collection/SeqViewLike$Reversed; $this) {
+    return ($this.(Lscala/collection/SeqViewLike$Reversed;::scala$collection$SeqViewLike$Reversed$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqViewLike;::stringPrefix()Ljava/lang/String;)() + "R");
+  }
+  
+  private static Lscala/collection/Iterator; createReversedIterator(Lscala/collection/SeqViewLike$Reversed; $this) {
+    Lscala/runtime/ObjectRef; lst$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(Lscala/collection/immutable/Nil$;.MODULE$));
+    $this.(Lscala/collection/SeqViewLike$Reversed;::scala$collection$SeqViewLike$Reversed$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/SeqViewLike$Reversed$$anonfun$createReversedIterator$1;::this(Lscala/collection/SeqViewLike$Reversed;Lscala/runtime/ObjectRef;)V;)($this, lst$1)));
+    return lst$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/immutable/List;).(Lscala/collection/LinearSeqLike;::iterator()Lscala/collection/Iterator;)();
+  }
+  
+  public static V; $init$(Lscala/collection/SeqViewLike$Reversed; $this) {
+    
+  }
+}

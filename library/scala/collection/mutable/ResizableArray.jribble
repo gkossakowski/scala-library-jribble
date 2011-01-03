@@ -1,0 +1,32 @@
+public interface Lscala/collection/mutable/ResizableArray; extends Lscala/collection/mutable/IndexedSeq;, Lscala/collection/generic/GenericTraversableTemplate;, Lscala/collection/mutable/IndexedSeqOptimized;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/generic/GenericCompanion; companion();
+  
+  public I; initialSize();
+  
+  public Ljava/lang/Object;[ array();
+  
+  public V; array_$eq(Ljava/lang/Object;[ x$1);
+  
+  public I; size0();
+  
+  public V; size0_$eq(I; x$1);
+  
+  public I; length();
+  
+  public Ljava/lang/Object; apply(I; idx);
+  
+  public V; update(I; idx, Ljava/lang/Object; elem);
+  
+  public V; foreach(Lscala/Function1; f);
+  
+  public V; copyToArray(Ljava/lang/Object; xs, I; start, I; len);
+  
+  public V; reduceToSize(I; sz);
+  
+  public V; ensureSize(I; n);
+  
+  public V; swap(I; a, I; b);
+  
+  public V; copy(I; m, I; n, I; len);
+}

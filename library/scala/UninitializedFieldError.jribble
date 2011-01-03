@@ -1,0 +1,103 @@
+public final class Lscala/UninitializedFieldError; extends Ljava/lang/RuntimeException; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/UninitializedFieldError;::msg()Ljava/lang/String;)();
+  }
+  
+  private Ljava/lang/String; msg$u0020;
+  
+  public Ljava/lang/String; msg() {
+    return this.(Ljava/lang/String;)msg$u0020;
+  }
+  
+  public this(Ljava/lang/Object; obj) {
+    Ljava/lang/String; $1$;
+    if ((null != obj))
+      {
+        $1$ = obj.(Ljava/lang/Object;::toString()Ljava/lang/String;)();
+      }
+    else
+      {
+        $1$ = "null";
+      }
+    (Lscala/UninitializedFieldError;::this(Ljava/lang/String;)V;)($1$);
+  }
+  
+  public Lscala/UninitializedFieldError; copy(Ljava/lang/String; msg) {
+    return (new (Lscala/UninitializedFieldError;::this(Ljava/lang/String;)V;)(msg));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp1 = x$1;
+    Z; $2$;
+    if (temp1.<instanceof>(Lscala/UninitializedFieldError;))
+      {
+        Lscala/UninitializedFieldError; temp2 = temp1.<cast>(Lscala/UninitializedFieldError;);
+        Ljava/lang/String; temp3 = temp2.(Lscala/UninitializedFieldError;::msg()Ljava/lang/String;)();
+        Ljava/lang/String; msg$1 = temp3;
+        Z; $3$;
+        if (this.(Lscala/UninitializedFieldError;::gd1$1(Ljava/lang/String;)Z;)(msg$1))
+          {
+            $3$ = x$1.<cast>(Lscala/UninitializedFieldError;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $3$ = false;
+          }
+        $2$ = $3$;
+      }
+    else
+      {
+        $2$ = false;
+      }
+    return ((this == x$1) || $2$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "UninitializedFieldError";
+  }
+  
+  public I; productArity() {
+    return 1;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp4 = x$1;
+    Ljava/lang/Object; $4$;
+    if ((temp4 == 0))
+      {
+        $4$ = this.(Lscala/UninitializedFieldError;::msg()Ljava/lang/String;)();
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $4$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/UninitializedFieldError;);
+  }
+  
+  private final Z; gd1$1(Ljava/lang/String; x$1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/UninitializedFieldError;::msg()Ljava/lang/String;)());
+  }
+  
+  public this(Ljava/lang/String; msg) {
+    this.(Ljava/lang/String;)msg$u0020 = msg;
+    (Ljava/lang/RuntimeException;::super(Ljava/lang/String;)V;)(msg);
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

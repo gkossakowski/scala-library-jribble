@@ -1,0 +1,58 @@
+public class Lscala/collection/mutable/SynchronizedQueue; extends Lscala/collection/mutable/Queue; implements Lscala/ScalaObject; {
+  
+  public Z; isEmpty() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(super.(Lscala/collection/mutable/MutableList;::isEmpty()Z;)()));
+  }
+  
+  public Lscala/collection/mutable/SynchronizedQueue; $plus$eq(Ljava/lang/Object; elem) {
+    return super.(Lscala/collection/mutable/MutableList;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/MutableList;)(elem).<cast>(Lscala/collection/mutable/SynchronizedQueue;);
+  }
+  
+  public Lscala/collection/mutable/SynchronizedQueue; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, xs).<cast>(Lscala/collection/mutable/SynchronizedQueue;);
+  }
+  
+  public V; enqueue(Lscala/collection/Seq; elems) {
+    Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, elems);
+  }
+  
+  public Ljava/lang/Object; dequeue() {
+    return super.(Lscala/collection/mutable/Queue;::dequeue()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; front() {
+    return super.(Lscala/collection/mutable/Queue;::front()Ljava/lang/Object;)();
+  }
+  
+  public V; clear() {
+    super.(Lscala/collection/mutable/MutableList;::clear()V;)();
+  }
+  
+  public Z; equals(Ljava/lang/Object; that) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(Lscala/collection/SeqLike$class;.(Lscala/collection/SeqLike$class;::equals(Lscala/collection/SeqLike;Ljava/lang/Object;)Z;)(this, that)));
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/collection/SeqLike$class;.(Lscala/collection/SeqLike$class;::toString(Lscala/collection/SeqLike;)Ljava/lang/String;)(this).<cast>(Ljava/lang/String;);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    return this.(Lscala/collection/mutable/SynchronizedQueue;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/SynchronizedQueue;)(xs);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/SynchronizedQueue;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SynchronizedQueue;)(elem);
+  }
+  
+  public Lscala/collection/mutable/Builder; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/SynchronizedQueue;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SynchronizedQueue;)(elem);
+  }
+  
+  public Lscala/collection/mutable/MutableList; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/SynchronizedQueue;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SynchronizedQueue;)(elem);
+  }
+  
+  public this() {
+    (Lscala/collection/mutable/Queue;::super()V;)();
+  }
+}

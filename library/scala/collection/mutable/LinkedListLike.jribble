@@ -1,0 +1,34 @@
+public interface Lscala/collection/mutable/LinkedListLike; extends Lscala/collection/mutable/SeqLike;, Lscala/ScalaObject; {
+  
+  public Ljava/lang/Object; elem();
+  
+  public V; elem_$eq(Ljava/lang/Object; x$1);
+  
+  public Lscala/collection/mutable/Seq; next();
+  
+  public V; next_$eq(Lscala/collection/mutable/Seq; x$1);
+  
+  public Z; isEmpty();
+  
+  public I; length();
+  
+  public Ljava/lang/Object; head();
+  
+  public Lscala/collection/mutable/Seq; tail();
+  
+  public Lscala/collection/mutable/Seq; append(Lscala/collection/mutable/Seq; that);
+  
+  public V; insert(Lscala/collection/mutable/Seq; that);
+  
+  public Lscala/collection/mutable/Seq; drop(I; n);
+  
+  public Ljava/lang/Object; apply(I; n);
+  
+  public V; update(I; n, Ljava/lang/Object; x);
+  
+  public Lscala/Option; get(I; n);
+  
+  public Lscala/collection/Iterator; iterator();
+  
+  public V; foreach(Lscala/Function1; f);
+}

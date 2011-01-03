@@ -1,0 +1,51 @@
+public abstract class Lscala/collection/mutable/ArrayLike$class; {
+  
+  public static Lscala/collection/IndexedSeq; deep(Lscala/collection/mutable/ArrayLike; $this) {
+    return (new (Lscala/collection/mutable/ArrayLike$$anon$1;::this(Lscala/collection/mutable/ArrayLike;)V;)($this));
+  }
+  
+  public static final Ljava/lang/String; deepToString(Lscala/collection/mutable/ArrayLike; $this) {
+    return $this.(Lscala/collection/mutable/ArrayLike;::deep()Lscala/collection/IndexedSeq;)().(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)();
+  }
+  
+  public static final Ljava/lang/String; deepMkString(Lscala/collection/mutable/ArrayLike; $this, Ljava/lang/String; start, Ljava/lang/String; sep, Ljava/lang/String; end) {
+    return $this.(Lscala/collection/mutable/ArrayLike;::deep()Lscala/collection/IndexedSeq;)().(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)(start, sep, end);
+  }
+  
+  public static final Ljava/lang/String; deepMkString(Lscala/collection/mutable/ArrayLike; $this, Ljava/lang/String; sep) {
+    return $this.(Lscala/collection/mutable/ArrayLike;::deepMkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)("", sep, "");
+  }
+  
+  public static final Z; deepEquals(Lscala/collection/mutable/ArrayLike; $this, Ljava/lang/Object; that) {
+    Ljava/lang/Object; temp3 = that;
+    Z; $1$;
+    if (temp3.<instanceof>(Ljava/lang/Object;))
+      {
+        Ljava/lang/Object; temp4 = temp3;
+        Ljava/lang/Object; x = temp4;
+        Z; $2$;
+        if (Lscala/collection/mutable/ArrayLike$class;.(Lscala/collection/mutable/ArrayLike$class;::gd2$1(Lscala/collection/mutable/ArrayLike;Ljava/lang/Object;)Z;)($this, x))
+          {
+            $2$ = $this.(Lscala/collection/mutable/ArrayLike;::deep()Lscala/collection/IndexedSeq;)().(Lscala/collection/SeqLike;::equals(Ljava/lang/Object;)Z;)(Lscala/collection/mutable/WrappedArray$;.MODULE$.(Lscala/collection/mutable/WrappedArray$;::make(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(temp4).(Lscala/collection/mutable/ArrayLike;::deep()Lscala/collection/IndexedSeq;)());
+          }
+        else
+          {
+            $2$ = false;
+          }
+        $1$ = $2$;
+      }
+    else
+      {
+        $1$ = false;
+      }
+    return $1$;
+  }
+  
+  private static final Z; gd2$1(Lscala/collection/mutable/ArrayLike; $this, Ljava/lang/Object; x$1) {
+    return x$1.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)().(Ljava/lang/Class;::isArray()Z;)();
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/ArrayLike; $this) {
+    
+  }
+}

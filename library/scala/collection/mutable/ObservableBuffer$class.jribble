@@ -1,0 +1,36 @@
+public abstract class Lscala/collection/mutable/ObservableBuffer$class; {
+  
+  public static Lscala/collection/mutable/ObservableBuffer; $plus$eq(Lscala/collection/mutable/ObservableBuffer; $this, Ljava/lang/Object; element$1) {
+    $this.(Lscala/collection/mutable/ObservableBuffer;::scala$collection$mutable$ObservableBuffer$$super$$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ObservableBuffer;)(element$1);
+    $this.(Lscala/collection/mutable/Publisher;::publish(Ljava/lang/Object;)V;)((new (Lscala/collection/mutable/ObservableBuffer$$anon$1;::this(Lscala/collection/mutable/ObservableBuffer;Ljava/lang/Object;)V;)($this, element$1)));
+    return $this;
+  }
+  
+  public static Lscala/collection/mutable/ObservableBuffer; $plus$eq$colon(Lscala/collection/mutable/ObservableBuffer; $this, Ljava/lang/Object; element$2) {
+    $this.(Lscala/collection/mutable/ObservableBuffer;::scala$collection$mutable$ObservableBuffer$$super$$plus$eq$colon(Ljava/lang/Object;)Lscala/collection/mutable/ObservableBuffer;)(element$2);
+    $this.(Lscala/collection/mutable/Publisher;::publish(Ljava/lang/Object;)V;)((new (Lscala/collection/mutable/ObservableBuffer$$anon$2;::this(Lscala/collection/mutable/ObservableBuffer;Ljava/lang/Object;)V;)($this, element$2)));
+    return $this;
+  }
+  
+  public static V; update(Lscala/collection/mutable/ObservableBuffer; $this, I; n$1, Ljava/lang/Object; newelement$1) {
+    Ljava/lang/Object; oldelement$1 = $this.(Lscala/collection/mutable/BufferLike;::apply(I;)Ljava/lang/Object;)(n$1);
+    $this.(Lscala/collection/mutable/ObservableBuffer;::scala$collection$mutable$ObservableBuffer$$super$update(I;Ljava/lang/Object;)V;)(n$1, newelement$1);
+    $this.(Lscala/collection/mutable/Publisher;::publish(Ljava/lang/Object;)V;)((new (Lscala/collection/mutable/ObservableBuffer$$anon$3;::this(Lscala/collection/mutable/ObservableBuffer;I;Ljava/lang/Object;Ljava/lang/Object;)V;)($this, n$1, newelement$1, oldelement$1)));
+  }
+  
+  public static Ljava/lang/Object; remove(Lscala/collection/mutable/ObservableBuffer; $this, I; n$2) {
+    Ljava/lang/Object; oldelement$2 = $this.(Lscala/collection/mutable/BufferLike;::apply(I;)Ljava/lang/Object;)(n$2);
+    $this.(Lscala/collection/mutable/ObservableBuffer;::scala$collection$mutable$ObservableBuffer$$super$remove(I;)Ljava/lang/Object;)(n$2);
+    $this.(Lscala/collection/mutable/Publisher;::publish(Ljava/lang/Object;)V;)((new (Lscala/collection/mutable/ObservableBuffer$$anon$4;::this(Lscala/collection/mutable/ObservableBuffer;I;Ljava/lang/Object;)V;)($this, n$2, oldelement$2)));
+    return oldelement$2;
+  }
+  
+  public static V; clear(Lscala/collection/mutable/ObservableBuffer; $this) {
+    $this.(Lscala/collection/mutable/ObservableBuffer;::scala$collection$mutable$ObservableBuffer$$super$clear()V;)();
+    $this.(Lscala/collection/mutable/Publisher;::publish(Ljava/lang/Object;)V;)((new (Lscala/collection/mutable/ObservableBuffer$$anon$5;::this(Lscala/collection/mutable/ObservableBuffer;)V;)($this)));
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/ObservableBuffer; $this) {
+    
+  }
+}

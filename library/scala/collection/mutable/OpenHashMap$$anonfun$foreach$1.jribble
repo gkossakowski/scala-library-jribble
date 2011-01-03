@@ -1,0 +1,39 @@
+public final class Lscala/collection/mutable/OpenHashMap$$anonfun$foreach$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(Lscala/collection/mutable/OpenHashMap$OpenEntry; entry) {
+    if ((this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020.(I;)scala$collection$mutable$OpenHashMap$$modCount != this.(I;)startModCount$1))
+      {
+        Lscala/Predef$;.MODULE$.(Lscala/Predef$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("Concurrent Modification");
+      }
+    else
+      {
+        
+      }
+    this.(Lscala/Function1;)f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(entry.(Lscala/collection/mutable/OpenHashMap$OpenEntry;::key()Ljava/lang/Object;)(), entry.(Lscala/collection/mutable/OpenHashMap$OpenEntry;::value()Lscala/Option;)().(Lscala/Option;::get()Ljava/lang/Object;)())));
+  }
+  
+  private Lscala/collection/mutable/OpenHashMap; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/mutable/OpenHashMap$$anonfun$foreach$1;::apply(Lscala/collection/mutable/OpenHashMap$OpenEntry;)V;)(v1.<cast>(Lscala/collection/mutable/OpenHashMap$OpenEntry;));
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/Function1; f$2;
+  
+  private I; startModCount$1;
+  
+  public this(Lscala/collection/mutable/OpenHashMap; $outer, Lscala/Function1; f$2, I; startModCount$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/Function1;)f$2 = f$2;
+    this.(I;)startModCount$1 = startModCount$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

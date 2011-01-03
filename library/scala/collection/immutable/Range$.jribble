@@ -1,0 +1,105 @@
+public final class Lscala/collection/immutable/Range$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/Range$; MODULE$ = new (Lscala/collection/immutable/Range$;::this()V;)();
+  
+  private I; MAX_PRINT$u0020;
+  
+  public I; MAX_PRINT() {
+    return this.(I;)MAX_PRINT$u0020;
+  }
+  
+  public I; count(I; start, I; end, I; step) {
+    return this.(Lscala/collection/immutable/Range$;::count(I;I;I;Z;)I;)(start, end, step, false);
+  }
+  
+  public I; count(I; start, I; end$1, I; step$1, Z; isInclusive$1) {
+    I; $15$;
+    if ((step$1 == 0))
+      {
+        $15$ = -1;
+      }
+    else
+      {
+        I; $16$;
+        if ((start == end$1))
+          {
+            I; $17$;
+            if (isInclusive$1)
+              {
+                $17$ = 1;
+              }
+            else
+              {
+                $17$ = 0;
+              }
+            $16$ = $17$;
+          }
+        else
+          {
+            I; $18$;
+            if (((end$1 > start) != (step$1 > 0)))
+              {
+                $18$ = -1;
+              }
+            else
+              {
+                I; $19$;
+                if (((step$1 == 1) || (step$1 == -1)))
+                  {
+                    $19$ = (this.(Lscala/collection/immutable/Range$;::last$1(I;I;Z;)I;)(end$1, step$1, isInclusive$1) - start);
+                  }
+                else
+                  {
+                    $19$ = ((((this.(Lscala/collection/immutable/Range$;::last$1(I;I;Z;)I;)(end$1, step$1, isInclusive$1) - start) - 1) / step$1) + 1);
+                  }
+                $18$ = $19$;
+              }
+            $16$ = $18$;
+          }
+        $15$ = $16$;
+      }
+    return $15$;
+  }
+  
+  public Lscala/collection/immutable/Range; apply(I; start, I; end, I; step) {
+    return (new (Lscala/collection/immutable/Range;::this(I;I;I;)V;)(start, end, step));
+  }
+  
+  public Lscala/collection/immutable/Range$ByOne; apply(I; start$1, I; end$2) {
+    return (new (Lscala/collection/immutable/Range$$anon$2;::this(I;I;)V;)(start$1, end$2));
+  }
+  
+  public Lscala/collection/immutable/Range$Inclusive; inclusive(I; start, I; end, I; step) {
+    return (new (Lscala/collection/immutable/Range$Inclusive;::this(I;I;I;)V;)(start, end, step));
+  }
+  
+  public Lscala/collection/immutable/Range$Inclusive; inclusive(I; start$2, I; end$3) {
+    return (new (Lscala/collection/immutable/Range$$anon$1;::this(I;I;)V;)(start$2, end$3));
+  }
+  
+  private final I; last$1(I; end$1, I; step$1, Z; isInclusive$1) {
+    I; $20$;
+    if ((isInclusive$1 && (step$1 < 0)))
+      {
+        $20$ = (end$1 - 1);
+      }
+    else
+      {
+        I; $21$;
+        if ((isInclusive$1 && (step$1 > 0)))
+          {
+            $21$ = (end$1 + 1);
+          }
+        else
+          {
+            $21$ = end$1;
+          }
+        $20$ = $21$;
+      }
+    return $20$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(I;)MAX_PRINT$u0020 = 512;
+  }
+}

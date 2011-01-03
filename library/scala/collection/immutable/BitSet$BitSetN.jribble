@@ -1,0 +1,34 @@
+public class Lscala/collection/immutable/BitSet$BitSetN; extends Lscala/collection/immutable/BitSet; implements Lscala/ScalaObject; {
+  
+  private J;[ elems$u0020;
+  
+  public J;[ elems() {
+    return this.(J;[)elems$u0020;
+  }
+  
+  protected I; nwords() {
+    return this.(Lscala/collection/immutable/BitSet$BitSetN;::elems()J;[)().<length>;
+  }
+  
+  protected J; word(I; idx) {
+    J; $13$;
+    if ((idx < this.(Lscala/collection/immutable/BitSet$BitSetN;::nwords()I;)()))
+      {
+        $13$ = this.(Lscala/collection/immutable/BitSet$BitSetN;::elems()J;[)()[idx];
+      }
+    else
+      {
+        $13$ = 0L;
+      }
+    return $13$;
+  }
+  
+  protected Lscala/collection/immutable/BitSet; updateWord(I; idx, J; w) {
+    return this.(Lscala/collection/immutable/BitSet;::fromArray(J;[)Lscala/collection/immutable/BitSet;)(Lscala/collection/BitSetLike$;.MODULE$.(Lscala/collection/BitSetLike$;::updateArray(J;[I;J;)J;[)(this.(Lscala/collection/immutable/BitSet$BitSetN;::elems()J;[)(), idx, w));
+  }
+  
+  public this(J;[ elems) {
+    this.(J;[)elems$u0020 = elems;
+    (Lscala/collection/immutable/BitSet;::super()V;)();
+  }
+}

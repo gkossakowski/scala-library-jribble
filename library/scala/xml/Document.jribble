@@ -1,0 +1,86 @@
+public class Lscala/xml/Document; extends Lscala/xml/NodeSeq; implements Lscala/ScalaObject; {
+  
+  private Lscala/collection/Seq; children$u0020;
+  
+  public Lscala/collection/Seq; children() {
+    return this.(Lscala/collection/Seq;)children$u0020;
+  }
+  
+  public V; children_$eq(Lscala/collection/Seq; x$1) {
+    this.(Lscala/collection/Seq;)children$u0020 = x$1;
+  }
+  
+  private Lscala/xml/Node; docElem$u0020;
+  
+  public Lscala/xml/Node; docElem() {
+    return this.(Lscala/xml/Node;)docElem$u0020;
+  }
+  
+  public V; docElem_$eq(Lscala/xml/Node; x$1) {
+    this.(Lscala/xml/Node;)docElem$u0020 = x$1;
+  }
+  
+  private Ljava/lang/String; baseURI$u0020;
+  
+  public Ljava/lang/String; baseURI() {
+    return this.(Ljava/lang/String;)baseURI$u0020;
+  }
+  
+  public V; baseURI_$eq(Ljava/lang/String; x$1) {
+    this.(Ljava/lang/String;)baseURI$u0020 = x$1;
+  }
+  
+  private Lscala/Option; encoding$u0020;
+  
+  public Lscala/Option; encoding() {
+    return this.(Lscala/Option;)encoding$u0020;
+  }
+  
+  public V; encoding_$eq(Lscala/Option; x$1) {
+    this.(Lscala/Option;)encoding$u0020 = x$1;
+  }
+  
+  private Lscala/Option; standAlone$u0020;
+  
+  public Lscala/Option; standAlone() {
+    return this.(Lscala/Option;)standAlone$u0020;
+  }
+  
+  public V; standAlone_$eq(Lscala/Option; x$1) {
+    this.(Lscala/Option;)standAlone$u0020 = x$1;
+  }
+  
+  private Lscala/Option; version$u0020;
+  
+  public Lscala/Option; version() {
+    return this.(Lscala/Option;)version$u0020;
+  }
+  
+  public V; version_$eq(Lscala/Option; x$1) {
+    this.(Lscala/Option;)version$u0020 = x$1;
+  }
+  
+  private Z; allDeclarationsProcessed$u0020;
+  
+  public Z; allDeclarationsProcessed() {
+    return this.(Z;)allDeclarationsProcessed$u0020;
+  }
+  
+  public V; allDeclarationsProcessed_$eq(Z; x$1) {
+    this.(Z;)allDeclarationsProcessed$u0020 = x$1;
+  }
+  
+  public Lscala/collection/Seq; theSeq() {
+    return this.(Lscala/xml/Document;::docElem()Lscala/xml/Node;)();
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; other) {
+    Ljava/lang/Object; temp1 = other;
+    return temp1.<instanceof>(Lscala/xml/Document;);
+  }
+  
+  public this() {
+    (Lscala/xml/NodeSeq;::super()V;)();
+    this.(Z;)allDeclarationsProcessed$u0020 = false;
+  }
+}

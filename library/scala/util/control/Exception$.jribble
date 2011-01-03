@@ -1,0 +1,86 @@
+public final class Lscala/util/control/Exception$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/util/control/Exception$; MODULE$ = new (Lscala/util/control/Exception$;::this()V;)();
+  
+  public Lscala/PartialFunction; fromExceptionCatcher(Lscala/PartialFunction; pf$1) {
+    return (new (Lscala/util/control/Exception$$anon$1;::this(Lscala/PartialFunction;)V;)(pf$1));
+  }
+  
+  private final Lscala/PartialFunction; nothingCatcher$u0020;
+  
+  public final Lscala/PartialFunction; nothingCatcher() {
+    return this.(Lscala/PartialFunction;)nothingCatcher$u0020;
+  }
+  
+  public final Lscala/util/control/Exception$Catch; allCatch() {
+    return (new (Lscala/util/control/Exception$Catch;::this(Lscala/PartialFunction;)V;)((new (Lscala/util/control/Exception$$anonfun$allCatch$1;::this()V;)()))).(Lscala/util/control/Exception$Described;::withDesc(Ljava/lang/String;)Lscala/util/control/Exception$Described;)("<everything>").<cast>(Lscala/util/control/Exception$Catch;);
+  }
+  
+  private final Lscala/util/control/Exception$Catch; noCatch$u0020;
+  
+  public final Lscala/util/control/Exception$Catch; noCatch() {
+    return this.(Lscala/util/control/Exception$Catch;)noCatch$u0020;
+  }
+  
+  public Lscala/util/control/Exception$Catch; catching(Lscala/collection/Seq; exceptions) {
+    return (new (Lscala/util/control/Exception$Catch;::this(Lscala/PartialFunction;)V;)(this.(Lscala/util/control/Exception$;::pfFromExceptions(Lscala/collection/Seq;)Lscala/PartialFunction;)(exceptions))).(Lscala/util/control/Exception$Described;::withDesc(Ljava/lang/String;)Lscala/util/control/Exception$Described;)(exceptions.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/util/control/Exception$$anonfun$catching$1;::this()V;)()), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;)Ljava/lang/String;)(", ")).<cast>(Lscala/util/control/Exception$Catch;);
+  }
+  
+  public Lscala/util/control/Exception$Catch; catching(Lscala/PartialFunction; c) {
+    return (new (Lscala/util/control/Exception$Catch;::this(Lscala/PartialFunction;)V;)(c));
+  }
+  
+  public Lscala/util/control/Exception$Catch; ignoring(Lscala/collection/Seq; exceptions) {
+    return this.(Lscala/util/control/Exception$;::catching(Lscala/collection/Seq;)Lscala/util/control/Exception$Catch;)(exceptions).(Lscala/util/control/Exception$Catch;::withApply(Lscala/Function1;)Lscala/util/control/Exception$Catch;)((new (Lscala/util/control/Exception$$anonfun$ignoring$1;::this()V;)()));
+  }
+  
+  public Lscala/util/control/Exception$Catch; failing(Lscala/collection/Seq; exceptions) {
+    return this.(Lscala/util/control/Exception$;::catching(Lscala/collection/Seq;)Lscala/util/control/Exception$Catch;)(exceptions).(Lscala/util/control/Exception$Catch;::withApply(Lscala/Function1;)Lscala/util/control/Exception$Catch;)((new (Lscala/util/control/Exception$$anonfun$failing$1;::this()V;)()));
+  }
+  
+  public Lscala/util/control/Exception$By; handling(Lscala/collection/Seq; exceptions$2) {
+    return (new (Lscala/util/control/Exception$By;::this(Lscala/Function1;)V;)((new (Lscala/util/control/Exception$$anonfun$handling$1;::this(Lscala/collection/Seq;)V;)(exceptions$2))));
+  }
+  
+  public Lscala/util/control/Exception$Catch; ultimately(Lscala/Function0; body) {
+    return this.(Lscala/util/control/Exception$;::noCatch()Lscala/util/control/Exception$Catch;)().(Lscala/util/control/Exception$Catch;::andFinally(Lscala/Function0;)Lscala/util/control/Exception$Catch;)(body);
+  }
+  
+  public Lscala/util/control/Exception$Catch; saving(Ljava/lang/Object; oldVal$1, Ljava/lang/Object; newVal$1, Lscala/Function1; setter$1) {
+    return (new (Lscala/util/control/Exception$$anon$5;::this(Ljava/lang/Object;Ljava/lang/Object;Lscala/Function1;)V;)(oldVal$1, newVal$1, setter$1));
+  }
+  
+  public Lscala/util/control/Exception$Catch; unwrapping(Lscala/collection/Seq; exceptions$3) {
+    return this.(Lscala/util/control/Exception$;::catching(Lscala/collection/Seq;)Lscala/util/control/Exception$Catch;)(exceptions$3).(Lscala/util/control/Exception$Catch;::withApply(Lscala/Function1;)Lscala/util/control/Exception$Catch;)((new (Lscala/util/control/Exception$$anonfun$unwrapping$1;::this(Lscala/collection/Seq;)V;)(exceptions$3)));
+  }
+  
+  public final Z; scala$util$control$Exception$$wouldMatch(Ljava/lang/Throwable; x$8, Lscala/collection/Seq; classes) {
+    return classes.(Lscala/collection/IterableLike;::exists(Lscala/Function1;)Z;)((new (Lscala/util/control/Exception$$anonfun$scala$util$control$Exception$$wouldMatch$1;::this(Ljava/lang/Throwable;)V;)(x$8)));
+  }
+  
+  private Lscala/PartialFunction; pfFromExceptions(Lscala/collection/Seq; exceptions$1) {
+    return (new (Lscala/util/control/Exception$$anon$4;::this(Lscala/collection/Seq;)V;)(exceptions$1));
+  }
+  
+  public final Lscala/util/control/Exception$Catch; fun$1(Lscala/Function1; f, Lscala/collection/Seq; exceptions$2) {
+    return this.(Lscala/util/control/Exception$;::catching(Lscala/collection/Seq;)Lscala/util/control/Exception$Catch;)(exceptions$2).(Lscala/util/control/Exception$Catch;::withApply(Lscala/Function1;)Lscala/util/control/Exception$Catch;)(f);
+  }
+  
+  public final Ljava/lang/Throwable; unwrap$1(Ljava/lang/Throwable; x, Lscala/collection/Seq; exceptions$3) {
+    Ljava/lang/Throwable; $1$;
+    if ((this.(Lscala/util/control/Exception$;::scala$util$control$Exception$$wouldMatch(Ljava/lang/Throwable;Lscala/collection/Seq;)Z;)(x, exceptions$3) && (x.(Ljava/lang/Throwable;::getCause()Ljava/lang/Throwable;)() != null)))
+      {
+        $1$ = this.(Lscala/util/control/Exception$;::unwrap$1(Ljava/lang/Throwable;Lscala/collection/Seq;)Ljava/lang/Throwable;)(x.(Ljava/lang/Throwable;::getCause()Ljava/lang/Throwable;)(), exceptions$3);
+      }
+    else
+      {
+        $1$ = x;
+      }
+    return $1$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(Lscala/PartialFunction;)nothingCatcher$u0020 = (new (Lscala/util/control/Exception$$anon$3;::this()V;)());
+    this.(Lscala/util/control/Exception$Catch;)noCatch$u0020 = (new (Lscala/util/control/Exception$Catch;::this(Lscala/PartialFunction;)V;)(this.(Lscala/util/control/Exception$;::nothingCatcher()Lscala/PartialFunction;)())).(Lscala/util/control/Exception$Described;::withDesc(Ljava/lang/String;)Lscala/util/control/Exception$Described;)("<nothing>").<cast>(Lscala/util/control/Exception$Catch;);
+  }
+}

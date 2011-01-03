@@ -1,0 +1,49 @@
+public final class Lscala/util/control/Exception$$anonfun$allCatch$1; extends Ljava/lang/Object; implements Lscala/PartialFunction; {
+  
+  public Lscala/PartialFunction; orElse(Lscala/PartialFunction; that) {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::orElse(Lscala/PartialFunction;Lscala/PartialFunction;)Lscala/PartialFunction;)(this, that);
+  }
+  
+  public Lscala/PartialFunction; andThen(Lscala/Function1; k) {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::andThen(Lscala/PartialFunction;Lscala/Function1;)Lscala/PartialFunction;)(this, k);
+  }
+  
+  public Lscala/Function1; lift() {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::lift(Lscala/PartialFunction;)Lscala/Function1;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::toString(Lscala/Function1;)Ljava/lang/String;)(this);
+  }
+  
+  public Lscala/Function1; compose(Lscala/Function1; g) {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::compose(Lscala/Function1;Lscala/Function1;)Lscala/Function1;)(this, g);
+  }
+  
+  public final Lscala/runtime/Nothing$; apply(Ljava/lang/Throwable; x0$1) {
+    Ljava/lang/Throwable; temp10 = x0$1;
+    throw temp10;
+  }
+  
+  public final Z; isDefinedAt(Ljava/lang/Throwable; x$1) {
+    return true;
+  }
+  
+  public Lscala/Function1; andThen(Lscala/Function1; g) {
+    return this.(Lscala/PartialFunction;::andThen(Lscala/Function1;)Lscala/PartialFunction;)(g);
+  }
+  
+  public final Z; isDefinedAt(Ljava/lang/Object; x) {
+    return this.(Lscala/util/control/Exception$$anonfun$allCatch$1;::isDefinedAt(Ljava/lang/Throwable;)Z;)(x.<cast>(Ljava/lang/Throwable;));
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/util/control/Exception$$anonfun$allCatch$1;::apply(Ljava/lang/Throwable;)Lscala/runtime/Nothing$;)(v1.<cast>(Ljava/lang/Throwable;));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Function1$class;.(Lscala/Function1$class;::$init$(Lscala/Function1;)V;)(this);
+    Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::$init$(Lscala/PartialFunction;)V;)(this);
+  }
+}

@@ -1,0 +1,93 @@
+public class Lscala/collection/mutable/ArrayOps$ofBoolean; extends Lscala/collection/mutable/ArrayOps; implements Lscala/collection/mutable/ArrayLike;, Lscala/ScalaObject; {
+  
+  private Z;[ repr$u0020;
+  
+  public Z;[ repr() {
+    return this.(Z;[)repr$u0020;
+  }
+  
+  protected Lscala/collection/mutable/WrappedArray; thisCollection() {
+    return (new (Lscala/collection/mutable/WrappedArray$ofBoolean;::this(Z;[)V;)(this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::repr()Z;[)()));
+  }
+  
+  protected Lscala/collection/mutable/WrappedArray; toCollection(Z;[ repr) {
+    return (new (Lscala/collection/mutable/WrappedArray$ofBoolean;::this(Z;[)V;)(repr));
+  }
+  
+  protected Lscala/collection/mutable/ArrayBuilder$ofBoolean; newBuilder() {
+    return (new (Lscala/collection/mutable/ArrayBuilder$ofBoolean;::this()V;)());
+  }
+  
+  public I; length() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::repr()Z;[)().<length>;
+  }
+  
+  public Z; apply(I; index) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::repr()Z;[)()[index];
+  }
+  
+  public V; update(I; index, Z; elem) {
+    this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::repr()Z;[)()[index] = elem;
+  }
+  
+  public V; update(I; idx, Ljava/lang/Object; elem) {
+    this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::update(I;Z;)V;)(idx, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(elem));
+  }
+  
+  public Ljava/lang/Object; apply(I; idx) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::apply(I;)Z;)(idx));
+  }
+  
+  protected Lscala/collection/mutable/Builder; newBuilder() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::newBuilder()Lscala/collection/mutable/ArrayBuilder$ofBoolean;)();
+  }
+  
+  protected Lscala/collection/Traversable; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::toCollection(Z;[)Lscala/collection/mutable/WrappedArray;)(repr.<cast>(Z;[));
+  }
+  
+  protected Lscala/collection/Iterable; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::toCollection(Z;[)Lscala/collection/mutable/WrappedArray;)(repr.<cast>(Z;[));
+  }
+  
+  protected Lscala/collection/Seq; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::toCollection(Z;[)Lscala/collection/mutable/WrappedArray;)(repr.<cast>(Z;[));
+  }
+  
+  protected Lscala/collection/IndexedSeq; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::toCollection(Z;[)Lscala/collection/mutable/WrappedArray;)(repr.<cast>(Z;[));
+  }
+  
+  protected Lscala/collection/mutable/IndexedSeq; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::toCollection(Z;[)Lscala/collection/mutable/WrappedArray;)(repr.<cast>(Z;[));
+  }
+  
+  protected Lscala/collection/Traversable; thisCollection() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::thisCollection()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  protected Lscala/collection/Iterable; thisCollection() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::thisCollection()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  protected Lscala/collection/Seq; thisCollection() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::thisCollection()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  protected Lscala/collection/IndexedSeq; thisCollection() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::thisCollection()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  protected Lscala/collection/mutable/IndexedSeq; thisCollection() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::thisCollection()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  public Ljava/lang/Object; repr() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofBoolean;::repr()Z;[)();
+  }
+  
+  public this(Z;[ repr) {
+    this.(Z;[)repr$u0020 = repr;
+    (Lscala/collection/mutable/ArrayOps;::super()V;)();
+  }
+}

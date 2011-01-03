@@ -1,0 +1,75 @@
+public class Lscala/collection/mutable/AddingBuilder; extends Ljava/lang/Object; implements Lscala/collection/mutable/Builder;, Lscala/ScalaObject; {
+  
+  public V; sizeHint(I; size) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint(Lscala/collection/mutable/Builder;I;)V;)(this, size);
+  }
+  
+  public V; sizeHint(Lscala/collection/TraversableLike; coll, I; delta) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint(Lscala/collection/mutable/Builder;Lscala/collection/TraversableLike;I;)V;)(this, coll, delta);
+  }
+  
+  public V; sizeHintBounded(I; size, Lscala/collection/TraversableLike; boundingColl) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHintBounded(Lscala/collection/mutable/Builder;I;Lscala/collection/TraversableLike;)V;)(this, size, boundingColl);
+  }
+  
+  public Lscala/collection/mutable/Builder; mapResult(Lscala/Function1; f) {
+    return Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::mapResult(Lscala/collection/mutable/Builder;Lscala/Function1;)Lscala/collection/mutable/Builder;)(this, f);
+  }
+  
+  public I; sizeHint$default$2() {
+    return Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint$default$2(Lscala/collection/mutable/Builder;)I;)(this);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
+    return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$eq(Lscala/collection/generic/Growable;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/Seq;)Lscala/collection/generic/Growable;)(this, elem1, elem2, elems);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, xs);
+  }
+  
+  private Lscala/collection/generic/Addable; empty;
+  
+  private Lscala/collection/generic/Addable; elems$u0020;
+  
+  protected Lscala/collection/generic/Addable; elems() {
+    return this.(Lscala/collection/generic/Addable;)elems$u0020;
+  }
+  
+  protected V; elems_$eq(Lscala/collection/generic/Addable; x$1) {
+    this.(Lscala/collection/generic/Addable;)elems$u0020 = x$1;
+  }
+  
+  public Lscala/collection/mutable/AddingBuilder; $plus$eq(Ljava/lang/Object; x) {
+    this.(Lscala/collection/mutable/AddingBuilder;::elems_$eq(Lscala/collection/generic/Addable;)V;)(this.(Lscala/collection/mutable/AddingBuilder;::elems()Lscala/collection/generic/Addable;)().(Lscala/collection/generic/Addable;::$plus(Ljava/lang/Object;)Lscala/collection/generic/Addable;)(x));
+    return this;
+  }
+  
+  public V; clear() {
+    this.(Lscala/collection/mutable/AddingBuilder;::elems_$eq(Lscala/collection/generic/Addable;)V;)(this.(Lscala/collection/generic/Addable;)empty);
+  }
+  
+  public Lscala/collection/generic/Addable; result() {
+    return this.(Lscala/collection/mutable/AddingBuilder;::elems()Lscala/collection/generic/Addable;)();
+  }
+  
+  public Ljava/lang/Object; result() {
+    return this.(Lscala/collection/mutable/AddingBuilder;::result()Lscala/collection/generic/Addable;)();
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/AddingBuilder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/AddingBuilder;)(elem);
+  }
+  
+  public Lscala/collection/mutable/Builder; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/AddingBuilder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/AddingBuilder;)(elem);
+  }
+  
+  public this(Lscala/collection/generic/Addable; empty) {
+    this.(Lscala/collection/generic/Addable;)empty = empty;
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$init$(Lscala/collection/generic/Growable;)V;)(this);
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::$init$(Lscala/collection/mutable/Builder;)V;)(this);
+    this.(Lscala/collection/generic/Addable;)elems$u0020 = empty;
+  }
+}

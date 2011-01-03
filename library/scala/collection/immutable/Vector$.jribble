@@ -1,0 +1,37 @@
+public final class Lscala/collection/immutable/Vector$; extends Lscala/collection/generic/SeqFactory; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/Vector$; MODULE$ = new (Lscala/collection/immutable/Vector$;::this()V;)();
+  
+  private Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom; BF$u0020;
+  
+  public Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom; BF() {
+    return this.(Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;)BF$u0020;
+  }
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return this.(Lscala/collection/immutable/Vector$;::BF()Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;)();
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return (new (Lscala/collection/immutable/VectorBuilder;::this()V;)());
+  }
+  
+  private Lscala/collection/immutable/Vector; NIL$u0020;
+  
+  public Lscala/collection/immutable/Vector; NIL() {
+    return this.(Lscala/collection/immutable/Vector;)NIL$u0020;
+  }
+  
+  public Lscala/collection/immutable/Vector; empty() {
+    return this.(Lscala/collection/immutable/Vector$;::NIL()Lscala/collection/immutable/Vector;)();
+  }
+  
+  public Lscala/collection/Traversable; empty() {
+    return this.(Lscala/collection/immutable/Vector$;::empty()Lscala/collection/immutable/Vector;)();
+  }
+  
+  public this() {
+    (Lscala/collection/generic/SeqFactory;::super()V;)();
+    this.(Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;)BF$u0020 = (new (Lscala/collection/immutable/Vector$$anon$1;::this()V;)());
+    this.(Lscala/collection/immutable/Vector;)NIL$u0020 = (new (Lscala/collection/immutable/Vector;::this(I;I;I;)V;)(0, 0, 0));
+  }
+}

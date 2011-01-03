@@ -1,0 +1,40 @@
+public abstract class Lscala/collection/mutable/Builder$class; {
+  
+  public static I; sizeHint$default$2(Lscala/collection/mutable/Builder; $this) {
+    return 0;
+  }
+  
+  public static V; sizeHint(Lscala/collection/mutable/Builder; $this, I; size) {
+    
+  }
+  
+  public static V; sizeHint(Lscala/collection/mutable/Builder; $this, Lscala/collection/TraversableLike; coll, I; delta) {
+    if (coll.<instanceof>(Lscala/collection/mutable/IndexedSeqLike;))
+      {
+        $this.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)((coll.(Lscala/collection/TraversableOnce;::size()I;)() + delta));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public static V; sizeHintBounded(Lscala/collection/mutable/Builder; $this, I; size, Lscala/collection/TraversableLike; boundingColl) {
+    if (boundingColl.<instanceof>(Lscala/collection/mutable/IndexedSeqLike;))
+      {
+        $this.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(size).(Lscala/runtime/RichInt;::min(I;)I;)(boundingColl.(Lscala/collection/TraversableOnce;::size()I;)()));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public static Lscala/collection/mutable/Builder; mapResult(Lscala/collection/mutable/Builder; $this, Lscala/Function1; f$1) {
+    return (new (Lscala/collection/mutable/Builder$$anon$1;::this(Lscala/collection/mutable/Builder;Lscala/Function1;)V;)($this, f$1));
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/Builder; $this) {
+    
+  }
+}

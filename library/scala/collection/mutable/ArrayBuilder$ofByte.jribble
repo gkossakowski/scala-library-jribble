@@ -1,0 +1,178 @@
+public class Lscala/collection/mutable/ArrayBuilder$ofByte; extends Lscala/collection/mutable/ArrayBuilder; implements Lscala/ScalaObject; {
+  
+  private B;[ elems$u0020;
+  
+  private B;[ elems() {
+    return this.(B;[)elems$u0020;
+  }
+  
+  private V; elems_$eq(B;[ x$1) {
+    this.(B;[)elems$u0020 = x$1;
+  }
+  
+  private I; capacity$u0020;
+  
+  private I; capacity() {
+    return this.(I;)capacity$u0020;
+  }
+  
+  private V; capacity_$eq(I; x$1) {
+    this.(I;)capacity$u0020 = x$1;
+  }
+  
+  private I; size$u0020;
+  
+  private I; size() {
+    return this.(I;)size$u0020;
+  }
+  
+  private V; size_$eq(I; x$1) {
+    this.(I;)size$u0020 = x$1;
+  }
+  
+  private B;[ mkArray(I; size) {
+    B;[ newelems = new B;[size];
+    if ((this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::size()I;)() > 0))
+      {
+        Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::elems()B;[)(), 0, newelems, 0, this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::size()I;)());
+      }
+    else
+      {
+        
+      }
+    return newelems;
+  }
+  
+  private V; resize(I; size) {
+    this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::elems_$eq(B;[)V;)(this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::mkArray(I;)B;[)(size));
+    this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::capacity_$eq(I;)V;)(size);
+  }
+  
+  public V; sizeHint(I; size) {
+    if ((this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::capacity()I;)() < size))
+      {
+        this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::resize(I;)V;)(size);
+      }
+    else
+      {
+        
+      }
+  }
+  
+  private V; ensureSize(I; size) {
+    if ((this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::capacity()I;)() == 0))
+      {
+        this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::resize(I;)V;)(16);
+      }
+    else
+      {
+        
+      }
+    if ((this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::capacity()I;)() < size))
+      {
+        I; newsize = (this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::capacity()I;)() * 2);
+        while$2: while(true) {
+          if ((newsize < size))
+            {
+              newsize = (newsize * 2);
+              continue while$2;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+        this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::resize(I;)V;)(newsize);
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public Lscala/collection/mutable/ArrayBuilder$ofByte; $plus$eq(B; elem) {
+    this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::ensureSize(I;)V;)((this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::size()I;)() + 1));
+    this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::elems()B;[)()[this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::size()I;)()] = elem;
+    this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::size_$eq(I;)V;)((this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::size()I;)() + 1));
+    return this;
+  }
+  
+  public Lscala/collection/mutable/ArrayBuilder$ofByte; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    Lscala/collection/TraversableOnce; temp5 = xs;
+    Lscala/collection/mutable/ArrayBuilder$ofByte; $4$;
+    if (temp5.<instanceof>(Lscala/collection/mutable/WrappedArray$ofByte;))
+      {
+        Lscala/collection/mutable/WrappedArray$ofByte; temp6 = temp5.<cast>(Lscala/collection/mutable/WrappedArray$ofByte;);
+        Lscala/collection/mutable/WrappedArray$ofByte; xs = temp6;
+        this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::ensureSize(I;)V;)((this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::size()I;)() + xs.(Lscala/collection/mutable/WrappedArray$ofByte;::length()I;)()));
+        Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(xs.(Lscala/collection/mutable/WrappedArray$ofByte;::array()B;[)(), 0, this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::elems()B;[)(), this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::size()I;)(), xs.(Lscala/collection/mutable/WrappedArray$ofByte;::length()I;)());
+        this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::size_$eq(I;)V;)((this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::size()I;)() + xs.(Lscala/collection/mutable/WrappedArray$ofByte;::length()I;)()));
+        $4$ = this;
+      }
+    else
+      {
+        $4$ = Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, xs).<cast>(Lscala/collection/mutable/ArrayBuilder$ofByte;);
+      }
+    return $4$;
+  }
+  
+  public V; clear() {
+    this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::size_$eq(I;)V;)(0);
+  }
+  
+  public B;[ result() {
+    B;[ $5$;
+    if (((this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::capacity()I;)() != 0) && (this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::capacity()I;)() == this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::size()I;)())))
+      {
+        $5$ = this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::elems()B;[)();
+      }
+    else
+      {
+        $5$ = this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::mkArray(I;)B;[)(this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::size()I;)());
+      }
+    return $5$;
+  }
+  
+  public Z; equals(Ljava/lang/Object; other) {
+    Ljava/lang/Object; temp7 = other;
+    Z; $6$;
+    if (temp7.<instanceof>(Lscala/collection/mutable/ArrayBuilder$ofByte;))
+      {
+        Lscala/collection/mutable/ArrayBuilder$ofByte; temp8 = temp7.<cast>(Lscala/collection/mutable/ArrayBuilder$ofByte;);
+        Lscala/collection/mutable/ArrayBuilder$ofByte; x = temp8;
+        $6$ = ((this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::size()I;)() == x.(Lscala/collection/mutable/ArrayBuilder$ofByte;::size()I;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::elems()B;[)(), x.(Lscala/collection/mutable/ArrayBuilder$ofByte;::elems()B;[)()));
+      }
+    else
+      {
+        $6$ = false;
+      }
+    return $6$;
+  }
+  
+  public Ljava/lang/String; toString() {
+    return "ArrayBuilder.ofByte";
+  }
+  
+  public Ljava/lang/Object; result() {
+    return this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::result()B;[)();
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    return this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/ArrayBuilder$ofByte;)(xs);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::$plus$eq(B;)Lscala/collection/mutable/ArrayBuilder$ofByte;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToByte(Ljava/lang/Object;)B;)(elem));
+  }
+  
+  public Lscala/collection/mutable/Builder; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/ArrayBuilder$ofByte;::$plus$eq(B;)Lscala/collection/mutable/ArrayBuilder$ofByte;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToByte(Ljava/lang/Object;)B;)(elem));
+  }
+  
+  public this() {
+    (Lscala/collection/mutable/ArrayBuilder;::super()V;)();
+    this.(I;)capacity$u0020 = 0;
+    this.(I;)size$u0020 = 0;
+  }
+}

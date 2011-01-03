@@ -1,0 +1,26 @@
+public abstract class Lscala/math/Ordered$class; {
+  
+  public static Z; $less(Lscala/math/Ordered; $this, Ljava/lang/Object; that) {
+    return ($this.(Lscala/math/Ordered;::compare(Ljava/lang/Object;)I;)(that) < 0);
+  }
+  
+  public static Z; $greater(Lscala/math/Ordered; $this, Ljava/lang/Object; that) {
+    return ($this.(Lscala/math/Ordered;::compare(Ljava/lang/Object;)I;)(that) > 0);
+  }
+  
+  public static Z; $less$eq(Lscala/math/Ordered; $this, Ljava/lang/Object; that) {
+    return ($this.(Lscala/math/Ordered;::compare(Ljava/lang/Object;)I;)(that) <= 0);
+  }
+  
+  public static Z; $greater$eq(Lscala/math/Ordered; $this, Ljava/lang/Object; that) {
+    return ($this.(Lscala/math/Ordered;::compare(Ljava/lang/Object;)I;)(that) >= 0);
+  }
+  
+  public static I; compareTo(Lscala/math/Ordered; $this, Ljava/lang/Object; that) {
+    return $this.(Lscala/math/Ordered;::compare(Ljava/lang/Object;)I;)(that);
+  }
+  
+  public static V; $init$(Lscala/math/Ordered; $this) {
+    
+  }
+}

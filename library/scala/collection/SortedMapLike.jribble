@@ -1,0 +1,18 @@
+public interface Lscala/collection/SortedMapLike; extends Lscala/collection/generic/Sorted;, Lscala/collection/MapLike;, Lscala/ScalaObject; {
+  
+  public Ljava/lang/Object; firstKey();
+  
+  public Ljava/lang/Object; lastKey();
+  
+  public Lscala/math/Ordering; ordering();
+  
+  public Lscala/collection/SortedMap; rangeImpl(Lscala/Option; from, Lscala/Option; until);
+  
+  public Lscala/collection/SortedSet; keySet();
+  
+  public Lscala/collection/SortedMap; updated(Ljava/lang/Object; key, Ljava/lang/Object; value);
+  
+  public Lscala/collection/SortedMap; $plus(Lscala/Tuple2; kv);
+  
+  public Lscala/collection/SortedMap; $plus(Lscala/Tuple2; elem1, Lscala/Tuple2; elem2, Lscala/collection/Seq; elems);
+}

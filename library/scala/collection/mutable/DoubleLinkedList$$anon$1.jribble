@@ -1,0 +1,79 @@
+public final class Lscala/collection/mutable/DoubleLinkedList$$anon$1; extends Ljava/lang/Object; implements Lscala/collection/mutable/Builder; {
+  
+  public V; sizeHint(I; size) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint(Lscala/collection/mutable/Builder;I;)V;)(this, size);
+  }
+  
+  public V; sizeHint(Lscala/collection/TraversableLike; coll, I; delta) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint(Lscala/collection/mutable/Builder;Lscala/collection/TraversableLike;I;)V;)(this, coll, delta);
+  }
+  
+  public V; sizeHintBounded(I; size, Lscala/collection/TraversableLike; boundingColl) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHintBounded(Lscala/collection/mutable/Builder;I;Lscala/collection/TraversableLike;)V;)(this, size, boundingColl);
+  }
+  
+  public Lscala/collection/mutable/Builder; mapResult(Lscala/Function1; f) {
+    return Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::mapResult(Lscala/collection/mutable/Builder;Lscala/Function1;)Lscala/collection/mutable/Builder;)(this, f);
+  }
+  
+  public I; sizeHint$default$2() {
+    return Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint$default$2(Lscala/collection/mutable/Builder;)I;)(this);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
+    return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$eq(Lscala/collection/generic/Growable;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/Seq;)Lscala/collection/generic/Growable;)(this, elem1, elem2, elems);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, xs);
+  }
+  
+  private Lscala/collection/mutable/DoubleLinkedList; current$u0020;
+  
+  private Lscala/collection/mutable/DoubleLinkedList; current() {
+    return this.(Lscala/collection/mutable/DoubleLinkedList;)current$u0020;
+  }
+  
+  private V; current_$eq(Lscala/collection/mutable/DoubleLinkedList; x$1) {
+    this.(Lscala/collection/mutable/DoubleLinkedList;)current$u0020 = x$1;
+  }
+  
+  public Lscala/collection/mutable/DoubleLinkedList$$anon$1; $plus$eq(Ljava/lang/Object; elem) {
+    Lscala/collection/mutable/DoubleLinkedList; tmp = (new (Lscala/collection/mutable/DoubleLinkedList;::this(Ljava/lang/Object;Lscala/collection/mutable/DoubleLinkedList;)V;)(elem, null));
+    if ((this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::current()Lscala/collection/mutable/DoubleLinkedList;)() != null))
+      {
+        this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::current()Lscala/collection/mutable/DoubleLinkedList;)().(Lscala/collection/mutable/DoubleLinkedListLike;::insert(Lscala/collection/mutable/Seq;)V;)(tmp);
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::current_$eq(Lscala/collection/mutable/DoubleLinkedList;)V;)(tmp);
+      }
+    return this;
+  }
+  
+  public V; clear() {
+    this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::current_$eq(Lscala/collection/mutable/DoubleLinkedList;)V;)(null);
+  }
+  
+  public Lscala/collection/mutable/DoubleLinkedList; result() {
+    return this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::current()Lscala/collection/mutable/DoubleLinkedList;)();
+  }
+  
+  public Ljava/lang/Object; result() {
+    return this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::result()Lscala/collection/mutable/DoubleLinkedList;)();
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/DoubleLinkedList$$anon$1;)(elem);
+  }
+  
+  public Lscala/collection/mutable/Builder; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/DoubleLinkedList$$anon$1;)(elem);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$init$(Lscala/collection/generic/Growable;)V;)(this);
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::$init$(Lscala/collection/mutable/Builder;)V;)(this);
+  }
+}

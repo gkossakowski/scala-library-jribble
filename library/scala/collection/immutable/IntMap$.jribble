@@ -1,0 +1,23 @@
+public final class Lscala/collection/immutable/IntMap$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/IntMap$; MODULE$ = new (Lscala/collection/immutable/IntMap$;::this()V;)();
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return (new (Lscala/collection/immutable/IntMap$$anon$1;::this()V;)());
+  }
+  
+  public Lscala/collection/immutable/IntMap; empty() {
+    return Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
+  }
+  
+  public Lscala/collection/immutable/IntMap; singleton(I; key, Ljava/lang/Object; value) {
+    return (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, value));
+  }
+  
+  public Lscala/collection/immutable/IntMap; apply(Lscala/collection/Seq; elems) {
+    return elems.(Lscala/collection/TraversableOnce;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/IntMap$;::empty()Lscala/collection/immutable/IntMap;)(), (new (Lscala/collection/immutable/IntMap$$anonfun$apply$1;::this()V;)())).<cast>(Lscala/collection/immutable/IntMap;);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

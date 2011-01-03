@@ -1,0 +1,125 @@
+public class Lscala/collection/immutable/ListMap$Node; extends Lscala/collection/immutable/ListMap; implements Lscala/ScalaObject; {
+  
+  private Ljava/lang/Object; key$u0020;
+  
+  protected Ljava/lang/Object; key() {
+    return this.(Ljava/lang/Object;)key$u0020;
+  }
+  
+  private Ljava/lang/Object; value$u0020;
+  
+  protected Ljava/lang/Object; value() {
+    return this.(Ljava/lang/Object;)value$u0020;
+  }
+  
+  public I; size() {
+    return (this.(Lscala/collection/immutable/ListMap$Node;::next()Lscala/collection/immutable/ListMap;)().(Lscala/collection/immutable/ListMap;::size()I;)() + 1);
+  }
+  
+  public Z; isEmpty() {
+    return false;
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; k) {
+    Ljava/lang/Object; $1$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(k, this.(Lscala/collection/immutable/ListMap$Node;::key()Ljava/lang/Object;)()))
+      {
+        $1$ = this.(Lscala/collection/immutable/ListMap$Node;::value()Ljava/lang/Object;)();
+      }
+    else
+      {
+        $1$ = this.(Lscala/collection/immutable/ListMap$Node;::next()Lscala/collection/immutable/ListMap;)().(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(k);
+      }
+    return $1$;
+  }
+  
+  public Lscala/Option; get(Ljava/lang/Object; k) {
+    Lscala/Option; $2$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(k, this.(Lscala/collection/immutable/ListMap$Node;::key()Ljava/lang/Object;)()))
+      {
+        $2$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/ListMap$Node;::value()Ljava/lang/Object;)()));
+      }
+    else
+      {
+        $2$ = this.(Lscala/collection/immutable/ListMap$Node;::next()Lscala/collection/immutable/ListMap;)().(Lscala/collection/immutable/ListMap;::get(Ljava/lang/Object;)Lscala/Option;)(k);
+      }
+    return $2$;
+  }
+  
+  public Lscala/collection/immutable/ListMap; updated(Ljava/lang/Object; k, Ljava/lang/Object; v) {
+    Lscala/collection/immutable/ListMap; $3$;
+    if (this.(Lscala/collection/MapLike;::contains(Ljava/lang/Object;)Z;)(k))
+      {
+        $3$ = this.(Lscala/collection/immutable/ListMap$Node;::$minus(Ljava/lang/Object;)Lscala/collection/immutable/ListMap;)(k);
+      }
+    else
+      {
+        $3$ = this;
+      }
+    Lscala/collection/immutable/ListMap; m = $3$;
+    return (new (Lscala/collection/immutable/ListMap$Node;::this(Lscala/collection/immutable/ListMap;Ljava/lang/Object;Ljava/lang/Object;)V;)(m, k, v));
+  }
+  
+  public Lscala/collection/immutable/ListMap; $minus(Ljava/lang/Object; k) {
+    Lscala/collection/immutable/ListMap; $4$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(k, this.(Lscala/collection/immutable/ListMap$Node;::key()Ljava/lang/Object;)()))
+      {
+        $4$ = this.(Lscala/collection/immutable/ListMap$Node;::next()Lscala/collection/immutable/ListMap;)();
+      }
+    else
+      {
+        Lscala/collection/immutable/ListMap; tail = this.(Lscala/collection/immutable/ListMap$Node;::next()Lscala/collection/immutable/ListMap;)().(Lscala/collection/immutable/ListMap;::$minus(Ljava/lang/Object;)Lscala/collection/immutable/ListMap;)(k);
+        Lscala/collection/immutable/ListMap; $5$;
+        if ((tail == this.(Lscala/collection/immutable/ListMap$Node;::next()Lscala/collection/immutable/ListMap;)()))
+          {
+            $5$ = this;
+          }
+        else
+          {
+            $5$ = (new (Lscala/collection/immutable/ListMap$Node;::this(Lscala/collection/immutable/ListMap;Ljava/lang/Object;Ljava/lang/Object;)V;)(tail, this.(Lscala/collection/immutable/ListMap$Node;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/ListMap$Node;::value()Ljava/lang/Object;)()));
+          }
+        $4$ = $5$;
+      }
+    return $4$;
+  }
+  
+  protected Lscala/collection/immutable/ListMap; next() {
+    return this.(Lscala/collection/immutable/ListMap$Node;::scala$collection$immutable$ListMap$Node$$$outer()Lscala/collection/immutable/ListMap;)();
+  }
+  
+  protected Lscala/collection/immutable/ListMap; $outer$u0020;
+  
+  public Lscala/collection/immutable/ListMap; scala$collection$immutable$ListMap$Node$$$outer() {
+    return this.(Lscala/collection/immutable/ListMap;)$outer$u0020;
+  }
+  
+  public Lscala/collection/generic/Subtractable; $minus(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/immutable/ListMap$Node;::$minus(Ljava/lang/Object;)Lscala/collection/immutable/ListMap;)(elem);
+  }
+  
+  public Lscala/collection/Map; $minus(Ljava/lang/Object; key) {
+    return this.(Lscala/collection/immutable/ListMap$Node;::$minus(Ljava/lang/Object;)Lscala/collection/immutable/ListMap;)(key);
+  }
+  
+  public Lscala/collection/Map; updated(Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    return this.(Lscala/collection/immutable/ListMap$Node;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/ListMap;)(key, value);
+  }
+  
+  public Lscala/collection/immutable/Map; updated(Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    return this.(Lscala/collection/immutable/ListMap$Node;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/ListMap;)(key, value);
+  }
+  
+  public this(Lscala/collection/immutable/ListMap; $outer, Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    this.(Ljava/lang/Object;)key$u0020 = key;
+    this.(Ljava/lang/Object;)value$u0020 = value;
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/immutable/ListMap;)$outer$u0020 = $outer;
+      }
+    (Lscala/collection/immutable/ListMap;::super()V;)();
+  }
+}

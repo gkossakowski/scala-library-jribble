@@ -1,0 +1,186 @@
+public final class Lscala/math/Numeric$DoubleAsIfIntegral$; extends Ljava/lang/Object; implements Lscala/math/Numeric$DoubleAsIfIntegral;, Lscala/math/Ordering$DoubleOrdering;, Lscala/ScalaObject; {
+  public static Lscala/math/Numeric$DoubleAsIfIntegral$; MODULE$ = new (Lscala/math/Numeric$DoubleAsIfIntegral$;::this()V;)();
+  
+  public I; compare(D; x, D; y) {
+    return Lscala/math/Ordering$DoubleOrdering$class;.(Lscala/math/Ordering$DoubleOrdering$class;::compare(Lscala/math/Ordering$DoubleOrdering;D;D;)I;)(this, x, y);
+  }
+  
+  public D; quot(D; x, D; y) {
+    return Lscala/math/Numeric$DoubleAsIfIntegral$class;.(Lscala/math/Numeric$DoubleAsIfIntegral$class;::quot(Lscala/math/Numeric$DoubleAsIfIntegral;D;D;)D;)(this, x, y);
+  }
+  
+  public D; rem(D; x, D; y) {
+    return Lscala/math/Numeric$DoubleAsIfIntegral$class;.(Lscala/math/Numeric$DoubleAsIfIntegral$class;::rem(Lscala/math/Numeric$DoubleAsIfIntegral;D;D;)D;)(this, x, y);
+  }
+  
+  public Lscala/math/Integral$IntegralOps; mkNumericOps(Ljava/lang/Object; lhs) {
+    return Lscala/math/Integral$class;.(Lscala/math/Integral$class;::mkNumericOps(Lscala/math/Integral;Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(this, lhs);
+  }
+  
+  public D; plus(D; x, D; y) {
+    return Lscala/math/Numeric$DoubleIsConflicted$class;.(Lscala/math/Numeric$DoubleIsConflicted$class;::plus(Lscala/math/Numeric$DoubleIsConflicted;D;D;)D;)(this, x, y);
+  }
+  
+  public D; minus(D; x, D; y) {
+    return Lscala/math/Numeric$DoubleIsConflicted$class;.(Lscala/math/Numeric$DoubleIsConflicted$class;::minus(Lscala/math/Numeric$DoubleIsConflicted;D;D;)D;)(this, x, y);
+  }
+  
+  public D; times(D; x, D; y) {
+    return Lscala/math/Numeric$DoubleIsConflicted$class;.(Lscala/math/Numeric$DoubleIsConflicted$class;::times(Lscala/math/Numeric$DoubleIsConflicted;D;D;)D;)(this, x, y);
+  }
+  
+  public D; negate(D; x) {
+    return Lscala/math/Numeric$DoubleIsConflicted$class;.(Lscala/math/Numeric$DoubleIsConflicted$class;::negate(Lscala/math/Numeric$DoubleIsConflicted;D;)D;)(this, x);
+  }
+  
+  public D; fromInt(I; x) {
+    return Lscala/math/Numeric$DoubleIsConflicted$class;.(Lscala/math/Numeric$DoubleIsConflicted$class;::fromInt(Lscala/math/Numeric$DoubleIsConflicted;I;)D;)(this, x);
+  }
+  
+  public I; toInt(D; x) {
+    return Lscala/math/Numeric$DoubleIsConflicted$class;.(Lscala/math/Numeric$DoubleIsConflicted$class;::toInt(Lscala/math/Numeric$DoubleIsConflicted;D;)I;)(this, x);
+  }
+  
+  public J; toLong(D; x) {
+    return Lscala/math/Numeric$DoubleIsConflicted$class;.(Lscala/math/Numeric$DoubleIsConflicted$class;::toLong(Lscala/math/Numeric$DoubleIsConflicted;D;)J;)(this, x);
+  }
+  
+  public F; toFloat(D; x) {
+    return Lscala/math/Numeric$DoubleIsConflicted$class;.(Lscala/math/Numeric$DoubleIsConflicted$class;::toFloat(Lscala/math/Numeric$DoubleIsConflicted;D;)F;)(this, x);
+  }
+  
+  public D; toDouble(D; x) {
+    return Lscala/math/Numeric$DoubleIsConflicted$class;.(Lscala/math/Numeric$DoubleIsConflicted$class;::toDouble(Lscala/math/Numeric$DoubleIsConflicted;D;)D;)(this, x);
+  }
+  
+  public Ljava/lang/Object; zero() {
+    return Lscala/math/Numeric$class;.(Lscala/math/Numeric$class;::zero(Lscala/math/Numeric;)Ljava/lang/Object;)(this);
+  }
+  
+  public Ljava/lang/Object; one() {
+    return Lscala/math/Numeric$class;.(Lscala/math/Numeric$class;::one(Lscala/math/Numeric;)Ljava/lang/Object;)(this);
+  }
+  
+  public Ljava/lang/Object; abs(Ljava/lang/Object; x) {
+    return Lscala/math/Numeric$class;.(Lscala/math/Numeric$class;::abs(Lscala/math/Numeric;Ljava/lang/Object;)Ljava/lang/Object;)(this, x);
+  }
+  
+  public I; signum(Ljava/lang/Object; x) {
+    return Lscala/math/Numeric$class;.(Lscala/math/Numeric$class;::signum(Lscala/math/Numeric;Ljava/lang/Object;)I;)(this, x);
+  }
+  
+  public Lscala/Some; tryCompare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::tryCompare(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Lscala/Some;)(this, x, y);
+  }
+  
+  public Z; lteq(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::lteq(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Z; gteq(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::gteq(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Z; lt(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::lt(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Z; gt(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::gt(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Z; equiv(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::equiv(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Ljava/lang/Object; max(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::max(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this, x, y);
+  }
+  
+  public Ljava/lang/Object; min(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::min(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this, x, y);
+  }
+  
+  public Lscala/math/Ordering; reverse() {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::reverse(Lscala/math/Ordering;)Lscala/math/Ordering;)(this);
+  }
+  
+  public Lscala/math/Ordering; on(Lscala/Function1; f) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::on(Lscala/math/Ordering;Lscala/Function1;)Lscala/math/Ordering;)(this, f);
+  }
+  
+  public Lscala/math/Ordering$Ops; mkOrderingOps(Ljava/lang/Object; lhs) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::mkOrderingOps(Lscala/math/Ordering;Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this, lhs);
+  }
+  
+  public Lscala/math/PartialOrdering; reverse() {
+    return this.(Lscala/math/Ordering;::reverse()Lscala/math/Ordering;)();
+  }
+  
+  public Lscala/Option; tryCompare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return this.(Lscala/math/Ordering;::tryCompare(Ljava/lang/Object;Ljava/lang/Object;)Lscala/Some;)(x, y);
+  }
+  
+  public D; toDouble(Ljava/lang/Object; x) {
+    return this.(Lscala/math/Numeric$DoubleIsConflicted;::toDouble(D;)D;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(x));
+  }
+  
+  public F; toFloat(Ljava/lang/Object; x) {
+    return this.(Lscala/math/Numeric$DoubleIsConflicted;::toFloat(D;)F;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(x));
+  }
+  
+  public J; toLong(Ljava/lang/Object; x) {
+    return this.(Lscala/math/Numeric$DoubleIsConflicted;::toLong(D;)J;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(x));
+  }
+  
+  public I; toInt(Ljava/lang/Object; x) {
+    return this.(Lscala/math/Numeric$DoubleIsConflicted;::toInt(D;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(x));
+  }
+  
+  public Ljava/lang/Object; fromInt(I; x) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToDouble(D;)Ljava/lang/Double;)(this.(Lscala/math/Numeric$DoubleIsConflicted;::fromInt(I;)D;)(x));
+  }
+  
+  public Ljava/lang/Object; negate(Ljava/lang/Object; x) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToDouble(D;)Ljava/lang/Double;)(this.(Lscala/math/Numeric$DoubleIsConflicted;::negate(D;)D;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(x)));
+  }
+  
+  public Ljava/lang/Object; times(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToDouble(D;)Ljava/lang/Double;)(this.(Lscala/math/Numeric$DoubleIsConflicted;::times(D;D;)D;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(y)));
+  }
+  
+  public Ljava/lang/Object; minus(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToDouble(D;)Ljava/lang/Double;)(this.(Lscala/math/Numeric$DoubleIsConflicted;::minus(D;D;)D;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(y)));
+  }
+  
+  public Ljava/lang/Object; plus(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToDouble(D;)Ljava/lang/Double;)(this.(Lscala/math/Numeric$DoubleIsConflicted;::plus(D;D;)D;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(y)));
+  }
+  
+  public Lscala/math/Numeric$Ops; mkNumericOps(Ljava/lang/Object; lhs) {
+    return this.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(lhs);
+  }
+  
+  public Ljava/lang/Object; rem(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToDouble(D;)Ljava/lang/Double;)(this.(Lscala/math/Numeric$DoubleAsIfIntegral;::rem(D;D;)D;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(y)));
+  }
+  
+  public Ljava/lang/Object; quot(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToDouble(D;)Ljava/lang/Double;)(this.(Lscala/math/Numeric$DoubleAsIfIntegral;::quot(D;D;)D;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(y)));
+  }
+  
+  public I; compare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return this.(Lscala/math/Ordering$DoubleOrdering;::compare(D;D;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(y));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/math/PartialOrdering$class;.(Lscala/math/PartialOrdering$class;::$init$(Lscala/math/PartialOrdering;)V;)(this);
+    Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::$init$(Lscala/math/Ordering;)V;)(this);
+    Lscala/math/Numeric$class;.(Lscala/math/Numeric$class;::$init$(Lscala/math/Numeric;)V;)(this);
+    Lscala/math/Numeric$DoubleIsConflicted$class;.(Lscala/math/Numeric$DoubleIsConflicted$class;::$init$(Lscala/math/Numeric$DoubleIsConflicted;)V;)(this);
+    Lscala/math/Integral$class;.(Lscala/math/Integral$class;::$init$(Lscala/math/Integral;)V;)(this);
+    Lscala/math/Numeric$DoubleAsIfIntegral$class;.(Lscala/math/Numeric$DoubleAsIfIntegral$class;::$init$(Lscala/math/Numeric$DoubleAsIfIntegral;)V;)(this);
+    Lscala/math/Ordering$DoubleOrdering$class;.(Lscala/math/Ordering$DoubleOrdering$class;::$init$(Lscala/math/Ordering$DoubleOrdering;)V;)(this);
+  }
+}

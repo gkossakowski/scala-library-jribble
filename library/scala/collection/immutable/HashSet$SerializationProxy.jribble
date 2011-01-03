@@ -1,0 +1,33 @@
+public class Lscala/collection/immutable/HashSet$SerializationProxy; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  private Lscala/collection/immutable/HashSet; scala$collection$immutable$HashSet$SerializationProxy$$orig$u0020;
+  
+  public final Lscala/collection/immutable/HashSet; scala$collection$immutable$HashSet$SerializationProxy$$orig() {
+    return this.(Lscala/collection/immutable/HashSet;)scala$collection$immutable$HashSet$SerializationProxy$$orig$u0020;
+  }
+  
+  public final V; scala$collection$immutable$HashSet$SerializationProxy$$orig_$eq(Lscala/collection/immutable/HashSet; x$1) {
+    this.(Lscala/collection/immutable/HashSet;)scala$collection$immutable$HashSet$SerializationProxy$$orig$u0020 = x$1;
+  }
+  
+  private V; writeObject(Ljava/io/ObjectOutputStream; out$1) {
+    I; s = this.(Lscala/collection/immutable/HashSet$SerializationProxy;::scala$collection$immutable$HashSet$SerializationProxy$$orig()Lscala/collection/immutable/HashSet;)().(Lscala/collection/immutable/HashSet;::size()I;)();
+    out$1.(Ljava/io/ObjectOutputStream;::writeInt(I;)V;)(s);
+    this.(Lscala/collection/immutable/HashSet$SerializationProxy;::scala$collection$immutable$HashSet$SerializationProxy$$orig()Lscala/collection/immutable/HashSet;)().(Lscala/collection/immutable/HashSet;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/HashSet$SerializationProxy$$anonfun$writeObject$1;::this(Lscala/collection/immutable/HashSet$SerializationProxy;Ljava/io/ObjectOutputStream;)V;)(this, out$1)));
+  }
+  
+  private V; readObject(Ljava/io/ObjectInputStream; in$1) {
+    this.(Lscala/collection/immutable/HashSet$SerializationProxy;::scala$collection$immutable$HashSet$SerializationProxy$$orig_$eq(Lscala/collection/immutable/HashSet;)V;)(this.(Lscala/collection/immutable/HashSet$;::empty()Lscala/collection/immutable/HashSet;)());
+    I; s = in$1.(Ljava/io/ObjectInputStream;::readInt()I;)();
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(s).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/HashSet$SerializationProxy$$anonfun$readObject$1;::this(Lscala/collection/immutable/HashSet$SerializationProxy;Ljava/io/ObjectInputStream;)V;)(this, in$1)));
+  }
+  
+  private Ljava/lang/Object; readResolve() {
+    return this.(Lscala/collection/immutable/HashSet$SerializationProxy;::scala$collection$immutable$HashSet$SerializationProxy$$orig()Lscala/collection/immutable/HashSet;)();
+  }
+  
+  public this(Lscala/collection/immutable/HashSet; orig) {
+    this.(Lscala/collection/immutable/HashSet;)scala$collection$immutable$HashSet$SerializationProxy$$orig$u0020 = orig;
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

@@ -1,0 +1,16 @@
+public interface Lscala/collection/mutable/DefaultMapModel; extends Lscala/collection/mutable/Map;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/mutable/DefaultEntry; findEntry(Ljava/lang/Object; key);
+  
+  public V; addEntry(Lscala/collection/mutable/DefaultEntry; e);
+  
+  public Lscala/collection/Iterator; entries();
+  
+  public Lscala/Option; get(Ljava/lang/Object; key);
+  
+  public Lscala/Option; put(Ljava/lang/Object; key, Ljava/lang/Object; value);
+  
+  public Lscala/collection/mutable/DefaultMapModel; $plus$eq(Lscala/Tuple2; kv);
+  
+  public Lscala/collection/Iterator; iterator();
+}

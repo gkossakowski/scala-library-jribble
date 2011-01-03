@@ -1,0 +1,16 @@
+public final class Lscala/collection/mutable/ArraySeq$$anonfun$newBuilder$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Lscala/collection/mutable/ArraySeq; apply(Lscala/collection/mutable/ArrayBuffer; buf) {
+    Lscala/collection/mutable/ArraySeq; result = (new (Lscala/collection/mutable/ArraySeq;::this(I;)V;)(buf.(Lscala/collection/mutable/ResizableArray;::length()I;)()));
+    buf.(Lscala/collection/TraversableOnce;::copyToArray(Ljava/lang/Object;I;)V;)(result.(Lscala/collection/mutable/ArraySeq;::array()Ljava/lang/Object;[)(), 0);
+    return result;
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/collection/mutable/ArraySeq$$anonfun$newBuilder$1;::apply(Lscala/collection/mutable/ArrayBuffer;)Lscala/collection/mutable/ArraySeq;)(v1.<cast>(Lscala/collection/mutable/ArrayBuffer;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

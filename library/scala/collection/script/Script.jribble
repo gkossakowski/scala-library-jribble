@@ -1,0 +1,36 @@
+public class Lscala/collection/script/Script; extends Lscala/collection/mutable/ArrayBuffer; implements Lscala/collection/script/Message;, Lscala/ScalaObject; {
+  
+  public Ljava/lang/String; toString() {
+    Ljava/lang/String; res = "Script(";
+    Lscala/collection/Iterator; it = this.(Lscala/collection/IndexedSeqLike;::iterator()Lscala/collection/Iterator;)();
+    I; i = 1;
+    while$1: while(true) {
+      if (it.(Lscala/collection/Iterator;::hasNext()Z;)())
+        {
+          {
+            if ((i > 1))
+              {
+                res = (res + ", ");
+              }
+            else
+              {
+                
+              }
+            res = ((((res + "[") + Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i)) + "] ") + it.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
+            i = (i + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return (res + ")");
+  }
+  
+  public this() {
+    (Lscala/collection/mutable/ArrayBuffer;::super()V;)();
+  }
+}

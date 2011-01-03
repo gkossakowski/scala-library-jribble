@@ -1,0 +1,12 @@
+public abstract class Lscala/collection/generic/GenericParallelMapTemplate$class; {
+  
+  public static Lscala/collection/parallel/Combiner; genericMapCombiner(Lscala/collection/generic/GenericParallelMapTemplate; $this) {
+    Lscala/collection/parallel/Combiner; cb = $this.(Lscala/collection/generic/GenericParallelMapTemplate;::mapCompanion()Lscala/collection/generic/GenericParallelMapCompanion;)().(Lscala/collection/generic/GenericParallelMapCompanion;::newCombiner()Lscala/collection/parallel/Combiner;)();
+    cb.(Lscala/collection/parallel/ForkJoinTasks;::environment_$eq(Lscala/concurrent/forkjoin/ForkJoinPool;)V;)($this.(Lscala/collection/parallel/ForkJoinTasks;::environment()Lscala/concurrent/forkjoin/ForkJoinPool;)());
+    return cb;
+  }
+  
+  public static V; $init$(Lscala/collection/generic/GenericParallelMapTemplate; $this) {
+    
+  }
+}

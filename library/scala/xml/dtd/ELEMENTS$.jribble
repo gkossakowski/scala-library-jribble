@@ -1,0 +1,32 @@
+public final class Lscala/xml/dtd/ELEMENTS$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+  public static Lscala/xml/dtd/ELEMENTS$; MODULE$ = new (Lscala/xml/dtd/ELEMENTS$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "ELEMENTS";
+  }
+  
+  public Lscala/Option; unapply(Lscala/xml/dtd/ELEMENTS; x$0) {
+    Lscala/Option; $42$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $42$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $42$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/ELEMENTS;::r()Lscala/util/regexp/Base$RegExp;)()));
+      }
+    return $42$;
+  }
+  
+  public Lscala/xml/dtd/ELEMENTS; apply(Lscala/util/regexp/Base$RegExp; r) {
+    return (new (Lscala/xml/dtd/ELEMENTS;::this(Lscala/util/regexp/Base$RegExp;)V;)(r));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/xml/dtd/ELEMENTS$;::apply(Lscala/util/regexp/Base$RegExp;)Lscala/xml/dtd/ELEMENTS;)(v1.<cast>(Lscala/util/regexp/Base$RegExp;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

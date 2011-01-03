@@ -1,0 +1,15 @@
+public final class Lscala/util/Random$; extends Lscala/util/Random; implements Lscala/ScalaObject; {
+  public static Lscala/util/Random$; MODULE$ = new (Lscala/util/Random$;::this()V;)();
+  
+  public Lscala/collection/immutable/Stream; alphanumeric() {
+    return Lscala/package$;.MODULE$.(Lscala/package$;::Stream()Lscala/collection/immutable/Stream$;)().(Lscala/collection/immutable/Stream$;::continually(Lscala/Function0;)Lscala/collection/immutable/Stream;)((new (Lscala/util/Random$$anonfun$alphanumeric$1;::this()V;)())).(Lscala/collection/immutable/Stream;::filter(Lscala/Function1;)Lscala/collection/immutable/Stream;)((new (Lscala/util/Random$$anonfun$alphanumeric$2;::this()V;)()));
+  }
+  
+  public final Z; isAlphaNum$1(C; c) {
+    return ((((c >= 'A') && (c <= 'Z')) || ((c >= 'a') && (c <= 'z'))) || ((c >= '0') && (c <= '9')));
+  }
+  
+  public this() {
+    (Lscala/util/Random;::super()V;)();
+  }
+}

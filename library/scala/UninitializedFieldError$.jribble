@@ -1,0 +1,32 @@
+public final class Lscala/UninitializedFieldError$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+  public static Lscala/UninitializedFieldError$; MODULE$ = new (Lscala/UninitializedFieldError$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "UninitializedFieldError";
+  }
+  
+  public Lscala/Option; unapply(Lscala/UninitializedFieldError; x$0) {
+    Lscala/Option; $5$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $5$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $5$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/UninitializedFieldError;::msg()Ljava/lang/String;)()));
+      }
+    return $5$;
+  }
+  
+  public Lscala/UninitializedFieldError; apply(Ljava/lang/String; msg) {
+    return (new (Lscala/UninitializedFieldError;::this(Ljava/lang/String;)V;)(msg));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/UninitializedFieldError$;::apply(Ljava/lang/String;)Lscala/UninitializedFieldError;)(v1.<cast>(Ljava/lang/String;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

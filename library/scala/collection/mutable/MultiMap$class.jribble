@@ -1,0 +1,105 @@
+public abstract class Lscala/collection/mutable/MultiMap$class; {
+  
+  public static Lscala/collection/mutable/Set; makeSet(Lscala/collection/mutable/MultiMap; $this) {
+    return (new (Lscala/collection/mutable/HashSet;::this()V;)());
+  }
+  
+  public static Lscala/collection/mutable/MultiMap; add(Lscala/collection/mutable/MultiMap; $this, Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    return $this.(Lscala/collection/mutable/MultiMap;::addBinding(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/mutable/MultiMap;)(key, value);
+  }
+  
+  public static Lscala/collection/mutable/MultiMap; addBinding(Lscala/collection/mutable/MultiMap; $this, Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    {
+      Lscala/Option; temp1 = $this.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key);
+      Ljava/lang/Object; $1$;
+      if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp1))
+        {
+          {
+            Lscala/collection/mutable/Set; set = $this.(Lscala/collection/mutable/MultiMap;::makeSet()Lscala/collection/mutable/Set;)();
+            set.(Lscala/collection/mutable/SetLike;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SetLike;)(value);
+            $this.(Lscala/collection/mutable/MapLike;::update(Ljava/lang/Object;Ljava/lang/Object;)V;)(key, set);
+          }
+          $1$ = Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+        }
+      else
+        {
+          Lscala/collection/mutable/SetLike; $2$;
+          if (temp1.<instanceof>(Lscala/Some;))
+            {
+              $2$ = temp1.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)().<cast>(Lscala/collection/mutable/SetLike;).(Lscala/collection/mutable/SetLike;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SetLike;)(value);
+            }
+          else
+            {
+              throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp1));
+            }
+          $1$ = $2$;
+        }
+    }
+    return $this;
+  }
+  
+  public static Lscala/collection/mutable/MultiMap; removeBinding(Lscala/collection/mutable/MultiMap; $this, Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    {
+      Lscala/Option; temp5 = $this.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key);
+      Ljava/lang/Object; $3$;
+      if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp5))
+        {
+          $3$ = Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+        }
+      else
+        {
+          Ljava/lang/Object; $4$;
+          if (temp5.<instanceof>(Lscala/Some;))
+            {
+              Lscala/Some; temp7 = temp5.<cast>(Lscala/Some;);
+              Lscala/collection/mutable/Set; temp8 = temp7.(Lscala/Some;::x()Ljava/lang/Object;)().<cast>(Lscala/collection/mutable/Set;);
+              Lscala/collection/mutable/Set; set = temp8;
+              set.(Lscala/collection/mutable/SetLike;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SetLike;)(value);
+              Ljava/lang/Object; $5$;
+              if (set.(Lscala/collection/SetLike;::isEmpty()Z;)())
+                {
+                  $5$ = $this.(Lscala/collection/mutable/MapLike;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/MapLike;)(key);
+                }
+              else
+                {
+                  $5$ = Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+                }
+              $4$ = $5$;
+            }
+          else
+            {
+              throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp5));
+            }
+          $3$ = $4$;
+        }
+    }
+    return $this;
+  }
+  
+  public static Z; entryExists(Lscala/collection/mutable/MultiMap; $this, Ljava/lang/Object; key, Lscala/Function1; p) {
+    Lscala/Option; temp9 = $this.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key);
+    Z; $6$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp9))
+      {
+        $6$ = false;
+      }
+    else
+      {
+        Z; $7$;
+        if (temp9.<instanceof>(Lscala/Some;))
+          {
+            $7$ = temp9.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::exists(Lscala/Function1;)Z;)(p);
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp9));
+          }
+        $6$ = $7$;
+      }
+    return $6$;
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/MultiMap; $this) {
+    
+  }
+}

@@ -1,0 +1,112 @@
+public class Lscala/collection/JavaConversions$MutableMapWrapper; extends Lscala/collection/JavaConversions$MapWrapper; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/mutable/Map; copy$default$1() {
+    return this.(Lscala/collection/JavaConversions$MutableMapWrapper;::underlying()Lscala/collection/mutable/Map;)();
+  }
+  
+  private Lscala/collection/mutable/Map; underlying$u0020;
+  
+  public Lscala/collection/mutable/Map; underlying() {
+    return this.(Lscala/collection/mutable/Map;)underlying$u0020;
+  }
+  
+  public Ljava/lang/Object; put(Ljava/lang/Object; k, Ljava/lang/Object; v) {
+    Lscala/Option; temp116 = this.(Lscala/collection/JavaConversions$MutableMapWrapper;::underlying()Lscala/collection/mutable/Map;)().(Lscala/collection/mutable/MapLike;::put(Ljava/lang/Object;Ljava/lang/Object;)Lscala/Option;)(k, v);
+    Ljava/lang/Object; $51$;
+    if (temp116.<instanceof>(Lscala/Some;))
+      {
+        $51$ = temp116.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)();
+      }
+    else
+      {
+        Ljava/lang/Object; $52$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp116))
+          {
+            $52$ = null;
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp116));
+          }
+        $51$ = $52$;
+      }
+    return $51$;
+  }
+  
+  public Ljava/lang/Object; remove(Ljava/lang/Object; k) {
+    Ljava/lang/Object; exceptionResult3;
+    try {
+      Lscala/Option; temp120 = this.(Lscala/collection/JavaConversions$MutableMapWrapper;::underlying()Lscala/collection/mutable/Map;)().(Lscala/collection/mutable/MapLike;::remove(Ljava/lang/Object;)Lscala/Option;)(k);
+      Ljava/lang/Object; $53$;
+      if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp120))
+        {
+          $53$ = null;
+        }
+      else
+        {
+          Ljava/lang/Object; $54$;
+          if (temp120.<instanceof>(Lscala/Some;))
+            {
+              $54$ = temp120.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)();
+            }
+          else
+            {
+              throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp120));
+            }
+          $53$ = $54$;
+        }
+      exceptionResult3 = $53$;
+    } catch(Ljava/lang/ClassCastException; ex) {
+      exceptionResult3 = null;
+    }
+    return exceptionResult3;
+  }
+  
+  public V; clear() {
+    this.(Lscala/collection/JavaConversions$MutableMapWrapper;::underlying()Lscala/collection/mutable/Map;)().(Lscala/collection/mutable/MapLike;::clear()V;)();
+  }
+  
+  public Lscala/collection/JavaConversions$MutableMapWrapper; copy(Lscala/collection/mutable/Map; underlying) {
+    return (new (Lscala/collection/JavaConversions$MutableMapWrapper;::this(Lscala/collection/mutable/Map;)V;)(underlying));
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "MutableMapWrapper";
+  }
+  
+  public I; productArity() {
+    return 1;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp124 = x$1;
+    Ljava/lang/Object; $55$;
+    if ((temp124 == 0))
+      {
+        $55$ = this.(Lscala/collection/JavaConversions$MutableMapWrapper;::underlying()Lscala/collection/mutable/Map;)();
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $55$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/collection/JavaConversions$MutableMapWrapper;);
+  }
+  
+  public this(Lscala/collection/mutable/Map; underlying) {
+    this.(Lscala/collection/mutable/Map;)underlying$u0020 = underlying;
+    (Lscala/collection/JavaConversions$MapWrapper;::super(Lscala/collection/Map;)V;)(underlying);
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

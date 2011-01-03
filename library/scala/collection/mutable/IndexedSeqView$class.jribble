@@ -1,0 +1,66 @@
+public abstract class Lscala/collection/mutable/IndexedSeqView$class; {
+  
+  public static Lscala/collection/mutable/IndexedSeqView$Transformed; newFiltered(Lscala/collection/mutable/IndexedSeqView; $this, Lscala/Function1; p$1) {
+    return (new (Lscala/collection/mutable/IndexedSeqView$$anon$1;::this(Lscala/collection/mutable/IndexedSeqView;Lscala/Function1;)V;)($this, p$1));
+  }
+  
+  public static Lscala/collection/mutable/IndexedSeqView$Transformed; newSliced(Lscala/collection/mutable/IndexedSeqView; $this, I; _from$1, I; _until$1) {
+    return (new (Lscala/collection/mutable/IndexedSeqView$$anon$2;::this(Lscala/collection/mutable/IndexedSeqView;I;I;)V;)($this, _from$1, _until$1));
+  }
+  
+  public static Lscala/collection/mutable/IndexedSeqView$Transformed; newDroppedWhile(Lscala/collection/mutable/IndexedSeqView; $this, Lscala/Function1; p$3) {
+    return (new (Lscala/collection/mutable/IndexedSeqView$$anon$3;::this(Lscala/collection/mutable/IndexedSeqView;Lscala/Function1;)V;)($this, p$3));
+  }
+  
+  public static Lscala/collection/mutable/IndexedSeqView$Transformed; newTakenWhile(Lscala/collection/mutable/IndexedSeqView; $this, Lscala/Function1; p$2) {
+    return (new (Lscala/collection/mutable/IndexedSeqView$$anon$4;::this(Lscala/collection/mutable/IndexedSeqView;Lscala/Function1;)V;)($this, p$2));
+  }
+  
+  public static Lscala/collection/mutable/IndexedSeqView$Transformed; newReversed(Lscala/collection/mutable/IndexedSeqView; $this) {
+    return (new (Lscala/collection/mutable/IndexedSeqView$$anon$5;::this(Lscala/collection/mutable/IndexedSeqView;)V;)($this));
+  }
+  
+  public static Lscala/collection/mutable/IndexedSeqView; filter(Lscala/collection/mutable/IndexedSeqView; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/mutable/IndexedSeqView;::newFiltered(Lscala/Function1;)Lscala/collection/mutable/IndexedSeqView$Transformed;)(p);
+  }
+  
+  public static Lscala/collection/mutable/IndexedSeqView; init(Lscala/collection/mutable/IndexedSeqView; $this) {
+    return $this.(Lscala/collection/mutable/IndexedSeqView;::newSliced(I;I;)Lscala/collection/mutable/IndexedSeqView$Transformed;)(0, ($this.(Lscala/collection/SeqLike;::size()I;)() - 1));
+  }
+  
+  public static Lscala/collection/mutable/IndexedSeqView; drop(Lscala/collection/mutable/IndexedSeqView; $this, I; n) {
+    return $this.(Lscala/collection/mutable/IndexedSeqView;::newSliced(I;I;)Lscala/collection/mutable/IndexedSeqView$Transformed;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(n).(Lscala/runtime/RichInt;::max(I;)I;)(0), 2147483647);
+  }
+  
+  public static Lscala/collection/mutable/IndexedSeqView; take(Lscala/collection/mutable/IndexedSeqView; $this, I; n) {
+    return $this.(Lscala/collection/mutable/IndexedSeqView;::newSliced(I;I;)Lscala/collection/mutable/IndexedSeqView$Transformed;)(0, n);
+  }
+  
+  public static Lscala/collection/mutable/IndexedSeqView; slice(Lscala/collection/mutable/IndexedSeqView; $this, I; from, I; until) {
+    return $this.(Lscala/collection/mutable/IndexedSeqView;::newSliced(I;I;)Lscala/collection/mutable/IndexedSeqView$Transformed;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(from).(Lscala/runtime/RichInt;::max(I;)I;)(0), until);
+  }
+  
+  public static Lscala/collection/mutable/IndexedSeqView; dropWhile(Lscala/collection/mutable/IndexedSeqView; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/mutable/IndexedSeqView;::newDroppedWhile(Lscala/Function1;)Lscala/collection/mutable/IndexedSeqView$Transformed;)(p);
+  }
+  
+  public static Lscala/collection/mutable/IndexedSeqView; takeWhile(Lscala/collection/mutable/IndexedSeqView; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/mutable/IndexedSeqView;::newTakenWhile(Lscala/Function1;)Lscala/collection/mutable/IndexedSeqView$Transformed;)(p);
+  }
+  
+  public static Lscala/Tuple2; span(Lscala/collection/mutable/IndexedSeqView; $this, Lscala/Function1; p) {
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)($this.(Lscala/collection/mutable/IndexedSeqView;::takeWhile(Lscala/Function1;)Lscala/collection/mutable/IndexedSeqView;)(p), $this.(Lscala/collection/mutable/IndexedSeqView;::dropWhile(Lscala/Function1;)Lscala/collection/mutable/IndexedSeqView;)(p)));
+  }
+  
+  public static Lscala/Tuple2; splitAt(Lscala/collection/mutable/IndexedSeqView; $this, I; n) {
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)($this.(Lscala/collection/mutable/IndexedSeqView;::take(I;)Lscala/collection/mutable/IndexedSeqView;)(n), $this.(Lscala/collection/mutable/IndexedSeqView;::drop(I;)Lscala/collection/mutable/IndexedSeqView;)(n)));
+  }
+  
+  public static Lscala/collection/mutable/IndexedSeqView; reverse(Lscala/collection/mutable/IndexedSeqView; $this) {
+    return $this.(Lscala/collection/mutable/IndexedSeqView;::newReversed()Lscala/collection/mutable/IndexedSeqView$Transformed;)();
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/IndexedSeqView; $this) {
+    
+  }
+}

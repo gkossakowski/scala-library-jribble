@@ -1,0 +1,51 @@
+public class Lscala/math/Ordering$Ops; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  private Ljava/lang/Object; lhs;
+  
+  public Z; $less(Ljava/lang/Object; rhs) {
+    return this.(Lscala/math/Ordering$Ops;::scala$math$Ordering$Ops$$$outer()Lscala/math/Ordering;)().(Lscala/math/Ordering;::lt(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Ljava/lang/Object;)lhs, rhs);
+  }
+  
+  public Z; $less$eq(Ljava/lang/Object; rhs) {
+    return this.(Lscala/math/Ordering$Ops;::scala$math$Ordering$Ops$$$outer()Lscala/math/Ordering;)().(Lscala/math/Ordering;::lteq(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Ljava/lang/Object;)lhs, rhs);
+  }
+  
+  public Z; $greater(Ljava/lang/Object; rhs) {
+    return this.(Lscala/math/Ordering$Ops;::scala$math$Ordering$Ops$$$outer()Lscala/math/Ordering;)().(Lscala/math/Ordering;::gt(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Ljava/lang/Object;)lhs, rhs);
+  }
+  
+  public Z; $greater$eq(Ljava/lang/Object; rhs) {
+    return this.(Lscala/math/Ordering$Ops;::scala$math$Ordering$Ops$$$outer()Lscala/math/Ordering;)().(Lscala/math/Ordering;::gteq(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Ljava/lang/Object;)lhs, rhs);
+  }
+  
+  public Z; equiv(Ljava/lang/Object; rhs) {
+    return this.(Lscala/math/Ordering$Ops;::scala$math$Ordering$Ops$$$outer()Lscala/math/Ordering;)().(Lscala/math/Ordering;::equiv(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Ljava/lang/Object;)lhs, rhs);
+  }
+  
+  public Ljava/lang/Object; max(Ljava/lang/Object; rhs) {
+    return this.(Lscala/math/Ordering$Ops;::scala$math$Ordering$Ops$$$outer()Lscala/math/Ordering;)().(Lscala/math/Ordering;::max(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Ljava/lang/Object;)lhs, rhs);
+  }
+  
+  public Ljava/lang/Object; min(Ljava/lang/Object; rhs) {
+    return this.(Lscala/math/Ordering$Ops;::scala$math$Ordering$Ops$$$outer()Lscala/math/Ordering;)().(Lscala/math/Ordering;::min(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Ljava/lang/Object;)lhs, rhs);
+  }
+  
+  protected Lscala/math/Ordering; $outer$u0020;
+  
+  public Lscala/math/Ordering; scala$math$Ordering$Ops$$$outer() {
+    return this.(Lscala/math/Ordering;)$outer$u0020;
+  }
+  
+  public this(Lscala/math/Ordering; $outer, Ljava/lang/Object; lhs) {
+    this.(Ljava/lang/Object;)lhs = lhs;
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/math/Ordering;)$outer$u0020 = $outer;
+      }
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

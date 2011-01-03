@@ -1,0 +1,114 @@
+public class Lscala/util/regexp/Base$Star; extends Lscala/util/regexp/Base$RegExp; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  protected I; bitmap$0 = 0;
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/util/regexp/Base$RegExp; copy$default$1() {
+    return this.(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)();
+  }
+  
+  private Lscala/util/regexp/Base$RegExp; r$u0020;
+  
+  public Lscala/util/regexp/Base$RegExp; r() {
+    return this.(Lscala/util/regexp/Base$RegExp;)r$u0020;
+  }
+  
+  private final Z; isNullable$u0020;
+  
+  public final Z; isNullable() {
+    if (((this.(I;)bitmap$0 & 1) == 0))
+      {
+        if (((this.(I;)bitmap$0 & 1) == 0))
+          {
+            this.(Z;)isNullable$u0020 = true;
+            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 1);
+          }
+      }
+    return this.(Z;)isNullable$u0020;
+  }
+  
+  public Lscala/util/regexp/Base$Star; copy(Lscala/util/regexp/Base$RegExp; r) {
+    return (new (Lscala/util/regexp/Base$Star;::this(Lscala/util/regexp/Base;Lscala/util/regexp/Base$RegExp;)V;)(this.(Lscala/util/regexp/Base$Star;::scala$util$regexp$Base$Star$$$outer()Lscala/util/regexp/Base;)(), r));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp1 = x$1;
+    Z; $3$;
+    if ((temp1.<instanceof>(Lscala/util/regexp/Base$Star;) && (temp1.<cast>(Lscala/util/regexp/Base$Star;).(Lscala/util/regexp/Base$Star;::scala$util$regexp$Base$Star$$$outer()Lscala/util/regexp/Base;)() == this.(Lscala/util/regexp/Base$Star;::scala$util$regexp$Base$Star$$$outer()Lscala/util/regexp/Base;)())))
+      {
+        Lscala/util/regexp/Base$Star; temp2 = temp1.<cast>(Lscala/util/regexp/Base$Star;);
+        Lscala/util/regexp/Base$RegExp; temp3 = temp2.(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)();
+        Lscala/util/regexp/Base$RegExp; r$1 = temp3;
+        Z; $4$;
+        if (this.(Lscala/util/regexp/Base$Star;::gd1$1(Lscala/util/regexp/Base$RegExp;)Z;)(r$1))
+          {
+            $4$ = x$1.<cast>(Lscala/util/regexp/Base$Star;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $4$ = false;
+          }
+        $3$ = $4$;
+      }
+    else
+      {
+        $3$ = false;
+      }
+    return ((this == x$1) || $3$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Star";
+  }
+  
+  public I; productArity() {
+    return 1;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp4 = x$1;
+    Ljava/lang/Object; $5$;
+    if ((temp4 == 0))
+      {
+        $5$ = this.(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)();
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $5$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/util/regexp/Base$Star;);
+  }
+  
+  public Lscala/util/regexp/Base; scala$util$regexp$Base$Star$$$outer() {
+    return this.(Lscala/util/regexp/Base;)$outer$u0020;
+  }
+  
+  private final Z; gd1$1(Lscala/util/regexp/Base$RegExp; x$1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)());
+  }
+  
+  public this(Lscala/util/regexp/Base; $outer, Lscala/util/regexp/Base$RegExp; r) {
+    this.(Lscala/util/regexp/Base$RegExp;)r$u0020 = r;
+    (Lscala/util/regexp/Base$RegExp;::super(Lscala/util/regexp/Base;)V;)($outer);
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

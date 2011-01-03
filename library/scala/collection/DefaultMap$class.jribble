@@ -1,0 +1,19 @@
+public abstract class Lscala/collection/DefaultMap$class; {
+  
+  public static Lscala/collection/Map; $plus(Lscala/collection/DefaultMap; $this, Lscala/Tuple2; kv) {
+    Lscala/collection/mutable/Builder; b = Lscala/collection/Map$;.MODULE$.(Lscala/collection/generic/MapFactory;::newBuilder()Lscala/collection/mutable/Builder;)();
+    b.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)($this);
+    b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(kv.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), kv.(Lscala/Tuple2;::_2()Ljava/lang/Object;)())));
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Map;);
+  }
+  
+  public static Lscala/collection/Map; $minus(Lscala/collection/DefaultMap; $this, Ljava/lang/Object; key$1) {
+    Lscala/collection/mutable/Builder; b = $this.(Lscala/collection/MapLike;::newBuilder()Lscala/collection/mutable/Builder;)();
+    b.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)($this.(Lscala/collection/TraversableLike;::filter(Lscala/Function1;)Ljava/lang/Object;)((new (Lscala/collection/DefaultMap$$anonfun$$minus$1;::this(Lscala/collection/DefaultMap;Ljava/lang/Object;)V;)($this, key$1))).<cast>(Lscala/collection/TraversableOnce;));
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Map;);
+  }
+  
+  public static V; $init$(Lscala/collection/DefaultMap; $this) {
+    
+  }
+}

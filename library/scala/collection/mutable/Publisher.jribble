@@ -1,0 +1,30 @@
+public interface Lscala/collection/mutable/Publisher; extends Lscala/ScalaObject; {
+  
+  public V; scala$collection$mutable$Publisher$_setter_$self_$eq(Lscala/collection/mutable/Publisher; x$1);
+  
+  public V; scala$collection$mutable$Publisher$_setter_$scala$collection$mutable$Publisher$$filters_$eq(Lscala/collection/mutable/HashMap; x$1);
+  
+  public V; scala$collection$mutable$Publisher$_setter_$scala$collection$mutable$Publisher$$suspended_$eq(Lscala/collection/mutable/HashSet; x$1);
+  
+  public Lscala/collection/mutable/Publisher; self();
+  
+  public Lscala/collection/mutable/HashMap; scala$collection$mutable$Publisher$$filters();
+  
+  public Lscala/collection/mutable/HashSet; scala$collection$mutable$Publisher$$suspended();
+  
+  public V; subscribe(Lscala/collection/mutable/Subscriber; sub);
+  
+  public V; subscribe(Lscala/collection/mutable/Subscriber; sub, Lscala/Function1; filter);
+  
+  public V; suspendSubscription(Lscala/collection/mutable/Subscriber; sub);
+  
+  public V; activateSubscription(Lscala/collection/mutable/Subscriber; sub);
+  
+  public V; removeSubscription(Lscala/collection/mutable/Subscriber; sub);
+  
+  public V; removeSubscriptions();
+  
+  public V; publish(Ljava/lang/Object; event);
+  
+  public Z; equals(Ljava/lang/Object; obj);
+}

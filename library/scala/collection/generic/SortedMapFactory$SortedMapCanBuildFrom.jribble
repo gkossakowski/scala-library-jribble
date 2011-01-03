@@ -1,0 +1,35 @@
+public class Lscala/collection/generic/SortedMapFactory$SortedMapCanBuildFrom; extends Ljava/lang/Object; implements Lscala/collection/generic/CanBuildFrom;, Lscala/ScalaObject; {
+  
+  private Lscala/math/Ordering; ord;
+  
+  public Lscala/collection/mutable/Builder; apply(Lscala/collection/SortedMap; from) {
+    return this.(Lscala/collection/generic/SortedMapFactory$SortedMapCanBuildFrom;::scala$collection$generic$SortedMapFactory$SortedMapCanBuildFrom$$$outer()Lscala/collection/generic/SortedMapFactory;)().(Lscala/collection/generic/SortedMapFactory;::newBuilder(Lscala/math/Ordering;)Lscala/collection/mutable/Builder;)(this.(Lscala/math/Ordering;)ord);
+  }
+  
+  public Lscala/collection/mutable/Builder; apply() {
+    return this.(Lscala/collection/generic/SortedMapFactory$SortedMapCanBuildFrom;::scala$collection$generic$SortedMapFactory$SortedMapCanBuildFrom$$$outer()Lscala/collection/generic/SortedMapFactory;)().(Lscala/collection/generic/SortedMapFactory;::newBuilder(Lscala/math/Ordering;)Lscala/collection/mutable/Builder;)(this.(Lscala/math/Ordering;)ord);
+  }
+  
+  protected Lscala/collection/generic/SortedMapFactory; $outer$u0020;
+  
+  public Lscala/collection/generic/SortedMapFactory; scala$collection$generic$SortedMapFactory$SortedMapCanBuildFrom$$$outer() {
+    return this.(Lscala/collection/generic/SortedMapFactory;)$outer$u0020;
+  }
+  
+  public Lscala/collection/mutable/Builder; apply(Ljava/lang/Object; from) {
+    return this.(Lscala/collection/generic/SortedMapFactory$SortedMapCanBuildFrom;::apply(Lscala/collection/SortedMap;)Lscala/collection/mutable/Builder;)(from.<cast>(Lscala/collection/SortedMap;));
+  }
+  
+  public this(Lscala/collection/generic/SortedMapFactory; $outer, Lscala/math/Ordering; ord) {
+    this.(Lscala/math/Ordering;)ord = ord;
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/generic/SortedMapFactory;)$outer$u0020 = $outer;
+      }
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

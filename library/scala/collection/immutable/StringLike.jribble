@@ -1,0 +1,56 @@
+public interface Lscala/collection/immutable/StringLike; extends Lscala/collection/IndexedSeqOptimized;, Lscala/math/Ordered;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/mutable/Builder; newBuilder();
+  
+  public C; apply(I; n);
+  
+  public I; length();
+  
+  public Ljava/lang/String; mkString();
+  
+  public Ljava/lang/String; $times(I; n);
+  
+  public I; compare(Ljava/lang/String; other);
+  
+  public Ljava/lang/String; stripLineEnd();
+  
+  public Lscala/collection/Iterator; linesWithSeparators();
+  
+  public Lscala/collection/Iterator; lines();
+  
+  public Lscala/collection/Iterator; linesIterator();
+  
+  public Ljava/lang/String; capitalize();
+  
+  public Ljava/lang/String; stripPrefix(Ljava/lang/String; prefix);
+  
+  public Ljava/lang/String; stripSuffix(Ljava/lang/String; suffix);
+  
+  public Ljava/lang/String; stripMargin(C; marginChar);
+  
+  public Ljava/lang/String; stripMargin();
+  
+  public Ljava/lang/String;[ split(C; separator);
+  
+  public Ljava/lang/String;[ split(C;[ separators);
+  
+  public Lscala/util/matching/Regex; r();
+  
+  public Z; toBoolean();
+  
+  public B; toByte();
+  
+  public S; toShort();
+  
+  public I; toInt();
+  
+  public J; toLong();
+  
+  public F; toFloat();
+  
+  public D; toDouble();
+  
+  public Ljava/lang/String; format(Lscala/collection/Seq; args);
+  
+  public Ljava/lang/String; formatLocal(Ljava/util/Locale; l, Lscala/collection/Seq; args);
+}

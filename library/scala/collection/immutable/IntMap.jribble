@@ -1,0 +1,1720 @@
+public abstract class Lscala/collection/immutable/IntMap; extends Ljava/lang/Object; implements Lscala/collection/immutable/Map;, Lscala/collection/immutable/MapLike;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/immutable/Map; withDefault(Lscala/Function1; d) {
+    return Lscala/collection/immutable/Map$class;.(Lscala/collection/immutable/Map$class;::withDefault(Lscala/collection/immutable/Map;Lscala/Function1;)Lscala/collection/immutable/Map;)(this, d);
+  }
+  
+  public Lscala/collection/immutable/Map; withDefaultValue(Ljava/lang/Object; d) {
+    return Lscala/collection/immutable/Map$class;.(Lscala/collection/immutable/Map$class;::withDefaultValue(Lscala/collection/immutable/Map;Ljava/lang/Object;)Lscala/collection/immutable/Map;)(this, d);
+  }
+  
+  public Lscala/collection/immutable/Map; $plus(Lscala/Tuple2; elem1, Lscala/Tuple2; elem2, Lscala/collection/Seq; elems) {
+    return Lscala/collection/immutable/MapLike$class;.(Lscala/collection/immutable/MapLike$class;::$plus(Lscala/collection/immutable/MapLike;Lscala/Tuple2;Lscala/Tuple2;Lscala/collection/Seq;)Lscala/collection/immutable/Map;)(this, elem1, elem2, elems);
+  }
+  
+  public Lscala/collection/immutable/Map; $plus$plus(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/immutable/MapLike$class;.(Lscala/collection/immutable/MapLike$class;::$plus$plus(Lscala/collection/immutable/MapLike;Lscala/collection/TraversableOnce;)Lscala/collection/immutable/Map;)(this, xs);
+  }
+  
+  public Lscala/collection/immutable/Map; filterKeys(Lscala/Function1; p) {
+    return Lscala/collection/immutable/MapLike$class;.(Lscala/collection/immutable/MapLike$class;::filterKeys(Lscala/collection/immutable/MapLike;Lscala/Function1;)Lscala/collection/immutable/Map;)(this, p);
+  }
+  
+  public Lscala/collection/immutable/Map; mapValues(Lscala/Function1; f) {
+    return Lscala/collection/immutable/MapLike$class;.(Lscala/collection/immutable/MapLike$class;::mapValues(Lscala/collection/immutable/MapLike;Lscala/Function1;)Lscala/collection/immutable/Map;)(this, f);
+  }
+  
+  public Ljava/lang/Object; transform(Lscala/Function2; f, Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/immutable/MapLike$class;.(Lscala/collection/immutable/MapLike$class;::transform(Lscala/collection/immutable/MapLike;Lscala/Function2;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, f, bf);
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::newBuilder(Lscala/collection/MapLike;)Lscala/collection/mutable/Builder;)(this);
+  }
+  
+  public Z; contains(Ljava/lang/Object; key) {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::contains(Lscala/collection/MapLike;Ljava/lang/Object;)Z;)(this, key);
+  }
+  
+  public Z; isDefinedAt(Ljava/lang/Object; key) {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::isDefinedAt(Lscala/collection/MapLike;Ljava/lang/Object;)Z;)(this, key);
+  }
+  
+  public Lscala/collection/Set; keySet() {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::keySet(Lscala/collection/MapLike;)Lscala/collection/Set;)(this);
+  }
+  
+  public Lscala/collection/Iterable; keys() {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::keys(Lscala/collection/MapLike;)Lscala/collection/Iterable;)(this);
+  }
+  
+  public Lscala/collection/Iterable; values() {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::values(Lscala/collection/MapLike;)Lscala/collection/Iterable;)(this);
+  }
+  
+  public Ljava/lang/Object; `default`(Ljava/lang/Object; key) {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::`default`(Lscala/collection/MapLike;Ljava/lang/Object;)Ljava/lang/Object;)(this, key);
+  }
+  
+  public Lscala/collection/Map; mapElements(Lscala/Function1; f) {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::mapElements(Lscala/collection/MapLike;Lscala/Function1;)Lscala/collection/Map;)(this, f);
+  }
+  
+  public Lscala/collection/Map; filterNot(Lscala/Function1; p) {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::filterNot(Lscala/collection/MapLike;Lscala/Function1;)Lscala/collection/Map;)(this, p);
+  }
+  
+  public Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/mutable/StringBuilder; b, Ljava/lang/String; start, Ljava/lang/String; sep, Ljava/lang/String; end) {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::addString(Lscala/collection/MapLike;Lscala/collection/mutable/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(this, b, start, sep, end);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::toString(Lscala/collection/MapLike;)Ljava/lang/String;)(this);
+  }
+  
+  public I; hashCode() {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::hashCode(Lscala/collection/MapLike;)I;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; that) {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::equals(Lscala/collection/MapLike;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Lscala/collection/generic/Subtractable; $minus(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
+    return Lscala/collection/generic/Subtractable$class;.(Lscala/collection/generic/Subtractable$class;::$minus(Lscala/collection/generic/Subtractable;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/Seq;)Lscala/collection/generic/Subtractable;)(this, elem1, elem2, elems);
+  }
+  
+  public Lscala/collection/generic/Subtractable; $minus$minus(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/generic/Subtractable$class;.(Lscala/collection/generic/Subtractable$class;::$minus$minus(Lscala/collection/generic/Subtractable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Subtractable;)(this, xs);
+  }
+  
+  public Lscala/PartialFunction; orElse(Lscala/PartialFunction; that) {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::orElse(Lscala/PartialFunction;Lscala/PartialFunction;)Lscala/PartialFunction;)(this, that);
+  }
+  
+  public Lscala/PartialFunction; andThen(Lscala/Function1; k) {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::andThen(Lscala/PartialFunction;Lscala/Function1;)Lscala/PartialFunction;)(this, k);
+  }
+  
+  public Lscala/Function1; lift() {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::lift(Lscala/PartialFunction;)Lscala/Function1;)(this);
+  }
+  
+  public Lscala/Function1; compose(Lscala/Function1; g) {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::compose(Lscala/Function1;Lscala/Function1;)Lscala/Function1;)(this, g);
+  }
+  
+  public Lscala/collection/generic/GenericCompanion; companion() {
+    return Lscala/collection/immutable/Iterable$class;.(Lscala/collection/immutable/Iterable$class;::companion(Lscala/collection/immutable/Iterable;)Lscala/collection/generic/GenericCompanion;)(this);
+  }
+  
+  public Lscala/collection/Iterable; thisCollection() {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::thisCollection(Lscala/collection/IterableLike;)Lscala/collection/Iterable;)(this);
+  }
+  
+  public Lscala/collection/Iterable; toCollection(Ljava/lang/Object; repr) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::toCollection(Lscala/collection/IterableLike;Ljava/lang/Object;)Lscala/collection/Iterable;)(this, repr);
+  }
+  
+  public Z; forall(Lscala/Function1; p) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::forall(Lscala/collection/IterableLike;Lscala/Function1;)Z;)(this, p);
+  }
+  
+  public Z; exists(Lscala/Function1; p) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::exists(Lscala/collection/IterableLike;Lscala/Function1;)Z;)(this, p);
+  }
+  
+  public Lscala/Option; find(Lscala/Function1; p) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::find(Lscala/collection/IterableLike;Lscala/Function1;)Lscala/Option;)(this, p);
+  }
+  
+  public Ljava/lang/Object; foldRight(Ljava/lang/Object; z, Lscala/Function2; op) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::foldRight(Lscala/collection/IterableLike;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(this, z, op);
+  }
+  
+  public Ljava/lang/Object; reduceRight(Lscala/Function2; op) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::reduceRight(Lscala/collection/IterableLike;Lscala/Function2;)Ljava/lang/Object;)(this, op);
+  }
+  
+  public Lscala/collection/Iterable; toIterable() {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::toIterable(Lscala/collection/IterableLike;)Lscala/collection/Iterable;)(this);
+  }
+  
+  public Ljava/lang/Object; head() {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::head(Lscala/collection/IterableLike;)Ljava/lang/Object;)(this);
+  }
+  
+  public Ljava/lang/Object; take(I; n) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::take(Lscala/collection/IterableLike;I;)Ljava/lang/Object;)(this, n);
+  }
+  
+  public Ljava/lang/Object; slice(I; from, I; until) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::slice(Lscala/collection/IterableLike;I;I;)Ljava/lang/Object;)(this, from, until);
+  }
+  
+  public Ljava/lang/Object; takeWhile(Lscala/Function1; p) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::takeWhile(Lscala/collection/IterableLike;Lscala/Function1;)Ljava/lang/Object;)(this, p);
+  }
+  
+  public Lscala/collection/Iterator; grouped(I; size) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::grouped(Lscala/collection/IterableLike;I;)Lscala/collection/Iterator;)(this, size);
+  }
+  
+  public Lscala/collection/Iterator; sliding(I; size) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::sliding(Lscala/collection/IterableLike;I;)Lscala/collection/Iterator;)(this, size);
+  }
+  
+  public Lscala/collection/Iterator; sliding(I; size, I; step) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::sliding(Lscala/collection/IterableLike;I;I;)Lscala/collection/Iterator;)(this, size, step);
+  }
+  
+  public Ljava/lang/Object; takeRight(I; n) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::takeRight(Lscala/collection/IterableLike;I;)Ljava/lang/Object;)(this, n);
+  }
+  
+  public Ljava/lang/Object; dropRight(I; n) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::dropRight(Lscala/collection/IterableLike;I;)Ljava/lang/Object;)(this, n);
+  }
+  
+  public V; copyToArray(Ljava/lang/Object; xs, I; start, I; len) {
+    Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::copyToArray(Lscala/collection/IterableLike;Ljava/lang/Object;I;I;)V;)(this, xs, start, len);
+  }
+  
+  public Ljava/lang/Object; zip(Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::zip(Lscala/collection/IterableLike;Lscala/collection/Iterable;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, that, bf);
+  }
+  
+  public Ljava/lang/Object; zipAll(Lscala/collection/Iterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::zipAll(Lscala/collection/IterableLike;Lscala/collection/Iterable;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, that, thisElem, thatElem, bf);
+  }
+  
+  public Ljava/lang/Object; zipWithIndex(Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::zipWithIndex(Lscala/collection/IterableLike;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, bf);
+  }
+  
+  public Z; sameElements(Lscala/collection/Iterable; that) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::sameElements(Lscala/collection/IterableLike;Lscala/collection/Iterable;)Z;)(this, that);
+  }
+  
+  public Lscala/collection/immutable/Stream; toStream() {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::toStream(Lscala/collection/IterableLike;)Lscala/collection/immutable/Stream;)(this);
+  }
+  
+  public Lscala/collection/Seq; toSeq() {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::toSeq(Lscala/collection/IterableLike;)Lscala/collection/Seq;)(this);
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; that) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::canEqual(Lscala/collection/IterableLike;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Lscala/collection/IterableView; view() {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::view(Lscala/collection/IterableLike;)Lscala/collection/IterableView;)(this);
+  }
+  
+  public Lscala/collection/IterableView; view(I; from, I; until) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::view(Lscala/collection/IterableLike;I;I;)Lscala/collection/IterableView;)(this, from, until);
+  }
+  
+  public Lscala/collection/Iterator; elements() {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::elements(Lscala/collection/IterableLike;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Ljava/lang/Object; first() {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::first(Lscala/collection/IterableLike;)Ljava/lang/Object;)(this);
+  }
+  
+  public Lscala/Option; firstOption() {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::firstOption(Lscala/collection/IterableLike;)Lscala/Option;)(this);
+  }
+  
+  public Lscala/collection/IterableView; projection() {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::projection(Lscala/collection/IterableLike;)Lscala/collection/IterableView;)(this);
+  }
+  
+  public Lscala/collection/mutable/Builder; genericBuilder() {
+    return Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::genericBuilder(Lscala/collection/generic/GenericTraversableTemplate;)Lscala/collection/mutable/Builder;)(this);
+  }
+  
+  public Lscala/Tuple2; unzip(Lscala/Function1; asPair) {
+    return Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::unzip(Lscala/collection/generic/GenericTraversableTemplate;Lscala/Function1;)Lscala/Tuple2;)(this, asPair);
+  }
+  
+  public Lscala/collection/Traversable; flatten(Lscala/Function1; asTraversable) {
+    return Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::flatten(Lscala/collection/generic/GenericTraversableTemplate;Lscala/Function1;)Lscala/collection/Traversable;)(this, asTraversable);
+  }
+  
+  public Lscala/collection/Traversable; transpose(Lscala/Function1; asTraversable) {
+    return Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::transpose(Lscala/collection/generic/GenericTraversableTemplate;Lscala/Function1;)Lscala/collection/Traversable;)(this, asTraversable);
+  }
+  
+  public Ljava/lang/Object; repr() {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::repr(Lscala/collection/TraversableLike;)Ljava/lang/Object;)(this);
+  }
+  
+  public final Z; isTraversableAgain() {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::isTraversableAgain(Lscala/collection/TraversableLike;)Z;)(this);
+  }
+  
+  public Z; hasDefiniteSize() {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::hasDefiniteSize(Lscala/collection/TraversableLike;)Z;)(this);
+  }
+  
+  public Ljava/lang/Object; $plus$plus(Lscala/collection/TraversableOnce; that, Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$plus$plus(Lscala/collection/TraversableLike;Lscala/collection/TraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, that, bf);
+  }
+  
+  public Ljava/lang/Object; map(Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::map(Lscala/collection/TraversableLike;Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, f, bf);
+  }
+  
+  public Ljava/lang/Object; flatMap(Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::flatMap(Lscala/collection/TraversableLike;Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, f, bf);
+  }
+  
+  public Ljava/lang/Object; collect(Lscala/PartialFunction; pf, Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::collect(Lscala/collection/TraversableLike;Lscala/PartialFunction;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, pf, bf);
+  }
+  
+  public Lscala/Tuple2; partition(Lscala/Function1; p) {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::partition(Lscala/collection/TraversableLike;Lscala/Function1;)Lscala/Tuple2;)(this, p);
+  }
+  
+  public Lscala/collection/immutable/Map; groupBy(Lscala/Function1; f) {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::groupBy(Lscala/collection/TraversableLike;Lscala/Function1;)Lscala/collection/immutable/Map;)(this, f);
+  }
+  
+  public Ljava/lang/Object; scanLeft(Ljava/lang/Object; z, Lscala/Function2; op, Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::scanLeft(Lscala/collection/TraversableLike;Ljava/lang/Object;Lscala/Function2;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, z, op, bf);
+  }
+  
+  public Ljava/lang/Object; scanRight(Ljava/lang/Object; z, Lscala/Function2; op, Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::scanRight(Lscala/collection/TraversableLike;Ljava/lang/Object;Lscala/Function2;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, z, op, bf);
+  }
+  
+  public Lscala/Option; headOption() {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::headOption(Lscala/collection/TraversableLike;)Lscala/Option;)(this);
+  }
+  
+  public Ljava/lang/Object; tail() {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::tail(Lscala/collection/TraversableLike;)Ljava/lang/Object;)(this);
+  }
+  
+  public Ljava/lang/Object; last() {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::last(Lscala/collection/TraversableLike;)Ljava/lang/Object;)(this);
+  }
+  
+  public Lscala/Option; lastOption() {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::lastOption(Lscala/collection/TraversableLike;)Lscala/Option;)(this);
+  }
+  
+  public Ljava/lang/Object; init() {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::init(Lscala/collection/TraversableLike;)Ljava/lang/Object;)(this);
+  }
+  
+  public Ljava/lang/Object; drop(I; n) {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::drop(Lscala/collection/TraversableLike;I;)Ljava/lang/Object;)(this, n);
+  }
+  
+  public Ljava/lang/Object; dropWhile(Lscala/Function1; p) {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::dropWhile(Lscala/collection/TraversableLike;Lscala/Function1;)Ljava/lang/Object;)(this, p);
+  }
+  
+  public Lscala/Tuple2; span(Lscala/Function1; p) {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::span(Lscala/collection/TraversableLike;Lscala/Function1;)Lscala/Tuple2;)(this, p);
+  }
+  
+  public Lscala/Tuple2; splitAt(I; n) {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::splitAt(Lscala/collection/TraversableLike;I;)Lscala/Tuple2;)(this, n);
+  }
+  
+  public Lscala/collection/Traversable; toTraversable() {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::toTraversable(Lscala/collection/TraversableLike;)Lscala/collection/Traversable;)(this);
+  }
+  
+  public Lscala/collection/Iterator; toIterator() {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::toIterator(Lscala/collection/TraversableLike;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/generic/FilterMonadic; withFilter(Lscala/Function1; p) {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::withFilter(Lscala/collection/TraversableLike;Lscala/Function1;)Lscala/collection/generic/FilterMonadic;)(this, p);
+  }
+  
+  public Lscala/collection/immutable/List; reversed() {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::reversed(Lscala/collection/TraversableOnce;)Lscala/collection/immutable/List;)(this);
+  }
+  
+  public Z; nonEmpty() {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::nonEmpty(Lscala/collection/TraversableOnce;)Z;)(this);
+  }
+  
+  public I; count(Lscala/Function1; p) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::count(Lscala/collection/TraversableOnce;Lscala/Function1;)I;)(this, p);
+  }
+  
+  public Ljava/lang/Object; $div$colon(Ljava/lang/Object; z, Lscala/Function2; op) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$div$colon(Lscala/collection/TraversableOnce;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(this, z, op);
+  }
+  
+  public Ljava/lang/Object; $colon$bslash(Ljava/lang/Object; z, Lscala/Function2; op) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$colon$bslash(Lscala/collection/TraversableOnce;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(this, z, op);
+  }
+  
+  public Ljava/lang/Object; foldLeft(Ljava/lang/Object; z, Lscala/Function2; op) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::foldLeft(Lscala/collection/TraversableOnce;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(this, z, op);
+  }
+  
+  public Ljava/lang/Object; reduceLeft(Lscala/Function2; op) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::reduceLeft(Lscala/collection/TraversableOnce;Lscala/Function2;)Ljava/lang/Object;)(this, op);
+  }
+  
+  public Lscala/Option; reduceLeftOption(Lscala/Function2; op) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::reduceLeftOption(Lscala/collection/TraversableOnce;Lscala/Function2;)Lscala/Option;)(this, op);
+  }
+  
+  public Lscala/Option; reduceRightOption(Lscala/Function2; op) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::reduceRightOption(Lscala/collection/TraversableOnce;Lscala/Function2;)Lscala/Option;)(this, op);
+  }
+  
+  public Ljava/lang/Object; sum(Lscala/math/Numeric; num) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::sum(Lscala/collection/TraversableOnce;Lscala/math/Numeric;)Ljava/lang/Object;)(this, num);
+  }
+  
+  public Ljava/lang/Object; product(Lscala/math/Numeric; num) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::product(Lscala/collection/TraversableOnce;Lscala/math/Numeric;)Ljava/lang/Object;)(this, num);
+  }
+  
+  public Ljava/lang/Object; min(Lscala/math/Ordering; cmp) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::min(Lscala/collection/TraversableOnce;Lscala/math/Ordering;)Ljava/lang/Object;)(this, cmp);
+  }
+  
+  public Ljava/lang/Object; max(Lscala/math/Ordering; cmp) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::max(Lscala/collection/TraversableOnce;Lscala/math/Ordering;)Ljava/lang/Object;)(this, cmp);
+  }
+  
+  public V; copyToBuffer(Lscala/collection/mutable/Buffer; dest) {
+    Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::copyToBuffer(Lscala/collection/TraversableOnce;Lscala/collection/mutable/Buffer;)V;)(this, dest);
+  }
+  
+  public V; copyToArray(Ljava/lang/Object; xs, I; start) {
+    Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::copyToArray(Lscala/collection/TraversableOnce;Ljava/lang/Object;I;)V;)(this, xs, start);
+  }
+  
+  public V; copyToArray(Ljava/lang/Object; xs) {
+    Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::copyToArray(Lscala/collection/TraversableOnce;Ljava/lang/Object;)V;)(this, xs);
+  }
+  
+  public Ljava/lang/Object; toArray(Lscala/reflect/ClassManifest; evidence$1) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::toArray(Lscala/collection/TraversableOnce;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(this, evidence$1);
+  }
+  
+  public Lscala/collection/immutable/IndexedSeq; toIndexedSeq() {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::toIndexedSeq(Lscala/collection/TraversableOnce;)Lscala/collection/immutable/IndexedSeq;)(this);
+  }
+  
+  public Lscala/collection/mutable/Buffer; toBuffer() {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::toBuffer(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Buffer;)(this);
+  }
+  
+  public Lscala/collection/immutable/Set; toSet() {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::toSet(Lscala/collection/TraversableOnce;)Lscala/collection/immutable/Set;)(this);
+  }
+  
+  public Lscala/collection/immutable/Map; toMap(Lscala/Predef$$less$colon$less; ev) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::toMap(Lscala/collection/TraversableOnce;Lscala/Predef$$less$colon$less;)Lscala/collection/immutable/Map;)(this, ev);
+  }
+  
+  public Ljava/lang/String; mkString(Ljava/lang/String; start, Ljava/lang/String; sep, Ljava/lang/String; end) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::mkString(Lscala/collection/TraversableOnce;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)(this, start, sep, end);
+  }
+  
+  public Ljava/lang/String; mkString(Ljava/lang/String; sep) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::mkString(Lscala/collection/TraversableOnce;Ljava/lang/String;)Ljava/lang/String;)(this, sep);
+  }
+  
+  public Ljava/lang/String; mkString() {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::mkString(Lscala/collection/TraversableOnce;)Ljava/lang/String;)(this);
+  }
+  
+  public Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/mutable/StringBuilder; b, Ljava/lang/String; sep) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::addString(Lscala/collection/TraversableOnce;Lscala/collection/mutable/StringBuilder;Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(this, b, sep);
+  }
+  
+  public Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/mutable/StringBuilder; b) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::addString(Lscala/collection/TraversableOnce;Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(this, b);
+  }
+  
+  public Lscala/collection/immutable/IntMap; empty() {
+    return Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
+  }
+  
+  public Lscala/collection/immutable/List; toList() {
+    Lscala/collection/mutable/ListBuffer; buffer$1 = (new (Lscala/collection/mutable/ListBuffer;::this()V;)());
+    this.(Lscala/collection/immutable/IntMap;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/IntMap$$anonfun$toList$1;::this(Lscala/collection/immutable/IntMap;Lscala/collection/mutable/ListBuffer;)V;)(this, buffer$1)));
+    return buffer$1.(Lscala/collection/mutable/ListBuffer;::toList()Lscala/collection/immutable/List;)();
+  }
+  
+  public Lscala/collection/Iterator; iterator() {
+    Lscala/collection/immutable/IntMap; temp22 = this;
+    Lscala/collection/Iterator; $8$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp22))
+      {
+        $8$ = Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::empty()Lscala/collection/Iterator;)();
+      }
+    else
+      {
+        $8$ = (new (Lscala/collection/immutable/IntMapEntryIterator;::this(Lscala/collection/immutable/IntMap;)V;)(this));
+      }
+    return $8$;
+  }
+  
+  public final V; foreach(Lscala/Function1; f) {
+    Lscala/collection/immutable/IntMap; temp24 = this;
+    if (temp24.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+      {
+        Lscala/collection/immutable/IntMap$Bin; temp25 = temp24.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+        temp25.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::foreach(Lscala/Function1;)V;)(f);
+        temp25.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::foreach(Lscala/Function1;)V;)(f);
+      }
+    else
+      {
+        if (temp24.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            Lscala/collection/immutable/IntMap$Tip; temp30 = temp24.<cast>(Lscala/collection/immutable/IntMap$Tip;);
+            f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(temp30.(Lscala/collection/immutable/IntMap$Tip;::key()I;)()), temp30.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)())));
+          }
+        else
+          {
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp24))
+              {
+                
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp24));
+              }
+          }
+      }
+  }
+  
+  public Lscala/collection/Iterator; keysIterator() {
+    Lscala/collection/immutable/IntMap; temp34 = this;
+    Lscala/collection/Iterator; $9$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp34))
+      {
+        $9$ = Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::empty()Lscala/collection/Iterator;)();
+      }
+    else
+      {
+        $9$ = (new (Lscala/collection/immutable/IntMapKeyIterator;::this(Lscala/collection/immutable/IntMap;)V;)(this));
+      }
+    return $9$;
+  }
+  
+  public final V; foreachKey(Lscala/Function1; f) {
+    Lscala/collection/immutable/IntMap; temp36 = this;
+    if (temp36.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+      {
+        Lscala/collection/immutable/IntMap$Bin; temp37 = temp36.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+        temp37.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::foreachKey(Lscala/Function1;)V;)(f);
+        temp37.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::foreachKey(Lscala/Function1;)V;)(f);
+      }
+    else
+      {
+        if (temp36.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(temp36.<cast>(Lscala/collection/immutable/IntMap$Tip;).(Lscala/collection/immutable/IntMap$Tip;::key()I;)()));
+          }
+        else
+          {
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp36))
+              {
+                
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp36));
+              }
+          }
+      }
+  }
+  
+  public Lscala/collection/Iterator; valuesIterator() {
+    Lscala/collection/immutable/IntMap; temp46 = this;
+    Lscala/collection/Iterator; $10$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp46))
+      {
+        $10$ = Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::empty()Lscala/collection/Iterator;)();
+      }
+    else
+      {
+        $10$ = (new (Lscala/collection/immutable/IntMapValueIterator;::this(Lscala/collection/immutable/IntMap;)V;)(this));
+      }
+    return $10$;
+  }
+  
+  public final V; foreachValue(Lscala/Function1; f) {
+    Lscala/collection/immutable/IntMap; temp48 = this;
+    if (temp48.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+      {
+        Lscala/collection/immutable/IntMap$Bin; temp49 = temp48.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+        temp49.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::foreachValue(Lscala/Function1;)V;)(f);
+        temp49.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::foreachValue(Lscala/Function1;)V;)(f);
+      }
+    else
+      {
+        if (temp48.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp48.<cast>(Lscala/collection/immutable/IntMap$Tip;).(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)());
+          }
+        else
+          {
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp48))
+              {
+                
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp48));
+              }
+          }
+      }
+  }
+  
+  public Ljava/lang/String; stringPrefix() {
+    return "IntMap";
+  }
+  
+  public Z; isEmpty() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, Lscala/collection/immutable/IntMap$Nil$;.MODULE$);
+  }
+  
+  public Lscala/collection/immutable/IntMap; filter(Lscala/Function1; f) {
+    Lscala/collection/immutable/IntMap; temp58 = this;
+    Lscala/collection/immutable/IntMap; $11$;
+    if (temp58.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+      {
+        Lscala/collection/immutable/IntMap$Bin; temp59 = temp58.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+        Lscala/collection/immutable/IntMap; temp62 = temp59.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)();
+        Lscala/collection/immutable/IntMap; temp63 = temp59.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)();
+        Lscala/collection/immutable/IntMap; left = temp62;
+        Lscala/collection/immutable/IntMap; right = temp63;
+        Lscala/collection/immutable/IntMap; tp3 = left.(Lscala/collection/immutable/IntMap;::filter(Lscala/Function1;)Lscala/collection/immutable/IntMap;)(f);
+        Lscala/collection/immutable/IntMap; tp4 = right.(Lscala/collection/immutable/IntMap;::filter(Lscala/Function1;)Lscala/collection/immutable/IntMap;)(f);
+        Lscala/Tuple2; x$2 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp3, tp4));
+        Lscala/collection/immutable/IntMap; newleft = x$2.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/IntMap;);
+        Lscala/collection/immutable/IntMap; newright = x$2.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/IntMap;);
+        Lscala/collection/immutable/IntMap; $12$;
+        if (((left == newleft) && (right == newright)))
+          {
+            $12$ = this;
+          }
+        else
+          {
+            $12$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::bin(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(temp59.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)(), temp59.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)(), newleft, newright);
+          }
+        $11$ = $12$;
+      }
+    else
+      {
+        Lscala/collection/immutable/IntMap; $13$;
+        if (temp58.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            Lscala/collection/immutable/IntMap$Tip; temp64 = temp58.<cast>(Lscala/collection/immutable/IntMap$Tip;);
+            Lscala/collection/immutable/IntMap; $14$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(temp64.(Lscala/collection/immutable/IntMap$Tip;::key()I;)()), temp64.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)())))))
+              {
+                $14$ = this;
+              }
+            else
+              {
+                $14$ = Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
+              }
+            $13$ = $14$;
+          }
+        else
+          {
+            Lscala/collection/immutable/IntMap; $15$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp58))
+              {
+                $15$ = Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp58));
+              }
+            $13$ = $15$;
+          }
+        $11$ = $13$;
+      }
+    return $11$;
+  }
+  
+  public Lscala/collection/immutable/IntMap; transform(Lscala/Function2; f) {
+    Lscala/collection/immutable/IntMap; temp68 = this;
+    Lscala/collection/immutable/IntMap; $16$;
+    if (temp68.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+      {
+        Lscala/collection/immutable/IntMap$Bin; temp69 = temp68.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+        $16$ = temp69.(Lscala/collection/immutable/IntMap$Bin;::bin(Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(temp69.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::transform(Lscala/Function2;)Lscala/collection/immutable/IntMap;)(f), temp69.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::transform(Lscala/Function2;)Lscala/collection/immutable/IntMap;)(f));
+      }
+    else
+      {
+        Lscala/collection/immutable/IntMap; $17$;
+        if (temp68.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            Lscala/collection/immutable/IntMap$Tip; temp74 = temp68.<cast>(Lscala/collection/immutable/IntMap$Tip;);
+            $17$ = temp74.(Lscala/collection/immutable/IntMap$Tip;::withValue(Ljava/lang/Object;)Lscala/collection/immutable/IntMap$Tip;)(f.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(temp74.(Lscala/collection/immutable/IntMap$Tip;::key()I;)()), temp74.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)()));
+          }
+        else
+          {
+            Lscala/collection/immutable/IntMap; $18$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp68))
+              {
+                $18$ = Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp68));
+              }
+            $17$ = $18$;
+          }
+        $16$ = $17$;
+      }
+    return $16$;
+  }
+  
+  public final I; size() {
+    Lscala/collection/immutable/IntMap; temp78 = this;
+    I; $19$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp78))
+      {
+        $19$ = 0;
+      }
+    else
+      {
+        I; $20$;
+        if (temp78.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            $20$ = 1;
+          }
+        else
+          {
+            I; $21$;
+            if (temp78.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+              {
+                Lscala/collection/immutable/IntMap$Bin; temp83 = temp78.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+                $21$ = (temp83.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::size()I;)() + temp83.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::size()I;)());
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp78));
+              }
+            $20$ = $21$;
+          }
+        $19$ = $20$;
+      }
+    return $19$;
+  }
+  
+  public final Lscala/Option; get(I; key) {
+    Lscala/collection/immutable/IntMap; temp88 = this;
+    Lscala/Option; $22$;
+    if (temp88.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+      {
+        Lscala/collection/immutable/IntMap$Bin; temp89 = temp88.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+        Lscala/Option; $23$;
+        if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::zero(I;I;)Z;)(key, temp89.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)()))
+          {
+            $23$ = temp89.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::get(I;)Lscala/Option;)(key);
+          }
+        else
+          {
+            $23$ = temp89.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::get(I;)Lscala/Option;)(key);
+          }
+        $22$ = $23$;
+      }
+    else
+      {
+        Lscala/Option; $24$;
+        if (temp88.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            Lscala/collection/immutable/IntMap$Tip; temp94 = temp88.<cast>(Lscala/collection/immutable/IntMap$Tip;);
+            Lscala/Option; $25$;
+            if ((key == temp94.(Lscala/collection/immutable/IntMap$Tip;::key()I;)()))
+              {
+                $25$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(temp94.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)()));
+              }
+            else
+              {
+                $25$ = Lscala/None$;.MODULE$;
+              }
+            $24$ = $25$;
+          }
+        else
+          {
+            Lscala/Option; $26$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp88))
+              {
+                $26$ = Lscala/None$;.MODULE$;
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp88));
+              }
+            $24$ = $26$;
+          }
+        $22$ = $24$;
+      }
+    return $22$;
+  }
+  
+  public final Ljava/lang/Object; getOrElse(I; key, Lscala/Function0; `default`) {
+    Lscala/collection/immutable/IntMap; temp98 = this;
+    Ljava/lang/Object; $27$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp98))
+      {
+        $27$ = `default`.(Lscala/Function0;::apply()Ljava/lang/Object;)();
+      }
+    else
+      {
+        Ljava/lang/Object; $28$;
+        if (temp98.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            Lscala/collection/immutable/IntMap$Tip; temp100 = temp98.<cast>(Lscala/collection/immutable/IntMap$Tip;);
+            Ljava/lang/Object; $29$;
+            if ((key == temp100.(Lscala/collection/immutable/IntMap$Tip;::key()I;)()))
+              {
+                $29$ = temp100.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)();
+              }
+            else
+              {
+                $29$ = `default`.(Lscala/Function0;::apply()Ljava/lang/Object;)();
+              }
+            $28$ = $29$;
+          }
+        else
+          {
+            Ljava/lang/Object; $30$;
+            if (temp98.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+              {
+                Lscala/collection/immutable/IntMap$Bin; temp103 = temp98.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+                Ljava/lang/Object; $31$;
+                if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::zero(I;I;)Z;)(key, temp103.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)()))
+                  {
+                    $31$ = temp103.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::getOrElse(I;Lscala/Function0;)Ljava/lang/Object;)(key, `default`);
+                  }
+                else
+                  {
+                    $31$ = temp103.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::getOrElse(I;Lscala/Function0;)Ljava/lang/Object;)(key, `default`);
+                  }
+                $30$ = $31$;
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp98));
+              }
+            $28$ = $30$;
+          }
+        $27$ = $28$;
+      }
+    return $27$;
+  }
+  
+  public final Ljava/lang/Object; apply(I; key) {
+    Lscala/collection/immutable/IntMap; temp108 = this;
+    Ljava/lang/Object; $32$;
+    if (temp108.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+      {
+        Lscala/collection/immutable/IntMap$Bin; temp109 = temp108.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+        Ljava/lang/Object; $33$;
+        if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::zero(I;I;)Z;)(key, temp109.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)()))
+          {
+            $33$ = temp109.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::apply(I;)Ljava/lang/Object;)(key);
+          }
+        else
+          {
+            $33$ = temp109.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::apply(I;)Ljava/lang/Object;)(key);
+          }
+        $32$ = $33$;
+      }
+    else
+      {
+        Ljava/lang/Object; $34$;
+        if (temp108.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            Lscala/collection/immutable/IntMap$Tip; temp114 = temp108.<cast>(Lscala/collection/immutable/IntMap$Tip;);
+            Ljava/lang/Object; $35$;
+            if ((key == temp114.(Lscala/collection/immutable/IntMap$Tip;::key()I;)()))
+              {
+                $35$ = temp114.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)();
+              }
+            else
+              {
+                Lscala/Predef$;.MODULE$.(Lscala/Predef$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("Key not found");
+              }
+            $34$ = $35$;
+          }
+        else
+          {
+            Lscala/runtime/Nothing$; $36$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp108))
+              {
+                Lscala/Predef$;.MODULE$.(Lscala/Predef$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("key not found");
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp108));
+              }
+          }
+        $32$ = $34$;
+      }
+    return $32$;
+  }
+  
+  public Lscala/collection/immutable/IntMap; $plus(Lscala/Tuple2; kv) {
+    return this.(Lscala/collection/immutable/IntMap;::updated(I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(kv.(Lscala/Tuple2;::_1()Ljava/lang/Object;)()), kv.(Lscala/Tuple2;::_2()Ljava/lang/Object;)());
+  }
+  
+  public Lscala/collection/immutable/IntMap; updated(I; key, Ljava/lang/Object; value) {
+    Lscala/collection/immutable/IntMap; temp118 = this;
+    Lscala/collection/immutable/IntMap; $37$;
+    if (temp118.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+      {
+        Lscala/collection/immutable/IntMap$Bin; temp119 = temp118.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+        I; temp120 = temp119.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)();
+        I; temp121 = temp119.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)();
+        Lscala/collection/immutable/IntMap; temp122 = temp119.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)();
+        Lscala/collection/immutable/IntMap; temp123 = temp119.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)();
+        I; prefix = temp120;
+        I; mask = temp121;
+        Lscala/collection/immutable/IntMap; left = temp122;
+        Lscala/collection/immutable/IntMap; right = temp123;
+        Lscala/collection/immutable/IntMap; $38$;
+        if (!(Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::hasMatch(I;I;I;)Z;)(key, prefix, mask)))
+          {
+            $38$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::join(I;Lscala/collection/immutable/IntMap;I;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(key, (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, value)), prefix, this);
+          }
+        else
+          {
+            Lscala/collection/immutable/IntMap; $39$;
+            if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::zero(I;I;)Z;)(key, mask))
+              {
+                $39$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(prefix, mask, left.(Lscala/collection/immutable/IntMap;::updated(I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(key, value), right));
+              }
+            else
+              {
+                $39$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(prefix, mask, left, right.(Lscala/collection/immutable/IntMap;::updated(I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(key, value)));
+              }
+            $38$ = $39$;
+          }
+        $37$ = $38$;
+      }
+    else
+      {
+        Lscala/collection/immutable/IntMap; $40$;
+        if (temp118.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            Lscala/collection/immutable/IntMap$Tip; temp124 = temp118.<cast>(Lscala/collection/immutable/IntMap$Tip;);
+            I; temp125 = temp124.(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
+            I; key2 = temp125;
+            Lscala/collection/immutable/IntMap; $41$;
+            if ((key == key2))
+              {
+                $41$ = (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, value));
+              }
+            else
+              {
+                $41$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::join(I;Lscala/collection/immutable/IntMap;I;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(key, (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, value)), key2, this);
+              }
+            $40$ = $41$;
+          }
+        else
+          {
+            Lscala/collection/immutable/IntMap; $42$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp118))
+              {
+                $42$ = (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, value));
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp118));
+              }
+            $40$ = $42$;
+          }
+        $37$ = $40$;
+      }
+    return $37$;
+  }
+  
+  public Lscala/collection/immutable/IntMap; update(I; key, Ljava/lang/Object; value) {
+    return this.(Lscala/collection/immutable/IntMap;::updated(I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(key, value);
+  }
+  
+  public Lscala/collection/immutable/IntMap; updateWith(I; key, Ljava/lang/Object; value, Lscala/Function2; f) {
+    Lscala/collection/immutable/IntMap; temp128 = this;
+    Lscala/collection/immutable/IntMap; $43$;
+    if (temp128.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+      {
+        Lscala/collection/immutable/IntMap$Bin; temp129 = temp128.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+        I; temp130 = temp129.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)();
+        I; temp131 = temp129.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)();
+        Lscala/collection/immutable/IntMap; temp132 = temp129.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)();
+        Lscala/collection/immutable/IntMap; temp133 = temp129.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)();
+        I; prefix = temp130;
+        I; mask = temp131;
+        Lscala/collection/immutable/IntMap; left = temp132;
+        Lscala/collection/immutable/IntMap; right = temp133;
+        Lscala/collection/immutable/IntMap; $44$;
+        if (!(Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::hasMatch(I;I;I;)Z;)(key, prefix, mask)))
+          {
+            $44$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::join(I;Lscala/collection/immutable/IntMap;I;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(key, (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, value)), prefix, this);
+          }
+        else
+          {
+            Lscala/collection/immutable/IntMap; $45$;
+            if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::zero(I;I;)Z;)(key, mask))
+              {
+                $45$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(prefix, mask, left.(Lscala/collection/immutable/IntMap;::updateWith(I;Ljava/lang/Object;Lscala/Function2;)Lscala/collection/immutable/IntMap;)(key, value, f), right));
+              }
+            else
+              {
+                $45$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(prefix, mask, left, right.(Lscala/collection/immutable/IntMap;::updateWith(I;Ljava/lang/Object;Lscala/Function2;)Lscala/collection/immutable/IntMap;)(key, value, f)));
+              }
+            $44$ = $45$;
+          }
+        $43$ = $44$;
+      }
+    else
+      {
+        Lscala/collection/immutable/IntMap; $46$;
+        if (temp128.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            Lscala/collection/immutable/IntMap$Tip; temp134 = temp128.<cast>(Lscala/collection/immutable/IntMap$Tip;);
+            I; temp135 = temp134.(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
+            I; key2 = temp135;
+            Lscala/collection/immutable/IntMap; $47$;
+            if ((key == key2))
+              {
+                $47$ = (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, f.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(temp134.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)(), value)));
+              }
+            else
+              {
+                $47$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::join(I;Lscala/collection/immutable/IntMap;I;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(key, (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, value)), key2, this);
+              }
+            $46$ = $47$;
+          }
+        else
+          {
+            Lscala/collection/immutable/IntMap; $48$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp128))
+              {
+                $48$ = (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, value));
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp128));
+              }
+            $46$ = $48$;
+          }
+        $43$ = $46$;
+      }
+    return $43$;
+  }
+  
+  public Lscala/collection/immutable/IntMap; $minus(I; key) {
+    Lscala/collection/immutable/IntMap; temp138 = this;
+    Lscala/collection/immutable/IntMap; $49$;
+    if (temp138.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+      {
+        Lscala/collection/immutable/IntMap$Bin; temp139 = temp138.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+        I; temp140 = temp139.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)();
+        I; temp141 = temp139.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)();
+        Lscala/collection/immutable/IntMap; temp142 = temp139.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)();
+        Lscala/collection/immutable/IntMap; temp143 = temp139.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)();
+        I; prefix = temp140;
+        I; mask = temp141;
+        Lscala/collection/immutable/IntMap; left = temp142;
+        Lscala/collection/immutable/IntMap; right = temp143;
+        Lscala/collection/immutable/IntMap; $50$;
+        if (!(Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::hasMatch(I;I;I;)Z;)(key, prefix, mask)))
+          {
+            $50$ = this;
+          }
+        else
+          {
+            Lscala/collection/immutable/IntMap; $51$;
+            if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::zero(I;I;)Z;)(key, mask))
+              {
+                $51$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::bin(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(prefix, mask, left.(Lscala/collection/immutable/IntMap;::$minus(I;)Lscala/collection/immutable/IntMap;)(key), right);
+              }
+            else
+              {
+                $51$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::bin(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(prefix, mask, left, right.(Lscala/collection/immutable/IntMap;::$minus(I;)Lscala/collection/immutable/IntMap;)(key));
+              }
+            $50$ = $51$;
+          }
+        $49$ = $50$;
+      }
+    else
+      {
+        Lscala/collection/immutable/IntMap; $52$;
+        if (temp138.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            Lscala/collection/immutable/IntMap; $53$;
+            if ((key == temp138.<cast>(Lscala/collection/immutable/IntMap$Tip;).(Lscala/collection/immutable/IntMap$Tip;::key()I;)()))
+              {
+                $53$ = Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
+              }
+            else
+              {
+                $53$ = this;
+              }
+            $52$ = $53$;
+          }
+        else
+          {
+            Lscala/collection/immutable/IntMap; $54$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp138))
+              {
+                $54$ = Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp138));
+              }
+            $52$ = $54$;
+          }
+        $49$ = $52$;
+      }
+    return $49$;
+  }
+  
+  public Lscala/collection/immutable/IntMap; modifyOrRemove(Lscala/Function2; f) {
+    Lscala/collection/immutable/IntMap; temp152 = this;
+    Lscala/collection/immutable/IntMap; $55$;
+    if (temp152.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+      {
+        Lscala/collection/immutable/IntMap$Bin; temp153 = temp152.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+        Lscala/collection/immutable/IntMap; temp156 = temp153.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)();
+        Lscala/collection/immutable/IntMap; temp157 = temp153.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)();
+        Lscala/collection/immutable/IntMap; left = temp156;
+        Lscala/collection/immutable/IntMap; right = temp157;
+        Lscala/collection/immutable/IntMap; newleft = left.(Lscala/collection/immutable/IntMap;::modifyOrRemove(Lscala/Function2;)Lscala/collection/immutable/IntMap;)(f);
+        Lscala/collection/immutable/IntMap; newright = right.(Lscala/collection/immutable/IntMap;::modifyOrRemove(Lscala/Function2;)Lscala/collection/immutable/IntMap;)(f);
+        Lscala/collection/immutable/IntMap; $56$;
+        if (((left == newleft) && (right == newright)))
+          {
+            $56$ = this;
+          }
+        else
+          {
+            $56$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::bin(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(temp153.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)(), temp153.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)(), newleft, newright);
+          }
+        $55$ = $56$;
+      }
+    else
+      {
+        Lscala/collection/immutable/IntMap; $57$;
+        if (temp152.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            Lscala/collection/immutable/IntMap$Tip; temp158 = temp152.<cast>(Lscala/collection/immutable/IntMap$Tip;);
+            I; temp159 = temp158.(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
+            Ljava/lang/Object; temp160 = temp158.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)();
+            I; key = temp159;
+            Ljava/lang/Object; value = temp160;
+            Lscala/Option; temp148 = f.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(key), value).<cast>(Lscala/Option;);
+            Lscala/collection/immutable/IntMap; $58$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp148))
+              {
+                $58$ = Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
+              }
+            else
+              {
+                Lscala/collection/immutable/IntMap; $59$;
+                if (temp148.<instanceof>(Lscala/Some;))
+                  {
+                    Lscala/Some; temp150 = temp148.<cast>(Lscala/Some;);
+                    Ljava/lang/Object; temp151 = temp150.(Lscala/Some;::x()Ljava/lang/Object;)();
+                    Ljava/lang/Object; value2 = temp151;
+                    Lscala/collection/immutable/IntMap; $60$;
+                    if ((value == value2))
+                      {
+                        $60$ = this;
+                      }
+                    else
+                      {
+                        $60$ = (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, value2));
+                      }
+                    $59$ = $60$;
+                  }
+                else
+                  {
+                    throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp148));
+                  }
+                $58$ = $59$;
+              }
+            $57$ = $58$;
+          }
+        else
+          {
+            Lscala/collection/immutable/IntMap; $61$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp152))
+              {
+                $61$ = Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp152));
+              }
+            $57$ = $61$;
+          }
+        $55$ = $57$;
+      }
+    return $55$;
+  }
+  
+  public Lscala/collection/immutable/IntMap; unionWith(Lscala/collection/immutable/IntMap; that, Lscala/Function3; f$1) {
+    Lscala/collection/immutable/IntMap; tp5 = this;
+    Lscala/collection/immutable/IntMap; tp6 = that;
+    Lscala/collection/immutable/IntMap; $62$;
+    if (tp5.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+      {
+        Lscala/collection/immutable/IntMap$Bin; temp162 = tp5.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+        I; temp163 = temp162.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)();
+        I; temp164 = temp162.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)();
+        Lscala/collection/immutable/IntMap; temp165 = temp162.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)();
+        Lscala/collection/immutable/IntMap; temp166 = temp162.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)();
+        Lscala/collection/immutable/IntMap; $63$;
+        if (tp6.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+          {
+            Lscala/collection/immutable/IntMap$Bin; temp167 = tp6.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+            I; temp168 = temp167.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)();
+            I; temp169 = temp167.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)();
+            Lscala/collection/immutable/IntMap; temp170 = temp167.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)();
+            Lscala/collection/immutable/IntMap; temp171 = temp167.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)();
+            I; p1 = temp163;
+            I; m1 = temp164;
+            Lscala/collection/immutable/IntMap; l1 = temp165;
+            Lscala/collection/immutable/IntMap; r1 = temp166;
+            Lscala/collection/immutable/IntMap$Bin; that = temp167;
+            I; p2 = temp168;
+            I; m2 = temp169;
+            Lscala/collection/immutable/IntMap; l2 = temp170;
+            Lscala/collection/immutable/IntMap; r2 = temp171;
+            Lscala/collection/immutable/IntMap; $64$;
+            if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::shorter(I;I;)Z;)(m1, m2))
+              {
+                Lscala/collection/immutable/IntMap; $65$;
+                if (!(Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::hasMatch(I;I;I;)Z;)(p2, p1, m1)))
+                  {
+                    $65$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::join(I;Lscala/collection/immutable/IntMap;I;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(p1, this, p2, that);
+                  }
+                else
+                  {
+                    Lscala/collection/immutable/IntMap; $66$;
+                    if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::zero(I;I;)Z;)(p2, m1))
+                      {
+                        $66$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(p1, m1, l1.(Lscala/collection/immutable/IntMap;::unionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(that, f$1), r1));
+                      }
+                    else
+                      {
+                        $66$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(p1, m1, l1, r1.(Lscala/collection/immutable/IntMap;::unionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(that, f$1)));
+                      }
+                    $65$ = $66$;
+                  }
+                $64$ = $65$;
+              }
+            else
+              {
+                Lscala/collection/immutable/IntMap; $67$;
+                if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::shorter(I;I;)Z;)(m2, m1))
+                  {
+                    Lscala/collection/immutable/IntMap; $68$;
+                    if (!(Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::hasMatch(I;I;I;)Z;)(p1, p2, m2)))
+                      {
+                        $68$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::join(I;Lscala/collection/immutable/IntMap;I;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(p1, this, p2, that);
+                      }
+                    else
+                      {
+                        Lscala/collection/immutable/IntMap; $69$;
+                        if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::zero(I;I;)Z;)(p1, m2))
+                          {
+                            $69$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(p2, m2, this.(Lscala/collection/immutable/IntMap;::unionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(l2, f$1), r2));
+                          }
+                        else
+                          {
+                            $69$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(p2, m2, l2, this.(Lscala/collection/immutable/IntMap;::unionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(r2, f$1)));
+                          }
+                        $68$ = $69$;
+                      }
+                    $67$ = $68$;
+                  }
+                else
+                  {
+                    Lscala/collection/immutable/IntMap; $70$;
+                    if ((p1 == p2))
+                      {
+                        $70$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(p1, m1, l1.(Lscala/collection/immutable/IntMap;::unionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(l2, f$1), r1.(Lscala/collection/immutable/IntMap;::unionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(r2, f$1)));
+                      }
+                    else
+                      {
+                        $70$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::join(I;Lscala/collection/immutable/IntMap;I;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(p1, this, p2, that);
+                      }
+                    $67$ = $70$;
+                  }
+                $64$ = $67$;
+              }
+            $63$ = $64$;
+          }
+        else
+          {
+            Lscala/collection/immutable/IntMap; $71$;
+            if (tp6.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+              {
+                Lscala/collection/immutable/IntMap$Tip; temp172 = tp6.<cast>(Lscala/collection/immutable/IntMap$Tip;);
+                I; temp173 = temp172.(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
+                Ljava/lang/Object; temp174 = temp172.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)();
+                Lscala/collection/immutable/IntMap; x = temp162;
+                I; key$2 = temp173;
+                Ljava/lang/Object; value = temp174;
+                $71$ = this.(Lscala/collection/immutable/IntMap;::body$percent2$percent1(Lscala/collection/immutable/IntMap;I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(x, key$2, value);
+              }
+            else
+              {
+                Lscala/collection/immutable/IntMap; $72$;
+                if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, tp6))
+                  {
+                    Lscala/collection/immutable/IntMap; x = temp162;
+                    $72$ = this.(Lscala/collection/immutable/IntMap;::body$percent4$percent1(Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(x);
+                  }
+                else
+                  {
+                    throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp5, tp6))));
+                  }
+                $71$ = $72$;
+              }
+            $63$ = $71$;
+          }
+        $62$ = $63$;
+      }
+    else
+      {
+        Lscala/collection/immutable/IntMap; $73$;
+        if (tp5.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            Lscala/collection/immutable/IntMap$Tip; temp176 = tp5.<cast>(Lscala/collection/immutable/IntMap$Tip;);
+            I; temp177 = temp176.(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
+            I; key$1 = temp177;
+            $73$ = tp6.(Lscala/collection/immutable/IntMap;::updateWith(I;Ljava/lang/Object;Lscala/Function2;)Lscala/collection/immutable/IntMap;)(key$1, temp176.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/IntMap$$anonfun$unionWith$1;::this(Lscala/collection/immutable/IntMap;Lscala/Function3;I;)V;)(this, f$1, key$1)));
+          }
+        else
+          {
+            Lscala/collection/immutable/IntMap; $74$;
+            if (tp6.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+              {
+                Lscala/collection/immutable/IntMap$Tip; temp179 = tp6.<cast>(Lscala/collection/immutable/IntMap$Tip;);
+                $74$ = this.(Lscala/collection/immutable/IntMap;::body$percent2$percent1(Lscala/collection/immutable/IntMap;I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(tp5, temp179.(Lscala/collection/immutable/IntMap$Tip;::key()I;)(), temp179.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)());
+              }
+            else
+              {
+                Lscala/collection/immutable/IntMap; $75$;
+                if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, tp5))
+                  {
+                    $75$ = tp6;
+                  }
+                else
+                  {
+                    Lscala/collection/immutable/IntMap; $76$;
+                    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, tp6))
+                      {
+                        $76$ = this.(Lscala/collection/immutable/IntMap;::body$percent4$percent1(Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(tp5);
+                      }
+                    else
+                      {
+                        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp5, tp6))));
+                      }
+                    $75$ = $76$;
+                  }
+                $74$ = $75$;
+              }
+            $73$ = $74$;
+          }
+        $62$ = $73$;
+      }
+    return $62$;
+  }
+  
+  public Lscala/collection/immutable/IntMap; intersectionWith(Lscala/collection/immutable/IntMap; that, Lscala/Function3; f) {
+    Lscala/collection/immutable/IntMap; tp7 = this;
+    Lscala/collection/immutable/IntMap; tp8 = that;
+    Lscala/collection/immutable/IntMap; $77$;
+    if (tp7.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+      {
+        Lscala/collection/immutable/IntMap$Bin; temp192 = tp7.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+        I; temp193 = temp192.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)();
+        I; temp194 = temp192.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)();
+        Lscala/collection/immutable/IntMap; temp195 = temp192.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)();
+        Lscala/collection/immutable/IntMap; temp196 = temp192.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)();
+        Lscala/collection/immutable/IntMap; $78$;
+        if (tp8.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+          {
+            Lscala/collection/immutable/IntMap$Bin; temp197 = tp8.<cast>(Lscala/collection/immutable/IntMap$Bin;);
+            I; temp198 = temp197.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)();
+            I; temp199 = temp197.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)();
+            Lscala/collection/immutable/IntMap; temp200 = temp197.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)();
+            Lscala/collection/immutable/IntMap; temp201 = temp197.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)();
+            I; p1 = temp193;
+            I; m1 = temp194;
+            Lscala/collection/immutable/IntMap; l1 = temp195;
+            Lscala/collection/immutable/IntMap; r1 = temp196;
+            Lscala/collection/immutable/IntMap$Bin; that = temp197;
+            I; p2 = temp198;
+            I; m2 = temp199;
+            Lscala/collection/immutable/IntMap; l2 = temp200;
+            Lscala/collection/immutable/IntMap; r2 = temp201;
+            Lscala/collection/immutable/IntMap; $79$;
+            if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::shorter(I;I;)Z;)(m1, m2))
+              {
+                Lscala/collection/immutable/IntMap; $80$;
+                if (!(Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::hasMatch(I;I;I;)Z;)(p2, p1, m1)))
+                  {
+                    $80$ = Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
+                  }
+                else
+                  {
+                    Lscala/collection/immutable/IntMap; $81$;
+                    if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::zero(I;I;)Z;)(p2, m1))
+                      {
+                        $81$ = l1.(Lscala/collection/immutable/IntMap;::intersectionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(that, f);
+                      }
+                    else
+                      {
+                        $81$ = r1.(Lscala/collection/immutable/IntMap;::intersectionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(that, f);
+                      }
+                    $80$ = $81$;
+                  }
+                $79$ = $80$;
+              }
+            else
+              {
+                Lscala/collection/immutable/IntMap; $82$;
+                if ((m1 == m2))
+                  {
+                    $82$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::bin(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(p1, m1, l1.(Lscala/collection/immutable/IntMap;::intersectionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(l2, f), r1.(Lscala/collection/immutable/IntMap;::intersectionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(r2, f));
+                  }
+                else
+                  {
+                    Lscala/collection/immutable/IntMap; $83$;
+                    if (!(Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::hasMatch(I;I;I;)Z;)(p1, p2, m2)))
+                      {
+                        $83$ = Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
+                      }
+                    else
+                      {
+                        Lscala/collection/immutable/IntMap; $84$;
+                        if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::zero(I;I;)Z;)(p1, m2))
+                          {
+                            $84$ = this.(Lscala/collection/immutable/IntMap;::intersectionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(l2, f);
+                          }
+                        else
+                          {
+                            $84$ = this.(Lscala/collection/immutable/IntMap;::intersectionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(r2, f);
+                          }
+                        $83$ = $84$;
+                      }
+                    $82$ = $83$;
+                  }
+                $79$ = $82$;
+              }
+            $78$ = $79$;
+          }
+        else
+          {
+            Lscala/collection/immutable/IntMap; $85$;
+            if (tp8.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+              {
+                Lscala/collection/immutable/IntMap$Tip; temp202 = tp8.<cast>(Lscala/collection/immutable/IntMap$Tip;);
+                I; temp203 = temp202.(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
+                Ljava/lang/Object; temp204 = temp202.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)();
+                I; key = temp203;
+                Ljava/lang/Object; value = temp204;
+                $85$ = this.(Lscala/collection/immutable/IntMap;::body$percent2$percent2(I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(key, value);
+              }
+            else
+              {
+                $85$ = this.(Lscala/collection/immutable/IntMap;::body$percent3$percent1()Lscala/collection/immutable/IntMap;)();
+              }
+            $78$ = $85$;
+          }
+        $77$ = $78$;
+      }
+    else
+      {
+        Lscala/collection/immutable/IntMap; $86$;
+        if (tp7.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            Lscala/collection/immutable/IntMap$Tip; temp205 = tp7.<cast>(Lscala/collection/immutable/IntMap$Tip;);
+            I; temp206 = temp205.(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
+            I; key = temp206;
+            Lscala/collection/immutable/IntMap; that = tp8;
+            Lscala/Option; temp184 = that.(Lscala/collection/immutable/IntMap;::get(I;)Lscala/Option;)(key);
+            Lscala/collection/immutable/IntMap; $87$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp184))
+              {
+                $87$ = Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
+              }
+            else
+              {
+                Lscala/collection/immutable/IntMap; $88$;
+                if (temp184.<instanceof>(Lscala/Some;))
+                  {
+                    $88$ = (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, f.(Lscala/Function3;::apply(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(key), temp205.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)(), temp184.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)())));
+                  }
+                else
+                  {
+                    throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp184));
+                  }
+                $87$ = $88$;
+              }
+            $86$ = $87$;
+          }
+        else
+          {
+            Lscala/collection/immutable/IntMap; $89$;
+            if (tp8.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+              {
+                Lscala/collection/immutable/IntMap$Tip; temp208 = tp8.<cast>(Lscala/collection/immutable/IntMap$Tip;);
+                $89$ = this.(Lscala/collection/immutable/IntMap;::body$percent2$percent2(I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(temp208.(Lscala/collection/immutable/IntMap$Tip;::key()I;)(), temp208.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)());
+              }
+            else
+              {
+                $89$ = this.(Lscala/collection/immutable/IntMap;::body$percent3$percent1()Lscala/collection/immutable/IntMap;)();
+              }
+            $86$ = $89$;
+          }
+        $77$ = $86$;
+      }
+    return $77$;
+  }
+  
+  public Lscala/collection/immutable/IntMap; intersection(Lscala/collection/immutable/IntMap; that) {
+    return this.(Lscala/collection/immutable/IntMap;::intersectionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(that, (new (Lscala/collection/immutable/IntMap$$anonfun$intersection$1;::this(Lscala/collection/immutable/IntMap;)V;)(this)));
+  }
+  
+  public Lscala/collection/immutable/IntMap; $plus$plus(Lscala/collection/immutable/IntMap; that) {
+    return this.(Lscala/collection/immutable/IntMap;::unionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(that, (new (Lscala/collection/immutable/IntMap$$anonfun$$plus$plus$1;::this(Lscala/collection/immutable/IntMap;)V;)(this)));
+  }
+  
+  public final I; firstKey() {
+    Lscala/collection/immutable/IntMap; temp211 = this;
+    I; $90$;
+    if (temp211.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+      {
+        $90$ = temp211.<cast>(Lscala/collection/immutable/IntMap$Bin;).(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::firstKey()I;)();
+      }
+    else
+      {
+        I; $91$;
+        if (temp211.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            $91$ = temp211.<cast>(Lscala/collection/immutable/IntMap$Tip;).(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
+          }
+        else
+          {
+            Lscala/runtime/Nothing$; $92$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp211))
+              {
+                Lscala/Predef$;.MODULE$.(Lscala/Predef$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("Empty set");
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp211));
+              }
+          }
+        $90$ = $91$;
+      }
+    return $90$;
+  }
+  
+  public final I; lastKey() {
+    Lscala/collection/immutable/IntMap; temp221 = this;
+    I; $93$;
+    if (temp221.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
+      {
+        $93$ = temp221.<cast>(Lscala/collection/immutable/IntMap$Bin;).(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::lastKey()I;)();
+      }
+    else
+      {
+        I; $94$;
+        if (temp221.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
+          {
+            $94$ = temp221.<cast>(Lscala/collection/immutable/IntMap$Tip;).(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
+          }
+        else
+          {
+            Lscala/runtime/Nothing$; $95$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp221))
+              {
+                Lscala/Predef$;.MODULE$.(Lscala/Predef$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("Empty set");
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp221));
+              }
+          }
+        $93$ = $94$;
+      }
+    return $93$;
+  }
+  
+  public Lscala/collection/generic/Subtractable; repr() {
+    return this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/generic/Subtractable;);
+  }
+  
+  public Lscala/collection/TraversableView; view(I; from, I; until) {
+    return this.(Lscala/collection/IterableLike;::view(I;I;)Lscala/collection/IterableView;)(from, until);
+  }
+  
+  public Lscala/collection/TraversableView; view() {
+    return this.(Lscala/collection/IterableLike;::view()Lscala/collection/IterableView;)();
+  }
+  
+  public Lscala/collection/Traversable; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/IterableLike;::toCollection(Ljava/lang/Object;)Lscala/collection/Iterable;)(repr);
+  }
+  
+  public Lscala/collection/Traversable; thisCollection() {
+    return this.(Lscala/collection/IterableLike;::thisCollection()Lscala/collection/Iterable;)();
+  }
+  
+  public Lscala/Function1; andThen(Lscala/Function1; g) {
+    return this.(Lscala/PartialFunction;::andThen(Lscala/Function1;)Lscala/PartialFunction;)(g);
+  }
+  
+  public Ljava/lang/Object; filterNot(Lscala/Function1; p) {
+    return this.(Lscala/collection/MapLike;::filterNot(Lscala/Function1;)Lscala/collection/Map;)(p);
+  }
+  
+  public Lscala/collection/Map; mapValues(Lscala/Function1; f) {
+    return this.(Lscala/collection/immutable/MapLike;::mapValues(Lscala/Function1;)Lscala/collection/immutable/Map;)(f);
+  }
+  
+  public Lscala/collection/Map; filterKeys(Lscala/Function1; p) {
+    return this.(Lscala/collection/immutable/MapLike;::filterKeys(Lscala/Function1;)Lscala/collection/immutable/Map;)(p);
+  }
+  
+  public Lscala/collection/Map; $plus$plus(Lscala/collection/TraversableOnce; xs) {
+    return this.(Lscala/collection/immutable/MapLike;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/immutable/Map;)(xs);
+  }
+  
+  public Lscala/collection/Map; $plus(Lscala/Tuple2; kv1, Lscala/Tuple2; kv2, Lscala/collection/Seq; kvs) {
+    return this.(Lscala/collection/immutable/MapLike;::$plus(Lscala/Tuple2;Lscala/Tuple2;Lscala/collection/Seq;)Lscala/collection/immutable/Map;)(kv1, kv2, kvs);
+  }
+  
+  public Lscala/collection/generic/Subtractable; $minus(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/immutable/IntMap;::$minus(I;)Lscala/collection/immutable/IntMap;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(elem));
+  }
+  
+  public Lscala/collection/Map; $minus(Ljava/lang/Object; key) {
+    return this.(Lscala/collection/immutable/IntMap;::$minus(I;)Lscala/collection/immutable/IntMap;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(key));
+  }
+  
+  public Lscala/collection/immutable/Map; update(Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    return this.(Lscala/collection/immutable/IntMap;::update(I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(key), value);
+  }
+  
+  public Lscala/collection/Map; updated(Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    return this.(Lscala/collection/immutable/IntMap;::updated(I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(key), value);
+  }
+  
+  public Lscala/collection/immutable/Map; updated(Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    return this.(Lscala/collection/immutable/IntMap;::updated(I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(key), value);
+  }
+  
+  public Lscala/collection/Map; $plus(Lscala/Tuple2; kv) {
+    return this.(Lscala/collection/immutable/IntMap;::$plus(Lscala/Tuple2;)Lscala/collection/immutable/IntMap;)(kv);
+  }
+  
+  public Lscala/collection/immutable/Map; $plus(Lscala/Tuple2; kv) {
+    return this.(Lscala/collection/immutable/IntMap;::$plus(Lscala/Tuple2;)Lscala/collection/immutable/IntMap;)(kv);
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; key) {
+    return this.(Lscala/collection/immutable/IntMap;::apply(I;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(key));
+  }
+  
+  public final Ljava/lang/Object; getOrElse(Ljava/lang/Object; key, Lscala/Function0; `default`) {
+    return this.(Lscala/collection/immutable/IntMap;::getOrElse(I;Lscala/Function0;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(key), `default`);
+  }
+  
+  public final Lscala/Option; get(Ljava/lang/Object; key) {
+    return this.(Lscala/collection/immutable/IntMap;::get(I;)Lscala/Option;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(key));
+  }
+  
+  public Ljava/lang/Object; filter(Lscala/Function1; p) {
+    return this.(Lscala/collection/immutable/IntMap;::filter(Lscala/Function1;)Lscala/collection/immutable/IntMap;)(p);
+  }
+  
+  public Lscala/collection/Map; empty() {
+    return this.(Lscala/collection/immutable/IntMap;::empty()Lscala/collection/immutable/IntMap;)();
+  }
+  
+  public Lscala/collection/immutable/Map; empty() {
+    return this.(Lscala/collection/immutable/IntMap;::empty()Lscala/collection/immutable/IntMap;)();
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
+    Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$init$(Lscala/collection/TraversableLike;)V;)(this);
+    Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::$init$(Lscala/collection/generic/GenericTraversableTemplate;)V;)(this);
+    Lscala/collection/Traversable$class;.(Lscala/collection/Traversable$class;::$init$(Lscala/collection/Traversable;)V;)(this);
+    Lscala/collection/immutable/Traversable$class;.(Lscala/collection/immutable/Traversable$class;::$init$(Lscala/collection/immutable/Traversable;)V;)(this);
+    Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::$init$(Lscala/collection/IterableLike;)V;)(this);
+    Lscala/collection/Iterable$class;.(Lscala/collection/Iterable$class;::$init$(Lscala/collection/Iterable;)V;)(this);
+    Lscala/collection/immutable/Iterable$class;.(Lscala/collection/immutable/Iterable$class;::$init$(Lscala/collection/immutable/Iterable;)V;)(this);
+    Lscala/Function1$class;.(Lscala/Function1$class;::$init$(Lscala/Function1;)V;)(this);
+    Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::$init$(Lscala/PartialFunction;)V;)(this);
+    Lscala/collection/generic/Subtractable$class;.(Lscala/collection/generic/Subtractable$class;::$init$(Lscala/collection/generic/Subtractable;)V;)(this);
+    Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::$init$(Lscala/collection/MapLike;)V;)(this);
+    Lscala/collection/Map$class;.(Lscala/collection/Map$class;::$init$(Lscala/collection/Map;)V;)(this);
+    Lscala/collection/immutable/MapLike$class;.(Lscala/collection/immutable/MapLike$class;::$init$(Lscala/collection/immutable/MapLike;)V;)(this);
+    Lscala/collection/immutable/Map$class;.(Lscala/collection/immutable/Map$class;::$init$(Lscala/collection/immutable/Map;)V;)(this);
+  }
+  
+  private final Lscala/collection/immutable/IntMap; body$percent4$percent1(Lscala/collection/immutable/IntMap; x) {
+    return x;
+  }
+  
+  private final Lscala/collection/immutable/IntMap; body$percent2$percent2(I; key, Ljava/lang/Object; value) {
+    Lscala/Option; temp188 = this.(Lscala/collection/immutable/IntMap;::get(I;)Lscala/Option;)(key);
+    Lscala/collection/immutable/IntMap; $96$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp188))
+      {
+        $96$ = Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
+      }
+    else
+      {
+        Lscala/collection/immutable/IntMap; $97$;
+        if (temp188.<instanceof>(Lscala/Some;))
+          {
+            $97$ = (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, f.(Lscala/Function3;::apply(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(key), temp188.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)(), value)));
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp188));
+          }
+        $96$ = $97$;
+      }
+    return $96$;
+  }
+  
+  private final Lscala/collection/immutable/IntMap; body$percent2$percent1(Lscala/collection/immutable/IntMap; x, I; key$2, Ljava/lang/Object; value) {
+    return x.(Lscala/collection/immutable/IntMap;::updateWith(I;Ljava/lang/Object;Lscala/Function2;)Lscala/collection/immutable/IntMap;)(key$2, value, (new (Lscala/collection/immutable/IntMap$$anonfun$unionWith$2;::this(Lscala/collection/immutable/IntMap;Lscala/Function3;I;)V;)(this, f$1, key$2)));
+  }
+  
+  private final Lscala/collection/immutable/IntMap; body$percent3$percent1() {
+    return Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
+  }
+}

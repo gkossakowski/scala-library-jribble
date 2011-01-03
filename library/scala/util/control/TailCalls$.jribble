@@ -1,0 +1,15 @@
+public final class Lscala/util/control/TailCalls$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/util/control/TailCalls$; MODULE$ = new (Lscala/util/control/TailCalls$;::this()V;)();
+  
+  public Lscala/util/control/TailCalls$TailRec; tailcall(Lscala/Function0; rest) {
+    return (new (Lscala/util/control/TailCalls$Call;::this(Lscala/Function0;)V;)(rest));
+  }
+  
+  public Lscala/util/control/TailCalls$TailRec; done(Ljava/lang/Object; result) {
+    return (new (Lscala/util/control/TailCalls$Done;::this(Ljava/lang/Object;)V;)(result));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

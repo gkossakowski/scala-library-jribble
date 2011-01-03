@@ -1,0 +1,35 @@
+public final class Lscala/collection/immutable/Stream$Empty$; extends Lscala/collection/immutable/Stream; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/Stream$Empty$; MODULE$ = new (Lscala/collection/immutable/Stream$Empty$;::this()V;)();
+  
+  public Z; isEmpty() {
+    return true;
+  }
+  
+  public Lscala/runtime/Nothing$; head() {
+    throw (new (Ljava/util/NoSuchElementException;::this(Ljava/lang/String;)V;)("head of empty stream"));
+  }
+  
+  public Lscala/runtime/Nothing$; tail() {
+    throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)("tail of empty stream"));
+  }
+  
+  public Z; tailDefined() {
+    return false;
+  }
+  
+  public Lscala/collection/LinearSeqOptimized; tail() {
+    this.(Lscala/collection/immutable/Stream$Empty$;::tail()Lscala/runtime/Nothing$;)();
+  }
+  
+  public Ljava/lang/Object; tail() {
+    this.(Lscala/collection/immutable/Stream$Empty$;::tail()Lscala/runtime/Nothing$;)();
+  }
+  
+  public Ljava/lang/Object; head() {
+    this.(Lscala/collection/immutable/Stream$Empty$;::head()Lscala/runtime/Nothing$;)();
+  }
+  
+  public this() {
+    (Lscala/collection/immutable/Stream;::super()V;)();
+  }
+}

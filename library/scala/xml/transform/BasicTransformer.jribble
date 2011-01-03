@@ -1,0 +1,105 @@
+public abstract class Lscala/xml/transform/BasicTransformer; extends Ljava/lang/Object; implements Lscala/Function1;, Lscala/ScalaObject; {
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::toString(Lscala/Function1;)Ljava/lang/String;)(this);
+  }
+  
+  public Lscala/Function1; compose(Lscala/Function1; g) {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::compose(Lscala/Function1;Lscala/Function1;)Lscala/Function1;)(this, g);
+  }
+  
+  public Lscala/Function1; andThen(Lscala/Function1; g) {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::andThen(Lscala/Function1;Lscala/Function1;)Lscala/Function1;)(this, g);
+  }
+  
+  public Z; unchanged(Lscala/xml/Node; n, Lscala/collection/Seq; ns) {
+    return ((ns.(Lscala/collection/SeqLike;::length()I;)() == 1) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(ns.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)(), n));
+  }
+  
+  public Lscala/collection/Seq; transform(Lscala/collection/Iterator; it, Lscala/xml/NodeBuffer; nb) {
+    return it.(Lscala/collection/TraversableOnce;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(nb, (new (Lscala/xml/transform/BasicTransformer$$anonfun$transform$1;::this(Lscala/xml/transform/BasicTransformer;)V;)(this))).<cast>(Lscala/collection/SeqLike;).(Lscala/collection/SeqLike;::toSeq()Lscala/collection/Seq;)();
+  }
+  
+  public Lscala/collection/Seq; transform(Lscala/collection/Seq; ns) {
+    Lscala/Tuple2; temp1 = ns.(Lscala/collection/TraversableLike;::span(Lscala/Function1;)Lscala/Tuple2;)((new (Lscala/xml/transform/BasicTransformer$$anonfun$1;::this(Lscala/xml/transform/BasicTransformer;)V;)(this)));
+    Lscala/Tuple2; $1$;
+    if ((temp1 != null))
+      {
+        $1$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(temp1.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), temp1.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()));
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp1));
+      }
+    Lscala/Tuple2; x$3 = $1$;
+    Lscala/collection/Seq; xs1 = x$3.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/Seq;);
+    Lscala/collection/Seq; xs2 = x$3.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/Seq;);
+    Lscala/collection/Seq; $2$;
+    if (xs2.(Lscala/collection/IterableLike;::isEmpty()Z;)())
+      {
+        $2$ = ns;
+      }
+    else
+      {
+        $2$ = xs1.(Lscala/collection/TraversableLike;::$plus$plus(Lscala/collection/TraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this.(Lscala/xml/transform/BasicTransformer;::transform(Lscala/xml/Node;)Lscala/collection/Seq;)(xs2.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)().<cast>(Lscala/xml/Node;)), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::$plus$plus(Lscala/collection/TraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this.(Lscala/xml/transform/BasicTransformer;::transform(Lscala/collection/Seq;)Lscala/collection/Seq;)(xs2.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/Seq;)), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/Seq;);
+      }
+    return $2$;
+  }
+  
+  public Lscala/collection/Seq; transform(Lscala/xml/Node; n) {
+    Lscala/collection/Seq; $3$;
+    if (n.(Lscala/xml/Node;::doTransform()Z;)())
+      {
+        Lscala/xml/Node; temp4 = n;
+        Lscala/collection/Seq; $4$;
+        if (temp4.<instanceof>(Lscala/xml/Group;))
+          {
+            $4$ = (new (Lscala/xml/Group;::this(Lscala/collection/Seq;)V;)(this.(Lscala/xml/transform/BasicTransformer;::transform(Lscala/collection/Seq;)Lscala/collection/Seq;)(temp4.<cast>(Lscala/xml/Group;).(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)())));
+          }
+        else
+          {
+            Lscala/collection/Seq; ch = n.(Lscala/xml/Node;::child()Lscala/collection/Seq;)();
+            Lscala/collection/Seq; nch = this.(Lscala/xml/transform/BasicTransformer;::transform(Lscala/collection/Seq;)Lscala/collection/Seq;)(ch);
+            Lscala/collection/Seq; $5$;
+            if ((ch == nch))
+              {
+                $5$ = n;
+              }
+            else
+              {
+                $5$ = Lscala/xml/Elem$;.MODULE$.(Lscala/xml/Elem$;::apply(Ljava/lang/String;Ljava/lang/String;Lscala/xml/MetaData;Lscala/xml/NamespaceBinding;Lscala/collection/Seq;)Lscala/xml/Elem;)(n.(Lscala/xml/Node;::prefix()Ljava/lang/String;)(), n.(Lscala/xml/Node;::label()Ljava/lang/String;)(), n.(Lscala/xml/Node;::attributes()Lscala/xml/MetaData;)(), n.(Lscala/xml/Node;::scope()Lscala/xml/NamespaceBinding;)(), nch);
+              }
+            $4$ = $5$;
+          }
+        $3$ = $4$;
+      }
+    else
+      {
+        $3$ = n;
+      }
+    return $3$;
+  }
+  
+  public Lscala/xml/Node; apply(Lscala/xml/Node; n) {
+    Lscala/collection/Seq; seq = this.(Lscala/xml/transform/BasicTransformer;::transform(Lscala/xml/Node;)Lscala/collection/Seq;)(n);
+    Lscala/xml/Node; $6$;
+    if ((seq.(Lscala/collection/SeqLike;::length()I;)() > 1))
+      {
+        throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)("transform must return single node for root"));
+      }
+    else
+      {
+        $6$ = seq.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)().<cast>(Lscala/xml/Node;);
+      }
+    return $6$;
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/xml/transform/BasicTransformer;::apply(Lscala/xml/Node;)Lscala/xml/Node;)(v1.<cast>(Lscala/xml/Node;));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Function1$class;.(Lscala/Function1$class;::$init$(Lscala/Function1;)V;)(this);
+  }
+}

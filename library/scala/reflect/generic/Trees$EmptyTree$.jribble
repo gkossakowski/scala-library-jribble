@@ -1,0 +1,47 @@
+public final class Lscala/reflect/generic/Trees$EmptyTree$; extends Lscala/reflect/generic/Trees$Tree; implements Lscala/reflect/generic/Trees$TermTree;, Lscala/ScalaObject;, Lscala/Product; {
+  
+  public V; tpe_$eq(Lscala/reflect/generic/Types$AbsType; t) {
+    if ((t != this.(Lscala/reflect/generic/Trees$EmptyTree$;::scala$reflect$generic$Trees$EmptyTree$$$outer()Lscala/reflect/generic/Universe;)().(Lscala/reflect/generic/Types;::NoType()Lscala/reflect/generic/Types$AbsType;)()))
+      {
+        throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)((("tpe_=(" + t) + ") inapplicable for <empty>")));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public Z; isEmpty() {
+    return true;
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "EmptyTree";
+  }
+  
+  public I; productArity() {
+    return 0;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp13 = x$1;
+    throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/reflect/generic/Trees$EmptyTree$;);
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return this.(Lscala/reflect/generic/Trees$EmptyTree$;::scala$reflect$generic$Trees$EmptyTree$$$outer()Lscala/reflect/generic/Universe;)().(Lscala/reflect/generic/Trees;::EmptyTree()Lscala/reflect/generic/Trees$EmptyTree$;)();
+  }
+  
+  public Lscala/reflect/generic/Universe; scala$reflect$generic$Trees$EmptyTree$$$outer() {
+    return this.(Lscala/reflect/generic/Universe;)$outer$u0020;
+  }
+  
+  public this(Lscala/reflect/generic/Universe; $outer) {
+    (Lscala/reflect/generic/Trees$Tree;::super(Lscala/reflect/generic/Universe;)V;)($outer);
+    super.(Lscala/reflect/generic/Trees$Tree;::tpe_$eq(Lscala/reflect/generic/Types$AbsType;)V;)($outer.(Lscala/reflect/generic/Types;::NoType()Lscala/reflect/generic/Types$AbsType;)());
+  }
+}

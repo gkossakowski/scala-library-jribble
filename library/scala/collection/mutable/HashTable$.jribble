@@ -1,0 +1,17 @@
+public final class Lscala/collection/mutable/HashTable$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/mutable/HashTable$; MODULE$ = new (Lscala/collection/mutable/HashTable$;::this()V;)();
+  
+  public I; powerOfTwo(I; target) {
+    I; c = (target - 1);
+    c = (c | (c >> 1));
+    c = (c | (c >> 2));
+    c = (c | (c >> 4));
+    c = (c | (c >> 8));
+    c = (c | (c >> 16));
+    return (c + 1);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

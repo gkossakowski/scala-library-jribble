@@ -1,0 +1,32 @@
+public final class Lscala/reflect/generic/PickleBuffer$$anonfun$toIndexedSeq$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(I; index) {
+    I; tag = this.(Lscala/reflect/generic/PickleBuffer;)$outer$u0020.(Lscala/reflect/generic/PickleBuffer;::readNat()I;)();
+    I; len = this.(Lscala/reflect/generic/PickleBuffer;)$outer$u0020.(Lscala/reflect/generic/PickleBuffer;::readNat()I;)();
+    B;[ bytes = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::byteArrayOps(B;[)Lscala/collection/mutable/ArrayOps;)(this.(Lscala/reflect/generic/PickleBuffer;)$outer$u0020.(B;[)scala$reflect$generic$PickleBuffer$$data).(Lscala/collection/IndexedSeqOptimized;::slice(I;I;)Ljava/lang/Object;)(this.(Lscala/reflect/generic/PickleBuffer;)$outer$u0020.(Lscala/reflect/generic/PickleBuffer;::readIndex()I;)(), (len + this.(Lscala/reflect/generic/PickleBuffer;)$outer$u0020.(Lscala/reflect/generic/PickleBuffer;::readIndex()I;)())).<cast>(B;[);
+    this.(Lscala/reflect/generic/PickleBuffer;)$outer$u0020.(Lscala/reflect/generic/PickleBuffer;::readIndex_$eq(I;)V;)((this.(Lscala/reflect/generic/PickleBuffer;)$outer$u0020.(Lscala/reflect/generic/PickleBuffer;::readIndex()I;)() + len));
+    this.(Lscala/Tuple2;[)result$1[index] = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::any2ArrowAssoc(Ljava/lang/Object;)Lscala/Predef$ArrowAssoc;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(tag)).(Lscala/Predef$ArrowAssoc;::$minus$greater(Ljava/lang/Object;)Lscala/Tuple2;)(bytes);
+  }
+  
+  private Lscala/reflect/generic/PickleBuffer; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/reflect/generic/PickleBuffer$$anonfun$toIndexedSeq$1;::apply(I;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1));
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/Tuple2;[ result$1;
+  
+  public this(Lscala/reflect/generic/PickleBuffer; $outer, Lscala/Tuple2;[ result$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/reflect/generic/PickleBuffer;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/Tuple2;[)result$1 = result$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

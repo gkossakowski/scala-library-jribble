@@ -1,0 +1,28 @@
+public final class Lscala/Option$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/Option$; MODULE$ = new (Lscala/Option$;::this()V;)();
+  
+  public Lscala/collection/Iterable; option2Iterable(Lscala/Option; xo) {
+    return xo.(Lscala/Option;::toList()Lscala/collection/immutable/List;)();
+  }
+  
+  public Lscala/Option; apply(Ljava/lang/Object; x) {
+    Lscala/Option; $1$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, null))
+      {
+        $1$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $1$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x));
+      }
+    return $1$;
+  }
+  
+  public Lscala/Option; empty() {
+    return Lscala/None$;.MODULE$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

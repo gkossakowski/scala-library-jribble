@@ -1,0 +1,477 @@
+public final class Lscala/Console$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/Console$; MODULE$ = new (Lscala/Console$;::this()V;)();
+  
+  public final Ljava/lang/String; BLACK() {
+    return "\033[30m";
+  }
+  
+  public final Ljava/lang/String; RED() {
+    return "\033[31m";
+  }
+  
+  public final Ljava/lang/String; GREEN() {
+    return "\033[32m";
+  }
+  
+  public final Ljava/lang/String; YELLOW() {
+    return "\033[33m";
+  }
+  
+  public final Ljava/lang/String; BLUE() {
+    return "\033[34m";
+  }
+  
+  public final Ljava/lang/String; MAGENTA() {
+    return "\033[35m";
+  }
+  
+  public final Ljava/lang/String; CYAN() {
+    return "\033[36m";
+  }
+  
+  public final Ljava/lang/String; WHITE() {
+    return "\033[37m";
+  }
+  
+  public final Ljava/lang/String; BLACK_B() {
+    return "\033[40m";
+  }
+  
+  public final Ljava/lang/String; RED_B() {
+    return "\033[41m";
+  }
+  
+  public final Ljava/lang/String; GREEN_B() {
+    return "\033[42m";
+  }
+  
+  public final Ljava/lang/String; YELLOW_B() {
+    return "\033[43m";
+  }
+  
+  public final Ljava/lang/String; BLUE_B() {
+    return "\033[44m";
+  }
+  
+  public final Ljava/lang/String; MAGENTA_B() {
+    return "\033[45m";
+  }
+  
+  public final Ljava/lang/String; CYAN_B() {
+    return "\033[46m";
+  }
+  
+  public final Ljava/lang/String; WHITE_B() {
+    return "\033[47m";
+  }
+  
+  public final Ljava/lang/String; RESET() {
+    return "\033[0m";
+  }
+  
+  public final Ljava/lang/String; BOLD() {
+    return "\033[1m";
+  }
+  
+  public final Ljava/lang/String; UNDERLINED() {
+    return "\033[4m";
+  }
+  
+  public final Ljava/lang/String; BLINK() {
+    return "\033[5m";
+  }
+  
+  public final Ljava/lang/String; REVERSED() {
+    return "\033[7m";
+  }
+  
+  public final Ljava/lang/String; INVISIBLE() {
+    return "\033[8m";
+  }
+  
+  private Lscala/util/DynamicVariable; outVar$u0020;
+  
+  private Lscala/util/DynamicVariable; outVar() {
+    return this.(Lscala/util/DynamicVariable;)outVar$u0020;
+  }
+  
+  private Lscala/util/DynamicVariable; errVar$u0020;
+  
+  private Lscala/util/DynamicVariable; errVar() {
+    return this.(Lscala/util/DynamicVariable;)errVar$u0020;
+  }
+  
+  private Lscala/util/DynamicVariable; inVar$u0020;
+  
+  private Lscala/util/DynamicVariable; inVar() {
+    return this.(Lscala/util/DynamicVariable;)inVar$u0020;
+  }
+  
+  public Ljava/io/PrintStream; out() {
+    return this.(Lscala/Console$;::outVar()Lscala/util/DynamicVariable;)().(Lscala/util/DynamicVariable;::value()Ljava/lang/Object;)().<cast>(Ljava/io/PrintStream;);
+  }
+  
+  public Ljava/io/PrintStream; err() {
+    return this.(Lscala/Console$;::errVar()Lscala/util/DynamicVariable;)().(Lscala/util/DynamicVariable;::value()Ljava/lang/Object;)().<cast>(Ljava/io/PrintStream;);
+  }
+  
+  public Ljava/io/BufferedReader; in() {
+    return this.(Lscala/Console$;::inVar()Lscala/util/DynamicVariable;)().(Lscala/util/DynamicVariable;::value()Ljava/lang/Object;)().<cast>(Ljava/io/BufferedReader;);
+  }
+  
+  public V; setOut(Ljava/io/PrintStream; out) {
+    this.(Lscala/Console$;::outVar()Lscala/util/DynamicVariable;)().(Lscala/util/DynamicVariable;::value_$eq(Ljava/lang/Object;)V;)(out);
+  }
+  
+  public Ljava/lang/Object; withOut(Ljava/io/PrintStream; out, Lscala/Function0; thunk) {
+    return this.(Lscala/Console$;::outVar()Lscala/util/DynamicVariable;)().(Lscala/util/DynamicVariable;::withValue(Ljava/lang/Object;Lscala/Function0;)Ljava/lang/Object;)(out, thunk);
+  }
+  
+  public V; setOut(Ljava/io/OutputStream; out) {
+    this.(Lscala/Console$;::setOut(Ljava/io/PrintStream;)V;)((new (Ljava/io/PrintStream;::this(Ljava/io/OutputStream;)V;)(out)));
+  }
+  
+  public Ljava/lang/Object; withOut(Ljava/io/OutputStream; out, Lscala/Function0; thunk) {
+    return this.(Lscala/Console$;::withOut(Ljava/io/PrintStream;Lscala/Function0;)Ljava/lang/Object;)((new (Ljava/io/PrintStream;::this(Ljava/io/OutputStream;)V;)(out)), thunk);
+  }
+  
+  public V; setErr(Ljava/io/PrintStream; err) {
+    this.(Lscala/Console$;::errVar()Lscala/util/DynamicVariable;)().(Lscala/util/DynamicVariable;::value_$eq(Ljava/lang/Object;)V;)(err);
+  }
+  
+  public Ljava/lang/Object; withErr(Ljava/io/PrintStream; err, Lscala/Function0; thunk) {
+    return this.(Lscala/Console$;::errVar()Lscala/util/DynamicVariable;)().(Lscala/util/DynamicVariable;::withValue(Ljava/lang/Object;Lscala/Function0;)Ljava/lang/Object;)(err, thunk);
+  }
+  
+  public V; setErr(Ljava/io/OutputStream; err) {
+    this.(Lscala/Console$;::setErr(Ljava/io/PrintStream;)V;)((new (Ljava/io/PrintStream;::this(Ljava/io/OutputStream;)V;)(err)));
+  }
+  
+  public Ljava/lang/Object; withErr(Ljava/io/OutputStream; err, Lscala/Function0; thunk) {
+    return this.(Lscala/Console$;::withErr(Ljava/io/PrintStream;Lscala/Function0;)Ljava/lang/Object;)((new (Ljava/io/PrintStream;::this(Ljava/io/OutputStream;)V;)(err)), thunk);
+  }
+  
+  public V; setIn(Ljava/io/Reader; reader) {
+    this.(Lscala/Console$;::inVar()Lscala/util/DynamicVariable;)().(Lscala/util/DynamicVariable;::value_$eq(Ljava/lang/Object;)V;)((new (Ljava/io/BufferedReader;::this(Ljava/io/Reader;)V;)(reader)));
+  }
+  
+  public Ljava/lang/Object; withIn(Ljava/io/Reader; reader, Lscala/Function0; thunk) {
+    return this.(Lscala/Console$;::inVar()Lscala/util/DynamicVariable;)().(Lscala/util/DynamicVariable;::withValue(Ljava/lang/Object;Lscala/Function0;)Ljava/lang/Object;)((new (Ljava/io/BufferedReader;::this(Ljava/io/Reader;)V;)(reader)), thunk);
+  }
+  
+  public V; setIn(Ljava/io/InputStream; in) {
+    this.(Lscala/Console$;::setIn(Ljava/io/Reader;)V;)((new (Ljava/io/InputStreamReader;::this(Ljava/io/InputStream;)V;)(in)));
+  }
+  
+  public Ljava/lang/Object; withIn(Ljava/io/InputStream; in, Lscala/Function0; thunk) {
+    return this.(Lscala/Console$;::withIn(Ljava/io/Reader;Lscala/Function0;)Ljava/lang/Object;)((new (Ljava/io/InputStreamReader;::this(Ljava/io/InputStream;)V;)(in)), thunk);
+  }
+  
+  public V; print(Ljava/lang/Object; obj) {
+    Ljava/lang/String; $1$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(null, obj))
+      {
+        $1$ = "null";
+      }
+    else
+      {
+        $1$ = obj.(Ljava/lang/Object;::toString()Ljava/lang/String;)();
+      }
+    this.(Lscala/Console$;::out()Ljava/io/PrintStream;)().(Ljava/io/PrintStream;::print(Ljava/lang/String;)V;)($1$);
+  }
+  
+  public V; flush() {
+    this.(Lscala/Console$;::out()Ljava/io/PrintStream;)().(Ljava/io/PrintStream;::flush()V;)();
+  }
+  
+  public V; println() {
+    this.(Lscala/Console$;::out()Ljava/io/PrintStream;)().(Ljava/io/PrintStream;::println()V;)();
+  }
+  
+  public V; println(Ljava/lang/Object; x) {
+    this.(Lscala/Console$;::out()Ljava/io/PrintStream;)().(Ljava/io/PrintStream;::println(Ljava/lang/Object;)V;)(x);
+  }
+  
+  public V; printf(Ljava/lang/String; text, Lscala/collection/Seq; args) {
+    this.(Lscala/Console$;::out()Ljava/io/PrintStream;)().(Ljava/io/PrintStream;::print(Ljava/lang/String;)V;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(text).(Lscala/collection/immutable/StringLike;::format(Lscala/collection/Seq;)Ljava/lang/String;)(args));
+  }
+  
+  public Ljava/lang/String; readLine() {
+    return this.(Lscala/Console$;::in()Ljava/io/BufferedReader;)().(Ljava/io/BufferedReader;::readLine()Ljava/lang/String;)();
+  }
+  
+  public Ljava/lang/String; readLine(Ljava/lang/String; text, Lscala/collection/Seq; args) {
+    this.(Lscala/Console$;::printf(Ljava/lang/String;Lscala/collection/Seq;)V;)(text, args);
+    return this.(Lscala/Console$;::readLine()Ljava/lang/String;)();
+  }
+  
+  public Z; readBoolean() {
+    Ljava/lang/String; s = this.(Lscala/Console$;::readLine()Ljava/lang/String;)();
+    Z; $2$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(s, null))
+      {
+        throw (new (Ljava/io/EOFException;::this(Ljava/lang/String;)V;)("Console has reached end of input"));
+      }
+    else
+      {
+        Ljava/lang/String; temp1 = s.(Ljava/lang/String;::toLowerCase()Ljava/lang/String;)();
+        Z; $3$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp1, "true"))
+          {
+            $3$ = true;
+          }
+        else
+          {
+            Z; $4$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp1, "t"))
+              {
+                $4$ = true;
+              }
+            else
+              {
+                Z; $5$;
+                if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp1, "yes"))
+                  {
+                    $5$ = true;
+                  }
+                else
+                  {
+                    $5$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp1, "y");
+                  }
+                $4$ = $5$;
+              }
+            $3$ = $4$;
+          }
+        $2$ = $3$;
+      }
+    return $2$;
+  }
+  
+  public B; readByte() {
+    Ljava/lang/String; s = this.(Lscala/Console$;::readLine()Ljava/lang/String;)();
+    B; $6$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(s, null))
+      {
+        throw (new (Ljava/io/EOFException;::this(Ljava/lang/String;)V;)("Console has reached end of input"));
+      }
+    else
+      {
+        $6$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(s).(Lscala/collection/immutable/StringLike;::toByte()B;)();
+      }
+    return $6$;
+  }
+  
+  public S; readShort() {
+    Ljava/lang/String; s = this.(Lscala/Console$;::readLine()Ljava/lang/String;)();
+    S; $7$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(s, null))
+      {
+        throw (new (Ljava/io/EOFException;::this(Ljava/lang/String;)V;)("Console has reached end of input"));
+      }
+    else
+      {
+        $7$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(s).(Lscala/collection/immutable/StringLike;::toShort()S;)();
+      }
+    return $7$;
+  }
+  
+  public C; readChar() {
+    Ljava/lang/String; s = this.(Lscala/Console$;::readLine()Ljava/lang/String;)();
+    C; $8$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(s, null))
+      {
+        throw (new (Ljava/io/EOFException;::this(Ljava/lang/String;)V;)("Console has reached end of input"));
+      }
+    else
+      {
+        $8$ = s.(Ljava/lang/String;::charAt(I;)C;)(0);
+      }
+    return $8$;
+  }
+  
+  public I; readInt() {
+    Ljava/lang/String; s = this.(Lscala/Console$;::readLine()Ljava/lang/String;)();
+    I; $9$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(s, null))
+      {
+        throw (new (Ljava/io/EOFException;::this(Ljava/lang/String;)V;)("Console has reached end of input"));
+      }
+    else
+      {
+        $9$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(s).(Lscala/collection/immutable/StringLike;::toInt()I;)();
+      }
+    return $9$;
+  }
+  
+  public J; readLong() {
+    Ljava/lang/String; s = this.(Lscala/Console$;::readLine()Ljava/lang/String;)();
+    J; $10$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(s, null))
+      {
+        throw (new (Ljava/io/EOFException;::this(Ljava/lang/String;)V;)("Console has reached end of input"));
+      }
+    else
+      {
+        $10$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(s).(Lscala/collection/immutable/StringLike;::toLong()J;)();
+      }
+    return $10$;
+  }
+  
+  public F; readFloat() {
+    Ljava/lang/String; s = this.(Lscala/Console$;::readLine()Ljava/lang/String;)();
+    F; $11$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(s, null))
+      {
+        throw (new (Ljava/io/EOFException;::this(Ljava/lang/String;)V;)("Console has reached end of input"));
+      }
+    else
+      {
+        $11$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(s).(Lscala/collection/immutable/StringLike;::toFloat()F;)();
+      }
+    return $11$;
+  }
+  
+  public D; readDouble() {
+    Ljava/lang/String; s = this.(Lscala/Console$;::readLine()Ljava/lang/String;)();
+    D; $12$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(s, null))
+      {
+        throw (new (Ljava/io/EOFException;::this(Ljava/lang/String;)V;)("Console has reached end of input"));
+      }
+    else
+      {
+        $12$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(s).(Lscala/collection/immutable/StringLike;::toDouble()D;)();
+      }
+    return $12$;
+  }
+  
+  public Lscala/collection/immutable/List; readf(Ljava/lang/String; format) {
+    Ljava/lang/String; s = this.(Lscala/Console$;::readLine()Ljava/lang/String;)();
+    Lscala/collection/immutable/List; $13$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(s, null))
+      {
+        throw (new (Ljava/io/EOFException;::this(Ljava/lang/String;)V;)("Console has reached end of input"));
+      }
+    else
+      {
+        $13$ = this.(Lscala/Console$;::textComponents(Ljava/lang/Object;[)Lscala/collection/immutable/List;)((new (Ljava/text/MessageFormat;::this(Ljava/lang/String;)V;)(format)).(Ljava/text/MessageFormat;::parse(Ljava/lang/String;)Ljava/lang/Object;[)(s));
+      }
+    return $13$;
+  }
+  
+  public Ljava/lang/Object; readf1(Ljava/lang/String; format) {
+    return this.(Lscala/Console$;::readf(Ljava/lang/String;)Lscala/collection/immutable/List;)(format).(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)();
+  }
+  
+  public Lscala/Tuple2; readf2(Ljava/lang/String; format) {
+    Lscala/collection/immutable/List; res = this.(Lscala/Console$;::readf(Ljava/lang/String;)Lscala/collection/immutable/List;)(format);
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(res.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)(), res.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)()));
+  }
+  
+  public Lscala/Tuple3; readf3(Ljava/lang/String; format) {
+    Lscala/collection/immutable/List; res = this.(Lscala/Console$;::readf(Ljava/lang/String;)Lscala/collection/immutable/List;)(format);
+    return (new (Lscala/Tuple3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(res.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)(), res.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)(), res.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)()));
+  }
+  
+  private Lscala/collection/immutable/List; textComponents(Ljava/lang/Object;[ a) {
+    I; i = (a.<length> - 1);
+    Lscala/collection/immutable/List; res = Lscala/collection/immutable/Nil$;.MODULE$;
+    while$1: while(true) {
+      if ((i >= 0))
+        {
+          {
+            Ljava/lang/Object; temp6 = a[i];
+            Ljava/lang/Object; $14$;
+            if (temp6.<instanceof>(Ljava/lang/Boolean;))
+              {
+                $14$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(temp6.<cast>(Ljava/lang/Boolean;).(Ljava/lang/Boolean;::booleanValue()Z;)());
+              }
+            else
+              {
+                Ljava/lang/Object; $15$;
+                if (temp6.<instanceof>(Ljava/lang/Byte;))
+                  {
+                    $15$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToByte(B;)Ljava/lang/Byte;)(temp6.<cast>(Ljava/lang/Byte;).(Ljava/lang/Byte;::byteValue()B;)());
+                  }
+                else
+                  {
+                    Ljava/lang/Object; $16$;
+                    if (temp6.<instanceof>(Ljava/lang/Short;))
+                      {
+                        $16$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToShort(S;)Ljava/lang/Short;)(temp6.<cast>(Ljava/lang/Short;).(Ljava/lang/Short;::shortValue()S;)());
+                      }
+                    else
+                      {
+                        Ljava/lang/Object; $17$;
+                        if (temp6.<instanceof>(Ljava/lang/Character;))
+                          {
+                            $17$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(temp6.<cast>(Ljava/lang/Character;).(Ljava/lang/Character;::charValue()C;)());
+                          }
+                        else
+                          {
+                            Ljava/lang/Object; $18$;
+                            if (temp6.<instanceof>(Ljava/lang/Integer;))
+                              {
+                                $18$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(temp6.<cast>(Ljava/lang/Integer;).(Ljava/lang/Integer;::intValue()I;)());
+                              }
+                            else
+                              {
+                                Ljava/lang/Object; $19$;
+                                if (temp6.<instanceof>(Ljava/lang/Long;))
+                                  {
+                                    $19$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(temp6.<cast>(Ljava/lang/Long;).(Ljava/lang/Long;::longValue()J;)());
+                                  }
+                                else
+                                  {
+                                    Ljava/lang/Object; $20$;
+                                    if (temp6.<instanceof>(Ljava/lang/Float;))
+                                      {
+                                        $20$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(temp6.<cast>(Ljava/lang/Float;).(Ljava/lang/Float;::floatValue()F;)());
+                                      }
+                                    else
+                                      {
+                                        Ljava/lang/Object; $21$;
+                                        if (temp6.<instanceof>(Ljava/lang/Double;))
+                                          {
+                                            $21$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToDouble(D;)Ljava/lang/Double;)(temp6.<cast>(Ljava/lang/Double;).(Ljava/lang/Double;::doubleValue()D;)());
+                                          }
+                                        else
+                                          {
+                                            $21$ = temp6;
+                                          }
+                                        $20$ = $21$;
+                                      }
+                                    $19$ = $20$;
+                                  }
+                                $18$ = $19$;
+                              }
+                            $17$ = $18$;
+                          }
+                        $16$ = $17$;
+                      }
+                    $15$ = $16$;
+                  }
+                $14$ = $15$;
+              }
+            Ljava/lang/Object; x$1 = $14$;
+            res = res.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$1);
+            i = (i - 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return res;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(Lscala/util/DynamicVariable;)outVar$u0020 = (new (Lscala/util/DynamicVariable;::this(Ljava/lang/Object;)V;)(Ljava/lang/System;.MODULE$.(Ljava/io/PrintStream;)out));
+    this.(Lscala/util/DynamicVariable;)errVar$u0020 = (new (Lscala/util/DynamicVariable;::this(Ljava/lang/Object;)V;)(Ljava/lang/System;.MODULE$.(Ljava/io/PrintStream;)err));
+    this.(Lscala/util/DynamicVariable;)inVar$u0020 = (new (Lscala/util/DynamicVariable;::this(Ljava/lang/Object;)V;)((new (Ljava/io/BufferedReader;::this(Ljava/io/Reader;)V;)((new (Ljava/io/InputStreamReader;::this(Ljava/io/InputStream;)V;)(Ljava/lang/System;.MODULE$.(Ljava/io/InputStream;)in))))));
+  }
+}

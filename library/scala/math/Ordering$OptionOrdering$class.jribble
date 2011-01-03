@@ -1,0 +1,59 @@
+public abstract class Lscala/math/Ordering$OptionOrdering$class; {
+  
+  public static I; compare(Lscala/math/Ordering$OptionOrdering; $this, Lscala/Option; x, Lscala/Option; y) {
+    Lscala/Option; tp3 = x;
+    Lscala/Option; tp4 = y;
+    I; $11$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, tp3))
+      {
+        I; $12$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, tp4))
+          {
+            $12$ = 0;
+          }
+        else
+          {
+            $12$ = -1;
+          }
+        $11$ = $12$;
+      }
+    else
+      {
+        I; $13$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, tp4))
+          {
+            $13$ = 1;
+          }
+        else
+          {
+            I; $14$;
+            if (tp4.<instanceof>(Lscala/Some;))
+              {
+                Lscala/Some; temp8 = tp4.<cast>(Lscala/Some;);
+                Ljava/lang/Object; temp9 = temp8.(Lscala/Some;::x()Ljava/lang/Object;)();
+                I; $15$;
+                if (tp3.<instanceof>(Lscala/Some;))
+                  {
+                    $15$ = $this.(Lscala/math/Ordering$OptionOrdering;::optionOrdering()Lscala/math/Ordering;)().(Lscala/math/Ordering;::compare(Ljava/lang/Object;Ljava/lang/Object;)I;)(tp3.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)(), temp9);
+                  }
+                else
+                  {
+                    throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp3, tp4))));
+                  }
+                $14$ = $15$;
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp3, tp4))));
+              }
+            $13$ = $14$;
+          }
+        $11$ = $13$;
+      }
+    return $11$;
+  }
+  
+  public static V; $init$(Lscala/math/Ordering$OptionOrdering; $this) {
+    
+  }
+}

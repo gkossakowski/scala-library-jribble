@@ -1,0 +1,32 @@
+public final class Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(Ljava/lang/Object; x) {
+    if (this.(Lscala/runtime/BooleanRef;)first$1.(Z;)elem)
+      {
+        this.(Lscala/runtime/ObjectRef;)acc$1.(Ljava/lang/Object;)elem = x;
+        this.(Lscala/runtime/BooleanRef;)first$1.(Z;)elem = false;
+      }
+    else
+      {
+        this.(Lscala/runtime/ObjectRef;)acc$1.(Ljava/lang/Object;)elem = this.(Lscala/Function2;)op$3.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/runtime/ObjectRef;)acc$1.(Ljava/lang/Object;)elem, x);
+      }
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1;::apply(Ljava/lang/Object;)V;)(v1);
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/Function2; op$3;
+  
+  private Lscala/runtime/BooleanRef; first$1;
+  
+  private Lscala/runtime/ObjectRef; acc$1;
+  
+  public this(Lscala/collection/TraversableOnce; $outer, Lscala/Function2; op$3, Lscala/runtime/BooleanRef; first$1, Lscala/runtime/ObjectRef; acc$1) {
+    this.(Lscala/Function2;)op$3 = op$3;
+    this.(Lscala/runtime/BooleanRef;)first$1 = first$1;
+    this.(Lscala/runtime/ObjectRef;)acc$1 = acc$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

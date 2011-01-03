@@ -1,0 +1,46 @@
+public final class Lscala/collection/immutable/Stream$Cons; extends Lscala/collection/immutable/Stream; implements Lscala/ScalaObject; {
+  
+  private Ljava/lang/Object; hd;
+  
+  private Lscala/Function0; tl;
+  
+  public Z; isEmpty() {
+    return false;
+  }
+  
+  public Ljava/lang/Object; head() {
+    return this.(Ljava/lang/Object;)hd;
+  }
+  
+  private Lscala/collection/immutable/Stream; tlVal;
+  
+  public Z; tailDefined() {
+    return (this.(Lscala/collection/immutable/Stream;)tlVal != null);
+  }
+  
+  public Lscala/collection/immutable/Stream; tail() {
+    if (!(this.(Lscala/collection/immutable/Stream$Cons;::tailDefined()Z;)()))
+      {
+        this.(Lscala/collection/immutable/Stream;)tlVal = this.(Lscala/Function0;)tl.(Lscala/Function0;::apply()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Stream;);
+      }
+    else
+      {
+        
+      }
+    return this.(Lscala/collection/immutable/Stream;)tlVal;
+  }
+  
+  public Lscala/collection/LinearSeqOptimized; tail() {
+    return this.(Lscala/collection/immutable/Stream$Cons;::tail()Lscala/collection/immutable/Stream;)();
+  }
+  
+  public Ljava/lang/Object; tail() {
+    return this.(Lscala/collection/immutable/Stream$Cons;::tail()Lscala/collection/immutable/Stream;)();
+  }
+  
+  public this(Ljava/lang/Object; hd, Lscala/Function0; tl) {
+    this.(Ljava/lang/Object;)hd = hd;
+    this.(Lscala/Function0;)tl = tl;
+    (Lscala/collection/immutable/Stream;::super()V;)();
+  }
+}

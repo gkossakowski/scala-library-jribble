@@ -1,0 +1,44 @@
+public final class Lscala/xml/PrettyPrinter$Break$; extends Lscala/xml/PrettyPrinter$Item; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return "\\";
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Break";
+  }
+  
+  public I; productArity() {
+    return 0;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp1 = x$1;
+    throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/xml/PrettyPrinter$Break$;);
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return this.(Lscala/xml/PrettyPrinter$Break$;::scala$xml$PrettyPrinter$Break$$$outer()Lscala/xml/PrettyPrinter;)().(Lscala/xml/PrettyPrinter;::Break()Lscala/xml/PrettyPrinter$Break$;)();
+  }
+  
+  public Lscala/xml/PrettyPrinter; scala$xml$PrettyPrinter$Break$$$outer() {
+    return this.(Lscala/xml/PrettyPrinter;)$outer$u0020;
+  }
+  
+  public this(Lscala/xml/PrettyPrinter; $outer) {
+    (Lscala/xml/PrettyPrinter$Item;::super(Lscala/xml/PrettyPrinter;)V;)($outer);
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

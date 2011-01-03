@@ -1,0 +1,23 @@
+public final class Lscala/collection/immutable/TreeSet$; extends Lscala/collection/generic/ImmutableSortedSetFactory; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/TreeSet$; MODULE$ = new (Lscala/collection/immutable/TreeSet$;::this()V;)();
+  
+  public Lscala/collection/mutable/Builder; implicitBuilder(Lscala/math/Ordering; ordering) {
+    return this.(Lscala/collection/immutable/TreeSet$;::newBuilder(Lscala/math/Ordering;)Lscala/collection/mutable/Builder;)(ordering);
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder(Lscala/math/Ordering; ordering) {
+    return (new (Lscala/collection/mutable/AddingBuilder;::this(Lscala/collection/generic/Addable;)V;)(this.(Lscala/collection/immutable/TreeSet$;::empty(Lscala/math/Ordering;)Lscala/collection/immutable/TreeSet;)(ordering)));
+  }
+  
+  public Lscala/collection/immutable/TreeSet; empty(Lscala/math/Ordering; ordering) {
+    return (new (Lscala/collection/immutable/TreeSet;::this(Lscala/math/Ordering;)V;)(ordering));
+  }
+  
+  public Lscala/collection/SortedSet; empty(Lscala/math/Ordering; ord) {
+    return this.(Lscala/collection/immutable/TreeSet$;::empty(Lscala/math/Ordering;)Lscala/collection/immutable/TreeSet;)(ord);
+  }
+  
+  public this() {
+    (Lscala/collection/generic/ImmutableSortedSetFactory;::super()V;)();
+  }
+}

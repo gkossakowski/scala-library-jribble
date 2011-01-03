@@ -1,0 +1,28 @@
+public final class Lscala/collection/immutable/IntMap$Tip$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/IntMap$Tip$; MODULE$ = new (Lscala/collection/immutable/IntMap$Tip$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "Tip";
+  }
+  
+  public Lscala/Option; unapply(Lscala/collection/immutable/IntMap$Tip; x$0) {
+    Lscala/Option; $108$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $108$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $108$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$0.(Lscala/collection/immutable/IntMap$Tip;::key()I;)()), x$0.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)()))));
+      }
+    return $108$;
+  }
+  
+  public Lscala/collection/immutable/IntMap$Tip; apply(I; key, Ljava/lang/Object; value) {
+    return (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, value));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

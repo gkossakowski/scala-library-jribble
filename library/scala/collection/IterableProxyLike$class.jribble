@@ -1,0 +1,54 @@
+public abstract class Lscala/collection/IterableProxyLike$class; {
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/IterableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+  }
+  
+  public static Lscala/collection/Iterator; grouped(Lscala/collection/IterableProxyLike; $this, I; size) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::grouped(I;)Lscala/collection/Iterator;)(size);
+  }
+  
+  public static Lscala/collection/Iterator; sliding(Lscala/collection/IterableProxyLike; $this, I; size) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::sliding(I;)Lscala/collection/Iterator;)(size);
+  }
+  
+  public static Lscala/collection/Iterator; sliding(Lscala/collection/IterableProxyLike; $this, I; size, I; step) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::sliding(I;I;)Lscala/collection/Iterator;)(size, step);
+  }
+  
+  public static Lscala/collection/Iterable; takeRight(Lscala/collection/IterableProxyLike; $this, I; n) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::takeRight(I;)Ljava/lang/Object;)(n).<cast>(Lscala/collection/Iterable;);
+  }
+  
+  public static Lscala/collection/Iterable; dropRight(Lscala/collection/IterableProxyLike; $this, I; n) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::dropRight(I;)Ljava/lang/Object;)(n).<cast>(Lscala/collection/Iterable;);
+  }
+  
+  public static Ljava/lang/Object; zip(Lscala/collection/IterableProxyLike; $this, Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::zip(Lscala/collection/Iterable;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(that, bf);
+  }
+  
+  public static Ljava/lang/Object; zipAll(Lscala/collection/IterableProxyLike; $this, Lscala/collection/Iterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::zipAll(Lscala/collection/Iterable;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(that, thisElem, thatElem, bf);
+  }
+  
+  public static Ljava/lang/Object; zipWithIndex(Lscala/collection/IterableProxyLike; $this, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::zipWithIndex(Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(bf);
+  }
+  
+  public static Z; sameElements(Lscala/collection/IterableProxyLike; $this, Lscala/collection/Iterable; that) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::sameElements(Lscala/collection/Iterable;)Z;)(that);
+  }
+  
+  public static Lscala/collection/IterableView; view(Lscala/collection/IterableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::view()Lscala/collection/IterableView;)();
+  }
+  
+  public static Lscala/collection/IterableView; view(Lscala/collection/IterableProxyLike; $this, I; from, I; until) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::view(I;I;)Lscala/collection/IterableView;)(from, until);
+  }
+  
+  public static V; $init$(Lscala/collection/IterableProxyLike; $this) {
+    
+  }
+}

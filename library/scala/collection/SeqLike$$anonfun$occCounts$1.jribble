@@ -1,0 +1,18 @@
+public final class Lscala/collection/SeqLike$$anonfun$occCounts$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(Ljava/lang/Object; y) {
+    this.(Lscala/collection/mutable/HashMap;)occ$3.(Lscala/collection/mutable/HashMap;::update(Ljava/lang/Object;Ljava/lang/Object;)V;)(y, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)((Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/collection/mutable/HashMap;)occ$3.(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(y)) + 1)));
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/SeqLike$$anonfun$occCounts$1;::apply(Ljava/lang/Object;)V;)(v1);
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/collection/mutable/HashMap; occ$3;
+  
+  public this(Lscala/collection/SeqLike; $outer, Lscala/collection/mutable/HashMap; occ$3) {
+    this.(Lscala/collection/mutable/HashMap;)occ$3 = occ$3;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

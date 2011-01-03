@@ -1,0 +1,123 @@
+public class Lscala/xml/dtd/ElemDecl; extends Lscala/xml/dtd/MarkupDecl; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/xml/dtd/ContentModel; copy$default$2() {
+    return this.(Lscala/xml/dtd/ElemDecl;::contentModel()Lscala/xml/dtd/ContentModel;)();
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/dtd/ElemDecl;::name()Ljava/lang/String;)();
+  }
+  
+  private Ljava/lang/String; name$u0020;
+  
+  public Ljava/lang/String; name() {
+    return this.(Ljava/lang/String;)name$u0020;
+  }
+  
+  private Lscala/xml/dtd/ContentModel; contentModel$u0020;
+  
+  public Lscala/xml/dtd/ContentModel; contentModel() {
+    return this.(Lscala/xml/dtd/ContentModel;)contentModel$u0020;
+  }
+  
+  public Lscala/collection/mutable/StringBuilder; buildString(Lscala/collection/mutable/StringBuilder; sb) {
+    sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("<!ELEMENT ").(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(this.(Lscala/xml/dtd/ElemDecl;::name()Ljava/lang/String;)()).(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(' ');
+    Lscala/xml/dtd/ContentModel$;.MODULE$.(Lscala/xml/dtd/ContentModel$;::buildString(Lscala/xml/dtd/ContentModel;Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(this.(Lscala/xml/dtd/ElemDecl;::contentModel()Lscala/xml/dtd/ContentModel;)(), sb);
+    return sb.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('>');
+  }
+  
+  public Lscala/xml/dtd/ElemDecl; copy(Ljava/lang/String; name, Lscala/xml/dtd/ContentModel; contentModel) {
+    return (new (Lscala/xml/dtd/ElemDecl;::this(Ljava/lang/String;Lscala/xml/dtd/ContentModel;)V;)(name, contentModel));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp1 = x$1;
+    Z; $1$;
+    if (temp1.<instanceof>(Lscala/xml/dtd/ElemDecl;))
+      {
+        Lscala/xml/dtd/ElemDecl; temp2 = temp1.<cast>(Lscala/xml/dtd/ElemDecl;);
+        Ljava/lang/String; temp3 = temp2.(Lscala/xml/dtd/ElemDecl;::name()Ljava/lang/String;)();
+        Lscala/xml/dtd/ContentModel; temp4 = temp2.(Lscala/xml/dtd/ElemDecl;::contentModel()Lscala/xml/dtd/ContentModel;)();
+        Lscala/xml/dtd/ContentModel; contentModel$1 = temp4;
+        Ljava/lang/String; name$1 = temp3;
+        Z; $2$;
+        if (this.(Lscala/xml/dtd/ElemDecl;::gd1$1(Ljava/lang/String;Lscala/xml/dtd/ContentModel;)Z;)(name$1, contentModel$1))
+          {
+            $2$ = x$1.<cast>(Lscala/xml/dtd/ElemDecl;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $2$ = false;
+          }
+        $1$ = $2$;
+      }
+    else
+      {
+        $1$ = false;
+      }
+    return ((this == x$1) || $1$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "ElemDecl";
+  }
+  
+  public I; productArity() {
+    return 2;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp5 = x$1;
+    I; $3$ = temp5;
+    Ljava/lang/Object; $4$;
+    switch ($3$) {
+      0: {
+        $4$ = this.(Lscala/xml/dtd/ElemDecl;::name()Ljava/lang/String;)();
+        break;
+      }
+      
+      1: {
+        $4$ = this.(Lscala/xml/dtd/ElemDecl;::contentModel()Lscala/xml/dtd/ContentModel;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $4$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/xml/dtd/ElemDecl;);
+  }
+  
+  private final Z; gd1$1(Ljava/lang/String; x$1, Lscala/xml/dtd/ContentModel; x$2) {
+    return (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/xml/dtd/ElemDecl;::name()Ljava/lang/String;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$2, this.(Lscala/xml/dtd/ElemDecl;::contentModel()Lscala/xml/dtd/ContentModel;)()));
+  }
+  
+  public this(Ljava/lang/String; name, Lscala/xml/dtd/ContentModel; contentModel) {
+    this.(Ljava/lang/String;)name$u0020 = name;
+    this.(Lscala/xml/dtd/ContentModel;)contentModel$u0020 = contentModel;
+    (Lscala/xml/dtd/MarkupDecl;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

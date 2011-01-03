@@ -1,0 +1,17 @@
+public final class Lscala/collection/immutable/PagedSeq$$anonfun$fromReader$1; extends Lscala/runtime/AbstractFunction3; {
+  
+  public final I; apply(C;[ x$4, I; x$5, I; x$6) {
+    return this.(Ljava/io/Reader;)source$3.(Ljava/io/Reader;::read(C;[I;I;)I;)(x$4, x$5, x$6);
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2, Ljava/lang/Object; v3) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/collection/immutable/PagedSeq$$anonfun$fromReader$1;::apply(C;[I;I;)I;)(v1.<cast>(C;[), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v2), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v3)));
+  }
+  
+  private Ljava/io/Reader; source$3;
+  
+  public this(Ljava/io/Reader; source$3) {
+    this.(Ljava/io/Reader;)source$3 = source$3;
+    (Lscala/runtime/AbstractFunction3;::super()V;)();
+  }
+}

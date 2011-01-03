@@ -1,0 +1,109 @@
+public class Lscala/xml/Elem; extends Lscala/xml/Node; implements Lscala/ScalaObject; {
+  
+  public Lscala/collection/Seq; copy$default$5() {
+    return this.(Lscala/xml/Elem;::child()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::toSeq()Lscala/collection/Seq;)();
+  }
+  
+  public Lscala/xml/NamespaceBinding; copy$default$4() {
+    return this.(Lscala/xml/Elem;::scope()Lscala/xml/NamespaceBinding;)();
+  }
+  
+  public Lscala/xml/MetaData; copy$default$3() {
+    return this.(Lscala/xml/Elem;::attributes()Lscala/xml/MetaData;)();
+  }
+  
+  public Ljava/lang/String; copy$default$2() {
+    return this.(Lscala/xml/Elem;::label()Ljava/lang/String;)();
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/Elem;::prefix()Ljava/lang/String;)();
+  }
+  
+  private Ljava/lang/String; prefix$u0020;
+  
+  public Ljava/lang/String; prefix() {
+    return this.(Ljava/lang/String;)prefix$u0020;
+  }
+  
+  private Ljava/lang/String; label$u0020;
+  
+  public Ljava/lang/String; label() {
+    return this.(Ljava/lang/String;)label$u0020;
+  }
+  
+  private Lscala/xml/MetaData; attributes$u0020;
+  
+  public Lscala/xml/MetaData; attributes() {
+    return this.(Lscala/xml/MetaData;)attributes$u0020;
+  }
+  
+  private Lscala/xml/NamespaceBinding; scope$u0020;
+  
+  public Lscala/xml/NamespaceBinding; scope() {
+    return this.(Lscala/xml/NamespaceBinding;)scope$u0020;
+  }
+  
+  private Lscala/collection/Seq; child$u0020;
+  
+  public Lscala/collection/Seq; child() {
+    return this.(Lscala/collection/Seq;)child$u0020;
+  }
+  
+  public final Z; doCollectNamespaces() {
+    return true;
+  }
+  
+  public final Z; doTransform() {
+    return true;
+  }
+  
+  public Lscala/collection/Seq; basisForHashCode() {
+    Ljava/lang/String; x$3 = this.(Lscala/xml/Elem;::prefix()Ljava/lang/String;)();
+    Ljava/lang/String; x$2 = this.(Lscala/xml/Elem;::label()Ljava/lang/String;)();
+    Lscala/xml/MetaData; x$1 = this.(Lscala/xml/Elem;::attributes()Lscala/xml/MetaData;)();
+    return this.(Lscala/xml/Elem;::child()Lscala/collection/Seq;)().(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)().(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$1).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$2).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$3);
+  }
+  
+  public final Lscala/xml/Elem; $percent(Lscala/xml/MetaData; updates) {
+    Lscala/xml/MetaData; x$5 = Lscala/xml/MetaData$;.MODULE$.(Lscala/xml/MetaData$;::update(Lscala/xml/MetaData;Lscala/xml/NamespaceBinding;Lscala/xml/MetaData;)Lscala/xml/MetaData;)(this.(Lscala/xml/Elem;::attributes()Lscala/xml/MetaData;)(), this.(Lscala/xml/Elem;::scope()Lscala/xml/NamespaceBinding;)(), updates);
+    Ljava/lang/String; x$6 = this.(Lscala/xml/Elem;::copy$default$1()Ljava/lang/String;)();
+    Ljava/lang/String; x$7 = this.(Lscala/xml/Elem;::copy$default$2()Ljava/lang/String;)();
+    Lscala/xml/NamespaceBinding; x$8 = this.(Lscala/xml/Elem;::copy$default$4()Lscala/xml/NamespaceBinding;)();
+    Lscala/collection/Seq; x$9 = this.(Lscala/xml/Elem;::copy$default$5()Lscala/collection/Seq;)();
+    return this.(Lscala/xml/Elem;::copy(Ljava/lang/String;Ljava/lang/String;Lscala/xml/MetaData;Lscala/xml/NamespaceBinding;Lscala/collection/Seq;)Lscala/xml/Elem;)(x$6, x$7, x$5, x$8, x$9);
+  }
+  
+  public Lscala/xml/Elem; copy(Ljava/lang/String; prefix, Ljava/lang/String; label, Lscala/xml/MetaData; attributes, Lscala/xml/NamespaceBinding; scope, Lscala/collection/Seq; child) {
+    return Lscala/xml/Elem$;.MODULE$.(Lscala/xml/Elem$;::apply(Ljava/lang/String;Ljava/lang/String;Lscala/xml/MetaData;Lscala/xml/NamespaceBinding;Lscala/collection/Seq;)Lscala/xml/Elem;)(prefix, label, attributes, scope, child);
+  }
+  
+  public Ljava/lang/String; text() {
+    return this.(Lscala/xml/Elem;::child()Lscala/collection/Seq;)().(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/xml/Elem$$anonfun$text$1;::this(Lscala/xml/Elem;)V;)(this)), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::mkString()Ljava/lang/String;)();
+  }
+  
+  public this(Ljava/lang/String; prefix, Ljava/lang/String; label, Lscala/xml/MetaData; attributes, Lscala/xml/NamespaceBinding; scope, Lscala/collection/Seq; child) {
+    this.(Ljava/lang/String;)prefix$u0020 = prefix;
+    this.(Ljava/lang/String;)label$u0020 = label;
+    this.(Lscala/xml/MetaData;)attributes$u0020 = attributes;
+    this.(Lscala/xml/NamespaceBinding;)scope$u0020 = scope;
+    this.(Lscala/collection/Seq;)child$u0020 = child;
+    (Lscala/xml/Node;::super()V;)();
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(prefix, ""))
+      {
+        throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)("prefix of zero length, use null instead"));
+      }
+    else
+      {
+        
+      }
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(scope, null))
+      {
+        throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)("scope is null, use xml.TopScope for empty scope"));
+      }
+    else
+      {
+        
+      }
+  }
+}

@@ -1,0 +1,135 @@
+public class Lscala/reflect/If; extends Lscala/reflect/Tree; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/reflect/Tree; copy$default$3() {
+    return this.(Lscala/reflect/If;::falseCase()Lscala/reflect/Tree;)();
+  }
+  
+  public Lscala/reflect/Tree; copy$default$2() {
+    return this.(Lscala/reflect/If;::trueCase()Lscala/reflect/Tree;)();
+  }
+  
+  public Lscala/reflect/Tree; copy$default$1() {
+    return this.(Lscala/reflect/If;::condition()Lscala/reflect/Tree;)();
+  }
+  
+  private Lscala/reflect/Tree; condition$u0020;
+  
+  public Lscala/reflect/Tree; condition() {
+    return this.(Lscala/reflect/Tree;)condition$u0020;
+  }
+  
+  private Lscala/reflect/Tree; trueCase$u0020;
+  
+  public Lscala/reflect/Tree; trueCase() {
+    return this.(Lscala/reflect/Tree;)trueCase$u0020;
+  }
+  
+  private Lscala/reflect/Tree; falseCase$u0020;
+  
+  public Lscala/reflect/Tree; falseCase() {
+    return this.(Lscala/reflect/Tree;)falseCase$u0020;
+  }
+  
+  public Lscala/reflect/If; copy(Lscala/reflect/Tree; condition, Lscala/reflect/Tree; trueCase, Lscala/reflect/Tree; falseCase) {
+    return (new (Lscala/reflect/If;::this(Lscala/reflect/Tree;Lscala/reflect/Tree;Lscala/reflect/Tree;)V;)(condition, trueCase, falseCase));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp42 = x$1;
+    Z; $33$;
+    if (temp42.<instanceof>(Lscala/reflect/If;))
+      {
+        Lscala/reflect/If; temp43 = temp42.<cast>(Lscala/reflect/If;);
+        Lscala/reflect/Tree; temp44 = temp43.(Lscala/reflect/If;::condition()Lscala/reflect/Tree;)();
+        Lscala/reflect/Tree; temp45 = temp43.(Lscala/reflect/If;::trueCase()Lscala/reflect/Tree;)();
+        Lscala/reflect/Tree; temp46 = temp43.(Lscala/reflect/If;::falseCase()Lscala/reflect/Tree;)();
+        Lscala/reflect/Tree; falseCase$1 = temp46;
+        Lscala/reflect/Tree; trueCase$1 = temp45;
+        Lscala/reflect/Tree; condition$1 = temp44;
+        Z; $34$;
+        if (this.(Lscala/reflect/If;::gd10$1(Lscala/reflect/Tree;Lscala/reflect/Tree;Lscala/reflect/Tree;)Z;)(condition$1, trueCase$1, falseCase$1))
+          {
+            $34$ = x$1.<cast>(Lscala/reflect/If;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $34$ = false;
+          }
+        $33$ = $34$;
+      }
+    else
+      {
+        $33$ = false;
+      }
+    return ((this == x$1) || $33$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "If";
+  }
+  
+  public I; productArity() {
+    return 3;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp47 = x$1;
+    I; $35$ = temp47;
+    Ljava/lang/Object; $36$;
+    switch ($35$) {
+      0: {
+        $36$ = this.(Lscala/reflect/If;::condition()Lscala/reflect/Tree;)();
+        break;
+      }
+      
+      1: {
+        $36$ = this.(Lscala/reflect/If;::trueCase()Lscala/reflect/Tree;)();
+        break;
+      }
+      
+      2: {
+        $36$ = this.(Lscala/reflect/If;::falseCase()Lscala/reflect/Tree;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $36$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/reflect/If;);
+  }
+  
+  private final Z; gd10$1(Lscala/reflect/Tree; x$1, Lscala/reflect/Tree; x$2, Lscala/reflect/Tree; x$3) {
+    return ((Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/reflect/If;::condition()Lscala/reflect/Tree;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$2, this.(Lscala/reflect/If;::trueCase()Lscala/reflect/Tree;)())) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$3, this.(Lscala/reflect/If;::falseCase()Lscala/reflect/Tree;)()));
+  }
+  
+  public this(Lscala/reflect/Tree; condition, Lscala/reflect/Tree; trueCase, Lscala/reflect/Tree; falseCase) {
+    this.(Lscala/reflect/Tree;)condition$u0020 = condition;
+    this.(Lscala/reflect/Tree;)trueCase$u0020 = trueCase;
+    this.(Lscala/reflect/Tree;)falseCase$u0020 = falseCase;
+    (Lscala/reflect/Tree;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

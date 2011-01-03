@@ -1,0 +1,61 @@
+public class Lscala/xml/Text; extends Lscala/xml/Atom; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/Text;::_data()Ljava/lang/String;)();
+  }
+  
+  public Ljava/lang/String; _data() {
+    return super.(Lscala/xml/Atom;::data()Ljava/lang/Object;)().<cast>(Ljava/lang/String;);
+  }
+  
+  public Lscala/collection/mutable/StringBuilder; buildString(Lscala/collection/mutable/StringBuilder; sb) {
+    return Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::escape(Ljava/lang/String;Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(this.(Lscala/xml/Atom;::data()Ljava/lang/Object;)().<cast>(Ljava/lang/String;), sb);
+  }
+  
+  public Lscala/xml/Text; copy(Ljava/lang/String; _data) {
+    return (new (Lscala/xml/Text;::this(Ljava/lang/String;)V;)(_data));
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Text";
+  }
+  
+  public I; productArity() {
+    return 1;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp1 = x$1;
+    Ljava/lang/Object; $1$;
+    if ((temp1 == 0))
+      {
+        $1$ = this.(Lscala/xml/Text;::_data()Ljava/lang/String;)();
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $1$;
+  }
+  
+  public this(Ljava/lang/String; _data) {
+    (Lscala/xml/Atom;::super(Ljava/lang/Object;)V;)(_data);
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(_data, null))
+      {
+        throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)("tried to construct Text with null"));
+      }
+    else
+      {
+        
+      }
+  }
+}

@@ -1,0 +1,202 @@
+public final class Lscala/xml/Xhtml$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/xml/Xhtml$; MODULE$ = new (Lscala/xml/Xhtml$;::this()V;)();
+  
+  public Z; sequenceToXML$default$7() {
+    return true;
+  }
+  
+  public Z; sequenceToXML$default$6() {
+    return false;
+  }
+  
+  public Z; sequenceToXML$default$5() {
+    return false;
+  }
+  
+  public Z; sequenceToXML$default$4() {
+    return false;
+  }
+  
+  public Lscala/collection/mutable/StringBuilder; sequenceToXML$default$3() {
+    return (new (Lscala/collection/mutable/StringBuilder;::this()V;)());
+  }
+  
+  public Lscala/xml/NamespaceBinding; sequenceToXML$default$2() {
+    return Lscala/xml/TopScope$;.MODULE$;
+  }
+  
+  public Z; toXhtml$default$7() {
+    return true;
+  }
+  
+  public Z; toXhtml$default$6() {
+    return false;
+  }
+  
+  public Z; toXhtml$default$5() {
+    return false;
+  }
+  
+  public Z; toXhtml$default$4() {
+    return false;
+  }
+  
+  public Lscala/collection/mutable/StringBuilder; toXhtml$default$3() {
+    return (new (Lscala/collection/mutable/StringBuilder;::this()V;)());
+  }
+  
+  public Lscala/xml/NamespaceBinding; toXhtml$default$2() {
+    return Lscala/xml/TopScope$;.MODULE$;
+  }
+  
+  public Ljava/lang/String; toXhtml(Lscala/xml/Node; node$1) {
+    return Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::sbToString(Lscala/Function1;)Ljava/lang/String;)((new (Lscala/xml/Xhtml$$anonfun$toXhtml$1;::this(Lscala/xml/Node;)V;)(node$1)));
+  }
+  
+  public Ljava/lang/String; toXhtml(Lscala/xml/NodeSeq; nodeSeq$1) {
+    return Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::sbToString(Lscala/Function1;)Ljava/lang/String;)((new (Lscala/xml/Xhtml$$anonfun$toXhtml$2;::this(Lscala/xml/NodeSeq;)V;)(nodeSeq$1)));
+  }
+  
+  private Lscala/collection/immutable/List; minimizableElements$u0020;
+  
+  private Lscala/collection/immutable/List; minimizableElements() {
+    return this.(Lscala/collection/immutable/List;)minimizableElements$u0020;
+  }
+  
+  public V; toXhtml(Lscala/xml/Node; x$16, Lscala/xml/NamespaceBinding; pscope, Lscala/collection/mutable/StringBuilder; sb$1, Z; stripComments$1, Z; decodeEntities$1, Z; preserveWhitespace$1, Z; minimizeTags$1) {
+    Lscala/xml/Node; temp4 = x$16;
+    if (temp4.<instanceof>(Lscala/xml/Comment;))
+      {
+        if (!(stripComments$1))
+          {
+            temp4.<cast>(Lscala/xml/Comment;).(Lscala/xml/Comment;::buildString(Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(sb$1);
+          }
+        else
+          {
+            
+          }
+      }
+    else
+      {
+        if (temp4.<instanceof>(Lscala/xml/EntityRef;))
+          {
+            Lscala/xml/EntityRef; temp7 = temp4.<cast>(Lscala/xml/EntityRef;);
+            Lscala/xml/EntityRef; er = temp7;
+            if (this.(Lscala/xml/Xhtml$;::gd2$1(Lscala/xml/EntityRef;Z;)Z;)(er, decodeEntities$1))
+              {
+                this.(Lscala/xml/Xhtml$;::decode$1(Lscala/xml/EntityRef;Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(temp7, sb$1);
+              }
+            else
+              {
+                Lscala/xml/SpecialNode; x = temp7;
+                Lscala/xml/Xhtml$;.MODULE$.(Lscala/xml/Xhtml$;::body$percent2$percent1(Lscala/xml/SpecialNode;)V;)(x);
+              }
+          }
+        else
+          {
+            if (temp4.<instanceof>(Lscala/xml/SpecialNode;))
+              {
+                Lscala/xml/Xhtml$;.MODULE$.(Lscala/xml/Xhtml$;::body$percent2$percent1(Lscala/xml/SpecialNode;)V;)(temp4.<cast>(Lscala/xml/SpecialNode;));
+              }
+            else
+              {
+                if (temp4.<instanceof>(Lscala/xml/Group;))
+                  {
+                    temp4.<cast>(Lscala/xml/Group;).(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/xml/Xhtml$$anonfun$toXhtml$3;::this(Lscala/xml/Node;Lscala/collection/mutable/StringBuilder;Z;Z;Z;Z;)V;)(x$16, sb$1, stripComments$1, decodeEntities$1, preserveWhitespace$1, minimizeTags$1)));
+                  }
+                else
+                  {
+                    sb$1.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('<');
+                    x$16.(Lscala/xml/Node;::nameToString(Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(sb$1);
+                    if ((x$16.(Lscala/xml/Node;::attributes()Lscala/xml/MetaData;)() != null))
+                      {
+                        x$16.(Lscala/xml/Node;::attributes()Lscala/xml/MetaData;)().(Lscala/xml/MetaData;::buildString(Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(sb$1);
+                      }
+                    else
+                      {
+                        
+                      }
+                    x$16.(Lscala/xml/Node;::scope()Lscala/xml/NamespaceBinding;)().(Lscala/xml/NamespaceBinding;::buildString(Lscala/collection/mutable/StringBuilder;Lscala/xml/NamespaceBinding;)V;)(sb$1, pscope);
+                    if (this.(Lscala/xml/Xhtml$;::shortForm$1(Lscala/xml/Node;Z;)Z;)(x$16, minimizeTags$1))
+                      {
+                        sb$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(" />");
+                      }
+                    else
+                      {
+                        sb$1.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('>');
+                        this.(Lscala/xml/Xhtml$;::sequenceToXML(Lscala/collection/Seq;Lscala/xml/NamespaceBinding;Lscala/collection/mutable/StringBuilder;Z;Z;Z;Z;)V;)(x$16.(Lscala/xml/Node;::child()Lscala/collection/Seq;)(), x$16.(Lscala/xml/Node;::scope()Lscala/xml/NamespaceBinding;)(), sb$1, stripComments$1, decodeEntities$1, preserveWhitespace$1, minimizeTags$1);
+                        sb$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("</");
+                        x$16.(Lscala/xml/Node;::nameToString(Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(sb$1);
+                        sb$1.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('>');
+                      }
+                  }
+              }
+          }
+      }
+  }
+  
+  public V; sequenceToXML(Lscala/collection/Seq; children, Lscala/xml/NamespaceBinding; pscope$1, Lscala/collection/mutable/StringBuilder; sb$2, Z; stripComments$2, Z; decodeEntities$2, Z; preserveWhitespace$2, Z; minimizeTags$2) {
+    if (children.(Lscala/collection/IterableLike;::isEmpty()Z;)())
+      {
+        return;
+      }
+    else
+      {
+        
+      }
+    Z; doSpaces$1 = children.(Lscala/collection/IterableLike;::forall(Lscala/Function1;)Z;)((new (Lscala/xml/Xhtml$$anonfun$1;::this()V;)()));
+    children.(Lscala/collection/IterableLike;::take(I;)Ljava/lang/Object;)((children.(Lscala/collection/SeqLike;::length()I;)() - 1)).<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/xml/Xhtml$$anonfun$sequenceToXML$1;::this(Lscala/xml/NamespaceBinding;Lscala/collection/mutable/StringBuilder;Z;Z;Z;Z;Z;)V;)(pscope$1, sb$2, stripComments$2, decodeEntities$2, preserveWhitespace$2, minimizeTags$2, doSpaces$1)));
+    this.(Lscala/xml/Xhtml$;::toXhtml(Lscala/xml/Node;Lscala/xml/NamespaceBinding;Lscala/collection/mutable/StringBuilder;Z;Z;Z;Z;)V;)(children.(Lscala/collection/TraversableLike;::last()Ljava/lang/Object;)().<cast>(Lscala/xml/Node;), pscope$1, sb$2, stripComments$2, decodeEntities$2, preserveWhitespace$2, minimizeTags$2);
+  }
+  
+  private final Z; gd1$1(C; x$1) {
+    return (x$1.<cast>(I;) >= 128);
+  }
+  
+  private final Lscala/collection/mutable/StringBuilder; decode$1(Lscala/xml/EntityRef; er, Lscala/collection/mutable/StringBuilder; sb$1) {
+    Lscala/Option; temp1 = Lscala/xml/parsing/XhtmlEntities$;.MODULE$.(Lscala/xml/parsing/XhtmlEntities$;::entMap()Lscala/collection/immutable/Map;)().(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(er.(Lscala/xml/EntityRef;::entityName()Ljava/lang/String;)());
+    Lscala/collection/mutable/StringBuilder; $1$;
+    if (temp1.<instanceof>(Lscala/Some;))
+      {
+        Lscala/Some; temp2 = temp1.<cast>(Lscala/Some;);
+        C; temp3 = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(temp2.(Lscala/Some;::x()Ljava/lang/Object;)());
+        C; chr = temp3;
+        Lscala/collection/mutable/StringBuilder; $2$;
+        if (this.(Lscala/xml/Xhtml$;::gd1$1(C;)Z;)(chr))
+          {
+            $2$ = sb$1.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(temp3);
+          }
+        else
+          {
+            $2$ = Lscala/xml/Xhtml$;.MODULE$.(Lscala/xml/Xhtml$;::body$percent1$percent1()Lscala/collection/mutable/StringBuilder;)();
+          }
+        $1$ = $2$;
+      }
+    else
+      {
+        $1$ = Lscala/xml/Xhtml$;.MODULE$.(Lscala/xml/Xhtml$;::body$percent1$percent1()Lscala/collection/mutable/StringBuilder;)();
+      }
+    return $1$;
+  }
+  
+  private final Z; shortForm$1(Lscala/xml/Node; x$16, Z; minimizeTags$1) {
+    return ((minimizeTags$1 && (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$16.(Lscala/xml/Node;::child()Lscala/collection/Seq;)(), null) || (x$16.(Lscala/xml/Node;::child()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::length()I;)() == 0))) && this.(Lscala/xml/Xhtml$;::minimizableElements()Lscala/collection/immutable/List;)().(Lscala/collection/SeqLike;::contains(Ljava/lang/Object;)Z;)(x$16.(Lscala/xml/Node;::label()Ljava/lang/String;)()));
+  }
+  
+  private final Z; gd2$1(Lscala/xml/EntityRef; x$1, Z; decodeEntities$1) {
+    return decodeEntities$1;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(Lscala/collection/immutable/List;)minimizableElements$u0020 = Lscala/collection/immutable/List$;.MODULE$.(Lscala/collection/immutable/List$;::apply(Lscala/collection/Seq;)Lscala/collection/immutable/List;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/String;>{"base", "meta", "link", "hr", "br", "param", "img", "area", "input", "col"}.<cast>(Ljava/lang/Object;[)));
+  }
+  
+  private final Lscala/collection/mutable/StringBuilder; body$percent1$percent1() {
+    return er.(Lscala/xml/EntityRef;::buildString(Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(sb$1);
+  }
+  
+  private final V; body$percent2$percent1(Lscala/xml/SpecialNode; x) {
+    x.(Lscala/xml/SpecialNode;::buildString(Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(sb$1);
+  }
+}

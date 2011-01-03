@@ -1,0 +1,32 @@
+public final class Lscala/xml/dtd/AttListDecl$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject; {
+  public static Lscala/xml/dtd/AttListDecl$; MODULE$ = new (Lscala/xml/dtd/AttListDecl$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "AttListDecl";
+  }
+  
+  public Lscala/Option; unapply(Lscala/xml/dtd/AttListDecl; x$0) {
+    Lscala/Option; $52$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $52$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $52$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/AttListDecl;::name()Ljava/lang/String;)(), x$0.(Lscala/xml/dtd/AttListDecl;::attrs()Lscala/collection/immutable/List;)()))));
+      }
+    return $52$;
+  }
+  
+  public Lscala/xml/dtd/AttListDecl; apply(Ljava/lang/String; name, Lscala/collection/immutable/List; attrs) {
+    return (new (Lscala/xml/dtd/AttListDecl;::this(Ljava/lang/String;Lscala/collection/immutable/List;)V;)(name, attrs));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {
+    return this.(Lscala/xml/dtd/AttListDecl$;::apply(Ljava/lang/String;Lscala/collection/immutable/List;)Lscala/xml/dtd/AttListDecl;)(v1.<cast>(Ljava/lang/String;), v2.<cast>(Lscala/collection/immutable/List;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
+  }
+}

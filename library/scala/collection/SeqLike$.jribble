@@ -1,0 +1,160 @@
+public final class Lscala/collection/SeqLike$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/SeqLike$; MODULE$ = new (Lscala/collection/SeqLike$;::this()V;)();
+  
+  private Lscala/Option; KMP(Lscala/collection/Seq; S, Lscala/collection/Seq; W) {
+    if (W.(Lscala/collection/IterableLike;::isEmpty()Z;)())
+      {
+        return (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(0)));
+      }
+    else
+      {
+        if (W.(Lscala/collection/TraversableLike;::drop(I;)Ljava/lang/Object;)(1).<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::isEmpty()Z;)())
+          {
+            I; temp1 = S.(Lscala/collection/SeqLike;::indexOf(Ljava/lang/Object;)I;)(W.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(0));
+            Lscala/Option; $1$;
+            if ((temp1 == -1))
+              {
+                $1$ = Lscala/None$;.MODULE$;
+              }
+            else
+              {
+                $1$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(temp1)));
+              }
+            return $1$;
+          }
+        else
+          {
+            
+          }
+      }
+    I;[ arr = new I;[W.(Lscala/collection/SeqLike;::length()I;)()];
+    I; pos = 2;
+    I; cnd = 0;
+    arr[0] = -1;
+    arr[1] = 0;
+    while$1: while(true) {
+      if ((pos < W.(Lscala/collection/SeqLike;::length()I;)()))
+        {
+          if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(W.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)((pos - 1)), W.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(cnd)))
+            {
+              arr[pos] = (cnd + 1);
+              pos = (pos + 1);
+              cnd = (cnd + 1);
+            }
+          else
+            {
+              if ((cnd > 0))
+                {
+                  cnd = arr[cnd];
+                }
+              else
+                {
+                  arr[pos] = 0;
+                  pos = (pos + 1);
+                }
+            }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    I;[ T = arr;
+    Lscala/runtime/IntRef; m$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(0));
+    Lscala/runtime/IntRef; i$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(0));
+    while$2: while(true) {
+      if ((this.(Lscala/collection/SeqLike$;::mi$1(Lscala/runtime/IntRef;Lscala/runtime/IntRef;)I;)(m$1, i$1) < S.(Lscala/collection/SeqLike;::length()I;)()))
+        {
+          if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(W.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i$1.(I;)elem), S.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(this.(Lscala/collection/SeqLike$;::mi$1(Lscala/runtime/IntRef;Lscala/runtime/IntRef;)I;)(m$1, i$1))))
+            {
+              i$1.(I;)elem = (i$1.(I;)elem + 1);
+              if ((i$1.(I;)elem == W.(Lscala/collection/SeqLike;::length()I;)()))
+                {
+                  return (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(m$1.(I;)elem)));
+                }
+              else
+                {
+                  
+                }
+            }
+          else
+            {
+              m$1.(I;)elem = (this.(Lscala/collection/SeqLike$;::mi$1(Lscala/runtime/IntRef;Lscala/runtime/IntRef;)I;)(m$1, i$1) - T[i$1.(I;)elem]);
+              if ((i$1.(I;)elem > 0))
+                {
+                  i$1.(I;)elem = T[i$1.(I;)elem];
+                }
+              else
+                {
+                  
+                }
+            }
+          continue while$2;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return Lscala/None$;.MODULE$;
+  }
+  
+  public I; indexOf(Lscala/collection/Seq; source, I; sourceOffset, I; sourceCount, Lscala/collection/Seq; target, I; targetOffset, I; targetCount, I; fromIndex) {
+    Lscala/Option; temp2 = this.(Lscala/collection/SeqLike$;::KMP(Lscala/collection/Seq;Lscala/collection/Seq;)Lscala/Option;)(source.(Lscala/collection/IterableLike;::slice(I;I;)Ljava/lang/Object;)(sourceOffset, sourceCount).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::drop(I;)Ljava/lang/Object;)(fromIndex).<cast>(Lscala/collection/Seq;), target.(Lscala/collection/IterableLike;::slice(I;I;)Ljava/lang/Object;)(targetOffset, targetCount).<cast>(Lscala/collection/Seq;));
+    I; $2$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp2))
+      {
+        $2$ = -1;
+      }
+    else
+      {
+        I; $3$;
+        if (temp2.<instanceof>(Lscala/Some;))
+          {
+            $3$ = (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp2.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)()) + fromIndex);
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp2));
+          }
+        $2$ = $3$;
+      }
+    return $2$;
+  }
+  
+  public I; lastIndexOf(Lscala/collection/Seq; source, I; sourceOffset, I; sourceCount, Lscala/collection/Seq; target, I; targetOffset, I; targetCount, I; fromIndex) {
+    Lscala/collection/Seq; src = source.(Lscala/collection/IterableLike;::slice(I;I;)Ljava/lang/Object;)(sourceOffset, sourceCount).<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::take(I;)Ljava/lang/Object;)(fromIndex).<cast>(Lscala/collection/SeqLike;).(Lscala/collection/SeqLike;::reverse()Ljava/lang/Object;)().<cast>(Lscala/collection/Seq;);
+    Lscala/collection/Seq; tgt = target.(Lscala/collection/IterableLike;::slice(I;I;)Ljava/lang/Object;)(targetOffset, targetCount).<cast>(Lscala/collection/SeqLike;).(Lscala/collection/SeqLike;::reverse()Ljava/lang/Object;)().<cast>(Lscala/collection/Seq;);
+    Lscala/Option; temp6 = this.(Lscala/collection/SeqLike$;::KMP(Lscala/collection/Seq;Lscala/collection/Seq;)Lscala/Option;)(src, tgt);
+    I; $4$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp6))
+      {
+        $4$ = -1;
+      }
+    else
+      {
+        I; $5$;
+        if (temp6.<instanceof>(Lscala/Some;))
+          {
+            $5$ = (((src.(Lscala/collection/SeqLike;::length()I;)() - tgt.(Lscala/collection/SeqLike;::length()I;)()) - Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp6.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)())) + sourceOffset);
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp6));
+          }
+        $4$ = $5$;
+      }
+    return $4$;
+  }
+  
+  private final I; mi$1(Lscala/runtime/IntRef; m$1, Lscala/runtime/IntRef; i$1) {
+    return (m$1.(I;)elem + i$1.(I;)elem);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

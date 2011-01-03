@@ -1,0 +1,28 @@
+public final class Lscala/Either$LeftProjection$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/Either$LeftProjection$; MODULE$ = new (Lscala/Either$LeftProjection$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "LeftProjection";
+  }
+  
+  public Lscala/Option; unapply(Lscala/Either$LeftProjection; x$0) {
+    Lscala/Option; $71$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $71$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $71$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/Either$LeftProjection;::e()Lscala/Either;)()));
+      }
+    return $71$;
+  }
+  
+  public Lscala/Either$LeftProjection; apply(Lscala/Either; e) {
+    return (new (Lscala/Either$LeftProjection;::this(Lscala/Either;)V;)(e));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

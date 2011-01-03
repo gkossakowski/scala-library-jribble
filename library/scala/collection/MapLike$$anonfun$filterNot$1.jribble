@@ -1,0 +1,28 @@
+public final class Lscala/collection/MapLike$$anonfun$filterNot$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(Lscala/Tuple2; kv) {
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Function1;)p$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(kv)))
+      {
+        this.(Lscala/runtime/ObjectRef;)res$1.(Ljava/lang/Object;)elem = this.(Lscala/runtime/ObjectRef;)res$1.(Ljava/lang/Object;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/MapLike;::$minus(Ljava/lang/Object;)Lscala/collection/Map;)(kv.(Lscala/Tuple2;::_1()Ljava/lang/Object;)());
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/MapLike$$anonfun$filterNot$1;::apply(Lscala/Tuple2;)V;)(v1.<cast>(Lscala/Tuple2;));
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/Function1; p$2;
+  
+  private Lscala/runtime/ObjectRef; res$1;
+  
+  public this(Lscala/collection/MapLike; $outer, Lscala/Function1; p$2, Lscala/runtime/ObjectRef; res$1) {
+    this.(Lscala/Function1;)p$2 = p$2;
+    this.(Lscala/runtime/ObjectRef;)res$1 = res$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

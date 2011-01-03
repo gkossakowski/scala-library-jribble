@@ -1,0 +1,52 @@
+public final class Lscala/util/automata/WordBerrySethi$$anon$1; extends Lscala/util/automata/NondetWordAutom; {
+  
+  private I; nstates$u0020;
+  
+  public I; nstates() {
+    return this.(I;)nstates$u0020;
+  }
+  
+  private Lscala/collection/immutable/List; labels$u0020;
+  
+  public Lscala/collection/immutable/List; labels() {
+    return this.(Lscala/collection/immutable/List;)labels$u0020;
+  }
+  
+  private I;[ initials$u0020;
+  
+  private I;[ initials() {
+    return this.(I;[)initials$u0020;
+  }
+  
+  private I;[ finals$u0020;
+  
+  public I;[ finals() {
+    return this.(I;[)finals$u0020;
+  }
+  
+  private Lscala/collection/Map;[ delta$u0020;
+  
+  public Lscala/collection/Map;[ delta() {
+    return this.(Lscala/collection/Map;[)delta$u0020;
+  }
+  
+  private Lscala/collection/immutable/BitSet;[ default$u0020;
+  
+  public Lscala/collection/immutable/BitSet;[ `default`() {
+    return this.(Lscala/collection/immutable/BitSet;[)default$u0020;
+  }
+  
+  public Lscala/collection/Seq; labels() {
+    return this.(Lscala/util/automata/WordBerrySethi$$anon$1;::labels()Lscala/collection/immutable/List;)();
+  }
+  
+  public this(Lscala/util/automata/WordBerrySethi; $outer, I;[ finalsArr$1, I;[ initialsArr$1, Lscala/collection/Map;[ deltaArr$1, Lscala/collection/immutable/BitSet;[ defaultArr$1) {
+    (Lscala/util/automata/NondetWordAutom;::super()V;)();
+    this.(I;)nstates$u0020 = $outer.(Lscala/util/automata/BaseBerrySethi;::pos()I;)();
+    this.(Lscala/collection/immutable/List;)labels$u0020 = $outer.(Lscala/util/automata/WordBerrySethi;::labels()Lscala/collection/mutable/HashSet;)().(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)();
+    this.(I;[)initials$u0020 = initialsArr$1;
+    this.(I;[)finals$u0020 = finalsArr$1;
+    this.(Lscala/collection/Map;[)delta$u0020 = deltaArr$1;
+    this.(Lscala/collection/immutable/BitSet;[)default$u0020 = defaultArr$1;
+  }
+}

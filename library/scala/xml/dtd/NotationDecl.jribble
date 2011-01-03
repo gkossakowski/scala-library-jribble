@@ -1,0 +1,122 @@
+public class Lscala/xml/dtd/NotationDecl; extends Lscala/xml/dtd/MarkupDecl; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/xml/dtd/ExternalID; copy$default$2() {
+    return this.(Lscala/xml/dtd/NotationDecl;::extID()Lscala/xml/dtd/ExternalID;)();
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/dtd/NotationDecl;::name()Ljava/lang/String;)();
+  }
+  
+  private Ljava/lang/String; name$u0020;
+  
+  public Ljava/lang/String; name() {
+    return this.(Ljava/lang/String;)name$u0020;
+  }
+  
+  private Lscala/xml/dtd/ExternalID; extID$u0020;
+  
+  public Lscala/xml/dtd/ExternalID; extID() {
+    return this.(Lscala/xml/dtd/ExternalID;)extID$u0020;
+  }
+  
+  public Lscala/collection/mutable/StringBuilder; buildString(Lscala/collection/mutable/StringBuilder; sb) {
+    sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("<!NOTATION ").(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(this.(Lscala/xml/dtd/NotationDecl;::name()Ljava/lang/String;)()).(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(' ');
+    return this.(Lscala/xml/dtd/NotationDecl;::extID()Lscala/xml/dtd/ExternalID;)().(Lscala/xml/dtd/ExternalID;::buildString(Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(sb);
+  }
+  
+  public Lscala/xml/dtd/NotationDecl; copy(Ljava/lang/String; name, Lscala/xml/dtd/ExternalID; extID) {
+    return (new (Lscala/xml/dtd/NotationDecl;::this(Ljava/lang/String;Lscala/xml/dtd/ExternalID;)V;)(name, extID));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp33 = x$1;
+    Z; $25$;
+    if (temp33.<instanceof>(Lscala/xml/dtd/NotationDecl;))
+      {
+        Lscala/xml/dtd/NotationDecl; temp34 = temp33.<cast>(Lscala/xml/dtd/NotationDecl;);
+        Ljava/lang/String; temp35 = temp34.(Lscala/xml/dtd/NotationDecl;::name()Ljava/lang/String;)();
+        Lscala/xml/dtd/ExternalID; temp36 = temp34.(Lscala/xml/dtd/NotationDecl;::extID()Lscala/xml/dtd/ExternalID;)();
+        Lscala/xml/dtd/ExternalID; extID$2 = temp36;
+        Ljava/lang/String; name$7 = temp35;
+        Z; $26$;
+        if (this.(Lscala/xml/dtd/NotationDecl;::gd7$1(Ljava/lang/String;Lscala/xml/dtd/ExternalID;)Z;)(name$7, extID$2))
+          {
+            $26$ = x$1.<cast>(Lscala/xml/dtd/NotationDecl;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $26$ = false;
+          }
+        $25$ = $26$;
+      }
+    else
+      {
+        $25$ = false;
+      }
+    return ((this == x$1) || $25$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "NotationDecl";
+  }
+  
+  public I; productArity() {
+    return 2;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp37 = x$1;
+    I; $27$ = temp37;
+    Ljava/lang/Object; $28$;
+    switch ($27$) {
+      0: {
+        $28$ = this.(Lscala/xml/dtd/NotationDecl;::name()Ljava/lang/String;)();
+        break;
+      }
+      
+      1: {
+        $28$ = this.(Lscala/xml/dtd/NotationDecl;::extID()Lscala/xml/dtd/ExternalID;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $28$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/xml/dtd/NotationDecl;);
+  }
+  
+  private final Z; gd7$1(Ljava/lang/String; x$1, Lscala/xml/dtd/ExternalID; x$2) {
+    return (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/xml/dtd/NotationDecl;::name()Ljava/lang/String;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$2, this.(Lscala/xml/dtd/NotationDecl;::extID()Lscala/xml/dtd/ExternalID;)()));
+  }
+  
+  public this(Ljava/lang/String; name, Lscala/xml/dtd/ExternalID; extID) {
+    this.(Ljava/lang/String;)name$u0020 = name;
+    this.(Lscala/xml/dtd/ExternalID;)extID$u0020 = extID;
+    (Lscala/xml/dtd/MarkupDecl;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

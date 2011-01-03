@@ -1,0 +1,49 @@
+public final class Lscala/collection/mutable/WrappedArray$ofBoolean; extends Lscala/collection/mutable/WrappedArray; implements Lscala/ScalaObject; {
+  
+  private Z;[ array$u0020;
+  
+  public Z;[ array() {
+    return this.(Z;[)array$u0020;
+  }
+  
+  public Lscala/reflect/AnyValManifest; elemManifest() {
+    return Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::Boolean()Lscala/reflect/AnyValManifest;)();
+  }
+  
+  public I; length() {
+    return this.(Lscala/collection/mutable/WrappedArray$ofBoolean;::array()Z;[)().<length>;
+  }
+  
+  public Z; apply(I; index) {
+    return this.(Lscala/collection/mutable/WrappedArray$ofBoolean;::array()Z;[)()[index];
+  }
+  
+  public V; update(I; index, Z; elem) {
+    this.(Lscala/collection/mutable/WrappedArray$ofBoolean;::array()Z;[)()[index] = elem;
+  }
+  
+  public V; update(I; index, Ljava/lang/Object; elem) {
+    this.(Lscala/collection/mutable/WrappedArray$ofBoolean;::update(I;Z;)V;)(index, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(elem));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/collection/mutable/WrappedArray$ofBoolean;::apply(I;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1)));
+  }
+  
+  public Ljava/lang/Object; apply(I; index) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/collection/mutable/WrappedArray$ofBoolean;::apply(I;)Z;)(index));
+  }
+  
+  public Lscala/reflect/ClassManifest; elemManifest() {
+    return this.(Lscala/collection/mutable/WrappedArray$ofBoolean;::elemManifest()Lscala/reflect/AnyValManifest;)();
+  }
+  
+  public Ljava/lang/Object; array() {
+    return this.(Lscala/collection/mutable/WrappedArray$ofBoolean;::array()Z;[)();
+  }
+  
+  public this(Z;[ array) {
+    this.(Z;[)array$u0020 = array;
+    (Lscala/collection/mutable/WrappedArray;::super()V;)();
+  }
+}

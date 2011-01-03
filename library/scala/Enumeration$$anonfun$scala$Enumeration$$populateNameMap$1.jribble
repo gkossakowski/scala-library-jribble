@@ -1,0 +1,36 @@
+public final class Lscala/Enumeration$$anonfun$scala$Enumeration$$populateNameMap$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/reflect/Method; m) {
+    Ljava/lang/String; name = m.(Ljava/lang/reflect/Method;::getName()Ljava/lang/String;)();
+    Lscala/Enumeration$Value; value = m.(Ljava/lang/reflect/Method;::invoke(Ljava/lang/Object;Ljava/lang/Object;[)Ljava/lang/Object;)(this.(Lscala/Enumeration;)$outer$u0020, <Ljava/lang/Object;>{}).<cast>(Lscala/Enumeration$Value;);
+    Ljava/lang/Object; $5$;
+    if ((value.(Lscala/Enumeration$Value;::scala$Enumeration$$outerEnum()Lscala/Enumeration;)() == this.(Lscala/Enumeration;)$outer$u0020))
+      {
+        I; id = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(Lscala/Enumeration$Val;.class.(Ljava/lang/Class;::getMethod(Ljava/lang/String;Ljava/lang/Class;[)Ljava/lang/reflect/Method;)("id", <Ljava/lang/Class;>{}).(Ljava/lang/reflect/Method;::invoke(Ljava/lang/Object;Ljava/lang/Object;[)Ljava/lang/Object;)(value, <Ljava/lang/Object;>{}));
+        $5$ = this.(Lscala/Enumeration;)$outer$u0020.(Lscala/Enumeration;::scala$Enumeration$$nmap()Lscala/collection/mutable/Map;)().(Lscala/collection/mutable/MapLike;::$plus$eq(Lscala/Tuple2;)Lscala/collection/mutable/MapLike;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(id), name)));
+      }
+    else
+      {
+        $5$ = Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+      }
+    return $5$;
+  }
+  
+  private Lscala/Enumeration; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/Enumeration$$anonfun$scala$Enumeration$$populateNameMap$1;::apply(Ljava/lang/reflect/Method;)Ljava/lang/Object;)(v1.<cast>(Ljava/lang/reflect/Method;));
+  }
+  
+  public this(Lscala/Enumeration; $outer) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/Enumeration;)$outer$u0020 = $outer;
+      }
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

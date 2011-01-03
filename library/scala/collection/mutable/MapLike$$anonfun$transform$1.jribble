@@ -1,0 +1,38 @@
+public final class Lscala/collection/mutable/MapLike$$anonfun$transform$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(Lscala/Tuple2; x0$1) {
+    Lscala/Tuple2; temp5 = x0$1;
+    if ((temp5 != null))
+      {
+        Ljava/lang/Object; temp6 = temp5.(Lscala/Tuple2;::_1()Ljava/lang/Object;)();
+        Ljava/lang/Object; key = temp6;
+        this.(Lscala/collection/mutable/MapLike;)$outer$u0020.(Lscala/collection/mutable/MapLike;::update(Ljava/lang/Object;Ljava/lang/Object;)V;)(key, this.(Lscala/Function2;)f$1.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(key, temp5.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()));
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp5));
+      }
+  }
+  
+  private Lscala/collection/mutable/MapLike; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/mutable/MapLike$$anonfun$transform$1;::apply(Lscala/Tuple2;)V;)(v1.<cast>(Lscala/Tuple2;));
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/Function2; f$1;
+  
+  public this(Lscala/collection/mutable/MapLike; $outer, Lscala/Function2; f$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/MapLike;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/Function2;)f$1 = f$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

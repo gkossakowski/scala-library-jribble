@@ -1,0 +1,50 @@
+public abstract class Lscala/math/Numeric$BigIntIsIntegral$class; {
+  
+  public static Lscala/math/BigInt; plus(Lscala/math/Numeric$BigIntIsIntegral; $this, Lscala/math/BigInt; x, Lscala/math/BigInt; y) {
+    return x.(Lscala/math/BigInt;::$plus(Lscala/math/BigInt;)Lscala/math/BigInt;)(y);
+  }
+  
+  public static Lscala/math/BigInt; minus(Lscala/math/Numeric$BigIntIsIntegral; $this, Lscala/math/BigInt; x, Lscala/math/BigInt; y) {
+    return x.(Lscala/math/BigInt;::$minus(Lscala/math/BigInt;)Lscala/math/BigInt;)(y);
+  }
+  
+  public static Lscala/math/BigInt; times(Lscala/math/Numeric$BigIntIsIntegral; $this, Lscala/math/BigInt; x, Lscala/math/BigInt; y) {
+    return x.(Lscala/math/BigInt;::$times(Lscala/math/BigInt;)Lscala/math/BigInt;)(y);
+  }
+  
+  public static Lscala/math/BigInt; quot(Lscala/math/Numeric$BigIntIsIntegral; $this, Lscala/math/BigInt; x, Lscala/math/BigInt; y) {
+    return x.(Lscala/math/BigInt;::$div(Lscala/math/BigInt;)Lscala/math/BigInt;)(y);
+  }
+  
+  public static Lscala/math/BigInt; rem(Lscala/math/Numeric$BigIntIsIntegral; $this, Lscala/math/BigInt; x, Lscala/math/BigInt; y) {
+    return x.(Lscala/math/BigInt;::$percent(Lscala/math/BigInt;)Lscala/math/BigInt;)(y);
+  }
+  
+  public static Lscala/math/BigInt; negate(Lscala/math/Numeric$BigIntIsIntegral; $this, Lscala/math/BigInt; x) {
+    return x.(Lscala/math/BigInt;::unary_$minus()Lscala/math/BigInt;)();
+  }
+  
+  public static Lscala/math/BigInt; fromInt(Lscala/math/Numeric$BigIntIsIntegral; $this, I; x) {
+    return Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::apply(I;)Lscala/math/BigInt;)(x);
+  }
+  
+  public static I; toInt(Lscala/math/Numeric$BigIntIsIntegral; $this, Lscala/math/BigInt; x) {
+    return x.(Lscala/math/BigInt;::intValue()I;)();
+  }
+  
+  public static J; toLong(Lscala/math/Numeric$BigIntIsIntegral; $this, Lscala/math/BigInt; x) {
+    return x.(Lscala/math/BigInt;::longValue()J;)();
+  }
+  
+  public static F; toFloat(Lscala/math/Numeric$BigIntIsIntegral; $this, Lscala/math/BigInt; x) {
+    return x.(Lscala/math/BigInt;::longValue()J;)().<cast>(F;);
+  }
+  
+  public static D; toDouble(Lscala/math/Numeric$BigIntIsIntegral; $this, Lscala/math/BigInt; x) {
+    return x.(Lscala/math/BigInt;::longValue()J;)().<cast>(D;);
+  }
+  
+  public static V; $init$(Lscala/math/Numeric$BigIntIsIntegral; $this) {
+    
+  }
+}

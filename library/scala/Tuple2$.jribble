@@ -1,0 +1,28 @@
+public final class Lscala/Tuple2$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/Tuple2$; MODULE$ = new (Lscala/Tuple2$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "Tuple2";
+  }
+  
+  public Lscala/Option; unapply(Lscala/Tuple2; x$0) {
+    Lscala/Option; $3$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $3$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $3$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), x$0.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()))));
+      }
+    return $3$;
+  }
+  
+  public Lscala/Tuple2; apply(Ljava/lang/Object; _1, Ljava/lang/Object; _2) {
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(_1, _2));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

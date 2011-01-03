@@ -1,0 +1,35 @@
+public final class Lscala/Responder$$anon$4$$anonfun$respond$3; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(Ljava/lang/Object; x) {
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Responder$$anon$4;)$outer$u0020.(Lscala/Function1;)p$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x)))
+      {
+        this.(Lscala/Function1;)k$3.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x);
+      }
+    else
+      {
+        
+      }
+  }
+  
+  private Lscala/Responder$$anon$4; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/Responder$$anon$4$$anonfun$respond$3;::apply(Ljava/lang/Object;)V;)(v1);
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/Function1; k$3;
+  
+  public this(Lscala/Responder$$anon$4; $outer, Lscala/Function1; k$3) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/Responder$$anon$4;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/Function1;)k$3 = k$3;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

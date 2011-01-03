@@ -1,0 +1,47 @@
+public class Lscala/util/control/Exception$Finally; extends Ljava/lang/Object; implements Lscala/util/control/Exception$Described;, Lscala/ScalaObject; {
+  
+  public final Ljava/lang/String; scala$util$control$Exception$Described$$_desc() {
+    return this.(Ljava/lang/String;)scala$util$control$Exception$Described$$_desc$u0020;
+  }
+  
+  private Ljava/lang/String; scala$util$control$Exception$Described$$_desc$u0020;
+  
+  public final V; scala$util$control$Exception$Described$$_desc_$eq(Ljava/lang/String; x$1) {
+    this.(Ljava/lang/String;)scala$util$control$Exception$Described$$_desc$u0020 = x$1;
+  }
+  
+  public Ljava/lang/String; desc() {
+    return Lscala/util/control/Exception$Described$class;.(Lscala/util/control/Exception$Described$class;::desc(Lscala/util/control/Exception$Described;)Ljava/lang/String;)(this);
+  }
+  
+  public Lscala/util/control/Exception$Described; withDesc(Ljava/lang/String; s) {
+    return Lscala/util/control/Exception$Described$class;.(Lscala/util/control/Exception$Described$class;::withDesc(Lscala/util/control/Exception$Described;Ljava/lang/String;)Lscala/util/control/Exception$Described;)(this, s);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/util/control/Exception$Described$class;.(Lscala/util/control/Exception$Described$class;::toString(Lscala/util/control/Exception$Described;)Ljava/lang/String;)(this);
+  }
+  
+  public Lscala/Function0; scala$util$control$Exception$Finally$$body;
+  
+  private Ljava/lang/String; name$u0020;
+  
+  protected Ljava/lang/String; name() {
+    return this.(Ljava/lang/String;)name$u0020;
+  }
+  
+  public Lscala/util/control/Exception$Finally; and(Lscala/Function0; other$1) {
+    return (new (Lscala/util/control/Exception$Finally;::this(Lscala/Function0;)V;)((new (Lscala/util/control/Exception$Finally$$anonfun$and$1;::this(Lscala/util/control/Exception$Finally;Lscala/Function0;)V;)(this, other$1))));
+  }
+  
+  public V; invoke() {
+    this.(Lscala/Function0;)scala$util$control$Exception$Finally$$body.(Lscala/Function0;::apply()Ljava/lang/Object;)();
+  }
+  
+  public this(Lscala/Function0; body) {
+    this.(Lscala/Function0;)scala$util$control$Exception$Finally$$body = body;
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/util/control/Exception$Described$class;.(Lscala/util/control/Exception$Described$class;::$init$(Lscala/util/control/Exception$Described;)V;)(this);
+    this.(Ljava/lang/String;)name$u0020 = "Finally";
+  }
+}

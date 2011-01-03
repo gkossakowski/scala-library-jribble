@@ -1,0 +1,122 @@
+public abstract class Lscala/collection/generic/Sorted$class; {
+  
+  public static I; compare(Lscala/collection/generic/Sorted; $this, Ljava/lang/Object; k0, Ljava/lang/Object; k1) {
+    return $this.(Lscala/collection/generic/Sorted;::ordering()Lscala/math/Ordering;)().(Lscala/math/Ordering;::compare(Ljava/lang/Object;Ljava/lang/Object;)I;)(k0, k1);
+  }
+  
+  public static Lscala/collection/generic/Sorted; from(Lscala/collection/generic/Sorted; $this, Ljava/lang/Object; from) {
+    return $this.(Lscala/collection/generic/Sorted;::rangeImpl(Lscala/Option;Lscala/Option;)Lscala/collection/generic/Sorted;)((new (Lscala/Some;::this(Ljava/lang/Object;)V;)(from)), Lscala/None$;.MODULE$);
+  }
+  
+  public static Lscala/collection/generic/Sorted; until(Lscala/collection/generic/Sorted; $this, Ljava/lang/Object; until) {
+    return $this.(Lscala/collection/generic/Sorted;::rangeImpl(Lscala/Option;Lscala/Option;)Lscala/collection/generic/Sorted;)(Lscala/None$;.MODULE$, (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(until)));
+  }
+  
+  public static Lscala/collection/generic/Sorted; range(Lscala/collection/generic/Sorted; $this, Ljava/lang/Object; from, Ljava/lang/Object; until) {
+    return $this.(Lscala/collection/generic/Sorted;::rangeImpl(Lscala/Option;Lscala/Option;)Lscala/collection/generic/Sorted;)((new (Lscala/Some;::this(Ljava/lang/Object;)V;)(from)), (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(until)));
+  }
+  
+  public static Lscala/collection/generic/Sorted; to(Lscala/collection/generic/Sorted; $this, Ljava/lang/Object; to) {
+    Lscala/collection/Iterator; i = $this.(Lscala/collection/generic/Sorted;::keySet()Lscala/collection/SortedSet;)().(Lscala/collection/SortedSetLike;::from(Ljava/lang/Object;)Lscala/collection/SortedSet;)(to).(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    if (i.(Lscala/collection/Iterator;::isEmpty()Z;)())
+      {
+        return $this.(Lscala/collection/generic/Sorted;::repr()Lscala/collection/generic/Sorted;)();
+      }
+    else
+      {
+        
+      }
+    Ljava/lang/Object; next = i.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+    Lscala/collection/generic/Sorted; $1$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(next, to))
+      {
+        Lscala/collection/generic/Sorted; $2$;
+        if (i.(Lscala/collection/Iterator;::isEmpty()Z;)())
+          {
+            $2$ = $this.(Lscala/collection/generic/Sorted;::repr()Lscala/collection/generic/Sorted;)();
+          }
+        else
+          {
+            $2$ = $this.(Lscala/collection/generic/Sorted;::until(Ljava/lang/Object;)Lscala/collection/generic/Sorted;)(i.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
+          }
+        $1$ = $2$;
+      }
+    else
+      {
+        $1$ = $this.(Lscala/collection/generic/Sorted;::until(Ljava/lang/Object;)Lscala/collection/generic/Sorted;)(next);
+      }
+    return $1$;
+  }
+  
+  public static Z; hasAll(Lscala/collection/generic/Sorted; $this, Lscala/collection/Iterator; j) {
+    Lscala/collection/Iterator; i = $this.(Lscala/collection/generic/Sorted;::keySet()Lscala/collection/SortedSet;)().(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    if (i.(Lscala/collection/Iterator;::isEmpty()Z;)())
+      {
+        return j.(Lscala/collection/Iterator;::isEmpty()Z;)();
+      }
+    else
+      {
+        
+      }
+    Ljava/lang/Object; in = i.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+    while$1: while(true) {
+      if (j.(Lscala/collection/Iterator;::hasNext()Z;)())
+        {
+          {
+            Ljava/lang/Object; jn = j.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+            while$2: while(true) {
+              I; n = $this.(Lscala/collection/generic/Sorted;::compare(Ljava/lang/Object;Ljava/lang/Object;)I;)(jn, in);
+              Z; $3$;
+              if ((n == 0))
+                {
+                  $3$ = false;
+                }
+              else
+                {
+                  Z; $4$;
+                  if ((n < 0))
+                    {
+                      return false;
+                    }
+                  else
+                    {
+                      Z; $5$;
+                      if (!(i.(Lscala/collection/Iterator;::hasNext()Z;)()))
+                        {
+                          return false;
+                        }
+                      else
+                        {
+                          $5$ = true;
+                        }
+                      $4$ = $5$;
+                    }
+                  $3$ = $4$;
+                }
+              if ($3$)
+                {
+                  in = i.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+                  continue while$2;
+                }
+              else
+                {
+                  
+                }
+              break;
+            }
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return true;
+  }
+  
+  public static V; $init$(Lscala/collection/generic/Sorted; $this) {
+    
+  }
+}

@@ -1,0 +1,23 @@
+public final class Lscala/collection/mutable/LinkedList$; extends Lscala/collection/generic/SeqFactory; implements Lscala/ScalaObject; {
+  public static Lscala/collection/mutable/LinkedList$; MODULE$ = new (Lscala/collection/mutable/LinkedList$;::this()V;)();
+  
+  public Lscala/collection/mutable/LinkedList; empty() {
+    return (new (Lscala/collection/mutable/LinkedList;::this()V;)());
+  }
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return (new (Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;::this(Lscala/collection/generic/TraversableFactory;)V;)(this));
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return (new (Lscala/collection/mutable/MutableList;::this()V;)()).(Lscala/collection/mutable/Builder;::mapResult(Lscala/Function1;)Lscala/collection/mutable/Builder;)((new (Lscala/collection/mutable/LinkedList$$anonfun$newBuilder$1;::this()V;)()));
+  }
+  
+  public Lscala/collection/Traversable; empty() {
+    return this.(Lscala/collection/mutable/LinkedList$;::empty()Lscala/collection/mutable/LinkedList;)();
+  }
+  
+  public this() {
+    (Lscala/collection/generic/SeqFactory;::super()V;)();
+  }
+}

@@ -1,0 +1,19 @@
+public abstract class Lscala/collection/immutable/DefaultMap$class; {
+  
+  public static Lscala/collection/immutable/Map; $plus(Lscala/collection/immutable/DefaultMap; $this, Lscala/Tuple2; kv) {
+    Lscala/collection/mutable/Builder; b = Lscala/collection/immutable/Map$;.MODULE$.(Lscala/collection/generic/MapFactory;::newBuilder()Lscala/collection/mutable/Builder;)();
+    b.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)($this);
+    b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(kv.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), kv.(Lscala/Tuple2;::_2()Ljava/lang/Object;)())));
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Map;);
+  }
+  
+  public static Lscala/collection/immutable/Map; $minus(Lscala/collection/immutable/DefaultMap; $this, Ljava/lang/Object; key$1) {
+    Lscala/collection/mutable/Builder; b$1 = $this.(Lscala/collection/MapLike;::newBuilder()Lscala/collection/mutable/Builder;)();
+    $this.(Lscala/collection/TraversableLike;::withFilter(Lscala/Function1;)Lscala/collection/generic/FilterMonadic;)((new (Lscala/collection/immutable/DefaultMap$$anonfun$$minus$1;::this(Lscala/collection/immutable/DefaultMap;Ljava/lang/Object;)V;)($this, key$1))).(Lscala/collection/generic/FilterMonadic;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/DefaultMap$$anonfun$$minus$2;::this(Lscala/collection/immutable/DefaultMap;Lscala/collection/mutable/Builder;)V;)($this, b$1)));
+    return b$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Map;);
+  }
+  
+  public static V; $init$(Lscala/collection/immutable/DefaultMap; $this) {
+    
+  }
+}

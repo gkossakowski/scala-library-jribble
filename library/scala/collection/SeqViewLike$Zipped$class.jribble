@@ -1,0 +1,27 @@
+public abstract class Lscala/collection/SeqViewLike$Zipped$class; {
+  
+  public static Lscala/collection/Seq; thatSeq(Lscala/collection/SeqViewLike$Zipped; $this) {
+    return $this.(Lscala/collection/IterableViewLike$Zipped;::other()Lscala/collection/Iterable;)().(Lscala/collection/IterableLike;::toSeq()Lscala/collection/Seq;)();
+  }
+  
+  public static I; length(Lscala/collection/SeqViewLike$Zipped; $this) {
+    I; $7$;
+    if (($this.(Lscala/collection/SeqViewLike$Zipped;::thatSeq()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::lengthCompare(I;)I;)($this.(Lscala/collection/SeqViewLike$Zipped;::scala$collection$SeqViewLike$Zipped$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::length()I;)()) <= 0))
+      {
+        $7$ = $this.(Lscala/collection/SeqViewLike$Zipped;::thatSeq()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::length()I;)();
+      }
+    else
+      {
+        $7$ = $this.(Lscala/collection/SeqViewLike$Zipped;::scala$collection$SeqViewLike$Zipped$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::length()I;)();
+      }
+    return $7$;
+  }
+  
+  public static Lscala/Tuple2; apply(Lscala/collection/SeqViewLike$Zipped; $this, I; idx) {
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)($this.(Lscala/collection/SeqViewLike$Zipped;::scala$collection$SeqViewLike$Zipped$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(idx), $this.(Lscala/collection/SeqViewLike$Zipped;::thatSeq()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(idx)));
+  }
+  
+  public static V; $init$(Lscala/collection/SeqViewLike$Zipped; $this) {
+    
+  }
+}

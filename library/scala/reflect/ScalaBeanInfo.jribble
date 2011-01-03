@@ -1,0 +1,57 @@
+public abstract class Lscala/reflect/ScalaBeanInfo; extends Ljava/beans/SimpleBeanInfo; implements Lscala/ScalaObject; {
+  
+  private Ljava/lang/Class; clazz;
+  
+  private Ljava/lang/String;[ props;
+  
+  public Ljava/lang/String;[ scala$reflect$ScalaBeanInfo$$methods;
+  
+  private Ljava/beans/PropertyDescriptor;[ pd$u0020;
+  
+  private Ljava/beans/PropertyDescriptor;[ pd() {
+    return this.(Ljava/beans/PropertyDescriptor;[)pd$u0020;
+  }
+  
+  private Ljava/beans/MethodDescriptor;[ md$u0020;
+  
+  private Ljava/beans/MethodDescriptor;[ md() {
+    return this.(Ljava/beans/MethodDescriptor;[)md$u0020;
+  }
+  
+  public Ljava/beans/PropertyDescriptor;[ getPropertyDescriptors() {
+    return this.(Lscala/reflect/ScalaBeanInfo;::pd()Ljava/beans/PropertyDescriptor;[)();
+  }
+  
+  public Ljava/beans/MethodDescriptor;[ getMethodDescriptors() {
+    return this.(Lscala/reflect/ScalaBeanInfo;::md()Ljava/beans/MethodDescriptor;[)();
+  }
+  
+  private V; init() {
+    I; i = 0;
+    while$1: while(true) {
+      if ((i < this.(Ljava/lang/String;[)props.<length>))
+        {
+          {
+            this.(Lscala/reflect/ScalaBeanInfo;::pd()Ljava/beans/PropertyDescriptor;[)()[(i / 3)] = (new (Ljava/beans/PropertyDescriptor;::this(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V;)(this.(Ljava/lang/String;[)props[i], this.(Ljava/lang/Class;)clazz, this.(Ljava/lang/String;[)props[(i + 1)], this.(Ljava/lang/String;[)props[(i + 2)]));
+            i = (i + 3);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  public this(Ljava/lang/Class; clazz, Ljava/lang/String;[ props, Ljava/lang/String;[ methods) {
+    this.(Ljava/lang/Class;)clazz = clazz;
+    this.(Ljava/lang/String;[)props = props;
+    this.(Ljava/lang/String;[)scala$reflect$ScalaBeanInfo$$methods = methods;
+    (Ljava/beans/SimpleBeanInfo;::super()V;)();
+    this.(Ljava/beans/PropertyDescriptor;[)pd$u0020 = new Ljava/beans/PropertyDescriptor;[(props.<length> / 3)];
+    this.(Ljava/beans/MethodDescriptor;[)md$u0020 = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(clazz.(Ljava/lang/Class;::getMethods()Ljava/lang/reflect/Method;[)().<cast>(Ljava/lang/Object;[)).(Lscala/collection/TraversableLike;::withFilter(Lscala/Function1;)Lscala/collection/generic/FilterMonadic;)((new (Lscala/reflect/ScalaBeanInfo$$anonfun$1;::this(Lscala/reflect/ScalaBeanInfo;)V;)(this))).(Lscala/collection/generic/FilterMonadic;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/reflect/ScalaBeanInfo$$anonfun$2;::this(Lscala/reflect/ScalaBeanInfo;)V;)(this)), Lscala/Array$;.MODULE$.(Lscala/Array$;::canBuildFrom(Lscala/reflect/ClassManifest;)Lscala/collection/generic/CanBuildFrom;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;)Lscala/reflect/ClassManifest;)(Ljava/beans/MethodDescriptor;.class))).<cast>(Ljava/beans/MethodDescriptor;[);
+    this.(Lscala/reflect/ScalaBeanInfo;::init()V;)();
+  }
+}

@@ -1,0 +1,35 @@
+public final class Lscala/collection/TraversableLike$WithFilter$$anonfun$flatMap$2; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; x) {
+    Ljava/lang/Object; $4$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/collection/TraversableLike$WithFilter;)$outer$u0020.(Lscala/Function1;)scala$collection$TraversableLike$WithFilter$$p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x)))
+      {
+        $4$ = this.(Lscala/collection/mutable/Builder;)b$15.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this.(Lscala/Function1;)f$5.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x).<cast>(Lscala/collection/TraversableOnce;));
+      }
+    else
+      {
+        $4$ = Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+      }
+    return $4$;
+  }
+  
+  private Lscala/collection/TraversableLike$WithFilter; $outer$u0020;
+  
+  private Lscala/Function1; f$5;
+  
+  private Lscala/collection/mutable/Builder; b$15;
+  
+  public this(Lscala/collection/TraversableLike$WithFilter; $outer, Lscala/Function1; f$5, Lscala/collection/mutable/Builder; b$15) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/TraversableLike$WithFilter;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/Function1;)f$5 = f$5;
+    this.(Lscala/collection/mutable/Builder;)b$15 = b$15;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

@@ -1,0 +1,18 @@
+public abstract class Lscala/collection/IndexedSeqLike$class; {
+  
+  public static Lscala/collection/IndexedSeq; thisCollection(Lscala/collection/IndexedSeqLike; $this) {
+    return $this.<cast>(Lscala/collection/IndexedSeq;);
+  }
+  
+  public static Lscala/collection/IndexedSeq; toCollection(Lscala/collection/IndexedSeqLike; $this, Ljava/lang/Object; repr) {
+    return repr.<cast>(Lscala/collection/IndexedSeq;);
+  }
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/IndexedSeqLike; $this) {
+    return (new (Lscala/collection/IndexedSeqLike$Elements;::this(Lscala/collection/IndexedSeqLike;I;I;)V;)($this, 0, $this.(Lscala/collection/SeqLike;::length()I;)()));
+  }
+  
+  public static V; $init$(Lscala/collection/IndexedSeqLike; $this) {
+    
+  }
+}

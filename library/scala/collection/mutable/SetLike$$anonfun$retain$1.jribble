@@ -1,0 +1,32 @@
+public final class Lscala/collection/mutable/SetLike$$anonfun$retain$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; elem) {
+    Ljava/lang/Object; $1$;
+    if (!(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Function1;)p$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(elem))))
+      {
+        $1$ = this.(Lscala/collection/mutable/SetLike;)$outer$u0020.(Lscala/collection/mutable/SetLike;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SetLike;)(elem);
+      }
+    else
+      {
+        $1$ = Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+      }
+    return $1$;
+  }
+  
+  private Lscala/collection/mutable/SetLike; $outer$u0020;
+  
+  private Lscala/Function1; p$1;
+  
+  public this(Lscala/collection/mutable/SetLike; $outer, Lscala/Function1; p$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/SetLike;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/Function1;)p$1 = p$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

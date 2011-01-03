@@ -1,0 +1,95 @@
+public class Lscala/util/regexp/WordExp$Wildcard; extends Lscala/util/regexp/Base$RegExp; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  protected I; bitmap$0 = 0;
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  private final Z; isNullable$u0020;
+  
+  public final Z; isNullable() {
+    if (((this.(I;)bitmap$0 & 1) == 0))
+      {
+        if (((this.(I;)bitmap$0 & 1) == 0))
+          {
+            this.(Z;)isNullable$u0020 = false;
+            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 1);
+          }
+      }
+    return this.(Z;)isNullable$u0020;
+  }
+  
+  private I; pos$u0020;
+  
+  public I; pos() {
+    return this.(I;)pos$u0020;
+  }
+  
+  public V; pos_$eq(I; x$1) {
+    this.(I;)pos$u0020 = x$1;
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp5 = x$1;
+    Z; $4$;
+    if ((temp5.<instanceof>(Lscala/util/regexp/WordExp$Wildcard;) && (temp5.<cast>(Lscala/util/regexp/WordExp$Wildcard;).(Lscala/util/regexp/WordExp$Wildcard;::scala$util$regexp$WordExp$Wildcard$$$outer()Lscala/util/regexp/WordExp;)() == this.(Lscala/util/regexp/WordExp$Wildcard;::scala$util$regexp$WordExp$Wildcard$$$outer()Lscala/util/regexp/WordExp;)())))
+      {
+        $4$ = x$1.<cast>(Lscala/util/regexp/WordExp$Wildcard;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+      }
+    else
+      {
+        $4$ = false;
+      }
+    return ((this == x$1) || $4$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Wildcard";
+  }
+  
+  public I; productArity() {
+    return 0;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp7 = x$1;
+    throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/util/regexp/WordExp$Wildcard;);
+  }
+  
+  protected Lscala/util/regexp/WordExp; $outer$u0020;
+  
+  public Lscala/util/regexp/WordExp; scala$util$regexp$WordExp$Wildcard$$$outer() {
+    return this.(Lscala/util/regexp/WordExp;)$outer$u0020;
+  }
+  
+  public this(Lscala/util/regexp/WordExp; $outer) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/util/regexp/WordExp;)$outer$u0020 = $outer;
+      }
+    (Lscala/util/regexp/Base$RegExp;::super(Lscala/util/regexp/Base;)V;)($outer);
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+    this.(I;)pos$u0020 = -1;
+  }
+}

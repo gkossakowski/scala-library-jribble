@@ -1,0 +1,94 @@
+public final class Lscala/xml/Equality$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/xml/Equality$; MODULE$ = new (Lscala/xml/Equality$;::this()V;)();
+  
+  public Ljava/lang/Object; asRef(Ljava/lang/Object; x) {
+    return x;
+  }
+  
+  public Z; compareBlithely(Ljava/lang/Object; x1, Ljava/lang/String; x2) {
+    Ljava/lang/Object; temp1 = x1;
+    Z; $1$;
+    if (temp1.<instanceof>(Lscala/xml/Atom;))
+      {
+        $1$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp1.<cast>(Lscala/xml/Atom;).(Lscala/xml/Atom;::data()Ljava/lang/Object;)(), x2);
+      }
+    else
+      {
+        Z; $2$;
+        if (temp1.<instanceof>(Lscala/xml/NodeSeq;))
+          {
+            $2$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp1.<cast>(Lscala/xml/NodeSeq;).(Lscala/xml/NodeSeq;::text()Ljava/lang/String;)(), x2);
+          }
+        else
+          {
+            $2$ = false;
+          }
+        $1$ = $2$;
+      }
+    return $1$;
+  }
+  
+  public Z; compareBlithely(Ljava/lang/Object; x1, Lscala/xml/Node; x2) {
+    Ljava/lang/Object; temp4 = x1;
+    Z; $3$;
+    if (temp4.<instanceof>(Lscala/xml/NodeSeq;))
+      {
+        Lscala/xml/NodeSeq; temp5 = temp4.<cast>(Lscala/xml/NodeSeq;);
+        Lscala/xml/NodeSeq; x = temp5;
+        Z; $4$;
+        if (this.(Lscala/xml/Equality$;::gd1$1(Lscala/xml/NodeSeq;)Z;)(x))
+          {
+            $4$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x2, temp5.(Lscala/xml/NodeSeq;::apply(I;)Lscala/xml/Node;)(0));
+          }
+        else
+          {
+            $4$ = false;
+          }
+        $3$ = $4$;
+      }
+    else
+      {
+        $3$ = false;
+      }
+    return $3$;
+  }
+  
+  public Z; compareBlithely(Ljava/lang/Object; x1, Ljava/lang/Object; x2) {
+    if ((Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x1, null) || Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x2, null)))
+      {
+        return (x1 == x2);
+      }
+    else
+      {
+        
+      }
+    Ljava/lang/Object; temp6 = x2;
+    Z; $5$;
+    if (temp6.<instanceof>(Ljava/lang/String;))
+      {
+        $5$ = this.(Lscala/xml/Equality$;::compareBlithely(Ljava/lang/Object;Ljava/lang/String;)Z;)(x1, temp6.<cast>(Ljava/lang/String;));
+      }
+    else
+      {
+        Z; $6$;
+        if (temp6.<instanceof>(Lscala/xml/Node;))
+          {
+            $6$ = this.(Lscala/xml/Equality$;::compareBlithely(Ljava/lang/Object;Lscala/xml/Node;)Z;)(x1, temp6.<cast>(Lscala/xml/Node;));
+          }
+        else
+          {
+            $6$ = false;
+          }
+        $5$ = $6$;
+      }
+    return $5$;
+  }
+  
+  private final Z; gd1$1(Lscala/xml/NodeSeq; x$1) {
+    return (x$1.(Lscala/xml/NodeSeq;::length()I;)() == 1);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

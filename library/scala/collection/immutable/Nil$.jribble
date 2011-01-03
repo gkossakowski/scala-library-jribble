@@ -1,0 +1,62 @@
+public final class Lscala/collection/immutable/Nil$; extends Lscala/collection/immutable/List; implements Lscala/ScalaObject;, Lscala/Product; {
+  public static Lscala/collection/immutable/Nil$; MODULE$ = new (Lscala/collection/immutable/Nil$;::this()V;)();
+  
+  public Z; isEmpty() {
+    return true;
+  }
+  
+  public Lscala/runtime/Nothing$; head() {
+    throw (new (Ljava/util/NoSuchElementException;::this(Ljava/lang/String;)V;)("head of empty list"));
+  }
+  
+  public Lscala/collection/immutable/List; tail() {
+    throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)("tail of empty list"));
+  }
+  
+  public Z; equals(Ljava/lang/Object; that) {
+    Ljava/lang/Object; temp21 = that;
+    Z; $19$;
+    if (temp21.<instanceof>(Lscala/collection/immutable/Seq;))
+      {
+        $19$ = temp21.<cast>(Lscala/collection/immutable/Seq;).(Lscala/collection/IterableLike;::isEmpty()Z;)();
+      }
+    else
+      {
+        $19$ = false;
+      }
+    return $19$;
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Nil";
+  }
+  
+  public I; productArity() {
+    return 0;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp23 = x$1;
+    throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/immutable/Nil$;.MODULE$;
+  }
+  
+  public Lscala/collection/LinearSeqOptimized; tail() {
+    return this.(Lscala/collection/immutable/Nil$;::tail()Lscala/collection/immutable/List;)();
+  }
+  
+  public Ljava/lang/Object; tail() {
+    return this.(Lscala/collection/immutable/Nil$;::tail()Lscala/collection/immutable/List;)();
+  }
+  
+  public Ljava/lang/Object; head() {
+    this.(Lscala/collection/immutable/Nil$;::head()Lscala/runtime/Nothing$;)();
+  }
+  
+  public this() {
+    (Lscala/collection/immutable/List;::super()V;)();
+  }
+}

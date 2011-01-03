@@ -1,0 +1,19 @@
+public final class Lscala/collection/mutable/Set$; extends Lscala/collection/generic/MutableSetFactory; implements Lscala/ScalaObject; {
+  public static Lscala/collection/mutable/Set$; MODULE$ = new (Lscala/collection/mutable/Set$;::this()V;)();
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return this.(Lscala/collection/generic/SetFactory;::setCanBuildFrom()Lscala/collection/generic/CanBuildFrom;)();
+  }
+  
+  public Lscala/collection/mutable/Set; empty() {
+    return Lscala/collection/mutable/HashSet$;.MODULE$.(Lscala/collection/mutable/HashSet$;::empty()Lscala/collection/mutable/HashSet;)();
+  }
+  
+  public Lscala/collection/Traversable; empty() {
+    return this.(Lscala/collection/mutable/Set$;::empty()Lscala/collection/mutable/Set;)();
+  }
+  
+  public this() {
+    (Lscala/collection/generic/MutableSetFactory;::super()V;)();
+  }
+}

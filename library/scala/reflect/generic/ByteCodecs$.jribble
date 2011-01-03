@@ -1,0 +1,359 @@
+public final class Lscala/reflect/generic/ByteCodecs$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/reflect/generic/ByteCodecs$; MODULE$ = new (Lscala/reflect/generic/ByteCodecs$;::this()V;)();
+  
+  public B;[ avoidZero(B;[ src) {
+    I; i = 0;
+    I; srclen = src.<length>;
+    I; count = 0;
+    while$1: while(true) {
+      if ((i < srclen))
+        {
+          {
+            if ((src[i] == 127))
+              {
+                count = (count + 1);
+              }
+            else
+              {
+                
+              }
+            i = (i + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    B;[ dst = new B;[(srclen + count)];
+    i = 0;
+    I; j = 0;
+    while$2: while(true) {
+      if ((i < srclen))
+        {
+          {
+            B; in = src[i];
+            if ((in == 127))
+              {
+                dst[j] = 192.<cast>(B;);
+                dst[(j + 1)] = 128.<cast>(B;);
+                j = (j + 2);
+              }
+            else
+              {
+                dst[j] = (in + 1).<cast>(B;);
+                j = (j + 1);
+              }
+            i = (i + 1);
+          }
+          continue while$2;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return dst;
+  }
+  
+  public I; regenerateZero(B;[ src) {
+    I; i = 0;
+    I; srclen = src.<length>;
+    I; j = 0;
+    while$3: while(true) {
+      if ((i < srclen))
+        {
+          {
+            I; in = (src[i] & 255);
+            if (((in == 192) && ((src[(i + 1)] & 255) == 128)))
+              {
+                src[j] = 127;
+                i = (i + 2);
+              }
+            else
+              {
+                src[j] = (in - 1).<cast>(B;);
+                i = (i + 1);
+              }
+            j = (j + 1);
+          }
+          continue while$3;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return j;
+  }
+  
+  public B;[ encode8to7(B;[ src) {
+    I; srclen = src.<length>;
+    I; dstlen = (((srclen * 8) + 6) / 7);
+    B;[ dst = new B;[dstlen];
+    I; i = 0;
+    I; j = 0;
+    while$4: while(true) {
+      if (((i + 6) < srclen))
+        {
+          {
+            I; in = (src[i] & 255);
+            dst[j] = (in & 127).<cast>(B;);
+            I; out = (in >> 7);
+            in = (src[(i + 1)] & 255);
+            dst[(j + 1)] = (out | ((in << 1) & 127)).<cast>(B;);
+            out = (in >> 6);
+            in = (src[(i + 2)] & 255);
+            dst[(j + 2)] = (out | ((in << 2) & 127)).<cast>(B;);
+            out = (in >> 5);
+            in = (src[(i + 3)] & 255);
+            dst[(j + 3)] = (out | ((in << 3) & 127)).<cast>(B;);
+            out = (in >> 4);
+            in = (src[(i + 4)] & 255);
+            dst[(j + 4)] = (out | ((in << 4) & 127)).<cast>(B;);
+            out = (in >> 3);
+            in = (src[(i + 5)] & 255);
+            dst[(j + 5)] = (out | ((in << 5) & 127)).<cast>(B;);
+            out = (in >> 2);
+            in = (src[(i + 6)] & 255);
+            dst[(j + 6)] = (out | ((in << 6) & 127)).<cast>(B;);
+            out = (in >> 1);
+            dst[(j + 7)] = out.<cast>(B;);
+            i = (i + 7);
+            j = (j + 8);
+          }
+          continue while$4;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    if ((i < srclen))
+      {
+        I; in = (src[i] & 255);
+        dst[j] = (in & 127).<cast>(B;);
+        j = (j + 1);
+        I; out = (in >> 7);
+        if (((i + 1) < srclen))
+          {
+            in = (src[(i + 1)] & 255);
+            dst[j] = (out | ((in << 1) & 127)).<cast>(B;);
+            j = (j + 1);
+            out = (in >> 6);
+            if (((i + 2) < srclen))
+              {
+                in = (src[(i + 2)] & 255);
+                dst[j] = (out | ((in << 2) & 127)).<cast>(B;);
+                j = (j + 1);
+                out = (in >> 5);
+                if (((i + 3) < srclen))
+                  {
+                    in = (src[(i + 3)] & 255);
+                    dst[j] = (out | ((in << 3) & 127)).<cast>(B;);
+                    j = (j + 1);
+                    out = (in >> 4);
+                    if (((i + 4) < srclen))
+                      {
+                        in = (src[(i + 4)] & 255);
+                        dst[j] = (out | ((in << 4) & 127)).<cast>(B;);
+                        j = (j + 1);
+                        out = (in >> 3);
+                        if (((i + 5) < srclen))
+                          {
+                            in = (src[(i + 5)] & 255);
+                            dst[j] = (out | ((in << 5) & 127)).<cast>(B;);
+                            j = (j + 1);
+                            out = (in >> 2);
+                          }
+                        else
+                          {
+                            
+                          }
+                      }
+                    else
+                      {
+                        
+                      }
+                  }
+                else
+                  {
+                    
+                  }
+              }
+            else
+              {
+                
+              }
+          }
+        else
+          {
+            
+          }
+        if ((j < dstlen))
+          {
+            dst[j] = out.<cast>(B;);
+          }
+        else
+          {
+            
+          }
+      }
+    else
+      {
+        
+      }
+    return dst;
+  }
+  
+  public V; decode7to8(B;[ src, I; srclen, I; dstlen) {
+    this.(Lscala/reflect/generic/ByteCodecs$;::decode7to8(B;[I;)I;)(src, srclen);
+  }
+  
+  public I; decode7to8(B;[ src, I; srclen) {
+    I; i = 0;
+    I; j = 0;
+    I; dstlen = (((srclen * 7) + 7) / 8);
+    while$5: while(true) {
+      if (((i + 7) < srclen))
+        {
+          {
+            I; out = src[i].<cast>(I;);
+            B; in = src[(i + 1)];
+            src[j] = (out | ((in & 1) << 7)).<cast>(B;);
+            out = (in >> 1);
+            in = src[(i + 2)];
+            src[(j + 1)] = (out | ((in & 3) << 6)).<cast>(B;);
+            out = (in >> 2);
+            in = src[(i + 3)];
+            src[(j + 2)] = (out | ((in & 7) << 5)).<cast>(B;);
+            out = (in >> 3);
+            in = src[(i + 4)];
+            src[(j + 3)] = (out | ((in & 15) << 4)).<cast>(B;);
+            out = (in >> 4);
+            in = src[(i + 5)];
+            src[(j + 4)] = (out | ((in & 31) << 3)).<cast>(B;);
+            out = (in >> 5);
+            in = src[(i + 6)];
+            src[(j + 5)] = (out | ((in & 63) << 2)).<cast>(B;);
+            out = (in >> 6);
+            in = src[(i + 7)];
+            src[(j + 6)] = (out | (in << 1)).<cast>(B;);
+            i = (i + 8);
+            j = (j + 7);
+          }
+          continue while$5;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    if ((i < srclen))
+      {
+        I; out = src[i].<cast>(I;);
+        if (((i + 1) < srclen))
+          {
+            B; in = src[(i + 1)];
+            src[j] = (out | ((in & 1) << 7)).<cast>(B;);
+            j = (j + 1);
+            out = (in >> 1);
+            if (((i + 2) < srclen))
+              {
+                in = src[(i + 2)];
+                src[j] = (out | ((in & 3) << 6)).<cast>(B;);
+                j = (j + 1);
+                out = (in >> 2);
+                if (((i + 3) < srclen))
+                  {
+                    in = src[(i + 3)];
+                    src[j] = (out | ((in & 7) << 5)).<cast>(B;);
+                    j = (j + 1);
+                    out = (in >> 3);
+                    if (((i + 4) < srclen))
+                      {
+                        in = src[(i + 4)];
+                        src[j] = (out | ((in & 15) << 4)).<cast>(B;);
+                        j = (j + 1);
+                        out = (in >> 4);
+                        if (((i + 5) < srclen))
+                          {
+                            in = src[(i + 5)];
+                            src[j] = (out | ((in & 31) << 3)).<cast>(B;);
+                            j = (j + 1);
+                            out = (in >> 5);
+                            if (((i + 6) < srclen))
+                              {
+                                in = src[(i + 6)];
+                                src[j] = (out | ((in & 63) << 2)).<cast>(B;);
+                                j = (j + 1);
+                                out = (in >> 6);
+                              }
+                            else
+                              {
+                                
+                              }
+                          }
+                        else
+                          {
+                            
+                          }
+                      }
+                    else
+                      {
+                        
+                      }
+                  }
+                else
+                  {
+                    
+                  }
+              }
+            else
+              {
+                
+              }
+          }
+        else
+          {
+            
+          }
+        if ((j < dstlen))
+          {
+            src[j] = out.<cast>(B;);
+          }
+        else
+          {
+            
+          }
+      }
+    else
+      {
+        
+      }
+    return dstlen;
+  }
+  
+  public B;[ encode(B;[ xs) {
+    return this.(Lscala/reflect/generic/ByteCodecs$;::avoidZero(B;[)B;[)(this.(Lscala/reflect/generic/ByteCodecs$;::encode8to7(B;[)B;[)(xs));
+  }
+  
+  public V; decode(B;[ xs, I; dstlen) {
+    this.(Lscala/reflect/generic/ByteCodecs$;::decode(B;[)I;)(xs);
+  }
+  
+  public I; decode(B;[ xs) {
+    I; len = this.(Lscala/reflect/generic/ByteCodecs$;::regenerateZero(B;[)I;)(xs);
+    return this.(Lscala/reflect/generic/ByteCodecs$;::decode7to8(B;[I;)I;)(xs, len);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

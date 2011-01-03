@@ -1,0 +1,26 @@
+public interface Lscala/collection/IterableProxyLike; extends Lscala/collection/IterableLike;, Lscala/collection/TraversableProxyLike;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/Iterator; iterator();
+  
+  public Lscala/collection/Iterator; grouped(I; size);
+  
+  public Lscala/collection/Iterator; sliding(I; size);
+  
+  public Lscala/collection/Iterator; sliding(I; size, I; step);
+  
+  public Lscala/collection/Iterable; takeRight(I; n);
+  
+  public Lscala/collection/Iterable; dropRight(I; n);
+  
+  public Ljava/lang/Object; zip(Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; zipAll(Lscala/collection/Iterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; zipWithIndex(Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Z; sameElements(Lscala/collection/Iterable; that);
+  
+  public Lscala/collection/IterableView; view();
+  
+  public Lscala/collection/IterableView; view(I; from, I; until);
+}

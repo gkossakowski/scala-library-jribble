@@ -1,0 +1,35 @@
+public abstract class Lscala/collection/generic/GenericTraversableTemplate$class; {
+  
+  public static Lscala/collection/mutable/Builder; newBuilder(Lscala/collection/generic/GenericTraversableTemplate; $this) {
+    return $this.(Lscala/collection/generic/GenericTraversableTemplate;::companion()Lscala/collection/generic/GenericCompanion;)().(Lscala/collection/generic/GenericCompanion;::newBuilder()Lscala/collection/mutable/Builder;)();
+  }
+  
+  public static Lscala/collection/mutable/Builder; genericBuilder(Lscala/collection/generic/GenericTraversableTemplate; $this) {
+    return $this.(Lscala/collection/generic/GenericTraversableTemplate;::companion()Lscala/collection/generic/GenericCompanion;)().(Lscala/collection/generic/GenericCompanion;::newBuilder()Lscala/collection/mutable/Builder;)();
+  }
+  
+  public static Lscala/Tuple2; unzip(Lscala/collection/generic/GenericTraversableTemplate; $this, Lscala/Function1; asPair$1) {
+    Lscala/collection/mutable/Builder; b1$1 = $this.(Lscala/collection/generic/GenericTraversableTemplate;::genericBuilder()Lscala/collection/mutable/Builder;)();
+    Lscala/collection/mutable/Builder; b2$1 = $this.(Lscala/collection/generic/GenericTraversableTemplate;::genericBuilder()Lscala/collection/mutable/Builder;)();
+    $this.(Lscala/collection/generic/GenericTraversableTemplate;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/generic/GenericTraversableTemplate$$anonfun$unzip$1;::this(Lscala/collection/generic/GenericTraversableTemplate;Lscala/Function1;Lscala/collection/mutable/Builder;Lscala/collection/mutable/Builder;)V;)($this, asPair$1, b1$1, b2$1)));
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(b1$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)(), b2$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)()));
+  }
+  
+  public static Lscala/collection/Traversable; flatten(Lscala/collection/generic/GenericTraversableTemplate; $this, Lscala/Function1; asTraversable$1) {
+    Lscala/collection/mutable/Builder; b$1 = $this.(Lscala/collection/generic/GenericTraversableTemplate;::genericBuilder()Lscala/collection/mutable/Builder;)();
+    $this.(Lscala/collection/generic/GenericTraversableTemplate;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/generic/GenericTraversableTemplate$$anonfun$flatten$1;::this(Lscala/collection/generic/GenericTraversableTemplate;Lscala/Function1;Lscala/collection/mutable/Builder;)V;)($this, asTraversable$1, b$1)));
+    return b$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public static Lscala/collection/Traversable; transpose(Lscala/collection/generic/GenericTraversableTemplate; $this, Lscala/Function1; asTraversable$2) {
+    Lscala/collection/IndexedSeq; bs$1 = Lscala/collection/IndexedSeq$;.MODULE$.(Lscala/collection/generic/TraversableFactory;::fill(I;Lscala/Function0;)Lscala/collection/Traversable;)(asTraversable$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)($this.(Lscala/collection/generic/GenericTraversableTemplate;::head()Ljava/lang/Object;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::size()I;)(), (new (Lscala/collection/generic/GenericTraversableTemplate$$anonfun$1;::this(Lscala/collection/generic/GenericTraversableTemplate;)V;)($this))).<cast>(Lscala/collection/IndexedSeq;);
+    $this.(Lscala/collection/generic/GenericTraversableTemplate;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1;::this(Lscala/collection/generic/GenericTraversableTemplate;Lscala/Function1;Lscala/collection/IndexedSeq;)V;)($this, asTraversable$2, bs$1)));
+    Lscala/collection/mutable/Builder; bb$1 = $this.(Lscala/collection/generic/GenericTraversableTemplate;::genericBuilder()Lscala/collection/mutable/Builder;)();
+    bs$1.(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$2;::this(Lscala/collection/generic/GenericTraversableTemplate;Lscala/collection/mutable/Builder;)V;)($this, bb$1)));
+    return bb$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public static V; $init$(Lscala/collection/generic/GenericTraversableTemplate; $this) {
+    
+  }
+}

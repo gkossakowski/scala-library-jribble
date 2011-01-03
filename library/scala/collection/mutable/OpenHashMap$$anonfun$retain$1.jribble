@@ -1,0 +1,37 @@
+public final class Lscala/collection/mutable/OpenHashMap$$anonfun$retain$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(Lscala/collection/mutable/OpenHashMap$OpenEntry; entry) {
+    if (!(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Function2;)f$4.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(entry.(Lscala/collection/mutable/OpenHashMap$OpenEntry;::key()Ljava/lang/Object;)(), entry.(Lscala/collection/mutable/OpenHashMap$OpenEntry;::value()Lscala/Option;)().(Lscala/Option;::get()Ljava/lang/Object;)()))))
+      {
+        entry.(Lscala/collection/mutable/OpenHashMap$OpenEntry;::value_$eq(Lscala/Option;)V;)(Lscala/None$;.MODULE$);
+        this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$size_$eq(I;)V;)((this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;::size()I;)() - 1));
+        this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$deleted_$eq(I;)V;)((this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;::scala$collection$mutable$OpenHashMap$$deleted()I;)() + 1));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  private Lscala/collection/mutable/OpenHashMap; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/mutable/OpenHashMap$$anonfun$retain$1;::apply(Lscala/collection/mutable/OpenHashMap$OpenEntry;)V;)(v1.<cast>(Lscala/collection/mutable/OpenHashMap$OpenEntry;));
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/Function2; f$4;
+  
+  public this(Lscala/collection/mutable/OpenHashMap; $outer, Lscala/Function2; f$4) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/OpenHashMap;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/Function2;)f$4 = f$4;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

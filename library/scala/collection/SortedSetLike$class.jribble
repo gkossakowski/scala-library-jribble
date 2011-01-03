@@ -1,0 +1,64 @@
+public abstract class Lscala/collection/SortedSetLike$class; {
+  
+  public static Lscala/collection/SortedSet; keySet(Lscala/collection/SortedSetLike; $this) {
+    return $this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/SortedSet;);
+  }
+  
+  public static Ljava/lang/Object; firstKey(Lscala/collection/SortedSetLike; $this) {
+    return $this.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)();
+  }
+  
+  public static Ljava/lang/Object; lastKey(Lscala/collection/SortedSetLike; $this) {
+    return $this.(Lscala/collection/TraversableLike;::last()Ljava/lang/Object;)();
+  }
+  
+  public static Lscala/collection/SortedSet; from(Lscala/collection/SortedSetLike; $this, Ljava/lang/Object; from) {
+    return $this.(Lscala/collection/SortedSetLike;::rangeImpl(Lscala/Option;Lscala/Option;)Lscala/collection/SortedSet;)((new (Lscala/Some;::this(Ljava/lang/Object;)V;)(from)), Lscala/None$;.MODULE$);
+  }
+  
+  public static Lscala/collection/SortedSet; until(Lscala/collection/SortedSetLike; $this, Ljava/lang/Object; until) {
+    return $this.(Lscala/collection/SortedSetLike;::rangeImpl(Lscala/Option;Lscala/Option;)Lscala/collection/SortedSet;)(Lscala/None$;.MODULE$, (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(until)));
+  }
+  
+  public static Lscala/collection/SortedSet; range(Lscala/collection/SortedSetLike; $this, Ljava/lang/Object; from, Ljava/lang/Object; until) {
+    return $this.(Lscala/collection/SortedSetLike;::rangeImpl(Lscala/Option;Lscala/Option;)Lscala/collection/SortedSet;)((new (Lscala/Some;::this(Ljava/lang/Object;)V;)(from)), (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(until)));
+  }
+  
+  public static Z; subsetOf(Lscala/collection/SortedSetLike; $this, Lscala/collection/Set; that) {
+    Lscala/collection/Set; temp1 = that;
+    Z; $1$;
+    if (temp1.<instanceof>(Lscala/collection/SortedSet;))
+      {
+        Lscala/collection/SortedSet; temp2 = temp1.<cast>(Lscala/collection/SortedSet;);
+        Lscala/collection/SortedSet; that = temp2;
+        Z; $2$;
+        if (Lscala/collection/SortedSetLike$class;.(Lscala/collection/SortedSetLike$class;::gd1$1(Lscala/collection/SortedSetLike;Lscala/collection/SortedSet;)Z;)($this, that))
+          {
+            $2$ = temp2.(Lscala/collection/generic/Sorted;::hasAll(Lscala/collection/Iterator;)Z;)($this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)());
+          }
+        else
+          {
+            Lscala/collection/Set; that = temp2;
+            $2$ = Lscala/collection/SortedSetLike$class;.(Lscala/collection/SortedSetLike$class;::body$percent1$percent1(Lscala/collection/Set;)Z;)(that);
+          }
+        $1$ = $2$;
+      }
+    else
+      {
+        $1$ = Lscala/collection/SortedSetLike$class;.(Lscala/collection/SortedSetLike$class;::body$percent1$percent1(Lscala/collection/Set;)Z;)(temp1);
+      }
+    return $1$;
+  }
+  
+  private static final Z; gd1$1(Lscala/collection/SortedSetLike; $this, Lscala/collection/SortedSet; x$1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1.(Lscala/collection/SortedSetLike;::ordering()Lscala/math/Ordering;)(), $this.(Lscala/collection/SortedSetLike;::ordering()Lscala/math/Ordering;)());
+  }
+  
+  public static V; $init$(Lscala/collection/SortedSetLike; $this) {
+    
+  }
+  
+  private static final Z; body$percent1$percent1(Lscala/collection/Set; that) {
+    return $this.(Lscala/collection/SortedSetLike;::scala$collection$SortedSetLike$$super$subsetOf(Lscala/collection/Set;)Z;)(that);
+  }
+}

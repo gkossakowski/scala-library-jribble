@@ -1,0 +1,41 @@
+public final class Lscala/util/regexp/WordExp$Letter$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+  
+  public final Ljava/lang/String; toString() {
+    return "Letter";
+  }
+  
+  public Lscala/Option; unapply(Lscala/util/regexp/WordExp$Letter; x$0) {
+    Lscala/Option; $6$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $6$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $6$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/util/regexp/WordExp$Letter;::a()Lscala/util/regexp/WordExp$Label;)()));
+      }
+    return $6$;
+  }
+  
+  public Lscala/util/regexp/WordExp$Letter; apply(Lscala/util/regexp/WordExp$Label; a) {
+    return (new (Lscala/util/regexp/WordExp$Letter;::this(Lscala/util/regexp/WordExp;Lscala/util/regexp/WordExp$Label;)V;)(this.(Lscala/util/regexp/WordExp;)$outer$u0020, a));
+  }
+  
+  private Lscala/util/regexp/WordExp; $outer$u0020;
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/util/regexp/WordExp$Letter$;::apply(Lscala/util/regexp/WordExp$Label;)Lscala/util/regexp/WordExp$Letter;)(v1.<cast>(Lscala/util/regexp/WordExp$Label;));
+  }
+  
+  public this(Lscala/util/regexp/WordExp; $outer) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/util/regexp/WordExp;)$outer$u0020 = $outer;
+      }
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

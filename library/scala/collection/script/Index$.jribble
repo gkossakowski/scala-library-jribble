@@ -1,0 +1,32 @@
+public final class Lscala/collection/script/Index$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+  public static Lscala/collection/script/Index$; MODULE$ = new (Lscala/collection/script/Index$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "Index";
+  }
+  
+  public Lscala/Option; unapply(Lscala/collection/script/Index; x$0) {
+    Lscala/Option; $4$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $4$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $4$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$0.(Lscala/collection/script/Index;::n()I;)())));
+      }
+    return $4$;
+  }
+  
+  public Lscala/collection/script/Index; apply(I; n) {
+    return (new (Lscala/collection/script/Index;::this(I;)V;)(n));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/collection/script/Index$;::apply(I;)Lscala/collection/script/Index;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

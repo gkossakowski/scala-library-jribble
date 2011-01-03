@@ -1,0 +1,14 @@
+public abstract class Lscala/collection/generic/VolatileAbort$class; {
+  
+  public static Z; isAborted(Lscala/collection/generic/VolatileAbort; $this) {
+    return $this.(Lscala/collection/generic/VolatileAbort;::scala$collection$generic$VolatileAbort$$abortflag()Z;)();
+  }
+  
+  public static V; abort(Lscala/collection/generic/VolatileAbort; $this) {
+    $this.(Lscala/collection/generic/VolatileAbort;::scala$collection$generic$VolatileAbort$$abortflag_$eq(Z;)V;)(true);
+  }
+  
+  public static V; $init$(Lscala/collection/generic/VolatileAbort; $this) {
+    $this.(Lscala/collection/generic/VolatileAbort;::scala$collection$generic$VolatileAbort$$abortflag_$eq(Z;)V;)(false);
+  }
+}

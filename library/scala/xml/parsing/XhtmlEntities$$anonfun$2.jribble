@@ -1,0 +1,26 @@
+public final class Lscala/xml/parsing/XhtmlEntities$$anonfun$2; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Lscala/Tuple2; apply(Lscala/Tuple2; x0$1) {
+    Lscala/Tuple2; temp4 = x0$1;
+    Lscala/Tuple2; $2$;
+    if ((temp4 != null))
+      {
+        Ljava/lang/String; temp5 = temp4.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Ljava/lang/String;);
+        Ljava/lang/String; name = temp5;
+        $2$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(name, (new (Lscala/xml/dtd/ParsedEntityDecl;::this(Ljava/lang/String;Lscala/xml/dtd/EntityDef;)V;)(name, (new (Lscala/xml/dtd/IntDef;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp4.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()).<cast>(C;)).(Ljava/lang/Object;::toString()Ljava/lang/String;)()))))));
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp4));
+      }
+    return $2$;
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/xml/parsing/XhtmlEntities$$anonfun$2;::apply(Lscala/Tuple2;)Lscala/Tuple2;)(v1.<cast>(Lscala/Tuple2;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

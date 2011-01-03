@@ -1,0 +1,137 @@
+public class Lscala/xml/dtd/MIXED; extends Lscala/xml/dtd/DFAContentModel; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/util/regexp/Base$RegExp; copy$default$1() {
+    return this.(Lscala/xml/dtd/MIXED;::r()Lscala/util/regexp/Base$RegExp;)();
+  }
+  
+  private Lscala/util/regexp/Base$RegExp; r$u0020;
+  
+  public Lscala/util/regexp/Base$RegExp; r() {
+    return this.(Lscala/util/regexp/Base$RegExp;)r$u0020;
+  }
+  
+  public Lscala/collection/mutable/StringBuilder; buildString(Lscala/collection/mutable/StringBuilder; sb) {
+    Lscala/util/regexp/Base$RegExp; temp50 = this.(Lscala/xml/dtd/MIXED;::r()Lscala/util/regexp/Base$RegExp;)();
+    Lscala/util/regexp/Base$Alt; $31$;
+    if (temp50.<instanceof>(Lscala/util/regexp/Base$Alt;))
+      {
+        Lscala/util/regexp/Base$Alt; temp51 = temp50.<cast>(Lscala/util/regexp/Base$Alt;);
+        Lscala/Some; temp52 = Lscala/xml/dtd/ContentModel$;.MODULE$.(Lscala/util/regexp/Base;::Alt()Lscala/util/regexp/Base$Alt$;)().(Lscala/util/regexp/Base$Alt$;::unapplySeq(Lscala/util/regexp/Base$Alt;)Lscala/Some;)(temp51);
+        Lscala/util/regexp/Base$Alt; $32$;
+        if (true)
+          {
+            Lscala/collection/Seq; temp53 = temp52.(Lscala/Some;::get()Ljava/lang/Object;)().<cast>(Lscala/collection/Seq;);
+            Z; $33$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp53, null))
+              {
+                $33$ = false;
+              }
+            else
+              {
+                $33$ = (temp53.(Lscala/collection/SeqLike;::lengthCompare(I;)I;)(0) >= 0);
+              }
+            Lscala/util/regexp/Base$Alt; $34$;
+            if ($33$)
+              {
+                $34$ = Lscala/xml/dtd/ContentModel$;.MODULE$.(Lscala/util/regexp/Base;::Alt()Lscala/util/regexp/Base$Alt$;)().(Lscala/util/regexp/Base$Alt$;::apply(Lscala/collection/Seq;)Lscala/util/regexp/Base$Alt;)(temp53.(Lscala/collection/TraversableLike;::drop(I;)Ljava/lang/Object;)(1).<cast>(Lscala/collection/Seq;));
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp50));
+              }
+            $32$ = $34$;
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp50));
+          }
+        $31$ = $32$;
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp50));
+      }
+    Lscala/util/regexp/Base$Alt; newAlt = $31$;
+    sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("(#PCDATA|");
+    Lscala/xml/dtd/ContentModel$;.MODULE$.(Lscala/xml/dtd/ContentModel$;::buildString(Lscala/util/regexp/Base$RegExp;Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(newAlt, sb);
+    return sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(")*");
+  }
+  
+  public Lscala/xml/dtd/MIXED; copy(Lscala/util/regexp/Base$RegExp; r) {
+    return (new (Lscala/xml/dtd/MIXED;::this(Lscala/util/regexp/Base$RegExp;)V;)(r));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp55 = x$1;
+    Z; $35$;
+    if (temp55.<instanceof>(Lscala/xml/dtd/MIXED;))
+      {
+        Lscala/xml/dtd/MIXED; temp56 = temp55.<cast>(Lscala/xml/dtd/MIXED;);
+        Lscala/util/regexp/Base$RegExp; temp57 = temp56.(Lscala/xml/dtd/MIXED;::r()Lscala/util/regexp/Base$RegExp;)();
+        Lscala/util/regexp/Base$RegExp; r$1 = temp57;
+        Z; $36$;
+        if (this.(Lscala/xml/dtd/MIXED;::gd2$1(Lscala/util/regexp/Base$RegExp;)Z;)(r$1))
+          {
+            $36$ = x$1.<cast>(Lscala/xml/dtd/MIXED;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $36$ = false;
+          }
+        $35$ = $36$;
+      }
+    else
+      {
+        $35$ = false;
+      }
+    return ((this == x$1) || $35$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "MIXED";
+  }
+  
+  public I; productArity() {
+    return 1;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp58 = x$1;
+    Ljava/lang/Object; $37$;
+    if ((temp58 == 0))
+      {
+        $37$ = this.(Lscala/xml/dtd/MIXED;::r()Lscala/util/regexp/Base$RegExp;)();
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $37$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/xml/dtd/MIXED;);
+  }
+  
+  private final Z; gd2$1(Lscala/util/regexp/Base$RegExp; x$1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/xml/dtd/MIXED;::r()Lscala/util/regexp/Base$RegExp;)());
+  }
+  
+  public this(Lscala/util/regexp/Base$RegExp; r) {
+    this.(Lscala/util/regexp/Base$RegExp;)r$u0020 = r;
+    (Lscala/xml/dtd/DFAContentModel;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

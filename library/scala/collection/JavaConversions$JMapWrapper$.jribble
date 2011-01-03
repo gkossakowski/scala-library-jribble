@@ -1,0 +1,28 @@
+public final class Lscala/collection/JavaConversions$JMapWrapper$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/JavaConversions$JMapWrapper$; MODULE$ = new (Lscala/collection/JavaConversions$JMapWrapper$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "JMapWrapper";
+  }
+  
+  public Lscala/Option; unapply(Lscala/collection/JavaConversions$JMapWrapper; x$0) {
+    Lscala/Option; $86$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $86$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $86$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/collection/JavaConversions$JMapWrapper;::underlying()Ljava/util/Map;)()));
+      }
+    return $86$;
+  }
+  
+  public Lscala/collection/JavaConversions$JMapWrapper; apply(Ljava/util/Map; underlying) {
+    return (new (Lscala/collection/JavaConversions$JMapWrapper;::this(Ljava/util/Map;)V;)(underlying));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

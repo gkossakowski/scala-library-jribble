@@ -1,0 +1,88 @@
+public interface Lscala/collection/TraversableLike; extends Lscala/collection/generic/HasNewBuilder;, Lscala/collection/generic/FilterMonadic;, Lscala/collection/TraversableOnce;, Lscala/ScalaObject; {
+  
+  public Ljava/lang/Object; repr();
+  
+  public Lscala/collection/Traversable; thisCollection();
+  
+  public Lscala/collection/Traversable; toCollection(Ljava/lang/Object; repr);
+  
+  public Lscala/collection/mutable/Builder; newBuilder();
+  
+  public V; foreach(Lscala/Function1; f);
+  
+  public Z; isEmpty();
+  
+  public Z; isTraversableAgain();
+  
+  public Z; hasDefiniteSize();
+  
+  public Ljava/lang/Object; $plus$plus(Lscala/collection/TraversableOnce; that, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; map(Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; flatMap(Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; filter(Lscala/Function1; p);
+  
+  public Ljava/lang/Object; filterNot(Lscala/Function1; p);
+  
+  public Ljava/lang/Object; collect(Lscala/PartialFunction; pf, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Lscala/Tuple2; partition(Lscala/Function1; p);
+  
+  public Lscala/collection/immutable/Map; groupBy(Lscala/Function1; f);
+  
+  public Z; forall(Lscala/Function1; p);
+  
+  public Z; exists(Lscala/Function1; p);
+  
+  public Lscala/Option; find(Lscala/Function1; p);
+  
+  public Ljava/lang/Object; scanLeft(Ljava/lang/Object; z, Lscala/Function2; op, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; scanRight(Ljava/lang/Object; z, Lscala/Function2; op, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; head();
+  
+  public Lscala/Option; headOption();
+  
+  public Ljava/lang/Object; tail();
+  
+  public Ljava/lang/Object; last();
+  
+  public Lscala/Option; lastOption();
+  
+  public Ljava/lang/Object; init();
+  
+  public Ljava/lang/Object; take(I; n);
+  
+  public Ljava/lang/Object; drop(I; n);
+  
+  public Ljava/lang/Object; slice(I; from, I; until);
+  
+  public Ljava/lang/Object; takeWhile(Lscala/Function1; p);
+  
+  public Ljava/lang/Object; dropWhile(Lscala/Function1; p);
+  
+  public Lscala/Tuple2; span(Lscala/Function1; p);
+  
+  public Lscala/Tuple2; splitAt(I; n);
+  
+  public V; copyToArray(Ljava/lang/Object; xs, I; start, I; len);
+  
+  public Lscala/collection/Traversable; toTraversable();
+  
+  public Lscala/collection/Iterator; toIterator();
+  
+  public Lscala/collection/immutable/Stream; toStream();
+  
+  public Ljava/lang/String; toString();
+  
+  public Ljava/lang/String; stringPrefix();
+  
+  public Lscala/collection/TraversableView; view();
+  
+  public Lscala/collection/TraversableView; view(I; from, I; until);
+  
+  public Lscala/collection/generic/FilterMonadic; withFilter(Lscala/Function1; p);
+}

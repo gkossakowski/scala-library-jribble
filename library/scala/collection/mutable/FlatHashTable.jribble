@@ -1,0 +1,48 @@
+public interface Lscala/collection/mutable/FlatHashTable; extends Lscala/ScalaObject; {
+  
+  public I; loadFactor();
+  
+  public I; loadFactorDenum();
+  
+  public I; initialSize();
+  
+  public Z; scala$collection$mutable$FlatHashTable$$tableDebug();
+  
+  public I; _loadFactor();
+  
+  public V; _loadFactor_$eq(I; x$1);
+  
+  public Ljava/lang/Object;[ table();
+  
+  public V; table_$eq(Ljava/lang/Object;[ x$1);
+  
+  public I; tableSize();
+  
+  public V; tableSize_$eq(I; x$1);
+  
+  public I; threshold();
+  
+  public V; threshold_$eq(I; x$1);
+  
+  public V; init(Ljava/io/ObjectInputStream; in, Lscala/Function1; f);
+  
+  public V; serializeTo(Ljava/io/ObjectOutputStream; out);
+  
+  public Lscala/Option; findEntry(Ljava/lang/Object; elem);
+  
+  public Z; containsEntry(Ljava/lang/Object; elem);
+  
+  public Z; addEntry(Ljava/lang/Object; elem);
+  
+  public Lscala/Option; removeEntry(Ljava/lang/Object; elem);
+  
+  public Lscala/collection/Iterator; iterator();
+  
+  public I; elemHashCode(Ljava/lang/Object; elem);
+  
+  public I; improve(I; hcode);
+  
+  public I; index(I; hcode);
+  
+  public V; clearTable();
+}

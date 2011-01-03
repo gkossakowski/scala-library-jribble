@@ -1,0 +1,115 @@
+public final class Lscala/math/BigInt$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/math/BigInt$; MODULE$ = new (Lscala/math/BigInt$;::this()V;)();
+  
+  private I; minCached$u0020;
+  
+  private I; minCached() {
+    return this.(I;)minCached$u0020;
+  }
+  
+  private I; maxCached$u0020;
+  
+  private I; maxCached() {
+    return this.(I;)maxCached$u0020;
+  }
+  
+  private Lscala/math/BigInt;[ cache$u0020;
+  
+  private Lscala/math/BigInt;[ cache() {
+    return this.(Lscala/math/BigInt;[)cache$u0020;
+  }
+  
+  private Lscala/math/BigInt; MinLong$u0020;
+  
+  public Lscala/math/BigInt; MinLong() {
+    return this.(Lscala/math/BigInt;)MinLong$u0020;
+  }
+  
+  private Lscala/math/BigInt; MaxLong$u0020;
+  
+  public Lscala/math/BigInt; MaxLong() {
+    return this.(Lscala/math/BigInt;)MaxLong$u0020;
+  }
+  
+  public Lscala/math/BigInt; apply(I; i) {
+    Lscala/math/BigInt; $1$;
+    if (((this.(Lscala/math/BigInt$;::minCached()I;)() <= i) && (i <= this.(Lscala/math/BigInt$;::maxCached()I;)())))
+      {
+        I; offset = (i - this.(Lscala/math/BigInt$;::minCached()I;)());
+        Lscala/math/BigInt; n = this.(Lscala/math/BigInt$;::cache()Lscala/math/BigInt;[)()[offset];
+        if ((n == null))
+          {
+            n = (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(Ljava/math/BigInteger;.(Ljava/math/BigInteger;::valueOf(J;)Ljava/math/BigInteger;)(i.<cast>(J;))));
+            this.(Lscala/math/BigInt$;::cache()Lscala/math/BigInt;[)()[offset] = n;
+          }
+        else
+          {
+            
+          }
+        $1$ = n;
+      }
+    else
+      {
+        $1$ = (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(Ljava/math/BigInteger;.(Ljava/math/BigInteger;::valueOf(J;)Ljava/math/BigInteger;)(i.<cast>(J;))));
+      }
+    return $1$;
+  }
+  
+  public Lscala/math/BigInt; apply(J; l) {
+    Lscala/math/BigInt; $2$;
+    if (((this.(Lscala/math/BigInt$;::minCached()I;)() <= l) && (l <= this.(Lscala/math/BigInt$;::maxCached()I;)())))
+      {
+        $2$ = this.(Lscala/math/BigInt$;::apply(I;)Lscala/math/BigInt;)(l.<cast>(I;));
+      }
+    else
+      {
+        $2$ = (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(Ljava/math/BigInteger;.(Ljava/math/BigInteger;::valueOf(J;)Ljava/math/BigInteger;)(l)));
+      }
+    return $2$;
+  }
+  
+  public Lscala/math/BigInt; apply(B;[ x) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)((new (Ljava/math/BigInteger;::this(B;[)V;)(x))));
+  }
+  
+  public Lscala/math/BigInt; apply(I; signum, B;[ magnitude) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)((new (Ljava/math/BigInteger;::this(I;B;[)V;)(signum, magnitude))));
+  }
+  
+  public Lscala/math/BigInt; apply(I; bitlength, I; certainty, Lscala/util/Random; rnd) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)((new (Ljava/math/BigInteger;::this(I;I;Ljava/util/Random;)V;)(bitlength, certainty, rnd.(Lscala/util/Random;::self()Ljava/util/Random;)()))));
+  }
+  
+  public Lscala/math/BigInt; apply(I; numbits, Lscala/util/Random; rnd) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)((new (Ljava/math/BigInteger;::this(I;Ljava/util/Random;)V;)(numbits, rnd.(Lscala/util/Random;::self()Ljava/util/Random;)()))));
+  }
+  
+  public Lscala/math/BigInt; apply(Ljava/lang/String; x) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)((new (Ljava/math/BigInteger;::this(Ljava/lang/String;)V;)(x))));
+  }
+  
+  public Lscala/math/BigInt; apply(Ljava/lang/String; x, I; radix) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)((new (Ljava/math/BigInteger;::this(Ljava/lang/String;I;)V;)(x, radix))));
+  }
+  
+  public Lscala/math/BigInt; probablePrime(I; bitLength, Lscala/util/Random; rnd) {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(Ljava/math/BigInteger;.(Ljava/math/BigInteger;::probablePrime(I;Ljava/util/Random;)Ljava/math/BigInteger;)(bitLength, rnd.(Lscala/util/Random;::self()Ljava/util/Random;)())));
+  }
+  
+  public Lscala/math/BigInt; int2bigInt(I; i) {
+    return this.(Lscala/math/BigInt$;::apply(I;)Lscala/math/BigInt;)(i);
+  }
+  
+  public Lscala/math/BigInt; long2bigInt(J; l) {
+    return this.(Lscala/math/BigInt$;::apply(J;)Lscala/math/BigInt;)(l);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(I;)minCached$u0020 = -1024;
+    this.(I;)maxCached$u0020 = 1024;
+    this.(Lscala/math/BigInt;[)cache$u0020 = new Lscala/math/BigInt;[((this.(Lscala/math/BigInt$;::maxCached()I;)() - this.(Lscala/math/BigInt$;::minCached()I;)()) + 1)];
+    this.(Lscala/math/BigInt;)MinLong$u0020 = Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::apply(J;)Lscala/math/BigInt;)(-9223372036854775808L);
+    this.(Lscala/math/BigInt;)MaxLong$u0020 = Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::apply(J;)Lscala/math/BigInt;)(9223372036854775807L);
+  }
+}

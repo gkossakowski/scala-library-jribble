@@ -1,0 +1,58 @@
+public interface Lscala/collection/LinearSeqOptimized; extends Lscala/collection/LinearSeqLike;, Lscala/ScalaObject; {
+  
+  public Z; scala$collection$LinearSeqOptimized$$super$sameElements(Lscala/collection/Iterable; that);
+  
+  public Z; isEmpty();
+  
+  public Ljava/lang/Object; head();
+  
+  public Lscala/collection/LinearSeqOptimized; tail();
+  
+  public I; length();
+  
+  public Ljava/lang/Object; apply(I; n);
+  
+  public V; foreach(Lscala/Function1; f);
+  
+  public Z; forall(Lscala/Function1; p);
+  
+  public Z; exists(Lscala/Function1; p);
+  
+  public I; count(Lscala/Function1; p);
+  
+  public Lscala/Option; find(Lscala/Function1; p);
+  
+  public Ljava/lang/Object; foldLeft(Ljava/lang/Object; z, Lscala/Function2; f);
+  
+  public Ljava/lang/Object; foldRight(Ljava/lang/Object; z, Lscala/Function2; f);
+  
+  public Ljava/lang/Object; reduceLeft(Lscala/Function2; f);
+  
+  public Ljava/lang/Object; reduceRight(Lscala/Function2; op);
+  
+  public Ljava/lang/Object; last();
+  
+  public Lscala/collection/LinearSeqOptimized; take(I; n);
+  
+  public Lscala/collection/LinearSeqOptimized; drop(I; n);
+  
+  public Lscala/collection/LinearSeqOptimized; dropRight(I; n);
+  
+  public Lscala/collection/LinearSeqOptimized; slice(I; from, I; until);
+  
+  public Lscala/collection/LinearSeqOptimized; takeWhile(Lscala/Function1; p);
+  
+  public Lscala/Tuple2; span(Lscala/Function1; p);
+  
+  public Z; sameElements(Lscala/collection/Iterable; that);
+  
+  public I; lengthCompare(I; len);
+  
+  public Z; isDefinedAt(I; x);
+  
+  public I; segmentLength(Lscala/Function1; p, I; from);
+  
+  public I; indexWhere(Lscala/Function1; p, I; from);
+  
+  public I; lastIndexWhere(Lscala/Function1; p, I; end);
+}

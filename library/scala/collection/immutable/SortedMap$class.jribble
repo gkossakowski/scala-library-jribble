@@ -1,0 +1,31 @@
+public abstract class Lscala/collection/immutable/SortedMap$class; {
+  
+  public static Lscala/collection/mutable/Builder; newBuilder(Lscala/collection/immutable/SortedMap; $this) {
+    return Lscala/collection/immutable/SortedMap$;.MODULE$.(Lscala/collection/generic/SortedMapFactory;::newBuilder(Lscala/math/Ordering;)Lscala/collection/mutable/Builder;)($this.(Lscala/collection/SortedMapLike;::ordering()Lscala/math/Ordering;)());
+  }
+  
+  public static Lscala/collection/immutable/SortedMap; empty(Lscala/collection/immutable/SortedMap; $this) {
+    return Lscala/collection/immutable/SortedMap$;.MODULE$.(Lscala/collection/immutable/SortedMap$;::empty(Lscala/math/Ordering;)Lscala/collection/immutable/SortedMap;)($this.(Lscala/collection/SortedMapLike;::ordering()Lscala/math/Ordering;)());
+  }
+  
+  public static Lscala/collection/immutable/SortedMap; updated(Lscala/collection/immutable/SortedMap; $this, Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    return $this.(Lscala/collection/immutable/SortedMap;::$plus(Lscala/Tuple2;)Lscala/collection/immutable/SortedMap;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(key, value)));
+  }
+  
+  public static Lscala/collection/immutable/SortedMap; $plus(Lscala/collection/immutable/SortedMap; $this, Lscala/Tuple2; kv) {
+    throw (new (Ljava/lang/AbstractMethodError;::this(Ljava/lang/String;)V;)("SortedMap.+"));
+  }
+  
+  public static Lscala/collection/immutable/SortedMap; $plus(Lscala/collection/immutable/SortedMap; $this, Lscala/Tuple2; elem1, Lscala/Tuple2; elem2, Lscala/collection/Seq; elems) {
+    return $this.(Lscala/collection/immutable/SortedMap;::$plus(Lscala/Tuple2;)Lscala/collection/immutable/SortedMap;)(elem1).(Lscala/collection/immutable/SortedMap;::$plus(Lscala/Tuple2;)Lscala/collection/immutable/SortedMap;)(elem2).(Lscala/collection/immutable/SortedMap;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/immutable/SortedMap;)(elems);
+  }
+  
+  public static Lscala/collection/immutable/SortedMap; $plus$plus(Lscala/collection/immutable/SortedMap; $this, Lscala/collection/TraversableOnce; xs) {
+    Lscala/collection/immutable/SortedMap; x$1 = $this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/SortedMap;);
+    return xs.(Lscala/collection/TraversableOnce;::$div$colon(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(x$1, (new (Lscala/collection/immutable/SortedMap$$anonfun$$plus$plus$1;::this(Lscala/collection/immutable/SortedMap;)V;)($this))).<cast>(Lscala/collection/immutable/SortedMap;);
+  }
+  
+  public static V; $init$(Lscala/collection/immutable/SortedMap; $this) {
+    
+  }
+}

@@ -1,0 +1,84 @@
+public final class Lscala/collection/immutable/IntMapUtils$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/IntMapUtils$; MODULE$ = new (Lscala/collection/immutable/IntMapUtils$;::this()V;)();
+  
+  public Z; zero(I; i, I; mask) {
+    return ((i & mask) == 0);
+  }
+  
+  public I; mask(I; i, I; mask) {
+    return (i & (this.(Lscala/collection/immutable/IntMapUtils$;::complement(I;)I;)((mask - 1)) ^ mask));
+  }
+  
+  public Z; hasMatch(I; key, I; prefix, I; m) {
+    return (this.(Lscala/collection/immutable/IntMapUtils$;::mask(I;I;)I;)(key, m) == prefix);
+  }
+  
+  public Z; unsignedCompare(I; i, I; j) {
+    return (((i < j) ^ (i < 0)) ^ (j < 0));
+  }
+  
+  public Z; shorter(I; m1, I; m2) {
+    return this.(Lscala/collection/immutable/IntMapUtils$;::unsignedCompare(I;I;)Z;)(m2, m1);
+  }
+  
+  public I; complement(I; i) {
+    return (-1 ^ i);
+  }
+  
+  public I; highestOneBit(I; j) {
+    I; i = j;
+    i = (i | (i >>> 1));
+    i = (i | (i >>> 2));
+    i = (i | (i >>> 4));
+    i = (i | (i >>> 8));
+    i = (i | (i >>> 16));
+    return (i - (i >> 1));
+  }
+  
+  public I; branchMask(I; i, I; j) {
+    return this.(Lscala/collection/immutable/IntMapUtils$;::highestOneBit(I;)I;)((i ^ j));
+  }
+  
+  public Lscala/collection/immutable/IntMap; join(I; p1, Lscala/collection/immutable/IntMap; t1, I; p2, Lscala/collection/immutable/IntMap; t2) {
+    I; m = this.(Lscala/collection/immutable/IntMapUtils$;::branchMask(I;I;)I;)(p1, p2);
+    I; p = this.(Lscala/collection/immutable/IntMapUtils$;::mask(I;I;)I;)(p1, m);
+    Lscala/collection/immutable/IntMap; $1$;
+    if (this.(Lscala/collection/immutable/IntMapUtils$;::zero(I;I;)Z;)(p1, m))
+      {
+        $1$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(p, m, t1, t2));
+      }
+    else
+      {
+        $1$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(p, m, t2, t1));
+      }
+    return $1$;
+  }
+  
+  public Lscala/collection/immutable/IntMap; bin(I; prefix, I; mask, Lscala/collection/immutable/IntMap; left, Lscala/collection/immutable/IntMap; right) {
+    Lscala/collection/immutable/IntMap; tp1 = left;
+    Lscala/collection/immutable/IntMap; tp2 = right;
+    Lscala/collection/immutable/IntMap; $2$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, tp2))
+      {
+        $2$ = tp1;
+      }
+    else
+      {
+        Lscala/collection/immutable/IntMap; $3$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, tp1))
+          {
+            $3$ = tp2;
+          }
+        else
+          {
+            $3$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(prefix, mask, tp1, tp2));
+          }
+        $2$ = $3$;
+      }
+    return $2$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

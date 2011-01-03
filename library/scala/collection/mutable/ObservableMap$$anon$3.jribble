@@ -1,0 +1,26 @@
+public final class Lscala/collection/mutable/ObservableMap$$anon$3; extends Lscala/collection/script/Remove; implements Lscala/collection/mutable/Undoable; {
+  
+  public V; undo() {
+    this.(Lscala/collection/mutable/ObservableMap;)$outer$u0020.(Lscala/collection/mutable/MapLike;::update(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Ljava/lang/Object;)key$2, this.(Ljava/lang/Object;)old$2);
+  }
+  
+  private Lscala/collection/mutable/ObservableMap; $outer$u0020;
+  
+  private Ljava/lang/Object; key$2;
+  
+  private Ljava/lang/Object; old$2;
+  
+  public this(Lscala/collection/mutable/ObservableMap; $outer, Ljava/lang/Object; key$2, Ljava/lang/Object; old$2) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/ObservableMap;)$outer$u0020 = $outer;
+      }
+    this.(Ljava/lang/Object;)key$2 = key$2;
+    this.(Ljava/lang/Object;)old$2 = old$2;
+    (Lscala/collection/script/Remove;::super(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(key$2, old$2)));
+  }
+}

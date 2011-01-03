@@ -1,0 +1,33 @@
+public final class Lscala/collection/immutable/Range$Double$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/Range$Double$; MODULE$ = new (Lscala/collection/immutable/Range$Double$;::this()V;)();
+  
+  private Lscala/math/Numeric$BigDecimalAsIfIntegral$; bigDecAsIntegral$u0020;
+  
+  public Lscala/math/Numeric$BigDecimalAsIfIntegral$; bigDecAsIntegral() {
+    return this.(Lscala/math/Numeric$BigDecimalAsIfIntegral$;)bigDecAsIntegral$u0020;
+  }
+  
+  private Lscala/math/Numeric$DoubleAsIfIntegral$; doubleAsIntegral$u0020;
+  
+  public Lscala/math/Numeric$DoubleAsIfIntegral$; doubleAsIntegral() {
+    return this.(Lscala/math/Numeric$DoubleAsIfIntegral$;)doubleAsIntegral$u0020;
+  }
+  
+  public Lscala/math/BigDecimal; toBD(D; x) {
+    return Lscala/package$;.MODULE$.(Lscala/package$;::BigDecimal()Lscala/math/BigDecimal$;)().(Lscala/math/BigDecimal$;::valueOf(D;)Lscala/math/BigDecimal;)(x);
+  }
+  
+  public Lscala/collection/immutable/NumericRange; apply(D; start, D; end, D; step) {
+    return Lscala/collection/immutable/Range$BigDecimal$;.MODULE$.(Lscala/collection/immutable/Range$BigDecimal$;::apply(Lscala/math/BigDecimal;Lscala/math/BigDecimal;Lscala/math/BigDecimal;)Lscala/collection/immutable/NumericRange$Exclusive;)(this.(Lscala/collection/immutable/Range$Double$;::toBD(D;)Lscala/math/BigDecimal;)(start), this.(Lscala/collection/immutable/Range$Double$;::toBD(D;)Lscala/math/BigDecimal;)(end), this.(Lscala/collection/immutable/Range$Double$;::toBD(D;)Lscala/math/BigDecimal;)(step)).(Lscala/collection/immutable/NumericRange;::mapRange(Lscala/Function1;Lscala/math/Integral;)Lscala/collection/immutable/NumericRange;)((new (Lscala/collection/immutable/Range$Double$$anonfun$apply$1;::this()V;)()), this.(Lscala/collection/immutable/Range$Double$;::doubleAsIntegral()Lscala/math/Numeric$DoubleAsIfIntegral$;)());
+  }
+  
+  public Lscala/collection/immutable/NumericRange; inclusive(D; start, D; end, D; step) {
+    return Lscala/collection/immutable/Range$BigDecimal$;.MODULE$.(Lscala/collection/immutable/Range$BigDecimal$;::inclusive(Lscala/math/BigDecimal;Lscala/math/BigDecimal;Lscala/math/BigDecimal;)Lscala/collection/immutable/NumericRange$Inclusive;)(this.(Lscala/collection/immutable/Range$Double$;::toBD(D;)Lscala/math/BigDecimal;)(start), this.(Lscala/collection/immutable/Range$Double$;::toBD(D;)Lscala/math/BigDecimal;)(end), this.(Lscala/collection/immutable/Range$Double$;::toBD(D;)Lscala/math/BigDecimal;)(step)).(Lscala/collection/immutable/NumericRange;::mapRange(Lscala/Function1;Lscala/math/Integral;)Lscala/collection/immutable/NumericRange;)((new (Lscala/collection/immutable/Range$Double$$anonfun$inclusive$1;::this()V;)()), this.(Lscala/collection/immutable/Range$Double$;::doubleAsIntegral()Lscala/math/Numeric$DoubleAsIfIntegral$;)());
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(Lscala/math/Numeric$BigDecimalAsIfIntegral$;)bigDecAsIntegral$u0020 = Lscala/math/Numeric$BigDecimalAsIfIntegral$;.MODULE$;
+    this.(Lscala/math/Numeric$DoubleAsIfIntegral$;)doubleAsIntegral$u0020 = Lscala/math/Numeric$DoubleAsIfIntegral$;.MODULE$;
+  }
+}

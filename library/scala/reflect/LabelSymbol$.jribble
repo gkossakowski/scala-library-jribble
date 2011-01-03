@@ -1,0 +1,32 @@
+public final class Lscala/reflect/LabelSymbol$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+  public static Lscala/reflect/LabelSymbol$; MODULE$ = new (Lscala/reflect/LabelSymbol$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "LabelSymbol";
+  }
+  
+  public Lscala/Option; unapply(Lscala/reflect/LabelSymbol; x$0) {
+    Lscala/Option; $33$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $33$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $33$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/reflect/LabelSymbol;::name()Ljava/lang/String;)()));
+      }
+    return $33$;
+  }
+  
+  public Lscala/reflect/LabelSymbol; apply(Ljava/lang/String; name) {
+    return (new (Lscala/reflect/LabelSymbol;::this(Ljava/lang/String;)V;)(name));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/reflect/LabelSymbol$;::apply(Ljava/lang/String;)Lscala/reflect/LabelSymbol;)(v1.<cast>(Ljava/lang/String;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

@@ -1,0 +1,254 @@
+public class Lscala/MathCommon; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  private D; E$u0020;
+  
+  public D; E() {
+    return this.(D;)E$u0020;
+  }
+  
+  private D; Pi$u0020;
+  
+  public D; Pi() {
+    return this.(D;)Pi$u0020;
+  }
+  
+  public D; random() {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::random()D;)();
+  }
+  
+  public D; sin(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::sin(D;)D;)(x);
+  }
+  
+  public D; cos(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::cos(D;)D;)(x);
+  }
+  
+  public D; tan(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::tan(D;)D;)(x);
+  }
+  
+  public D; asin(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::asin(D;)D;)(x);
+  }
+  
+  public D; acos(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::acos(D;)D;)(x);
+  }
+  
+  public D; atan(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::atan(D;)D;)(x);
+  }
+  
+  public D; toRadians(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::toRadians(D;)D;)(x);
+  }
+  
+  public D; toDegrees(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::toDegrees(D;)D;)(x);
+  }
+  
+  public D; exp(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::exp(D;)D;)(x);
+  }
+  
+  public D; log(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::log(D;)D;)(x);
+  }
+  
+  public D; sqrt(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::sqrt(D;)D;)(x);
+  }
+  
+  public D; IEEEremainder(D; x, D; y) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::IEEEremainder(D;D;)D;)(x, y);
+  }
+  
+  public D; ceil(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::ceil(D;)D;)(x);
+  }
+  
+  public D; floor(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::floor(D;)D;)(x);
+  }
+  
+  public D; rint(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::rint(D;)D;)(x);
+  }
+  
+  public D; atan2(D; y, D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::atan2(D;D;)D;)(y, x);
+  }
+  
+  public D; pow(D; x, D; y) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::pow(D;D;)D;)(x, y);
+  }
+  
+  public I; round(F; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::round(F;)I;)(x);
+  }
+  
+  public J; round(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::round(D;)J;)(x);
+  }
+  
+  public I; abs(I; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::abs(I;)I;)(x);
+  }
+  
+  public J; abs(J; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::abs(J;)J;)(x);
+  }
+  
+  public F; abs(F; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::abs(F;)F;)(x);
+  }
+  
+  public D; abs(D; x) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::abs(D;)D;)(x);
+  }
+  
+  public I; max(I; x, I; y) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::max(I;I;)I;)(x, y);
+  }
+  
+  public J; max(J; x, J; y) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::max(J;J;)J;)(x, y);
+  }
+  
+  public F; max(F; x, F; y) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::max(F;F;)F;)(x, y);
+  }
+  
+  public D; max(D; x, D; y) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::max(D;D;)D;)(x, y);
+  }
+  
+  public I; min(I; x, I; y) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::min(I;I;)I;)(x, y);
+  }
+  
+  public J; min(J; x, J; y) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::min(J;J;)J;)(x, y);
+  }
+  
+  public F; min(F; x, F; y) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::min(F;F;)F;)(x, y);
+  }
+  
+  public D; min(D; x, D; y) {
+    return Ljava/lang/Math;.(Ljava/lang/Math;::min(D;D;)D;)(x, y);
+  }
+  
+  public D; signum(D; x) {
+    D; $1$;
+    if ((x == 0.0D))
+      {
+        $1$ = 0.0D;
+      }
+    else
+      {
+        D; $2$;
+        if ((x < 0))
+          {
+            $2$ = -(1.0D);
+          }
+        else
+          {
+            D; $3$;
+            if ((x > 0))
+              {
+                $3$ = 1.0D;
+              }
+            else
+              {
+                $3$ = x;
+              }
+            $2$ = $3$;
+          }
+        $1$ = $2$;
+      }
+    return $1$;
+  }
+  
+  public F; signum(F; x) {
+    F; $4$;
+    if ((x == 0.0F))
+      {
+        $4$ = 0.0F;
+      }
+    else
+      {
+        F; $5$;
+        if ((x < 0))
+          {
+            $5$ = -(1.0F);
+          }
+        else
+          {
+            F; $6$;
+            if ((x > 0))
+              {
+                $6$ = 1.0F;
+              }
+            else
+              {
+                $6$ = x;
+              }
+            $5$ = $6$;
+          }
+        $4$ = $5$;
+      }
+    return $4$;
+  }
+  
+  public J; signum(J; x) {
+    J; $7$;
+    if ((x == 0L))
+      {
+        $7$ = 0L;
+      }
+    else
+      {
+        J; $8$;
+        if ((x < 0))
+          {
+            $8$ = -1L;
+          }
+        else
+          {
+            $8$ = 1L;
+          }
+        $7$ = $8$;
+      }
+    return $7$;
+  }
+  
+  public I; signum(I; x) {
+    I; $9$;
+    if ((x == 0))
+      {
+        $9$ = 0;
+      }
+    else
+      {
+        I; $10$;
+        if ((x < 0))
+          {
+            $10$ = -1;
+          }
+        else
+          {
+            $10$ = 1;
+          }
+        $9$ = $10$;
+      }
+    return $9$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(D;)E$u0020 = 2.718281828459045D;
+    this.(D;)Pi$u0020 = 3.141592653589793D;
+  }
+}

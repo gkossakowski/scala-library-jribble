@@ -1,0 +1,93 @@
+public class Lscala/collection/mutable/ArrayOps$ofLong; extends Lscala/collection/mutable/ArrayOps; implements Lscala/collection/mutable/ArrayLike;, Lscala/ScalaObject; {
+  
+  private J;[ repr$u0020;
+  
+  public J;[ repr() {
+    return this.(J;[)repr$u0020;
+  }
+  
+  protected Lscala/collection/mutable/WrappedArray; thisCollection() {
+    return (new (Lscala/collection/mutable/WrappedArray$ofLong;::this(J;[)V;)(this.(Lscala/collection/mutable/ArrayOps$ofLong;::repr()J;[)()));
+  }
+  
+  protected Lscala/collection/mutable/WrappedArray; toCollection(J;[ repr) {
+    return (new (Lscala/collection/mutable/WrappedArray$ofLong;::this(J;[)V;)(repr));
+  }
+  
+  protected Lscala/collection/mutable/ArrayBuilder$ofLong; newBuilder() {
+    return (new (Lscala/collection/mutable/ArrayBuilder$ofLong;::this()V;)());
+  }
+  
+  public I; length() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofLong;::repr()J;[)().<length>;
+  }
+  
+  public J; apply(I; index) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofLong;::repr()J;[)()[index];
+  }
+  
+  public V; update(I; index, J; elem) {
+    this.(Lscala/collection/mutable/ArrayOps$ofLong;::repr()J;[)()[index] = elem;
+  }
+  
+  public V; update(I; idx, Ljava/lang/Object; elem) {
+    this.(Lscala/collection/mutable/ArrayOps$ofLong;::update(I;J;)V;)(idx, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToLong(Ljava/lang/Object;)J;)(elem));
+  }
+  
+  public Ljava/lang/Object; apply(I; idx) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(this.(Lscala/collection/mutable/ArrayOps$ofLong;::apply(I;)J;)(idx));
+  }
+  
+  protected Lscala/collection/mutable/Builder; newBuilder() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofLong;::newBuilder()Lscala/collection/mutable/ArrayBuilder$ofLong;)();
+  }
+  
+  protected Lscala/collection/Traversable; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofLong;::toCollection(J;[)Lscala/collection/mutable/WrappedArray;)(repr.<cast>(J;[));
+  }
+  
+  protected Lscala/collection/Iterable; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofLong;::toCollection(J;[)Lscala/collection/mutable/WrappedArray;)(repr.<cast>(J;[));
+  }
+  
+  protected Lscala/collection/Seq; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofLong;::toCollection(J;[)Lscala/collection/mutable/WrappedArray;)(repr.<cast>(J;[));
+  }
+  
+  protected Lscala/collection/IndexedSeq; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofLong;::toCollection(J;[)Lscala/collection/mutable/WrappedArray;)(repr.<cast>(J;[));
+  }
+  
+  protected Lscala/collection/mutable/IndexedSeq; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofLong;::toCollection(J;[)Lscala/collection/mutable/WrappedArray;)(repr.<cast>(J;[));
+  }
+  
+  protected Lscala/collection/Traversable; thisCollection() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofLong;::thisCollection()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  protected Lscala/collection/Iterable; thisCollection() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofLong;::thisCollection()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  protected Lscala/collection/Seq; thisCollection() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofLong;::thisCollection()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  protected Lscala/collection/IndexedSeq; thisCollection() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofLong;::thisCollection()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  protected Lscala/collection/mutable/IndexedSeq; thisCollection() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofLong;::thisCollection()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  public Ljava/lang/Object; repr() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofLong;::repr()J;[)();
+  }
+  
+  public this(J;[ repr) {
+    this.(J;[)repr$u0020 = repr;
+    (Lscala/collection/mutable/ArrayOps;::super()V;)();
+  }
+}

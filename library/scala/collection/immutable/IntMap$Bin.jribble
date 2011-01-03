@@ -1,0 +1,118 @@
+public class Lscala/collection/immutable/IntMap$Bin; extends Lscala/collection/immutable/IntMap; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/immutable/IntMap; copy$default$4() {
+    return this.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)();
+  }
+  
+  public Lscala/collection/immutable/IntMap; copy$default$3() {
+    return this.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)();
+  }
+  
+  public I; copy$default$2() {
+    return this.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)();
+  }
+  
+  public I; copy$default$1() {
+    return this.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)();
+  }
+  
+  private I; prefix$u0020;
+  
+  public I; prefix() {
+    return this.(I;)prefix$u0020;
+  }
+  
+  private I; mask$u0020;
+  
+  public I; mask() {
+    return this.(I;)mask$u0020;
+  }
+  
+  private Lscala/collection/immutable/IntMap; left$u0020;
+  
+  public Lscala/collection/immutable/IntMap; left() {
+    return this.(Lscala/collection/immutable/IntMap;)left$u0020;
+  }
+  
+  private Lscala/collection/immutable/IntMap; right$u0020;
+  
+  public Lscala/collection/immutable/IntMap; right() {
+    return this.(Lscala/collection/immutable/IntMap;)right$u0020;
+  }
+  
+  public Lscala/collection/immutable/IntMap; bin(Lscala/collection/immutable/IntMap; left, Lscala/collection/immutable/IntMap; right) {
+    Lscala/collection/immutable/IntMap; $104$;
+    if (((this.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)() == left) && (this.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)() == right)))
+      {
+        $104$ = this;
+      }
+    else
+      {
+        $104$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(this.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)(), this.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)(), left, right));
+      }
+    return $104$;
+  }
+  
+  public Lscala/collection/immutable/IntMap$Bin; copy(I; prefix, I; mask, Lscala/collection/immutable/IntMap; left, Lscala/collection/immutable/IntMap; right) {
+    return (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(prefix, mask, left, right));
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Bin";
+  }
+  
+  public I; productArity() {
+    return 4;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp8 = x$1;
+    I; $105$ = temp8;
+    Ljava/lang/Object; $106$;
+    switch ($105$) {
+      0: {
+        $106$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)());
+        break;
+      }
+      
+      1: {
+        $106$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)());
+        break;
+      }
+      
+      2: {
+        $106$ = this.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)();
+        break;
+      }
+      
+      3: {
+        $106$ = this.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $106$;
+  }
+  
+  public this(I; prefix, I; mask, Lscala/collection/immutable/IntMap; left, Lscala/collection/immutable/IntMap; right) {
+    this.(I;)prefix$u0020 = prefix;
+    this.(I;)mask$u0020 = mask;
+    this.(Lscala/collection/immutable/IntMap;)left$u0020 = left;
+    this.(Lscala/collection/immutable/IntMap;)right$u0020 = right;
+    (Lscala/collection/immutable/IntMap;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

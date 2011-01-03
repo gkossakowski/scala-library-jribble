@@ -1,0 +1,77 @@
+public abstract class Lscala/collection/mutable/ObservableMap$class; {
+  
+  public static Lscala/collection/mutable/ObservableMap; $plus$eq(Lscala/collection/mutable/ObservableMap; $this, Lscala/Tuple2; kv) {
+    Lscala/Tuple2; temp1 = kv;
+    Lscala/Tuple2; $1$;
+    if ((temp1 != null))
+      {
+        $1$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(temp1.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), temp1.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()));
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp1));
+      }
+    Lscala/Tuple2; x$1 = $1$;
+    Ljava/lang/Object; key$1 = x$1.(Lscala/Tuple2;::_1()Ljava/lang/Object;)();
+    Ljava/lang/Object; value$1 = x$1.(Lscala/Tuple2;::_2()Ljava/lang/Object;)();
+    {
+      Lscala/Option; temp4 = $this.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key$1);
+      if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp4))
+        {
+          $this.(Lscala/collection/mutable/ObservableMap;::scala$collection$mutable$ObservableMap$$super$$plus$eq(Lscala/Tuple2;)Lscala/collection/mutable/ObservableMap;)(kv);
+          $this.(Lscala/collection/mutable/Publisher;::publish(Ljava/lang/Object;)V;)((new (Lscala/collection/mutable/ObservableMap$$anon$1;::this(Lscala/collection/mutable/ObservableMap;Ljava/lang/Object;Ljava/lang/Object;)V;)($this, key$1, value$1)));
+        }
+      else
+        {
+          if (temp4.<instanceof>(Lscala/Some;))
+            {
+              Lscala/Some; temp6 = temp4.<cast>(Lscala/Some;);
+              Ljava/lang/Object; temp7 = temp6.(Lscala/Some;::x()Ljava/lang/Object;)();
+              Ljava/lang/Object; old$1 = temp7;
+              $this.(Lscala/collection/mutable/ObservableMap;::scala$collection$mutable$ObservableMap$$super$$plus$eq(Lscala/Tuple2;)Lscala/collection/mutable/ObservableMap;)(kv);
+              $this.(Lscala/collection/mutable/Publisher;::publish(Ljava/lang/Object;)V;)((new (Lscala/collection/mutable/ObservableMap$$anon$2;::this(Lscala/collection/mutable/ObservableMap;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)($this, key$1, value$1, old$1)));
+            }
+          else
+            {
+              throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp4));
+            }
+        }
+    }
+    return $this;
+  }
+  
+  public static Lscala/collection/mutable/ObservableMap; $minus$eq(Lscala/collection/mutable/ObservableMap; $this, Ljava/lang/Object; key$2) {
+    {
+      Lscala/Option; temp8 = $this.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key$2);
+      if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp8))
+        {
+          
+        }
+      else
+        {
+          if (temp8.<instanceof>(Lscala/Some;))
+            {
+              Lscala/Some; temp10 = temp8.<cast>(Lscala/Some;);
+              Ljava/lang/Object; temp11 = temp10.(Lscala/Some;::x()Ljava/lang/Object;)();
+              Ljava/lang/Object; old$2 = temp11;
+              $this.(Lscala/collection/mutable/ObservableMap;::scala$collection$mutable$ObservableMap$$super$$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ObservableMap;)(key$2);
+              $this.(Lscala/collection/mutable/Publisher;::publish(Ljava/lang/Object;)V;)((new (Lscala/collection/mutable/ObservableMap$$anon$3;::this(Lscala/collection/mutable/ObservableMap;Ljava/lang/Object;Ljava/lang/Object;)V;)($this, key$2, old$2)));
+            }
+          else
+            {
+              throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp8));
+            }
+        }
+    }
+    return $this;
+  }
+  
+  public static V; clear(Lscala/collection/mutable/ObservableMap; $this) {
+    $this.(Lscala/collection/mutable/ObservableMap;::scala$collection$mutable$ObservableMap$$super$clear()V;)();
+    $this.(Lscala/collection/mutable/Publisher;::publish(Ljava/lang/Object;)V;)((new (Lscala/collection/mutable/ObservableMap$$anon$4;::this(Lscala/collection/mutable/ObservableMap;)V;)($this)));
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/ObservableMap; $this) {
+    
+  }
+}

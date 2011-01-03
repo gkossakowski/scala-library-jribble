@@ -1,0 +1,17 @@
+public final class Lscala/util/control/Exception$$anonfun$scala$util$control$Exception$$wouldMatch$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Z; apply(Ljava/lang/Class; x$7) {
+    return x$7.(Ljava/lang/Class;::isAssignableFrom(Ljava/lang/Class;)Z;)(this.(Ljava/lang/Throwable;)x$8.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)());
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/util/control/Exception$$anonfun$scala$util$control$Exception$$wouldMatch$1;::apply(Ljava/lang/Class;)Z;)(v1.<cast>(Ljava/lang/Class;)));
+  }
+  
+  private Ljava/lang/Throwable; x$8;
+  
+  public this(Ljava/lang/Throwable; x$8) {
+    this.(Ljava/lang/Throwable;)x$8 = x$8;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

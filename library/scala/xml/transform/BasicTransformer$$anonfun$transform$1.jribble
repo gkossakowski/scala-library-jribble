@@ -1,0 +1,24 @@
+public final class Lscala/xml/transform/BasicTransformer$$anonfun$transform$1; extends Lscala/runtime/AbstractFunction2; {
+  
+  public final Lscala/xml/NodeBuffer; apply(Lscala/xml/NodeBuffer; x$1, Lscala/xml/Node; x$2) {
+    return x$1.(Lscala/collection/mutable/ArrayBuffer;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/ArrayBuffer;)(this.(Lscala/xml/transform/BasicTransformer;)$outer$u0020.(Lscala/xml/transform/BasicTransformer;::transform(Lscala/xml/Node;)Lscala/collection/Seq;)(x$2)).<cast>(Lscala/xml/NodeBuffer;);
+  }
+  
+  private Lscala/xml/transform/BasicTransformer; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {
+    return this.(Lscala/xml/transform/BasicTransformer$$anonfun$transform$1;::apply(Lscala/xml/NodeBuffer;Lscala/xml/Node;)Lscala/xml/NodeBuffer;)(v1.<cast>(Lscala/xml/NodeBuffer;), v2.<cast>(Lscala/xml/Node;));
+  }
+  
+  public this(Lscala/xml/transform/BasicTransformer; $outer) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/xml/transform/BasicTransformer;)$outer$u0020 = $outer;
+      }
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
+  }
+}

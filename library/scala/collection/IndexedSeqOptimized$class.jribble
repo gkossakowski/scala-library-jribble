@@ -1,0 +1,514 @@
+public abstract class Lscala/collection/IndexedSeqOptimized$class; {
+  
+  public static Z; isEmpty(Lscala/collection/IndexedSeqOptimized; $this) {
+    return ($this.(Lscala/collection/SeqLike;::length()I;)() == 0);
+  }
+  
+  public static V; foreach(Lscala/collection/IndexedSeqOptimized; $this, Lscala/Function1; f) {
+    I; i = 0;
+    I; len = $this.(Lscala/collection/SeqLike;::length()I;)();
+    while$1: while(true) {
+      if ((i < len))
+        {
+          {
+            f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)($this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i));
+            i = (i + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  public static Z; forall(Lscala/collection/IndexedSeqOptimized; $this, Lscala/Function1; p$1) {
+    return ($this.(Lscala/collection/SeqLike;::prefixLength(Lscala/Function1;)I;)((new (Lscala/collection/IndexedSeqOptimized$$anonfun$forall$1;::this(Lscala/collection/IndexedSeqOptimized;Lscala/Function1;)V;)($this, p$1))) == $this.(Lscala/collection/SeqLike;::length()I;)());
+  }
+  
+  public static Z; exists(Lscala/collection/IndexedSeqOptimized; $this, Lscala/Function1; p$2) {
+    return ($this.(Lscala/collection/SeqLike;::prefixLength(Lscala/Function1;)I;)((new (Lscala/collection/IndexedSeqOptimized$$anonfun$exists$1;::this(Lscala/collection/IndexedSeqOptimized;Lscala/Function1;)V;)($this, p$2))) != $this.(Lscala/collection/SeqLike;::length()I;)());
+  }
+  
+  public static Lscala/Option; find(Lscala/collection/IndexedSeqOptimized; $this, Lscala/Function1; p$3) {
+    I; i = $this.(Lscala/collection/SeqLike;::prefixLength(Lscala/Function1;)I;)((new (Lscala/collection/IndexedSeqOptimized$$anonfun$1;::this(Lscala/collection/IndexedSeqOptimized;Lscala/Function1;)V;)($this, p$3)));
+    Lscala/Option; $1$;
+    if ((i < $this.(Lscala/collection/SeqLike;::length()I;)()))
+      {
+        $1$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)($this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i)));
+      }
+    else
+      {
+        $1$ = Lscala/None$;.MODULE$;
+      }
+    return $1$;
+  }
+  
+  private static Ljava/lang/Object; foldl(Lscala/collection/IndexedSeqOptimized; $this, I; start, I; end, Ljava/lang/Object; z, Lscala/Function2; op) {
+    Ljava/lang/Object; $2$;
+    if ((start == end))
+      {
+        $2$ = z;
+      }
+    else
+      {
+        $2$ = Lscala/collection/IndexedSeqOptimized$class;.(Lscala/collection/IndexedSeqOptimized$class;::foldl(Lscala/collection/IndexedSeqOptimized;I;I;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)($this, (start + 1), end, op.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(z, $this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(start)), op);
+      }
+    return $2$;
+  }
+  
+  private static Ljava/lang/Object; foldr(Lscala/collection/IndexedSeqOptimized; $this, I; start, I; end, Ljava/lang/Object; z, Lscala/Function2; op) {
+    Ljava/lang/Object; $3$;
+    if ((start == end))
+      {
+        $3$ = z;
+      }
+    else
+      {
+        $3$ = Lscala/collection/IndexedSeqOptimized$class;.(Lscala/collection/IndexedSeqOptimized$class;::foldr(Lscala/collection/IndexedSeqOptimized;I;I;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)($this, start, (end - 1), op.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)($this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)((end - 1)), z), op);
+      }
+    return $3$;
+  }
+  
+  public static Ljava/lang/Object; foldLeft(Lscala/collection/IndexedSeqOptimized; $this, Ljava/lang/Object; z, Lscala/Function2; op) {
+    return Lscala/collection/IndexedSeqOptimized$class;.(Lscala/collection/IndexedSeqOptimized$class;::foldl(Lscala/collection/IndexedSeqOptimized;I;I;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)($this, 0, $this.(Lscala/collection/SeqLike;::length()I;)(), z, op);
+  }
+  
+  public static Ljava/lang/Object; foldRight(Lscala/collection/IndexedSeqOptimized; $this, Ljava/lang/Object; z, Lscala/Function2; op) {
+    return Lscala/collection/IndexedSeqOptimized$class;.(Lscala/collection/IndexedSeqOptimized$class;::foldr(Lscala/collection/IndexedSeqOptimized;I;I;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)($this, 0, $this.(Lscala/collection/SeqLike;::length()I;)(), z, op);
+  }
+  
+  public static Ljava/lang/Object; reduceLeft(Lscala/collection/IndexedSeqOptimized; $this, Lscala/Function2; op) {
+    Ljava/lang/Object; $4$;
+    if (($this.(Lscala/collection/SeqLike;::length()I;)() > 0))
+      {
+        $4$ = Lscala/collection/IndexedSeqOptimized$class;.(Lscala/collection/IndexedSeqOptimized$class;::foldl(Lscala/collection/IndexedSeqOptimized;I;I;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)($this, 1, $this.(Lscala/collection/SeqLike;::length()I;)(), $this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(0), op);
+      }
+    else
+      {
+        $4$ = $this.(Lscala/collection/IndexedSeqOptimized;::scala$collection$IndexedSeqOptimized$$super$reduceLeft(Lscala/Function2;)Ljava/lang/Object;)(op);
+      }
+    return $4$;
+  }
+  
+  public static Ljava/lang/Object; reduceRight(Lscala/collection/IndexedSeqOptimized; $this, Lscala/Function2; op) {
+    Ljava/lang/Object; $5$;
+    if (($this.(Lscala/collection/SeqLike;::length()I;)() > 0))
+      {
+        $5$ = Lscala/collection/IndexedSeqOptimized$class;.(Lscala/collection/IndexedSeqOptimized$class;::foldr(Lscala/collection/IndexedSeqOptimized;I;I;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)($this, 0, ($this.(Lscala/collection/SeqLike;::length()I;)() - 1), $this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(($this.(Lscala/collection/SeqLike;::length()I;)() - 1)), op);
+      }
+    else
+      {
+        $5$ = $this.(Lscala/collection/IndexedSeqOptimized;::scala$collection$IndexedSeqOptimized$$super$reduceRight(Lscala/Function2;)Ljava/lang/Object;)(op);
+      }
+    return $5$;
+  }
+  
+  public static Ljava/lang/Object; zip(Lscala/collection/IndexedSeqOptimized; $this, Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf) {
+    Lscala/collection/Iterable; temp1 = that;
+    Ljava/lang/Object; $6$;
+    if (temp1.<instanceof>(Lscala/collection/IndexedSeq;))
+      {
+        Lscala/collection/IndexedSeq; temp2 = temp1.<cast>(Lscala/collection/IndexedSeq;);
+        Lscala/collection/IndexedSeq; that = temp2;
+        Lscala/collection/mutable/Builder; b = bf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)($this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
+        I; i = 0;
+        I; len = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)($this.(Lscala/collection/SeqLike;::length()I;)()).(Lscala/runtime/RichInt;::min(I;)I;)(that.(Lscala/collection/SeqLike;::length()I;)());
+        b.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(len);
+        while$2: while(true) {
+          if ((i < len))
+            {
+              {
+                b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)($this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i), that.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i))));
+                i = (i + 1);
+              }
+              continue while$2;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+        $6$ = b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+      }
+    else
+      {
+        $6$ = $this.(Lscala/collection/IndexedSeqOptimized;::scala$collection$IndexedSeqOptimized$$super$zip(Lscala/collection/Iterable;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(that, bf);
+      }
+    return $6$;
+  }
+  
+  public static Ljava/lang/Object; zipWithIndex(Lscala/collection/IndexedSeqOptimized; $this, Lscala/collection/generic/CanBuildFrom; bf) {
+    Lscala/collection/mutable/Builder; b = bf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)($this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
+    I; len = $this.(Lscala/collection/SeqLike;::length()I;)();
+    b.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(len);
+    I; i = 0;
+    while$3: while(true) {
+      if ((i < len))
+        {
+          {
+            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)($this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i))));
+            i = (i + 1);
+          }
+          continue while$3;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public static Ljava/lang/Object; slice(Lscala/collection/IndexedSeqOptimized; $this, I; from, I; until) {
+    I; i = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(from).(Lscala/runtime/RichInt;::max(I;)I;)(0);
+    I; end = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(until).(Lscala/runtime/RichInt;::min(I;)I;)($this.(Lscala/collection/SeqLike;::length()I;)());
+    Lscala/collection/mutable/Builder; b = $this.(Lscala/collection/TraversableLike;::newBuilder()Lscala/collection/mutable/Builder;)();
+    b.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)((end - i));
+    while$4: while(true) {
+      if ((i < end))
+        {
+          {
+            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)($this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i));
+            i = (i + 1);
+          }
+          continue while$4;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public static Ljava/lang/Object; head(Lscala/collection/IndexedSeqOptimized; $this) {
+    Ljava/lang/Object; $7$;
+    if ($this.(Lscala/collection/IndexedSeqOptimized;::isEmpty()Z;)())
+      {
+        $7$ = $this.(Lscala/collection/IndexedSeqOptimized;::scala$collection$IndexedSeqOptimized$$super$head()Ljava/lang/Object;)();
+      }
+    else
+      {
+        $7$ = $this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(0);
+      }
+    return $7$;
+  }
+  
+  public static Ljava/lang/Object; tail(Lscala/collection/IndexedSeqOptimized; $this) {
+    Ljava/lang/Object; $8$;
+    if ($this.(Lscala/collection/IndexedSeqOptimized;::isEmpty()Z;)())
+      {
+        $8$ = $this.(Lscala/collection/IndexedSeqOptimized;::scala$collection$IndexedSeqOptimized$$super$tail()Ljava/lang/Object;)();
+      }
+    else
+      {
+        $8$ = $this.(Lscala/collection/IndexedSeqOptimized;::slice(I;I;)Ljava/lang/Object;)(1, $this.(Lscala/collection/SeqLike;::length()I;)());
+      }
+    return $8$;
+  }
+  
+  public static Ljava/lang/Object; last(Lscala/collection/IndexedSeqOptimized; $this) {
+    Ljava/lang/Object; $9$;
+    if (($this.(Lscala/collection/SeqLike;::length()I;)() > 0))
+      {
+        $9$ = $this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(($this.(Lscala/collection/SeqLike;::length()I;)() - 1));
+      }
+    else
+      {
+        $9$ = $this.(Lscala/collection/IndexedSeqOptimized;::scala$collection$IndexedSeqOptimized$$super$last()Ljava/lang/Object;)();
+      }
+    return $9$;
+  }
+  
+  public static Ljava/lang/Object; init(Lscala/collection/IndexedSeqOptimized; $this) {
+    Ljava/lang/Object; $10$;
+    if (($this.(Lscala/collection/SeqLike;::length()I;)() > 0))
+      {
+        $10$ = $this.(Lscala/collection/IndexedSeqOptimized;::slice(I;I;)Ljava/lang/Object;)(0, ($this.(Lscala/collection/SeqLike;::length()I;)() - 1));
+      }
+    else
+      {
+        $10$ = $this.(Lscala/collection/IndexedSeqOptimized;::scala$collection$IndexedSeqOptimized$$super$init()Ljava/lang/Object;)();
+      }
+    return $10$;
+  }
+  
+  public static Ljava/lang/Object; take(Lscala/collection/IndexedSeqOptimized; $this, I; n) {
+    return $this.(Lscala/collection/IndexedSeqOptimized;::slice(I;I;)Ljava/lang/Object;)(0, n);
+  }
+  
+  public static Ljava/lang/Object; drop(Lscala/collection/IndexedSeqOptimized; $this, I; n) {
+    return $this.(Lscala/collection/IndexedSeqOptimized;::slice(I;I;)Ljava/lang/Object;)(n, $this.(Lscala/collection/SeqLike;::length()I;)());
+  }
+  
+  public static Ljava/lang/Object; takeRight(Lscala/collection/IndexedSeqOptimized; $this, I; n) {
+    return $this.(Lscala/collection/IndexedSeqOptimized;::slice(I;I;)Ljava/lang/Object;)(($this.(Lscala/collection/SeqLike;::length()I;)() - n), $this.(Lscala/collection/SeqLike;::length()I;)());
+  }
+  
+  public static Ljava/lang/Object; dropRight(Lscala/collection/IndexedSeqOptimized; $this, I; n) {
+    return $this.(Lscala/collection/IndexedSeqOptimized;::slice(I;I;)Ljava/lang/Object;)(0, ($this.(Lscala/collection/SeqLike;::length()I;)() - n));
+  }
+  
+  public static Lscala/Tuple2; splitAt(Lscala/collection/IndexedSeqOptimized; $this, I; n) {
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)($this.(Lscala/collection/IndexedSeqOptimized;::take(I;)Ljava/lang/Object;)(n), $this.(Lscala/collection/IndexedSeqOptimized;::drop(I;)Ljava/lang/Object;)(n)));
+  }
+  
+  public static Ljava/lang/Object; takeWhile(Lscala/collection/IndexedSeqOptimized; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/IndexedSeqOptimized;::take(I;)Ljava/lang/Object;)($this.(Lscala/collection/SeqLike;::prefixLength(Lscala/Function1;)I;)(p));
+  }
+  
+  public static Ljava/lang/Object; dropWhile(Lscala/collection/IndexedSeqOptimized; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/IndexedSeqOptimized;::drop(I;)Ljava/lang/Object;)($this.(Lscala/collection/SeqLike;::prefixLength(Lscala/Function1;)I;)(p));
+  }
+  
+  public static Lscala/Tuple2; span(Lscala/collection/IndexedSeqOptimized; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/IndexedSeqOptimized;::splitAt(I;)Lscala/Tuple2;)($this.(Lscala/collection/SeqLike;::prefixLength(Lscala/Function1;)I;)(p));
+  }
+  
+  public static Z; sameElements(Lscala/collection/IndexedSeqOptimized; $this, Lscala/collection/Iterable; that) {
+    Lscala/collection/Iterable; temp3 = that;
+    Z; $11$;
+    if (temp3.<instanceof>(Lscala/collection/IndexedSeq;))
+      {
+        Lscala/collection/IndexedSeq; temp4 = temp3.<cast>(Lscala/collection/IndexedSeq;);
+        Lscala/collection/IndexedSeq; that = temp4;
+        I; len = $this.(Lscala/collection/SeqLike;::length()I;)();
+        I; i = 0;
+        while$5: while(true) {
+          if (((i < len) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i), that.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i))))
+            {
+              i = (i + 1);
+              continue while$5;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+        $11$ = ((len == that.(Lscala/collection/SeqLike;::length()I;)()) && (i == len));
+      }
+    else
+      {
+        $11$ = $this.(Lscala/collection/IndexedSeqOptimized;::scala$collection$IndexedSeqOptimized$$super$sameElements(Lscala/collection/Iterable;)Z;)(that);
+      }
+    return $11$;
+  }
+  
+  public static V; copyToArray(Lscala/collection/IndexedSeqOptimized; $this, Ljava/lang/Object; xs, I; start, I; len) {
+    I; i = 0;
+    I; j = start;
+    I; end = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)($this.(Lscala/collection/SeqLike;::length()I;)()).(Lscala/runtime/RichInt;::min(I;)I;)(len)).(Lscala/runtime/RichInt;::min(I;)I;)((Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(xs) - start));
+    while$6: while(true) {
+      if ((i < end))
+        {
+          {
+            Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_update(Ljava/lang/Object;I;Ljava/lang/Object;)V;)(xs, j, $this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i));
+            i = (i + 1);
+            j = (j + 1);
+          }
+          continue while$6;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  public static I; lengthCompare(Lscala/collection/IndexedSeqOptimized; $this, I; len) {
+    return ($this.(Lscala/collection/SeqLike;::length()I;)() - len);
+  }
+  
+  public static I; segmentLength(Lscala/collection/IndexedSeqOptimized; $this, Lscala/Function1; p, I; from) {
+    I; start = from;
+    I; len = $this.(Lscala/collection/SeqLike;::length()I;)();
+    I; i = start;
+    while$7: while(true) {
+      if (((i < len) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)($this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i)))))
+        {
+          i = (i + 1);
+          continue while$7;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return (i - start);
+  }
+  
+  private static I; negLength(Lscala/collection/IndexedSeqOptimized; $this, I; n) {
+    I; $12$;
+    if ((n == $this.(Lscala/collection/SeqLike;::length()I;)()))
+      {
+        $12$ = -1;
+      }
+    else
+      {
+        $12$ = n;
+      }
+    return $12$;
+  }
+  
+  public static I; indexWhere(Lscala/collection/IndexedSeqOptimized; $this, Lscala/Function1; p$4, I; from) {
+    I; start = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(from).(Lscala/runtime/RichInt;::max(I;)I;)(0);
+    return Lscala/collection/IndexedSeqOptimized$class;.(Lscala/collection/IndexedSeqOptimized$class;::negLength(Lscala/collection/IndexedSeqOptimized;I;)I;)($this, (start + $this.(Lscala/collection/IndexedSeqOptimized;::segmentLength(Lscala/Function1;I;)I;)((new (Lscala/collection/IndexedSeqOptimized$$anonfun$indexWhere$1;::this(Lscala/collection/IndexedSeqOptimized;Lscala/Function1;)V;)($this, p$4)), start)));
+  }
+  
+  public static I; lastIndexWhere(Lscala/collection/IndexedSeqOptimized; $this, Lscala/Function1; p, I; end) {
+    I; i = end;
+    while$8: while(true) {
+      if (((i >= 0) && !(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)($this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i))))))
+        {
+          i = (i - 1);
+          continue while$8;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return i;
+  }
+  
+  public static Ljava/lang/Object; reverse(Lscala/collection/IndexedSeqOptimized; $this) {
+    Lscala/collection/mutable/Builder; b = $this.(Lscala/collection/TraversableLike;::newBuilder()Lscala/collection/mutable/Builder;)();
+    b.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)($this.(Lscala/collection/SeqLike;::length()I;)());
+    I; i = $this.(Lscala/collection/SeqLike;::length()I;)();
+    while$9: while(true) {
+      if ((0 < i))
+        {
+          {
+            i = (i - 1);
+            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)($this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i));
+          }
+          continue while$9;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public static Lscala/collection/Iterator; reverseIterator(Lscala/collection/IndexedSeqOptimized; $this) {
+    return (new (Lscala/collection/IndexedSeqOptimized$$anon$1;::this(Lscala/collection/IndexedSeqOptimized;)V;)($this));
+  }
+  
+  public static Z; startsWith(Lscala/collection/IndexedSeqOptimized; $this, Lscala/collection/Seq; that, I; offset) {
+    Lscala/collection/Seq; temp5 = that;
+    Z; $13$;
+    if (temp5.<instanceof>(Lscala/collection/IndexedSeq;))
+      {
+        Lscala/collection/IndexedSeq; temp6 = temp5.<cast>(Lscala/collection/IndexedSeq;);
+        Lscala/collection/IndexedSeq; that = temp6;
+        I; i = offset;
+        I; j = 0;
+        I; thisLen = $this.(Lscala/collection/SeqLike;::length()I;)();
+        I; thatLen = that.(Lscala/collection/SeqLike;::length()I;)();
+        while$10: while(true) {
+          if ((((i < thisLen) && (j < thatLen)) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i), that.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(j))))
+            {
+              {
+                i = (i + 1);
+                j = (j + 1);
+              }
+              continue while$10;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+        $13$ = (j == thatLen);
+      }
+    else
+      {
+        I; i = offset;
+        I; thisLen = $this.(Lscala/collection/SeqLike;::length()I;)();
+        Lscala/collection/Iterator; thatElems = that.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+        while$11: while(true) {
+          if (((i < thisLen) && thatElems.(Lscala/collection/Iterator;::hasNext()Z;)()))
+            {
+              {
+                if (($this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i) != thatElems.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)()))
+                  {
+                    return false;
+                  }
+                else
+                  {
+                    
+                  }
+                i = (i + 1);
+              }
+              continue while$11;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+        $13$ = !(thatElems.(Lscala/collection/Iterator;::hasNext()Z;)());
+      }
+    return $13$;
+  }
+  
+  public static Z; endsWith(Lscala/collection/IndexedSeqOptimized; $this, Lscala/collection/Seq; that) {
+    Lscala/collection/Seq; temp7 = that;
+    Z; $14$;
+    if (temp7.<instanceof>(Lscala/collection/IndexedSeq;))
+      {
+        Lscala/collection/IndexedSeq; temp8 = temp7.<cast>(Lscala/collection/IndexedSeq;);
+        Lscala/collection/IndexedSeq; that = temp8;
+        I; i = ($this.(Lscala/collection/SeqLike;::length()I;)() - 1);
+        I; j = (that.(Lscala/collection/SeqLike;::length()I;)() - 1);
+        while$12: while(true) {
+          if ((j >= 0))
+            {
+              {
+                if (($this.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i) != that.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(j)))
+                  {
+                    return false;
+                  }
+                else
+                  {
+                    
+                  }
+                i = (i - 1);
+                j = (j - 1);
+              }
+              continue while$12;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+        $14$ = ((j <= i) && true);
+      }
+    else
+      {
+        $14$ = $this.(Lscala/collection/IndexedSeqOptimized;::scala$collection$IndexedSeqOptimized$$super$endsWith(Lscala/collection/Seq;)Z;)(that);
+      }
+    return $14$;
+  }
+  
+  public static V; $init$(Lscala/collection/IndexedSeqOptimized; $this) {
+    
+  }
+}

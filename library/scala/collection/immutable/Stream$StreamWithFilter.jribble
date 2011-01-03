@@ -1,0 +1,87 @@
+public final class Lscala/collection/immutable/Stream$StreamWithFilter; extends Lscala/collection/TraversableLike$WithFilter; implements Lscala/ScalaObject; {
+  
+  public Lscala/Function1; scala$collection$immutable$Stream$StreamWithFilter$$p;
+  
+  public Ljava/lang/Object; map(Lscala/Function1; f$3, Lscala/collection/generic/CanBuildFrom; bf) {
+    Ljava/lang/Object; $23$;
+    if (this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/IterableLike;::isEmpty()Z;)())
+      {
+        $23$ = Lscala/collection/immutable/Stream$Empty$;.MODULE$;
+      }
+    else
+      {
+        Ljava/lang/Object; $24$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Function1;)scala$collection$immutable$Stream$StreamWithFilter$$p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)())))
+          {
+            $24$ = (new (Lscala/collection/immutable/Stream$Cons;::this(Ljava/lang/Object;Lscala/Function0;)V;)(f$3.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)()), (new (Lscala/collection/immutable/Stream$StreamWithFilter$$anonfun$map$2;::this(Lscala/collection/immutable/Stream$StreamWithFilter;Lscala/Function1;)V;)(this, f$3))));
+          }
+        else
+          {
+            $24$ = this.(Lscala/collection/immutable/Stream$StreamWithFilter;::tailMap$1(Lscala/Function1;)Lscala/collection/immutable/Stream;)(f$3);
+          }
+        $23$ = $24$;
+      }
+    return this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/immutable/Stream;::scala$collection$immutable$Stream$$asThat(Ljava/lang/Object;)Ljava/lang/Object;)($23$);
+  }
+  
+  public Ljava/lang/Object; flatMap(Lscala/Function1; f$4, Lscala/collection/generic/CanBuildFrom; bf) {
+    Ljava/lang/Object; $25$;
+    if (this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/IterableLike;::isEmpty()Z;)())
+      {
+        $25$ = Lscala/collection/immutable/Stream$Empty$;.MODULE$;
+      }
+    else
+      {
+        Ljava/lang/Object; $26$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Function1;)scala$collection$immutable$Stream$StreamWithFilter$$p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)())))
+          {
+            $26$ = f$4.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)()).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::toStream()Lscala/collection/immutable/Stream;)().(Lscala/collection/immutable/Stream;::append(Lscala/Function0;)Lscala/collection/immutable/Stream;)((new (Lscala/collection/immutable/Stream$StreamWithFilter$$anonfun$flatMap$2;::this(Lscala/collection/immutable/Stream$StreamWithFilter;Lscala/Function1;)V;)(this, f$4)));
+          }
+        else
+          {
+            $26$ = this.(Lscala/collection/immutable/Stream$StreamWithFilter;::tailFlatMap$1(Lscala/Function1;)Lscala/collection/immutable/Stream;)(f$4);
+          }
+        $25$ = $26$;
+      }
+    return this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/immutable/Stream;::scala$collection$immutable$Stream$$asThat(Ljava/lang/Object;)Ljava/lang/Object;)($25$);
+  }
+  
+  public V; foreach(Lscala/Function1; f$5) {
+    this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/immutable/Stream;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/Stream$StreamWithFilter$$anonfun$foreach$1;::this(Lscala/collection/immutable/Stream$StreamWithFilter;Lscala/Function1;)V;)(this, f$5)));
+  }
+  
+  public Lscala/collection/immutable/Stream$StreamWithFilter; withFilter(Lscala/Function1; q$1) {
+    return (new (Lscala/collection/immutable/Stream$StreamWithFilter;::this(Lscala/collection/immutable/Stream;Lscala/Function1;)V;)(this.(Lscala/collection/immutable/Stream;)$outer$u0020, (new (Lscala/collection/immutable/Stream$StreamWithFilter$$anonfun$withFilter$1;::this(Lscala/collection/immutable/Stream$StreamWithFilter;Lscala/Function1;)V;)(this, q$1))));
+  }
+  
+  private Lscala/collection/immutable/Stream; $outer$u0020;
+  
+  public Lscala/collection/generic/FilterMonadic; withFilter(Lscala/Function1; p) {
+    return this.(Lscala/collection/immutable/Stream$StreamWithFilter;::withFilter(Lscala/Function1;)Lscala/collection/immutable/Stream$StreamWithFilter;)(p);
+  }
+  
+  public Lscala/collection/TraversableLike$WithFilter; withFilter(Lscala/Function1; q) {
+    return this.(Lscala/collection/immutable/Stream$StreamWithFilter;::withFilter(Lscala/Function1;)Lscala/collection/immutable/Stream$StreamWithFilter;)(q);
+  }
+  
+  public final Lscala/collection/immutable/Stream; tailMap$1(Lscala/Function1; f$3) {
+    return this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/immutable/Stream;::scala$collection$immutable$Stream$$asStream(Ljava/lang/Object;)Lscala/collection/immutable/Stream;)(this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/immutable/Stream;::withFilter(Lscala/Function1;)Lscala/collection/immutable/Stream$StreamWithFilter;)(this.(Lscala/Function1;)scala$collection$immutable$Stream$StreamWithFilter$$p).(Lscala/collection/immutable/Stream$StreamWithFilter;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(f$3, Lscala/collection/immutable/Stream$;.MODULE$.(Lscala/collection/immutable/Stream$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()));
+  }
+  
+  public final Lscala/collection/immutable/Stream; tailFlatMap$1(Lscala/Function1; f$4) {
+    return this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/immutable/Stream;::scala$collection$immutable$Stream$$asStream(Ljava/lang/Object;)Lscala/collection/immutable/Stream;)(this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/immutable/Stream;::withFilter(Lscala/Function1;)Lscala/collection/immutable/Stream$StreamWithFilter;)(this.(Lscala/Function1;)scala$collection$immutable$Stream$StreamWithFilter$$p).(Lscala/collection/immutable/Stream$StreamWithFilter;::flatMap(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(f$4, Lscala/collection/immutable/Stream$;.MODULE$.(Lscala/collection/immutable/Stream$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()));
+  }
+  
+  public this(Lscala/collection/immutable/Stream; $outer, Lscala/Function1; p) {
+    this.(Lscala/Function1;)scala$collection$immutable$Stream$StreamWithFilter$$p = p;
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/immutable/Stream;)$outer$u0020 = $outer;
+      }
+    (Lscala/collection/TraversableLike$WithFilter;::super(Lscala/collection/TraversableLike;Lscala/Function1;)V;)($outer, p);
+  }
+}

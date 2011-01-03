@@ -1,0 +1,66 @@
+public final class Lscala/xml/dtd/ElementValidator$$anonfun$getIterable$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Z; apply(Lscala/xml/Node; x0$2) {
+    Lscala/xml/Node; temp10 = x0$2;
+    Z; $13$;
+    if (temp10.<instanceof>(Lscala/xml/SpecialNode;))
+      {
+        Lscala/xml/SpecialNode; temp11 = temp10.<cast>(Lscala/xml/SpecialNode;);
+        Lscala/xml/SpecialNode; y = temp11;
+        Lscala/xml/SpecialNode; temp8 = y;
+        Z; $14$;
+        if (temp8.<instanceof>(Lscala/xml/Atom;))
+          {
+            Z; $15$;
+            if (this.(Lscala/xml/dtd/ElementValidator$$anonfun$getIterable$1;::gd3$1(Lscala/xml/Atom;)Z;)(temp8.<cast>(Lscala/xml/Atom;)))
+              {
+                $15$ = false;
+              }
+            else
+              {
+                $15$ = this.(Lscala/xml/dtd/ElementValidator$$anonfun$getIterable$1;::body$percent1$percent1()Z;)();
+              }
+            $14$ = $15$;
+          }
+        else
+          {
+            $14$ = this.(Lscala/xml/dtd/ElementValidator$$anonfun$getIterable$1;::body$percent1$percent1()Z;)();
+          }
+        $13$ = $14$;
+      }
+    else
+      {
+        $13$ = (temp10.(Lscala/xml/Node;::namespace()Ljava/lang/String;)() == null);
+      }
+    return $13$;
+  }
+  
+  private Lscala/xml/dtd/ElementValidator; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/xml/dtd/ElementValidator$$anonfun$getIterable$1;::apply(Lscala/xml/Node;)Z;)(v1.<cast>(Lscala/xml/Node;)));
+  }
+  
+  private Z; skipPCDATA$1;
+  
+  private final Z; gd3$1(Lscala/xml/Atom; x$1) {
+    return this.(Lscala/xml/dtd/ElementValidator;)$outer$u0020.(Lscala/xml/dtd/ElementValidator;::isAllWhitespace$1(Lscala/xml/Atom;)Z;)(x$1);
+  }
+  
+  public this(Lscala/xml/dtd/ElementValidator; $outer, Z; skipPCDATA$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/xml/dtd/ElementValidator;)$outer$u0020 = $outer;
+      }
+    this.(Z;)skipPCDATA$1 = skipPCDATA$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+  
+  private final Z; body$percent1$percent1() {
+    return !(this.(Z;)skipPCDATA$1);
+  }
+}

@@ -1,0 +1,32 @@
+public class Lscala/Either$MergeableEither; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  private Lscala/Either; x;
+  
+  public Ljava/lang/Object; merge() {
+    Lscala/Either; temp29 = this.(Lscala/Either;)x;
+    Ljava/lang/Object; $20$;
+    if (temp29.<instanceof>(Lscala/Left;))
+      {
+        $20$ = temp29.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)();
+      }
+    else
+      {
+        Ljava/lang/Object; $21$;
+        if (temp29.<instanceof>(Lscala/Right;))
+          {
+            $21$ = temp29.<cast>(Lscala/Right;).(Lscala/Right;::b()Ljava/lang/Object;)();
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp29));
+          }
+        $20$ = $21$;
+      }
+    return $20$;
+  }
+  
+  public this(Lscala/Either; x) {
+    this.(Lscala/Either;)x = x;
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

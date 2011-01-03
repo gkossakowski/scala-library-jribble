@@ -1,0 +1,30 @@
+public final class Lscala/xml/NodeSeq$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/xml/NodeSeq$; MODULE$ = new (Lscala/xml/NodeSeq$;::this()V;)();
+  
+  private final Lscala/xml/NodeSeq; Empty$u0020;
+  
+  public final Lscala/xml/NodeSeq; Empty() {
+    return this.(Lscala/xml/NodeSeq;)Empty$u0020;
+  }
+  
+  public Lscala/xml/NodeSeq; fromSeq(Lscala/collection/Seq; s$1) {
+    return (new (Lscala/xml/NodeSeq$$anon$1;::this(Lscala/collection/Seq;)V;)(s$1));
+  }
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return (new (Lscala/xml/NodeSeq$$anon$2;::this()V;)());
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return (new (Lscala/collection/mutable/ListBuffer;::this()V;)()).(Lscala/collection/mutable/Builder;::mapResult(Lscala/Function1;)Lscala/collection/mutable/Builder;)((new (Lscala/xml/NodeSeq$$anonfun$newBuilder$1;::this()V;)()));
+  }
+  
+  public Lscala/xml/NodeSeq; seqToNodeSeq(Lscala/collection/Seq; s) {
+    return this.(Lscala/xml/NodeSeq$;::fromSeq(Lscala/collection/Seq;)Lscala/xml/NodeSeq;)(s);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(Lscala/xml/NodeSeq;)Empty$u0020 = this.(Lscala/xml/NodeSeq$;::fromSeq(Lscala/collection/Seq;)Lscala/xml/NodeSeq;)(Lscala/collection/immutable/Nil$;.MODULE$);
+  }
+}

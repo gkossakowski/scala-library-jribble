@@ -1,0 +1,62 @@
+public abstract class Lscala/collection/mutable/StackProxy$class; {
+  
+  public static Ljava/lang/Object; apply(Lscala/collection/mutable/StackProxy; $this, I; n) {
+    return $this.(Lscala/collection/mutable/StackProxy;::self()Lscala/collection/mutable/Stack;)().(Lscala/collection/mutable/Stack;::apply(I;)Ljava/lang/Object;)(n);
+  }
+  
+  public static I; length(Lscala/collection/mutable/StackProxy; $this) {
+    return $this.(Lscala/collection/mutable/StackProxy;::self()Lscala/collection/mutable/Stack;)().(Lscala/collection/mutable/Stack;::length()I;)();
+  }
+  
+  public static Z; isEmpty(Lscala/collection/mutable/StackProxy; $this) {
+    return $this.(Lscala/collection/mutable/StackProxy;::self()Lscala/collection/mutable/Stack;)().(Lscala/collection/mutable/Stack;::isEmpty()Z;)();
+  }
+  
+  public static Lscala/collection/mutable/StackProxy; $plus$eq(Lscala/collection/mutable/StackProxy; $this, Ljava/lang/Object; elem) {
+    $this.(Lscala/collection/mutable/StackProxy;::self()Lscala/collection/mutable/Stack;)().(Lscala/collection/mutable/Stack;::push(Ljava/lang/Object;)Lscala/collection/mutable/Stack;)(elem);
+    return $this;
+  }
+  
+  public static Lscala/collection/mutable/StackProxy; pushAll(Lscala/collection/mutable/StackProxy; $this, Lscala/collection/TraversableOnce; xs) {
+    $this.(Lscala/collection/mutable/StackProxy;::self()Lscala/collection/mutable/Stack;)().(Lscala/collection/mutable/Stack;::pushAll(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Stack;)(xs);
+    return $this;
+  }
+  
+  public static Lscala/collection/mutable/StackProxy; $plus$plus$eq(Lscala/collection/mutable/StackProxy; $this, Lscala/collection/TraversableOnce; xs) {
+    $this.(Lscala/collection/mutable/StackProxy;::self()Lscala/collection/mutable/Stack;)().(Lscala/collection/mutable/Stack;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Stack;)(xs);
+    return $this;
+  }
+  
+  public static Lscala/collection/mutable/StackProxy; push(Lscala/collection/mutable/StackProxy; $this, Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
+    $this.(Lscala/collection/mutable/StackProxy;::self()Lscala/collection/mutable/Stack;)().(Lscala/collection/mutable/Stack;::push(Ljava/lang/Object;)Lscala/collection/mutable/Stack;)(elem1).(Lscala/collection/mutable/Stack;::push(Ljava/lang/Object;)Lscala/collection/mutable/Stack;)(elem2).(Lscala/collection/mutable/Stack;::pushAll(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Stack;)(elems);
+    return $this;
+  }
+  
+  public static Ljava/lang/Object; top(Lscala/collection/mutable/StackProxy; $this) {
+    return $this.(Lscala/collection/mutable/StackProxy;::self()Lscala/collection/mutable/Stack;)().(Lscala/collection/mutable/Stack;::top()Ljava/lang/Object;)();
+  }
+  
+  public static Ljava/lang/Object; pop(Lscala/collection/mutable/StackProxy; $this) {
+    return $this.(Lscala/collection/mutable/StackProxy;::self()Lscala/collection/mutable/Stack;)().(Lscala/collection/mutable/Stack;::pop()Ljava/lang/Object;)();
+  }
+  
+  public static V; clear(Lscala/collection/mutable/StackProxy; $this) {
+    $this.(Lscala/collection/mutable/StackProxy;::self()Lscala/collection/mutable/Stack;)().(Lscala/collection/mutable/Stack;::clear()V;)();
+  }
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/mutable/StackProxy; $this) {
+    return $this.(Lscala/collection/mutable/StackProxy;::self()Lscala/collection/mutable/Stack;)().(Lscala/collection/mutable/Stack;::iterator()Lscala/collection/Iterator;)();
+  }
+  
+  public static Lscala/collection/immutable/List; toList(Lscala/collection/mutable/StackProxy; $this) {
+    return $this.(Lscala/collection/mutable/StackProxy;::self()Lscala/collection/mutable/Stack;)().(Lscala/collection/mutable/Stack;::toList()Lscala/collection/immutable/List;)();
+  }
+  
+  public static Lscala/collection/mutable/Stack; clone(Lscala/collection/mutable/StackProxy; $this) {
+    return (new (Lscala/collection/mutable/StackProxy$$anon$1;::this(Lscala/collection/mutable/StackProxy;)V;)($this));
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/StackProxy; $this) {
+    
+  }
+}

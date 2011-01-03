@@ -1,0 +1,17 @@
+public final class Lscala/collection/mutable/HashMap$$anonfun$foreach$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Ljava/lang/Object; apply(Lscala/collection/mutable/DefaultEntry; e) {
+    return this.(Lscala/Function1;)f$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(e.(Lscala/collection/mutable/DefaultEntry;::key()Ljava/lang/Object;)(), e.(Lscala/collection/mutable/DefaultEntry;::value()Ljava/lang/Object;)())));
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/collection/mutable/HashMap$$anonfun$foreach$1;::apply(Lscala/collection/mutable/DefaultEntry;)Ljava/lang/Object;)(v1.<cast>(Lscala/collection/mutable/DefaultEntry;));
+  }
+  
+  private Lscala/Function1; f$1;
+  
+  public this(Lscala/collection/mutable/HashMap; $outer, Lscala/Function1; f$1) {
+    this.(Lscala/Function1;)f$1 = f$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

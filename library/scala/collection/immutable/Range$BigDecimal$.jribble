@@ -1,0 +1,22 @@
+public final class Lscala/collection/immutable/Range$BigDecimal$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/Range$BigDecimal$; MODULE$ = new (Lscala/collection/immutable/Range$BigDecimal$;::this()V;)();
+  
+  private Lscala/math/Numeric$BigDecimalAsIfIntegral$; bigDecAsIntegral$u0020;
+  
+  public Lscala/math/Numeric$BigDecimalAsIfIntegral$; bigDecAsIntegral() {
+    return this.(Lscala/math/Numeric$BigDecimalAsIfIntegral$;)bigDecAsIntegral$u0020;
+  }
+  
+  public Lscala/collection/immutable/NumericRange$Exclusive; apply(Lscala/math/BigDecimal; start, Lscala/math/BigDecimal; end, Lscala/math/BigDecimal; step) {
+    return Lscala/collection/immutable/NumericRange$;.MODULE$.(Lscala/collection/immutable/NumericRange$;::apply(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/immutable/NumericRange$Exclusive;)(start, end, step, this.(Lscala/collection/immutable/Range$BigDecimal$;::bigDecAsIntegral()Lscala/math/Numeric$BigDecimalAsIfIntegral$;)());
+  }
+  
+  public Lscala/collection/immutable/NumericRange$Inclusive; inclusive(Lscala/math/BigDecimal; start, Lscala/math/BigDecimal; end, Lscala/math/BigDecimal; step) {
+    return Lscala/collection/immutable/NumericRange$;.MODULE$.(Lscala/collection/immutable/NumericRange$;::inclusive(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/immutable/NumericRange$Inclusive;)(start, end, step, this.(Lscala/collection/immutable/Range$BigDecimal$;::bigDecAsIntegral()Lscala/math/Numeric$BigDecimalAsIfIntegral$;)());
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(Lscala/math/Numeric$BigDecimalAsIfIntegral$;)bigDecAsIntegral$u0020 = Lscala/math/Numeric$BigDecimalAsIfIntegral$;.MODULE$;
+  }
+}

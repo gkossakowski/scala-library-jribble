@@ -1,0 +1,30 @@
+public interface Lscala/math/Numeric; extends Lscala/math/Ordering;, Lscala/ScalaObject; {
+  
+  public Ljava/lang/Object; plus(Ljava/lang/Object; x, Ljava/lang/Object; y);
+  
+  public Ljava/lang/Object; minus(Ljava/lang/Object; x, Ljava/lang/Object; y);
+  
+  public Ljava/lang/Object; times(Ljava/lang/Object; x, Ljava/lang/Object; y);
+  
+  public Ljava/lang/Object; negate(Ljava/lang/Object; x);
+  
+  public Ljava/lang/Object; fromInt(I; x);
+  
+  public I; toInt(Ljava/lang/Object; x);
+  
+  public J; toLong(Ljava/lang/Object; x);
+  
+  public F; toFloat(Ljava/lang/Object; x);
+  
+  public D; toDouble(Ljava/lang/Object; x);
+  
+  public Ljava/lang/Object; zero();
+  
+  public Ljava/lang/Object; one();
+  
+  public Ljava/lang/Object; abs(Ljava/lang/Object; x);
+  
+  public I; signum(Ljava/lang/Object; x);
+  
+  public Lscala/math/Numeric$Ops; mkNumericOps(Ljava/lang/Object; lhs);
+}

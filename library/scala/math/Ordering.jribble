@@ -1,0 +1,26 @@
+public interface Lscala/math/Ordering; extends Ljava/util/Comparator;, Lscala/math/PartialOrdering;, Lscala/ScalaObject; {
+  
+  public Lscala/Some; tryCompare(Ljava/lang/Object; x, Ljava/lang/Object; y);
+  
+  public I; compare(Ljava/lang/Object; x, Ljava/lang/Object; y);
+  
+  public Z; lteq(Ljava/lang/Object; x, Ljava/lang/Object; y);
+  
+  public Z; gteq(Ljava/lang/Object; x, Ljava/lang/Object; y);
+  
+  public Z; lt(Ljava/lang/Object; x, Ljava/lang/Object; y);
+  
+  public Z; gt(Ljava/lang/Object; x, Ljava/lang/Object; y);
+  
+  public Z; equiv(Ljava/lang/Object; x, Ljava/lang/Object; y);
+  
+  public Ljava/lang/Object; max(Ljava/lang/Object; x, Ljava/lang/Object; y);
+  
+  public Ljava/lang/Object; min(Ljava/lang/Object; x, Ljava/lang/Object; y);
+  
+  public Lscala/math/Ordering; reverse();
+  
+  public Lscala/math/Ordering; on(Lscala/Function1; f);
+  
+  public Lscala/math/Ordering$Ops; mkOrderingOps(Ljava/lang/Object; lhs);
+}

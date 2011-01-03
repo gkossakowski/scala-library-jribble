@@ -1,0 +1,19 @@
+public final class Lscala/collection/mutable/Utils$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/mutable/Utils$; MODULE$ = new (Lscala/collection/mutable/Utils$;::this()V;)();
+  
+  public Ljava/lang/Object;[ growArray(Ljava/lang/Object;[ x) {
+    Ljava/lang/Object;[ y = new Ljava/lang/Object;[(x.<length> * 2)];
+    Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(x, 0, y, 0, x.<length>);
+    return y;
+  }
+  
+  public Ljava/lang/Object;[ clone(Ljava/lang/Object;[ x) {
+    Ljava/lang/Object;[ y = new Ljava/lang/Object;[x.<length>];
+    Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(x, 0, y, 0, x.<length>);
+    return y;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

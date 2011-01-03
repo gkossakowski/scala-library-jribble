@@ -1,0 +1,29 @@
+public final class Lscala/collection/mutable/ArrayOps$$anonfun$transpose$1$$anonfun$apply$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(Ljava/lang/Object; x) {
+    this.(Lscala/collection/mutable/ArrayOps$$anonfun$transpose$1;)$outer$u0020.(Lscala/collection/mutable/Builder;[)bs$1[this.(Lscala/runtime/IntRef;)i$1.(I;)elem].(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
+    this.(Lscala/runtime/IntRef;)i$1.(I;)elem = (this.(Lscala/runtime/IntRef;)i$1.(I;)elem + 1);
+  }
+  
+  private Lscala/collection/mutable/ArrayOps$$anonfun$transpose$1; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/mutable/ArrayOps$$anonfun$transpose$1$$anonfun$apply$1;::apply(Ljava/lang/Object;)V;)(v1);
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/runtime/IntRef; i$1;
+  
+  public this(Lscala/collection/mutable/ArrayOps$$anonfun$transpose$1; $outer, Lscala/runtime/IntRef; i$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/ArrayOps$$anonfun$transpose$1;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/runtime/IntRef;)i$1 = i$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

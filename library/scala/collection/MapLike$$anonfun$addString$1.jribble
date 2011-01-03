@@ -1,0 +1,24 @@
+public final class Lscala/collection/MapLike$$anonfun$addString$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Ljava/lang/String; apply(Lscala/Tuple2; x0$1) {
+    Lscala/Tuple2; temp34 = x0$1;
+    Ljava/lang/String; $14$;
+    if ((temp34 != null))
+      {
+        $14$ = (Lscala/Predef$;.MODULE$.(Lscala/Predef$;::any2stringadd(Ljava/lang/Object;)Lscala/runtime/StringAdd;)(temp34.(Lscala/Tuple2;::_1()Ljava/lang/Object;)()).(Lscala/runtime/StringAdd;::$plus(Ljava/lang/String;)Ljava/lang/String;)(" -> ") + temp34.(Lscala/Tuple2;::_2()Ljava/lang/Object;)());
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp34));
+      }
+    return $14$;
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/collection/MapLike$$anonfun$addString$1;::apply(Lscala/Tuple2;)Ljava/lang/String;)(v1.<cast>(Lscala/Tuple2;));
+  }
+  
+  public this(Lscala/collection/MapLike; $outer) {
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

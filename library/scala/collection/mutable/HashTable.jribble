@@ -1,0 +1,52 @@
+public interface Lscala/collection/mutable/HashTable; extends Lscala/ScalaObject; {
+  
+  public I; loadFactor();
+  
+  public I; loadFactorDenum();
+  
+  public I; initialSize();
+  
+  public I; initialThreshold();
+  
+  public I; _loadFactor();
+  
+  public V; _loadFactor_$eq(I; x$1);
+  
+  public Lscala/collection/mutable/HashEntry;[ table();
+  
+  public V; table_$eq(Lscala/collection/mutable/HashEntry;[ x$1);
+  
+  public I; tableSize();
+  
+  public V; tableSize_$eq(I; x$1);
+  
+  public I; threshold();
+  
+  public V; threshold_$eq(I; x$1);
+  
+  public V; init(Ljava/io/ObjectInputStream; in, Lscala/Function2; f);
+  
+  public V; serializeTo(Ljava/io/ObjectOutputStream; out, Lscala/Function1; value);
+  
+  public Lscala/collection/mutable/HashEntry; findEntry(Ljava/lang/Object; key);
+  
+  public V; addEntry(Lscala/collection/mutable/HashEntry; e);
+  
+  public Lscala/collection/mutable/HashEntry; removeEntry(Ljava/lang/Object; key);
+  
+  public Lscala/collection/Iterator; entriesIterator();
+  
+  public V; foreachEntry(Lscala/Function1; f);
+  
+  public Lscala/collection/Iterator; entries();
+  
+  public V; clearTable();
+  
+  public Z; elemEquals(Ljava/lang/Object; key1, Ljava/lang/Object; key2);
+  
+  public I; elemHashCode(Ljava/lang/Object; key);
+  
+  public I; improve(I; hcode);
+  
+  public I; index(I; hcode);
+}

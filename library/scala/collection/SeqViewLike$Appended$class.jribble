@@ -1,0 +1,27 @@
+public abstract class Lscala/collection/SeqViewLike$Appended$class; {
+  
+  public static Lscala/collection/Seq; restSeq(Lscala/collection/SeqViewLike$Appended; $this) {
+    return $this.(Lscala/collection/TraversableViewLike$Appended;::rest()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::toSeq()Lscala/collection/Seq;)();
+  }
+  
+  public static I; length(Lscala/collection/SeqViewLike$Appended; $this) {
+    return ($this.(Lscala/collection/SeqViewLike$Appended;::scala$collection$SeqViewLike$Appended$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::length()I;)() + $this.(Lscala/collection/SeqViewLike$Appended;::restSeq()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::length()I;)());
+  }
+  
+  public static Ljava/lang/Object; apply(Lscala/collection/SeqViewLike$Appended; $this, I; idx) {
+    Ljava/lang/Object; $4$;
+    if ((idx < $this.(Lscala/collection/SeqViewLike$Appended;::scala$collection$SeqViewLike$Appended$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::length()I;)()))
+      {
+        $4$ = $this.(Lscala/collection/SeqViewLike$Appended;::scala$collection$SeqViewLike$Appended$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(idx);
+      }
+    else
+      {
+        $4$ = $this.(Lscala/collection/SeqViewLike$Appended;::restSeq()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)((idx - $this.(Lscala/collection/SeqViewLike$Appended;::scala$collection$SeqViewLike$Appended$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::length()I;)()));
+      }
+    return $4$;
+  }
+  
+  public static V; $init$(Lscala/collection/SeqViewLike$Appended; $this) {
+    
+  }
+}

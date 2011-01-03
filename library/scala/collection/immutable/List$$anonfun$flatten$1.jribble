@@ -1,0 +1,33 @@
+public final class Lscala/collection/immutable/List$$anonfun$flatten$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(Lscala/collection/immutable/List; xs) {
+    Lscala/collection/immutable/List; xc = xs;
+    while$17: while(true) {
+      if (!(xc.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
+        {
+          {
+            this.(Lscala/collection/mutable/ListBuffer;)b$1.(Lscala/collection/mutable/ListBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ListBuffer;)(xc.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)());
+            xc = xc.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;);
+          }
+          continue while$17;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/immutable/List$$anonfun$flatten$1;::apply(Lscala/collection/immutable/List;)V;)(v1.<cast>(Lscala/collection/immutable/List;));
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/collection/mutable/ListBuffer; b$1;
+  
+  public this(Lscala/collection/mutable/ListBuffer; b$1) {
+    this.(Lscala/collection/mutable/ListBuffer;)b$1 = b$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

@@ -1,0 +1,46 @@
+public abstract class Lscala/collection/mutable/DefaultMapModel$class; {
+  
+  public static Lscala/Option; get(Lscala/collection/mutable/DefaultMapModel; $this, Ljava/lang/Object; key) {
+    Lscala/collection/mutable/DefaultEntry; e = $this.(Lscala/collection/mutable/DefaultMapModel;::findEntry(Ljava/lang/Object;)Lscala/collection/mutable/DefaultEntry;)(key);
+    Lscala/Option; $1$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(e, null))
+      {
+        $1$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $1$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(e.(Lscala/collection/mutable/DefaultEntry;::value()Ljava/lang/Object;)()));
+      }
+    return $1$;
+  }
+  
+  public static Lscala/Option; put(Lscala/collection/mutable/DefaultMapModel; $this, Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    Lscala/collection/mutable/DefaultEntry; e = $this.(Lscala/collection/mutable/DefaultMapModel;::findEntry(Ljava/lang/Object;)Lscala/collection/mutable/DefaultEntry;)(key);
+    Lscala/Option; $2$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(e, null))
+      {
+        $this.(Lscala/collection/mutable/DefaultMapModel;::addEntry(Lscala/collection/mutable/DefaultEntry;)V;)((new (Lscala/collection/mutable/DefaultEntry;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(key, value)));
+        $2$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        Ljava/lang/Object; v = e.(Lscala/collection/mutable/DefaultEntry;::value()Ljava/lang/Object;)();
+        e.(Lscala/collection/mutable/DefaultEntry;::value_$eq(Ljava/lang/Object;)V;)(value);
+        $2$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(v));
+      }
+    return $2$;
+  }
+  
+  public static Lscala/collection/mutable/DefaultMapModel; $plus$eq(Lscala/collection/mutable/DefaultMapModel; $this, Lscala/Tuple2; kv) {
+    $this.(Lscala/collection/mutable/DefaultMapModel;::put(Ljava/lang/Object;Ljava/lang/Object;)Lscala/Option;)(kv.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), kv.(Lscala/Tuple2;::_2()Ljava/lang/Object;)());
+    return $this;
+  }
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/mutable/DefaultMapModel; $this) {
+    return $this.(Lscala/collection/mutable/DefaultMapModel;::entries()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/collection/mutable/DefaultMapModel$$anonfun$iterator$1;::this(Lscala/collection/mutable/DefaultMapModel;)V;)($this)));
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/DefaultMapModel; $this) {
+    
+  }
+}

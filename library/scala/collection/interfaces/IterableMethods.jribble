@@ -1,0 +1,22 @@
+public interface Lscala/collection/interfaces/IterableMethods; extends Lscala/collection/interfaces/TraversableMethods; {
+  
+  public Lscala/collection/Iterator; iterator();
+  
+  public Lscala/collection/Iterable; dropRight(I; n);
+  
+  public Z; sameElements(Lscala/collection/Iterable; that);
+  
+  public Lscala/collection/Iterable; sortWith(Lscala/Function2; lt, Lscala/reflect/ClassManifest; m);
+  
+  public Lscala/collection/Iterable; takeRight(I; n);
+  
+  public Ljava/lang/Object; zipAll(Lscala/collection/Iterable; that, Ljava/lang/Object; e1, Ljava/lang/Object; e2, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; zipWithIndex(Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; zip(Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Lscala/collection/IterableView; view();
+  
+  public Lscala/collection/IterableView; view(I; from, I; until);
+}

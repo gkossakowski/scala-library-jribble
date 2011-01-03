@@ -1,0 +1,200 @@
+public abstract class Lscala/Enumeration; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  public this() {
+    (Lscala/Enumeration;::this(I;Lscala/collection/Seq;)V;)(0, Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/String;>{null}.<cast>(Ljava/lang/Object;[)));
+  }
+  
+  public this(Lscala/collection/Seq; names) {
+    (Lscala/Enumeration;::this(I;Lscala/collection/Seq;)V;)(0, names);
+  }
+  
+  public Ljava/lang/Object; readResolve() {
+    return this.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)().(Ljava/lang/Class;::getField(Ljava/lang/String;)Ljava/lang/reflect/Field;)("MODULE$").(Ljava/lang/reflect/Field;::get(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(this.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)().(Ljava/lang/Class;::getName()Ljava/lang/String;)()).(Lscala/collection/immutable/StringLike;::stripSuffix(Ljava/lang/String;)Ljava/lang/String;)("$")).(Lscala/collection/immutable/StringLike;::split(C;)Ljava/lang/String;[)('.').<cast>(Ljava/lang/Object;[)).(Lscala/collection/IndexedSeqOptimized;::last()Ljava/lang/Object;)().<cast>(Ljava/lang/String;)).(Lscala/collection/immutable/StringLike;::split(C;)Ljava/lang/String;[)('$').<cast>(Ljava/lang/Object;[)).(Lscala/collection/IndexedSeqOptimized;::last()Ljava/lang/Object;)().<cast>(Ljava/lang/String;);
+  }
+  
+  private Lscala/collection/mutable/Map; scala$Enumeration$$vmap$u0020;
+  
+  public final Lscala/collection/mutable/Map; scala$Enumeration$$vmap() {
+    return this.(Lscala/collection/mutable/Map;)scala$Enumeration$$vmap$u0020;
+  }
+  
+  private Lscala/Enumeration$ValueSet; vset$u0020;
+  
+  private Lscala/Enumeration$ValueSet; vset() {
+    return this.(Lscala/Enumeration$ValueSet;)vset$u0020;
+  }
+  
+  private V; vset_$eq(Lscala/Enumeration$ValueSet; x$1) {
+    this.(Lscala/Enumeration$ValueSet;)vset$u0020 = x$1;
+  }
+  
+  private Z; scala$Enumeration$$vsetDefined$u0020;
+  
+  private Z; scala$Enumeration$$vsetDefined() {
+    return this.(Z;)scala$Enumeration$$vsetDefined$u0020;
+  }
+  
+  public final V; scala$Enumeration$$vsetDefined_$eq(Z; x$1) {
+    this.(Z;)scala$Enumeration$$vsetDefined$u0020 = x$1;
+  }
+  
+  private Lscala/collection/mutable/Map; scala$Enumeration$$nmap$u0020;
+  
+  public final Lscala/collection/mutable/Map; scala$Enumeration$$nmap() {
+    return this.(Lscala/collection/mutable/Map;)scala$Enumeration$$nmap$u0020;
+  }
+  
+  public Lscala/Enumeration$ValueSet; values() {
+    if (!(this.(Lscala/Enumeration;::scala$Enumeration$$vsetDefined()Z;)()))
+      {
+        this.(Lscala/Enumeration;::vset_$eq(Lscala/Enumeration$ValueSet;)V;)((new (Lscala/Enumeration$ValueSet;::this(Lscala/Enumeration;Lscala/collection/immutable/BitSet;)V;)(this, Lscala/collection/immutable/BitSet$;.MODULE$.(Lscala/collection/immutable/BitSet$;::empty()Lscala/collection/immutable/BitSet;)().(Lscala/collection/generic/Addable;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Addable;)(this.(Lscala/Enumeration;::scala$Enumeration$$vmap()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::values()Lscala/collection/Iterable;)().(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/Enumeration$$anonfun$values$1;::this(Lscala/Enumeration;)V;)(this)), Lscala/collection/Iterable$;.MODULE$.(Lscala/collection/Iterable$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;)).<cast>(Lscala/collection/immutable/BitSet;))));
+        this.(Lscala/Enumeration;::scala$Enumeration$$vsetDefined_$eq(Z;)V;)(true);
+      }
+    else
+      {
+        
+      }
+    return this.(Lscala/Enumeration;::vset()Lscala/Enumeration$ValueSet;)();
+  }
+  
+  private I; nextId$u0020;
+  
+  public I; nextId() {
+    return this.(I;)nextId$u0020;
+  }
+  
+  public V; nextId_$eq(I; x$1) {
+    this.(I;)nextId$u0020 = x$1;
+  }
+  
+  private Lscala/collection/Iterator; nextName$u0020;
+  
+  protected Lscala/collection/Iterator; nextName() {
+    return this.(Lscala/collection/Iterator;)nextName$u0020;
+  }
+  
+  protected V; nextName_$eq(Lscala/collection/Iterator; x$1) {
+    this.(Lscala/collection/Iterator;)nextName$u0020 = x$1;
+  }
+  
+  public final Ljava/lang/String; scala$Enumeration$$nextNameOrElse(Lscala/Function0; orElse) {
+    Ljava/lang/String; $1$;
+    if (this.(Lscala/Enumeration;::nextName()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::hasNext()Z;)())
+      {
+        $1$ = this.(Lscala/Enumeration;::nextName()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::next()Ljava/lang/Object;)().<cast>(Ljava/lang/String;);
+      }
+    else
+      {
+        $1$ = orElse.(Lscala/Function0;::apply()Ljava/lang/Object;)().<cast>(Ljava/lang/String;);
+      }
+    return $1$;
+  }
+  
+  private I; scala$Enumeration$$topId$u0020;
+  
+  public final I; scala$Enumeration$$topId() {
+    return this.(I;)scala$Enumeration$$topId$u0020;
+  }
+  
+  public final V; scala$Enumeration$$topId_$eq(I; x$1) {
+    this.(I;)scala$Enumeration$$topId$u0020 = x$1;
+  }
+  
+  public final I; maxId() {
+    return this.(Lscala/Enumeration;::scala$Enumeration$$topId()I;)();
+  }
+  
+  public final Lscala/Enumeration$Value; apply(I; x) {
+    return this.(Lscala/Enumeration;::scala$Enumeration$$vmap()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x)).<cast>(Lscala/Enumeration$Value;);
+  }
+  
+  public final Lscala/Enumeration$Value; withName(Ljava/lang/String; s$1) {
+    return this.(Lscala/Enumeration;::values()Lscala/Enumeration$ValueSet;)().(Lscala/collection/IterableLike;::find(Lscala/Function1;)Lscala/Option;)((new (Lscala/Enumeration$$anonfun$withName$1;::this(Lscala/Enumeration;Ljava/lang/String;)V;)(this, s$1))).(Lscala/Option;::get()Ljava/lang/Object;)().<cast>(Lscala/Enumeration$Value;);
+  }
+  
+  protected final Lscala/Enumeration$Value; Value() {
+    return this.(Lscala/Enumeration;::Value(I;)Lscala/Enumeration$Value;)(this.(Lscala/Enumeration;::nextId()I;)());
+  }
+  
+  protected final Lscala/Enumeration$Value; Value(I; i) {
+    return this.(Lscala/Enumeration;::Value(I;Ljava/lang/String;)Lscala/Enumeration$Value;)(i, this.(Lscala/Enumeration;::scala$Enumeration$$nextNameOrElse(Lscala/Function0;)Ljava/lang/String;)((new (Lscala/Enumeration$$anonfun$Value$1;::this(Lscala/Enumeration;)V;)(this))));
+  }
+  
+  protected final Lscala/Enumeration$Value; Value(Ljava/lang/String; name) {
+    return this.(Lscala/Enumeration;::Value(I;Ljava/lang/String;)Lscala/Enumeration$Value;)(this.(Lscala/Enumeration;::nextId()I;)(), name);
+  }
+  
+  protected final Lscala/Enumeration$Value; Value(I; i, Ljava/lang/String; name) {
+    return (new (Lscala/Enumeration$Val;::this(Lscala/Enumeration;I;Ljava/lang/String;)V;)(this, i, name));
+  }
+  
+  public final V; scala$Enumeration$$populateNameMap() {
+    Ljava/lang/reflect/Method;[ methods = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(this.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)().(Ljava/lang/Class;::getMethods()Ljava/lang/reflect/Method;[)().<cast>(Ljava/lang/Object;[)).(Lscala/collection/TraversableLike;::filter(Lscala/Function1;)Ljava/lang/Object;)((new (Lscala/Enumeration$$anonfun$1;::this(Lscala/Enumeration;)V;)(this))).<cast>(Ljava/lang/reflect/Method;[);
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(methods.<cast>(Ljava/lang/Object;[)).(Lscala/collection/IndexedSeqOptimized;::foreach(Lscala/Function1;)V;)((new (Lscala/Enumeration$$anonfun$scala$Enumeration$$populateNameMap$1;::this(Lscala/Enumeration;)V;)(this)));
+  }
+  
+  public final Ljava/lang/String; scala$Enumeration$$nameOf(I; i$2) {
+    return this.(Lscala/Enumeration;::scala$Enumeration$$nmap()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::getOrElse(Ljava/lang/Object;Lscala/Function0;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i$2), (new (Lscala/Enumeration$$anonfun$scala$Enumeration$$nameOf$1;::this(Lscala/Enumeration;I;)V;)(this, i$2))).<cast>(Ljava/lang/String;);
+  }
+  
+  private Lscala/Enumeration$ValueSet$; ValueSet$module;
+  
+  public final Lscala/Enumeration$ValueSet$; ValueSet() {
+    if ((this.(Lscala/Enumeration$ValueSet$;)ValueSet$module == null))
+      {
+        this.(Lscala/Enumeration$ValueSet$;)ValueSet$module = (new (Lscala/Enumeration$ValueSet$;::this(Lscala/Enumeration;)V;)(this));
+      }
+    return this.(Lscala/Enumeration$ValueSet$;)ValueSet$module;
+  }
+  
+  public Ljava/lang/String; name() {
+    return this.(Lscala/Enumeration;::toString()Ljava/lang/String;)();
+  }
+  
+  public Lscala/Option; valueOf(Ljava/lang/String; s$2) {
+    return this.(Lscala/Enumeration;::values()Lscala/Enumeration$ValueSet;)().(Lscala/collection/IterableLike;::find(Lscala/Function1;)Lscala/Option;)((new (Lscala/Enumeration$$anonfun$valueOf$1;::this(Lscala/Enumeration;Ljava/lang/String;)V;)(this, s$2)));
+  }
+  
+  public final Lscala/collection/Iterator; iterator() {
+    return this.(Lscala/Enumeration;::values()Lscala/Enumeration$ValueSet;)().(Lscala/Enumeration$ValueSet;::iterator()Lscala/collection/Iterator;)();
+  }
+  
+  public V; foreach(Lscala/Function1; f) {
+    this.(Lscala/Enumeration;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)(f);
+  }
+  
+  public Z; forall(Lscala/Function1; p) {
+    return this.(Lscala/Enumeration;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::forall(Lscala/Function1;)Z;)(p);
+  }
+  
+  public Z; exists(Lscala/Function1; p) {
+    return this.(Lscala/Enumeration;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::exists(Lscala/Function1;)Z;)(p);
+  }
+  
+  public Lscala/collection/Iterator; map(Lscala/Function1; f) {
+    return this.(Lscala/Enumeration;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)(f);
+  }
+  
+  public Lscala/collection/Iterator; flatMap(Lscala/Function1; f) {
+    return this.(Lscala/Enumeration;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::flatMap(Lscala/Function1;)Lscala/collection/Iterator;)(f);
+  }
+  
+  public Lscala/collection/Iterator; filter(Lscala/Function1; p) {
+    return this.(Lscala/Enumeration;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::filter(Lscala/Function1;)Lscala/collection/Iterator;)(p);
+  }
+  
+  public this(I; initial, Lscala/collection/Seq; names) {
+    (Ljava/lang/Object;::super()V;)();
+    this.(Lscala/collection/mutable/Map;)scala$Enumeration$$vmap$u0020 = (new (Lscala/collection/mutable/HashMap;::this()V;)());
+    this.(Lscala/Enumeration$ValueSet;)vset$u0020 = null;
+    this.(Z;)scala$Enumeration$$vsetDefined$u0020 = false;
+    this.(Lscala/collection/mutable/Map;)scala$Enumeration$$nmap$u0020 = (new (Lscala/collection/mutable/HashMap;::this()V;)());
+    this.(I;)nextId$u0020 = initial;
+    this.(Lscala/collection/Iterator;)nextName$u0020 = names.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    this.(I;)scala$Enumeration$$topId$u0020 = initial;
+  }
+}

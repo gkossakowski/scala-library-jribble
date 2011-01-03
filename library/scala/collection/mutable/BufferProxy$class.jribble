@@ -1,0 +1,98 @@
+public abstract class Lscala/collection/mutable/BufferProxy$class; {
+  
+  public static I; length(Lscala/collection/mutable/BufferProxy; $this) {
+    return $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::length()I;)();
+  }
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/mutable/BufferProxy; $this) {
+    return $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+  }
+  
+  public static Ljava/lang/Object; apply(Lscala/collection/mutable/BufferProxy; $this, I; n) {
+    return $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::apply(I;)Ljava/lang/Object;)(n);
+  }
+  
+  public static Lscala/collection/mutable/Buffer; $plus(Lscala/collection/mutable/BufferProxy; $this, Ljava/lang/Object; elem) {
+    return $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::$plus(Ljava/lang/Object;)Lscala/collection/mutable/Buffer;)(elem);
+  }
+  
+  public static Lscala/collection/mutable/BufferProxy; $plus$eq(Lscala/collection/mutable/BufferProxy; $this, Ljava/lang/Object; elem) {
+    $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Buffer;)(elem);
+    return $this;
+  }
+  
+  public static Lscala/collection/Seq; readOnly(Lscala/collection/mutable/BufferProxy; $this) {
+    return $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::readOnly()Lscala/collection/Seq;)();
+  }
+  
+  public static Lscala/collection/mutable/Buffer; $plus$plus(Lscala/collection/mutable/BufferProxy; $this, Lscala/collection/TraversableOnce; xs) {
+    return $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Buffer;)(xs);
+  }
+  
+  public static Lscala/collection/mutable/BufferProxy; $plus$plus$eq(Lscala/collection/mutable/BufferProxy; $this, Lscala/collection/TraversableOnce; xs) {
+    $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(xs);
+    return $this;
+  }
+  
+  public static V; append(Lscala/collection/mutable/BufferProxy; $this, Lscala/collection/Seq; elems) {
+    $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(elems);
+  }
+  
+  public static V; appendAll(Lscala/collection/mutable/BufferProxy; $this, Lscala/collection/TraversableOnce; xs) {
+    $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::appendAll(Lscala/collection/TraversableOnce;)V;)(xs);
+  }
+  
+  public static Lscala/collection/mutable/BufferProxy; $plus$eq$colon(Lscala/collection/mutable/BufferProxy; $this, Ljava/lang/Object; elem) {
+    $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::$plus$eq$colon(Ljava/lang/Object;)Lscala/collection/mutable/Buffer;)(elem);
+    return $this;
+  }
+  
+  public static Lscala/collection/mutable/BufferProxy; $plus$plus$eq$colon(Lscala/collection/mutable/BufferProxy; $this, Lscala/collection/TraversableOnce; xs) {
+    $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::$plus$plus$eq$colon(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Buffer;)(xs);
+    return $this;
+  }
+  
+  public static V; prepend(Lscala/collection/mutable/BufferProxy; $this, Lscala/collection/Seq; elems) {
+    $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::prependAll(Lscala/collection/TraversableOnce;)V;)(elems);
+  }
+  
+  public static V; prependAll(Lscala/collection/mutable/BufferProxy; $this, Lscala/collection/TraversableOnce; xs) {
+    $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::prependAll(Lscala/collection/TraversableOnce;)V;)(xs);
+  }
+  
+  public static V; insert(Lscala/collection/mutable/BufferProxy; $this, I; n, Lscala/collection/Seq; elems) {
+    $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::insertAll(I;Lscala/collection/Traversable;)V;)(n, elems);
+  }
+  
+  public static V; insertAll(Lscala/collection/mutable/BufferProxy; $this, I; n, Lscala/collection/Iterable; iter) {
+    $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::insertAll(I;Lscala/collection/Traversable;)V;)(n, iter);
+  }
+  
+  public static V; insertAll(Lscala/collection/mutable/BufferProxy; $this, I; n, Lscala/collection/Traversable; iter) {
+    $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::insertAll(I;Lscala/collection/Traversable;)V;)(n, iter);
+  }
+  
+  public static V; update(Lscala/collection/mutable/BufferProxy; $this, I; n, Ljava/lang/Object; newelem) {
+    $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::update(I;Ljava/lang/Object;)V;)(n, newelem);
+  }
+  
+  public static Ljava/lang/Object; remove(Lscala/collection/mutable/BufferProxy; $this, I; n) {
+    return $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::remove(I;)Ljava/lang/Object;)(n);
+  }
+  
+  public static V; clear(Lscala/collection/mutable/BufferProxy; $this) {
+    $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::clear()V;)();
+  }
+  
+  public static V; $less$less(Lscala/collection/mutable/BufferProxy; $this, Lscala/collection/script/Message; cmd) {
+    $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::$less$less(Lscala/collection/script/Message;)V;)(cmd);
+  }
+  
+  public static Lscala/collection/mutable/Buffer; clone(Lscala/collection/mutable/BufferProxy; $this) {
+    return (new (Lscala/collection/mutable/BufferProxy$$anon$1;::this(Lscala/collection/mutable/BufferProxy;)V;)($this));
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/BufferProxy; $this) {
+    
+  }
+}

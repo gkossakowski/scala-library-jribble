@@ -1,0 +1,32 @@
+public final class Lscala/reflect/If$; extends Lscala/runtime/AbstractFunction3; implements Lscala/ScalaObject; {
+  public static Lscala/reflect/If$; MODULE$ = new (Lscala/reflect/If$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "If";
+  }
+  
+  public Lscala/Option; unapply(Lscala/reflect/If; x$0) {
+    Lscala/Option; $76$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $76$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $76$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/reflect/If;::condition()Lscala/reflect/Tree;)(), x$0.(Lscala/reflect/If;::trueCase()Lscala/reflect/Tree;)(), x$0.(Lscala/reflect/If;::falseCase()Lscala/reflect/Tree;)()))));
+      }
+    return $76$;
+  }
+  
+  public Lscala/reflect/If; apply(Lscala/reflect/Tree; condition, Lscala/reflect/Tree; trueCase, Lscala/reflect/Tree; falseCase) {
+    return (new (Lscala/reflect/If;::this(Lscala/reflect/Tree;Lscala/reflect/Tree;Lscala/reflect/Tree;)V;)(condition, trueCase, falseCase));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2, Ljava/lang/Object; v3) {
+    return this.(Lscala/reflect/If$;::apply(Lscala/reflect/Tree;Lscala/reflect/Tree;Lscala/reflect/Tree;)Lscala/reflect/If;)(v1.<cast>(Lscala/reflect/Tree;), v2.<cast>(Lscala/reflect/Tree;), v3.<cast>(Lscala/reflect/Tree;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction3;::super()V;)();
+  }
+}

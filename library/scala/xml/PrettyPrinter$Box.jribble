@@ -1,0 +1,121 @@
+public class Lscala/xml/PrettyPrinter$Box; extends Lscala/xml/PrettyPrinter$Item; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Ljava/lang/String; copy$default$2() {
+    return this.(Lscala/xml/PrettyPrinter$Box;::s()Ljava/lang/String;)();
+  }
+  
+  public I; copy$default$1() {
+    return this.(Lscala/xml/PrettyPrinter$Box;::col()I;)();
+  }
+  
+  private I; col$u0020;
+  
+  public I; col() {
+    return this.(I;)col$u0020;
+  }
+  
+  private Ljava/lang/String; s$u0020;
+  
+  public Ljava/lang/String; s() {
+    return this.(Ljava/lang/String;)s$u0020;
+  }
+  
+  public Lscala/xml/PrettyPrinter$Box; copy(I; col, Ljava/lang/String; s) {
+    return (new (Lscala/xml/PrettyPrinter$Box;::this(Lscala/xml/PrettyPrinter;I;Ljava/lang/String;)V;)(this.(Lscala/xml/PrettyPrinter$Box;::scala$xml$PrettyPrinter$Box$$$outer()Lscala/xml/PrettyPrinter;)(), col, s));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp2 = x$1;
+    Z; $6$;
+    if ((temp2.<instanceof>(Lscala/xml/PrettyPrinter$Box;) && (temp2.<cast>(Lscala/xml/PrettyPrinter$Box;).(Lscala/xml/PrettyPrinter$Box;::scala$xml$PrettyPrinter$Box$$$outer()Lscala/xml/PrettyPrinter;)() == this.(Lscala/xml/PrettyPrinter$Box;::scala$xml$PrettyPrinter$Box$$$outer()Lscala/xml/PrettyPrinter;)())))
+      {
+        Lscala/xml/PrettyPrinter$Box; temp3 = temp2.<cast>(Lscala/xml/PrettyPrinter$Box;);
+        I; temp4 = temp3.(Lscala/xml/PrettyPrinter$Box;::col()I;)();
+        Ljava/lang/String; temp5 = temp3.(Lscala/xml/PrettyPrinter$Box;::s()Ljava/lang/String;)();
+        Ljava/lang/String; s$1 = temp5;
+        I; col$1 = temp4;
+        Z; $7$;
+        if (this.(Lscala/xml/PrettyPrinter$Box;::gd1$1(I;Ljava/lang/String;)Z;)(col$1, s$1))
+          {
+            $7$ = x$1.<cast>(Lscala/xml/PrettyPrinter$Box;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $7$ = false;
+          }
+        $6$ = $7$;
+      }
+    else
+      {
+        $6$ = false;
+      }
+    return ((this == x$1) || $6$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Box";
+  }
+  
+  public I; productArity() {
+    return 2;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp6 = x$1;
+    I; $8$ = temp6;
+    Ljava/lang/Object; $9$;
+    switch ($8$) {
+      0: {
+        $9$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/xml/PrettyPrinter$Box;::col()I;)());
+        break;
+      }
+      
+      1: {
+        $9$ = this.(Lscala/xml/PrettyPrinter$Box;::s()Ljava/lang/String;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $9$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/xml/PrettyPrinter$Box;);
+  }
+  
+  public Lscala/xml/PrettyPrinter; scala$xml$PrettyPrinter$Box$$$outer() {
+    return this.(Lscala/xml/PrettyPrinter;)$outer$u0020;
+  }
+  
+  private final Z; gd1$1(I; x$1, Ljava/lang/String; x$2) {
+    return ((x$1 == this.(Lscala/xml/PrettyPrinter$Box;::col()I;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$2, this.(Lscala/xml/PrettyPrinter$Box;::s()Ljava/lang/String;)()));
+  }
+  
+  public this(Lscala/xml/PrettyPrinter; $outer, I; col, Ljava/lang/String; s) {
+    this.(I;)col$u0020 = col;
+    this.(Ljava/lang/String;)s$u0020 = s;
+    (Lscala/xml/PrettyPrinter$Item;::super(Lscala/xml/PrettyPrinter;)V;)($outer);
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

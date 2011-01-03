@@ -1,0 +1,71 @@
+public abstract class Lscala/collection/mutable/LazyBuilder; extends Ljava/lang/Object; implements Lscala/collection/mutable/Builder;, Lscala/ScalaObject; {
+  
+  public V; sizeHint(I; size) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint(Lscala/collection/mutable/Builder;I;)V;)(this, size);
+  }
+  
+  public V; sizeHint(Lscala/collection/TraversableLike; coll, I; delta) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint(Lscala/collection/mutable/Builder;Lscala/collection/TraversableLike;I;)V;)(this, coll, delta);
+  }
+  
+  public V; sizeHintBounded(I; size, Lscala/collection/TraversableLike; boundingColl) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHintBounded(Lscala/collection/mutable/Builder;I;Lscala/collection/TraversableLike;)V;)(this, size, boundingColl);
+  }
+  
+  public Lscala/collection/mutable/Builder; mapResult(Lscala/Function1; f) {
+    return Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::mapResult(Lscala/collection/mutable/Builder;Lscala/Function1;)Lscala/collection/mutable/Builder;)(this, f);
+  }
+  
+  public I; sizeHint$default$2() {
+    return Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint$default$2(Lscala/collection/mutable/Builder;)I;)(this);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
+    return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$eq(Lscala/collection/generic/Growable;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/Seq;)Lscala/collection/generic/Growable;)(this, elem1, elem2, elems);
+  }
+  
+  private Lscala/collection/mutable/ListBuffer; parts$u0020;
+  
+  protected Lscala/collection/mutable/ListBuffer; parts() {
+    return this.(Lscala/collection/mutable/ListBuffer;)parts$u0020;
+  }
+  
+  protected V; parts_$eq(Lscala/collection/mutable/ListBuffer; x$1) {
+    this.(Lscala/collection/mutable/ListBuffer;)parts$u0020 = x$1;
+  }
+  
+  public Lscala/collection/mutable/LazyBuilder; $plus$eq(Ljava/lang/Object; x) {
+    this.(Lscala/collection/mutable/LazyBuilder;::parts()Lscala/collection/mutable/ListBuffer;)().(Lscala/collection/mutable/ListBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ListBuffer;)(Lscala/collection/immutable/List$;.MODULE$.(Lscala/collection/immutable/List$;::apply(Lscala/collection/Seq;)Lscala/collection/immutable/List;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{x})));
+    return this;
+  }
+  
+  public Lscala/collection/mutable/LazyBuilder; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    this.(Lscala/collection/mutable/LazyBuilder;::parts()Lscala/collection/mutable/ListBuffer;)().(Lscala/collection/mutable/ListBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ListBuffer;)(xs);
+    return this;
+  }
+  
+  public abstract Ljava/lang/Object; result();
+  
+  public V; clear() {
+    this.(Lscala/collection/mutable/LazyBuilder;::parts()Lscala/collection/mutable/ListBuffer;)().(Lscala/collection/mutable/ListBuffer;::clear()V;)();
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    return this.(Lscala/collection/mutable/LazyBuilder;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/LazyBuilder;)(xs);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/LazyBuilder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/LazyBuilder;)(elem);
+  }
+  
+  public Lscala/collection/mutable/Builder; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/LazyBuilder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/LazyBuilder;)(elem);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$init$(Lscala/collection/generic/Growable;)V;)(this);
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::$init$(Lscala/collection/mutable/Builder;)V;)(this);
+    this.(Lscala/collection/mutable/ListBuffer;)parts$u0020 = (new (Lscala/collection/mutable/ListBuffer;::this()V;)());
+  }
+}

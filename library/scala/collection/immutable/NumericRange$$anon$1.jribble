@@ -1,0 +1,63 @@
+public final class Lscala/collection/immutable/NumericRange$$anon$1; extends Lscala/collection/immutable/NumericRange; {
+  
+  public Lscala/collection/immutable/NumericRange; copy(Ljava/lang/Object; start, Ljava/lang/Object; end, Ljava/lang/Object; step) {
+    Lscala/collection/immutable/NumericRange; $15$;
+    if (this.(Lscala/collection/immutable/NumericRange;::isInclusive()Z;)())
+      {
+        $15$ = Lscala/collection/immutable/NumericRange$;.MODULE$.(Lscala/collection/immutable/NumericRange$;::inclusive(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/immutable/NumericRange$Inclusive;)(start, end, step, this.(Lscala/math/Integral;)unum$1);
+      }
+    else
+      {
+        $15$ = Lscala/collection/immutable/NumericRange$;.MODULE$.(Lscala/collection/immutable/NumericRange$;::apply(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/immutable/NumericRange$Exclusive;)(start, end, step, this.(Lscala/math/Integral;)unum$1);
+      }
+    return $15$;
+  }
+  
+  private Lscala/collection/immutable/NumericRange; underlyingRange$u0020;
+  
+  private Lscala/collection/immutable/NumericRange; underlyingRange() {
+    if (((this.(I;)bitmap$0 & 4) == 0))
+      {
+        if (((this.(I;)bitmap$0 & 4) == 0))
+          {
+            this.(Lscala/collection/immutable/NumericRange;)underlyingRange$u0020 = this.(Lscala/collection/immutable/NumericRange;)self$1;
+            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 4);
+          }
+        this.(Lscala/collection/immutable/NumericRange;)self$1 = null;
+      }
+    return this.(Lscala/collection/immutable/NumericRange;)underlyingRange$u0020;
+  }
+  
+  public V; foreach(Lscala/Function1; f$1) {
+    this.(Lscala/collection/immutable/NumericRange$$anon$1;::underlyingRange()Lscala/collection/immutable/NumericRange;)().(Lscala/collection/immutable/NumericRange;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/NumericRange$$anon$1$$anonfun$foreach$1;::this(Lscala/collection/immutable/NumericRange$$anon$1;Lscala/Function1;)V;)(this, f$1)));
+  }
+  
+  public Z; isEmpty() {
+    return this.(Lscala/collection/immutable/NumericRange$$anon$1;::underlyingRange()Lscala/collection/immutable/NumericRange;)().(Lscala/collection/immutable/NumericRange;::isEmpty()Z;)();
+  }
+  
+  public Ljava/lang/Object; apply(I; idx) {
+    return this.(Lscala/Function1;)fm$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/NumericRange$$anon$1;::underlyingRange()Lscala/collection/immutable/NumericRange;)().(Lscala/collection/immutable/NumericRange;::apply(I;)Ljava/lang/Object;)(idx));
+  }
+  
+  public Z; containsTyped(Ljava/lang/Object; el$1) {
+    return this.(Lscala/collection/immutable/NumericRange$$anon$1;::underlyingRange()Lscala/collection/immutable/NumericRange;)().(Lscala/collection/IterableLike;::exists(Lscala/Function1;)Z;)((new (Lscala/collection/immutable/NumericRange$$anon$1$$anonfun$containsTyped$1;::this(Lscala/collection/immutable/NumericRange$$anon$1;Ljava/lang/Object;)V;)(this, el$1)));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/collection/immutable/NumericRange$$anon$1;::apply(I;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1));
+  }
+  
+  public Lscala/Function1; fm$1;
+  
+  private Lscala/math/Integral; unum$1;
+  
+  private Lscala/collection/immutable/NumericRange; self$1;
+  
+  public this(Lscala/collection/immutable/NumericRange; $outer, Lscala/Function1; fm$1, Lscala/math/Integral; unum$1, Lscala/collection/immutable/NumericRange; self$1) {
+    this.(Lscala/Function1;)fm$1 = fm$1;
+    this.(Lscala/math/Integral;)unum$1 = unum$1;
+    this.(Lscala/collection/immutable/NumericRange;)self$1 = self$1;
+    (Lscala/collection/immutable/NumericRange;::super(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Z;Lscala/math/Integral;)V;)(fm$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)($outer.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)()), fm$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)($outer.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)()), fm$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)($outer.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)()), $outer.(Lscala/collection/immutable/NumericRange;::isInclusive()Z;)(), unum$1);
+  }
+}

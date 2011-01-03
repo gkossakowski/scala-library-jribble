@@ -1,0 +1,383 @@
+public final class Lscala/Array$; extends Lscala/FallbackArrayBuilding; implements Lscala/ScalaObject; {
+  public static Lscala/Array$; MODULE$ = new (Lscala/Array$;::this()V;)();
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom(Lscala/reflect/ClassManifest; m$1) {
+    return (new (Lscala/Array$$anon$2;::this(Lscala/reflect/ClassManifest;)V;)(m$1));
+  }
+  
+  public Lscala/collection/mutable/ArrayBuilder; newBuilder(Lscala/reflect/ClassManifest; m) {
+    return Lscala/collection/mutable/ArrayBuilder$;.MODULE$.(Lscala/collection/mutable/ArrayBuilder$;::make(Lscala/reflect/ClassManifest;)Lscala/collection/mutable/ArrayBuilder;)(m);
+  }
+  
+  private V; slowcopy(Ljava/lang/Object; src, I; srcPos, Ljava/lang/Object; dest, I; destPos, I; length) {
+    I; i = srcPos;
+    I; j = destPos;
+    I; srcUntil = (srcPos + length);
+    while$1: while(true) {
+      if ((i < srcUntil))
+        {
+          {
+            Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_update(Ljava/lang/Object;I;Ljava/lang/Object;)V;)(dest, j, Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_apply(Ljava/lang/Object;I;)Ljava/lang/Object;)(src, i));
+            i = (i + 1);
+            j = (j + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  public V; copy(Ljava/lang/Object; src, I; srcPos, Ljava/lang/Object; dest, I; destPos, I; length) {
+    Ljava/lang/Class; srcClass = src.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)();
+    if ((srcClass.(Ljava/lang/Class;::isArray()Z;)() && dest.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)().(Ljava/lang/Class;::isAssignableFrom(Ljava/lang/Class;)Z;)(srcClass)))
+      {
+        Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::arraycopy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(src, srcPos, dest, destPos, length);
+      }
+    else
+      {
+        this.(Lscala/Array$;::slowcopy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(src, srcPos, dest, destPos, length);
+      }
+  }
+  
+  public Ljava/lang/Object; empty(Lscala/reflect/ClassManifest; evidence$1) {
+    return evidence$1.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)(0);
+  }
+  
+  public Ljava/lang/Object; apply(Lscala/collection/Seq; xs, Lscala/reflect/ClassManifest; evidence$2) {
+    Ljava/lang/Object; array$1 = evidence$2.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)(xs.(Lscala/collection/SeqLike;::length()I;)());
+    Lscala/runtime/IntRef; i$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(0));
+    xs.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/Array$$anonfun$apply$1;::this(Ljava/lang/Object;Lscala/runtime/IntRef;)V;)(array$1, i$1)));
+    return array$1;
+  }
+  
+  public Z;[ apply(Z; x, Lscala/collection/Seq; xs) {
+    Z;[ array$2 = new Z;[(xs.(Lscala/collection/SeqLike;::length()I;)() + 1)];
+    array$2[0] = x;
+    Lscala/runtime/IntRef; i$2 = (new (Lscala/runtime/IntRef;::this(I;)V;)(1));
+    xs.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/Array$$anonfun$apply$2;::this(Z;[Lscala/runtime/IntRef;)V;)(array$2, i$2)));
+    return array$2;
+  }
+  
+  public B;[ apply(B; x, Lscala/collection/Seq; xs) {
+    B;[ array$3 = new B;[(xs.(Lscala/collection/SeqLike;::length()I;)() + 1)];
+    array$3[0] = x;
+    Lscala/runtime/IntRef; i$3 = (new (Lscala/runtime/IntRef;::this(I;)V;)(1));
+    xs.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/Array$$anonfun$apply$3;::this(B;[Lscala/runtime/IntRef;)V;)(array$3, i$3)));
+    return array$3;
+  }
+  
+  public S;[ apply(S; x, Lscala/collection/Seq; xs) {
+    S;[ array$4 = new S;[(xs.(Lscala/collection/SeqLike;::length()I;)() + 1)];
+    array$4[0] = x;
+    Lscala/runtime/IntRef; i$4 = (new (Lscala/runtime/IntRef;::this(I;)V;)(1));
+    xs.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/Array$$anonfun$apply$4;::this(S;[Lscala/runtime/IntRef;)V;)(array$4, i$4)));
+    return array$4;
+  }
+  
+  public C;[ apply(C; x, Lscala/collection/Seq; xs) {
+    C;[ array$5 = new C;[(xs.(Lscala/collection/SeqLike;::length()I;)() + 1)];
+    array$5[0] = x;
+    Lscala/runtime/IntRef; i$5 = (new (Lscala/runtime/IntRef;::this(I;)V;)(1));
+    xs.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/Array$$anonfun$apply$5;::this(C;[Lscala/runtime/IntRef;)V;)(array$5, i$5)));
+    return array$5;
+  }
+  
+  public I;[ apply(I; x, Lscala/collection/Seq; xs) {
+    I;[ array$6 = new I;[(xs.(Lscala/collection/SeqLike;::length()I;)() + 1)];
+    array$6[0] = x;
+    Lscala/runtime/IntRef; i$6 = (new (Lscala/runtime/IntRef;::this(I;)V;)(1));
+    xs.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/Array$$anonfun$apply$6;::this(I;[Lscala/runtime/IntRef;)V;)(array$6, i$6)));
+    return array$6;
+  }
+  
+  public J;[ apply(J; x, Lscala/collection/Seq; xs) {
+    J;[ array$7 = new J;[(xs.(Lscala/collection/SeqLike;::length()I;)() + 1)];
+    array$7[0] = x;
+    Lscala/runtime/IntRef; i$7 = (new (Lscala/runtime/IntRef;::this(I;)V;)(1));
+    xs.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/Array$$anonfun$apply$7;::this(J;[Lscala/runtime/IntRef;)V;)(array$7, i$7)));
+    return array$7;
+  }
+  
+  public F;[ apply(F; x, Lscala/collection/Seq; xs) {
+    F;[ array$8 = new F;[(xs.(Lscala/collection/SeqLike;::length()I;)() + 1)];
+    array$8[0] = x;
+    Lscala/runtime/IntRef; i$8 = (new (Lscala/runtime/IntRef;::this(I;)V;)(1));
+    xs.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/Array$$anonfun$apply$8;::this(F;[Lscala/runtime/IntRef;)V;)(array$8, i$8)));
+    return array$8;
+  }
+  
+  public D;[ apply(D; x, Lscala/collection/Seq; xs) {
+    D;[ array$9 = new D;[(xs.(Lscala/collection/SeqLike;::length()I;)() + 1)];
+    array$9[0] = x;
+    Lscala/runtime/IntRef; i$9 = (new (Lscala/runtime/IntRef;::this(I;)V;)(1));
+    xs.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/Array$$anonfun$apply$9;::this(D;[Lscala/runtime/IntRef;)V;)(array$9, i$9)));
+    return array$9;
+  }
+  
+  public Lscala/runtime/BoxedUnit;[ apply(Lscala/runtime/BoxedUnit; x, Lscala/collection/Seq; xs) {
+    Lscala/runtime/BoxedUnit;[ array$10 = new Lscala/runtime/BoxedUnit;[(xs.(Lscala/collection/SeqLike;::length()I;)() + 1)];
+    array$10[0] = x;
+    Lscala/runtime/IntRef; i$10 = (new (Lscala/runtime/IntRef;::this(I;)V;)(1));
+    xs.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/Array$$anonfun$apply$10;::this(Lscala/runtime/BoxedUnit;[Lscala/runtime/IntRef;)V;)(array$10, i$10)));
+    return array$10;
+  }
+  
+  public Ljava/lang/Object; ofDim(I; n1, Lscala/reflect/ClassManifest; evidence$3) {
+    return evidence$3.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)(n1);
+  }
+  
+  public Ljava/lang/Object;[ ofDim(I; n1, I; n2$1, Lscala/reflect/ClassManifest; evidence$4$1) {
+    Ljava/lang/Object;[ arr$1 = evidence$4$1.(Lscala/reflect/ClassManifest;::newArray2(I;)Ljava/lang/Object;[)(n1);
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(n1).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/Array$$anonfun$ofDim$1;::this(I;Lscala/reflect/ClassManifest;Ljava/lang/Object;[)V;)(n2$1, evidence$4$1, arr$1)));
+    return arr$1;
+  }
+  
+  public Ljava/lang/Object;[[ ofDim(I; n1, I; n2$2, I; n3$1, Lscala/reflect/ClassManifest; evidence$5$1) {
+    return this.(Lscala/Array$;::tabulate(I;Lscala/Function1;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(n1, (new (Lscala/Array$$anonfun$ofDim$2;::this(I;I;Lscala/reflect/ClassManifest;)V;)(n2$2, n3$1, evidence$5$1)), Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$5$1))).<cast>(Ljava/lang/Object;[[);
+  }
+  
+  public Ljava/lang/Object;[[[ ofDim(I; n1, I; n2$8, I; n3$6, I; n4$4, Lscala/reflect/ClassManifest; evidence$6$1) {
+    return this.(Lscala/Array$;::tabulate(I;Lscala/Function1;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(n1, (new (Lscala/Array$$anonfun$ofDim$3;::this(I;I;I;Lscala/reflect/ClassManifest;)V;)(n2$8, n3$6, n4$4, evidence$6$1)), Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$6$1)))).<cast>(Ljava/lang/Object;[[[);
+  }
+  
+  public Ljava/lang/Object;[[[[ ofDim(I; n1, I; n2$7, I; n3$5, I; n4$3, I; n5$2, Lscala/reflect/ClassManifest; evidence$7$1) {
+    return this.(Lscala/Array$;::tabulate(I;Lscala/Function1;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(n1, (new (Lscala/Array$$anonfun$ofDim$4;::this(I;I;I;I;Lscala/reflect/ClassManifest;)V;)(n2$7, n3$5, n4$3, n5$2, evidence$7$1)), Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$7$1))))).<cast>(Ljava/lang/Object;[[[[);
+  }
+  
+  public Ljava/lang/Object; concat(Lscala/collection/Seq; xss, Lscala/reflect/ClassManifest; evidence$8) {
+    Lscala/collection/mutable/ArrayBuilder; b$1 = this.(Lscala/Array$;::newBuilder(Lscala/reflect/ClassManifest;)Lscala/collection/mutable/ArrayBuilder;)(evidence$8);
+    b$1.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(xss.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/Array$$anonfun$concat$1;::this()V;)()), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::sum(Lscala/math/Numeric;)Ljava/lang/Object;)(Lscala/math/Numeric$IntIsIntegral$;.MODULE$)));
+    xss.(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Array$$anonfun$concat$2;::this(Lscala/collection/mutable/ArrayBuilder;)V;)(b$1)));
+    return b$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; fill(I; n, Lscala/Function0; elem, Lscala/reflect/ClassManifest; evidence$9) {
+    Lscala/collection/mutable/ArrayBuilder; b = this.(Lscala/Array$;::newBuilder(Lscala/reflect/ClassManifest;)Lscala/collection/mutable/ArrayBuilder;)(evidence$9);
+    b.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(n);
+    I; i = 0;
+    while$2: while(true) {
+      if ((i < n))
+        {
+          {
+            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(elem.(Lscala/Function0;::apply()Ljava/lang/Object;)());
+            i = (i + 1);
+          }
+          continue while$2;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object;[ fill(I; n1, I; n2$9, Lscala/Function0; elem$1, Lscala/reflect/ClassManifest; evidence$10$1) {
+    return this.(Lscala/Array$;::tabulate(I;Lscala/Function1;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(n1, (new (Lscala/Array$$anonfun$fill$1;::this(I;Lscala/Function0;Lscala/reflect/ClassManifest;)V;)(n2$9, elem$1, evidence$10$1)), Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$10$1)).<cast>(Ljava/lang/Object;[);
+  }
+  
+  public Ljava/lang/Object;[[ fill(I; n1, I; n2$12, I; n3$9, Lscala/Function0; elem$4, Lscala/reflect/ClassManifest; evidence$11$1) {
+    return this.(Lscala/Array$;::tabulate(I;Lscala/Function1;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(n1, (new (Lscala/Array$$anonfun$fill$2;::this(I;I;Lscala/Function0;Lscala/reflect/ClassManifest;)V;)(n2$12, n3$9, elem$4, evidence$11$1)), Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$11$1))).<cast>(Ljava/lang/Object;[[);
+  }
+  
+  public Ljava/lang/Object;[[[ fill(I; n1, I; n2$11, I; n3$8, I; n4$6, Lscala/Function0; elem$3, Lscala/reflect/ClassManifest; evidence$12$1) {
+    return this.(Lscala/Array$;::tabulate(I;Lscala/Function1;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(n1, (new (Lscala/Array$$anonfun$fill$3;::this(I;I;I;Lscala/Function0;Lscala/reflect/ClassManifest;)V;)(n2$11, n3$8, n4$6, elem$3, evidence$12$1)), Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$12$1)))).<cast>(Ljava/lang/Object;[[[);
+  }
+  
+  public Ljava/lang/Object;[[[[ fill(I; n1, I; n2$10, I; n3$7, I; n4$5, I; n5$3, Lscala/Function0; elem$2, Lscala/reflect/ClassManifest; evidence$13$1) {
+    return this.(Lscala/Array$;::tabulate(I;Lscala/Function1;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(n1, (new (Lscala/Array$$anonfun$fill$4;::this(I;I;I;I;Lscala/Function0;Lscala/reflect/ClassManifest;)V;)(n2$10, n3$7, n4$5, n5$3, elem$2, evidence$13$1)), Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$13$1))))).<cast>(Ljava/lang/Object;[[[[);
+  }
+  
+  public Ljava/lang/Object; tabulate(I; n, Lscala/Function1; f, Lscala/reflect/ClassManifest; evidence$14) {
+    Lscala/collection/mutable/ArrayBuilder; b = this.(Lscala/Array$;::newBuilder(Lscala/reflect/ClassManifest;)Lscala/collection/mutable/ArrayBuilder;)(evidence$14);
+    b.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(n);
+    I; i = 0;
+    while$3: while(true) {
+      if ((i < n))
+        {
+          {
+            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i)));
+            i = (i + 1);
+          }
+          continue while$3;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object;[ tabulate(I; n1, I; n2$6, Lscala/Function2; f$4, Lscala/reflect/ClassManifest; evidence$15$1) {
+    return this.(Lscala/Array$;::tabulate(I;Lscala/Function1;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(n1, (new (Lscala/Array$$anonfun$tabulate$1;::this(I;Lscala/Function2;Lscala/reflect/ClassManifest;)V;)(n2$6, f$4, evidence$15$1)), Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$15$1)).<cast>(Ljava/lang/Object;[);
+  }
+  
+  public Ljava/lang/Object;[[ tabulate(I; n1, I; n2$5, I; n3$4, Lscala/Function3; f$3, Lscala/reflect/ClassManifest; evidence$16$1) {
+    return this.(Lscala/Array$;::tabulate(I;Lscala/Function1;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(n1, (new (Lscala/Array$$anonfun$tabulate$2;::this(I;I;Lscala/Function3;Lscala/reflect/ClassManifest;)V;)(n2$5, n3$4, f$3, evidence$16$1)), Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$16$1))).<cast>(Ljava/lang/Object;[[);
+  }
+  
+  public Ljava/lang/Object;[[[ tabulate(I; n1, I; n2$4, I; n3$3, I; n4$2, Lscala/Function4; f$2, Lscala/reflect/ClassManifest; evidence$17$1) {
+    return this.(Lscala/Array$;::tabulate(I;Lscala/Function1;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(n1, (new (Lscala/Array$$anonfun$tabulate$3;::this(I;I;I;Lscala/Function4;Lscala/reflect/ClassManifest;)V;)(n2$4, n3$3, n4$2, f$2, evidence$17$1)), Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$17$1)))).<cast>(Ljava/lang/Object;[[[);
+  }
+  
+  public Ljava/lang/Object;[[[[ tabulate(I; n1, I; n2$3, I; n3$2, I; n4$1, I; n5$1, Lscala/Function5; f$1, Lscala/reflect/ClassManifest; evidence$18$1) {
+    return this.(Lscala/Array$;::tabulate(I;Lscala/Function1;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(n1, (new (Lscala/Array$$anonfun$tabulate$4;::this(I;I;I;I;Lscala/Function5;Lscala/reflect/ClassManifest;)V;)(n2$3, n3$2, n4$1, n5$1, f$1, evidence$18$1)), Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$18$1))))).<cast>(Ljava/lang/Object;[[[[);
+  }
+  
+  public I;[ range(I; start, I; end) {
+    return this.(Lscala/Array$;::range(I;I;I;)I;[)(start, end, 1);
+  }
+  
+  public I;[ range(I; start, I; end, I; step) {
+    if ((step == 0))
+      {
+        throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)("zero step"));
+      }
+    else
+      {
+        
+      }
+    Lscala/collection/mutable/ArrayBuilder; b = this.(Lscala/Array$;::newBuilder(Lscala/reflect/ClassManifest;)Lscala/collection/mutable/ArrayBuilder;)(Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Int()Lscala/reflect/AnyValManifest;)());
+    b.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(Lscala/package$;.MODULE$.(Lscala/package$;::Range()Lscala/collection/immutable/Range$;)().(Lscala/collection/immutable/Range$;::count(I;I;I;Z;)I;)(start, end, step, false));
+    I; i = start;
+    while$4: while(true) {
+      Z; $1$;
+      if ((step < 0))
+        {
+          $1$ = (end < i);
+        }
+      else
+        {
+          $1$ = (i < end);
+        }
+      if ($1$)
+        {
+          {
+            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i));
+            i = (i + step);
+          }
+          continue while$4;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(I;[);
+  }
+  
+  public Ljava/lang/Object; iterate(Ljava/lang/Object; start, I; len, Lscala/Function1; f, Lscala/reflect/ClassManifest; evidence$19) {
+    Lscala/collection/mutable/ArrayBuilder; b = this.(Lscala/Array$;::newBuilder(Lscala/reflect/ClassManifest;)Lscala/collection/mutable/ArrayBuilder;)(evidence$19);
+    if ((len > 0))
+      {
+        b.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(len);
+        Ljava/lang/Object; acc = start;
+        I; i = 1;
+        b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(acc);
+        while$5: while(true) {
+          if ((i < len))
+            {
+              {
+                acc = f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(acc);
+                i = (i + 1);
+                b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(acc);
+              }
+              continue while$5;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+      }
+    else
+      {
+        
+      }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public Lscala/Option; unapplySeq(Ljava/lang/Object; x) {
+    Lscala/Option; $2$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, null))
+      {
+        $2$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $2$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::genericArrayOps(Ljava/lang/Object;)Lscala/collection/mutable/ArrayOps;)(x).(Lscala/collection/TraversableOnce;::toIndexedSeq()Lscala/collection/immutable/IndexedSeq;)()));
+      }
+    return $2$;
+  }
+  
+  public Ljava/lang/Object; make(I; n, Ljava/lang/Object; elem, Lscala/reflect/ClassManifest; evidence$20) {
+    Ljava/lang/Object; a = evidence$20.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)(n);
+    I; i = 0;
+    while$6: while(true) {
+      if ((i < n))
+        {
+          {
+            Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_update(Ljava/lang/Object;I;Ljava/lang/Object;)V;)(a, i, elem);
+            i = (i + 1);
+          }
+          continue while$6;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return a;
+  }
+  
+  public Ljava/lang/Object; fromFunction(Lscala/Function1; f, I; n, Lscala/reflect/ClassManifest; evidence$21) {
+    Ljava/lang/Object; a = evidence$21.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)(n);
+    I; i = 0;
+    while$7: while(true) {
+      if ((i < n))
+        {
+          {
+            Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_update(Ljava/lang/Object;I;Ljava/lang/Object;)V;)(a, i, f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i)));
+            i = (i + 1);
+          }
+          continue while$7;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return a;
+  }
+  
+  public Ljava/lang/Object;[ fromFunction(Lscala/Function2; f$5, I; n1, I; n2$13, Lscala/reflect/ClassManifest; evidence$22$1) {
+    return this.(Lscala/Array$;::fromFunction(Lscala/Function1;I;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)((new (Lscala/Array$$anonfun$fromFunction$1;::this(Lscala/Function2;I;Lscala/reflect/ClassManifest;)V;)(f$5, n2$13, evidence$22$1)), n1, Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$22$1)).<cast>(Ljava/lang/Object;[);
+  }
+  
+  public Ljava/lang/Object;[[ fromFunction(Lscala/Function3; f$8, I; n1, I; n2$16, I; n3$12, Lscala/reflect/ClassManifest; evidence$23$1) {
+    return this.(Lscala/Array$;::fromFunction(Lscala/Function1;I;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)((new (Lscala/Array$$anonfun$fromFunction$2;::this(Lscala/Function3;I;I;Lscala/reflect/ClassManifest;)V;)(f$8, n2$16, n3$12, evidence$23$1)), n1, Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$23$1))).<cast>(Ljava/lang/Object;[[);
+  }
+  
+  public Ljava/lang/Object;[[[ fromFunction(Lscala/Function4; f$7, I; n1, I; n2$15, I; n3$11, I; n4$8, Lscala/reflect/ClassManifest; evidence$24$1) {
+    return this.(Lscala/Array$;::fromFunction(Lscala/Function1;I;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)((new (Lscala/Array$$anonfun$fromFunction$3;::this(Lscala/Function4;I;I;I;Lscala/reflect/ClassManifest;)V;)(f$7, n2$15, n3$11, n4$8, evidence$24$1)), n1, Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$24$1)))).<cast>(Ljava/lang/Object;[[[);
+  }
+  
+  public Ljava/lang/Object;[[[[ fromFunction(Lscala/Function5; f$6, I; n1, I; n2$14, I; n3$10, I; n4$7, I; n5$4, Lscala/reflect/ClassManifest; evidence$25$1) {
+    return this.(Lscala/Array$;::fromFunction(Lscala/Function1;I;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)((new (Lscala/Array$$anonfun$fromFunction$4;::this(Lscala/Function5;I;I;I;I;Lscala/reflect/ClassManifest;)V;)(f$6, n2$14, n3$10, n4$7, n5$4, evidence$25$1)), n1, Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$25$1))))).<cast>(Ljava/lang/Object;[[[[);
+  }
+  
+  public this() {
+    (Lscala/FallbackArrayBuilding;::super()V;)();
+  }
+}

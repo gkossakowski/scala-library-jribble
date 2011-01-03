@@ -1,0 +1,26 @@
+public final class Lscala/collection/Seq$; extends Lscala/collection/generic/SeqFactory; implements Lscala/ScalaObject; {
+  public static Lscala/collection/Seq$; MODULE$ = new (Lscala/collection/Seq$;::this()V;)();
+  
+  private I; hashSeed$u0020;
+  
+  public I; hashSeed() {
+    return this.(I;)hashSeed$u0020;
+  }
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return (new (Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;::this(Lscala/collection/generic/TraversableFactory;)V;)(this));
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return Lscala/collection/immutable/Seq$;.MODULE$.(Lscala/collection/immutable/Seq$;::newBuilder()Lscala/collection/mutable/Builder;)();
+  }
+  
+  public Lscala/collection/Seq; singleton(Ljava/lang/Object; value) {
+    return Lscala/collection/Seq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{value})).<cast>(Lscala/collection/Seq;);
+  }
+  
+  public this() {
+    (Lscala/collection/generic/SeqFactory;::super()V;)();
+    this.(I;)hashSeed$u0020 = "Seq".(Ljava/lang/String;::hashCode()I;)();
+  }
+}

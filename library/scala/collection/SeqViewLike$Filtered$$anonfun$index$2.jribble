@@ -1,0 +1,39 @@
+public final class Lscala/collection/SeqViewLike$Filtered$$anonfun$index$2; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(I; i) {
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/collection/SeqViewLike$Filtered;)$outer$u0020.(Lscala/collection/TraversableViewLike$Filtered;::pred()Lscala/Function1;)().(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/SeqViewLike$Filtered;)$outer$u0020.(Lscala/collection/SeqViewLike$Filtered;::scala$collection$SeqViewLike$Filtered$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i))))
+      {
+        this.(I;[)arr$1[this.(Lscala/runtime/IntRef;)len$1.(I;)elem] = i;
+        this.(Lscala/runtime/IntRef;)len$1.(I;)elem = (this.(Lscala/runtime/IntRef;)len$1.(I;)elem + 1);
+      }
+    else
+      {
+        
+      }
+  }
+  
+  private Lscala/collection/SeqViewLike$Filtered; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/SeqViewLike$Filtered$$anonfun$index$2;::apply(I;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1));
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/runtime/IntRef; len$1;
+  
+  private I;[ arr$1;
+  
+  public this(Lscala/collection/SeqViewLike$Filtered; $outer, Lscala/runtime/IntRef; len$1, I;[ arr$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/SeqViewLike$Filtered;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/runtime/IntRef;)len$1 = len$1;
+    this.(I;[)arr$1 = arr$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

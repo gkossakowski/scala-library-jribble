@@ -1,0 +1,31 @@
+public final class Lscala/collection/BitSetLike$$anonfun$$amp$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(I; idx) {
+    this.(J;[)words$2[idx] = (this.(Lscala/collection/BitSetLike;)$outer$u0020.(Lscala/collection/BitSetLike;::word(I;)J;)(idx) & this.(Lscala/collection/BitSet;)other$2.(Lscala/collection/BitSetLike;::word(I;)J;)(idx));
+  }
+  
+  private Lscala/collection/BitSetLike; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/BitSetLike$$anonfun$$amp$1;::apply(I;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1));
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/collection/BitSet; other$2;
+  
+  private J;[ words$2;
+  
+  public this(Lscala/collection/BitSetLike; $outer, Lscala/collection/BitSet; other$2, J;[ words$2) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/BitSetLike;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/collection/BitSet;)other$2 = other$2;
+    this.(J;[)words$2 = words$2;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

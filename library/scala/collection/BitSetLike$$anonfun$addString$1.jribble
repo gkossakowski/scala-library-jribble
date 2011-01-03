@@ -1,0 +1,42 @@
+public final class Lscala/collection/BitSetLike$$anonfun$addString$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(I; i) {
+    if (this.(Lscala/collection/BitSetLike;)$outer$u0020.(Lscala/collection/BitSetLike;::contains(I;)Z;)(i))
+      {
+        this.(Lscala/collection/mutable/StringBuilder;)sb$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(this.(Lscala/runtime/ObjectRef;)pre$1.(Ljava/lang/Object;)elem.<cast>(Ljava/lang/String;)).(Lscala/collection/mutable/StringBuilder;::append(I;)Lscala/collection/mutable/StringBuilder;)(i);
+        this.(Lscala/runtime/ObjectRef;)pre$1.(Ljava/lang/Object;)elem = this.(Ljava/lang/String;)sep$1;
+      }
+    else
+      {
+        
+      }
+  }
+  
+  private Lscala/collection/BitSetLike; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/BitSetLike$$anonfun$addString$1;::apply(I;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1));
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/collection/mutable/StringBuilder; sb$1;
+  
+  private Ljava/lang/String; sep$1;
+  
+  private Lscala/runtime/ObjectRef; pre$1;
+  
+  public this(Lscala/collection/BitSetLike; $outer, Lscala/collection/mutable/StringBuilder; sb$1, Ljava/lang/String; sep$1, Lscala/runtime/ObjectRef; pre$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/BitSetLike;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/collection/mutable/StringBuilder;)sb$1 = sb$1;
+    this.(Ljava/lang/String;)sep$1 = sep$1;
+    this.(Lscala/runtime/ObjectRef;)pre$1 = pre$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

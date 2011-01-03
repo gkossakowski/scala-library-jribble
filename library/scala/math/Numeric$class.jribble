@@ -1,0 +1,53 @@
+public abstract class Lscala/math/Numeric$class; {
+  
+  public static Ljava/lang/Object; zero(Lscala/math/Numeric; $this) {
+    return $this.(Lscala/math/Numeric;::fromInt(I;)Ljava/lang/Object;)(0);
+  }
+  
+  public static Ljava/lang/Object; one(Lscala/math/Numeric; $this) {
+    return $this.(Lscala/math/Numeric;::fromInt(I;)Ljava/lang/Object;)(1);
+  }
+  
+  public static Ljava/lang/Object; abs(Lscala/math/Numeric; $this, Ljava/lang/Object; x) {
+    Ljava/lang/Object; $1$;
+    if ($this.(Lscala/math/Ordering;::lt(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, $this.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)()))
+      {
+        $1$ = $this.(Lscala/math/Numeric;::negate(Ljava/lang/Object;)Ljava/lang/Object;)(x);
+      }
+    else
+      {
+        $1$ = x;
+      }
+    return $1$;
+  }
+  
+  public static I; signum(Lscala/math/Numeric; $this, Ljava/lang/Object; x) {
+    I; $2$;
+    if ($this.(Lscala/math/Ordering;::lt(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, $this.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)()))
+      {
+        $2$ = -1;
+      }
+    else
+      {
+        I; $3$;
+        if ($this.(Lscala/math/Ordering;::gt(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, $this.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)()))
+          {
+            $3$ = 1;
+          }
+        else
+          {
+            $3$ = 0;
+          }
+        $2$ = $3$;
+      }
+    return $2$;
+  }
+  
+  public static Lscala/math/Numeric$Ops; mkNumericOps(Lscala/math/Numeric; $this, Ljava/lang/Object; lhs) {
+    return (new (Lscala/math/Numeric$Ops;::this(Lscala/math/Numeric;Ljava/lang/Object;)V;)($this, lhs));
+  }
+  
+  public static V; $init$(Lscala/math/Numeric; $this) {
+    
+  }
+}

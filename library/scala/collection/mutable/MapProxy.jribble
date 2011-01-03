@@ -1,0 +1,20 @@
+public interface Lscala/collection/mutable/MapProxy; extends Lscala/collection/mutable/Map;, Lscala/collection/MapProxyLike;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/mutable/MapProxy; repr();
+  
+  public Lscala/collection/mutable/MapProxy; empty();
+  
+  public Lscala/collection/mutable/MapProxy; updated(Ljava/lang/Object; key, Ljava/lang/Object; value);
+  
+  public Lscala/collection/mutable/Map; $plus(Lscala/Tuple2; kv);
+  
+  public Lscala/collection/mutable/MapProxy; $plus(Lscala/Tuple2; elem1, Lscala/Tuple2; elem2, Lscala/collection/Seq; elems);
+  
+  public Lscala/collection/mutable/MapProxy; $plus$plus(Lscala/collection/TraversableOnce; xs);
+  
+  public Lscala/collection/mutable/MapProxy; $minus(Ljava/lang/Object; key);
+  
+  public Lscala/collection/mutable/MapProxy; $plus$eq(Lscala/Tuple2; kv);
+  
+  public Lscala/collection/mutable/MapProxy; $minus$eq(Ljava/lang/Object; key);
+}

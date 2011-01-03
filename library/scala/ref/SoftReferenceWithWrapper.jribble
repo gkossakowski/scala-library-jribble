@@ -1,0 +1,27 @@
+public class Lscala/ref/SoftReferenceWithWrapper; extends Ljava/lang/ref/SoftReference; implements Lscala/ref/ReferenceWithWrapper;, Lscala/ScalaObject; {
+  
+  private Lscala/ref/SoftReference; wrapper$u0020;
+  
+  public Lscala/ref/SoftReference; wrapper() {
+    return this.(Lscala/ref/SoftReference;)wrapper$u0020;
+  }
+  
+  public Lscala/ref/ReferenceWrapper; wrapper() {
+    return this.(Lscala/ref/SoftReferenceWithWrapper;::wrapper()Lscala/ref/SoftReference;)();
+  }
+  
+  public this(Ljava/lang/Object; value, Lscala/ref/ReferenceQueue; queue, Lscala/ref/SoftReference; wrapper) {
+    this.(Lscala/ref/SoftReference;)wrapper$u0020 = wrapper;
+    Ljava/lang/Object; $2$ = value;
+    Ljava/lang/ref/ReferenceQueue; $1$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(queue, null))
+      {
+        $1$ = null;
+      }
+    else
+      {
+        $1$ = queue.(Lscala/ref/ReferenceQueue;::underlying()Ljava/lang/ref/ReferenceQueue;)();
+      }
+    (Ljava/lang/ref/SoftReference;::super(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V;)($2$, $1$);
+  }
+}

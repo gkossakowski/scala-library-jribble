@@ -1,0 +1,28 @@
+public final class Lscala/Tuple9$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/Tuple9$; MODULE$ = new (Lscala/Tuple9$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "Tuple9";
+  }
+  
+  public Lscala/Option; unapply(Lscala/Tuple9; x$0) {
+    Lscala/Option; $3$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $3$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $3$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple9;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/Tuple9;::_1()Ljava/lang/Object;)(), x$0.(Lscala/Tuple9;::_2()Ljava/lang/Object;)(), x$0.(Lscala/Tuple9;::_3()Ljava/lang/Object;)(), x$0.(Lscala/Tuple9;::_4()Ljava/lang/Object;)(), x$0.(Lscala/Tuple9;::_5()Ljava/lang/Object;)(), x$0.(Lscala/Tuple9;::_6()Ljava/lang/Object;)(), x$0.(Lscala/Tuple9;::_7()Ljava/lang/Object;)(), x$0.(Lscala/Tuple9;::_8()Ljava/lang/Object;)(), x$0.(Lscala/Tuple9;::_9()Ljava/lang/Object;)()))));
+      }
+    return $3$;
+  }
+  
+  public Lscala/Tuple9; apply(Ljava/lang/Object; _1, Ljava/lang/Object; _2, Ljava/lang/Object; _3, Ljava/lang/Object; _4, Ljava/lang/Object; _5, Ljava/lang/Object; _6, Ljava/lang/Object; _7, Ljava/lang/Object; _8, Ljava/lang/Object; _9) {
+    return (new (Lscala/Tuple9;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(_1, _2, _3, _4, _5, _6, _7, _8, _9));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

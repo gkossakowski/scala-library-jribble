@@ -1,0 +1,19 @@
+public final class Lscala/MatchError; extends Ljava/lang/RuntimeException; implements Lscala/ScalaObject; {
+  
+  public this(Ljava/lang/Object; obj) {
+    Ljava/lang/String; $1$;
+    if ((null != obj))
+      {
+        $1$ = obj.(Ljava/lang/Object;::toString()Ljava/lang/String;)();
+      }
+    else
+      {
+        $1$ = "null";
+      }
+    (Lscala/MatchError;::this(Ljava/lang/String;)V;)($1$);
+  }
+  
+  public this(Ljava/lang/String; msg) {
+    (Ljava/lang/RuntimeException;::super(Ljava/lang/String;)V;)(msg);
+  }
+}

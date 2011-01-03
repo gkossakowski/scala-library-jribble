@@ -1,0 +1,193 @@
+public final class Lscala/runtime/RichChar; extends Ljava/lang/Object; implements Lscala/Proxy;, Lscala/math/Ordered;, Lscala/ScalaObject; {
+  
+  public Z; $less(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Z; $greater(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$greater(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Z; $less$eq(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less$eq(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Z; $greater$eq(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$greater$eq(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public I; compareTo(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::compareTo(Lscala/math/Ordered;Ljava/lang/Object;)I;)(this, that);
+  }
+  
+  public I; hashCode() {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::hashCode(Lscala/Proxy;)I;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; that) {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::equals(Lscala/Proxy;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::toString(Lscala/Proxy;)Ljava/lang/String;)(this);
+  }
+  
+  private C; x;
+  
+  public Ljava/lang/Object; self() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(this.(C;)x);
+  }
+  
+  public I; compare(C; y) {
+    I; $1$;
+    if ((this.(C;)x < y))
+      {
+        $1$ = -1;
+      }
+    else
+      {
+        I; $2$;
+        if ((this.(C;)x > y))
+          {
+            $2$ = 1;
+          }
+        else
+          {
+            $2$ = 0;
+          }
+        $1$ = $2$;
+      }
+    return $1$;
+  }
+  
+  public I; asDigit() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::digit(C;I;)I;)(this.(C;)x, 36);
+  }
+  
+  public Z; isControl() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::isISOControl(C;)Z;)(this.(C;)x);
+  }
+  
+  public Z; isDigit() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::isDigit(C;)Z;)(this.(C;)x);
+  }
+  
+  public Z; isLetter() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::isLetter(C;)Z;)(this.(C;)x);
+  }
+  
+  public Z; isLetterOrDigit() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::isLetterOrDigit(C;)Z;)(this.(C;)x);
+  }
+  
+  public Z; isWhitespace() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::isWhitespace(C;)Z;)(this.(C;)x);
+  }
+  
+  public Z; isSpaceChar() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::isSpaceChar(C;)Z;)(this.(C;)x);
+  }
+  
+  public Z; isHighSurrogate() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::isHighSurrogate(C;)Z;)(this.(C;)x);
+  }
+  
+  public Z; isLowSurrogate() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::isLowSurrogate(C;)Z;)(this.(C;)x);
+  }
+  
+  public Z; isSurrogate() {
+    return (this.(Lscala/runtime/RichChar;::isHighSurrogate()Z;)() || this.(Lscala/runtime/RichChar;::isLowSurrogate()Z;)());
+  }
+  
+  public Z; isUnicodeIdentifierStart() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::isUnicodeIdentifierStart(C;)Z;)(this.(C;)x);
+  }
+  
+  public Z; isUnicodeIdentifierPart() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::isUnicodeIdentifierPart(C;)Z;)(this.(C;)x);
+  }
+  
+  public Z; isIdentifierIgnorable() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::isIdentifierIgnorable(C;)Z;)(this.(C;)x);
+  }
+  
+  public Z; isMirrored() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::isMirrored(C;)Z;)(this.(C;)x);
+  }
+  
+  public Z; isLower() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::isLowerCase(C;)Z;)(this.(C;)x);
+  }
+  
+  public Z; isUpper() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::isUpperCase(C;)Z;)(this.(C;)x);
+  }
+  
+  public Z; isTitleCase() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::isTitleCase(C;)Z;)(this.(C;)x);
+  }
+  
+  public C; toLower() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::toLowerCase(C;)C;)(this.(C;)x);
+  }
+  
+  public C; toUpper() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::toUpperCase(C;)C;)(this.(C;)x);
+  }
+  
+  public C; toTitleCase() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::toTitleCase(C;)C;)(this.(C;)x);
+  }
+  
+  public I; getType() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::getType(C;)I;)(this.(C;)x);
+  }
+  
+  public I; getNumericValue() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::getNumericValue(C;)I;)(this.(C;)x);
+  }
+  
+  public B; getDirectionality() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::getDirectionality(C;)B;)(this.(C;)x);
+  }
+  
+  public C; reverseBytes() {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::reverseBytes(C;)C;)(this.(C;)x);
+  }
+  
+  public C; toLowerCase() {
+    return this.(Lscala/runtime/RichChar;::toLower()C;)();
+  }
+  
+  public C; toUpperCase() {
+    return this.(Lscala/runtime/RichChar;::toUpper()C;)();
+  }
+  
+  public Z; isLowerCase() {
+    return this.(Lscala/runtime/RichChar;::isLower()Z;)();
+  }
+  
+  public Z; isUpperCase() {
+    return this.(Lscala/runtime/RichChar;::isUpper()Z;)();
+  }
+  
+  public Lscala/collection/immutable/NumericRange; until(C; limit) {
+    return (new (Lscala/collection/immutable/NumericRange$Exclusive;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(this.(C;)x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(limit), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(1.<cast>(C;)), Lscala/math/Numeric$CharIsIntegral$;.MODULE$));
+  }
+  
+  public Lscala/collection/immutable/NumericRange; to(C; limit) {
+    return (new (Lscala/collection/immutable/NumericRange$Inclusive;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(this.(C;)x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(limit), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(1.<cast>(C;)), Lscala/math/Numeric$CharIsIntegral$;.MODULE$));
+  }
+  
+  public I; compare(Ljava/lang/Object; that) {
+    return this.(Lscala/runtime/RichChar;::compare(C;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(that));
+  }
+  
+  public this(C; x) {
+    this.(C;)x = x;
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Proxy$class;.(Lscala/Proxy$class;::$init$(Lscala/Proxy;)V;)(this);
+    Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$init$(Lscala/math/Ordered;)V;)(this);
+  }
+}

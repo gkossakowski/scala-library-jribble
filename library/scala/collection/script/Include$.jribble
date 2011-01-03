@@ -1,0 +1,28 @@
+public final class Lscala/collection/script/Include$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/script/Include$; MODULE$ = new (Lscala/collection/script/Include$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "Include";
+  }
+  
+  public Lscala/Option; unapply(Lscala/collection/script/Include; x$0) {
+    Lscala/Option; $17$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $17$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $17$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/collection/script/Include;::location()Lscala/collection/script/Location;)(), x$0.(Lscala/collection/script/Include;::elem()Ljava/lang/Object;)()))));
+      }
+    return $17$;
+  }
+  
+  public Lscala/collection/script/Include; apply(Lscala/collection/script/Location; location, Ljava/lang/Object; elem) {
+    return (new (Lscala/collection/script/Include;::this(Lscala/collection/script/Location;Ljava/lang/Object;)V;)(location, elem));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

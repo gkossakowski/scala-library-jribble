@@ -1,0 +1,14 @@
+public interface Lscala/collection/immutable/SortedMap; extends Lscala/collection/immutable/Map;, Lscala/collection/SortedMap;, Lscala/collection/immutable/MapLike;, Lscala/collection/SortedMapLike;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/mutable/Builder; newBuilder();
+  
+  public Lscala/collection/immutable/SortedMap; empty();
+  
+  public Lscala/collection/immutable/SortedMap; updated(Ljava/lang/Object; key, Ljava/lang/Object; value);
+  
+  public Lscala/collection/immutable/SortedMap; $plus(Lscala/Tuple2; kv);
+  
+  public Lscala/collection/immutable/SortedMap; $plus(Lscala/Tuple2; elem1, Lscala/Tuple2; elem2, Lscala/collection/Seq; elems);
+  
+  public Lscala/collection/immutable/SortedMap; $plus$plus(Lscala/collection/TraversableOnce; xs);
+}

@@ -1,0 +1,35 @@
+public final class Lscala/xml/Source$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/xml/Source$; MODULE$ = new (Lscala/xml/Source$;::this()V;)();
+  
+  public Lorg/xml/sax/InputSource; fromFile(Ljava/io/File; file) {
+    return (new (Lorg/xml/sax/InputSource;::this(Ljava/io/InputStream;)V;)((new (Ljava/io/FileInputStream;::this(Ljava/io/File;)V;)(file))));
+  }
+  
+  public Lorg/xml/sax/InputSource; fromFile(Ljava/io/FileDescriptor; fd) {
+    return (new (Lorg/xml/sax/InputSource;::this(Ljava/io/InputStream;)V;)((new (Ljava/io/FileInputStream;::this(Ljava/io/FileDescriptor;)V;)(fd))));
+  }
+  
+  public Lorg/xml/sax/InputSource; fromFile(Ljava/lang/String; name) {
+    return (new (Lorg/xml/sax/InputSource;::this(Ljava/io/InputStream;)V;)((new (Ljava/io/FileInputStream;::this(Ljava/lang/String;)V;)(name))));
+  }
+  
+  public Lorg/xml/sax/InputSource; fromInputStream(Ljava/io/InputStream; is) {
+    return (new (Lorg/xml/sax/InputSource;::this(Ljava/io/InputStream;)V;)(is));
+  }
+  
+  public Lorg/xml/sax/InputSource; fromReader(Ljava/io/Reader; reader) {
+    return (new (Lorg/xml/sax/InputSource;::this(Ljava/io/Reader;)V;)(reader));
+  }
+  
+  public Lorg/xml/sax/InputSource; fromSysId(Ljava/lang/String; sysID) {
+    return (new (Lorg/xml/sax/InputSource;::this(Ljava/lang/String;)V;)(sysID));
+  }
+  
+  public Lorg/xml/sax/InputSource; fromString(Ljava/lang/String; string) {
+    return this.(Lscala/xml/Source$;::fromReader(Ljava/io/Reader;)Lorg/xml/sax/InputSource;)((new (Ljava/io/StringReader;::this(Ljava/lang/String;)V;)(string)));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

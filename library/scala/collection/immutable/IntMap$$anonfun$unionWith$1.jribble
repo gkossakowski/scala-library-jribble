@@ -1,0 +1,16 @@
+public final class Lscala/collection/immutable/IntMap$$anonfun$unionWith$1; extends Lscala/runtime/AbstractFunction2; {
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return this.(Lscala/Function3;)f$1.(Lscala/Function3;::apply(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(I;)key$1), y, x);
+  }
+  
+  private Lscala/Function3; f$1;
+  
+  private I; key$1;
+  
+  public this(Lscala/collection/immutable/IntMap; $outer, Lscala/Function3; f$1, I; key$1) {
+    this.(Lscala/Function3;)f$1 = f$1;
+    this.(I;)key$1 = key$1;
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
+  }
+}

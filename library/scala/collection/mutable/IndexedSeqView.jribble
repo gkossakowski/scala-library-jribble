@@ -1,0 +1,34 @@
+public interface Lscala/collection/mutable/IndexedSeqView; extends Lscala/collection/mutable/IndexedSeq;, Lscala/collection/mutable/IndexedSeqOptimized;, Lscala/collection/SeqView;, Lscala/collection/SeqViewLike;, Lscala/ScalaObject; {
+  
+  public V; update(I; idx, Ljava/lang/Object; elem);
+  
+  public Lscala/collection/mutable/IndexedSeqView$Transformed; newFiltered(Lscala/Function1; p);
+  
+  public Lscala/collection/mutable/IndexedSeqView$Transformed; newSliced(I; _from, I; _until);
+  
+  public Lscala/collection/mutable/IndexedSeqView$Transformed; newDroppedWhile(Lscala/Function1; p);
+  
+  public Lscala/collection/mutable/IndexedSeqView$Transformed; newTakenWhile(Lscala/Function1; p);
+  
+  public Lscala/collection/mutable/IndexedSeqView$Transformed; newReversed();
+  
+  public Lscala/collection/mutable/IndexedSeqView; filter(Lscala/Function1; p);
+  
+  public Lscala/collection/mutable/IndexedSeqView; init();
+  
+  public Lscala/collection/mutable/IndexedSeqView; drop(I; n);
+  
+  public Lscala/collection/mutable/IndexedSeqView; take(I; n);
+  
+  public Lscala/collection/mutable/IndexedSeqView; slice(I; from, I; until);
+  
+  public Lscala/collection/mutable/IndexedSeqView; dropWhile(Lscala/Function1; p);
+  
+  public Lscala/collection/mutable/IndexedSeqView; takeWhile(Lscala/Function1; p);
+  
+  public Lscala/Tuple2; span(Lscala/Function1; p);
+  
+  public Lscala/Tuple2; splitAt(I; n);
+  
+  public Lscala/collection/mutable/IndexedSeqView; reverse();
+}

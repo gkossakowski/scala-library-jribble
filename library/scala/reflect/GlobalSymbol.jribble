@@ -1,0 +1,52 @@
+public abstract class Lscala/reflect/GlobalSymbol; extends Lscala/reflect/Symbol; implements Lscala/ScalaObject; {
+  
+  private Ljava/lang/String; fullname$u0020;
+  
+  public Ljava/lang/String; fullname() {
+    return this.(Ljava/lang/String;)fullname$u0020;
+  }
+  
+  private I; pointIndex$u0020;
+  
+  private I; pointIndex() {
+    return this.(I;)pointIndex$u0020;
+  }
+  
+  private Lscala/reflect/Symbol; owner$u0020;
+  
+  public Lscala/reflect/Symbol; owner() {
+    return this.(Lscala/reflect/Symbol;)owner$u0020;
+  }
+  
+  private Ljava/lang/String; name$u0020;
+  
+  public Ljava/lang/String; name() {
+    return this.(Ljava/lang/String;)name$u0020;
+  }
+  
+  public this(Ljava/lang/String; fullname) {
+    this.(Ljava/lang/String;)fullname$u0020 = fullname;
+    (Lscala/reflect/Symbol;::super()V;)();
+    this.(I;)pointIndex$u0020 = fullname.(Ljava/lang/String;::lastIndexOf(Ljava/lang/String;)I;)(".");
+    Lscala/reflect/Symbol; $1$;
+    if ((this.(Lscala/reflect/GlobalSymbol;::pointIndex()I;)() < 0))
+      {
+        $1$ = Lscala/reflect/RootSymbol$;.MODULE$;
+      }
+    else
+      {
+        $1$ = (new (Lscala/reflect/Class;::this(Ljava/lang/String;)V;)(fullname.(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)(0, this.(Lscala/reflect/GlobalSymbol;::pointIndex()I;)())));
+      }
+    this.(Lscala/reflect/Symbol;)owner$u0020 = $1$;
+    Ljava/lang/String; $2$;
+    if ((this.(Lscala/reflect/GlobalSymbol;::pointIndex()I;)() < 0))
+      {
+        $2$ = fullname;
+      }
+    else
+      {
+        $2$ = fullname.(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)((this.(Lscala/reflect/GlobalSymbol;::pointIndex()I;)() + 1), fullname.(Ljava/lang/String;::length()I;)());
+      }
+    this.(Ljava/lang/String;)name$u0020 = $2$;
+  }
+}

@@ -1,0 +1,74 @@
+public final class Lscala/collection/mutable/PriorityQueue$$anon$1; extends Ljava/lang/Object; implements Lscala/math/Ordering; {
+  
+  public Lscala/Some; tryCompare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::tryCompare(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Lscala/Some;)(this, x, y);
+  }
+  
+  public Z; lteq(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::lteq(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Z; gteq(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::gteq(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Z; lt(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::lt(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Z; gt(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::gt(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Z; equiv(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::equiv(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Ljava/lang/Object; max(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::max(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this, x, y);
+  }
+  
+  public Ljava/lang/Object; min(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::min(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this, x, y);
+  }
+  
+  public Lscala/math/Ordering; reverse() {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::reverse(Lscala/math/Ordering;)Lscala/math/Ordering;)(this);
+  }
+  
+  public Lscala/math/Ordering; on(Lscala/Function1; f) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::on(Lscala/math/Ordering;Lscala/Function1;)Lscala/math/Ordering;)(this, f);
+  }
+  
+  public Lscala/math/Ordering$Ops; mkOrderingOps(Ljava/lang/Object; lhs) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::mkOrderingOps(Lscala/math/Ordering;Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this, lhs);
+  }
+  
+  public I; compare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return this.(Lscala/collection/mutable/PriorityQueue;)$outer$u0020.(Lscala/math/Ordering;)scala$collection$mutable$PriorityQueue$$ord.(Lscala/math/Ordering;::compare(Ljava/lang/Object;Ljava/lang/Object;)I;)(y, x);
+  }
+  
+  private Lscala/collection/mutable/PriorityQueue; $outer$u0020;
+  
+  public Lscala/math/PartialOrdering; reverse() {
+    return this.(Lscala/math/Ordering;::reverse()Lscala/math/Ordering;)();
+  }
+  
+  public Lscala/Option; tryCompare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return this.(Lscala/math/Ordering;::tryCompare(Ljava/lang/Object;Ljava/lang/Object;)Lscala/Some;)(x, y);
+  }
+  
+  public this(Lscala/collection/mutable/PriorityQueue; $outer) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/PriorityQueue;)$outer$u0020 = $outer;
+      }
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/math/PartialOrdering$class;.(Lscala/math/PartialOrdering$class;::$init$(Lscala/math/PartialOrdering;)V;)(this);
+    Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::$init$(Lscala/math/Ordering;)V;)(this);
+  }
+}

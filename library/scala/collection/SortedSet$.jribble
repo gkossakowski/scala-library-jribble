@@ -1,0 +1,19 @@
+public final class Lscala/collection/SortedSet$; extends Lscala/collection/generic/SortedSetFactory; implements Lscala/ScalaObject; {
+  public static Lscala/collection/SortedSet$; MODULE$ = new (Lscala/collection/SortedSet$;::this()V;)();
+  
+  public Lscala/collection/immutable/SortedSet; empty(Lscala/math/Ordering; ord) {
+    return Lscala/collection/immutable/SortedSet$;.MODULE$.(Lscala/collection/immutable/SortedSet$;::empty(Lscala/math/Ordering;)Lscala/collection/immutable/SortedSet;)(ord);
+  }
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom(Lscala/math/Ordering; ord) {
+    return (new (Lscala/collection/generic/SortedSetFactory$SortedSetCanBuildFrom;::this(Lscala/collection/generic/SortedSetFactory;Lscala/math/Ordering;)V;)(this, ord));
+  }
+  
+  public Lscala/collection/SortedSet; empty(Lscala/math/Ordering; ord) {
+    return this.(Lscala/collection/SortedSet$;::empty(Lscala/math/Ordering;)Lscala/collection/immutable/SortedSet;)(ord);
+  }
+  
+  public this() {
+    (Lscala/collection/generic/SortedSetFactory;::super()V;)();
+  }
+}

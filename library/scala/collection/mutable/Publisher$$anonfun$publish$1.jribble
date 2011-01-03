@@ -1,0 +1,35 @@
+public final class Lscala/collection/mutable/Publisher$$anonfun$publish$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(Lscala/collection/mutable/Subscriber; sub) {
+    if ((!(this.(Lscala/collection/mutable/Publisher;)$outer$u0020.(Lscala/collection/mutable/Publisher;::scala$collection$mutable$Publisher$$suspended()Lscala/collection/mutable/HashSet;)().(Lscala/collection/mutable/HashSet;::contains(Ljava/lang/Object;)Z;)(sub)) && this.(Lscala/collection/mutable/Publisher;)$outer$u0020.(Lscala/collection/mutable/Publisher;::scala$collection$mutable$Publisher$$filters()Lscala/collection/mutable/HashMap;)().<cast>(Lscala/collection/mutable/MultiMap;).(Lscala/collection/mutable/MultiMap;::entryExists(Ljava/lang/Object;Lscala/Function1;)Z;)(sub, (new (Lscala/collection/mutable/Publisher$$anonfun$publish$1$$anonfun$apply$1;::this(Lscala/collection/mutable/Publisher$$anonfun$publish$1;)V;)(this)))))
+      {
+        sub.(Lscala/collection/mutable/Subscriber;::notify(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/mutable/Publisher;)$outer$u0020.(Lscala/collection/mutable/Publisher;::self()Lscala/collection/mutable/Publisher;)(), this.(Ljava/lang/Object;)event$1);
+      }
+    else
+      {
+        
+      }
+  }
+  
+  private Lscala/collection/mutable/Publisher; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/mutable/Publisher$$anonfun$publish$1;::apply(Lscala/collection/mutable/Subscriber;)V;)(v1.<cast>(Lscala/collection/mutable/Subscriber;));
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  public Ljava/lang/Object; event$1;
+  
+  public this(Lscala/collection/mutable/Publisher; $outer, Ljava/lang/Object; event$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/Publisher;)$outer$u0020 = $outer;
+      }
+    this.(Ljava/lang/Object;)event$1 = event$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

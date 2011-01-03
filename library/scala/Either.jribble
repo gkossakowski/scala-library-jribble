@@ -1,0 +1,110 @@
+public abstract class Lscala/Either; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  public Lscala/Either$LeftProjection; left() {
+    return (new (Lscala/Either$LeftProjection;::this(Lscala/Either;)V;)(this));
+  }
+  
+  public Lscala/Either$RightProjection; right() {
+    return (new (Lscala/Either$RightProjection;::this(Lscala/Either;)V;)(this));
+  }
+  
+  public Ljava/lang/Object; fold(Lscala/Function1; fa, Lscala/Function1; fb) {
+    Lscala/Either; temp1 = this;
+    Ljava/lang/Object; $1$;
+    if (temp1.<instanceof>(Lscala/Left;))
+      {
+        $1$ = fa.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp1.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)());
+      }
+    else
+      {
+        Ljava/lang/Object; $2$;
+        if (temp1.<instanceof>(Lscala/Right;))
+          {
+            $2$ = fb.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp1.<cast>(Lscala/Right;).(Lscala/Right;::b()Ljava/lang/Object;)());
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp1));
+          }
+        $1$ = $2$;
+      }
+    return $1$;
+  }
+  
+  public Lscala/Either; swap() {
+    Lscala/Either; temp6 = this;
+    Lscala/Either; $3$;
+    if (temp6.<instanceof>(Lscala/Left;))
+      {
+        $3$ = (new (Lscala/Right;::this(Ljava/lang/Object;)V;)(temp6.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)()));
+      }
+    else
+      {
+        Lscala/Either; $4$;
+        if (temp6.<instanceof>(Lscala/Right;))
+          {
+            $4$ = (new (Lscala/Left;::this(Ljava/lang/Object;)V;)(temp6.<cast>(Lscala/Right;).(Lscala/Right;::b()Ljava/lang/Object;)()));
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp6));
+          }
+        $3$ = $4$;
+      }
+    return $3$;
+  }
+  
+  public Lscala/Either; joinRight(Lscala/Predef$$less$colon$less; ev) {
+    Lscala/Either; temp11 = this;
+    Lscala/Either; $5$;
+    if (temp11.<instanceof>(Lscala/Left;))
+      {
+        $5$ = (new (Lscala/Left;::this(Ljava/lang/Object;)V;)(temp11.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)()));
+      }
+    else
+      {
+        Lscala/Either; $6$;
+        if (temp11.<instanceof>(Lscala/Right;))
+          {
+            $6$ = ev.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp11.<cast>(Lscala/Right;).(Lscala/Right;::b()Ljava/lang/Object;)()).<cast>(Lscala/Either;);
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp11));
+          }
+        $5$ = $6$;
+      }
+    return $5$;
+  }
+  
+  public Lscala/Either; joinLeft(Lscala/Predef$$less$colon$less; ev) {
+    Lscala/Either; temp16 = this;
+    Lscala/Either; $7$;
+    if (temp16.<instanceof>(Lscala/Left;))
+      {
+        $7$ = ev.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp16.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)()).<cast>(Lscala/Either;);
+      }
+    else
+      {
+        Lscala/Either; $8$;
+        if (temp16.<instanceof>(Lscala/Right;))
+          {
+            $8$ = (new (Lscala/Right;::this(Ljava/lang/Object;)V;)(temp16.<cast>(Lscala/Right;).(Lscala/Right;::b()Ljava/lang/Object;)()));
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp16));
+          }
+        $7$ = $8$;
+      }
+    return $7$;
+  }
+  
+  public abstract Z; isLeft();
+  
+  public abstract Z; isRight();
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

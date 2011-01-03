@@ -1,0 +1,42 @@
+public final class Lscala/util/automata/SubsetConstruction$$anonfun$determinize$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(Ljava/lang/Object; label) {
+    Lscala/collection/immutable/BitSet; Q = this.(Lscala/util/automata/SubsetConstruction;)$outer$u0020.(Lscala/util/automata/SubsetConstruction;::nfa()Lscala/util/automata/NondetWordAutom;)().(Lscala/util/automata/NondetWordAutom;::next(Lscala/collection/immutable/BitSet;Ljava/lang/Object;)Lscala/collection/immutable/BitSet;)(this.(Lscala/collection/immutable/BitSet;)P$1, label);
+    this.(Lscala/collection/mutable/HashMap;)Pdelta$1.(Lscala/collection/mutable/HashMap;::update(Ljava/lang/Object;Ljava/lang/Object;)V;)(label, Q);
+    this.(Lscala/util/automata/SubsetConstruction;)$outer$u0020.(Lscala/util/automata/SubsetConstruction;::add$1(Lscala/collection/immutable/BitSet;Lscala/runtime/ObjectRef;Lscala/runtime/ObjectRef;Lscala/collection/mutable/Stack;)V;)(Q, this.(Lscala/runtime/ObjectRef;)states$1, this.(Lscala/runtime/ObjectRef;)finals$1, this.(Lscala/collection/mutable/Stack;)rest$1);
+  }
+  
+  private Lscala/util/automata/SubsetConstruction; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$1;::apply(Ljava/lang/Object;)V;)(v1);
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/runtime/ObjectRef; states$1;
+  
+  private Lscala/runtime/ObjectRef; finals$1;
+  
+  private Lscala/collection/mutable/Stack; rest$1;
+  
+  private Lscala/collection/immutable/BitSet; P$1;
+  
+  private Lscala/collection/mutable/HashMap; Pdelta$1;
+  
+  public this(Lscala/util/automata/SubsetConstruction; $outer, Lscala/runtime/ObjectRef; states$1, Lscala/runtime/ObjectRef; finals$1, Lscala/collection/mutable/Stack; rest$1, Lscala/collection/immutable/BitSet; P$1, Lscala/collection/mutable/HashMap; Pdelta$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/util/automata/SubsetConstruction;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/runtime/ObjectRef;)states$1 = states$1;
+    this.(Lscala/runtime/ObjectRef;)finals$1 = finals$1;
+    this.(Lscala/collection/mutable/Stack;)rest$1 = rest$1;
+    this.(Lscala/collection/immutable/BitSet;)P$1 = P$1;
+    this.(Lscala/collection/mutable/HashMap;)Pdelta$1 = Pdelta$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

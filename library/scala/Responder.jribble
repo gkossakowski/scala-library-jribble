@@ -1,0 +1,28 @@
+public abstract class Lscala/Responder; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  public abstract V; respond(Lscala/Function1; k);
+  
+  public V; foreach(Lscala/Function1; k) {
+    this.(Lscala/Responder;::respond(Lscala/Function1;)V;)(k);
+  }
+  
+  public Lscala/Responder; map(Lscala/Function1; f$2) {
+    return (new (Lscala/Responder$$anon$3;::this(Lscala/Responder;Lscala/Function1;)V;)(this, f$2));
+  }
+  
+  public Lscala/Responder; flatMap(Lscala/Function1; f$1) {
+    return (new (Lscala/Responder$$anon$2;::this(Lscala/Responder;Lscala/Function1;)V;)(this, f$1));
+  }
+  
+  public Lscala/Responder; filter(Lscala/Function1; p$1) {
+    return (new (Lscala/Responder$$anon$4;::this(Lscala/Responder;Lscala/Function1;)V;)(this, p$1));
+  }
+  
+  public Ljava/lang/String; toString() {
+    return "Responder";
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

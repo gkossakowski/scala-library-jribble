@@ -1,0 +1,94 @@
+public abstract class Lscala/collection/MapProxyLike$class; {
+  
+  public static Lscala/Option; get(Lscala/collection/MapProxyLike; $this, Ljava/lang/Object; key) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key);
+  }
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/MapProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::iterator()Lscala/collection/Iterator;)();
+  }
+  
+  public static Lscala/collection/Map; $plus(Lscala/collection/MapProxyLike; $this, Lscala/Tuple2; kv) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::$plus(Lscala/Tuple2;)Lscala/collection/Map;)(kv);
+  }
+  
+  public static Lscala/collection/Map; $minus(Lscala/collection/MapProxyLike; $this, Ljava/lang/Object; key) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::$minus(Ljava/lang/Object;)Lscala/collection/Map;)(key);
+  }
+  
+  public static Z; isEmpty(Lscala/collection/MapProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::isEmpty()Z;)();
+  }
+  
+  public static Ljava/lang/Object; getOrElse(Lscala/collection/MapProxyLike; $this, Ljava/lang/Object; key, Lscala/Function0; `default`) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::getOrElse(Ljava/lang/Object;Lscala/Function0;)Ljava/lang/Object;)(key, `default`);
+  }
+  
+  public static Ljava/lang/Object; apply(Lscala/collection/MapProxyLike; $this, Ljava/lang/Object; key) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(key);
+  }
+  
+  public static Z; contains(Lscala/collection/MapProxyLike; $this, Ljava/lang/Object; key) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::contains(Ljava/lang/Object;)Z;)(key);
+  }
+  
+  public static Z; isDefinedAt(Lscala/collection/MapProxyLike; $this, Ljava/lang/Object; key) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::isDefinedAt(Ljava/lang/Object;)Z;)(key);
+  }
+  
+  public static Lscala/collection/Set; keySet(Lscala/collection/MapProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::keySet()Lscala/collection/Set;)();
+  }
+  
+  public static Lscala/collection/Iterator; keysIterator(Lscala/collection/MapProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::keysIterator()Lscala/collection/Iterator;)();
+  }
+  
+  public static Lscala/collection/Iterable; keys(Lscala/collection/MapProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::keys()Lscala/collection/Iterable;)();
+  }
+  
+  public static Lscala/collection/Iterable; values(Lscala/collection/MapProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::values()Lscala/collection/Iterable;)();
+  }
+  
+  public static Lscala/collection/Iterator; valuesIterator(Lscala/collection/MapProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::valuesIterator()Lscala/collection/Iterator;)();
+  }
+  
+  public static Ljava/lang/Object; `default`(Lscala/collection/MapProxyLike; $this, Ljava/lang/Object; key) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::`default`(Ljava/lang/Object;)Ljava/lang/Object;)(key);
+  }
+  
+  public static Lscala/collection/Map; filterKeys(Lscala/collection/MapProxyLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::filterKeys(Lscala/Function1;)Lscala/collection/Map;)(p);
+  }
+  
+  public static Lscala/collection/Map; mapValues(Lscala/collection/MapProxyLike; $this, Lscala/Function1; f) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::mapValues(Lscala/Function1;)Lscala/collection/Map;)(f);
+  }
+  
+  public static Lscala/collection/Map; updated(Lscala/collection/MapProxyLike; $this, Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/Map;)(key, value);
+  }
+  
+  public static Lscala/collection/Map; $plus(Lscala/collection/MapProxyLike; $this, Lscala/Tuple2; kv1, Lscala/Tuple2; kv2, Lscala/collection/Seq; kvs) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::$plus(Lscala/Tuple2;Lscala/Tuple2;Lscala/collection/Seq;)Lscala/collection/Map;)(kv1, kv2, kvs);
+  }
+  
+  public static Lscala/collection/Map; $plus$plus(Lscala/collection/MapProxyLike; $this, Lscala/collection/TraversableOnce; xs) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/Map;)(xs);
+  }
+  
+  public static Lscala/collection/Map; filterNot(Lscala/collection/MapProxyLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::filterNot(Lscala/Function1;)Lscala/collection/Map;)(p);
+  }
+  
+  public static Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/MapProxyLike; $this, Lscala/collection/mutable/StringBuilder; b, Ljava/lang/String; start, Ljava/lang/String; sep, Ljava/lang/String; end) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::addString(Lscala/collection/mutable/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(b, start, sep, end);
+  }
+  
+  public static V; $init$(Lscala/collection/MapProxyLike; $this) {
+    
+  }
+}

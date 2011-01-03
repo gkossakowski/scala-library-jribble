@@ -1,0 +1,19 @@
+public final class Lscala/collection/immutable/Map$; extends Lscala/collection/generic/ImmutableMapFactory; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/Map$; MODULE$ = new (Lscala/collection/immutable/Map$;::this()V;)();
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return (new (Lscala/collection/generic/MapFactory$MapCanBuildFrom;::this(Lscala/collection/generic/MapFactory;)V;)(this));
+  }
+  
+  public Lscala/collection/immutable/Map; empty() {
+    return Lscala/collection/immutable/Map$EmptyMap$;.MODULE$;
+  }
+  
+  public Lscala/collection/Map; empty() {
+    return this.(Lscala/collection/immutable/Map$;::empty()Lscala/collection/immutable/Map;)();
+  }
+  
+  public this() {
+    (Lscala/collection/generic/ImmutableMapFactory;::super()V;)();
+  }
+}

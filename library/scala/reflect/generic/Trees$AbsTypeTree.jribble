@@ -1,0 +1,27 @@
+public abstract class Lscala/reflect/generic/Trees$AbsTypeTree; extends Lscala/reflect/generic/Trees$Tree; implements Lscala/reflect/generic/Trees$TypTree;, Lscala/ScalaObject; {
+  
+  public Lscala/reflect/generic/Symbols$AbsSymbol; symbol() {
+    Lscala/reflect/generic/Symbols$AbsSymbol; $84$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/reflect/generic/Trees$Tree;::tpe()Lscala/reflect/generic/Types$AbsType;)(), null))
+      {
+        $84$ = null;
+      }
+    else
+      {
+        $84$ = this.(Lscala/reflect/generic/Trees$Tree;::tpe()Lscala/reflect/generic/Types$AbsType;)().(Lscala/reflect/generic/Types$AbsType;::typeSymbol()Lscala/reflect/generic/Symbols$AbsSymbol;)();
+      }
+    return $84$;
+  }
+  
+  public Z; isEmpty() {
+    return ((this.(Lscala/reflect/generic/Trees$Tree;::tpe()Lscala/reflect/generic/Types$AbsType;)() == null) || Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/reflect/generic/Trees$Tree;::tpe()Lscala/reflect/generic/Types$AbsType;)(), this.(Lscala/reflect/generic/Trees$AbsTypeTree;::scala$reflect$generic$Trees$AbsTypeTree$$$outer()Lscala/reflect/generic/Universe;)().(Lscala/reflect/generic/Types;::NoType()Lscala/reflect/generic/Types$AbsType;)()));
+  }
+  
+  public Lscala/reflect/generic/Universe; scala$reflect$generic$Trees$AbsTypeTree$$$outer() {
+    return this.(Lscala/reflect/generic/Universe;)$outer$u0020;
+  }
+  
+  public this(Lscala/reflect/generic/Universe; $outer) {
+    (Lscala/reflect/generic/Trees$Tree;::super(Lscala/reflect/generic/Universe;)V;)($outer);
+  }
+}

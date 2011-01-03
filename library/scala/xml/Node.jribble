@@ -1,0 +1,159 @@
+public abstract class Lscala/xml/Node; extends Lscala/xml/NodeSeq; implements Lscala/ScalaObject; {
+  
+  public Ljava/lang/String; prefix() {
+    return null;
+  }
+  
+  public abstract Ljava/lang/String; label();
+  
+  public Z; isAtom() {
+    return this.<instanceof>(Lscala/xml/Atom;);
+  }
+  
+  public Z; doCollectNamespaces() {
+    return true;
+  }
+  
+  public Z; doTransform() {
+    return true;
+  }
+  
+  public Lscala/xml/NamespaceBinding; scope() {
+    return Lscala/xml/TopScope$;.MODULE$;
+  }
+  
+  public Ljava/lang/String; namespace() {
+    return this.(Lscala/xml/Node;::getNamespace(Ljava/lang/String;)Ljava/lang/String;)(this.(Lscala/xml/Node;::prefix()Ljava/lang/String;)());
+  }
+  
+  public Ljava/lang/String; getNamespace(Ljava/lang/String; pre) {
+    Ljava/lang/String; $1$;
+    if ((this.(Lscala/xml/Node;::scope()Lscala/xml/NamespaceBinding;)() == null))
+      {
+        $1$ = null;
+      }
+    else
+      {
+        $1$ = this.(Lscala/xml/Node;::scope()Lscala/xml/NamespaceBinding;)().(Lscala/xml/NamespaceBinding;::getURI(Ljava/lang/String;)Ljava/lang/String;)(pre);
+      }
+    return $1$;
+  }
+  
+  public final Lscala/Option; attribute(Ljava/lang/String; key) {
+    return this.(Lscala/xml/Node;::attributes()Lscala/xml/MetaData;)().(Lscala/xml/MetaData;::get(Ljava/lang/String;)Lscala/Option;)(key);
+  }
+  
+  public final Lscala/Option; attribute(Ljava/lang/String; uri, Ljava/lang/String; key) {
+    return this.(Lscala/xml/Node;::attributes()Lscala/xml/MetaData;)().(Lscala/xml/MetaData;::get(Ljava/lang/String;Lscala/xml/Node;Ljava/lang/String;)Lscala/Option;)(uri, this, key);
+  }
+  
+  public Lscala/xml/MetaData; attributes() {
+    return Lscala/xml/Null$;.MODULE$;
+  }
+  
+  public abstract Lscala/collection/Seq; child();
+  
+  public Lscala/collection/Seq; nonEmptyChildren() {
+    return this.(Lscala/xml/Node;::child()Lscala/collection/Seq;)().(Lscala/collection/TraversableLike;::filterNot(Lscala/Function1;)Ljava/lang/Object;)((new (Lscala/xml/Node$$anonfun$nonEmptyChildren$1;::this(Lscala/xml/Node;)V;)(this))).<cast>(Lscala/collection/Seq;);
+  }
+  
+  public Lscala/collection/immutable/List; descendant() {
+    return this.(Lscala/xml/Node;::child()Lscala/collection/Seq;)().(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)().(Lscala/collection/TraversableLike;::flatMap(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/xml/Node$$anonfun$descendant$1;::this(Lscala/xml/Node;)V;)(this)), Lscala/collection/immutable/List$;.MODULE$.(Lscala/collection/immutable/List$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/immutable/List;);
+  }
+  
+  public Lscala/collection/immutable/List; descendant_or_self() {
+    Lscala/xml/Node; x$3 = this;
+    return this.(Lscala/xml/Node;::descendant()Lscala/collection/immutable/List;)().(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$3);
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; other) {
+    Ljava/lang/Object; temp1 = other;
+    Z; $2$;
+    if (temp1.<instanceof>(Lscala/xml/Group;))
+      {
+        $2$ = false;
+      }
+    else
+      {
+        $2$ = temp1.<instanceof>(Lscala/xml/Node;);
+      }
+    return $2$;
+  }
+  
+  public Lscala/collection/Seq; basisForHashCode() {
+    Ljava/lang/String; x$6 = this.(Lscala/xml/Node;::prefix()Ljava/lang/String;)();
+    Ljava/lang/String; x$5 = this.(Lscala/xml/Node;::label()Ljava/lang/String;)();
+    Lscala/xml/MetaData; x$4 = this.(Lscala/xml/Node;::attributes()Lscala/xml/MetaData;)();
+    return this.(Lscala/xml/Node;::nonEmptyChildren()Lscala/collection/Seq;)().(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)().(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$4).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$5).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$6);
+  }
+  
+  public Z; strict_$eq$eq(Lscala/xml/Equality; other) {
+    Lscala/xml/Equality; temp5 = other;
+    Z; $3$;
+    if (temp5.<instanceof>(Lscala/xml/Group;))
+      {
+        $3$ = false;
+      }
+    else
+      {
+        Z; $4$;
+        if (temp5.<instanceof>(Lscala/xml/Node;))
+          {
+            Lscala/xml/Node; temp8 = temp5.<cast>(Lscala/xml/Node;);
+            Lscala/xml/Node; x = temp8;
+            $4$ = (((Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/xml/Node;::prefix()Ljava/lang/String;)(), x.(Lscala/xml/Node;::prefix()Ljava/lang/String;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/xml/Node;::label()Ljava/lang/String;)(), x.(Lscala/xml/Node;::label()Ljava/lang/String;)())) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/xml/Node;::attributes()Lscala/xml/MetaData;)(), x.(Lscala/xml/Node;::attributes()Lscala/xml/MetaData;)())) && this.(Lscala/xml/Node;::nonEmptyChildren()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::sameElements(Lscala/collection/Iterable;)Z;)(x.(Lscala/xml/Node;::nonEmptyChildren()Lscala/collection/Seq;)()));
+          }
+        else
+          {
+            $4$ = false;
+          }
+        $3$ = $4$;
+      }
+    return $3$;
+  }
+  
+  public Lscala/collection/Seq; theSeq() {
+    Lscala/xml/Node; x$7 = this;
+    return Lscala/collection/immutable/Nil$;.MODULE$.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$7);
+  }
+  
+  public Ljava/lang/String; buildString(Z; stripComments) {
+    Lscala/xml/Node; x$8 = this;
+    Z; x$9 = stripComments;
+    Lscala/xml/NamespaceBinding; x$10 = Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::toXML$default$2()Lscala/xml/NamespaceBinding;)();
+    Lscala/collection/mutable/StringBuilder; x$11 = Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::toXML$default$3()Lscala/collection/mutable/StringBuilder;)();
+    Z; x$12 = Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::toXML$default$5()Z;)();
+    Z; x$13 = Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::toXML$default$6()Z;)();
+    Z; x$14 = Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::toXML$default$7()Z;)();
+    return Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::toXML(Lscala/xml/Node;Lscala/xml/NamespaceBinding;Lscala/collection/mutable/StringBuilder;Z;Z;Z;Z;)Lscala/collection/mutable/StringBuilder;)(x$8, x$10, x$11, x$9, x$12, x$13, x$14).(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)();
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/xml/Node;::buildString(Z;)Ljava/lang/String;)(false);
+  }
+  
+  public Lscala/collection/mutable/StringBuilder; nameToString(Lscala/collection/mutable/StringBuilder; sb) {
+    if ((null != this.(Lscala/xml/Node;::prefix()Ljava/lang/String;)()))
+      {
+        sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(this.(Lscala/xml/Node;::prefix()Ljava/lang/String;)());
+        sb.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(':');
+      }
+    else
+      {
+        
+      }
+    return sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(this.(Lscala/xml/Node;::label()Ljava/lang/String;)());
+  }
+  
+  public Lscala/xml/TypeSymbol; xmlType() {
+    return null;
+  }
+  
+  public Ljava/lang/String; text() {
+    return super.(Lscala/xml/NodeSeq;::text()Ljava/lang/String;)();
+  }
+  
+  public this() {
+    (Lscala/xml/NodeSeq;::super()V;)();
+  }
+}

@@ -1,0 +1,790 @@
+public abstract class Lscala/collection/immutable/VectorPointer$class; {
+  
+  public static final V; initFrom(Lscala/collection/immutable/VectorPointer; $this, Lscala/collection/immutable/VectorPointer; that) {
+    $this.(Lscala/collection/immutable/VectorPointer;::initFrom(Lscala/collection/immutable/VectorPointer;I;)V;)(that, that.(Lscala/collection/immutable/VectorPointer;::depth()I;)());
+  }
+  
+  public static final V; initFrom(Lscala/collection/immutable/VectorPointer; $this, Lscala/collection/immutable/VectorPointer; that, I; depth) {
+    $this.(Lscala/collection/immutable/VectorPointer;::depth_$eq(I;)V;)(depth);
+    I; temp3 = (depth - 1);
+    I; $27$ = temp3;
+    switch ($27$) {
+      0: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)());
+        break;
+      }
+      
+      1: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)());
+        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)());
+        break;
+      }
+      
+      2: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)());
+        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)());
+        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)());
+        break;
+      }
+      
+      3: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)());
+        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)());
+        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)());
+        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)());
+        break;
+      }
+      
+      4: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)());
+        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)());
+        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)());
+        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)());
+        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)());
+        break;
+      }
+      
+      5: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display5_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display5()Ljava/lang/Object;[)());
+        $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)());
+        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)());
+        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)());
+        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)());
+        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(that.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)());
+        break;
+      }
+      
+      -1: {
+        
+        break;
+      }
+      
+      default: {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(temp3)));
+        break;
+      }
+      
+    }
+  }
+  
+  public static final Ljava/lang/Object; getElem(Lscala/collection/immutable/VectorPointer; $this, I; index, I; xor) {
+    Ljava/lang/Object; $28$;
+    if ((xor < 32))
+      {
+        $28$ = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)()[(index & 31)];
+      }
+    else
+      {
+        Ljava/lang/Object; $29$;
+        if ((xor < 1024))
+          {
+            $29$ = $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)].<cast>(Ljava/lang/Object;[)[(index & 31)];
+          }
+        else
+          {
+            Ljava/lang/Object; $30$;
+            if ((xor < 32768))
+              {
+                $30$ = $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((index >>> 10) & 31)].<cast>(Ljava/lang/Object;[)[((index >>> 5) & 31)].<cast>(Ljava/lang/Object;[)[(index & 31)];
+              }
+            else
+              {
+                Ljava/lang/Object; $31$;
+                if ((xor < 1048576))
+                  {
+                    $31$ = $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((index >>> 15) & 31)].<cast>(Ljava/lang/Object;[)[((index >>> 10) & 31)].<cast>(Ljava/lang/Object;[)[((index >>> 5) & 31)].<cast>(Ljava/lang/Object;[)[(index & 31)];
+                  }
+                else
+                  {
+                    Ljava/lang/Object; $32$;
+                    if ((xor < 33554432))
+                      {
+                        $32$ = $this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()[((index >>> 20) & 31)].<cast>(Ljava/lang/Object;[)[((index >>> 15) & 31)].<cast>(Ljava/lang/Object;[)[((index >>> 10) & 31)].<cast>(Ljava/lang/Object;[)[((index >>> 5) & 31)].<cast>(Ljava/lang/Object;[)[(index & 31)];
+                      }
+                    else
+                      {
+                        Ljava/lang/Object; $33$;
+                        if ((xor < 1073741824))
+                          {
+                            $33$ = $this.(Lscala/collection/immutable/VectorPointer;::display5()Ljava/lang/Object;[)()[((index >>> 25) & 31)].<cast>(Ljava/lang/Object;[)[((index >>> 20) & 31)].<cast>(Ljava/lang/Object;[)[((index >>> 15) & 31)].<cast>(Ljava/lang/Object;[)[((index >>> 10) & 31)].<cast>(Ljava/lang/Object;[)[((index >>> 5) & 31)].<cast>(Ljava/lang/Object;[)[(index & 31)];
+                          }
+                        else
+                          {
+                            throw (new (Ljava/lang/IllegalArgumentException;::this()V;)());
+                          }
+                        $32$ = $33$;
+                      }
+                    $31$ = $32$;
+                  }
+                $30$ = $31$;
+              }
+            $29$ = $30$;
+          }
+        $28$ = $29$;
+      }
+    return $28$;
+  }
+  
+  public static final V; gotoPos(Lscala/collection/immutable/VectorPointer; $this, I; index, I; xor) {
+    if ((xor < 32))
+      {
+        
+      }
+    else
+      {
+        if ((xor < 1024))
+          {
+            $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)].<cast>(Ljava/lang/Object;[));
+          }
+        else
+          {
+            if ((xor < 32768))
+              {
+                $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((index >>> 10) & 31)].<cast>(Ljava/lang/Object;[));
+                $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)].<cast>(Ljava/lang/Object;[));
+              }
+            else
+              {
+                if ((xor < 1048576))
+                  {
+                    $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((index >>> 15) & 31)].<cast>(Ljava/lang/Object;[));
+                    $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((index >>> 10) & 31)].<cast>(Ljava/lang/Object;[));
+                    $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)].<cast>(Ljava/lang/Object;[));
+                  }
+                else
+                  {
+                    if ((xor < 33554432))
+                      {
+                        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()[((index >>> 20) & 31)].<cast>(Ljava/lang/Object;[));
+                        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((index >>> 15) & 31)].<cast>(Ljava/lang/Object;[));
+                        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((index >>> 10) & 31)].<cast>(Ljava/lang/Object;[));
+                        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)].<cast>(Ljava/lang/Object;[));
+                      }
+                    else
+                      {
+                        if ((xor < 1073741824))
+                          {
+                            $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display5()Ljava/lang/Object;[)()[((index >>> 25) & 31)].<cast>(Ljava/lang/Object;[));
+                            $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()[((index >>> 20) & 31)].<cast>(Ljava/lang/Object;[));
+                            $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((index >>> 15) & 31)].<cast>(Ljava/lang/Object;[));
+                            $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((index >>> 10) & 31)].<cast>(Ljava/lang/Object;[));
+                            $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)].<cast>(Ljava/lang/Object;[));
+                          }
+                        else
+                          {
+                            throw (new (Ljava/lang/IllegalArgumentException;::this()V;)());
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+  
+  public static final V; gotoNextBlockStart(Lscala/collection/immutable/VectorPointer; $this, I; index, I; xor) {
+    if ((xor < 1024))
+      {
+        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)].<cast>(Ljava/lang/Object;[));
+      }
+    else
+      {
+        if ((xor < 32768))
+          {
+            $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((index >>> 10) & 31)].<cast>(Ljava/lang/Object;[));
+            $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[0].<cast>(Ljava/lang/Object;[));
+          }
+        else
+          {
+            if ((xor < 1048576))
+              {
+                $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((index >>> 15) & 31)].<cast>(Ljava/lang/Object;[));
+                $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[0].<cast>(Ljava/lang/Object;[));
+                $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[0].<cast>(Ljava/lang/Object;[));
+              }
+            else
+              {
+                if ((xor < 33554432))
+                  {
+                    $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()[((index >>> 20) & 31)].<cast>(Ljava/lang/Object;[));
+                    $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[0].<cast>(Ljava/lang/Object;[));
+                    $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[0].<cast>(Ljava/lang/Object;[));
+                    $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[0].<cast>(Ljava/lang/Object;[));
+                  }
+                else
+                  {
+                    if ((xor < 1073741824))
+                      {
+                        $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display5()Ljava/lang/Object;[)()[((index >>> 25) & 31)].<cast>(Ljava/lang/Object;[));
+                        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()[0].<cast>(Ljava/lang/Object;[));
+                        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[0].<cast>(Ljava/lang/Object;[));
+                        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[0].<cast>(Ljava/lang/Object;[));
+                        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[0].<cast>(Ljava/lang/Object;[));
+                      }
+                    else
+                      {
+                        throw (new (Ljava/lang/IllegalArgumentException;::this()V;)());
+                      }
+                  }
+              }
+          }
+      }
+  }
+  
+  public static final V; gotoNextBlockStartWritable(Lscala/collection/immutable/VectorPointer; $this, I; index, I; xor) {
+    if ((xor < 1024))
+      {
+        if (($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() == 1))
+          {
+            $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+            $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[0] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+            $this.(Lscala/collection/immutable/VectorPointer;::depth_$eq(I;)V;)(($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() + 1));
+          }
+        else
+          {
+            
+          }
+        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+        $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+      }
+    else
+      {
+        if ((xor < 32768))
+          {
+            if (($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() == 2))
+              {
+                $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[0] = $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)();
+                $this.(Lscala/collection/immutable/VectorPointer;::depth_$eq(I;)V;)(($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() + 1));
+              }
+            else
+              {
+                
+              }
+            $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+            $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+            $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+            $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((index >>> 10) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)();
+          }
+        else
+          {
+            if ((xor < 1048576))
+              {
+                if (($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() == 3))
+                  {
+                    $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                    $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[0] = $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)();
+                    $this.(Lscala/collection/immutable/VectorPointer;::depth_$eq(I;)V;)(($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() + 1));
+                  }
+                else
+                  {
+                    
+                  }
+                $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+                $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((index >>> 10) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)();
+                $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((index >>> 15) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)();
+              }
+            else
+              {
+                if ((xor < 33554432))
+                  {
+                    if (($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() == 4))
+                      {
+                        $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                        $this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()[0] = $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)();
+                        $this.(Lscala/collection/immutable/VectorPointer;::depth_$eq(I;)V;)(($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() + 1));
+                      }
+                    else
+                      {
+                        
+                      }
+                    $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                    $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                    $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                    $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                    $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+                    $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((index >>> 10) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)();
+                    $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((index >>> 15) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)();
+                    $this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()[((index >>> 20) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)();
+                  }
+                else
+                  {
+                    if ((xor < 1073741824))
+                      {
+                        if (($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() == 5))
+                          {
+                            $this.(Lscala/collection/immutable/VectorPointer;::display5_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                            $this.(Lscala/collection/immutable/VectorPointer;::display5()Ljava/lang/Object;[)()[0] = $this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)();
+                            $this.(Lscala/collection/immutable/VectorPointer;::depth_$eq(I;)V;)(($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() + 1));
+                          }
+                        else
+                          {
+                            
+                          }
+                        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                        $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                        $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+                        $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((index >>> 10) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)();
+                        $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((index >>> 15) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)();
+                        $this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()[((index >>> 20) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)();
+                        $this.(Lscala/collection/immutable/VectorPointer;::display5()Ljava/lang/Object;[)()[((index >>> 25) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)();
+                      }
+                    else
+                      {
+                        throw (new (Ljava/lang/IllegalArgumentException;::this()V;)());
+                      }
+                  }
+              }
+          }
+      }
+  }
+  
+  public static final Ljava/lang/Object;[ copyOf(Lscala/collection/immutable/VectorPointer; $this, Ljava/lang/Object;[ a) {
+    if ((a == null))
+      {
+        Lscala/Predef$;.MODULE$.(Lscala/Predef$;::println(Ljava/lang/Object;)V;)("NULL");
+      }
+    else
+      {
+        
+      }
+    Ljava/lang/Object;[ b = new Ljava/lang/Object;[a.<length>];
+    Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::arraycopy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(a, 0, b, 0, a.<length>);
+    return b;
+  }
+  
+  public static final Ljava/lang/Object;[ nullSlotAndCopy(Lscala/collection/immutable/VectorPointer; $this, Ljava/lang/Object;[ array, I; index) {
+    Ljava/lang/Object; x = array[index];
+    array[index] = null;
+    return $this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)(x.<cast>(Ljava/lang/Object;[));
+  }
+  
+  public static final V; stabilize(Lscala/collection/immutable/VectorPointer; $this, I; index) {
+    I; temp4 = ($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() - 1);
+    I; $34$ = temp4;
+    switch ($34$) {
+      0: {
+        
+        break;
+      }
+      
+      1: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+        break;
+      }
+      
+      2: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((index >>> 10) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)();
+        $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+        break;
+      }
+      
+      3: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((index >>> 15) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)();
+        $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((index >>> 10) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)();
+        $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+        break;
+      }
+      
+      4: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()[((index >>> 20) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)();
+        $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((index >>> 15) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)();
+        $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((index >>> 10) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)();
+        $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+        break;
+      }
+      
+      5: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display5_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display5()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display5()Ljava/lang/Object;[)()[((index >>> 25) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)();
+        $this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()[((index >>> 20) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)();
+        $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((index >>> 15) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)();
+        $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((index >>> 10) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)();
+        $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((index >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+        break;
+      }
+      
+      default: {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(temp4)));
+        break;
+      }
+      
+    }
+  }
+  
+  public static final V; gotoPosWritable0(Lscala/collection/immutable/VectorPointer; $this, I; newIndex, I; xor) {
+    I; temp5 = ($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() - 1);
+    I; $35$ = temp5;
+    switch ($35$) {
+      0: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)()));
+        break;
+      }
+      
+      1: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)(), ((newIndex >>> 5) & 31)));
+        break;
+      }
+      
+      2: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)(), ((newIndex >>> 10) & 31)));
+        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)(), ((newIndex >>> 5) & 31)));
+        break;
+      }
+      
+      3: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)(), ((newIndex >>> 15) & 31)));
+        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)(), ((newIndex >>> 10) & 31)));
+        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)(), ((newIndex >>> 5) & 31)));
+        break;
+      }
+      
+      4: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)(), ((newIndex >>> 20) & 31)));
+        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)(), ((newIndex >>> 15) & 31)));
+        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)(), ((newIndex >>> 10) & 31)));
+        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)(), ((newIndex >>> 5) & 31)));
+        break;
+      }
+      
+      5: {
+        $this.(Lscala/collection/immutable/VectorPointer;::display5_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display5()Ljava/lang/Object;[)()));
+        $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display5()Ljava/lang/Object;[)(), ((newIndex >>> 25) & 31)));
+        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)(), ((newIndex >>> 20) & 31)));
+        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)(), ((newIndex >>> 15) & 31)));
+        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)(), ((newIndex >>> 10) & 31)));
+        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)(), ((newIndex >>> 5) & 31)));
+        break;
+      }
+      
+      default: {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(temp5)));
+        break;
+      }
+      
+    }
+  }
+  
+  public static final V; gotoPosWritable1(Lscala/collection/immutable/VectorPointer; $this, I; oldIndex, I; newIndex, I; xor) {
+    if ((xor < 32))
+      {
+        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)()));
+      }
+    else
+      {
+        if ((xor < 1024))
+          {
+            $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()));
+            $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((oldIndex >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+            $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)(), ((newIndex >>> 5) & 31)));
+          }
+        else
+          {
+            if ((xor < 32768))
+              {
+                $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()));
+                $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()));
+                $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((oldIndex >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+                $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((oldIndex >>> 10) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)();
+                $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)(), ((newIndex >>> 10) & 31)));
+                $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)(), ((newIndex >>> 5) & 31)));
+              }
+            else
+              {
+                if ((xor < 1048576))
+                  {
+                    $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()));
+                    $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()));
+                    $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()));
+                    $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((oldIndex >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+                    $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((oldIndex >>> 10) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)();
+                    $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((oldIndex >>> 15) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)();
+                    $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)(), ((newIndex >>> 15) & 31)));
+                    $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)(), ((newIndex >>> 10) & 31)));
+                    $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)(), ((newIndex >>> 5) & 31)));
+                  }
+                else
+                  {
+                    if ((xor < 33554432))
+                      {
+                        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()));
+                        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()));
+                        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()));
+                        $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()));
+                        $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((oldIndex >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+                        $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((oldIndex >>> 10) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)();
+                        $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((oldIndex >>> 15) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)();
+                        $this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()[((oldIndex >>> 20) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)();
+                        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)(), ((newIndex >>> 20) & 31)));
+                        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)(), ((newIndex >>> 15) & 31)));
+                        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)(), ((newIndex >>> 10) & 31)));
+                        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)(), ((newIndex >>> 5) & 31)));
+                      }
+                    else
+                      {
+                        if ((xor < 1073741824))
+                          {
+                            $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()));
+                            $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()));
+                            $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()));
+                            $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()));
+                            $this.(Lscala/collection/immutable/VectorPointer;::display5_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::copyOf(Ljava/lang/Object;[)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display5()Ljava/lang/Object;[)()));
+                            $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((oldIndex >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+                            $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((oldIndex >>> 10) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)();
+                            $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((oldIndex >>> 15) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)();
+                            $this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()[((oldIndex >>> 20) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)();
+                            $this.(Lscala/collection/immutable/VectorPointer;::display5()Ljava/lang/Object;[)()[((oldIndex >>> 25) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)();
+                            $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display5()Ljava/lang/Object;[)(), ((newIndex >>> 25) & 31)));
+                            $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)(), ((newIndex >>> 20) & 31)));
+                            $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)(), ((newIndex >>> 15) & 31)));
+                            $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)(), ((newIndex >>> 10) & 31)));
+                            $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::nullSlotAndCopy(Ljava/lang/Object;[I;)Ljava/lang/Object;[)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)(), ((newIndex >>> 5) & 31)));
+                          }
+                        else
+                          {
+                            throw (new (Ljava/lang/IllegalArgumentException;::this()V;)());
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+  
+  public static final Ljava/lang/Object;[ copyRange(Lscala/collection/immutable/VectorPointer; $this, Ljava/lang/Object;[ array, I; oldLeft, I; newLeft) {
+    Ljava/lang/Object;[ elems = new Ljava/lang/Object;[32];
+    Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::arraycopy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(array, oldLeft, elems, newLeft, (32 - Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::max(I;I;)I;)(newLeft, oldLeft)));
+    return elems;
+  }
+  
+  public static final V; gotoFreshPosWritable0(Lscala/collection/immutable/VectorPointer; $this, I; oldIndex, I; newIndex, I; xor) {
+    if ((xor < 32))
+      {
+        
+      }
+    else
+      {
+        if ((xor < 1024))
+          {
+            if (($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() == 1))
+              {
+                $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)()[((oldIndex >>> 5) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display0()Ljava/lang/Object;[)();
+                $this.(Lscala/collection/immutable/VectorPointer;::depth_$eq(I;)V;)(($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() + 1));
+              }
+            else
+              {
+                
+              }
+            $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+          }
+        else
+          {
+            if ((xor < 32768))
+              {
+                if (($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() == 2))
+                  {
+                    $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                    $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((oldIndex >>> 10) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)();
+                    $this.(Lscala/collection/immutable/VectorPointer;::depth_$eq(I;)V;)(($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() + 1));
+                  }
+                else
+                  {
+                    
+                  }
+                $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((newIndex >>> 10) & 31)].<cast>(Ljava/lang/Object;[));
+                if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)(), null))
+                  {
+                    $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                  }
+                else
+                  {
+                    
+                  }
+                $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+              }
+            else
+              {
+                if ((xor < 1048576))
+                  {
+                    if (($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() == 3))
+                      {
+                        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                        $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((oldIndex >>> 15) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)();
+                        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                        $this.(Lscala/collection/immutable/VectorPointer;::depth_$eq(I;)V;)(($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() + 1));
+                      }
+                    else
+                      {
+                        
+                      }
+                    $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((newIndex >>> 15) & 31)].<cast>(Ljava/lang/Object;[));
+                    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)(), null))
+                      {
+                        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                      }
+                    else
+                      {
+                        
+                      }
+                    $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((newIndex >>> 10) & 31)].<cast>(Ljava/lang/Object;[));
+                    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)(), null))
+                      {
+                        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                      }
+                    else
+                      {
+                        
+                      }
+                    $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                  }
+                else
+                  {
+                    if ((xor < 33554432))
+                      {
+                        if (($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() == 4))
+                          {
+                            $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                            $this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()[((oldIndex >>> 20) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)();
+                            $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                            $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                            $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                            $this.(Lscala/collection/immutable/VectorPointer;::depth_$eq(I;)V;)(($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() + 1));
+                          }
+                        else
+                          {
+                            
+                          }
+                        $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()[((newIndex >>> 20) & 31)].<cast>(Ljava/lang/Object;[));
+                        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)(), null))
+                          {
+                            $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                          }
+                        else
+                          {
+                            
+                          }
+                        $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((newIndex >>> 15) & 31)].<cast>(Ljava/lang/Object;[));
+                        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)(), null))
+                          {
+                            $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                          }
+                        else
+                          {
+                            
+                          }
+                        $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((newIndex >>> 10) & 31)].<cast>(Ljava/lang/Object;[));
+                        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)(), null))
+                          {
+                            $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                          }
+                        else
+                          {
+                            
+                          }
+                        $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                      }
+                    else
+                      {
+                        if ((xor < 1073741824))
+                          {
+                            if (($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() == 5))
+                              {
+                                $this.(Lscala/collection/immutable/VectorPointer;::display5_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                                $this.(Lscala/collection/immutable/VectorPointer;::display5()Ljava/lang/Object;[)()[((oldIndex >>> 25) & 31)] = $this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)();
+                                $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                                $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                                $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                                $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                                $this.(Lscala/collection/immutable/VectorPointer;::depth_$eq(I;)V;)(($this.(Lscala/collection/immutable/VectorPointer;::depth()I;)() + 1));
+                              }
+                            else
+                              {
+                                
+                              }
+                            $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display5()Ljava/lang/Object;[)()[((newIndex >>> 20) & 31)].<cast>(Ljava/lang/Object;[));
+                            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)(), null))
+                              {
+                                $this.(Lscala/collection/immutable/VectorPointer;::display4_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                              }
+                            else
+                              {
+                                
+                              }
+                            $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display4()Ljava/lang/Object;[)()[((newIndex >>> 20) & 31)].<cast>(Ljava/lang/Object;[));
+                            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)(), null))
+                              {
+                                $this.(Lscala/collection/immutable/VectorPointer;::display3_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                              }
+                            else
+                              {
+                                
+                              }
+                            $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display3()Ljava/lang/Object;[)()[((newIndex >>> 15) & 31)].<cast>(Ljava/lang/Object;[));
+                            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)(), null))
+                              {
+                                $this.(Lscala/collection/immutable/VectorPointer;::display2_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                              }
+                            else
+                              {
+                                
+                              }
+                            $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)($this.(Lscala/collection/immutable/VectorPointer;::display2()Ljava/lang/Object;[)()[((newIndex >>> 10) & 31)].<cast>(Ljava/lang/Object;[));
+                            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/immutable/VectorPointer;::display1()Ljava/lang/Object;[)(), null))
+                              {
+                                $this.(Lscala/collection/immutable/VectorPointer;::display1_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                              }
+                            else
+                              {
+                                
+                              }
+                            $this.(Lscala/collection/immutable/VectorPointer;::display0_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[32]);
+                          }
+                        else
+                          {
+                            throw (new (Ljava/lang/IllegalArgumentException;::this()V;)());
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+  
+  public static final V; gotoFreshPosWritable1(Lscala/collection/immutable/VectorPointer; $this, I; oldIndex, I; newIndex, I; xor) {
+    $this.(Lscala/collection/immutable/VectorPointer;::stabilize(I;)V;)(oldIndex);
+    $this.(Lscala/collection/immutable/VectorPointer;::gotoFreshPosWritable0(I;I;I;)V;)(oldIndex, newIndex, xor);
+  }
+  
+  public static V; debug(Lscala/collection/immutable/VectorPointer; $this) {
+    return;
+  }
+  
+  public static V; $init$(Lscala/collection/immutable/VectorPointer; $this) {
+    
+  }
+}

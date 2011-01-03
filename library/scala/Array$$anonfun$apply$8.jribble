@@ -1,0 +1,22 @@
+public final class Lscala/Array$$anonfun$apply$8; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(F; x) {
+    this.(F;[)array$8[this.(Lscala/runtime/IntRef;)i$8.(I;)elem] = x;
+    this.(Lscala/runtime/IntRef;)i$8.(I;)elem = (this.(Lscala/runtime/IntRef;)i$8.(I;)elem + 1);
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/Array$$anonfun$apply$8;::apply(F;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(v1));
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private F;[ array$8;
+  
+  private Lscala/runtime/IntRef; i$8;
+  
+  public this(F;[ array$8, Lscala/runtime/IntRef; i$8) {
+    this.(F;[)array$8 = array$8;
+    this.(Lscala/runtime/IntRef;)i$8 = i$8;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

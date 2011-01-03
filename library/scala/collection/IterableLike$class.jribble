@@ -1,0 +1,336 @@
+public abstract class Lscala/collection/IterableLike$class; {
+  
+  public static Lscala/collection/Iterable; thisCollection(Lscala/collection/IterableLike; $this) {
+    return $this.<cast>(Lscala/collection/Iterable;);
+  }
+  
+  public static Lscala/collection/Iterable; toCollection(Lscala/collection/IterableLike; $this, Ljava/lang/Object; repr) {
+    return repr.<cast>(Lscala/collection/Iterable;);
+  }
+  
+  public static V; foreach(Lscala/collection/IterableLike; $this, Lscala/Function1; f) {
+    $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)(f);
+  }
+  
+  public static Z; forall(Lscala/collection/IterableLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::forall(Lscala/Function1;)Z;)(p);
+  }
+  
+  public static Z; exists(Lscala/collection/IterableLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::exists(Lscala/Function1;)Z;)(p);
+  }
+  
+  public static Lscala/Option; find(Lscala/collection/IterableLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::find(Lscala/Function1;)Lscala/Option;)(p);
+  }
+  
+  public static Z; isEmpty(Lscala/collection/IterableLike; $this) {
+    return !($this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::hasNext()Z;)());
+  }
+  
+  public static Ljava/lang/Object; foldRight(Lscala/collection/IterableLike; $this, Ljava/lang/Object; z, Lscala/Function2; op) {
+    return $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/TraversableOnce;::foldRight(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(z, op);
+  }
+  
+  public static Ljava/lang/Object; reduceRight(Lscala/collection/IterableLike; $this, Lscala/Function2; op) {
+    return $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/TraversableOnce;::reduceRight(Lscala/Function2;)Ljava/lang/Object;)(op);
+  }
+  
+  public static Lscala/collection/Iterable; toIterable(Lscala/collection/IterableLike; $this) {
+    return $this.(Lscala/collection/IterableLike;::thisCollection()Lscala/collection/Iterable;)();
+  }
+  
+  public static Ljava/lang/Object; head(Lscala/collection/IterableLike; $this) {
+    Ljava/lang/Object; $1$;
+    if ($this.(Lscala/collection/IterableLike;::isEmpty()Z;)())
+      {
+        throw (new (Ljava/util/NoSuchElementException;::this()V;)());
+      }
+    else
+      {
+        $1$ = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+      }
+    return $1$;
+  }
+  
+  public static Ljava/lang/Object; take(Lscala/collection/IterableLike; $this, I; n) {
+    Lscala/collection/mutable/Builder; b = $this.(Lscala/collection/TraversableLike;::newBuilder()Lscala/collection/mutable/Builder;)();
+    b.(Lscala/collection/mutable/Builder;::sizeHintBounded(I;Lscala/collection/TraversableLike;)V;)(n, $this);
+    I; i = 0;
+    Lscala/collection/Iterator; it = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    while$1: while(true) {
+      if (((i < n) && it.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        {
+          {
+            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(it.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
+            i = (i + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public static Ljava/lang/Object; slice(Lscala/collection/IterableLike; $this, I; from, I; until) {
+    Lscala/collection/mutable/Builder; b = $this.(Lscala/collection/TraversableLike;::newBuilder()Lscala/collection/mutable/Builder;)();
+    b.(Lscala/collection/mutable/Builder;::sizeHintBounded(I;Lscala/collection/TraversableLike;)V;)((until - from), $this);
+    I; i = from;
+    Lscala/collection/Iterator; it = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::drop(I;)Lscala/collection/Iterator;)(from);
+    while$2: while(true) {
+      if (((i < until) && it.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        {
+          {
+            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(it.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
+            i = (i + 1);
+          }
+          continue while$2;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public static Ljava/lang/Object; takeWhile(Lscala/collection/IterableLike; $this, Lscala/Function1; p) {
+    Lscala/collection/mutable/Builder; b = $this.(Lscala/collection/TraversableLike;::newBuilder()Lscala/collection/mutable/Builder;)();
+    Lscala/collection/Iterator; it = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    while$3: while(true) {
+      if (it.(Lscala/collection/Iterator;::hasNext()Z;)())
+        {
+          {
+            Ljava/lang/Object; x = it.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+            if (!(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x))))
+              {
+                return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+              }
+            else
+              {
+                
+              }
+            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
+          }
+          continue while$3;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public static Lscala/collection/Iterator; grouped(Lscala/collection/IterableLike; $this, I; size) {
+    return $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::grouped(I;)Lscala/collection/Iterator$GroupedIterator;)(size).(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/collection/IterableLike$$anonfun$grouped$1;::this(Lscala/collection/IterableLike;)V;)($this)));
+  }
+  
+  public static Lscala/collection/Iterator; sliding(Lscala/collection/IterableLike; $this, I; size) {
+    return $this.(Lscala/collection/IterableLike;::sliding(I;I;)Lscala/collection/Iterator;)(size, 1);
+  }
+  
+  public static Lscala/collection/Iterator; sliding(Lscala/collection/IterableLike; $this, I; size, I; step) {
+    return $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::sliding(I;I;)Lscala/collection/Iterator$GroupedIterator;)(size, step).(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/collection/IterableLike$$anonfun$sliding$1;::this(Lscala/collection/IterableLike;)V;)($this)));
+  }
+  
+  public static Ljava/lang/Object; takeRight(Lscala/collection/IterableLike; $this, I; n) {
+    Lscala/collection/mutable/Builder; b$1 = $this.(Lscala/collection/TraversableLike;::newBuilder()Lscala/collection/mutable/Builder;)();
+    b$1.(Lscala/collection/mutable/Builder;::sizeHintBounded(I;Lscala/collection/TraversableLike;)V;)(n, $this);
+    Lscala/collection/Iterator; lead$1 = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::drop(I;)Lscala/collection/Iterator;)(n);
+    Lscala/runtime/BooleanRef; go$1 = (new (Lscala/runtime/BooleanRef;::this(Z;)V;)(false));
+    $this.(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/IterableLike$$anonfun$takeRight$1;::this(Lscala/collection/IterableLike;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;Lscala/runtime/BooleanRef;)V;)($this, b$1, lead$1, go$1)));
+    return b$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public static Ljava/lang/Object; dropRight(Lscala/collection/IterableLike; $this, I; n) {
+    Lscala/collection/mutable/Builder; b = $this.(Lscala/collection/TraversableLike;::newBuilder()Lscala/collection/mutable/Builder;)();
+    if ((n >= 0))
+      {
+        b.(Lscala/collection/mutable/Builder;::sizeHint(Lscala/collection/TraversableLike;I;)V;)($this, -(n));
+      }
+    else
+      {
+        
+      }
+    Lscala/collection/Iterator; lead = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::drop(I;)Lscala/collection/Iterator;)(n);
+    Lscala/collection/Iterator; it = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    while$4: while(true) {
+      if (lead.(Lscala/collection/Iterator;::hasNext()Z;)())
+        {
+          {
+            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(it.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
+            lead.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+          }
+          continue while$4;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public static V; copyToArray(Lscala/collection/IterableLike; $this, Ljava/lang/Object; xs, I; start, I; len) {
+    I; i = start;
+    I; end = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)((start + len)).(Lscala/runtime/RichInt;::min(I;)I;)(Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(xs));
+    Lscala/collection/Iterator; it = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    while$5: while(true) {
+      if (((i < end) && it.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        {
+          {
+            Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_update(Ljava/lang/Object;I;Ljava/lang/Object;)V;)(xs, i, it.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
+            i = (i + 1);
+          }
+          continue while$5;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  public static Ljava/lang/Object; zip(Lscala/collection/IterableLike; $this, Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf) {
+    Lscala/collection/mutable/Builder; b = bf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)($this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
+    Lscala/collection/Iterator; these = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    Lscala/collection/Iterator; those = that.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    while$6: while(true) {
+      if ((these.(Lscala/collection/Iterator;::hasNext()Z;)() && those.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        {
+          b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(these.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), those.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)())));
+          continue while$6;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public static Ljava/lang/Object; zipAll(Lscala/collection/IterableLike; $this, Lscala/collection/Iterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf) {
+    Lscala/collection/mutable/Builder; b = bf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)($this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
+    Lscala/collection/Iterator; these = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    Lscala/collection/Iterator; those = that.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    while$7: while(true) {
+      if ((these.(Lscala/collection/Iterator;::hasNext()Z;)() && those.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        {
+          b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(these.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), those.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)())));
+          continue while$7;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    while$8: while(true) {
+      if (these.(Lscala/collection/Iterator;::hasNext()Z;)())
+        {
+          b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(these.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), thatElem)));
+          continue while$8;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    while$9: while(true) {
+      if (those.(Lscala/collection/Iterator;::hasNext()Z;)())
+        {
+          b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(thisElem, those.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)())));
+          continue while$9;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public static Ljava/lang/Object; zipWithIndex(Lscala/collection/IterableLike; $this, Lscala/collection/generic/CanBuildFrom; bf) {
+    Lscala/collection/mutable/Builder; b$2 = bf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)($this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
+    Lscala/runtime/IntRef; i$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(0));
+    $this.(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/IterableLike$$anonfun$zipWithIndex$1;::this(Lscala/collection/IterableLike;Lscala/collection/mutable/Builder;Lscala/runtime/IntRef;)V;)($this, b$2, i$1)));
+    return b$2.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public static Z; sameElements(Lscala/collection/IterableLike; $this, Lscala/collection/Iterable; that) {
+    Lscala/collection/Iterator; these = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    Lscala/collection/Iterator; those = that.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    while$10: while(true) {
+      if ((these.(Lscala/collection/Iterator;::hasNext()Z;)() && those.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        {
+          if ((these.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)() != those.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)()))
+            {
+              return false;
+            }
+          else
+            {
+              
+            }
+          continue while$10;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return (!(these.(Lscala/collection/Iterator;::hasNext()Z;)()) && !(those.(Lscala/collection/Iterator;::hasNext()Z;)()));
+  }
+  
+  public static Lscala/collection/immutable/Stream; toStream(Lscala/collection/IterableLike; $this) {
+    return $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::toStream()Lscala/collection/immutable/Stream;)();
+  }
+  
+  public static Lscala/collection/Seq; toSeq(Lscala/collection/IterableLike; $this) {
+    return $this.(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)();
+  }
+  
+  public static Z; canEqual(Lscala/collection/IterableLike; $this, Ljava/lang/Object; that) {
+    return true;
+  }
+  
+  public static Lscala/collection/IterableView; view(Lscala/collection/IterableLike; $this) {
+    return (new (Lscala/collection/IterableLike$$anon$1;::this(Lscala/collection/IterableLike;)V;)($this));
+  }
+  
+  public static Lscala/collection/IterableView; view(Lscala/collection/IterableLike; $this, I; from, I; until) {
+    return $this.(Lscala/collection/IterableLike;::view()Lscala/collection/IterableView;)().(Lscala/collection/TraversableViewLike;::slice(I;I;)Lscala/collection/TraversableView;)(from, until).<cast>(Lscala/collection/IterableView;);
+  }
+  
+  public static Lscala/collection/Iterator; elements(Lscala/collection/IterableLike; $this) {
+    return $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+  }
+  
+  public static Ljava/lang/Object; first(Lscala/collection/IterableLike; $this) {
+    return $this.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)();
+  }
+  
+  public static Lscala/Option; firstOption(Lscala/collection/IterableLike; $this) {
+    return $this.(Lscala/collection/TraversableLike;::headOption()Lscala/Option;)();
+  }
+  
+  public static Lscala/collection/IterableView; projection(Lscala/collection/IterableLike; $this) {
+    return $this.(Lscala/collection/IterableLike;::view()Lscala/collection/IterableView;)();
+  }
+  
+  public static V; $init$(Lscala/collection/IterableLike; $this) {
+    
+  }
+}

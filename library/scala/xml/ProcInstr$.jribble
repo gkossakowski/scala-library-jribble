@@ -1,0 +1,32 @@
+public final class Lscala/xml/ProcInstr$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject; {
+  public static Lscala/xml/ProcInstr$; MODULE$ = new (Lscala/xml/ProcInstr$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "ProcInstr";
+  }
+  
+  public Lscala/Option; unapply(Lscala/xml/ProcInstr; x$0) {
+    Lscala/Option; $5$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $5$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $5$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/xml/ProcInstr;::target()Ljava/lang/String;)(), x$0.(Lscala/xml/ProcInstr;::proctext()Ljava/lang/String;)()))));
+      }
+    return $5$;
+  }
+  
+  public Lscala/xml/ProcInstr; apply(Ljava/lang/String; target, Ljava/lang/String; proctext) {
+    return (new (Lscala/xml/ProcInstr;::this(Ljava/lang/String;Ljava/lang/String;)V;)(target, proctext));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {
+    return this.(Lscala/xml/ProcInstr$;::apply(Ljava/lang/String;Ljava/lang/String;)Lscala/xml/ProcInstr;)(v1.<cast>(Ljava/lang/String;), v2.<cast>(Ljava/lang/String;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
+  }
+}

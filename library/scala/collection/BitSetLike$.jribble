@@ -1,0 +1,116 @@
+public final class Lscala/collection/BitSetLike$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/BitSetLike$; MODULE$ = new (Lscala/collection/BitSetLike$;::this()V;)();
+  
+  private I; LogWL$u0020;
+  
+  public I; LogWL() {
+    return this.(I;)LogWL$u0020;
+  }
+  
+  private I; scala$collection$BitSetLike$$WordLength$u0020;
+  
+  public final I; scala$collection$BitSetLike$$WordLength() {
+    return this.(I;)scala$collection$BitSetLike$$WordLength$u0020;
+  }
+  
+  public J;[ updateArray(J;[ elems, I; idx, J; w) {
+    I; len = elems.<length>;
+    while$3: while(true) {
+      if (((len > 0) && ((elems[(len - 1)] == 0L) || ((w == 0L) && (idx == (len - 1))))))
+        {
+          len = (len - 1);
+          continue while$3;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    I; newlen = len;
+    if (((idx >= newlen) && (w != 0L)))
+      {
+        newlen = (idx + 1);
+      }
+    else
+      {
+        
+      }
+    J;[ newelems = new J;[newlen];
+    Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(elems, 0, newelems, 0, len);
+    if ((idx < newlen))
+      {
+        newelems[idx] = w;
+      }
+    else
+      {
+        Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;)V;)((w == 0L));
+      }
+    return newelems;
+  }
+  
+  private I;[ pc1$u0020;
+  
+  private I;[ pc1() {
+    return this.(I;[)pc1$u0020;
+  }
+  
+  public final I; scala$collection$BitSetLike$$popCount(J; w) {
+    I; $1$;
+    if ((w == 0L))
+      {
+        $1$ = 0;
+      }
+    else
+      {
+        $1$ = (this.(Lscala/collection/BitSetLike$;::pc4$1(I;)I;)(w.<cast>(I;)) + this.(Lscala/collection/BitSetLike$;::pc4$1(I;)I;)((w >> 32).<cast>(I;)));
+      }
+    return $1$;
+  }
+  
+  public final I; countBits$1(I; x) {
+    I; $2$;
+    if ((x == 0))
+      {
+        $2$ = 0;
+      }
+    else
+      {
+        $2$ = ((x % 2) + this.(Lscala/collection/BitSetLike$;::countBits$1(I;)I;)((x >> 1)));
+      }
+    return $2$;
+  }
+  
+  private final I; pc2$1(I; w) {
+    I; $3$;
+    if ((w == 0))
+      {
+        $3$ = 0;
+      }
+    else
+      {
+        $3$ = (this.(Lscala/collection/BitSetLike$;::pc1()I;[)()[(w & 255)] + this.(Lscala/collection/BitSetLike$;::pc1()I;[)()[(w >> 8)]);
+      }
+    return $3$;
+  }
+  
+  private final I; pc4$1(I; w) {
+    I; $4$;
+    if ((w == 0))
+      {
+        $4$ = 0;
+      }
+    else
+      {
+        $4$ = (this.(Lscala/collection/BitSetLike$;::pc2$1(I;)I;)((w & 65535)) + this.(Lscala/collection/BitSetLike$;::pc2$1(I;)I;)((w >> 16)));
+      }
+    return $4$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(I;)LogWL$u0020 = 6;
+    this.(I;)scala$collection$BitSetLike$$WordLength$u0020 = 64;
+    this.(I;[)pc1$u0020 = Lscala/Array$;.MODULE$.(Lscala/Array$;::tabulate(I;Lscala/Function1;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(256, (new (Lscala/collection/BitSetLike$$anonfun$1;::this()V;)()), Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Int()Lscala/reflect/AnyValManifest;)()).<cast>(I;[);
+  }
+}

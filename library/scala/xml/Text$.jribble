@@ -1,0 +1,32 @@
+public final class Lscala/xml/Text$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+  public static Lscala/xml/Text$; MODULE$ = new (Lscala/xml/Text$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "Text";
+  }
+  
+  public Lscala/Option; unapply(Lscala/xml/Text; x$0) {
+    Lscala/Option; $2$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $2$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $2$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/xml/Text;::_data()Ljava/lang/String;)()));
+      }
+    return $2$;
+  }
+  
+  public Lscala/xml/Text; apply(Ljava/lang/String; _data) {
+    return (new (Lscala/xml/Text;::this(Ljava/lang/String;)V;)(_data));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/xml/Text$;::apply(Ljava/lang/String;)Lscala/xml/Text;)(v1.<cast>(Ljava/lang/String;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

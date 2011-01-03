@@ -1,0 +1,183 @@
+public class Lscala/collection/immutable/HashMap$HashMap1; extends Lscala/collection/immutable/HashMap; implements Lscala/ScalaObject; {
+  
+  private Ljava/lang/Object; key$u0020;
+  
+  public Ljava/lang/Object; key() {
+    return this.(Ljava/lang/Object;)key$u0020;
+  }
+  
+  public V; key_$eq(Ljava/lang/Object; x$1) {
+    this.(Ljava/lang/Object;)key$u0020 = x$1;
+  }
+  
+  private I; hash$u0020;
+  
+  public I; hash() {
+    return this.(I;)hash$u0020;
+  }
+  
+  public V; hash_$eq(I; x$1) {
+    this.(I;)hash$u0020 = x$1;
+  }
+  
+  private Ljava/lang/Object; value$u0020;
+  
+  public Ljava/lang/Object; value() {
+    return this.(Ljava/lang/Object;)value$u0020;
+  }
+  
+  public V; value_$eq(Ljava/lang/Object; x$1) {
+    this.(Ljava/lang/Object;)value$u0020 = x$1;
+  }
+  
+  private Lscala/Tuple2; kv$u0020;
+  
+  public Lscala/Tuple2; kv() {
+    return this.(Lscala/Tuple2;)kv$u0020;
+  }
+  
+  public V; kv_$eq(Lscala/Tuple2; x$1) {
+    this.(Lscala/Tuple2;)kv$u0020 = x$1;
+  }
+  
+  public I; size() {
+    return 1;
+  }
+  
+  public Lscala/Option; get0(Ljava/lang/Object; key, I; hash, I; level) {
+    Lscala/Option; $3$;
+    if (((hash == this.(Lscala/collection/immutable/HashMap$HashMap1;::hash()I;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, this.(Lscala/collection/immutable/HashMap$HashMap1;::key()Ljava/lang/Object;)())))
+      {
+        $3$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/HashMap$HashMap1;::value()Ljava/lang/Object;)()));
+      }
+    else
+      {
+        $3$ = Lscala/None$;.MODULE$;
+      }
+    return $3$;
+  }
+  
+  public Lscala/collection/immutable/HashMap; updated0(Ljava/lang/Object; key, I; hash, I; level, Ljava/lang/Object; value, Lscala/Tuple2; kv) {
+    Lscala/collection/immutable/HashMap; $4$;
+    if (((hash == this.(Lscala/collection/immutable/HashMap$HashMap1;::hash()I;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, this.(Lscala/collection/immutable/HashMap$HashMap1;::key()Ljava/lang/Object;)())))
+      {
+        $4$ = (new (Lscala/collection/immutable/HashMap$HashMap1;::this(Ljava/lang/Object;I;Ljava/lang/Object;Lscala/Tuple2;)V;)(key, hash, value, kv));
+      }
+    else
+      {
+        I; thatindex = ((hash >> level) & 31);
+        I; thisindex = ((this.(Lscala/collection/immutable/HashMap$HashMap1;::hash()I;)() >> level) & 31);
+        Lscala/collection/immutable/HashMap; $5$;
+        if ((hash != this.(Lscala/collection/immutable/HashMap$HashMap1;::hash()I;)()))
+          {
+            I; lvl = level;
+            Lscala/collection/immutable/HashMap$HashTrieMap; top = null;
+            Lscala/collection/immutable/HashMap$HashTrieMap; prev = null;
+            while$1: while(true) {
+              if ((thisindex == thatindex))
+                {
+                  {
+                    Lscala/collection/immutable/HashMap$HashTrieMap; newlevel = (new (Lscala/collection/immutable/HashMap$HashTrieMap;::this(I;Lscala/collection/immutable/HashMap;[I;)V;)((1 << thisindex), new Lscala/collection/immutable/HashMap;[1], 2));
+                    if ((prev != null))
+                      {
+                        prev.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)()[0] = newlevel;
+                      }
+                    else
+                      {
+                        top = newlevel;
+                      }
+                    prev = newlevel;
+                    lvl = (lvl + 5);
+                    thatindex = ((hash >> lvl) & 31);
+                    thisindex = ((this.(Lscala/collection/immutable/HashMap$HashMap1;::hash()I;)() >> lvl) & 31);
+                  }
+                  continue while$1;
+                }
+              else
+                {
+                  
+                }
+              break;
+            }
+            Lscala/collection/immutable/HashMap;[ bottelems = new Lscala/collection/immutable/HashMap;[2];
+            I; $6$;
+            if ((thisindex < thatindex))
+              {
+                $6$ = 1;
+              }
+            else
+              {
+                $6$ = 0;
+              }
+            I; ind = $6$;
+            bottelems[(1 - ind)] = this;
+            bottelems[ind] = (new (Lscala/collection/immutable/HashMap$HashMap1;::this(Ljava/lang/Object;I;Ljava/lang/Object;Lscala/Tuple2;)V;)(key, hash, value, kv));
+            Lscala/collection/immutable/HashMap$HashTrieMap; bottom = (new (Lscala/collection/immutable/HashMap$HashTrieMap;::this(I;Lscala/collection/immutable/HashMap;[I;)V;)(((1 << thisindex) | (1 << thatindex)), bottelems, 2));
+            Lscala/collection/immutable/HashMap; $7$;
+            if ((prev != null))
+              {
+                prev.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)()[0] = bottom;
+                $7$ = top;
+              }
+            else
+              {
+                $7$ = bottom;
+              }
+            $5$ = $7$;
+          }
+        else
+          {
+            $5$ = (new (Lscala/collection/immutable/HashMap$HashMapCollision1;::this(I;Lscala/collection/immutable/ListMap;)V;)(hash, Lscala/collection/immutable/ListMap$;.MODULE$.(Lscala/collection/immutable/ListMap$;::empty()Lscala/collection/immutable/ListMap;)().(Lscala/collection/immutable/ListMap;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/ListMap;)(this.(Lscala/collection/immutable/HashMap$HashMap1;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/HashMap$HashMap1;::value()Ljava/lang/Object;)()).(Lscala/collection/immutable/ListMap;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/ListMap;)(key, value)));
+          }
+        $4$ = $5$;
+      }
+    return $4$;
+  }
+  
+  public Lscala/collection/immutable/HashMap; removed0(Ljava/lang/Object; key, I; hash, I; level) {
+    Lscala/collection/immutable/HashMap; $8$;
+    if (((hash == this.(Lscala/collection/immutable/HashMap$HashMap1;::hash()I;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, this.(Lscala/collection/immutable/HashMap$HashMap1;::key()Ljava/lang/Object;)())))
+      {
+        $8$ = Lscala/collection/immutable/HashMap$;.MODULE$.(Lscala/collection/immutable/HashMap$;::empty()Lscala/collection/immutable/HashMap;)();
+      }
+    else
+      {
+        $8$ = this;
+      }
+    return $8$;
+  }
+  
+  public Lscala/collection/Iterator; iterator() {
+    return Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::apply(Lscala/collection/Seq;)Lscala/collection/Iterator;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/Tuple2;>{this.(Lscala/collection/immutable/HashMap$HashMap1;::ensurePair()Lscala/Tuple2;)()}.<cast>(Ljava/lang/Object;[)));
+  }
+  
+  public V; foreach(Lscala/Function1; f) {
+    f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/HashMap$HashMap1;::ensurePair()Lscala/Tuple2;)());
+  }
+  
+  public Lscala/Tuple2; ensurePair() {
+    Lscala/Tuple2; $9$;
+    if ((this.(Lscala/collection/immutable/HashMap$HashMap1;::kv()Lscala/Tuple2;)() != null))
+      {
+        $9$ = this.(Lscala/collection/immutable/HashMap$HashMap1;::kv()Lscala/Tuple2;)();
+      }
+    else
+      {
+        this.(Lscala/collection/immutable/HashMap$HashMap1;::kv_$eq(Lscala/Tuple2;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/HashMap$HashMap1;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/HashMap$HashMap1;::value()Ljava/lang/Object;)())));
+        $9$ = this.(Lscala/collection/immutable/HashMap$HashMap1;::kv()Lscala/Tuple2;)();
+      }
+    return $9$;
+  }
+  
+  protected Lscala/collection/immutable/HashMap; merge0(Lscala/collection/immutable/HashMap; that, I; level) {
+    return that.(Lscala/collection/immutable/HashMap;::updated0(Ljava/lang/Object;I;I;Ljava/lang/Object;Lscala/Tuple2;)Lscala/collection/immutable/HashMap;)(this.(Lscala/collection/immutable/HashMap$HashMap1;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/HashMap$HashMap1;::hash()I;)(), level, this.(Lscala/collection/immutable/HashMap$HashMap1;::value()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/HashMap$HashMap1;::kv()Lscala/Tuple2;)());
+  }
+  
+  public this(Ljava/lang/Object; key, I; hash, Ljava/lang/Object; value, Lscala/Tuple2; kv) {
+    this.(Ljava/lang/Object;)key$u0020 = key;
+    this.(I;)hash$u0020 = hash;
+    this.(Ljava/lang/Object;)value$u0020 = value;
+    this.(Lscala/Tuple2;)kv$u0020 = kv;
+    (Lscala/collection/immutable/HashMap;::super()V;)();
+  }
+}

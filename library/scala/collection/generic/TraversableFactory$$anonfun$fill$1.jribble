@@ -1,0 +1,30 @@
+public final class Lscala/collection/generic/TraversableFactory$$anonfun$fill$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Lscala/collection/Traversable; apply(I; x$3) {
+    return this.(Lscala/collection/generic/TraversableFactory;)$outer$u0020.(Lscala/collection/generic/TraversableFactory;::fill(I;Lscala/Function0;)Lscala/collection/Traversable;)(this.(I;)n2$4, this.(Lscala/Function0;)elem$4);
+  }
+  
+  private Lscala/collection/generic/TraversableFactory; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/collection/generic/TraversableFactory$$anonfun$fill$1;::apply(I;)Lscala/collection/Traversable;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1));
+  }
+  
+  private I; n2$4;
+  
+  private Lscala/Function0; elem$4;
+  
+  public this(Lscala/collection/generic/TraversableFactory; $outer, I; n2$4, Lscala/Function0; elem$4) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/generic/TraversableFactory;)$outer$u0020 = $outer;
+      }
+    this.(I;)n2$4 = n2$4;
+    this.(Lscala/Function0;)elem$4 = elem$4;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

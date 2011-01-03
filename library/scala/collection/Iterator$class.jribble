@@ -1,0 +1,401 @@
+public abstract class Lscala/collection/Iterator$class; {
+  
+  public static I; sliding$default$2(Lscala/collection/Iterator; $this) {
+    return 1;
+  }
+  
+  public static Z; isEmpty(Lscala/collection/Iterator; $this) {
+    return !($this.(Lscala/collection/Iterator;::hasNext()Z;)());
+  }
+  
+  public static Z; isTraversableAgain(Lscala/collection/Iterator; $this) {
+    return false;
+  }
+  
+  public static Z; hasDefiniteSize(Lscala/collection/Iterator; $this) {
+    return $this.(Lscala/collection/Iterator;::isEmpty()Z;)();
+  }
+  
+  public static Lscala/collection/Iterator; take(Lscala/collection/Iterator; $this, I; n$1) {
+    return (new (Lscala/collection/Iterator$$anon$18;::this(Lscala/collection/Iterator;I;)V;)($this, n$1));
+  }
+  
+  public static Lscala/collection/Iterator; drop(Lscala/collection/Iterator; $this, I; n) {
+    return Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::loop$1(Lscala/collection/Iterator;I;)Lscala/collection/Iterator;)($this, n);
+  }
+  
+  public static Lscala/collection/Iterator; slice(Lscala/collection/Iterator; $this, I; from, I; until) {
+    return $this.(Lscala/collection/Iterator;::drop(I;)Lscala/collection/Iterator;)(from).(Lscala/collection/Iterator;::take(I;)Lscala/collection/Iterator;)((until - from));
+  }
+  
+  public static Lscala/collection/Iterator; map(Lscala/collection/Iterator; $this, Lscala/Function1; f$1) {
+    return (new (Lscala/collection/Iterator$$anon$19;::this(Lscala/collection/Iterator;Lscala/Function1;)V;)($this, f$1));
+  }
+  
+  public static Lscala/collection/Iterator; $plus$plus(Lscala/collection/Iterator; $this, Lscala/Function0; that$1) {
+    return (new (Lscala/collection/Iterator$$anon$20;::this(Lscala/collection/Iterator;Lscala/Function0;)V;)($this, that$1));
+  }
+  
+  public static Lscala/collection/Iterator; flatMap(Lscala/collection/Iterator; $this, Lscala/Function1; f$2) {
+    return (new (Lscala/collection/Iterator$$anon$21;::this(Lscala/collection/Iterator;Lscala/Function1;)V;)($this, f$2));
+  }
+  
+  public static Lscala/collection/Iterator; filter(Lscala/collection/Iterator; $this, Lscala/Function1; p$1) {
+    return (new (Lscala/collection/Iterator$$anon$22;::this(Lscala/collection/Iterator;Lscala/Function1;)V;)($this, p$1));
+  }
+  
+  public static Lscala/collection/Iterator; withFilter(Lscala/collection/Iterator; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/Iterator;::filter(Lscala/Function1;)Lscala/collection/Iterator;)(p);
+  }
+  
+  public static Lscala/collection/Iterator; filterNot(Lscala/collection/Iterator; $this, Lscala/Function1; p$4) {
+    return $this.(Lscala/collection/Iterator;::filter(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/collection/Iterator$$anonfun$filterNot$1;::this(Lscala/collection/Iterator;Lscala/Function1;)V;)($this, p$4)));
+  }
+  
+  public static Lscala/collection/Iterator; collect(Lscala/collection/Iterator; $this, Lscala/PartialFunction; pf$1) {
+    Lscala/collection/BufferedIterator; self$1 = $this.(Lscala/collection/Iterator;::buffered()Lscala/collection/BufferedIterator;)();
+    return (new (Lscala/collection/Iterator$$anon$23;::this(Lscala/collection/Iterator;Lscala/PartialFunction;Lscala/collection/BufferedIterator;)V;)($this, pf$1, self$1));
+  }
+  
+  public static Lscala/collection/Iterator; takeWhile(Lscala/collection/Iterator; $this, Lscala/Function1; p$2) {
+    return (new (Lscala/collection/Iterator$$anon$24;::this(Lscala/collection/Iterator;Lscala/Function1;)V;)($this, p$2));
+  }
+  
+  public static Lscala/Tuple2; partition(Lscala/collection/Iterator; $this, Lscala/Function1; p$5) {
+    Lscala/collection/BufferedIterator; self$2 = $this.(Lscala/collection/Iterator;::buffered()Lscala/collection/BufferedIterator;)();
+    Lscala/collection/Iterator$PartitionIterator$1; l = (new (Lscala/collection/Iterator$PartitionIterator$1;::this(Lscala/collection/Iterator;Lscala/Function1;Lscala/collection/BufferedIterator;)V;)($this, p$5, self$2));
+    Lscala/collection/Iterator$PartitionIterator$1; r = (new (Lscala/collection/Iterator$PartitionIterator$1;::this(Lscala/collection/Iterator;Lscala/Function1;Lscala/collection/BufferedIterator;)V;)($this, (new (Lscala/collection/Iterator$$anonfun$1;::this(Lscala/collection/Iterator;Lscala/Function1;)V;)($this, p$5)), self$2));
+    l.(Lscala/collection/Iterator$PartitionIterator$1;::other_$eq(Lscala/collection/Iterator$PartitionIterator$1;)V;)(r);
+    r.(Lscala/collection/Iterator$PartitionIterator$1;::other_$eq(Lscala/collection/Iterator$PartitionIterator$1;)V;)(l);
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(l, r));
+  }
+  
+  public static Lscala/collection/Iterator; dropWhile(Lscala/collection/Iterator; $this, Lscala/Function1; p$3) {
+    Lscala/collection/BufferedIterator; self$3 = $this.(Lscala/collection/Iterator;::buffered()Lscala/collection/BufferedIterator;)();
+    return (new (Lscala/collection/Iterator$$anon$25;::this(Lscala/collection/Iterator;Lscala/Function1;Lscala/collection/BufferedIterator;)V;)($this, p$3, self$3));
+  }
+  
+  public static Lscala/collection/Iterator; zip(Lscala/collection/Iterator; $this, Lscala/collection/Iterator; that$2) {
+    return (new (Lscala/collection/Iterator$$anon$5;::this(Lscala/collection/Iterator;Lscala/collection/Iterator;)V;)($this, that$2));
+  }
+  
+  public static Lscala/collection/Iterator; padTo(Lscala/collection/Iterator; $this, I; len$2, Ljava/lang/Object; elem$4) {
+    return (new (Lscala/collection/Iterator$$anon$26;::this(Lscala/collection/Iterator;I;Ljava/lang/Object;)V;)($this, len$2, elem$4));
+  }
+  
+  public static Lscala/collection/Iterator; zipWithIndex(Lscala/collection/Iterator; $this) {
+    return (new (Lscala/collection/Iterator$$anon$27;::this(Lscala/collection/Iterator;)V;)($this));
+  }
+  
+  public static Lscala/collection/Iterator; zipAll(Lscala/collection/Iterator; $this, Lscala/collection/Iterator; that$3, Ljava/lang/Object; thisElem$1, Ljava/lang/Object; thatElem$1) {
+    return (new (Lscala/collection/Iterator$$anon$6;::this(Lscala/collection/Iterator;Lscala/collection/Iterator;Ljava/lang/Object;Ljava/lang/Object;)V;)($this, that$3, thisElem$1, thatElem$1));
+  }
+  
+  public static V; foreach(Lscala/collection/Iterator; $this, Lscala/Function1; f) {
+    while$5: while(true) {
+      if ($this.(Lscala/collection/Iterator;::hasNext()Z;)())
+        {
+          f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)($this.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
+          continue while$5;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  public static Z; forall(Lscala/collection/Iterator; $this, Lscala/Function1; p) {
+    Z; res = true;
+    while$6: while(true) {
+      if ((res && $this.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        {
+          res = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)($this.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)()));
+          continue while$6;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return res;
+  }
+  
+  public static Z; exists(Lscala/collection/Iterator; $this, Lscala/Function1; p) {
+    Z; res = false;
+    while$7: while(true) {
+      if ((!(res) && $this.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        {
+          res = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)($this.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)()));
+          continue while$7;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return res;
+  }
+  
+  public static Z; contains(Lscala/collection/Iterator; $this, Ljava/lang/Object; elem$5) {
+    return $this.(Lscala/collection/Iterator;::exists(Lscala/Function1;)Z;)((new (Lscala/collection/Iterator$$anonfun$contains$1;::this(Lscala/collection/Iterator;Ljava/lang/Object;)V;)($this, elem$5)));
+  }
+  
+  public static Lscala/Option; find(Lscala/collection/Iterator; $this, Lscala/Function1; p) {
+    Lscala/Option; res = Lscala/None$;.MODULE$;
+    while$8: while(true) {
+      if ((res.(Lscala/Option;::isEmpty()Z;)() && $this.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        {
+          {
+            Ljava/lang/Object; e = $this.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(e)))
+              {
+                res = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(e));
+              }
+            else
+              {
+                
+              }
+          }
+          continue while$8;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return res;
+  }
+  
+  public static I; indexWhere(Lscala/collection/Iterator; $this, Lscala/Function1; p) {
+    I; i = 0;
+    Z; found = false;
+    while$9: while(true) {
+      if ((!(found) && $this.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        {
+          if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)($this.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)())))
+            {
+              found = true;
+            }
+          else
+            {
+              i = (i + 1);
+            }
+          continue while$9;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    I; $1$;
+    if (found)
+      {
+        $1$ = i;
+      }
+    else
+      {
+        $1$ = -1;
+      }
+    return $1$;
+  }
+  
+  public static I; indexOf(Lscala/collection/Iterator; $this, Ljava/lang/Object; elem) {
+    I; i = 0;
+    Z; found = false;
+    while$10: while(true) {
+      if ((!(found) && $this.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        {
+          if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), elem))
+            {
+              found = true;
+            }
+          else
+            {
+              i = (i + 1);
+            }
+          continue while$10;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    I; $2$;
+    if (found)
+      {
+        $2$ = i;
+      }
+    else
+      {
+        $2$ = -1;
+      }
+    return $2$;
+  }
+  
+  public static Lscala/collection/BufferedIterator; buffered(Lscala/collection/Iterator; $this) {
+    return (new (Lscala/collection/Iterator$$anon$2;::this(Lscala/collection/Iterator;)V;)($this));
+  }
+  
+  public static Lscala/collection/Iterator$GroupedIterator; grouped(Lscala/collection/Iterator; $this, I; size) {
+    return (new (Lscala/collection/Iterator$GroupedIterator;::this(Lscala/collection/Iterator;Lscala/collection/Iterator;I;I;)V;)($this, $this, size, size));
+  }
+  
+  public static Lscala/collection/Iterator$GroupedIterator; sliding(Lscala/collection/Iterator; $this, I; size, I; step) {
+    return (new (Lscala/collection/Iterator$GroupedIterator;::this(Lscala/collection/Iterator;Lscala/collection/Iterator;I;I;)V;)($this, $this, size, step));
+  }
+  
+  public static I; length(Lscala/collection/Iterator; $this) {
+    return $this.(Lscala/collection/TraversableOnce;::size()I;)();
+  }
+  
+  public static Lscala/Tuple2; duplicate(Lscala/collection/Iterator; $this) {
+    Lscala/collection/mutable/Queue; gap$1 = (new (Lscala/collection/mutable/Queue;::this()V;)());
+    Lscala/runtime/ObjectRef; ahead$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(null));
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)((new (Lscala/collection/Iterator$Partner$1;::this(Lscala/collection/Iterator;Lscala/collection/mutable/Queue;Lscala/runtime/ObjectRef;)V;)($this, gap$1, ahead$1)), (new (Lscala/collection/Iterator$Partner$1;::this(Lscala/collection/Iterator;Lscala/collection/mutable/Queue;Lscala/runtime/ObjectRef;)V;)($this, gap$1, ahead$1))));
+  }
+  
+  public static Lscala/collection/Iterator; patch(Lscala/collection/Iterator; $this, I; from$1, Lscala/collection/Iterator; patchElems$1, I; replaced$1) {
+    return (new (Lscala/collection/Iterator$$anon$28;::this(Lscala/collection/Iterator;I;Lscala/collection/Iterator;I;)V;)($this, from$1, patchElems$1, replaced$1));
+  }
+  
+  public static V; copyToArray(Lscala/collection/Iterator; $this, Ljava/lang/Object; xs, I; start, I; len) {
+    I; i = start;
+    I; end = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)((start + len)).(Lscala/runtime/RichInt;::min(I;)I;)(Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(xs));
+    while$12: while(true) {
+      if (($this.(Lscala/collection/Iterator;::hasNext()Z;)() && (i < end)))
+        {
+          {
+            Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_update(Ljava/lang/Object;I;Ljava/lang/Object;)V;)(xs, i, $this.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
+            i = (i + 1);
+          }
+          continue while$12;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  public static Z; sameElements(Lscala/collection/Iterator; $this, Lscala/collection/Iterator; that) {
+    while$13: while(true) {
+      if (($this.(Lscala/collection/Iterator;::hasNext()Z;)() && that.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        {
+          if (($this.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)() != that.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)()))
+            {
+              return false;
+            }
+          else
+            {
+              
+            }
+          continue while$13;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return (!($this.(Lscala/collection/Iterator;::hasNext()Z;)()) && !(that.(Lscala/collection/Iterator;::hasNext()Z;)()));
+  }
+  
+  public static Lscala/collection/Traversable; toTraversable(Lscala/collection/Iterator; $this) {
+    return $this.(Lscala/collection/Iterator;::toStream()Lscala/collection/immutable/Stream;)();
+  }
+  
+  public static Lscala/collection/Iterator; toIterator(Lscala/collection/Iterator; $this) {
+    return $this;
+  }
+  
+  public static Lscala/collection/immutable/Stream; toStream(Lscala/collection/Iterator; $this) {
+    Lscala/collection/immutable/Stream; $3$;
+    if ($this.(Lscala/collection/Iterator;::hasNext()Z;)())
+      {
+        $3$ = Lscala/collection/immutable/Stream$cons$;.MODULE$.(Lscala/collection/immutable/Stream$cons$;::apply(Ljava/lang/Object;Lscala/Function0;)Lscala/collection/immutable/Stream$Cons;)($this.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), (new (Lscala/collection/Iterator$$anonfun$toStream$1;::this(Lscala/collection/Iterator;)V;)($this)));
+      }
+    else
+      {
+        $3$ = Lscala/package$;.MODULE$.(Lscala/package$;::Stream()Lscala/collection/immutable/Stream$;)().(Lscala/collection/immutable/Stream$;::empty()Lscala/collection/immutable/Stream;)();
+      }
+    return $3$;
+  }
+  
+  public static Ljava/lang/String; toString(Lscala/collection/Iterator; $this) {
+    Ljava/lang/String; $4$;
+    if ($this.(Lscala/collection/Iterator;::hasNext()Z;)())
+      {
+        $4$ = "non-empty";
+      }
+    else
+      {
+        $4$ = "empty";
+      }
+    return ($4$ + " iterator");
+  }
+  
+  public static Lscala/collection/Iterator; append(Lscala/collection/Iterator; $this, Lscala/collection/Iterator; that$4) {
+    return $this.(Lscala/collection/Iterator;::$plus$plus(Lscala/Function0;)Lscala/collection/Iterator;)((new (Lscala/collection/Iterator$$anonfun$append$1;::this(Lscala/collection/Iterator;Lscala/collection/Iterator;)V;)($this, that$4)));
+  }
+  
+  public static I; findIndexOf(Lscala/collection/Iterator; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/Iterator;::indexWhere(Lscala/Function1;)I;)(p);
+  }
+  
+  public static Lscala/CountedIterator; counted(Lscala/collection/Iterator; $this) {
+    return (new (Lscala/collection/Iterator$$anon$1;::this(Lscala/collection/Iterator;)V;)($this));
+  }
+  
+  public static V; readInto(Lscala/collection/Iterator; $this, Ljava/lang/Object; xs, I; start, I; sz) {
+    I; i = start;
+    while$14: while(true) {
+      if (($this.(Lscala/collection/Iterator;::hasNext()Z;)() && ((i - start) < sz)))
+        {
+          {
+            Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_update(Ljava/lang/Object;I;Ljava/lang/Object;)V;)(xs, i, $this.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
+            i = (i + 1);
+          }
+          continue while$14;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  public static V; readInto(Lscala/collection/Iterator; $this, Ljava/lang/Object; xs, I; start) {
+    $this.(Lscala/collection/Iterator;::readInto(Ljava/lang/Object;I;I;)V;)(xs, start, (Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(xs) - start));
+  }
+  
+  public static V; readInto(Lscala/collection/Iterator; $this, Ljava/lang/Object; xs) {
+    $this.(Lscala/collection/Iterator;::readInto(Ljava/lang/Object;I;I;)V;)(xs, 0, Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(xs));
+  }
+  
+  private static final Lscala/collection/Iterator; loop$1(Lscala/collection/Iterator; $this, I; left) {
+    Lscala/collection/Iterator; $5$;
+    if (((left > 0) && $this.(Lscala/collection/Iterator;::hasNext()Z;)()))
+      {
+        $this.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+        $5$ = Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::loop$1(Lscala/collection/Iterator;I;)Lscala/collection/Iterator;)($this, (left - 1));
+      }
+    else
+      {
+        $5$ = $this;
+      }
+    return $5$;
+  }
+  
+  public static V; $init$(Lscala/collection/Iterator; $this) {
+    
+  }
+}

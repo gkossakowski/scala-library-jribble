@@ -1,0 +1,39 @@
+public final class Lscala/collection/MapLike$$anonfun$liftedTree1$1$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Z; apply(Lscala/Tuple2; x0$2) {
+    Lscala/Tuple2; temp41 = x0$2;
+    Z; $15$;
+    if ((temp41 != null))
+      {
+        Ljava/lang/Object; temp42 = temp41.(Lscala/Tuple2;::_1()Ljava/lang/Object;)();
+        Ljava/lang/Object; k = temp42;
+        Lscala/Option; temp37 = this.(Lscala/collection/Map;)that$1.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(k);
+        Z; $16$;
+        if (temp37.<instanceof>(Lscala/Some;))
+          {
+            $16$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp41.(Lscala/Tuple2;::_2()Ljava/lang/Object;)(), temp37.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)());
+          }
+        else
+          {
+            $16$ = false;
+          }
+        $15$ = $16$;
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp41));
+      }
+    return $15$;
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/collection/MapLike$$anonfun$liftedTree1$1$1;::apply(Lscala/Tuple2;)Z;)(v1.<cast>(Lscala/Tuple2;)));
+  }
+  
+  private Lscala/collection/Map; that$1;
+  
+  public this(Lscala/collection/MapLike; $outer, Lscala/collection/Map; that$1) {
+    this.(Lscala/collection/Map;)that$1 = that$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

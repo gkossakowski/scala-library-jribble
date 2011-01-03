@@ -1,0 +1,14 @@
+public abstract class Lscala/collection/generic/IterableForwarder$class; {
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/generic/IterableForwarder; $this) {
+    return $this.(Lscala/collection/generic/IterableForwarder;::underlying()Lscala/collection/Iterable;)().(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+  }
+  
+  public static Z; sameElements(Lscala/collection/generic/IterableForwarder; $this, Lscala/collection/Iterable; that) {
+    return $this.(Lscala/collection/generic/IterableForwarder;::underlying()Lscala/collection/Iterable;)().(Lscala/collection/IterableLike;::sameElements(Lscala/collection/Iterable;)Z;)(that);
+  }
+  
+  public static V; $init$(Lscala/collection/generic/IterableForwarder; $this) {
+    
+  }
+}

@@ -1,0 +1,278 @@
+public abstract class Lscala/collection/TraversableProxyLike$class; {
+  
+  public static V; foreach(Lscala/collection/TraversableProxyLike; $this, Lscala/Function1; f) {
+    $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/generic/GenericTraversableTemplate;::foreach(Lscala/Function1;)V;)(f);
+  }
+  
+  public static Z; isEmpty(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::isEmpty()Z;)();
+  }
+  
+  public static Z; nonEmpty(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::nonEmpty()Z;)();
+  }
+  
+  public static I; size(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::size()I;)();
+  }
+  
+  public static Z; hasDefiniteSize(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::hasDefiniteSize()Z;)();
+  }
+  
+  public static Ljava/lang/Object; $plus$plus(Lscala/collection/TraversableProxyLike; $this, Lscala/collection/TraversableOnce; xs, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::$plus$plus(Lscala/collection/TraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(xs, bf);
+  }
+  
+  public static Ljava/lang/Object; map(Lscala/collection/TraversableProxyLike; $this, Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(f, bf);
+  }
+  
+  public static Ljava/lang/Object; flatMap(Lscala/collection/TraversableProxyLike; $this, Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::flatMap(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(f, bf);
+  }
+  
+  public static Lscala/collection/Traversable; filter(Lscala/collection/TraversableProxyLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::filter(Lscala/Function1;)Ljava/lang/Object;)(p).<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public static Lscala/collection/Traversable; filterNot(Lscala/collection/TraversableProxyLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::filterNot(Lscala/Function1;)Ljava/lang/Object;)(p).<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public static Ljava/lang/Object; collect(Lscala/collection/TraversableProxyLike; $this, Lscala/PartialFunction; pf, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::collect(Lscala/PartialFunction;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(pf, bf);
+  }
+  
+  public static Lscala/Tuple2; partition(Lscala/collection/TraversableProxyLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::partition(Lscala/Function1;)Lscala/Tuple2;)(p);
+  }
+  
+  public static Lscala/collection/immutable/Map; groupBy(Lscala/collection/TraversableProxyLike; $this, Lscala/Function1; f) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::groupBy(Lscala/Function1;)Lscala/collection/immutable/Map;)(f);
+  }
+  
+  public static Z; forall(Lscala/collection/TraversableProxyLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::forall(Lscala/Function1;)Z;)(p);
+  }
+  
+  public static Z; exists(Lscala/collection/TraversableProxyLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::exists(Lscala/Function1;)Z;)(p);
+  }
+  
+  public static I; count(Lscala/collection/TraversableProxyLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::count(Lscala/Function1;)I;)(p);
+  }
+  
+  public static Lscala/Option; find(Lscala/collection/TraversableProxyLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::find(Lscala/Function1;)Lscala/Option;)(p);
+  }
+  
+  public static Ljava/lang/Object; foldLeft(Lscala/collection/TraversableProxyLike; $this, Ljava/lang/Object; z, Lscala/Function2; op) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(z, op);
+  }
+  
+  public static Ljava/lang/Object; $div$colon(Lscala/collection/TraversableProxyLike; $this, Ljava/lang/Object; z, Lscala/Function2; op) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::$div$colon(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(z, op);
+  }
+  
+  public static Ljava/lang/Object; foldRight(Lscala/collection/TraversableProxyLike; $this, Ljava/lang/Object; z, Lscala/Function2; op) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::foldRight(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(z, op);
+  }
+  
+  public static Ljava/lang/Object; $colon$bslash(Lscala/collection/TraversableProxyLike; $this, Ljava/lang/Object; z, Lscala/Function2; op) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::$colon$bslash(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(z, op);
+  }
+  
+  public static Ljava/lang/Object; reduceLeft(Lscala/collection/TraversableProxyLike; $this, Lscala/Function2; op) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::reduceLeft(Lscala/Function2;)Ljava/lang/Object;)(op);
+  }
+  
+  public static Lscala/Option; reduceLeftOption(Lscala/collection/TraversableProxyLike; $this, Lscala/Function2; op) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::reduceLeftOption(Lscala/Function2;)Lscala/Option;)(op);
+  }
+  
+  public static Ljava/lang/Object; reduceRight(Lscala/collection/TraversableProxyLike; $this, Lscala/Function2; op) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::reduceRight(Lscala/Function2;)Ljava/lang/Object;)(op);
+  }
+  
+  public static Lscala/Option; reduceRightOption(Lscala/collection/TraversableProxyLike; $this, Lscala/Function2; op) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::reduceRightOption(Lscala/Function2;)Lscala/Option;)(op);
+  }
+  
+  public static Ljava/lang/Object; scanLeft(Lscala/collection/TraversableProxyLike; $this, Ljava/lang/Object; z, Lscala/Function2; op, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::scanLeft(Ljava/lang/Object;Lscala/Function2;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(z, op, bf);
+  }
+  
+  public static Ljava/lang/Object; scanRight(Lscala/collection/TraversableProxyLike; $this, Ljava/lang/Object; z, Lscala/Function2; op, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::scanRight(Ljava/lang/Object;Lscala/Function2;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(z, op, bf);
+  }
+  
+  public static Ljava/lang/Object; sum(Lscala/collection/TraversableProxyLike; $this, Lscala/math/Numeric; num) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::sum(Lscala/math/Numeric;)Ljava/lang/Object;)(num);
+  }
+  
+  public static Ljava/lang/Object; product(Lscala/collection/TraversableProxyLike; $this, Lscala/math/Numeric; num) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::product(Lscala/math/Numeric;)Ljava/lang/Object;)(num);
+  }
+  
+  public static Ljava/lang/Object; min(Lscala/collection/TraversableProxyLike; $this, Lscala/math/Ordering; cmp) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::min(Lscala/math/Ordering;)Ljava/lang/Object;)(cmp);
+  }
+  
+  public static Ljava/lang/Object; max(Lscala/collection/TraversableProxyLike; $this, Lscala/math/Ordering; cmp) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::max(Lscala/math/Ordering;)Ljava/lang/Object;)(cmp);
+  }
+  
+  public static Ljava/lang/Object; head(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::head()Ljava/lang/Object;)();
+  }
+  
+  public static Lscala/Option; headOption(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::headOption()Lscala/Option;)();
+  }
+  
+  public static Lscala/collection/Traversable; tail(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public static Ljava/lang/Object; last(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::last()Ljava/lang/Object;)();
+  }
+  
+  public static Lscala/Option; lastOption(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::lastOption()Lscala/Option;)();
+  }
+  
+  public static Lscala/collection/Traversable; init(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::init()Ljava/lang/Object;)().<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public static Lscala/collection/Traversable; take(Lscala/collection/TraversableProxyLike; $this, I; n) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::take(I;)Ljava/lang/Object;)(n).<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public static Lscala/collection/Traversable; drop(Lscala/collection/TraversableProxyLike; $this, I; n) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::drop(I;)Ljava/lang/Object;)(n).<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public static Lscala/collection/Traversable; slice(Lscala/collection/TraversableProxyLike; $this, I; from, I; until) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::slice(I;I;)Ljava/lang/Object;)(from, until).<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public static Lscala/collection/Traversable; takeWhile(Lscala/collection/TraversableProxyLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::takeWhile(Lscala/Function1;)Ljava/lang/Object;)(p).<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public static Lscala/collection/Traversable; dropWhile(Lscala/collection/TraversableProxyLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::dropWhile(Lscala/Function1;)Ljava/lang/Object;)(p).<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public static Lscala/Tuple2; span(Lscala/collection/TraversableProxyLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::span(Lscala/Function1;)Lscala/Tuple2;)(p);
+  }
+  
+  public static Lscala/Tuple2; splitAt(Lscala/collection/TraversableProxyLike; $this, I; n) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::splitAt(I;)Lscala/Tuple2;)(n);
+  }
+  
+  public static V; copyToBuffer(Lscala/collection/TraversableProxyLike; $this, Lscala/collection/mutable/Buffer; dest) {
+    $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::copyToBuffer(Lscala/collection/mutable/Buffer;)V;)(dest);
+  }
+  
+  public static V; copyToArray(Lscala/collection/TraversableProxyLike; $this, Ljava/lang/Object; xs, I; start, I; len) {
+    $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::copyToArray(Ljava/lang/Object;I;I;)V;)(xs, start, len);
+  }
+  
+  public static V; copyToArray(Lscala/collection/TraversableProxyLike; $this, Ljava/lang/Object; xs, I; start) {
+    $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::copyToArray(Ljava/lang/Object;I;)V;)(xs, start);
+  }
+  
+  public static V; copyToArray(Lscala/collection/TraversableProxyLike; $this, Ljava/lang/Object; xs) {
+    $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::copyToArray(Ljava/lang/Object;)V;)(xs);
+  }
+  
+  public static Ljava/lang/Object; toArray(Lscala/collection/TraversableProxyLike; $this, Lscala/reflect/ClassManifest; evidence$1) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::toArray(Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(evidence$1);
+  }
+  
+  public static Lscala/collection/immutable/List; toList(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)();
+  }
+  
+  public static Lscala/collection/Iterable; toIterable(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::toIterable()Lscala/collection/Iterable;)();
+  }
+  
+  public static Lscala/collection/Seq; toSeq(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::toSeq()Lscala/collection/Seq;)();
+  }
+  
+  public static Lscala/collection/immutable/IndexedSeq; toIndexedSeq(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::toIndexedSeq()Lscala/collection/immutable/IndexedSeq;)();
+  }
+  
+  public static Lscala/collection/mutable/Buffer; toBuffer(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::toBuffer()Lscala/collection/mutable/Buffer;)();
+  }
+  
+  public static Lscala/collection/immutable/Stream; toStream(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::toStream()Lscala/collection/immutable/Stream;)();
+  }
+  
+  public static Lscala/collection/immutable/Set; toSet(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::toSet()Lscala/collection/immutable/Set;)();
+  }
+  
+  public static Lscala/collection/immutable/Map; toMap(Lscala/collection/TraversableProxyLike; $this, Lscala/Predef$$less$colon$less; ev) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::toMap(Lscala/Predef$$less$colon$less;)Lscala/collection/immutable/Map;)(ev);
+  }
+  
+  public static Lscala/collection/Traversable; toTraversable(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::toTraversable()Lscala/collection/Traversable;)();
+  }
+  
+  public static Lscala/collection/Iterator; toIterator(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::toIterator()Lscala/collection/Iterator;)();
+  }
+  
+  public static Ljava/lang/String; mkString(Lscala/collection/TraversableProxyLike; $this, Ljava/lang/String; start, Ljava/lang/String; sep, Ljava/lang/String; end) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)(start, sep, end);
+  }
+  
+  public static Ljava/lang/String; mkString(Lscala/collection/TraversableProxyLike; $this, Ljava/lang/String; sep) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;)Ljava/lang/String;)(sep);
+  }
+  
+  public static Ljava/lang/String; mkString(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::mkString()Ljava/lang/String;)();
+  }
+  
+  public static Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/TraversableProxyLike; $this, Lscala/collection/mutable/StringBuilder; b, Ljava/lang/String; start, Ljava/lang/String; sep, Ljava/lang/String; end) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::addString(Lscala/collection/mutable/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(b, start, sep, end);
+  }
+  
+  public static Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/TraversableProxyLike; $this, Lscala/collection/mutable/StringBuilder; b, Ljava/lang/String; sep) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::addString(Lscala/collection/mutable/StringBuilder;Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(b, sep);
+  }
+  
+  public static Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/TraversableProxyLike; $this, Lscala/collection/mutable/StringBuilder; b) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableOnce;::addString(Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(b);
+  }
+  
+  public static Ljava/lang/String; stringPrefix(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::stringPrefix()Ljava/lang/String;)();
+  }
+  
+  public static Lscala/collection/TraversableView; view(Lscala/collection/TraversableProxyLike; $this) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::view()Lscala/collection/TraversableView;)();
+  }
+  
+  public static Lscala/collection/TraversableView; view(Lscala/collection/TraversableProxyLike; $this, I; from, I; until) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::view(I;I;)Lscala/collection/TraversableView;)(from, until);
+  }
+  
+  public static V; $init$(Lscala/collection/TraversableProxyLike; $this) {
+    
+  }
+}

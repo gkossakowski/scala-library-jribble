@@ -1,0 +1,50 @@
+public final class Lscala/collection/JavaConversions$MapWrapper$$anon$1$$anon$5$$anon$6; extends Ljava/lang/Object; implements Ljava/util/Map$Entry; {
+  
+  public Ljava/lang/Object; getKey() {
+    return this.(Ljava/lang/Object;)k$1;
+  }
+  
+  public Ljava/lang/Object; getValue() {
+    return this.(Ljava/lang/Object;)v$1;
+  }
+  
+  public Ljava/lang/Object; setValue(Ljava/lang/Object; v1) {
+    return this.(Lscala/collection/JavaConversions$MapWrapper$$anon$1$$anon$5;)$outer$u0020.(Lscala/collection/JavaConversions$MapWrapper$$anon$1$$anon$5;::scala$collection$JavaConversions$MapWrapper$$anon$$anon$$$outer()Lscala/collection/JavaConversions$MapWrapper$$anon$1;)().(Lscala/collection/JavaConversions$MapWrapper$$anon$1;::scala$collection$JavaConversions$MapWrapper$$anon$$$outer()Lscala/collection/JavaConversions$MapWrapper;)().(Ljava/util/AbstractMap;::put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Ljava/lang/Object;)k$1, v1);
+  }
+  
+  public Z; equals(Ljava/lang/Object; other) {
+    Ljava/lang/Object; temp109 = other;
+    Z; $47$;
+    if (temp109.<instanceof>(Ljava/util/Map$Entry;))
+      {
+        Ljava/util/Map$Entry; temp110 = temp109.<cast>(Ljava/util/Map$Entry;);
+        Ljava/util/Map$Entry; e = temp110;
+        $47$ = (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Ljava/lang/Object;)k$1, e.(Ljava/util/Map$Entry;::getKey()Ljava/lang/Object;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Ljava/lang/Object;)v$1, e.(Ljava/util/Map$Entry;::getValue()Ljava/lang/Object;)()));
+      }
+    else
+      {
+        $47$ = false;
+      }
+    return $47$;
+  }
+  
+  private Lscala/collection/JavaConversions$MapWrapper$$anon$1$$anon$5; $outer$u0020;
+  
+  private Ljava/lang/Object; k$1;
+  
+  private Ljava/lang/Object; v$1;
+  
+  public this(Lscala/collection/JavaConversions$MapWrapper$$anon$1$$anon$5; $outer, Ljava/lang/Object; k$1, Ljava/lang/Object; v$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/JavaConversions$MapWrapper$$anon$1$$anon$5;)$outer$u0020 = $outer;
+      }
+    this.(Ljava/lang/Object;)k$1 = k$1;
+    this.(Ljava/lang/Object;)v$1 = v$1;
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

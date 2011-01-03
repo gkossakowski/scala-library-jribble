@@ -1,0 +1,135 @@
+public class Lscala/reflect/LocalValue; extends Lscala/reflect/LocalSymbol; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/reflect/Type; copy$default$3() {
+    return this.(Lscala/reflect/LocalValue;::tpe()Lscala/reflect/Type;)();
+  }
+  
+  public Ljava/lang/String; copy$default$2() {
+    return this.(Lscala/reflect/LocalValue;::name()Ljava/lang/String;)();
+  }
+  
+  public Lscala/reflect/Symbol; copy$default$1() {
+    return this.(Lscala/reflect/LocalValue;::owner()Lscala/reflect/Symbol;)();
+  }
+  
+  private Lscala/reflect/Symbol; owner$u0020;
+  
+  public Lscala/reflect/Symbol; owner() {
+    return this.(Lscala/reflect/Symbol;)owner$u0020;
+  }
+  
+  private Ljava/lang/String; name$u0020;
+  
+  public Ljava/lang/String; name() {
+    return this.(Ljava/lang/String;)name$u0020;
+  }
+  
+  private Lscala/reflect/Type; tpe$u0020;
+  
+  public Lscala/reflect/Type; tpe() {
+    return this.(Lscala/reflect/Type;)tpe$u0020;
+  }
+  
+  public Lscala/reflect/LocalValue; copy(Lscala/reflect/Symbol; owner, Ljava/lang/String; name, Lscala/reflect/Type; tpe) {
+    return (new (Lscala/reflect/LocalValue;::this(Lscala/reflect/Symbol;Ljava/lang/String;Lscala/reflect/Type;)V;)(owner, name, tpe));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp20 = x$1;
+    Z; $18$;
+    if (temp20.<instanceof>(Lscala/reflect/LocalValue;))
+      {
+        Lscala/reflect/LocalValue; temp21 = temp20.<cast>(Lscala/reflect/LocalValue;);
+        Lscala/reflect/Symbol; temp22 = temp21.(Lscala/reflect/LocalValue;::owner()Lscala/reflect/Symbol;)();
+        Ljava/lang/String; temp23 = temp21.(Lscala/reflect/LocalValue;::name()Ljava/lang/String;)();
+        Lscala/reflect/Type; temp24 = temp21.(Lscala/reflect/LocalValue;::tpe()Lscala/reflect/Type;)();
+        Lscala/reflect/Type; tpe$4 = temp24;
+        Ljava/lang/String; name$1 = temp23;
+        Lscala/reflect/Symbol; owner$1 = temp22;
+        Z; $19$;
+        if (this.(Lscala/reflect/LocalValue;::gd5$1(Lscala/reflect/Symbol;Ljava/lang/String;Lscala/reflect/Type;)Z;)(owner$1, name$1, tpe$4))
+          {
+            $19$ = x$1.<cast>(Lscala/reflect/LocalValue;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $19$ = false;
+          }
+        $18$ = $19$;
+      }
+    else
+      {
+        $18$ = false;
+      }
+    return ((this == x$1) || $18$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "LocalValue";
+  }
+  
+  public I; productArity() {
+    return 3;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp25 = x$1;
+    I; $20$ = temp25;
+    Ljava/lang/Object; $21$;
+    switch ($20$) {
+      0: {
+        $21$ = this.(Lscala/reflect/LocalValue;::owner()Lscala/reflect/Symbol;)();
+        break;
+      }
+      
+      1: {
+        $21$ = this.(Lscala/reflect/LocalValue;::name()Ljava/lang/String;)();
+        break;
+      }
+      
+      2: {
+        $21$ = this.(Lscala/reflect/LocalValue;::tpe()Lscala/reflect/Type;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $21$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/reflect/LocalValue;);
+  }
+  
+  private final Z; gd5$1(Lscala/reflect/Symbol; x$1, Ljava/lang/String; x$2, Lscala/reflect/Type; x$3) {
+    return ((Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/reflect/LocalValue;::owner()Lscala/reflect/Symbol;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$2, this.(Lscala/reflect/LocalValue;::name()Ljava/lang/String;)())) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$3, this.(Lscala/reflect/LocalValue;::tpe()Lscala/reflect/Type;)()));
+  }
+  
+  public this(Lscala/reflect/Symbol; owner, Ljava/lang/String; name, Lscala/reflect/Type; tpe) {
+    this.(Lscala/reflect/Symbol;)owner$u0020 = owner;
+    this.(Ljava/lang/String;)name$u0020 = name;
+    this.(Lscala/reflect/Type;)tpe$u0020 = tpe;
+    (Lscala/reflect/LocalSymbol;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

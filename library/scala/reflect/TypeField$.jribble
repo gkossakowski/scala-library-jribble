@@ -1,0 +1,32 @@
+public final class Lscala/reflect/TypeField$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject; {
+  public static Lscala/reflect/TypeField$; MODULE$ = new (Lscala/reflect/TypeField$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "TypeField";
+  }
+  
+  public Lscala/Option; unapply(Lscala/reflect/TypeField; x$0) {
+    Lscala/Option; $29$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $29$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $29$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/reflect/TypeField;::fullname()Ljava/lang/String;)(), x$0.(Lscala/reflect/TypeField;::tpe()Lscala/reflect/Type;)()))));
+      }
+    return $29$;
+  }
+  
+  public Lscala/reflect/TypeField; apply(Ljava/lang/String; fullname, Lscala/reflect/Type; tpe) {
+    return (new (Lscala/reflect/TypeField;::this(Ljava/lang/String;Lscala/reflect/Type;)V;)(fullname, tpe));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {
+    return this.(Lscala/reflect/TypeField$;::apply(Ljava/lang/String;Lscala/reflect/Type;)Lscala/reflect/TypeField;)(v1.<cast>(Ljava/lang/String;), v2.<cast>(Lscala/reflect/Type;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
+  }
+}

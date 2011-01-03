@@ -1,0 +1,22 @@
+public final class Lscala/collection/Traversable$; extends Lscala/collection/generic/TraversableFactory; implements Lscala/ScalaObject; {
+  public static Lscala/collection/Traversable$; MODULE$ = new (Lscala/collection/Traversable$;::this()V;)();
+  
+  private Lscala/util/control/Breaks; breaks$u0020;
+  
+  public Lscala/util/control/Breaks; breaks() {
+    return this.(Lscala/util/control/Breaks;)breaks$u0020;
+  }
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return (new (Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;::this(Lscala/collection/generic/TraversableFactory;)V;)(this));
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return Lscala/collection/immutable/Traversable$;.MODULE$.(Lscala/collection/immutable/Traversable$;::newBuilder()Lscala/collection/mutable/Builder;)();
+  }
+  
+  public this() {
+    (Lscala/collection/generic/TraversableFactory;::super()V;)();
+    this.(Lscala/util/control/Breaks;)breaks$u0020 = (new (Lscala/util/control/Breaks;::this()V;)());
+  }
+}

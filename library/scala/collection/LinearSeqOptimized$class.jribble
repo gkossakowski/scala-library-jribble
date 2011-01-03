@@ -1,0 +1,536 @@
+public abstract class Lscala/collection/LinearSeqOptimized$class; {
+  
+  public static I; length(Lscala/collection/LinearSeqOptimized; $this) {
+    Lscala/collection/LinearSeqOptimized; these = $this;
+    I; len = 0;
+    while$1: while(true) {
+      if (!(these.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
+        {
+          {
+            len = (len + 1);
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return len;
+  }
+  
+  public static Ljava/lang/Object; apply(Lscala/collection/LinearSeqOptimized; $this, I; n) {
+    Lscala/collection/LinearSeqOptimized; rest = $this.(Lscala/collection/LinearSeqOptimized;::drop(I;)Lscala/collection/LinearSeqOptimized;)(n);
+    if (((n < 0) || rest.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this()V;)());
+      }
+    else
+      {
+        
+      }
+    return rest.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)();
+  }
+  
+  public static V; foreach(Lscala/collection/LinearSeqOptimized; $this, Lscala/Function1; f) {
+    Lscala/collection/LinearSeqOptimized; these = $this;
+    while$2: while(true) {
+      if (!(these.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
+        {
+          {
+            f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)());
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+          }
+          continue while$2;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  public static Z; forall(Lscala/collection/LinearSeqOptimized; $this, Lscala/Function1; p) {
+    Lscala/collection/LinearSeqOptimized; these = $this;
+    while$3: while(true) {
+      if (!(these.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
+        {
+          {
+            if (!(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)()))))
+              {
+                return false;
+              }
+            else
+              {
+                
+              }
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+          }
+          continue while$3;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return true;
+  }
+  
+  public static Z; exists(Lscala/collection/LinearSeqOptimized; $this, Lscala/Function1; p) {
+    Lscala/collection/LinearSeqOptimized; these = $this;
+    while$4: while(true) {
+      if (!(these.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
+        {
+          {
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)())))
+              {
+                return true;
+              }
+            else
+              {
+                
+              }
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+          }
+          continue while$4;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return false;
+  }
+  
+  public static I; count(Lscala/collection/LinearSeqOptimized; $this, Lscala/Function1; p) {
+    Lscala/collection/LinearSeqOptimized; these = $this;
+    I; cnt = 0;
+    while$5: while(true) {
+      if (!(these.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
+        {
+          {
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)())))
+              {
+                cnt = (cnt + 1);
+              }
+            else
+              {
+                
+              }
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+          }
+          continue while$5;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return cnt;
+  }
+  
+  public static Lscala/Option; find(Lscala/collection/LinearSeqOptimized; $this, Lscala/Function1; p) {
+    Lscala/collection/LinearSeqOptimized; these = $this;
+    while$6: while(true) {
+      if (!(these.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
+        {
+          {
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)())))
+              {
+                return (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)()));
+              }
+            else
+              {
+                
+              }
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+          }
+          continue while$6;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return Lscala/None$;.MODULE$;
+  }
+  
+  public static Ljava/lang/Object; foldLeft(Lscala/collection/LinearSeqOptimized; $this, Ljava/lang/Object; z, Lscala/Function2; f) {
+    Ljava/lang/Object; acc = z;
+    Lscala/collection/LinearSeqOptimized; these = $this;
+    while$7: while(true) {
+      if (!(these.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
+        {
+          {
+            acc = f.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(acc, these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)());
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+          }
+          continue while$7;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return acc;
+  }
+  
+  public static Ljava/lang/Object; foldRight(Lscala/collection/LinearSeqOptimized; $this, Ljava/lang/Object; z, Lscala/Function2; f) {
+    Ljava/lang/Object; $1$;
+    if ($this.(Lscala/collection/IterableLike;::isEmpty()Z;)())
+      {
+        $1$ = z;
+      }
+    else
+      {
+        $1$ = f.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)($this.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)(), $this.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;).(Lscala/collection/LinearSeqOptimized;::foldRight(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(z, f));
+      }
+    return $1$;
+  }
+  
+  public static Ljava/lang/Object; reduceLeft(Lscala/collection/LinearSeqOptimized; $this, Lscala/Function2; f) {
+    Ljava/lang/Object; $2$;
+    if ($this.(Lscala/collection/IterableLike;::isEmpty()Z;)())
+      {
+        throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)("empty.reduceLeft"));
+      }
+    else
+      {
+        $2$ = $this.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;).(Lscala/collection/LinearSeqOptimized;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)($this.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)(), f);
+      }
+    return $2$;
+  }
+  
+  public static Ljava/lang/Object; reduceRight(Lscala/collection/LinearSeqOptimized; $this, Lscala/Function2; op) {
+    Ljava/lang/Object; $3$;
+    if ($this.(Lscala/collection/IterableLike;::isEmpty()Z;)())
+      {
+        throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)("Nil.reduceRight"));
+      }
+    else
+      {
+        Ljava/lang/Object; $4$;
+        if ($this.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::isEmpty()Z;)())
+          {
+            $4$ = $this.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)();
+          }
+        else
+          {
+            $4$ = op.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)($this.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)(), $this.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;).(Lscala/collection/LinearSeqOptimized;::reduceRight(Lscala/Function2;)Ljava/lang/Object;)(op));
+          }
+        $3$ = $4$;
+      }
+    return $3$;
+  }
+  
+  public static Ljava/lang/Object; last(Lscala/collection/LinearSeqOptimized; $this) {
+    if ($this.(Lscala/collection/IterableLike;::isEmpty()Z;)())
+      {
+        throw (new (Ljava/util/NoSuchElementException;::this()V;)());
+      }
+    else
+      {
+        
+      }
+    Lscala/collection/LinearSeqOptimized; these = $this;
+    Lscala/collection/LinearSeqOptimized; nx = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+    while$8: while(true) {
+      if (!(nx.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
+        {
+          {
+            these = nx;
+            nx = nx.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+          }
+          continue while$8;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)();
+  }
+  
+  public static Lscala/collection/LinearSeqOptimized; take(Lscala/collection/LinearSeqOptimized; $this, I; n) {
+    Lscala/collection/mutable/Builder; b = $this.(Lscala/collection/TraversableLike;::newBuilder()Lscala/collection/mutable/Builder;)();
+    I; i = 0;
+    Lscala/collection/LinearSeqOptimized; these = $this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+    while$9: while(true) {
+      if ((!(these.(Lscala/collection/IterableLike;::isEmpty()Z;)()) && (i < n)))
+        {
+          {
+            i = (i + 1);
+            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)());
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+          }
+          continue while$9;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+  }
+  
+  public static Lscala/collection/LinearSeqOptimized; drop(Lscala/collection/LinearSeqOptimized; $this, I; n) {
+    Lscala/collection/LinearSeqOptimized; these = $this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+    I; count = n;
+    while$10: while(true) {
+      if ((!(these.(Lscala/collection/IterableLike;::isEmpty()Z;)()) && (count > 0)))
+        {
+          {
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+            count = (count - 1);
+          }
+          continue while$10;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return these;
+  }
+  
+  public static Lscala/collection/LinearSeqOptimized; dropRight(Lscala/collection/LinearSeqOptimized; $this, I; n) {
+    Lscala/collection/mutable/Builder; b = $this.(Lscala/collection/TraversableLike;::newBuilder()Lscala/collection/mutable/Builder;)();
+    Lscala/collection/LinearSeqOptimized; these = $this;
+    Lscala/collection/LinearSeqOptimized; lead = $this.(Lscala/collection/LinearSeqOptimized;::drop(I;)Lscala/collection/LinearSeqOptimized;)(n);
+    while$11: while(true) {
+      if (!(lead.(Lscala/collection/IterableLike;::isEmpty()Z;)()))
+        {
+          {
+            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)());
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+            lead = lead.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+          }
+          continue while$11;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+  }
+  
+  public static Lscala/collection/LinearSeqOptimized; slice(Lscala/collection/LinearSeqOptimized; $this, I; from, I; until) {
+    Lscala/collection/mutable/Builder; b = $this.(Lscala/collection/TraversableLike;::newBuilder()Lscala/collection/mutable/Builder;)();
+    I; i = from;
+    Lscala/collection/LinearSeqOptimized; these = $this.(Lscala/collection/LinearSeqOptimized;::drop(I;)Lscala/collection/LinearSeqOptimized;)(from);
+    while$12: while(true) {
+      if (((i < until) && !(these.(Lscala/collection/IterableLike;::isEmpty()Z;)())))
+        {
+          {
+            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)());
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+            i = (i + 1);
+          }
+          continue while$12;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+  }
+  
+  public static Lscala/collection/LinearSeqOptimized; takeWhile(Lscala/collection/LinearSeqOptimized; $this, Lscala/Function1; p) {
+    Lscala/collection/mutable/Builder; b = $this.(Lscala/collection/TraversableLike;::newBuilder()Lscala/collection/mutable/Builder;)();
+    Lscala/collection/LinearSeqOptimized; these = $this;
+    while$13: while(true) {
+      if ((!(these.(Lscala/collection/IterableLike;::isEmpty()Z;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)()))))
+        {
+          {
+            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)());
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+          }
+          continue while$13;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+  }
+  
+  public static Lscala/Tuple2; span(Lscala/collection/LinearSeqOptimized; $this, Lscala/Function1; p) {
+    Lscala/collection/LinearSeqOptimized; these = $this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+    Lscala/collection/mutable/Builder; b = $this.(Lscala/collection/TraversableLike;::newBuilder()Lscala/collection/mutable/Builder;)();
+    while$14: while(true) {
+      if ((!(these.(Lscala/collection/IterableLike;::isEmpty()Z;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)()))))
+        {
+          {
+            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)());
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+          }
+          continue while$14;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)(), these));
+  }
+  
+  public static Z; sameElements(Lscala/collection/LinearSeqOptimized; $this, Lscala/collection/Iterable; that) {
+    Lscala/collection/Iterable; temp1 = that;
+    Z; $5$;
+    if (temp1.<instanceof>(Lscala/collection/LinearSeq;))
+      {
+        Lscala/collection/LinearSeq; temp2 = temp1.<cast>(Lscala/collection/LinearSeq;);
+        Lscala/collection/LinearSeq; that1 = temp2;
+        Lscala/collection/LinearSeqOptimized; these = $this;
+        Lscala/collection/LinearSeq; those = that1;
+        while$15: while(true) {
+          if (((!(these.(Lscala/collection/IterableLike;::isEmpty()Z;)()) && !(those.(Lscala/collection/IterableLike;::isEmpty()Z;)())) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)(), those.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)())))
+            {
+              {
+                these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+                those = those.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeq;);
+              }
+              continue while$15;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+        $5$ = (these.(Lscala/collection/IterableLike;::isEmpty()Z;)() && those.(Lscala/collection/IterableLike;::isEmpty()Z;)());
+      }
+    else
+      {
+        $5$ = $this.(Lscala/collection/LinearSeqOptimized;::scala$collection$LinearSeqOptimized$$super$sameElements(Lscala/collection/Iterable;)Z;)(that);
+      }
+    return $5$;
+  }
+  
+  public static I; lengthCompare(Lscala/collection/LinearSeqOptimized; $this, I; len) {
+    I; i = 0;
+    Lscala/collection/LinearSeqOptimized; these = $this;
+    while$16: while(true) {
+      if ((!(these.(Lscala/collection/IterableLike;::isEmpty()Z;)()) && (i <= len)))
+        {
+          {
+            i = (i + 1);
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+          }
+          continue while$16;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return (i - len);
+  }
+  
+  public static Z; isDefinedAt(Lscala/collection/LinearSeqOptimized; $this, I; x) {
+    return ((x >= 0) && ($this.(Lscala/collection/LinearSeqOptimized;::lengthCompare(I;)I;)(x) > 0));
+  }
+  
+  public static I; segmentLength(Lscala/collection/LinearSeqOptimized; $this, Lscala/Function1; p, I; from) {
+    I; i = 0;
+    Lscala/collection/LinearSeqOptimized; these = $this.(Lscala/collection/LinearSeqOptimized;::drop(I;)Lscala/collection/LinearSeqOptimized;)(from);
+    while$17: while(true) {
+      if ((!(these.(Lscala/collection/IterableLike;::isEmpty()Z;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)()))))
+        {
+          {
+            i = (i + 1);
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+          }
+          continue while$17;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return i;
+  }
+  
+  public static I; indexWhere(Lscala/collection/LinearSeqOptimized; $this, Lscala/Function1; p, I; from) {
+    I; i = from;
+    Lscala/collection/LinearSeqOptimized; these = $this.(Lscala/collection/LinearSeqOptimized;::drop(I;)Lscala/collection/LinearSeqOptimized;)(from);
+    while$18: while(true) {
+      if (these.(Lscala/collection/TraversableOnce;::nonEmpty()Z;)())
+        {
+          {
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)())))
+              {
+                return i;
+              }
+            else
+              {
+                
+              }
+            i = (i + 1);
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+          }
+          continue while$18;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return -1;
+  }
+  
+  public static I; lastIndexWhere(Lscala/collection/LinearSeqOptimized; $this, Lscala/Function1; p, I; end) {
+    I; i = 0;
+    Lscala/collection/LinearSeqOptimized; these = $this;
+    I; last = -1;
+    while$19: while(true) {
+      if ((!(these.(Lscala/collection/IterableLike;::isEmpty()Z;)()) && (i <= end)))
+        {
+          {
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(these.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)())))
+              {
+                last = i;
+              }
+            else
+              {
+                
+              }
+            these = these.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;);
+            i = (i + 1);
+          }
+          continue while$19;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return last;
+  }
+  
+  public static V; $init$(Lscala/collection/LinearSeqOptimized; $this) {
+    
+  }
+}

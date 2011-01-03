@@ -1,0 +1,21 @@
+public abstract class Lscala/collection/SeqViewLike$Filtered$class; {
+  
+  public static I;[ index(Lscala/collection/SeqViewLike$Filtered; $this) {
+    Lscala/runtime/IntRef; len$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(0));
+    I;[ arr$1 = new I;[$this.(Lscala/collection/SeqViewLike$Filtered;::scala$collection$SeqViewLike$Filtered$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::length()I;)()];
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)($this.(Lscala/collection/SeqViewLike$Filtered;::scala$collection$SeqViewLike$Filtered$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::length()I;)()).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/SeqViewLike$Filtered$$anonfun$index$2;::this(Lscala/collection/SeqViewLike$Filtered;Lscala/runtime/IntRef;I;[)V;)($this, len$1, arr$1)));
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intArrayOps(I;[)Lscala/collection/mutable/ArrayOps;)(arr$1).(Lscala/collection/IndexedSeqOptimized;::take(I;)Ljava/lang/Object;)(len$1.(I;)elem).<cast>(I;[);
+  }
+  
+  public static I; length(Lscala/collection/SeqViewLike$Filtered; $this) {
+    return $this.(Lscala/collection/SeqViewLike$Filtered;::index()I;[)().<length>;
+  }
+  
+  public static Ljava/lang/Object; apply(Lscala/collection/SeqViewLike$Filtered; $this, I; idx) {
+    return $this.(Lscala/collection/SeqViewLike$Filtered;::scala$collection$SeqViewLike$Filtered$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)($this.(Lscala/collection/SeqViewLike$Filtered;::index()I;[)()[idx]);
+  }
+  
+  public static V; $init$(Lscala/collection/SeqViewLike$Filtered; $this) {
+    
+  }
+}

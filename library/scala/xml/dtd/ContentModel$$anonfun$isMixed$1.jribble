@@ -1,0 +1,59 @@
+public final class Lscala/xml/dtd/ContentModel$$anonfun$isMixed$1; extends Ljava/lang/Object; implements Lscala/PartialFunction; {
+  
+  public Lscala/PartialFunction; orElse(Lscala/PartialFunction; that) {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::orElse(Lscala/PartialFunction;Lscala/PartialFunction;)Lscala/PartialFunction;)(this, that);
+  }
+  
+  public Lscala/PartialFunction; andThen(Lscala/Function1; k) {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::andThen(Lscala/PartialFunction;Lscala/Function1;)Lscala/PartialFunction;)(this, k);
+  }
+  
+  public Lscala/Function1; lift() {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::lift(Lscala/PartialFunction;)Lscala/Function1;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::toString(Lscala/Function1;)Ljava/lang/String;)(this);
+  }
+  
+  public Lscala/Function1; compose(Lscala/Function1; g) {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::compose(Lscala/Function1;Lscala/Function1;)Lscala/Function1;)(this, g);
+  }
+  
+  public final Z; apply(Lscala/xml/dtd/ContentModel; x0$1) {
+    Lscala/xml/dtd/ContentModel; temp5 = x0$1;
+    Z; $47$;
+    if (temp5.<instanceof>(Lscala/xml/dtd/MIXED;))
+      {
+        $47$ = true;
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp5));
+      }
+    return $47$;
+  }
+  
+  public final Z; isDefinedAt(Lscala/xml/dtd/ContentModel; x$1) {
+    Lscala/xml/dtd/ContentModel; temp8 = x$1;
+    return temp8.<instanceof>(Lscala/xml/dtd/MIXED;);
+  }
+  
+  public Lscala/Function1; andThen(Lscala/Function1; g) {
+    return this.(Lscala/PartialFunction;::andThen(Lscala/Function1;)Lscala/PartialFunction;)(g);
+  }
+  
+  public final Z; isDefinedAt(Ljava/lang/Object; x) {
+    return this.(Lscala/xml/dtd/ContentModel$$anonfun$isMixed$1;::isDefinedAt(Lscala/xml/dtd/ContentModel;)Z;)(x.<cast>(Lscala/xml/dtd/ContentModel;));
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/xml/dtd/ContentModel$$anonfun$isMixed$1;::apply(Lscala/xml/dtd/ContentModel;)Z;)(v1.<cast>(Lscala/xml/dtd/ContentModel;)));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Function1$class;.(Lscala/Function1$class;::$init$(Lscala/Function1;)V;)(this);
+    Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::$init$(Lscala/PartialFunction;)V;)(this);
+  }
+}

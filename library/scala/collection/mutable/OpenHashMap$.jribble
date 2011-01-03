@@ -1,0 +1,31 @@
+public final class Lscala/collection/mutable/OpenHashMap$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/mutable/OpenHashMap$; MODULE$ = new (Lscala/collection/mutable/OpenHashMap$;::this()V;)();
+  
+  public Lscala/collection/mutable/OpenHashMap; apply(Lscala/collection/Seq; elems) {
+    Lscala/collection/mutable/OpenHashMap; dict$1 = (new (Lscala/collection/mutable/OpenHashMap;::this()V;)());
+    elems.(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/mutable/OpenHashMap$$anonfun$apply$1;::this(Lscala/collection/mutable/OpenHashMap;)V;)(dict$1)));
+    return dict$1;
+  }
+  
+  public Lscala/collection/mutable/OpenHashMap; empty() {
+    return (new (Lscala/collection/mutable/OpenHashMap;::this()V;)());
+  }
+  
+  public I; highestOneBit(I; j) {
+    I; i = j;
+    i = (i | (i >>> 1));
+    i = (i | (i >>> 2));
+    i = (i | (i >>> 4));
+    i = (i | (i >>> 8));
+    i = (i | (i >>> 16));
+    return (i - (i >> 1));
+  }
+  
+  public I; nextPowerOfTwo(I; i) {
+    return (this.(Lscala/collection/mutable/OpenHashMap$;::highestOneBit(I;)I;)(i) << 1);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

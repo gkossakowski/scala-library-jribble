@@ -1,0 +1,117 @@
+public class Lscala/reflect/AppliedType; extends Lscala/reflect/Type; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/immutable/List; copy$default$2() {
+    return this.(Lscala/reflect/AppliedType;::args()Lscala/collection/immutable/List;)();
+  }
+  
+  public Lscala/reflect/Type; copy$default$1() {
+    return this.(Lscala/reflect/AppliedType;::tpe()Lscala/reflect/Type;)();
+  }
+  
+  private Lscala/reflect/Type; tpe$u0020;
+  
+  public Lscala/reflect/Type; tpe() {
+    return this.(Lscala/reflect/Type;)tpe$u0020;
+  }
+  
+  private Lscala/collection/immutable/List; args$u0020;
+  
+  public Lscala/collection/immutable/List; args() {
+    return this.(Lscala/collection/immutable/List;)args$u0020;
+  }
+  
+  public Lscala/reflect/AppliedType; copy(Lscala/reflect/Type; tpe, Lscala/collection/immutable/List; args) {
+    return (new (Lscala/reflect/AppliedType;::this(Lscala/reflect/Type;Lscala/collection/immutable/List;)V;)(tpe, args));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp21 = x$1;
+    Z; $15$;
+    if (temp21.<instanceof>(Lscala/reflect/AppliedType;))
+      {
+        Lscala/reflect/AppliedType; temp22 = temp21.<cast>(Lscala/reflect/AppliedType;);
+        Lscala/reflect/Type; temp23 = temp22.(Lscala/reflect/AppliedType;::tpe()Lscala/reflect/Type;)();
+        Lscala/collection/immutable/List; temp24 = temp22.(Lscala/reflect/AppliedType;::args()Lscala/collection/immutable/List;)();
+        Lscala/collection/immutable/List; args$1 = temp24;
+        Lscala/reflect/Type; tpe$1 = temp23;
+        Z; $16$;
+        if (this.(Lscala/reflect/AppliedType;::gd5$1(Lscala/reflect/Type;Lscala/collection/immutable/List;)Z;)(tpe$1, args$1))
+          {
+            $16$ = x$1.<cast>(Lscala/reflect/AppliedType;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $16$ = false;
+          }
+        $15$ = $16$;
+      }
+    else
+      {
+        $15$ = false;
+      }
+    return ((this == x$1) || $15$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "AppliedType";
+  }
+  
+  public I; productArity() {
+    return 2;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp25 = x$1;
+    I; $17$ = temp25;
+    Ljava/lang/Object; $18$;
+    switch ($17$) {
+      0: {
+        $18$ = this.(Lscala/reflect/AppliedType;::tpe()Lscala/reflect/Type;)();
+        break;
+      }
+      
+      1: {
+        $18$ = this.(Lscala/reflect/AppliedType;::args()Lscala/collection/immutable/List;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $18$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/reflect/AppliedType;);
+  }
+  
+  private final Z; gd5$1(Lscala/reflect/Type; x$1, Lscala/collection/immutable/List; x$2) {
+    return (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/reflect/AppliedType;::tpe()Lscala/reflect/Type;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$2, this.(Lscala/reflect/AppliedType;::args()Lscala/collection/immutable/List;)()));
+  }
+  
+  public this(Lscala/reflect/Type; tpe, Lscala/collection/immutable/List; args) {
+    this.(Lscala/reflect/Type;)tpe$u0020 = tpe;
+    this.(Lscala/collection/immutable/List;)args$u0020 = args;
+    (Lscala/reflect/Type;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

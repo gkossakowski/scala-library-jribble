@@ -1,0 +1,27 @@
+public abstract class Lscala/Proxy$class; {
+  
+  public static I; hashCode(Lscala/Proxy; $this) {
+    return this.(Lscala/runtime/ScalaRunTime$;::hash(Ljava/lang/Object;)I;)($this.(Lscala/Proxy;::self()Ljava/lang/Object;)());
+  }
+  
+  public static Z; equals(Lscala/Proxy; $this, Ljava/lang/Object; that) {
+    Z; $1$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(that, null))
+      {
+        $1$ = false;
+      }
+    else
+      {
+        $1$ = that.(Ljava/lang/Object;::equals(Ljava/lang/Object;)Z;)($this.(Lscala/Proxy;::self()Ljava/lang/Object;)());
+      }
+    return $1$;
+  }
+  
+  public static Ljava/lang/String; toString(Lscala/Proxy; $this) {
+    return $this.(Lscala/Proxy;::self()Ljava/lang/Object;)().(Ljava/lang/Object;::toString()Ljava/lang/String;)();
+  }
+  
+  public static V; $init$(Lscala/Proxy; $this) {
+    
+  }
+}

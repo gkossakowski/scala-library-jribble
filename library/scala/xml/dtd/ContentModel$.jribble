@@ -1,0 +1,338 @@
+public final class Lscala/xml/dtd/ContentModel$; extends Lscala/util/regexp/WordExp; implements Lscala/ScalaObject; {
+  public static Lscala/xml/dtd/ContentModel$; MODULE$ = new (Lscala/xml/dtd/ContentModel$;::this()V;)();
+  
+  public Z; isMixed(Lscala/xml/dtd/ContentModel; cm) {
+    return Lscala/PartialFunction$;.MODULE$.(Lscala/PartialFunction$;::cond(Ljava/lang/Object;Lscala/PartialFunction;)Z;)(cm, (new (Lscala/xml/dtd/ContentModel$$anonfun$isMixed$1;::this()V;)()));
+  }
+  
+  public Z; containsText(Lscala/xml/dtd/ContentModel; cm) {
+    return (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(cm, Lscala/xml/dtd/PCDATA$;.MODULE$) || this.(Lscala/xml/dtd/ContentModel$;::isMixed(Lscala/xml/dtd/ContentModel;)Z;)(cm));
+  }
+  
+  public Lscala/collection/immutable/Set; getLabels(Lscala/util/regexp/Base$RegExp; r) {
+    return this.(Lscala/xml/dtd/ContentModel$;::traverse$1(Lscala/util/regexp/Base$RegExp;)Lscala/collection/immutable/Set;)(r);
+  }
+  
+  public Ljava/lang/String; buildString(Lscala/util/regexp/Base$RegExp; r$3) {
+    return Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::sbToString(Lscala/Function1;)Ljava/lang/String;)((new (Lscala/xml/dtd/ContentModel$$anonfun$buildString$1;::this(Lscala/util/regexp/Base$RegExp;)V;)(r$3)));
+  }
+  
+  private V; buildString(Lscala/collection/Seq; rs, Lscala/collection/mutable/StringBuilder; sb$1, C; sep$1) {
+    this.(Lscala/xml/dtd/ContentModel$;::buildString(Lscala/util/regexp/Base$RegExp;Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(rs.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)().<cast>(Lscala/util/regexp/Base$RegExp;), sb$1);
+    rs.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/xml/dtd/ContentModel$$anonfun$buildString$2;::this(Lscala/collection/mutable/StringBuilder;C;)V;)(sb$1, sep$1)));
+    sb$1;
+  }
+  
+  public Lscala/collection/mutable/StringBuilder; buildString(Lscala/xml/dtd/ContentModel; c, Lscala/collection/mutable/StringBuilder; sb) {
+    Lscala/xml/dtd/ContentModel; temp25 = c;
+    Lscala/collection/mutable/StringBuilder; $1$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/xml/dtd/ANY$;.MODULE$, temp25))
+      {
+        $1$ = sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("ANY");
+      }
+    else
+      {
+        Lscala/collection/mutable/StringBuilder; $2$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/xml/dtd/EMPTY$;.MODULE$, temp25))
+          {
+            $2$ = sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("EMPTY");
+          }
+        else
+          {
+            Lscala/collection/mutable/StringBuilder; $3$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/xml/dtd/PCDATA$;.MODULE$, temp25))
+              {
+                $3$ = sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("(#PCDATA)");
+              }
+            else
+              {
+                Lscala/collection/mutable/StringBuilder; $4$;
+                if (temp25.<instanceof>(Lscala/xml/dtd/ELEMENTS;))
+                  {
+                    $4$ = Lscala/xml/dtd/ContentModel$;.MODULE$.(Lscala/xml/dtd/ContentModel$;::body$percent3$percent1()Lscala/collection/mutable/StringBuilder;)();
+                  }
+                else
+                  {
+                    Lscala/collection/mutable/StringBuilder; $5$;
+                    if (temp25.<instanceof>(Lscala/xml/dtd/MIXED;))
+                      {
+                        $5$ = Lscala/xml/dtd/ContentModel$;.MODULE$.(Lscala/xml/dtd/ContentModel$;::body$percent3$percent1()Lscala/collection/mutable/StringBuilder;)();
+                      }
+                    else
+                      {
+                        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp25));
+                      }
+                    $4$ = $5$;
+                  }
+                $3$ = $4$;
+              }
+            $2$ = $3$;
+          }
+        $1$ = $2$;
+      }
+    return $1$;
+  }
+  
+  public Lscala/collection/mutable/StringBuilder; buildString(Lscala/util/regexp/Base$RegExp; r, Lscala/collection/mutable/StringBuilder; sb) {
+    Lscala/util/regexp/Base$RegExp; temp33 = r;
+    Lscala/collection/mutable/StringBuilder; $6$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp33, this.(Lscala/util/regexp/Base;::Eps()Lscala/util/regexp/Base$Eps$;)()))
+      {
+        $6$ = sb;
+      }
+    else
+      {
+        Lscala/collection/mutable/StringBuilder; $7$;
+        failCont$percent1: while(true) {
+          Lscala/collection/mutable/StringBuilder; $8$;
+          if (temp33.<instanceof>(Lscala/util/regexp/Base$Sequ;))
+            {
+              Lscala/util/regexp/Base$Sequ; temp34 = temp33.<cast>(Lscala/util/regexp/Base$Sequ;);
+              Lscala/Some; temp35 = this.(Lscala/util/regexp/Base;::Sequ()Lscala/util/regexp/Base$Sequ$;)().(Lscala/util/regexp/Base$Sequ$;::unapplySeq(Lscala/util/regexp/Base$Sequ;)Lscala/Some;)(temp34);
+              Lscala/collection/mutable/StringBuilder; $9$;
+              if (true)
+                {
+                  Lscala/collection/Seq; temp36 = temp35.(Lscala/Some;::get()Ljava/lang/Object;)().<cast>(Lscala/collection/Seq;);
+                  Z; $10$;
+                  if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp36, null))
+                    {
+                      $10$ = false;
+                    }
+                  else
+                    {
+                      $10$ = (temp36.(Lscala/collection/SeqLike;::lengthCompare(I;)I;)(0) >= 0);
+                    }
+                  Lscala/collection/mutable/StringBuilder; $11$;
+                  if ($10$)
+                    {
+                      sb.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('(');
+                      this.(Lscala/xml/dtd/ContentModel$;::buildString(Lscala/collection/Seq;Lscala/collection/mutable/StringBuilder;C;)V;)(temp36, sb, ',');
+                      $11$ = sb.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(')');
+                    }
+                  else
+                    {
+                      throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp33));
+                    }
+                  $9$ = $11$;
+                }
+              else
+                {
+                  throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp33));
+                }
+              $8$ = $9$;
+            }
+          else
+            {
+              Lscala/collection/mutable/StringBuilder; $12$;
+              if (temp33.<instanceof>(Lscala/util/regexp/Base$Alt;))
+                {
+                  Lscala/util/regexp/Base$Alt; temp38 = temp33.<cast>(Lscala/util/regexp/Base$Alt;);
+                  Lscala/Some; temp39 = this.(Lscala/util/regexp/Base;::Alt()Lscala/util/regexp/Base$Alt$;)().(Lscala/util/regexp/Base$Alt$;::unapplySeq(Lscala/util/regexp/Base$Alt;)Lscala/Some;)(temp38);
+                  Lscala/collection/mutable/StringBuilder; $13$;
+                  if (true)
+                    {
+                      Lscala/collection/Seq; temp40 = temp39.(Lscala/Some;::get()Ljava/lang/Object;)().<cast>(Lscala/collection/Seq;);
+                      Z; $14$;
+                      if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp40, null))
+                        {
+                          $14$ = false;
+                        }
+                      else
+                        {
+                          $14$ = (temp40.(Lscala/collection/SeqLike;::lengthCompare(I;)I;)(0) >= 0);
+                        }
+                      Lscala/collection/mutable/StringBuilder; $15$;
+                      if ($14$)
+                        {
+                          sb.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('(');
+                          this.(Lscala/xml/dtd/ContentModel$;::buildString(Lscala/collection/Seq;Lscala/collection/mutable/StringBuilder;C;)V;)(temp40, sb, '|');
+                          $15$ = sb.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(')');
+                        }
+                      else
+                        {
+                          throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp33));
+                        }
+                      $13$ = $15$;
+                    }
+                  else
+                    {
+                      throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp33));
+                    }
+                  $12$ = $13$;
+                }
+              else
+                {
+                  Lscala/collection/mutable/StringBuilder; $16$;
+                  if (temp33.<instanceof>(Lscala/util/regexp/Base$Star;))
+                    {
+                      Lscala/util/regexp/Base$Star; temp42 = temp33.<cast>(Lscala/util/regexp/Base$Star;);
+                      Lscala/util/regexp/Base$RegExp; temp43 = temp42.(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)();
+                      Lscala/collection/mutable/StringBuilder; $17$;
+                      if ((temp43 != null))
+                        {
+                          sb.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('(');
+                          this.(Lscala/xml/dtd/ContentModel$;::buildString(Lscala/util/regexp/Base$RegExp;Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(temp43, sb);
+                          $17$ = sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(")*");
+                        }
+                      else
+                        {
+                          throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp33));
+                        }
+                      $16$ = $17$;
+                    }
+                  else
+                    {
+                      Lscala/collection/mutable/StringBuilder; $18$;
+                      if (temp33.<instanceof>(Lscala/util/regexp/WordExp$Letter;))
+                        {
+                          Lscala/util/regexp/WordExp$Letter; temp44 = temp33.<cast>(Lscala/util/regexp/WordExp$Letter;);
+                          Lscala/xml/dtd/ContentModel$ElemName; temp45 = temp44.(Lscala/util/regexp/WordExp$Letter;::a()Lscala/util/regexp/WordExp$Label;)().<cast>(Lscala/xml/dtd/ContentModel$ElemName;);
+                          Lscala/collection/mutable/StringBuilder; $19$;
+                          if ((temp45 != null))
+                            {
+                              $19$ = sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(temp45.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)());
+                            }
+                          else
+                            {
+                              throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp33));
+                            }
+                          $18$ = $19$;
+                        }
+                      else
+                        {
+                          throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp33));
+                        }
+                      $16$ = $18$;
+                    }
+                  $12$ = $16$;
+                }
+              $8$ = $12$;
+            }
+          $7$ = $8$;
+          break;
+        }
+        $6$ = $7$;
+      }
+    return $6$;
+  }
+  
+  public final Lscala/collection/immutable/Set; traverse$1(Lscala/util/regexp/Base$RegExp; r) {
+    Lscala/util/regexp/Base$RegExp; temp11 = r;
+    Lscala/collection/immutable/Set; $20$;
+    if (temp11.<instanceof>(Lscala/util/regexp/WordExp$Letter;))
+      {
+        Lscala/util/regexp/WordExp$Letter; temp12 = temp11.<cast>(Lscala/util/regexp/WordExp$Letter;);
+        Lscala/xml/dtd/ContentModel$ElemName; temp13 = temp12.(Lscala/util/regexp/WordExp$Letter;::a()Lscala/util/regexp/WordExp$Label;)().<cast>(Lscala/xml/dtd/ContentModel$ElemName;);
+        Lscala/collection/immutable/Set; $21$;
+        if ((temp13 != null))
+          {
+            $21$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::Set()Lscala/collection/immutable/Set$;)().(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/String;>{temp13.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)()}.<cast>(Ljava/lang/Object;[))).<cast>(Lscala/collection/immutable/Set;);
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp11));
+          }
+        $20$ = $21$;
+      }
+    else
+      {
+        Lscala/collection/immutable/Set; $22$;
+        if (temp11.<instanceof>(Lscala/util/regexp/Base$Star;))
+          {
+            $22$ = this.(Lscala/xml/dtd/ContentModel$;::traverse$1(Lscala/util/regexp/Base$RegExp;)Lscala/collection/immutable/Set;)(temp11.<cast>(Lscala/util/regexp/Base$Star;).(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)());
+          }
+        else
+          {
+            Lscala/collection/immutable/Set; $23$;
+            if (temp11.<instanceof>(Lscala/util/regexp/Base$Sequ;))
+              {
+                Lscala/util/regexp/Base$Sequ; temp17 = temp11.<cast>(Lscala/util/regexp/Base$Sequ;);
+                Lscala/Some; temp18 = this.(Lscala/util/regexp/Base;::Sequ()Lscala/util/regexp/Base$Sequ$;)().(Lscala/util/regexp/Base$Sequ$;::unapplySeq(Lscala/util/regexp/Base$Sequ;)Lscala/Some;)(temp17);
+                Lscala/collection/immutable/Set; $24$;
+                if (true)
+                  {
+                    Lscala/collection/Seq; temp19 = temp18.(Lscala/Some;::get()Ljava/lang/Object;)().<cast>(Lscala/collection/Seq;);
+                    Z; $25$;
+                    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp19, null))
+                      {
+                        $25$ = false;
+                      }
+                    else
+                      {
+                        $25$ = (temp19.(Lscala/collection/SeqLike;::lengthCompare(I;)I;)(0) >= 0);
+                      }
+                    Lscala/collection/immutable/Set; $26$;
+                    if ($25$)
+                      {
+                        $26$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::Set()Lscala/collection/immutable/Set$;)().(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(temp19.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/xml/dtd/ContentModel$$anonfun$traverse$1$1;::this()V;)()), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/generic/GenericTraversableTemplate;).(Lscala/collection/generic/GenericTraversableTemplate;::flatten(Lscala/Function1;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::conforms()Lscala/Predef$$less$colon$less;)()).<cast>(Lscala/collection/Seq;)).<cast>(Lscala/collection/immutable/Set;);
+                      }
+                    else
+                      {
+                        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp11));
+                      }
+                    $24$ = $26$;
+                  }
+                else
+                  {
+                    throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp11));
+                  }
+                $23$ = $24$;
+              }
+            else
+              {
+                Lscala/collection/immutable/Set; $27$;
+                if (temp11.<instanceof>(Lscala/util/regexp/Base$Alt;))
+                  {
+                    Lscala/util/regexp/Base$Alt; temp21 = temp11.<cast>(Lscala/util/regexp/Base$Alt;);
+                    Lscala/Some; temp22 = this.(Lscala/util/regexp/Base;::Alt()Lscala/util/regexp/Base$Alt$;)().(Lscala/util/regexp/Base$Alt$;::unapplySeq(Lscala/util/regexp/Base$Alt;)Lscala/Some;)(temp21);
+                    Lscala/collection/immutable/Set; $28$;
+                    if (true)
+                      {
+                        Lscala/collection/Seq; temp23 = temp22.(Lscala/Some;::get()Ljava/lang/Object;)().<cast>(Lscala/collection/Seq;);
+                        Z; $29$;
+                        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp23, null))
+                          {
+                            $29$ = false;
+                          }
+                        else
+                          {
+                            $29$ = (temp23.(Lscala/collection/SeqLike;::lengthCompare(I;)I;)(0) >= 0);
+                          }
+                        Lscala/collection/immutable/Set; $30$;
+                        if ($29$)
+                          {
+                            $30$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::Set()Lscala/collection/immutable/Set$;)().(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(temp23.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/xml/dtd/ContentModel$$anonfun$traverse$1$2;::this()V;)()), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/generic/GenericTraversableTemplate;).(Lscala/collection/generic/GenericTraversableTemplate;::flatten(Lscala/Function1;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::conforms()Lscala/Predef$$less$colon$less;)()).<cast>(Lscala/collection/Seq;)).<cast>(Lscala/collection/immutable/Set;);
+                          }
+                        else
+                          {
+                            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp11));
+                          }
+                        $28$ = $30$;
+                      }
+                    else
+                      {
+                        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp11));
+                      }
+                    $27$ = $28$;
+                  }
+                else
+                  {
+                    throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp11));
+                  }
+                $23$ = $27$;
+              }
+            $22$ = $23$;
+          }
+        $20$ = $22$;
+      }
+    return $20$;
+  }
+  
+  public this() {
+    (Lscala/util/regexp/WordExp;::super()V;)();
+  }
+  
+  private final Lscala/collection/mutable/StringBuilder; body$percent3$percent1() {
+    return c.(Lscala/xml/dtd/ContentModel;::buildString(Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(sb);
+  }
+}

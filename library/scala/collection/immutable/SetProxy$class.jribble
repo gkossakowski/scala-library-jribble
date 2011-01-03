@@ -1,0 +1,26 @@
+public abstract class Lscala/collection/immutable/SetProxy$class; {
+  
+  public static Lscala/collection/immutable/SetProxy; repr(Lscala/collection/immutable/SetProxy; $this) {
+    return $this;
+  }
+  
+  private static Lscala/collection/immutable/SetProxy; newProxy(Lscala/collection/immutable/SetProxy; $this, Lscala/collection/immutable/Set; newSelf$1) {
+    return (new (Lscala/collection/immutable/SetProxy$$anon$1;::this(Lscala/collection/immutable/SetProxy;Lscala/collection/immutable/Set;)V;)($this, newSelf$1));
+  }
+  
+  public static Lscala/collection/immutable/SetProxy; empty(Lscala/collection/immutable/SetProxy; $this) {
+    return Lscala/collection/immutable/SetProxy$class;.(Lscala/collection/immutable/SetProxy$class;::newProxy(Lscala/collection/immutable/SetProxy;Lscala/collection/immutable/Set;)Lscala/collection/immutable/SetProxy;)($this, $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/generic/GenericSetTemplate;).(Lscala/collection/generic/GenericSetTemplate;::empty()Lscala/collection/Set;)().<cast>(Lscala/collection/immutable/Set;));
+  }
+  
+  public static Lscala/collection/immutable/SetProxy; $plus(Lscala/collection/immutable/SetProxy; $this, Ljava/lang/Object; elem) {
+    return Lscala/collection/immutable/SetProxy$class;.(Lscala/collection/immutable/SetProxy$class;::newProxy(Lscala/collection/immutable/SetProxy;Lscala/collection/immutable/Set;)Lscala/collection/immutable/SetProxy;)($this, $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/SetLike;).(Lscala/collection/SetLike;::$plus(Ljava/lang/Object;)Lscala/collection/Set;)(elem).<cast>(Lscala/collection/immutable/Set;));
+  }
+  
+  public static Lscala/collection/immutable/SetProxy; $minus(Lscala/collection/immutable/SetProxy; $this, Ljava/lang/Object; elem) {
+    return Lscala/collection/immutable/SetProxy$class;.(Lscala/collection/immutable/SetProxy$class;::newProxy(Lscala/collection/immutable/SetProxy;Lscala/collection/immutable/Set;)Lscala/collection/immutable/SetProxy;)($this, $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/SetLike;).(Lscala/collection/SetLike;::$minus(Ljava/lang/Object;)Lscala/collection/Set;)(elem).<cast>(Lscala/collection/immutable/Set;));
+  }
+  
+  public static V; $init$(Lscala/collection/immutable/SetProxy; $this) {
+    
+  }
+}

@@ -1,0 +1,15 @@
+public final class Lscala/Predef$Pair$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/Predef$Pair$; MODULE$ = new (Lscala/Predef$Pair$;::this()V;)();
+  
+  public Lscala/Tuple2; apply(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x, y));
+  }
+  
+  public Lscala/Option; unapply(Lscala/Tuple2; x) {
+    return (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

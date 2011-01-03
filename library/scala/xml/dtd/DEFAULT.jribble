@@ -1,0 +1,129 @@
+public class Lscala/xml/dtd/DEFAULT; extends Lscala/xml/dtd/DefaultDecl; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Ljava/lang/String; copy$default$2() {
+    return this.(Lscala/xml/dtd/DEFAULT;::attValue()Ljava/lang/String;)();
+  }
+  
+  public Z; copy$default$1() {
+    return this.(Lscala/xml/dtd/DEFAULT;::fixed()Z;)();
+  }
+  
+  private Z; fixed$u0020;
+  
+  public Z; fixed() {
+    return this.(Z;)fixed$u0020;
+  }
+  
+  private Ljava/lang/String; attValue$u0020;
+  
+  public Ljava/lang/String; attValue() {
+    return this.(Ljava/lang/String;)attValue$u0020;
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::sbToString(Lscala/Function1;)Ljava/lang/String;)((new (Lscala/xml/dtd/DEFAULT$$anonfun$toString$2;::this(Lscala/xml/dtd/DEFAULT;)V;)(this)));
+  }
+  
+  public Lscala/collection/mutable/StringBuilder; buildString(Lscala/collection/mutable/StringBuilder; sb) {
+    if (this.(Lscala/xml/dtd/DEFAULT;::fixed()Z;)())
+      {
+        sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("#FIXED ");
+      }
+    else
+      {
+        
+      }
+    return Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::appendEscapedQuoted(Ljava/lang/String;Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(this.(Lscala/xml/dtd/DEFAULT;::attValue()Ljava/lang/String;)(), sb);
+  }
+  
+  public Lscala/xml/dtd/DEFAULT; copy(Z; fixed, Ljava/lang/String; attValue) {
+    return (new (Lscala/xml/dtd/DEFAULT;::this(Z;Ljava/lang/String;)V;)(fixed, attValue));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp52 = x$1;
+    Z; $38$;
+    if (temp52.<instanceof>(Lscala/xml/dtd/DEFAULT;))
+      {
+        Lscala/xml/dtd/DEFAULT; temp53 = temp52.<cast>(Lscala/xml/dtd/DEFAULT;);
+        Z; temp54 = temp53.(Lscala/xml/dtd/DEFAULT;::fixed()Z;)();
+        Ljava/lang/String; temp55 = temp53.(Lscala/xml/dtd/DEFAULT;::attValue()Ljava/lang/String;)();
+        Ljava/lang/String; attValue$1 = temp55;
+        Z; fixed$1 = temp54;
+        Z; $39$;
+        if (this.(Lscala/xml/dtd/DEFAULT;::gd11$1(Z;Ljava/lang/String;)Z;)(fixed$1, attValue$1))
+          {
+            $39$ = x$1.<cast>(Lscala/xml/dtd/DEFAULT;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $39$ = false;
+          }
+        $38$ = $39$;
+      }
+    else
+      {
+        $38$ = false;
+      }
+    return ((this == x$1) || $38$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "DEFAULT";
+  }
+  
+  public I; productArity() {
+    return 2;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp56 = x$1;
+    I; $40$ = temp56;
+    Ljava/lang/Object; $41$;
+    switch ($40$) {
+      0: {
+        $41$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/xml/dtd/DEFAULT;::fixed()Z;)());
+        break;
+      }
+      
+      1: {
+        $41$ = this.(Lscala/xml/dtd/DEFAULT;::attValue()Ljava/lang/String;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $41$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/xml/dtd/DEFAULT;);
+  }
+  
+  private final Z; gd11$1(Z; x$1, Ljava/lang/String; x$2) {
+    return ((x$1 == this.(Lscala/xml/dtd/DEFAULT;::fixed()Z;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$2, this.(Lscala/xml/dtd/DEFAULT;::attValue()Ljava/lang/String;)()));
+  }
+  
+  public this(Z; fixed, Ljava/lang/String; attValue) {
+    this.(Z;)fixed$u0020 = fixed;
+    this.(Ljava/lang/String;)attValue$u0020 = attValue;
+    (Lscala/xml/dtd/DefaultDecl;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

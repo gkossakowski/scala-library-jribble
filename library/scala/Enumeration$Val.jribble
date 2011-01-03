@@ -1,0 +1,77 @@
+public class Lscala/Enumeration$Val; extends Lscala/Enumeration$Value; implements Lscala/ScalaObject; {
+  
+  public I; scala$Enumeration$Val$$i;
+  
+  private Ljava/lang/String; name;
+  
+  public this(Lscala/Enumeration; $outer, I; i$1) {
+    (Lscala/Enumeration$Val;::this(Lscala/Enumeration;I;Ljava/lang/String;)V;)($outer, i$1, $outer.(Lscala/Enumeration;::scala$Enumeration$$nextNameOrElse(Lscala/Function0;)Ljava/lang/String;)((new (Lscala/Enumeration$Val$$anonfun$$init$$1;::this(Lscala/Enumeration;I;)V;)($outer, i$1))));
+  }
+  
+  public this(Lscala/Enumeration; $outer, Ljava/lang/String; name) {
+    (Lscala/Enumeration$Val;::this(Lscala/Enumeration;I;Ljava/lang/String;)V;)($outer, $outer.(Lscala/Enumeration;::nextId()I;)(), name);
+  }
+  
+  public this(Lscala/Enumeration; $outer) {
+    (Lscala/Enumeration$Val;::this(Lscala/Enumeration;I;)V;)($outer, $outer.(Lscala/Enumeration;::nextId()I;)());
+  }
+  
+  public I; id() {
+    return this.(I;)scala$Enumeration$Val$$i;
+  }
+  
+  public Ljava/lang/String; toString() {
+    Ljava/lang/String; $3$;
+    if ((this.(Ljava/lang/String;)name != null))
+      {
+        $3$ = this.(Ljava/lang/String;)name;
+      }
+    else
+      {
+        Ljava/lang/String; exceptionResult1;
+        try {
+          exceptionResult1 = this.(Lscala/Enumeration$Val;::scala$Enumeration$Val$$$outer()Lscala/Enumeration;)().(Lscala/Enumeration;::scala$Enumeration$$nameOf(I;)Ljava/lang/String;)(this.(I;)scala$Enumeration$Val$$i);
+        } catch(Ljava/util/NoSuchElementException; $WILDCARD) {
+          exceptionResult1 = (("<Invalid enum: no field for #" + Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(I;)scala$Enumeration$Val$$i)) + ">");
+        }
+        $3$ = exceptionResult1;
+      }
+    return $3$;
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    Lscala/Enumeration; enum = this.(Lscala/Enumeration$Val;::scala$Enumeration$Val$$$outer()Lscala/Enumeration;)().(Lscala/Enumeration;::readResolve()Ljava/lang/Object;)().<cast>(Lscala/Enumeration;);
+    Ljava/lang/Object; $4$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(enum.(Lscala/Enumeration;::scala$Enumeration$$vmap()Lscala/collection/mutable/Map;)(), null))
+      {
+        $4$ = this;
+      }
+    else
+      {
+        $4$ = enum.(Lscala/Enumeration;::scala$Enumeration$$vmap()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(I;)scala$Enumeration$Val$$i));
+      }
+    return $4$;
+  }
+  
+  public Lscala/Enumeration; scala$Enumeration$Val$$$outer() {
+    return this.(Lscala/Enumeration;)$outer$u0020;
+  }
+  
+  public this(Lscala/Enumeration; $outer, I; i, Ljava/lang/String; name) {
+    this.(I;)scala$Enumeration$Val$$i = i;
+    this.(Ljava/lang/String;)name = name;
+    (Lscala/Enumeration$Value;::super(Lscala/Enumeration;)V;)($outer);
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;Lscala/Function0;)V;)(!($outer.(Lscala/Enumeration;::scala$Enumeration$$vmap()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::isDefinedAt(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i))), (new (Lscala/Enumeration$Val$$anonfun$2;::this(Lscala/Enumeration$Val;)V;)(this)));
+    $outer.(Lscala/Enumeration;::scala$Enumeration$$vmap()Lscala/collection/mutable/Map;)().(Lscala/collection/mutable/MapLike;::update(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i), this);
+    $outer.(Lscala/Enumeration;::scala$Enumeration$$vsetDefined_$eq(Z;)V;)(false);
+    $outer.(Lscala/Enumeration;::nextId_$eq(I;)V;)((i + 1));
+    if (($outer.(Lscala/Enumeration;::nextId()I;)() > $outer.(Lscala/Enumeration;::scala$Enumeration$$topId()I;)()))
+      {
+        $outer.(Lscala/Enumeration;::scala$Enumeration$$topId_$eq(I;)V;)($outer.(Lscala/Enumeration;::nextId()I;)());
+      }
+    else
+      {
+        
+      }
+  }
+}

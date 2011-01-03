@@ -1,0 +1,20 @@
+public final class Lscala/collection/immutable/Stream$$hash$colon$colon$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/Stream$$hash$colon$colon$; MODULE$ = new (Lscala/collection/immutable/Stream$$hash$colon$colon$;::this()V;)();
+  
+  public Lscala/Option; unapply(Lscala/collection/immutable/Stream; xs) {
+    Lscala/Option; $28$;
+    if (xs.(Lscala/collection/IterableLike;::isEmpty()Z;)())
+      {
+        $28$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $28$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(xs.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)(), xs.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)()))));
+      }
+    return $28$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

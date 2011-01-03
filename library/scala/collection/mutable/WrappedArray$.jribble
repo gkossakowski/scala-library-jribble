@@ -1,0 +1,110 @@
+public final class Lscala/collection/mutable/WrappedArray$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/mutable/WrappedArray$; MODULE$ = new (Lscala/collection/mutable/WrappedArray$;::this()V;)();
+  
+  public Lscala/collection/mutable/WrappedArray; make(Ljava/lang/Object; x) {
+    Ljava/lang/Object; temp1 = x;
+    Lscala/collection/mutable/WrappedArray; $2$;
+    if (temp1.<instanceof>(Ljava/lang/Object;[))
+      {
+        $2$ = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(temp1.<cast>(Ljava/lang/Object;[));
+      }
+    else
+      {
+        Lscala/collection/mutable/WrappedArray; $3$;
+        if (temp1.<instanceof>(I;[))
+          {
+            $3$ = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapIntArray(I;[)Lscala/collection/mutable/WrappedArray;)(temp1.<cast>(I;[));
+          }
+        else
+          {
+            Lscala/collection/mutable/WrappedArray; $4$;
+            if (temp1.<instanceof>(D;[))
+              {
+                $4$ = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapDoubleArray(D;[)Lscala/collection/mutable/WrappedArray;)(temp1.<cast>(D;[));
+              }
+            else
+              {
+                Lscala/collection/mutable/WrappedArray; $5$;
+                if (temp1.<instanceof>(J;[))
+                  {
+                    $5$ = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapLongArray(J;[)Lscala/collection/mutable/WrappedArray;)(temp1.<cast>(J;[));
+                  }
+                else
+                  {
+                    Lscala/collection/mutable/WrappedArray; $6$;
+                    if (temp1.<instanceof>(F;[))
+                      {
+                        $6$ = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapFloatArray(F;[)Lscala/collection/mutable/WrappedArray;)(temp1.<cast>(F;[));
+                      }
+                    else
+                      {
+                        Lscala/collection/mutable/WrappedArray; $7$;
+                        if (temp1.<instanceof>(C;[))
+                          {
+                            $7$ = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapCharArray(C;[)Lscala/collection/mutable/WrappedArray;)(temp1.<cast>(C;[));
+                          }
+                        else
+                          {
+                            Lscala/collection/mutable/WrappedArray; $8$;
+                            if (temp1.<instanceof>(B;[))
+                              {
+                                $8$ = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapByteArray(B;[)Lscala/collection/mutable/WrappedArray;)(temp1.<cast>(B;[));
+                              }
+                            else
+                              {
+                                Lscala/collection/mutable/WrappedArray; $9$;
+                                if (temp1.<instanceof>(S;[))
+                                  {
+                                    $9$ = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapShortArray(S;[)Lscala/collection/mutable/WrappedArray;)(temp1.<cast>(S;[));
+                                  }
+                                else
+                                  {
+                                    Lscala/collection/mutable/WrappedArray; $10$;
+                                    if (temp1.<instanceof>(Z;[))
+                                      {
+                                        $10$ = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapBooleanArray(Z;[)Lscala/collection/mutable/WrappedArray;)(temp1.<cast>(Z;[));
+                                      }
+                                    else
+                                      {
+                                        Lscala/collection/mutable/WrappedArray; $11$;
+                                        if (temp1.<instanceof>(Lscala/runtime/BoxedUnit;[))
+                                          {
+                                            $11$ = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapUnitArray(Lscala/runtime/BoxedUnit;[)Lscala/collection/mutable/WrappedArray;)(temp1.<cast>(Lscala/runtime/BoxedUnit;[));
+                                          }
+                                        else
+                                          {
+                                            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp1));
+                                          }
+                                        $10$ = $11$;
+                                      }
+                                    $9$ = $10$;
+                                  }
+                                $8$ = $9$;
+                              }
+                            $7$ = $8$;
+                          }
+                        $6$ = $7$;
+                      }
+                    $5$ = $6$;
+                  }
+                $4$ = $5$;
+              }
+            $3$ = $4$;
+          }
+        $2$ = $3$;
+      }
+    return $2$;
+  }
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom(Lscala/reflect/ClassManifest; m$1) {
+    return (new (Lscala/collection/mutable/WrappedArray$$anon$1;::this(Lscala/reflect/ClassManifest;)V;)(m$1));
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return (new (Lscala/collection/mutable/ArrayBuffer;::this()V;)());
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

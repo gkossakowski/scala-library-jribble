@@ -1,0 +1,80 @@
+public class Lscala/reflect/generic/Trees$PackageDef; extends Lscala/reflect/generic/Trees$MemberDef; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/immutable/List; copy$default$2() {
+    return this.(Lscala/reflect/generic/Trees$PackageDef;::stats()Lscala/collection/immutable/List;)();
+  }
+  
+  public Lscala/reflect/generic/Trees$RefTree; copy$default$1() {
+    return this.(Lscala/reflect/generic/Trees$PackageDef;::pid()Lscala/reflect/generic/Trees$RefTree;)();
+  }
+  
+  private Lscala/reflect/generic/Trees$RefTree; pid$u0020;
+  
+  public Lscala/reflect/generic/Trees$RefTree; pid() {
+    return this.(Lscala/reflect/generic/Trees$RefTree;)pid$u0020;
+  }
+  
+  private Lscala/collection/immutable/List; stats$u0020;
+  
+  public Lscala/collection/immutable/List; stats() {
+    return this.(Lscala/collection/immutable/List;)stats$u0020;
+  }
+  
+  public Ljava/lang/Object; name() {
+    return this.(Lscala/reflect/generic/Trees$PackageDef;::pid()Lscala/reflect/generic/Trees$RefTree;)().(Lscala/reflect/generic/Trees$RefTree;::name()Ljava/lang/Object;)();
+  }
+  
+  public Lscala/reflect/generic/Trees$Modifiers; mods() {
+    return this.(Lscala/reflect/generic/Trees$PackageDef;::scala$reflect$generic$Trees$PackageDef$$$outer()Lscala/reflect/generic/Universe;)().(Lscala/reflect/generic/Trees;::NoMods()Lscala/reflect/generic/Trees$Modifiers;)();
+  }
+  
+  public Lscala/reflect/generic/Trees$PackageDef; copy(Lscala/reflect/generic/Trees$RefTree; pid, Lscala/collection/immutable/List; stats) {
+    return (new (Lscala/reflect/generic/Trees$PackageDef;::this(Lscala/reflect/generic/Universe;Lscala/reflect/generic/Trees$RefTree;Lscala/collection/immutable/List;)V;)(this.(Lscala/reflect/generic/Trees$PackageDef;::scala$reflect$generic$Trees$PackageDef$$$outer()Lscala/reflect/generic/Universe;)(), pid, stats));
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "PackageDef";
+  }
+  
+  public I; productArity() {
+    return 2;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp44 = x$1;
+    I; $22$ = temp44;
+    Ljava/lang/Object; $23$;
+    switch ($22$) {
+      0: {
+        $23$ = this.(Lscala/reflect/generic/Trees$PackageDef;::pid()Lscala/reflect/generic/Trees$RefTree;)();
+        break;
+      }
+      
+      1: {
+        $23$ = this.(Lscala/reflect/generic/Trees$PackageDef;::stats()Lscala/collection/immutable/List;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $23$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/reflect/generic/Trees$PackageDef;);
+  }
+  
+  public Lscala/reflect/generic/Universe; scala$reflect$generic$Trees$PackageDef$$$outer() {
+    return this.(Lscala/reflect/generic/Universe;)$outer$u0020;
+  }
+  
+  public this(Lscala/reflect/generic/Universe; $outer, Lscala/reflect/generic/Trees$RefTree; pid, Lscala/collection/immutable/List; stats) {
+    this.(Lscala/reflect/generic/Trees$RefTree;)pid$u0020 = pid;
+    this.(Lscala/collection/immutable/List;)stats$u0020 = stats;
+    (Lscala/reflect/generic/Trees$MemberDef;::super(Lscala/reflect/generic/Universe;)V;)($outer);
+  }
+}

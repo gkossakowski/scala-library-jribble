@@ -1,0 +1,140 @@
+public final class Lscala/reflect/Manifest$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/reflect/Manifest$; MODULE$ = new (Lscala/reflect/Manifest$;::this()V;)();
+  
+  private Lscala/reflect/AnyValManifest; Byte$u0020;
+  
+  public Lscala/reflect/AnyValManifest; Byte() {
+    return this.(Lscala/reflect/AnyValManifest;)Byte$u0020;
+  }
+  
+  private Lscala/reflect/AnyValManifest; Short$u0020;
+  
+  public Lscala/reflect/AnyValManifest; Short() {
+    return this.(Lscala/reflect/AnyValManifest;)Short$u0020;
+  }
+  
+  private Lscala/reflect/AnyValManifest; Char$u0020;
+  
+  public Lscala/reflect/AnyValManifest; Char() {
+    return this.(Lscala/reflect/AnyValManifest;)Char$u0020;
+  }
+  
+  private Lscala/reflect/AnyValManifest; Int$u0020;
+  
+  public Lscala/reflect/AnyValManifest; Int() {
+    return this.(Lscala/reflect/AnyValManifest;)Int$u0020;
+  }
+  
+  private Lscala/reflect/AnyValManifest; Long$u0020;
+  
+  public Lscala/reflect/AnyValManifest; Long() {
+    return this.(Lscala/reflect/AnyValManifest;)Long$u0020;
+  }
+  
+  private Lscala/reflect/AnyValManifest; Float$u0020;
+  
+  public Lscala/reflect/AnyValManifest; Float() {
+    return this.(Lscala/reflect/AnyValManifest;)Float$u0020;
+  }
+  
+  private Lscala/reflect/AnyValManifest; Double$u0020;
+  
+  public Lscala/reflect/AnyValManifest; Double() {
+    return this.(Lscala/reflect/AnyValManifest;)Double$u0020;
+  }
+  
+  private Lscala/reflect/AnyValManifest; Boolean$u0020;
+  
+  public Lscala/reflect/AnyValManifest; Boolean() {
+    return this.(Lscala/reflect/AnyValManifest;)Boolean$u0020;
+  }
+  
+  private Lscala/reflect/AnyValManifest; Unit$u0020;
+  
+  public Lscala/reflect/AnyValManifest; Unit() {
+    return this.(Lscala/reflect/AnyValManifest;)Unit$u0020;
+  }
+  
+  private Lscala/reflect/Manifest; Any$u0020;
+  
+  public Lscala/reflect/Manifest; Any() {
+    return this.(Lscala/reflect/Manifest;)Any$u0020;
+  }
+  
+  private Lscala/reflect/Manifest; Object$u0020;
+  
+  public Lscala/reflect/Manifest; Object() {
+    return this.(Lscala/reflect/Manifest;)Object$u0020;
+  }
+  
+  private Lscala/reflect/Manifest; AnyVal$u0020;
+  
+  public Lscala/reflect/Manifest; AnyVal() {
+    return this.(Lscala/reflect/Manifest;)AnyVal$u0020;
+  }
+  
+  private Lscala/reflect/Manifest; Null$u0020;
+  
+  public Lscala/reflect/Manifest; Null() {
+    return this.(Lscala/reflect/Manifest;)Null$u0020;
+  }
+  
+  private Lscala/reflect/Manifest; Nothing$u0020;
+  
+  public Lscala/reflect/Manifest; Nothing() {
+    return this.(Lscala/reflect/Manifest;)Nothing$u0020;
+  }
+  
+  public Lscala/reflect/Manifest; singleType(Ljava/lang/Object; value$1) {
+    return (new (Lscala/reflect/Manifest$$anon$15;::this(Ljava/lang/Object;)V;)(value$1));
+  }
+  
+  public Lscala/reflect/Manifest; classType(Ljava/lang/Class; clazz) {
+    return (new (Lscala/reflect/Manifest$ClassTypeManifest;::this(Lscala/Option;Ljava/lang/Class;Lscala/collection/immutable/List;)V;)(Lscala/None$;.MODULE$, clazz, Lscala/collection/immutable/Nil$;.MODULE$));
+  }
+  
+  public Lscala/reflect/Manifest; classType(Ljava/lang/Class; clazz, Lscala/reflect/Manifest; arg1, Lscala/collection/Seq; args) {
+    Lscala/None$; $1$ = Lscala/None$;.MODULE$;
+    Ljava/lang/Class; $2$ = clazz;
+    Lscala/reflect/Manifest; x$1 = arg1;
+    return (new (Lscala/reflect/Manifest$ClassTypeManifest;::this(Lscala/Option;Ljava/lang/Class;Lscala/collection/immutable/List;)V;)($1$, $2$, args.(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)().(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$1)));
+  }
+  
+  public Lscala/reflect/Manifest; classType(Lscala/reflect/Manifest; prefix, Ljava/lang/Class; clazz, Lscala/collection/Seq; args) {
+    return (new (Lscala/reflect/Manifest$ClassTypeManifest;::this(Lscala/Option;Ljava/lang/Class;Lscala/collection/immutable/List;)V;)((new (Lscala/Some;::this(Ljava/lang/Object;)V;)(prefix)), clazz, args.(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)()));
+  }
+  
+  public Lscala/reflect/Manifest; arrayType(Lscala/reflect/Manifest; arg) {
+    return arg.(Lscala/reflect/Manifest;::arrayManifest()Lscala/reflect/Manifest;)();
+  }
+  
+  public Lscala/reflect/Manifest; abstractType(Lscala/reflect/Manifest; prefix$1, Ljava/lang/String; name$1, Ljava/lang/Class; clazz$1, Lscala/collection/Seq; args$1) {
+    return (new (Lscala/reflect/Manifest$$anon$16;::this(Lscala/reflect/Manifest;Ljava/lang/String;Ljava/lang/Class;Lscala/collection/Seq;)V;)(prefix$1, name$1, clazz$1, args$1));
+  }
+  
+  public Lscala/reflect/Manifest; wildcardType(Lscala/reflect/Manifest; lowerBound$1, Lscala/reflect/Manifest; upperBound$1) {
+    return (new (Lscala/reflect/Manifest$$anon$17;::this(Lscala/reflect/Manifest;Lscala/reflect/Manifest;)V;)(lowerBound$1, upperBound$1));
+  }
+  
+  public Lscala/reflect/Manifest; intersectionType(Lscala/collection/Seq; parents$1) {
+    return (new (Lscala/reflect/Manifest$$anon$18;::this(Lscala/collection/Seq;)V;)(parents$1));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(Lscala/reflect/AnyValManifest;)Byte$u0020 = (new (Lscala/reflect/Manifest$$anon$1;::this()V;)());
+    this.(Lscala/reflect/AnyValManifest;)Short$u0020 = (new (Lscala/reflect/Manifest$$anon$2;::this()V;)());
+    this.(Lscala/reflect/AnyValManifest;)Char$u0020 = (new (Lscala/reflect/Manifest$$anon$3;::this()V;)());
+    this.(Lscala/reflect/AnyValManifest;)Int$u0020 = (new (Lscala/reflect/Manifest$$anon$4;::this()V;)());
+    this.(Lscala/reflect/AnyValManifest;)Long$u0020 = (new (Lscala/reflect/Manifest$$anon$5;::this()V;)());
+    this.(Lscala/reflect/AnyValManifest;)Float$u0020 = (new (Lscala/reflect/Manifest$$anon$6;::this()V;)());
+    this.(Lscala/reflect/AnyValManifest;)Double$u0020 = (new (Lscala/reflect/Manifest$$anon$7;::this()V;)());
+    this.(Lscala/reflect/AnyValManifest;)Boolean$u0020 = (new (Lscala/reflect/Manifest$$anon$8;::this()V;)());
+    this.(Lscala/reflect/AnyValManifest;)Unit$u0020 = (new (Lscala/reflect/Manifest$$anon$9;::this()V;)());
+    this.(Lscala/reflect/Manifest;)Any$u0020 = (new (Lscala/reflect/Manifest$$anon$10;::this()V;)());
+    this.(Lscala/reflect/Manifest;)Object$u0020 = (new (Lscala/reflect/Manifest$$anon$11;::this()V;)());
+    this.(Lscala/reflect/Manifest;)AnyVal$u0020 = (new (Lscala/reflect/Manifest$$anon$12;::this()V;)());
+    this.(Lscala/reflect/Manifest;)Null$u0020 = (new (Lscala/reflect/Manifest$$anon$13;::this()V;)());
+    this.(Lscala/reflect/Manifest;)Nothing$u0020 = (new (Lscala/reflect/Manifest$$anon$14;::this()V;)());
+  }
+}

@@ -1,0 +1,154 @@
+public abstract class Lscala/xml/parsing/TokenTests$class; {
+  
+  public static final Z; isSpace(Lscala/xml/parsing/TokenTests; $this, C; ch) {
+    C; temp1 = ch;
+    I; $1$ = temp1.<cast>(I;);
+    Z; $2$;
+    switch ($1$) {
+      9: {
+        $2$ = true;
+        break;
+      }
+      
+      10: {
+        $2$ = true;
+        break;
+      }
+      
+      13: {
+        $2$ = true;
+        break;
+      }
+      
+      32: {
+        $2$ = true;
+        break;
+      }
+      
+      default: {
+        $2$ = false;
+        break;
+      }
+      
+    }
+    return $2$;
+  }
+  
+  public static final Z; isSpace(Lscala/xml/parsing/TokenTests; $this, Lscala/collection/Seq; cs) {
+    return (cs.(Lscala/collection/TraversableOnce;::nonEmpty()Z;)() && cs.(Lscala/collection/IterableLike;::forall(Lscala/Function1;)Z;)((new (Lscala/xml/parsing/TokenTests$$anonfun$isSpace$1;::this(Lscala/xml/parsing/TokenTests;)V;)($this))));
+  }
+  
+  public static Z; isAlpha(Lscala/xml/parsing/TokenTests; $this, C; c) {
+    return (((c >= 'A') && (c <= 'Z')) || ((c >= 'a') && (c <= 'z')));
+  }
+  
+  public static Z; isAlphaDigit(Lscala/xml/parsing/TokenTests; $this, C; c) {
+    return ($this.(Lscala/xml/parsing/TokenTests;::isAlpha(C;)Z;)(c) || ((c >= '0') && (c <= '9')));
+  }
+  
+  public static Z; isNameChar(Lscala/xml/parsing/TokenTests; $this, C; ch) {
+    B; temp2 = Ljava/lang/Character;.(Ljava/lang/Character;::getType(C;)I;)(ch).<cast>(B;);
+    I; $3$ = temp2.<cast>(I;);
+    Z; $4$;
+    switch ($3$) {
+      4: {
+        $4$ = true;
+        break;
+      }
+      
+      6: {
+        $4$ = true;
+        break;
+      }
+      
+      7: {
+        $4$ = true;
+        break;
+      }
+      
+      8: {
+        $4$ = true;
+        break;
+      }
+      
+      9: {
+        $4$ = true;
+        break;
+      }
+      
+      default: {
+        $4$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(".-:").(Lscala/collection/SeqLike;::contains(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(ch));
+        break;
+      }
+      
+    }
+    return ($this.(Lscala/xml/parsing/TokenTests;::isNameStart(C;)Z;)(ch) || $4$);
+  }
+  
+  public static Z; isNameStart(Lscala/xml/parsing/TokenTests; $this, C; ch) {
+    B; temp3 = Ljava/lang/Character;.(Ljava/lang/Character;::getType(C;)I;)(ch).<cast>(B;);
+    I; $5$ = temp3.<cast>(I;);
+    Z; $6$;
+    switch ($5$) {
+      1: {
+        $6$ = true;
+        break;
+      }
+      
+      2: {
+        $6$ = true;
+        break;
+      }
+      
+      3: {
+        $6$ = true;
+        break;
+      }
+      
+      5: {
+        $6$ = true;
+        break;
+      }
+      
+      10: {
+        $6$ = true;
+        break;
+      }
+      
+      default: {
+        $6$ = (ch == '_');
+        break;
+      }
+      
+    }
+    return $6$;
+  }
+  
+  public static Z; isName(Lscala/xml/parsing/TokenTests; $this, Ljava/lang/String; s) {
+    return ((Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(s).(Lscala/collection/TraversableOnce;::nonEmpty()Z;)() && $this.(Lscala/xml/parsing/TokenTests;::isNameStart(C;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(s).(Lscala/collection/IndexedSeqOptimized;::head()Ljava/lang/Object;)()))) && Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(s).(Lscala/collection/IndexedSeqOptimized;::tail()Ljava/lang/Object;)().<cast>(Ljava/lang/String;)).(Lscala/collection/IndexedSeqOptimized;::forall(Lscala/Function1;)Z;)((new (Lscala/xml/parsing/TokenTests$$anonfun$isName$1;::this(Lscala/xml/parsing/TokenTests;)V;)($this))));
+  }
+  
+  public static Z; isPubIDChar(Lscala/xml/parsing/TokenTests; $this, C; ch) {
+    return (($this.(Lscala/xml/parsing/TokenTests;::isAlphaDigit(C;)Z;)(ch) || ($this.(Lscala/xml/parsing/TokenTests;::isSpace(C;)Z;)(ch) && (ch != '\011'))) || Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)("-\\()+,./:=?;!*#@$_%").(Lscala/collection/SeqLike;::contains(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(ch)));
+  }
+  
+  public static Z; isValidIANAEncoding(Lscala/xml/parsing/TokenTests; $this, Lscala/collection/Seq; ianaEncoding) {
+    return ((ianaEncoding.(Lscala/collection/TraversableOnce;::nonEmpty()Z;)() && $this.(Lscala/xml/parsing/TokenTests;::isAlpha(C;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(ianaEncoding.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)()))) && ianaEncoding.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::forall(Lscala/Function1;)Z;)((new (Lscala/xml/parsing/TokenTests$$anonfun$isValidIANAEncoding$1;::this(Lscala/xml/parsing/TokenTests;)V;)($this))));
+  }
+  
+  public static Z; checkSysID(Lscala/xml/parsing/TokenTests; $this, Ljava/lang/String; s$1) {
+    return Lscala/collection/immutable/List$;.MODULE$.(Lscala/collection/immutable/List$;::apply(Lscala/collection/Seq;)Lscala/collection/immutable/List;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapCharArray(C;[)Lscala/collection/mutable/WrappedArray;)(<C;>{'\"', '\''})).(Lscala/collection/LinearSeqOptimized;::exists(Lscala/Function1;)Z;)((new (Lscala/xml/parsing/TokenTests$$anonfun$checkSysID$1;::this(Lscala/xml/parsing/TokenTests;Ljava/lang/String;)V;)($this, s$1)));
+  }
+  
+  public static Z; checkPubID(Lscala/xml/parsing/TokenTests; $this, Ljava/lang/String; s) {
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(s).(Lscala/collection/IndexedSeqOptimized;::forall(Lscala/Function1;)Z;)((new (Lscala/xml/parsing/TokenTests$$anonfun$checkPubID$1;::this(Lscala/xml/parsing/TokenTests;)V;)($this)));
+  }
+  
+  public static final Z; charOK$1(Lscala/xml/parsing/TokenTests; $this, C; c) {
+    return ($this.(Lscala/xml/parsing/TokenTests;::isAlphaDigit(C;)Z;)(c) || Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)("._-").(Lscala/collection/SeqLike;::contains(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(c)));
+  }
+  
+  public static V; $init$(Lscala/xml/parsing/TokenTests; $this) {
+    
+  }
+}

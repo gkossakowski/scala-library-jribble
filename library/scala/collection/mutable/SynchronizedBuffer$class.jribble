@@ -1,0 +1,90 @@
+public abstract class Lscala/collection/mutable/SynchronizedBuffer$class; {
+  
+  public static I; length(Lscala/collection/mutable/SynchronizedBuffer; $this) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)($this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$length()I;)()));
+  }
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/mutable/SynchronizedBuffer; $this) {
+    return $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$iterator()Lscala/collection/Iterator;)().<cast>(Lscala/collection/Iterator;);
+  }
+  
+  public static Ljava/lang/Object; apply(Lscala/collection/mutable/SynchronizedBuffer; $this, I; n) {
+    return $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$apply(I;)Ljava/lang/Object;)(n);
+  }
+  
+  public static Lscala/collection/mutable/Buffer; $plus(Lscala/collection/mutable/SynchronizedBuffer; $this, Ljava/lang/Object; elem) {
+    return $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$$plus(Ljava/lang/Object;)Lscala/collection/mutable/Buffer;)(elem).<cast>(Lscala/collection/mutable/Buffer;);
+  }
+  
+  public static Lscala/collection/mutable/SynchronizedBuffer; $plus$eq(Lscala/collection/mutable/SynchronizedBuffer; $this, Ljava/lang/Object; elem) {
+    return $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SynchronizedBuffer;)(elem).<cast>(Lscala/collection/mutable/SynchronizedBuffer;);
+  }
+  
+  public static Lscala/collection/mutable/Buffer; $plus$plus(Lscala/collection/mutable/SynchronizedBuffer; $this, Lscala/collection/TraversableOnce; xs) {
+    return $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Buffer;)(xs).<cast>(Lscala/collection/mutable/Buffer;);
+  }
+  
+  public static Lscala/collection/mutable/SynchronizedBuffer; $plus$plus$eq(Lscala/collection/mutable/SynchronizedBuffer; $this, Lscala/collection/TraversableOnce; xs) {
+    return $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/SynchronizedBuffer;)(xs).<cast>(Lscala/collection/mutable/SynchronizedBuffer;);
+  }
+  
+  public static V; append(Lscala/collection/mutable/SynchronizedBuffer; $this, Lscala/collection/Seq; elems) {
+    $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/SynchronizedBuffer;)(elems);
+  }
+  
+  public static V; appendAll(Lscala/collection/mutable/SynchronizedBuffer; $this, Lscala/collection/TraversableOnce; xs) {
+    $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$appendAll(Lscala/collection/TraversableOnce;)V;)(xs);
+  }
+  
+  public static Lscala/collection/mutable/SynchronizedBuffer; $plus$eq$colon(Lscala/collection/mutable/SynchronizedBuffer; $this, Ljava/lang/Object; elem) {
+    return $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$$plus$eq$colon(Ljava/lang/Object;)Lscala/collection/mutable/SynchronizedBuffer;)(elem).<cast>(Lscala/collection/mutable/SynchronizedBuffer;);
+  }
+  
+  public static Lscala/collection/mutable/SynchronizedBuffer; $plus$plus$eq$colon(Lscala/collection/mutable/SynchronizedBuffer; $this, Lscala/collection/TraversableOnce; xs) {
+    return $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$$plus$plus$eq$colon(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/SynchronizedBuffer;)(xs).<cast>(Lscala/collection/mutable/SynchronizedBuffer;);
+  }
+  
+  public static V; prepend(Lscala/collection/mutable/SynchronizedBuffer; $this, Lscala/collection/Seq; elems) {
+    $this.(Lscala/collection/mutable/SynchronizedBuffer;::prependAll(Lscala/collection/TraversableOnce;)V;)(elems);
+  }
+  
+  public static V; prependAll(Lscala/collection/mutable/SynchronizedBuffer; $this, Lscala/collection/TraversableOnce; xs) {
+    $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$prependAll(Lscala/collection/TraversableOnce;)V;)(xs);
+  }
+  
+  public static V; insert(Lscala/collection/mutable/SynchronizedBuffer; $this, I; n, Lscala/collection/Seq; elems) {
+    $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$insertAll(I;Lscala/collection/Traversable;)V;)(n, elems);
+  }
+  
+  public static V; insertAll(Lscala/collection/mutable/SynchronizedBuffer; $this, I; n, Lscala/collection/Traversable; xs) {
+    $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$insertAll(I;Lscala/collection/Traversable;)V;)(n, xs);
+  }
+  
+  public static V; update(Lscala/collection/mutable/SynchronizedBuffer; $this, I; n, Ljava/lang/Object; newelem) {
+    $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$update(I;Ljava/lang/Object;)V;)(n, newelem);
+  }
+  
+  public static Ljava/lang/Object; remove(Lscala/collection/mutable/SynchronizedBuffer; $this, I; n) {
+    return $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$remove(I;)Ljava/lang/Object;)(n);
+  }
+  
+  public static V; clear(Lscala/collection/mutable/SynchronizedBuffer; $this) {
+    $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$clear()V;)();
+  }
+  
+  public static V; $less$less(Lscala/collection/mutable/SynchronizedBuffer; $this, Lscala/collection/script/Message; cmd) {
+    $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$$less$less(Lscala/collection/script/Message;)V;)(cmd);
+  }
+  
+  public static Lscala/collection/mutable/Buffer; clone(Lscala/collection/mutable/SynchronizedBuffer; $this) {
+    return $this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$clone()Lscala/collection/mutable/Buffer;)().<cast>(Lscala/collection/mutable/Buffer;);
+  }
+  
+  public static I; hashCode(Lscala/collection/mutable/SynchronizedBuffer; $this) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)($this.(Lscala/collection/mutable/SynchronizedBuffer;::scala$collection$mutable$SynchronizedBuffer$$super$hashCode()I;)()));
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/SynchronizedBuffer; $this) {
+    
+  }
+}

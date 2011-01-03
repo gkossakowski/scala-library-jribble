@@ -1,0 +1,26 @@
+public interface Lscala/collection/generic/Sorted; extends Lscala/ScalaObject; {
+  
+  public Lscala/math/Ordering; ordering();
+  
+  public Lscala/collection/generic/Sorted; repr();
+  
+  public Lscala/collection/SortedSet; keySet();
+  
+  public Ljava/lang/Object; firstKey();
+  
+  public Ljava/lang/Object; lastKey();
+  
+  public I; compare(Ljava/lang/Object; k0, Ljava/lang/Object; k1);
+  
+  public Lscala/collection/generic/Sorted; rangeImpl(Lscala/Option; from, Lscala/Option; until);
+  
+  public Lscala/collection/generic/Sorted; from(Ljava/lang/Object; from);
+  
+  public Lscala/collection/generic/Sorted; until(Ljava/lang/Object; until);
+  
+  public Lscala/collection/generic/Sorted; range(Ljava/lang/Object; from, Ljava/lang/Object; until);
+  
+  public Lscala/collection/generic/Sorted; to(Ljava/lang/Object; to);
+  
+  public Z; hasAll(Lscala/collection/Iterator; j);
+}

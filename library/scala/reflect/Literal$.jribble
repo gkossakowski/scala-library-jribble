@@ -1,0 +1,32 @@
+public final class Lscala/reflect/Literal$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+  public static Lscala/reflect/Literal$; MODULE$ = new (Lscala/reflect/Literal$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "Literal";
+  }
+  
+  public Lscala/Option; unapply(Lscala/reflect/Literal; x$0) {
+    Lscala/Option; $75$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $75$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $75$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/reflect/Literal;::value()Ljava/lang/Object;)()));
+      }
+    return $75$;
+  }
+  
+  public Lscala/reflect/Literal; apply(Ljava/lang/Object; value) {
+    return (new (Lscala/reflect/Literal;::this(Ljava/lang/Object;)V;)(value));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/reflect/Literal$;::apply(Ljava/lang/Object;)Lscala/reflect/Literal;)(v1);
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

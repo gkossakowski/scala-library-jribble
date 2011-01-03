@@ -1,0 +1,68 @@
+public interface Lscala/collection/interfaces/SeqMethods; extends Lscala/collection/interfaces/IterableMethods; {
+  
+  public Ljava/lang/Object; apply(I; idx);
+  
+  public I; length();
+  
+  public Z; contains(Ljava/lang/Object; elem);
+  
+  public Lscala/collection/Seq; diff(Lscala/collection/Seq; that);
+  
+  public Z; endsWith(Lscala/collection/Seq; that);
+  
+  public I; indexOfSlice(Lscala/collection/Seq; that);
+  
+  public I; indexOfSlice(Lscala/collection/Seq; that, I; fromIndex);
+  
+  public I; indexOf(Ljava/lang/Object; elem);
+  
+  public I; indexOf(Ljava/lang/Object; elem, I; from);
+  
+  public I; indexWhere(Lscala/Function1; p);
+  
+  public I; indexWhere(Lscala/Function1; p, I; from);
+  
+  public Lscala/collection/immutable/Range; indices();
+  
+  public Lscala/collection/Seq; intersect(Lscala/collection/Seq; that);
+  
+  public Z; isDefinedAt(I; x);
+  
+  public I; lastIndexOfSlice(Lscala/collection/Seq; that);
+  
+  public I; lastIndexOfSlice(Lscala/collection/Seq; that, I; fromIndex);
+  
+  public I; lastIndexOf(Ljava/lang/Object; elem);
+  
+  public I; lastIndexOf(Ljava/lang/Object; elem, I; end);
+  
+  public I; lastIndexWhere(Lscala/Function1; p);
+  
+  public I; lastIndexWhere(Lscala/Function1; p, I; end);
+  
+  public I; lengthCompare(I; len);
+  
+  public Ljava/lang/Object; padTo(I; len, Ljava/lang/Object; elem, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; patch(I; from, Lscala/collection/Seq; patch, I; replaced, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public I; prefixLength(Lscala/Function1; p);
+  
+  public Lscala/collection/Seq; distinct();
+  
+  public Lscala/collection/Seq; reverse();
+  
+  public Lscala/collection/Iterator; reverseIterator();
+  
+  public I; segmentLength(Lscala/Function1; p, I; from);
+  
+  public Z; startsWith(Lscala/collection/Seq; that);
+  
+  public Z; startsWith(Lscala/collection/Seq; that, I; offset);
+  
+  public Ljava/lang/Object; union(Lscala/collection/Seq; that, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Lscala/collection/SeqView; view();
+  
+  public Lscala/collection/SeqView; view(I; from, I; until);
+}

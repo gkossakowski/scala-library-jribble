@@ -1,0 +1,42 @@
+public interface Lscala/collection/mutable/MapLike; extends Lscala/collection/MapLike;, Lscala/collection/mutable/Builder;, Lscala/collection/generic/Growable;, Lscala/collection/generic/Shrinkable;, Lscala/collection/mutable/Cloneable;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/mutable/Builder; newBuilder();
+  
+  public Lscala/Option; put(Ljava/lang/Object; key, Ljava/lang/Object; value);
+  
+  public V; update(Ljava/lang/Object; key, Ljava/lang/Object; value);
+  
+  public Lscala/collection/mutable/MapLike; $plus$eq(Lscala/Tuple2; kv);
+  
+  public Lscala/collection/mutable/Map; updated(Ljava/lang/Object; key, Ljava/lang/Object; value);
+  
+  public Lscala/collection/mutable/Map; $plus(Lscala/Tuple2; kv);
+  
+  public Lscala/collection/mutable/Map; $plus(Lscala/Tuple2; elem1, Lscala/Tuple2; elem2, Lscala/collection/Seq; elems);
+  
+  public Lscala/collection/mutable/Map; $plus$plus(Lscala/collection/TraversableOnce; xs);
+  
+  public Lscala/Option; remove(Ljava/lang/Object; key);
+  
+  public Lscala/collection/mutable/MapLike; $minus$eq(Ljava/lang/Object; key);
+  
+  public Lscala/collection/mutable/Map; $minus(Ljava/lang/Object; key);
+  
+  public Lscala/Option; removeKey(Ljava/lang/Object; key);
+  
+  public V; clear();
+  
+  public Ljava/lang/Object; getOrElseUpdate(Ljava/lang/Object; key, Lscala/Function0; op);
+  
+  public Lscala/collection/mutable/MapLike; transform(Lscala/Function2; f);
+  
+  public Lscala/collection/mutable/MapLike; retain(Lscala/Function2; p);
+  
+  public Lscala/collection/mutable/Map; clone();
+  
+  public Lscala/collection/mutable/Map; result();
+  
+  public Lscala/collection/mutable/Map; $minus(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems);
+  
+  public Lscala/collection/mutable/Map; $minus$minus(Lscala/collection/TraversableOnce; xs);
+}

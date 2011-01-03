@@ -1,0 +1,26 @@
+public abstract class Lscala/math/PartialOrdering$class; {
+  
+  public static Z; gteq(Lscala/math/PartialOrdering; $this, Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return $this.(Lscala/math/PartialOrdering;::lteq(Ljava/lang/Object;Ljava/lang/Object;)Z;)(y, x);
+  }
+  
+  public static Z; lt(Lscala/math/PartialOrdering; $this, Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return ($this.(Lscala/math/PartialOrdering;::lteq(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, y) && !($this.(Lscala/math/PartialOrdering;::equiv(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, y)));
+  }
+  
+  public static Z; gt(Lscala/math/PartialOrdering; $this, Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return ($this.(Lscala/math/PartialOrdering;::gteq(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, y) && !($this.(Lscala/math/PartialOrdering;::equiv(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, y)));
+  }
+  
+  public static Z; equiv(Lscala/math/PartialOrdering; $this, Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return ($this.(Lscala/math/PartialOrdering;::lteq(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, y) && $this.(Lscala/math/PartialOrdering;::lteq(Ljava/lang/Object;Ljava/lang/Object;)Z;)(y, x));
+  }
+  
+  public static Lscala/math/PartialOrdering; reverse(Lscala/math/PartialOrdering; $this) {
+    return (new (Lscala/math/PartialOrdering$$anon$1;::this(Lscala/math/PartialOrdering;)V;)($this));
+  }
+  
+  public static V; $init$(Lscala/math/PartialOrdering; $this) {
+    
+  }
+}

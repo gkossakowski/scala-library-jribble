@@ -1,0 +1,17 @@
+public abstract class Lscala/collection/generic/Shrinkable$class; {
+  
+  public static Lscala/collection/generic/Shrinkable; $minus$eq(Lscala/collection/generic/Shrinkable; $this, Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
+    $this.(Lscala/collection/generic/Shrinkable;::$minus$eq(Ljava/lang/Object;)Lscala/collection/generic/Shrinkable;)(elem1);
+    $this.(Lscala/collection/generic/Shrinkable;::$minus$eq(Ljava/lang/Object;)Lscala/collection/generic/Shrinkable;)(elem2);
+    return $this.(Lscala/collection/generic/Shrinkable;::$minus$minus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Shrinkable;)(elems);
+  }
+  
+  public static Lscala/collection/generic/Shrinkable; $minus$minus$eq(Lscala/collection/generic/Shrinkable; $this, Lscala/collection/TraversableOnce; xs) {
+    xs.(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/generic/Shrinkable$$anonfun$$minus$minus$eq$1;::this(Lscala/collection/generic/Shrinkable;)V;)($this)));
+    return $this;
+  }
+  
+  public static V; $init$(Lscala/collection/generic/Shrinkable; $this) {
+    
+  }
+}

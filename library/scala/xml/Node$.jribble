@@ -1,0 +1,22 @@
+public final class Lscala/xml/Node$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/xml/Node$; MODULE$ = new (Lscala/xml/Node$;::this()V;)();
+  
+  public final Lscala/xml/MetaData; NoAttributes() {
+    return Lscala/xml/Null$;.MODULE$;
+  }
+  
+  private Ljava/lang/String; EmptyNamespace$u0020;
+  
+  public Ljava/lang/String; EmptyNamespace() {
+    return this.(Ljava/lang/String;)EmptyNamespace$u0020;
+  }
+  
+  public Lscala/Some; unapplySeq(Lscala/xml/Node; n) {
+    return (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(n.(Lscala/xml/Node;::label()Ljava/lang/String;)(), n.(Lscala/xml/Node;::attributes()Lscala/xml/MetaData;)(), n.(Lscala/xml/Node;::child()Lscala/collection/Seq;)()))));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(Ljava/lang/String;)EmptyNamespace$u0020 = "";
+  }
+}

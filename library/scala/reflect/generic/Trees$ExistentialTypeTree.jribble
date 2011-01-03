@@ -1,0 +1,72 @@
+public class Lscala/reflect/generic/Trees$ExistentialTypeTree; extends Lscala/reflect/generic/Trees$Tree; implements Lscala/reflect/generic/Trees$TypTree;, Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/immutable/List; copy$default$2() {
+    return this.(Lscala/reflect/generic/Trees$ExistentialTypeTree;::whereClauses()Lscala/collection/immutable/List;)();
+  }
+  
+  public Lscala/reflect/generic/Trees$Tree; copy$default$1() {
+    return this.(Lscala/reflect/generic/Trees$ExistentialTypeTree;::tpt()Lscala/reflect/generic/Trees$Tree;)();
+  }
+  
+  private Lscala/reflect/generic/Trees$Tree; tpt$u0020;
+  
+  public Lscala/reflect/generic/Trees$Tree; tpt() {
+    return this.(Lscala/reflect/generic/Trees$Tree;)tpt$u0020;
+  }
+  
+  private Lscala/collection/immutable/List; whereClauses$u0020;
+  
+  public Lscala/collection/immutable/List; whereClauses() {
+    return this.(Lscala/collection/immutable/List;)whereClauses$u0020;
+  }
+  
+  public Lscala/reflect/generic/Trees$ExistentialTypeTree; copy(Lscala/reflect/generic/Trees$Tree; tpt, Lscala/collection/immutable/List; whereClauses) {
+    return (new (Lscala/reflect/generic/Trees$ExistentialTypeTree;::this(Lscala/reflect/generic/Universe;Lscala/reflect/generic/Trees$Tree;Lscala/collection/immutable/List;)V;)(this.(Lscala/reflect/generic/Trees$ExistentialTypeTree;::scala$reflect$generic$Trees$ExistentialTypeTree$$$outer()Lscala/reflect/generic/Universe;)(), tpt, whereClauses));
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "ExistentialTypeTree";
+  }
+  
+  public I; productArity() {
+    return 2;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp223 = x$1;
+    I; $95$ = temp223;
+    Ljava/lang/Object; $96$;
+    switch ($95$) {
+      0: {
+        $96$ = this.(Lscala/reflect/generic/Trees$ExistentialTypeTree;::tpt()Lscala/reflect/generic/Trees$Tree;)();
+        break;
+      }
+      
+      1: {
+        $96$ = this.(Lscala/reflect/generic/Trees$ExistentialTypeTree;::whereClauses()Lscala/collection/immutable/List;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $96$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/reflect/generic/Trees$ExistentialTypeTree;);
+  }
+  
+  public Lscala/reflect/generic/Universe; scala$reflect$generic$Trees$ExistentialTypeTree$$$outer() {
+    return this.(Lscala/reflect/generic/Universe;)$outer$u0020;
+  }
+  
+  public this(Lscala/reflect/generic/Universe; $outer, Lscala/reflect/generic/Trees$Tree; tpt, Lscala/collection/immutable/List; whereClauses) {
+    this.(Lscala/reflect/generic/Trees$Tree;)tpt$u0020 = tpt;
+    this.(Lscala/collection/immutable/List;)whereClauses$u0020 = whereClauses;
+    (Lscala/reflect/generic/Trees$Tree;::super(Lscala/reflect/generic/Universe;)V;)($outer);
+  }
+}

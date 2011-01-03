@@ -1,0 +1,44 @@
+public abstract class Lscala/collection/SeqViewLike$Patched$class; {
+  
+  public static final I; scala$collection$SeqViewLike$Patched$$plen(Lscala/collection/SeqViewLike$Patched; $this) {
+    return $this.(Lscala/collection/SeqViewLike$Patched;::patch()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::length()I;)();
+  }
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/SeqViewLike$Patched; $this) {
+    return $this.(Lscala/collection/SeqViewLike$Patched;::scala$collection$SeqViewLike$Patched$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::patch(I;Lscala/collection/Iterator;I;)Lscala/collection/Iterator;)($this.(Lscala/collection/SeqViewLike$Patched;::from()I;)(), $this.(Lscala/collection/SeqViewLike$Patched;::patch()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)(), $this.(Lscala/collection/SeqViewLike$Patched;::replaced()I;)());
+  }
+  
+  public static I; length(Lscala/collection/SeqViewLike$Patched; $this) {
+    return (($this.(Lscala/collection/SeqViewLike$Patched;::scala$collection$SeqViewLike$Patched$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::length()I;)() + $this.(Lscala/collection/SeqViewLike$Patched;::scala$collection$SeqViewLike$Patched$$plen()I;)()) - $this.(Lscala/collection/SeqViewLike$Patched;::replaced()I;)());
+  }
+  
+  public static Ljava/lang/Object; apply(Lscala/collection/SeqViewLike$Patched; $this, I; idx) {
+    Ljava/lang/Object; $11$;
+    if ((idx < $this.(Lscala/collection/SeqViewLike$Patched;::from()I;)()))
+      {
+        $11$ = $this.(Lscala/collection/SeqViewLike$Patched;::scala$collection$SeqViewLike$Patched$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(idx);
+      }
+    else
+      {
+        Ljava/lang/Object; $12$;
+        if ((idx < ($this.(Lscala/collection/SeqViewLike$Patched;::from()I;)() + $this.(Lscala/collection/SeqViewLike$Patched;::scala$collection$SeqViewLike$Patched$$plen()I;)())))
+          {
+            $12$ = $this.(Lscala/collection/SeqViewLike$Patched;::patch()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)((idx - $this.(Lscala/collection/SeqViewLike$Patched;::from()I;)()));
+          }
+        else
+          {
+            $12$ = $this.(Lscala/collection/SeqViewLike$Patched;::scala$collection$SeqViewLike$Patched$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(((idx - $this.(Lscala/collection/SeqViewLike$Patched;::scala$collection$SeqViewLike$Patched$$plen()I;)()) + $this.(Lscala/collection/SeqViewLike$Patched;::replaced()I;)()));
+          }
+        $11$ = $12$;
+      }
+    return $11$;
+  }
+  
+  public static Ljava/lang/String; stringPrefix(Lscala/collection/SeqViewLike$Patched; $this) {
+    return ($this.(Lscala/collection/SeqViewLike$Patched;::scala$collection$SeqViewLike$Patched$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqViewLike;::stringPrefix()Ljava/lang/String;)() + "P");
+  }
+  
+  public static V; $init$(Lscala/collection/SeqViewLike$Patched; $this) {
+    
+  }
+}

@@ -1,0 +1,41 @@
+public final class Lscala/reflect/generic/Trees$CompoundTypeTree$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+  
+  public final Ljava/lang/String; toString() {
+    return "CompoundTypeTree";
+  }
+  
+  public Lscala/Option; unapply(Lscala/reflect/generic/Trees$CompoundTypeTree; x$0) {
+    Lscala/Option; $103$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $103$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $103$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/reflect/generic/Trees$CompoundTypeTree;::templ()Lscala/reflect/generic/Trees$Template;)()));
+      }
+    return $103$;
+  }
+  
+  public Lscala/reflect/generic/Trees$CompoundTypeTree; apply(Lscala/reflect/generic/Trees$Template; templ) {
+    return (new (Lscala/reflect/generic/Trees$CompoundTypeTree;::this(Lscala/reflect/generic/Universe;Lscala/reflect/generic/Trees$Template;)V;)(this.(Lscala/reflect/generic/Universe;)$outer$u0020, templ));
+  }
+  
+  private Lscala/reflect/generic/Universe; $outer$u0020;
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/reflect/generic/Trees$CompoundTypeTree$;::apply(Lscala/reflect/generic/Trees$Template;)Lscala/reflect/generic/Trees$CompoundTypeTree;)(v1.<cast>(Lscala/reflect/generic/Trees$Template;));
+  }
+  
+  public this(Lscala/reflect/generic/Universe; $outer) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/reflect/generic/Universe;)$outer$u0020 = $outer;
+      }
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

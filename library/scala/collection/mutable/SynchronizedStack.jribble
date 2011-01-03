@@ -1,0 +1,58 @@
+public class Lscala/collection/mutable/SynchronizedStack; extends Lscala/collection/mutable/Stack; implements Lscala/ScalaObject; {
+  
+  public Z; isEmpty() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(super.(Lscala/collection/mutable/Stack;::isEmpty()Z;)()));
+  }
+  
+  public Lscala/collection/mutable/SynchronizedStack; push(Ljava/lang/Object; elem) {
+    return super.(Lscala/collection/mutable/Stack;::push(Ljava/lang/Object;)Lscala/collection/mutable/Stack;)(elem).<cast>(Lscala/collection/mutable/SynchronizedStack;);
+  }
+  
+  public Lscala/collection/mutable/SynchronizedStack; push(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
+    return super.(Lscala/collection/mutable/Stack;::push(Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/Seq;)Lscala/collection/mutable/Stack;)(elem1, elem2, elems).<cast>(Lscala/collection/mutable/SynchronizedStack;);
+  }
+  
+  public Lscala/collection/mutable/SynchronizedStack; pushAll(Lscala/collection/TraversableOnce; xs) {
+    return super.(Lscala/collection/mutable/Stack;::pushAll(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Stack;)(this.(Lscala/collection/mutable/Stack;::elems()Lscala/collection/immutable/List;)()).<cast>(Lscala/collection/mutable/SynchronizedStack;);
+  }
+  
+  public Ljava/lang/Object; top() {
+    return super.(Lscala/collection/mutable/Stack;::top()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; pop() {
+    return super.(Lscala/collection/mutable/Stack;::pop()Ljava/lang/Object;)();
+  }
+  
+  public V; clear() {
+    super.(Lscala/collection/mutable/Stack;::clear()V;)();
+  }
+  
+  public Lscala/collection/Iterator; iterator() {
+    return super.(Lscala/collection/mutable/Stack;::iterator()Lscala/collection/Iterator;)().<cast>(Lscala/collection/Iterator;);
+  }
+  
+  public Lscala/collection/immutable/List; toList() {
+    return super.(Lscala/collection/mutable/Stack;::toList()Lscala/collection/immutable/List;)().<cast>(Lscala/collection/immutable/List;);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/collection/SeqLike$class;.(Lscala/collection/SeqLike$class;::toString(Lscala/collection/SeqLike;)Ljava/lang/String;)(this).<cast>(Ljava/lang/String;);
+  }
+  
+  public Lscala/collection/mutable/Stack; pushAll(Lscala/collection/TraversableOnce; xs) {
+    return this.(Lscala/collection/mutable/SynchronizedStack;::pushAll(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/SynchronizedStack;)(xs);
+  }
+  
+  public Lscala/collection/mutable/Stack; push(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
+    return this.(Lscala/collection/mutable/SynchronizedStack;::push(Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/Seq;)Lscala/collection/mutable/SynchronizedStack;)(elem1, elem2, elems);
+  }
+  
+  public Lscala/collection/mutable/Stack; push(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/SynchronizedStack;::push(Ljava/lang/Object;)Lscala/collection/mutable/SynchronizedStack;)(elem);
+  }
+  
+  public this() {
+    (Lscala/collection/mutable/Stack;::super()V;)();
+  }
+}

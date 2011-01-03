@@ -1,0 +1,49 @@
+public final class Lscala/collection/mutable/WrappedArray$ofFloat; extends Lscala/collection/mutable/WrappedArray; implements Lscala/ScalaObject; {
+  
+  private F;[ array$u0020;
+  
+  public F;[ array() {
+    return this.(F;[)array$u0020;
+  }
+  
+  public Lscala/reflect/AnyValManifest; elemManifest() {
+    return Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::Float()Lscala/reflect/AnyValManifest;)();
+  }
+  
+  public I; length() {
+    return this.(Lscala/collection/mutable/WrappedArray$ofFloat;::array()F;[)().<length>;
+  }
+  
+  public F; apply(I; index) {
+    return this.(Lscala/collection/mutable/WrappedArray$ofFloat;::array()F;[)()[index];
+  }
+  
+  public V; update(I; index, F; elem) {
+    this.(Lscala/collection/mutable/WrappedArray$ofFloat;::array()F;[)()[index] = elem;
+  }
+  
+  public V; update(I; index, Ljava/lang/Object; elem) {
+    this.(Lscala/collection/mutable/WrappedArray$ofFloat;::update(I;F;)V;)(index, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(elem));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(this.(Lscala/collection/mutable/WrappedArray$ofFloat;::apply(I;)F;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1)));
+  }
+  
+  public Ljava/lang/Object; apply(I; index) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(this.(Lscala/collection/mutable/WrappedArray$ofFloat;::apply(I;)F;)(index));
+  }
+  
+  public Lscala/reflect/ClassManifest; elemManifest() {
+    return this.(Lscala/collection/mutable/WrappedArray$ofFloat;::elemManifest()Lscala/reflect/AnyValManifest;)();
+  }
+  
+  public Ljava/lang/Object; array() {
+    return this.(Lscala/collection/mutable/WrappedArray$ofFloat;::array()F;[)();
+  }
+  
+  public this(F;[ array) {
+    this.(F;[)array$u0020 = array;
+    (Lscala/collection/mutable/WrappedArray;::super()V;)();
+  }
+}

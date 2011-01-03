@@ -1,0 +1,140 @@
+public final class Lscala/runtime/RichLong; extends Ljava/lang/Object; implements Lscala/Proxy;, Lscala/math/Ordered;, Lscala/ScalaObject; {
+  
+  public Z; $less(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Z; $greater(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$greater(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Z; $less$eq(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less$eq(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Z; $greater$eq(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$greater$eq(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public I; compareTo(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::compareTo(Lscala/math/Ordered;Ljava/lang/Object;)I;)(this, that);
+  }
+  
+  public I; hashCode() {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::hashCode(Lscala/Proxy;)I;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; that) {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::equals(Lscala/Proxy;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::toString(Lscala/Proxy;)Ljava/lang/String;)(this);
+  }
+  
+  public J; to$default$2() {
+    return 1L;
+  }
+  
+  public J; until$default$2() {
+    return 1L;
+  }
+  
+  private J; x;
+  
+  public Ljava/lang/Object; self() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(this.(J;)x);
+  }
+  
+  public I; compare(J; y) {
+    I; $1$;
+    if ((this.(J;)x < y))
+      {
+        $1$ = -1;
+      }
+    else
+      {
+        I; $2$;
+        if ((this.(J;)x > y))
+          {
+            $2$ = 1;
+          }
+        else
+          {
+            $2$ = 0;
+          }
+        $1$ = $2$;
+      }
+    return $1$;
+  }
+  
+  public Lscala/collection/immutable/NumericRange$Exclusive; until(J; end, J; step) {
+    return Lscala/collection/immutable/Range$Long$;.MODULE$.(Lscala/collection/immutable/Range$Long$;::apply(J;J;J;)Lscala/collection/immutable/NumericRange$Exclusive;)(this.(J;)x, end, step);
+  }
+  
+  public Lscala/collection/immutable/NumericRange$Inclusive; to(J; end, J; step) {
+    return Lscala/collection/immutable/Range$Long$;.MODULE$.(Lscala/collection/immutable/Range$Long$;::inclusive(J;J;J;)Lscala/collection/immutable/NumericRange$Inclusive;)(this.(J;)x, end, step);
+  }
+  
+  public J; min(J; y) {
+    J; $3$;
+    if ((this.(J;)x < y))
+      {
+        $3$ = this.(J;)x;
+      }
+    else
+      {
+        $3$ = y;
+      }
+    return $3$;
+  }
+  
+  public J; max(J; y) {
+    J; $4$;
+    if ((this.(J;)x > y))
+      {
+        $4$ = this.(J;)x;
+      }
+    else
+      {
+        $4$ = y;
+      }
+    return $4$;
+  }
+  
+  public J; abs() {
+    J; $5$;
+    if ((this.(J;)x < 0))
+      {
+        $5$ = -(this.(J;)x);
+      }
+    else
+      {
+        $5$ = this.(J;)x;
+      }
+    return $5$;
+  }
+  
+  public Ljava/lang/String; toBinaryString() {
+    return Ljava/lang/Long;.(Ljava/lang/Long;::toBinaryString(J;)Ljava/lang/String;)(this.(J;)x);
+  }
+  
+  public Ljava/lang/String; toHexString() {
+    return Ljava/lang/Long;.(Ljava/lang/Long;::toHexString(J;)Ljava/lang/String;)(this.(J;)x);
+  }
+  
+  public Ljava/lang/String; toOctalString() {
+    return Ljava/lang/Long;.(Ljava/lang/Long;::toOctalString(J;)Ljava/lang/String;)(this.(J;)x);
+  }
+  
+  public I; compare(Ljava/lang/Object; that) {
+    return this.(Lscala/runtime/RichLong;::compare(J;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToLong(Ljava/lang/Object;)J;)(that));
+  }
+  
+  public this(J; x) {
+    this.(J;)x = x;
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Proxy$class;.(Lscala/Proxy$class;::$init$(Lscala/Proxy;)V;)(this);
+    Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$init$(Lscala/math/Ordered;)V;)(this);
+  }
+}

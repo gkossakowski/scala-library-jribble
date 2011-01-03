@@ -1,0 +1,18 @@
+public interface Lscala/collection/mutable/Builder; extends Lscala/collection/generic/Growable;, Lscala/ScalaObject; {
+  
+  public I; sizeHint$default$2();
+  
+  public Lscala/collection/mutable/Builder; $plus$eq(Ljava/lang/Object; elem);
+  
+  public V; clear();
+  
+  public Ljava/lang/Object; result();
+  
+  public V; sizeHint(I; size);
+  
+  public V; sizeHint(Lscala/collection/TraversableLike; coll, I; delta);
+  
+  public V; sizeHintBounded(I; size, Lscala/collection/TraversableLike; boundingColl);
+  
+  public Lscala/collection/mutable/Builder; mapResult(Lscala/Function1; f);
+}

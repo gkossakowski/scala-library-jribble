@@ -1,0 +1,41 @@
+public final class Lscala/collection/immutable/List$$anonfun$unzip$1; extends Lscala/runtime/AbstractFunction2; {
+  
+  public final Lscala/Tuple2; apply(Lscala/Tuple2; x0$1, Lscala/Tuple2; x1$1) {
+    Lscala/Tuple2; tp1 = x0$1;
+    Lscala/Tuple2; tp2 = x1$1;
+    Lscala/Tuple2; $26$;
+    if ((tp1 != null))
+      {
+        Ljava/lang/Object; temp27 = tp1.(Lscala/Tuple2;::_1()Ljava/lang/Object;)();
+        Ljava/lang/Object; temp28 = tp1.(Lscala/Tuple2;::_2()Ljava/lang/Object;)();
+        Lscala/Tuple2; $27$;
+        if ((tp2 != null))
+          {
+            Ljava/lang/Object; x = temp27;
+            Ljava/lang/Object; y = temp28;
+            Ljava/lang/Object; x$9 = x;
+            Lscala/collection/immutable/List; $28$ = tp2.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$9);
+            Ljava/lang/Object; x$10 = y;
+            $27$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)($28$, tp2.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$10)));
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp1, tp2))));
+          }
+        $26$ = $27$;
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp1, tp2))));
+      }
+    return $26$;
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {
+    return this.(Lscala/collection/immutable/List$$anonfun$unzip$1;::apply(Lscala/Tuple2;Lscala/Tuple2;)Lscala/Tuple2;)(v1.<cast>(Lscala/Tuple2;), v2.<cast>(Lscala/Tuple2;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
+  }
+}

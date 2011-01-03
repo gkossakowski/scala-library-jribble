@@ -1,0 +1,369 @@
+public class Lscala/math/BigDecimal; extends Lscala/math/ScalaNumber; implements Lscala/math/ScalaNumericConversions;, Lscala/ScalaObject; {
+  
+  public C; toChar() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toChar(Lscala/math/ScalaNumericConversions;)C;)(this);
+  }
+  
+  public B; toByte() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toByte(Lscala/math/ScalaNumericConversions;)B;)(this);
+  }
+  
+  public S; toShort() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toShort(Lscala/math/ScalaNumericConversions;)S;)(this);
+  }
+  
+  public I; toInt() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toInt(Lscala/math/ScalaNumericConversions;)I;)(this);
+  }
+  
+  public J; toLong() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toLong(Lscala/math/ScalaNumericConversions;)J;)(this);
+  }
+  
+  public F; toFloat() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toFloat(Lscala/math/ScalaNumericConversions;)F;)(this);
+  }
+  
+  public D; toDouble() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toDouble(Lscala/math/ScalaNumericConversions;)D;)(this);
+  }
+  
+  public Z; isValidByte() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidByte(Lscala/math/ScalaNumericConversions;)Z;)(this);
+  }
+  
+  public Z; isValidShort() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidShort(Lscala/math/ScalaNumericConversions;)Z;)(this);
+  }
+  
+  public Z; isValidInt() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidInt(Lscala/math/ScalaNumericConversions;)Z;)(this);
+  }
+  
+  public Z; isValidChar() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidChar(Lscala/math/ScalaNumericConversions;)Z;)(this);
+  }
+  
+  public I; unifiedPrimitiveHashcode() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::unifiedPrimitiveHashcode(Lscala/math/ScalaNumericConversions;)I;)(this);
+  }
+  
+  public Z; unifiedPrimitiveEquals(Ljava/lang/Object; x) {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::unifiedPrimitiveEquals(Lscala/math/ScalaNumericConversions;Ljava/lang/Object;)Z;)(this, x);
+  }
+  
+  private Ljava/math/BigDecimal; bigDecimal$u0020;
+  
+  public Ljava/math/BigDecimal; bigDecimal() {
+    return this.(Ljava/math/BigDecimal;)bigDecimal$u0020;
+  }
+  
+  private Ljava/math/MathContext; mc$u0020;
+  
+  public Ljava/math/MathContext; mc() {
+    return this.(Ljava/math/MathContext;)mc$u0020;
+  }
+  
+  public this(Ljava/math/BigDecimal; bigDecimal) {
+    (Lscala/math/BigDecimal;::this(Ljava/math/BigDecimal;Ljava/math/MathContext;)V;)(bigDecimal, Lscala/math/BigDecimal$;.MODULE$.(Lscala/math/BigDecimal$;::defaultMathContext()Ljava/math/MathContext;)());
+  }
+  
+  private Lscala/math/BigDecimal; bigdec2BigDecimal(Ljava/math/BigDecimal; x) {
+    return (new (Lscala/math/BigDecimal;::this(Ljava/math/BigDecimal;Ljava/math/MathContext;)V;)(x, this.(Lscala/math/BigDecimal;::mc()Ljava/math/MathContext;)()));
+  }
+  
+  public I; hashCode() {
+    I; $3$;
+    if (this.(Lscala/math/BigDecimal;::isWhole()Z;)())
+      {
+        $3$ = this.(Lscala/math/ScalaNumericConversions;::unifiedPrimitiveHashcode()I;)();
+      }
+    else
+      {
+        $3$ = this.(Lscala/runtime/ScalaRunTime$;::hash(D;)I;)(this.(Lscala/math/BigDecimal;::doubleValue()D;)());
+      }
+    return $3$;
+  }
+  
+  public Z; equals(Ljava/lang/Object; that) {
+    Ljava/lang/Object; temp1 = that;
+    Z; $4$;
+    if (temp1.<instanceof>(Lscala/math/BigDecimal;))
+      {
+        $4$ = this.(Lscala/math/BigDecimal;::equals(Lscala/math/BigDecimal;)Z;)(temp1.<cast>(Lscala/math/BigDecimal;));
+      }
+    else
+      {
+        Z; $5$;
+        if (temp1.<instanceof>(Lscala/math/BigInt;))
+          {
+            Lscala/math/BigInt; temp3 = temp1.<cast>(Lscala/math/BigInt;);
+            Lscala/math/BigInt; that$1 = temp3;
+            $5$ = this.(Lscala/math/BigDecimal;::toBigIntExact()Lscala/Option;)().(Lscala/Option;::exists(Lscala/Function1;)Z;)((new (Lscala/math/BigDecimal$$anonfun$equals$1;::this(Lscala/math/BigDecimal;Lscala/math/BigInt;)V;)(this, that$1)));
+          }
+        else
+          {
+            Z; $6$;
+            if (temp1.<instanceof>(F;))
+              {
+                $6$ = this.(Lscala/math/BigDecimal;::body$percent2$percent1()Z;)();
+              }
+            else
+              {
+                Z; $7$;
+                if (temp1.<instanceof>(D;))
+                  {
+                    $7$ = this.(Lscala/math/BigDecimal;::body$percent2$percent1()Z;)();
+                  }
+                else
+                  {
+                    $7$ = (((this.(Lscala/math/BigDecimal;::isWhole()Z;)() && this.(Lscala/math/BigDecimal;::$less$eq(Lscala/math/BigDecimal;)Z;)(Lscala/math/BigDecimal$;.MODULE$.(Lscala/math/BigDecimal$;::MaxLong()Lscala/math/BigDecimal;)())) && this.(Lscala/math/BigDecimal;::$greater$eq(Lscala/math/BigDecimal;)Z;)(Lscala/math/BigDecimal$;.MODULE$.(Lscala/math/BigDecimal$;::MinLong()Lscala/math/BigDecimal;)())) && this.(Lscala/math/ScalaNumericConversions;::unifiedPrimitiveEquals(Ljava/lang/Object;)Z;)(temp1));
+                  }
+                $6$ = $7$;
+              }
+            $5$ = $6$;
+          }
+        $4$ = $5$;
+      }
+    return $4$;
+  }
+  
+  protected Z; isWhole() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/math/BigDecimal;::remainder(Lscala/math/BigDecimal;)Lscala/math/BigDecimal;)(Lscala/math/BigDecimal$;.MODULE$.(Lscala/math/BigDecimal$;::int2bigDecimal(I;)Lscala/math/BigDecimal;)(1)), Lscala/math/BigDecimal$;.MODULE$.(Lscala/math/BigDecimal$;::apply(I;)Lscala/math/BigDecimal;)(0));
+  }
+  
+  public Ljava/math/BigDecimal; underlying() {
+    return this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)();
+  }
+  
+  public Z; equals(Lscala/math/BigDecimal; that) {
+    return (this.(Lscala/math/BigDecimal;::compare(Lscala/math/BigDecimal;)I;)(that) == 0);
+  }
+  
+  public I; compare(Lscala/math/BigDecimal; that) {
+    return this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::compareTo(Ljava/math/BigDecimal;)I;)(that.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)());
+  }
+  
+  public Z; $less$eq(Lscala/math/BigDecimal; that) {
+    return (this.(Lscala/math/BigDecimal;::compare(Lscala/math/BigDecimal;)I;)(that) <= 0);
+  }
+  
+  public Z; $greater$eq(Lscala/math/BigDecimal; that) {
+    return (this.(Lscala/math/BigDecimal;::compare(Lscala/math/BigDecimal;)I;)(that) >= 0);
+  }
+  
+  public Z; $less(Lscala/math/BigDecimal; that) {
+    return (this.(Lscala/math/BigDecimal;::compare(Lscala/math/BigDecimal;)I;)(that) < 0);
+  }
+  
+  public Z; $greater(Lscala/math/BigDecimal; that) {
+    return (this.(Lscala/math/BigDecimal;::compare(Lscala/math/BigDecimal;)I;)(that) > 0);
+  }
+  
+  public Lscala/math/BigDecimal; $plus(Lscala/math/BigDecimal; that) {
+    return this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::add(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;)(that.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)(), this.(Lscala/math/BigDecimal;::mc()Ljava/math/MathContext;)()));
+  }
+  
+  public Lscala/math/BigDecimal; $minus(Lscala/math/BigDecimal; that) {
+    return this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::subtract(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;)(that.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)(), this.(Lscala/math/BigDecimal;::mc()Ljava/math/MathContext;)()));
+  }
+  
+  public Lscala/math/BigDecimal; $times(Lscala/math/BigDecimal; that) {
+    return this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::multiply(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;)(that.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)(), this.(Lscala/math/BigDecimal;::mc()Ljava/math/MathContext;)()));
+  }
+  
+  public Lscala/math/BigDecimal; $div(Lscala/math/BigDecimal; that) {
+    return this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::divide(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;)(that.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)(), this.(Lscala/math/BigDecimal;::mc()Ljava/math/MathContext;)()));
+  }
+  
+  public Lscala/Tuple2; $div$percent(Lscala/math/BigDecimal; that) {
+    Ljava/math/BigDecimal;[ temp6 = this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::divideAndRemainder(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;[)(that.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)(), this.(Lscala/math/BigDecimal;::mc()Ljava/math/MathContext;)());
+    Lscala/Option; temp7 = Lscala/Array$;.MODULE$.(Lscala/Array$;::unapplySeq(Ljava/lang/Object;)Lscala/Option;)(temp6);
+    Lscala/Tuple2; $8$;
+    if (!(temp7.(Lscala/Option;::isEmpty()Z;)()))
+      {
+        Lscala/collection/IndexedSeq; temp8 = temp7.(Lscala/Option;::get()Ljava/lang/Object;)().<cast>(Lscala/collection/IndexedSeq;);
+        Z; $9$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp8, null))
+          {
+            $9$ = false;
+          }
+        else
+          {
+            $9$ = (temp8.(Lscala/collection/SeqLike;::lengthCompare(I;)I;)(2) == 0);
+          }
+        Lscala/Tuple2; $10$;
+        if ($9$)
+          {
+            $10$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(temp8.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(0).<cast>(Ljava/math/BigDecimal;)), this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(temp8.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(1).<cast>(Ljava/math/BigDecimal;))));
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp6));
+          }
+        $8$ = $10$;
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp6));
+      }
+    return $8$;
+  }
+  
+  public Lscala/math/BigDecimal; quot(Lscala/math/BigDecimal; that) {
+    return this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::divideToIntegralValue(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;)(that.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)(), this.(Lscala/math/BigDecimal;::mc()Ljava/math/MathContext;)()));
+  }
+  
+  public Lscala/math/BigDecimal; min(Lscala/math/BigDecimal; that) {
+    return this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::min(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;)(that.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)()));
+  }
+  
+  public Lscala/math/BigDecimal; max(Lscala/math/BigDecimal; that) {
+    return this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::max(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;)(that.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)()));
+  }
+  
+  public Lscala/math/BigDecimal; remainder(Lscala/math/BigDecimal; that) {
+    return this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::remainder(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;)(that.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)(), this.(Lscala/math/BigDecimal;::mc()Ljava/math/MathContext;)()));
+  }
+  
+  public Lscala/math/BigDecimal; $percent(Lscala/math/BigDecimal; that) {
+    return this.(Lscala/math/BigDecimal;::remainder(Lscala/math/BigDecimal;)Lscala/math/BigDecimal;)(that);
+  }
+  
+  public Lscala/math/BigDecimal; pow(I; n) {
+    return this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::pow(I;Ljava/math/MathContext;)Ljava/math/BigDecimal;)(n, this.(Lscala/math/BigDecimal;::mc()Ljava/math/MathContext;)()));
+  }
+  
+  public Lscala/math/BigDecimal; unary_$minus() {
+    return this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::negate(Ljava/math/MathContext;)Ljava/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::mc()Ljava/math/MathContext;)()));
+  }
+  
+  public Lscala/math/BigDecimal; abs() {
+    return this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::abs(Ljava/math/MathContext;)Ljava/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::mc()Ljava/math/MathContext;)()));
+  }
+  
+  public I; signum() {
+    return this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::signum()I;)();
+  }
+  
+  public I; precision() {
+    return this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::precision()I;)();
+  }
+  
+  public Lscala/math/BigDecimal; round(Ljava/math/MathContext; mc) {
+    return this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::round(Ljava/math/MathContext;)Ljava/math/BigDecimal;)(mc));
+  }
+  
+  public I; scale() {
+    return this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::scale()I;)();
+  }
+  
+  public Lscala/math/BigDecimal; ulp() {
+    return this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::ulp()Ljava/math/BigDecimal;)());
+  }
+  
+  public Lscala/math/BigDecimal; apply(Ljava/math/MathContext; mc) {
+    return Lscala/math/BigDecimal$;.MODULE$.(Lscala/math/BigDecimal$;::apply(Ljava/lang/String;Ljava/math/MathContext;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::toString()Ljava/lang/String;)(), mc);
+  }
+  
+  public Lscala/math/BigDecimal; setScale(I; scale) {
+    return this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::setScale(I;)Ljava/math/BigDecimal;)(scale));
+  }
+  
+  public Lscala/math/BigDecimal; setScale(I; scale, Lscala/Enumeration$Value; mode) {
+    return this.(Lscala/math/BigDecimal;::bigdec2BigDecimal(Ljava/math/BigDecimal;)Lscala/math/BigDecimal;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::setScale(I;I;)Ljava/math/BigDecimal;)(scale, mode.(Lscala/Enumeration$Value;::id()I;)()));
+  }
+  
+  public B; byteValue() {
+    return this.(Lscala/math/BigDecimal;::intValue()I;)().<cast>(B;);
+  }
+  
+  public S; shortValue() {
+    return this.(Lscala/math/BigDecimal;::intValue()I;)().<cast>(S;);
+  }
+  
+  public C; charValue() {
+    return this.(Lscala/math/BigDecimal;::intValue()I;)().<cast>(C;);
+  }
+  
+  public I; intValue() {
+    return this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::intValue()I;)();
+  }
+  
+  public J; longValue() {
+    return this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::longValue()J;)();
+  }
+  
+  public F; floatValue() {
+    return this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::floatValue()F;)();
+  }
+  
+  public D; doubleValue() {
+    return this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::doubleValue()D;)();
+  }
+  
+  public B; toByteExact() {
+    return this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::byteValueExact()B;)();
+  }
+  
+  public S; toShortExact() {
+    return this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::shortValueExact()S;)();
+  }
+  
+  public I; toIntExact() {
+    return this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::intValueExact()I;)();
+  }
+  
+  public J; toLongExact() {
+    return this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::longValueExact()J;)();
+  }
+  
+  public Lscala/collection/immutable/Range$Partial; until(Lscala/math/BigDecimal; end$1) {
+    return (new (Lscala/collection/immutable/Range$Partial;::this(Lscala/Function1;)V;)((new (Lscala/math/BigDecimal$$anonfun$until$1;::this(Lscala/math/BigDecimal;Lscala/math/BigDecimal;)V;)(this, end$1))));
+  }
+  
+  public Lscala/collection/immutable/NumericRange$Exclusive; until(Lscala/math/BigDecimal; end, Lscala/math/BigDecimal; step) {
+    return Lscala/collection/immutable/Range$BigDecimal$;.MODULE$.(Lscala/collection/immutable/Range$BigDecimal$;::apply(Lscala/math/BigDecimal;Lscala/math/BigDecimal;Lscala/math/BigDecimal;)Lscala/collection/immutable/NumericRange$Exclusive;)(this, end, step);
+  }
+  
+  public Lscala/collection/immutable/Range$Partial; to(Lscala/math/BigDecimal; end$2) {
+    return (new (Lscala/collection/immutable/Range$Partial;::this(Lscala/Function1;)V;)((new (Lscala/math/BigDecimal$$anonfun$to$1;::this(Lscala/math/BigDecimal;Lscala/math/BigDecimal;)V;)(this, end$2))));
+  }
+  
+  public Lscala/collection/immutable/NumericRange$Inclusive; to(Lscala/math/BigDecimal; end, Lscala/math/BigDecimal; step) {
+    return Lscala/collection/immutable/Range$BigDecimal$;.MODULE$.(Lscala/collection/immutable/Range$BigDecimal$;::inclusive(Lscala/math/BigDecimal;Lscala/math/BigDecimal;Lscala/math/BigDecimal;)Lscala/collection/immutable/NumericRange$Inclusive;)(this, end, step);
+  }
+  
+  public Lscala/math/BigInt; toBigInt() {
+    return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::toBigInteger()Ljava/math/BigInteger;)()));
+  }
+  
+  public Lscala/Option; toBigIntExact() {
+    Lscala/Option; exceptionResult1;
+    try {
+      exceptionResult1 = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::toBigIntegerExact()Ljava/math/BigInteger;)()))));
+    } catch(Ljava/lang/ArithmeticException; $WILDCARD) {
+      exceptionResult1 = Lscala/None$;.MODULE$;
+    }
+    return exceptionResult1;
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/math/BigDecimal;::bigDecimal()Ljava/math/BigDecimal;)().(Ljava/math/BigDecimal;::toString()Ljava/lang/String;)();
+  }
+  
+  public Ljava/lang/Object; underlying() {
+    return this.(Lscala/math/BigDecimal;::underlying()Ljava/math/BigDecimal;)();
+  }
+  
+  public this(Ljava/math/BigDecimal; bigDecimal, Ljava/math/MathContext; mc) {
+    this.(Ljava/math/BigDecimal;)bigDecimal$u0020 = bigDecimal;
+    this.(Ljava/math/MathContext;)mc$u0020 = mc;
+    (Lscala/math/ScalaNumber;::super()V;)();
+    Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::$init$(Lscala/math/ScalaNumericConversions;)V;)(this);
+  }
+  
+  private final Z; body$percent2$percent1() {
+    return this.(Lscala/math/ScalaNumericConversions;::unifiedPrimitiveEquals(Ljava/lang/Object;)Z;)(that);
+  }
+}

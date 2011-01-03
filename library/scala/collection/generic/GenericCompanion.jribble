@@ -1,0 +1,18 @@
+public abstract class Lscala/collection/generic/GenericCompanion; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  public abstract Lscala/collection/mutable/Builder; newBuilder();
+  
+  public Lscala/collection/Traversable; empty() {
+    return this.(Lscala/collection/generic/GenericCompanion;::newBuilder()Lscala/collection/mutable/Builder;)().(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public Lscala/collection/Traversable; apply(Lscala/collection/Seq; elems) {
+    Lscala/collection/mutable/Builder; b = this.(Lscala/collection/generic/GenericCompanion;::newBuilder()Lscala/collection/mutable/Builder;)();
+    b.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(elems);
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

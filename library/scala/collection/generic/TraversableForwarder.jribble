@@ -1,0 +1,92 @@
+public interface Lscala/collection/generic/TraversableForwarder; extends Lscala/collection/Traversable;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/Traversable; underlying();
+  
+  public V; foreach(Lscala/Function1; f);
+  
+  public Z; isEmpty();
+  
+  public Z; nonEmpty();
+  
+  public I; size();
+  
+  public Z; hasDefiniteSize();
+  
+  public Z; forall(Lscala/Function1; p);
+  
+  public Z; exists(Lscala/Function1; p);
+  
+  public I; count(Lscala/Function1; p);
+  
+  public Lscala/Option; find(Lscala/Function1; p);
+  
+  public Ljava/lang/Object; foldLeft(Ljava/lang/Object; z, Lscala/Function2; op);
+  
+  public Ljava/lang/Object; $div$colon(Ljava/lang/Object; z, Lscala/Function2; op);
+  
+  public Ljava/lang/Object; foldRight(Ljava/lang/Object; z, Lscala/Function2; op);
+  
+  public Ljava/lang/Object; $colon$bslash(Ljava/lang/Object; z, Lscala/Function2; op);
+  
+  public Ljava/lang/Object; reduceLeft(Lscala/Function2; op);
+  
+  public Lscala/Option; reduceLeftOption(Lscala/Function2; op);
+  
+  public Ljava/lang/Object; reduceRight(Lscala/Function2; op);
+  
+  public Lscala/Option; reduceRightOption(Lscala/Function2; op);
+  
+  public Ljava/lang/Object; sum(Lscala/math/Numeric; num);
+  
+  public Ljava/lang/Object; product(Lscala/math/Numeric; num);
+  
+  public Ljava/lang/Object; min(Lscala/math/Ordering; cmp);
+  
+  public Ljava/lang/Object; max(Lscala/math/Ordering; cmp);
+  
+  public Ljava/lang/Object; head();
+  
+  public Lscala/Option; headOption();
+  
+  public Ljava/lang/Object; last();
+  
+  public Lscala/Option; lastOption();
+  
+  public V; copyToBuffer(Lscala/collection/mutable/Buffer; dest);
+  
+  public V; copyToArray(Ljava/lang/Object; xs, I; start, I; len);
+  
+  public V; copyToArray(Ljava/lang/Object; xs, I; start);
+  
+  public V; copyToArray(Ljava/lang/Object; xs);
+  
+  public Ljava/lang/Object; toArray(Lscala/reflect/ClassManifest; evidence$1);
+  
+  public Lscala/collection/immutable/List; toList();
+  
+  public Lscala/collection/Iterable; toIterable();
+  
+  public Lscala/collection/Seq; toSeq();
+  
+  public Lscala/collection/immutable/IndexedSeq; toIndexedSeq();
+  
+  public Lscala/collection/mutable/Buffer; toBuffer();
+  
+  public Lscala/collection/immutable/Stream; toStream();
+  
+  public Lscala/collection/immutable/Set; toSet();
+  
+  public Lscala/collection/immutable/Map; toMap(Lscala/Predef$$less$colon$less; ev);
+  
+  public Ljava/lang/String; mkString(Ljava/lang/String; start, Ljava/lang/String; sep, Ljava/lang/String; end);
+  
+  public Ljava/lang/String; mkString(Ljava/lang/String; sep);
+  
+  public Ljava/lang/String; mkString();
+  
+  public Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/mutable/StringBuilder; b, Ljava/lang/String; start, Ljava/lang/String; sep, Ljava/lang/String; end);
+  
+  public Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/mutable/StringBuilder; b, Ljava/lang/String; sep);
+  
+  public Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/mutable/StringBuilder; b);
+}

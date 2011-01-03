@@ -1,0 +1,32 @@
+public final class Lscala/xml/dtd/SystemID$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+  public static Lscala/xml/dtd/SystemID$; MODULE$ = new (Lscala/xml/dtd/SystemID$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "SystemID";
+  }
+  
+  public Lscala/Option; unapply(Lscala/xml/dtd/SystemID; x$0) {
+    Lscala/Option; $11$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $11$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $11$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/SystemID;::systemId()Ljava/lang/String;)()));
+      }
+    return $11$;
+  }
+  
+  public Lscala/xml/dtd/SystemID; apply(Ljava/lang/String; systemId) {
+    return (new (Lscala/xml/dtd/SystemID;::this(Ljava/lang/String;)V;)(systemId));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/xml/dtd/SystemID$;::apply(Ljava/lang/String;)Lscala/xml/dtd/SystemID;)(v1.<cast>(Ljava/lang/String;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

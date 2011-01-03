@@ -1,0 +1,17 @@
+public final class Lscala/collection/immutable/DefaultMap$$anonfun$$minus$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Z; apply(Lscala/Tuple2; kv) {
+    return (kv.(Lscala/Tuple2;::_1()Ljava/lang/Object;)() != this.(Ljava/lang/Object;)key$1);
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/collection/immutable/DefaultMap$$anonfun$$minus$1;::apply(Lscala/Tuple2;)Z;)(v1.<cast>(Lscala/Tuple2;)));
+  }
+  
+  private Ljava/lang/Object; key$1;
+  
+  public this(Lscala/collection/immutable/DefaultMap; $outer, Ljava/lang/Object; key$1) {
+    this.(Ljava/lang/Object;)key$1 = key$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

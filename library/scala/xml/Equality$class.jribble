@@ -1,0 +1,104 @@
+public abstract class Lscala/xml/Equality$class; {
+  
+  public static Z; strict_$bang$eq(Lscala/xml/Equality; $this, Lscala/xml/Equality; other) {
+    return !($this.(Lscala/xml/Equality;::strict_$eq$eq(Lscala/xml/Equality;)Z;)(other));
+  }
+  
+  public static final I; scala$xml$Equality$$hashOf(Lscala/xml/Equality; $this, Ljava/lang/Object; x) {
+    I; $7$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, null))
+      {
+        $7$ = 1;
+      }
+    else
+      {
+        $7$ = this.(Lscala/runtime/ScalaRunTime$;::hash(Ljava/lang/Object;)I;)(x);
+      }
+    return $7$;
+  }
+  
+  public static Z; canEqual(Lscala/xml/Equality; $this, Ljava/lang/Object; other) {
+    Ljava/lang/Object; temp9 = other;
+    return temp9.<instanceof>(Lscala/xml/Equality;);
+  }
+  
+  public static I; hashCode(Lscala/xml/Equality; $this) {
+    Lscala/collection/Seq; temp11 = $this.(Lscala/xml/Equality;::basisForHashCode()Lscala/collection/Seq;)();
+    I; $8$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/Nil$;.MODULE$, temp11))
+      {
+        $8$ = 0;
+      }
+    else
+      {
+        I; $9$;
+        if (temp11.<instanceof>(Lscala/collection/immutable/$colon$colon;))
+          {
+            Lscala/collection/immutable/$colon$colon; temp13 = temp11.<cast>(Lscala/collection/immutable/$colon$colon;);
+            $9$ = ((Lscala/xml/Equality$class;.(Lscala/xml/Equality$class;::scala$xml$Equality$$hashOf(Lscala/xml/Equality;Ljava/lang/Object;)I;)($this, temp13.(Lscala/collection/immutable/$colon$colon;::hd$1()Ljava/lang/Object;)()) * 41) + Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp13.(Lscala/collection/immutable/$colon$colon;::tl$1()Lscala/collection/immutable/List;)().(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/xml/Equality$$anonfun$hashCode$1;::this(Lscala/xml/Equality;)V;)($this)), Lscala/collection/immutable/List$;.MODULE$.(Lscala/collection/immutable/List$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/LinearSeqOptimized;).(Lscala/collection/LinearSeqOptimized;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(0), (new (Lscala/xml/Equality$$anonfun$hashCode$2;::this(Lscala/xml/Equality;)V;)($this)))));
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp11));
+          }
+        $8$ = $9$;
+      }
+    return $8$;
+  }
+  
+  public static Z; equals(Lscala/xml/Equality; $this, Ljava/lang/Object; other) {
+    return Lscala/xml/Equality$class;.(Lscala/xml/Equality$class;::doComparison(Lscala/xml/Equality;Ljava/lang/Object;Z;)Z;)($this, other, false);
+  }
+  
+  public static final Z; xml_$eq$eq(Lscala/xml/Equality; $this, Ljava/lang/Object; other) {
+    return Lscala/xml/Equality$class;.(Lscala/xml/Equality$class;::doComparison(Lscala/xml/Equality;Ljava/lang/Object;Z;)Z;)($this, other, true);
+  }
+  
+  public static final Z; xml_$bang$eq(Lscala/xml/Equality; $this, Ljava/lang/Object; other) {
+    return !($this.(Lscala/xml/Equality;::xml_$eq$eq(Ljava/lang/Object;)Z;)(other));
+  }
+  
+  private static Z; doComparison(Lscala/xml/Equality; $this, Ljava/lang/Object; other, Z; blithe) {
+    Ljava/lang/Object; temp16 = other;
+    Z; $10$;
+    if (temp16.<instanceof>(Ljava/lang/Object;))
+      {
+        Ljava/lang/Object; temp17 = temp16;
+        Z; $11$;
+        if (Lscala/xml/Equality$class;.(Lscala/xml/Equality$class;::gd2$1(Lscala/xml/Equality;Ljava/lang/Object;)Z;)($this, temp17))
+          {
+            $11$ = true;
+          }
+        else
+          {
+            Z; $12$;
+            if (temp17.<instanceof>(Lscala/xml/Equality;))
+              {
+                Lscala/xml/Equality; temp18 = temp17.<cast>(Lscala/xml/Equality;);
+                Lscala/xml/Equality; x = temp18;
+                $12$ = (x.(Lscala/xml/Equality;::canEqual(Ljava/lang/Object;)Z;)($this) && $this.(Lscala/xml/Equality;::strict_$eq$eq(Lscala/xml/Equality;)Z;)(x));
+              }
+            else
+              {
+                $12$ = false;
+              }
+            $11$ = $12$;
+          }
+        $10$ = $11$;
+      }
+    else
+      {
+        $10$ = false;
+      }
+    Z; strictlyEqual = $10$;
+    return (strictlyEqual || (blithe && Lscala/xml/Equality$;.MODULE$.(Lscala/xml/Equality$;::compareBlithely(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this, Lscala/xml/Equality$;.MODULE$.(Lscala/xml/Equality$;::asRef(Ljava/lang/Object;)Ljava/lang/Object;)(other))));
+  }
+  
+  private static final Z; gd2$1(Lscala/xml/Equality; $this, Ljava/lang/Object; x$1) {
+    return ($this == x$1);
+  }
+  
+  public static V; $init$(Lscala/xml/Equality; $this) {
+    
+  }
+}

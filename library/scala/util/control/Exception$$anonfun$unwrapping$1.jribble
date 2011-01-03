@@ -1,0 +1,17 @@
+public final class Lscala/util/control/Exception$$anonfun$unwrapping$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Lscala/runtime/Nothing$; apply(Ljava/lang/Throwable; x) {
+    throw Lscala/util/control/Exception$;.MODULE$.(Lscala/util/control/Exception$;::unwrap$1(Ljava/lang/Throwable;Lscala/collection/Seq;)Ljava/lang/Throwable;)(x, this.(Lscala/collection/Seq;)exceptions$3);
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/util/control/Exception$$anonfun$unwrapping$1;::apply(Ljava/lang/Throwable;)Lscala/runtime/Nothing$;)(v1.<cast>(Ljava/lang/Throwable;));
+  }
+  
+  private Lscala/collection/Seq; exceptions$3;
+  
+  public this(Lscala/collection/Seq; exceptions$3) {
+    this.(Lscala/collection/Seq;)exceptions$3 = exceptions$3;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

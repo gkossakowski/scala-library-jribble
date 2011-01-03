@@ -1,0 +1,256 @@
+public abstract class Lscala/collection/mutable/HashTable$class; {
+  
+  public static I; loadFactor(Lscala/collection/mutable/HashTable; $this) {
+    return 750;
+  }
+  
+  public static I; initialSize(Lscala/collection/mutable/HashTable; $this) {
+    return 16;
+  }
+  
+  public static I; initialThreshold(Lscala/collection/mutable/HashTable; $this) {
+    return Lscala/collection/mutable/HashTable$class;.(Lscala/collection/mutable/HashTable$class;::newThreshold(Lscala/collection/mutable/HashTable;I;)I;)($this, Lscala/collection/mutable/HashTable$class;.(Lscala/collection/mutable/HashTable$class;::initialCapacity(Lscala/collection/mutable/HashTable;)I;)($this));
+  }
+  
+  private static I; initialCapacity(Lscala/collection/mutable/HashTable; $this) {
+    return Lscala/collection/mutable/HashTable$class;.(Lscala/collection/mutable/HashTable$class;::capacity(Lscala/collection/mutable/HashTable;I;)I;)($this, $this.(Lscala/collection/mutable/HashTable;::initialSize()I;)());
+  }
+  
+  public static V; init(Lscala/collection/mutable/HashTable; $this, Ljava/io/ObjectInputStream; in, Lscala/Function2; f) {
+    in.(Ljava/io/ObjectInputStream;::defaultReadObject()V;)();
+    $this.(Lscala/collection/mutable/HashTable;::_loadFactor_$eq(I;)V;)(in.(Ljava/io/ObjectInputStream;::readInt()I;)());
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;)V;)(($this.(Lscala/collection/mutable/HashTable;::_loadFactor()I;)() > 0));
+    I; size = in.(Ljava/io/ObjectInputStream;::readInt()I;)();
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;)V;)((size >= 0));
+    $this.(Lscala/collection/mutable/HashTable;::table_$eq(Lscala/collection/mutable/HashEntry;[)V;)(new Lscala/collection/mutable/HashEntry;[Lscala/collection/mutable/HashTable$class;.(Lscala/collection/mutable/HashTable$class;::capacity(Lscala/collection/mutable/HashTable;I;)I;)($this, ((size * 1000) / $this.(Lscala/collection/mutable/HashTable;::_loadFactor()I;)()))]);
+    $this.(Lscala/collection/mutable/HashTable;::threshold_$eq(I;)V;)(Lscala/collection/mutable/HashTable$class;.(Lscala/collection/mutable/HashTable$class;::newThreshold(Lscala/collection/mutable/HashTable;I;)I;)($this, Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)($this.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)().<cast>(Ljava/lang/Object;[)).(Lscala/collection/SeqLike;::size()I;)()));
+    I; index = 0;
+    while$1: while(true) {
+      if ((index < size))
+        {
+          {
+            $this.(Lscala/collection/mutable/HashTable;::addEntry(Lscala/collection/mutable/HashEntry;)V;)(f.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(in.(Ljava/io/ObjectInputStream;::readObject()Ljava/lang/Object;)(), in.(Ljava/io/ObjectInputStream;::readObject()Ljava/lang/Object;)()).<cast>(Lscala/collection/mutable/HashEntry;));
+            index = (index + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  public static V; serializeTo(Lscala/collection/mutable/HashTable; $this, Ljava/io/ObjectOutputStream; out$1, Lscala/Function1; value$1) {
+    out$1.(Ljava/io/ObjectOutputStream;::defaultWriteObject()V;)();
+    out$1.(Ljava/io/ObjectOutputStream;::writeInt(I;)V;)($this.(Lscala/collection/mutable/HashTable;::loadFactor()I;)());
+    out$1.(Ljava/io/ObjectOutputStream;::writeInt(I;)V;)($this.(Lscala/collection/mutable/HashTable;::tableSize()I;)());
+    $this.(Lscala/collection/mutable/HashTable;::foreachEntry(Lscala/Function1;)V;)((new (Lscala/collection/mutable/HashTable$$anonfun$serializeTo$1;::this(Lscala/collection/mutable/HashTable;Ljava/io/ObjectOutputStream;Lscala/Function1;)V;)($this, out$1, value$1)));
+  }
+  
+  private static I; capacity(Lscala/collection/mutable/HashTable; $this, I; expectedSize) {
+    I; $1$;
+    if ((expectedSize == 0))
+      {
+        $1$ = 1;
+      }
+    else
+      {
+        $1$ = Lscala/collection/mutable/HashTable$;.MODULE$.(Lscala/collection/mutable/HashTable$;::powerOfTwo(I;)I;)(expectedSize);
+      }
+    return $1$;
+  }
+  
+  public static Lscala/collection/mutable/HashEntry; findEntry(Lscala/collection/mutable/HashTable; $this, Ljava/lang/Object; key) {
+    I; h = $this.(Lscala/collection/mutable/HashTable;::index(I;)I;)($this.(Lscala/collection/mutable/HashTable;::elemHashCode(Ljava/lang/Object;)I;)(key));
+    Lscala/collection/mutable/HashEntry; e = $this.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)()[h];
+    while$2: while(true) {
+      if (((e != null) && !($this.(Lscala/collection/mutable/HashTable;::elemEquals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(e.(Lscala/collection/mutable/HashEntry;::key()Ljava/lang/Object;)(), key))))
+        {
+          e = e.(Lscala/collection/mutable/HashEntry;::next()Ljava/lang/Object;)().<cast>(Lscala/collection/mutable/HashEntry;);
+          continue while$2;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return e;
+  }
+  
+  public static V; addEntry(Lscala/collection/mutable/HashTable; $this, Lscala/collection/mutable/HashEntry; e) {
+    I; h = $this.(Lscala/collection/mutable/HashTable;::index(I;)I;)($this.(Lscala/collection/mutable/HashTable;::elemHashCode(Ljava/lang/Object;)I;)(e.(Lscala/collection/mutable/HashEntry;::key()Ljava/lang/Object;)()));
+    e.(Lscala/collection/mutable/HashEntry;::next_$eq(Ljava/lang/Object;)V;)($this.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)()[h]);
+    $this.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)()[h] = e;
+    $this.(Lscala/collection/mutable/HashTable;::tableSize_$eq(I;)V;)(($this.(Lscala/collection/mutable/HashTable;::tableSize()I;)() + 1));
+    if (($this.(Lscala/collection/mutable/HashTable;::tableSize()I;)() > $this.(Lscala/collection/mutable/HashTable;::threshold()I;)()))
+      {
+        Lscala/collection/mutable/HashTable$class;.(Lscala/collection/mutable/HashTable$class;::resize(Lscala/collection/mutable/HashTable;I;)V;)($this, (2 * $this.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)().<length>));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public static Lscala/collection/mutable/HashEntry; removeEntry(Lscala/collection/mutable/HashTable; $this, Ljava/lang/Object; key) {
+    I; h = $this.(Lscala/collection/mutable/HashTable;::index(I;)I;)($this.(Lscala/collection/mutable/HashTable;::elemHashCode(Ljava/lang/Object;)I;)(key));
+    Lscala/collection/mutable/HashEntry; e = $this.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)()[h];
+    if ((e != null))
+      {
+        if ($this.(Lscala/collection/mutable/HashTable;::elemEquals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(e.(Lscala/collection/mutable/HashEntry;::key()Ljava/lang/Object;)(), key))
+          {
+            $this.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)()[h] = e.(Lscala/collection/mutable/HashEntry;::next()Ljava/lang/Object;)().<cast>(Lscala/collection/mutable/HashEntry;);
+            $this.(Lscala/collection/mutable/HashTable;::tableSize_$eq(I;)V;)(($this.(Lscala/collection/mutable/HashTable;::tableSize()I;)() - 1));
+            return e;
+          }
+        else
+          {
+            Lscala/collection/mutable/HashEntry; e1 = e.(Lscala/collection/mutable/HashEntry;::next()Ljava/lang/Object;)().<cast>(Lscala/collection/mutable/HashEntry;);
+            while$3: while(true) {
+              if (((e1 != null) && !($this.(Lscala/collection/mutable/HashTable;::elemEquals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(e1.(Lscala/collection/mutable/HashEntry;::key()Ljava/lang/Object;)(), key))))
+                {
+                  {
+                    e = e1;
+                    e1 = e1.(Lscala/collection/mutable/HashEntry;::next()Ljava/lang/Object;)().<cast>(Lscala/collection/mutable/HashEntry;);
+                  }
+                  continue while$3;
+                }
+              else
+                {
+                  
+                }
+              break;
+            }
+            if ((e1 != null))
+              {
+                e.(Lscala/collection/mutable/HashEntry;::next_$eq(Ljava/lang/Object;)V;)(e1.(Lscala/collection/mutable/HashEntry;::next()Ljava/lang/Object;)());
+                $this.(Lscala/collection/mutable/HashTable;::tableSize_$eq(I;)V;)(($this.(Lscala/collection/mutable/HashTable;::tableSize()I;)() - 1));
+                return e1;
+              }
+            else
+              {
+                
+              }
+          }
+      }
+    else
+      {
+        
+      }
+    return null;
+  }
+  
+  public static Lscala/collection/Iterator; entriesIterator(Lscala/collection/mutable/HashTable; $this) {
+    return (new (Lscala/collection/mutable/HashTable$$anon$1;::this(Lscala/collection/mutable/HashTable;)V;)($this));
+  }
+  
+  public static final V; foreachEntry(Lscala/collection/mutable/HashTable; $this, Lscala/Function1; f) {
+    $this.(Lscala/collection/mutable/HashTable;::entriesIterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)(f);
+  }
+  
+  public static Lscala/collection/Iterator; entries(Lscala/collection/mutable/HashTable; $this) {
+    return $this.(Lscala/collection/mutable/HashTable;::entriesIterator()Lscala/collection/Iterator;)();
+  }
+  
+  public static V; clearTable(Lscala/collection/mutable/HashTable; $this) {
+    I; i = ($this.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)().<length> - 1);
+    while$5: while(true) {
+      if ((i >= 0))
+        {
+          {
+            $this.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)()[i] = null;
+            i = (i - 1);
+          }
+          continue while$5;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    $this.(Lscala/collection/mutable/HashTable;::tableSize_$eq(I;)V;)(0);
+  }
+  
+  private static I; newThreshold(Lscala/collection/mutable/HashTable; $this, I; size) {
+    return ((size.<cast>(J;) * $this.(Lscala/collection/mutable/HashTable;::_loadFactor()I;)()) / 1000).<cast>(I;);
+  }
+  
+  private static V; resize(Lscala/collection/mutable/HashTable; $this, I; newSize) {
+    Lscala/collection/mutable/HashEntry;[ oldTable = $this.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)();
+    $this.(Lscala/collection/mutable/HashTable;::table_$eq(Lscala/collection/mutable/HashEntry;[)V;)(new Lscala/collection/mutable/HashEntry;[newSize]);
+    I; i = (oldTable.<length> - 1);
+    while$6: while(true) {
+      if ((i >= 0))
+        {
+          {
+            Lscala/collection/mutable/HashEntry; e = oldTable[i];
+            while$7: while(true) {
+              if ((e != null))
+                {
+                  {
+                    I; h = $this.(Lscala/collection/mutable/HashTable;::index(I;)I;)($this.(Lscala/collection/mutable/HashTable;::elemHashCode(Ljava/lang/Object;)I;)(e.(Lscala/collection/mutable/HashEntry;::key()Ljava/lang/Object;)()));
+                    Lscala/collection/mutable/HashEntry; e1 = e.(Lscala/collection/mutable/HashEntry;::next()Ljava/lang/Object;)().<cast>(Lscala/collection/mutable/HashEntry;);
+                    e.(Lscala/collection/mutable/HashEntry;::next_$eq(Ljava/lang/Object;)V;)($this.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)()[h]);
+                    $this.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)()[h] = e;
+                    e = e1;
+                  }
+                  continue while$7;
+                }
+              else
+                {
+                  
+                }
+              break;
+            }
+            i = (i - 1);
+          }
+          continue while$6;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    $this.(Lscala/collection/mutable/HashTable;::threshold_$eq(I;)V;)(Lscala/collection/mutable/HashTable$class;.(Lscala/collection/mutable/HashTable$class;::newThreshold(Lscala/collection/mutable/HashTable;I;)I;)($this, newSize));
+  }
+  
+  public static Z; elemEquals(Lscala/collection/mutable/HashTable; $this, Ljava/lang/Object; key1, Ljava/lang/Object; key2) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key1, key2);
+  }
+  
+  public static I; elemHashCode(Lscala/collection/mutable/HashTable; $this, Ljava/lang/Object; key) {
+    I; $2$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(key, null))
+      {
+        $2$ = 0;
+      }
+    else
+      {
+        $2$ = this.(Lscala/runtime/ScalaRunTime$;::hash(Ljava/lang/Object;)I;)(key);
+      }
+    return $2$;
+  }
+  
+  public static final I; improve(Lscala/collection/mutable/HashTable; $this, I; hcode) {
+    I; h = (hcode + ~((hcode << 9)));
+    h = (h ^ (h >> 14));
+    h = (h + (h << 4));
+    return (h ^ (h >> 10));
+  }
+  
+  public static final I; index(Lscala/collection/mutable/HashTable; $this, I; hcode) {
+    return ($this.(Lscala/collection/mutable/HashTable;::improve(I;)I;)(hcode) & ($this.(Lscala/collection/mutable/HashTable;::table()Lscala/collection/mutable/HashEntry;[)().<length> - 1));
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/HashTable; $this) {
+    $this.(Lscala/collection/mutable/HashTable;::_loadFactor_$eq(I;)V;)($this.(Lscala/collection/mutable/HashTable;::loadFactor()I;)());
+    $this.(Lscala/collection/mutable/HashTable;::table_$eq(Lscala/collection/mutable/HashEntry;[)V;)(new Lscala/collection/mutable/HashEntry;[Lscala/collection/mutable/HashTable$class;.(Lscala/collection/mutable/HashTable$class;::initialCapacity(Lscala/collection/mutable/HashTable;)I;)($this)]);
+    $this.(Lscala/collection/mutable/HashTable;::tableSize_$eq(I;)V;)(0);
+    $this.(Lscala/collection/mutable/HashTable;::threshold_$eq(I;)V;)($this.(Lscala/collection/mutable/HashTable;::initialThreshold()I;)());
+  }
+}

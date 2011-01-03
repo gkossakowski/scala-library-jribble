@@ -1,0 +1,27 @@
+public final class Lscala/Function$$anonfun$tupled$4; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Ljava/lang/Object; apply(Lscala/Tuple5; x0$4) {
+    Lscala/Tuple5; temp13 = x0$4;
+    Ljava/lang/Object; $4$;
+    if ((temp13 != null))
+      {
+        $4$ = this.(Lscala/Function5;)f$12.(Lscala/Function5;::apply(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(temp13.(Lscala/Tuple5;::_1()Ljava/lang/Object;)(), temp13.(Lscala/Tuple5;::_2()Ljava/lang/Object;)(), temp13.(Lscala/Tuple5;::_3()Ljava/lang/Object;)(), temp13.(Lscala/Tuple5;::_4()Ljava/lang/Object;)(), temp13.(Lscala/Tuple5;::_5()Ljava/lang/Object;)());
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp13));
+      }
+    return $4$;
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/Function$$anonfun$tupled$4;::apply(Lscala/Tuple5;)Ljava/lang/Object;)(v1.<cast>(Lscala/Tuple5;));
+  }
+  
+  private Lscala/Function5; f$12;
+  
+  public this(Lscala/Function5; f$12) {
+    this.(Lscala/Function5;)f$12 = f$12;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

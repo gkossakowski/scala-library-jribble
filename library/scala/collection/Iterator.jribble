@@ -1,0 +1,98 @@
+public interface Lscala/collection/Iterator; extends Lscala/collection/TraversableOnce;, Lscala/ScalaObject; {
+  
+  public I; sliding$default$2();
+  
+  public Z; hasNext();
+  
+  public Ljava/lang/Object; next();
+  
+  public Z; isEmpty();
+  
+  public Z; isTraversableAgain();
+  
+  public Z; hasDefiniteSize();
+  
+  public Lscala/collection/Iterator; take(I; n);
+  
+  public Lscala/collection/Iterator; drop(I; n);
+  
+  public Lscala/collection/Iterator; slice(I; from, I; until);
+  
+  public Lscala/collection/Iterator; map(Lscala/Function1; f);
+  
+  public Lscala/collection/Iterator; $plus$plus(Lscala/Function0; that);
+  
+  public Lscala/collection/Iterator; flatMap(Lscala/Function1; f);
+  
+  public Lscala/collection/Iterator; filter(Lscala/Function1; p);
+  
+  public Lscala/collection/Iterator; withFilter(Lscala/Function1; p);
+  
+  public Lscala/collection/Iterator; filterNot(Lscala/Function1; p);
+  
+  public Lscala/collection/Iterator; collect(Lscala/PartialFunction; pf);
+  
+  public Lscala/collection/Iterator; takeWhile(Lscala/Function1; p);
+  
+  public Lscala/Tuple2; partition(Lscala/Function1; p);
+  
+  public Lscala/collection/Iterator; dropWhile(Lscala/Function1; p);
+  
+  public Lscala/collection/Iterator; zip(Lscala/collection/Iterator; that);
+  
+  public Lscala/collection/Iterator; padTo(I; len, Ljava/lang/Object; elem);
+  
+  public Lscala/collection/Iterator; zipWithIndex();
+  
+  public Lscala/collection/Iterator; zipAll(Lscala/collection/Iterator; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem);
+  
+  public V; foreach(Lscala/Function1; f);
+  
+  public Z; forall(Lscala/Function1; p);
+  
+  public Z; exists(Lscala/Function1; p);
+  
+  public Z; contains(Ljava/lang/Object; elem);
+  
+  public Lscala/Option; find(Lscala/Function1; p);
+  
+  public I; indexWhere(Lscala/Function1; p);
+  
+  public I; indexOf(Ljava/lang/Object; elem);
+  
+  public Lscala/collection/BufferedIterator; buffered();
+  
+  public Lscala/collection/Iterator$GroupedIterator; grouped(I; size);
+  
+  public Lscala/collection/Iterator$GroupedIterator; sliding(I; size, I; step);
+  
+  public I; length();
+  
+  public Lscala/Tuple2; duplicate();
+  
+  public Lscala/collection/Iterator; patch(I; from, Lscala/collection/Iterator; patchElems, I; replaced);
+  
+  public V; copyToArray(Ljava/lang/Object; xs, I; start, I; len);
+  
+  public Z; sameElements(Lscala/collection/Iterator; that);
+  
+  public Lscala/collection/Traversable; toTraversable();
+  
+  public Lscala/collection/Iterator; toIterator();
+  
+  public Lscala/collection/immutable/Stream; toStream();
+  
+  public Ljava/lang/String; toString();
+  
+  public Lscala/collection/Iterator; append(Lscala/collection/Iterator; that);
+  
+  public I; findIndexOf(Lscala/Function1; p);
+  
+  public Lscala/CountedIterator; counted();
+  
+  public V; readInto(Ljava/lang/Object; xs, I; start, I; sz);
+  
+  public V; readInto(Ljava/lang/Object; xs, I; start);
+  
+  public V; readInto(Ljava/lang/Object; xs);
+}

@@ -1,0 +1,64 @@
+public class Lscala/collection/immutable/BitSet$BitSet2; extends Lscala/collection/immutable/BitSet; implements Lscala/ScalaObject; {
+  
+  private J; elems0$u0020;
+  
+  public J; elems0() {
+    return this.(J;)elems0$u0020;
+  }
+  
+  private J; elems1;
+  
+  protected I; nwords() {
+    return 2;
+  }
+  
+  protected J; word(I; idx) {
+    J; $9$;
+    if ((idx == 0))
+      {
+        $9$ = this.(Lscala/collection/immutable/BitSet$BitSet2;::elems0()J;)();
+      }
+    else
+      {
+        J; $10$;
+        if ((idx == 1))
+          {
+            $10$ = this.(J;)elems1;
+          }
+        else
+          {
+            $10$ = 0L;
+          }
+        $9$ = $10$;
+      }
+    return $9$;
+  }
+  
+  protected Lscala/collection/immutable/BitSet; updateWord(I; idx, J; w) {
+    Lscala/collection/immutable/BitSet; $11$;
+    if ((idx == 0))
+      {
+        $11$ = (new (Lscala/collection/immutable/BitSet$BitSet2;::this(J;J;)V;)(w, this.(J;)elems1));
+      }
+    else
+      {
+        Lscala/collection/immutable/BitSet; $12$;
+        if ((idx == 1))
+          {
+            $12$ = (new (Lscala/collection/immutable/BitSet$BitSet2;::this(J;J;)V;)(this.(Lscala/collection/immutable/BitSet$BitSet2;::elems0()J;)(), w));
+          }
+        else
+          {
+            $12$ = this.(Lscala/collection/immutable/BitSet;::fromArray(J;[)Lscala/collection/immutable/BitSet;)(Lscala/collection/BitSetLike$;.MODULE$.(Lscala/collection/BitSetLike$;::updateArray(J;[I;J;)J;[)(Lscala/Array$;.MODULE$.(Lscala/Array$;::apply(J;Lscala/collection/Seq;)J;[)(this.(Lscala/collection/immutable/BitSet$BitSet2;::elems0()J;)(), Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapLongArray(J;[)Lscala/collection/mutable/WrappedArray;)(<J;>{this.(J;)elems1})), idx, w));
+          }
+        $11$ = $12$;
+      }
+    return $11$;
+  }
+  
+  public this(J; elems0, J; elems1) {
+    this.(J;)elems0$u0020 = elems0;
+    this.(J;)elems1 = elems1;
+    (Lscala/collection/immutable/BitSet;::super()V;)();
+  }
+}

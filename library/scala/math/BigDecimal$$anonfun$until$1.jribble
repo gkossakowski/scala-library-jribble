@@ -1,0 +1,27 @@
+public final class Lscala/math/BigDecimal$$anonfun$until$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Lscala/collection/immutable/NumericRange$Exclusive; apply(Lscala/math/BigDecimal; x$3) {
+    return this.(Lscala/math/BigDecimal;)$outer$u0020.(Lscala/math/BigDecimal;::until(Lscala/math/BigDecimal;Lscala/math/BigDecimal;)Lscala/collection/immutable/NumericRange$Exclusive;)(this.(Lscala/math/BigDecimal;)end$1, x$3);
+  }
+  
+  private Lscala/math/BigDecimal; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/math/BigDecimal$$anonfun$until$1;::apply(Lscala/math/BigDecimal;)Lscala/collection/immutable/NumericRange$Exclusive;)(v1.<cast>(Lscala/math/BigDecimal;));
+  }
+  
+  private Lscala/math/BigDecimal; end$1;
+  
+  public this(Lscala/math/BigDecimal; $outer, Lscala/math/BigDecimal; end$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/math/BigDecimal;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/math/BigDecimal;)end$1 = end$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

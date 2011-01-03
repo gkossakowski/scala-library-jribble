@@ -1,0 +1,38 @@
+public final class Lscala/collection/immutable/Queue$; extends Lscala/collection/generic/SeqFactory; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/Queue$; MODULE$ = new (Lscala/collection/immutable/Queue$;::this()V;)();
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return (new (Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;::this(Lscala/collection/generic/TraversableFactory;)V;)(this));
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return (new (Lscala/collection/mutable/ListBuffer;::this()V;)()).(Lscala/collection/mutable/Builder;::mapResult(Lscala/Function1;)Lscala/collection/mutable/Builder;)((new (Lscala/collection/immutable/Queue$$anonfun$newBuilder$1;::this()V;)()));
+  }
+  
+  public Lscala/collection/immutable/Queue; empty() {
+    return (new (Lscala/collection/immutable/Queue;::this(Lscala/collection/immutable/List;Lscala/collection/immutable/List;)V;)(Lscala/collection/immutable/Nil$;.MODULE$, Lscala/collection/immutable/Nil$;.MODULE$));
+  }
+  
+  public Lscala/collection/immutable/Queue; apply(Lscala/collection/Seq; xs) {
+    return (new (Lscala/collection/immutable/Queue;::this(Lscala/collection/immutable/List;Lscala/collection/immutable/List;)V;)(Lscala/collection/immutable/Nil$;.MODULE$, xs.(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)()));
+  }
+  
+  private Lscala/collection/immutable/Queue; Empty$u0020;
+  
+  public Lscala/collection/immutable/Queue; Empty() {
+    return this.(Lscala/collection/immutable/Queue;)Empty$u0020;
+  }
+  
+  public Lscala/collection/Traversable; apply(Lscala/collection/Seq; elems) {
+    return this.(Lscala/collection/immutable/Queue$;::apply(Lscala/collection/Seq;)Lscala/collection/immutable/Queue;)(elems);
+  }
+  
+  public Lscala/collection/Traversable; empty() {
+    return this.(Lscala/collection/immutable/Queue$;::empty()Lscala/collection/immutable/Queue;)();
+  }
+  
+  public this() {
+    (Lscala/collection/generic/SeqFactory;::super()V;)();
+    this.(Lscala/collection/immutable/Queue;)Empty$u0020 = Lscala/collection/immutable/Queue$;.MODULE$.(Lscala/collection/immutable/Queue$;::apply(Lscala/collection/Seq;)Lscala/collection/immutable/Queue;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Lscala/runtime/Nothing$;>{}));
+  }
+}

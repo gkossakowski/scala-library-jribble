@@ -1,0 +1,93 @@
+public class Lscala/collection/mutable/ArrayOps$ofDouble; extends Lscala/collection/mutable/ArrayOps; implements Lscala/collection/mutable/ArrayLike;, Lscala/ScalaObject; {
+  
+  private D;[ repr$u0020;
+  
+  public D;[ repr() {
+    return this.(D;[)repr$u0020;
+  }
+  
+  protected Lscala/collection/mutable/WrappedArray; thisCollection() {
+    return (new (Lscala/collection/mutable/WrappedArray$ofDouble;::this(D;[)V;)(this.(Lscala/collection/mutable/ArrayOps$ofDouble;::repr()D;[)()));
+  }
+  
+  protected Lscala/collection/mutable/WrappedArray; toCollection(D;[ repr) {
+    return (new (Lscala/collection/mutable/WrappedArray$ofDouble;::this(D;[)V;)(repr));
+  }
+  
+  protected Lscala/collection/mutable/ArrayBuilder$ofDouble; newBuilder() {
+    return (new (Lscala/collection/mutable/ArrayBuilder$ofDouble;::this()V;)());
+  }
+  
+  public I; length() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofDouble;::repr()D;[)().<length>;
+  }
+  
+  public D; apply(I; index) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofDouble;::repr()D;[)()[index];
+  }
+  
+  public V; update(I; index, D; elem) {
+    this.(Lscala/collection/mutable/ArrayOps$ofDouble;::repr()D;[)()[index] = elem;
+  }
+  
+  public V; update(I; idx, Ljava/lang/Object; elem) {
+    this.(Lscala/collection/mutable/ArrayOps$ofDouble;::update(I;D;)V;)(idx, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(elem));
+  }
+  
+  public Ljava/lang/Object; apply(I; idx) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToDouble(D;)Ljava/lang/Double;)(this.(Lscala/collection/mutable/ArrayOps$ofDouble;::apply(I;)D;)(idx));
+  }
+  
+  protected Lscala/collection/mutable/Builder; newBuilder() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofDouble;::newBuilder()Lscala/collection/mutable/ArrayBuilder$ofDouble;)();
+  }
+  
+  protected Lscala/collection/Traversable; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofDouble;::toCollection(D;[)Lscala/collection/mutable/WrappedArray;)(repr.<cast>(D;[));
+  }
+  
+  protected Lscala/collection/Iterable; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofDouble;::toCollection(D;[)Lscala/collection/mutable/WrappedArray;)(repr.<cast>(D;[));
+  }
+  
+  protected Lscala/collection/Seq; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofDouble;::toCollection(D;[)Lscala/collection/mutable/WrappedArray;)(repr.<cast>(D;[));
+  }
+  
+  protected Lscala/collection/IndexedSeq; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofDouble;::toCollection(D;[)Lscala/collection/mutable/WrappedArray;)(repr.<cast>(D;[));
+  }
+  
+  protected Lscala/collection/mutable/IndexedSeq; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/mutable/ArrayOps$ofDouble;::toCollection(D;[)Lscala/collection/mutable/WrappedArray;)(repr.<cast>(D;[));
+  }
+  
+  protected Lscala/collection/Traversable; thisCollection() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofDouble;::thisCollection()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  protected Lscala/collection/Iterable; thisCollection() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofDouble;::thisCollection()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  protected Lscala/collection/Seq; thisCollection() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofDouble;::thisCollection()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  protected Lscala/collection/IndexedSeq; thisCollection() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofDouble;::thisCollection()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  protected Lscala/collection/mutable/IndexedSeq; thisCollection() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofDouble;::thisCollection()Lscala/collection/mutable/WrappedArray;)();
+  }
+  
+  public Ljava/lang/Object; repr() {
+    return this.(Lscala/collection/mutable/ArrayOps$ofDouble;::repr()D;[)();
+  }
+  
+  public this(D;[ repr) {
+    this.(D;[)repr$u0020 = repr;
+    (Lscala/collection/mutable/ArrayOps;::super()V;)();
+  }
+}

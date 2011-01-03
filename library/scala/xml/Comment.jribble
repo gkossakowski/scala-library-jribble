@@ -1,0 +1,80 @@
+public class Lscala/xml/Comment; extends Lscala/xml/SpecialNode; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/Comment;::commentText()Ljava/lang/String;)();
+  }
+  
+  private Ljava/lang/String; commentText$u0020;
+  
+  public Ljava/lang/String; commentText() {
+    return this.(Ljava/lang/String;)commentText$u0020;
+  }
+  
+  public Ljava/lang/String; label() {
+    return "#REM";
+  }
+  
+  public Ljava/lang/String; text() {
+    return "";
+  }
+  
+  public final Z; doCollectNamespaces() {
+    return false;
+  }
+  
+  public final Z; doTransform() {
+    return false;
+  }
+  
+  public Lscala/collection/mutable/StringBuilder; buildString(Lscala/collection/mutable/StringBuilder; sb) {
+    return sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)((("<!--" + this.(Lscala/xml/Comment;::commentText()Ljava/lang/String;)()) + "-->"));
+  }
+  
+  public Lscala/xml/Comment; copy(Ljava/lang/String; commentText) {
+    return (new (Lscala/xml/Comment;::this(Ljava/lang/String;)V;)(commentText));
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Comment";
+  }
+  
+  public I; productArity() {
+    return 1;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp1 = x$1;
+    Ljava/lang/Object; $1$;
+    if ((temp1 == 0))
+      {
+        $1$ = this.(Lscala/xml/Comment;::commentText()Ljava/lang/String;)();
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $1$;
+  }
+  
+  public this(Ljava/lang/String; commentText) {
+    this.(Ljava/lang/String;)commentText$u0020 = commentText;
+    (Lscala/xml/SpecialNode;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+    if (commentText.(Ljava/lang/String;::contains(Ljava/lang/CharSequence;)Z;)("--"))
+      {
+        throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)("text contains \"--\""));
+      }
+    else
+      {
+        
+      }
+  }
+}

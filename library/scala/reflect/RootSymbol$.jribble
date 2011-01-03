@@ -1,0 +1,70 @@
+public final class Lscala/reflect/RootSymbol$; extends Lscala/reflect/Symbol; implements Lscala/ScalaObject;, Lscala/Product; {
+  public static Lscala/reflect/RootSymbol$; MODULE$ = new (Lscala/reflect/RootSymbol$;::this()V;)();
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  private Lscala/reflect/NoSymbol$; owner$u0020;
+  
+  public Lscala/reflect/NoSymbol$; owner() {
+    return this.(Lscala/reflect/NoSymbol$;)owner$u0020;
+  }
+  
+  private Ljava/lang/String; name$u0020;
+  
+  public Ljava/lang/String; name() {
+    return this.(Ljava/lang/String;)name$u0020;
+  }
+  
+  private Lscala/reflect/NoPrefix$; tpe$u0020;
+  
+  public Lscala/reflect/NoPrefix$; tpe() {
+    return this.(Lscala/reflect/NoPrefix$;)tpe$u0020;
+  }
+  
+  public final Ljava/lang/String; toString() {
+    return "RootSymbol";
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "RootSymbol";
+  }
+  
+  public I; productArity() {
+    return 0;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp33 = x$1;
+    throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/reflect/RootSymbol$;);
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/reflect/RootSymbol$;.MODULE$;
+  }
+  
+  public Lscala/reflect/Type; tpe() {
+    return this.(Lscala/reflect/RootSymbol$;::tpe()Lscala/reflect/NoPrefix$;)();
+  }
+  
+  public Lscala/reflect/Symbol; owner() {
+    return this.(Lscala/reflect/RootSymbol$;::owner()Lscala/reflect/NoSymbol$;)();
+  }
+  
+  public this() {
+    (Lscala/reflect/Symbol;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+    this.(Lscala/reflect/NoSymbol$;)owner$u0020 = Lscala/reflect/NoSymbol$;.MODULE$;
+    this.(Ljava/lang/String;)name$u0020 = "<root>";
+    this.(Lscala/reflect/NoPrefix$;)tpe$u0020 = Lscala/reflect/NoPrefix$;.MODULE$;
+  }
+}

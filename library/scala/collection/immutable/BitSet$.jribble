@@ -1,0 +1,74 @@
+public final class Lscala/collection/immutable/BitSet$; extends Ljava/lang/Object; implements Lscala/collection/generic/BitSetFactory;, Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/BitSet$; MODULE$ = new (Lscala/collection/immutable/BitSet$;::this()V;)();
+  
+  public Lscala/collection/BitSet; apply(Lscala/collection/Seq; elems) {
+    return Lscala/collection/generic/BitSetFactory$class;.(Lscala/collection/generic/BitSetFactory$class;::apply(Lscala/collection/generic/BitSetFactory;Lscala/collection/Seq;)Lscala/collection/BitSet;)(this, elems);
+  }
+  
+  public Lscala/collection/generic/CanBuildFrom; bitsetCanBuildFrom() {
+    return Lscala/collection/generic/BitSetFactory$class;.(Lscala/collection/generic/BitSetFactory$class;::bitsetCanBuildFrom(Lscala/collection/generic/BitSetFactory;)Lscala/collection/generic/CanBuildFrom;)(this);
+  }
+  
+  private Lscala/collection/immutable/BitSet; empty$u0020;
+  
+  public Lscala/collection/immutable/BitSet; empty() {
+    return this.(Lscala/collection/immutable/BitSet;)empty$u0020;
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return (new (Lscala/collection/mutable/AddingBuilder;::this(Lscala/collection/generic/Addable;)V;)(this.(Lscala/collection/immutable/BitSet$;::empty()Lscala/collection/immutable/BitSet;)()));
+  }
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return this.(Lscala/collection/generic/BitSetFactory;::bitsetCanBuildFrom()Lscala/collection/generic/CanBuildFrom;)();
+  }
+  
+  public Lscala/collection/immutable/BitSet; fromArray(J;[ elems) {
+    I; len = elems.<length>;
+    Lscala/collection/immutable/BitSet; $3$;
+    if ((len == 0))
+      {
+        $3$ = this.(Lscala/collection/immutable/BitSet$;::empty()Lscala/collection/immutable/BitSet;)();
+      }
+    else
+      {
+        Lscala/collection/immutable/BitSet; $4$;
+        if ((len == 1))
+          {
+            $4$ = (new (Lscala/collection/immutable/BitSet$BitSet1;::this(J;)V;)(elems[0]));
+          }
+        else
+          {
+            Lscala/collection/immutable/BitSet; $5$;
+            if ((len == 2))
+              {
+                $5$ = (new (Lscala/collection/immutable/BitSet$BitSet2;::this(J;J;)V;)(elems[0], elems[1]));
+              }
+            else
+              {
+                $5$ = (new (Lscala/collection/immutable/BitSet$BitSetN;::this(J;[)V;)(elems));
+              }
+            $4$ = $5$;
+          }
+        $3$ = $4$;
+      }
+    return $3$;
+  }
+  
+  private I; hashSeed$u0020;
+  
+  private I; hashSeed() {
+    return this.(I;)hashSeed$u0020;
+  }
+  
+  public Lscala/collection/BitSet; empty() {
+    return this.(Lscala/collection/immutable/BitSet$;::empty()Lscala/collection/immutable/BitSet;)();
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/collection/generic/BitSetFactory$class;.(Lscala/collection/generic/BitSetFactory$class;::$init$(Lscala/collection/generic/BitSetFactory;)V;)(this);
+    this.(Lscala/collection/immutable/BitSet;)empty$u0020 = (new (Lscala/collection/immutable/BitSet$BitSet1;::this(J;)V;)(0L));
+    this.(I;)hashSeed$u0020 = "BitSet".(Ljava/lang/String;::hashCode()I;)();
+  }
+}

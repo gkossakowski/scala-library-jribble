@@ -1,0 +1,75 @@
+public final class Lscala/collection/immutable/LongMap$Nil$; extends Lscala/collection/immutable/LongMap; implements Lscala/ScalaObject;, Lscala/Product; {
+  public static Lscala/collection/immutable/LongMap$Nil$; MODULE$ = new (Lscala/collection/immutable/LongMap$Nil$;::this()V;)();
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; that) {
+    Ljava/lang/Object; temp3 = that;
+    Z; $92$;
+    if (temp3.<instanceof>(Ljava/lang/Object;))
+      {
+        Ljava/lang/Object; temp4 = temp3;
+        Z; $93$;
+        if (this.(Lscala/collection/immutable/LongMap$Nil$;::gd1$1(Ljava/lang/Object;)Z;)(temp4))
+          {
+            $93$ = true;
+          }
+        else
+          {
+            Z; $94$;
+            if (temp4.<instanceof>(Lscala/collection/immutable/LongMap;))
+              {
+                $94$ = false;
+              }
+            else
+              {
+                Ljava/lang/Object; that = temp4;
+                $94$ = Lscala/collection/immutable/LongMap$Nil$;.MODULE$.(Lscala/collection/immutable/LongMap$Nil$;::body$percent2$percent3(Ljava/lang/Object;)Z;)(that);
+              }
+            $93$ = $94$;
+          }
+        $92$ = $93$;
+      }
+    else
+      {
+        $92$ = Lscala/collection/immutable/LongMap$Nil$;.MODULE$.(Lscala/collection/immutable/LongMap$Nil$;::body$percent2$percent3(Ljava/lang/Object;)Z;)(temp3);
+      }
+    return $92$;
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Nil";
+  }
+  
+  public I; productArity() {
+    return 0;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp6 = x$1;
+    throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/immutable/LongMap$Nil$;.MODULE$;
+  }
+  
+  private final Z; gd1$1(Ljava/lang/Object; x$1) {
+    return (this == x$1);
+  }
+  
+  public this() {
+    (Lscala/collection/immutable/LongMap;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+  
+  private final Z; body$percent2$percent3(Ljava/lang/Object; that) {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::equals(Lscala/collection/MapLike;Ljava/lang/Object;)Z;)(this, that);
+  }
+}

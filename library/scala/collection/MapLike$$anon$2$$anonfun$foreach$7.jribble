@@ -1,0 +1,37 @@
+public final class Lscala/collection/MapLike$$anon$2$$anonfun$foreach$7; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Ljava/lang/Object; apply(Lscala/Tuple2; x$3) {
+    Lscala/Tuple2; temp28 = x$3;
+    Ljava/lang/Object; $12$;
+    if ((temp28 != null))
+      {
+        $12$ = this.(Lscala/Function1;)g$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(temp28.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), this.(Lscala/collection/MapLike$$anon$2;)$outer$u0020.(Lscala/Function1;)f$4.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp28.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()))));
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp28));
+      }
+    return $12$;
+  }
+  
+  private Lscala/collection/MapLike$$anon$2; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/collection/MapLike$$anon$2$$anonfun$foreach$7;::apply(Lscala/Tuple2;)Ljava/lang/Object;)(v1.<cast>(Lscala/Tuple2;));
+  }
+  
+  private Lscala/Function1; g$1;
+  
+  public this(Lscala/collection/MapLike$$anon$2; $outer, Lscala/Function1; g$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/MapLike$$anon$2;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/Function1;)g$1 = g$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

@@ -1,0 +1,54 @@
+public final class Lscala/reflect/ClassManifest$$anonfun$subargs$1$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Z; apply(Lscala/Tuple2; x0$1) {
+    Lscala/Tuple2; temp1 = x0$1;
+    Z; $26$;
+    if ((temp1 != null))
+      {
+        Lscala/reflect/OptManifest; temp2 = temp1.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/reflect/OptManifest;);
+        Lscala/reflect/OptManifest; temp3 = temp1.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/reflect/OptManifest;);
+        Z; $27$;
+        if (temp2.<instanceof>(Lscala/reflect/ClassManifest;))
+          {
+            Lscala/reflect/ClassManifest; temp4 = temp2.<cast>(Lscala/reflect/ClassManifest;);
+            Z; $28$;
+            if (temp3.<instanceof>(Lscala/reflect/ClassManifest;))
+              {
+                $28$ = temp4.(Lscala/reflect/ClassManifest;::$less$colon$less(Lscala/reflect/ClassManifest;)Z;)(temp3.<cast>(Lscala/reflect/ClassManifest;));
+              }
+            else
+              {
+                $28$ = false;
+              }
+            $27$ = $28$;
+          }
+        else
+          {
+            Z; $29$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/reflect/NoManifest$;.MODULE$, temp2))
+              {
+                $29$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/reflect/NoManifest$;.MODULE$, temp3);
+              }
+            else
+              {
+                $29$ = false;
+              }
+            $27$ = $29$;
+          }
+        $26$ = $27$;
+      }
+    else
+      {
+        $26$ = false;
+      }
+    return $26$;
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/reflect/ClassManifest$$anonfun$subargs$1$1;::apply(Lscala/Tuple2;)Z;)(v1.<cast>(Lscala/Tuple2;)));
+  }
+  
+  public this(Lscala/reflect/ClassManifest; $outer) {
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

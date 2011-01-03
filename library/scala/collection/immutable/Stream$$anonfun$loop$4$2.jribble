@@ -1,0 +1,33 @@
+public final class Lscala/collection/immutable/Stream$$anonfun$loop$4$2; extends Lscala/runtime/AbstractFunction0; {
+  
+  public final Lscala/collection/immutable/Stream; apply() {
+    return this.(Lscala/collection/immutable/Stream;)$outer$u0020.(Lscala/collection/immutable/Stream;::loop$4(I;Lscala/collection/immutable/Stream;Ljava/lang/Object;)Lscala/collection/immutable/Stream;)((this.(I;)len$1 - 1), this.(Lscala/collection/immutable/Stream;)these$1.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Stream;), this.(Ljava/lang/Object;)elem$1);
+  }
+  
+  private Lscala/collection/immutable/Stream; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply() {
+    return this.(Lscala/collection/immutable/Stream$$anonfun$loop$4$2;::apply()Lscala/collection/immutable/Stream;)();
+  }
+  
+  private Ljava/lang/Object; elem$1;
+  
+  private I; len$1;
+  
+  private Lscala/collection/immutable/Stream; these$1;
+  
+  public this(Lscala/collection/immutable/Stream; $outer, Ljava/lang/Object; elem$1, I; len$1, Lscala/collection/immutable/Stream; these$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/immutable/Stream;)$outer$u0020 = $outer;
+      }
+    this.(Ljava/lang/Object;)elem$1 = elem$1;
+    this.(I;)len$1 = len$1;
+    this.(Lscala/collection/immutable/Stream;)these$1 = these$1;
+    (Lscala/runtime/AbstractFunction0;::super()V;)();
+  }
+}

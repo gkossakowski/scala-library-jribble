@@ -1,0 +1,14 @@
+public class Lscala/collection/immutable/IntMapKeyIterator; extends Lscala/collection/immutable/IntMapIterator; implements Lscala/ScalaObject; {
+  
+  public I; valueOf(Lscala/collection/immutable/IntMap$Tip; tip) {
+    return tip.(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
+  }
+  
+  public Ljava/lang/Object; valueOf(Lscala/collection/immutable/IntMap$Tip; tip) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/collection/immutable/IntMapKeyIterator;::valueOf(Lscala/collection/immutable/IntMap$Tip;)I;)(tip));
+  }
+  
+  public this(Lscala/collection/immutable/IntMap; it) {
+    (Lscala/collection/immutable/IntMapIterator;::super(Lscala/collection/immutable/IntMap;)V;)(it);
+  }
+}

@@ -1,0 +1,528 @@
+public final class Lscala/Predef$; extends Lscala/LowPriorityImplicits; implements Lscala/ScalaObject; {
+  public static Lscala/Predef$; MODULE$ = new (Lscala/Predef$;::this()V;)();
+  
+  public Ljava/lang/Class; classOf() {
+    return null;
+  }
+  
+  private Lscala/collection/immutable/Map$; Map$u0020;
+  
+  public Lscala/collection/immutable/Map$; Map() {
+    return this.(Lscala/collection/immutable/Map$;)Map$u0020;
+  }
+  
+  private Lscala/collection/immutable/Set$; Set$u0020;
+  
+  public Lscala/collection/immutable/Set$; Set() {
+    return this.(Lscala/collection/immutable/Set$;)Set$u0020;
+  }
+  
+  public Ljava/lang/Object; implicitly(Ljava/lang/Object; e) {
+    return e;
+  }
+  
+  public Lscala/reflect/Manifest; manifest(Lscala/reflect/Manifest; m) {
+    return m;
+  }
+  
+  public Lscala/reflect/ClassManifest; classManifest(Lscala/reflect/ClassManifest; m) {
+    return m;
+  }
+  
+  public Ljava/lang/Object; identity(Ljava/lang/Object; x) {
+    return x;
+  }
+  
+  public Ljava/lang/Thread; currentThread() {
+    return Ljava/lang/Thread;.(Ljava/lang/Thread;::currentThread()Ljava/lang/Thread;)();
+  }
+  
+  public Ljava/lang/Object; locally(Ljava/lang/Object; x) {
+    return x;
+  }
+  
+  public Lscala/runtime/Nothing$; error(Ljava/lang/String; message) {
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)(message));
+  }
+  
+  public Lscala/runtime/Nothing$; exit() {
+    this.(Lscala/Predef$;::exit(I;)Lscala/runtime/Nothing$;)(0);
+  }
+  
+  public Lscala/runtime/Nothing$; exit(I; status) {
+    Ljava/lang/System;.(Ljava/lang/System;::exit(I;)V;)(status);
+    throw (new (Ljava/lang/Throwable;::this()V;)());
+  }
+  
+  public V; assert(Z; assertion) {
+    if (!(assertion))
+      {
+        throw (new (Ljava/lang/AssertionError;::this(Ljava/lang/Object;)V;)("assertion failed"));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public V; assert(Z; assertion, Lscala/Function0; message) {
+    if (!(assertion))
+      {
+        throw (new (Ljava/lang/AssertionError;::this(Ljava/lang/Object;)V;)(("assertion failed: " + message.(Lscala/Function0;::apply()Ljava/lang/Object;)())));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public V; assume(Z; assumption) {
+    if (!(assumption))
+      {
+        throw (new (Ljava/lang/AssertionError;::this(Ljava/lang/Object;)V;)("assumption failed"));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public V; assume(Z; assumption, Lscala/Function0; message) {
+    if (!(assumption))
+      {
+        throw (new (Ljava/lang/AssertionError;::this(Ljava/lang/Object;)V;)(("assumption failed: " + message.(Lscala/Function0;::apply()Ljava/lang/Object;)())));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public V; require(Z; requirement) {
+    if (!(requirement))
+      {
+        throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)("requirement failed"));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public V; require(Z; requirement, Lscala/Function0; message) {
+    if (!(requirement))
+      {
+        throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)(("requirement failed: " + message.(Lscala/Function0;::apply()Ljava/lang/Object;)())));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public Lscala/Predef$Ensuring; any2Ensuring(Ljava/lang/Object; x) {
+    return (new (Lscala/Predef$Ensuring;::this(Ljava/lang/Object;)V;)(x));
+  }
+  
+  public Lscala/Predef$ArrowAssoc; any2ArrowAssoc(Ljava/lang/Object; x) {
+    return (new (Lscala/Predef$ArrowAssoc;::this(Ljava/lang/Object;)V;)(x));
+  }
+  
+  public V; print(Ljava/lang/Object; x) {
+    Lscala/Console$;.MODULE$.(Lscala/Console$;::print(Ljava/lang/Object;)V;)(x);
+  }
+  
+  public V; println() {
+    Lscala/Console$;.MODULE$.(Lscala/Console$;::println()V;)();
+  }
+  
+  public V; println(Ljava/lang/Object; x) {
+    Lscala/Console$;.MODULE$.(Lscala/Console$;::println(Ljava/lang/Object;)V;)(x);
+  }
+  
+  public V; printf(Ljava/lang/String; text, Lscala/collection/Seq; xs) {
+    Lscala/Console$;.MODULE$.(Lscala/Console$;::print(Ljava/lang/Object;)V;)(this.(Lscala/Predef$;::format(Ljava/lang/String;Lscala/collection/Seq;)Ljava/lang/String;)(text, xs));
+  }
+  
+  public Ljava/lang/String; format(Ljava/lang/String; text, Lscala/collection/Seq; xs) {
+    return this.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(text).(Lscala/collection/immutable/StringLike;::format(Lscala/collection/Seq;)Ljava/lang/String;)(xs);
+  }
+  
+  public Ljava/lang/String; readLine() {
+    return Lscala/Console$;.MODULE$.(Lscala/Console$;::readLine()Ljava/lang/String;)();
+  }
+  
+  public Ljava/lang/String; readLine(Ljava/lang/String; text, Lscala/collection/Seq; args) {
+    return Lscala/Console$;.MODULE$.(Lscala/Console$;::readLine(Ljava/lang/String;Lscala/collection/Seq;)Ljava/lang/String;)(text, Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{args}));
+  }
+  
+  public Z; readBoolean() {
+    return Lscala/Console$;.MODULE$.(Lscala/Console$;::readBoolean()Z;)();
+  }
+  
+  public B; readByte() {
+    return Lscala/Console$;.MODULE$.(Lscala/Console$;::readByte()B;)();
+  }
+  
+  public S; readShort() {
+    return Lscala/Console$;.MODULE$.(Lscala/Console$;::readShort()S;)();
+  }
+  
+  public C; readChar() {
+    return Lscala/Console$;.MODULE$.(Lscala/Console$;::readChar()C;)();
+  }
+  
+  public I; readInt() {
+    return Lscala/Console$;.MODULE$.(Lscala/Console$;::readInt()I;)();
+  }
+  
+  public J; readLong() {
+    return Lscala/Console$;.MODULE$.(Lscala/Console$;::readLong()J;)();
+  }
+  
+  public F; readFloat() {
+    return Lscala/Console$;.MODULE$.(Lscala/Console$;::readFloat()F;)();
+  }
+  
+  public D; readDouble() {
+    return Lscala/Console$;.MODULE$.(Lscala/Console$;::readDouble()D;)();
+  }
+  
+  public Lscala/collection/immutable/List; readf(Ljava/lang/String; format) {
+    return Lscala/Console$;.MODULE$.(Lscala/Console$;::readf(Ljava/lang/String;)Lscala/collection/immutable/List;)(format);
+  }
+  
+  public Ljava/lang/Object; readf1(Ljava/lang/String; format) {
+    return Lscala/Console$;.MODULE$.(Lscala/Console$;::readf1(Ljava/lang/String;)Ljava/lang/Object;)(format);
+  }
+  
+  public Lscala/Tuple2; readf2(Ljava/lang/String; format) {
+    return Lscala/Console$;.MODULE$.(Lscala/Console$;::readf2(Ljava/lang/String;)Lscala/Tuple2;)(format);
+  }
+  
+  public Lscala/Tuple3; readf3(Ljava/lang/String; format) {
+    return Lscala/Console$;.MODULE$.(Lscala/Console$;::readf3(Ljava/lang/String;)Lscala/Tuple3;)(format);
+  }
+  
+  public Lscala/runtime/RichByte; byteWrapper(B; x) {
+    return (new (Lscala/runtime/RichByte;::this(B;)V;)(x));
+  }
+  
+  public Lscala/runtime/RichShort; shortWrapper(S; x) {
+    return (new (Lscala/runtime/RichShort;::this(S;)V;)(x));
+  }
+  
+  public Lscala/runtime/RichInt; intWrapper(I; x) {
+    return (new (Lscala/runtime/RichInt;::this(I;)V;)(x));
+  }
+  
+  public Lscala/runtime/RichChar; charWrapper(C; c) {
+    return (new (Lscala/runtime/RichChar;::this(C;)V;)(c));
+  }
+  
+  public Lscala/runtime/RichLong; longWrapper(J; x) {
+    return (new (Lscala/runtime/RichLong;::this(J;)V;)(x));
+  }
+  
+  public Lscala/runtime/RichFloat; floatWrapper(F; x) {
+    return (new (Lscala/runtime/RichFloat;::this(F;)V;)(x));
+  }
+  
+  public Lscala/runtime/RichDouble; doubleWrapper(D; x) {
+    return (new (Lscala/runtime/RichDouble;::this(D;)V;)(x));
+  }
+  
+  public Lscala/runtime/RichBoolean; booleanWrapper(Z; x) {
+    return (new (Lscala/runtime/RichBoolean;::this(Z;)V;)(x));
+  }
+  
+  public Lscala/runtime/RichException; exceptionWrapper(Ljava/lang/Throwable; exc) {
+    return (new (Lscala/runtime/RichException;::this(Ljava/lang/Throwable;)V;)(exc));
+  }
+  
+  public Lscala/collection/mutable/ArrayOps; genericArrayOps(Ljava/lang/Object; xs) {
+    Ljava/lang/Object; temp1 = xs;
+    Lscala/collection/mutable/ArrayOps; $1$;
+    if (temp1.<instanceof>(Ljava/lang/Object;[))
+      {
+        $1$ = this.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(temp1.<cast>(Ljava/lang/Object;[));
+      }
+    else
+      {
+        Lscala/collection/mutable/ArrayOps; $2$;
+        if (temp1.<instanceof>(I;[))
+          {
+            $2$ = this.(Lscala/Predef$;::intArrayOps(I;[)Lscala/collection/mutable/ArrayOps;)(temp1.<cast>(I;[));
+          }
+        else
+          {
+            Lscala/collection/mutable/ArrayOps; $3$;
+            if (temp1.<instanceof>(D;[))
+              {
+                $3$ = this.(Lscala/Predef$;::doubleArrayOps(D;[)Lscala/collection/mutable/ArrayOps;)(temp1.<cast>(D;[));
+              }
+            else
+              {
+                Lscala/collection/mutable/ArrayOps; $4$;
+                if (temp1.<instanceof>(J;[))
+                  {
+                    $4$ = this.(Lscala/Predef$;::longArrayOps(J;[)Lscala/collection/mutable/ArrayOps;)(temp1.<cast>(J;[));
+                  }
+                else
+                  {
+                    Lscala/collection/mutable/ArrayOps; $5$;
+                    if (temp1.<instanceof>(F;[))
+                      {
+                        $5$ = this.(Lscala/Predef$;::floatArrayOps(F;[)Lscala/collection/mutable/ArrayOps;)(temp1.<cast>(F;[));
+                      }
+                    else
+                      {
+                        Lscala/collection/mutable/ArrayOps; $6$;
+                        if (temp1.<instanceof>(C;[))
+                          {
+                            $6$ = this.(Lscala/Predef$;::charArrayOps(C;[)Lscala/collection/mutable/ArrayOps;)(temp1.<cast>(C;[));
+                          }
+                        else
+                          {
+                            Lscala/collection/mutable/ArrayOps; $7$;
+                            if (temp1.<instanceof>(B;[))
+                              {
+                                $7$ = this.(Lscala/Predef$;::byteArrayOps(B;[)Lscala/collection/mutable/ArrayOps;)(temp1.<cast>(B;[));
+                              }
+                            else
+                              {
+                                Lscala/collection/mutable/ArrayOps; $8$;
+                                if (temp1.<instanceof>(S;[))
+                                  {
+                                    $8$ = this.(Lscala/Predef$;::shortArrayOps(S;[)Lscala/collection/mutable/ArrayOps;)(temp1.<cast>(S;[));
+                                  }
+                                else
+                                  {
+                                    Lscala/collection/mutable/ArrayOps; $9$;
+                                    if (temp1.<instanceof>(Z;[))
+                                      {
+                                        $9$ = this.(Lscala/Predef$;::booleanArrayOps(Z;[)Lscala/collection/mutable/ArrayOps;)(temp1.<cast>(Z;[));
+                                      }
+                                    else
+                                      {
+                                        Lscala/collection/mutable/ArrayOps; $10$;
+                                        if (temp1.<instanceof>(Lscala/runtime/BoxedUnit;[))
+                                          {
+                                            $10$ = this.(Lscala/Predef$;::unitArrayOps(Lscala/runtime/BoxedUnit;[)Lscala/collection/mutable/ArrayOps;)(temp1.<cast>(Lscala/runtime/BoxedUnit;[));
+                                          }
+                                        else
+                                          {
+                                            Lscala/collection/mutable/ArrayOps; $11$;
+                                            if ((temp1 == null))
+                                              {
+                                                $11$ = null;
+                                              }
+                                            else
+                                              {
+                                                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp1));
+                                              }
+                                            $10$ = $11$;
+                                          }
+                                        $9$ = $10$;
+                                      }
+                                    $8$ = $9$;
+                                  }
+                                $7$ = $8$;
+                              }
+                            $6$ = $7$;
+                          }
+                        $5$ = $6$;
+                      }
+                    $4$ = $5$;
+                  }
+                $3$ = $4$;
+              }
+            $2$ = $3$;
+          }
+        $1$ = $2$;
+      }
+    return $1$;
+  }
+  
+  public Lscala/collection/mutable/ArrayOps; refArrayOps(Ljava/lang/Object;[ xs) {
+    return (new (Lscala/collection/mutable/ArrayOps$ofRef;::this(Ljava/lang/Object;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/ArrayOps; intArrayOps(I;[ xs) {
+    return (new (Lscala/collection/mutable/ArrayOps$ofInt;::this(I;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/ArrayOps; doubleArrayOps(D;[ xs) {
+    return (new (Lscala/collection/mutable/ArrayOps$ofDouble;::this(D;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/ArrayOps; longArrayOps(J;[ xs) {
+    return (new (Lscala/collection/mutable/ArrayOps$ofLong;::this(J;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/ArrayOps; floatArrayOps(F;[ xs) {
+    return (new (Lscala/collection/mutable/ArrayOps$ofFloat;::this(F;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/ArrayOps; charArrayOps(C;[ xs) {
+    return (new (Lscala/collection/mutable/ArrayOps$ofChar;::this(C;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/ArrayOps; byteArrayOps(B;[ xs) {
+    return (new (Lscala/collection/mutable/ArrayOps$ofByte;::this(B;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/ArrayOps; shortArrayOps(S;[ xs) {
+    return (new (Lscala/collection/mutable/ArrayOps$ofShort;::this(S;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/ArrayOps; booleanArrayOps(Z;[ xs) {
+    return (new (Lscala/collection/mutable/ArrayOps$ofBoolean;::this(Z;[)V;)(xs));
+  }
+  
+  public Lscala/collection/mutable/ArrayOps; unitArrayOps(Lscala/runtime/BoxedUnit;[ xs) {
+    return (new (Lscala/collection/mutable/ArrayOps$ofUnit;::this(Lscala/runtime/BoxedUnit;[)V;)(xs));
+  }
+  
+  public S; byte2short(B; x) {
+    return x.<cast>(S;);
+  }
+  
+  public I; byte2int(B; x) {
+    return x.<cast>(I;);
+  }
+  
+  public J; byte2long(B; x) {
+    return x.<cast>(J;);
+  }
+  
+  public F; byte2float(B; x) {
+    return x.<cast>(F;);
+  }
+  
+  public D; byte2double(B; x) {
+    return x.<cast>(D;);
+  }
+  
+  public I; short2int(S; x) {
+    return x.<cast>(I;);
+  }
+  
+  public J; short2long(S; x) {
+    return x.<cast>(J;);
+  }
+  
+  public F; short2float(S; x) {
+    return x.<cast>(F;);
+  }
+  
+  public D; short2double(S; x) {
+    return x.<cast>(D;);
+  }
+  
+  public I; char2int(C; x) {
+    return x.<cast>(I;);
+  }
+  
+  public J; char2long(C; x) {
+    return x.<cast>(J;);
+  }
+  
+  public F; char2float(C; x) {
+    return x.<cast>(F;);
+  }
+  
+  public D; char2double(C; x) {
+    return x.<cast>(D;);
+  }
+  
+  public J; int2long(I; x) {
+    return x.<cast>(J;);
+  }
+  
+  public F; int2float(I; x) {
+    return x.<cast>(F;);
+  }
+  
+  public D; int2double(I; x) {
+    return x.<cast>(D;);
+  }
+  
+  public F; long2float(J; x) {
+    return x.<cast>(F;);
+  }
+  
+  public D; long2double(J; x) {
+    return x.<cast>(D;);
+  }
+  
+  public D; float2double(F; x) {
+    return x.<cast>(D;);
+  }
+  
+  public Ljava/lang/Byte; byte2Byte(B; x) {
+    return Ljava/lang/Byte;.(Ljava/lang/Byte;::valueOf(B;)Ljava/lang/Byte;)(x);
+  }
+  
+  public Ljava/lang/Short; short2Short(S; x) {
+    return Ljava/lang/Short;.(Ljava/lang/Short;::valueOf(S;)Ljava/lang/Short;)(x);
+  }
+  
+  public Ljava/lang/Character; char2Character(C; x) {
+    return Ljava/lang/Character;.(Ljava/lang/Character;::valueOf(C;)Ljava/lang/Character;)(x);
+  }
+  
+  public Ljava/lang/Integer; int2Integer(I; x) {
+    return Ljava/lang/Integer;.(Ljava/lang/Integer;::valueOf(I;)Ljava/lang/Integer;)(x);
+  }
+  
+  public Ljava/lang/Long; long2Long(J; x) {
+    return Ljava/lang/Long;.(Ljava/lang/Long;::valueOf(J;)Ljava/lang/Long;)(x);
+  }
+  
+  public Ljava/lang/Float; float2Float(F; x) {
+    return Ljava/lang/Float;.(Ljava/lang/Float;::valueOf(F;)Ljava/lang/Float;)(x);
+  }
+  
+  public Ljava/lang/Double; double2Double(D; x) {
+    return Ljava/lang/Double;.(Ljava/lang/Double;::valueOf(D;)Ljava/lang/Double;)(x);
+  }
+  
+  public Ljava/lang/Boolean; boolean2Boolean(Z; x) {
+    return Ljava/lang/Boolean;.(Ljava/lang/Boolean;::valueOf(Z;)Ljava/lang/Boolean;)(x);
+  }
+  
+  public Lscala/runtime/StringAdd; any2stringadd(Ljava/lang/Object; x) {
+    return (new (Lscala/runtime/StringAdd;::this(Ljava/lang/Object;)V;)(x));
+  }
+  
+  public Lscala/collection/immutable/StringOps; augmentString(Ljava/lang/String; x) {
+    return (new (Lscala/collection/immutable/StringOps;::this(Ljava/lang/String;)V;)(x));
+  }
+  
+  public Ljava/lang/String; unaugmentString(Lscala/collection/immutable/StringOps; x) {
+    return x.(Lscala/collection/immutable/StringOps;::repr()Ljava/lang/String;)();
+  }
+  
+  public Lscala/collection/generic/CanBuildFrom; stringCanBuildFrom() {
+    return (new (Lscala/Predef$$anon$4;::this()V;)());
+  }
+  
+  public Ljava/lang/CharSequence; seqToCharSequence(Lscala/collection/IndexedSeq; xs$2) {
+    return (new (Lscala/Predef$$anon$5;::this(Lscala/collection/IndexedSeq;)V;)(xs$2));
+  }
+  
+  public Ljava/lang/CharSequence; arrayToCharSequence(C;[ xs$1) {
+    return (new (Lscala/Predef$$anon$6;::this(C;[)V;)(xs$1));
+  }
+  
+  public Lscala/Predef$$less$colon$less; conforms() {
+    return (new (Lscala/Predef$$anon$1;::this()V;)());
+  }
+  
+  public this() {
+    (Lscala/LowPriorityImplicits;::super()V;)();
+    this.(Lscala/collection/immutable/Map$;)Map$u0020 = Lscala/collection/immutable/Map$;.MODULE$;
+    this.(Lscala/collection/immutable/Set$;)Set$u0020 = Lscala/collection/immutable/Set$;.MODULE$;
+  }
+}

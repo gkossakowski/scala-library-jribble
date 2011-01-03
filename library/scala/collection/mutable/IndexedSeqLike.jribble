@@ -1,0 +1,12 @@
+public interface Lscala/collection/mutable/IndexedSeqLike; extends Lscala/collection/IndexedSeqLike;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/mutable/IndexedSeq; thisCollection();
+  
+  public Lscala/collection/mutable/IndexedSeq; toCollection(Ljava/lang/Object; repr);
+  
+  public V; update(I; idx, Ljava/lang/Object; elem);
+  
+  public Lscala/collection/mutable/IndexedSeqView; view();
+  
+  public Lscala/collection/mutable/IndexedSeqView; view(I; from, I; until);
+}

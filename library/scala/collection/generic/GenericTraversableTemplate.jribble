@@ -1,0 +1,20 @@
+public interface Lscala/collection/generic/GenericTraversableTemplate; extends Lscala/collection/generic/HasNewBuilder;, Lscala/ScalaObject; {
+  
+  public V; foreach(Lscala/Function1; f);
+  
+  public Ljava/lang/Object; head();
+  
+  public Z; isEmpty();
+  
+  public Lscala/collection/generic/GenericCompanion; companion();
+  
+  public Lscala/collection/mutable/Builder; newBuilder();
+  
+  public Lscala/collection/mutable/Builder; genericBuilder();
+  
+  public Lscala/Tuple2; unzip(Lscala/Function1; asPair);
+  
+  public Lscala/collection/Traversable; flatten(Lscala/Function1; asTraversable);
+  
+  public Lscala/collection/Traversable; transpose(Lscala/Function1; asTraversable);
+}

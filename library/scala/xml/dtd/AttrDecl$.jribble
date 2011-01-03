@@ -1,0 +1,32 @@
+public final class Lscala/xml/dtd/AttrDecl$; extends Lscala/runtime/AbstractFunction3; implements Lscala/ScalaObject; {
+  public static Lscala/xml/dtd/AttrDecl$; MODULE$ = new (Lscala/xml/dtd/AttrDecl$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "AttrDecl";
+  }
+  
+  public Lscala/Option; unapply(Lscala/xml/dtd/AttrDecl; x$0) {
+    Lscala/Option; $51$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $51$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $51$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/AttrDecl;::name()Ljava/lang/String;)(), x$0.(Lscala/xml/dtd/AttrDecl;::tpe()Ljava/lang/String;)(), x$0.(Lscala/xml/dtd/AttrDecl;::`default`()Lscala/xml/dtd/DefaultDecl;)()))));
+      }
+    return $51$;
+  }
+  
+  public Lscala/xml/dtd/AttrDecl; apply(Ljava/lang/String; name, Ljava/lang/String; tpe, Lscala/xml/dtd/DefaultDecl; `default`) {
+    return (new (Lscala/xml/dtd/AttrDecl;::this(Ljava/lang/String;Ljava/lang/String;Lscala/xml/dtd/DefaultDecl;)V;)(name, tpe, `default`));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2, Ljava/lang/Object; v3) {
+    return this.(Lscala/xml/dtd/AttrDecl$;::apply(Ljava/lang/String;Ljava/lang/String;Lscala/xml/dtd/DefaultDecl;)Lscala/xml/dtd/AttrDecl;)(v1.<cast>(Ljava/lang/String;), v2.<cast>(Ljava/lang/String;), v3.<cast>(Lscala/xml/dtd/DefaultDecl;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction3;::super()V;)();
+  }
+}

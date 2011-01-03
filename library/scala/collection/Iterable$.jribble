@@ -1,0 +1,23 @@
+public final class Lscala/collection/Iterable$; extends Lscala/collection/generic/TraversableFactory; implements Lscala/ScalaObject; {
+  public static Lscala/collection/Iterable$; MODULE$ = new (Lscala/collection/Iterable$;::this()V;)();
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return (new (Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;::this(Lscala/collection/generic/TraversableFactory;)V;)(this));
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return Lscala/collection/immutable/Iterable$;.MODULE$.(Lscala/collection/immutable/Iterable$;::newBuilder()Lscala/collection/mutable/Builder;)();
+  }
+  
+  public Ljava/lang/Object; min(Lscala/collection/Iterable; seq, Lscala/math/Ordering; ord) {
+    return seq.(Lscala/collection/TraversableOnce;::min(Lscala/math/Ordering;)Ljava/lang/Object;)(ord);
+  }
+  
+  public Ljava/lang/Object; max(Lscala/collection/Iterable; seq, Lscala/math/Ordering; ord) {
+    return seq.(Lscala/collection/TraversableOnce;::max(Lscala/math/Ordering;)Ljava/lang/Object;)(ord);
+  }
+  
+  public this() {
+    (Lscala/collection/generic/TraversableFactory;::super()V;)();
+  }
+}

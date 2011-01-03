@@ -1,0 +1,24 @@
+public abstract class Lscala/Product1$class; {
+  
+  public static I; productArity(Lscala/Product1; $this) {
+    return 1;
+  }
+  
+  public static Ljava/lang/Object; productElement(Lscala/Product1; $this, I; n) {
+    I; temp1 = n;
+    Ljava/lang/Object; $1$;
+    if ((temp1 == 0))
+      {
+        $1$ = $this.(Lscala/Product1;::_1()Ljava/lang/Object;)();
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(n).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $1$;
+  }
+  
+  public static V; $init$(Lscala/Product1; $this) {
+    
+  }
+}

@@ -1,0 +1,15 @@
+public final class Lscala/xml/Unparsed$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/xml/Unparsed$; MODULE$ = new (Lscala/xml/Unparsed$;::this()V;)();
+  
+  public Lscala/xml/Unparsed; apply(Ljava/lang/String; data) {
+    return (new (Lscala/xml/Unparsed;::this(Ljava/lang/String;)V;)(data));
+  }
+  
+  public Lscala/Some; unapply(Lscala/xml/Unparsed; x) {
+    return (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x.(Lscala/xml/Atom;::data()Ljava/lang/Object;)()));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

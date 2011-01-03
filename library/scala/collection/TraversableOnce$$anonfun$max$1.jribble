@@ -1,0 +1,22 @@
+public final class Lscala/collection/TraversableOnce$$anonfun$max$1; extends Lscala/runtime/AbstractFunction2; {
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    Ljava/lang/Object; $5$;
+    if (this.(Lscala/math/Ordering;)cmp$2.(Lscala/math/Ordering;::gteq(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, y))
+      {
+        $5$ = x;
+      }
+    else
+      {
+        $5$ = y;
+      }
+    return $5$;
+  }
+  
+  private Lscala/math/Ordering; cmp$2;
+  
+  public this(Lscala/collection/TraversableOnce; $outer, Lscala/math/Ordering; cmp$2) {
+    this.(Lscala/math/Ordering;)cmp$2 = cmp$2;
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
+  }
+}

@@ -1,0 +1,91 @@
+public class Lscala/reflect/generic/Trees$ApplyDynamic; extends Lscala/reflect/generic/Trees$Tree; implements Lscala/reflect/generic/Trees$TermTree;, Lscala/reflect/generic/Trees$SymTree;, Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/reflect/generic/Symbols$AbsSymbol; symbol() {
+    return this.(Lscala/reflect/generic/Symbols$AbsSymbol;)symbol$u0020;
+  }
+  
+  private Lscala/reflect/generic/Symbols$AbsSymbol; symbol$u0020;
+  
+  public V; symbol_$eq(Lscala/reflect/generic/Symbols$AbsSymbol; x$1) {
+    this.(Lscala/reflect/generic/Symbols$AbsSymbol;)symbol$u0020 = x$1;
+  }
+  
+  public Z; hasSymbol() {
+    return Lscala/reflect/generic/Trees$SymTree$class;.(Lscala/reflect/generic/Trees$SymTree$class;::hasSymbol(Lscala/reflect/generic/Trees$SymTree;)Z;)(this);
+  }
+  
+  public Lscala/collection/immutable/List; copy$default$2() {
+    return this.(Lscala/reflect/generic/Trees$ApplyDynamic;::args()Lscala/collection/immutable/List;)();
+  }
+  
+  public Lscala/reflect/generic/Trees$Tree; copy$default$1() {
+    return this.(Lscala/reflect/generic/Trees$ApplyDynamic;::qual()Lscala/reflect/generic/Trees$Tree;)();
+  }
+  
+  private Lscala/reflect/generic/Trees$Tree; qual$u0020;
+  
+  public Lscala/reflect/generic/Trees$Tree; qual() {
+    return this.(Lscala/reflect/generic/Trees$Tree;)qual$u0020;
+  }
+  
+  private Lscala/collection/immutable/List; args$u0020;
+  
+  public Lscala/collection/immutable/List; args() {
+    return this.(Lscala/collection/immutable/List;)args$u0020;
+  }
+  
+  public Lscala/reflect/generic/Trees$ApplyDynamic; copy(Lscala/reflect/generic/Trees$Tree; qual, Lscala/collection/immutable/List; args) {
+    return (new (Lscala/reflect/generic/Trees$ApplyDynamic;::this(Lscala/reflect/generic/Universe;Lscala/reflect/generic/Trees$Tree;Lscala/collection/immutable/List;)V;)(this.(Lscala/reflect/generic/Trees$ApplyDynamic;::scala$reflect$generic$Trees$ApplyDynamic$$$outer()Lscala/reflect/generic/Universe;)(), qual, args));
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "ApplyDynamic";
+  }
+  
+  public I; productArity() {
+    return 2;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp78 = x$1;
+    I; $75$ = temp78;
+    Ljava/lang/Object; $76$;
+    switch ($75$) {
+      0: {
+        $76$ = this.(Lscala/reflect/generic/Trees$ApplyDynamic;::qual()Lscala/reflect/generic/Trees$Tree;)();
+        break;
+      }
+      
+      1: {
+        $76$ = this.(Lscala/reflect/generic/Trees$ApplyDynamic;::args()Lscala/collection/immutable/List;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $76$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/reflect/generic/Trees$ApplyDynamic;);
+  }
+  
+  public Lscala/reflect/generic/Universe; scala$reflect$generic$Trees$ApplyDynamic$$$outer() {
+    return this.(Lscala/reflect/generic/Universe;)$outer$u0020;
+  }
+  
+  public Lscala/reflect/generic/Trees; scala$reflect$generic$Trees$SymTree$$$outer() {
+    return this.(Lscala/reflect/generic/Trees$ApplyDynamic;::scala$reflect$generic$Trees$ApplyDynamic$$$outer()Lscala/reflect/generic/Universe;)();
+  }
+  
+  public this(Lscala/reflect/generic/Universe; $outer, Lscala/reflect/generic/Trees$Tree; qual, Lscala/collection/immutable/List; args) {
+    this.(Lscala/reflect/generic/Trees$Tree;)qual$u0020 = qual;
+    this.(Lscala/collection/immutable/List;)args$u0020 = args;
+    (Lscala/reflect/generic/Trees$Tree;::super(Lscala/reflect/generic/Universe;)V;)($outer);
+    Lscala/reflect/generic/Trees$SymTree$class;.(Lscala/reflect/generic/Trees$SymTree$class;::$init$(Lscala/reflect/generic/Trees$SymTree;)V;)(this);
+  }
+}

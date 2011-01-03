@@ -1,0 +1,17 @@
+public class Lscala/collection/immutable/Stream$ConsWrapper; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  private Lscala/Function0; tl;
+  
+  public Lscala/collection/immutable/Stream; $hash$colon$colon(Ljava/lang/Object; hd) {
+    return (new (Lscala/collection/immutable/Stream$Cons;::this(Ljava/lang/Object;Lscala/Function0;)V;)(hd, this.(Lscala/Function0;)tl));
+  }
+  
+  public Lscala/collection/immutable/Stream; $hash$colon$colon$colon(Lscala/collection/immutable/Stream; prefix) {
+    return prefix.(Lscala/collection/immutable/Stream;::append(Lscala/Function0;)Lscala/collection/immutable/Stream;)(this.(Lscala/Function0;)tl);
+  }
+  
+  public this(Lscala/Function0; tl) {
+    this.(Lscala/Function0;)tl = tl;
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

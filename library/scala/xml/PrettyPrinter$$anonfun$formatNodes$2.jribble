@@ -1,0 +1,30 @@
+public final class Lscala/xml/PrettyPrinter$$anonfun$formatNodes$2; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Lscala/collection/mutable/StringBuilder; apply(Lscala/xml/Node; n) {
+    return this.(Lscala/collection/mutable/StringBuilder;)sb$2.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(this.(Lscala/xml/PrettyPrinter;)$outer$u0020.(Lscala/xml/PrettyPrinter;::format(Lscala/xml/Node;Lscala/xml/NamespaceBinding;)Ljava/lang/String;)(n, this.(Lscala/xml/NamespaceBinding;)pscope$4));
+  }
+  
+  private Lscala/xml/PrettyPrinter; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/xml/PrettyPrinter$$anonfun$formatNodes$2;::apply(Lscala/xml/Node;)Lscala/collection/mutable/StringBuilder;)(v1.<cast>(Lscala/xml/Node;));
+  }
+  
+  private Lscala/xml/NamespaceBinding; pscope$4;
+  
+  private Lscala/collection/mutable/StringBuilder; sb$2;
+  
+  public this(Lscala/xml/PrettyPrinter; $outer, Lscala/xml/NamespaceBinding; pscope$4, Lscala/collection/mutable/StringBuilder; sb$2) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/xml/PrettyPrinter;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/xml/NamespaceBinding;)pscope$4 = pscope$4;
+    this.(Lscala/collection/mutable/StringBuilder;)sb$2 = sb$2;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

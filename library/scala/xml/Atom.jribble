@@ -1,0 +1,64 @@
+public class Lscala/xml/Atom; extends Lscala/xml/SpecialNode; implements Lscala/ScalaObject; {
+  
+  private Ljava/lang/Object; data$u0020;
+  
+  public Ljava/lang/Object; data() {
+    return this.(Ljava/lang/Object;)data$u0020;
+  }
+  
+  public Lscala/collection/Seq; basisForHashCode() {
+    return Lscala/collection/Seq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{this.(Lscala/xml/Atom;::data()Ljava/lang/Object;)()})).<cast>(Lscala/collection/Seq;);
+  }
+  
+  public Z; strict_$eq$eq(Lscala/xml/Equality; other) {
+    Lscala/xml/Equality; temp1 = other;
+    Z; $1$;
+    if (temp1.<instanceof>(Lscala/xml/Atom;))
+      {
+        $1$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/xml/Atom;::data()Ljava/lang/Object;)(), temp1.<cast>(Lscala/xml/Atom;).(Lscala/xml/Atom;::data()Ljava/lang/Object;)());
+      }
+    else
+      {
+        $1$ = false;
+      }
+    return $1$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; other) {
+    Ljava/lang/Object; temp3 = other;
+    return temp3.<instanceof>(Lscala/xml/Atom;);
+  }
+  
+  public final Z; doCollectNamespaces() {
+    return false;
+  }
+  
+  public final Z; doTransform() {
+    return false;
+  }
+  
+  public Ljava/lang/String; label() {
+    return "#PCDATA";
+  }
+  
+  public Lscala/collection/mutable/StringBuilder; buildString(Lscala/collection/mutable/StringBuilder; sb) {
+    return Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::escape(Ljava/lang/String;Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(this.(Lscala/xml/Atom;::data()Ljava/lang/Object;)().(Ljava/lang/Object;::toString()Ljava/lang/String;)(), sb);
+  }
+  
+  public Ljava/lang/String; text() {
+    return this.(Lscala/xml/Atom;::data()Ljava/lang/Object;)().(Ljava/lang/Object;::toString()Ljava/lang/String;)();
+  }
+  
+  public this(Ljava/lang/Object; data) {
+    this.(Ljava/lang/Object;)data$u0020 = data;
+    (Lscala/xml/SpecialNode;::super()V;)();
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(data, null))
+      {
+        throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)("cannot construct Atom(null)"));
+      }
+    else
+      {
+        
+      }
+  }
+}

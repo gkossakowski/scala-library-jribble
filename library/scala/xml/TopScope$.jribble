@@ -1,0 +1,45 @@
+public final class Lscala/xml/TopScope$; extends Lscala/xml/NamespaceBinding; implements Lscala/ScalaObject; {
+  public static Lscala/xml/TopScope$; MODULE$ = new (Lscala/xml/TopScope$;::this()V;)();
+  
+  public Ljava/lang/String; getURI(Ljava/lang/String; prefix1) {
+    Ljava/lang/String; $1$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(prefix1, Lscala/xml/XML$;.MODULE$.(Lscala/xml/XML$;::xml()Ljava/lang/String;)()))
+      {
+        $1$ = Lscala/xml/XML$;.MODULE$.(Lscala/xml/XML$;::namespace()Ljava/lang/String;)();
+      }
+    else
+      {
+        $1$ = null;
+      }
+    return $1$;
+  }
+  
+  public Ljava/lang/String; getPrefix(Ljava/lang/String; uri1) {
+    Ljava/lang/String; $2$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(uri1, Lscala/xml/XML$;.MODULE$.(Lscala/xml/XML$;::namespace()Ljava/lang/String;)()))
+      {
+        $2$ = Lscala/xml/XML$;.MODULE$.(Lscala/xml/XML$;::xml()Ljava/lang/String;)();
+      }
+    else
+      {
+        $2$ = null;
+      }
+    return $2$;
+  }
+  
+  public Ljava/lang/String; toString() {
+    return "";
+  }
+  
+  public Ljava/lang/String; buildString(Lscala/xml/NamespaceBinding; stop) {
+    return "";
+  }
+  
+  public V; buildString(Lscala/collection/mutable/StringBuilder; sb, Lscala/xml/NamespaceBinding; ignore) {
+    
+  }
+  
+  public this() {
+    (Lscala/xml/NamespaceBinding;::super(Ljava/lang/String;Ljava/lang/String;Lscala/xml/NamespaceBinding;)V;)(null, null, null);
+  }
+}

@@ -1,0 +1,121 @@
+public class Lscala/collection/script/Include; extends Ljava/lang/Object; implements Lscala/collection/script/Message;, Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Ljava/lang/Object; copy$default$2() {
+    return this.(Lscala/collection/script/Include;::elem()Ljava/lang/Object;)();
+  }
+  
+  public Lscala/collection/script/Location; copy$default$1() {
+    return this.(Lscala/collection/script/Include;::location()Lscala/collection/script/Location;)();
+  }
+  
+  private Lscala/collection/script/Location; location$u0020;
+  
+  public Lscala/collection/script/Location; location() {
+    return this.(Lscala/collection/script/Location;)location$u0020;
+  }
+  
+  private Ljava/lang/Object; elem$u0020;
+  
+  public Ljava/lang/Object; elem() {
+    return this.(Ljava/lang/Object;)elem$u0020;
+  }
+  
+  public this(Ljava/lang/Object; elem) {
+    (Lscala/collection/script/Include;::this(Lscala/collection/script/Location;Ljava/lang/Object;)V;)(Lscala/collection/script/NoLo$;.MODULE$, elem);
+  }
+  
+  public Lscala/collection/script/Include; copy(Lscala/collection/script/Location; location, Ljava/lang/Object; elem) {
+    return (new (Lscala/collection/script/Include;::this(Lscala/collection/script/Location;Ljava/lang/Object;)V;)(location, elem));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp1 = x$1;
+    Z; $1$;
+    if (temp1.<instanceof>(Lscala/collection/script/Include;))
+      {
+        Lscala/collection/script/Include; temp2 = temp1.<cast>(Lscala/collection/script/Include;);
+        Lscala/collection/script/Location; temp3 = temp2.(Lscala/collection/script/Include;::location()Lscala/collection/script/Location;)();
+        Ljava/lang/Object; temp4 = temp2.(Lscala/collection/script/Include;::elem()Ljava/lang/Object;)();
+        Ljava/lang/Object; elem$1 = temp4;
+        Lscala/collection/script/Location; location$1 = temp3;
+        Z; $2$;
+        if (this.(Lscala/collection/script/Include;::gd1$1(Lscala/collection/script/Location;Ljava/lang/Object;)Z;)(location$1, elem$1))
+          {
+            $2$ = x$1.<cast>(Lscala/collection/script/Include;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $2$ = false;
+          }
+        $1$ = $2$;
+      }
+    else
+      {
+        $1$ = false;
+      }
+    return ((this == x$1) || $1$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Include";
+  }
+  
+  public I; productArity() {
+    return 2;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp5 = x$1;
+    I; $3$ = temp5;
+    Ljava/lang/Object; $4$;
+    switch ($3$) {
+      0: {
+        $4$ = this.(Lscala/collection/script/Include;::location()Lscala/collection/script/Location;)();
+        break;
+      }
+      
+      1: {
+        $4$ = this.(Lscala/collection/script/Include;::elem()Ljava/lang/Object;)();
+        break;
+      }
+      
+      default: {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+        break;
+      }
+      
+    }
+    return $4$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/collection/script/Include;);
+  }
+  
+  private final Z; gd1$1(Lscala/collection/script/Location; x$1, Ljava/lang/Object; x$2) {
+    return (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/collection/script/Include;::location()Lscala/collection/script/Location;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$2, this.(Lscala/collection/script/Include;::elem()Ljava/lang/Object;)()));
+  }
+  
+  public this(Lscala/collection/script/Location; location, Ljava/lang/Object; elem) {
+    this.(Lscala/collection/script/Location;)location$u0020 = location;
+    this.(Ljava/lang/Object;)elem$u0020 = elem;
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

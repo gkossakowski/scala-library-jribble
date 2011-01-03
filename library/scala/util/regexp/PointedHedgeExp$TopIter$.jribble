@@ -1,0 +1,41 @@
+public final class Lscala/util/regexp/PointedHedgeExp$TopIter$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject; {
+  
+  public final Ljava/lang/String; toString() {
+    return "TopIter";
+  }
+  
+  public Lscala/Option; unapply(Lscala/util/regexp/PointedHedgeExp$TopIter; x$0) {
+    Lscala/Option; $9$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $9$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $9$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r1()Lscala/util/regexp/Base$RegExp;)(), x$0.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r2()Lscala/util/regexp/Base$RegExp;)()))));
+      }
+    return $9$;
+  }
+  
+  public Lscala/util/regexp/PointedHedgeExp$TopIter; apply(Lscala/util/regexp/Base$RegExp; r1, Lscala/util/regexp/Base$RegExp; r2) {
+    return (new (Lscala/util/regexp/PointedHedgeExp$TopIter;::this(Lscala/util/regexp/PointedHedgeExp;Lscala/util/regexp/Base$RegExp;Lscala/util/regexp/Base$RegExp;)V;)(this.(Lscala/util/regexp/PointedHedgeExp;)$outer$u0020, r1, r2));
+  }
+  
+  private Lscala/util/regexp/PointedHedgeExp; $outer$u0020;
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {
+    return this.(Lscala/util/regexp/PointedHedgeExp$TopIter$;::apply(Lscala/util/regexp/Base$RegExp;Lscala/util/regexp/Base$RegExp;)Lscala/util/regexp/PointedHedgeExp$TopIter;)(v1.<cast>(Lscala/util/regexp/Base$RegExp;), v2.<cast>(Lscala/util/regexp/Base$RegExp;));
+  }
+  
+  public this(Lscala/util/regexp/PointedHedgeExp; $outer) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/util/regexp/PointedHedgeExp;)$outer$u0020 = $outer;
+      }
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
+  }
+}

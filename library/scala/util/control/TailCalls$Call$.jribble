@@ -1,0 +1,28 @@
+public final class Lscala/util/control/TailCalls$Call$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/util/control/TailCalls$Call$; MODULE$ = new (Lscala/util/control/TailCalls$Call$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "Call";
+  }
+  
+  public Lscala/Option; unapply(Lscala/util/control/TailCalls$Call; x$0) {
+    Lscala/Option; $10$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $10$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $10$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/util/control/TailCalls$Call;::rest()Lscala/Function0;)()));
+      }
+    return $10$;
+  }
+  
+  public Lscala/util/control/TailCalls$Call; apply(Lscala/Function0; rest) {
+    return (new (Lscala/util/control/TailCalls$Call;::this(Lscala/Function0;)V;)(rest));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

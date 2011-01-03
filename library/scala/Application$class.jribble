@@ -1,0 +1,18 @@
+public abstract class Lscala/Application$class; {
+  
+  public static V; main(Lscala/Application; $this, Ljava/lang/String;[ args) {
+    if (Lscala/util/Properties$;.MODULE$.(Lscala/util/PropertiesTrait;::propIsSet(Ljava/lang/String;)Z;)("scala.time"))
+      {
+        J; total = (Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::currentTime()J;)() - $this.(Lscala/Application;::executionStart()J;)());
+        Lscala/Console$;.MODULE$.(Lscala/Console$;::println(Ljava/lang/Object;)V;)((("[total " + Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(total)) + "ms]"));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public static V; $init$(Lscala/Application; $this) {
+    $this.(Lscala/Application;::scala$Application$_setter_$executionStart_$eq(J;)V;)(Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::currentTime()J;)());
+  }
+}

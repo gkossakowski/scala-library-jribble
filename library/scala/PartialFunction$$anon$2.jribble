@@ -1,0 +1,53 @@
+public final class Lscala/PartialFunction$$anon$2; extends Ljava/lang/Object; implements Lscala/PartialFunction; {
+  
+  public Lscala/PartialFunction; orElse(Lscala/PartialFunction; that) {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::orElse(Lscala/PartialFunction;Lscala/PartialFunction;)Lscala/PartialFunction;)(this, that);
+  }
+  
+  public Lscala/PartialFunction; andThen(Lscala/Function1; k) {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::andThen(Lscala/PartialFunction;Lscala/Function1;)Lscala/PartialFunction;)(this, k);
+  }
+  
+  public Lscala/Function1; lift() {
+    return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::lift(Lscala/PartialFunction;)Lscala/Function1;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::toString(Lscala/Function1;)Ljava/lang/String;)(this);
+  }
+  
+  public Lscala/Function1; compose(Lscala/Function1; g) {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::compose(Lscala/Function1;Lscala/Function1;)Lscala/Function1;)(this, g);
+  }
+  
+  public Z; isDefinedAt(Ljava/lang/Object; x) {
+    return this.(Lscala/PartialFunction;)$outer$u0020.(Lscala/PartialFunction;::isDefinedAt(Ljava/lang/Object;)Z;)(x);
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; x) {
+    return this.(Lscala/Function1;)k$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/PartialFunction;)$outer$u0020.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x));
+  }
+  
+  private Lscala/PartialFunction; $outer$u0020;
+  
+  public Lscala/Function1; andThen(Lscala/Function1; g) {
+    return this.(Lscala/PartialFunction;::andThen(Lscala/Function1;)Lscala/PartialFunction;)(g);
+  }
+  
+  private Lscala/Function1; k$1;
+  
+  public this(Lscala/PartialFunction; $outer, Lscala/Function1; k$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/PartialFunction;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/Function1;)k$1 = k$1;
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Function1$class;.(Lscala/Function1$class;::$init$(Lscala/Function1;)V;)(this);
+    Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::$init$(Lscala/PartialFunction;)V;)(this);
+  }
+}

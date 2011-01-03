@@ -1,0 +1,48 @@
+public interface Lscala/collection/mutable/BufferProxy; extends Lscala/collection/mutable/Buffer;, Lscala/Proxy;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/mutable/Buffer; self();
+  
+  public I; length();
+  
+  public Lscala/collection/Iterator; iterator();
+  
+  public Ljava/lang/Object; apply(I; n);
+  
+  public Lscala/collection/mutable/Buffer; $plus(Ljava/lang/Object; elem);
+  
+  public Lscala/collection/mutable/BufferProxy; $plus$eq(Ljava/lang/Object; elem);
+  
+  public Lscala/collection/Seq; readOnly();
+  
+  public Lscala/collection/mutable/Buffer; $plus$plus(Lscala/collection/TraversableOnce; xs);
+  
+  public Lscala/collection/mutable/BufferProxy; $plus$plus$eq(Lscala/collection/TraversableOnce; xs);
+  
+  public V; append(Lscala/collection/Seq; elems);
+  
+  public V; appendAll(Lscala/collection/TraversableOnce; xs);
+  
+  public Lscala/collection/mutable/BufferProxy; $plus$eq$colon(Ljava/lang/Object; elem);
+  
+  public Lscala/collection/mutable/BufferProxy; $plus$plus$eq$colon(Lscala/collection/TraversableOnce; xs);
+  
+  public V; prepend(Lscala/collection/Seq; elems);
+  
+  public V; prependAll(Lscala/collection/TraversableOnce; xs);
+  
+  public V; insert(I; n, Lscala/collection/Seq; elems);
+  
+  public V; insertAll(I; n, Lscala/collection/Iterable; iter);
+  
+  public V; insertAll(I; n, Lscala/collection/Traversable; iter);
+  
+  public V; update(I; n, Ljava/lang/Object; newelem);
+  
+  public Ljava/lang/Object; remove(I; n);
+  
+  public V; clear();
+  
+  public V; $less$less(Lscala/collection/script/Message; cmd);
+  
+  public Lscala/collection/mutable/Buffer; clone();
+}

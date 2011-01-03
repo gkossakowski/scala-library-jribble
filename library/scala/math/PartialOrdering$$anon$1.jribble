@@ -1,0 +1,45 @@
+public final class Lscala/math/PartialOrdering$$anon$1; extends Ljava/lang/Object; implements Lscala/math/PartialOrdering; {
+  
+  public Z; gteq(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/PartialOrdering$class;.(Lscala/math/PartialOrdering$class;::gteq(Lscala/math/PartialOrdering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Z; lt(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/PartialOrdering$class;.(Lscala/math/PartialOrdering$class;::lt(Lscala/math/PartialOrdering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Z; gt(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/PartialOrdering$class;.(Lscala/math/PartialOrdering$class;::gt(Lscala/math/PartialOrdering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Z; equiv(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/PartialOrdering$class;.(Lscala/math/PartialOrdering$class;::equiv(Lscala/math/PartialOrdering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Lscala/math/PartialOrdering; reverse() {
+    return this.(Lscala/math/PartialOrdering;)$outer$u0020;
+  }
+  
+  public Z; lteq(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return this.(Lscala/math/PartialOrdering;)$outer$u0020.(Lscala/math/PartialOrdering;::lteq(Ljava/lang/Object;Ljava/lang/Object;)Z;)(y, x);
+  }
+  
+  public Lscala/Option; tryCompare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return this.(Lscala/math/PartialOrdering;)$outer$u0020.(Lscala/math/PartialOrdering;::tryCompare(Ljava/lang/Object;Ljava/lang/Object;)Lscala/Option;)(y, x);
+  }
+  
+  private Lscala/math/PartialOrdering; $outer$u0020;
+  
+  public this(Lscala/math/PartialOrdering; $outer) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/math/PartialOrdering;)$outer$u0020 = $outer;
+      }
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/math/PartialOrdering$class;.(Lscala/math/PartialOrdering$class;::$init$(Lscala/math/PartialOrdering;)V;)(this);
+  }
+}

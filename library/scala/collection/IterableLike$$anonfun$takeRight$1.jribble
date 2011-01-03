@@ -1,0 +1,36 @@
+public final class Lscala/collection/IterableLike$$anonfun$takeRight$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; x) {
+    if (this.(Lscala/collection/Iterator;)lead$1.(Lscala/collection/Iterator;::hasNext()Z;)())
+      {
+        this.(Lscala/collection/Iterator;)lead$1.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+      }
+    else
+      {
+        this.(Lscala/runtime/BooleanRef;)go$1.(Z;)elem = true;
+      }
+    Ljava/lang/Object; $2$;
+    if (this.(Lscala/runtime/BooleanRef;)go$1.(Z;)elem)
+      {
+        $2$ = this.(Lscala/collection/mutable/Builder;)b$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
+      }
+    else
+      {
+        $2$ = Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+      }
+    return $2$;
+  }
+  
+  private Lscala/collection/mutable/Builder; b$1;
+  
+  private Lscala/collection/Iterator; lead$1;
+  
+  private Lscala/runtime/BooleanRef; go$1;
+  
+  public this(Lscala/collection/IterableLike; $outer, Lscala/collection/mutable/Builder; b$1, Lscala/collection/Iterator; lead$1, Lscala/runtime/BooleanRef; go$1) {
+    this.(Lscala/collection/mutable/Builder;)b$1 = b$1;
+    this.(Lscala/collection/Iterator;)lead$1 = lead$1;
+    this.(Lscala/runtime/BooleanRef;)go$1 = go$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

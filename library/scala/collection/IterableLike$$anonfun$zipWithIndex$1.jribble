@@ -1,0 +1,22 @@
+public final class Lscala/collection/IterableLike$$anonfun$zipWithIndex$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final V; apply(Ljava/lang/Object; x) {
+    this.(Lscala/collection/mutable/Builder;)b$2.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/runtime/IntRef;)i$1.(I;)elem))));
+    this.(Lscala/runtime/IntRef;)i$1.(I;)elem = (this.(Lscala/runtime/IntRef;)i$1.(I;)elem + 1);
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/IterableLike$$anonfun$zipWithIndex$1;::apply(Ljava/lang/Object;)V;)(v1);
+    return Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+  }
+  
+  private Lscala/collection/mutable/Builder; b$2;
+  
+  private Lscala/runtime/IntRef; i$1;
+  
+  public this(Lscala/collection/IterableLike; $outer, Lscala/collection/mutable/Builder; b$2, Lscala/runtime/IntRef; i$1) {
+    this.(Lscala/collection/mutable/Builder;)b$2 = b$2;
+    this.(Lscala/runtime/IntRef;)i$1 = i$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

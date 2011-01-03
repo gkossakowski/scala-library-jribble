@@ -1,0 +1,49 @@
+public final class Lscala/collection/mutable/WrappedArray$ofByte; extends Lscala/collection/mutable/WrappedArray; implements Lscala/ScalaObject; {
+  
+  private B;[ array$u0020;
+  
+  public B;[ array() {
+    return this.(B;[)array$u0020;
+  }
+  
+  public Lscala/reflect/AnyValManifest; elemManifest() {
+    return Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::Byte()Lscala/reflect/AnyValManifest;)();
+  }
+  
+  public I; length() {
+    return this.(Lscala/collection/mutable/WrappedArray$ofByte;::array()B;[)().<length>;
+  }
+  
+  public B; apply(I; index) {
+    return this.(Lscala/collection/mutable/WrappedArray$ofByte;::array()B;[)()[index];
+  }
+  
+  public V; update(I; index, B; elem) {
+    this.(Lscala/collection/mutable/WrappedArray$ofByte;::array()B;[)()[index] = elem;
+  }
+  
+  public V; update(I; index, Ljava/lang/Object; elem) {
+    this.(Lscala/collection/mutable/WrappedArray$ofByte;::update(I;B;)V;)(index, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToByte(Ljava/lang/Object;)B;)(elem));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToByte(B;)Ljava/lang/Byte;)(this.(Lscala/collection/mutable/WrappedArray$ofByte;::apply(I;)B;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1)));
+  }
+  
+  public Ljava/lang/Object; apply(I; index) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToByte(B;)Ljava/lang/Byte;)(this.(Lscala/collection/mutable/WrappedArray$ofByte;::apply(I;)B;)(index));
+  }
+  
+  public Lscala/reflect/ClassManifest; elemManifest() {
+    return this.(Lscala/collection/mutable/WrappedArray$ofByte;::elemManifest()Lscala/reflect/AnyValManifest;)();
+  }
+  
+  public Ljava/lang/Object; array() {
+    return this.(Lscala/collection/mutable/WrappedArray$ofByte;::array()B;[)();
+  }
+  
+  public this(B;[ array) {
+    this.(B;[)array$u0020 = array;
+    (Lscala/collection/mutable/WrappedArray;::super()V;)();
+  }
+}

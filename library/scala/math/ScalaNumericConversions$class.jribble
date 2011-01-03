@@ -1,0 +1,132 @@
+public abstract class Lscala/math/ScalaNumericConversions$class; {
+  
+  public static C; toChar(Lscala/math/ScalaNumericConversions; $this) {
+    return $this.<cast>(Ljava/lang/Number;).(Ljava/lang/Number;::intValue()I;)().<cast>(C;);
+  }
+  
+  public static B; toByte(Lscala/math/ScalaNumericConversions; $this) {
+    return $this.<cast>(Ljava/lang/Number;).(Ljava/lang/Number;::byteValue()B;)();
+  }
+  
+  public static S; toShort(Lscala/math/ScalaNumericConversions; $this) {
+    return $this.<cast>(Ljava/lang/Number;).(Ljava/lang/Number;::shortValue()S;)();
+  }
+  
+  public static I; toInt(Lscala/math/ScalaNumericConversions; $this) {
+    return $this.<cast>(Ljava/lang/Number;).(Ljava/lang/Number;::intValue()I;)();
+  }
+  
+  public static J; toLong(Lscala/math/ScalaNumericConversions; $this) {
+    return $this.<cast>(Ljava/lang/Number;).(Ljava/lang/Number;::longValue()J;)();
+  }
+  
+  public static F; toFloat(Lscala/math/ScalaNumericConversions; $this) {
+    return $this.<cast>(Ljava/lang/Number;).(Ljava/lang/Number;::floatValue()F;)();
+  }
+  
+  public static D; toDouble(Lscala/math/ScalaNumericConversions; $this) {
+    return $this.<cast>(Ljava/lang/Number;).(Ljava/lang/Number;::doubleValue()D;)();
+  }
+  
+  public static Z; isValidByte(Lscala/math/ScalaNumericConversions; $this) {
+    return ($this.<cast>(Lscala/math/ScalaNumber;).(Lscala/math/ScalaNumber;::isWhole()Z;)() && ($this.(Lscala/math/ScalaNumericConversions;::toByte()B;)() == $this.(Lscala/math/ScalaNumericConversions;::toInt()I;)()));
+  }
+  
+  public static Z; isValidShort(Lscala/math/ScalaNumericConversions; $this) {
+    return ($this.<cast>(Lscala/math/ScalaNumber;).(Lscala/math/ScalaNumber;::isWhole()Z;)() && ($this.(Lscala/math/ScalaNumericConversions;::toShort()S;)() == $this.(Lscala/math/ScalaNumericConversions;::toInt()I;)()));
+  }
+  
+  public static Z; isValidInt(Lscala/math/ScalaNumericConversions; $this) {
+    return ($this.<cast>(Lscala/math/ScalaNumber;).(Lscala/math/ScalaNumber;::isWhole()Z;)() && ($this.(Lscala/math/ScalaNumericConversions;::toInt()I;)() == $this.(Lscala/math/ScalaNumericConversions;::toLong()J;)()));
+  }
+  
+  public static Z; isValidChar(Lscala/math/ScalaNumericConversions; $this) {
+    return ($this.<cast>(Lscala/math/ScalaNumber;).(Lscala/math/ScalaNumber;::isWhole()Z;)() && (($this.(Lscala/math/ScalaNumericConversions;::toInt()I;)() >= '\00') && ($this.(Lscala/math/ScalaNumericConversions;::toInt()I;)() <= '?')));
+  }
+  
+  public static I; unifiedPrimitiveHashcode(Lscala/math/ScalaNumericConversions; $this) {
+    J; lv = $this.(Lscala/math/ScalaNumericConversions;::toLong()J;)();
+    I; $1$;
+    if (((lv >= -2147483648) && (lv <= 2147483647)))
+      {
+        $1$ = lv.<cast>(I;);
+      }
+    else
+      {
+        $1$ = this.(Lscala/runtime/ScalaRunTime$;::hash(J;)I;)(lv);
+      }
+    return $1$;
+  }
+  
+  public static Z; unifiedPrimitiveEquals(Lscala/math/ScalaNumericConversions; $this, Ljava/lang/Object; x) {
+    Ljava/lang/Object; temp1 = x;
+    Z; $2$;
+    if (temp1.<instanceof>(C;))
+      {
+        $2$ = ($this.(Lscala/math/ScalaNumericConversions;::isValidChar()Z;)() && ($this.(Lscala/math/ScalaNumericConversions;::toInt()I;)() == Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(temp1).<cast>(I;)));
+      }
+    else
+      {
+        Z; $3$;
+        if (temp1.<instanceof>(B;))
+          {
+            $3$ = ($this.(Lscala/math/ScalaNumericConversions;::isValidByte()Z;)() && ($this.(Lscala/math/ScalaNumericConversions;::toByte()B;)() == Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToByte(Ljava/lang/Object;)B;)(temp1)));
+          }
+        else
+          {
+            Z; $4$;
+            if (temp1.<instanceof>(S;))
+              {
+                $4$ = ($this.(Lscala/math/ScalaNumericConversions;::isValidShort()Z;)() && ($this.(Lscala/math/ScalaNumericConversions;::toShort()S;)() == Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToShort(Ljava/lang/Object;)S;)(temp1)));
+              }
+            else
+              {
+                Z; $5$;
+                if (temp1.<instanceof>(I;))
+                  {
+                    $5$ = ($this.(Lscala/math/ScalaNumericConversions;::isValidInt()Z;)() && ($this.(Lscala/math/ScalaNumericConversions;::toInt()I;)() == Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp1)));
+                  }
+                else
+                  {
+                    Z; $6$;
+                    if (temp1.<instanceof>(J;))
+                      {
+                        $6$ = ($this.(Lscala/math/ScalaNumericConversions;::toLong()J;)() == Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToLong(Ljava/lang/Object;)J;)(temp1));
+                      }
+                    else
+                      {
+                        Z; $7$;
+                        if (temp1.<instanceof>(F;))
+                          {
+                            $7$ = ($this.(Lscala/math/ScalaNumericConversions;::toFloat()F;)() == Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(temp1));
+                          }
+                        else
+                          {
+                            Z; $8$;
+                            if (temp1.<instanceof>(D;))
+                              {
+                                $8$ = ($this.(Lscala/math/ScalaNumericConversions;::toDouble()D;)() == Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(temp1));
+                              }
+                            else
+                              {
+                                $8$ = false;
+                              }
+                            $7$ = $8$;
+                          }
+                        $6$ = $7$;
+                      }
+                    $5$ = $6$;
+                  }
+                $4$ = $5$;
+              }
+            $3$ = $4$;
+          }
+        $2$ = $3$;
+      }
+    return $2$;
+  }
+  
+  public static V; $init$(Lscala/math/ScalaNumericConversions; $this) {
+    
+  }
+}

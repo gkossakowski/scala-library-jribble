@@ -1,0 +1,46 @@
+public class Lscala/collection/generic/DelegatedContext; extends Ljava/lang/Object; implements Lscala/collection/generic/DelegatedSignalling;, Lscala/ScalaObject; {
+  
+  public Z; isAborted() {
+    return Lscala/collection/generic/DelegatedSignalling$class;.(Lscala/collection/generic/DelegatedSignalling$class;::isAborted(Lscala/collection/generic/DelegatedSignalling;)Z;)(this);
+  }
+  
+  public V; abort() {
+    Lscala/collection/generic/DelegatedSignalling$class;.(Lscala/collection/generic/DelegatedSignalling$class;::abort(Lscala/collection/generic/DelegatedSignalling;)V;)(this);
+  }
+  
+  public I; indexFlag() {
+    return Lscala/collection/generic/DelegatedSignalling$class;.(Lscala/collection/generic/DelegatedSignalling$class;::indexFlag(Lscala/collection/generic/DelegatedSignalling;)I;)(this);
+  }
+  
+  public V; setIndexFlag(I; f) {
+    Lscala/collection/generic/DelegatedSignalling$class;.(Lscala/collection/generic/DelegatedSignalling$class;::setIndexFlag(Lscala/collection/generic/DelegatedSignalling;I;)V;)(this, f);
+  }
+  
+  public V; setIndexFlagIfGreater(I; f) {
+    Lscala/collection/generic/DelegatedSignalling$class;.(Lscala/collection/generic/DelegatedSignalling$class;::setIndexFlagIfGreater(Lscala/collection/generic/DelegatedSignalling;I;)V;)(this, f);
+  }
+  
+  public V; setIndexFlagIfLesser(I; f) {
+    Lscala/collection/generic/DelegatedSignalling$class;.(Lscala/collection/generic/DelegatedSignalling$class;::setIndexFlagIfLesser(Lscala/collection/generic/DelegatedSignalling;I;)V;)(this, f);
+  }
+  
+  public I; tag() {
+    return Lscala/collection/generic/DelegatedSignalling$class;.(Lscala/collection/generic/DelegatedSignalling$class;::tag(Lscala/collection/generic/DelegatedSignalling;)I;)(this);
+  }
+  
+  private Lscala/collection/generic/Signalling; signalDelegate$u0020;
+  
+  public Lscala/collection/generic/Signalling; signalDelegate() {
+    return this.(Lscala/collection/generic/Signalling;)signalDelegate$u0020;
+  }
+  
+  public V; signalDelegate_$eq(Lscala/collection/generic/Signalling; x$1) {
+    this.(Lscala/collection/generic/Signalling;)signalDelegate$u0020 = x$1;
+  }
+  
+  public this(Lscala/collection/generic/Signalling; signalDelegate) {
+    this.(Lscala/collection/generic/Signalling;)signalDelegate$u0020 = signalDelegate;
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/collection/generic/DelegatedSignalling$class;.(Lscala/collection/generic/DelegatedSignalling$class;::$init$(Lscala/collection/generic/DelegatedSignalling;)V;)(this);
+  }
+}

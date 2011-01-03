@@ -1,0 +1,36 @@
+public interface Lscala/reflect/ClassManifest; extends Lscala/reflect/OptManifest;, Lscala/Equals;, Lscala/ScalaObject; {
+  
+  public Ljava/lang/Class; erasure();
+  
+  public Z; $less$colon$less(Lscala/reflect/ClassManifest; that);
+  
+  public Z; $greater$colon$greater(Lscala/reflect/ClassManifest; that);
+  
+  public Z; canEqual(Ljava/lang/Object; other);
+  
+  public Z; equals(Ljava/lang/Object; that);
+  
+  public I; hashCode();
+  
+  public Ljava/lang/Class; arrayClass(Ljava/lang/Class; tp);
+  
+  public Lscala/reflect/ClassManifest; arrayManifest();
+  
+  public Ljava/lang/Object; newArray(I; len);
+  
+  public Ljava/lang/Object;[ newArray2(I; len);
+  
+  public Ljava/lang/Object;[[ newArray3(I; len);
+  
+  public Ljava/lang/Object;[[[ newArray4(I; len);
+  
+  public Ljava/lang/Object;[[[[ newArray5(I; len);
+  
+  public Lscala/collection/mutable/WrappedArray; newWrappedArray(I; len);
+  
+  public Lscala/collection/mutable/ArrayBuilder; newArrayBuilder();
+  
+  public Lscala/collection/immutable/List; typeArguments();
+  
+  public Ljava/lang/String; argString();
+}

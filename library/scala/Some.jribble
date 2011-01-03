@@ -1,0 +1,93 @@
+public final class Lscala/Some; extends Lscala/Option; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Ljava/lang/Object; copy$default$1() {
+    return this.(Lscala/Some;::x()Ljava/lang/Object;)();
+  }
+  
+  private Ljava/lang/Object; x$u0020;
+  
+  public Ljava/lang/Object; x() {
+    return this.(Ljava/lang/Object;)x$u0020;
+  }
+  
+  public Z; isEmpty() {
+    return false;
+  }
+  
+  public Ljava/lang/Object; get() {
+    return this.(Lscala/Some;::x()Ljava/lang/Object;)();
+  }
+  
+  public Lscala/Some; copy(Ljava/lang/Object; x) {
+    return (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp1 = x$1;
+    Z; $12$;
+    if (temp1.<instanceof>(Lscala/Some;))
+      {
+        Lscala/Some; temp2 = temp1.<cast>(Lscala/Some;);
+        Ljava/lang/Object; temp3 = temp2.(Lscala/Some;::x()Ljava/lang/Object;)();
+        Ljava/lang/Object; x$1 = temp3;
+        Z; $13$;
+        if (this.(Lscala/Some;::gd1$1(Ljava/lang/Object;)Z;)(x$1))
+          {
+            $13$ = x$1.<cast>(Lscala/Some;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $13$ = false;
+          }
+        $12$ = $13$;
+      }
+    else
+      {
+        $12$ = false;
+      }
+    return ((this == x$1) || $12$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "Some";
+  }
+  
+  public I; productArity() {
+    return 1;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp4 = x$1;
+    Ljava/lang/Object; $14$;
+    if ((temp4 == 0))
+      {
+        $14$ = this.(Lscala/Some;::x()Ljava/lang/Object;)();
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $14$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/Some;);
+  }
+  
+  private final Z; gd1$1(Ljava/lang/Object; x$1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/Some;::x()Ljava/lang/Object;)());
+  }
+  
+  public this(Ljava/lang/Object; x) {
+    this.(Ljava/lang/Object;)x$u0020 = x;
+    (Lscala/Option;::super()V;)();
+  }
+}

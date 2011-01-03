@@ -1,0 +1,18 @@
+public interface Lscala/collection/immutable/MapLike; extends Lscala/collection/MapLike;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/immutable/Map; updated(Ljava/lang/Object; key, Ljava/lang/Object; value);
+  
+  public Lscala/collection/immutable/Map; $plus(Lscala/Tuple2; kv);
+  
+  public Lscala/collection/immutable/Map; $plus(Lscala/Tuple2; elem1, Lscala/Tuple2; elem2, Lscala/collection/Seq; elems);
+  
+  public Lscala/collection/immutable/Map; $plus$plus(Lscala/collection/TraversableOnce; xs);
+  
+  public Lscala/collection/immutable/Map; filterKeys(Lscala/Function1; p);
+  
+  public Lscala/collection/immutable/Map; mapValues(Lscala/Function1; f);
+  
+  public Ljava/lang/Object; transform(Lscala/Function2; f, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Lscala/collection/immutable/Map; update(Ljava/lang/Object; key, Ljava/lang/Object; value);
+}

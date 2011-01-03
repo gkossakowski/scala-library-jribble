@@ -1,0 +1,93 @@
+public abstract class Lscala/reflect/generic/Trees$MemberDef; extends Lscala/reflect/generic/Trees$DefTree; implements Lscala/ScalaObject; {
+  
+  public abstract Lscala/reflect/generic/Trees$Modifiers; mods();
+  
+  public Ljava/lang/String; keyword() {
+    Lscala/reflect/generic/Trees$MemberDef; temp14 = this;
+    Ljava/lang/String; $14$;
+    if (temp14.<instanceof>(Lscala/reflect/generic/Trees$TypeDef;))
+      {
+        $14$ = "type";
+      }
+    else
+      {
+        Ljava/lang/String; $15$;
+        if (temp14.<instanceof>(Lscala/reflect/generic/Trees$ClassDef;))
+          {
+            Ljava/lang/String; $16$;
+            if (temp14.<cast>(Lscala/reflect/generic/Trees$ClassDef;).(Lscala/reflect/generic/Trees$ClassDef;::mods()Lscala/reflect/generic/Trees$Modifiers;)().(Lscala/reflect/generic/Trees$Modifiers;::isTrait()Z;)())
+              {
+                $16$ = "trait";
+              }
+            else
+              {
+                $16$ = "class";
+              }
+            $15$ = $16$;
+          }
+        else
+          {
+            Ljava/lang/String; $17$;
+            if (temp14.<instanceof>(Lscala/reflect/generic/Trees$DefDef;))
+              {
+                $17$ = "def";
+              }
+            else
+              {
+                Ljava/lang/String; $18$;
+                if (temp14.<instanceof>(Lscala/reflect/generic/Trees$ModuleDef;))
+                  {
+                    $18$ = "object";
+                  }
+                else
+                  {
+                    Ljava/lang/String; $19$;
+                    if (temp14.<instanceof>(Lscala/reflect/generic/Trees$PackageDef;))
+                      {
+                        $19$ = "package";
+                      }
+                    else
+                      {
+                        Ljava/lang/String; $20$;
+                        if (temp14.<instanceof>(Lscala/reflect/generic/Trees$ValDef;))
+                          {
+                            Ljava/lang/String; $21$;
+                            if (temp14.<cast>(Lscala/reflect/generic/Trees$ValDef;).(Lscala/reflect/generic/Trees$ValDef;::mods()Lscala/reflect/generic/Trees$Modifiers;)().(Lscala/reflect/generic/Trees$Modifiers;::isVariable()Z;)())
+                              {
+                                $21$ = "var";
+                              }
+                            else
+                              {
+                                $21$ = "val";
+                              }
+                            $20$ = $21$;
+                          }
+                        else
+                          {
+                            $20$ = "";
+                          }
+                        $19$ = $20$;
+                      }
+                    $18$ = $19$;
+                  }
+                $17$ = $18$;
+              }
+            $15$ = $17$;
+          }
+        $14$ = $15$;
+      }
+    return $14$;
+  }
+  
+  public final Z; hasFlag(J; mask) {
+    return ((this.(Lscala/reflect/generic/Trees$MemberDef;::mods()Lscala/reflect/generic/Trees$Modifiers;)().(Lscala/reflect/generic/Trees$Modifiers;::flags()J;)() & mask) != 0L);
+  }
+  
+  public Lscala/reflect/generic/Universe; scala$reflect$generic$Trees$MemberDef$$$outer() {
+    return this.(Lscala/reflect/generic/Universe;)$outer$u0020;
+  }
+  
+  public this(Lscala/reflect/generic/Universe; $outer) {
+    (Lscala/reflect/generic/Trees$DefTree;::super(Lscala/reflect/generic/Universe;)V;)($outer);
+  }
+}

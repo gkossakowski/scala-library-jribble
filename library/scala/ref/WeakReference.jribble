@@ -1,0 +1,65 @@
+public class Lscala/ref/WeakReference; extends Ljava/lang/Object; implements Lscala/ref/ReferenceWrapper;, Lscala/ScalaObject; {
+  
+  public Lscala/Option; get() {
+    return Lscala/ref/ReferenceWrapper$class;.(Lscala/ref/ReferenceWrapper$class;::get(Lscala/ref/ReferenceWrapper;)Lscala/Option;)(this);
+  }
+  
+  public Ljava/lang/Object; apply() {
+    return Lscala/ref/ReferenceWrapper$class;.(Lscala/ref/ReferenceWrapper$class;::apply(Lscala/ref/ReferenceWrapper;)Ljava/lang/Object;)(this);
+  }
+  
+  public V; clear() {
+    Lscala/ref/ReferenceWrapper$class;.(Lscala/ref/ReferenceWrapper$class;::clear(Lscala/ref/ReferenceWrapper;)V;)(this);
+  }
+  
+  public Z; enqueue() {
+    return Lscala/ref/ReferenceWrapper$class;.(Lscala/ref/ReferenceWrapper$class;::enqueue(Lscala/ref/ReferenceWrapper;)Z;)(this);
+  }
+  
+  public Z; isEnqueued() {
+    return Lscala/ref/ReferenceWrapper$class;.(Lscala/ref/ReferenceWrapper$class;::isEnqueued(Lscala/ref/ReferenceWrapper;)Z;)(this);
+  }
+  
+  public Ljava/lang/ref/Reference; self() {
+    return Lscala/ref/ReferenceWrapper$class;.(Lscala/ref/ReferenceWrapper$class;::self(Lscala/ref/ReferenceWrapper;)Ljava/lang/ref/Reference;)(this);
+  }
+  
+  public I; hashCode() {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::hashCode(Lscala/Proxy;)I;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; that) {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::equals(Lscala/Proxy;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::toString(Lscala/Proxy;)Ljava/lang/String;)(this);
+  }
+  
+  public this(Ljava/lang/Object; value) {
+    (Lscala/ref/WeakReference;::this(Ljava/lang/Object;Lscala/ref/ReferenceQueue;)V;)(value, null);
+  }
+  
+  private Ljava/lang/ref/WeakReference; underlying$u0020;
+  
+  public Ljava/lang/ref/WeakReference; underlying() {
+    return this.(Ljava/lang/ref/WeakReference;)underlying$u0020;
+  }
+  
+  public Ljava/lang/Object; self() {
+    return this.(Lscala/ref/ReferenceWrapper;::self()Ljava/lang/ref/Reference;)();
+  }
+  
+  public Ljava/lang/ref/Reference; underlying() {
+    return this.(Lscala/ref/WeakReference;::underlying()Ljava/lang/ref/WeakReference;)();
+  }
+  
+  public this(Ljava/lang/Object; value, Lscala/ref/ReferenceQueue; queue) {
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Function0$class;.(Lscala/Function0$class;::$init$(Lscala/Function0;)V;)(this);
+    Lscala/ref/Reference$class;.(Lscala/ref/Reference$class;::$init$(Lscala/ref/Reference;)V;)(this);
+    Lscala/Proxy$class;.(Lscala/Proxy$class;::$init$(Lscala/Proxy;)V;)(this);
+    Lscala/ref/ReferenceWrapper$class;.(Lscala/ref/ReferenceWrapper$class;::$init$(Lscala/ref/ReferenceWrapper;)V;)(this);
+    this.(Ljava/lang/ref/WeakReference;)underlying$u0020 = (new (Lscala/ref/WeakReferenceWithWrapper;::this(Ljava/lang/Object;Lscala/ref/ReferenceQueue;Lscala/ref/WeakReference;)V;)(value, queue, this));
+  }
+}

@@ -1,0 +1,109 @@
+public final class Lscala/reflect/Manifest$$anon$15; extends Ljava/lang/Object; implements Lscala/reflect/Manifest; {
+  
+  protected I; bitmap$0 = 0;
+  
+  public Lscala/collection/immutable/List; typeArguments() {
+    return Lscala/reflect/Manifest$class;.(Lscala/reflect/Manifest$class;::typeArguments(Lscala/reflect/Manifest;)Lscala/collection/immutable/List;)(this);
+  }
+  
+  public Lscala/reflect/Manifest; arrayManifest() {
+    return Lscala/reflect/Manifest$class;.(Lscala/reflect/Manifest$class;::arrayManifest(Lscala/reflect/Manifest;)Lscala/reflect/Manifest;)(this);
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; that) {
+    return Lscala/reflect/Manifest$class;.(Lscala/reflect/Manifest$class;::canEqual(Lscala/reflect/Manifest;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Z; equals(Ljava/lang/Object; that) {
+    return Lscala/reflect/Manifest$class;.(Lscala/reflect/Manifest$class;::equals(Lscala/reflect/Manifest;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public I; hashCode() {
+    return Lscala/reflect/Manifest$class;.(Lscala/reflect/Manifest$class;::hashCode(Lscala/reflect/Manifest;)I;)(this);
+  }
+  
+  public Z; $less$colon$less(Lscala/reflect/ClassManifest; that) {
+    return Lscala/reflect/ClassManifest$class;.(Lscala/reflect/ClassManifest$class;::$less$colon$less(Lscala/reflect/ClassManifest;Lscala/reflect/ClassManifest;)Z;)(this, that);
+  }
+  
+  public Z; $greater$colon$greater(Lscala/reflect/ClassManifest; that) {
+    return Lscala/reflect/ClassManifest$class;.(Lscala/reflect/ClassManifest$class;::$greater$colon$greater(Lscala/reflect/ClassManifest;Lscala/reflect/ClassManifest;)Z;)(this, that);
+  }
+  
+  public Ljava/lang/Class; arrayClass(Ljava/lang/Class; tp) {
+    return Lscala/reflect/ClassManifest$class;.(Lscala/reflect/ClassManifest$class;::arrayClass(Lscala/reflect/ClassManifest;Ljava/lang/Class;)Ljava/lang/Class;)(this, tp);
+  }
+  
+  public Ljava/lang/Object; newArray(I; len) {
+    return Lscala/reflect/ClassManifest$class;.(Lscala/reflect/ClassManifest$class;::newArray(Lscala/reflect/ClassManifest;I;)Ljava/lang/Object;)(this, len);
+  }
+  
+  public Ljava/lang/Object;[ newArray2(I; len) {
+    return Lscala/reflect/ClassManifest$class;.(Lscala/reflect/ClassManifest$class;::newArray2(Lscala/reflect/ClassManifest;I;)Ljava/lang/Object;[)(this, len);
+  }
+  
+  public Ljava/lang/Object;[[ newArray3(I; len) {
+    return Lscala/reflect/ClassManifest$class;.(Lscala/reflect/ClassManifest$class;::newArray3(Lscala/reflect/ClassManifest;I;)Ljava/lang/Object;[[)(this, len);
+  }
+  
+  public Ljava/lang/Object;[[[ newArray4(I; len) {
+    return Lscala/reflect/ClassManifest$class;.(Lscala/reflect/ClassManifest$class;::newArray4(Lscala/reflect/ClassManifest;I;)Ljava/lang/Object;[[[)(this, len);
+  }
+  
+  public Ljava/lang/Object;[[[[ newArray5(I; len) {
+    return Lscala/reflect/ClassManifest$class;.(Lscala/reflect/ClassManifest$class;::newArray5(Lscala/reflect/ClassManifest;I;)Ljava/lang/Object;[[[[)(this, len);
+  }
+  
+  public Lscala/collection/mutable/WrappedArray; newWrappedArray(I; len) {
+    return Lscala/reflect/ClassManifest$class;.(Lscala/reflect/ClassManifest$class;::newWrappedArray(Lscala/reflect/ClassManifest;I;)Lscala/collection/mutable/WrappedArray;)(this, len);
+  }
+  
+  public Lscala/collection/mutable/ArrayBuilder; newArrayBuilder() {
+    return Lscala/reflect/ClassManifest$class;.(Lscala/reflect/ClassManifest$class;::newArrayBuilder(Lscala/reflect/ClassManifest;)Lscala/collection/mutable/ArrayBuilder;)(this);
+  }
+  
+  public Ljava/lang/String; argString() {
+    return Lscala/reflect/ClassManifest$class;.(Lscala/reflect/ClassManifest$class;::argString(Lscala/reflect/ClassManifest;)Ljava/lang/String;)(this);
+  }
+  
+  private Ljava/lang/Class; erasure$u0020;
+  
+  public Ljava/lang/Class; erasure() {
+    if (((this.(I;)bitmap$0 & 1) == 0))
+      {
+        if (((this.(I;)bitmap$0 & 1) == 0))
+          {
+            this.(Ljava/lang/Class;)erasure$u0020 = this.(Ljava/lang/Object;)value$1.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)();
+            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 1);
+          }
+      }
+    return this.(Ljava/lang/Class;)erasure$u0020;
+  }
+  
+  private Ljava/lang/String; toString$u0020;
+  
+  public Ljava/lang/String; toString() {
+    if (((this.(I;)bitmap$0 & 4) == 0))
+      {
+        if (((this.(I;)bitmap$0 & 4) == 0))
+          {
+            this.(Ljava/lang/String;)toString$u0020 = (this.(Ljava/lang/Object;)value$1.(Ljava/lang/Object;::toString()Ljava/lang/String;)() + ".type");
+            this.(I;)bitmap$0 = (this.(I;)bitmap$0 | 4);
+          }
+      }
+    return this.(Ljava/lang/String;)toString$u0020;
+  }
+  
+  public Lscala/reflect/ClassManifest; arrayManifest() {
+    return this.(Lscala/reflect/Manifest;::arrayManifest()Lscala/reflect/Manifest;)();
+  }
+  
+  private Ljava/lang/Object; value$1;
+  
+  public this(Ljava/lang/Object; value$1) {
+    this.(Ljava/lang/Object;)value$1 = value$1;
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/reflect/ClassManifest$class;.(Lscala/reflect/ClassManifest$class;::$init$(Lscala/reflect/ClassManifest;)V;)(this);
+    Lscala/reflect/Manifest$class;.(Lscala/reflect/Manifest$class;::$init$(Lscala/reflect/Manifest;)V;)(this);
+  }
+}

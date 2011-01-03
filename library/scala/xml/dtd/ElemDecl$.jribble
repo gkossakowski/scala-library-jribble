@@ -1,0 +1,32 @@
+public final class Lscala/xml/dtd/ElemDecl$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject; {
+  public static Lscala/xml/dtd/ElemDecl$; MODULE$ = new (Lscala/xml/dtd/ElemDecl$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "ElemDecl";
+  }
+  
+  public Lscala/Option; unapply(Lscala/xml/dtd/ElemDecl; x$0) {
+    Lscala/Option; $49$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $49$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $49$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/ElemDecl;::name()Ljava/lang/String;)(), x$0.(Lscala/xml/dtd/ElemDecl;::contentModel()Lscala/xml/dtd/ContentModel;)()))));
+      }
+    return $49$;
+  }
+  
+  public Lscala/xml/dtd/ElemDecl; apply(Ljava/lang/String; name, Lscala/xml/dtd/ContentModel; contentModel) {
+    return (new (Lscala/xml/dtd/ElemDecl;::this(Ljava/lang/String;Lscala/xml/dtd/ContentModel;)V;)(name, contentModel));
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {
+    return this.(Lscala/xml/dtd/ElemDecl$;::apply(Ljava/lang/String;Lscala/xml/dtd/ContentModel;)Lscala/xml/dtd/ElemDecl;)(v1.<cast>(Ljava/lang/String;), v2.<cast>(Lscala/xml/dtd/ContentModel;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
+  }
+}

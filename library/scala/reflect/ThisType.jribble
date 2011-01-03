@@ -1,0 +1,94 @@
+public class Lscala/reflect/ThisType; extends Lscala/reflect/Type; implements Lscala/ScalaObject;, Lscala/Product; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/reflect/Symbol; copy$default$1() {
+    return this.(Lscala/reflect/ThisType;::clazz()Lscala/reflect/Symbol;)();
+  }
+  
+  private Lscala/reflect/Symbol; clazz$u0020;
+  
+  public Lscala/reflect/Symbol; clazz() {
+    return this.(Lscala/reflect/Symbol;)clazz$u0020;
+  }
+  
+  public Lscala/reflect/ThisType; copy(Lscala/reflect/Symbol; clazz) {
+    return (new (Lscala/reflect/ThisType;::this(Lscala/reflect/Symbol;)V;)(clazz));
+  }
+  
+  public I; hashCode() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return this.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp17 = x$1;
+    Z; $12$;
+    if (temp17.<instanceof>(Lscala/reflect/ThisType;))
+      {
+        Lscala/reflect/ThisType; temp18 = temp17.<cast>(Lscala/reflect/ThisType;);
+        Lscala/reflect/Symbol; temp19 = temp18.(Lscala/reflect/ThisType;::clazz()Lscala/reflect/Symbol;)();
+        Lscala/reflect/Symbol; clazz$1 = temp19;
+        Z; $13$;
+        if (this.(Lscala/reflect/ThisType;::gd4$1(Lscala/reflect/Symbol;)Z;)(clazz$1))
+          {
+            $13$ = x$1.<cast>(Lscala/reflect/ThisType;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+          }
+        else
+          {
+            $13$ = false;
+          }
+        $12$ = $13$;
+      }
+    else
+      {
+        $12$ = false;
+      }
+    return ((this == x$1) || $12$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "ThisType";
+  }
+  
+  public I; productArity() {
+    return 1;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp20 = x$1;
+    Ljava/lang/Object; $14$;
+    if ((temp20 == 0))
+      {
+        $14$ = this.(Lscala/reflect/ThisType;::clazz()Lscala/reflect/Symbol;)();
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $14$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/reflect/ThisType;);
+  }
+  
+  private final Z; gd4$1(Lscala/reflect/Symbol; x$1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/reflect/ThisType;::clazz()Lscala/reflect/Symbol;)());
+  }
+  
+  public this(Lscala/reflect/Symbol; clazz) {
+    this.(Lscala/reflect/Symbol;)clazz$u0020 = clazz;
+    (Lscala/reflect/Type;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

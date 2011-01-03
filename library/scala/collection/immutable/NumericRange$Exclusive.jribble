@@ -1,0 +1,21 @@
+public class Lscala/collection/immutable/NumericRange$Exclusive; extends Lscala/collection/immutable/NumericRange; implements Lscala/ScalaObject; {
+  
+  private Lscala/math/Integral; num;
+  
+  public Lscala/collection/immutable/NumericRange$Exclusive; copy(Ljava/lang/Object; start, Ljava/lang/Object; end, Ljava/lang/Object; step) {
+    return Lscala/collection/immutable/NumericRange$;.MODULE$.(Lscala/collection/immutable/NumericRange$;::apply(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/immutable/NumericRange$Exclusive;)(start, end, step, this.(Lscala/math/Integral;)num);
+  }
+  
+  public Lscala/collection/immutable/NumericRange$Inclusive; inclusive() {
+    return Lscala/collection/immutable/NumericRange$;.MODULE$.(Lscala/collection/immutable/NumericRange$;::inclusive(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/immutable/NumericRange$Inclusive;)(super.(Lscala/collection/immutable/NumericRange;::start()Ljava/lang/Object;)(), super.(Lscala/collection/immutable/NumericRange;::end()Ljava/lang/Object;)(), super.(Lscala/collection/immutable/NumericRange;::step()Ljava/lang/Object;)(), this.(Lscala/math/Integral;)num);
+  }
+  
+  public Lscala/collection/immutable/NumericRange; copy(Ljava/lang/Object; start, Ljava/lang/Object; end, Ljava/lang/Object; step) {
+    return this.(Lscala/collection/immutable/NumericRange$Exclusive;::copy(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/NumericRange$Exclusive;)(start, end, step);
+  }
+  
+  public this(Ljava/lang/Object; start, Ljava/lang/Object; end, Ljava/lang/Object; step, Lscala/math/Integral; num) {
+    this.(Lscala/math/Integral;)num = num;
+    (Lscala/collection/immutable/NumericRange;::super(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Z;Lscala/math/Integral;)V;)(start, end, step, false, num);
+  }
+}

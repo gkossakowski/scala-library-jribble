@@ -1,0 +1,269 @@
+public final class Lscala/reflect/NameTransformer$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/reflect/NameTransformer$; MODULE$ = new (Lscala/reflect/NameTransformer$;::this()V;)();
+  
+  private I; nops$u0020;
+  
+  private I; nops() {
+    return this.(I;)nops$u0020;
+  }
+  
+  private I; ncodes$u0020;
+  
+  private I; ncodes() {
+    return this.(I;)ncodes$u0020;
+  }
+  
+  private Ljava/lang/String;[ op2code$u0020;
+  
+  private Ljava/lang/String;[ op2code() {
+    return this.(Ljava/lang/String;[)op2code$u0020;
+  }
+  
+  private Lscala/reflect/NameTransformer$OpCodes;[ code2op$u0020;
+  
+  private Lscala/reflect/NameTransformer$OpCodes;[ code2op() {
+    return this.(Lscala/reflect/NameTransformer$OpCodes;[)code2op$u0020;
+  }
+  
+  private V; enterOp(C; op, Ljava/lang/String; code) {
+    this.(Lscala/reflect/NameTransformer$;::op2code()Ljava/lang/String;[)()[op.<cast>(I;)] = code;
+    I; c = ((((code.(Ljava/lang/String;::charAt(I;)C;)(1) - 'a') * 26) + code.(Ljava/lang/String;::charAt(I;)C;)(2)) - 'a');
+    this.(Lscala/reflect/NameTransformer$;::code2op()Lscala/reflect/NameTransformer$OpCodes;[)()[c] = (new (Lscala/reflect/NameTransformer$OpCodes;::this(C;Ljava/lang/String;Lscala/reflect/NameTransformer$OpCodes;)V;)(op, code, this.(Lscala/reflect/NameTransformer$;::code2op()Lscala/reflect/NameTransformer$OpCodes;[)()[c]));
+  }
+  
+  public Ljava/lang/String; encode(Ljava/lang/String; name) {
+    Lscala/collection/mutable/StringBuilder; buf = null;
+    I; len = name.(Ljava/lang/String;::length()I;)();
+    I; i = 0;
+    while$1: while(true) {
+      if ((i < len))
+        {
+          {
+            C; c = name.(Ljava/lang/String;::charAt(I;)C;)(i);
+            if (((c < this.(Lscala/reflect/NameTransformer$;::nops()I;)()) && (this.(Lscala/reflect/NameTransformer$;::op2code()Ljava/lang/String;[)()[c.<cast>(I;)] != null)))
+              {
+                if ((buf == null))
+                  {
+                    buf = (new (Lscala/collection/mutable/StringBuilder;::this()V;)());
+                    buf.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(name.(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)(0, i));
+                  }
+                else
+                  {
+                    
+                  }
+                buf.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(this.(Lscala/reflect/NameTransformer$;::op2code()Ljava/lang/String;[)()[c.<cast>(I;)]);
+              }
+            else
+              {
+                Ljava/lang/Object; $1$;
+                if (!(Ljava/lang/Character;.(Ljava/lang/Character;::isJavaIdentifierPart(C;)Z;)(c)))
+                  {
+                    if ((buf == null))
+                      {
+                        buf = (new (Lscala/collection/mutable/StringBuilder;::this()V;)());
+                        buf.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(name.(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)(0, i));
+                      }
+                    else
+                      {
+                        
+                      }
+                    $1$ = buf.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)("$u%04X").(Lscala/collection/immutable/StringLike;::format(Lscala/collection/Seq;)Ljava/lang/String;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(c.<cast>(I;))})));
+                  }
+                else
+                  {
+                    Ljava/lang/Object; $2$;
+                    if ((buf != null))
+                      {
+                        $2$ = buf.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(c);
+                      }
+                    else
+                      {
+                        $2$ = Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+                      }
+                    $1$ = $2$;
+                  }
+              }
+            i = (i + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    Ljava/lang/String; $3$;
+    if ((buf == null))
+      {
+        $3$ = name;
+      }
+    else
+      {
+        $3$ = buf.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)();
+      }
+    return $3$;
+  }
+  
+  public Ljava/lang/String; decode(Ljava/lang/String; name0) {
+    Ljava/lang/String; $4$;
+    if (name0.(Ljava/lang/String;::endsWith(Ljava/lang/String;)Z;)("<init>"))
+      {
+        $4$ = (name0.(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)(0, (name0.(Ljava/lang/String;::length()I;)() - "<init>".(Ljava/lang/String;::length()I;)())) + "this");
+      }
+    else
+      {
+        $4$ = name0;
+      }
+    Ljava/lang/String; name = $4$;
+    Lscala/collection/mutable/StringBuilder; buf = null;
+    I; len = name.(Ljava/lang/String;::length()I;)();
+    I; i = 0;
+    while$2: while(true) {
+      if ((i < len))
+        {
+          {
+            Lscala/reflect/NameTransformer$OpCodes; ops = null;
+            Z; unicode = false;
+            C; c = name.(Ljava/lang/String;::charAt(I;)C;)(i);
+            if (((c == '$') && ((i + 2) < len)))
+              {
+                C; ch1 = name.(Ljava/lang/String;::charAt(I;)C;)((i + 1));
+                if ((('a' <= ch1) && (ch1 <= 'z')))
+                  {
+                    C; ch2 = name.(Ljava/lang/String;::charAt(I;)C;)((i + 2));
+                    if ((('a' <= ch2) && (ch2 <= 'z')))
+                      {
+                        ops = this.(Lscala/reflect/NameTransformer$;::code2op()Lscala/reflect/NameTransformer$OpCodes;[)()[((((ch1 - 'a') * 26) + ch2) - 'a')];
+                        while$3: while(true) {
+                          if (((ops != null) && !(name.(Ljava/lang/String;::startsWith(Ljava/lang/String;I;)Z;)(ops.(Lscala/reflect/NameTransformer$OpCodes;::code()Ljava/lang/String;)(), i))))
+                            {
+                              ops = ops.(Lscala/reflect/NameTransformer$OpCodes;::next()Lscala/reflect/NameTransformer$OpCodes;)();
+                              continue while$3;
+                            }
+                          else
+                            {
+                              
+                            }
+                          break;
+                        }
+                        if ((ops != null))
+                          {
+                            if ((buf == null))
+                              {
+                                buf = (new (Lscala/collection/mutable/StringBuilder;::this()V;)());
+                                buf.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(name.(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)(0, i));
+                              }
+                            else
+                              {
+                                
+                              }
+                            buf.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(ops.(Lscala/reflect/NameTransformer$OpCodes;::op()C;)());
+                            i = (i + ops.(Lscala/reflect/NameTransformer$OpCodes;::code()Ljava/lang/String;)().(Ljava/lang/String;::length()I;)());
+                          }
+                        else
+                          {
+                            
+                          }
+                      }
+                    else
+                      {
+                        if (((((len - i) >= 6) && (ch1 == 'u')) && (Ljava/lang/Character;.(Ljava/lang/Character;::isDigit(C;)Z;)(ch2) || (('A' <= ch2) && (ch2 <= 'F')))))
+                          {
+                            Ljava/lang/String; hex = name.(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)((i + 2), (i + 6));
+                            try {
+                              C; str = Ljava/lang/Integer;.(Ljava/lang/Integer;::parseInt(Ljava/lang/String;I;)I;)(hex, 16).<cast>(C;);
+                              if ((buf == null))
+                                {
+                                  buf = (new (Lscala/collection/mutable/StringBuilder;::this()V;)());
+                                  buf.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(name.(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)(0, i));
+                                }
+                              else
+                                {
+                                  
+                                }
+                              buf.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(str);
+                              i = (i + 6);
+                              unicode = true;
+                            } catch(Ljava/lang/NumberFormatException; $WILDCARD) {
+                              
+                            }
+                          }
+                        else
+                          {
+                            
+                          }
+                      }
+                  }
+                else
+                  {
+                    
+                  }
+              }
+            else
+              {
+                
+              }
+            if (((ops == null) && !(unicode)))
+              {
+                if ((buf != null))
+                  {
+                    buf.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(c);
+                  }
+                else
+                  {
+                    
+                  }
+                i = (i + 1);
+              }
+            else
+              {
+                
+              }
+          }
+          continue while$2;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    Ljava/lang/String; $5$;
+    if ((buf == null))
+      {
+        $5$ = name;
+      }
+    else
+      {
+        $5$ = buf.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)();
+      }
+    return $5$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(I;)nops$u0020 = 128;
+    this.(I;)ncodes$u0020 = 676;
+    this.(Ljava/lang/String;[)op2code$u0020 = new Ljava/lang/String;[this.(Lscala/reflect/NameTransformer$;::nops()I;)()];
+    this.(Lscala/reflect/NameTransformer$OpCodes;[)code2op$u0020 = new Lscala/reflect/NameTransformer$OpCodes;[this.(Lscala/reflect/NameTransformer$;::ncodes()I;)()];
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('~', "$tilde");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('=', "$eq");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('<', "$less");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('>', "$greater");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('!', "$bang");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('#', "$hash");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('%', "$percent");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('^', "$up");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('&', "$amp");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('|', "$bar");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('*', "$times");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('/', "$div");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('+', "$plus");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('-', "$minus");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)(':', "$colon");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('\\', "$bslash");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('?', "$qmark");
+    this.(Lscala/reflect/NameTransformer$;::enterOp(C;Ljava/lang/String;)V;)('@', "$at");
+  }
+}

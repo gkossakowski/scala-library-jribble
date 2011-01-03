@@ -1,0 +1,24 @@
+public final class Lscala/PartialFunction$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/PartialFunction$; MODULE$ = new (Lscala/PartialFunction$;::this()V;)();
+  
+  public Z; cond(Ljava/lang/Object; x, Lscala/PartialFunction; pf) {
+    return (pf.(Lscala/PartialFunction;::isDefinedAt(Ljava/lang/Object;)Z;)(x) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(pf.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x)));
+  }
+  
+  public Lscala/Option; condOpt(Ljava/lang/Object; x, Lscala/PartialFunction; pf) {
+    Lscala/Option; $1$;
+    if (pf.(Lscala/PartialFunction;::isDefinedAt(Ljava/lang/Object;)Z;)(x))
+      {
+        $1$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(pf.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x)));
+      }
+    else
+      {
+        $1$ = Lscala/None$;.MODULE$;
+      }
+    return $1$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

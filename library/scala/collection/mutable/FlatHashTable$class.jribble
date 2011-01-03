@@ -1,0 +1,323 @@
+public abstract class Lscala/collection/mutable/FlatHashTable$class; {
+  
+  public static I; loadFactor(Lscala/collection/mutable/FlatHashTable; $this) {
+    return 450;
+  }
+  
+  public static final I; loadFactorDenum(Lscala/collection/mutable/FlatHashTable; $this) {
+    return 1000;
+  }
+  
+  public static I; initialSize(Lscala/collection/mutable/FlatHashTable; $this) {
+    return 16;
+  }
+  
+  private static I; capacity(Lscala/collection/mutable/FlatHashTable; $this, I; expectedSize) {
+    I; $1$;
+    if ((expectedSize == 0))
+      {
+        $1$ = 1;
+      }
+    else
+      {
+        $1$ = Lscala/collection/mutable/HashTable$;.MODULE$.(Lscala/collection/mutable/HashTable$;::powerOfTwo(I;)I;)(expectedSize);
+      }
+    return $1$;
+  }
+  
+  private static I; initialCapacity(Lscala/collection/mutable/FlatHashTable; $this) {
+    return Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::capacity(Lscala/collection/mutable/FlatHashTable;I;)I;)($this, $this.(Lscala/collection/mutable/FlatHashTable;::initialSize()I;)());
+  }
+  
+  public static V; init(Lscala/collection/mutable/FlatHashTable; $this, Ljava/io/ObjectInputStream; in, Lscala/Function1; f) {
+    in.(Ljava/io/ObjectInputStream;::defaultReadObject()V;)();
+    $this.(Lscala/collection/mutable/FlatHashTable;::_loadFactor_$eq(I;)V;)(in.(Ljava/io/ObjectInputStream;::readInt()I;)());
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;)V;)(($this.(Lscala/collection/mutable/FlatHashTable;::_loadFactor()I;)() > 0));
+    I; size = in.(Ljava/io/ObjectInputStream;::readInt()I;)();
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;)V;)((size >= 0));
+    $this.(Lscala/collection/mutable/FlatHashTable;::table_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::capacity(Lscala/collection/mutable/FlatHashTable;I;)I;)($this, ((size * $this.(Lscala/collection/mutable/FlatHashTable;::loadFactorDenum()I;)()) / $this.(Lscala/collection/mutable/FlatHashTable;::_loadFactor()I;)()))]);
+    $this.(Lscala/collection/mutable/FlatHashTable;::threshold_$eq(I;)V;)(Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::newThreshold(Lscala/collection/mutable/FlatHashTable;I;)I;)($this, Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)($this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()).(Lscala/collection/SeqLike;::size()I;)()));
+    I; index = 0;
+    while$1: while(true) {
+      if ((index < size))
+        {
+          {
+            Ljava/lang/Object; elem = in.(Ljava/io/ObjectInputStream;::readObject()Ljava/lang/Object;)();
+            f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(elem);
+            $this.(Lscala/collection/mutable/FlatHashTable;::addEntry(Ljava/lang/Object;)Z;)(elem);
+            index = (index + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  public static V; serializeTo(Lscala/collection/mutable/FlatHashTable; $this, Ljava/io/ObjectOutputStream; out$1) {
+    out$1.(Ljava/io/ObjectOutputStream;::defaultWriteObject()V;)();
+    out$1.(Ljava/io/ObjectOutputStream;::writeInt(I;)V;)($this.(Lscala/collection/mutable/FlatHashTable;::_loadFactor()I;)());
+    out$1.(Ljava/io/ObjectOutputStream;::writeInt(I;)V;)($this.(Lscala/collection/mutable/FlatHashTable;::tableSize()I;)());
+    $this.(Lscala/collection/mutable/FlatHashTable;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/mutable/FlatHashTable$$anonfun$serializeTo$1;::this(Lscala/collection/mutable/FlatHashTable;Ljava/io/ObjectOutputStream;)V;)($this, out$1)));
+  }
+  
+  public static Lscala/Option; findEntry(Lscala/collection/mutable/FlatHashTable; $this, Ljava/lang/Object; elem) {
+    I; h = $this.(Lscala/collection/mutable/FlatHashTable;::index(I;)I;)($this.(Lscala/collection/mutable/FlatHashTable;::elemHashCode(Ljava/lang/Object;)I;)(elem));
+    Ljava/lang/Object; entry = $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[h];
+    while$2: while(true) {
+      if (((null != entry) && (entry != elem)))
+        {
+          {
+            h = ((h + 1) % $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length>);
+            entry = $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[h];
+          }
+          continue while$2;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    Lscala/Option; $2$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(null, entry))
+      {
+        $2$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $2$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(entry));
+      }
+    return $2$;
+  }
+  
+  public static Z; containsEntry(Lscala/collection/mutable/FlatHashTable; $this, Ljava/lang/Object; elem) {
+    I; h = $this.(Lscala/collection/mutable/FlatHashTable;::index(I;)I;)($this.(Lscala/collection/mutable/FlatHashTable;::elemHashCode(Ljava/lang/Object;)I;)(elem));
+    Ljava/lang/Object; entry = $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[h];
+    while$3: while(true) {
+      if (((null != entry) && (entry != elem)))
+        {
+          {
+            h = ((h + 1) % $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length>);
+            entry = $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[h];
+          }
+          continue while$3;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return (null != entry);
+  }
+  
+  public static Z; addEntry(Lscala/collection/mutable/FlatHashTable; $this, Ljava/lang/Object; elem) {
+    I; h = $this.(Lscala/collection/mutable/FlatHashTable;::index(I;)I;)($this.(Lscala/collection/mutable/FlatHashTable;::elemHashCode(Ljava/lang/Object;)I;)(elem));
+    Ljava/lang/Object; entry = $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[h];
+    while$4: while(true) {
+      if ((null != entry))
+        {
+          {
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(entry, elem))
+              {
+                return false;
+              }
+            else
+              {
+                
+              }
+            h = ((h + 1) % $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length>);
+            entry = $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[h];
+          }
+          continue while$4;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[h] = elem;
+    $this.(Lscala/collection/mutable/FlatHashTable;::tableSize_$eq(I;)V;)(($this.(Lscala/collection/mutable/FlatHashTable;::tableSize()I;)() + 1));
+    if (($this.(Lscala/collection/mutable/FlatHashTable;::tableSize()I;)() >= $this.(Lscala/collection/mutable/FlatHashTable;::threshold()I;)()))
+      {
+        Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::growTable(Lscala/collection/mutable/FlatHashTable;)V;)($this);
+      }
+    else
+      {
+        
+      }
+    return true;
+  }
+  
+  public static Lscala/Option; removeEntry(Lscala/collection/mutable/FlatHashTable; $this, Ljava/lang/Object; elem) {
+    I; h = $this.(Lscala/collection/mutable/FlatHashTable;::index(I;)I;)($this.(Lscala/collection/mutable/FlatHashTable;::elemHashCode(Ljava/lang/Object;)I;)(elem));
+    Ljava/lang/Object; entry = $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[h];
+    while$5: while(true) {
+      if ((null != entry))
+        {
+          {
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(entry, elem))
+              {
+                I; h0 = h;
+                I; h1 = ((h0 + 1) % $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length>);
+                while$6: while(true) {
+                  if ((null != $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[h1]))
+                    {
+                      {
+                        I; h2 = $this.(Lscala/collection/mutable/FlatHashTable;::index(I;)I;)($this.(Lscala/collection/mutable/FlatHashTable;::elemHashCode(Ljava/lang/Object;)I;)($this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[h1]));
+                        if (((h2 != h1) && Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::precedes$1(Lscala/collection/mutable/FlatHashTable;I;I;)Z;)($this, h2, h0)))
+                          {
+                            $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[h0] = $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[h1];
+                            h0 = h1;
+                          }
+                        else
+                          {
+                            
+                          }
+                        h1 = ((h1 + 1) % $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length>);
+                      }
+                      continue while$6;
+                    }
+                  else
+                    {
+                      
+                    }
+                  break;
+                }
+                $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[h0] = null;
+                $this.(Lscala/collection/mutable/FlatHashTable;::tableSize_$eq(I;)V;)(($this.(Lscala/collection/mutable/FlatHashTable;::tableSize()I;)() - 1));
+                return (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(entry));
+              }
+            else
+              {
+                
+              }
+            h = ((h + 1) % $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length>);
+            entry = $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[h];
+          }
+          continue while$5;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return Lscala/None$;.MODULE$;
+  }
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/mutable/FlatHashTable; $this) {
+    return (new (Lscala/collection/mutable/FlatHashTable$$anon$1;::this(Lscala/collection/mutable/FlatHashTable;)V;)($this));
+  }
+  
+  private static V; growTable(Lscala/collection/mutable/FlatHashTable; $this) {
+    Ljava/lang/Object;[ oldtable = $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)();
+    $this.(Lscala/collection/mutable/FlatHashTable;::table_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[($this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length> * 2)]);
+    $this.(Lscala/collection/mutable/FlatHashTable;::tableSize_$eq(I;)V;)(0);
+    $this.(Lscala/collection/mutable/FlatHashTable;::threshold_$eq(I;)V;)(Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::newThreshold(Lscala/collection/mutable/FlatHashTable;I;)I;)($this, $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length>));
+    I; i = 0;
+    while$8: while(true) {
+      if ((i < oldtable.<length>))
+        {
+          {
+            Ljava/lang/Object; entry = oldtable[i];
+            if ((null != entry))
+              {
+                Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)($this.(Lscala/collection/mutable/FlatHashTable;::addEntry(Ljava/lang/Object;)Z;)(entry));
+              }
+            else
+              {
+                
+              }
+            i = (i + 1);
+          }
+          continue while$8;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  private static V; checkConsistent(Lscala/collection/mutable/FlatHashTable; $this) {
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)($this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length>).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsistent$1;::this(Lscala/collection/mutable/FlatHashTable;)V;)($this)));
+  }
+  
+  public static I; elemHashCode(Lscala/collection/mutable/FlatHashTable; $this, Ljava/lang/Object; elem) {
+    I; $3$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(elem, null))
+      {
+        $3$ = 0;
+      }
+    else
+      {
+        $3$ = elem.(Ljava/lang/Object;::hashCode()I;)();
+      }
+    return $3$;
+  }
+  
+  public static final I; improve(Lscala/collection/mutable/FlatHashTable; $this, I; hcode) {
+    I; h = (hcode + ~((hcode << 9)));
+    h = (h ^ (h >> 14));
+    h = (h + (h << 4));
+    return (h ^ (h >> 10));
+  }
+  
+  public static final I; index(Lscala/collection/mutable/FlatHashTable; $this, I; hcode) {
+    return ($this.(Lscala/collection/mutable/FlatHashTable;::improve(I;)I;)(hcode) & ($this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length> - 1));
+  }
+  
+  private static I; newThreshold(Lscala/collection/mutable/FlatHashTable; $this, I; size) {
+    I; lf = $this.(Lscala/collection/mutable/FlatHashTable;::_loadFactor()I;)();
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;Lscala/Function0;)V;)((lf < ($this.(Lscala/collection/mutable/FlatHashTable;::loadFactorDenum()I;)() / 2)), (new (Lscala/collection/mutable/FlatHashTable$$anonfun$newThreshold$1;::this(Lscala/collection/mutable/FlatHashTable;)V;)($this)));
+    return ((size.<cast>(J;) * lf) / $this.(Lscala/collection/mutable/FlatHashTable;::loadFactorDenum()I;)()).<cast>(I;);
+  }
+  
+  public static V; clearTable(Lscala/collection/mutable/FlatHashTable; $this) {
+    I; i = ($this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length> - 1);
+    while$9: while(true) {
+      if ((i >= 0))
+        {
+          {
+            $this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[i] = null;
+            i = (i - 1);
+          }
+          continue while$9;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    $this.(Lscala/collection/mutable/FlatHashTable;::tableSize_$eq(I;)V;)(0);
+  }
+  
+  private static final Z; precedes$1(Lscala/collection/mutable/FlatHashTable; $this, I; i, I; j) {
+    I; d = ($this.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)().<length> >>> 1);
+    Z; $4$;
+    if ((i <= j))
+      {
+        $4$ = ((j - i) < d);
+      }
+    else
+      {
+        $4$ = ((i - j) > d);
+      }
+    return $4$;
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/FlatHashTable; $this) {
+    $this.(Lscala/collection/mutable/FlatHashTable;::_loadFactor_$eq(I;)V;)($this.(Lscala/collection/mutable/FlatHashTable;::loadFactor()I;)());
+    $this.(Lscala/collection/mutable/FlatHashTable;::table_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::initialCapacity(Lscala/collection/mutable/FlatHashTable;)I;)($this)]);
+    $this.(Lscala/collection/mutable/FlatHashTable;::tableSize_$eq(I;)V;)(0);
+    $this.(Lscala/collection/mutable/FlatHashTable;::threshold_$eq(I;)V;)(Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::newThreshold(Lscala/collection/mutable/FlatHashTable;I;)I;)($this, Lscala/collection/mutable/FlatHashTable$class;.(Lscala/collection/mutable/FlatHashTable$class;::initialCapacity(Lscala/collection/mutable/FlatHashTable;)I;)($this)));
+  }
+}

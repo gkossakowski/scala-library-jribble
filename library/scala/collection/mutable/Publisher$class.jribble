@@ -1,0 +1,52 @@
+public abstract class Lscala/collection/mutable/Publisher$class; {
+  
+  public static V; subscribe(Lscala/collection/mutable/Publisher; $this, Lscala/collection/mutable/Subscriber; sub) {
+    $this.(Lscala/collection/mutable/Publisher;::subscribe(Lscala/collection/mutable/Subscriber;Lscala/Function1;)V;)(sub, (new (Lscala/collection/mutable/Publisher$$anonfun$subscribe$1;::this(Lscala/collection/mutable/Publisher;)V;)($this)));
+  }
+  
+  public static V; subscribe(Lscala/collection/mutable/Publisher; $this, Lscala/collection/mutable/Subscriber; sub, Lscala/Function1; filter) {
+    $this.(Lscala/collection/mutable/Publisher;::scala$collection$mutable$Publisher$$filters()Lscala/collection/mutable/HashMap;)().<cast>(Lscala/collection/mutable/MultiMap;).(Lscala/collection/mutable/MultiMap;::addBinding(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/mutable/MultiMap;)(sub, filter);
+  }
+  
+  public static V; suspendSubscription(Lscala/collection/mutable/Publisher; $this, Lscala/collection/mutable/Subscriber; sub) {
+    $this.(Lscala/collection/mutable/Publisher;::scala$collection$mutable$Publisher$$suspended()Lscala/collection/mutable/HashSet;)().(Lscala/collection/mutable/HashSet;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/HashSet;)(sub);
+  }
+  
+  public static V; activateSubscription(Lscala/collection/mutable/Publisher; $this, Lscala/collection/mutable/Subscriber; sub) {
+    $this.(Lscala/collection/mutable/Publisher;::scala$collection$mutable$Publisher$$suspended()Lscala/collection/mutable/HashSet;)().(Lscala/collection/mutable/HashSet;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/HashSet;)(sub);
+  }
+  
+  public static V; removeSubscription(Lscala/collection/mutable/Publisher; $this, Lscala/collection/mutable/Subscriber; sub) {
+    $this.(Lscala/collection/mutable/Publisher;::scala$collection$mutable$Publisher$$filters()Lscala/collection/mutable/HashMap;)().(Lscala/collection/mutable/HashMap;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/HashMap;)(sub);
+  }
+  
+  public static V; removeSubscriptions(Lscala/collection/mutable/Publisher; $this) {
+    $this.(Lscala/collection/mutable/Publisher;::scala$collection$mutable$Publisher$$filters()Lscala/collection/mutable/HashMap;)().(Lscala/collection/mutable/HashMap;::clear()V;)();
+  }
+  
+  public static V; publish(Lscala/collection/mutable/Publisher; $this, Ljava/lang/Object; event$1) {
+    $this.(Lscala/collection/mutable/Publisher;::scala$collection$mutable$Publisher$$filters()Lscala/collection/mutable/HashMap;)().(Lscala/collection/MapLike;::keys()Lscala/collection/Iterable;)().(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/mutable/Publisher$$anonfun$publish$1;::this(Lscala/collection/mutable/Publisher;Ljava/lang/Object;)V;)($this, event$1)));
+  }
+  
+  public static Z; equals(Lscala/collection/mutable/Publisher; $this, Ljava/lang/Object; obj) {
+    Ljava/lang/Object; temp1 = obj;
+    Z; $1$;
+    if (temp1.<instanceof>(Lscala/collection/mutable/Publisher;))
+      {
+        Lscala/collection/mutable/Publisher; temp2 = temp1.<cast>(Lscala/collection/mutable/Publisher;);
+        Lscala/collection/mutable/Publisher; that = temp2;
+        $1$ = (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/mutable/Publisher;::scala$collection$mutable$Publisher$$filters()Lscala/collection/mutable/HashMap;)(), that.(Lscala/collection/mutable/Publisher;::scala$collection$mutable$Publisher$$filters()Lscala/collection/mutable/HashMap;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/mutable/Publisher;::scala$collection$mutable$Publisher$$suspended()Lscala/collection/mutable/HashSet;)(), that.(Lscala/collection/mutable/Publisher;::scala$collection$mutable$Publisher$$suspended()Lscala/collection/mutable/HashSet;)()));
+      }
+    else
+      {
+        $1$ = false;
+      }
+    return $1$;
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/Publisher; $this) {
+    $this.(Lscala/collection/mutable/Publisher;::scala$collection$mutable$Publisher$_setter_$self_$eq(Lscala/collection/mutable/Publisher;)V;)($this);
+    $this.(Lscala/collection/mutable/Publisher;::scala$collection$mutable$Publisher$_setter_$scala$collection$mutable$Publisher$$filters_$eq(Lscala/collection/mutable/HashMap;)V;)((new (Lscala/collection/mutable/Publisher$$anon$1;::this(Lscala/collection/mutable/Publisher;)V;)($this)));
+    $this.(Lscala/collection/mutable/Publisher;::scala$collection$mutable$Publisher$_setter_$scala$collection$mutable$Publisher$$suspended_$eq(Lscala/collection/mutable/HashSet;)V;)((new (Lscala/collection/mutable/HashSet;::this()V;)()));
+  }
+}

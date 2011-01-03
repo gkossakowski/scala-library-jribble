@@ -1,0 +1,31 @@
+public abstract class Lscala/collection/SeqViewLike$Prepended$class; {
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/SeqViewLike$Prepended; $this) {
+    return Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::single(Ljava/lang/Object;)Lscala/collection/Iterator;)($this.(Lscala/collection/SeqViewLike$Prepended;::fst()Ljava/lang/Object;)()).(Lscala/collection/Iterator;::$plus$plus(Lscala/Function0;)Lscala/collection/Iterator;)((new (Lscala/collection/SeqViewLike$Prepended$$anonfun$iterator$1;::this(Lscala/collection/SeqViewLike$Prepended;)V;)($this)));
+  }
+  
+  public static I; length(Lscala/collection/SeqViewLike$Prepended; $this) {
+    return (1 + $this.(Lscala/collection/SeqViewLike$Prepended;::scala$collection$SeqViewLike$Prepended$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::length()I;)());
+  }
+  
+  public static Ljava/lang/Object; apply(Lscala/collection/SeqViewLike$Prepended; $this, I; idx) {
+    Ljava/lang/Object; $13$;
+    if ((idx == 0))
+      {
+        $13$ = $this.(Lscala/collection/SeqViewLike$Prepended;::fst()Ljava/lang/Object;)();
+      }
+    else
+      {
+        $13$ = $this.(Lscala/collection/SeqViewLike$Prepended;::scala$collection$SeqViewLike$Prepended$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)((idx - 1));
+      }
+    return $13$;
+  }
+  
+  public static Ljava/lang/String; stringPrefix(Lscala/collection/SeqViewLike$Prepended; $this) {
+    return ($this.(Lscala/collection/SeqViewLike$Prepended;::scala$collection$SeqViewLike$Prepended$$$outer()Lscala/collection/SeqViewLike;)().(Lscala/collection/SeqViewLike;::stringPrefix()Ljava/lang/String;)() + "A");
+  }
+  
+  public static V; $init$(Lscala/collection/SeqViewLike$Prepended; $this) {
+    
+  }
+}

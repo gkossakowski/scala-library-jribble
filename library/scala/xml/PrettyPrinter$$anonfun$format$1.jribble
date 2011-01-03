@@ -1,0 +1,94 @@
+public final class Lscala/xml/PrettyPrinter$$anonfun$format$1; extends Lscala/runtime/AbstractFunction1; {
+  
+  public final Ljava/lang/Object; apply(Lscala/xml/PrettyPrinter$Item; b) {
+    Lscala/xml/PrettyPrinter$Item; temp36 = b;
+    Ljava/lang/Object; $15$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp36, this.(Lscala/xml/PrettyPrinter;)$outer$u0020.(Lscala/xml/PrettyPrinter;::Break()Lscala/xml/PrettyPrinter$Break$;)()))
+      {
+        if (!(this.(Lscala/runtime/BooleanRef;)lastwasbreak$1.(Z;)elem))
+          {
+            this.(Lscala/collection/mutable/StringBuilder;)sb$1.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('\012');
+          }
+        else
+          {
+            
+          }
+        this.(Lscala/runtime/BooleanRef;)lastwasbreak$1.(Z;)elem = true;
+        this.(Lscala/runtime/IntRef;)cur$1.(I;)elem = 0;
+        $15$ = Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT;
+      }
+    else
+      {
+        Ljava/lang/Object; $16$;
+        failCont$percent1: while(true) {
+          Ljava/lang/Object; $17$;
+          if (temp36.<instanceof>(Lscala/xml/PrettyPrinter$Box;))
+            {
+              Lscala/xml/PrettyPrinter$Box; temp37 = temp36.<cast>(Lscala/xml/PrettyPrinter$Box;);
+              this.(Lscala/runtime/BooleanRef;)lastwasbreak$1.(Z;)elem = false;
+              while$3: while(true) {
+                if ((this.(Lscala/runtime/IntRef;)cur$1.(I;)elem < temp37.(Lscala/xml/PrettyPrinter$Box;::col()I;)()))
+                  {
+                    {
+                      this.(Lscala/collection/mutable/StringBuilder;)sb$1.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(' ');
+                      this.(Lscala/runtime/IntRef;)cur$1.(I;)elem = (this.(Lscala/runtime/IntRef;)cur$1.(I;)elem + 1);
+                    }
+                    continue while$3;
+                  }
+                else
+                  {
+                    
+                  }
+                break;
+              }
+              $17$ = this.(Lscala/collection/mutable/StringBuilder;)sb$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(temp37.(Lscala/xml/PrettyPrinter$Box;::s()Ljava/lang/String;)());
+            }
+          else
+            {
+              Ljava/lang/Object; $18$;
+              if (temp36.<instanceof>(Lscala/xml/PrettyPrinter$Para;))
+                {
+                  this.(Lscala/runtime/BooleanRef;)lastwasbreak$1.(Z;)elem = false;
+                  $18$ = this.(Lscala/collection/mutable/StringBuilder;)sb$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(temp36.<cast>(Lscala/xml/PrettyPrinter$Para;).(Lscala/xml/PrettyPrinter$Para;::s()Ljava/lang/String;)());
+                }
+              else
+                {
+                  throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp36));
+                }
+              $17$ = $18$;
+            }
+          $16$ = $17$;
+          break;
+        }
+        $15$ = $16$;
+      }
+    return $15$;
+  }
+  
+  private Lscala/xml/PrettyPrinter; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/xml/PrettyPrinter$$anonfun$format$1;::apply(Lscala/xml/PrettyPrinter$Item;)Ljava/lang/Object;)(v1.<cast>(Lscala/xml/PrettyPrinter$Item;));
+  }
+  
+  private Lscala/collection/mutable/StringBuilder; sb$1;
+  
+  private Lscala/runtime/BooleanRef; lastwasbreak$1;
+  
+  private Lscala/runtime/IntRef; cur$1;
+  
+  public this(Lscala/xml/PrettyPrinter; $outer, Lscala/collection/mutable/StringBuilder; sb$1, Lscala/runtime/BooleanRef; lastwasbreak$1, Lscala/runtime/IntRef; cur$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/xml/PrettyPrinter;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/collection/mutable/StringBuilder;)sb$1 = sb$1;
+    this.(Lscala/runtime/BooleanRef;)lastwasbreak$1 = lastwasbreak$1;
+    this.(Lscala/runtime/IntRef;)cur$1 = cur$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

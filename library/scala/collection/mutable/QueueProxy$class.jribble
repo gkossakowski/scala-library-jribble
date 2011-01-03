@@ -1,0 +1,52 @@
+public abstract class Lscala/collection/mutable/QueueProxy$class; {
+  
+  public static Ljava/lang/Object; apply(Lscala/collection/mutable/QueueProxy; $this, I; n) {
+    return $this.(Lscala/collection/mutable/QueueProxy;::self()Lscala/collection/mutable/Queue;)().(Lscala/collection/mutable/MutableList;::apply(I;)Ljava/lang/Object;)(n);
+  }
+  
+  public static I; length(Lscala/collection/mutable/QueueProxy; $this) {
+    return $this.(Lscala/collection/mutable/QueueProxy;::self()Lscala/collection/mutable/Queue;)().(Lscala/collection/mutable/MutableList;::length()I;)();
+  }
+  
+  public static Z; isEmpty(Lscala/collection/mutable/QueueProxy; $this) {
+    return $this.(Lscala/collection/mutable/QueueProxy;::self()Lscala/collection/mutable/Queue;)().(Lscala/collection/mutable/MutableList;::isEmpty()Z;)();
+  }
+  
+  public static Lscala/collection/mutable/QueueProxy; $plus$eq(Lscala/collection/mutable/QueueProxy; $this, Ljava/lang/Object; elem) {
+    $this.(Lscala/collection/mutable/QueueProxy;::self()Lscala/collection/mutable/Queue;)().(Lscala/collection/mutable/MutableList;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/MutableList;)(elem);
+    return $this;
+  }
+  
+  public static Lscala/collection/mutable/QueueProxy; $plus$plus$eq(Lscala/collection/mutable/QueueProxy; $this, Lscala/collection/TraversableOnce; it) {
+    $this.(Lscala/collection/mutable/QueueProxy;::self()Lscala/collection/mutable/Queue;)().(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(it);
+    return $this;
+  }
+  
+  public static V; enqueue(Lscala/collection/mutable/QueueProxy; $this, Lscala/collection/Seq; elems) {
+    $this.(Lscala/collection/mutable/QueueProxy;::self()Lscala/collection/mutable/Queue;)().(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(elems);
+  }
+  
+  public static Ljava/lang/Object; dequeue(Lscala/collection/mutable/QueueProxy; $this) {
+    return $this.(Lscala/collection/mutable/QueueProxy;::self()Lscala/collection/mutable/Queue;)().(Lscala/collection/mutable/Queue;::dequeue()Ljava/lang/Object;)();
+  }
+  
+  public static Ljava/lang/Object; front(Lscala/collection/mutable/QueueProxy; $this) {
+    return $this.(Lscala/collection/mutable/QueueProxy;::self()Lscala/collection/mutable/Queue;)().(Lscala/collection/mutable/Queue;::front()Ljava/lang/Object;)();
+  }
+  
+  public static V; clear(Lscala/collection/mutable/QueueProxy; $this) {
+    $this.(Lscala/collection/mutable/QueueProxy;::self()Lscala/collection/mutable/Queue;)().(Lscala/collection/mutable/MutableList;::clear()V;)();
+  }
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/mutable/QueueProxy; $this) {
+    return $this.(Lscala/collection/mutable/QueueProxy;::self()Lscala/collection/mutable/Queue;)().(Lscala/collection/mutable/MutableList;::iterator()Lscala/collection/Iterator;)();
+  }
+  
+  public static Lscala/collection/mutable/Queue; clone(Lscala/collection/mutable/QueueProxy; $this) {
+    return (new (Lscala/collection/mutable/QueueProxy$$anon$1;::this(Lscala/collection/mutable/QueueProxy;)V;)($this));
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/QueueProxy; $this) {
+    
+  }
+}

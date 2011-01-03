@@ -1,0 +1,20 @@
+public final class Lscala/runtime/MegaMethodCache; extends Lscala/runtime/MethodCache; implements Lscala/ScalaObject; {
+  
+  private Ljava/lang/String; forName;
+  
+  private Ljava/lang/Class;[ forParameterTypes;
+  
+  public Ljava/lang/reflect/Method; find(Ljava/lang/Class; forReceiver) {
+    return forReceiver.(Ljava/lang/Class;::getMethod(Ljava/lang/String;Ljava/lang/Class;[)Ljava/lang/reflect/Method;)(this.(Ljava/lang/String;)forName, this.(Ljava/lang/Class;[)forParameterTypes);
+  }
+  
+  public Lscala/runtime/MethodCache; add(Ljava/lang/Class; forReceiver, Ljava/lang/reflect/Method; forMethod) {
+    return this;
+  }
+  
+  public this(Ljava/lang/String; forName, Ljava/lang/Class;[ forParameterTypes) {
+    this.(Ljava/lang/String;)forName = forName;
+    this.(Ljava/lang/Class;[)forParameterTypes = forParameterTypes;
+    (Lscala/runtime/MethodCache;::super()V;)();
+  }
+}

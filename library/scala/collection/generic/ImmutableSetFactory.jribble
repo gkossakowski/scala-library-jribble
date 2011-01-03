@@ -1,0 +1,10 @@
+public abstract class Lscala/collection/generic/ImmutableSetFactory; extends Lscala/collection/generic/SetFactory; implements Lscala/ScalaObject; {
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return (new (Lscala/collection/mutable/AddingBuilder;::this(Lscala/collection/generic/Addable;)V;)(this.(Lscala/collection/generic/GenericCompanion;::empty()Lscala/collection/Traversable;)().<cast>(Lscala/collection/generic/Addable;)));
+  }
+  
+  public this() {
+    (Lscala/collection/generic/SetFactory;::super()V;)();
+  }
+}
