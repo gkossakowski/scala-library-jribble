@@ -42,12 +42,11 @@ public final class Lscala/Predef$; extends Lscala/LowPriorityImplicits; implemen
   }
   
   public Lscala/runtime/Nothing$; exit() {
-    this.(Lscala/Predef$;::exit(I;)Lscala/runtime/Nothing$;)(0);
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("Predef.exit()"));
   }
   
   public Lscala/runtime/Nothing$; exit(I; status) {
-    Ljava/lang/System;.(Ljava/lang/System;::exit(I;)V;)(status);
-    throw (new (Ljava/lang/Throwable;::this()V;)());
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("Predef.exit(I; status)"));
   }
   
   public V; assert(Z; assertion) {
