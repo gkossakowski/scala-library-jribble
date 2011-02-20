@@ -1,4 +1,4 @@
-public class Lscala/xml/Document; extends Lscala/xml/NodeSeq; implements Lscala/ScalaObject; {
+public class Lscala/xml/Document; extends Lscala/xml/NodeSeq; implements Lscala/xml/pull/XMLEvent;, Lscala/ScalaObject; {
   
   private Lscala/collection/Seq; children$u0020;
   
@@ -18,6 +18,24 @@ public class Lscala/xml/Document; extends Lscala/xml/NodeSeq; implements Lscala/
   
   public V; docElem_$eq(Lscala/xml/Node; x$1) {
     this.(Lscala/xml/Document;)docElem$u0020 = x$1;
+  }
+  
+  private Lscala/xml/dtd/DTD; dtd$u0020;
+  
+  public Lscala/xml/dtd/DTD; dtd() {
+    return this.(Lscala/xml/Document;)dtd$u0020;
+  }
+  
+  public V; dtd_$eq(Lscala/xml/dtd/DTD; x$1) {
+    this.(Lscala/xml/Document;)dtd$u0020 = x$1;
+  }
+  
+  public Lscala/collection/Seq; notations() {
+    return this.(Lscala/xml/Document;::dtd()Lscala/xml/dtd/DTD;)().(Lscala/xml/dtd/DTD;::notations()Lscala/collection/Seq;)();
+  }
+  
+  public Lscala/collection/Seq; unparsedEntities() {
+    return this.(Lscala/xml/Document;::dtd()Lscala/xml/dtd/DTD;)().(Lscala/xml/dtd/DTD;::unparsedEntities()Lscala/collection/Seq;)();
   }
   
   private Ljava/lang/String; baseURI$u0020;

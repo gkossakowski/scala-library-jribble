@@ -9,6 +9,10 @@ public final class Lscala/xml/dtd/ContentModel$; extends Lscala/util/regexp/Word
     return (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(cm, Lscala/xml/dtd/PCDATA$;.MODULE$) || this.(Lscala/xml/dtd/ContentModel$;::isMixed(Lscala/xml/dtd/ContentModel;)Z;)(cm));
   }
   
+  public Lscala/xml/dtd/ContentModel; parse(Ljava/lang/String; s) {
+    return Lscala/xml/dtd/ContentModelParser$;.MODULE$.(Lscala/xml/dtd/ContentModelParser$;::parse(Ljava/lang/String;)Lscala/xml/dtd/ContentModel;)(s);
+  }
+  
   public Lscala/collection/immutable/Set; getLabels(Lscala/util/regexp/Base$RegExp; r) {
     return this.(Lscala/xml/dtd/ContentModel$;::traverse$1(Lscala/util/regexp/Base$RegExp;)Lscala/collection/immutable/Set;)(r);
   }
