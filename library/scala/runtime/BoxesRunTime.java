@@ -43,7 +43,7 @@ public final class BoxesRunTime
     }
     
     private static String boxDescription(Object a) {
-      return "" + a.getClass().getSimpleName() + "(" + a + ")";
+      throw new RuntimeException("boxDescription");
     }
         
 /* BOXING ... BOXING ... BOXING ... BOXING ... BOXING ... BOXING ... BOXING ... BOXING */
@@ -271,7 +271,7 @@ public final class BoxesRunTime
 /* OPERATORS ... OPERATORS ... OPERATORS ... OPERATORS ... OPERATORS ... OPERATORS ... OPERATORS ... OPERATORS */
         
     /** arg1 + arg2 */
-    public static Object add(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object add(Object arg1, Object arg2) {
         int code1 = typeCode(arg1);
         int code2 = typeCode(arg2);
         int maxcode = (code1 < code2) ? code2 : code1;
@@ -295,11 +295,11 @@ public final class BoxesRunTime
             double val2 = (code2 == CHAR) ? ((java.lang.Character) arg2).charValue() : ((java.lang.Number) arg2).doubleValue();
             return boxToDouble(val1 + val2);
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg1 - arg2 */
-    public static Object subtract(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object subtract(Object arg1, Object arg2) {
         int code1 = typeCode(arg1);
         int code2 = typeCode(arg2);
         int maxcode = (code1 < code2) ? code2 : code1;
@@ -323,11 +323,11 @@ public final class BoxesRunTime
             double val2 = (code2 == CHAR) ? ((java.lang.Character) arg2).charValue() : ((java.lang.Number) arg2).doubleValue();
             return boxToDouble(val1 - val2);
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg1 * arg2 */
-    public static Object multiply(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object multiply(Object arg1, Object arg2) {
         int code1 = typeCode(arg1);
         int code2 = typeCode(arg2);
         int maxcode = (code1 < code2) ? code2 : code1;
@@ -351,11 +351,11 @@ public final class BoxesRunTime
             double val2 = (code2 == CHAR) ? ((java.lang.Character) arg2).charValue() : ((java.lang.Number) arg2).doubleValue();
             return boxToDouble(val1 * val2);
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg1 / arg2 */
-    public static Object divide(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object divide(Object arg1, Object arg2) {
         int code1 = typeCode(arg1);
         int code2 = typeCode(arg2);
         int maxcode = (code1 < code2) ? code2 : code1;
@@ -379,11 +379,11 @@ public final class BoxesRunTime
             double val2 = (code2 == CHAR) ? ((java.lang.Character) arg2).charValue() : ((java.lang.Number) arg2).doubleValue();
             return boxToDouble(val1 / val2);
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg1 % arg2 */
-    public static Object takeModulo(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object takeModulo(Object arg1, Object arg2)  {
         int code1 = typeCode(arg1);
         int code2 = typeCode(arg2);
         int maxcode = (code1 < code2) ? code2 : code1;
@@ -407,11 +407,11 @@ public final class BoxesRunTime
             double val2 = (code2 == CHAR) ? ((java.lang.Character) arg2).charValue() : ((java.lang.Number) arg2).doubleValue();
             return boxToDouble(val1 % val2);
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg1 >> arg2 */
-    public static Object shiftSignedRight(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object shiftSignedRight(Object arg1, Object arg2)  {
         int code1 = typeCode(arg1);
         int code2 = typeCode(arg2);
         if (code1 <= INT) {
@@ -436,11 +436,11 @@ public final class BoxesRunTime
                 return boxToLong(val1 >> val2);
             }
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg1 << arg2 */
-    public static Object shiftSignedLeft(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object shiftSignedLeft(Object arg1, Object arg2)  {
         int code1 = typeCode(arg1);
         int code2 = typeCode(arg2);
         if (code1 <= INT) {
@@ -465,11 +465,11 @@ public final class BoxesRunTime
                 return boxToLong(val1 << val2);
             }
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg1 >>> arg2 */
-    public static Object shiftLogicalRight(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object shiftLogicalRight(Object arg1, Object arg2)  {
         int code1 = typeCode(arg1);
         int code2 = typeCode(arg2);
         if (code1 <= INT) {
@@ -494,11 +494,11 @@ public final class BoxesRunTime
                 return boxToLong(val1 >>> val2);
             }
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
         
     /** -arg */
-    public static Object negate(Object arg) throws NoSuchMethodException {
+    public static Object negate(Object arg)  {
         int code = typeCode(arg);
         if (code <= INT) {
             int val = (code == CHAR) ? ((java.lang.Character) arg).charValue() : ((java.lang.Number) arg).intValue();
@@ -516,11 +516,11 @@ public final class BoxesRunTime
             double val = (code == CHAR) ? ((java.lang.Character) arg).charValue() : ((java.lang.Number) arg).doubleValue();
             return boxToDouble(-val);
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
         
     /** +arg */
-    public static Object positive(Object arg) throws NoSuchMethodException {
+    public static Object positive(Object arg)  {
         int code = typeCode(arg);
         if (code <= INT) {
             int val = (code == CHAR) ? ((java.lang.Character) arg).charValue() : ((java.lang.Number) arg).intValue();
@@ -538,14 +538,14 @@ public final class BoxesRunTime
             double val = (code == CHAR) ? ((java.lang.Character) arg).charValue() : ((java.lang.Number) arg).doubleValue();
             return boxToDouble(+val);
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg1 & arg2 */
-    public static Object takeAnd(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object takeAnd(Object arg1, Object arg2)  {
         if ((arg1 instanceof Boolean) || (arg2 instanceof Boolean)) {
             if (!((arg1 instanceof Boolean) && (arg2 instanceof Boolean))) {
-                throw new NoSuchMethodException();
+                throw new RuntimeException("NoSuchMethodException");
             }
             return boxToBoolean(((java.lang.Boolean) arg1).booleanValue() & ((java.lang.Boolean) arg2).booleanValue());
         }
@@ -562,14 +562,14 @@ public final class BoxesRunTime
             long val2 = (code2 == CHAR) ? ((java.lang.Character) arg2).charValue() : ((java.lang.Number) arg2).longValue();
             return boxToLong(val1 & val2);
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg1 | arg2 */
-    public static Object takeOr(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object takeOr(Object arg1, Object arg2)  {
         if ((arg1 instanceof Boolean) || (arg2 instanceof Boolean)) {
             if (!((arg1 instanceof Boolean) && (arg2 instanceof Boolean))) {
-                throw new NoSuchMethodException();
+                throw new RuntimeException("NoSuchMethodException");
             }
             return boxToBoolean(((java.lang.Boolean) arg1).booleanValue() | ((java.lang.Boolean) arg2).booleanValue());
         }
@@ -586,14 +586,14 @@ public final class BoxesRunTime
             long val2 = (code2 == CHAR) ? ((java.lang.Character) arg2).charValue() : ((java.lang.Number) arg2).longValue();
             return boxToLong(val1 | val2);
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg1 ^ arg2 */
-    public static Object takeXor(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object takeXor(Object arg1, Object arg2)  {
         if ((arg1 instanceof Boolean) || (arg2 instanceof Boolean)) {
             if (!((arg1 instanceof Boolean) && (arg2 instanceof Boolean))) {
-                throw new NoSuchMethodException();
+                throw new RuntimeException("NoSuchMethodException");
             }
             return boxToBoolean(((java.lang.Boolean) arg1).booleanValue() ^ ((java.lang.Boolean) arg2).booleanValue());
         }
@@ -610,27 +610,27 @@ public final class BoxesRunTime
             long val2 = (code2 == CHAR) ? ((java.lang.Character) arg2).charValue() : ((java.lang.Number) arg2).longValue();
             return boxToLong(val1 ^ val2);
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg1 && arg2 */
-    public static Object takeConditionalAnd(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object takeConditionalAnd(Object arg1, Object arg2)  {
         if ((arg1 instanceof Boolean) && (arg2 instanceof Boolean)) {
             return boxToBoolean(((java.lang.Boolean) arg1).booleanValue() && ((java.lang.Boolean) arg2).booleanValue());
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg1 || arg2 */
-    public static Object takeConditionalOr(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object takeConditionalOr(Object arg1, Object arg2)  {
         if ((arg1 instanceof Boolean) && (arg2 instanceof Boolean)) {
             return boxToBoolean(((java.lang.Boolean) arg1).booleanValue() || ((java.lang.Boolean) arg2).booleanValue());
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
         
     /** ~arg */
-    public static Object complement(Object arg) throws NoSuchMethodException {
+    public static Object complement(Object arg)  {
         int code = typeCode(arg);
         if (code <= INT) {
             int val = (code == CHAR) ? ((java.lang.Character) arg).charValue() : ((java.lang.Number) arg).intValue();
@@ -640,26 +640,26 @@ public final class BoxesRunTime
             long val = (code == CHAR) ? ((java.lang.Character) arg).charValue() : ((java.lang.Number) arg).longValue();
             return boxToLong(~val);
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
         
     /** !arg */
-    public static Object takeNot(Object arg) throws NoSuchMethodException {
+    public static Object takeNot(Object arg)  {
         if (arg instanceof Boolean) {
           return boxToBoolean(!((java.lang.Boolean) arg).booleanValue());
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
     
-    public static Object testEqual(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object testEqual(Object arg1, Object arg2)  {
         return boxToBoolean(arg1 == arg2);
     }
     
-    public static Object testNotEqual(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object testNotEqual(Object arg1, Object arg2)  {
         return boxToBoolean(arg1 != arg2);
     }
     
-    public static Object testLessThan(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object testLessThan(Object arg1, Object arg2)  {
         int code1 = typeCode(arg1);
         int code2 = typeCode(arg2);
         int maxcode = (code1 < code2) ? code2 : code1;
@@ -683,10 +683,10 @@ public final class BoxesRunTime
             double val2 = (code2 == CHAR) ? ((java.lang.Character) arg2).charValue() : ((java.lang.Number) arg2).doubleValue();
             return boxToBoolean(val1 < val2);
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
     
-    public static Object testLessOrEqualThan(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object testLessOrEqualThan(Object arg1, Object arg2)  {
         int code1 = typeCode(arg1);
         int code2 = typeCode(arg2);
         int maxcode = (code1 < code2) ? code2 : code1;
@@ -710,10 +710,10 @@ public final class BoxesRunTime
             double val2 = (code2 == CHAR) ? ((java.lang.Character) arg2).charValue() : ((java.lang.Number) arg2).doubleValue();
             return boxToBoolean(val1 <= val2);
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
     
-    public static Object testGreaterOrEqualThan(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object testGreaterOrEqualThan(Object arg1, Object arg2)  {
         int code1 = typeCode(arg1);
         int code2 = typeCode(arg2);
         int maxcode = (code1 < code2) ? code2 : code1;
@@ -737,10 +737,10 @@ public final class BoxesRunTime
             double val2 = (code2 == CHAR) ? ((java.lang.Character) arg2).charValue() : ((java.lang.Number) arg2).doubleValue();
             return boxToBoolean(val1 >= val2);
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
     
-    public static Object testGreaterThan(Object arg1, Object arg2) throws NoSuchMethodException {
+    public static Object testGreaterThan(Object arg1, Object arg2)  {
         int code1 = typeCode(arg1);
         int code2 = typeCode(arg2);
         int maxcode = (code1 < code2) ? code2 : code1;
@@ -764,11 +764,11 @@ public final class BoxesRunTime
             double val2 = (code2 == CHAR) ? ((java.lang.Character) arg2).charValue() : ((java.lang.Number) arg2).doubleValue();
             return boxToBoolean(val1 > val2);
         }
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
         
     /** arg.toChar */
-    public static java.lang.Character toCharacter(Object arg) throws NoSuchMethodException {
+    public static java.lang.Character toCharacter(Object arg)  {
         if (arg instanceof java.lang.Integer) return boxToCharacter((char)unboxToInt(arg));
         if (arg instanceof java.lang.Short) return boxToCharacter((char)unboxToShort(arg));
         if (arg instanceof java.lang.Character) return (java.lang.Character)arg;
@@ -776,11 +776,11 @@ public final class BoxesRunTime
         if (arg instanceof java.lang.Byte) return boxToCharacter((char)unboxToByte(arg));
         if (arg instanceof java.lang.Float) return boxToCharacter((char)unboxToFloat(arg));
         if (arg instanceof java.lang.Double) return boxToCharacter((char)unboxToDouble(arg));
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg.toByte */
-    public static java.lang.Byte toByte(Object arg) throws NoSuchMethodException {
+    public static java.lang.Byte toByte(Object arg)  {
         if (arg instanceof java.lang.Integer) return boxToByte((byte)unboxToInt(arg));
         if (arg instanceof java.lang.Character) return boxToByte((byte)unboxToChar(arg));
         if (arg instanceof java.lang.Byte) return (java.lang.Byte)arg;
@@ -788,11 +788,11 @@ public final class BoxesRunTime
         if (arg instanceof java.lang.Short) return boxToByte((byte)unboxToShort(arg));
         if (arg instanceof java.lang.Float) return boxToByte((byte)unboxToFloat(arg));
         if (arg instanceof java.lang.Double) return boxToByte((byte)unboxToDouble(arg));
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg.toShort */
-    public static java.lang.Short toShort(Object arg) throws NoSuchMethodException {
+    public static java.lang.Short toShort(Object arg)  {
         if (arg instanceof java.lang.Integer) return boxToShort((short)unboxToInt(arg));
         if (arg instanceof java.lang.Long) return boxToShort((short)unboxToLong(arg));
         if (arg instanceof java.lang.Character) return boxToShort((short)unboxToChar(arg));
@@ -800,11 +800,11 @@ public final class BoxesRunTime
         if (arg instanceof java.lang.Short) return (java.lang.Short)arg;
         if (arg instanceof java.lang.Float) return boxToShort((short)unboxToFloat(arg));
         if (arg instanceof java.lang.Double) return boxToShort((short)unboxToDouble(arg));
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg.toInt */
-    public static java.lang.Integer toInteger(Object arg) throws NoSuchMethodException {
+    public static java.lang.Integer toInteger(Object arg)  {
         if (arg instanceof java.lang.Integer) return (java.lang.Integer)arg;
         if (arg instanceof java.lang.Long) return boxToInteger((int)unboxToLong(arg));
         if (arg instanceof java.lang.Double) return boxToInteger((int)unboxToDouble(arg));
@@ -812,11 +812,11 @@ public final class BoxesRunTime
         if (arg instanceof java.lang.Character) return boxToInteger((int)unboxToChar(arg));
         if (arg instanceof java.lang.Byte) return boxToInteger((int)unboxToByte(arg));
         if (arg instanceof java.lang.Short) return boxToInteger((int)unboxToShort(arg));
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg.toLong */
-    public static java.lang.Long toLong(Object arg) throws NoSuchMethodException {
+    public static java.lang.Long toLong(Object arg)  {
         if (arg instanceof java.lang.Integer) return boxToLong((long)unboxToInt(arg));
         if (arg instanceof java.lang.Double) return boxToLong((long)unboxToDouble(arg));
         if (arg instanceof java.lang.Float) return boxToLong((long)unboxToFloat(arg));
@@ -824,11 +824,11 @@ public final class BoxesRunTime
         if (arg instanceof java.lang.Character) return boxToLong((long)unboxToChar(arg));
         if (arg instanceof java.lang.Byte) return boxToLong((long)unboxToByte(arg));
         if (arg instanceof java.lang.Short) return boxToLong((long)unboxToShort(arg));
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg.toFloat */
-    public static java.lang.Float toFloat(Object arg) throws NoSuchMethodException {
+    public static java.lang.Float toFloat(Object arg)  {
         if (arg instanceof java.lang.Integer) return boxToFloat((float)unboxToInt(arg));
         if (arg instanceof java.lang.Long) return boxToFloat((float)unboxToLong(arg));
         if (arg instanceof java.lang.Float) return (java.lang.Float)arg;
@@ -836,11 +836,11 @@ public final class BoxesRunTime
         if (arg instanceof java.lang.Character) return boxToFloat((float)unboxToChar(arg));
         if (arg instanceof java.lang.Byte) return boxToFloat((float)unboxToByte(arg));
         if (arg instanceof java.lang.Short) return boxToFloat((float)unboxToShort(arg));
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
 
     /** arg.toDouble */
-    public static java.lang.Double toDouble(Object arg) throws NoSuchMethodException {
+    public static java.lang.Double toDouble(Object arg)  {
         if (arg instanceof java.lang.Integer) return boxToDouble((double)unboxToInt(arg));
         if (arg instanceof java.lang.Float) return boxToDouble((double)unboxToFloat(arg));
         if (arg instanceof java.lang.Double) return (java.lang.Double)arg;
@@ -848,7 +848,7 @@ public final class BoxesRunTime
         if (arg instanceof java.lang.Character) return boxToDouble((double)unboxToChar(arg));
         if (arg instanceof java.lang.Byte) return boxToDouble((double)unboxToByte(arg));
         if (arg instanceof java.lang.Short) return boxToDouble((double)unboxToShort(arg));
-        throw new NoSuchMethodException();
+        throw new RuntimeException("NoSuchMethodException");
     }
     
 }
