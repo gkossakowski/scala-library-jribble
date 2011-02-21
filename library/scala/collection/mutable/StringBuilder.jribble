@@ -910,7 +910,7 @@ public final class Lscala/collection/mutable/StringBuilder; extends Ljava/lang/O
   }
   
   public Lscala/collection/mutable/StringBuilder; reverse() {
-    return (new (Lscala/collection/mutable/StringBuilder;::this(Ljava/lang/StringBuilder;)V;)((new (Ljava/lang/StringBuilder;::this(Ljava/lang/CharSequence;)V;)(this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)())).(Ljava/lang/StringBuilder;::reverse()Ljava/lang/StringBuilder;)()));
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("StringBuilder.reverse, not supported by GWT :-("));
   }
   
   public Lscala/collection/mutable/StringBuilder; clone() {
@@ -918,8 +918,7 @@ public final class Lscala/collection/mutable/StringBuilder; extends Ljava/lang/O
   }
   
   public Lscala/collection/mutable/StringBuilder; reverseContents() {
-    this.(Lscala/collection/mutable/StringBuilder;::underlying()Ljava/lang/StringBuilder;)().(Ljava/lang/StringBuilder;::reverse()Ljava/lang/StringBuilder;)();
-    return this;
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("StringBuilder.reverse, not supported by GWT :-("));  
   }
   
   public Ljava/lang/String; toString() {
