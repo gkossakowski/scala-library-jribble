@@ -465,7 +465,7 @@ public final class Lscala/collection/mutable/MapProxy$$anon$2; extends Ljava/lan
   }
   
   public final Ljava/lang/Object; scala$collection$mutable$Cloneable$$super$clone() {
-    return super.(Ljava/lang/Object;::clone()Ljava/lang/Object;)();
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("Object.clone is not supported by GWT."));
   }
   
   public Lscala/collection/generic/Shrinkable; $minus$eq(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
