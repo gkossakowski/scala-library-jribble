@@ -17,7 +17,7 @@ public class Lscala/collection/immutable/HashMap$SerializationProxy; extends Lja
   }
   
   private V; readObject(Ljava/io/ObjectInputStream; in$1) {
-    this.(Lscala/collection/immutable/HashMap$SerializationProxy;::scala$collection$immutable$HashMap$SerializationProxy$$orig_$eq(Lscala/collection/immutable/HashMap;)V;)(this.(Lscala/collection/immutable/HashMap$;::empty()Lscala/collection/immutable/HashMap;)());
+    this.(Lscala/collection/immutable/HashMap$SerializationProxy;::scala$collection$immutable$HashMap$SerializationProxy$$orig_$eq(Lscala/collection/immutable/HashMap;)V;)(Lscala/collection/immutable/HashMap$;.MODULE$.(Lscala/collection/immutable/HashMap$;::empty()Lscala/collection/immutable/HashMap;)());
     I; s = in$1.(Ljava/io/ObjectInputStream;::readInt()I;)();
     Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(s).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/HashMap$SerializationProxy$$anonfun$readObject$1;::this(Lscala/collection/immutable/HashMap$SerializationProxy;Ljava/io/ObjectInputStream;)V;)(this, in$1)));
   }

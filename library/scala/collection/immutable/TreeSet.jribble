@@ -513,12 +513,12 @@ public class Lscala/collection/immutable/TreeSet; extends Lscala/collection/immu
         $1$ = this.(Lscala/collection/immutable/TreeSet;::size()I;)();
       }
     I; newsize = $1$;
-    return this.(Lscala/collection/immutable/TreeSet;::newSet(I;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/TreeSet;)(newsize, this.(Lscala/collection/immutable/TreeSet;::tree()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::update(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(elem, Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT));
+    return this.(Lscala/collection/immutable/TreeSet;::newSet(I;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/TreeSet;)(newsize, this.(Lscala/collection/immutable/TreeSet;::tree()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::update(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(elem, Lscala/runtime/BoxedUnit;.UNIT));
   }
   
   public Lscala/collection/immutable/TreeSet; insert(Ljava/lang/Object; elem) {
     Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;)V;)(this.(Lscala/collection/immutable/TreeSet;::tree()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::lookup(Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(elem).(Lscala/collection/immutable/RedBlack$Tree;::isEmpty()Z;)());
-    return this.(Lscala/collection/immutable/TreeSet;::newSet(I;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/TreeSet;)((this.(Lscala/collection/immutable/TreeSet;::size()I;)() + 1), this.(Lscala/collection/immutable/TreeSet;::tree()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::update(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(elem, Lscala/runtime/BoxedUnit;.MODULE$.(Lscala/runtime/BoxedUnit;)UNIT));
+    return this.(Lscala/collection/immutable/TreeSet;::newSet(I;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/TreeSet;)((this.(Lscala/collection/immutable/TreeSet;::size()I;)() + 1), this.(Lscala/collection/immutable/TreeSet;::tree()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::update(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(elem, Lscala/runtime/BoxedUnit;.UNIT));
   }
   
   public Lscala/collection/immutable/TreeSet; $minus(Ljava/lang/Object; elem) {
