@@ -216,7 +216,7 @@ public abstract class Lscala/collection/immutable/RedBlack$NonEmpty; extends Lsc
   }
   
   public Lscala/collection/immutable/RedBlack; scala$collection$immutable$RedBlack$NonEmpty$$$outer() {
-    return this.(Lscala/collection/immutable/RedBlack$NonEmpty;)$outer$u0020;
+    return this.(Lscala/collection/immutable/RedBlack$Tree;)$outer$u0020;
   }
   
   private final Lscala/collection/immutable/RedBlack$NonEmpty; balanceLeft$1(Z; isBlack, Ljava/lang/Object; z, Ljava/lang/Object; zv, Lscala/collection/immutable/RedBlack$Tree; l, Lscala/collection/immutable/RedBlack$Tree; d) {
@@ -695,14 +695,6 @@ public abstract class Lscala/collection/immutable/RedBlack$NonEmpty; extends Lsc
     (Lscala/collection/immutable/RedBlack$Tree;::super(Lscala/collection/immutable/RedBlack;)V;)($outer);
   }
   
-  private final Lscala/collection/immutable/RedBlack$NonEmpty; body$percent5$percent1(Lscala/collection/immutable/RedBlack$Tree; a, Lscala/collection/immutable/RedBlack$Tree; b) {
-    return (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, a, b));
-  }
-  
-  private final Lscala/collection/immutable/RedBlack$Tree; body$percent5$percent2(Ljava/lang/Object; x, Ljava/lang/Object; xv, Lscala/collection/immutable/RedBlack$Tree; a, Lscala/collection/immutable/RedBlack$Tree; b, Lscala/collection/immutable/RedBlack$Tree; c) {
-    return (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, a, this.(Lscala/collection/immutable/RedBlack$NonEmpty;::append$1(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(b, c)));
-  }
-  
   private final Lscala/collection/immutable/RedBlack$NonEmpty; body$percent2$percent2() {
     return this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::scala$collection$immutable$RedBlack$$mkTree(Z;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(isBlack, x, xv, a, r);
   }
@@ -713,6 +705,14 @@ public abstract class Lscala/collection/immutable/RedBlack$NonEmpty; extends Lsc
   
   private final Lscala/runtime/Nothing$; body$percent3$percent2() {
     Lscala/Predef$;.MODULE$.(Lscala/Predef$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)(("Defect: invariance violation at " + this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)()));
+  }
+  
+  private final Lscala/collection/immutable/RedBlack$Tree; body$percent5$percent2(Ljava/lang/Object; x, Ljava/lang/Object; xv, Lscala/collection/immutable/RedBlack$Tree; a, Lscala/collection/immutable/RedBlack$Tree; b, Lscala/collection/immutable/RedBlack$Tree; c) {
+    return (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, a, this.(Lscala/collection/immutable/RedBlack$NonEmpty;::append$1(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(b, c)));
+  }
+  
+  private final Lscala/collection/immutable/RedBlack$NonEmpty; body$percent5$percent1(Lscala/collection/immutable/RedBlack$Tree; a, Lscala/collection/immutable/RedBlack$Tree; b) {
+    return (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, a, b));
   }
   
   private final Lscala/collection/immutable/RedBlack$NonEmpty; body$percent2$percent1() {
