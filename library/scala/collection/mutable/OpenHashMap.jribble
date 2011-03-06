@@ -589,7 +589,7 @@ public class Lscala/collection/mutable/OpenHashMap; extends Ljava/lang/Object; i
   }
   
   protected I; hashOf(Ljava/lang/Object; key) {
-    I; h = this.(Lscala/runtime/ScalaRunTime$;::hash(Ljava/lang/Object;)I;)(key);
+    I; h = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::hash(Ljava/lang/Object;)I;)(key);
     h = (h ^ ((h >> 20) ^ (h >> 12)));
     return ((h ^ (h >> 7)) ^ (h >> 4));
   }
