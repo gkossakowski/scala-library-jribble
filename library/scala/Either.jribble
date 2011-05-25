@@ -1,4 +1,8 @@
 public abstract class Lscala/Either; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public final static Lscala/Either; cond(Z; x_0, Lscala/Function0; x_1, Lscala/Function0; x_2) { return Lscala/Either$;.MODULE$.(Lscala/Either$;::cond(Z;Lscala/Function0;Lscala/Function0;)Lscala/Either;)(x_0, x_1, x_2); }
+  public final static Ljava/lang/Object; merge(Lscala/Either; x_0) { return Lscala/Either$;.MODULE$.(Lscala/Either$;::merge(Lscala/Either;)Ljava/lang/Object;)(x_0); }
+  public final static Lscala/Either$MergeableEither; either2mergeable(Lscala/Either; x_0) { return Lscala/Either$;.MODULE$.(Lscala/Either$;::either2mergeable(Lscala/Either;)Lscala/Either$MergeableEither;)(x_0); }
+  
   
   public Lscala/Either$LeftProjection; left() {
     return (new (Lscala/Either$LeftProjection;::this(Lscala/Either;)V;)(this));

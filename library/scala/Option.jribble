@@ -1,4 +1,8 @@
 public abstract class Lscala/Option; extends Ljava/lang/Object; implements Lscala/Product;, Lscala/ScalaObject; {
+  public final static Lscala/Option; empty() { return Lscala/Option$;.MODULE$.(Lscala/Option$;::empty()Lscala/Option;)(); }
+  public final static Lscala/Option; apply(Ljava/lang/Object; x_0) { return Lscala/Option$;.MODULE$.(Lscala/Option$;::apply(Ljava/lang/Object;)Lscala/Option;)(x_0); }
+  public final static Lscala/collection/Iterable; option2Iterable(Lscala/Option; x_0) { return Lscala/Option$;.MODULE$.(Lscala/Option$;::option2Iterable(Lscala/Option;)Lscala/collection/Iterable;)(x_0); }
+  
   
   public Lscala/collection/Iterator; productIterator() {
     return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
