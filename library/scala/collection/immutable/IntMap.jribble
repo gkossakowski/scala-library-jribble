@@ -1,4 +1,7 @@
 public abstract class Lscala/collection/immutable/IntMap; extends Ljava/lang/Object; implements Lscala/collection/immutable/Map;, Lscala/collection/immutable/MapLike;, Lscala/ScalaObject; {
+  public final static Lscala/collection/immutable/IntMap; singleton(I; x_0, Ljava/lang/Object; x_1) { return Lscala/collection/immutable/IntMap$;.MODULE$.(Lscala/collection/immutable/IntMap$;::singleton(I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(x_0, x_1); }
+  public final static Lscala/collection/generic/CanBuildFrom; canBuildFrom() { return Lscala/collection/immutable/IntMap$;.MODULE$.(Lscala/collection/immutable/IntMap$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)(); }
+  
   
   public Lscala/collection/immutable/Map; withDefault(Lscala/Function1; d) {
     return Lscala/collection/immutable/Map$class;.(Lscala/collection/immutable/Map$class;::withDefault(Lscala/collection/immutable/Map;Lscala/Function1;)Lscala/collection/immutable/Map;)(this, d);
@@ -1683,16 +1686,8 @@ public abstract class Lscala/collection/immutable/IntMap; extends Ljava/lang/Obj
     Lscala/collection/immutable/Map$class;.(Lscala/collection/immutable/Map$class;::$init$(Lscala/collection/immutable/Map;)V;)(this);
   }
   
-  private final Lscala/collection/immutable/IntMap; body$percent4$percent1(Lscala/collection/immutable/IntMap; x) {
-    return x;
-  }
-  
   private final Lscala/collection/immutable/IntMap; body$percent2$percent1(Lscala/collection/immutable/IntMap; x, I; key$2, Ljava/lang/Object; value) {
     return x.(Lscala/collection/immutable/IntMap;::updateWith(I;Ljava/lang/Object;Lscala/Function2;)Lscala/collection/immutable/IntMap;)(key$2, value, (new (Lscala/collection/immutable/IntMap$$anonfun$unionWith$2;::this(Lscala/collection/immutable/IntMap;Lscala/Function3;I;)V;)(this, f$1, key$2)));
-  }
-  
-  private final Lscala/collection/immutable/IntMap; body$percent3$percent1() {
-    return Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
   }
   
   private final Lscala/collection/immutable/IntMap; body$percent2$percent2(I; key, Ljava/lang/Object; value) {
@@ -1716,5 +1711,13 @@ public abstract class Lscala/collection/immutable/IntMap; extends Ljava/lang/Obj
         $96$ = $97$;
       }
     return $96$;
+  }
+  
+  private final Lscala/collection/immutable/IntMap; body$percent3$percent1() {
+    return Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
+  }
+  
+  private final Lscala/collection/immutable/IntMap; body$percent4$percent1(Lscala/collection/immutable/IntMap; x) {
+    return x;
   }
 }
