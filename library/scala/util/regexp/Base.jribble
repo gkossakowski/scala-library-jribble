@@ -5,7 +5,10 @@ public abstract class Lscala/util/regexp/Base; extends Ljava/lang/Object; implem
   public final Lscala/util/regexp/Base$Alt$; Alt() {
     if ((this.(Lscala/util/regexp/Base;)Alt$module == null))
       {
-        this.(Lscala/util/regexp/Base;)Alt$module = (new (Lscala/util/regexp/Base$Alt$;::this(Lscala/util/regexp/Base;)V;)(this));
+        if ((this.(Lscala/util/regexp/Base;)Alt$module == null))
+          {
+            this.(Lscala/util/regexp/Base;)Alt$module = (new (Lscala/util/regexp/Base$Alt$;::this(Lscala/util/regexp/Base;)V;)(this));
+          }
       }
     return this.(Lscala/util/regexp/Base;)Alt$module;
   }
@@ -15,19 +18,12 @@ public abstract class Lscala/util/regexp/Base; extends Ljava/lang/Object; implem
   public final Lscala/util/regexp/Base$Sequ$; Sequ() {
     if ((this.(Lscala/util/regexp/Base;)Sequ$module == null))
       {
-        this.(Lscala/util/regexp/Base;)Sequ$module = (new (Lscala/util/regexp/Base$Sequ$;::this(Lscala/util/regexp/Base;)V;)(this));
+        if ((this.(Lscala/util/regexp/Base;)Sequ$module == null))
+          {
+            this.(Lscala/util/regexp/Base;)Sequ$module = (new (Lscala/util/regexp/Base$Sequ$;::this(Lscala/util/regexp/Base;)V;)(this));
+          }
       }
     return this.(Lscala/util/regexp/Base;)Sequ$module;
-  }
-  
-  private Lscala/util/regexp/Base$Eps$; Eps$module;
-  
-  public final Lscala/util/regexp/Base$Eps$; Eps() {
-    if ((this.(Lscala/util/regexp/Base;)Eps$module == null))
-      {
-        this.(Lscala/util/regexp/Base;)Eps$module = (new (Lscala/util/regexp/Base$Eps$;::this(Lscala/util/regexp/Base;)V;)(this));
-      }
-    return this.(Lscala/util/regexp/Base;)Eps$module;
   }
   
   private Lscala/util/regexp/Base$Star$; Star$module;
@@ -35,9 +31,25 @@ public abstract class Lscala/util/regexp/Base; extends Ljava/lang/Object; implem
   public final Lscala/util/regexp/Base$Star$; Star() {
     if ((this.(Lscala/util/regexp/Base;)Star$module == null))
       {
-        this.(Lscala/util/regexp/Base;)Star$module = (new (Lscala/util/regexp/Base$Star$;::this(Lscala/util/regexp/Base;)V;)(this));
+        if ((this.(Lscala/util/regexp/Base;)Star$module == null))
+          {
+            this.(Lscala/util/regexp/Base;)Star$module = (new (Lscala/util/regexp/Base$Star$;::this(Lscala/util/regexp/Base;)V;)(this));
+          }
       }
     return this.(Lscala/util/regexp/Base;)Star$module;
+  }
+  
+  private Lscala/util/regexp/Base$Eps$; Eps$module;
+  
+  public final Lscala/util/regexp/Base$Eps$; Eps() {
+    if ((this.(Lscala/util/regexp/Base;)Eps$module == null))
+      {
+        if ((this.(Lscala/util/regexp/Base;)Eps$module == null))
+          {
+            this.(Lscala/util/regexp/Base;)Eps$module = (new (Lscala/util/regexp/Base$Eps$;::this(Lscala/util/regexp/Base;)V;)(this));
+          }
+      }
+    return this.(Lscala/util/regexp/Base;)Eps$module;
   }
   
   public this() {

@@ -1,4 +1,8 @@
-public interface Lscala/collection/immutable/Iterable; extends Lscala/collection/immutable/Traversable;, Lscala/collection/Iterable;, Lscala/collection/generic/GenericTraversableTemplate;, Lscala/collection/IterableLike;, Lscala/ScalaObject; {
+public interface Lscala/collection/immutable/Iterable; extends Lscala/collection/immutable/Traversable;, Lscala/collection/Iterable;, Lscala/collection/generic/GenericTraversableTemplate;, Lscala/collection/IterableLike;, Lscala/collection/Parallelizable;, Lscala/ScalaObject; {
   
   public Lscala/collection/generic/GenericCompanion; companion();
+  
+  public Lscala/collection/parallel/Combiner; parCombiner();
+  
+  public Lscala/collection/immutable/Iterable; seq();
 }

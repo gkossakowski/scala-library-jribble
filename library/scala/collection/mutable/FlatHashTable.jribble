@@ -1,10 +1,4 @@
-public interface Lscala/collection/mutable/FlatHashTable; extends Lscala/ScalaObject; {
-  
-  public I; loadFactor();
-  
-  public I; loadFactorDenum();
-  
-  public I; initialSize();
+public interface Lscala/collection/mutable/FlatHashTable; extends Lscala/collection/mutable/FlatHashTable$HashUtils;, Lscala/ScalaObject; {
   
   public Z; scala$collection$mutable$FlatHashTable$$tableDebug();
   
@@ -24,6 +18,12 @@ public interface Lscala/collection/mutable/FlatHashTable; extends Lscala/ScalaOb
   
   public V; threshold_$eq(I; x$1);
   
+  public I;[ sizemap();
+  
+  public V; sizemap_$eq(I;[ x$1);
+  
+  public I; capacity(I; expectedSize);
+  
   public V; init(Ljava/io/ObjectInputStream; in, Lscala/Function1; f);
   
   public V; serializeTo(Ljava/io/ObjectOutputStream; out);
@@ -38,11 +38,33 @@ public interface Lscala/collection/mutable/FlatHashTable; extends Lscala/ScalaOb
   
   public Lscala/collection/Iterator; iterator();
   
-  public I; elemHashCode(Ljava/lang/Object; elem);
+  public V; nnSizeMapAdd(I; h);
   
-  public I; improve(I; hcode);
+  public V; nnSizeMapRemove(I; h);
+  
+  public V; nnSizeMapReset(I; tableLength);
+  
+  public I; totalSizeMapBuckets();
+  
+  public I; calcSizeMapSize(I; tableLength);
+  
+  public V; sizeMapInit(I; tableLength);
+  
+  public V; sizeMapInitAndRebuild();
+  
+  public V; printSizeMap();
+  
+  public V; sizeMapDisable();
+  
+  public Z; isSizeMapDefined();
+  
+  public Z; alwaysInitSizeMap();
   
   public I; index(I; hcode);
   
   public V; clearTable();
+  
+  public Lscala/collection/mutable/FlatHashTable$Contents; hashTableContents();
+  
+  public V; initWithContents(Lscala/collection/mutable/FlatHashTable$Contents; c);
 }

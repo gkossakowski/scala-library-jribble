@@ -1,4 +1,4 @@
-public class Lscala/xml/PrettyPrinter$Box; extends Lscala/xml/PrettyPrinter$Item; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/PrettyPrinter$Box; extends Lscala/xml/PrettyPrinter$Item; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   public Lscala/collection/Iterator; productIterator() {
     return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
@@ -6,14 +6,6 @@ public class Lscala/xml/PrettyPrinter$Box; extends Lscala/xml/PrettyPrinter$Item
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/String; copy$default$2() {
-    return this.(Lscala/xml/PrettyPrinter$Box;::s()Ljava/lang/String;)();
-  }
-  
-  public I; copy$default$1() {
-    return this.(Lscala/xml/PrettyPrinter$Box;::col()I;)();
   }
   
   private I; col$u0020;
@@ -32,6 +24,14 @@ public class Lscala/xml/PrettyPrinter$Box; extends Lscala/xml/PrettyPrinter$Item
     return (new (Lscala/xml/PrettyPrinter$Box;::this(Lscala/xml/PrettyPrinter;I;Ljava/lang/String;)V;)(this.(Lscala/xml/PrettyPrinter$Box;::scala$xml$PrettyPrinter$Box$$$outer()Lscala/xml/PrettyPrinter;)(), col, s));
   }
   
+  public Ljava/lang/String; copy$default$2() {
+    return this.(Lscala/xml/PrettyPrinter$Box;::s()Ljava/lang/String;)();
+  }
+  
+  public I; copy$default$1() {
+    return this.(Lscala/xml/PrettyPrinter$Box;::col()I;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -48,12 +48,19 @@ public class Lscala/xml/PrettyPrinter$Box; extends Lscala/xml/PrettyPrinter$Item
         Lscala/xml/PrettyPrinter$Box; temp3 = temp2.<cast>(Lscala/xml/PrettyPrinter$Box;);
         I; temp4 = temp3.(Lscala/xml/PrettyPrinter$Box;::col()I;)();
         Ljava/lang/String; temp5 = temp3.(Lscala/xml/PrettyPrinter$Box;::s()Ljava/lang/String;)();
-        Ljava/lang/String; s$1 = temp5;
         I; col$1 = temp4;
+        Ljava/lang/String; s$1 = temp5;
         Z; $7$;
         if (this.(Lscala/xml/PrettyPrinter$Box;::gd1$1(I;Ljava/lang/String;)Z;)(col$1, s$1))
           {
-            $7$ = x$1.<cast>(Lscala/xml/PrettyPrinter$Box;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            I; $8$;
+            Ljava/lang/String; $9$;
+            Z; $10$;
+            body$percent02: while(true) {
+              $10$ = x$1.<cast>(Lscala/xml/PrettyPrinter$Box;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $7$ = $10$;
           }
         else
           {
@@ -78,16 +85,16 @@ public class Lscala/xml/PrettyPrinter$Box; extends Lscala/xml/PrettyPrinter$Item
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp6 = x$1;
-    I; $8$ = temp6;
-    Ljava/lang/Object; $9$;
-    switch ($8$) {
-      0: {
-        $9$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/xml/PrettyPrinter$Box;::col()I;)());
+    I; $11$ = temp6;
+    Ljava/lang/Object; $12$;
+    switch ($11$) {
+      1: {
+        $12$ = this.(Lscala/xml/PrettyPrinter$Box;::s()Ljava/lang/String;)();
         break;
       }
       
-      1: {
-        $9$ = this.(Lscala/xml/PrettyPrinter$Box;::s()Ljava/lang/String;)();
+      0: {
+        $12$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/xml/PrettyPrinter$Box;::col()I;)());
         break;
       }
       
@@ -97,7 +104,7 @@ public class Lscala/xml/PrettyPrinter$Box; extends Lscala/xml/PrettyPrinter$Item
       }
       
     }
-    return $9$;
+    return $12$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

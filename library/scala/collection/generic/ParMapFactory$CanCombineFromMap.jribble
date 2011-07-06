@@ -1,0 +1,40 @@
+public class Lscala/collection/generic/ParMapFactory$CanCombineFromMap; extends Ljava/lang/Object; implements Lscala/collection/generic/CanCombineFrom;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/parallel/Combiner; apply(Lscala/collection/parallel/ParMap; from) {
+    return from.(Lscala/collection/generic/GenericParMapTemplate;::genericMapCombiner()Lscala/collection/parallel/Combiner;)();
+  }
+  
+  public Lscala/collection/parallel/Combiner; apply() {
+    return this.(Lscala/collection/generic/ParMapFactory$CanCombineFromMap;::scala$collection$generic$ParMapFactory$CanCombineFromMap$$$outer()Lscala/collection/generic/ParMapFactory;)().(Lscala/collection/generic/ParMapFactory;::newCombiner()Lscala/collection/parallel/Combiner;)();
+  }
+  
+  protected Lscala/collection/generic/ParMapFactory; $outer$u0020;
+  
+  public Lscala/collection/generic/ParMapFactory; scala$collection$generic$ParMapFactory$CanCombineFromMap$$$outer() {
+    return this.(Lscala/collection/generic/ParMapFactory$CanCombineFromMap;)$outer$u0020;
+  }
+  
+  public Lscala/collection/mutable/Builder; apply() {
+    return this.(Lscala/collection/generic/ParMapFactory$CanCombineFromMap;::apply()Lscala/collection/parallel/Combiner;)();
+  }
+  
+  public Lscala/collection/mutable/Builder; apply(Ljava/lang/Object; from) {
+    return this.(Lscala/collection/generic/ParMapFactory$CanCombineFromMap;::apply(Lscala/collection/parallel/ParMap;)Lscala/collection/parallel/Combiner;)(from.<cast>(Lscala/collection/parallel/ParMap;));
+  }
+  
+  public Lscala/collection/parallel/Combiner; apply(Ljava/lang/Object; from) {
+    return this.(Lscala/collection/generic/ParMapFactory$CanCombineFromMap;::apply(Lscala/collection/parallel/ParMap;)Lscala/collection/parallel/Combiner;)(from.<cast>(Lscala/collection/parallel/ParMap;));
+  }
+  
+  public this(Lscala/collection/generic/ParMapFactory; $outer) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/generic/ParMapFactory$CanCombineFromMap;)$outer$u0020 = $outer;
+      }
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

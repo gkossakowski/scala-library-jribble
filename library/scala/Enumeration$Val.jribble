@@ -1,20 +1,8 @@
-public class Lscala/Enumeration$Val; extends Lscala/Enumeration$Value; implements Lscala/ScalaObject; {
+public class Lscala/Enumeration$Val; extends Lscala/Enumeration$Value; implements Lscala/Serializable;, Lscala/ScalaObject; {
   
   public I; scala$Enumeration$Val$$i;
   
   private Ljava/lang/String; name;
-  
-  public this(Lscala/Enumeration; $outer, I; i$1) {
-    (Lscala/Enumeration$Val;::this(Lscala/Enumeration;I;Ljava/lang/String;)V;)($outer, i$1, $outer.(Lscala/Enumeration;::scala$Enumeration$$nextNameOrElse(Lscala/Function0;)Ljava/lang/String;)((new (Lscala/Enumeration$Val$$anonfun$$init$$1;::this(Lscala/Enumeration;I;)V;)($outer, i$1))));
-  }
-  
-  public this(Lscala/Enumeration; $outer, Ljava/lang/String; name) {
-    (Lscala/Enumeration$Val;::this(Lscala/Enumeration;I;Ljava/lang/String;)V;)($outer, $outer.(Lscala/Enumeration;::nextId()I;)(), name);
-  }
-  
-  public this(Lscala/Enumeration; $outer) {
-    (Lscala/Enumeration$Val;::this(Lscala/Enumeration;I;)V;)($outer, $outer.(Lscala/Enumeration;::nextId()I;)());
-  }
   
   public I; id() {
     return this.(Lscala/Enumeration$Val;)scala$Enumeration$Val$$i;
@@ -73,5 +61,17 @@ public class Lscala/Enumeration$Val; extends Lscala/Enumeration$Value; implement
       {
         
       }
+  }
+  
+  public this(Lscala/Enumeration; $outer, I; i) {
+    (Lscala/Enumeration$Val;::this(Lscala/Enumeration;I;Ljava/lang/String;)V;)($outer, i, $outer.(Lscala/Enumeration;::scala$Enumeration$$nextNameOrNull()Ljava/lang/String;)());
+  }
+  
+  public this(Lscala/Enumeration; $outer, Ljava/lang/String; name) {
+    (Lscala/Enumeration$Val;::this(Lscala/Enumeration;I;Ljava/lang/String;)V;)($outer, $outer.(Lscala/Enumeration;::nextId()I;)(), name);
+  }
+  
+  public this(Lscala/Enumeration; $outer) {
+    (Lscala/Enumeration$Val;::this(Lscala/Enumeration;I;)V;)($outer, $outer.(Lscala/Enumeration;::nextId()I;)());
   }
 }

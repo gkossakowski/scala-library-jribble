@@ -1,4 +1,4 @@
-public final class Lscala/Cell$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/Cell$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/Cell$; MODULE$ = new (Lscala/Cell$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/Cell$; extends Ljava/lang/Object; implements Lscala/Sc
   }
   
   public Lscala/Option; unapply(Lscala/Cell; x$0) {
-    Lscala/Option; $4$;
+    Lscala/Option; $6$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $4$ = Lscala/None$;.MODULE$;
+        $6$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $4$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/Cell;::elem()Ljava/lang/Object;)()));
+        $6$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/Cell;::elem()Ljava/lang/Object;)()));
       }
-    return $4$;
+    return $6$;
   }
   
   public Lscala/Cell; apply(Ljava/lang/Object; elem) {
     return (new (Lscala/Cell;::this(Ljava/lang/Object;)V;)(elem));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/Cell$;.MODULE$;
   }
   
   public this() {

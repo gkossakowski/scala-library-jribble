@@ -1,4 +1,4 @@
-public final class Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final V; apply(Ljava/lang/Object; x) {
     if (this.(Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1;)first$1.(Lscala/runtime/BooleanRef;)elem)
@@ -8,7 +8,7 @@ public final class Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1; exte
       }
     else
       {
-        this.(Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1;)acc$1.(Lscala/runtime/ObjectRef;)elem = this.(Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1;)op$3.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1;)acc$1.(Lscala/runtime/ObjectRef;)elem, x);
+        this.(Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1;)acc$1.(Lscala/runtime/ObjectRef;)elem = this.(Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1;)op$4.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1;)acc$1.(Lscala/runtime/ObjectRef;)elem, x);
       }
   }
   
@@ -17,14 +17,14 @@ public final class Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1; exte
     return Lscala/runtime/BoxedUnit;.UNIT;
   }
   
-  private Lscala/Function2; op$3;
+  private Lscala/Function2; op$4;
   
   private Lscala/runtime/BooleanRef; first$1;
   
   private Lscala/runtime/ObjectRef; acc$1;
   
-  public this(Lscala/collection/TraversableOnce; $outer, Lscala/Function2; op$3, Lscala/runtime/BooleanRef; first$1, Lscala/runtime/ObjectRef; acc$1) {
-    this.(Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1;)op$3 = op$3;
+  public this(Lscala/collection/TraversableOnce; $outer, Lscala/Function2; op$4, Lscala/runtime/BooleanRef; first$1, Lscala/runtime/ObjectRef; acc$1) {
+    this.(Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1;)op$4 = op$4;
     this.(Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1;)first$1 = first$1;
     this.(Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1;)acc$1 = acc$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();

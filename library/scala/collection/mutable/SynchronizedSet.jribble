@@ -20,11 +20,11 @@ public interface Lscala/collection/mutable/SynchronizedSet; extends Lscala/colle
   
   public Z; scala$collection$mutable$SynchronizedSet$$super$remove(Ljava/lang/Object; elem);
   
-  public Lscala/collection/mutable/Set; scala$collection$mutable$SynchronizedSet$$super$intersect(Lscala/collection/Set; that);
+  public Lscala/collection/mutable/Set; scala$collection$mutable$SynchronizedSet$$super$intersect(Lscala/collection/GenSet; that);
   
   public V; scala$collection$mutable$SynchronizedSet$$super$clear();
   
-  public Z; scala$collection$mutable$SynchronizedSet$$super$subsetOf(Lscala/collection/Set; that);
+  public Z; scala$collection$mutable$SynchronizedSet$$super$subsetOf(Lscala/collection/GenSet; that);
   
   public V; scala$collection$mutable$SynchronizedSet$$super$foreach(Lscala/Function1; f);
   
@@ -58,11 +58,11 @@ public interface Lscala/collection/mutable/SynchronizedSet; extends Lscala/colle
   
   public Z; remove(Ljava/lang/Object; elem);
   
-  public Lscala/collection/mutable/Set; intersect(Lscala/collection/Set; that);
+  public Lscala/collection/mutable/Set; intersect(Lscala/collection/GenSet; that);
   
   public V; clear();
   
-  public Z; subsetOf(Lscala/collection/Set; that);
+  public Z; subsetOf(Lscala/collection/GenSet; that);
   
   public V; foreach(Lscala/Function1; f);
   

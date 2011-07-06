@@ -53,14 +53,14 @@ public final class Lscala/xml/dtd/ContentModel$; extends Lscala/util/regexp/Word
                 Lscala/collection/mutable/StringBuilder; $4$;
                 if (temp25.<instanceof>(Lscala/xml/dtd/ELEMENTS;))
                   {
-                    $4$ = Lscala/xml/dtd/ContentModel$;.MODULE$.(Lscala/xml/dtd/ContentModel$;::body$percent3$percent1()Lscala/collection/mutable/StringBuilder;)();
+                    $4$ = Lscala/xml/dtd/ContentModel$;.MODULE$.(Lscala/xml/dtd/ContentModel$;::body$percent32$percent1()Lscala/collection/mutable/StringBuilder;)();
                   }
                 else
                   {
                     Lscala/collection/mutable/StringBuilder; $5$;
                     if (temp25.<instanceof>(Lscala/xml/dtd/MIXED;))
                       {
-                        $5$ = Lscala/xml/dtd/ContentModel$;.MODULE$.(Lscala/xml/dtd/ContentModel$;::body$percent3$percent1()Lscala/collection/mutable/StringBuilder;)();
+                        $5$ = Lscala/xml/dtd/ContentModel$;.MODULE$.(Lscala/xml/dtd/ContentModel$;::body$percent32$percent1()Lscala/collection/mutable/StringBuilder;)();
                       }
                     else
                       {
@@ -80,14 +80,14 @@ public final class Lscala/xml/dtd/ContentModel$; extends Lscala/util/regexp/Word
   public Lscala/collection/mutable/StringBuilder; buildString(Lscala/util/regexp/Base$RegExp; r, Lscala/collection/mutable/StringBuilder; sb) {
     Lscala/util/regexp/Base$RegExp; temp33 = r;
     Lscala/collection/mutable/StringBuilder; $6$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp33, this.(Lscala/util/regexp/Base;::Eps()Lscala/util/regexp/Base$Eps$;)()))
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/util/regexp/Base;::Eps()Lscala/util/regexp/Base$Eps$;)(), temp33))
       {
         $6$ = sb;
       }
     else
       {
         Lscala/collection/mutable/StringBuilder; $7$;
-        failCont$percent1: while(true) {
+        fail$percent1: while(true) {
           Lscala/collection/mutable/StringBuilder; $8$;
           if (temp33.<instanceof>(Lscala/util/regexp/Base$Sequ;))
             {
@@ -230,7 +230,7 @@ public final class Lscala/xml/dtd/ContentModel$; extends Lscala/util/regexp/Word
         Lscala/collection/immutable/Set; $21$;
         if ((temp13 != null))
           {
-            $21$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::Set()Lscala/collection/immutable/Set$;)().(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/String;>{temp13.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)()}.<cast>(Ljava/lang/Object;[))).<cast>(Lscala/collection/immutable/Set;);
+            $21$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::Set()Lscala/collection/immutable/Set$;)().(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/String;>{temp13.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)()}.<cast>(Ljava/lang/Object;[))).<cast>(Lscala/collection/immutable/Set;);
           }
         else
           {
@@ -268,7 +268,7 @@ public final class Lscala/xml/dtd/ContentModel$; extends Lscala/util/regexp/Word
                     Lscala/collection/immutable/Set; $26$;
                     if ($25$)
                       {
-                        $26$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::Set()Lscala/collection/immutable/Set$;)().(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(temp19.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/xml/dtd/ContentModel$$anonfun$traverse$1$1;::this()V;)()), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/generic/GenericTraversableTemplate;).(Lscala/collection/generic/GenericTraversableTemplate;::flatten(Lscala/Function1;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::conforms()Lscala/Predef$$less$colon$less;)()).<cast>(Lscala/collection/Seq;)).<cast>(Lscala/collection/immutable/Set;);
+                        $26$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::Set()Lscala/collection/immutable/Set$;)().(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(temp19.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/xml/dtd/ContentModel$$anonfun$traverse$1$1;::this()V;)()), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/generic/GenericTraversableTemplate;).(Lscala/collection/generic/GenericTraversableTemplate;::flatten(Lscala/Function1;)Lscala/collection/GenTraversable;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::conforms()Lscala/Predef$$less$colon$less;)()).<cast>(Lscala/collection/Seq;)).<cast>(Lscala/collection/immutable/Set;);
                       }
                     else
                       {
@@ -305,7 +305,7 @@ public final class Lscala/xml/dtd/ContentModel$; extends Lscala/util/regexp/Word
                         Lscala/collection/immutable/Set; $30$;
                         if ($29$)
                           {
-                            $30$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::Set()Lscala/collection/immutable/Set$;)().(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(temp23.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/xml/dtd/ContentModel$$anonfun$traverse$1$2;::this()V;)()), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/generic/GenericTraversableTemplate;).(Lscala/collection/generic/GenericTraversableTemplate;::flatten(Lscala/Function1;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::conforms()Lscala/Predef$$less$colon$less;)()).<cast>(Lscala/collection/Seq;)).<cast>(Lscala/collection/immutable/Set;);
+                            $30$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::Set()Lscala/collection/immutable/Set$;)().(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(temp23.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/xml/dtd/ContentModel$$anonfun$traverse$1$2;::this()V;)()), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/generic/GenericTraversableTemplate;).(Lscala/collection/generic/GenericTraversableTemplate;::flatten(Lscala/Function1;)Lscala/collection/GenTraversable;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::conforms()Lscala/Predef$$less$colon$less;)()).<cast>(Lscala/collection/Seq;)).<cast>(Lscala/collection/immutable/Set;);
                           }
                         else
                           {
@@ -336,7 +336,7 @@ public final class Lscala/xml/dtd/ContentModel$; extends Lscala/util/regexp/Word
     (Lscala/util/regexp/WordExp;::super()V;)();
   }
   
-  private final Lscala/collection/mutable/StringBuilder; body$percent3$percent1() {
+  private final Lscala/collection/mutable/StringBuilder; body$percent32$percent1() {
     return c.(Lscala/xml/dtd/ContentModel;::buildString(Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(sb);
   }
 }

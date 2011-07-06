@@ -1,0 +1,28 @@
+public final class Lscala/collection/TraversableOnce$$anonfun$collectFirst$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final V; apply(Ljava/lang/Object; x) {
+    if (this.(Lscala/collection/TraversableOnce$$anonfun$collectFirst$1;)pf$1.(Lscala/PartialFunction;::isDefinedAt(Ljava/lang/Object;)Z;)(x))
+      {
+        throw (new (Lscala/runtime/NonLocalReturnControl;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/TraversableOnce$$anonfun$collectFirst$1;)nonLocalReturnKey1$1, (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(this.(Lscala/collection/TraversableOnce$$anonfun$collectFirst$1;)pf$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x)))));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/TraversableOnce$$anonfun$collectFirst$1;::apply(Ljava/lang/Object;)V;)(v1);
+    return Lscala/runtime/BoxedUnit;.UNIT;
+  }
+  
+  private Lscala/PartialFunction; pf$1;
+  
+  private Ljava/lang/Object; nonLocalReturnKey1$1;
+  
+  public this(Lscala/collection/TraversableOnce; $outer, Lscala/PartialFunction; pf$1, Ljava/lang/Object; nonLocalReturnKey1$1) {
+    this.(Lscala/collection/TraversableOnce$$anonfun$collectFirst$1;)pf$1 = pf$1;
+    this.(Lscala/collection/TraversableOnce$$anonfun$collectFirst$1;)nonLocalReturnKey1$1 = nonLocalReturnKey1$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

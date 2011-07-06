@@ -1,4 +1,4 @@
-public final class Lscala/xml/dtd/PublicID$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject; {
+public final class Lscala/xml/dtd/PublicID$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/dtd/PublicID$; MODULE$ = new (Lscala/xml/dtd/PublicID$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/xml/dtd/PublicID$; extends Lscala/runtime/AbstractFunc
   }
   
   public Lscala/Option; unapply(Lscala/xml/dtd/PublicID; x$0) {
-    Lscala/Option; $12$;
+    Lscala/Option; $17$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $12$ = Lscala/None$;.MODULE$;
+        $17$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $12$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/PublicID;::publicId()Ljava/lang/String;)(), x$0.(Lscala/xml/dtd/PublicID;::systemId()Ljava/lang/String;)()))));
+        $17$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/PublicID;::publicId()Ljava/lang/String;)(), x$0.(Lscala/xml/dtd/PublicID;::systemId()Ljava/lang/String;)()))));
       }
-    return $12$;
+    return $17$;
   }
   
   public Lscala/xml/dtd/PublicID; apply(Ljava/lang/String; publicId, Ljava/lang/String; systemId) {
     return (new (Lscala/xml/dtd/PublicID;::this(Ljava/lang/String;Ljava/lang/String;)V;)(publicId, systemId));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/dtd/PublicID$;.MODULE$;
   }
   
   public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {

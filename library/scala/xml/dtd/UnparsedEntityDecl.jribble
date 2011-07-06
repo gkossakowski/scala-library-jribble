@@ -1,4 +1,4 @@
-public class Lscala/xml/dtd/UnparsedEntityDecl; extends Lscala/xml/dtd/EntityDecl; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/dtd/UnparsedEntityDecl; extends Lscala/xml/dtd/EntityDecl; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public final static Lscala/Function1; tupled() { return Lscala/xml/dtd/UnparsedEntityDecl$;.MODULE$.(Lscala/runtime/AbstractFunction3;::tupled()Lscala/Function1;)(); }
   public final static Lscala/Function1; curry() { return Lscala/xml/dtd/UnparsedEntityDecl$;.MODULE$.(Lscala/runtime/AbstractFunction3;::curry()Lscala/Function1;)(); }
   public final static Lscala/Function1; curried() { return Lscala/xml/dtd/UnparsedEntityDecl$;.MODULE$.(Lscala/runtime/AbstractFunction3;::curried()Lscala/Function1;)(); }
@@ -10,18 +10,6 @@ public class Lscala/xml/dtd/UnparsedEntityDecl; extends Lscala/xml/dtd/EntityDec
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/String; copy$default$3() {
-    return this.(Lscala/xml/dtd/UnparsedEntityDecl;::notation()Ljava/lang/String;)();
-  }
-  
-  public Lscala/xml/dtd/ExternalID; copy$default$2() {
-    return this.(Lscala/xml/dtd/UnparsedEntityDecl;::extID()Lscala/xml/dtd/ExternalID;)();
-  }
-  
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/dtd/UnparsedEntityDecl;::name()Ljava/lang/String;)();
   }
   
   private Ljava/lang/String; name$u0020;
@@ -51,6 +39,18 @@ public class Lscala/xml/dtd/UnparsedEntityDecl; extends Lscala/xml/dtd/EntityDec
     return (new (Lscala/xml/dtd/UnparsedEntityDecl;::this(Ljava/lang/String;Lscala/xml/dtd/ExternalID;Ljava/lang/String;)V;)(name, extID, notation));
   }
   
+  public Ljava/lang/String; copy$default$3() {
+    return this.(Lscala/xml/dtd/UnparsedEntityDecl;::notation()Ljava/lang/String;)();
+  }
+  
+  public Lscala/xml/dtd/ExternalID; copy$default$2() {
+    return this.(Lscala/xml/dtd/UnparsedEntityDecl;::extID()Lscala/xml/dtd/ExternalID;)();
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/dtd/UnparsedEntityDecl;::name()Ljava/lang/String;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -61,32 +61,40 @@ public class Lscala/xml/dtd/UnparsedEntityDecl; extends Lscala/xml/dtd/EntityDec
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp27 = x$1;
-    Z; $21$;
+    Z; $42$;
     if (temp27.<instanceof>(Lscala/xml/dtd/UnparsedEntityDecl;))
       {
         Lscala/xml/dtd/UnparsedEntityDecl; temp28 = temp27.<cast>(Lscala/xml/dtd/UnparsedEntityDecl;);
         Ljava/lang/String; temp29 = temp28.(Lscala/xml/dtd/UnparsedEntityDecl;::name()Ljava/lang/String;)();
         Lscala/xml/dtd/ExternalID; temp30 = temp28.(Lscala/xml/dtd/UnparsedEntityDecl;::extID()Lscala/xml/dtd/ExternalID;)();
         Ljava/lang/String; temp31 = temp28.(Lscala/xml/dtd/UnparsedEntityDecl;::notation()Ljava/lang/String;)();
-        Ljava/lang/String; notation$1 = temp31;
-        Lscala/xml/dtd/ExternalID; extID$1 = temp30;
         Ljava/lang/String; name$6 = temp29;
-        Z; $22$;
+        Lscala/xml/dtd/ExternalID; extID$1 = temp30;
+        Ljava/lang/String; notation$1 = temp31;
+        Z; $43$;
         if (this.(Lscala/xml/dtd/UnparsedEntityDecl;::gd6$1(Ljava/lang/String;Lscala/xml/dtd/ExternalID;Ljava/lang/String;)Z;)(name$6, extID$1, notation$1))
           {
-            $22$ = x$1.<cast>(Lscala/xml/dtd/UnparsedEntityDecl;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/String; $44$;
+            Lscala/xml/dtd/ExternalID; $45$;
+            Ljava/lang/String; $46$;
+            Z; $47$;
+            body$percent011: while(true) {
+              $47$ = x$1.<cast>(Lscala/xml/dtd/UnparsedEntityDecl;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $43$ = $47$;
           }
         else
           {
-            $22$ = false;
+            $43$ = false;
           }
-        $21$ = $22$;
+        $42$ = $43$;
       }
     else
       {
-        $21$ = false;
+        $42$ = false;
       }
-    return ((this == x$1) || $21$);
+    return ((this == x$1) || $42$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -99,21 +107,21 @@ public class Lscala/xml/dtd/UnparsedEntityDecl; extends Lscala/xml/dtd/EntityDec
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp32 = x$1;
-    I; $23$ = temp32;
-    Ljava/lang/Object; $24$;
-    switch ($23$) {
-      0: {
-        $24$ = this.(Lscala/xml/dtd/UnparsedEntityDecl;::name()Ljava/lang/String;)();
-        break;
-      }
-      
+    I; $48$ = temp32;
+    Ljava/lang/Object; $49$;
+    switch ($48$) {
       1: {
-        $24$ = this.(Lscala/xml/dtd/UnparsedEntityDecl;::extID()Lscala/xml/dtd/ExternalID;)();
+        $49$ = this.(Lscala/xml/dtd/UnparsedEntityDecl;::extID()Lscala/xml/dtd/ExternalID;)();
         break;
       }
       
       2: {
-        $24$ = this.(Lscala/xml/dtd/UnparsedEntityDecl;::notation()Ljava/lang/String;)();
+        $49$ = this.(Lscala/xml/dtd/UnparsedEntityDecl;::notation()Ljava/lang/String;)();
+        break;
+      }
+      
+      0: {
+        $49$ = this.(Lscala/xml/dtd/UnparsedEntityDecl;::name()Ljava/lang/String;)();
         break;
       }
       
@@ -123,7 +131,7 @@ public class Lscala/xml/dtd/UnparsedEntityDecl; extends Lscala/xml/dtd/EntityDec
       }
       
     }
-    return $24$;
+    return $49$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

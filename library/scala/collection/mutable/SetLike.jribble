@@ -1,10 +1,8 @@
-public interface Lscala/collection/mutable/SetLike; extends Lscala/collection/SetLike;, Lscala/collection/script/Scriptable;, Lscala/collection/mutable/Builder;, Lscala/collection/generic/Growable;, Lscala/collection/generic/Shrinkable;, Lscala/collection/mutable/Cloneable;, Lscala/ScalaObject; {
-  
-  public Ljava/lang/Object; scala$collection$mutable$SetLike$$super$map(Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf);
+public interface Lscala/collection/mutable/SetLike; extends Lscala/collection/SetLike;, Lscala/collection/script/Scriptable;, Lscala/collection/mutable/Builder;, Lscala/collection/generic/Growable;, Lscala/collection/generic/Shrinkable;, Lscala/collection/mutable/Cloneable;, Lscala/collection/Parallelizable;, Lscala/ScalaObject; {
   
   public Lscala/collection/mutable/Builder; newBuilder();
   
-  public Ljava/lang/Object; map(Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf);
+  public Lscala/collection/parallel/Combiner; parCombiner();
   
   public Z; add(Ljava/lang/Object; elem);
   
@@ -28,11 +26,15 @@ public interface Lscala/collection/mutable/SetLike; extends Lscala/collection/Se
   
   public Lscala/collection/mutable/Set; $plus(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems);
   
+  public Lscala/collection/mutable/Set; $plus$plus(Lscala/collection/GenTraversableOnce; xs);
+  
   public Lscala/collection/mutable/Set; $plus$plus(Lscala/collection/TraversableOnce; xs);
   
   public Lscala/collection/mutable/Set; $minus(Ljava/lang/Object; elem);
   
   public Lscala/collection/mutable/Set; $minus(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems);
+  
+  public Lscala/collection/mutable/Set; $minus$minus(Lscala/collection/GenTraversableOnce; xs);
   
   public Lscala/collection/mutable/Set; $minus$minus(Lscala/collection/TraversableOnce; xs);
   

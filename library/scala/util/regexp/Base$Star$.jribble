@@ -1,20 +1,20 @@
-public final class Lscala/util/regexp/Base$Star$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+public final class Lscala/util/regexp/Base$Star$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject;, Lscala/Serializable; {
   
   public final Ljava/lang/String; toString() {
     return "Star";
   }
   
   public Lscala/Option; unapply(Lscala/util/regexp/Base$Star; x$0) {
-    Lscala/Option; $6$;
+    Lscala/Option; $8$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $6$ = Lscala/None$;.MODULE$;
+        $8$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $6$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)()));
+        $8$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)()));
       }
-    return $6$;
+    return $8$;
   }
   
   public Lscala/util/regexp/Base$Star; apply(Lscala/util/regexp/Base$RegExp; r) {

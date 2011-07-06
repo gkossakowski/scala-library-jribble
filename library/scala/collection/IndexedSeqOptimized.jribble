@@ -4,7 +4,7 @@ public interface Lscala/collection/IndexedSeqOptimized; extends Lscala/collectio
   
   public Ljava/lang/Object; scala$collection$IndexedSeqOptimized$$super$reduceRight(Lscala/Function2; op);
   
-  public Ljava/lang/Object; scala$collection$IndexedSeqOptimized$$super$zip(Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf);
+  public Ljava/lang/Object; scala$collection$IndexedSeqOptimized$$super$zip(Lscala/collection/GenIterable; that, Lscala/collection/generic/CanBuildFrom; bf);
   
   public Ljava/lang/Object; scala$collection$IndexedSeqOptimized$$super$head();
   
@@ -14,9 +14,9 @@ public interface Lscala/collection/IndexedSeqOptimized; extends Lscala/collectio
   
   public Ljava/lang/Object; scala$collection$IndexedSeqOptimized$$super$init();
   
-  public Z; scala$collection$IndexedSeqOptimized$$super$sameElements(Lscala/collection/Iterable; that);
+  public Z; scala$collection$IndexedSeqOptimized$$super$sameElements(Lscala/collection/GenIterable; that);
   
-  public Z; scala$collection$IndexedSeqOptimized$$super$endsWith(Lscala/collection/Seq; that);
+  public Z; scala$collection$IndexedSeqOptimized$$super$endsWith(Lscala/collection/GenSeq; that);
   
   public Z; isEmpty();
   
@@ -36,7 +36,7 @@ public interface Lscala/collection/IndexedSeqOptimized; extends Lscala/collectio
   
   public Ljava/lang/Object; reduceRight(Lscala/Function2; op);
   
-  public Ljava/lang/Object; zip(Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf);
+  public Ljava/lang/Object; zip(Lscala/collection/GenIterable; that, Lscala/collection/generic/CanBuildFrom; bf);
   
   public Ljava/lang/Object; zipWithIndex(Lscala/collection/generic/CanBuildFrom; bf);
   
@@ -66,7 +66,7 @@ public interface Lscala/collection/IndexedSeqOptimized; extends Lscala/collectio
   
   public Lscala/Tuple2; span(Lscala/Function1; p);
   
-  public Z; sameElements(Lscala/collection/Iterable; that);
+  public Z; sameElements(Lscala/collection/GenIterable; that);
   
   public V; copyToArray(Ljava/lang/Object; xs, I; start, I; len);
   
@@ -82,7 +82,7 @@ public interface Lscala/collection/IndexedSeqOptimized; extends Lscala/collectio
   
   public Lscala/collection/Iterator; reverseIterator();
   
-  public Z; startsWith(Lscala/collection/Seq; that, I; offset);
+  public Z; startsWith(Lscala/collection/GenSeq; that, I; offset);
   
-  public Z; endsWith(Lscala/collection/Seq; that);
+  public Z; endsWith(Lscala/collection/GenSeq; that);
 }

@@ -1,0 +1,29 @@
+public final class Lscala/collection/SeqLike$CombinationsItr$$anonfun$next$3; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final V; apply(I; k) {
+    this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$next$3;)$outer$u0020.(Lscala/collection/SeqLike$CombinationsItr;::scala$collection$SeqLike$CombinationsItr$$nums()I;[)()[k] = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$next$3;)sum$1.(Lscala/runtime/IntRef;)elem).(Lscala/runtime/RichInt;::min(I;)I;)(this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$next$3;)$outer$u0020.(Lscala/collection/SeqLike$CombinationsItr;::scala$collection$SeqLike$CombinationsItr$$cnts()I;[)()[k]);
+    this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$next$3;)sum$1.(Lscala/runtime/IntRef;)elem = (this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$next$3;)sum$1.(Lscala/runtime/IntRef;)elem - this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$next$3;)$outer$u0020.(Lscala/collection/SeqLike$CombinationsItr;::scala$collection$SeqLike$CombinationsItr$$nums()I;[)()[k]);
+  }
+  
+  private Lscala/collection/SeqLike$CombinationsItr; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$next$3;::apply(I;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1));
+    return Lscala/runtime/BoxedUnit;.UNIT;
+  }
+  
+  private Lscala/runtime/IntRef; sum$1;
+  
+  public this(Lscala/collection/SeqLike$CombinationsItr; $outer, Lscala/runtime/IntRef; sum$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$next$3;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$next$3;)sum$1 = sum$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

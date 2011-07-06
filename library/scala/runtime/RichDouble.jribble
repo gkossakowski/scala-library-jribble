@@ -1,115 +1,60 @@
-public final class Lscala/runtime/RichDouble; extends Ljava/lang/Object; implements Lscala/Proxy;, Lscala/math/Ordered;, Lscala/ScalaObject; {
+public final class Lscala/runtime/RichDouble; extends Lscala/runtime/FractionalProxy; implements Lscala/ScalaObject; {
   
-  public Z; $less(Ljava/lang/Object; that) {
-    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  private D; self$u0020;
+  
+  public D; self() {
+    return this.(Lscala/runtime/RichDouble;)self$u0020;
   }
   
-  public Z; $greater(Ljava/lang/Object; that) {
-    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$greater(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
-  }
+  private Lscala/math/Numeric$DoubleAsIfIntegral$; integralNum$u0020;
   
-  public Z; $less$eq(Ljava/lang/Object; that) {
-    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less$eq(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
-  }
-  
-  public Z; $greater$eq(Ljava/lang/Object; that) {
-    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$greater$eq(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
-  }
-  
-  public I; compareTo(Ljava/lang/Object; that) {
-    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::compareTo(Lscala/math/Ordered;Ljava/lang/Object;)I;)(this, that);
-  }
-  
-  public I; hashCode() {
-    return Lscala/Proxy$class;.(Lscala/Proxy$class;::hashCode(Lscala/Proxy;)I;)(this);
-  }
-  
-  public Z; equals(Ljava/lang/Object; that) {
-    return Lscala/Proxy$class;.(Lscala/Proxy$class;::equals(Lscala/Proxy;Ljava/lang/Object;)Z;)(this, that);
-  }
-  
-  public Ljava/lang/String; toString() {
-    return Lscala/Proxy$class;.(Lscala/Proxy$class;::toString(Lscala/Proxy;)Ljava/lang/String;)(this);
-  }
-  
-  private D; x;
-  
-  public Ljava/lang/Object; self() {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToDouble(D;)Ljava/lang/Double;)(this.(Lscala/runtime/RichDouble;)x);
-  }
-  
-  public I; compare(D; y) {
-    return Ljava/lang/Double;.(Ljava/lang/Double;::compare(D;D;)I;)(this.(Lscala/runtime/RichDouble;)x, y);
-  }
-  
-  public D; min(D; y) {
-    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::min(D;D;)D;)(this.(Lscala/runtime/RichDouble;)x, y);
-  }
-  
-  public D; max(D; y) {
-    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::max(D;D;)D;)(this.(Lscala/runtime/RichDouble;)x, y);
-  }
-  
-  public D; abs() {
-    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::abs(D;)D;)(this.(Lscala/runtime/RichDouble;)x);
+  protected Lscala/math/Numeric$DoubleAsIfIntegral$; integralNum() {
+    return this.(Lscala/runtime/RichDouble;)integralNum$u0020;
   }
   
   public J; round() {
-    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::round(D;)J;)(this.(Lscala/runtime/RichDouble;)x);
+    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::round(D;)J;)(this.(Lscala/runtime/RichDouble;::self()D;)());
   }
   
   public D; ceil() {
-    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::ceil(D;)D;)(this.(Lscala/runtime/RichDouble;)x);
+    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::ceil(D;)D;)(this.(Lscala/runtime/RichDouble;::self()D;)());
   }
   
   public D; floor() {
-    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::floor(D;)D;)(this.(Lscala/runtime/RichDouble;)x);
-  }
-  
-  public Lscala/collection/immutable/Range$Partial; until(D; end$1) {
-    return (new (Lscala/collection/immutable/Range$Partial;::this(Lscala/Function1;)V;)((new (Lscala/runtime/RichDouble$$anonfun$until$1;::this(Lscala/runtime/RichDouble;D;)V;)(this, end$1))));
-  }
-  
-  public Lscala/collection/immutable/NumericRange; until(D; end, D; step) {
-    return Lscala/collection/immutable/Range$Double$;.MODULE$.(Lscala/collection/immutable/Range$Double$;::apply(D;D;D;)Lscala/collection/immutable/NumericRange;)(this.(Lscala/runtime/RichDouble;)x, end, step);
-  }
-  
-  public Lscala/collection/immutable/Range$Partial; to(D; end$2) {
-    return (new (Lscala/collection/immutable/Range$Partial;::this(Lscala/Function1;)V;)((new (Lscala/runtime/RichDouble$$anonfun$to$1;::this(Lscala/runtime/RichDouble;D;)V;)(this, end$2))));
-  }
-  
-  public Lscala/collection/immutable/NumericRange; to(D; end, D; step) {
-    return Lscala/collection/immutable/Range$Double$;.MODULE$.(Lscala/collection/immutable/Range$Double$;::inclusive(D;D;D;)Lscala/collection/immutable/NumericRange;)(this.(Lscala/runtime/RichDouble;)x, end, step);
+    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::floor(D;)D;)(this.(Lscala/runtime/RichDouble;::self()D;)());
   }
   
   public D; toRadians() {
-    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::toRadians(D;)D;)(this.(Lscala/runtime/RichDouble;)x);
+    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::toRadians(D;)D;)(this.(Lscala/runtime/RichDouble;::self()D;)());
   }
   
   public D; toDegrees() {
-    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::toDegrees(D;)D;)(this.(Lscala/runtime/RichDouble;)x);
+    return Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::toDegrees(D;)D;)(this.(Lscala/runtime/RichDouble;::self()D;)());
   }
   
   public Z; isInfinity() {
-    return Ljava/lang/Double;.(Ljava/lang/Double;::isInfinite(D;)Z;)(this.(Lscala/runtime/RichDouble;)x);
+    return Ljava/lang/Double;.(Ljava/lang/Double;::isInfinite(D;)Z;)(this.(Lscala/runtime/RichDouble;::self()D;)());
   }
   
   public Z; isPosInfinity() {
-    return (this.(Lscala/runtime/RichDouble;::isInfinity()Z;)() && (this.(Lscala/runtime/RichDouble;)x > 0.0D));
+    return (this.(Lscala/runtime/RichDouble;::isInfinity()Z;)() && (this.(Lscala/runtime/RichDouble;::self()D;)() > 0.0D));
   }
   
   public Z; isNegInfinity() {
-    return (this.(Lscala/runtime/RichDouble;::isInfinity()Z;)() && (this.(Lscala/runtime/RichDouble;)x < 0.0D));
+    return (this.(Lscala/runtime/RichDouble;::isInfinity()Z;)() && (this.(Lscala/runtime/RichDouble;::self()D;)() < 0.0D));
   }
   
-  public I; compare(Ljava/lang/Object; that) {
-    return this.(Lscala/runtime/RichDouble;::compare(D;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(that));
+  protected Lscala/math/Integral; integralNum() {
+    return this.(Lscala/runtime/RichDouble;::integralNum()Lscala/math/Numeric$DoubleAsIfIntegral$;)();
   }
   
-  public this(D; x) {
-    this.(Lscala/runtime/RichDouble;)x = x;
-    (Ljava/lang/Object;::super()V;)();
-    Lscala/Proxy$class;.(Lscala/Proxy$class;::$init$(Lscala/Proxy;)V;)(this);
-    Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$init$(Lscala/math/Ordered;)V;)(this);
+  public Ljava/lang/Object; self() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToDouble(D;)Ljava/lang/Double;)(this.(Lscala/runtime/RichDouble;::self()D;)());
+  }
+  
+  public this(D; self) {
+    this.(Lscala/runtime/RichDouble;)self$u0020 = self;
+    (Lscala/runtime/FractionalProxy;::super(Lscala/math/Fractional;)V;)(Lscala/math/Numeric$DoubleIsFractional$;.MODULE$);
+    this.(Lscala/runtime/RichDouble;)integralNum$u0020 = Lscala/math/Numeric$DoubleAsIfIntegral$;.MODULE$;
   }
 }

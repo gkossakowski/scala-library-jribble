@@ -1,4 +1,4 @@
-public final class Lscala/xml/dtd/ContentModel$ElemName$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+public final class Lscala/xml/dtd/ContentModel$ElemName$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/dtd/ContentModel$ElemName$; MODULE$ = new (Lscala/xml/dtd/ContentModel$ElemName$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/xml/dtd/ContentModel$ElemName$; extends Lscala/runtime
   }
   
   public Lscala/Option; unapply(Lscala/xml/dtd/ContentModel$ElemName; x$0) {
-    Lscala/Option; $46$;
+    Lscala/Option; $52$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $46$ = Lscala/None$;.MODULE$;
+        $52$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $46$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)()));
+        $52$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)()));
       }
-    return $46$;
+    return $52$;
   }
   
   public Lscala/xml/dtd/ContentModel$ElemName; apply(Ljava/lang/String; name) {
     return (new (Lscala/xml/dtd/ContentModel$ElemName;::this(Ljava/lang/String;)V;)(name));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/dtd/ContentModel$ElemName$;.MODULE$;
   }
   
   public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {

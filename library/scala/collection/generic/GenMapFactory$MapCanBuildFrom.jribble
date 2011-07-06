@@ -1,0 +1,32 @@
+public class Lscala/collection/generic/GenMapFactory$MapCanBuildFrom; extends Ljava/lang/Object; implements Lscala/collection/generic/CanBuildFrom;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/mutable/Builder; apply(Lscala/collection/GenMap; from) {
+    return this.(Lscala/collection/generic/GenMapFactory$MapCanBuildFrom;::scala$collection$generic$GenMapFactory$MapCanBuildFrom$$$outer()Lscala/collection/generic/GenMapFactory;)().(Lscala/collection/generic/GenMapFactory;::newBuilder()Lscala/collection/mutable/Builder;)();
+  }
+  
+  public Lscala/collection/mutable/Builder; apply() {
+    return this.(Lscala/collection/generic/GenMapFactory$MapCanBuildFrom;::scala$collection$generic$GenMapFactory$MapCanBuildFrom$$$outer()Lscala/collection/generic/GenMapFactory;)().(Lscala/collection/generic/GenMapFactory;::newBuilder()Lscala/collection/mutable/Builder;)();
+  }
+  
+  protected Lscala/collection/generic/GenMapFactory; $outer$u0020;
+  
+  public Lscala/collection/generic/GenMapFactory; scala$collection$generic$GenMapFactory$MapCanBuildFrom$$$outer() {
+    return this.(Lscala/collection/generic/GenMapFactory$MapCanBuildFrom;)$outer$u0020;
+  }
+  
+  public Lscala/collection/mutable/Builder; apply(Ljava/lang/Object; from) {
+    return this.(Lscala/collection/generic/GenMapFactory$MapCanBuildFrom;::apply(Lscala/collection/GenMap;)Lscala/collection/mutable/Builder;)(from.<cast>(Lscala/collection/GenMap;));
+  }
+  
+  public this(Lscala/collection/generic/GenMapFactory; $outer) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/generic/GenMapFactory$MapCanBuildFrom;)$outer$u0020 = $outer;
+      }
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

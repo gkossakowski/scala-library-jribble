@@ -1,18 +1,30 @@
 public abstract class Lscala/Proxy$class; {
   
   public static I; hashCode(Lscala/Proxy; $this) {
-    return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::hash(Ljava/lang/Object;)I;)($this.(Lscala/Proxy;::self()Ljava/lang/Object;)());
+    return $this.(Lscala/Proxy;::self()Ljava/lang/Object;)().(Ljava/lang/Object;::hashCode()I;)();
   }
   
   public static Z; equals(Lscala/Proxy; $this, Ljava/lang/Object; that) {
+    Ljava/lang/Object; temp1 = that;
     Z; $1$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(that, null))
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp1, null))
       {
         $1$ = false;
       }
     else
       {
-        $1$ = that.(Ljava/lang/Object;::equals(Ljava/lang/Object;)Z;)($this.(Lscala/Proxy;::self()Ljava/lang/Object;)());
+        Z; $2$;
+        if (temp1.<instanceof>(Lscala/Equals;))
+          {
+            Lscala/Equals; temp3 = temp1.<cast>(Lscala/Equals;);
+            Lscala/Equals; x = temp3;
+            $2$ = (x.(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)($this.(Lscala/Proxy;::self()Ljava/lang/Object;)()) && x.(Ljava/lang/Object;::equals(Ljava/lang/Object;)Z;)($this.(Lscala/Proxy;::self()Ljava/lang/Object;)()));
+          }
+        else
+          {
+            $2$ = temp1.(Ljava/lang/Object;::equals(Ljava/lang/Object;)Z;)($this.(Lscala/Proxy;::self()Ljava/lang/Object;)());
+          }
+        $1$ = $2$;
       }
     return $1$;
   }

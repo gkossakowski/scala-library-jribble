@@ -1,5 +1,9 @@
-public final class Lscala/math/Numeric$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/math/Numeric$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/math/Numeric$; MODULE$ = new (Lscala/math/Numeric$;::this()V;)();
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/math/Numeric$;.MODULE$;
+  }
   
   public this() {
     (Ljava/lang/Object;::super()V;)();

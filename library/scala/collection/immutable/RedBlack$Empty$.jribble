@@ -1,4 +1,4 @@
-public final class Lscala/collection/immutable/RedBlack$Empty$; extends Lscala/collection/immutable/RedBlack$Tree; implements Lscala/ScalaObject;, Lscala/Product; {
+public final class Lscala/collection/immutable/RedBlack$Empty$; extends Lscala/collection/immutable/RedBlack$Tree; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   public Lscala/collection/Iterator; productIterator() {
     return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
@@ -48,7 +48,7 @@ public final class Lscala/collection/immutable/RedBlack$Empty$; extends Lscala/c
     return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(true), input));
   }
   
-  public Lscala/collection/immutable/RedBlack$Empty$; range(Lscala/Option; from, Lscala/Option; until) {
+  public Lscala/collection/immutable/RedBlack$Empty$; rng(Lscala/Option; from, Lscala/Option; until) {
     return this;
   }
   
@@ -64,6 +64,10 @@ public final class Lscala/collection/immutable/RedBlack$Empty$; extends Lscala/c
     return 0;
   }
   
+  public final I; hashCode() {
+    return 67081517;
+  }
+  
   public final Ljava/lang/String; toString() {
     return "Empty";
   }
@@ -77,16 +81,12 @@ public final class Lscala/collection/immutable/RedBlack$Empty$; extends Lscala/c
   }
   
   public Ljava/lang/Object; productElement(I; x$1) {
-    I; temp175 = x$1;
+    I; temp242 = x$1;
     throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {
     return x$1.<instanceof>(Lscala/collection/immutable/RedBlack$Empty$;);
-  }
-  
-  protected Ljava/lang/Object; readResolve() {
-    return this.(Lscala/collection/immutable/RedBlack$Empty$;::scala$collection$immutable$RedBlack$Empty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::Empty()Lscala/collection/immutable/RedBlack$Empty$;)();
   }
   
   public Lscala/collection/immutable/RedBlack; scala$collection$immutable$RedBlack$Empty$$$outer() {
@@ -101,8 +101,8 @@ public final class Lscala/collection/immutable/RedBlack$Empty$; extends Lscala/c
     this.(Lscala/collection/immutable/RedBlack$Empty$;::first()Lscala/runtime/Nothing$;)();
   }
   
-  public Lscala/collection/immutable/RedBlack$Tree; range(Lscala/Option; from, Lscala/Option; until) {
-    return this.(Lscala/collection/immutable/RedBlack$Empty$;::range(Lscala/Option;Lscala/Option;)Lscala/collection/immutable/RedBlack$Empty$;)(from, until);
+  public Lscala/collection/immutable/RedBlack$Tree; rng(Lscala/Option; from, Lscala/Option; until) {
+    return this.(Lscala/collection/immutable/RedBlack$Empty$;::rng(Lscala/Option;Lscala/Option;)Lscala/collection/immutable/RedBlack$Empty$;)(from, until);
   }
   
   public this(Lscala/collection/immutable/RedBlack; $outer) {

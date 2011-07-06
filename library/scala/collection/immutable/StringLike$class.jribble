@@ -12,9 +12,24 @@ public abstract class Lscala/collection/immutable/StringLike$class; {
     return $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)();
   }
   
+  public static Ljava/lang/Object; slice(Lscala/collection/immutable/StringLike; $this, I; from, I; until) {
+    I; start = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(from).(Lscala/runtime/RichInt;::max(I;)I;)(0);
+    I; end = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(until).(Lscala/runtime/RichInt;::min(I;)I;)($this.(Lscala/collection/immutable/StringLike;::length()I;)());
+    Ljava/lang/Object; $1$;
+    if ((start >= end))
+      {
+        $1$ = $this.(Lscala/collection/immutable/StringLike;::newBuilder()Lscala/collection/mutable/Builder;)().(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+      }
+    else
+      {
+        $1$ = $this.(Lscala/collection/immutable/StringLike;::newBuilder()Lscala/collection/mutable/Builder;)().(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)(start, end))).<cast>(Lscala/collection/mutable/Builder;).(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+      }
+    return $1$;
+  }
+  
   public static Ljava/lang/String; $times(Lscala/collection/immutable/StringLike; $this, I; n) {
     Lscala/collection/mutable/StringBuilder; buf$1 = (new (Lscala/collection/mutable/StringBuilder;::this()V;)());
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(n).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/StringLike$$anonfun$$times$1;::this(Lscala/collection/immutable/StringLike;Lscala/collection/mutable/StringBuilder;)V;)($this, buf$1)));
+    Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(n).(Lscala/collection/immutable/Range;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/StringLike$$anonfun$$times$1;::this(Lscala/collection/immutable/StringLike;Lscala/collection/mutable/StringBuilder;)V;)($this, buf$1)));
     return buf$1.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)();
   }
   
@@ -28,36 +43,36 @@ public abstract class Lscala/collection/immutable/StringLike$class; {
   
   public static Ljava/lang/String; stripLineEnd(Lscala/collection/immutable/StringLike; $this) {
     I; len = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::length()I;)();
-    Ljava/lang/String; $1$;
+    Ljava/lang/String; $2$;
     if ((len == 0))
       {
-        $1$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)();
+        $2$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)();
       }
     else
       {
         C; last = $this.(Lscala/collection/immutable/StringLike;::apply(I;)C;)((len - 1));
-        Ljava/lang/String; $2$;
+        Ljava/lang/String; $3$;
         if (Lscala/collection/immutable/StringLike$class;.(Lscala/collection/immutable/StringLike$class;::scala$collection$immutable$StringLike$$isLineBreak(Lscala/collection/immutable/StringLike;C;)Z;)($this, last))
           {
-            I; $4$ = 0;
-            I; $3$;
+            I; $5$ = 0;
+            I; $4$;
             if ((((last == Lscala/collection/immutable/StringLike$;.MODULE$.(Lscala/collection/immutable/StringLike$;::scala$collection$immutable$StringLike$$LF()C;)()) && (len >= 2)) && ($this.(Lscala/collection/immutable/StringLike;::apply(I;)C;)((len - 2)) == Lscala/collection/immutable/StringLike$;.MODULE$.(Lscala/collection/immutable/StringLike$;::scala$collection$immutable$StringLike$$CR()C;)())))
               {
-                $3$ = (len - 2);
+                $4$ = (len - 2);
               }
             else
               {
-                $3$ = (len - 1);
+                $4$ = (len - 1);
               }
-            $2$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)($4$, $3$);
+            $3$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)($5$, $4$);
           }
         else
           {
-            $2$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)();
+            $3$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)();
           }
-        $1$ = $2$;
+        $2$ = $3$;
       }
-    return $1$;
+    return $2$;
   }
   
   public static Lscala/collection/Iterator; linesWithSeparators(Lscala/collection/immutable/StringLike; $this) {
@@ -73,53 +88,59 @@ public abstract class Lscala/collection/immutable/StringLike$class; {
   }
   
   public static Ljava/lang/String; capitalize(Lscala/collection/immutable/StringLike; $this) {
-    Ljava/lang/String; $5$;
+    Ljava/lang/String; $6$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)(), null))
       {
-        $5$ = null;
+        $6$ = null;
       }
     else
       {
-        Ljava/lang/String; $6$;
+        Ljava/lang/String; $7$;
         if (($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::length()I;)() == 0))
           {
-            $6$ = "";
+            $7$ = "";
           }
         else
           {
             C;[ chars = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::toCharArray()C;[)();
-            chars[0] = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::charWrapper(C;)Lscala/runtime/RichChar;)(chars[0]).(Lscala/runtime/RichChar;::toUpper()C;)();
-            $6$ = (new (Ljava/lang/String;::this(C;[)V;)(chars));
+            chars[0] = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::charWrapper(C;)Lscala/runtime/RichChar;)(chars[0]).(Lscala/runtime/RichChar;::toUpper()C;)();
+            $7$ = (new (Ljava/lang/String;::this(C;[)V;)(chars));
           }
-        $5$ = $6$;
+        $6$ = $7$;
       }
-    return $5$;
+    return $6$;
   }
   
   public static Ljava/lang/String; stripPrefix(Lscala/collection/immutable/StringLike; $this, Ljava/lang/String; prefix) {
-    Ljava/lang/String; $7$;
+    Ljava/lang/String; $8$;
     if ($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::startsWith(Ljava/lang/String;)Z;)(prefix))
       {
-        $7$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::substring(I;)Ljava/lang/String;)(prefix.(Ljava/lang/String;::length()I;)());
-      }
-    else
-      {
-        $7$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)();
-      }
-    return $7$;
-  }
-  
-  public static Ljava/lang/String; stripSuffix(Lscala/collection/immutable/StringLike; $this, Ljava/lang/String; suffix) {
-    Ljava/lang/String; $8$;
-    if ($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::endsWith(Ljava/lang/String;)Z;)(suffix))
-      {
-        $8$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)(0, ($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::length()I;)() - suffix.(Ljava/lang/String;::length()I;)()));
+        $8$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::substring(I;)Ljava/lang/String;)(prefix.(Ljava/lang/String;::length()I;)());
       }
     else
       {
         $8$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)();
       }
     return $8$;
+  }
+  
+  public static Ljava/lang/String; stripSuffix(Lscala/collection/immutable/StringLike; $this, Ljava/lang/String; suffix) {
+    Ljava/lang/String; $9$;
+    if ($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::endsWith(Ljava/lang/String;)Z;)(suffix))
+      {
+        $9$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)(0, ($this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::length()I;)() - suffix.(Ljava/lang/String;::length()I;)()));
+      }
+    else
+      {
+        $9$ = $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)();
+      }
+    return $9$;
+  }
+  
+  public static Ljava/lang/String; replaceAllLiterally(Lscala/collection/immutable/StringLike; $this, Ljava/lang/String; literal, Ljava/lang/String; replacement) {
+    Ljava/lang/String; arg1 = Ljava/util/regex/Pattern;.(Ljava/util/regex/Pattern;::quote(Ljava/lang/String;)Ljava/lang/String;)(literal);
+    Ljava/lang/String; arg2 = Ljava/util/regex/Matcher;.(Ljava/util/regex/Matcher;::quoteReplacement(Ljava/lang/String;)Ljava/lang/String;)(replacement);
+    return $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)(arg1, arg2);
   }
   
   public static Ljava/lang/String; stripMargin(Lscala/collection/immutable/StringLike; $this, C; marginChar$1) {
@@ -178,49 +199,53 @@ public abstract class Lscala/collection/immutable/StringLike$class; {
   }
   
   private static Z; parseBoolean(Lscala/collection/immutable/StringLike; $this, Ljava/lang/String; s) {
-    Z; $9$;
+    Z; $10$;
     if ((s != null))
       {
         Ljava/lang/String; temp1 = s.(Ljava/lang/String;::toLowerCase()Ljava/lang/String;)();
-        Z; $10$;
+        Z; $11$;
         if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp1, "true"))
           {
-            $10$ = true;
+            $11$ = true;
           }
         else
           {
-            Z; $11$;
+            Z; $12$;
             if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp1, "false"))
               {
-                $11$ = false;
+                $12$ = false;
               }
             else
               {
                 throw (new (Ljava/lang/NumberFormatException;::this(Ljava/lang/String;)V;)((("For input string: \"" + s) + "\"")));
               }
-            $10$ = $11$;
+            $11$ = $12$;
           }
-        $9$ = $10$;
+        $10$ = $11$;
       }
     else
       {
         throw (new (Ljava/lang/NumberFormatException;::this(Ljava/lang/String;)V;)("For input string: \"null\""));
       }
-    return $9$;
+    return $10$;
+  }
+  
+  public static Ljava/lang/Object; toArray(Lscala/collection/immutable/StringLike; $this, Lscala/reflect/ClassManifest; evidence$1) {
+    return $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::toCharArray()C;[)();
   }
   
   public static final Ljava/lang/Object; scala$collection$immutable$StringLike$$unwrapArg(Lscala/collection/immutable/StringLike; $this, Ljava/lang/Object; arg) {
     Ljava/lang/Object; temp4 = arg;
-    Ljava/lang/Object; $12$;
+    Ljava/lang/Object; $13$;
     if (temp4.<instanceof>(Lscala/math/ScalaNumber;))
       {
-        $12$ = temp4.<cast>(Lscala/math/ScalaNumber;).(Lscala/math/ScalaNumber;::underlying()Ljava/lang/Object;)();
+        $13$ = temp4.<cast>(Lscala/math/ScalaNumber;).(Lscala/math/ScalaNumber;::underlying()Ljava/lang/Object;)();
       }
     else
       {
-        $12$ = temp4;
+        $13$ = temp4;
       }
-    return $12$;
+    return $13$;
   }
   
   public static Ljava/lang/String; format(Lscala/collection/immutable/StringLike; $this, Lscala/collection/Seq; args) {

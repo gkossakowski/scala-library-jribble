@@ -1,4 +1,4 @@
-public class Lscala/xml/dtd/IntDef; extends Lscala/xml/dtd/EntityDef; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/dtd/IntDef; extends Lscala/xml/dtd/EntityDef; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public final static Lscala/Function1; andThen(Lscala/Function1; x_0) { return Lscala/xml/dtd/IntDef$;.MODULE$.(Lscala/runtime/AbstractFunction1;::andThen(Lscala/Function1;)Lscala/Function1;)(x_0); }
   public final static Lscala/Function1; compose(Lscala/Function1; x_0) { return Lscala/xml/dtd/IntDef$;.MODULE$.(Lscala/runtime/AbstractFunction1;::compose(Lscala/Function1;)Lscala/Function1;)(x_0); }
   
@@ -9,10 +9,6 @@ public class Lscala/xml/dtd/IntDef; extends Lscala/xml/dtd/EntityDef; implements
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/dtd/IntDef;::value()Ljava/lang/String;)();
   }
   
   private Ljava/lang/String; value$u0020;
@@ -66,6 +62,10 @@ public class Lscala/xml/dtd/IntDef; extends Lscala/xml/dtd/EntityDef; implements
     return (new (Lscala/xml/dtd/IntDef;::this(Ljava/lang/String;)V;)(value));
   }
   
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/dtd/IntDef;::value()Ljava/lang/String;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -76,28 +76,34 @@ public class Lscala/xml/dtd/IntDef; extends Lscala/xml/dtd/EntityDef; implements
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp38 = x$1;
-    Z; $29$;
+    Z; $59$;
     if (temp38.<instanceof>(Lscala/xml/dtd/IntDef;))
       {
         Lscala/xml/dtd/IntDef; temp39 = temp38.<cast>(Lscala/xml/dtd/IntDef;);
         Ljava/lang/String; temp40 = temp39.(Lscala/xml/dtd/IntDef;::value()Ljava/lang/String;)();
         Ljava/lang/String; value$1 = temp40;
-        Z; $30$;
+        Z; $60$;
         if (this.(Lscala/xml/dtd/IntDef;::gd8$1(Ljava/lang/String;)Z;)(value$1))
           {
-            $30$ = x$1.<cast>(Lscala/xml/dtd/IntDef;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/String; $61$;
+            Z; $62$;
+            body$percent015: while(true) {
+              $62$ = x$1.<cast>(Lscala/xml/dtd/IntDef;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $60$ = $62$;
           }
         else
           {
-            $30$ = false;
+            $60$ = false;
           }
-        $29$ = $30$;
+        $59$ = $60$;
       }
     else
       {
-        $29$ = false;
+        $59$ = false;
       }
-    return ((this == x$1) || $29$);
+    return ((this == x$1) || $59$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -110,16 +116,16 @@ public class Lscala/xml/dtd/IntDef; extends Lscala/xml/dtd/EntityDef; implements
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp41 = x$1;
-    Ljava/lang/Object; $31$;
+    Ljava/lang/Object; $63$;
     if ((temp41 == 0))
       {
-        $31$ = this.(Lscala/xml/dtd/IntDef;::value()Ljava/lang/String;)();
+        $63$ = this.(Lscala/xml/dtd/IntDef;::value()Ljava/lang/String;)();
       }
     else
       {
         throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
       }
-    return $31$;
+    return $63$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

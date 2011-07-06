@@ -12,12 +12,12 @@ public final class Lscala/util/control/Exception$Catch$$anon$2; extends Ljava/la
     return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::lift(Lscala/PartialFunction;)Lscala/Function1;)(this);
   }
   
-  public Ljava/lang/String; toString() {
-    return Lscala/Function1$class;.(Lscala/Function1$class;::toString(Lscala/Function1;)Ljava/lang/String;)(this);
-  }
-  
   public Lscala/Function1; compose(Lscala/Function1; g) {
     return Lscala/Function1$class;.(Lscala/Function1$class;::compose(Lscala/Function1;Lscala/Function1;)Lscala/Function1;)(this, g);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::toString(Lscala/Function1;)Ljava/lang/String;)(this);
   }
   
   public Z; isDefinedAt(Ljava/lang/Throwable; x) {
@@ -25,7 +25,7 @@ public final class Lscala/util/control/Exception$Catch$$anon$2; extends Ljava/la
   }
   
   public Ljava/lang/Object; apply(Ljava/lang/Throwable; x) {
-    return this.(Lscala/util/control/Exception$Catch$$anon$2;)f$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x);
+    return this.(Lscala/util/control/Exception$Catch$$anon$2;)f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x);
   }
   
   private Lscala/util/control/Exception$Catch; $outer$u0020;
@@ -42,9 +42,9 @@ public final class Lscala/util/control/Exception$Catch$$anon$2; extends Ljava/la
     return this.(Lscala/util/control/Exception$Catch$$anon$2;::isDefinedAt(Ljava/lang/Throwable;)Z;)(x.<cast>(Ljava/lang/Throwable;));
   }
   
-  private Lscala/Function1; f$1;
+  private Lscala/Function1; f$2;
   
-  public this(Lscala/util/control/Exception$Catch; $outer, Lscala/Function1; f$1) {
+  public this(Lscala/util/control/Exception$Catch; $outer, Lscala/Function1; f$2) {
     if (($outer == null))
       {
         throw (new (Ljava/lang/NullPointerException;::this()V;)());
@@ -53,7 +53,7 @@ public final class Lscala/util/control/Exception$Catch$$anon$2; extends Ljava/la
       {
         this.(Lscala/util/control/Exception$Catch$$anon$2;)$outer$u0020 = $outer;
       }
-    this.(Lscala/util/control/Exception$Catch$$anon$2;)f$1 = f$1;
+    this.(Lscala/util/control/Exception$Catch$$anon$2;)f$2 = f$2;
     (Ljava/lang/Object;::super()V;)();
     Lscala/Function1$class;.(Lscala/Function1$class;::$init$(Lscala/Function1;)V;)(this);
     Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::$init$(Lscala/PartialFunction;)V;)(this);

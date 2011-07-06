@@ -1,5 +1,7 @@
 public final class Lscala/collection/immutable/NumericRange$$anon$1; extends Lscala/collection/immutable/NumericRange; {
   
+  private I; bitmap$priv$0 = 0;
+  
   public Lscala/collection/immutable/NumericRange; copy(Ljava/lang/Object; start, Ljava/lang/Object; end, Ljava/lang/Object; step) {
     Lscala/collection/immutable/NumericRange; $15$;
     if (this.(Lscala/collection/immutable/NumericRange;::isInclusive()Z;)())
@@ -16,12 +18,12 @@ public final class Lscala/collection/immutable/NumericRange$$anon$1; extends Lsc
   private Lscala/collection/immutable/NumericRange; underlyingRange$u0020;
   
   private Lscala/collection/immutable/NumericRange; underlyingRange() {
-    if (((this.(Lscala/collection/immutable/NumericRange;)bitmap$0 & 4) == 0))
+    if (((this.(Lscala/collection/immutable/NumericRange$$anon$1;)bitmap$priv$0 & 1) == 0))
       {
-        if (((this.(Lscala/collection/immutable/NumericRange;)bitmap$0 & 4) == 0))
+        if (((this.(Lscala/collection/immutable/NumericRange$$anon$1;)bitmap$priv$0 & 1) == 0))
           {
             this.(Lscala/collection/immutable/NumericRange$$anon$1;)underlyingRange$u0020 = this.(Lscala/collection/immutable/NumericRange$$anon$1;)self$1;
-            this.(Lscala/collection/immutable/NumericRange;)bitmap$0 = (this.(Lscala/collection/immutable/NumericRange;)bitmap$0 | 4);
+            this.(Lscala/collection/immutable/NumericRange$$anon$1;)bitmap$priv$0 = (this.(Lscala/collection/immutable/NumericRange$$anon$1;)bitmap$priv$0 | 1);
           }
         this.(Lscala/collection/immutable/NumericRange$$anon$1;)self$1 = null;
       }

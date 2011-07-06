@@ -1,4 +1,4 @@
-public final class Lscala/xml/dtd/EMPTY$; extends Lscala/xml/dtd/ContentModel; implements Lscala/ScalaObject;, Lscala/Product; {
+public final class Lscala/xml/dtd/EMPTY$; extends Lscala/xml/dtd/ContentModel; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public static Lscala/xml/dtd/EMPTY$; MODULE$ = new (Lscala/xml/dtd/EMPTY$;::this()V;)();
   
   public Lscala/collection/Iterator; productIterator() {
@@ -11,6 +11,10 @@ public final class Lscala/xml/dtd/EMPTY$; extends Lscala/xml/dtd/ContentModel; i
   
   public Lscala/collection/mutable/StringBuilder; buildString(Lscala/collection/mutable/StringBuilder; sb) {
     return sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("EMPTY");
+  }
+  
+  public final I; hashCode() {
+    return 66096429;
   }
   
   public Ljava/lang/String; productPrefix() {

@@ -1,30 +1,30 @@
-public final class Lscala/collection/TraversableLike$$anonfun$partition$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/TraversableLike$$anonfun$partition$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final Lscala/collection/mutable/Builder; apply(Ljava/lang/Object; x) {
-    Lscala/collection/mutable/Builder; $8$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/collection/TraversableLike$$anonfun$partition$1;)p$8.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x)))
+    Lscala/collection/mutable/Builder; $11$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/collection/TraversableLike$$anonfun$partition$1;)p$4.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x)))
       {
-        $8$ = this.(Lscala/collection/TraversableLike$$anonfun$partition$1;)l$1;
+        $11$ = this.(Lscala/collection/TraversableLike$$anonfun$partition$1;)l$1;
       }
     else
       {
-        $8$ = this.(Lscala/collection/TraversableLike$$anonfun$partition$1;)r$1;
+        $11$ = this.(Lscala/collection/TraversableLike$$anonfun$partition$1;)r$1;
       }
-    return $8$.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
+    return $11$.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
     return this.(Lscala/collection/TraversableLike$$anonfun$partition$1;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(v1);
   }
   
-  private Lscala/Function1; p$8;
+  private Lscala/Function1; p$4;
   
   private Lscala/collection/mutable/Builder; l$1;
   
   private Lscala/collection/mutable/Builder; r$1;
   
-  public this(Lscala/collection/TraversableLike; $outer, Lscala/Function1; p$8, Lscala/collection/mutable/Builder; l$1, Lscala/collection/mutable/Builder; r$1) {
-    this.(Lscala/collection/TraversableLike$$anonfun$partition$1;)p$8 = p$8;
+  public this(Lscala/collection/TraversableLike; $outer, Lscala/Function1; p$4, Lscala/collection/mutable/Builder; l$1, Lscala/collection/mutable/Builder; r$1) {
+    this.(Lscala/collection/TraversableLike$$anonfun$partition$1;)p$4 = p$4;
     this.(Lscala/collection/TraversableLike$$anonfun$partition$1;)l$1 = l$1;
     this.(Lscala/collection/TraversableLike$$anonfun$partition$1;)r$1 = r$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();

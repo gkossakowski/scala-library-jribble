@@ -1,17 +1,17 @@
-public final class Lscala/xml/Utility$$anonfun$collectNamespaces$2; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/xml/Utility$$anonfun$collectNamespaces$2; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final Ljava/lang/Object; apply(Lscala/xml/MetaData; a) {
     Lscala/xml/MetaData; temp36 = a;
-    Ljava/lang/Object; $35$;
+    Ljava/lang/Object; $34$;
     if (temp36.<instanceof>(Lscala/xml/PrefixedAttribute;))
       {
-        $35$ = this.(Lscala/xml/Utility$$anonfun$collectNamespaces$2;)set$1.(Lscala/collection/mutable/SetLike;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SetLike;)(a.(Lscala/xml/MetaData;::getNamespace(Lscala/xml/Node;)Ljava/lang/String;)(this.(Lscala/xml/Utility$$anonfun$collectNamespaces$2;)n$1));
+        $34$ = this.(Lscala/xml/Utility$$anonfun$collectNamespaces$2;)set$1.(Lscala/collection/mutable/SetLike;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SetLike;)(a.(Lscala/xml/MetaData;::getNamespace(Lscala/xml/Node;)Ljava/lang/String;)(this.(Lscala/xml/Utility$$anonfun$collectNamespaces$2;)n$1));
       }
     else
       {
-        $35$ = Lscala/runtime/BoxedUnit;.UNIT;
+        $34$ = Lscala/runtime/BoxedUnit;.UNIT;
       }
-    return $35$;
+    return $34$;
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {

@@ -25,8 +25,8 @@ public abstract class Lscala/collection/mutable/BufferProxy$class; {
     return $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::readOnly()Lscala/collection/Seq;)();
   }
   
-  public static Lscala/collection/mutable/Buffer; $plus$plus(Lscala/collection/mutable/BufferProxy; $this, Lscala/collection/TraversableOnce; xs) {
-    return $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Buffer;)(xs);
+  public static Lscala/collection/mutable/Buffer; $plus$plus(Lscala/collection/mutable/BufferProxy; $this, Lscala/collection/GenTraversableOnce; xs) {
+    return $this.(Lscala/collection/mutable/BufferProxy;::self()Lscala/collection/mutable/Buffer;)().(Lscala/collection/mutable/BufferLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/mutable/Buffer;)(xs);
   }
   
   public static Lscala/collection/mutable/BufferProxy; $plus$plus$eq(Lscala/collection/mutable/BufferProxy; $this, Lscala/collection/TraversableOnce; xs) {

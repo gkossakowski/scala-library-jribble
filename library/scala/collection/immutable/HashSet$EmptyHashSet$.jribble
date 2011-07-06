@@ -1,6 +1,10 @@
 public final class Lscala/collection/immutable/HashSet$EmptyHashSet$; extends Lscala/collection/immutable/HashSet; implements Lscala/ScalaObject; {
   public static Lscala/collection/immutable/HashSet$EmptyHashSet$; MODULE$ = new (Lscala/collection/immutable/HashSet$EmptyHashSet$;::this()V;)();
   
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/immutable/HashSet$EmptyHashSet$;.MODULE$;
+  }
+  
   public this() {
     (Lscala/collection/immutable/HashSet;::super()V;)();
   }

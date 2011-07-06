@@ -1,4 +1,4 @@
-public class Lscala/xml/dtd/AttrDecl; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/dtd/AttrDecl; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public final static Lscala/Function1; tupled() { return Lscala/xml/dtd/AttrDecl$;.MODULE$.(Lscala/runtime/AbstractFunction3;::tupled()Lscala/Function1;)(); }
   public final static Lscala/Function1; curry() { return Lscala/xml/dtd/AttrDecl$;.MODULE$.(Lscala/runtime/AbstractFunction3;::curry()Lscala/Function1;)(); }
   public final static Lscala/Function1; curried() { return Lscala/xml/dtd/AttrDecl$;.MODULE$.(Lscala/runtime/AbstractFunction3;::curried()Lscala/Function1;)(); }
@@ -10,18 +10,6 @@ public class Lscala/xml/dtd/AttrDecl; extends Ljava/lang/Object; implements Lsca
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Lscala/xml/dtd/DefaultDecl; copy$default$3() {
-    return this.(Lscala/xml/dtd/AttrDecl;::`default`()Lscala/xml/dtd/DefaultDecl;)();
-  }
-  
-  public Ljava/lang/String; copy$default$2() {
-    return this.(Lscala/xml/dtd/AttrDecl;::tpe()Ljava/lang/String;)();
-  }
-  
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/dtd/AttrDecl;::name()Ljava/lang/String;)();
   }
   
   private Ljava/lang/String; name$u0020;
@@ -55,38 +43,58 @@ public class Lscala/xml/dtd/AttrDecl; extends Ljava/lang/Object; implements Lsca
     return (new (Lscala/xml/dtd/AttrDecl;::this(Ljava/lang/String;Ljava/lang/String;Lscala/xml/dtd/DefaultDecl;)V;)(name, tpe, `default`));
   }
   
+  public Lscala/xml/dtd/DefaultDecl; copy$default$3() {
+    return this.(Lscala/xml/dtd/AttrDecl;::`default`()Lscala/xml/dtd/DefaultDecl;)();
+  }
+  
+  public Ljava/lang/String; copy$default$2() {
+    return this.(Lscala/xml/dtd/AttrDecl;::tpe()Ljava/lang/String;)();
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/dtd/AttrDecl;::name()Ljava/lang/String;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp11 = x$1;
-    Z; $9$;
+    Z; $17$;
     if (temp11.<instanceof>(Lscala/xml/dtd/AttrDecl;))
       {
         Lscala/xml/dtd/AttrDecl; temp12 = temp11.<cast>(Lscala/xml/dtd/AttrDecl;);
         Ljava/lang/String; temp13 = temp12.(Lscala/xml/dtd/AttrDecl;::name()Ljava/lang/String;)();
         Ljava/lang/String; temp14 = temp12.(Lscala/xml/dtd/AttrDecl;::tpe()Ljava/lang/String;)();
         Lscala/xml/dtd/DefaultDecl; temp15 = temp12.(Lscala/xml/dtd/AttrDecl;::`default`()Lscala/xml/dtd/DefaultDecl;)();
-        Lscala/xml/dtd/DefaultDecl; default$1 = temp15;
-        Ljava/lang/String; tpe$1 = temp14;
         Ljava/lang/String; name$3 = temp13;
-        Z; $10$;
+        Ljava/lang/String; tpe$1 = temp14;
+        Lscala/xml/dtd/DefaultDecl; default$1 = temp15;
+        Z; $18$;
         if (this.(Lscala/xml/dtd/AttrDecl;::gd3$1(Ljava/lang/String;Ljava/lang/String;Lscala/xml/dtd/DefaultDecl;)Z;)(name$3, tpe$1, default$1))
           {
-            $10$ = x$1.<cast>(Lscala/xml/dtd/AttrDecl;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/String; $19$;
+            Ljava/lang/String; $20$;
+            Lscala/xml/dtd/DefaultDecl; $21$;
+            Z; $22$;
+            body$percent05: while(true) {
+              $22$ = x$1.<cast>(Lscala/xml/dtd/AttrDecl;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $18$ = $22$;
           }
         else
           {
-            $10$ = false;
+            $18$ = false;
           }
-        $9$ = $10$;
+        $17$ = $18$;
       }
     else
       {
-        $9$ = false;
+        $17$ = false;
       }
-    return ((this == x$1) || $9$);
+    return ((this == x$1) || $17$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -99,21 +107,21 @@ public class Lscala/xml/dtd/AttrDecl; extends Ljava/lang/Object; implements Lsca
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp16 = x$1;
-    I; $11$ = temp16;
-    Ljava/lang/Object; $12$;
-    switch ($11$) {
-      0: {
-        $12$ = this.(Lscala/xml/dtd/AttrDecl;::name()Ljava/lang/String;)();
-        break;
-      }
-      
+    I; $23$ = temp16;
+    Ljava/lang/Object; $24$;
+    switch ($23$) {
       1: {
-        $12$ = this.(Lscala/xml/dtd/AttrDecl;::tpe()Ljava/lang/String;)();
+        $24$ = this.(Lscala/xml/dtd/AttrDecl;::tpe()Ljava/lang/String;)();
         break;
       }
       
       2: {
-        $12$ = this.(Lscala/xml/dtd/AttrDecl;::`default`()Lscala/xml/dtd/DefaultDecl;)();
+        $24$ = this.(Lscala/xml/dtd/AttrDecl;::`default`()Lscala/xml/dtd/DefaultDecl;)();
+        break;
+      }
+      
+      0: {
+        $24$ = this.(Lscala/xml/dtd/AttrDecl;::name()Ljava/lang/String;)();
         break;
       }
       
@@ -123,7 +131,7 @@ public class Lscala/xml/dtd/AttrDecl; extends Ljava/lang/Object; implements Lsca
       }
       
     }
-    return $12$;
+    return $24$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

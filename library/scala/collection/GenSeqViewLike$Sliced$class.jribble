@@ -1,0 +1,31 @@
+public abstract class Lscala/collection/GenSeqViewLike$Sliced$class; {
+  
+  public static I; length(Lscala/collection/GenSeqViewLike$Sliced; $this) {
+    return $this.(Lscala/collection/GenSeqViewLike$Sliced;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/TraversableOnce;::size()I;)();
+  }
+  
+  public static Ljava/lang/Object; apply(Lscala/collection/GenSeqViewLike$Sliced; $this, I; idx) {
+    Ljava/lang/Object; $1$;
+    if (((idx + $this.(Lscala/collection/GenTraversableViewLike$Sliced;::from()I;)()) < $this.(Lscala/collection/GenTraversableViewLike$Sliced;::until()I;)()))
+      {
+        $1$ = $this.(Lscala/collection/GenSeqViewLike$Sliced;::scala$collection$GenSeqViewLike$Sliced$$$outer()Lscala/collection/GenSeqViewLike;)().(Lscala/collection/GenSeqLike;::apply(I;)Ljava/lang/Object;)((idx + $this.(Lscala/collection/GenTraversableViewLike$Sliced;::from()I;)()));
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(idx).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $1$;
+  }
+  
+  public static V; foreach(Lscala/collection/GenSeqViewLike$Sliced; $this, Lscala/Function1; f) {
+    $this.(Lscala/collection/GenSeqViewLike$Sliced;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)(f);
+  }
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/GenSeqViewLike$Sliced; $this) {
+    return $this.(Lscala/collection/GenSeqViewLike$Sliced;::scala$collection$GenSeqViewLike$Sliced$$$outer()Lscala/collection/GenSeqViewLike;)().(Lscala/collection/GenIterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::drop(I;)Lscala/collection/Iterator;)($this.(Lscala/collection/GenTraversableViewLike$Sliced;::from()I;)()).(Lscala/collection/Iterator;::take(I;)Lscala/collection/Iterator;)($this.(Lscala/collection/GenTraversableViewLike$Sliced;::endpoints()Lscala/collection/generic/SliceInterval;)().(Lscala/collection/generic/SliceInterval;::width()I;)());
+  }
+  
+  public static V; $init$(Lscala/collection/GenSeqViewLike$Sliced; $this) {
+    
+  }
+}

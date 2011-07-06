@@ -1,4 +1,4 @@
-public final class Lscala/xml/dtd/UnparsedEntityDecl$; extends Lscala/runtime/AbstractFunction3; implements Lscala/ScalaObject; {
+public final class Lscala/xml/dtd/UnparsedEntityDecl$; extends Lscala/runtime/AbstractFunction3; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/dtd/UnparsedEntityDecl$; MODULE$ = new (Lscala/xml/dtd/UnparsedEntityDecl$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/xml/dtd/UnparsedEntityDecl$; extends Lscala/runtime/Ab
   }
   
   public Lscala/Option; unapply(Lscala/xml/dtd/UnparsedEntityDecl; x$0) {
-    Lscala/Option; $42$;
+    Lscala/Option; $50$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $42$ = Lscala/None$;.MODULE$;
+        $50$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $42$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/UnparsedEntityDecl;::name()Ljava/lang/String;)(), x$0.(Lscala/xml/dtd/UnparsedEntityDecl;::extID()Lscala/xml/dtd/ExternalID;)(), x$0.(Lscala/xml/dtd/UnparsedEntityDecl;::notation()Ljava/lang/String;)()))));
+        $50$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/UnparsedEntityDecl;::name()Ljava/lang/String;)(), x$0.(Lscala/xml/dtd/UnparsedEntityDecl;::extID()Lscala/xml/dtd/ExternalID;)(), x$0.(Lscala/xml/dtd/UnparsedEntityDecl;::notation()Ljava/lang/String;)()))));
       }
-    return $42$;
+    return $50$;
   }
   
   public Lscala/xml/dtd/UnparsedEntityDecl; apply(Ljava/lang/String; name, Lscala/xml/dtd/ExternalID; extID, Ljava/lang/String; notation) {
     return (new (Lscala/xml/dtd/UnparsedEntityDecl;::this(Ljava/lang/String;Lscala/xml/dtd/ExternalID;Ljava/lang/String;)V;)(name, extID, notation));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/dtd/UnparsedEntityDecl$;.MODULE$;
   }
   
   public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2, Ljava/lang/Object; v3) {

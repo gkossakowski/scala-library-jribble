@@ -1,4 +1,4 @@
-public class Lscala/util/regexp/WordExp$Letter; extends Lscala/util/regexp/Base$RegExp; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/util/regexp/WordExp$Letter; extends Lscala/util/regexp/Base$RegExp; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   protected I; bitmap$0 = 0;
   
@@ -8,10 +8,6 @@ public class Lscala/util/regexp/WordExp$Letter; extends Lscala/util/regexp/Base$
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Lscala/util/regexp/WordExp$Label; copy$default$1() {
-    return this.(Lscala/util/regexp/WordExp$Letter;::a()Lscala/util/regexp/WordExp$Label;)();
   }
   
   private Lscala/util/regexp/WordExp$Label; a$u0020;
@@ -48,6 +44,10 @@ public class Lscala/util/regexp/WordExp$Letter; extends Lscala/util/regexp/Base$
     return (new (Lscala/util/regexp/WordExp$Letter;::this(Lscala/util/regexp/WordExp;Lscala/util/regexp/WordExp$Label;)V;)(this.(Lscala/util/regexp/WordExp$Letter;::scala$util$regexp$WordExp$Letter$$$outer()Lscala/util/regexp/WordExp;)(), a));
   }
   
+  public Lscala/util/regexp/WordExp$Label; copy$default$1() {
+    return this.(Lscala/util/regexp/WordExp$Letter;::a()Lscala/util/regexp/WordExp$Label;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -67,7 +67,13 @@ public class Lscala/util/regexp/WordExp$Letter; extends Lscala/util/regexp/Base$
         Z; $2$;
         if (this.(Lscala/util/regexp/WordExp$Letter;::gd1$1(Lscala/util/regexp/WordExp$Label;)Z;)(a$1))
           {
-            $2$ = x$1.<cast>(Lscala/util/regexp/WordExp$Letter;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Lscala/util/regexp/WordExp$Label; $3$;
+            Z; $4$;
+            body$percent01: while(true) {
+              $4$ = x$1.<cast>(Lscala/util/regexp/WordExp$Letter;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $2$ = $4$;
           }
         else
           {
@@ -92,16 +98,16 @@ public class Lscala/util/regexp/WordExp$Letter; extends Lscala/util/regexp/Base$
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp4 = x$1;
-    Ljava/lang/Object; $3$;
+    Ljava/lang/Object; $5$;
     if ((temp4 == 0))
       {
-        $3$ = this.(Lscala/util/regexp/WordExp$Letter;::a()Lscala/util/regexp/WordExp$Label;)();
+        $5$ = this.(Lscala/util/regexp/WordExp$Letter;::a()Lscala/util/regexp/WordExp$Label;)();
       }
     else
       {
         throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
       }
-    return $3$;
+    return $5$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

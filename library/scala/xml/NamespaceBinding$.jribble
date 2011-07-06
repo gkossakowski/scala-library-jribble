@@ -1,4 +1,4 @@
-public final class Lscala/xml/NamespaceBinding$; extends Lscala/runtime/AbstractFunction3; implements Lscala/ScalaObject; {
+public final class Lscala/xml/NamespaceBinding$; extends Lscala/runtime/AbstractFunction3; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/NamespaceBinding$; MODULE$ = new (Lscala/xml/NamespaceBinding$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -20,6 +20,10 @@ public final class Lscala/xml/NamespaceBinding$; extends Lscala/runtime/Abstract
   
   public Lscala/xml/NamespaceBinding; apply(Ljava/lang/String; prefix, Ljava/lang/String; uri, Lscala/xml/NamespaceBinding; parent) {
     return (new (Lscala/xml/NamespaceBinding;::this(Ljava/lang/String;Ljava/lang/String;Lscala/xml/NamespaceBinding;)V;)(prefix, uri, parent));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/NamespaceBinding$;.MODULE$;
   }
   
   public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2, Ljava/lang/Object; v3) {

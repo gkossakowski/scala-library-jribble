@@ -2,58 +2,22 @@ public abstract class Lscala/math/PartiallyOrdered$class; {
   
   public static Z; $less(Lscala/math/PartiallyOrdered; $this, Ljava/lang/Object; that, Lscala/Function1; evidence$2) {
     Lscala/Option; temp1 = $this.(Lscala/math/PartiallyOrdered;::tryCompareTo(Ljava/lang/Object;Lscala/Function1;)Lscala/Option;)(that, evidence$2);
-    Z; $1$;
-    if (temp1.<instanceof>(Lscala/Some;))
-      {
-        $1$ = Lscala/math/PartiallyOrdered$class;.(Lscala/math/PartiallyOrdered$class;::gd1$1(Lscala/math/PartiallyOrdered;I;)Z;)($this, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp1.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)()));
-      }
-    else
-      {
-        $1$ = false;
-      }
-    return $1$;
+    return (temp1.<instanceof>(Lscala/Some;) && Lscala/math/PartiallyOrdered$class;.(Lscala/math/PartiallyOrdered$class;::gd1$1(Lscala/math/PartiallyOrdered;I;)Z;)($this, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp1.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)())));
   }
   
   public static Z; $greater(Lscala/math/PartiallyOrdered; $this, Ljava/lang/Object; that, Lscala/Function1; evidence$3) {
     Lscala/Option; temp4 = $this.(Lscala/math/PartiallyOrdered;::tryCompareTo(Ljava/lang/Object;Lscala/Function1;)Lscala/Option;)(that, evidence$3);
-    Z; $2$;
-    if (temp4.<instanceof>(Lscala/Some;))
-      {
-        $2$ = Lscala/math/PartiallyOrdered$class;.(Lscala/math/PartiallyOrdered$class;::gd2$1(Lscala/math/PartiallyOrdered;I;)Z;)($this, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp4.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)()));
-      }
-    else
-      {
-        $2$ = false;
-      }
-    return $2$;
+    return (temp4.<instanceof>(Lscala/Some;) && Lscala/math/PartiallyOrdered$class;.(Lscala/math/PartiallyOrdered$class;::gd2$1(Lscala/math/PartiallyOrdered;I;)Z;)($this, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp4.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)())));
   }
   
   public static Z; $less$eq(Lscala/math/PartiallyOrdered; $this, Ljava/lang/Object; that, Lscala/Function1; evidence$4) {
     Lscala/Option; temp7 = $this.(Lscala/math/PartiallyOrdered;::tryCompareTo(Ljava/lang/Object;Lscala/Function1;)Lscala/Option;)(that, evidence$4);
-    Z; $3$;
-    if (temp7.<instanceof>(Lscala/Some;))
-      {
-        $3$ = Lscala/math/PartiallyOrdered$class;.(Lscala/math/PartiallyOrdered$class;::gd3$1(Lscala/math/PartiallyOrdered;I;)Z;)($this, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp7.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)()));
-      }
-    else
-      {
-        $3$ = false;
-      }
-    return $3$;
+    return (temp7.<instanceof>(Lscala/Some;) && Lscala/math/PartiallyOrdered$class;.(Lscala/math/PartiallyOrdered$class;::gd3$1(Lscala/math/PartiallyOrdered;I;)Z;)($this, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp7.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)())));
   }
   
   public static Z; $greater$eq(Lscala/math/PartiallyOrdered; $this, Ljava/lang/Object; that, Lscala/Function1; evidence$5) {
     Lscala/Option; temp10 = $this.(Lscala/math/PartiallyOrdered;::tryCompareTo(Ljava/lang/Object;Lscala/Function1;)Lscala/Option;)(that, evidence$5);
-    Z; $4$;
-    if (temp10.<instanceof>(Lscala/Some;))
-      {
-        $4$ = Lscala/math/PartiallyOrdered$class;.(Lscala/math/PartiallyOrdered$class;::gd4$1(Lscala/math/PartiallyOrdered;I;)Z;)($this, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp10.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)()));
-      }
-    else
-      {
-        $4$ = false;
-      }
-    return $4$;
+    return (temp10.<instanceof>(Lscala/Some;) && Lscala/math/PartiallyOrdered$class;.(Lscala/math/PartiallyOrdered$class;::gd4$1(Lscala/math/PartiallyOrdered;I;)Z;)($this, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp10.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)())));
   }
   
   private static final Z; gd1$1(Lscala/math/PartiallyOrdered; $this, I; x$1) {

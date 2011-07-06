@@ -44,35 +44,32 @@ public final class Lscala/math/Ordering$$anon$8; extends Ljava/lang/Object; impl
     return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::mkOrderingOps(Lscala/math/Ordering;Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this, lhs);
   }
   
-  public I; compare(Lscala/Tuple3; x, Lscala/Tuple3; y) {
-    I; compare1 = this.(Lscala/math/Ordering$$anon$8;)ord1$7.(Lscala/math/Ordering;::compare(Ljava/lang/Object;Ljava/lang/Object;)I;)(x.(Lscala/Tuple3;::_1()Ljava/lang/Object;)(), y.(Lscala/Tuple3;::_1()Ljava/lang/Object;)());
-    if ((compare1 != 0))
-      {
-        return compare1;
-      }
-    else
-      {
-        
-      }
-    I; compare2 = this.(Lscala/math/Ordering$$anon$8;)ord2$7.(Lscala/math/Ordering;::compare(Ljava/lang/Object;Ljava/lang/Object;)I;)(x.(Lscala/Tuple3;::_2()Ljava/lang/Object;)(), y.(Lscala/Tuple3;::_2()Ljava/lang/Object;)());
-    if ((compare2 != 0))
-      {
-        return compare2;
-      }
-    else
-      {
-        
-      }
-    I; compare3 = this.(Lscala/math/Ordering$$anon$8;)ord3$7.(Lscala/math/Ordering;::compare(Ljava/lang/Object;Ljava/lang/Object;)I;)(x.(Lscala/Tuple3;::_3()Ljava/lang/Object;)(), y.(Lscala/Tuple3;::_3()Ljava/lang/Object;)());
-    if ((compare3 != 0))
-      {
-        return compare3;
-      }
-    else
-      {
-        
-      }
-    return 0;
+  public I; compare(Lscala/collection/Iterable; x, Lscala/collection/Iterable; y) {
+    Lscala/collection/Iterator; xe = x.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    Lscala/collection/Iterator; ye = y.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    while$2: while(true) {
+      if ((xe.(Lscala/collection/Iterator;::hasNext()Z;)() && ye.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        {
+          {
+            I; res = this.(Lscala/math/Ordering$$anon$8;)ord$1.(Lscala/math/Ordering;::compare(Ljava/lang/Object;Ljava/lang/Object;)I;)(xe.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), ye.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
+            if ((res != 0))
+              {
+                return res;
+              }
+            else
+              {
+                
+              }
+          }
+          continue while$2;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return Lscala/math/Ordering$Boolean$;.MODULE$.(Lscala/math/Ordering$BooleanOrdering;::compare(Z;Z;)I;)(xe.(Lscala/collection/Iterator;::hasNext()Z;)(), ye.(Lscala/collection/Iterator;::hasNext()Z;)());
   }
   
   public Lscala/math/PartialOrdering; reverse() {
@@ -84,19 +81,13 @@ public final class Lscala/math/Ordering$$anon$8; extends Ljava/lang/Object; impl
   }
   
   public I; compare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
-    return this.(Lscala/math/Ordering$$anon$8;::compare(Lscala/Tuple3;Lscala/Tuple3;)I;)(x.<cast>(Lscala/Tuple3;), y.<cast>(Lscala/Tuple3;));
+    return this.(Lscala/math/Ordering$$anon$8;::compare(Lscala/collection/Iterable;Lscala/collection/Iterable;)I;)(x.<cast>(Lscala/collection/Iterable;), y.<cast>(Lscala/collection/Iterable;));
   }
   
-  private Lscala/math/Ordering; ord1$7;
+  private Lscala/math/Ordering; ord$1;
   
-  private Lscala/math/Ordering; ord2$7;
-  
-  private Lscala/math/Ordering; ord3$7;
-  
-  public this(Lscala/math/Ordering; ord1$7, Lscala/math/Ordering; ord2$7, Lscala/math/Ordering; ord3$7) {
-    this.(Lscala/math/Ordering$$anon$8;)ord1$7 = ord1$7;
-    this.(Lscala/math/Ordering$$anon$8;)ord2$7 = ord2$7;
-    this.(Lscala/math/Ordering$$anon$8;)ord3$7 = ord3$7;
+  public this(Lscala/math/Ordering; ord$1) {
+    this.(Lscala/math/Ordering$$anon$8;)ord$1 = ord$1;
     (Ljava/lang/Object;::super()V;)();
     Lscala/math/PartialOrdering$class;.(Lscala/math/PartialOrdering$class;::$init$(Lscala/math/PartialOrdering;)V;)(this);
     Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::$init$(Lscala/math/Ordering;)V;)(this);

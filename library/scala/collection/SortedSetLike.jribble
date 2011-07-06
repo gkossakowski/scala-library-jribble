@@ -1,6 +1,6 @@
 public interface Lscala/collection/SortedSetLike; extends Lscala/collection/generic/Sorted;, Lscala/collection/SetLike;, Lscala/ScalaObject; {
   
-  public Z; scala$collection$SortedSetLike$$super$subsetOf(Lscala/collection/Set; that);
+  public Z; scala$collection$SortedSetLike$$super$subsetOf(Lscala/collection/GenSet; that);
   
   public Lscala/math/Ordering; ordering();
   
@@ -18,5 +18,5 @@ public interface Lscala/collection/SortedSetLike; extends Lscala/collection/gene
   
   public Lscala/collection/SortedSet; range(Ljava/lang/Object; from, Ljava/lang/Object; until);
   
-  public Z; subsetOf(Lscala/collection/Set; that);
+  public Z; subsetOf(Lscala/collection/GenSet; that);
 }

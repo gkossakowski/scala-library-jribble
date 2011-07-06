@@ -1,0 +1,25 @@
+public final class Lscala/Predef$$anon$9; extends Ljava/lang/Object; implements Ljava/lang/CharSequence; {
+  
+  public I; length() {
+    return this.(Lscala/Predef$$anon$9;)xs$1.<length>;
+  }
+  
+  public C; charAt(I; index) {
+    return this.(Lscala/Predef$$anon$9;)xs$1[index];
+  }
+  
+  public Ljava/lang/CharSequence; subSequence(I; start, I; end) {
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::arrayToCharSequence(C;[)Ljava/lang/CharSequence;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::charArrayOps(C;[)Lscala/collection/mutable/ArrayOps;)(this.(Lscala/Predef$$anon$9;)xs$1).(Lscala/collection/IndexedSeqOptimized;::slice(I;I;)Ljava/lang/Object;)(start, end).<cast>(C;[));
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::charArrayOps(C;[)Lscala/collection/mutable/ArrayOps;)(this.(Lscala/Predef$$anon$9;)xs$1).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;)Ljava/lang/String;)("");
+  }
+  
+  private C;[ xs$1;
+  
+  public this(C;[ xs$1) {
+    this.(Lscala/Predef$$anon$9;)xs$1 = xs$1;
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

@@ -8,6 +8,8 @@ public interface Lscala/collection/immutable/StringLike; extends Lscala/collecti
   
   public Ljava/lang/String; mkString();
   
+  public Ljava/lang/Object; slice(I; from, I; until);
+  
   public Ljava/lang/String; $times(I; n);
   
   public I; compare(Ljava/lang/String; other);
@@ -25,6 +27,8 @@ public interface Lscala/collection/immutable/StringLike; extends Lscala/collecti
   public Ljava/lang/String; stripPrefix(Ljava/lang/String; prefix);
   
   public Ljava/lang/String; stripSuffix(Ljava/lang/String; suffix);
+  
+  public Ljava/lang/String; replaceAllLiterally(Ljava/lang/String; literal, Ljava/lang/String; replacement);
   
   public Ljava/lang/String; stripMargin(C; marginChar);
   
@@ -49,6 +53,8 @@ public interface Lscala/collection/immutable/StringLike; extends Lscala/collecti
   public F; toFloat();
   
   public D; toDouble();
+  
+  public Ljava/lang/Object; toArray(Lscala/reflect/ClassManifest; evidence$1);
   
   public Ljava/lang/String; format(Lscala/collection/Seq; args);
   

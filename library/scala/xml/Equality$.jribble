@@ -38,7 +38,13 @@ public final class Lscala/xml/Equality$; extends Ljava/lang/Object; implements L
         Z; $4$;
         if (this.(Lscala/xml/Equality$;::gd1$1(Lscala/xml/NodeSeq;)Z;)(x))
           {
-            $4$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x2, temp5.(Lscala/xml/NodeSeq;::apply(I;)Lscala/xml/Node;)(0));
+            Lscala/xml/NodeSeq; $5$;
+            Z; $6$;
+            body$percent02: while(true) {
+              $6$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x2, x.(Lscala/xml/NodeSeq;::apply(I;)Lscala/xml/Node;)(0));
+              break;
+            }
+            $4$ = $6$;
           }
         else
           {
@@ -63,25 +69,25 @@ public final class Lscala/xml/Equality$; extends Ljava/lang/Object; implements L
         
       }
     Ljava/lang/Object; temp6 = x2;
-    Z; $5$;
+    Z; $7$;
     if (temp6.<instanceof>(Ljava/lang/String;))
       {
-        $5$ = this.(Lscala/xml/Equality$;::compareBlithely(Ljava/lang/Object;Ljava/lang/String;)Z;)(x1, temp6.<cast>(Ljava/lang/String;));
+        $7$ = this.(Lscala/xml/Equality$;::compareBlithely(Ljava/lang/Object;Ljava/lang/String;)Z;)(x1, temp6.<cast>(Ljava/lang/String;));
       }
     else
       {
-        Z; $6$;
+        Z; $8$;
         if (temp6.<instanceof>(Lscala/xml/Node;))
           {
-            $6$ = this.(Lscala/xml/Equality$;::compareBlithely(Ljava/lang/Object;Lscala/xml/Node;)Z;)(x1, temp6.<cast>(Lscala/xml/Node;));
+            $8$ = this.(Lscala/xml/Equality$;::compareBlithely(Ljava/lang/Object;Lscala/xml/Node;)Z;)(x1, temp6.<cast>(Lscala/xml/Node;));
           }
         else
           {
-            $6$ = false;
+            $8$ = false;
           }
-        $5$ = $6$;
+        $7$ = $8$;
       }
-    return $5$;
+    return $7$;
   }
   
   private final Z; gd1$1(Lscala/xml/NodeSeq; x$1) {

@@ -1,4 +1,4 @@
-public class Lscala/xml/Atom; extends Lscala/xml/SpecialNode; implements Lscala/ScalaObject; {
+public class Lscala/xml/Atom; extends Lscala/xml/SpecialNode; implements Lscala/Serializable;, Lscala/ScalaObject; {
   
   private Ljava/lang/Object; data$u0020;
   
@@ -7,7 +7,7 @@ public class Lscala/xml/Atom; extends Lscala/xml/SpecialNode; implements Lscala/
   }
   
   public Lscala/collection/Seq; basisForHashCode() {
-    return Lscala/collection/Seq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{this.(Lscala/xml/Atom;::data()Ljava/lang/Object;)()})).<cast>(Lscala/collection/Seq;);
+    return Lscala/collection/Seq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{this.(Lscala/xml/Atom;::data()Ljava/lang/Object;)()})).<cast>(Lscala/collection/Seq;);
   }
   
   public Z; strict_$eq$eq(Lscala/xml/Equality; other) {

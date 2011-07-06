@@ -1,11 +1,26 @@
-public final class Lscala/collection/mutable/Stack$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/collection/mutable/Stack$; extends Lscala/collection/generic/SeqFactory; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/collection/mutable/Stack$; MODULE$ = new (Lscala/collection/mutable/Stack$;::this()V;)();
   
-  public Lscala/collection/mutable/Stack; apply(Lscala/collection/Seq; xs) {
-    return (new (Lscala/collection/mutable/Stack;::this()V;)()).(Lscala/collection/mutable/Stack;::pushAll(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Stack;)(xs);
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return this.(Lscala/collection/generic/GenTraversableFactory;::ReusableCBF()Lscala/collection/generic/GenTraversableFactory$ReusableCBF$;)();
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return (new (Lscala/collection/mutable/Stack$StackBuilder;::this()V;)());
+  }
+  
+  private Lscala/collection/mutable/Stack; empty$u0020;
+  
+  public Lscala/collection/mutable/Stack; empty() {
+    return this.(Lscala/collection/mutable/Stack$;)empty$u0020;
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/mutable/Stack$;.MODULE$;
   }
   
   public this() {
-    (Ljava/lang/Object;::super()V;)();
+    (Lscala/collection/generic/SeqFactory;::super()V;)();
+    this.(Lscala/collection/mutable/Stack$;)empty$u0020 = (new (Lscala/collection/mutable/Stack;::this(Lscala/collection/immutable/List;)V;)(Lscala/collection/immutable/Nil$;.MODULE$));
   }
 }

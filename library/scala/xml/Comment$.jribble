@@ -1,4 +1,4 @@
-public final class Lscala/xml/Comment$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+public final class Lscala/xml/Comment$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/Comment$; MODULE$ = new (Lscala/xml/Comment$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -20,6 +20,10 @@ public final class Lscala/xml/Comment$; extends Lscala/runtime/AbstractFunction1
   
   public Lscala/xml/Comment; apply(Ljava/lang/String; commentText) {
     return (new (Lscala/xml/Comment;::this(Ljava/lang/String;)V;)(commentText));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/Comment$;.MODULE$;
   }
   
   public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {

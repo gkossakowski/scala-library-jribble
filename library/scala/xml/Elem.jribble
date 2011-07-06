@@ -1,26 +1,6 @@
-public class Lscala/xml/Elem; extends Lscala/xml/Node; implements Lscala/ScalaObject; {
+public class Lscala/xml/Elem; extends Lscala/xml/Node; implements Lscala/Serializable;, Lscala/ScalaObject; {
   public final static Lscala/Option; unapplySeq(Lscala/xml/Node; x_0) { return Lscala/xml/Elem$;.MODULE$.(Lscala/xml/Elem$;::unapplySeq(Lscala/xml/Node;)Lscala/Option;)(x_0); }
   
-  
-  public Lscala/collection/Seq; copy$default$5() {
-    return this.(Lscala/xml/Elem;::child()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::toSeq()Lscala/collection/Seq;)();
-  }
-  
-  public Lscala/xml/NamespaceBinding; copy$default$4() {
-    return this.(Lscala/xml/Elem;::scope()Lscala/xml/NamespaceBinding;)();
-  }
-  
-  public Lscala/xml/MetaData; copy$default$3() {
-    return this.(Lscala/xml/Elem;::attributes()Lscala/xml/MetaData;)();
-  }
-  
-  public Ljava/lang/String; copy$default$2() {
-    return this.(Lscala/xml/Elem;::label()Ljava/lang/String;)();
-  }
-  
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/Elem;::prefix()Ljava/lang/String;)();
-  }
   
   private Ljava/lang/String; prefix$u0020;
   
@@ -78,6 +58,26 @@ public class Lscala/xml/Elem; extends Lscala/xml/Node; implements Lscala/ScalaOb
   
   public Lscala/xml/Elem; copy(Ljava/lang/String; prefix, Ljava/lang/String; label, Lscala/xml/MetaData; attributes, Lscala/xml/NamespaceBinding; scope, Lscala/collection/Seq; child) {
     return Lscala/xml/Elem$;.MODULE$.(Lscala/xml/Elem$;::apply(Ljava/lang/String;Ljava/lang/String;Lscala/xml/MetaData;Lscala/xml/NamespaceBinding;Lscala/collection/Seq;)Lscala/xml/Elem;)(prefix, label, attributes, scope, child);
+  }
+  
+  public Lscala/collection/Seq; copy$default$5() {
+    return this.(Lscala/xml/Elem;::child()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::toSeq()Lscala/collection/Seq;)();
+  }
+  
+  public Lscala/xml/NamespaceBinding; copy$default$4() {
+    return this.(Lscala/xml/Elem;::scope()Lscala/xml/NamespaceBinding;)();
+  }
+  
+  public Lscala/xml/MetaData; copy$default$3() {
+    return this.(Lscala/xml/Elem;::attributes()Lscala/xml/MetaData;)();
+  }
+  
+  public Ljava/lang/String; copy$default$2() {
+    return this.(Lscala/xml/Elem;::label()Ljava/lang/String;)();
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/Elem;::prefix()Ljava/lang/String;)();
   }
   
   public Ljava/lang/String; text() {

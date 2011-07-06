@@ -4,46 +4,118 @@ public class Lscala/Tuple2$Zipped; extends Ljava/lang/Object; implements Lscala/
   
   private Lscala/collection/IterableLike; coll2;
   
-  public Ljava/lang/Object; map(Lscala/Function2; f$1, Lscala/collection/generic/CanBuildFrom; cbf) {
-    Lscala/collection/mutable/Builder; b$1 = cbf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
-    b$1.(Lscala/collection/mutable/Builder;::sizeHint(Lscala/collection/TraversableLike;I;)V;)(this.(Lscala/Tuple2$Zipped;)coll1, b$1.(Lscala/collection/mutable/Builder;::sizeHint$default$2()I;)());
-    Lscala/collection/Iterator; elems2$2 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$map$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;)V;)(this, f$1, b$1, elems2$2)));
-    return b$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  public Ljava/lang/Object; map(Lscala/Function2; f$2, Lscala/collection/generic/CanBuildFrom; cbf) {
+    Ljava/lang/Object; nonLocalReturnKey1$1 = (new (Ljava/lang/Object;::this()V;)());
+    Ljava/lang/Object; exceptionResult1;
+    try {
+      Lscala/collection/mutable/Builder; b$1 = cbf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
+      b$1.(Lscala/collection/mutable/Builder;::sizeHint(Lscala/collection/TraversableLike;I;)V;)(this.(Lscala/Tuple2$Zipped;)coll1, b$1.(Lscala/collection/mutable/Builder;::sizeHint$default$2()I;)());
+      Lscala/collection/Iterator; elems2$1 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+      this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$map$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;Ljava/lang/Object;)V;)(this, f$2, b$1, elems2$1, nonLocalReturnKey1$1)));
+      exceptionResult1 = b$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+    } catch(Lscala/runtime/NonLocalReturnControl; ex) {
+      Ljava/lang/Object; $12$;
+      if ((ex.(Lscala/runtime/NonLocalReturnControl;::key()Ljava/lang/Object;)() == nonLocalReturnKey1$1))
+        {
+          $12$ = ex.(Lscala/runtime/NonLocalReturnControl;::value()Ljava/lang/Object;)();
+        }
+      else
+        {
+          throw ex;
+        }
+      exceptionResult1 = $12$;
+    }
+    return exceptionResult1;
   }
   
-  public Ljava/lang/Object; flatMap(Lscala/Function2; f$2, Lscala/collection/generic/CanBuildFrom; cbf) {
-    Lscala/collection/mutable/Builder; b$2 = cbf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
-    Lscala/collection/Iterator; elems2$3 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$flatMap$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;)V;)(this, f$2, b$2, elems2$3)));
-    return b$2.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  public Ljava/lang/Object; flatMap(Lscala/Function2; f$3, Lscala/collection/generic/CanBuildFrom; cbf) {
+    Ljava/lang/Object; nonLocalReturnKey2$1 = (new (Ljava/lang/Object;::this()V;)());
+    Ljava/lang/Object; exceptionResult2;
+    try {
+      Lscala/collection/mutable/Builder; b$2 = cbf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
+      Lscala/collection/Iterator; elems2$2 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+      this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$flatMap$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;Ljava/lang/Object;)V;)(this, f$3, b$2, elems2$2, nonLocalReturnKey2$1)));
+      exceptionResult2 = b$2.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+    } catch(Lscala/runtime/NonLocalReturnControl; ex) {
+      Ljava/lang/Object; $13$;
+      if ((ex.(Lscala/runtime/NonLocalReturnControl;::key()Ljava/lang/Object;)() == nonLocalReturnKey2$1))
+        {
+          $13$ = ex.(Lscala/runtime/NonLocalReturnControl;::value()Ljava/lang/Object;)();
+        }
+      else
+        {
+          throw ex;
+        }
+      exceptionResult2 = $13$;
+    }
+    return exceptionResult2;
   }
   
-  public Lscala/Tuple2; filter(Lscala/Function2; f$3, Lscala/collection/generic/CanBuildFrom; cbf1, Lscala/collection/generic/CanBuildFrom; cbf2) {
-    Lscala/collection/mutable/Builder; b1$2 = cbf1.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
-    Lscala/collection/mutable/Builder; b2$1 = cbf2.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
-    Lscala/collection/Iterator; elems2$4 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$filter$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/mutable/Builder;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;)V;)(this, f$3, b1$2, b2$1, elems2$4)));
-    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(b1$2.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)(), b2$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)()));
+  public Lscala/Tuple2; filter(Lscala/Function2; f$4, Lscala/collection/generic/CanBuildFrom; cbf1, Lscala/collection/generic/CanBuildFrom; cbf2) {
+    Ljava/lang/Object; nonLocalReturnKey3$1 = (new (Ljava/lang/Object;::this()V;)());
+    Lscala/Tuple2; exceptionResult3;
+    try {
+      Lscala/collection/mutable/Builder; b1$1 = cbf1.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
+      Lscala/collection/mutable/Builder; b2$1 = cbf2.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
+      Lscala/collection/Iterator; elems2$3 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+      this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$filter$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/mutable/Builder;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;Ljava/lang/Object;)V;)(this, f$4, b1$1, b2$1, elems2$3, nonLocalReturnKey3$1)));
+      exceptionResult3 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(b1$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)(), b2$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)()));
+    } catch(Lscala/runtime/NonLocalReturnControl; ex) {
+      Lscala/Tuple2; $14$;
+      if ((ex.(Lscala/runtime/NonLocalReturnControl;::key()Ljava/lang/Object;)() == nonLocalReturnKey3$1))
+        {
+          $14$ = ex.(Lscala/runtime/NonLocalReturnControl;::value()Ljava/lang/Object;)().<cast>(Lscala/Tuple2;);
+        }
+      else
+        {
+          throw ex;
+        }
+      exceptionResult3 = $14$;
+    }
+    return exceptionResult3;
   }
   
-  public Z; exists(Lscala/Function2; f$4) {
-    Lscala/runtime/BooleanRef; acc$1 = (new (Lscala/runtime/BooleanRef;::this(Z;)V;)(false));
-    Lscala/collection/Iterator; elems2$5 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$exists$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/runtime/BooleanRef;Lscala/collection/Iterator;)V;)(this, f$4, acc$1, elems2$5)));
-    return acc$1.(Lscala/runtime/BooleanRef;)elem;
+  public Z; exists(Lscala/Function2; f$5) {
+    Ljava/lang/Object; nonLocalReturnKey4$1 = (new (Ljava/lang/Object;::this()V;)());
+    Z; exceptionResult4;
+    try {
+      Lscala/collection/Iterator; elems2$4 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+      this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$exists$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/Iterator;Ljava/lang/Object;)V;)(this, f$5, elems2$4, nonLocalReturnKey4$1)));
+      exceptionResult4 = false;
+    } catch(Lscala/runtime/NonLocalReturnControl; ex) {
+      Z; $15$;
+      if ((ex.(Lscala/runtime/NonLocalReturnControl;::key()Ljava/lang/Object;)() == nonLocalReturnKey4$1))
+        {
+          $15$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(ex.(Lscala/runtime/NonLocalReturnControl;::value()Ljava/lang/Object;)());
+        }
+      else
+        {
+          throw ex;
+        }
+      exceptionResult4 = $15$;
+    }
+    return exceptionResult4;
   }
   
-  public Z; forall(Lscala/Function2; f$5) {
-    Lscala/runtime/BooleanRef; acc$2 = (new (Lscala/runtime/BooleanRef;::this(Z;)V;)(true));
-    Lscala/collection/Iterator; elems2$6 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$forall$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/runtime/BooleanRef;Lscala/collection/Iterator;)V;)(this, f$5, acc$2, elems2$6)));
-    return acc$2.(Lscala/runtime/BooleanRef;)elem;
+  public Z; forall(Lscala/Function2; f$6) {
+    return !(this.(Lscala/Tuple2$Zipped;::exists(Lscala/Function2;)Z;)((new (Lscala/Tuple2$Zipped$$anonfun$forall$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;)V;)(this, f$6))));
   }
   
-  public V; foreach(Lscala/Function2; f$6) {
-    Lscala/collection/Iterator; elems2$7 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$foreach$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/Iterator;)V;)(this, f$6, elems2$7)));
+  public V; foreach(Lscala/Function2; f$1) {
+    Ljava/lang/Object; nonLocalReturnKey5$1 = (new (Ljava/lang/Object;::this()V;)());
+    try {
+      Lscala/collection/Iterator; elems2$5 = this.(Lscala/Tuple2$Zipped;)coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+      this.(Lscala/Tuple2$Zipped;)coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple2$Zipped$$anonfun$foreach$1;::this(Lscala/Tuple2$Zipped;Lscala/Function2;Lscala/collection/Iterator;Ljava/lang/Object;)V;)(this, f$1, elems2$5, nonLocalReturnKey5$1)));
+    } catch(Lscala/runtime/NonLocalReturnControl; ex) {
+      if ((ex.(Lscala/runtime/NonLocalReturnControl;::key()Ljava/lang/Object;)() == nonLocalReturnKey5$1))
+        {
+          ex.(Lscala/runtime/NonLocalReturnControl;::value()Ljava/lang/Object;)().<cast>(Lscala/runtime/BoxedUnit;);
+        }
+      else
+        {
+          throw ex;
+        }
+    }
   }
   
   protected Lscala/Tuple2; $outer$u0020;

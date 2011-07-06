@@ -1,0 +1,94 @@
+public interface Lscala/collection/GenTraversableOnce; extends Lscala/ScalaObject; {
+  
+  public V; foreach(Lscala/Function1; f);
+  
+  public Z; hasDefiniteSize();
+  
+  public Lscala/collection/TraversableOnce; seq();
+  
+  public I; size();
+  
+  public Z; isEmpty();
+  
+  public Z; nonEmpty();
+  
+  public Z; isTraversableAgain();
+  
+  public Ljava/lang/Object; reduce(Lscala/Function2; op);
+  
+  public Lscala/Option; reduceOption(Lscala/Function2; op);
+  
+  public Ljava/lang/Object; fold(Ljava/lang/Object; z, Lscala/Function2; op);
+  
+  public Ljava/lang/Object; $div$colon$bslash(Ljava/lang/Object; z, Lscala/Function2; op);
+  
+  public Ljava/lang/Object; $div$colon(Ljava/lang/Object; z, Lscala/Function2; op);
+  
+  public Ljava/lang/Object; $colon$bslash(Ljava/lang/Object; z, Lscala/Function2; op);
+  
+  public Ljava/lang/Object; foldLeft(Ljava/lang/Object; z, Lscala/Function2; op);
+  
+  public Ljava/lang/Object; foldRight(Ljava/lang/Object; z, Lscala/Function2; op);
+  
+  public Ljava/lang/Object; aggregate(Ljava/lang/Object; z, Lscala/Function2; seqop, Lscala/Function2; combop);
+  
+  public Ljava/lang/Object; reduceRight(Lscala/Function2; op);
+  
+  public Lscala/Option; reduceLeftOption(Lscala/Function2; op);
+  
+  public Lscala/Option; reduceRightOption(Lscala/Function2; op);
+  
+  public I; count(Lscala/Function1; p);
+  
+  public Ljava/lang/Object; sum(Lscala/math/Numeric; num);
+  
+  public Ljava/lang/Object; product(Lscala/math/Numeric; num);
+  
+  public Ljava/lang/Object; min(Lscala/math/Ordering; ord);
+  
+  public Ljava/lang/Object; max(Lscala/math/Ordering; ord);
+  
+  public Ljava/lang/Object; maxBy(Lscala/Function1; f, Lscala/math/Ordering; cmp);
+  
+  public Ljava/lang/Object; minBy(Lscala/Function1; f, Lscala/math/Ordering; cmp);
+  
+  public Z; forall(Lscala/Function1; pred);
+  
+  public Z; exists(Lscala/Function1; pred);
+  
+  public Lscala/Option; find(Lscala/Function1; pred);
+  
+  public V; copyToArray(Ljava/lang/Object; xs);
+  
+  public V; copyToArray(Ljava/lang/Object; xs, I; start);
+  
+  public V; copyToArray(Ljava/lang/Object; xs, I; start, I; len);
+  
+  public Ljava/lang/String; mkString(Ljava/lang/String; start, Ljava/lang/String; sep, Ljava/lang/String; end);
+  
+  public Ljava/lang/String; mkString(Ljava/lang/String; sep);
+  
+  public Ljava/lang/String; mkString();
+  
+  public Ljava/lang/Object; toArray(Lscala/reflect/ClassManifest; evidence$1);
+  
+  public Lscala/collection/immutable/List; toList();
+  
+  public Lscala/collection/immutable/IndexedSeq; toIndexedSeq();
+  
+  public Lscala/collection/immutable/Stream; toStream();
+  
+  public Lscala/collection/Iterator; toIterator();
+  
+  public Lscala/collection/mutable/Buffer; toBuffer();
+  
+  public Lscala/collection/GenTraversable; toTraversable();
+  
+  public Lscala/collection/GenIterable; toIterable();
+  
+  public Lscala/collection/GenSeq; toSeq();
+  
+  public Lscala/collection/GenSet; toSet();
+  
+  public Lscala/collection/GenMap; toMap(Lscala/Predef$$less$colon$less; ev);
+}

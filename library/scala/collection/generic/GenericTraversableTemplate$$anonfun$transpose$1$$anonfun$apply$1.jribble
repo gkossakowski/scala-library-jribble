@@ -1,6 +1,14 @@
-public final class Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1$$anonfun$apply$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1$$anonfun$apply$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final V; apply(Ljava/lang/Object; x) {
+    if ((this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1$$anonfun$apply$1;)i$1.(Lscala/runtime/IntRef;)elem >= this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1$$anonfun$apply$1;)$outer$u0020.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1;)headSize$1))
+      {
+        Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::fail$1(Lscala/collection/generic/GenericTraversableTemplate;)Lscala/runtime/Nothing$;)(this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1$$anonfun$apply$1;)$outer$u0020.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1;::scala$collection$generic$GenericTraversableTemplate$$anonfun$$$outer()Lscala/collection/generic/GenericTraversableTemplate;)());
+      }
+    else
+      {
+        
+      }
     this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1$$anonfun$apply$1;)$outer$u0020.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1;)bs$1.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1$$anonfun$apply$1;)i$1.(Lscala/runtime/IntRef;)elem).<cast>(Lscala/collection/mutable/Builder;).(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
     this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1$$anonfun$apply$1;)i$1.(Lscala/runtime/IntRef;)elem = (this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1$$anonfun$apply$1;)i$1.(Lscala/runtime/IntRef;)elem + 1);
   }

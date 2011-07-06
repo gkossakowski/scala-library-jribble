@@ -1,30 +1,30 @@
-public final class Lscala/collection/immutable/List$$anonfun$lefts$1; extends Lscala/runtime/AbstractFunction2; {
+public final class Lscala/collection/immutable/List$$anonfun$lefts$1; extends Lscala/runtime/AbstractFunction2; implements Lscala/Serializable; {
   
   public final Lscala/collection/immutable/List; apply(Lscala/Either; e, Lscala/collection/immutable/List; as) {
-    Lscala/Either; temp31 = e;
-    Lscala/collection/immutable/List; $29$;
-    if (temp31.<instanceof>(Lscala/Left;))
+    Lscala/Either; temp34 = e;
+    Lscala/collection/immutable/List; $33$;
+    if (temp34.<instanceof>(Lscala/Left;))
       {
-        Lscala/Left; temp32 = temp31.<cast>(Lscala/Left;);
-        Ljava/lang/Object; temp33 = temp32.(Lscala/Left;::a()Ljava/lang/Object;)();
-        Ljava/lang/Object; a = temp33;
-        Ljava/lang/Object; x$11 = a;
-        $29$ = as.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$11);
+        Lscala/Left; temp35 = temp34.<cast>(Lscala/Left;);
+        Ljava/lang/Object; temp36 = temp35.(Lscala/Left;::a()Ljava/lang/Object;)();
+        Ljava/lang/Object; a = temp36;
+        Ljava/lang/Object; x$10 = a;
+        $33$ = as.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$10);
       }
     else
       {
-        Lscala/collection/immutable/List; $30$;
-        if (temp31.<instanceof>(Lscala/Right;))
+        Lscala/collection/immutable/List; $34$;
+        if (temp34.<instanceof>(Lscala/Right;))
           {
-            $30$ = as;
+            $34$ = as;
           }
         else
           {
-            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp31));
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp34));
           }
-        $29$ = $30$;
+        $33$ = $34$;
       }
-    return $29$;
+    return $33$;
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {

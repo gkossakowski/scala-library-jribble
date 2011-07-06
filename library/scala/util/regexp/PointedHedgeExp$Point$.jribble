@@ -1,4 +1,4 @@
-public final class Lscala/util/regexp/PointedHedgeExp$Point$; extends Lscala/util/regexp/Base$RegExp; implements Lscala/ScalaObject;, Lscala/Product; {
+public final class Lscala/util/regexp/PointedHedgeExp$Point$; extends Lscala/util/regexp/Base$RegExp; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   public Lscala/collection/Iterator; productIterator() {
     return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
@@ -10,6 +10,10 @@ public final class Lscala/util/regexp/PointedHedgeExp$Point$; extends Lscala/uti
   
   public final Z; isNullable() {
     return false;
+  }
+  
+  public final I; hashCode() {
+    return 77292912;
   }
   
   public final Ljava/lang/String; toString() {
@@ -33,21 +37,7 @@ public final class Lscala/util/regexp/PointedHedgeExp$Point$; extends Lscala/uti
     return x$1.<instanceof>(Lscala/util/regexp/PointedHedgeExp$Point$;);
   }
   
-  protected Ljava/lang/Object; readResolve() {
-    return this.(Lscala/util/regexp/PointedHedgeExp$Point$;)$outer$u0020.(Lscala/util/regexp/PointedHedgeExp;::Point()Lscala/util/regexp/PointedHedgeExp$Point$;)();
-  }
-  
-  private Lscala/util/regexp/PointedHedgeExp; $outer$u0020;
-  
   public this(Lscala/util/regexp/PointedHedgeExp; $outer) {
-    if (($outer == null))
-      {
-        throw (new (Ljava/lang/NullPointerException;::this()V;)());
-      }
-    else
-      {
-        this.(Lscala/util/regexp/PointedHedgeExp$Point$;)$outer$u0020 = $outer;
-      }
     (Lscala/util/regexp/Base$RegExp;::super(Lscala/util/regexp/Base;)V;)($outer);
     Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
   }

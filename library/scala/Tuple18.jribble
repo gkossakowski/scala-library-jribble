@@ -1,4 +1,4 @@
-public class Lscala/Tuple18; extends Ljava/lang/Object; implements Lscala/Product18;, Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/Tuple18; extends Ljava/lang/Object; implements Lscala/Product18;, Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   
   public I; productArity() {
@@ -15,78 +15,6 @@ public class Lscala/Tuple18; extends Ljava/lang/Object; implements Lscala/Produc
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/Object; copy$default$18() {
-    return this.(Lscala/Tuple18;::_18()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$17() {
-    return this.(Lscala/Tuple18;::_17()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$16() {
-    return this.(Lscala/Tuple18;::_16()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$15() {
-    return this.(Lscala/Tuple18;::_15()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$14() {
-    return this.(Lscala/Tuple18;::_14()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$13() {
-    return this.(Lscala/Tuple18;::_13()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$12() {
-    return this.(Lscala/Tuple18;::_12()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$11() {
-    return this.(Lscala/Tuple18;::_11()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$10() {
-    return this.(Lscala/Tuple18;::_10()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$9() {
-    return this.(Lscala/Tuple18;::_9()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$8() {
-    return this.(Lscala/Tuple18;::_8()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$7() {
-    return this.(Lscala/Tuple18;::_7()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$6() {
-    return this.(Lscala/Tuple18;::_6()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$5() {
-    return this.(Lscala/Tuple18;::_5()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$4() {
-    return this.(Lscala/Tuple18;::_4()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$3() {
-    return this.(Lscala/Tuple18;::_3()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$2() {
-    return this.(Lscala/Tuple18;::_2()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$1() {
-    return this.(Lscala/Tuple18;::_1()Ljava/lang/Object;)();
   }
   
   private Ljava/lang/Object; _1$u0020;
@@ -205,6 +133,78 @@ public class Lscala/Tuple18; extends Ljava/lang/Object; implements Lscala/Produc
     return (new (Lscala/Tuple18;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18));
   }
   
+  public Ljava/lang/Object; copy$default$18() {
+    return this.(Lscala/Tuple18;::_18()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$17() {
+    return this.(Lscala/Tuple18;::_17()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$16() {
+    return this.(Lscala/Tuple18;::_16()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$15() {
+    return this.(Lscala/Tuple18;::_15()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$14() {
+    return this.(Lscala/Tuple18;::_14()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$13() {
+    return this.(Lscala/Tuple18;::_13()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$12() {
+    return this.(Lscala/Tuple18;::_12()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$11() {
+    return this.(Lscala/Tuple18;::_11()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$10() {
+    return this.(Lscala/Tuple18;::_10()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$9() {
+    return this.(Lscala/Tuple18;::_9()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$8() {
+    return this.(Lscala/Tuple18;::_8()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$7() {
+    return this.(Lscala/Tuple18;::_7()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$6() {
+    return this.(Lscala/Tuple18;::_6()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$5() {
+    return this.(Lscala/Tuple18;::_5()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$4() {
+    return this.(Lscala/Tuple18;::_4()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$3() {
+    return this.(Lscala/Tuple18;::_3()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$2() {
+    return this.(Lscala/Tuple18;::_2()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$1() {
+    return this.(Lscala/Tuple18;::_1()Ljava/lang/Object;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -233,28 +233,51 @@ public class Lscala/Tuple18; extends Ljava/lang/Object; implements Lscala/Produc
         Ljava/lang/Object; temp18 = temp2.(Lscala/Tuple18;::_16()Ljava/lang/Object;)();
         Ljava/lang/Object; temp19 = temp2.(Lscala/Tuple18;::_17()Ljava/lang/Object;)();
         Ljava/lang/Object; temp20 = temp2.(Lscala/Tuple18;::_18()Ljava/lang/Object;)();
-        Ljava/lang/Object; _18$1 = temp20;
-        Ljava/lang/Object; _17$1 = temp19;
-        Ljava/lang/Object; _16$1 = temp18;
-        Ljava/lang/Object; _15$1 = temp17;
-        Ljava/lang/Object; _14$1 = temp16;
-        Ljava/lang/Object; _13$1 = temp15;
-        Ljava/lang/Object; _12$1 = temp14;
-        Ljava/lang/Object; _11$1 = temp13;
-        Ljava/lang/Object; _10$1 = temp12;
-        Ljava/lang/Object; _9$1 = temp11;
-        Ljava/lang/Object; _8$1 = temp10;
-        Ljava/lang/Object; _7$1 = temp9;
-        Ljava/lang/Object; _6$1 = temp8;
-        Ljava/lang/Object; _5$1 = temp7;
-        Ljava/lang/Object; _4$1 = temp6;
-        Ljava/lang/Object; _3$1 = temp5;
-        Ljava/lang/Object; _2$1 = temp4;
         Ljava/lang/Object; _1$1 = temp3;
+        Ljava/lang/Object; _2$1 = temp4;
+        Ljava/lang/Object; _3$1 = temp5;
+        Ljava/lang/Object; _4$1 = temp6;
+        Ljava/lang/Object; _5$1 = temp7;
+        Ljava/lang/Object; _6$1 = temp8;
+        Ljava/lang/Object; _7$1 = temp9;
+        Ljava/lang/Object; _8$1 = temp10;
+        Ljava/lang/Object; _9$1 = temp11;
+        Ljava/lang/Object; _10$1 = temp12;
+        Ljava/lang/Object; _11$1 = temp13;
+        Ljava/lang/Object; _12$1 = temp14;
+        Ljava/lang/Object; _13$1 = temp15;
+        Ljava/lang/Object; _14$1 = temp16;
+        Ljava/lang/Object; _15$1 = temp17;
+        Ljava/lang/Object; _16$1 = temp18;
+        Ljava/lang/Object; _17$1 = temp19;
+        Ljava/lang/Object; _18$1 = temp20;
         Z; $2$;
         if (this.(Lscala/Tuple18;::gd1$1(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z;)(_1$1, _2$1, _3$1, _4$1, _5$1, _6$1, _7$1, _8$1, _9$1, _10$1, _11$1, _12$1, _13$1, _14$1, _15$1, _16$1, _17$1, _18$1))
           {
-            $2$ = x$1.<cast>(Lscala/Tuple18;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/Object; $3$;
+            Ljava/lang/Object; $4$;
+            Ljava/lang/Object; $5$;
+            Ljava/lang/Object; $6$;
+            Ljava/lang/Object; $7$;
+            Ljava/lang/Object; $8$;
+            Ljava/lang/Object; $9$;
+            Ljava/lang/Object; $10$;
+            Ljava/lang/Object; $11$;
+            Ljava/lang/Object; $12$;
+            Ljava/lang/Object; $13$;
+            Ljava/lang/Object; $14$;
+            Ljava/lang/Object; $15$;
+            Ljava/lang/Object; $16$;
+            Ljava/lang/Object; $17$;
+            Ljava/lang/Object; $18$;
+            Ljava/lang/Object; $19$;
+            Ljava/lang/Object; $20$;
+            Z; $21$;
+            body$percent01: while(true) {
+              $21$ = x$1.<cast>(Lscala/Tuple18;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $2$ = $21$;
           }
         else
           {

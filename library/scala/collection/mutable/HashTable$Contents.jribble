@@ -1,0 +1,45 @@
+public class Lscala/collection/mutable/HashTable$Contents; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  private I; loadFactor$u0020;
+  
+  public I; loadFactor() {
+    return this.(Lscala/collection/mutable/HashTable$Contents;)loadFactor$u0020;
+  }
+  
+  private Lscala/collection/mutable/HashEntry;[ table$u0020;
+  
+  public Lscala/collection/mutable/HashEntry;[ table() {
+    return this.(Lscala/collection/mutable/HashTable$Contents;)table$u0020;
+  }
+  
+  private I; tableSize$u0020;
+  
+  public I; tableSize() {
+    return this.(Lscala/collection/mutable/HashTable$Contents;)tableSize$u0020;
+  }
+  
+  private I; threshold$u0020;
+  
+  public I; threshold() {
+    return this.(Lscala/collection/mutable/HashTable$Contents;)threshold$u0020;
+  }
+  
+  private I;[ sizemap$u0020;
+  
+  public I;[ sizemap() {
+    return this.(Lscala/collection/mutable/HashTable$Contents;)sizemap$u0020;
+  }
+  
+  public Ljava/lang/String; debugInformation() {
+    return Lscala/collection/DebugUtils$;.MODULE$.(Lscala/collection/DebugUtils$;::buildString(Lscala/Function1;)Ljava/lang/String;)((new (Lscala/collection/mutable/HashTable$Contents$$anonfun$debugInformation$1;::this(Lscala/collection/mutable/HashTable$Contents;)V;)(this)));
+  }
+  
+  public this(I; loadFactor, Lscala/collection/mutable/HashEntry;[ table, I; tableSize, I; threshold, I;[ sizemap) {
+    this.(Lscala/collection/mutable/HashTable$Contents;)loadFactor$u0020 = loadFactor;
+    this.(Lscala/collection/mutable/HashTable$Contents;)table$u0020 = table;
+    this.(Lscala/collection/mutable/HashTable$Contents;)tableSize$u0020 = tableSize;
+    this.(Lscala/collection/mutable/HashTable$Contents;)threshold$u0020 = threshold;
+    this.(Lscala/collection/mutable/HashTable$Contents;)sizemap$u0020 = sizemap;
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

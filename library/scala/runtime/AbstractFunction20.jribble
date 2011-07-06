@@ -1,9 +1,5 @@
 public abstract class Lscala/runtime/AbstractFunction20; extends Ljava/lang/Object; implements Lscala/Function20;, Lscala/ScalaObject; {
   
-  public Ljava/lang/String; toString() {
-    return Lscala/Function20$class;.(Lscala/Function20$class;::toString(Lscala/Function20;)Ljava/lang/String;)(this);
-  }
-  
   public Lscala/Function1; curried() {
     return Lscala/Function20$class;.(Lscala/Function20$class;::curried(Lscala/Function20;)Lscala/Function1;)(this);
   }
@@ -14,6 +10,10 @@ public abstract class Lscala/runtime/AbstractFunction20; extends Ljava/lang/Obje
   
   public Lscala/Function1; tupled() {
     return Lscala/Function20$class;.(Lscala/Function20$class;::tupled(Lscala/Function20;)Lscala/Function1;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Function20$class;.(Lscala/Function20$class;::toString(Lscala/Function20;)Ljava/lang/String;)(this);
   }
   
   public this() {

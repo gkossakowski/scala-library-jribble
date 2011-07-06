@@ -14,7 +14,9 @@ public interface Lscala/collection/generic/GenericTraversableTemplate; extends L
   
   public Lscala/Tuple2; unzip(Lscala/Function1; asPair);
   
-  public Lscala/collection/Traversable; flatten(Lscala/Function1; asTraversable);
+  public Lscala/Tuple3; unzip3(Lscala/Function1; asTriple);
   
-  public Lscala/collection/Traversable; transpose(Lscala/Function1; asTraversable);
+  public Lscala/collection/GenTraversable; flatten(Lscala/Function1; asTraversable);
+  
+  public Lscala/collection/GenTraversable; transpose(Lscala/Function1; asTraversable);
 }

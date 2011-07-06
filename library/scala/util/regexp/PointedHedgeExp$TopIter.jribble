@@ -1,4 +1,4 @@
-public class Lscala/util/regexp/PointedHedgeExp$TopIter; extends Lscala/util/regexp/Base$RegExp; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/util/regexp/PointedHedgeExp$TopIter; extends Lscala/util/regexp/Base$RegExp; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   public Lscala/collection/Iterator; productIterator() {
     return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
@@ -6,14 +6,6 @@ public class Lscala/util/regexp/PointedHedgeExp$TopIter; extends Lscala/util/reg
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Lscala/util/regexp/Base$RegExp; copy$default$2() {
-    return this.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r2()Lscala/util/regexp/Base$RegExp;)();
-  }
-  
-  public Lscala/util/regexp/Base$RegExp; copy$default$1() {
-    return this.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r1()Lscala/util/regexp/Base$RegExp;)();
   }
   
   private Lscala/util/regexp/Base$RegExp; r1$u0020;
@@ -38,6 +30,14 @@ public class Lscala/util/regexp/PointedHedgeExp$TopIter; extends Lscala/util/reg
     return (new (Lscala/util/regexp/PointedHedgeExp$TopIter;::this(Lscala/util/regexp/PointedHedgeExp;Lscala/util/regexp/Base$RegExp;Lscala/util/regexp/Base$RegExp;)V;)(this.(Lscala/util/regexp/PointedHedgeExp$TopIter;::scala$util$regexp$PointedHedgeExp$TopIter$$$outer()Lscala/util/regexp/PointedHedgeExp;)(), r1, r2));
   }
   
+  public Lscala/util/regexp/Base$RegExp; copy$default$2() {
+    return this.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r2()Lscala/util/regexp/Base$RegExp;)();
+  }
+  
+  public Lscala/util/regexp/Base$RegExp; copy$default$1() {
+    return this.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r1()Lscala/util/regexp/Base$RegExp;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -48,30 +48,37 @@ public class Lscala/util/regexp/PointedHedgeExp$TopIter; extends Lscala/util/reg
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp6 = x$1;
-    Z; $5$;
+    Z; $9$;
     if ((temp6.<instanceof>(Lscala/util/regexp/PointedHedgeExp$TopIter;) && (temp6.<cast>(Lscala/util/regexp/PointedHedgeExp$TopIter;).(Lscala/util/regexp/PointedHedgeExp$TopIter;::scala$util$regexp$PointedHedgeExp$TopIter$$$outer()Lscala/util/regexp/PointedHedgeExp;)() == this.(Lscala/util/regexp/PointedHedgeExp$TopIter;::scala$util$regexp$PointedHedgeExp$TopIter$$$outer()Lscala/util/regexp/PointedHedgeExp;)())))
       {
         Lscala/util/regexp/PointedHedgeExp$TopIter; temp7 = temp6.<cast>(Lscala/util/regexp/PointedHedgeExp$TopIter;);
         Lscala/util/regexp/Base$RegExp; temp8 = temp7.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r1()Lscala/util/regexp/Base$RegExp;)();
         Lscala/util/regexp/Base$RegExp; temp9 = temp7.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r2()Lscala/util/regexp/Base$RegExp;)();
-        Lscala/util/regexp/Base$RegExp; r2$1 = temp9;
         Lscala/util/regexp/Base$RegExp; r1$1 = temp8;
-        Z; $6$;
+        Lscala/util/regexp/Base$RegExp; r2$1 = temp9;
+        Z; $10$;
         if (this.(Lscala/util/regexp/PointedHedgeExp$TopIter;::gd2$1(Lscala/util/regexp/Base$RegExp;Lscala/util/regexp/Base$RegExp;)Z;)(r1$1, r2$1))
           {
-            $6$ = x$1.<cast>(Lscala/util/regexp/PointedHedgeExp$TopIter;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Lscala/util/regexp/Base$RegExp; $11$;
+            Lscala/util/regexp/Base$RegExp; $12$;
+            Z; $13$;
+            body$percent03: while(true) {
+              $13$ = x$1.<cast>(Lscala/util/regexp/PointedHedgeExp$TopIter;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $10$ = $13$;
           }
         else
           {
-            $6$ = false;
+            $10$ = false;
           }
-        $5$ = $6$;
+        $9$ = $10$;
       }
     else
       {
-        $5$ = false;
+        $9$ = false;
       }
-    return ((this == x$1) || $5$);
+    return ((this == x$1) || $9$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -84,16 +91,16 @@ public class Lscala/util/regexp/PointedHedgeExp$TopIter; extends Lscala/util/reg
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp10 = x$1;
-    I; $7$ = temp10;
-    Ljava/lang/Object; $8$;
-    switch ($7$) {
-      0: {
-        $8$ = this.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r1()Lscala/util/regexp/Base$RegExp;)();
+    I; $14$ = temp10;
+    Ljava/lang/Object; $15$;
+    switch ($14$) {
+      1: {
+        $15$ = this.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r2()Lscala/util/regexp/Base$RegExp;)();
         break;
       }
       
-      1: {
-        $8$ = this.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r2()Lscala/util/regexp/Base$RegExp;)();
+      0: {
+        $15$ = this.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r1()Lscala/util/regexp/Base$RegExp;)();
         break;
       }
       
@@ -103,7 +110,7 @@ public class Lscala/util/regexp/PointedHedgeExp$TopIter; extends Lscala/util/reg
       }
       
     }
-    return $8$;
+    return $15$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

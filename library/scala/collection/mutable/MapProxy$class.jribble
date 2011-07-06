@@ -24,8 +24,8 @@ public abstract class Lscala/collection/mutable/MapProxy$class; {
     return Lscala/collection/mutable/MapProxy$class;.(Lscala/collection/mutable/MapProxy$class;::newProxy(Lscala/collection/mutable/MapProxy;Lscala/collection/mutable/Map;)Lscala/collection/mutable/MapProxy;)($this, $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/mutable/MapLike;).(Lscala/collection/mutable/MapLike;::$plus(Lscala/Tuple2;Lscala/Tuple2;Lscala/collection/Seq;)Lscala/collection/mutable/Map;)(elem1, elem2, elems));
   }
   
-  public static Lscala/collection/mutable/MapProxy; $plus$plus(Lscala/collection/mutable/MapProxy; $this, Lscala/collection/TraversableOnce; xs) {
-    return Lscala/collection/mutable/MapProxy$class;.(Lscala/collection/mutable/MapProxy$class;::newProxy(Lscala/collection/mutable/MapProxy;Lscala/collection/mutable/Map;)Lscala/collection/mutable/MapProxy;)($this, $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/mutable/MapLike;).(Lscala/collection/mutable/MapLike;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Map;)(xs));
+  public static Lscala/collection/mutable/MapProxy; $plus$plus(Lscala/collection/mutable/MapProxy; $this, Lscala/collection/GenTraversableOnce; xs) {
+    return Lscala/collection/mutable/MapProxy$class;.(Lscala/collection/mutable/MapProxy$class;::newProxy(Lscala/collection/mutable/MapProxy;Lscala/collection/mutable/Map;)Lscala/collection/mutable/MapProxy;)($this, $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/mutable/MapLike;).(Lscala/collection/mutable/MapLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/mutable/Map;)(xs.(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)()));
   }
   
   public static Lscala/collection/mutable/MapProxy; $minus(Lscala/collection/mutable/MapProxy; $this, Ljava/lang/Object; key) {

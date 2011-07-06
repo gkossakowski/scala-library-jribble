@@ -1,4 +1,4 @@
-public class Lscala/xml/dtd/PEReference; extends Lscala/xml/dtd/MarkupDecl; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/dtd/PEReference; extends Lscala/xml/dtd/MarkupDecl; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public final static Lscala/Function1; andThen(Lscala/Function1; x_0) { return Lscala/xml/dtd/PEReference$;.MODULE$.(Lscala/runtime/AbstractFunction1;::andThen(Lscala/Function1;)Lscala/Function1;)(x_0); }
   public final static Lscala/Function1; compose(Lscala/Function1; x_0) { return Lscala/xml/dtd/PEReference$;.MODULE$.(Lscala/runtime/AbstractFunction1;::compose(Lscala/Function1;)Lscala/Function1;)(x_0); }
   
@@ -9,10 +9,6 @@ public class Lscala/xml/dtd/PEReference; extends Lscala/xml/dtd/MarkupDecl; impl
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/dtd/PEReference;::ent()Ljava/lang/String;)();
   }
   
   private Ljava/lang/String; ent$u0020;
@@ -29,6 +25,10 @@ public class Lscala/xml/dtd/PEReference; extends Lscala/xml/dtd/MarkupDecl; impl
     return (new (Lscala/xml/dtd/PEReference;::this(Ljava/lang/String;)V;)(ent));
   }
   
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/dtd/PEReference;::ent()Ljava/lang/String;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -39,28 +39,34 @@ public class Lscala/xml/dtd/PEReference; extends Lscala/xml/dtd/MarkupDecl; impl
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp46 = x$1;
-    Z; $35$;
+    Z; $71$;
     if (temp46.<instanceof>(Lscala/xml/dtd/PEReference;))
       {
         Lscala/xml/dtd/PEReference; temp47 = temp46.<cast>(Lscala/xml/dtd/PEReference;);
         Ljava/lang/String; temp48 = temp47.(Lscala/xml/dtd/PEReference;::ent()Ljava/lang/String;)();
         Ljava/lang/String; ent$1 = temp48;
-        Z; $36$;
+        Z; $72$;
         if (this.(Lscala/xml/dtd/PEReference;::gd10$1(Ljava/lang/String;)Z;)(ent$1))
           {
-            $36$ = x$1.<cast>(Lscala/xml/dtd/PEReference;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/String; $73$;
+            Z; $74$;
+            body$percent019: while(true) {
+              $74$ = x$1.<cast>(Lscala/xml/dtd/PEReference;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $72$ = $74$;
           }
         else
           {
-            $36$ = false;
+            $72$ = false;
           }
-        $35$ = $36$;
+        $71$ = $72$;
       }
     else
       {
-        $35$ = false;
+        $71$ = false;
       }
-    return ((this == x$1) || $35$);
+    return ((this == x$1) || $71$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -73,16 +79,16 @@ public class Lscala/xml/dtd/PEReference; extends Lscala/xml/dtd/MarkupDecl; impl
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp49 = x$1;
-    Ljava/lang/Object; $37$;
+    Ljava/lang/Object; $75$;
     if ((temp49 == 0))
       {
-        $37$ = this.(Lscala/xml/dtd/PEReference;::ent()Ljava/lang/String;)();
+        $75$ = this.(Lscala/xml/dtd/PEReference;::ent()Ljava/lang/String;)();
       }
     else
       {
         throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
       }
-    return $37$;
+    return $75$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

@@ -1,4 +1,4 @@
-public final class Lscala/collection/mutable/LinkedList$; extends Lscala/collection/generic/SeqFactory; implements Lscala/ScalaObject; {
+public final class Lscala/collection/mutable/LinkedList$; extends Lscala/collection/generic/SeqFactory; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/collection/mutable/LinkedList$; MODULE$ = new (Lscala/collection/mutable/LinkedList$;::this()V;)();
   
   public Lscala/collection/mutable/LinkedList; empty() {
@@ -6,14 +6,18 @@ public final class Lscala/collection/mutable/LinkedList$; extends Lscala/collect
   }
   
   public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
-    return (new (Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;::this(Lscala/collection/generic/TraversableFactory;)V;)(this));
+    return this.(Lscala/collection/generic/GenTraversableFactory;::ReusableCBF()Lscala/collection/generic/GenTraversableFactory$ReusableCBF$;)();
   }
   
   public Lscala/collection/mutable/Builder; newBuilder() {
     return (new (Lscala/collection/mutable/MutableList;::this()V;)()).(Lscala/collection/mutable/Builder;::mapResult(Lscala/Function1;)Lscala/collection/mutable/Builder;)((new (Lscala/collection/mutable/LinkedList$$anonfun$newBuilder$1;::this()V;)()));
   }
   
-  public Lscala/collection/Traversable; empty() {
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/mutable/LinkedList$;.MODULE$;
+  }
+  
+  public Lscala/collection/GenTraversable; empty() {
     return this.(Lscala/collection/mutable/LinkedList$;::empty()Lscala/collection/mutable/LinkedList;)();
   }
   

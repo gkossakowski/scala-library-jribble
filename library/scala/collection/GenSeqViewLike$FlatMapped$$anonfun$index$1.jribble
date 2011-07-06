@@ -1,0 +1,28 @@
+public final class Lscala/collection/GenSeqViewLike$FlatMapped$$anonfun$index$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final V; apply(I; i) {
+    this.(Lscala/collection/GenSeqViewLike$FlatMapped$$anonfun$index$1;)index$1[(i + 1)] = (this.(Lscala/collection/GenSeqViewLike$FlatMapped$$anonfun$index$1;)index$1[i] + this.(Lscala/collection/GenSeqViewLike$FlatMapped$$anonfun$index$1;)$outer$u0020.(Lscala/collection/GenTraversableViewLike$FlatMapped;::mapping()Lscala/Function1;)().(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/GenSeqViewLike$FlatMapped$$anonfun$index$1;)$outer$u0020.(Lscala/collection/GenSeqViewLike$FlatMapped;::scala$collection$GenSeqViewLike$FlatMapped$$$outer()Lscala/collection/GenSeqViewLike;)().(Lscala/collection/GenSeqLike;::apply(I;)Ljava/lang/Object;)(i)).<cast>(Lscala/collection/GenTraversableOnce;).(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::size()I;)());
+  }
+  
+  private Lscala/collection/GenSeqViewLike$FlatMapped; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/GenSeqViewLike$FlatMapped$$anonfun$index$1;::apply(I;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1));
+    return Lscala/runtime/BoxedUnit;.UNIT;
+  }
+  
+  private I;[ index$1;
+  
+  public this(Lscala/collection/GenSeqViewLike$FlatMapped; $outer, I;[ index$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/GenSeqViewLike$FlatMapped$$anonfun$index$1;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/collection/GenSeqViewLike$FlatMapped$$anonfun$index$1;)index$1 = index$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

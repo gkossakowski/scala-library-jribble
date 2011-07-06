@@ -1,4 +1,4 @@
-public class Lscala/xml/dtd/DEFAULT; extends Lscala/xml/dtd/DefaultDecl; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/dtd/DEFAULT; extends Lscala/xml/dtd/DefaultDecl; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public final static Lscala/Function1; tupled() { return Lscala/xml/dtd/DEFAULT$;.MODULE$.(Lscala/runtime/AbstractFunction2;::tupled()Lscala/Function1;)(); }
   public final static Lscala/Function1; curry() { return Lscala/xml/dtd/DEFAULT$;.MODULE$.(Lscala/runtime/AbstractFunction2;::curry()Lscala/Function1;)(); }
   public final static Lscala/Function1; curried() { return Lscala/xml/dtd/DEFAULT$;.MODULE$.(Lscala/runtime/AbstractFunction2;::curried()Lscala/Function1;)(); }
@@ -10,14 +10,6 @@ public class Lscala/xml/dtd/DEFAULT; extends Lscala/xml/dtd/DefaultDecl; impleme
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/String; copy$default$2() {
-    return this.(Lscala/xml/dtd/DEFAULT;::attValue()Ljava/lang/String;)();
-  }
-  
-  public Z; copy$default$1() {
-    return this.(Lscala/xml/dtd/DEFAULT;::fixed()Z;)();
   }
   
   private Z; fixed$u0020;
@@ -52,36 +44,51 @@ public class Lscala/xml/dtd/DEFAULT; extends Lscala/xml/dtd/DefaultDecl; impleme
     return (new (Lscala/xml/dtd/DEFAULT;::this(Z;Ljava/lang/String;)V;)(fixed, attValue));
   }
   
+  public Ljava/lang/String; copy$default$2() {
+    return this.(Lscala/xml/dtd/DEFAULT;::attValue()Ljava/lang/String;)();
+  }
+  
+  public Z; copy$default$1() {
+    return this.(Lscala/xml/dtd/DEFAULT;::fixed()Z;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp52 = x$1;
-    Z; $38$;
+    Z; $77$;
     if (temp52.<instanceof>(Lscala/xml/dtd/DEFAULT;))
       {
         Lscala/xml/dtd/DEFAULT; temp53 = temp52.<cast>(Lscala/xml/dtd/DEFAULT;);
         Z; temp54 = temp53.(Lscala/xml/dtd/DEFAULT;::fixed()Z;)();
         Ljava/lang/String; temp55 = temp53.(Lscala/xml/dtd/DEFAULT;::attValue()Ljava/lang/String;)();
-        Ljava/lang/String; attValue$1 = temp55;
         Z; fixed$1 = temp54;
-        Z; $39$;
+        Ljava/lang/String; attValue$1 = temp55;
+        Z; $78$;
         if (this.(Lscala/xml/dtd/DEFAULT;::gd11$1(Z;Ljava/lang/String;)Z;)(fixed$1, attValue$1))
           {
-            $39$ = x$1.<cast>(Lscala/xml/dtd/DEFAULT;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Z; $79$;
+            Ljava/lang/String; $80$;
+            Z; $81$;
+            body$percent023: while(true) {
+              $81$ = x$1.<cast>(Lscala/xml/dtd/DEFAULT;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $78$ = $81$;
           }
         else
           {
-            $39$ = false;
+            $78$ = false;
           }
-        $38$ = $39$;
+        $77$ = $78$;
       }
     else
       {
-        $38$ = false;
+        $77$ = false;
       }
-    return ((this == x$1) || $38$);
+    return ((this == x$1) || $77$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -94,16 +101,16 @@ public class Lscala/xml/dtd/DEFAULT; extends Lscala/xml/dtd/DefaultDecl; impleme
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp56 = x$1;
-    I; $40$ = temp56;
-    Ljava/lang/Object; $41$;
-    switch ($40$) {
-      0: {
-        $41$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/xml/dtd/DEFAULT;::fixed()Z;)());
+    I; $82$ = temp56;
+    Ljava/lang/Object; $83$;
+    switch ($82$) {
+      1: {
+        $83$ = this.(Lscala/xml/dtd/DEFAULT;::attValue()Ljava/lang/String;)();
         break;
       }
       
-      1: {
-        $41$ = this.(Lscala/xml/dtd/DEFAULT;::attValue()Ljava/lang/String;)();
+      0: {
+        $83$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/xml/dtd/DEFAULT;::fixed()Z;)());
         break;
       }
       
@@ -113,7 +120,7 @@ public class Lscala/xml/dtd/DEFAULT; extends Lscala/xml/dtd/DefaultDecl; impleme
       }
       
     }
-    return $41$;
+    return $83$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

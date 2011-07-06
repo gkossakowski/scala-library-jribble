@@ -1,4 +1,4 @@
-public final class Lscala/xml/Attribute$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/xml/Attribute$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/Attribute$; MODULE$ = new (Lscala/xml/Attribute$;::this()V;)();
   
   public Lscala/Option; unapply(Lscala/xml/Attribute; x) {
@@ -16,7 +16,7 @@ public final class Lscala/xml/Attribute$; extends Ljava/lang/Object; implements 
           }
         else
           {
-            $2$ = Lscala/xml/Attribute$;.MODULE$.(Lscala/xml/Attribute$;::body$percent2$percent1()Lscala/Option;)();
+            $2$ = Lscala/xml/Attribute$;.MODULE$.(Lscala/xml/Attribute$;::body$percent21$percent1()Lscala/Option;)();
           }
         $1$ = $2$;
       }
@@ -35,13 +35,13 @@ public final class Lscala/xml/Attribute$; extends Ljava/lang/Object; implements 
               }
             else
               {
-                $4$ = Lscala/xml/Attribute$;.MODULE$.(Lscala/xml/Attribute$;::body$percent2$percent1()Lscala/Option;)();
+                $4$ = Lscala/xml/Attribute$;.MODULE$.(Lscala/xml/Attribute$;::body$percent21$percent1()Lscala/Option;)();
               }
             $3$ = $4$;
           }
         else
           {
-            $3$ = Lscala/xml/Attribute$;.MODULE$.(Lscala/xml/Attribute$;::body$percent2$percent1()Lscala/Option;)();
+            $3$ = Lscala/xml/Attribute$;.MODULE$.(Lscala/xml/Attribute$;::body$percent21$percent1()Lscala/Option;)();
           }
         $1$ = $3$;
       }
@@ -101,11 +101,15 @@ public final class Lscala/xml/Attribute$; extends Ljava/lang/Object; implements 
     return $7$;
   }
   
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/Attribute$;.MODULE$;
+  }
+  
   public this() {
     (Ljava/lang/Object;::super()V;)();
   }
   
-  private final Lscala/Option; body$percent2$percent1() {
+  private final Lscala/Option; body$percent21$percent1() {
     return Lscala/None$;.MODULE$;
   }
 }

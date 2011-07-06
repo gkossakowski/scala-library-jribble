@@ -1,0 +1,35 @@
+public final class Lscala/util/control/Breaks$$anon$1; extends Ljava/lang/Object; implements Lscala/util/control/Breaks$TryBlock; {
+  
+  public V; catchBreak(Lscala/Function0; onBreak) {
+    try {
+      this.(Lscala/util/control/Breaks$$anon$1;)op$1.(Lscala/Function0;::apply()Ljava/lang/Object;)();
+    } catch(Lscala/util/control/BreakControl; ex) {
+      if ((ex != this.(Lscala/util/control/Breaks$$anon$1;)$outer$u0020.(Lscala/util/control/Breaks;::scala$util$control$Breaks$$breakException()Lscala/util/control/BreakControl;)()))
+        {
+          throw ex;
+        }
+      else
+        {
+          
+        }
+      onBreak.(Lscala/Function0;::apply()Ljava/lang/Object;)();
+    }
+  }
+  
+  private Lscala/util/control/Breaks; $outer$u0020;
+  
+  private Lscala/Function0; op$1;
+  
+  public this(Lscala/util/control/Breaks; $outer, Lscala/Function0; op$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/util/control/Breaks$$anon$1;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/util/control/Breaks$$anon$1;)op$1 = op$1;
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

@@ -1,9 +1,17 @@
-public final class Lscala/collection/immutable/TreeMap$$anonfun$foreach$1; extends Lscala/runtime/AbstractFunction2; {
+public final class Lscala/collection/immutable/TreeMap$$anonfun$foreach$1; extends Lscala/runtime/AbstractFunction2; implements Lscala/Serializable; {
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; x0$1, Ljava/lang/Object; x1$1) {
-    Ljava/lang/Object; tp1 = x0$1;
-    Ljava/lang/Object; tp2 = x1$1;
-    return this.(Lscala/collection/immutable/TreeMap$$anonfun$foreach$1;)f$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp1, tp2)));
+    Lscala/Tuple2; temp3 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x0$1, x1$1));
+    Ljava/lang/Object; $6$;
+    if ((temp3 != null))
+      {
+        $6$ = this.(Lscala/collection/immutable/TreeMap$$anonfun$foreach$1;)f$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(temp3.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), temp3.(Lscala/Tuple2;::_2()Ljava/lang/Object;)())));
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp3));
+      }
+    return $6$;
   }
   
   private Lscala/Function1; f$1;

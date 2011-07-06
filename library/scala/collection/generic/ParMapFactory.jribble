@@ -1,0 +1,12 @@
+public abstract class Lscala/collection/generic/ParMapFactory; extends Lscala/collection/generic/GenMapFactory; implements Lscala/collection/generic/GenericParMapCompanion;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return this.(Lscala/collection/generic/ParMapFactory;::newCombiner()Lscala/collection/parallel/Combiner;)();
+  }
+  
+  public abstract Lscala/collection/parallel/Combiner; newCombiner();
+  
+  public this() {
+    (Lscala/collection/generic/GenMapFactory;::super()V;)();
+  }
+}

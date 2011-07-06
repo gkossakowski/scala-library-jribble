@@ -1,4 +1,4 @@
-public final class Lscala/xml/dtd/NotationDecl$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject; {
+public final class Lscala/xml/dtd/NotationDecl$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/dtd/NotationDecl$; MODULE$ = new (Lscala/xml/dtd/NotationDecl$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/xml/dtd/NotationDecl$; extends Lscala/runtime/Abstract
   }
   
   public Lscala/Option; unapply(Lscala/xml/dtd/NotationDecl; x$0) {
-    Lscala/Option; $46$;
+    Lscala/Option; $58$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $46$ = Lscala/None$;.MODULE$;
+        $58$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $46$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/NotationDecl;::name()Ljava/lang/String;)(), x$0.(Lscala/xml/dtd/NotationDecl;::extID()Lscala/xml/dtd/ExternalID;)()))));
+        $58$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/NotationDecl;::name()Ljava/lang/String;)(), x$0.(Lscala/xml/dtd/NotationDecl;::extID()Lscala/xml/dtd/ExternalID;)()))));
       }
-    return $46$;
+    return $58$;
   }
   
   public Lscala/xml/dtd/NotationDecl; apply(Ljava/lang/String; name, Lscala/xml/dtd/ExternalID; extID) {
     return (new (Lscala/xml/dtd/NotationDecl;::this(Ljava/lang/String;Lscala/xml/dtd/ExternalID;)V;)(name, extID));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/dtd/NotationDecl$;.MODULE$;
   }
   
   public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {

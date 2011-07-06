@@ -1,0 +1,16 @@
+public abstract class Lscala/collection/generic/GenMapFactory; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  public abstract Lscala/collection/GenMap; empty();
+  
+  public Lscala/collection/GenMap; apply(Lscala/collection/Seq; elems) {
+    return this.(Lscala/collection/generic/GenMapFactory;::newBuilder()Lscala/collection/mutable/Builder;)().(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(elems).<cast>(Lscala/collection/mutable/Builder;).(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/GenMap;);
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return (new (Lscala/collection/mutable/MapBuilder;::this(Lscala/collection/GenMap;)V;)(this.(Lscala/collection/generic/GenMapFactory;::empty()Lscala/collection/GenMap;)()));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

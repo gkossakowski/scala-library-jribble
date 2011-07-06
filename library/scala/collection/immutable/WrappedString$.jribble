@@ -1,8 +1,12 @@
 public final class Lscala/collection/immutable/WrappedString$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
   public static Lscala/collection/immutable/WrappedString$; MODULE$ = new (Lscala/collection/immutable/WrappedString$;::this()V;)();
   
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return (new (Lscala/collection/immutable/WrappedString$$anon$1;::this()V;)());
+  }
+  
   public Lscala/collection/mutable/Builder; newBuilder() {
-    return (new (Lscala/collection/mutable/StringBuilder;::this()V;)()).(Lscala/collection/mutable/Builder;::mapResult(Lscala/Function1;)Lscala/collection/mutable/Builder;)((new (Lscala/collection/immutable/WrappedString$$anonfun$newBuilder$1;::this()V;)()));
+    return Lscala/collection/mutable/StringBuilder$;.MODULE$.(Lscala/collection/mutable/StringBuilder$;::newBuilder()Lscala/collection/mutable/StringBuilder;)().(Lscala/collection/mutable/Builder;::mapResult(Lscala/Function1;)Lscala/collection/mutable/Builder;)((new (Lscala/collection/immutable/WrappedString$$anonfun$newBuilder$1;::this()V;)()));
   }
   
   public this() {

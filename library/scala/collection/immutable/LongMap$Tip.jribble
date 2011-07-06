@@ -1,4 +1,4 @@
-public class Lscala/collection/immutable/LongMap$Tip; extends Lscala/collection/immutable/LongMap; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/collection/immutable/LongMap$Tip; extends Lscala/collection/immutable/LongMap; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   public Lscala/collection/Iterator; productIterator() {
     return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
@@ -6,14 +6,6 @@ public class Lscala/collection/immutable/LongMap$Tip; extends Lscala/collection/
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/Object; copy$default$2() {
-    return this.(Lscala/collection/immutable/LongMap$Tip;::value()Ljava/lang/Object;)();
-  }
-  
-  public J; copy$default$1() {
-    return this.(Lscala/collection/immutable/LongMap$Tip;::key()J;)();
   }
   
   private J; key$u0020;
@@ -29,20 +21,28 @@ public class Lscala/collection/immutable/LongMap$Tip; extends Lscala/collection/
   }
   
   public Lscala/collection/immutable/LongMap$Tip; withValue(Ljava/lang/Object; s) {
-    Lscala/collection/immutable/LongMap$Tip; $95$;
+    Lscala/collection/immutable/LongMap$Tip; $99$;
     if ((s == this.(Lscala/collection/immutable/LongMap$Tip;::value()Ljava/lang/Object;)()))
       {
-        $95$ = this;
+        $99$ = this;
       }
     else
       {
-        $95$ = (new (Lscala/collection/immutable/LongMap$Tip;::this(J;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/LongMap$Tip;::key()J;)(), s));
+        $99$ = (new (Lscala/collection/immutable/LongMap$Tip;::this(J;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/LongMap$Tip;::key()J;)(), s));
       }
-    return $95$;
+    return $99$;
   }
   
   public Lscala/collection/immutable/LongMap$Tip; copy(J; key, Ljava/lang/Object; value) {
     return (new (Lscala/collection/immutable/LongMap$Tip;::this(J;Ljava/lang/Object;)V;)(key, value));
+  }
+  
+  public Ljava/lang/Object; copy$default$2() {
+    return this.(Lscala/collection/immutable/LongMap$Tip;::value()Ljava/lang/Object;)();
+  }
+  
+  public J; copy$default$1() {
+    return this.(Lscala/collection/immutable/LongMap$Tip;::key()J;)();
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -54,17 +54,17 @@ public class Lscala/collection/immutable/LongMap$Tip; extends Lscala/collection/
   }
   
   public Ljava/lang/Object; productElement(I; x$1) {
-    I; temp7 = x$1;
-    I; $96$ = temp7;
-    Ljava/lang/Object; $97$;
-    switch ($96$) {
-      0: {
-        $97$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(this.(Lscala/collection/immutable/LongMap$Tip;::key()J;)());
+    I; temp10 = x$1;
+    I; $100$ = temp10;
+    Ljava/lang/Object; $101$;
+    switch ($100$) {
+      1: {
+        $101$ = this.(Lscala/collection/immutable/LongMap$Tip;::value()Ljava/lang/Object;)();
         break;
       }
       
-      1: {
-        $97$ = this.(Lscala/collection/immutable/LongMap$Tip;::value()Ljava/lang/Object;)();
+      0: {
+        $101$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(this.(Lscala/collection/immutable/LongMap$Tip;::key()J;)());
         break;
       }
       
@@ -74,7 +74,7 @@ public class Lscala/collection/immutable/LongMap$Tip; extends Lscala/collection/
       }
       
     }
-    return $97$;
+    return $101$;
   }
   
   public this(J; key, Ljava/lang/Object; value) {

@@ -1,0 +1,17 @@
+public final class Lscala/collection/generic/BitOperations$Long$$anonfun$bits$2; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final Z; apply(J; i) {
+    return (((this.(Lscala/collection/generic/BitOperations$Long$$anonfun$bits$2;)num$2 >> i) & 1L) != 0L);
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/collection/generic/BitOperations$Long$$anonfun$bits$2;::apply(J;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToLong(Ljava/lang/Object;)J;)(v1)));
+  }
+  
+  private J; num$2;
+  
+  public this(Lscala/collection/generic/BitOperations$Long; $outer, J; num$2) {
+    this.(Lscala/collection/generic/BitOperations$Long$$anonfun$bits$2;)num$2 = num$2;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

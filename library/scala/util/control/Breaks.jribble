@@ -1,17 +1,17 @@
 public class Lscala/util/control/Breaks; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
   
   
-  private Lscala/util/control/BreakControl; breakException$u0020;
+  private Lscala/util/control/BreakControl; scala$util$control$Breaks$$breakException$u0020;
   
-  private Lscala/util/control/BreakControl; breakException() {
-    return this.(Lscala/util/control/Breaks;)breakException$u0020;
+  public final Lscala/util/control/BreakControl; scala$util$control$Breaks$$breakException() {
+    return this.(Lscala/util/control/Breaks;)scala$util$control$Breaks$$breakException$u0020;
   }
   
   public V; breakable(Lscala/Function0; op) {
     try {
       op.(Lscala/Function0;::apply()Ljava/lang/Object;)();
     } catch(Lscala/util/control/BreakControl; ex) {
-      if ((ex != this.(Lscala/util/control/Breaks;::breakException()Lscala/util/control/BreakControl;)()))
+      if ((ex != this.(Lscala/util/control/Breaks;::scala$util$control$Breaks$$breakException()Lscala/util/control/BreakControl;)()))
         {
           throw ex;
         }
@@ -22,12 +22,16 @@ public class Lscala/util/control/Breaks; extends Ljava/lang/Object; implements L
     }
   }
   
+  public Lscala/util/control/Breaks$TryBlock; tryBreakable(Lscala/Function0; op$1) {
+    return (new (Lscala/util/control/Breaks$$anon$1;::this(Lscala/util/control/Breaks;Lscala/Function0;)V;)(this, op$1));
+  }
+  
   public V; `break`() {
-    throw this.(Lscala/util/control/Breaks;::breakException()Lscala/util/control/BreakControl;)();
+    throw this.(Lscala/util/control/Breaks;::scala$util$control$Breaks$$breakException()Lscala/util/control/BreakControl;)();
   }
   
   public this() {
     (Ljava/lang/Object;::super()V;)();
-    this.(Lscala/util/control/Breaks;)breakException$u0020 = (new (Lscala/util/control/BreakControl;::this()V;)());
+    this.(Lscala/util/control/Breaks;)scala$util$control$Breaks$$breakException$u0020 = (new (Lscala/util/control/BreakControl;::this()V;)());
   }
 }

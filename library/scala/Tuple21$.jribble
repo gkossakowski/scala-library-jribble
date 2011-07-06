@@ -1,4 +1,4 @@
-public final class Lscala/Tuple21$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/Tuple21$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/Tuple21$; MODULE$ = new (Lscala/Tuple21$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/Tuple21$; extends Ljava/lang/Object; implements Lscala
   }
   
   public Lscala/Option; unapply(Lscala/Tuple21; x$0) {
-    Lscala/Option; $3$;
+    Lscala/Option; $25$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $3$ = Lscala/None$;.MODULE$;
+        $25$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $3$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple21;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/Tuple21;::_1()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_2()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_3()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_4()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_5()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_6()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_7()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_8()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_9()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_10()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_11()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_12()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_13()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_14()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_15()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_16()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_17()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_18()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_19()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_20()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_21()Ljava/lang/Object;)()))));
+        $25$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple21;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/Tuple21;::_1()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_2()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_3()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_4()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_5()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_6()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_7()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_8()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_9()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_10()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_11()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_12()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_13()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_14()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_15()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_16()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_17()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_18()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_19()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_20()Ljava/lang/Object;)(), x$0.(Lscala/Tuple21;::_21()Ljava/lang/Object;)()))));
       }
-    return $3$;
+    return $25$;
   }
   
   public Lscala/Tuple21; apply(Ljava/lang/Object; _1, Ljava/lang/Object; _2, Ljava/lang/Object; _3, Ljava/lang/Object; _4, Ljava/lang/Object; _5, Ljava/lang/Object; _6, Ljava/lang/Object; _7, Ljava/lang/Object; _8, Ljava/lang/Object; _9, Ljava/lang/Object; _10, Ljava/lang/Object; _11, Ljava/lang/Object; _12, Ljava/lang/Object; _13, Ljava/lang/Object; _14, Ljava/lang/Object; _15, Ljava/lang/Object; _16, Ljava/lang/Object; _17, Ljava/lang/Object; _18, Ljava/lang/Object; _19, Ljava/lang/Object; _20, Ljava/lang/Object; _21) {
     return (new (Lscala/Tuple21;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/Tuple21$;.MODULE$;
   }
   
   public this() {

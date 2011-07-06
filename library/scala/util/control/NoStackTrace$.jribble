@@ -1,0 +1,18 @@
+public final class Lscala/util/control/NoStackTrace$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
+  public static Lscala/util/control/NoStackTrace$; MODULE$ = new (Lscala/util/control/NoStackTrace$;::this()V;)();
+  
+  private final Z; noSuppression$u0020;
+  
+  public final Z; noSuppression() {
+    return this.(Lscala/util/control/NoStackTrace$;)noSuppression$u0020;
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/util/control/NoStackTrace$;.MODULE$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(Lscala/util/control/NoStackTrace$;)noSuppression$u0020 = Lscala/sys/SystemProperties$;.MODULE$.(Lscala/sys/SystemProperties$;::noTraceSupression()Lscala/sys/BooleanProp;)().(Lscala/sys/BooleanProp;::value()Z;)();
+  }
+}

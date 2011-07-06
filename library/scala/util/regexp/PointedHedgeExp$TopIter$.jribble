@@ -1,20 +1,20 @@
-public final class Lscala/util/regexp/PointedHedgeExp$TopIter$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject; {
+public final class Lscala/util/regexp/PointedHedgeExp$TopIter$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject;, Lscala/Serializable; {
   
   public final Ljava/lang/String; toString() {
     return "TopIter";
   }
   
   public Lscala/Option; unapply(Lscala/util/regexp/PointedHedgeExp$TopIter; x$0) {
-    Lscala/Option; $9$;
+    Lscala/Option; $16$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $9$ = Lscala/None$;.MODULE$;
+        $16$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $9$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r1()Lscala/util/regexp/Base$RegExp;)(), x$0.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r2()Lscala/util/regexp/Base$RegExp;)()))));
+        $16$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r1()Lscala/util/regexp/Base$RegExp;)(), x$0.(Lscala/util/regexp/PointedHedgeExp$TopIter;::r2()Lscala/util/regexp/Base$RegExp;)()))));
       }
-    return $9$;
+    return $16$;
   }
   
   public Lscala/util/regexp/PointedHedgeExp$TopIter; apply(Lscala/util/regexp/Base$RegExp; r1, Lscala/util/regexp/Base$RegExp; r2) {

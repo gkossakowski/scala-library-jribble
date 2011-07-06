@@ -1,4 +1,4 @@
-public final class Lscala/xml/Null$; extends Lscala/xml/MetaData; implements Lscala/ScalaObject;, Lscala/Product; {
+public final class Lscala/xml/Null$; extends Lscala/xml/MetaData; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public static Lscala/xml/Null$; MODULE$ = new (Lscala/xml/Null$;::this()V;)();
   
   public Lscala/collection/Iterator; productIterator() {
@@ -9,16 +9,16 @@ public final class Lscala/xml/Null$; extends Lscala/xml/MetaData; implements Lsc
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
   }
   
-  public Lscala/xml/NamespaceBinding; append$default$2() {
-    return Lscala/xml/TopScope$;.MODULE$;
-  }
-  
   public Lscala/collection/Iterator; iterator() {
-    return Lscala/package$;.MODULE$.(Lscala/package$;::Iterator()Lscala/collection/Iterator$;)().(Lscala/collection/Iterator$;::empty()Lscala/collection/Iterator;)();
+    return Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::empty()Lscala/collection/Iterator;)();
   }
   
   public Lscala/xml/MetaData; append(Lscala/xml/MetaData; m, Lscala/xml/NamespaceBinding; scope) {
     return m;
+  }
+  
+  public Lscala/xml/NamespaceBinding; append$default$2() {
+    return Lscala/xml/TopScope$;.MODULE$;
   }
   
   public Lscala/xml/MetaData; filter(Lscala/Function1; f) {

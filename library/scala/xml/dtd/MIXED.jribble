@@ -1,4 +1,4 @@
-public class Lscala/xml/dtd/MIXED; extends Lscala/xml/dtd/DFAContentModel; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/dtd/MIXED; extends Lscala/xml/dtd/DFAContentModel; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public final static Lscala/Function1; andThen(Lscala/Function1; x_0) { return Lscala/xml/dtd/MIXED$;.MODULE$.(Lscala/runtime/AbstractFunction1;::andThen(Lscala/Function1;)Lscala/Function1;)(x_0); }
   public final static Lscala/Function1; compose(Lscala/Function1; x_0) { return Lscala/xml/dtd/MIXED$;.MODULE$.(Lscala/runtime/AbstractFunction1;::compose(Lscala/Function1;)Lscala/Function1;)(x_0); }
   
@@ -9,10 +9,6 @@ public class Lscala/xml/dtd/MIXED; extends Lscala/xml/dtd/DFAContentModel; imple
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Lscala/util/regexp/Base$RegExp; copy$default$1() {
-    return this.(Lscala/xml/dtd/MIXED;::r()Lscala/util/regexp/Base$RegExp;)();
   }
   
   private Lscala/util/regexp/Base$RegExp; r$u0020;
@@ -44,7 +40,7 @@ public class Lscala/xml/dtd/MIXED; extends Lscala/xml/dtd/DFAContentModel; imple
             Lscala/util/regexp/Base$Alt; $34$;
             if ($33$)
               {
-                $34$ = Lscala/xml/dtd/ContentModel$;.MODULE$.(Lscala/util/regexp/Base;::Alt()Lscala/util/regexp/Base$Alt$;)().(Lscala/util/regexp/Base$Alt$;::apply(Lscala/collection/Seq;)Lscala/util/regexp/Base$Alt;)(temp53.(Lscala/collection/TraversableLike;::drop(I;)Ljava/lang/Object;)(1).<cast>(Lscala/collection/Seq;));
+                $34$ = Lscala/xml/dtd/ContentModel$;.MODULE$.(Lscala/util/regexp/Base;::Alt()Lscala/util/regexp/Base$Alt$;)().(Lscala/util/regexp/Base$Alt$;::apply(Lscala/collection/Seq;)Lscala/util/regexp/Base$Alt;)(temp53.(Lscala/collection/IterableLike;::drop(I;)Ljava/lang/Object;)(1).<cast>(Lscala/collection/Seq;));
               }
             else
               {
@@ -72,6 +68,10 @@ public class Lscala/xml/dtd/MIXED; extends Lscala/xml/dtd/DFAContentModel; imple
     return (new (Lscala/xml/dtd/MIXED;::this(Lscala/util/regexp/Base$RegExp;)V;)(r));
   }
   
+  public Lscala/util/regexp/Base$RegExp; copy$default$1() {
+    return this.(Lscala/xml/dtd/MIXED;::r()Lscala/util/regexp/Base$RegExp;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -87,7 +87,13 @@ public class Lscala/xml/dtd/MIXED; extends Lscala/xml/dtd/DFAContentModel; imple
         Z; $36$;
         if (this.(Lscala/xml/dtd/MIXED;::gd2$1(Lscala/util/regexp/Base$RegExp;)Z;)(r$1))
           {
-            $36$ = x$1.<cast>(Lscala/xml/dtd/MIXED;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Lscala/util/regexp/Base$RegExp; $37$;
+            Z; $38$;
+            body$percent010: while(true) {
+              $38$ = x$1.<cast>(Lscala/xml/dtd/MIXED;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $36$ = $38$;
           }
         else
           {
@@ -112,16 +118,16 @@ public class Lscala/xml/dtd/MIXED; extends Lscala/xml/dtd/DFAContentModel; imple
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp58 = x$1;
-    Ljava/lang/Object; $37$;
+    Ljava/lang/Object; $39$;
     if ((temp58 == 0))
       {
-        $37$ = this.(Lscala/xml/dtd/MIXED;::r()Lscala/util/regexp/Base$RegExp;)();
+        $39$ = this.(Lscala/xml/dtd/MIXED;::r()Lscala/util/regexp/Base$RegExp;)();
       }
     else
       {
         throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
       }
-    return $37$;
+    return $39$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

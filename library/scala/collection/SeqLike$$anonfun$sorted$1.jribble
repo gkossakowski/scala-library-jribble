@@ -1,8 +1,8 @@
-public final class Lscala/collection/SeqLike$$anonfun$sorted$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/SeqLike$$anonfun$sorted$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final V; apply(Ljava/lang/Object; x) {
-    this.(Lscala/collection/SeqLike$$anonfun$sorted$1;)arr$1.(Lscala/collection/mutable/ArraySeq;::update(I;Ljava/lang/Object;)V;)(this.(Lscala/collection/SeqLike$$anonfun$sorted$1;)i$2.(Lscala/runtime/IntRef;)elem, x);
-    this.(Lscala/collection/SeqLike$$anonfun$sorted$1;)i$2.(Lscala/runtime/IntRef;)elem = (this.(Lscala/collection/SeqLike$$anonfun$sorted$1;)i$2.(Lscala/runtime/IntRef;)elem + 1);
+    this.(Lscala/collection/SeqLike$$anonfun$sorted$1;)arr$1.(Lscala/collection/mutable/ArraySeq;::update(I;Ljava/lang/Object;)V;)(this.(Lscala/collection/SeqLike$$anonfun$sorted$1;)i$1.(Lscala/runtime/IntRef;)elem, x);
+    this.(Lscala/collection/SeqLike$$anonfun$sorted$1;)i$1.(Lscala/runtime/IntRef;)elem = (this.(Lscala/collection/SeqLike$$anonfun$sorted$1;)i$1.(Lscala/runtime/IntRef;)elem + 1);
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
@@ -12,11 +12,11 @@ public final class Lscala/collection/SeqLike$$anonfun$sorted$1; extends Lscala/r
   
   private Lscala/collection/mutable/ArraySeq; arr$1;
   
-  private Lscala/runtime/IntRef; i$2;
+  private Lscala/runtime/IntRef; i$1;
   
-  public this(Lscala/collection/SeqLike; $outer, Lscala/collection/mutable/ArraySeq; arr$1, Lscala/runtime/IntRef; i$2) {
+  public this(Lscala/collection/SeqLike; $outer, Lscala/collection/mutable/ArraySeq; arr$1, Lscala/runtime/IntRef; i$1) {
     this.(Lscala/collection/SeqLike$$anonfun$sorted$1;)arr$1 = arr$1;
-    this.(Lscala/collection/SeqLike$$anonfun$sorted$1;)i$2 = i$2;
+    this.(Lscala/collection/SeqLike$$anonfun$sorted$1;)i$1 = i$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

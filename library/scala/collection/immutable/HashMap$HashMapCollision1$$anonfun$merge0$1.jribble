@@ -1,7 +1,7 @@
-public final class Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final V; apply(Lscala/Tuple2; p) {
-    this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1;)m$2.(Lscala/runtime/ObjectRef;)elem = this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1;)m$2.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/HashMap;).(Lscala/collection/immutable/HashMap;::updated0(Ljava/lang/Object;I;I;Ljava/lang/Object;Lscala/Tuple2;)Lscala/collection/immutable/HashMap;)(p.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1;)$outer$u0020.(Lscala/collection/immutable/HashMap$HashMapCollision1;::hash()I;)(), this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1;)level$2, p.(Lscala/Tuple2;::_2()Ljava/lang/Object;)(), p);
+    this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1;)m$2.(Lscala/runtime/ObjectRef;)elem = this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1;)m$2.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/HashMap;).(Lscala/collection/immutable/HashMap;::updated0(Ljava/lang/Object;I;I;Ljava/lang/Object;Lscala/Tuple2;Lscala/Function2;)Lscala/collection/immutable/HashMap;)(p.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1;)$outer$u0020.(Lscala/collection/immutable/HashMap$HashMapCollision1;::hash()I;)(), this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1;)level$2, p.(Lscala/Tuple2;::_2()Ljava/lang/Object;)(), p, this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1;)merger$2);
   }
   
   private Lscala/collection/immutable/HashMap$HashMapCollision1; $outer$u0020;
@@ -13,9 +13,11 @@ public final class Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfu
   
   private I; level$2;
   
+  private Lscala/Function2; merger$2;
+  
   private Lscala/runtime/ObjectRef; m$2;
   
-  public this(Lscala/collection/immutable/HashMap$HashMapCollision1; $outer, I; level$2, Lscala/runtime/ObjectRef; m$2) {
+  public this(Lscala/collection/immutable/HashMap$HashMapCollision1; $outer, I; level$2, Lscala/Function2; merger$2, Lscala/runtime/ObjectRef; m$2) {
     if (($outer == null))
       {
         throw (new (Ljava/lang/NullPointerException;::this()V;)());
@@ -25,6 +27,7 @@ public final class Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfu
         this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1;)$outer$u0020 = $outer;
       }
     this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1;)level$2 = level$2;
+    this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1;)merger$2 = merger$2;
     this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$merge0$1;)m$2 = m$2;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }

@@ -1,73 +1,17 @@
-public final class Lscala/runtime/RichShort; extends Ljava/lang/Object; implements Lscala/Proxy;, Lscala/math/Ordered;, Lscala/ScalaObject; {
+public final class Lscala/runtime/RichShort; extends Lscala/runtime/ScalaWholeNumberProxy; implements Lscala/ScalaObject; {
   
-  public Z; $less(Ljava/lang/Object; that) {
-    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  private S; self$u0020;
+  
+  public S; self() {
+    return this.(Lscala/runtime/RichShort;)self$u0020;
   }
-  
-  public Z; $greater(Ljava/lang/Object; that) {
-    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$greater(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
-  }
-  
-  public Z; $less$eq(Ljava/lang/Object; that) {
-    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less$eq(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
-  }
-  
-  public Z; $greater$eq(Ljava/lang/Object; that) {
-    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$greater$eq(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
-  }
-  
-  public I; compareTo(Ljava/lang/Object; that) {
-    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::compareTo(Lscala/math/Ordered;Ljava/lang/Object;)I;)(this, that);
-  }
-  
-  public I; hashCode() {
-    return Lscala/Proxy$class;.(Lscala/Proxy$class;::hashCode(Lscala/Proxy;)I;)(this);
-  }
-  
-  public Z; equals(Ljava/lang/Object; that) {
-    return Lscala/Proxy$class;.(Lscala/Proxy$class;::equals(Lscala/Proxy;Ljava/lang/Object;)Z;)(this, that);
-  }
-  
-  public Ljava/lang/String; toString() {
-    return Lscala/Proxy$class;.(Lscala/Proxy$class;::toString(Lscala/Proxy;)Ljava/lang/String;)(this);
-  }
-  
-  private S; start;
   
   public Ljava/lang/Object; self() {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToShort(S;)Ljava/lang/Short;)(this.(Lscala/runtime/RichShort;)start);
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToShort(S;)Ljava/lang/Short;)(this.(Lscala/runtime/RichShort;::self()S;)());
   }
   
-  public I; compare(S; that) {
-    I; $1$;
-    if ((this.(Lscala/runtime/RichShort;)start < that))
-      {
-        $1$ = -1;
-      }
-    else
-      {
-        I; $2$;
-        if ((this.(Lscala/runtime/RichShort;)start > that))
-          {
-            $2$ = 1;
-          }
-        else
-          {
-            $2$ = 0;
-          }
-        $1$ = $2$;
-      }
-    return $1$;
-  }
-  
-  public I; compare(Ljava/lang/Object; that) {
-    return this.(Lscala/runtime/RichShort;::compare(S;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToShort(Ljava/lang/Object;)S;)(that));
-  }
-  
-  public this(S; start) {
-    this.(Lscala/runtime/RichShort;)start = start;
-    (Ljava/lang/Object;::super()V;)();
-    Lscala/Proxy$class;.(Lscala/Proxy$class;::$init$(Lscala/Proxy;)V;)(this);
-    Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$init$(Lscala/math/Ordered;)V;)(this);
+  public this(S; self) {
+    this.(Lscala/runtime/RichShort;)self$u0020 = self;
+    (Lscala/runtime/ScalaWholeNumberProxy;::super(Lscala/math/Numeric;)V;)(Lscala/math/Numeric$ShortIsIntegral$;.MODULE$);
   }
 }

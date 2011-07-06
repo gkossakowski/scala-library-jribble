@@ -1,171 +1,58 @@
-public abstract class Lscala/collection/generic/TraversableFactory; extends Lscala/collection/generic/GenericCompanion; implements Lscala/ScalaObject; {
+public interface Lscala/collection/generic/TraversableFactory; extends Lscala/collection/generic/GenericSeqCompanion;, Lscala/ScalaObject; {
   
-  public Lscala/collection/Traversable; concat(Lscala/collection/Seq; xss) {
-    Lscala/collection/mutable/Builder; b$1 = this.(Lscala/collection/generic/GenericCompanion;::newBuilder()Lscala/collection/mutable/Builder;)();
-    if (xss.(Lscala/collection/IterableLike;::forall(Lscala/Function1;)Z;)((new (Lscala/collection/generic/TraversableFactory$$anonfun$concat$1;::this(Lscala/collection/generic/TraversableFactory;)V;)(this))))
-      {
-        b$1.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(xss.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/collection/generic/TraversableFactory$$anonfun$concat$2;::this(Lscala/collection/generic/TraversableFactory;)V;)(this)), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::sum(Lscala/math/Numeric;)Ljava/lang/Object;)(Lscala/math/Numeric$IntIsIntegral$;.MODULE$)));
-      }
-    else
-      {
-        
-      }
-    xss.(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/generic/TraversableFactory$$anonfun$concat$3;::this(Lscala/collection/generic/TraversableFactory;Lscala/collection/mutable/Builder;)V;)(this, b$1)));
-    return b$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Traversable;);
-  }
+  public Lscala/collection/Traversable; scala$collection$generic$TraversableFactory$$super$concat(Lscala/collection/Seq; xss);
   
-  public Lscala/collection/Traversable; fill(I; n, Lscala/Function0; elem) {
-    Lscala/collection/mutable/Builder; b = this.(Lscala/collection/generic/GenericCompanion;::newBuilder()Lscala/collection/mutable/Builder;)();
-    b.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(n);
-    I; i = 0;
-    while$1: while(true) {
-      if ((i < n))
-        {
-          {
-            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(elem.(Lscala/Function0;::apply()Ljava/lang/Object;)());
-            i = (i + 1);
-          }
-          continue while$1;
-        }
-      else
-        {
-          
-        }
-      break;
-    }
-    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Traversable;);
-  }
+  public Lscala/collection/Traversable; scala$collection$generic$TraversableFactory$$super$fill(I; n, Lscala/Function0; elem);
   
-  public Lscala/collection/Traversable; fill(I; n1, I; n2$4, Lscala/Function0; elem$4) {
-    return this.(Lscala/collection/generic/TraversableFactory;::tabulate(I;Lscala/Function1;)Lscala/collection/Traversable;)(n1, (new (Lscala/collection/generic/TraversableFactory$$anonfun$fill$1;::this(Lscala/collection/generic/TraversableFactory;I;Lscala/Function0;)V;)(this, n2$4, elem$4)));
-  }
+  public Lscala/collection/Traversable; scala$collection$generic$TraversableFactory$$super$fill(I; n1, I; n2, Lscala/Function0; elem);
   
-  public Lscala/collection/Traversable; fill(I; n1, I; n2$3, I; n3$3, Lscala/Function0; elem$3) {
-    return this.(Lscala/collection/generic/TraversableFactory;::tabulate(I;Lscala/Function1;)Lscala/collection/Traversable;)(n1, (new (Lscala/collection/generic/TraversableFactory$$anonfun$fill$2;::this(Lscala/collection/generic/TraversableFactory;I;I;Lscala/Function0;)V;)(this, n2$3, n3$3, elem$3)));
-  }
+  public Lscala/collection/Traversable; scala$collection$generic$TraversableFactory$$super$fill(I; n1, I; n2, I; n3, Lscala/Function0; elem);
   
-  public Lscala/collection/Traversable; fill(I; n1, I; n2$2, I; n3$2, I; n4$2, Lscala/Function0; elem$2) {
-    return this.(Lscala/collection/generic/TraversableFactory;::tabulate(I;Lscala/Function1;)Lscala/collection/Traversable;)(n1, (new (Lscala/collection/generic/TraversableFactory$$anonfun$fill$3;::this(Lscala/collection/generic/TraversableFactory;I;I;I;Lscala/Function0;)V;)(this, n2$2, n3$2, n4$2, elem$2)));
-  }
+  public Lscala/collection/Traversable; scala$collection$generic$TraversableFactory$$super$fill(I; n1, I; n2, I; n3, I; n4, Lscala/Function0; elem);
   
-  public Lscala/collection/Traversable; fill(I; n1, I; n2$1, I; n3$1, I; n4$1, I; n5$1, Lscala/Function0; elem$1) {
-    return this.(Lscala/collection/generic/TraversableFactory;::tabulate(I;Lscala/Function1;)Lscala/collection/Traversable;)(n1, (new (Lscala/collection/generic/TraversableFactory$$anonfun$fill$4;::this(Lscala/collection/generic/TraversableFactory;I;I;I;I;Lscala/Function0;)V;)(this, n2$1, n3$1, n4$1, n5$1, elem$1)));
-  }
+  public Lscala/collection/Traversable; scala$collection$generic$TraversableFactory$$super$fill(I; n1, I; n2, I; n3, I; n4, I; n5, Lscala/Function0; elem);
   
-  public Lscala/collection/Traversable; tabulate(I; n, Lscala/Function1; f) {
-    Lscala/collection/mutable/Builder; b = this.(Lscala/collection/generic/GenericCompanion;::newBuilder()Lscala/collection/mutable/Builder;)();
-    b.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(n);
-    I; i = 0;
-    while$2: while(true) {
-      if ((i < n))
-        {
-          {
-            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i)));
-            i = (i + 1);
-          }
-          continue while$2;
-        }
-      else
-        {
-          
-        }
-      break;
-    }
-    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Traversable;);
-  }
+  public Lscala/collection/Traversable; scala$collection$generic$TraversableFactory$$super$tabulate(I; n, Lscala/Function1; f);
   
-  public Lscala/collection/Traversable; tabulate(I; n1, I; n2$8, Lscala/Function2; f$4) {
-    return this.(Lscala/collection/generic/TraversableFactory;::tabulate(I;Lscala/Function1;)Lscala/collection/Traversable;)(n1, (new (Lscala/collection/generic/TraversableFactory$$anonfun$tabulate$1;::this(Lscala/collection/generic/TraversableFactory;I;Lscala/Function2;)V;)(this, n2$8, f$4)));
-  }
+  public Lscala/collection/Traversable; scala$collection$generic$TraversableFactory$$super$tabulate(I; n1, I; n2, Lscala/Function2; f);
   
-  public Lscala/collection/Traversable; tabulate(I; n1, I; n2$7, I; n3$6, Lscala/Function3; f$3) {
-    return this.(Lscala/collection/generic/TraversableFactory;::tabulate(I;Lscala/Function1;)Lscala/collection/Traversable;)(n1, (new (Lscala/collection/generic/TraversableFactory$$anonfun$tabulate$2;::this(Lscala/collection/generic/TraversableFactory;I;I;Lscala/Function3;)V;)(this, n2$7, n3$6, f$3)));
-  }
+  public Lscala/collection/Traversable; scala$collection$generic$TraversableFactory$$super$tabulate(I; n1, I; n2, I; n3, Lscala/Function3; f);
   
-  public Lscala/collection/Traversable; tabulate(I; n1, I; n2$6, I; n3$5, I; n4$4, Lscala/Function4; f$2) {
-    return this.(Lscala/collection/generic/TraversableFactory;::tabulate(I;Lscala/Function1;)Lscala/collection/Traversable;)(n1, (new (Lscala/collection/generic/TraversableFactory$$anonfun$tabulate$3;::this(Lscala/collection/generic/TraversableFactory;I;I;I;Lscala/Function4;)V;)(this, n2$6, n3$5, n4$4, f$2)));
-  }
+  public Lscala/collection/Traversable; scala$collection$generic$TraversableFactory$$super$tabulate(I; n1, I; n2, I; n3, I; n4, Lscala/Function4; f);
   
-  public Lscala/collection/Traversable; tabulate(I; n1, I; n2$5, I; n3$4, I; n4$3, I; n5$2, Lscala/Function5; f$1) {
-    return this.(Lscala/collection/generic/TraversableFactory;::tabulate(I;Lscala/Function1;)Lscala/collection/Traversable;)(n1, (new (Lscala/collection/generic/TraversableFactory$$anonfun$tabulate$4;::this(Lscala/collection/generic/TraversableFactory;I;I;I;I;Lscala/Function5;)V;)(this, n2$5, n3$4, n4$3, n5$2, f$1)));
-  }
+  public Lscala/collection/Traversable; scala$collection$generic$TraversableFactory$$super$tabulate(I; n1, I; n2, I; n3, I; n4, I; n5, Lscala/Function5; f);
   
-  public Lscala/collection/Traversable; range(I; start, I; end) {
-    return this.(Lscala/collection/generic/TraversableFactory;::range(I;I;I;)Lscala/collection/Traversable;)(start, end, 1);
-  }
+  public Lscala/collection/Traversable; scala$collection$generic$TraversableFactory$$super$range(Ljava/lang/Object; start, Ljava/lang/Object; end, Lscala/math/Integral; evidence$1);
   
-  public Lscala/collection/Traversable; range(I; start, I; end, I; step) {
-    if ((step == 0))
-      {
-        throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)("zero step"));
-      }
-    else
-      {
-        
-      }
-    Lscala/collection/mutable/Builder; b = this.(Lscala/collection/generic/GenericCompanion;::newBuilder()Lscala/collection/mutable/Builder;)();
-    b.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(Lscala/package$;.MODULE$.(Lscala/package$;::Range()Lscala/collection/immutable/Range$;)().(Lscala/collection/immutable/Range$;::count(I;I;I;Z;)I;)(start, end, step, false));
-    I; i = start;
-    while$3: while(true) {
-      Z; $1$;
-      if ((step < 0))
-        {
-          $1$ = (end < i);
-        }
-      else
-        {
-          $1$ = (i < end);
-        }
-      if ($1$)
-        {
-          {
-            b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i));
-            i = (i + step);
-          }
-          continue while$3;
-        }
-      else
-        {
-          
-        }
-      break;
-    }
-    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Traversable;);
-  }
+  public Lscala/collection/Traversable; scala$collection$generic$TraversableFactory$$super$range(Ljava/lang/Object; start, Ljava/lang/Object; end, Ljava/lang/Object; step, Lscala/math/Integral; evidence$2);
   
-  public Lscala/collection/Traversable; iterate(Ljava/lang/Object; start, I; len, Lscala/Function1; f) {
-    Lscala/collection/mutable/Builder; b = this.(Lscala/collection/generic/GenericCompanion;::newBuilder()Lscala/collection/mutable/Builder;)();
-    if ((len > 0))
-      {
-        b.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(len);
-        Ljava/lang/Object; acc = start;
-        I; i = 1;
-        b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(acc);
-        while$4: while(true) {
-          if ((i < len))
-            {
-              {
-                acc = f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(acc);
-                i = (i + 1);
-                b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(acc);
-              }
-              continue while$4;
-            }
-          else
-            {
-              
-            }
-          break;
-        }
-      }
-    else
-      {
-        
-      }
-    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Traversable;);
-  }
+  public Lscala/collection/Traversable; scala$collection$generic$TraversableFactory$$super$iterate(Ljava/lang/Object; start, I; len, Lscala/Function1; f);
   
-  public this() {
-    (Lscala/collection/generic/GenericCompanion;::super()V;)();
-  }
+  public Lscala/collection/Traversable; concat(Lscala/collection/Seq; xss);
+  
+  public Lscala/collection/Traversable; fill(I; n, Lscala/Function0; elem);
+  
+  public Lscala/collection/Traversable; fill(I; n1, I; n2, Lscala/Function0; elem);
+  
+  public Lscala/collection/Traversable; fill(I; n1, I; n2, I; n3, Lscala/Function0; elem);
+  
+  public Lscala/collection/Traversable; fill(I; n1, I; n2, I; n3, I; n4, Lscala/Function0; elem);
+  
+  public Lscala/collection/Traversable; fill(I; n1, I; n2, I; n3, I; n4, I; n5, Lscala/Function0; elem);
+  
+  public Lscala/collection/Traversable; tabulate(I; n, Lscala/Function1; f);
+  
+  public Lscala/collection/Traversable; tabulate(I; n1, I; n2, Lscala/Function2; f);
+  
+  public Lscala/collection/Traversable; tabulate(I; n1, I; n2, I; n3, Lscala/Function3; f);
+  
+  public Lscala/collection/Traversable; tabulate(I; n1, I; n2, I; n3, I; n4, Lscala/Function4; f);
+  
+  public Lscala/collection/Traversable; tabulate(I; n1, I; n2, I; n3, I; n4, I; n5, Lscala/Function5; f);
+  
+  public Lscala/collection/Traversable; range(Ljava/lang/Object; start, Ljava/lang/Object; end, Lscala/math/Integral; evidence$1);
+  
+  public Lscala/collection/Traversable; range(Ljava/lang/Object; start, Ljava/lang/Object; end, Ljava/lang/Object; step, Lscala/math/Integral; evidence$2);
+  
+  public Lscala/collection/Traversable; iterate(Ljava/lang/Object; start, I; len, Lscala/Function1; f);
 }

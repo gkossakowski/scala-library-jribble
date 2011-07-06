@@ -1,20 +1,20 @@
-public final class Lscala/xml/PrettyPrinter$Box$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject; {
+public final class Lscala/xml/PrettyPrinter$Box$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject;, Lscala/Serializable; {
   
   public final Ljava/lang/String; toString() {
     return "Box";
   }
   
   public Lscala/Option; unapply(Lscala/xml/PrettyPrinter$Box; x$0) {
-    Lscala/Option; $14$;
+    Lscala/Option; $13$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $14$ = Lscala/None$;.MODULE$;
+        $13$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $14$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$0.(Lscala/xml/PrettyPrinter$Box;::col()I;)()), x$0.(Lscala/xml/PrettyPrinter$Box;::s()Ljava/lang/String;)()))));
+        $13$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$0.(Lscala/xml/PrettyPrinter$Box;::col()I;)()), x$0.(Lscala/xml/PrettyPrinter$Box;::s()Ljava/lang/String;)()))));
       }
-    return $14$;
+    return $13$;
   }
   
   public Lscala/xml/PrettyPrinter$Box; apply(I; col, Ljava/lang/String; s) {

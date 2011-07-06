@@ -1,13 +1,16 @@
 public abstract class Lscala/util/regexp/PointedHedgeExp; extends Lscala/util/regexp/Base; implements Lscala/ScalaObject; {
   
-  private Lscala/util/regexp/PointedHedgeExp$Point$; Point$module;
+  private Lscala/util/regexp/PointedHedgeExp$Node$; Node$module;
   
-  public final Lscala/util/regexp/PointedHedgeExp$Point$; Point() {
-    if ((this.(Lscala/util/regexp/PointedHedgeExp;)Point$module == null))
+  public final Lscala/util/regexp/PointedHedgeExp$Node$; Node() {
+    if ((this.(Lscala/util/regexp/PointedHedgeExp;)Node$module == null))
       {
-        this.(Lscala/util/regexp/PointedHedgeExp;)Point$module = (new (Lscala/util/regexp/PointedHedgeExp$Point$;::this(Lscala/util/regexp/PointedHedgeExp;)V;)(this));
+        if ((this.(Lscala/util/regexp/PointedHedgeExp;)Node$module == null))
+          {
+            this.(Lscala/util/regexp/PointedHedgeExp;)Node$module = (new (Lscala/util/regexp/PointedHedgeExp$Node$;::this(Lscala/util/regexp/PointedHedgeExp;)V;)(this));
+          }
       }
-    return this.(Lscala/util/regexp/PointedHedgeExp;)Point$module;
+    return this.(Lscala/util/regexp/PointedHedgeExp;)Node$module;
   }
   
   private Lscala/util/regexp/PointedHedgeExp$TopIter$; TopIter$module;
@@ -15,19 +18,25 @@ public abstract class Lscala/util/regexp/PointedHedgeExp; extends Lscala/util/re
   public final Lscala/util/regexp/PointedHedgeExp$TopIter$; TopIter() {
     if ((this.(Lscala/util/regexp/PointedHedgeExp;)TopIter$module == null))
       {
-        this.(Lscala/util/regexp/PointedHedgeExp;)TopIter$module = (new (Lscala/util/regexp/PointedHedgeExp$TopIter$;::this(Lscala/util/regexp/PointedHedgeExp;)V;)(this));
+        if ((this.(Lscala/util/regexp/PointedHedgeExp;)TopIter$module == null))
+          {
+            this.(Lscala/util/regexp/PointedHedgeExp;)TopIter$module = (new (Lscala/util/regexp/PointedHedgeExp$TopIter$;::this(Lscala/util/regexp/PointedHedgeExp;)V;)(this));
+          }
       }
     return this.(Lscala/util/regexp/PointedHedgeExp;)TopIter$module;
   }
   
-  private Lscala/util/regexp/PointedHedgeExp$Node$; Node$module;
+  private Lscala/util/regexp/PointedHedgeExp$Point$; Point$module;
   
-  public final Lscala/util/regexp/PointedHedgeExp$Node$; Node() {
-    if ((this.(Lscala/util/regexp/PointedHedgeExp;)Node$module == null))
+  public final Lscala/util/regexp/PointedHedgeExp$Point$; Point() {
+    if ((this.(Lscala/util/regexp/PointedHedgeExp;)Point$module == null))
       {
-        this.(Lscala/util/regexp/PointedHedgeExp;)Node$module = (new (Lscala/util/regexp/PointedHedgeExp$Node$;::this(Lscala/util/regexp/PointedHedgeExp;)V;)(this));
+        if ((this.(Lscala/util/regexp/PointedHedgeExp;)Point$module == null))
+          {
+            this.(Lscala/util/regexp/PointedHedgeExp;)Point$module = (new (Lscala/util/regexp/PointedHedgeExp$Point$;::this(Lscala/util/regexp/PointedHedgeExp;)V;)(this));
+          }
       }
-    return this.(Lscala/util/regexp/PointedHedgeExp;)Node$module;
+    return this.(Lscala/util/regexp/PointedHedgeExp;)Point$module;
   }
   
   public this() {

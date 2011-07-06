@@ -1,4 +1,4 @@
-public final class Lscala/collection/script/NoLo$; extends Lscala/collection/script/Location; implements Lscala/ScalaObject;, Lscala/Product; {
+public final class Lscala/collection/script/NoLo$; extends Lscala/collection/script/Location; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public static Lscala/collection/script/NoLo$; MODULE$ = new (Lscala/collection/script/NoLo$;::this()V;)();
   
   public Lscala/collection/Iterator; productIterator() {
@@ -7,6 +7,10 @@ public final class Lscala/collection/script/NoLo$; extends Lscala/collection/scr
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public final I; hashCode() {
+    return 2432836;
   }
   
   public final Ljava/lang/String; toString() {

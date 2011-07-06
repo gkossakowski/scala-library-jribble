@@ -4,46 +4,26 @@ public abstract class Lscala/collection/TraversableViewLike$class; {
     throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::any2stringadd(Ljava/lang/Object;)Lscala/runtime/StringAdd;)($this).(Lscala/runtime/StringAdd;::$plus(Ljava/lang/String;)Ljava/lang/String;)(".newBuilder")));
   }
   
+  public static Ljava/lang/String; viewIdentifier(Lscala/collection/TraversableViewLike; $this) {
+    return "";
+  }
+  
+  public static Ljava/lang/String; viewIdString(Lscala/collection/TraversableViewLike; $this) {
+    return "";
+  }
+  
+  public static Ljava/lang/String; stringPrefix(Lscala/collection/TraversableViewLike; $this) {
+    return "TraversableView";
+  }
+  
   public static Ljava/lang/Object; force(Lscala/collection/TraversableViewLike; $this, Lscala/collection/generic/CanBuildFrom; bf) {
     Lscala/collection/mutable/Builder; b = bf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)($this.(Lscala/collection/TraversableViewLike;::underlying()Ljava/lang/Object;)());
     b.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)($this);
     return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
   }
   
-  public static Lscala/collection/TraversableViewLike$Transformed; newForced(Lscala/collection/TraversableViewLike; $this, Lscala/Function0; xs$1) {
-    return (new (Lscala/collection/TraversableViewLike$$anon$1;::this(Lscala/collection/TraversableViewLike;Lscala/Function0;)V;)($this, xs$1));
-  }
-  
-  public static Lscala/collection/TraversableViewLike$Transformed; newAppended(Lscala/collection/TraversableViewLike; $this, Lscala/collection/Traversable; that$1) {
-    return (new (Lscala/collection/TraversableViewLike$$anon$2;::this(Lscala/collection/TraversableViewLike;Lscala/collection/Traversable;)V;)($this, that$1));
-  }
-  
-  public static Lscala/collection/TraversableViewLike$Transformed; newMapped(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; f$2) {
-    return (new (Lscala/collection/TraversableViewLike$$anon$3;::this(Lscala/collection/TraversableViewLike;Lscala/Function1;)V;)($this, f$2));
-  }
-  
-  public static Lscala/collection/TraversableViewLike$Transformed; newFlatMapped(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; f$1) {
-    return (new (Lscala/collection/TraversableViewLike$$anon$4;::this(Lscala/collection/TraversableViewLike;Lscala/Function1;)V;)($this, f$1));
-  }
-  
-  public static Lscala/collection/TraversableViewLike$Transformed; newFiltered(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; p$4) {
-    return (new (Lscala/collection/TraversableViewLike$$anon$5;::this(Lscala/collection/TraversableViewLike;Lscala/Function1;)V;)($this, p$4));
-  }
-  
-  public static Lscala/collection/TraversableViewLike$Transformed; newSliced(Lscala/collection/TraversableViewLike; $this, I; _from$1, I; _until$1) {
-    return (new (Lscala/collection/TraversableViewLike$$anon$6;::this(Lscala/collection/TraversableViewLike;I;I;)V;)($this, _from$1, _until$1));
-  }
-  
-  public static Lscala/collection/TraversableViewLike$Transformed; newDroppedWhile(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; p$3) {
-    return (new (Lscala/collection/TraversableViewLike$$anon$7;::this(Lscala/collection/TraversableViewLike;Lscala/Function1;)V;)($this, p$3));
-  }
-  
-  public static Lscala/collection/TraversableViewLike$Transformed; newTakenWhile(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; p$2) {
-    return (new (Lscala/collection/TraversableViewLike$$anon$8;::this(Lscala/collection/TraversableViewLike;Lscala/Function1;)V;)($this, p$2));
-  }
-  
-  public static Ljava/lang/Object; $plus$plus(Lscala/collection/TraversableViewLike; $this, Lscala/collection/TraversableOnce; xs, Lscala/collection/generic/CanBuildFrom; bf) {
-    return $this.(Lscala/collection/TraversableViewLike;::newAppended(Lscala/collection/Traversable;)Lscala/collection/TraversableViewLike$Transformed;)(xs.(Lscala/collection/TraversableOnce;::toTraversable()Lscala/collection/Traversable;)());
+  public static Ljava/lang/Object; $plus$plus(Lscala/collection/TraversableViewLike; $this, Lscala/collection/GenTraversableOnce; xs, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/TraversableViewLike;::newAppended(Lscala/collection/GenTraversable;)Lscala/collection/TraversableViewLike$Transformed;)(xs.(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::toTraversable()Lscala/collection/Traversable;)());
   }
   
   public static Ljava/lang/Object; map(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf) {
@@ -58,54 +38,92 @@ public abstract class Lscala/collection/TraversableViewLike$class; {
     return $this.(Lscala/collection/TraversableViewLike;::newFlatMapped(Lscala/Function1;)Lscala/collection/TraversableViewLike$Transformed;)(f);
   }
   
-  public static Lscala/collection/Seq; thisSeq(Lscala/collection/TraversableViewLike; $this) {
-    Lscala/collection/mutable/ArrayBuffer; buf$1 = (new (Lscala/collection/mutable/ArrayBuffer;::this()V;)());
-    $this.(Lscala/collection/generic/GenericTraversableTemplate;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/TraversableViewLike$$anonfun$thisSeq$1;::this(Lscala/collection/TraversableViewLike;Lscala/collection/mutable/ArrayBuffer;)V;)($this, buf$1)));
-    return buf$1.(Lscala/collection/mutable/ArrayBuffer;::result()Lscala/collection/mutable/ArrayBuffer;)();
+  public static final Lscala/collection/TraversableView; scala$collection$TraversableViewLike$$asThis(Lscala/collection/TraversableViewLike; $this, Lscala/collection/TraversableViewLike$Transformed; xs) {
+    return xs;
+  }
+  
+  public static Lscala/collection/TraversableViewLike$Transformed; newForced(Lscala/collection/TraversableViewLike; $this, Lscala/Function0; xs$1) {
+    return (new (Lscala/collection/TraversableViewLike$$anon$1;::this(Lscala/collection/TraversableViewLike;Lscala/Function0;)V;)($this, xs$1));
+  }
+  
+  public static Lscala/collection/TraversableViewLike$Transformed; newAppended(Lscala/collection/TraversableViewLike; $this, Lscala/collection/GenTraversable; that$1) {
+    return (new (Lscala/collection/TraversableViewLike$$anon$2;::this(Lscala/collection/TraversableViewLike;Lscala/collection/GenTraversable;)V;)($this, that$1));
+  }
+  
+  public static Lscala/collection/TraversableViewLike$Transformed; newMapped(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; f$2) {
+    return (new (Lscala/collection/TraversableViewLike$$anon$3;::this(Lscala/collection/TraversableViewLike;Lscala/Function1;)V;)($this, f$2));
+  }
+  
+  public static Lscala/collection/TraversableViewLike$Transformed; newFlatMapped(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; f$1) {
+    return (new (Lscala/collection/TraversableViewLike$$anon$4;::this(Lscala/collection/TraversableViewLike;Lscala/Function1;)V;)($this, f$1));
+  }
+  
+  public static Lscala/collection/TraversableViewLike$Transformed; newFiltered(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; p$4) {
+    return (new (Lscala/collection/TraversableViewLike$$anon$5;::this(Lscala/collection/TraversableViewLike;Lscala/Function1;)V;)($this, p$4));
+  }
+  
+  public static Lscala/collection/TraversableViewLike$Transformed; newSliced(Lscala/collection/TraversableViewLike; $this, Lscala/collection/generic/SliceInterval; _endpoints$1) {
+    return (new (Lscala/collection/TraversableViewLike$$anon$6;::this(Lscala/collection/TraversableViewLike;Lscala/collection/generic/SliceInterval;)V;)($this, _endpoints$1));
+  }
+  
+  public static Lscala/collection/TraversableViewLike$Transformed; newDroppedWhile(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; p$3) {
+    return (new (Lscala/collection/TraversableViewLike$$anon$7;::this(Lscala/collection/TraversableViewLike;Lscala/Function1;)V;)($this, p$3));
+  }
+  
+  public static Lscala/collection/TraversableViewLike$Transformed; newTakenWhile(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; p$2) {
+    return (new (Lscala/collection/TraversableViewLike$$anon$8;::this(Lscala/collection/TraversableViewLike;Lscala/Function1;)V;)($this, p$2));
+  }
+  
+  public static Lscala/collection/TraversableViewLike$Transformed; newTaken(Lscala/collection/TraversableViewLike; $this, I; n) {
+    return $this.(Lscala/collection/TraversableViewLike;::newSliced(Lscala/collection/generic/SliceInterval;)Lscala/collection/TraversableViewLike$Transformed;)(Lscala/collection/generic/SliceInterval$;.MODULE$.(Lscala/collection/generic/SliceInterval$;::apply(I;I;)Lscala/collection/generic/SliceInterval;)(0, n));
+  }
+  
+  public static Lscala/collection/TraversableViewLike$Transformed; newDropped(Lscala/collection/TraversableViewLike; $this, I; n) {
+    return $this.(Lscala/collection/TraversableViewLike;::newSliced(Lscala/collection/generic/SliceInterval;)Lscala/collection/TraversableViewLike$Transformed;)(Lscala/collection/generic/SliceInterval$;.MODULE$.(Lscala/collection/generic/SliceInterval$;::apply(I;I;)Lscala/collection/generic/SliceInterval;)(n, 2147483647));
   }
   
   public static Lscala/collection/TraversableView; filter(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; p) {
-    return $this.(Lscala/collection/TraversableViewLike;::newFiltered(Lscala/Function1;)Lscala/collection/TraversableViewLike$Transformed;)(p);
+    return Lscala/collection/TraversableViewLike$class;.(Lscala/collection/TraversableViewLike$class;::scala$collection$TraversableViewLike$$asThis(Lscala/collection/TraversableViewLike;Lscala/collection/TraversableViewLike$Transformed;)Lscala/collection/TraversableView;)($this, $this.(Lscala/collection/TraversableViewLike;::newFiltered(Lscala/Function1;)Lscala/collection/TraversableViewLike$Transformed;)(p));
   }
   
   public static Lscala/collection/TraversableView; withFilter(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; p) {
-    return $this.(Lscala/collection/TraversableViewLike;::newFiltered(Lscala/Function1;)Lscala/collection/TraversableViewLike$Transformed;)(p);
+    return Lscala/collection/TraversableViewLike$class;.(Lscala/collection/TraversableViewLike$class;::scala$collection$TraversableViewLike$$asThis(Lscala/collection/TraversableViewLike;Lscala/collection/TraversableViewLike$Transformed;)Lscala/collection/TraversableView;)($this, $this.(Lscala/collection/TraversableViewLike;::newFiltered(Lscala/Function1;)Lscala/collection/TraversableViewLike$Transformed;)(p));
   }
   
   public static Lscala/Tuple2; partition(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; p$1) {
-    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)($this.(Lscala/collection/TraversableViewLike;::filter(Lscala/Function1;)Lscala/collection/TraversableView;)(p$1), $this.(Lscala/collection/TraversableViewLike;::filter(Lscala/Function1;)Lscala/collection/TraversableView;)((new (Lscala/collection/TraversableViewLike$$anonfun$partition$1;::this(Lscala/collection/TraversableViewLike;Lscala/Function1;)V;)($this, p$1)))));
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/collection/TraversableViewLike$class;.(Lscala/collection/TraversableViewLike$class;::scala$collection$TraversableViewLike$$asThis(Lscala/collection/TraversableViewLike;Lscala/collection/TraversableViewLike$Transformed;)Lscala/collection/TraversableView;)($this, $this.(Lscala/collection/TraversableViewLike;::newFiltered(Lscala/Function1;)Lscala/collection/TraversableViewLike$Transformed;)(p$1)), Lscala/collection/TraversableViewLike$class;.(Lscala/collection/TraversableViewLike$class;::scala$collection$TraversableViewLike$$asThis(Lscala/collection/TraversableViewLike;Lscala/collection/TraversableViewLike$Transformed;)Lscala/collection/TraversableView;)($this, $this.(Lscala/collection/TraversableViewLike;::newFiltered(Lscala/Function1;)Lscala/collection/TraversableViewLike$Transformed;)((new (Lscala/collection/TraversableViewLike$$anonfun$partition$1;::this(Lscala/collection/TraversableViewLike;Lscala/Function1;)V;)($this, p$1))))));
   }
   
   public static Lscala/collection/TraversableView; init(Lscala/collection/TraversableViewLike; $this) {
-    return $this.(Lscala/collection/TraversableViewLike;::newSliced(I;I;)Lscala/collection/TraversableViewLike$Transformed;)(0, ($this.(Lscala/collection/TraversableOnce;::size()I;)() - 1));
+    return Lscala/collection/TraversableViewLike$class;.(Lscala/collection/TraversableViewLike$class;::scala$collection$TraversableViewLike$$asThis(Lscala/collection/TraversableViewLike;Lscala/collection/TraversableViewLike$Transformed;)Lscala/collection/TraversableView;)($this, $this.(Lscala/collection/TraversableViewLike;::newSliced(Lscala/collection/generic/SliceInterval;)Lscala/collection/TraversableViewLike$Transformed;)(Lscala/collection/generic/SliceInterval$;.MODULE$.(Lscala/collection/generic/SliceInterval$;::apply(I;I;)Lscala/collection/generic/SliceInterval;)(0, ($this.(Lscala/collection/TraversableOnce;::size()I;)() - 1))));
   }
   
   public static Lscala/collection/TraversableView; drop(Lscala/collection/TraversableViewLike; $this, I; n) {
-    return $this.(Lscala/collection/TraversableViewLike;::newSliced(I;I;)Lscala/collection/TraversableViewLike$Transformed;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(n).(Lscala/runtime/RichInt;::max(I;)I;)(0), 2147483647);
+    return Lscala/collection/TraversableViewLike$class;.(Lscala/collection/TraversableViewLike$class;::scala$collection$TraversableViewLike$$asThis(Lscala/collection/TraversableViewLike;Lscala/collection/TraversableViewLike$Transformed;)Lscala/collection/TraversableView;)($this, $this.(Lscala/collection/TraversableViewLike;::newDropped(I;)Lscala/collection/TraversableViewLike$Transformed;)(n));
   }
   
   public static Lscala/collection/TraversableView; take(Lscala/collection/TraversableViewLike; $this, I; n) {
-    return $this.(Lscala/collection/TraversableViewLike;::newSliced(I;I;)Lscala/collection/TraversableViewLike$Transformed;)(0, n);
+    return Lscala/collection/TraversableViewLike$class;.(Lscala/collection/TraversableViewLike$class;::scala$collection$TraversableViewLike$$asThis(Lscala/collection/TraversableViewLike;Lscala/collection/TraversableViewLike$Transformed;)Lscala/collection/TraversableView;)($this, $this.(Lscala/collection/TraversableViewLike;::newTaken(I;)Lscala/collection/TraversableViewLike$Transformed;)(n));
   }
   
   public static Lscala/collection/TraversableView; slice(Lscala/collection/TraversableViewLike; $this, I; from, I; until) {
-    return $this.(Lscala/collection/TraversableViewLike;::newSliced(I;I;)Lscala/collection/TraversableViewLike$Transformed;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(from).(Lscala/runtime/RichInt;::max(I;)I;)(0), until);
+    return Lscala/collection/TraversableViewLike$class;.(Lscala/collection/TraversableViewLike$class;::scala$collection$TraversableViewLike$$asThis(Lscala/collection/TraversableViewLike;Lscala/collection/TraversableViewLike$Transformed;)Lscala/collection/TraversableView;)($this, $this.(Lscala/collection/TraversableViewLike;::newSliced(Lscala/collection/generic/SliceInterval;)Lscala/collection/TraversableViewLike$Transformed;)(Lscala/collection/generic/SliceInterval$;.MODULE$.(Lscala/collection/generic/SliceInterval$;::apply(I;I;)Lscala/collection/generic/SliceInterval;)(from, until)));
   }
   
   public static Lscala/collection/TraversableView; dropWhile(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; p) {
-    return $this.(Lscala/collection/TraversableViewLike;::newDroppedWhile(Lscala/Function1;)Lscala/collection/TraversableViewLike$Transformed;)(p);
+    return Lscala/collection/TraversableViewLike$class;.(Lscala/collection/TraversableViewLike$class;::scala$collection$TraversableViewLike$$asThis(Lscala/collection/TraversableViewLike;Lscala/collection/TraversableViewLike$Transformed;)Lscala/collection/TraversableView;)($this, $this.(Lscala/collection/TraversableViewLike;::newDroppedWhile(Lscala/Function1;)Lscala/collection/TraversableViewLike$Transformed;)(p));
   }
   
   public static Lscala/collection/TraversableView; takeWhile(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; p) {
-    return $this.(Lscala/collection/TraversableViewLike;::newTakenWhile(Lscala/Function1;)Lscala/collection/TraversableViewLike$Transformed;)(p);
+    return Lscala/collection/TraversableViewLike$class;.(Lscala/collection/TraversableViewLike$class;::scala$collection$TraversableViewLike$$asThis(Lscala/collection/TraversableViewLike;Lscala/collection/TraversableViewLike$Transformed;)Lscala/collection/TraversableView;)($this, $this.(Lscala/collection/TraversableViewLike;::newTakenWhile(Lscala/Function1;)Lscala/collection/TraversableViewLike$Transformed;)(p));
   }
   
   public static Lscala/Tuple2; span(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; p) {
-    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)($this.(Lscala/collection/TraversableViewLike;::takeWhile(Lscala/Function1;)Lscala/collection/TraversableView;)(p), $this.(Lscala/collection/TraversableViewLike;::dropWhile(Lscala/Function1;)Lscala/collection/TraversableView;)(p)));
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/collection/TraversableViewLike$class;.(Lscala/collection/TraversableViewLike$class;::scala$collection$TraversableViewLike$$asThis(Lscala/collection/TraversableViewLike;Lscala/collection/TraversableViewLike$Transformed;)Lscala/collection/TraversableView;)($this, $this.(Lscala/collection/TraversableViewLike;::newTakenWhile(Lscala/Function1;)Lscala/collection/TraversableViewLike$Transformed;)(p)), Lscala/collection/TraversableViewLike$class;.(Lscala/collection/TraversableViewLike$class;::scala$collection$TraversableViewLike$$asThis(Lscala/collection/TraversableViewLike;Lscala/collection/TraversableViewLike$Transformed;)Lscala/collection/TraversableView;)($this, $this.(Lscala/collection/TraversableViewLike;::newDroppedWhile(Lscala/Function1;)Lscala/collection/TraversableViewLike$Transformed;)(p))));
   }
   
   public static Lscala/Tuple2; splitAt(Lscala/collection/TraversableViewLike; $this, I; n) {
-    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)($this.(Lscala/collection/TraversableViewLike;::take(I;)Lscala/collection/TraversableView;)(n), $this.(Lscala/collection/TraversableViewLike;::drop(I;)Lscala/collection/TraversableView;)(n)));
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/collection/TraversableViewLike$class;.(Lscala/collection/TraversableViewLike$class;::scala$collection$TraversableViewLike$$asThis(Lscala/collection/TraversableViewLike;Lscala/collection/TraversableViewLike$Transformed;)Lscala/collection/TraversableView;)($this, $this.(Lscala/collection/TraversableViewLike;::newTaken(I;)Lscala/collection/TraversableViewLike$Transformed;)(n)), Lscala/collection/TraversableViewLike$class;.(Lscala/collection/TraversableViewLike$class;::scala$collection$TraversableViewLike$$asThis(Lscala/collection/TraversableViewLike;Lscala/collection/TraversableViewLike$Transformed;)Lscala/collection/TraversableView;)($this, $this.(Lscala/collection/TraversableViewLike;::newDropped(I;)Lscala/collection/TraversableViewLike$Transformed;)(n))));
   }
   
   public static Ljava/lang/Object; scanLeft(Lscala/collection/TraversableViewLike; $this, Ljava/lang/Object; z$2, Lscala/Function2; op$2, Lscala/collection/generic/CanBuildFrom; bf) {
@@ -117,11 +135,11 @@ public abstract class Lscala/collection/TraversableViewLike$class; {
   }
   
   public static Lscala/collection/immutable/Map; groupBy(Lscala/collection/TraversableViewLike; $this, Lscala/Function1; f) {
-    return $this.(Lscala/collection/TraversableViewLike;::thisSeq()Lscala/collection/Seq;)().(Lscala/collection/TraversableLike;::groupBy(Lscala/Function1;)Lscala/collection/immutable/Map;)(f).(Lscala/collection/immutable/MapLike;::mapValues(Lscala/Function1;)Lscala/collection/immutable/Map;)((new (Lscala/collection/TraversableViewLike$$anonfun$groupBy$1;::this(Lscala/collection/TraversableViewLike;)V;)($this)));
+    return $this.(Lscala/collection/ViewMkString;::thisSeq()Lscala/collection/Seq;)().(Lscala/collection/TraversableLike;::groupBy(Lscala/Function1;)Lscala/collection/immutable/Map;)(f).(Lscala/collection/immutable/MapLike;::mapValues(Lscala/Function1;)Lscala/collection/immutable/Map;)((new (Lscala/collection/TraversableViewLike$$anonfun$groupBy$1;::this(Lscala/collection/TraversableViewLike;)V;)($this)));
   }
   
-  public static Ljava/lang/String; stringPrefix(Lscala/collection/TraversableViewLike; $this) {
-    return "TraversableView";
+  public static Ljava/lang/String; toString(Lscala/collection/TraversableViewLike; $this) {
+    return $this.(Lscala/collection/GenTraversableViewLike;::viewToString()Ljava/lang/String;)();
   }
   
   public static V; $init$(Lscala/collection/TraversableViewLike; $this) {

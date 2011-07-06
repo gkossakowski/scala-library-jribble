@@ -1,12 +1,31 @@
-public abstract class Lscala/collection/generic/SetFactory; extends Lscala/collection/generic/GenericCompanion; implements Lscala/ScalaObject; {
+public abstract class Lscala/collection/generic/SetFactory; extends Lscala/collection/generic/GenSetFactory; implements Lscala/collection/generic/GenericSeqCompanion;, Lscala/ScalaObject; {
   
-  public abstract Lscala/collection/mutable/Builder; newBuilder();
+  public final Lscala/collection/Traversable; scala$collection$generic$GenericSeqCompanion$$super$empty() {
+    return super.(Lscala/collection/generic/GenericCompanion;::empty()Lscala/collection/GenTraversable;)().<cast>(Lscala/collection/Traversable;);
+  }
   
-  public Lscala/collection/generic/CanBuildFrom; setCanBuildFrom() {
-    return (new (Lscala/collection/generic/SetFactory$$anon$1;::this(Lscala/collection/generic/SetFactory;)V;)(this));
+  public final Lscala/collection/Traversable; scala$collection$generic$GenericSeqCompanion$$super$apply(Lscala/collection/Seq; elems) {
+    return super.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(elems).<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public Lscala/collection/Traversable; empty() {
+    return Lscala/collection/generic/GenericSeqCompanion$class;.(Lscala/collection/generic/GenericSeqCompanion$class;::empty(Lscala/collection/generic/GenericSeqCompanion;)Lscala/collection/Traversable;)(this);
+  }
+  
+  public Lscala/collection/Traversable; apply(Lscala/collection/Seq; elems) {
+    return Lscala/collection/generic/GenericSeqCompanion$class;.(Lscala/collection/generic/GenericSeqCompanion$class;::apply(Lscala/collection/generic/GenericSeqCompanion;Lscala/collection/Seq;)Lscala/collection/Traversable;)(this, elems);
+  }
+  
+  public Lscala/collection/Set; empty() {
+    return super.(Lscala/collection/generic/GenericCompanion;::empty()Lscala/collection/GenTraversable;)().<cast>(Lscala/collection/Set;);
+  }
+  
+  public Lscala/collection/Set; apply(Lscala/collection/Seq; elems) {
+    return super.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(elems).<cast>(Lscala/collection/Set;);
   }
   
   public this() {
-    (Lscala/collection/generic/GenericCompanion;::super()V;)();
+    (Lscala/collection/generic/GenSetFactory;::super()V;)();
+    Lscala/collection/generic/GenericSeqCompanion$class;.(Lscala/collection/generic/GenericSeqCompanion$class;::$init$(Lscala/collection/generic/GenericSeqCompanion;)V;)(this);
   }
 }

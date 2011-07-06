@@ -1,0 +1,43 @@
+public final class Lscala/collection/GenTraversableViewLike$DroppedWhile$$anonfun$foreach$6; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; x) {
+    if ((!(this.(Lscala/collection/GenTraversableViewLike$DroppedWhile$$anonfun$foreach$6;)go$1.(Lscala/runtime/BooleanRef;)elem) && !(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/collection/GenTraversableViewLike$DroppedWhile$$anonfun$foreach$6;)$outer$u0020.(Lscala/collection/GenTraversableViewLike$DroppedWhile;::pred()Lscala/Function1;)().(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x)))))
+      {
+        this.(Lscala/collection/GenTraversableViewLike$DroppedWhile$$anonfun$foreach$6;)go$1.(Lscala/runtime/BooleanRef;)elem = true;
+      }
+    else
+      {
+        
+      }
+    Ljava/lang/Object; $2$;
+    if (this.(Lscala/collection/GenTraversableViewLike$DroppedWhile$$anonfun$foreach$6;)go$1.(Lscala/runtime/BooleanRef;)elem)
+      {
+        $2$ = this.(Lscala/collection/GenTraversableViewLike$DroppedWhile$$anonfun$foreach$6;)f$6.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x);
+      }
+    else
+      {
+        $2$ = Lscala/runtime/BoxedUnit;.UNIT;
+      }
+    return $2$;
+  }
+  
+  private Lscala/collection/GenTraversableViewLike$DroppedWhile; $outer$u0020;
+  
+  private Lscala/Function1; f$6;
+  
+  private Lscala/runtime/BooleanRef; go$1;
+  
+  public this(Lscala/collection/GenTraversableViewLike$DroppedWhile; $outer, Lscala/Function1; f$6, Lscala/runtime/BooleanRef; go$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/GenTraversableViewLike$DroppedWhile$$anonfun$foreach$6;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/collection/GenTraversableViewLike$DroppedWhile$$anonfun$foreach$6;)f$6 = f$6;
+    this.(Lscala/collection/GenTraversableViewLike$DroppedWhile$$anonfun$foreach$6;)go$1 = go$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

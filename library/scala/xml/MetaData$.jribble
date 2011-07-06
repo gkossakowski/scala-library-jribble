@@ -1,4 +1,4 @@
-public final class Lscala/xml/MetaData$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/xml/MetaData$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/MetaData$; MODULE$ = new (Lscala/xml/MetaData$;::this()V;)();
   
   public Lscala/xml/MetaData; concatenate(Lscala/xml/MetaData; attribs, Lscala/xml/MetaData; new_tail) {
@@ -15,7 +15,7 @@ public final class Lscala/xml/MetaData$; extends Ljava/lang/Object; implements L
   }
   
   public Lscala/xml/MetaData; normalize(Lscala/xml/MetaData; attribs, Lscala/xml/NamespaceBinding; scope$1) {
-    return this.(Lscala/xml/MetaData$;::iterate$1(Lscala/xml/MetaData;Lscala/xml/MetaData;Lscala/collection/immutable/Set;Lscala/xml/NamespaceBinding;)Lscala/xml/MetaData;)(attribs, Lscala/xml/Null$;.MODULE$, Lscala/Predef$;.MODULE$.(Lscala/Predef$;::Set()Lscala/collection/immutable/Set$;)().(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/String;>{}.<cast>(Ljava/lang/Object;[))).<cast>(Lscala/collection/immutable/Set;), scope$1);
+    return this.(Lscala/xml/MetaData$;::iterate$1(Lscala/xml/MetaData;Lscala/xml/MetaData;Lscala/collection/immutable/Set;Lscala/xml/NamespaceBinding;)Lscala/xml/MetaData;)(attribs, Lscala/xml/Null$;.MODULE$, Lscala/Predef$;.MODULE$.(Lscala/Predef$;::Set()Lscala/collection/immutable/Set$;)().(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(Lscala/collection/immutable/Nil$;.MODULE$).<cast>(Lscala/collection/immutable/Set;), scope$1);
   }
   
   public Ljava/lang/String; getUniversalKey(Lscala/xml/MetaData; attrib, Lscala/xml/NamespaceBinding; scope) {
@@ -47,6 +47,10 @@ public final class Lscala/xml/MetaData$; extends Ljava/lang/Object; implements L
     return this.(Lscala/xml/MetaData$;::normalize(Lscala/xml/MetaData;Lscala/xml/NamespaceBinding;)Lscala/xml/MetaData;)(this.(Lscala/xml/MetaData$;::concatenate(Lscala/xml/MetaData;Lscala/xml/MetaData;)Lscala/xml/MetaData;)(updates, attribs), scope);
   }
   
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/MetaData$;.MODULE$;
+  }
+  
   private final Ljava/lang/String; key$1(Lscala/xml/NamespaceBinding; scope$1, Lscala/xml/MetaData; md$1, Lscala/runtime/ObjectRef; key$lzy$1, Lscala/runtime/VolatileIntRef; bitmap$0$1) {
     if (((bitmap$0$1.(Lscala/runtime/VolatileIntRef;)elem & 1) == 0))
       {
@@ -60,8 +64,8 @@ public final class Lscala/xml/MetaData$; extends Ljava/lang/Object; implements L
   }
   
   private final Lscala/xml/MetaData; iterate$1(Lscala/xml/MetaData; md$1, Lscala/xml/MetaData; normalized_attribs, Lscala/collection/immutable/Set; set, Lscala/xml/NamespaceBinding; scope$1) {
+    Lscala/runtime/ObjectRef; key$lzy$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(null));
     Lscala/runtime/VolatileIntRef; bitmap$0$1 = (new (Lscala/runtime/VolatileIntRef;::this(I;)V;)(0));
-    Lscala/runtime/ObjectRef; key$lzy$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)());
     Lscala/xml/MetaData; $4$;
     if ((md$1 == Lscala/xml/Null$;.MODULE$))
       {
@@ -70,7 +74,7 @@ public final class Lscala/xml/MetaData$; extends Ljava/lang/Object; implements L
     else
       {
         Lscala/xml/MetaData; $5$;
-        if (set.(Lscala/collection/SetLike;::apply(Ljava/lang/Object;)Z;)(this.(Lscala/xml/MetaData$;::key$1(Lscala/xml/NamespaceBinding;Lscala/xml/MetaData;Lscala/runtime/ObjectRef;Lscala/runtime/VolatileIntRef;)Ljava/lang/String;)(scope$1, md$1, key$lzy$1, bitmap$0$1)))
+        if (set.(Lscala/collection/GenSetLike;::apply(Ljava/lang/Object;)Z;)(this.(Lscala/xml/MetaData$;::key$1(Lscala/xml/NamespaceBinding;Lscala/xml/MetaData;Lscala/runtime/ObjectRef;Lscala/runtime/VolatileIntRef;)Ljava/lang/String;)(scope$1, md$1, key$lzy$1, bitmap$0$1)))
           {
             $5$ = this.(Lscala/xml/MetaData$;::iterate$1(Lscala/xml/MetaData;Lscala/xml/MetaData;Lscala/collection/immutable/Set;Lscala/xml/NamespaceBinding;)Lscala/xml/MetaData;)(md$1.(Lscala/xml/MetaData;::next()Lscala/xml/MetaData;)(), normalized_attribs, set, scope$1);
           }

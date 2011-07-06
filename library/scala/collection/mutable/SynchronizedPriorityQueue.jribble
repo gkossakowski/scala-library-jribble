@@ -22,6 +22,10 @@ public class Lscala/collection/mutable/SynchronizedPriorityQueue; extends Lscala
     return super.(Lscala/collection/mutable/PriorityQueue;::dequeue()Ljava/lang/Object;)();
   }
   
+  public Ljava/lang/Object; head() {
+    return super.(Lscala/collection/mutable/PriorityQueue;::head()Ljava/lang/Object;)();
+  }
+  
   public Ljava/lang/Object; max() {
     return super.(Lscala/collection/mutable/PriorityQueue;::max()Ljava/lang/Object;)();
   }
@@ -35,7 +39,7 @@ public class Lscala/collection/mutable/SynchronizedPriorityQueue; extends Lscala
   }
   
   public Z; equals(Ljava/lang/Object; that) {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(Lscala/collection/SeqLike$class;.(Lscala/collection/SeqLike$class;::equals(Lscala/collection/SeqLike;Ljava/lang/Object;)Z;)(this, that)));
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(super.(Ljava/lang/Object;::equals(Ljava/lang/Object;)Z;)(that)));
   }
   
   public Ljava/lang/String; toString() {

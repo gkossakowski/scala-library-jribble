@@ -1,4 +1,4 @@
-public class Lscala/xml/dtd/PublicID; extends Lscala/xml/dtd/ExternalID; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/dtd/PublicID; extends Lscala/xml/dtd/ExternalID; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public final static Lscala/Function1; tupled() { return Lscala/xml/dtd/PublicID$;.MODULE$.(Lscala/runtime/AbstractFunction2;::tupled()Lscala/Function1;)(); }
   public final static Lscala/Function1; curry() { return Lscala/xml/dtd/PublicID$;.MODULE$.(Lscala/runtime/AbstractFunction2;::curry()Lscala/Function1;)(); }
   public final static Lscala/Function1; curried() { return Lscala/xml/dtd/PublicID$;.MODULE$.(Lscala/runtime/AbstractFunction2;::curried()Lscala/Function1;)(); }
@@ -10,14 +10,6 @@ public class Lscala/xml/dtd/PublicID; extends Lscala/xml/dtd/ExternalID; impleme
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/String; copy$default$2() {
-    return this.(Lscala/xml/dtd/PublicID;::systemId()Ljava/lang/String;)();
-  }
-  
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/dtd/PublicID;::publicId()Ljava/lang/String;)();
   }
   
   private Ljava/lang/String; publicId$u0020;
@@ -48,36 +40,51 @@ public class Lscala/xml/dtd/PublicID; extends Lscala/xml/dtd/ExternalID; impleme
     return (new (Lscala/xml/dtd/PublicID;::this(Ljava/lang/String;Ljava/lang/String;)V;)(publicId, systemId));
   }
   
+  public Ljava/lang/String; copy$default$2() {
+    return this.(Lscala/xml/dtd/PublicID;::systemId()Ljava/lang/String;)();
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/dtd/PublicID;::publicId()Ljava/lang/String;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp5 = x$1;
-    Z; $7$;
+    Z; $10$;
     if (temp5.<instanceof>(Lscala/xml/dtd/PublicID;))
       {
         Lscala/xml/dtd/PublicID; temp6 = temp5.<cast>(Lscala/xml/dtd/PublicID;);
         Ljava/lang/String; temp7 = temp6.(Lscala/xml/dtd/PublicID;::publicId()Ljava/lang/String;)();
         Ljava/lang/String; temp8 = temp6.(Lscala/xml/dtd/PublicID;::systemId()Ljava/lang/String;)();
-        Ljava/lang/String; systemId$2 = temp8;
         Ljava/lang/String; publicId$1 = temp7;
-        Z; $8$;
+        Ljava/lang/String; systemId$2 = temp8;
+        Z; $11$;
         if (this.(Lscala/xml/dtd/PublicID;::gd2$1(Ljava/lang/String;Ljava/lang/String;)Z;)(publicId$1, systemId$2))
           {
-            $8$ = x$1.<cast>(Lscala/xml/dtd/PublicID;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/String; $12$;
+            Ljava/lang/String; $13$;
+            Z; $14$;
+            body$percent03: while(true) {
+              $14$ = x$1.<cast>(Lscala/xml/dtd/PublicID;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $11$ = $14$;
           }
         else
           {
-            $8$ = false;
+            $11$ = false;
           }
-        $7$ = $8$;
+        $10$ = $11$;
       }
     else
       {
-        $7$ = false;
+        $10$ = false;
       }
-    return ((this == x$1) || $7$);
+    return ((this == x$1) || $10$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -90,16 +97,16 @@ public class Lscala/xml/dtd/PublicID; extends Lscala/xml/dtd/ExternalID; impleme
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp9 = x$1;
-    I; $9$ = temp9;
-    Ljava/lang/Object; $10$;
-    switch ($9$) {
-      0: {
-        $10$ = this.(Lscala/xml/dtd/PublicID;::publicId()Ljava/lang/String;)();
+    I; $15$ = temp9;
+    Ljava/lang/Object; $16$;
+    switch ($15$) {
+      1: {
+        $16$ = this.(Lscala/xml/dtd/PublicID;::systemId()Ljava/lang/String;)();
         break;
       }
       
-      1: {
-        $10$ = this.(Lscala/xml/dtd/PublicID;::systemId()Ljava/lang/String;)();
+      0: {
+        $16$ = this.(Lscala/xml/dtd/PublicID;::publicId()Ljava/lang/String;)();
         break;
       }
       
@@ -109,7 +116,7 @@ public class Lscala/xml/dtd/PublicID; extends Lscala/xml/dtd/ExternalID; impleme
       }
       
     }
-    return $10$;
+    return $16$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

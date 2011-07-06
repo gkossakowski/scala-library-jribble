@@ -1,29 +1,30 @@
 public abstract class Lscala/math/Ordering$BooleanOrdering$class; {
   
   public static I; compare(Lscala/math/Ordering$BooleanOrdering; $this, Z; x, Z; y) {
-    Z; tp1 = x;
-    Z; tp2 = y;
+    Lscala/Tuple2; temp1 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(y)));
     I; $3$;
-    if ((tp1 == false))
+    if ((temp1 != null))
       {
+        Z; temp2 = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(temp1.(Lscala/Tuple2;::_1()Ljava/lang/Object;)());
+        Z; temp3 = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(temp1.(Lscala/Tuple2;::_2()Ljava/lang/Object;)());
         I; $4$;
-        if ((tp2 == true))
+        if ((temp2 == false))
           {
-            $4$ = -1;
+            I; $5$;
+            if ((temp3 == true))
+              {
+                $5$ = -1;
+              }
+            else
+              {
+                $5$ = 0;
+              }
+            $4$ = $5$;
           }
         else
           {
-            $4$ = 0;
-          }
-        $3$ = $4$;
-      }
-    else
-      {
-        I; $5$;
-        if ((tp1 == true))
-          {
             I; $6$;
-            if ((tp2 == false))
+            if (((temp2 == true) && (temp3 == false)))
               {
                 $6$ = 1;
               }
@@ -31,13 +32,13 @@ public abstract class Lscala/math/Ordering$BooleanOrdering$class; {
               {
                 $6$ = 0;
               }
-            $5$ = $6$;
+            $4$ = $6$;
           }
-        else
-          {
-            $5$ = 0;
-          }
-        $3$ = $5$;
+        $3$ = $4$;
+      }
+    else
+      {
+        $3$ = 0;
       }
     return $3$;
   }

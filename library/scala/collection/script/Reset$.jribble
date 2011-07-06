@@ -1,4 +1,4 @@
-public final class Lscala/collection/script/Reset$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/collection/script/Reset$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/collection/script/Reset$; MODULE$ = new (Lscala/collection/script/Reset$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/collection/script/Reset$; extends Ljava/lang/Object; i
   }
   
   public Z; unapply(Lscala/collection/script/Reset; x$0) {
-    Z; $15$;
+    Z; $26$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $15$ = false;
+        $26$ = false;
       }
     else
       {
-        $15$ = true;
+        $26$ = true;
       }
-    return $15$;
+    return $26$;
   }
   
   public Lscala/collection/script/Reset; apply() {
     return (new (Lscala/collection/script/Reset;::this()V;)());
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/script/Reset$;.MODULE$;
   }
   
   public this() {

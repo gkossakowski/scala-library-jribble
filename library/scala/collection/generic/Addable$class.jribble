@@ -1,12 +1,16 @@
 public abstract class Lscala/collection/generic/Addable$class; {
   
   public static Lscala/collection/generic/Addable; $plus(Lscala/collection/generic/Addable; $this, Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
-    return $this.(Lscala/collection/generic/Addable;::$plus(Ljava/lang/Object;)Lscala/collection/generic/Addable;)(elem1).(Lscala/collection/generic/Addable;::$plus(Ljava/lang/Object;)Lscala/collection/generic/Addable;)(elem2).(Lscala/collection/generic/Addable;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Addable;)(elems);
+    return $this.(Lscala/collection/generic/Addable;::$plus(Ljava/lang/Object;)Lscala/collection/generic/Addable;)(elem1).(Lscala/collection/generic/Addable;::$plus(Ljava/lang/Object;)Lscala/collection/generic/Addable;)(elem2).(Lscala/collection/generic/Addable;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/generic/Addable;)(elems);
+  }
+  
+  public static Lscala/collection/generic/Addable; $plus$plus(Lscala/collection/generic/Addable; $this, Lscala/collection/GenTraversableOnce; xs) {
+    Lscala/collection/generic/Addable; x$1 = $this.(Lscala/collection/generic/Addable;::repr()Lscala/collection/generic/Addable;)();
+    return xs.(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::$div$colon(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(x$1, (new (Lscala/collection/generic/Addable$$anonfun$$plus$plus$1;::this(Lscala/collection/generic/Addable;)V;)($this))).<cast>(Lscala/collection/generic/Addable;);
   }
   
   public static Lscala/collection/generic/Addable; $plus$plus(Lscala/collection/generic/Addable; $this, Lscala/collection/TraversableOnce; xs) {
-    Lscala/collection/generic/Addable; x$1 = $this.(Lscala/collection/generic/Addable;::repr()Lscala/collection/generic/Addable;)();
-    return xs.(Lscala/collection/TraversableOnce;::$div$colon(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(x$1, (new (Lscala/collection/generic/Addable$$anonfun$$plus$plus$1;::this(Lscala/collection/generic/Addable;)V;)($this))).<cast>(Lscala/collection/generic/Addable;);
+    return $this.(Lscala/collection/generic/Addable;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/generic/Addable;)(xs);
   }
   
   public static V; $init$(Lscala/collection/generic/Addable; $this) {

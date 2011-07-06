@@ -1,38 +1,29 @@
-public final class Lscala/xml/dtd/ElementValidator$$anonfun$check$1$$anonfun$find$1$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/xml/dtd/ElementValidator$$anonfun$check$1$$anonfun$find$1$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final Z; apply(Lscala/Tuple2; x0$3) {
     Lscala/Tuple2; temp12 = x0$3;
-    Z; $16$;
+    Z; $14$;
     if ((temp12 != null))
       {
         Lscala/xml/dtd/AttrDecl; temp13 = temp12.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/xml/dtd/AttrDecl;);
         I; temp14 = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp12.(Lscala/Tuple2;::_2()Ljava/lang/Object;)());
-        Z; $17$;
-        if ((temp13 != null))
+        Z; $15$;
+        if (((temp13 != null) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1$$anonfun$find$1$1;)Key$1, temp13.(Lscala/xml/dtd/AttrDecl;::name()Ljava/lang/String;)())))
           {
-            Z; $18$;
-            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1$$anonfun$find$1$1;)Key$1, temp13.(Lscala/xml/dtd/AttrDecl;::name()Ljava/lang/String;)()))
-              {
-                this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1$$anonfun$find$1$1;)$outer$u0020.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1;)ok$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/mutable/BitSet;).(Lscala/collection/mutable/BitSet;::$plus$eq(I;)Lscala/collection/mutable/BitSet;)(temp14);
-                throw (new (Lscala/runtime/NonLocalReturnControl;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1$$anonfun$find$1$1;)nonLocalReturnKey1$1, (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(temp13))));
-              }
-            else
-              {
-                $18$ = false;
-              }
-            $17$ = $18$;
+            this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1$$anonfun$find$1$1;)$outer$u0020.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1;)ok$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/mutable/BitSet;).(Lscala/collection/mutable/BitSet;::$plus$eq(I;)Lscala/collection/mutable/BitSet;)(temp14);
+            throw (new (Lscala/runtime/NonLocalReturnControl;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1$$anonfun$find$1$1;)nonLocalReturnKey1$1, (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(temp13))));
           }
         else
           {
-            $17$ = false;
+            $15$ = false;
           }
-        $16$ = $17$;
+        $14$ = $15$;
       }
     else
       {
-        $16$ = false;
+        $14$ = false;
       }
-    return $16$;
+    return $14$;
   }
   
   private Lscala/xml/dtd/ElementValidator$$anonfun$check$1; $outer$u0020;

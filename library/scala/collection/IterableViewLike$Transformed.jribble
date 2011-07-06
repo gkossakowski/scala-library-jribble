@@ -1,2 +1,10 @@
-public interface Lscala/collection/IterableViewLike$Transformed; extends Lscala/collection/IterableView;, Lscala/collection/TraversableViewLike$Transformed; {
+public interface Lscala/collection/IterableViewLike$Transformed; extends Lscala/collection/IterableView;, Lscala/collection/TraversableViewLike$Transformed;, Lscala/collection/GenIterableViewLike$Transformed;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/Iterator; iterator();
+  
+  public V; foreach(Lscala/Function1; f);
+  
+  public Ljava/lang/String; toString();
+  
+  public Lscala/collection/IterableViewLike; scala$collection$IterableViewLike$Transformed$$$outer();
 }

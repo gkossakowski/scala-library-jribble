@@ -1,11 +1,48 @@
 public abstract class Lscala/collection/TraversableViewLike$Transformed$class; {
   
-  public static Ljava/lang/Object; underlying(Lscala/collection/TraversableViewLike$Transformed; $this) {
-    return $this.(Lscala/collection/TraversableViewLike$Transformed;::scala$collection$TraversableViewLike$Transformed$$$outer()Lscala/collection/TraversableViewLike;)().(Lscala/collection/TraversableViewLike;::underlying()Ljava/lang/Object;)();
+  public static Lscala/Option; headOption(Lscala/collection/TraversableViewLike$Transformed; $this) {
+    Ljava/lang/Object; nonLocalReturnKey1$1 = (new (Ljava/lang/Object;::this()V;)());
+    Lscala/Option; exceptionResult1;
+    try {
+      $this.(Lscala/collection/TraversableViewLike$Transformed;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/TraversableViewLike$Transformed$$anonfun$headOption$1;::this(Lscala/collection/TraversableViewLike$Transformed;Ljava/lang/Object;)V;)($this, nonLocalReturnKey1$1)));
+      exceptionResult1 = Lscala/None$;.MODULE$;
+    } catch(Lscala/runtime/NonLocalReturnControl; ex) {
+      Lscala/Option; $1$;
+      if ((ex.(Lscala/runtime/NonLocalReturnControl;::key()Ljava/lang/Object;)() == nonLocalReturnKey1$1))
+        {
+          $1$ = ex.(Lscala/runtime/NonLocalReturnControl;::value()Ljava/lang/Object;)().<cast>(Lscala/Option;);
+        }
+      else
+        {
+          throw ex;
+        }
+      exceptionResult1 = $1$;
+    }
+    return exceptionResult1;
+  }
+  
+  public static Lscala/Option; lastOption(Lscala/collection/TraversableViewLike$Transformed; $this) {
+    Lscala/runtime/BooleanRef; empty$1 = (new (Lscala/runtime/BooleanRef;::this(Z;)V;)(true));
+    Lscala/runtime/ObjectRef; result$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(null));
+    $this.(Lscala/collection/TraversableViewLike$Transformed;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/TraversableViewLike$Transformed$$anonfun$lastOption$1;::this(Lscala/collection/TraversableViewLike$Transformed;Lscala/runtime/BooleanRef;Lscala/runtime/ObjectRef;)V;)($this, empty$1, result$1)));
+    Lscala/Option; $2$;
+    if (empty$1.(Lscala/runtime/BooleanRef;)elem)
+      {
+        $2$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $2$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(result$1.(Lscala/runtime/ObjectRef;)elem));
+      }
+    return $2$;
+  }
+  
+  public static Ljava/lang/String; stringPrefix(Lscala/collection/TraversableViewLike$Transformed; $this) {
+    return $this.(Lscala/collection/TraversableViewLike$Transformed;::scala$collection$TraversableViewLike$Transformed$$$outer()Lscala/collection/TraversableViewLike;)().(Lscala/collection/TraversableViewLike;::stringPrefix()Ljava/lang/String;)();
   }
   
   public static Ljava/lang/String; toString(Lscala/collection/TraversableViewLike$Transformed; $this) {
-    return ($this.(Lscala/collection/TraversableViewLike;::stringPrefix()Ljava/lang/String;)() + "(...)");
+    return $this.(Lscala/collection/GenTraversableViewLike;::viewToString()Ljava/lang/String;)();
   }
   
   public static V; $init$(Lscala/collection/TraversableViewLike$Transformed; $this) {

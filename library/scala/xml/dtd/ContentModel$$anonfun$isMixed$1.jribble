@@ -1,4 +1,4 @@
-public final class Lscala/xml/dtd/ContentModel$$anonfun$isMixed$1; extends Ljava/lang/Object; implements Lscala/PartialFunction; {
+public final class Lscala/xml/dtd/ContentModel$$anonfun$isMixed$1; extends Ljava/lang/Object; implements Lscala/PartialFunction;, Lscala/Serializable; {
   
   public Lscala/PartialFunction; orElse(Lscala/PartialFunction; that) {
     return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::orElse(Lscala/PartialFunction;Lscala/PartialFunction;)Lscala/PartialFunction;)(this, that);
@@ -12,26 +12,26 @@ public final class Lscala/xml/dtd/ContentModel$$anonfun$isMixed$1; extends Ljava
     return Lscala/PartialFunction$class;.(Lscala/PartialFunction$class;::lift(Lscala/PartialFunction;)Lscala/Function1;)(this);
   }
   
-  public Ljava/lang/String; toString() {
-    return Lscala/Function1$class;.(Lscala/Function1$class;::toString(Lscala/Function1;)Ljava/lang/String;)(this);
-  }
-  
   public Lscala/Function1; compose(Lscala/Function1; g) {
     return Lscala/Function1$class;.(Lscala/Function1$class;::compose(Lscala/Function1;Lscala/Function1;)Lscala/Function1;)(this, g);
   }
   
+  public Ljava/lang/String; toString() {
+    return Lscala/Function1$class;.(Lscala/Function1$class;::toString(Lscala/Function1;)Ljava/lang/String;)(this);
+  }
+  
   public final Z; apply(Lscala/xml/dtd/ContentModel; x0$1) {
     Lscala/xml/dtd/ContentModel; temp5 = x0$1;
-    Z; $47$;
+    Z; $53$;
     if (temp5.<instanceof>(Lscala/xml/dtd/MIXED;))
       {
-        $47$ = true;
+        $53$ = true;
       }
     else
       {
         throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp5));
       }
-    return $47$;
+    return $53$;
   }
   
   public final Z; isDefinedAt(Lscala/xml/dtd/ContentModel; x$1) {

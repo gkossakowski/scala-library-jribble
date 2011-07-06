@@ -1,25 +1,25 @@
-public final class Lscala/collection/TraversableLike$WithFilter$$anonfun$flatMap$2; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/TraversableLike$WithFilter$$anonfun$flatMap$2; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; x) {
-    Ljava/lang/Object; $4$;
+    Ljava/lang/Object; $7$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/collection/TraversableLike$WithFilter$$anonfun$flatMap$2;)$outer$u0020.(Lscala/collection/TraversableLike$WithFilter;)scala$collection$TraversableLike$WithFilter$$p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x)))
       {
-        $4$ = this.(Lscala/collection/TraversableLike$WithFilter$$anonfun$flatMap$2;)b$15.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this.(Lscala/collection/TraversableLike$WithFilter$$anonfun$flatMap$2;)f$5.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x).<cast>(Lscala/collection/TraversableOnce;));
+        $7$ = this.(Lscala/collection/TraversableLike$WithFilter$$anonfun$flatMap$2;)b$13.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this.(Lscala/collection/TraversableLike$WithFilter$$anonfun$flatMap$2;)f$5.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x).<cast>(Lscala/collection/GenTraversableOnce;).(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)());
       }
     else
       {
-        $4$ = Lscala/runtime/BoxedUnit;.UNIT;
+        $7$ = Lscala/runtime/BoxedUnit;.UNIT;
       }
-    return $4$;
+    return $7$;
   }
   
   private Lscala/collection/TraversableLike$WithFilter; $outer$u0020;
   
   private Lscala/Function1; f$5;
   
-  private Lscala/collection/mutable/Builder; b$15;
+  private Lscala/collection/mutable/Builder; b$13;
   
-  public this(Lscala/collection/TraversableLike$WithFilter; $outer, Lscala/Function1; f$5, Lscala/collection/mutable/Builder; b$15) {
+  public this(Lscala/collection/TraversableLike$WithFilter; $outer, Lscala/Function1; f$5, Lscala/collection/mutable/Builder; b$13) {
     if (($outer == null))
       {
         throw (new (Ljava/lang/NullPointerException;::this()V;)());
@@ -29,7 +29,7 @@ public final class Lscala/collection/TraversableLike$WithFilter$$anonfun$flatMap
         this.(Lscala/collection/TraversableLike$WithFilter$$anonfun$flatMap$2;)$outer$u0020 = $outer;
       }
     this.(Lscala/collection/TraversableLike$WithFilter$$anonfun$flatMap$2;)f$5 = f$5;
-    this.(Lscala/collection/TraversableLike$WithFilter$$anonfun$flatMap$2;)b$15 = b$15;
+    this.(Lscala/collection/TraversableLike$WithFilter$$anonfun$flatMap$2;)b$13 = b$13;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

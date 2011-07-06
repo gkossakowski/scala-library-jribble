@@ -1,4 +1,4 @@
-public class Lscala/xml/EntityRef; extends Lscala/xml/SpecialNode; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/EntityRef; extends Lscala/xml/SpecialNode; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   
   public Lscala/collection/Iterator; productIterator() {
@@ -7,10 +7,6 @@ public class Lscala/xml/EntityRef; extends Lscala/xml/SpecialNode; implements Ls
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/EntityRef;::entityName()Ljava/lang/String;)();
   }
   
   private Ljava/lang/String; entityName$u0020;
@@ -87,6 +83,10 @@ public class Lscala/xml/EntityRef; extends Lscala/xml/SpecialNode; implements Ls
   
   public Lscala/xml/EntityRef; copy(Ljava/lang/String; entityName) {
     return (new (Lscala/xml/EntityRef;::this(Ljava/lang/String;)V;)(entityName));
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/EntityRef;::entityName()Ljava/lang/String;)();
   }
   
   public Ljava/lang/String; productPrefix() {

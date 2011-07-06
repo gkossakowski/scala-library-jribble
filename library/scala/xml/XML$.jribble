@@ -49,18 +49,6 @@ public final class Lscala/xml/XML$; extends Ljava/lang/Object; implements Lscala
     return Lscala/xml/factory/XMLLoader$class;.(Lscala/xml/factory/XMLLoader$class;::loadString(Lscala/xml/factory/XMLLoader;Ljava/lang/String;)Lscala/xml/Node;)(this, string);
   }
   
-  public final Lscala/xml/dtd/DocType; save$default$5() {
-    return null;
-  }
-  
-  public final Z; save$default$4() {
-    return false;
-  }
-  
-  public final Ljava/lang/String; save$default$3() {
-    return this.(Lscala/xml/XML$;::encoding()Ljava/lang/String;)();
-  }
-  
   private Ljava/lang/String; xml$u0020;
   
   public Ljava/lang/String; xml() {
@@ -119,6 +107,18 @@ public final class Lscala/xml/XML$; extends Ljava/lang/Object; implements Lscala
     Ljava/io/FileOutputStream; fos = (new (Ljava/io/FileOutputStream;::this(Ljava/lang/String;)V;)(filename));
     Ljava/io/Writer; w$1 = Ljava/nio/channels/Channels;.(Ljava/nio/channels/Channels;::newWriter(Ljava/nio/channels/WritableByteChannel;Ljava/lang/String;)Ljava/io/Writer;)(fos.(Ljava/io/FileOutputStream;::getChannel()Ljava/nio/channels/FileChannel;)(), enc$1);
     Lscala/util/control/Exception$;.MODULE$.(Lscala/util/control/Exception$;::ultimately(Lscala/Function0;)Lscala/util/control/Exception$Catch;)((new (Lscala/xml/XML$$anonfun$save$1;::this(Ljava/io/Writer;)V;)(w$1))).(Lscala/util/control/Exception$Catch;::apply(Lscala/Function0;)Ljava/lang/Object;)((new (Lscala/xml/XML$$anonfun$save$2;::this(Lscala/xml/Node;Ljava/lang/String;Z;Lscala/xml/dtd/DocType;Ljava/io/Writer;)V;)(node$1, enc$1, xmlDecl$1, doctype$1, w$1)));
+  }
+  
+  public final Lscala/xml/dtd/DocType; save$default$5() {
+    return null;
+  }
+  
+  public final Z; save$default$4() {
+    return false;
+  }
+  
+  public final Ljava/lang/String; save$default$3() {
+    return this.(Lscala/xml/XML$;::encoding()Ljava/lang/String;)();
   }
   
   public final V; write(Ljava/io/Writer; w, Lscala/xml/Node; node, Ljava/lang/String; enc, Z; xmlDecl, Lscala/xml/dtd/DocType; doctype) {

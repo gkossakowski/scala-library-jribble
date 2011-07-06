@@ -1,4 +1,4 @@
-public final class Lscala/Tuple5$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/Tuple5$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/Tuple5$; MODULE$ = new (Lscala/Tuple5$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/Tuple5$; extends Ljava/lang/Object; implements Lscala/
   }
   
   public Lscala/Option; unapply(Lscala/Tuple5; x$0) {
-    Lscala/Option; $3$;
+    Lscala/Option; $9$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $3$ = Lscala/None$;.MODULE$;
+        $9$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $3$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple5;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/Tuple5;::_1()Ljava/lang/Object;)(), x$0.(Lscala/Tuple5;::_2()Ljava/lang/Object;)(), x$0.(Lscala/Tuple5;::_3()Ljava/lang/Object;)(), x$0.(Lscala/Tuple5;::_4()Ljava/lang/Object;)(), x$0.(Lscala/Tuple5;::_5()Ljava/lang/Object;)()))));
+        $9$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple5;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/Tuple5;::_1()Ljava/lang/Object;)(), x$0.(Lscala/Tuple5;::_2()Ljava/lang/Object;)(), x$0.(Lscala/Tuple5;::_3()Ljava/lang/Object;)(), x$0.(Lscala/Tuple5;::_4()Ljava/lang/Object;)(), x$0.(Lscala/Tuple5;::_5()Ljava/lang/Object;)()))));
       }
-    return $3$;
+    return $9$;
   }
   
   public Lscala/Tuple5; apply(Ljava/lang/Object; _1, Ljava/lang/Object; _2, Ljava/lang/Object; _3, Ljava/lang/Object; _4, Ljava/lang/Object; _5) {
     return (new (Lscala/Tuple5;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(_1, _2, _3, _4, _5));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/Tuple5$;.MODULE$;
   }
   
   public this() {

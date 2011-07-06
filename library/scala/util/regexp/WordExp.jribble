@@ -1,23 +1,29 @@
 public abstract class Lscala/util/regexp/WordExp; extends Lscala/util/regexp/Base; implements Lscala/ScalaObject; {
   
-  private Lscala/util/regexp/WordExp$Wildcard$; Wildcard$module;
-  
-  public final Lscala/util/regexp/WordExp$Wildcard$; Wildcard() {
-    if ((this.(Lscala/util/regexp/WordExp;)Wildcard$module == null))
-      {
-        this.(Lscala/util/regexp/WordExp;)Wildcard$module = (new (Lscala/util/regexp/WordExp$Wildcard$;::this(Lscala/util/regexp/WordExp;)V;)(this));
-      }
-    return this.(Lscala/util/regexp/WordExp;)Wildcard$module;
-  }
-  
   private Lscala/util/regexp/WordExp$Letter$; Letter$module;
   
   public final Lscala/util/regexp/WordExp$Letter$; Letter() {
     if ((this.(Lscala/util/regexp/WordExp;)Letter$module == null))
       {
-        this.(Lscala/util/regexp/WordExp;)Letter$module = (new (Lscala/util/regexp/WordExp$Letter$;::this(Lscala/util/regexp/WordExp;)V;)(this));
+        if ((this.(Lscala/util/regexp/WordExp;)Letter$module == null))
+          {
+            this.(Lscala/util/regexp/WordExp;)Letter$module = (new (Lscala/util/regexp/WordExp$Letter$;::this(Lscala/util/regexp/WordExp;)V;)(this));
+          }
       }
     return this.(Lscala/util/regexp/WordExp;)Letter$module;
+  }
+  
+  private Lscala/util/regexp/WordExp$Wildcard$; Wildcard$module;
+  
+  public final Lscala/util/regexp/WordExp$Wildcard$; Wildcard() {
+    if ((this.(Lscala/util/regexp/WordExp;)Wildcard$module == null))
+      {
+        if ((this.(Lscala/util/regexp/WordExp;)Wildcard$module == null))
+          {
+            this.(Lscala/util/regexp/WordExp;)Wildcard$module = (new (Lscala/util/regexp/WordExp$Wildcard$;::this(Lscala/util/regexp/WordExp;)V;)(this));
+          }
+      }
+    return this.(Lscala/util/regexp/WordExp;)Wildcard$module;
   }
   
   public this() {

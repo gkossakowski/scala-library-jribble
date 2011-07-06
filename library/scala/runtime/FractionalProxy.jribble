@@ -1,0 +1,64 @@
+public abstract class Lscala/runtime/FractionalProxy; extends Lscala/runtime/ScalaNumberProxy; implements Lscala/runtime/RangedProxy;, Lscala/ScalaObject; {
+  
+  private I; bitmap$priv$0 = 0;
+  
+  private Lscala/math/Fractional; evidence$4;
+  
+  public Z; isWhole() {
+    return false;
+  }
+  
+  public abstract Lscala/math/Integral; integralNum();
+  
+  private Lscala/math/Fractional; num$u0020;
+  
+  private Lscala/math/Fractional; num() {
+    if (((this.(Lscala/runtime/FractionalProxy;)bitmap$priv$0 & 1) == 0))
+      {
+        if (((this.(Lscala/runtime/FractionalProxy;)bitmap$priv$0 & 1) == 0))
+          {
+            this.(Lscala/runtime/FractionalProxy;)num$u0020 = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::implicitly(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/runtime/FractionalProxy;)evidence$4).<cast>(Lscala/math/Fractional;);
+            this.(Lscala/runtime/FractionalProxy;)bitmap$priv$0 = (this.(Lscala/runtime/FractionalProxy;)bitmap$priv$0 | 1);
+          }
+        this.(Lscala/runtime/FractionalProxy;)evidence$4 = null;
+      }
+    return this.(Lscala/runtime/FractionalProxy;)num$u0020;
+  }
+  
+  public Lscala/collection/immutable/Range$Partial; until(Ljava/lang/Object; end$1) {
+    return (new (Lscala/collection/immutable/Range$Partial;::this(Lscala/Function1;)V;)((new (Lscala/runtime/FractionalProxy$$anonfun$until$1;::this(Lscala/runtime/FractionalProxy;Ljava/lang/Object;)V;)(this, end$1))));
+  }
+  
+  public Lscala/collection/immutable/NumericRange$Exclusive; until(Ljava/lang/Object; end, Ljava/lang/Object; step) {
+    return Lscala/collection/immutable/NumericRange$;.MODULE$.(Lscala/collection/immutable/NumericRange$;::apply(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/immutable/NumericRange$Exclusive;)(this.(Lscala/Proxy$Typed;::self()Ljava/lang/Object;)(), end, step, this.(Lscala/runtime/FractionalProxy;::integralNum()Lscala/math/Integral;)());
+  }
+  
+  public Lscala/collection/immutable/Range$Partial; to(Ljava/lang/Object; end$2) {
+    return (new (Lscala/collection/immutable/Range$Partial;::this(Lscala/Function1;)V;)((new (Lscala/runtime/FractionalProxy$$anonfun$to$1;::this(Lscala/runtime/FractionalProxy;Ljava/lang/Object;)V;)(this, end$2))));
+  }
+  
+  public Lscala/collection/immutable/NumericRange$Inclusive; to(Ljava/lang/Object; end, Ljava/lang/Object; step) {
+    return Lscala/collection/immutable/NumericRange$;.MODULE$.(Lscala/collection/immutable/NumericRange$;::inclusive(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/immutable/NumericRange$Inclusive;)(this.(Lscala/Proxy$Typed;::self()Ljava/lang/Object;)(), end, step, this.(Lscala/runtime/FractionalProxy;::integralNum()Lscala/math/Integral;)());
+  }
+  
+  public Lscala/collection/immutable/IndexedSeq; to(Ljava/lang/Object; end, Ljava/lang/Object; step) {
+    return this.(Lscala/runtime/FractionalProxy;::to(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/NumericRange$Inclusive;)(end, step);
+  }
+  
+  public Ljava/lang/Object; to(Ljava/lang/Object; end) {
+    return this.(Lscala/runtime/FractionalProxy;::to(Ljava/lang/Object;)Lscala/collection/immutable/Range$Partial;)(end);
+  }
+  
+  public Lscala/collection/immutable/IndexedSeq; until(Ljava/lang/Object; end, Ljava/lang/Object; step) {
+    return this.(Lscala/runtime/FractionalProxy;::until(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/NumericRange$Exclusive;)(end, step);
+  }
+  
+  public Ljava/lang/Object; until(Ljava/lang/Object; end) {
+    return this.(Lscala/runtime/FractionalProxy;::until(Ljava/lang/Object;)Lscala/collection/immutable/Range$Partial;)(end);
+  }
+  
+  public this(Lscala/math/Fractional; evidence$4) {
+    this.(Lscala/runtime/FractionalProxy;)evidence$4 = evidence$4;
+    (Lscala/runtime/ScalaNumberProxy;::super(Lscala/math/Numeric;)V;)(evidence$4);
+  }
+}

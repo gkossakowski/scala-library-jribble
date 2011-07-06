@@ -1,4 +1,4 @@
-public class Lscala/xml/dtd/SystemID; extends Lscala/xml/dtd/ExternalID; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/dtd/SystemID; extends Lscala/xml/dtd/ExternalID; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public final static Lscala/Function1; andThen(Lscala/Function1; x_0) { return Lscala/xml/dtd/SystemID$;.MODULE$.(Lscala/runtime/AbstractFunction1;::andThen(Lscala/Function1;)Lscala/Function1;)(x_0); }
   public final static Lscala/Function1; compose(Lscala/Function1; x_0) { return Lscala/xml/dtd/SystemID$;.MODULE$.(Lscala/runtime/AbstractFunction1;::compose(Lscala/Function1;)Lscala/Function1;)(x_0); }
   
@@ -9,10 +9,6 @@ public class Lscala/xml/dtd/SystemID; extends Lscala/xml/dtd/ExternalID; impleme
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/dtd/SystemID;::systemId()Ljava/lang/String;)();
   }
   
   private Ljava/lang/String; systemId$u0020;
@@ -31,6 +27,10 @@ public class Lscala/xml/dtd/SystemID; extends Lscala/xml/dtd/ExternalID; impleme
     return (new (Lscala/xml/dtd/SystemID;::this(Ljava/lang/String;)V;)(systemId));
   }
   
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/dtd/SystemID;::systemId()Ljava/lang/String;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -46,7 +46,13 @@ public class Lscala/xml/dtd/SystemID; extends Lscala/xml/dtd/ExternalID; impleme
         Z; $5$;
         if (this.(Lscala/xml/dtd/SystemID;::gd1$1(Ljava/lang/String;)Z;)(systemId$1))
           {
-            $5$ = x$1.<cast>(Lscala/xml/dtd/SystemID;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/String; $6$;
+            Z; $7$;
+            body$percent01: while(true) {
+              $7$ = x$1.<cast>(Lscala/xml/dtd/SystemID;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $5$ = $7$;
           }
         else
           {
@@ -71,16 +77,16 @@ public class Lscala/xml/dtd/SystemID; extends Lscala/xml/dtd/ExternalID; impleme
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp4 = x$1;
-    Ljava/lang/Object; $6$;
+    Ljava/lang/Object; $8$;
     if ((temp4 == 0))
       {
-        $6$ = this.(Lscala/xml/dtd/SystemID;::systemId()Ljava/lang/String;)();
+        $8$ = this.(Lscala/xml/dtd/SystemID;::systemId()Ljava/lang/String;)();
       }
     else
       {
         throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
       }
-    return $6$;
+    return $8$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

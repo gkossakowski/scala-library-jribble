@@ -37,41 +37,41 @@ public class Lscala/collection/immutable/HashMap$HashTrieMap; extends Lscala/col
   public Lscala/Option; get0(Ljava/lang/Object; key, I; hash, I; level) {
     I; index = ((hash >> level) & 31);
     I; mask = (1 << index);
-    Lscala/Option; $18$;
+    Lscala/Option; $15$;
     if ((this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)() == -1))
       {
-        $18$ = this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)()[(index & 31)].(Lscala/collection/immutable/HashMap;::get0(Ljava/lang/Object;I;I;)Lscala/Option;)(key, hash, (level + 5));
+        $15$ = this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)()[(index & 31)].(Lscala/collection/immutable/HashMap;::get0(Ljava/lang/Object;I;I;)Lscala/Option;)(key, hash, (level + 5));
       }
     else
       {
-        Lscala/Option; $19$;
+        Lscala/Option; $16$;
         if (((this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)() & mask) != 0))
           {
             I; offset = Ljava/lang/Integer;.(Ljava/lang/Integer;::bitCount(I;)I;)((this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)() & (mask - 1)));
-            $19$ = this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)()[offset].(Lscala/collection/immutable/HashMap;::get0(Ljava/lang/Object;I;I;)Lscala/Option;)(key, hash, (level + 5));
+            $16$ = this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)()[offset].(Lscala/collection/immutable/HashMap;::get0(Ljava/lang/Object;I;I;)Lscala/Option;)(key, hash, (level + 5));
           }
         else
           {
-            $19$ = Lscala/None$;.MODULE$;
+            $16$ = Lscala/None$;.MODULE$;
           }
-        $18$ = $19$;
+        $15$ = $16$;
       }
-    return $18$;
+    return $15$;
   }
   
-  public Lscala/collection/immutable/HashMap; updated0(Ljava/lang/Object; key, I; hash, I; level, Ljava/lang/Object; value, Lscala/Tuple2; kv) {
+  public Lscala/collection/immutable/HashMap; updated0(Ljava/lang/Object; key, I; hash, I; level, Ljava/lang/Object; value, Lscala/Tuple2; kv, Lscala/Function2; merger) {
     I; index = ((hash >> level) & 31);
     I; mask = (1 << index);
     I; offset = Ljava/lang/Integer;.(Ljava/lang/Integer;::bitCount(I;)I;)((this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)() & (mask - 1)));
-    Lscala/collection/immutable/HashMap; $20$;
+    Lscala/collection/immutable/HashMap; $17$;
     if (((this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)() & mask) != 0))
       {
         Lscala/collection/immutable/HashMap;[ elemsNew = new Lscala/collection/immutable/HashMap;[this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)().<length>];
         Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)(), 0, elemsNew, 0, this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)().<length>);
         Lscala/collection/immutable/HashMap; sub = this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)()[offset];
-        Lscala/collection/immutable/HashMap; subNew = sub.(Lscala/collection/immutable/HashMap;::updated0(Ljava/lang/Object;I;I;Ljava/lang/Object;Lscala/Tuple2;)Lscala/collection/immutable/HashMap;)(key, hash, (level + 5), value, kv);
+        Lscala/collection/immutable/HashMap; subNew = sub.(Lscala/collection/immutable/HashMap;::updated0(Ljava/lang/Object;I;I;Ljava/lang/Object;Lscala/Tuple2;Lscala/Function2;)Lscala/collection/immutable/HashMap;)(key, hash, (level + 5), value, kv, merger);
         elemsNew[offset] = subNew;
-        $20$ = (new (Lscala/collection/immutable/HashMap$HashTrieMap;::this(I;Lscala/collection/immutable/HashMap;[I;)V;)(this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)(), elemsNew, (this.(Lscala/collection/immutable/HashMap$HashTrieMap;::size()I;)() + (subNew.(Lscala/collection/immutable/HashMap;::size()I;)() - sub.(Lscala/collection/immutable/HashMap;::size()I;)()))));
+        $17$ = (new (Lscala/collection/immutable/HashMap$HashTrieMap;::this(I;Lscala/collection/immutable/HashMap;[I;)V;)(this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)(), elemsNew, (this.(Lscala/collection/immutable/HashMap$HashTrieMap;::size()I;)() + (subNew.(Lscala/collection/immutable/HashMap;::size()I;)() - sub.(Lscala/collection/immutable/HashMap;::size()I;)()))));
       }
     else
       {
@@ -79,38 +79,38 @@ public class Lscala/collection/immutable/HashMap$HashTrieMap; extends Lscala/col
         Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)(), 0, elemsNew, 0, offset);
         elemsNew[offset] = (new (Lscala/collection/immutable/HashMap$HashMap1;::this(Ljava/lang/Object;I;Ljava/lang/Object;Lscala/Tuple2;)V;)(key, hash, value, kv));
         Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)(), offset, elemsNew, (offset + 1), (this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)().<length> - offset));
-        $20$ = (new (Lscala/collection/immutable/HashMap$HashTrieMap;::this(I;Lscala/collection/immutable/HashMap;[I;)V;)((this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)() | mask), elemsNew, (this.(Lscala/collection/immutable/HashMap$HashTrieMap;::size()I;)() + 1)));
+        $17$ = (new (Lscala/collection/immutable/HashMap$HashTrieMap;::this(I;Lscala/collection/immutable/HashMap;[I;)V;)((this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)() | mask), elemsNew, (this.(Lscala/collection/immutable/HashMap$HashTrieMap;::size()I;)() + 1)));
       }
-    return $20$;
+    return $17$;
   }
   
   public Lscala/collection/immutable/HashMap; removed0(Ljava/lang/Object; key, I; hash, I; level) {
     I; index = ((hash >> level) & 31);
     I; mask = (1 << index);
     I; offset = Ljava/lang/Integer;.(Ljava/lang/Integer;::bitCount(I;)I;)((this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)() & (mask - 1)));
-    Lscala/collection/immutable/HashMap; $21$;
+    Lscala/collection/immutable/HashMap; $18$;
     if (((this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)() & mask) != 0))
       {
         Lscala/collection/immutable/HashMap; sub = this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)()[offset];
         Lscala/collection/immutable/HashMap; subNew = sub.(Lscala/collection/immutable/HashMap;::removed0(Ljava/lang/Object;I;I;)Lscala/collection/immutable/HashMap;)(key, hash, (level + 5));
-        Lscala/collection/immutable/HashMap; $22$;
+        Lscala/collection/immutable/HashMap; $19$;
         if (subNew.(Lscala/collection/MapLike;::isEmpty()Z;)())
           {
             I; bitmapNew = (this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)() ^ mask);
-            Lscala/collection/immutable/HashMap; $23$;
+            Lscala/collection/immutable/HashMap; $20$;
             if ((bitmapNew != 0))
               {
                 Lscala/collection/immutable/HashMap;[ elemsNew = new Lscala/collection/immutable/HashMap;[(this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)().<length> - 1)];
                 Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)(), 0, elemsNew, 0, offset);
                 Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)(), (offset + 1), elemsNew, offset, ((this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)().<length> - offset) - 1));
                 I; sizeNew = (this.(Lscala/collection/immutable/HashMap$HashTrieMap;::size()I;)() - sub.(Lscala/collection/immutable/HashMap;::size()I;)());
-                $23$ = (new (Lscala/collection/immutable/HashMap$HashTrieMap;::this(I;Lscala/collection/immutable/HashMap;[I;)V;)(bitmapNew, elemsNew, sizeNew));
+                $20$ = (new (Lscala/collection/immutable/HashMap$HashTrieMap;::this(I;Lscala/collection/immutable/HashMap;[I;)V;)(bitmapNew, elemsNew, sizeNew));
               }
             else
               {
-                $23$ = Lscala/collection/immutable/HashMap$;.MODULE$.(Lscala/collection/immutable/HashMap$;::empty()Lscala/collection/immutable/HashMap;)();
+                $20$ = Lscala/collection/immutable/HashMap$;.MODULE$.(Lscala/collection/immutable/HashMap$;::empty()Lscala/collection/immutable/HashMap;)();
               }
-            $22$ = $23$;
+            $19$ = $20$;
           }
         else
           {
@@ -118,15 +118,15 @@ public class Lscala/collection/immutable/HashMap$HashTrieMap; extends Lscala/col
             Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)(), 0, elemsNew, 0, this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)().<length>);
             elemsNew[offset] = subNew;
             I; sizeNew = (this.(Lscala/collection/immutable/HashMap$HashTrieMap;::size()I;)() + (subNew.(Lscala/collection/immutable/HashMap;::size()I;)() - sub.(Lscala/collection/immutable/HashMap;::size()I;)()));
-            $22$ = (new (Lscala/collection/immutable/HashMap$HashTrieMap;::this(I;Lscala/collection/immutable/HashMap;[I;)V;)(this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)(), elemsNew, sizeNew));
+            $19$ = (new (Lscala/collection/immutable/HashMap$HashTrieMap;::this(I;Lscala/collection/immutable/HashMap;[I;)V;)(this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)(), elemsNew, sizeNew));
           }
-        $21$ = $22$;
+        $18$ = $19$;
       }
     else
       {
-        $21$ = this;
+        $18$ = this;
       }
-    return $21$;
+    return $18$;
   }
   
   public Lscala/collection/Iterator; iterator() {
@@ -152,33 +152,11 @@ public class Lscala/collection/immutable/HashMap$HashTrieMap; extends Lscala/col
     }
   }
   
-  private V; printBitmap(I; bm) {
-    I; i = 32;
-    I; b = bm;
-    while$3: while(true) {
-      if ((i != 0))
-        {
-          {
-            Lscala/Predef$;.MODULE$.(Lscala/Predef$;::print(Ljava/lang/Object;)V;)(((b & 1) + " "));
-            b = (b >> 1);
-            i = (i - 1);
-          }
-          continue while$3;
-        }
-      else
-        {
-          
-        }
-      break;
-    }
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::println()V;)();
-  }
-  
   private I; posOf(I; n, I; bm) {
     I; left = n;
     I; i = -1;
     I; b = bm;
-    while$4: while(true) {
+    while$3: while(true) {
       if ((left >= 0))
         {
           {
@@ -193,7 +171,7 @@ public class Lscala/collection/immutable/HashMap$HashTrieMap; extends Lscala/col
               }
             b = (b >> 1);
           }
-          continue while$4;
+          continue while$3;
         }
       else
         {
@@ -205,15 +183,15 @@ public class Lscala/collection/immutable/HashMap$HashTrieMap; extends Lscala/col
   }
   
   public Lscala/collection/immutable/Seq; split() {
-    Lscala/collection/immutable/Seq; $24$;
+    Lscala/collection/immutable/Seq; $21$;
     if ((this.(Lscala/collection/immutable/HashMap$HashTrieMap;::size()I;)() == 1))
       {
-        $24$ = Lscala/collection/immutable/Seq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/collection/immutable/HashMap$HashTrieMap;>{this}.<cast>(Ljava/lang/Object;[))).<cast>(Lscala/collection/immutable/Seq;);
+        $21$ = Lscala/collection/immutable/Seq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/collection/immutable/HashMap$HashTrieMap;>{this}.<cast>(Ljava/lang/Object;[))).<cast>(Lscala/collection/immutable/Seq;);
       }
     else
       {
         I; nodesize = Ljava/lang/Integer;.(Ljava/lang/Integer;::bitCount(I;)I;)(this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)());
-        Lscala/collection/immutable/Seq; $25$;
+        Lscala/collection/immutable/Seq; $22$;
         if ((nodesize > 1))
           {
             I; splitpoint = (nodesize / 2);
@@ -221,43 +199,43 @@ public class Lscala/collection/immutable/HashMap$HashTrieMap; extends Lscala/col
             I; bm1 = (this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)() & (-1 << bitsplitpoint));
             I; bm2 = (this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)() & (-1 >> (32 - bitsplitpoint)));
             Lscala/Tuple2; temp10 = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)().<cast>(Ljava/lang/Object;[)).(Lscala/collection/IndexedSeqOptimized;::splitAt(I;)Lscala/Tuple2;)(splitpoint);
-            Lscala/Tuple2; $26$;
+            Lscala/Tuple2; $23$;
             if ((temp10 != null))
               {
-                $26$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(temp10.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), temp10.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()));
+                $23$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(temp10.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), temp10.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()));
               }
             else
               {
                 throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp10));
               }
-            Lscala/Tuple2; x$3 = $26$;
+            Lscala/Tuple2; x$3 = $23$;
             Lscala/collection/immutable/HashMap;[ e1 = x$3.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/HashMap;[);
             Lscala/collection/immutable/HashMap;[ e2 = x$3.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/HashMap;[);
             Lscala/collection/immutable/HashMap$HashTrieMap; hm1 = (new (Lscala/collection/immutable/HashMap$HashTrieMap;::this(I;Lscala/collection/immutable/HashMap;[I;)V;)(bm1, e1, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(e1.<cast>(Ljava/lang/Object;[)).(Lscala/collection/IndexedSeqOptimized;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(0), (new (Lscala/collection/immutable/HashMap$HashTrieMap$$anonfun$1;::this(Lscala/collection/immutable/HashMap$HashTrieMap;)V;)(this))))));
             Lscala/collection/immutable/HashMap$HashTrieMap; hm2 = (new (Lscala/collection/immutable/HashMap$HashTrieMap;::this(I;Lscala/collection/immutable/HashMap;[I;)V;)(bm2, e2, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(e2.<cast>(Ljava/lang/Object;[)).(Lscala/collection/IndexedSeqOptimized;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(0), (new (Lscala/collection/immutable/HashMap$HashTrieMap$$anonfun$2;::this(Lscala/collection/immutable/HashMap$HashTrieMap;)V;)(this))))));
-            $25$ = Lscala/collection/immutable/List$;.MODULE$.(Lscala/collection/immutable/List$;::apply(Lscala/collection/Seq;)Lscala/collection/immutable/List;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/collection/immutable/HashMap$HashTrieMap;>{hm1, hm2}.<cast>(Ljava/lang/Object;[)));
+            $22$ = Lscala/collection/immutable/List$;.MODULE$.(Lscala/collection/immutable/List$;::apply(Lscala/collection/Seq;)Lscala/collection/immutable/List;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Lscala/collection/immutable/HashMap$HashTrieMap;>{hm1, hm2}.<cast>(Ljava/lang/Object;[)));
           }
         else
           {
-            $25$ = this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)()[0].(Lscala/collection/immutable/HashMap;::split()Lscala/collection/immutable/Seq;)();
+            $22$ = this.(Lscala/collection/immutable/HashMap$HashTrieMap;::elems()Lscala/collection/immutable/HashMap;[)()[0].(Lscala/collection/immutable/HashMap;::split()Lscala/collection/immutable/Seq;)();
           }
-        $24$ = $25$;
+        $21$ = $22$;
       }
-    return $24$;
+    return $21$;
   }
   
-  protected Lscala/collection/immutable/HashMap; merge0(Lscala/collection/immutable/HashMap; that, I; level) {
+  protected Lscala/collection/immutable/HashMap; merge0(Lscala/collection/immutable/HashMap; that, I; level, Lscala/Function2; merger) {
     Lscala/collection/immutable/HashMap; temp13 = that;
-    Lscala/collection/immutable/HashMap; $27$;
+    Lscala/collection/immutable/HashMap; $24$;
     if (temp13.<instanceof>(Lscala/collection/immutable/HashMap$HashMap1;))
       {
         Lscala/collection/immutable/HashMap$HashMap1; temp14 = temp13.<cast>(Lscala/collection/immutable/HashMap$HashMap1;);
         Lscala/collection/immutable/HashMap$HashMap1; hm = temp14;
-        $27$ = this.(Lscala/collection/immutable/HashMap$HashTrieMap;::updated0(Ljava/lang/Object;I;I;Ljava/lang/Object;Lscala/Tuple2;)Lscala/collection/immutable/HashMap;)(hm.(Lscala/collection/immutable/HashMap$HashMap1;::key()Ljava/lang/Object;)(), hm.(Lscala/collection/immutable/HashMap$HashMap1;::hash()I;)(), level, hm.(Lscala/collection/immutable/HashMap$HashMap1;::value()Ljava/lang/Object;)(), hm.(Lscala/collection/immutable/HashMap$HashMap1;::kv()Lscala/Tuple2;)());
+        $24$ = this.(Lscala/collection/immutable/HashMap$HashTrieMap;::updated0(Ljava/lang/Object;I;I;Ljava/lang/Object;Lscala/Tuple2;Lscala/Function2;)Lscala/collection/immutable/HashMap;)(hm.(Lscala/collection/immutable/HashMap$HashMap1;::key()Ljava/lang/Object;)(), hm.(Lscala/collection/immutable/HashMap$HashMap1;::hash()I;)(), level, hm.(Lscala/collection/immutable/HashMap$HashMap1;::value()Ljava/lang/Object;)(), hm.(Lscala/collection/immutable/HashMap$HashMap1;::kv()Lscala/Tuple2;)(), merger);
       }
     else
       {
-        Lscala/collection/immutable/HashMap; $28$;
+        Lscala/collection/immutable/HashMap; $25$;
         if (temp13.<instanceof>(Lscala/collection/immutable/HashMap$HashTrieMap;))
           {
             Lscala/collection/immutable/HashMap$HashTrieMap; temp15 = temp13.<cast>(Lscala/collection/immutable/HashMap$HashTrieMap;);
@@ -273,7 +251,7 @@ public class Lscala/collection/immutable/HashMap$HashTrieMap; extends Lscala/col
             I; thisi = 0;
             I; thati = 0;
             I; totalelems = 0;
-            while$5: while(true) {
+            while$4: while(true) {
               if ((i < subcount))
                 {
                   {
@@ -281,7 +259,7 @@ public class Lscala/collection/immutable/HashMap$HashTrieMap; extends Lscala/col
                     I; thatlsb = (thatbm ^ (thatbm & (thatbm - 1)));
                     if ((thislsb == thatlsb))
                       {
-                        Lscala/collection/immutable/HashMap; m = thiselems[thisi].(Lscala/collection/immutable/HashMap;::merge0(Lscala/collection/immutable/HashMap;I;)Lscala/collection/immutable/HashMap;)(thatelems[thati], (level + 5));
+                        Lscala/collection/immutable/HashMap; m = thiselems[thisi].(Lscala/collection/immutable/HashMap;::merge0(Lscala/collection/immutable/HashMap;I;Lscala/Function2;)Lscala/collection/immutable/HashMap;)(thatelems[thati], (level + 5), merger);
                         totalelems = (totalelems + m.(Lscala/collection/immutable/HashMap;::size()I;)());
                         merged[i] = m;
                         thisbm = (thisbm & ~(thislsb));
@@ -293,7 +271,7 @@ public class Lscala/collection/immutable/HashMap$HashTrieMap; extends Lscala/col
                       {
                         I; a = (thislsb - 1);
                         I; b = (thatlsb - 1);
-                        if ((((a < b) ^ (a < 0)) ^ (b < 0)))
+                        if (Lscala/collection/immutable/HashMap$;.MODULE$.(Lscala/collection/generic/BitOperations$Int;::unsignedCompare(I;I;)Z;)((thislsb - 1), (thatlsb - 1)))
                           {
                             Lscala/collection/immutable/HashMap; m = thiselems[thisi];
                             totalelems = (totalelems + m.(Lscala/collection/immutable/HashMap;::size()I;)());
@@ -312,7 +290,7 @@ public class Lscala/collection/immutable/HashMap$HashTrieMap; extends Lscala/col
                       }
                     i = (i + 1);
                   }
-                  continue while$5;
+                  continue while$4;
                 }
               else
                 {
@@ -320,24 +298,33 @@ public class Lscala/collection/immutable/HashMap$HashTrieMap; extends Lscala/col
                 }
               break;
             }
-            $28$ = (new (Lscala/collection/immutable/HashMap$HashTrieMap;::this(I;Lscala/collection/immutable/HashMap;[I;)V;)((this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)() | that.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)()), merged, totalelems));
+            $25$ = (new (Lscala/collection/immutable/HashMap$HashTrieMap;::this(I;Lscala/collection/immutable/HashMap;[I;)V;)((this.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)() | that.(Lscala/collection/immutable/HashMap$HashTrieMap;::bitmap()I;)()), merged, totalelems));
           }
         else
           {
-            Lscala/collection/immutable/HashMap; $29$;
+            Lscala/collection/immutable/HashMap; $26$;
             if (temp13.<instanceof>(Lscala/collection/immutable/HashMap$HashMapCollision1;))
               {
-                $29$ = that.(Lscala/collection/immutable/HashMap;::merge0(Lscala/collection/immutable/HashMap;I;)Lscala/collection/immutable/HashMap;)(this, level);
+                $26$ = that.(Lscala/collection/immutable/HashMap;::merge0(Lscala/collection/immutable/HashMap;I;Lscala/Function2;)Lscala/collection/immutable/HashMap;)(this, level, merger);
               }
             else
               {
-                Lscala/Predef$;.MODULE$.(Lscala/Predef$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("section supposed to be unreachable.");
+                Lscala/collection/immutable/HashMap; $27$;
+                if (temp13.<instanceof>(Lscala/collection/immutable/HashMap;))
+                  {
+                    $27$ = this;
+                  }
+                else
+                  {
+                    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("section supposed to be unreachable.");
+                  }
+                $26$ = $27$;
               }
-            $28$ = $29$;
+            $25$ = $26$;
           }
-        $27$ = $28$;
+        $24$ = $25$;
       }
-    return $27$;
+    return $24$;
   }
   
   public this(I; bitmap, Lscala/collection/immutable/HashMap;[ elems, I; size0) {

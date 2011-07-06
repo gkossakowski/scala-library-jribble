@@ -1,4 +1,4 @@
-public final class Lscala/xml/ProcInstr$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject; {
+public final class Lscala/xml/ProcInstr$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/ProcInstr$; MODULE$ = new (Lscala/xml/ProcInstr$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -20,6 +20,10 @@ public final class Lscala/xml/ProcInstr$; extends Lscala/runtime/AbstractFunctio
   
   public Lscala/xml/ProcInstr; apply(Ljava/lang/String; target, Ljava/lang/String; proctext) {
     return (new (Lscala/xml/ProcInstr;::this(Ljava/lang/String;Ljava/lang/String;)V;)(target, proctext));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/ProcInstr$;.MODULE$;
   }
   
   public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {

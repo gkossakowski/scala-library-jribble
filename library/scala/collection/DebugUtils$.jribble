@@ -1,0 +1,33 @@
+public final class Lscala/collection/DebugUtils$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/DebugUtils$; MODULE$ = new (Lscala/collection/DebugUtils$;::this()V;)();
+  
+  public Lscala/runtime/Nothing$; unsupported(Ljava/lang/String; msg) {
+    throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)(msg));
+  }
+  
+  public Lscala/runtime/Nothing$; noSuchElement(Ljava/lang/String; msg) {
+    throw (new (Ljava/util/NoSuchElementException;::this(Ljava/lang/String;)V;)(msg));
+  }
+  
+  public Lscala/runtime/Nothing$; indexOutOfBounds(I; index) {
+    throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(index).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+  }
+  
+  public Lscala/runtime/Nothing$; illegalArgument(Ljava/lang/String; msg) {
+    throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)(msg));
+  }
+  
+  public Ljava/lang/String; buildString(Lscala/Function1; closure) {
+    Lscala/runtime/ObjectRef; output$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(""));
+    closure.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)((new (Lscala/collection/DebugUtils$$anonfun$buildString$1;::this(Lscala/runtime/ObjectRef;)V;)(output$1)));
+    return output$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Ljava/lang/String;);
+  }
+  
+  public Ljava/lang/String; arrayString(Ljava/lang/Object; array, I; from, I; until) {
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::genericArrayOps(Ljava/lang/Object;)Lscala/collection/mutable/ArrayOps;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::genericArrayOps(Ljava/lang/Object;)Lscala/collection/mutable/ArrayOps;)(array).(Lscala/collection/IndexedSeqOptimized;::slice(I;I;)Ljava/lang/Object;)(from, until)).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/collection/DebugUtils$$anonfun$arrayString$1;::this()V;)()), Lscala/Array$;.MODULE$.(Lscala/Array$;::canBuildFrom(Lscala/reflect/ClassManifest;)Lscala/collection/generic/CanBuildFrom;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;)Lscala/reflect/ClassManifest;)(Ljava/lang/String;.class))).<cast>(Ljava/lang/Object;[)).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;)Ljava/lang/String;)(" | ");
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

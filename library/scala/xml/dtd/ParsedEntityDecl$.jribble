@@ -1,4 +1,4 @@
-public final class Lscala/xml/dtd/ParsedEntityDecl$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject; {
+public final class Lscala/xml/dtd/ParsedEntityDecl$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/dtd/ParsedEntityDecl$; MODULE$ = new (Lscala/xml/dtd/ParsedEntityDecl$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/xml/dtd/ParsedEntityDecl$; extends Lscala/runtime/Abst
   }
   
   public Lscala/Option; unapply(Lscala/xml/dtd/ParsedEntityDecl; x$0) {
-    Lscala/Option; $44$;
+    Lscala/Option; $33$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $44$ = Lscala/None$;.MODULE$;
+        $33$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $44$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/ParsedEntityDecl;::name()Ljava/lang/String;)(), x$0.(Lscala/xml/dtd/ParsedEntityDecl;::entdef()Lscala/xml/dtd/EntityDef;)()))));
+        $33$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/ParsedEntityDecl;::name()Ljava/lang/String;)(), x$0.(Lscala/xml/dtd/ParsedEntityDecl;::entdef()Lscala/xml/dtd/EntityDef;)()))));
       }
-    return $44$;
+    return $33$;
   }
   
   public Lscala/xml/dtd/ParsedEntityDecl; apply(Ljava/lang/String; name, Lscala/xml/dtd/EntityDef; entdef) {
     return (new (Lscala/xml/dtd/ParsedEntityDecl;::this(Ljava/lang/String;Lscala/xml/dtd/EntityDef;)V;)(name, entdef));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/dtd/ParsedEntityDecl$;.MODULE$;
   }
   
   public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {

@@ -1,20 +1,20 @@
-public final class Lscala/xml/PrettyPrinter$Para$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+public final class Lscala/xml/PrettyPrinter$Para$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject;, Lscala/Serializable; {
   
   public final Ljava/lang/String; toString() {
     return "Para";
   }
   
   public Lscala/Option; unapply(Lscala/xml/PrettyPrinter$Para; x$0) {
-    Lscala/Option; $13$;
+    Lscala/Option; $19$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $13$ = Lscala/None$;.MODULE$;
+        $19$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $13$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/xml/PrettyPrinter$Para;::s()Ljava/lang/String;)()));
+        $19$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/xml/PrettyPrinter$Para;::s()Ljava/lang/String;)()));
       }
-    return $13$;
+    return $19$;
   }
   
   public Lscala/xml/PrettyPrinter$Para; apply(Ljava/lang/String; s) {

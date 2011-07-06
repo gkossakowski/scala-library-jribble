@@ -1,5 +1,9 @@
 public class Lscala/util/control/BreakControl; extends Ljava/lang/Throwable; implements Lscala/util/control/ControlThrowable;, Lscala/ScalaObject; {
   
+  public final Ljava/lang/Throwable; scala$util$control$NoStackTrace$$super$fillInStackTrace() {
+    return super.(Ljava/lang/Throwable;::fillInStackTrace()Ljava/lang/Throwable;)();
+  }
+  
   public Ljava/lang/Throwable; fillInStackTrace() {
     return Lscala/util/control/NoStackTrace$class;.(Lscala/util/control/NoStackTrace$class;::fillInStackTrace(Lscala/util/control/NoStackTrace;)Ljava/lang/Throwable;)(this);
   }

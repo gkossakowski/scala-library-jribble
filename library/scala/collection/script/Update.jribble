@@ -1,4 +1,4 @@
-public class Lscala/collection/script/Update; extends Ljava/lang/Object; implements Lscala/collection/script/Message;, Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/collection/script/Update; extends Ljava/lang/Object; implements Lscala/collection/script/Message;, Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   
   public Lscala/collection/Iterator; productIterator() {
@@ -7,14 +7,6 @@ public class Lscala/collection/script/Update; extends Ljava/lang/Object; impleme
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/Object; copy$default$2() {
-    return this.(Lscala/collection/script/Update;::elem()Ljava/lang/Object;)();
-  }
-  
-  public Lscala/collection/script/Location; copy$default$1() {
-    return this.(Lscala/collection/script/Update;::location()Lscala/collection/script/Location;)();
   }
   
   private Lscala/collection/script/Location; location$u0020;
@@ -29,12 +21,16 @@ public class Lscala/collection/script/Update; extends Ljava/lang/Object; impleme
     return this.(Lscala/collection/script/Update;)elem$u0020;
   }
   
-  public this(Ljava/lang/Object; elem) {
-    (Lscala/collection/script/Update;::this(Lscala/collection/script/Location;Ljava/lang/Object;)V;)(Lscala/collection/script/NoLo$;.MODULE$, elem);
-  }
-  
   public Lscala/collection/script/Update; copy(Lscala/collection/script/Location; location, Ljava/lang/Object; elem) {
     return (new (Lscala/collection/script/Update;::this(Lscala/collection/script/Location;Ljava/lang/Object;)V;)(location, elem));
+  }
+  
+  public Ljava/lang/Object; copy$default$2() {
+    return this.(Lscala/collection/script/Update;::elem()Ljava/lang/Object;)();
+  }
+  
+  public Lscala/collection/script/Location; copy$default$1() {
+    return this.(Lscala/collection/script/Update;::location()Lscala/collection/script/Location;)();
   }
   
   public I; hashCode() {
@@ -47,30 +43,37 @@ public class Lscala/collection/script/Update; extends Ljava/lang/Object; impleme
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp6 = x$1;
-    Z; $5$;
+    Z; $9$;
     if (temp6.<instanceof>(Lscala/collection/script/Update;))
       {
         Lscala/collection/script/Update; temp7 = temp6.<cast>(Lscala/collection/script/Update;);
         Lscala/collection/script/Location; temp8 = temp7.(Lscala/collection/script/Update;::location()Lscala/collection/script/Location;)();
         Ljava/lang/Object; temp9 = temp7.(Lscala/collection/script/Update;::elem()Ljava/lang/Object;)();
-        Ljava/lang/Object; elem$2 = temp9;
         Lscala/collection/script/Location; location$2 = temp8;
-        Z; $6$;
+        Ljava/lang/Object; elem$2 = temp9;
+        Z; $10$;
         if (this.(Lscala/collection/script/Update;::gd2$1(Lscala/collection/script/Location;Ljava/lang/Object;)Z;)(location$2, elem$2))
           {
-            $6$ = x$1.<cast>(Lscala/collection/script/Update;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Lscala/collection/script/Location; $11$;
+            Ljava/lang/Object; $12$;
+            Z; $13$;
+            body$percent03: while(true) {
+              $13$ = x$1.<cast>(Lscala/collection/script/Update;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $10$ = $13$;
           }
         else
           {
-            $6$ = false;
+            $10$ = false;
           }
-        $5$ = $6$;
+        $9$ = $10$;
       }
     else
       {
-        $5$ = false;
+        $9$ = false;
       }
-    return ((this == x$1) || $5$);
+    return ((this == x$1) || $9$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -83,16 +86,16 @@ public class Lscala/collection/script/Update; extends Ljava/lang/Object; impleme
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp10 = x$1;
-    I; $7$ = temp10;
-    Ljava/lang/Object; $8$;
-    switch ($7$) {
-      0: {
-        $8$ = this.(Lscala/collection/script/Update;::location()Lscala/collection/script/Location;)();
+    I; $14$ = temp10;
+    Ljava/lang/Object; $15$;
+    switch ($14$) {
+      1: {
+        $15$ = this.(Lscala/collection/script/Update;::elem()Ljava/lang/Object;)();
         break;
       }
       
-      1: {
-        $8$ = this.(Lscala/collection/script/Update;::elem()Ljava/lang/Object;)();
+      0: {
+        $15$ = this.(Lscala/collection/script/Update;::location()Lscala/collection/script/Location;)();
         break;
       }
       
@@ -102,7 +105,7 @@ public class Lscala/collection/script/Update; extends Ljava/lang/Object; impleme
       }
       
     }
-    return $8$;
+    return $15$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {
@@ -118,5 +121,9 @@ public class Lscala/collection/script/Update; extends Ljava/lang/Object; impleme
     this.(Lscala/collection/script/Update;)elem$u0020 = elem;
     (Ljava/lang/Object;::super()V;)();
     Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+  
+  public this(Ljava/lang/Object; elem) {
+    (Lscala/collection/script/Update;::this(Lscala/collection/script/Location;Ljava/lang/Object;)V;)(Lscala/collection/script/NoLo$;.MODULE$, elem);
   }
 }

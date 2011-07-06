@@ -1,40 +1,48 @@
-public interface Lscala/collection/SetLike; extends Lscala/collection/IterableLike;, Lscala/collection/generic/Addable;, Lscala/collection/generic/Subtractable;, Lscala/ScalaObject; {
+public interface Lscala/collection/SetLike; extends Lscala/collection/IterableLike;, Lscala/collection/GenSetLike;, Lscala/collection/generic/Subtractable;, Lscala/collection/Parallelizable;, Lscala/ScalaObject; {
+  
+  public Ljava/lang/Object; scala$collection$SetLike$$super$map(Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf);
   
   public Lscala/collection/Set; empty();
   
   public Lscala/collection/mutable/Builder; newBuilder();
   
+  public Lscala/collection/parallel/Combiner; parCombiner();
+  
+  public Lscala/collection/Seq; toSeq();
+  
+  public Lscala/collection/mutable/Buffer; toBuffer();
+  
+  public Ljava/lang/Object; map(Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf);
+  
   public Z; contains(Ljava/lang/Object; elem);
   
   public Lscala/collection/Set; $plus(Ljava/lang/Object; elem);
+  
+  public Lscala/collection/Set; $plus(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems);
+  
+  public Lscala/collection/Set; $plus$plus(Lscala/collection/GenTraversableOnce; elems);
+  
+  public Lscala/collection/Set; $plus$plus(Lscala/collection/TraversableOnce; elems);
   
   public Lscala/collection/Set; $minus(Ljava/lang/Object; elem);
   
   public Z; isEmpty();
   
-  public Z; apply(Ljava/lang/Object; elem);
-  
-  public Lscala/collection/Set; intersect(Lscala/collection/Set; that);
-  
-  public Lscala/collection/Set; $amp(Lscala/collection/Set; that);
-  
   public Lscala/collection/Set; $times$times(Lscala/collection/Set; that);
+  
+  public Lscala/collection/Set; union(Lscala/collection/GenSet; that);
   
   public Lscala/collection/Set; union(Lscala/collection/Set; that);
   
-  public Lscala/collection/Set; $bar(Lscala/collection/Set; that);
+  public Lscala/collection/Set; diff(Lscala/collection/GenSet; that);
   
   public Lscala/collection/Set; diff(Lscala/collection/Set; that);
   
-  public Lscala/collection/Set; $amp$tilde(Lscala/collection/Set; that);
+  public Lscala/collection/Iterator; subsets(I; len);
   
-  public Z; subsetOf(Lscala/collection/Set; that);
+  public Lscala/collection/Iterator; subsets();
   
   public Ljava/lang/String; stringPrefix();
   
   public Ljava/lang/String; toString();
-  
-  public I; hashCode();
-  
-  public Z; equals(Ljava/lang/Object; that);
 }

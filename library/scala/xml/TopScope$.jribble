@@ -39,6 +39,10 @@ public final class Lscala/xml/TopScope$; extends Lscala/xml/NamespaceBinding; im
     
   }
   
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/TopScope$;.MODULE$;
+  }
+  
   public this() {
     (Lscala/xml/NamespaceBinding;::super(Ljava/lang/String;Ljava/lang/String;Lscala/xml/NamespaceBinding;)V;)(null, null, null);
   }

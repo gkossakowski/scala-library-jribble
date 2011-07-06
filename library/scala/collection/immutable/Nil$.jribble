@@ -1,4 +1,4 @@
-public final class Lscala/collection/immutable/Nil$; extends Lscala/collection/immutable/List; implements Lscala/ScalaObject;, Lscala/Product; {
+public final class Lscala/collection/immutable/Nil$; extends Lscala/collection/immutable/List; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public static Lscala/collection/immutable/Nil$; MODULE$ = new (Lscala/collection/immutable/Nil$;::this()V;)();
   
   public Z; isEmpty() {
@@ -15,16 +15,16 @@ public final class Lscala/collection/immutable/Nil$; extends Lscala/collection/i
   
   public Z; equals(Ljava/lang/Object; that) {
     Ljava/lang/Object; temp21 = that;
-    Z; $19$;
-    if (temp21.<instanceof>(Lscala/collection/immutable/Seq;))
+    Z; $22$;
+    if (temp21.<instanceof>(Lscala/collection/Seq;))
       {
-        $19$ = temp21.<cast>(Lscala/collection/immutable/Seq;).(Lscala/collection/IterableLike;::isEmpty()Z;)();
+        $22$ = temp21.<cast>(Lscala/collection/Seq;).(Lscala/collection/IterableLike;::isEmpty()Z;)();
       }
     else
       {
-        $19$ = false;
+        $22$ = false;
       }
-    return $19$;
+    return $22$;
   }
   
   public Ljava/lang/String; productPrefix() {

@@ -123,11 +123,11 @@ public abstract class Lscala/collection/immutable/package$RangeUtils$class; {
         I; $9$;
         if (($this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)() > 0))
           {
-            $9$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::longWrapper(J;)Lscala/runtime/RichLong;)(($this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)().<cast>(J;) + ($this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)().<cast>(J;) * n.<cast>(J;)))).(Lscala/runtime/RichLong;::min(J;)J;)($this.(Lscala/collection/immutable/package$RangeUtils;::_last()I;)().<cast>(J;)).<cast>(I;);
+            $9$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToLong(Ljava/lang/Object;)J;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::longWrapper(J;)Lscala/runtime/RichLong;)(($this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)().<cast>(J;) + ($this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)().<cast>(J;) * n.<cast>(J;)))).(Lscala/runtime/ScalaNumberProxy;::min(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)($this.(Lscala/collection/immutable/package$RangeUtils;::_last()I;)().<cast>(J;)))).<cast>(I;);
           }
         else
           {
-            $9$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::longWrapper(J;)Lscala/runtime/RichLong;)(($this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)().<cast>(J;) + ($this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)().<cast>(J;) * n.<cast>(J;)))).(Lscala/runtime/RichLong;::max(J;)J;)($this.(Lscala/collection/immutable/package$RangeUtils;::_last()I;)().<cast>(J;)).<cast>(I;);
+            $9$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToLong(Ljava/lang/Object;)J;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::longWrapper(J;)Lscala/runtime/RichLong;)(($this.(Lscala/collection/immutable/package$RangeUtils;::start()I;)().<cast>(J;) + ($this.(Lscala/collection/immutable/package$RangeUtils;::step()I;)().<cast>(J;) * n.<cast>(J;)))).(Lscala/runtime/ScalaNumberProxy;::max(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)($this.(Lscala/collection/immutable/package$RangeUtils;::_last()I;)().<cast>(J;)))).<cast>(I;);
           }
         $8$ = $9$;
       }

@@ -1,28 +1,14 @@
-public final class Lscala/Tuple3$$anonfun$zip$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/Tuple3$$anonfun$zip$1; extends Lscala/runtime/AbstractFunction3; implements Lscala/Serializable; {
   
-  public final Ljava/lang/Object; apply(Ljava/lang/Object; el1) {
-    Ljava/lang/Object; $9$;
-    if ((this.(Lscala/Tuple3$$anonfun$zip$1;)elems2$1.(Lscala/collection/Iterator;::hasNext()Z;)() && this.(Lscala/Tuple3$$anonfun$zip$1;)elems3$1.(Lscala/collection/Iterator;::hasNext()Z;)()))
-      {
-        $9$ = this.(Lscala/Tuple3$$anonfun$zip$1;)b1$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(el1, this.(Lscala/Tuple3$$anonfun$zip$1;)elems2$1.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), this.(Lscala/Tuple3$$anonfun$zip$1;)elems3$1.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)())));
-      }
-    else
-      {
-        $9$ = Lscala/runtime/BoxedUnit;.UNIT;
-      }
-    return $9$;
+  public final Lscala/Tuple3; apply(Ljava/lang/Object; x, Ljava/lang/Object; y, Ljava/lang/Object; z) {
+    return (new (Lscala/Tuple3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x, y, z));
   }
   
-  private Lscala/collection/mutable/Builder; b1$1;
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2, Ljava/lang/Object; v3) {
+    return this.(Lscala/Tuple3$$anonfun$zip$1;::apply(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lscala/Tuple3;)(v1, v2, v3);
+  }
   
-  private Lscala/collection/Iterator; elems2$1;
-  
-  private Lscala/collection/Iterator; elems3$1;
-  
-  public this(Lscala/Tuple3; $outer, Lscala/collection/mutable/Builder; b1$1, Lscala/collection/Iterator; elems2$1, Lscala/collection/Iterator; elems3$1) {
-    this.(Lscala/Tuple3$$anonfun$zip$1;)b1$1 = b1$1;
-    this.(Lscala/Tuple3$$anonfun$zip$1;)elems2$1 = elems2$1;
-    this.(Lscala/Tuple3$$anonfun$zip$1;)elems3$1 = elems3$1;
-    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  public this(Lscala/Tuple3; $outer) {
+    (Lscala/runtime/AbstractFunction3;::super()V;)();
   }
 }

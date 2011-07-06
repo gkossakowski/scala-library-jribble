@@ -1,4 +1,4 @@
-public final class Lscala/collection/immutable/Stream$Cons; extends Lscala/collection/immutable/Stream; implements Lscala/ScalaObject; {
+public final class Lscala/collection/immutable/Stream$Cons; extends Lscala/collection/immutable/Stream; implements Lscala/Serializable;, Lscala/ScalaObject; {
   
   private Ljava/lang/Object; hd;
   
@@ -21,7 +21,16 @@ public final class Lscala/collection/immutable/Stream$Cons; extends Lscala/colle
   public Lscala/collection/immutable/Stream; tail() {
     if (!(this.(Lscala/collection/immutable/Stream$Cons;::tailDefined()Z;)()))
       {
-        this.(Lscala/collection/immutable/Stream$Cons;)tlVal = this.(Lscala/collection/immutable/Stream$Cons;)tl.(Lscala/Function0;::apply()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Stream;);
+        Ljava/lang/Object; $44$;
+        if (!(this.(Lscala/collection/immutable/Stream$Cons;::tailDefined()Z;)()))
+          {
+            this.(Lscala/collection/immutable/Stream$Cons;)tlVal = this.(Lscala/collection/immutable/Stream$Cons;)tl.(Lscala/Function0;::apply()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Stream;);
+            $44$ = Lscala/runtime/BoxedUnit;.UNIT;
+          }
+        else
+          {
+            $44$ = Lscala/runtime/BoxedUnit;.UNIT;
+          }
       }
     else
       {

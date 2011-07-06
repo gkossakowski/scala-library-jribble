@@ -1,27 +1,24 @@
-public final class Lscala/collection/SeqLike$$anonfun$distinct$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/SeqLike$$anonfun$distinct$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
-  public final V; apply(Ljava/lang/Object; x) {
-    if (!(this.(Lscala/collection/SeqLike$$anonfun$distinct$1;)seen$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/Set;).(Lscala/collection/SetLike;::contains(Ljava/lang/Object;)Z;)(x)))
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; x) {
+    Ljava/lang/Object; $16$;
+    if (!(this.(Lscala/collection/SeqLike$$anonfun$distinct$1;)seen$1.(Lscala/collection/GenSetLike;::apply(Ljava/lang/Object;)Z;)(x)))
       {
         this.(Lscala/collection/SeqLike$$anonfun$distinct$1;)b$5.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
-        this.(Lscala/collection/SeqLike$$anonfun$distinct$1;)seen$1.(Lscala/runtime/ObjectRef;)elem = this.(Lscala/collection/SeqLike$$anonfun$distinct$1;)seen$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/Set;).(Lscala/collection/SetLike;::$plus(Ljava/lang/Object;)Lscala/collection/Set;)(x);
+        $16$ = this.(Lscala/collection/SeqLike$$anonfun$distinct$1;)seen$1.(Lscala/collection/mutable/HashSet;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/HashSet;)(x);
       }
     else
       {
-        
+        $16$ = Lscala/runtime/BoxedUnit;.UNIT;
       }
-  }
-  
-  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
-    this.(Lscala/collection/SeqLike$$anonfun$distinct$1;::apply(Ljava/lang/Object;)V;)(v1);
-    return Lscala/runtime/BoxedUnit;.UNIT;
+    return $16$;
   }
   
   private Lscala/collection/mutable/Builder; b$5;
   
-  private Lscala/runtime/ObjectRef; seen$1;
+  private Lscala/collection/mutable/HashSet; seen$1;
   
-  public this(Lscala/collection/SeqLike; $outer, Lscala/collection/mutable/Builder; b$5, Lscala/runtime/ObjectRef; seen$1) {
+  public this(Lscala/collection/SeqLike; $outer, Lscala/collection/mutable/Builder; b$5, Lscala/collection/mutable/HashSet; seen$1) {
     this.(Lscala/collection/SeqLike$$anonfun$distinct$1;)b$5 = b$5;
     this.(Lscala/collection/SeqLike$$anonfun$distinct$1;)seen$1 = seen$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();

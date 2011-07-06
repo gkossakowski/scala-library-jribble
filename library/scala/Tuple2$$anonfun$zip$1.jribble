@@ -1,25 +1,14 @@
-public final class Lscala/Tuple2$$anonfun$zip$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/Tuple2$$anonfun$zip$1; extends Lscala/runtime/AbstractFunction2; implements Lscala/Serializable; {
   
-  public final Ljava/lang/Object; apply(Ljava/lang/Object; el1) {
-    Ljava/lang/Object; $9$;
-    if (this.(Lscala/Tuple2$$anonfun$zip$1;)elems2$1.(Lscala/collection/Iterator;::hasNext()Z;)())
-      {
-        $9$ = this.(Lscala/Tuple2$$anonfun$zip$1;)b1$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(el1, this.(Lscala/Tuple2$$anonfun$zip$1;)elems2$1.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)())));
-      }
-    else
-      {
-        $9$ = Lscala/runtime/BoxedUnit;.UNIT;
-      }
-    return $9$;
+  public final Lscala/Tuple2; apply(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x, y));
   }
   
-  private Lscala/collection/mutable/Builder; b1$1;
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {
+    return this.(Lscala/Tuple2$$anonfun$zip$1;::apply(Ljava/lang/Object;Ljava/lang/Object;)Lscala/Tuple2;)(v1, v2);
+  }
   
-  private Lscala/collection/Iterator; elems2$1;
-  
-  public this(Lscala/Tuple2; $outer, Lscala/collection/mutable/Builder; b1$1, Lscala/collection/Iterator; elems2$1) {
-    this.(Lscala/Tuple2$$anonfun$zip$1;)b1$1 = b1$1;
-    this.(Lscala/Tuple2$$anonfun$zip$1;)elems2$1 = elems2$1;
-    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  public this(Lscala/Tuple2; $outer) {
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
   }
 }

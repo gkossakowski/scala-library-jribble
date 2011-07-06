@@ -1,6 +1,6 @@
 public interface Lscala/collection/Iterator; extends Lscala/collection/TraversableOnce;, Lscala/ScalaObject; {
   
-  public I; sliding$default$2();
+  public Lscala/collection/Iterator; seq();
   
   public Z; hasNext();
   
@@ -32,9 +32,15 @@ public interface Lscala/collection/Iterator; extends Lscala/collection/Traversab
   
   public Lscala/collection/Iterator; collect(Lscala/PartialFunction; pf);
   
+  public Lscala/collection/Iterator; scanLeft(Ljava/lang/Object; z, Lscala/Function2; op);
+  
+  public Lscala/collection/Iterator; scanRight(Ljava/lang/Object; z, Lscala/Function2; op);
+  
   public Lscala/collection/Iterator; takeWhile(Lscala/Function1; p);
   
   public Lscala/Tuple2; partition(Lscala/Function1; p);
+  
+  public Lscala/Tuple2; span(Lscala/Function1; p);
   
   public Lscala/collection/Iterator; dropWhile(Lscala/Function1; p);
   
@@ -65,6 +71,8 @@ public interface Lscala/collection/Iterator; extends Lscala/collection/Traversab
   public Lscala/collection/Iterator$GroupedIterator; grouped(I; size);
   
   public Lscala/collection/Iterator$GroupedIterator; sliding(I; size, I; step);
+  
+  public I; sliding$default$2();
   
   public I; length();
   

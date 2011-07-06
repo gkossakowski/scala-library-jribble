@@ -2,7 +2,7 @@ public final class Lscala/collection/immutable/List$; extends Lscala/collection/
   public static Lscala/collection/immutable/List$; MODULE$ = new (Lscala/collection/immutable/List$;::this()V;)();
   
   public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
-    return (new (Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;::this(Lscala/collection/generic/TraversableFactory;)V;)(this));
+    return this.(Lscala/collection/generic/GenTraversableFactory;::ReusableCBF()Lscala/collection/generic/GenTraversableFactory$ReusableCBF$;)();
   }
   
   public Lscala/collection/mutable/Builder; newBuilder() {
@@ -131,8 +131,8 @@ public final class Lscala/collection/immutable/List$; extends Lscala/collection/
         {
           {
             i = (i - 1);
-            Ljava/lang/Object; x$15 = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_apply(Ljava/lang/Object;I;)Ljava/lang/Object;)(arr, i);
-            res = res.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$15);
+            Ljava/lang/Object; x$14 = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_apply(Ljava/lang/Object;I;)Ljava/lang/Object;)(arr, i);
+            res = res.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$14);
           }
           continue while$19;
         }
@@ -155,8 +155,8 @@ public final class Lscala/collection/immutable/List$; extends Lscala/collection/
             I; pos1 = str.(Ljava/lang/String;::lastIndexOf(I;I;)I;)(separator.<cast>(I;), (pos - 1));
             if (((pos1 + 1) < pos))
               {
-                Ljava/lang/String; x$16 = str.(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)((pos1 + 1), pos);
-                words = words.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$16);
+                Ljava/lang/String; x$15 = str.(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)((pos1 + 1), pos);
+                words = words.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$15);
               }
             else
               {
@@ -327,37 +327,37 @@ public final class Lscala/collection/immutable/List$; extends Lscala/collection/
     return buf.(Lscala/collection/mutable/ListBuffer;::toList()Lscala/collection/immutable/List;)();
   }
   
-  public Lscala/collection/Traversable; apply(Lscala/collection/Seq; elems) {
+  public Lscala/collection/GenTraversable; apply(Lscala/collection/Seq; elems) {
     return this.(Lscala/collection/immutable/List$;::apply(Lscala/collection/Seq;)Lscala/collection/immutable/List;)(elems);
   }
   
-  public Lscala/collection/Traversable; empty() {
+  public Lscala/collection/GenTraversable; empty() {
     return this.(Lscala/collection/immutable/List$;::empty()Lscala/collection/immutable/List;)();
   }
   
   private final Lscala/collection/immutable/List; loop$4(Lscala/collection/immutable/List; ys, Lscala/collection/immutable/List; xs$1, Lscala/Function1; f$2) {
-    Lscala/collection/immutable/List; $22$;
+    Lscala/collection/immutable/List; $26$;
     if (ys.(Lscala/collection/IterableLike;::isEmpty()Z;)())
       {
-        $22$ = xs$1;
+        $26$ = xs$1;
       }
     else
       {
         Ljava/lang/Object; head0 = ys.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)();
         Ljava/lang/Object; head1 = f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(head0);
-        Lscala/collection/immutable/List; $23$;
+        Lscala/collection/immutable/List; $27$;
         if ((head1 == head0))
           {
-            $23$ = this.(Lscala/collection/immutable/List$;::loop$4(Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/Function1;)Lscala/collection/immutable/List;)(ys.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;), xs$1, f$2);
+            $27$ = this.(Lscala/collection/immutable/List$;::loop$4(Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/Function1;)Lscala/collection/immutable/List;)(ys.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;), xs$1, f$2);
           }
         else
           {
-            Ljava/lang/Object; x$17 = head1;
-            Lscala/collection/immutable/List; ys1 = this.(Lscala/collection/immutable/List$;::mapConserve(Lscala/collection/immutable/List;Lscala/Function1;)Lscala/collection/immutable/List;)(ys.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;), f$2).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$17);
-            Lscala/collection/immutable/List; $24$;
+            Ljava/lang/Object; x$16 = head1;
+            Lscala/collection/immutable/List; ys1 = this.(Lscala/collection/immutable/List$;::mapConserve(Lscala/collection/immutable/List;Lscala/Function1;)Lscala/collection/immutable/List;)(ys.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;), f$2).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$16);
+            Lscala/collection/immutable/List; $28$;
             if ((xs$1 == ys))
               {
-                $24$ = ys1;
+                $28$ = ys1;
               }
             else
               {
@@ -378,13 +378,13 @@ public final class Lscala/collection/immutable/List$; extends Lscala/collection/
                     }
                   break;
                 }
-                $24$ = b.(Lscala/collection/mutable/ListBuffer;::prependToList(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;)(ys1);
+                $28$ = b.(Lscala/collection/mutable/ListBuffer;::prependToList(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;)(ys1);
               }
-            $23$ = $24$;
+            $27$ = $28$;
           }
-        $22$ = $23$;
+        $26$ = $27$;
       }
-    return $22$;
+    return $26$;
   }
   
   public this() {

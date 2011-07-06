@@ -58,14 +58,14 @@ public abstract class Lscala/util/automata/BaseBerrySethi; extends Ljava/lang/Ob
     else
       {
         Lscala/collection/immutable/Set; $2$;
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp4, this.(Lscala/util/automata/BaseBerrySethi;::lang()Lscala/util/regexp/Base;)().(Lscala/util/regexp/Base;::Eps()Lscala/util/regexp/Base$Eps$;)()))
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/util/automata/BaseBerrySethi;::lang()Lscala/util/regexp/Base;)().(Lscala/util/regexp/Base;::Eps()Lscala/util/regexp/Base$Eps$;)(), temp4))
           {
             $2$ = this.(Lscala/util/automata/BaseBerrySethi;::emptySet()Lscala/collection/immutable/Set;)();
           }
         else
           {
             Lscala/collection/immutable/Set; $3$;
-            failCont$percent1: while(true) {
+            fail$percent1: while(true) {
               Lscala/collection/immutable/Set; $4$;
               if (temp4.<instanceof>(Lscala/util/regexp/Base$Meta;))
                 {
@@ -91,7 +91,7 @@ public abstract class Lscala/util/automata/BaseBerrySethi; extends Ljava/lang/Ob
                       Lscala/Tuple2; x$4 = $6$;
                       Lscala/collection/Seq; l1 = x$4.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/Seq;);
                       Lscala/collection/Seq; l2 = x$4.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/Seq;);
-                      $5$ = l1.(Lscala/collection/TraversableLike;::$plus$plus(Lscala/collection/TraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(l2.(Lscala/collection/IterableLike;::take(I;)Ljava/lang/Object;)(1).<cast>(Lscala/collection/TraversableOnce;), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(compFunction, Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(this.(Lscala/util/automata/BaseBerrySethi;::emptySet()Lscala/collection/immutable/Set;)(), (new (Lscala/util/automata/BaseBerrySethi$$anonfun$doComp$3;::this(Lscala/util/automata/BaseBerrySethi;)V;)(this))).<cast>(Lscala/collection/immutable/Set;);
+                      $5$ = l1.(Lscala/collection/TraversableLike;::$plus$plus(Lscala/collection/GenTraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(l2.(Lscala/collection/IterableLike;::take(I;)Ljava/lang/Object;)(1).<cast>(Lscala/collection/GenTraversableOnce;), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(compFunction, Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(this.(Lscala/util/automata/BaseBerrySethi;::emptySet()Lscala/collection/immutable/Set;)(), (new (Lscala/util/automata/BaseBerrySethi$$anonfun$doComp$3;::this(Lscala/util/automata/BaseBerrySethi;)V;)(this))).<cast>(Lscala/collection/immutable/Set;);
                     }
                   else
                     {
@@ -135,10 +135,10 @@ public abstract class Lscala/util/automata/BaseBerrySethi; extends Ljava/lang/Ob
       }
     else
       {
-        $8$ = rs.(Lscala/collection/IterableLike;::foldRight(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(Lscala/collection/immutable/Set$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapIntArray(I;[)Lscala/collection/mutable/WrappedArray;)(<I;>{this.(Lscala/util/automata/BaseBerrySethi;::pos()I;)()})), (new (Lscala/util/automata/BaseBerrySethi$$anonfun$compFollow$1;::this(Lscala/util/automata/BaseBerrySethi;)V;)(this)));
+        $8$ = rs.(Lscala/collection/IterableLike;::foldRight(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::Set()Lscala/collection/immutable/Set$;)().(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapIntArray(I;[)Lscala/collection/mutable/WrappedArray;)(<I;>{this.(Lscala/util/automata/BaseBerrySethi;::pos()I;)()})), (new (Lscala/util/automata/BaseBerrySethi$$anonfun$compFollow$1;::this(Lscala/util/automata/BaseBerrySethi;)V;)(this)));
       }
     this.(Lscala/util/automata/BaseBerrySethi;::follow()Lscala/collection/mutable/HashMap;)().(Lscala/collection/mutable/HashMap;::update(Ljava/lang/Object;Ljava/lang/Object;)V;)($9$, $8$);
-    return this.(Lscala/util/automata/BaseBerrySethi;::follow()Lscala/collection/mutable/HashMap;)().(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(0)).<cast>(Lscala/collection/immutable/Set;);
+    return this.(Lscala/util/automata/BaseBerrySethi;::follow()Lscala/collection/mutable/HashMap;)().(Lscala/collection/mutable/HashMap;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(0)).<cast>(Lscala/collection/immutable/Set;);
   }
   
   public Lscala/collection/immutable/Set; compFollow1(Lscala/collection/immutable/Set; fol1$1, Lscala/util/regexp/Base$RegExp; r) {
@@ -146,7 +146,7 @@ public abstract class Lscala/util/automata/BaseBerrySethi; extends Ljava/lang/Ob
     Lscala/collection/immutable/Set; $10$;
     if (temp10.<instanceof>(Lscala/util/regexp/Base$Alt;))
       {
-        $10$ = Lscala/collection/immutable/Set$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(temp10.<cast>(Lscala/util/regexp/Base$Alt;).(Lscala/util/regexp/Base$Alt;::rs()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::reverseMap(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/util/automata/BaseBerrySethi$$anonfun$compFollow1$1;::this(Lscala/util/automata/BaseBerrySethi;Lscala/collection/immutable/Set;)V;)(this, fol1$1)), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/generic/GenericTraversableTemplate;).(Lscala/collection/generic/GenericTraversableTemplate;::flatten(Lscala/Function1;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::conforms()Lscala/Predef$$less$colon$less;)()).<cast>(Lscala/collection/Seq;)).<cast>(Lscala/collection/immutable/Set;);
+        $10$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::Set()Lscala/collection/immutable/Set$;)().(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(temp10.<cast>(Lscala/util/regexp/Base$Alt;).(Lscala/util/regexp/Base$Alt;::rs()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::reverseMap(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/util/automata/BaseBerrySethi$$anonfun$compFollow1$1;::this(Lscala/util/automata/BaseBerrySethi;Lscala/collection/immutable/Set;)V;)(this, fol1$1)), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/generic/GenericTraversableTemplate;).(Lscala/collection/generic/GenericTraversableTemplate;::flatten(Lscala/Function1;)Lscala/collection/GenTraversable;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::conforms()Lscala/Predef$$less$colon$less;)()).<cast>(Lscala/collection/Seq;)).<cast>(Lscala/collection/immutable/Set;);
       }
     else
       {
@@ -162,16 +162,14 @@ public abstract class Lscala/util/automata/BaseBerrySethi; extends Ljava/lang/Ob
               {
                 Lscala/util/regexp/Base$Star; temp13 = temp10.<cast>(Lscala/util/regexp/Base$Star;);
                 Lscala/util/regexp/Base$Star; x = temp13;
-                $12$ = this.(Lscala/util/automata/BaseBerrySethi;::compFollow1(Lscala/collection/immutable/Set;Lscala/util/regexp/Base$RegExp;)Lscala/collection/immutable/Set;)(fol1$1.(Lscala/collection/generic/Addable;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Addable;)(this.(Lscala/util/automata/BaseBerrySethi;::compFirst(Lscala/util/regexp/Base$RegExp;)Lscala/collection/immutable/Set;)(x.(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)())).<cast>(Lscala/collection/immutable/Set;), x.(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)());
+                $12$ = this.(Lscala/util/automata/BaseBerrySethi;::compFollow1(Lscala/collection/immutable/Set;Lscala/util/regexp/Base$RegExp;)Lscala/collection/immutable/Set;)(fol1$1.(Lscala/collection/SetLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/Set;)(this.(Lscala/util/automata/BaseBerrySethi;::compFirst(Lscala/util/regexp/Base$RegExp;)Lscala/collection/immutable/Set;)(x.(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)())).<cast>(Lscala/collection/immutable/Set;), x.(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)());
               }
             else
               {
                 Lscala/collection/immutable/Set; $13$;
                 if (temp10.<instanceof>(Lscala/util/regexp/Base$Sequ;))
                   {
-                    Lscala/collection/immutable/Set; first = this.(Lscala/util/automata/BaseBerrySethi;::emptySet()Lscala/collection/immutable/Set;)();
-                    temp10.<cast>(Lscala/util/regexp/Base$Sequ;).(Lscala/util/regexp/Base$Sequ;::rs()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::foldRight(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(fol1$1, (new (Lscala/util/automata/BaseBerrySethi$$anonfun$compFollow1$2;::this(Lscala/util/automata/BaseBerrySethi;)V;)(this)));
-                    $13$ = first;
+                    $13$ = temp10.<cast>(Lscala/util/regexp/Base$Sequ;).(Lscala/util/regexp/Base$Sequ;::rs()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::foldRight(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(fol1$1, (new (Lscala/util/automata/BaseBerrySethi$$anonfun$compFollow1$2;::this(Lscala/util/automata/BaseBerrySethi;)V;)(this))).<cast>(Lscala/collection/immutable/Set;);
                   }
                 else
                   {
@@ -222,6 +220,6 @@ public abstract class Lscala/util/automata/BaseBerrySethi; extends Ljava/lang/Ob
   public this() {
     (Ljava/lang/Object;::super()V;)();
     this.(Lscala/util/automata/BaseBerrySethi;)pos$u0020 = 0;
-    this.(Lscala/util/automata/BaseBerrySethi;)emptySet$u0020 = Lscala/collection/immutable/Set$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapIntArray(I;[)Lscala/collection/mutable/WrappedArray;)(<I;>{})).<cast>(Lscala/collection/immutable/Set;);
+    this.(Lscala/util/automata/BaseBerrySethi;)emptySet$u0020 = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::Set()Lscala/collection/immutable/Set$;)().(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(Lscala/collection/immutable/Nil$;.MODULE$).<cast>(Lscala/collection/immutable/Set;);
   }
 }

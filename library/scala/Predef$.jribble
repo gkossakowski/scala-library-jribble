@@ -17,8 +17,28 @@ public final class Lscala/Predef$; extends Lscala/LowPriorityImplicits; implemen
     return this.(Lscala/Predef$;)Set$u0020;
   }
   
-  public Ljava/lang/Object; implicitly(Ljava/lang/Object; e) {
-    return e;
+  private Lscala/SpecializableCompanion; AnyRef$u0020;
+  
+  public Lscala/SpecializableCompanion; AnyRef() {
+    return this.(Lscala/Predef$;)AnyRef$u0020;
+  }
+  
+  private Lscala/reflect/ClassManifest$; ClassManifest$u0020;
+  
+  public Lscala/reflect/ClassManifest$; ClassManifest() {
+    return this.(Lscala/Predef$;)ClassManifest$u0020;
+  }
+  
+  private Lscala/reflect/Manifest$; Manifest$u0020;
+  
+  public Lscala/reflect/Manifest$; Manifest() {
+    return this.(Lscala/Predef$;)Manifest$u0020;
+  }
+  
+  private Lscala/reflect/NoManifest$; NoManifest$u0020;
+  
+  public Lscala/reflect/NoManifest$; NoManifest() {
+    return this.(Lscala/Predef$;)NoManifest$u0020;
   }
   
   public Lscala/reflect/Manifest; manifest(Lscala/reflect/Manifest; m) {
@@ -29,29 +49,42 @@ public final class Lscala/Predef$; extends Lscala/LowPriorityImplicits; implemen
     return m;
   }
   
+  public Lscala/reflect/OptManifest; optManifest(Lscala/reflect/OptManifest; m) {
+    return m;
+  }
+  
   public Ljava/lang/Object; identity(Ljava/lang/Object; x) {
     return x;
   }
   
-  public Ljava/lang/Thread; currentThread() {
-    return Ljava/lang/Thread;.(Ljava/lang/Thread;::currentThread()Ljava/lang/Thread;)();
+  public Ljava/lang/Object; implicitly(Ljava/lang/Object; e) {
+    return e;
   }
   
   public Ljava/lang/Object; locally(Ljava/lang/Object; x) {
     return x;
   }
   
+  private Lscala/xml/TopScope$; $scope$u0020;
+  
+  public Lscala/xml/TopScope$; $scope() {
+    return this.(Lscala/Predef$;)$scope$u0020;
+  }
+  
   public Lscala/runtime/Nothing$; error(Ljava/lang/String; message) {
-    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)(message));
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)(message);
   }
   
   public Lscala/runtime/Nothing$; exit() {
-    this.(Lscala/Predef$;::exit(I;)Lscala/runtime/Nothing$;)(0);
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::exit()Lscala/runtime/Nothing$;)();
   }
   
   public Lscala/runtime/Nothing$; exit(I; status) {
-    Ljava/lang/System;.(Ljava/lang/System;::exit(I;)V;)(status);
-    throw (new (Ljava/lang/Throwable;::this()V;)());
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::exit(I;)Lscala/runtime/Nothing$;)(status);
+  }
+  
+  public Ljava/lang/String; format(Ljava/lang/String; text, Lscala/collection/Seq; xs) {
+    return this.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(text).(Lscala/collection/immutable/StringLike;::format(Lscala/collection/Seq;)Ljava/lang/String;)(xs);
   }
   
   public V; assert(Z; assertion) {
@@ -65,7 +98,7 @@ public final class Lscala/Predef$; extends Lscala/LowPriorityImplicits; implemen
       }
   }
   
-  public V; assert(Z; assertion, Lscala/Function0; message) {
+  public final V; assert(Z; assertion, Lscala/Function0; message) {
     if (!(assertion))
       {
         throw (new (Ljava/lang/AssertionError;::this(Ljava/lang/Object;)V;)(("assertion failed: " + message.(Lscala/Function0;::apply()Ljava/lang/Object;)())));
@@ -87,7 +120,7 @@ public final class Lscala/Predef$; extends Lscala/LowPriorityImplicits; implemen
       }
   }
   
-  public V; assume(Z; assumption, Lscala/Function0; message) {
+  public final V; assume(Z; assumption, Lscala/Function0; message) {
     if (!(assumption))
       {
         throw (new (Ljava/lang/AssertionError;::this(Ljava/lang/Object;)V;)(("assumption failed: " + message.(Lscala/Function0;::apply()Ljava/lang/Object;)())));
@@ -109,7 +142,7 @@ public final class Lscala/Predef$; extends Lscala/LowPriorityImplicits; implemen
       }
   }
   
-  public V; require(Z; requirement, Lscala/Function0; message) {
+  public final V; require(Z; requirement, Lscala/Function0; message) {
     if (!(requirement))
       {
         throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)(("requirement failed: " + message.(Lscala/Function0;::apply()Ljava/lang/Object;)())));
@@ -141,11 +174,7 @@ public final class Lscala/Predef$; extends Lscala/LowPriorityImplicits; implemen
   }
   
   public V; printf(Ljava/lang/String; text, Lscala/collection/Seq; xs) {
-    Lscala/Console$;.MODULE$.(Lscala/Console$;::print(Ljava/lang/Object;)V;)(this.(Lscala/Predef$;::format(Ljava/lang/String;Lscala/collection/Seq;)Ljava/lang/String;)(text, xs));
-  }
-  
-  public Ljava/lang/String; format(Ljava/lang/String; text, Lscala/collection/Seq; xs) {
-    return this.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(text).(Lscala/collection/immutable/StringLike;::format(Lscala/collection/Seq;)Ljava/lang/String;)(xs);
+    Lscala/Console$;.MODULE$.(Lscala/Console$;::print(Ljava/lang/Object;)V;)(this.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(text).(Lscala/collection/immutable/StringLike;::format(Lscala/collection/Seq;)Ljava/lang/String;)(xs));
   }
   
   public Ljava/lang/String; readLine() {
@@ -204,40 +233,16 @@ public final class Lscala/Predef$; extends Lscala/LowPriorityImplicits; implemen
     return Lscala/Console$;.MODULE$.(Lscala/Console$;::readf3(Ljava/lang/String;)Lscala/Tuple3;)(format);
   }
   
-  public Lscala/runtime/RichByte; byteWrapper(B; x) {
-    return (new (Lscala/runtime/RichByte;::this(B;)V;)(x));
-  }
-  
-  public Lscala/runtime/RichShort; shortWrapper(S; x) {
-    return (new (Lscala/runtime/RichShort;::this(S;)V;)(x));
-  }
-  
-  public Lscala/runtime/RichInt; intWrapper(I; x) {
-    return (new (Lscala/runtime/RichInt;::this(I;)V;)(x));
-  }
-  
-  public Lscala/runtime/RichChar; charWrapper(C; c) {
-    return (new (Lscala/runtime/RichChar;::this(C;)V;)(c));
-  }
-  
-  public Lscala/runtime/RichLong; longWrapper(J; x) {
-    return (new (Lscala/runtime/RichLong;::this(J;)V;)(x));
-  }
-  
-  public Lscala/runtime/RichFloat; floatWrapper(F; x) {
-    return (new (Lscala/runtime/RichFloat;::this(F;)V;)(x));
-  }
-  
-  public Lscala/runtime/RichDouble; doubleWrapper(D; x) {
-    return (new (Lscala/runtime/RichDouble;::this(D;)V;)(x));
-  }
-  
-  public Lscala/runtime/RichBoolean; booleanWrapper(Z; x) {
-    return (new (Lscala/runtime/RichBoolean;::this(Z;)V;)(x));
-  }
-  
   public Lscala/runtime/RichException; exceptionWrapper(Ljava/lang/Throwable; exc) {
     return (new (Lscala/runtime/RichException;::this(Ljava/lang/Throwable;)V;)(exc));
+  }
+  
+  public Lscala/collection/Traversable; zipped2ToTraversable(Lscala/Tuple2$Zipped; zz$2) {
+    return (new (Lscala/Predef$$anon$1;::this(Lscala/Tuple2$Zipped;)V;)(zz$2));
+  }
+  
+  public Lscala/collection/Traversable; zipped3ToTraversable(Lscala/Tuple3$Zipped; zz$1) {
+    return (new (Lscala/Predef$$anon$2;::this(Lscala/Tuple3$Zipped;)V;)(zz$1));
   }
   
   public Lscala/collection/mutable/ArrayOps; genericArrayOps(Ljava/lang/Object; xs) {
@@ -492,6 +497,70 @@ public final class Lscala/Predef$; extends Lscala/LowPriorityImplicits; implemen
     return Ljava/lang/Boolean;.(Ljava/lang/Boolean;::valueOf(Z;)Ljava/lang/Boolean;)(x);
   }
   
+  public Ljava/lang/Object; byte2ByteConflict(B; x) {
+    return (new (Ljava/lang/Object;::this()V;)());
+  }
+  
+  public Ljava/lang/Object; short2ShortConflict(S; x) {
+    return (new (Ljava/lang/Object;::this()V;)());
+  }
+  
+  public Ljava/lang/Object; char2CharacterConflict(C; x) {
+    return (new (Ljava/lang/Object;::this()V;)());
+  }
+  
+  public Ljava/lang/Object; int2IntegerConflict(I; x) {
+    return (new (Ljava/lang/Object;::this()V;)());
+  }
+  
+  public Ljava/lang/Object; long2LongConflict(J; x) {
+    return (new (Ljava/lang/Object;::this()V;)());
+  }
+  
+  public Ljava/lang/Object; float2FloatConflict(F; x) {
+    return (new (Ljava/lang/Object;::this()V;)());
+  }
+  
+  public Ljava/lang/Object; double2DoubleConflict(D; x) {
+    return (new (Ljava/lang/Object;::this()V;)());
+  }
+  
+  public Ljava/lang/Object; boolean2BooleanConflict(Z; x) {
+    return (new (Ljava/lang/Object;::this()V;)());
+  }
+  
+  public B; Byte2byte(Ljava/lang/Byte; x) {
+    return x.(Ljava/lang/Byte;::byteValue()B;)();
+  }
+  
+  public S; Short2short(Ljava/lang/Short; x) {
+    return x.(Ljava/lang/Short;::shortValue()S;)();
+  }
+  
+  public C; Character2char(Ljava/lang/Character; x) {
+    return x.(Ljava/lang/Character;::charValue()C;)();
+  }
+  
+  public I; Integer2int(Ljava/lang/Integer; x) {
+    return x.(Ljava/lang/Integer;::intValue()I;)();
+  }
+  
+  public J; Long2long(Ljava/lang/Long; x) {
+    return x.(Ljava/lang/Long;::longValue()J;)();
+  }
+  
+  public F; Float2float(Ljava/lang/Float; x) {
+    return x.(Ljava/lang/Float;::floatValue()F;)();
+  }
+  
+  public D; Double2double(Ljava/lang/Double; x) {
+    return x.(Ljava/lang/Double;::doubleValue()D;)();
+  }
+  
+  public Z; Boolean2boolean(Ljava/lang/Boolean; x) {
+    return x.(Ljava/lang/Boolean;::booleanValue()Z;)();
+  }
+  
   public Lscala/runtime/StringAdd; any2stringadd(Ljava/lang/Object; x) {
     return (new (Lscala/runtime/StringAdd;::this(Ljava/lang/Object;)V;)(x));
   }
@@ -505,24 +574,35 @@ public final class Lscala/Predef$; extends Lscala/LowPriorityImplicits; implemen
   }
   
   public Lscala/collection/generic/CanBuildFrom; stringCanBuildFrom() {
-    return (new (Lscala/Predef$$anon$4;::this()V;)());
+    return (new (Lscala/Predef$$anon$7;::this()V;)());
   }
   
   public Ljava/lang/CharSequence; seqToCharSequence(Lscala/collection/IndexedSeq; xs$2) {
-    return (new (Lscala/Predef$$anon$5;::this(Lscala/collection/IndexedSeq;)V;)(xs$2));
+    return (new (Lscala/Predef$$anon$8;::this(Lscala/collection/IndexedSeq;)V;)(xs$2));
   }
   
   public Ljava/lang/CharSequence; arrayToCharSequence(C;[ xs$1) {
-    return (new (Lscala/Predef$$anon$6;::this(C;[)V;)(xs$1));
+    return (new (Lscala/Predef$$anon$9;::this(C;[)V;)(xs$1));
   }
   
+  private final Lscala/Predef$$less$colon$less; singleton_$less$colon$less;
+  
   public Lscala/Predef$$less$colon$less; conforms() {
-    return (new (Lscala/Predef$$anon$1;::this()V;)());
+    return this.(Lscala/Predef$;)singleton_$less$colon$less;
   }
+  
+  public final Lscala/Predef$$eq$colon$eq; scala$Predef$$singleton_$eq$colon$eq;
   
   public this() {
     (Lscala/LowPriorityImplicits;::super()V;)();
     this.(Lscala/Predef$;)Map$u0020 = Lscala/collection/immutable/Map$;.MODULE$;
     this.(Lscala/Predef$;)Set$u0020 = Lscala/collection/immutable/Set$;.MODULE$;
+    this.(Lscala/Predef$;)AnyRef$u0020 = (new (Lscala/Predef$$anon$6;::this()V;)());
+    this.(Lscala/Predef$;)ClassManifest$u0020 = Lscala/reflect/ClassManifest$;.MODULE$;
+    this.(Lscala/Predef$;)Manifest$u0020 = Lscala/reflect/Manifest$;.MODULE$;
+    this.(Lscala/Predef$;)NoManifest$u0020 = Lscala/reflect/NoManifest$;.MODULE$;
+    this.(Lscala/Predef$;)$scope$u0020 = Lscala/xml/TopScope$;.MODULE$;
+    this.(Lscala/Predef$;)singleton_$less$colon$less = (new (Lscala/Predef$$anon$3;::this()V;)());
+    this.(Lscala/Predef$;)scala$Predef$$singleton_$eq$colon$eq = (new (Lscala/Predef$$anon$4;::this()V;)());
   }
 }

@@ -1,7 +1,11 @@
 public abstract class Lscala/math/LowPriorityOrderingImplicits$class; {
   
-  public static Lscala/math/Ordering; ordered(Lscala/math/LowPriorityOrderingImplicits; $this) {
-    return (new (Lscala/math/LowPriorityOrderingImplicits$$anon$4;::this(Lscala/math/LowPriorityOrderingImplicits;)V;)($this));
+  public static Lscala/math/Ordering; ordered(Lscala/math/LowPriorityOrderingImplicits; $this, Lscala/Function1; evidence$1$1) {
+    return (new (Lscala/math/LowPriorityOrderingImplicits$$anon$4;::this(Lscala/math/LowPriorityOrderingImplicits;Lscala/Function1;)V;)($this, evidence$1$1));
+  }
+  
+  public static Lscala/math/Ordering; comparatorToOrdering(Lscala/math/LowPriorityOrderingImplicits; $this, Ljava/util/Comparator; cmp$1) {
+    return (new (Lscala/math/LowPriorityOrderingImplicits$$anon$5;::this(Lscala/math/LowPriorityOrderingImplicits;Ljava/util/Comparator;)V;)($this, cmp$1));
   }
   
   public static V; $init$(Lscala/math/LowPriorityOrderingImplicits; $this) {

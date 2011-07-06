@@ -1,4 +1,4 @@
-public final class Lscala/xml/dtd/IMPLIED$; extends Lscala/xml/dtd/DefaultDecl; implements Lscala/ScalaObject;, Lscala/Product; {
+public final class Lscala/xml/dtd/IMPLIED$; extends Lscala/xml/dtd/DefaultDecl; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public static Lscala/xml/dtd/IMPLIED$; MODULE$ = new (Lscala/xml/dtd/IMPLIED$;::this()V;)();
   
   public Lscala/collection/Iterator; productIterator() {
@@ -15,6 +15,10 @@ public final class Lscala/xml/dtd/IMPLIED$; extends Lscala/xml/dtd/DefaultDecl; 
   
   public Lscala/collection/mutable/StringBuilder; buildString(Lscala/collection/mutable/StringBuilder; sb) {
     return sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("#IMPLIED");
+  }
+  
+  public final I; hashCode() {
+    return -1651045240;
   }
   
   public Ljava/lang/String; productPrefix() {

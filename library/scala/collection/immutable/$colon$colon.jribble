@@ -1,12 +1,4 @@
-public final class Lscala/collection/immutable/$colon$colon; extends Lscala/collection/immutable/List; implements Lscala/ScalaObject;, Lscala/Product; {
-  
-  public Lscala/collection/immutable/List; copy$default$2() {
-    return this.(Lscala/collection/immutable/$colon$colon;::tl()Lscala/collection/immutable/List;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$1() {
-    return this.(Lscala/collection/immutable/$colon$colon;::scala$collection$immutable$$colon$colon$$hd()Ljava/lang/Object;)();
-  }
+public final class Lscala/collection/immutable/$colon$colon; extends Lscala/collection/immutable/List; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   private Ljava/lang/Object; scala$collection$immutable$$colon$colon$$hd$u0020;
   
@@ -95,6 +87,14 @@ public final class Lscala/collection/immutable/$colon$colon; extends Lscala/coll
     return (new (Lscala/collection/immutable/$colon$colon;::this(Ljava/lang/Object;Lscala/collection/immutable/List;)V;)(hd, tl));
   }
   
+  public Lscala/collection/immutable/List; copy$default$2() {
+    return this.(Lscala/collection/immutable/$colon$colon;::tl()Lscala/collection/immutable/List;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$1() {
+    return this.(Lscala/collection/immutable/$colon$colon;::scala$collection$immutable$$colon$colon$$hd()Ljava/lang/Object;)();
+  }
+  
   public Ljava/lang/Object; hd$1() {
     return this.(Lscala/collection/immutable/$colon$colon;)scala$collection$immutable$$colon$colon$$hd$u0020;
   }
@@ -113,16 +113,16 @@ public final class Lscala/collection/immutable/$colon$colon; extends Lscala/coll
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp26 = x$1;
-    I; $20$ = temp26;
-    Ljava/lang/Object; $21$;
-    switch ($20$) {
-      0: {
-        $21$ = this.(Lscala/collection/immutable/$colon$colon;::hd$1()Ljava/lang/Object;)();
+    I; $23$ = temp26;
+    Ljava/lang/Object; $24$;
+    switch ($23$) {
+      1: {
+        $24$ = this.(Lscala/collection/immutable/$colon$colon;::tl$1()Lscala/collection/immutable/List;)();
         break;
       }
       
-      1: {
-        $21$ = this.(Lscala/collection/immutable/$colon$colon;::tl$1()Lscala/collection/immutable/List;)();
+      0: {
+        $24$ = this.(Lscala/collection/immutable/$colon$colon;::hd$1()Ljava/lang/Object;)();
         break;
       }
       
@@ -132,7 +132,7 @@ public final class Lscala/collection/immutable/$colon$colon; extends Lscala/coll
       }
       
     }
-    return $21$;
+    return $24$;
   }
   
   public Lscala/collection/LinearSeqOptimized; tail() {

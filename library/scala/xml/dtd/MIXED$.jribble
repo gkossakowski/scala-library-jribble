@@ -1,4 +1,4 @@
-public final class Lscala/xml/dtd/MIXED$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+public final class Lscala/xml/dtd/MIXED$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/dtd/MIXED$; MODULE$ = new (Lscala/xml/dtd/MIXED$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/xml/dtd/MIXED$; extends Lscala/runtime/AbstractFunctio
   }
   
   public Lscala/Option; unapply(Lscala/xml/dtd/MIXED; x$0) {
-    Lscala/Option; $41$;
+    Lscala/Option; $40$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $41$ = Lscala/None$;.MODULE$;
+        $40$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $41$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/MIXED;::r()Lscala/util/regexp/Base$RegExp;)()));
+        $40$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/MIXED;::r()Lscala/util/regexp/Base$RegExp;)()));
       }
-    return $41$;
+    return $40$;
   }
   
   public Lscala/xml/dtd/MIXED; apply(Lscala/util/regexp/Base$RegExp; r) {
     return (new (Lscala/xml/dtd/MIXED;::this(Lscala/util/regexp/Base$RegExp;)V;)(r));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/dtd/MIXED$;.MODULE$;
   }
   
   public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {

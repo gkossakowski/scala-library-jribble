@@ -1,8 +1,12 @@
-public final class Lscala/xml/UnprefixedAttribute$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/xml/UnprefixedAttribute$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/UnprefixedAttribute$; MODULE$ = new (Lscala/xml/UnprefixedAttribute$;::this()V;)();
   
   public Lscala/Some; unapply(Lscala/xml/UnprefixedAttribute; x) {
     return (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x.(Lscala/xml/UnprefixedAttribute;::key()Ljava/lang/String;)(), x.(Lscala/xml/UnprefixedAttribute;::value()Lscala/collection/Seq;)(), x.(Lscala/xml/UnprefixedAttribute;::next()Lscala/xml/MetaData;)()))));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/UnprefixedAttribute$;.MODULE$;
   }
   
   public this() {

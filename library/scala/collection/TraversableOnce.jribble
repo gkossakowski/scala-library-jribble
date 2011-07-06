@@ -1,4 +1,4 @@
-public interface Lscala/collection/TraversableOnce; extends Lscala/ScalaObject; {
+public interface Lscala/collection/TraversableOnce; extends Lscala/collection/GenTraversableOnce;, Lscala/ScalaObject; {
   
   public V; foreach(Lscala/Function1; f);
   
@@ -6,13 +6,7 @@ public interface Lscala/collection/TraversableOnce; extends Lscala/ScalaObject; 
   
   public Z; hasDefiniteSize();
   
-  public Z; isTraversableAgain();
-  
-  public Lscala/collection/Iterator; toIterator();
-  
-  public Lscala/collection/Traversable; toTraversable();
-  
-  public Lscala/collection/immutable/Stream; toStream();
+  public Lscala/collection/TraversableOnce; seq();
   
   public Z; forall(Lscala/Function1; p);
   
@@ -30,6 +24,8 @@ public interface Lscala/collection/TraversableOnce; extends Lscala/ScalaObject; 
   
   public I; count(Lscala/Function1; p);
   
+  public Lscala/Option; collectFirst(Lscala/PartialFunction; pf);
+  
   public Ljava/lang/Object; $div$colon(Ljava/lang/Object; z, Lscala/Function2; op);
   
   public Ljava/lang/Object; $colon$bslash(Ljava/lang/Object; z, Lscala/Function2; op);
@@ -46,6 +42,14 @@ public interface Lscala/collection/TraversableOnce; extends Lscala/ScalaObject; 
   
   public Lscala/Option; reduceRightOption(Lscala/Function2; op);
   
+  public Ljava/lang/Object; reduce(Lscala/Function2; op);
+  
+  public Lscala/Option; reduceOption(Lscala/Function2; op);
+  
+  public Ljava/lang/Object; fold(Ljava/lang/Object; z, Lscala/Function2; op);
+  
+  public Ljava/lang/Object; aggregate(Ljava/lang/Object; z, Lscala/Function2; seqop, Lscala/Function2; combop);
+  
   public Ljava/lang/Object; sum(Lscala/math/Numeric; num);
   
   public Ljava/lang/Object; product(Lscala/math/Numeric; num);
@@ -54,6 +58,10 @@ public interface Lscala/collection/TraversableOnce; extends Lscala/ScalaObject; 
   
   public Ljava/lang/Object; max(Lscala/math/Ordering; cmp);
   
+  public Ljava/lang/Object; maxBy(Lscala/Function1; f, Lscala/math/Ordering; cmp);
+  
+  public Ljava/lang/Object; minBy(Lscala/Function1; f, Lscala/math/Ordering; cmp);
+  
   public V; copyToBuffer(Lscala/collection/mutable/Buffer; dest);
   
   public V; copyToArray(Ljava/lang/Object; xs, I; start);
@@ -61,6 +69,8 @@ public interface Lscala/collection/TraversableOnce; extends Lscala/ScalaObject; 
   public V; copyToArray(Ljava/lang/Object; xs);
   
   public Ljava/lang/Object; toArray(Lscala/reflect/ClassManifest; evidence$1);
+  
+  public Lscala/collection/Traversable; toTraversable();
   
   public Lscala/collection/immutable/List; toList();
   

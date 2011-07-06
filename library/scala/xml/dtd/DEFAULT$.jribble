@@ -1,4 +1,4 @@
-public final class Lscala/xml/dtd/DEFAULT$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject; {
+public final class Lscala/xml/dtd/DEFAULT$; extends Lscala/runtime/AbstractFunction2; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/dtd/DEFAULT$; MODULE$ = new (Lscala/xml/dtd/DEFAULT$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/xml/dtd/DEFAULT$; extends Lscala/runtime/AbstractFunct
   }
   
   public Lscala/Option; unapply(Lscala/xml/dtd/DEFAULT; x$0) {
-    Lscala/Option; $50$;
+    Lscala/Option; $84$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $50$ = Lscala/None$;.MODULE$;
+        $84$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $50$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(x$0.(Lscala/xml/dtd/DEFAULT;::fixed()Z;)()), x$0.(Lscala/xml/dtd/DEFAULT;::attValue()Ljava/lang/String;)()))));
+        $84$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(x$0.(Lscala/xml/dtd/DEFAULT;::fixed()Z;)()), x$0.(Lscala/xml/dtd/DEFAULT;::attValue()Ljava/lang/String;)()))));
       }
-    return $50$;
+    return $84$;
   }
   
   public Lscala/xml/dtd/DEFAULT; apply(Z; fixed, Ljava/lang/String; attValue) {
     return (new (Lscala/xml/dtd/DEFAULT;::this(Z;Ljava/lang/String;)V;)(fixed, attValue));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/dtd/DEFAULT$;.MODULE$;
   }
   
   public Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {

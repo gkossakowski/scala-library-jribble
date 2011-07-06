@@ -1,0 +1,24 @@
+public abstract class Lscala/collection/mutable/HashTable$HashUtils$class; {
+  
+  public static final I; sizeMapBucketBitSize(Lscala/collection/mutable/HashTable$HashUtils; $this) {
+    return 5;
+  }
+  
+  public static final I; sizeMapBucketSize(Lscala/collection/mutable/HashTable$HashUtils; $this) {
+    return (1 << $this.(Lscala/collection/mutable/HashTable$HashUtils;::sizeMapBucketBitSize()I;)());
+  }
+  
+  public static I; elemHashCode(Lscala/collection/mutable/HashTable$HashUtils; $this, Ljava/lang/Object; key) {
+    return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::hash(Ljava/lang/Object;)I;)(key);
+  }
+  
+  public static final I; improve(Lscala/collection/mutable/HashTable$HashUtils; $this, I; hcode) {
+    I; i = (hcode * -1640532531);
+    i = Ljava/lang/Integer;.(Ljava/lang/Integer;::reverseBytes(I;)I;)(i);
+    return (i * -1640532531);
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/HashTable$HashUtils; $this) {
+    
+  }
+}

@@ -1,6 +1,8 @@
-public interface Lscala/collection/mutable/MapLike; extends Lscala/collection/MapLike;, Lscala/collection/mutable/Builder;, Lscala/collection/generic/Growable;, Lscala/collection/generic/Shrinkable;, Lscala/collection/mutable/Cloneable;, Lscala/ScalaObject; {
+public interface Lscala/collection/mutable/MapLike; extends Lscala/collection/MapLike;, Lscala/collection/mutable/Builder;, Lscala/collection/generic/Growable;, Lscala/collection/generic/Shrinkable;, Lscala/collection/mutable/Cloneable;, Lscala/collection/Parallelizable;, Lscala/ScalaObject; {
   
   public Lscala/collection/mutable/Builder; newBuilder();
+  
+  public Lscala/collection/parallel/Combiner; parCombiner();
   
   public Lscala/Option; put(Ljava/lang/Object; key, Ljava/lang/Object; value);
   
@@ -13,6 +15,8 @@ public interface Lscala/collection/mutable/MapLike; extends Lscala/collection/Ma
   public Lscala/collection/mutable/Map; $plus(Lscala/Tuple2; kv);
   
   public Lscala/collection/mutable/Map; $plus(Lscala/Tuple2; elem1, Lscala/Tuple2; elem2, Lscala/collection/Seq; elems);
+  
+  public Lscala/collection/mutable/Map; $plus$plus(Lscala/collection/GenTraversableOnce; xs);
   
   public Lscala/collection/mutable/Map; $plus$plus(Lscala/collection/TraversableOnce; xs);
   
@@ -37,6 +41,8 @@ public interface Lscala/collection/mutable/MapLike; extends Lscala/collection/Ma
   public Lscala/collection/mutable/Map; result();
   
   public Lscala/collection/mutable/Map; $minus(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems);
+  
+  public Lscala/collection/mutable/Map; $minus$minus(Lscala/collection/GenTraversableOnce; xs);
   
   public Lscala/collection/mutable/Map; $minus$minus(Lscala/collection/TraversableOnce; xs);
 }

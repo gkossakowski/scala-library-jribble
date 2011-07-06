@@ -1,0 +1,76 @@
+public abstract class Lscala/collection/GenSeqLike$class; {
+  
+  public static Z; isDefinedAt(Lscala/collection/GenSeqLike; $this, I; idx) {
+    return ((idx >= 0) && (idx < $this.(Lscala/collection/GenSeqLike;::length()I;)()));
+  }
+  
+  public static I; prefixLength(Lscala/collection/GenSeqLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/GenSeqLike;::segmentLength(Lscala/Function1;I;)I;)(p, 0);
+  }
+  
+  public static I; indexWhere(Lscala/collection/GenSeqLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/GenSeqLike;::indexWhere(Lscala/Function1;I;)I;)(p, 0);
+  }
+  
+  public static I; indexOf(Lscala/collection/GenSeqLike; $this, Ljava/lang/Object; elem) {
+    return $this.(Lscala/collection/GenSeqLike;::indexOf(Ljava/lang/Object;I;)I;)(elem, 0);
+  }
+  
+  public static I; indexOf(Lscala/collection/GenSeqLike; $this, Ljava/lang/Object; elem$1, I; from) {
+    return $this.(Lscala/collection/GenSeqLike;::indexWhere(Lscala/Function1;I;)I;)((new (Lscala/collection/GenSeqLike$$anonfun$indexOf$1;::this(Lscala/collection/GenSeqLike;Ljava/lang/Object;)V;)($this, elem$1)), from);
+  }
+  
+  public static I; lastIndexOf(Lscala/collection/GenSeqLike; $this, Ljava/lang/Object; elem$2) {
+    return $this.(Lscala/collection/GenSeqLike;::lastIndexWhere(Lscala/Function1;)I;)((new (Lscala/collection/GenSeqLike$$anonfun$lastIndexOf$1;::this(Lscala/collection/GenSeqLike;Ljava/lang/Object;)V;)($this, elem$2)));
+  }
+  
+  public static I; lastIndexOf(Lscala/collection/GenSeqLike; $this, Ljava/lang/Object; elem$3, I; end) {
+    return $this.(Lscala/collection/GenSeqLike;::lastIndexWhere(Lscala/Function1;I;)I;)((new (Lscala/collection/GenSeqLike$$anonfun$lastIndexOf$2;::this(Lscala/collection/GenSeqLike;Ljava/lang/Object;)V;)($this, elem$3)), end);
+  }
+  
+  public static I; lastIndexWhere(Lscala/collection/GenSeqLike; $this, Lscala/Function1; p) {
+    return $this.(Lscala/collection/GenSeqLike;::lastIndexWhere(Lscala/Function1;I;)I;)(p, ($this.(Lscala/collection/GenSeqLike;::length()I;)() - 1));
+  }
+  
+  public static Z; startsWith(Lscala/collection/GenSeqLike; $this, Lscala/collection/GenSeq; that) {
+    return $this.(Lscala/collection/GenSeqLike;::startsWith(Lscala/collection/GenSeq;I;)Z;)(that, 0);
+  }
+  
+  public static Z; startsWith(Lscala/collection/GenSeqLike; $this, Lscala/collection/Seq; that) {
+    return $this.(Lscala/collection/GenSeqLike;::startsWith(Lscala/collection/GenSeq;)Z;)(that);
+  }
+  
+  public static Ljava/lang/Object; union(Lscala/collection/GenSeqLike; $this, Lscala/collection/GenSeq; that, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/GenTraversableLike;::$plus$plus(Lscala/collection/GenTraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(that, bf);
+  }
+  
+  public static Ljava/lang/Object; union(Lscala/collection/GenSeqLike; $this, Lscala/collection/Seq; that, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/GenSeqLike;::union(Lscala/collection/GenSeq;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(that, bf);
+  }
+  
+  public static I; hashCode(Lscala/collection/GenSeqLike; $this) {
+    Lscala/util/MurmurHash; h = (new (Lscala/util/MurmurHash;::this(I;)V;)(Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::hashSeed()I;)()));
+    $this.(Lscala/collection/Parallelizable;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)(h);
+    return h.(Lscala/util/MurmurHash;::hash()I;)();
+  }
+  
+  public static Z; equals(Lscala/collection/GenSeqLike; $this, Ljava/lang/Object; that) {
+    Ljava/lang/Object; temp1 = that;
+    Z; $1$;
+    if (temp1.<instanceof>(Lscala/collection/GenSeq;))
+      {
+        Lscala/collection/GenSeq; temp2 = temp1.<cast>(Lscala/collection/GenSeq;);
+        Lscala/collection/GenSeq; that = temp2;
+        $1$ = (that.(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)($this) && $this.(Lscala/collection/GenIterableLike;::sameElements(Lscala/collection/GenIterable;)Z;)(that));
+      }
+    else
+      {
+        $1$ = false;
+      }
+    return $1$;
+  }
+  
+  public static V; $init$(Lscala/collection/GenSeqLike; $this) {
+    
+  }
+}

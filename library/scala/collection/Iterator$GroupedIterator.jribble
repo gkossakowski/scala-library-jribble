@@ -1,5 +1,9 @@
 public class Lscala/collection/Iterator$GroupedIterator; extends Ljava/lang/Object; implements Lscala/collection/Iterator;, Lscala/ScalaObject; {
   
+  public Lscala/collection/Iterator; seq() {
+    return Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::seq(Lscala/collection/Iterator;)Lscala/collection/Iterator;)(this);
+  }
+  
   public Z; isEmpty() {
     return Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::isEmpty(Lscala/collection/Iterator;)Z;)(this);
   }
@@ -52,12 +56,24 @@ public class Lscala/collection/Iterator$GroupedIterator; extends Ljava/lang/Obje
     return Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::collect(Lscala/collection/Iterator;Lscala/PartialFunction;)Lscala/collection/Iterator;)(this, pf);
   }
   
+  public Lscala/collection/Iterator; scanLeft(Ljava/lang/Object; z, Lscala/Function2; op) {
+    return Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::scanLeft(Lscala/collection/Iterator;Ljava/lang/Object;Lscala/Function2;)Lscala/collection/Iterator;)(this, z, op);
+  }
+  
+  public Lscala/collection/Iterator; scanRight(Ljava/lang/Object; z, Lscala/Function2; op) {
+    return Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::scanRight(Lscala/collection/Iterator;Ljava/lang/Object;Lscala/Function2;)Lscala/collection/Iterator;)(this, z, op);
+  }
+  
   public Lscala/collection/Iterator; takeWhile(Lscala/Function1; p) {
     return Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::takeWhile(Lscala/collection/Iterator;Lscala/Function1;)Lscala/collection/Iterator;)(this, p);
   }
   
   public Lscala/Tuple2; partition(Lscala/Function1; p) {
     return Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::partition(Lscala/collection/Iterator;Lscala/Function1;)Lscala/Tuple2;)(this, p);
+  }
+  
+  public Lscala/Tuple2; span(Lscala/Function1; p) {
+    return Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::span(Lscala/collection/Iterator;Lscala/Function1;)Lscala/Tuple2;)(this, p);
   }
   
   public Lscala/collection/Iterator; dropWhile(Lscala/Function1; p) {
@@ -200,6 +216,10 @@ public class Lscala/collection/Iterator$GroupedIterator; extends Ljava/lang/Obje
     return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::count(Lscala/collection/TraversableOnce;Lscala/Function1;)I;)(this, p);
   }
   
+  public Lscala/Option; collectFirst(Lscala/PartialFunction; pf) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::collectFirst(Lscala/collection/TraversableOnce;Lscala/PartialFunction;)Lscala/Option;)(this, pf);
+  }
+  
   public Ljava/lang/Object; $div$colon(Ljava/lang/Object; z, Lscala/Function2; op) {
     return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$div$colon(Lscala/collection/TraversableOnce;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(this, z, op);
   }
@@ -232,6 +252,22 @@ public class Lscala/collection/Iterator$GroupedIterator; extends Ljava/lang/Obje
     return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::reduceRightOption(Lscala/collection/TraversableOnce;Lscala/Function2;)Lscala/Option;)(this, op);
   }
   
+  public Ljava/lang/Object; reduce(Lscala/Function2; op) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::reduce(Lscala/collection/TraversableOnce;Lscala/Function2;)Ljava/lang/Object;)(this, op);
+  }
+  
+  public Lscala/Option; reduceOption(Lscala/Function2; op) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::reduceOption(Lscala/collection/TraversableOnce;Lscala/Function2;)Lscala/Option;)(this, op);
+  }
+  
+  public Ljava/lang/Object; fold(Ljava/lang/Object; z, Lscala/Function2; op) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::fold(Lscala/collection/TraversableOnce;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(this, z, op);
+  }
+  
+  public Ljava/lang/Object; aggregate(Ljava/lang/Object; z, Lscala/Function2; seqop, Lscala/Function2; combop) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::aggregate(Lscala/collection/TraversableOnce;Ljava/lang/Object;Lscala/Function2;Lscala/Function2;)Ljava/lang/Object;)(this, z, seqop, combop);
+  }
+  
   public Ljava/lang/Object; sum(Lscala/math/Numeric; num) {
     return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::sum(Lscala/collection/TraversableOnce;Lscala/math/Numeric;)Ljava/lang/Object;)(this, num);
   }
@@ -246,6 +282,14 @@ public class Lscala/collection/Iterator$GroupedIterator; extends Ljava/lang/Obje
   
   public Ljava/lang/Object; max(Lscala/math/Ordering; cmp) {
     return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::max(Lscala/collection/TraversableOnce;Lscala/math/Ordering;)Ljava/lang/Object;)(this, cmp);
+  }
+  
+  public Ljava/lang/Object; maxBy(Lscala/Function1; f, Lscala/math/Ordering; cmp) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::maxBy(Lscala/collection/TraversableOnce;Lscala/Function1;Lscala/math/Ordering;)Ljava/lang/Object;)(this, f, cmp);
+  }
+  
+  public Ljava/lang/Object; minBy(Lscala/Function1; f, Lscala/math/Ordering; cmp) {
+    return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::minBy(Lscala/collection/TraversableOnce;Lscala/Function1;Lscala/math/Ordering;)Ljava/lang/Object;)(this, f, cmp);
   }
   
   public V; copyToBuffer(Lscala/collection/mutable/Buffer; dest) {
@@ -316,11 +360,15 @@ public class Lscala/collection/Iterator$GroupedIterator; extends Ljava/lang/Obje
     return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::addString(Lscala/collection/TraversableOnce;Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(this, b);
   }
   
+  public Ljava/lang/Object; $div$colon$bslash(Ljava/lang/Object; z, Lscala/Function2; op) {
+    return Lscala/collection/GenTraversableOnce$class;.(Lscala/collection/GenTraversableOnce$class;::$div$colon$bslash(Lscala/collection/GenTraversableOnce;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(this, z, op);
+  }
+  
   private Lscala/collection/Iterator; self;
   
-  private I; size;
+  public I; scala$collection$Iterator$GroupedIterator$$size;
   
-  private I; step;
+  public I; scala$collection$Iterator$GroupedIterator$$step;
   
   private Lscala/collection/mutable/ArrayBuffer; buffer;
   
@@ -351,14 +399,14 @@ public class Lscala/collection/Iterator$GroupedIterator; extends Ljava/lang/Obje
   private Lscala/collection/Seq; takeDestructively(I; size) {
     Lscala/collection/mutable/ArrayBuffer; buf = (new (Lscala/collection/mutable/ArrayBuffer;::this()V;)());
     I; i = 0;
-    while$11: while(true) {
+    while$13: while(true) {
       if ((this.(Lscala/collection/Iterator$GroupedIterator;)self.(Lscala/collection/Iterator;::hasNext()Z;)() && (i < size)))
         {
           {
             buf.(Lscala/collection/mutable/ArrayBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ArrayBuffer;)(this.(Lscala/collection/Iterator$GroupedIterator;)self.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
             i = (i + 1);
           }
-          continue while$11;
+          continue while$13;
         }
       else
         {
@@ -370,98 +418,98 @@ public class Lscala/collection/Iterator$GroupedIterator; extends Ljava/lang/Obje
   }
   
   private Lscala/collection/immutable/List; padding(I; x) {
-    return Lscala/collection/immutable/List$;.MODULE$.(Lscala/collection/generic/TraversableFactory;::fill(I;Lscala/Function0;)Lscala/collection/Traversable;)(x, (new (Lscala/collection/Iterator$GroupedIterator$$anonfun$padding$1;::this(Lscala/collection/Iterator$GroupedIterator;)V;)(this))).<cast>(Lscala/collection/immutable/List;);
+    return Lscala/collection/immutable/List$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::fill(I;Lscala/Function0;)Lscala/collection/GenTraversable;)(x, (new (Lscala/collection/Iterator$GroupedIterator$$anonfun$padding$1;::this(Lscala/collection/Iterator$GroupedIterator;)V;)(this))).<cast>(Lscala/collection/immutable/List;);
   }
   
   private I; gap() {
-    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)((this.(Lscala/collection/Iterator$GroupedIterator;)step - this.(Lscala/collection/Iterator$GroupedIterator;)size)).(Lscala/runtime/RichInt;::max(I;)I;)(0);
+    return Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)((this.(Lscala/collection/Iterator$GroupedIterator;)scala$collection$Iterator$GroupedIterator$$step - this.(Lscala/collection/Iterator$GroupedIterator;)scala$collection$Iterator$GroupedIterator$$size)).(Lscala/runtime/RichInt;::max(I;)I;)(0);
   }
   
   private Z; go(I; count$1) {
+    Lscala/runtime/IntRef; len$lzy$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(0));
+    Lscala/runtime/BooleanRef; incomplete$lzy$1 = (new (Lscala/runtime/BooleanRef;::this(Z;)V;)(false));
     Lscala/runtime/VolatileIntRef; bitmap$0$1 = (new (Lscala/runtime/VolatileIntRef;::this(I;)V;)(0));
     I; prevSize$1 = this.(Lscala/collection/Iterator$GroupedIterator;)buffer.(Lscala/collection/SeqLike;::size()I;)();
     Lscala/collection/Seq; res = this.(Lscala/collection/Iterator$GroupedIterator;::takeDestructively(I;)Lscala/collection/Seq;)(count$1);
-    Lscala/collection/Seq; $13$;
+    Lscala/collection/Seq; $11$;
     if ((this.(Lscala/collection/Iterator$GroupedIterator;)scala$collection$Iterator$GroupedIterator$$pad.(Lscala/Option;::isDefined()Z;)() && !(this.(Lscala/collection/Iterator$GroupedIterator;)self.(Lscala/collection/Iterator;::hasNext()Z;)())))
       {
         I; shortBy = (count$1 - res.(Lscala/collection/SeqLike;::length()I;)());
-        Lscala/collection/Seq; $14$;
+        Lscala/collection/Seq; $12$;
         if ((shortBy > 0))
           {
-            $14$ = res.(Lscala/collection/TraversableLike;::$plus$plus(Lscala/collection/TraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this.(Lscala/collection/Iterator$GroupedIterator;::padding(I;)Lscala/collection/immutable/List;)(shortBy), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/Seq;);
+            $12$ = res.(Lscala/collection/TraversableLike;::$plus$plus(Lscala/collection/GenTraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this.(Lscala/collection/Iterator$GroupedIterator;::padding(I;)Lscala/collection/immutable/List;)(shortBy), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/Seq;);
           }
         else
           {
-            $14$ = res;
+            $12$ = res;
           }
-        $13$ = $14$;
+        $11$ = $12$;
       }
     else
       {
-        $13$ = res;
+        $11$ = res;
       }
-    Lscala/collection/Seq; xs$1 = $13$;
-    Lscala/runtime/IntRef; len$lzy$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)());
-    Lscala/runtime/BooleanRef; incomplete$lzy$1 = (new (Lscala/runtime/BooleanRef;::this(Z;)V;)());
-    Z; $15$;
+    Lscala/collection/Seq; xs$1 = $11$;
+    Z; $13$;
     if (xs$1.(Lscala/collection/IterableLike;::isEmpty()Z;)())
       {
-        $15$ = false;
+        $13$ = false;
       }
     else
       {
-        Z; $16$;
+        Z; $14$;
         if (this.(Lscala/collection/Iterator$GroupedIterator;)_partial)
           {
-            $16$ = this.(Lscala/collection/Iterator$GroupedIterator;::deliver$1(I;I;Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/VolatileIntRef;)Z;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(this.(Lscala/collection/Iterator$GroupedIterator;::len$3(Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/VolatileIntRef;)I;)(xs$1, len$lzy$1, bitmap$0$1)).(Lscala/runtime/RichInt;::min(I;)I;)(this.(Lscala/collection/Iterator$GroupedIterator;)size), prevSize$1, xs$1, len$lzy$1, bitmap$0$1);
+            $14$ = this.(Lscala/collection/Iterator$GroupedIterator;::deliver$1(I;I;Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/VolatileIntRef;)Z;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(this.(Lscala/collection/Iterator$GroupedIterator;::len$3(Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/VolatileIntRef;)I;)(xs$1, len$lzy$1, bitmap$0$1)).(Lscala/runtime/RichInt;::min(I;)I;)(this.(Lscala/collection/Iterator$GroupedIterator;)scala$collection$Iterator$GroupedIterator$$size), prevSize$1, xs$1, len$lzy$1, bitmap$0$1);
           }
         else
           {
-            Z; $17$;
+            Z; $15$;
             if (this.(Lscala/collection/Iterator$GroupedIterator;::incomplete$1(I;Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/BooleanRef;Lscala/runtime/VolatileIntRef;)Z;)(count$1, xs$1, len$lzy$1, incomplete$lzy$1, bitmap$0$1))
               {
-                $17$ = false;
+                $15$ = false;
               }
             else
               {
-                Z; $18$;
+                Z; $16$;
                 if (this.(Lscala/collection/Iterator$GroupedIterator;::isFirst$1(I;)Z;)(prevSize$1))
                   {
-                    $18$ = this.(Lscala/collection/Iterator$GroupedIterator;::deliver$1(I;I;Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/VolatileIntRef;)Z;)(this.(Lscala/collection/Iterator$GroupedIterator;::len$3(Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/VolatileIntRef;)I;)(xs$1, len$lzy$1, bitmap$0$1), prevSize$1, xs$1, len$lzy$1, bitmap$0$1);
+                    $16$ = this.(Lscala/collection/Iterator$GroupedIterator;::deliver$1(I;I;Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/VolatileIntRef;)Z;)(this.(Lscala/collection/Iterator$GroupedIterator;::len$3(Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/VolatileIntRef;)I;)(xs$1, len$lzy$1, bitmap$0$1), prevSize$1, xs$1, len$lzy$1, bitmap$0$1);
                   }
                 else
                   {
-                    $18$ = this.(Lscala/collection/Iterator$GroupedIterator;::deliver$1(I;I;Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/VolatileIntRef;)Z;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(this.(Lscala/collection/Iterator$GroupedIterator;)step).(Lscala/runtime/RichInt;::min(I;)I;)(this.(Lscala/collection/Iterator$GroupedIterator;)size), prevSize$1, xs$1, len$lzy$1, bitmap$0$1);
+                    $16$ = this.(Lscala/collection/Iterator$GroupedIterator;::deliver$1(I;I;Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/VolatileIntRef;)Z;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(this.(Lscala/collection/Iterator$GroupedIterator;)scala$collection$Iterator$GroupedIterator$$step).(Lscala/runtime/RichInt;::min(I;)I;)(this.(Lscala/collection/Iterator$GroupedIterator;)scala$collection$Iterator$GroupedIterator$$size), prevSize$1, xs$1, len$lzy$1, bitmap$0$1);
                   }
-                $17$ = $18$;
+                $15$ = $16$;
               }
-            $16$ = $17$;
+            $14$ = $15$;
           }
-        $15$ = $16$;
+        $13$ = $14$;
       }
-    return $15$;
+    return $13$;
   }
   
   private Z; fill() {
-    Z; $19$;
+    Z; $17$;
     if (!(this.(Lscala/collection/Iterator$GroupedIterator;)self.(Lscala/collection/Iterator;::hasNext()Z;)()))
       {
-        $19$ = false;
+        $17$ = false;
       }
     else
       {
-        Z; $20$;
+        Z; $18$;
         if (this.(Lscala/collection/Iterator$GroupedIterator;)buffer.(Lscala/collection/IndexedSeqOptimized;::isEmpty()Z;)())
           {
-            $20$ = this.(Lscala/collection/Iterator$GroupedIterator;::go(I;)Z;)(this.(Lscala/collection/Iterator$GroupedIterator;)size);
+            $18$ = this.(Lscala/collection/Iterator$GroupedIterator;::go(I;)Z;)(this.(Lscala/collection/Iterator$GroupedIterator;)scala$collection$Iterator$GroupedIterator$$size);
           }
         else
           {
-            $20$ = this.(Lscala/collection/Iterator$GroupedIterator;::go(I;)Z;)(this.(Lscala/collection/Iterator$GroupedIterator;)step);
+            $18$ = this.(Lscala/collection/Iterator$GroupedIterator;::go(I;)Z;)(this.(Lscala/collection/Iterator$GroupedIterator;)scala$collection$Iterator$GroupedIterator$$step);
           }
-        $19$ = $20$;
+        $17$ = $18$;
       }
-    return $19$;
+    return $17$;
   }
   
   public Z; hasNext() {
@@ -493,6 +541,30 @@ public class Lscala/collection/Iterator$GroupedIterator; extends Ljava/lang/Obje
   
   public Lscala/collection/Iterator; scala$collection$Iterator$GroupedIterator$$$outer() {
     return this.(Lscala/collection/Iterator$GroupedIterator;)$outer$u0020;
+  }
+  
+  public Lscala/collection/GenMap; toMap(Lscala/Predef$$less$colon$less; ev) {
+    return this.(Lscala/collection/TraversableOnce;::toMap(Lscala/Predef$$less$colon$less;)Lscala/collection/immutable/Map;)(ev);
+  }
+  
+  public Lscala/collection/GenSet; toSet() {
+    return this.(Lscala/collection/TraversableOnce;::toSet()Lscala/collection/immutable/Set;)();
+  }
+  
+  public Lscala/collection/GenSeq; toSeq() {
+    return this.(Lscala/collection/TraversableOnce;::toSeq()Lscala/collection/Seq;)();
+  }
+  
+  public Lscala/collection/GenIterable; toIterable() {
+    return this.(Lscala/collection/TraversableOnce;::toIterable()Lscala/collection/Iterable;)();
+  }
+  
+  public Lscala/collection/GenTraversable; toTraversable() {
+    return this.(Lscala/collection/Iterator;::toTraversable()Lscala/collection/Traversable;)();
+  }
+  
+  public Lscala/collection/TraversableOnce; seq() {
+    return this.(Lscala/collection/Iterator;::seq()Lscala/collection/Iterator;)();
   }
   
   public Ljava/lang/Object; next() {
@@ -530,22 +602,22 @@ public class Lscala/collection/Iterator$GroupedIterator; extends Ljava/lang/Obje
   private final Z; deliver$1(I; howMany, I; prevSize$1, Lscala/collection/Seq; xs$1, Lscala/runtime/IntRef; len$lzy$1, Lscala/runtime/VolatileIntRef; bitmap$0$1) {
     if (!(this.(Lscala/collection/Iterator$GroupedIterator;::isFirst$1(I;)Z;)(prevSize$1)))
       {
-        this.(Lscala/collection/Iterator$GroupedIterator;)buffer.(Lscala/collection/mutable/BufferLike;::trimStart(I;)V;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(this.(Lscala/collection/Iterator$GroupedIterator;)step).(Lscala/runtime/RichInt;::min(I;)I;)(prevSize$1));
+        this.(Lscala/collection/Iterator$GroupedIterator;)buffer.(Lscala/collection/mutable/BufferLike;::trimStart(I;)V;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(this.(Lscala/collection/Iterator$GroupedIterator;)scala$collection$Iterator$GroupedIterator$$step).(Lscala/runtime/RichInt;::min(I;)I;)(prevSize$1));
       }
     else
       {
         
       }
-    I; $21$;
+    I; $19$;
     if (this.(Lscala/collection/Iterator$GroupedIterator;::isFirst$1(I;)Z;)(prevSize$1))
       {
-        $21$ = this.(Lscala/collection/Iterator$GroupedIterator;::len$3(Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/VolatileIntRef;)I;)(xs$1, len$lzy$1, bitmap$0$1);
+        $19$ = this.(Lscala/collection/Iterator$GroupedIterator;::len$3(Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/VolatileIntRef;)I;)(xs$1, len$lzy$1, bitmap$0$1);
       }
     else
       {
-        $21$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(howMany).(Lscala/runtime/RichInt;::min(I;)I;)((this.(Lscala/collection/Iterator$GroupedIterator;::len$3(Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/VolatileIntRef;)I;)(xs$1, len$lzy$1, bitmap$0$1) - this.(Lscala/collection/Iterator$GroupedIterator;::gap()I;)()));
+        $19$ = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(howMany).(Lscala/runtime/RichInt;::min(I;)I;)((this.(Lscala/collection/Iterator$GroupedIterator;::len$3(Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/VolatileIntRef;)I;)(xs$1, len$lzy$1, bitmap$0$1) - this.(Lscala/collection/Iterator$GroupedIterator;::gap()I;)()));
       }
-    I; available = $21$;
+    I; available = $19$;
     this.(Lscala/collection/Iterator$GroupedIterator;)buffer.(Lscala/collection/mutable/ArrayBuffer;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/ArrayBuffer;)(xs$1.(Lscala/collection/IterableLike;::takeRight(I;)Ljava/lang/Object;)(available).<cast>(Lscala/collection/TraversableOnce;));
     this.(Lscala/collection/Iterator$GroupedIterator;)filled = true;
     return (((howMany > 0) && (this.(Lscala/collection/Iterator$GroupedIterator;::isFirst$1(I;)Z;)(prevSize$1) || (this.(Lscala/collection/Iterator$GroupedIterator;::len$3(Lscala/collection/Seq;Lscala/runtime/IntRef;Lscala/runtime/VolatileIntRef;)I;)(xs$1, len$lzy$1, bitmap$0$1) > this.(Lscala/collection/Iterator$GroupedIterator;::gap()I;)()))) && true);
@@ -553,8 +625,8 @@ public class Lscala/collection/Iterator$GroupedIterator; extends Ljava/lang/Obje
   
   public this(Lscala/collection/Iterator; $outer, Lscala/collection/Iterator; self, I; size, I; step) {
     this.(Lscala/collection/Iterator$GroupedIterator;)self = self;
-    this.(Lscala/collection/Iterator$GroupedIterator;)size = size;
-    this.(Lscala/collection/Iterator$GroupedIterator;)step = step;
+    this.(Lscala/collection/Iterator$GroupedIterator;)scala$collection$Iterator$GroupedIterator$$size = size;
+    this.(Lscala/collection/Iterator$GroupedIterator;)scala$collection$Iterator$GroupedIterator$$step = step;
     if (($outer == null))
       {
         throw (new (Ljava/lang/NullPointerException;::this()V;)());
@@ -564,10 +636,11 @@ public class Lscala/collection/Iterator$GroupedIterator; extends Ljava/lang/Obje
         this.(Lscala/collection/Iterator$GroupedIterator;)$outer$u0020 = $outer;
       }
     (Ljava/lang/Object;::super()V;)();
+    Lscala/collection/GenTraversableOnce$class;.(Lscala/collection/GenTraversableOnce$class;::$init$(Lscala/collection/GenTraversableOnce;)V;)(this);
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::require(Z;)V;)(((size >= 1) && (step >= 1)));
-    this.(Lscala/collection/Iterator$GroupedIterator;)buffer = Lscala/collection/mutable/ArrayBuffer$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{})).<cast>(Lscala/collection/mutable/ArrayBuffer;);
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::require(Z;Lscala/Function0;)V;)(((size >= 1) && (step >= 1)), (new (Lscala/collection/Iterator$GroupedIterator$$anonfun$2;::this(Lscala/collection/Iterator$GroupedIterator;)V;)(this)));
+    this.(Lscala/collection/Iterator$GroupedIterator;)buffer = Lscala/collection/mutable/ArrayBuffer$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(Lscala/collection/immutable/Nil$;.MODULE$).<cast>(Lscala/collection/mutable/ArrayBuffer;);
     this.(Lscala/collection/Iterator$GroupedIterator;)filled = false;
     this.(Lscala/collection/Iterator$GroupedIterator;)_partial = true;
     this.(Lscala/collection/Iterator$GroupedIterator;)scala$collection$Iterator$GroupedIterator$$pad = Lscala/None$;.MODULE$;

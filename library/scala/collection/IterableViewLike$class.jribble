@@ -1,31 +1,23 @@
 public abstract class Lscala/collection/IterableViewLike$class; {
   
-  public static Ljava/lang/Object; zip(Lscala/collection/IterableViewLike; $this, Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf) {
-    return $this.(Lscala/collection/IterableViewLike;::newZipped(Lscala/collection/Iterable;)Lscala/collection/IterableViewLike$Transformed;)(that);
+  public static final Lscala/collection/IterableView; scala$collection$IterableViewLike$$asThis(Lscala/collection/IterableViewLike; $this, Lscala/collection/IterableViewLike$Transformed; xs) {
+    return xs;
   }
   
-  public static Ljava/lang/Object; zipWithIndex(Lscala/collection/IterableViewLike; $this, Lscala/collection/generic/CanBuildFrom; bf) {
-    return $this.(Lscala/collection/IterableViewLike;::zip(Lscala/collection/Iterable;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(Lscala/collection/immutable/Stream$;.MODULE$.(Lscala/collection/immutable/Stream$;::from(I;)Lscala/collection/immutable/Stream;)(0), bf);
+  public static Lscala/collection/IterableViewLike$Transformed; newZipped(Lscala/collection/IterableViewLike; $this, Lscala/collection/GenIterable; that$1) {
+    return (new (Lscala/collection/IterableViewLike$$anon$9;::this(Lscala/collection/IterableViewLike;Lscala/collection/GenIterable;)V;)($this, that$1));
   }
   
-  public static Ljava/lang/Object; zipAll(Lscala/collection/IterableViewLike; $this, Lscala/collection/Iterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf) {
-    return $this.(Lscala/collection/IterableViewLike;::newZippedAll(Lscala/collection/Iterable;Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/IterableViewLike$Transformed;)(that, thisElem, thatElem);
-  }
-  
-  public static Lscala/collection/IterableViewLike$Transformed; newZipped(Lscala/collection/IterableViewLike; $this, Lscala/collection/Iterable; that$1) {
-    return (new (Lscala/collection/IterableViewLike$$anon$9;::this(Lscala/collection/IterableViewLike;Lscala/collection/Iterable;)V;)($this, that$1));
-  }
-  
-  public static Lscala/collection/IterableViewLike$Transformed; newZippedAll(Lscala/collection/IterableViewLike; $this, Lscala/collection/Iterable; that$2, Ljava/lang/Object; _thisElem$1, Ljava/lang/Object; _thatElem$1) {
-    return (new (Lscala/collection/IterableViewLike$$anon$10;::this(Lscala/collection/IterableViewLike;Lscala/collection/Iterable;Ljava/lang/Object;Ljava/lang/Object;)V;)($this, that$2, _thisElem$1, _thatElem$1));
+  public static Lscala/collection/IterableViewLike$Transformed; newZippedAll(Lscala/collection/IterableViewLike; $this, Lscala/collection/GenIterable; that$3, Ljava/lang/Object; _thisElem$1, Ljava/lang/Object; _thatElem$1) {
+    return (new (Lscala/collection/IterableViewLike$$anon$10;::this(Lscala/collection/IterableViewLike;Lscala/collection/GenIterable;Ljava/lang/Object;Ljava/lang/Object;)V;)($this, that$3, _thisElem$1, _thatElem$1));
   }
   
   public static Lscala/collection/IterableViewLike$Transformed; newForced(Lscala/collection/IterableViewLike; $this, Lscala/Function0; xs$1) {
     return (new (Lscala/collection/IterableViewLike$$anon$1;::this(Lscala/collection/IterableViewLike;Lscala/Function0;)V;)($this, xs$1));
   }
   
-  public static Lscala/collection/IterableViewLike$Transformed; newAppended(Lscala/collection/IterableViewLike; $this, Lscala/collection/Traversable; that$3) {
-    return (new (Lscala/collection/IterableViewLike$$anon$2;::this(Lscala/collection/IterableViewLike;Lscala/collection/Traversable;)V;)($this, that$3));
+  public static Lscala/collection/IterableViewLike$Transformed; newAppended(Lscala/collection/IterableViewLike; $this, Lscala/collection/GenTraversable; that$2) {
+    return (new (Lscala/collection/IterableViewLike$$anon$2;::this(Lscala/collection/IterableViewLike;Lscala/collection/GenTraversable;)V;)($this, that$2));
   }
   
   public static Lscala/collection/IterableViewLike$Transformed; newMapped(Lscala/collection/IterableViewLike; $this, Lscala/Function1; f$2) {
@@ -40,8 +32,8 @@ public abstract class Lscala/collection/IterableViewLike$class; {
     return (new (Lscala/collection/IterableViewLike$$anon$5;::this(Lscala/collection/IterableViewLike;Lscala/Function1;)V;)($this, p$3));
   }
   
-  public static Lscala/collection/IterableViewLike$Transformed; newSliced(Lscala/collection/IterableViewLike; $this, I; _from$1, I; _until$1) {
-    return (new (Lscala/collection/IterableViewLike$$anon$6;::this(Lscala/collection/IterableViewLike;I;I;)V;)($this, _from$1, _until$1));
+  public static Lscala/collection/IterableViewLike$Transformed; newSliced(Lscala/collection/IterableViewLike; $this, Lscala/collection/generic/SliceInterval; _endpoints$1) {
+    return (new (Lscala/collection/IterableViewLike$$anon$6;::this(Lscala/collection/IterableViewLike;Lscala/collection/generic/SliceInterval;)V;)($this, _endpoints$1));
   }
   
   public static Lscala/collection/IterableViewLike$Transformed; newDroppedWhile(Lscala/collection/IterableViewLike; $this, Lscala/Function1; p$2) {
@@ -52,15 +44,40 @@ public abstract class Lscala/collection/IterableViewLike$class; {
     return (new (Lscala/collection/IterableViewLike$$anon$8;::this(Lscala/collection/IterableViewLike;Lscala/Function1;)V;)($this, p$1));
   }
   
+  public static Lscala/collection/IterableViewLike$Transformed; newTaken(Lscala/collection/IterableViewLike; $this, I; n) {
+    return $this.(Lscala/collection/IterableViewLike;::newSliced(Lscala/collection/generic/SliceInterval;)Lscala/collection/IterableViewLike$Transformed;)(Lscala/collection/generic/SliceInterval$;.MODULE$.(Lscala/collection/generic/SliceInterval$;::apply(I;I;)Lscala/collection/generic/SliceInterval;)(0, n));
+  }
+  
+  public static Lscala/collection/IterableViewLike$Transformed; newDropped(Lscala/collection/IterableViewLike; $this, I; n) {
+    return $this.(Lscala/collection/IterableViewLike;::newSliced(Lscala/collection/generic/SliceInterval;)Lscala/collection/IterableViewLike$Transformed;)(Lscala/collection/generic/SliceInterval$;.MODULE$.(Lscala/collection/generic/SliceInterval$;::apply(I;I;)Lscala/collection/generic/SliceInterval;)(n, 2147483647));
+  }
+  
+  public static Lscala/collection/IterableView; drop(Lscala/collection/IterableViewLike; $this, I; n) {
+    return Lscala/collection/IterableViewLike$class;.(Lscala/collection/IterableViewLike$class;::scala$collection$IterableViewLike$$asThis(Lscala/collection/IterableViewLike;Lscala/collection/IterableViewLike$Transformed;)Lscala/collection/IterableView;)($this, $this.(Lscala/collection/IterableViewLike;::newDropped(I;)Lscala/collection/IterableViewLike$Transformed;)(n));
+  }
+  
+  public static Lscala/collection/IterableView; take(Lscala/collection/IterableViewLike; $this, I; n) {
+    return Lscala/collection/IterableViewLike$class;.(Lscala/collection/IterableViewLike$class;::scala$collection$IterableViewLike$$asThis(Lscala/collection/IterableViewLike;Lscala/collection/IterableViewLike$Transformed;)Lscala/collection/IterableView;)($this, $this.(Lscala/collection/IterableViewLike;::newTaken(I;)Lscala/collection/IterableViewLike$Transformed;)(n));
+  }
+  
+  public static Ljava/lang/Object; zip(Lscala/collection/IterableViewLike; $this, Lscala/collection/GenIterable; that, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/IterableViewLike;::newZipped(Lscala/collection/GenIterable;)Lscala/collection/IterableViewLike$Transformed;)(that);
+  }
+  
+  public static Ljava/lang/Object; zipWithIndex(Lscala/collection/IterableViewLike; $this, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/IterableViewLike;::zip(Lscala/collection/GenIterable;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(Lscala/collection/immutable/Stream$;.MODULE$.(Lscala/collection/immutable/Stream$;::from(I;)Lscala/collection/immutable/Stream;)(0), bf);
+  }
+  
+  public static Ljava/lang/Object; zipAll(Lscala/collection/IterableViewLike; $this, Lscala/collection/GenIterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/IterableViewLike;::newZippedAll(Lscala/collection/GenIterable;Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/IterableViewLike$Transformed;)(that, thisElem, thatElem);
+  }
+  
   public static Lscala/collection/Iterator; grouped(Lscala/collection/IterableViewLike; $this, I; size) {
     return $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::grouped(I;)Lscala/collection/Iterator$GroupedIterator;)(size).(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/collection/IterableViewLike$$anonfun$grouped$1;::this(Lscala/collection/IterableViewLike;)V;)($this)));
   }
   
   public static Lscala/collection/Iterator; sliding(Lscala/collection/IterableViewLike; $this, I; size, I; step) {
-    Lscala/collection/Iterator; qual$1 = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    I; x$2 = size;
-    I; x$3 = qual$1.(Lscala/collection/Iterator;::sliding$default$2()I;)();
-    return qual$1.(Lscala/collection/Iterator;::sliding(I;I;)Lscala/collection/Iterator$GroupedIterator;)(x$2, x$3).(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/collection/IterableViewLike$$anonfun$sliding$1;::this(Lscala/collection/IterableViewLike;)V;)($this)));
+    return $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::sliding(I;I;)Lscala/collection/Iterator$GroupedIterator;)(size, step).(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/collection/IterableViewLike$$anonfun$sliding$1;::this(Lscala/collection/IterableViewLike;)V;)($this)));
   }
   
   public static Ljava/lang/String; stringPrefix(Lscala/collection/IterableViewLike; $this) {

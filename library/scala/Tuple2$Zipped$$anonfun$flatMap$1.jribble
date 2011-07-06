@@ -1,28 +1,35 @@
-public final class Lscala/Tuple2$Zipped$$anonfun$flatMap$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/Tuple2$Zipped$$anonfun$flatMap$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
-  public final Ljava/lang/Object; apply(Ljava/lang/Object; el1) {
-    Ljava/lang/Object; $5$;
-    if (this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)elems2$3.(Lscala/collection/Iterator;::hasNext()Z;)())
+  public final Lscala/collection/mutable/Builder; apply(Ljava/lang/Object; el1) {
+    Lscala/collection/mutable/Builder; $8$;
+    if (this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)elems2$2.(Lscala/collection/Iterator;::hasNext()Z;)())
       {
-        $5$ = this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)b$2.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)f$2.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(el1, this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)elems2$3.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)()).<cast>(Lscala/collection/TraversableOnce;));
+        $8$ = this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)b$2.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)f$3.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(el1, this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)elems2$2.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)()).<cast>(Lscala/collection/TraversableOnce;)).<cast>(Lscala/collection/mutable/Builder;);
       }
     else
       {
-        $5$ = Lscala/runtime/BoxedUnit;.UNIT;
+        throw (new (Lscala/runtime/NonLocalReturnControl;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)nonLocalReturnKey2$1, this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)b$2.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)()));
       }
-    return $5$;
+    return $8$;
   }
   
-  private Lscala/Function2; f$2;
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(v1);
+  }
+  
+  private Lscala/Function2; f$3;
   
   private Lscala/collection/mutable/Builder; b$2;
   
-  private Lscala/collection/Iterator; elems2$3;
+  private Lscala/collection/Iterator; elems2$2;
   
-  public this(Lscala/Tuple2$Zipped; $outer, Lscala/Function2; f$2, Lscala/collection/mutable/Builder; b$2, Lscala/collection/Iterator; elems2$3) {
-    this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)f$2 = f$2;
+  private Ljava/lang/Object; nonLocalReturnKey2$1;
+  
+  public this(Lscala/Tuple2$Zipped; $outer, Lscala/Function2; f$3, Lscala/collection/mutable/Builder; b$2, Lscala/collection/Iterator; elems2$2, Ljava/lang/Object; nonLocalReturnKey2$1) {
+    this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)f$3 = f$3;
     this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)b$2 = b$2;
-    this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)elems2$3 = elems2$3;
+    this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)elems2$2 = elems2$2;
+    this.(Lscala/Tuple2$Zipped$$anonfun$flatMap$1;)nonLocalReturnKey2$1 = nonLocalReturnKey2$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

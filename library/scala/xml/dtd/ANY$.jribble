@@ -1,4 +1,4 @@
-public final class Lscala/xml/dtd/ANY$; extends Lscala/xml/dtd/ContentModel; implements Lscala/ScalaObject;, Lscala/Product; {
+public final class Lscala/xml/dtd/ANY$; extends Lscala/xml/dtd/ContentModel; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public static Lscala/xml/dtd/ANY$; MODULE$ = new (Lscala/xml/dtd/ANY$;::this()V;)();
   
   public Lscala/collection/Iterator; productIterator() {
@@ -11,6 +11,10 @@ public final class Lscala/xml/dtd/ANY$; extends Lscala/xml/dtd/ContentModel; imp
   
   public Lscala/collection/mutable/StringBuilder; buildString(Lscala/collection/mutable/StringBuilder; sb) {
     return sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("ANY");
+  }
+  
+  public final I; hashCode() {
+    return 64972;
   }
   
   public Ljava/lang/String; productPrefix() {

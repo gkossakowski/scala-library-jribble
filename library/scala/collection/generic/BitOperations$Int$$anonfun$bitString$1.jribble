@@ -1,0 +1,23 @@
+public final class Lscala/collection/generic/BitOperations$Int$$anonfun$bitString$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final Ljava/lang/String; apply(Z; b) {
+    Ljava/lang/String; $1$;
+    if (b)
+      {
+        $1$ = "1";
+      }
+    else
+      {
+        $1$ = "0";
+      }
+    return $1$;
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/collection/generic/BitOperations$Int$$anonfun$bitString$1;::apply(Z;)Ljava/lang/String;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(v1));
+  }
+  
+  public this(Lscala/collection/generic/BitOperations$Int; $outer) {
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

@@ -1,4 +1,4 @@
-public class Lscala/xml/PrettyPrinter$Para; extends Lscala/xml/PrettyPrinter$Item; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/PrettyPrinter$Para; extends Lscala/xml/PrettyPrinter$Item; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   public Lscala/collection/Iterator; productIterator() {
     return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
@@ -6,10 +6,6 @@ public class Lscala/xml/PrettyPrinter$Para; extends Lscala/xml/PrettyPrinter$Ite
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/PrettyPrinter$Para;::s()Ljava/lang/String;)();
   }
   
   private Ljava/lang/String; s$u0020;
@@ -22,6 +18,10 @@ public class Lscala/xml/PrettyPrinter$Para; extends Lscala/xml/PrettyPrinter$Ite
     return (new (Lscala/xml/PrettyPrinter$Para;::this(Lscala/xml/PrettyPrinter;Ljava/lang/String;)V;)(this.(Lscala/xml/PrettyPrinter$Para;::scala$xml$PrettyPrinter$Para$$$outer()Lscala/xml/PrettyPrinter;)(), s));
   }
   
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/PrettyPrinter$Para;::s()Ljava/lang/String;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -32,28 +32,34 @@ public class Lscala/xml/PrettyPrinter$Para; extends Lscala/xml/PrettyPrinter$Ite
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp7 = x$1;
-    Z; $10$;
+    Z; $14$;
     if ((temp7.<instanceof>(Lscala/xml/PrettyPrinter$Para;) && (temp7.<cast>(Lscala/xml/PrettyPrinter$Para;).(Lscala/xml/PrettyPrinter$Para;::scala$xml$PrettyPrinter$Para$$$outer()Lscala/xml/PrettyPrinter;)() == this.(Lscala/xml/PrettyPrinter$Para;::scala$xml$PrettyPrinter$Para$$$outer()Lscala/xml/PrettyPrinter;)())))
       {
         Lscala/xml/PrettyPrinter$Para; temp8 = temp7.<cast>(Lscala/xml/PrettyPrinter$Para;);
         Ljava/lang/String; temp9 = temp8.(Lscala/xml/PrettyPrinter$Para;::s()Ljava/lang/String;)();
         Ljava/lang/String; s$2 = temp9;
-        Z; $11$;
+        Z; $15$;
         if (this.(Lscala/xml/PrettyPrinter$Para;::gd2$1(Ljava/lang/String;)Z;)(s$2))
           {
-            $11$ = x$1.<cast>(Lscala/xml/PrettyPrinter$Para;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/String; $16$;
+            Z; $17$;
+            body$percent04: while(true) {
+              $17$ = x$1.<cast>(Lscala/xml/PrettyPrinter$Para;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $15$ = $17$;
           }
         else
           {
-            $11$ = false;
+            $15$ = false;
           }
-        $10$ = $11$;
+        $14$ = $15$;
       }
     else
       {
-        $10$ = false;
+        $14$ = false;
       }
-    return ((this == x$1) || $10$);
+    return ((this == x$1) || $14$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -66,16 +72,16 @@ public class Lscala/xml/PrettyPrinter$Para; extends Lscala/xml/PrettyPrinter$Ite
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp10 = x$1;
-    Ljava/lang/Object; $12$;
+    Ljava/lang/Object; $18$;
     if ((temp10 == 0))
       {
-        $12$ = this.(Lscala/xml/PrettyPrinter$Para;::s()Ljava/lang/String;)();
+        $18$ = this.(Lscala/xml/PrettyPrinter$Para;::s()Ljava/lang/String;)();
       }
     else
       {
         throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
       }
-    return $12$;
+    return $18$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

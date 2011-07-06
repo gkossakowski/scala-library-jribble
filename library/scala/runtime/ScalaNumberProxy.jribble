@@ -1,0 +1,148 @@
+public abstract class Lscala/runtime/ScalaNumberProxy; extends Lscala/math/ScalaNumber; implements Lscala/math/ScalaNumericConversions;, Lscala/Proxy$Typed;, Lscala/runtime/OrderedProxy;, Lscala/ScalaObject; {
+  
+  public I; compare(Ljava/lang/Object; y) {
+    return Lscala/runtime/OrderedProxy$class;.(Lscala/runtime/OrderedProxy$class;::compare(Lscala/runtime/OrderedProxy;Ljava/lang/Object;)I;)(this, y);
+  }
+  
+  public Z; $less(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Z; $greater(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$greater(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Z; $less$eq(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less$eq(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Z; $greater$eq(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$greater$eq(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public I; compareTo(Ljava/lang/Object; that) {
+    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::compareTo(Lscala/math/Ordered;Ljava/lang/Object;)I;)(this, that);
+  }
+  
+  public I; hashCode() {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::hashCode(Lscala/Proxy;)I;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; that) {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::equals(Lscala/Proxy;Ljava/lang/Object;)Z;)(this, that);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Proxy$class;.(Lscala/Proxy$class;::toString(Lscala/Proxy;)Ljava/lang/String;)(this);
+  }
+  
+  public C; toChar() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toChar(Lscala/math/ScalaNumericConversions;)C;)(this);
+  }
+  
+  public B; toByte() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toByte(Lscala/math/ScalaNumericConversions;)B;)(this);
+  }
+  
+  public S; toShort() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toShort(Lscala/math/ScalaNumericConversions;)S;)(this);
+  }
+  
+  public I; toInt() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toInt(Lscala/math/ScalaNumericConversions;)I;)(this);
+  }
+  
+  public J; toLong() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toLong(Lscala/math/ScalaNumericConversions;)J;)(this);
+  }
+  
+  public F; toFloat() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toFloat(Lscala/math/ScalaNumericConversions;)F;)(this);
+  }
+  
+  public D; toDouble() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toDouble(Lscala/math/ScalaNumericConversions;)D;)(this);
+  }
+  
+  public Z; isValidByte() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidByte(Lscala/math/ScalaNumericConversions;)Z;)(this);
+  }
+  
+  public Z; isValidShort() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidShort(Lscala/math/ScalaNumericConversions;)Z;)(this);
+  }
+  
+  public Z; isValidInt() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidInt(Lscala/math/ScalaNumericConversions;)Z;)(this);
+  }
+  
+  public Z; isValidChar() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidChar(Lscala/math/ScalaNumericConversions;)Z;)(this);
+  }
+  
+  public I; unifiedPrimitiveHashcode() {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::unifiedPrimitiveHashcode(Lscala/math/ScalaNumericConversions;)I;)(this);
+  }
+  
+  public Z; unifiedPrimitiveEquals(Ljava/lang/Object; x) {
+    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::unifiedPrimitiveEquals(Lscala/math/ScalaNumericConversions;Ljava/lang/Object;)Z;)(this, x);
+  }
+  
+  private Lscala/math/Numeric; num$u0020;
+  
+  private Lscala/math/Numeric; num() {
+    return this.(Lscala/runtime/ScalaNumberProxy;)num$u0020;
+  }
+  
+  private Lscala/math/Ordering; ord$u0020;
+  
+  protected Lscala/math/Ordering; ord() {
+    return this.(Lscala/runtime/ScalaNumberProxy;)ord$u0020;
+  }
+  
+  public Ljava/lang/Object; underlying() {
+    return this.(Lscala/Proxy$Typed;::self()Ljava/lang/Object;)();
+  }
+  
+  public D; doubleValue() {
+    return this.(Lscala/runtime/ScalaNumberProxy;::num()Lscala/math/Numeric;)().(Lscala/math/Numeric;::toDouble(Ljava/lang/Object;)D;)(this.(Lscala/Proxy$Typed;::self()Ljava/lang/Object;)());
+  }
+  
+  public F; floatValue() {
+    return this.(Lscala/runtime/ScalaNumberProxy;::num()Lscala/math/Numeric;)().(Lscala/math/Numeric;::toFloat(Ljava/lang/Object;)F;)(this.(Lscala/Proxy$Typed;::self()Ljava/lang/Object;)());
+  }
+  
+  public J; longValue() {
+    return this.(Lscala/runtime/ScalaNumberProxy;::num()Lscala/math/Numeric;)().(Lscala/math/Numeric;::toLong(Ljava/lang/Object;)J;)(this.(Lscala/Proxy$Typed;::self()Ljava/lang/Object;)());
+  }
+  
+  public I; intValue() {
+    return this.(Lscala/runtime/ScalaNumberProxy;::num()Lscala/math/Numeric;)().(Lscala/math/Numeric;::toInt(Ljava/lang/Object;)I;)(this.(Lscala/Proxy$Typed;::self()Ljava/lang/Object;)());
+  }
+  
+  public Ljava/lang/Object; min(Ljava/lang/Object; that) {
+    return this.(Lscala/runtime/ScalaNumberProxy;::num()Lscala/math/Numeric;)().(Lscala/math/Ordering;::min(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/Proxy$Typed;::self()Ljava/lang/Object;)(), that);
+  }
+  
+  public Ljava/lang/Object; max(Ljava/lang/Object; that) {
+    return this.(Lscala/runtime/ScalaNumberProxy;::num()Lscala/math/Numeric;)().(Lscala/math/Ordering;::max(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/Proxy$Typed;::self()Ljava/lang/Object;)(), that);
+  }
+  
+  public Ljava/lang/Object; abs() {
+    return this.(Lscala/runtime/ScalaNumberProxy;::num()Lscala/math/Numeric;)().(Lscala/math/Numeric;::abs(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/Proxy$Typed;::self()Ljava/lang/Object;)());
+  }
+  
+  public I; signum() {
+    return this.(Lscala/runtime/ScalaNumberProxy;::num()Lscala/math/Numeric;)().(Lscala/math/Numeric;::signum(Ljava/lang/Object;)I;)(this.(Lscala/Proxy$Typed;::self()Ljava/lang/Object;)());
+  }
+  
+  public this(Lscala/math/Numeric; evidence$1) {
+    (Lscala/math/ScalaNumber;::super()V;)();
+    Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::$init$(Lscala/math/ScalaNumericConversions;)V;)(this);
+    Lscala/Proxy$class;.(Lscala/Proxy$class;::$init$(Lscala/Proxy;)V;)(this);
+    Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$init$(Lscala/math/Ordered;)V;)(this);
+    Lscala/runtime/OrderedProxy$class;.(Lscala/runtime/OrderedProxy$class;::$init$(Lscala/runtime/OrderedProxy;)V;)(this);
+    this.(Lscala/runtime/ScalaNumberProxy;)num$u0020 = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::implicitly(Ljava/lang/Object;)Ljava/lang/Object;)(evidence$1).<cast>(Lscala/math/Numeric;);
+    this.(Lscala/runtime/ScalaNumberProxy;)ord$u0020 = this.(Lscala/runtime/ScalaNumberProxy;::num()Lscala/math/Numeric;)();
+  }
+}

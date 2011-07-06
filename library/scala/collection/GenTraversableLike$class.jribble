@@ -1,0 +1,22 @@
+public abstract class Lscala/collection/GenTraversableLike$class; {
+  
+  public static final Z; isTraversableAgain(Lscala/collection/GenTraversableLike; $this) {
+    return true;
+  }
+  
+  public static Ljava/lang/Object; tail(Lscala/collection/GenTraversableLike; $this) {
+    if ($this.(Lscala/collection/GenTraversableOnce;::isEmpty()Z;)())
+      {
+        throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)("empty.tail"));
+      }
+    else
+      {
+        
+      }
+    return $this.(Lscala/collection/GenTraversableLike;::drop(I;)Ljava/lang/Object;)(1);
+  }
+  
+  public static V; $init$(Lscala/collection/GenTraversableLike; $this) {
+    
+  }
+}

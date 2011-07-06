@@ -1,4 +1,4 @@
-public abstract class Lscala/collection/immutable/RedBlack; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public abstract class Lscala/collection/immutable/RedBlack; extends Ljava/lang/Object; implements Lscala/Serializable;, Lscala/ScalaObject; {
   
   public abstract Z; isSmaller(Ljava/lang/Object; x, Ljava/lang/Object; y);
   
@@ -35,19 +35,12 @@ public abstract class Lscala/collection/immutable/RedBlack; extends Ljava/lang/O
   public final Lscala/collection/immutable/RedBlack$Empty$; Empty() {
     if ((this.(Lscala/collection/immutable/RedBlack;)Empty$module == null))
       {
-        this.(Lscala/collection/immutable/RedBlack;)Empty$module = (new (Lscala/collection/immutable/RedBlack$Empty$;::this(Lscala/collection/immutable/RedBlack;)V;)(this));
+        if ((this.(Lscala/collection/immutable/RedBlack;)Empty$module == null))
+          {
+            this.(Lscala/collection/immutable/RedBlack;)Empty$module = (new (Lscala/collection/immutable/RedBlack$Empty$;::this(Lscala/collection/immutable/RedBlack;)V;)(this));
+          }
       }
     return this.(Lscala/collection/immutable/RedBlack;)Empty$module;
-  }
-  
-  private Lscala/collection/immutable/RedBlack$BlackTree$; BlackTree$module;
-  
-  public final Lscala/collection/immutable/RedBlack$BlackTree$; BlackTree() {
-    if ((this.(Lscala/collection/immutable/RedBlack;)BlackTree$module == null))
-      {
-        this.(Lscala/collection/immutable/RedBlack;)BlackTree$module = (new (Lscala/collection/immutable/RedBlack$BlackTree$;::this(Lscala/collection/immutable/RedBlack;)V;)(this));
-      }
-    return this.(Lscala/collection/immutable/RedBlack;)BlackTree$module;
   }
   
   private Lscala/collection/immutable/RedBlack$RedTree$; RedTree$module;
@@ -55,9 +48,25 @@ public abstract class Lscala/collection/immutable/RedBlack; extends Ljava/lang/O
   public final Lscala/collection/immutable/RedBlack$RedTree$; RedTree() {
     if ((this.(Lscala/collection/immutable/RedBlack;)RedTree$module == null))
       {
-        this.(Lscala/collection/immutable/RedBlack;)RedTree$module = (new (Lscala/collection/immutable/RedBlack$RedTree$;::this(Lscala/collection/immutable/RedBlack;)V;)(this));
+        if ((this.(Lscala/collection/immutable/RedBlack;)RedTree$module == null))
+          {
+            this.(Lscala/collection/immutable/RedBlack;)RedTree$module = (new (Lscala/collection/immutable/RedBlack$RedTree$;::this(Lscala/collection/immutable/RedBlack;)V;)(this));
+          }
       }
     return this.(Lscala/collection/immutable/RedBlack;)RedTree$module;
+  }
+  
+  private Lscala/collection/immutable/RedBlack$BlackTree$; BlackTree$module;
+  
+  public final Lscala/collection/immutable/RedBlack$BlackTree$; BlackTree() {
+    if ((this.(Lscala/collection/immutable/RedBlack;)BlackTree$module == null))
+      {
+        if ((this.(Lscala/collection/immutable/RedBlack;)BlackTree$module == null))
+          {
+            this.(Lscala/collection/immutable/RedBlack;)BlackTree$module = (new (Lscala/collection/immutable/RedBlack$BlackTree$;::this(Lscala/collection/immutable/RedBlack;)V;)(this));
+          }
+      }
+    return this.(Lscala/collection/immutable/RedBlack;)BlackTree$module;
   }
   
   public this() {

@@ -4,6 +4,18 @@ public abstract class Lscala/collection/mutable/Map$class; {
     return Lscala/collection/mutable/Map$;.MODULE$.(Lscala/collection/mutable/Map$;::empty()Lscala/collection/mutable/Map;)();
   }
   
+  public static Lscala/collection/mutable/Map; seq(Lscala/collection/mutable/Map; $this) {
+    return $this;
+  }
+  
+  public static Lscala/collection/mutable/Map; withDefault(Lscala/collection/mutable/Map; $this, Lscala/Function1; d) {
+    return (new (Lscala/collection/mutable/Map$WithDefault;::this(Lscala/collection/mutable/Map;Lscala/Function1;)V;)($this, d));
+  }
+  
+  public static Lscala/collection/mutable/Map; withDefaultValue(Lscala/collection/mutable/Map; $this, Ljava/lang/Object; d$1) {
+    return (new (Lscala/collection/mutable/Map$WithDefault;::this(Lscala/collection/mutable/Map;Lscala/Function1;)V;)($this, (new (Lscala/collection/mutable/Map$$anonfun$withDefaultValue$1;::this(Lscala/collection/mutable/Map;Ljava/lang/Object;)V;)($this, d$1))));
+  }
+  
   public static V; $init$(Lscala/collection/mutable/Map; $this) {
     
   }

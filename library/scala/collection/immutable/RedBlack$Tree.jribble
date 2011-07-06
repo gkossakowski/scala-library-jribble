@@ -1,4 +1,4 @@
-public abstract class Lscala/collection/immutable/RedBlack$Tree; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public abstract class Lscala/collection/immutable/RedBlack$Tree; extends Ljava/lang/Object; implements Lscala/Serializable;, Lscala/ScalaObject; {
   
   public abstract Z; isEmpty();
   
@@ -12,6 +12,10 @@ public abstract class Lscala/collection/immutable/RedBlack$Tree; extends Ljava/l
   
   public Lscala/collection/immutable/RedBlack$Tree; delete(Ljava/lang/Object; k) {
     return this.(Lscala/collection/immutable/RedBlack$Tree;::scala$collection$immutable$RedBlack$Tree$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::scala$collection$immutable$RedBlack$$blacken(Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(this.(Lscala/collection/immutable/RedBlack$Tree;::del(Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(k));
+  }
+  
+  public Lscala/collection/immutable/RedBlack$Tree; range(Lscala/Option; from, Lscala/Option; until) {
+    return this.(Lscala/collection/immutable/RedBlack$Tree;::scala$collection$immutable$RedBlack$Tree$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::scala$collection$immutable$RedBlack$$blacken(Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(this.(Lscala/collection/immutable/RedBlack$Tree;::rng(Lscala/Option;Lscala/Option;)Lscala/collection/immutable/RedBlack$Tree;)(from, until));
   }
   
   public abstract V; foreach(Lscala/Function2; f);
@@ -32,7 +36,7 @@ public abstract class Lscala/collection/immutable/RedBlack$Tree; extends Ljava/l
   
   public abstract Lscala/collection/immutable/RedBlack$NonEmpty; smallest();
   
-  public abstract Lscala/collection/immutable/RedBlack$Tree; range(Lscala/Option; from, Lscala/Option; until);
+  public abstract Lscala/collection/immutable/RedBlack$Tree; rng(Lscala/Option; from, Lscala/Option; until);
   
   public abstract Ljava/lang/Object; first();
   

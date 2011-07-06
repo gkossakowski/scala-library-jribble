@@ -44,19 +44,19 @@ public interface Lscala/collection/mutable/BufferLike; extends Lscala/collection
   
   public V; $plus$plus$eq(Ljava/lang/Object; src, I; start, I; len);
   
-  public Lscala/collection/mutable/Buffer; $plus$plus$colon(Lscala/collection/mutable/Traversable; xs);
-  
-  public Lscala/collection/mutable/Buffer; $plus$colon(Ljava/lang/Object; elem);
-  
   public Lscala/collection/mutable/Buffer; $plus(Ljava/lang/Object; elem);
   
   public Lscala/collection/mutable/Buffer; $plus(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems);
+  
+  public Lscala/collection/mutable/Buffer; $plus$plus(Lscala/collection/GenTraversableOnce; xs);
   
   public Lscala/collection/mutable/Buffer; $plus$plus(Lscala/collection/TraversableOnce; xs);
   
   public Lscala/collection/mutable/Buffer; $minus(Ljava/lang/Object; elem);
   
   public Lscala/collection/mutable/Buffer; $minus(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems);
+  
+  public Lscala/collection/mutable/Buffer; $minus$minus(Lscala/collection/GenTraversableOnce; xs);
   
   public Lscala/collection/mutable/Buffer; $minus$minus(Lscala/collection/TraversableOnce; xs);
 }

@@ -15,38 +15,38 @@ public final class Lscala/Either$; extends Ljava/lang/Object; implements Lscala/
   
   public Ljava/lang/Object; merge(Lscala/Either; e) {
     Lscala/Either; temp142 = e;
-    Ljava/lang/Object; $15$;
+    Ljava/lang/Object; $21$;
     if (temp142.<instanceof>(Lscala/Left;))
       {
-        $15$ = temp142.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)();
+        $21$ = temp142.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)();
       }
     else
       {
-        Ljava/lang/Object; $16$;
+        Ljava/lang/Object; $22$;
         if (temp142.<instanceof>(Lscala/Right;))
           {
-            $16$ = temp142.<cast>(Lscala/Right;).(Lscala/Right;::b()Ljava/lang/Object;)();
+            $22$ = temp142.<cast>(Lscala/Right;).(Lscala/Right;::b()Ljava/lang/Object;)();
           }
         else
           {
             throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp142));
           }
-        $15$ = $16$;
+        $21$ = $22$;
       }
-    return $15$;
+    return $21$;
   }
   
   public Lscala/Either; cond(Z; test, Lscala/Function0; right, Lscala/Function0; left) {
-    Lscala/Either; $17$;
+    Lscala/Either; $23$;
     if (test)
       {
-        $17$ = (new (Lscala/Right;::this(Ljava/lang/Object;)V;)(right.(Lscala/Function0;::apply()Ljava/lang/Object;)()));
+        $23$ = (new (Lscala/Right;::this(Ljava/lang/Object;)V;)(right.(Lscala/Function0;::apply()Ljava/lang/Object;)()));
       }
     else
       {
-        $17$ = (new (Lscala/Left;::this(Ljava/lang/Object;)V;)(left.(Lscala/Function0;::apply()Ljava/lang/Object;)()));
+        $23$ = (new (Lscala/Left;::this(Ljava/lang/Object;)V;)(left.(Lscala/Function0;::apply()Ljava/lang/Object;)()));
       }
-    return $17$;
+    return $23$;
   }
   
   public this() {

@@ -1,4 +1,4 @@
-public final class Lscala/xml/dtd/PEReference$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+public final class Lscala/xml/dtd/PEReference$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/dtd/PEReference$; MODULE$ = new (Lscala/xml/dtd/PEReference$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/xml/dtd/PEReference$; extends Lscala/runtime/AbstractF
   }
   
   public Lscala/Option; unapply(Lscala/xml/dtd/PEReference; x$0) {
-    Lscala/Option; $43$;
+    Lscala/Option; $76$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $43$ = Lscala/None$;.MODULE$;
+        $76$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $43$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/PEReference;::ent()Ljava/lang/String;)()));
+        $76$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/xml/dtd/PEReference;::ent()Ljava/lang/String;)()));
       }
-    return $43$;
+    return $76$;
   }
   
   public Lscala/xml/dtd/PEReference; apply(Ljava/lang/String; ent) {
     return (new (Lscala/xml/dtd/PEReference;::this(Ljava/lang/String;)V;)(ent));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/dtd/PEReference$;.MODULE$;
   }
   
   public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {

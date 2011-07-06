@@ -1,4 +1,4 @@
-public class Lscala/xml/ProcInstr; extends Lscala/xml/SpecialNode; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/ProcInstr; extends Lscala/xml/SpecialNode; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public final static Lscala/Function1; tupled() { return Lscala/xml/ProcInstr$;.MODULE$.(Lscala/runtime/AbstractFunction2;::tupled()Lscala/Function1;)(); }
   public final static Lscala/Function1; curry() { return Lscala/xml/ProcInstr$;.MODULE$.(Lscala/runtime/AbstractFunction2;::curry()Lscala/Function1;)(); }
   public final static Lscala/Function1; curried() { return Lscala/xml/ProcInstr$;.MODULE$.(Lscala/runtime/AbstractFunction2;::curried()Lscala/Function1;)(); }
@@ -10,14 +10,6 @@ public class Lscala/xml/ProcInstr; extends Lscala/xml/SpecialNode; implements Ls
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/String; copy$default$2() {
-    return this.(Lscala/xml/ProcInstr;::proctext()Ljava/lang/String;)();
-  }
-  
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/ProcInstr;::target()Ljava/lang/String;)();
   }
   
   private Ljava/lang/String; target$u0020;
@@ -66,6 +58,14 @@ public class Lscala/xml/ProcInstr; extends Lscala/xml/SpecialNode; implements Ls
     return (new (Lscala/xml/ProcInstr;::this(Ljava/lang/String;Ljava/lang/String;)V;)(target, proctext));
   }
   
+  public Ljava/lang/String; copy$default$2() {
+    return this.(Lscala/xml/ProcInstr;::proctext()Ljava/lang/String;)();
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/ProcInstr;::target()Ljava/lang/String;)();
+  }
+  
   public Ljava/lang/String; productPrefix() {
     return "ProcInstr";
   }
@@ -79,13 +79,13 @@ public class Lscala/xml/ProcInstr; extends Lscala/xml/SpecialNode; implements Ls
     I; $3$ = temp1;
     Ljava/lang/Object; $4$;
     switch ($3$) {
-      0: {
-        $4$ = this.(Lscala/xml/ProcInstr;::target()Ljava/lang/String;)();
+      1: {
+        $4$ = this.(Lscala/xml/ProcInstr;::proctext()Ljava/lang/String;)();
         break;
       }
       
-      1: {
-        $4$ = this.(Lscala/xml/ProcInstr;::proctext()Ljava/lang/String;)();
+      0: {
+        $4$ = this.(Lscala/xml/ProcInstr;::target()Ljava/lang/String;)();
         break;
       }
       

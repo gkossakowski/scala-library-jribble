@@ -1,0 +1,50 @@
+public final class Lscala/collection/GenTraversableViewLike$Sliced$$anonfun$foreach$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final V; apply(Ljava/lang/Object; x) {
+    if ((this.(Lscala/collection/GenTraversableViewLike$Sliced$$anonfun$foreach$1;)$outer$u0020.(Lscala/collection/GenTraversableViewLike$Sliced;::from()I;)() <= this.(Lscala/collection/GenTraversableViewLike$Sliced$$anonfun$foreach$1;)index$1.(Lscala/runtime/IntRef;)elem))
+      {
+        if ((this.(Lscala/collection/GenTraversableViewLike$Sliced$$anonfun$foreach$1;)$outer$u0020.(Lscala/collection/GenTraversableViewLike$Sliced;::until()I;)() <= this.(Lscala/collection/GenTraversableViewLike$Sliced$$anonfun$foreach$1;)index$1.(Lscala/runtime/IntRef;)elem))
+          {
+            throw (new (Lscala/runtime/NonLocalReturnControl;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/GenTraversableViewLike$Sliced$$anonfun$foreach$1;)nonLocalReturnKey1$1, Lscala/runtime/BoxedUnit;.UNIT));
+          }
+        else
+          {
+            
+          }
+        this.(Lscala/collection/GenTraversableViewLike$Sliced$$anonfun$foreach$1;)f$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x);
+      }
+    else
+      {
+        
+      }
+    this.(Lscala/collection/GenTraversableViewLike$Sliced$$anonfun$foreach$1;)index$1.(Lscala/runtime/IntRef;)elem = (this.(Lscala/collection/GenTraversableViewLike$Sliced$$anonfun$foreach$1;)index$1.(Lscala/runtime/IntRef;)elem + 1);
+  }
+  
+  private Lscala/collection/GenTraversableViewLike$Sliced; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/GenTraversableViewLike$Sliced$$anonfun$foreach$1;::apply(Ljava/lang/Object;)V;)(v1);
+    return Lscala/runtime/BoxedUnit;.UNIT;
+  }
+  
+  private Lscala/Function1; f$1;
+  
+  private Lscala/runtime/IntRef; index$1;
+  
+  private Ljava/lang/Object; nonLocalReturnKey1$1;
+  
+  public this(Lscala/collection/GenTraversableViewLike$Sliced; $outer, Lscala/Function1; f$1, Lscala/runtime/IntRef; index$1, Ljava/lang/Object; nonLocalReturnKey1$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/GenTraversableViewLike$Sliced$$anonfun$foreach$1;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/collection/GenTraversableViewLike$Sliced$$anonfun$foreach$1;)f$1 = f$1;
+    this.(Lscala/collection/GenTraversableViewLike$Sliced$$anonfun$foreach$1;)index$1 = index$1;
+    this.(Lscala/collection/GenTraversableViewLike$Sliced$$anonfun$foreach$1;)nonLocalReturnKey1$1 = nonLocalReturnKey1$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

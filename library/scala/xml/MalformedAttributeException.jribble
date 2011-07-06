@@ -1,4 +1,4 @@
-public class Lscala/xml/MalformedAttributeException; extends Ljava/lang/RuntimeException; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/MalformedAttributeException; extends Ljava/lang/RuntimeException; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public final static Lscala/Function1; andThen(Lscala/Function1; x_0) { return Lscala/xml/MalformedAttributeException$;.MODULE$.(Lscala/runtime/AbstractFunction1;::andThen(Lscala/Function1;)Lscala/Function1;)(x_0); }
   public final static Lscala/Function1; compose(Lscala/Function1; x_0) { return Lscala/xml/MalformedAttributeException$;.MODULE$.(Lscala/runtime/AbstractFunction1;::compose(Lscala/Function1;)Lscala/Function1;)(x_0); }
   
@@ -11,10 +11,6 @@ public class Lscala/xml/MalformedAttributeException; extends Ljava/lang/RuntimeE
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
   }
   
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/MalformedAttributeException;::msg()Ljava/lang/String;)();
-  }
-  
   private Ljava/lang/String; msg$u0020;
   
   public Ljava/lang/String; msg() {
@@ -23,6 +19,10 @@ public class Lscala/xml/MalformedAttributeException; extends Ljava/lang/RuntimeE
   
   public Lscala/xml/MalformedAttributeException; copy(Ljava/lang/String; msg) {
     return (new (Lscala/xml/MalformedAttributeException;::this(Ljava/lang/String;)V;)(msg));
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/MalformedAttributeException;::msg()Ljava/lang/String;)();
   }
   
   public I; hashCode() {
@@ -40,7 +40,13 @@ public class Lscala/xml/MalformedAttributeException; extends Ljava/lang/RuntimeE
         Z; $2$;
         if (this.(Lscala/xml/MalformedAttributeException;::gd1$1(Ljava/lang/String;)Z;)(msg$1))
           {
-            $2$ = x$1.<cast>(Lscala/xml/MalformedAttributeException;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/String; $3$;
+            Z; $4$;
+            body$percent01: while(true) {
+              $4$ = x$1.<cast>(Lscala/xml/MalformedAttributeException;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $2$ = $4$;
           }
         else
           {
@@ -65,16 +71,16 @@ public class Lscala/xml/MalformedAttributeException; extends Ljava/lang/RuntimeE
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp4 = x$1;
-    Ljava/lang/Object; $3$;
+    Ljava/lang/Object; $5$;
     if ((temp4 == 0))
       {
-        $3$ = this.(Lscala/xml/MalformedAttributeException;::msg()Ljava/lang/String;)();
+        $5$ = this.(Lscala/xml/MalformedAttributeException;::msg()Ljava/lang/String;)();
       }
     else
       {
         throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
       }
-    return $3$;
+    return $5$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

@@ -1,0 +1,18 @@
+public abstract class Lscala/collection/generic/GenericClassManifestCompanion; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  public abstract Lscala/collection/mutable/Builder; newBuilder(Lscala/reflect/ClassManifest; ord);
+  
+  public Lscala/collection/Traversable; empty(Lscala/reflect/ClassManifest; evidence$1) {
+    return this.(Lscala/collection/generic/GenericClassManifestCompanion;::newBuilder(Lscala/reflect/ClassManifest;)Lscala/collection/mutable/Builder;)(evidence$1).(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public Lscala/collection/Traversable; apply(Lscala/collection/Seq; elems, Lscala/reflect/ClassManifest; ord) {
+    Lscala/collection/mutable/Builder; b = this.(Lscala/collection/generic/GenericClassManifestCompanion;::newBuilder(Lscala/reflect/ClassManifest;)Lscala/collection/mutable/Builder;)(ord);
+    b.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(elems);
+    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

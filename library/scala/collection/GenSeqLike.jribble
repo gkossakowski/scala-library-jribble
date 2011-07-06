@@ -1,0 +1,68 @@
+public interface Lscala/collection/GenSeqLike; extends Lscala/collection/GenIterableLike;, Lscala/Equals;, Lscala/collection/Parallelizable;, Lscala/ScalaObject; {
+  
+  public Ljava/lang/Object; apply(I; idx);
+  
+  public I; length();
+  
+  public Z; isDefinedAt(I; idx);
+  
+  public I; segmentLength(Lscala/Function1; p, I; from);
+  
+  public I; prefixLength(Lscala/Function1; p);
+  
+  public I; indexWhere(Lscala/Function1; p, I; from);
+  
+  public I; indexWhere(Lscala/Function1; p);
+  
+  public I; indexOf(Ljava/lang/Object; elem);
+  
+  public I; indexOf(Ljava/lang/Object; elem, I; from);
+  
+  public I; lastIndexOf(Ljava/lang/Object; elem);
+  
+  public I; lastIndexOf(Ljava/lang/Object; elem, I; end);
+  
+  public I; lastIndexWhere(Lscala/Function1; p);
+  
+  public I; lastIndexWhere(Lscala/Function1; p, I; end);
+  
+  public Ljava/lang/Object; reverse();
+  
+  public Ljava/lang/Object; reverseMap(Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Z; startsWith(Lscala/collection/GenSeq; that);
+  
+  public Z; startsWith(Lscala/collection/Seq; that);
+  
+  public Z; startsWith(Lscala/collection/GenSeq; that, I; offset);
+  
+  public Z; endsWith(Lscala/collection/GenSeq; that);
+  
+  public Ljava/lang/Object; patch(I; from, Lscala/collection/GenSeq; patch, I; replaced, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; updated(I; index, Ljava/lang/Object; elem, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; $plus$colon(Ljava/lang/Object; elem, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; $colon$plus(Ljava/lang/Object; elem, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; padTo(I; len, Ljava/lang/Object; elem, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Z; corresponds(Lscala/collection/GenSeq; that, Lscala/Function2; p);
+  
+  public Lscala/collection/GenSeq; toSeq();
+  
+  public Ljava/lang/Object; union(Lscala/collection/GenSeq; that, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; union(Lscala/collection/Seq; that, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; diff(Lscala/collection/GenSeq; that);
+  
+  public Ljava/lang/Object; intersect(Lscala/collection/GenSeq; that);
+  
+  public Ljava/lang/Object; distinct();
+  
+  public I; hashCode();
+  
+  public Z; equals(Ljava/lang/Object; that);
+}

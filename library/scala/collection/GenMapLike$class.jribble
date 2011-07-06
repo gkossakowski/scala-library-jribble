@@ -1,0 +1,37 @@
+public abstract class Lscala/collection/GenMapLike$class; {
+  
+  public static I; hashCode(Lscala/collection/GenMapLike; $this) {
+    return Lscala/util/MurmurHash$;.MODULE$.(Lscala/util/MurmurHash$;::symmetricHash(Lscala/collection/TraversableOnce;I;)I;)($this.(Lscala/collection/GenMapLike;::seq()Lscala/collection/Map;)(), Lscala/collection/Map$;.MODULE$.(Lscala/collection/Map$;::hashSeed()I;)());
+  }
+  
+  public static Z; equals(Lscala/collection/GenMapLike; $this, Ljava/lang/Object; that) {
+    Ljava/lang/Object; temp8 = that;
+    Z; $1$;
+    if (temp8.<instanceof>(Lscala/collection/GenMap;))
+      {
+        Lscala/collection/GenMap; temp9 = temp8.<cast>(Lscala/collection/GenMap;);
+        Lscala/collection/GenMap; that$1 = temp9;
+        $1$ = (($this == that$1) || ((that$1.(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)($this) && ($this.(Lscala/collection/GenTraversableLike;::size()I;)() == that$1.(Lscala/collection/GenTraversableLike;::size()I;)())) && Lscala/collection/GenMapLike$class;.(Lscala/collection/GenMapLike$class;::liftedTree1$1(Lscala/collection/GenMapLike;Lscala/collection/GenMap;)Z;)($this, that$1)));
+      }
+    else
+      {
+        $1$ = false;
+      }
+    return $1$;
+  }
+  
+  private static final Z; liftedTree1$1(Lscala/collection/GenMapLike; $this, Lscala/collection/GenMap; that$1) {
+    Z; exceptionResult1;
+    try {
+      exceptionResult1 = $this.(Lscala/collection/GenTraversableOnce;::forall(Lscala/Function1;)Z;)((new (Lscala/collection/GenMapLike$$anonfun$liftedTree1$1$1;::this(Lscala/collection/GenMapLike;Lscala/collection/GenMap;)V;)($this, that$1)));
+    } catch(Ljava/lang/ClassCastException; ex) {
+      Lscala/Predef$;.MODULE$.(Lscala/Predef$;::println(Ljava/lang/Object;)V;)("class cast ");
+      exceptionResult1 = false;
+    }
+    return exceptionResult1;
+  }
+  
+  public static V; $init$(Lscala/collection/GenMapLike; $this) {
+    
+  }
+}

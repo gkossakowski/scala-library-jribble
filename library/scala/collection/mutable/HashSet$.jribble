@@ -1,15 +1,19 @@
-public final class Lscala/collection/mutable/HashSet$; extends Lscala/collection/generic/MutableSetFactory; implements Lscala/ScalaObject; {
+public final class Lscala/collection/mutable/HashSet$; extends Lscala/collection/generic/MutableSetFactory; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/collection/mutable/HashSet$; MODULE$ = new (Lscala/collection/mutable/HashSet$;::this()V;)();
   
   public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
-    return this.(Lscala/collection/generic/SetFactory;::setCanBuildFrom()Lscala/collection/generic/CanBuildFrom;)();
+    return this.(Lscala/collection/generic/GenSetFactory;::setCanBuildFrom()Lscala/collection/generic/CanBuildFrom;)();
   }
   
   public Lscala/collection/mutable/HashSet; empty() {
     return (new (Lscala/collection/mutable/HashSet;::this()V;)());
   }
   
-  public Lscala/collection/Traversable; empty() {
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/mutable/HashSet$;.MODULE$;
+  }
+  
+  public Lscala/collection/GenTraversable; empty() {
     return this.(Lscala/collection/mutable/HashSet$;::empty()Lscala/collection/mutable/HashSet;)();
   }
   

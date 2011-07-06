@@ -1,4 +1,4 @@
-public class Lscala/collection/immutable/HashSet$SerializationProxy; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public class Lscala/collection/immutable/HashSet$SerializationProxy; extends Ljava/lang/Object; implements Lscala/Serializable;, Lscala/ScalaObject; {
   
   private Lscala/collection/immutable/HashSet; scala$collection$immutable$HashSet$SerializationProxy$$orig$u0020;
   
@@ -19,7 +19,7 @@ public class Lscala/collection/immutable/HashSet$SerializationProxy; extends Lja
   private V; readObject(Ljava/io/ObjectInputStream; in$1) {
     this.(Lscala/collection/immutable/HashSet$SerializationProxy;::scala$collection$immutable$HashSet$SerializationProxy$$orig_$eq(Lscala/collection/immutable/HashSet;)V;)(Lscala/collection/immutable/HashSet$;.MODULE$.(Lscala/collection/immutable/HashSet$;::empty()Lscala/collection/immutable/HashSet;)());
     I; s = in$1.(Ljava/io/ObjectInputStream;::readInt()I;)();
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(s).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/HashSet$SerializationProxy$$anonfun$readObject$1;::this(Lscala/collection/immutable/HashSet$SerializationProxy;Ljava/io/ObjectInputStream;)V;)(this, in$1)));
+    Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(s).(Lscala/collection/immutable/Range;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/HashSet$SerializationProxy$$anonfun$readObject$1;::this(Lscala/collection/immutable/HashSet$SerializationProxy;Ljava/io/ObjectInputStream;)V;)(this, in$1)));
   }
   
   private Ljava/lang/Object; readResolve() {

@@ -1,27 +1,15 @@
-public final class Lscala/collection/TraversableLike$$anonfun$groupBy$2; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/TraversableLike$$anonfun$groupBy$2; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
-  public final Lscala/collection/mutable/Builder; apply(Lscala/Tuple2; x$2) {
-    Lscala/Tuple2; temp1 = x$2;
-    Lscala/collection/mutable/Builder; $9$;
-    if ((temp1 != null))
-      {
-        $9$ = this.(Lscala/collection/TraversableLike$$anonfun$groupBy$2;)b$5.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(temp1.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), temp1.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/mutable/Builder;).(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)())));
-      }
-    else
-      {
-        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp1));
-      }
-    return $9$;
+  public final Z; apply(Lscala/Tuple2; check$ifrefutable$1) {
+    Lscala/Tuple2; temp1 = check$ifrefutable$1;
+    return (temp1 != null);
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
-    return this.(Lscala/collection/TraversableLike$$anonfun$groupBy$2;::apply(Lscala/Tuple2;)Lscala/collection/mutable/Builder;)(v1.<cast>(Lscala/Tuple2;));
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/collection/TraversableLike$$anonfun$groupBy$2;::apply(Lscala/Tuple2;)Z;)(v1.<cast>(Lscala/Tuple2;)));
   }
   
-  private Lscala/collection/mutable/Builder; b$5;
-  
-  public this(Lscala/collection/TraversableLike; $outer, Lscala/collection/mutable/Builder; b$5) {
-    this.(Lscala/collection/TraversableLike$$anonfun$groupBy$2;)b$5 = b$5;
+  public this(Lscala/collection/TraversableLike; $outer) {
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

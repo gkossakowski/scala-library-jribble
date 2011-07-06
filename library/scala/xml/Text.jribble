@@ -1,4 +1,4 @@
-public class Lscala/xml/Text; extends Lscala/xml/Atom; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/Text; extends Lscala/xml/Atom; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   
   public Lscala/collection/Iterator; productIterator() {
@@ -7,10 +7,6 @@ public class Lscala/xml/Text; extends Lscala/xml/Atom; implements Lscala/ScalaOb
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/Text;::_data()Ljava/lang/String;)();
   }
   
   public Ljava/lang/String; _data() {
@@ -23,6 +19,10 @@ public class Lscala/xml/Text; extends Lscala/xml/Atom; implements Lscala/ScalaOb
   
   public Lscala/xml/Text; copy(Ljava/lang/String; _data) {
     return (new (Lscala/xml/Text;::this(Ljava/lang/String;)V;)(_data));
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/Text;::_data()Ljava/lang/String;)();
   }
   
   public Ljava/lang/String; productPrefix() {

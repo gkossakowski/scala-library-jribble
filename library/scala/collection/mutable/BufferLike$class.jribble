@@ -1,11 +1,11 @@
 public abstract class Lscala/collection/mutable/BufferLike$class; {
   
   public static V; remove(Lscala/collection/mutable/Buffer; $this, I; n$1, I; count) {
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(count).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/mutable/BufferLike$$anonfun$remove$1;::this(Lscala/collection/mutable/Buffer;I;)V;)($this, n$1)));
+    Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(count).(Lscala/collection/immutable/Range;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/mutable/BufferLike$$anonfun$remove$1;::this(Lscala/collection/mutable/Buffer;I;)V;)($this, n$1)));
   }
   
   public static Lscala/collection/mutable/Buffer; $minus$eq(Lscala/collection/mutable/Buffer; $this, Ljava/lang/Object; x) {
-    I; i = $this.(Lscala/collection/SeqLike;::indexOf(Ljava/lang/Object;)I;)(x);
+    I; i = $this.(Lscala/collection/GenSeqLike;::indexOf(Ljava/lang/Object;)I;)(x);
     if ((i != -1))
       {
         $this.(Lscala/collection/mutable/BufferLike;::remove(I;)Ljava/lang/Object;)(i);
@@ -48,7 +48,7 @@ public abstract class Lscala/collection/mutable/BufferLike$class; {
   }
   
   public static V; trimEnd(Lscala/collection/mutable/Buffer; $this, I; n) {
-    $this.(Lscala/collection/mutable/BufferLike;::remove(I;I;)V;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(($this.(Lscala/collection/mutable/BufferLike;::length()I;)() - n)).(Lscala/runtime/RichInt;::max(I;)I;)(0), n);
+    $this.(Lscala/collection/mutable/BufferLike;::remove(I;I;)V;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(($this.(Lscala/collection/mutable/BufferLike;::length()I;)() - n)).(Lscala/runtime/RichInt;::max(I;)I;)(0), n);
   }
   
   public static V; $less$less(Lscala/collection/mutable/Buffer; $this, Lscala/collection/script/Message; cmd) {
@@ -82,7 +82,7 @@ public abstract class Lscala/collection/mutable/BufferLike$class; {
                       }
                     else
                       {
-                        throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)((("message " + cmd) + " not understood")));
+                        Lscala/collection/mutable/BufferLike$class;.(Lscala/collection/mutable/BufferLike$class;::body$percent131$percent1()Lscala/runtime/Nothing$;)();
                       }
                   }
               }
@@ -113,7 +113,7 @@ public abstract class Lscala/collection/mutable/BufferLike$class; {
                       }
                     else
                       {
-                        throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)((("message " + cmd) + " not understood")));
+                        Lscala/collection/mutable/BufferLike$class;.(Lscala/collection/mutable/BufferLike$class;::body$percent131$percent1()Lscala/runtime/Nothing$;)();
                       }
                   }
               }
@@ -173,7 +173,7 @@ public abstract class Lscala/collection/mutable/BufferLike$class; {
                               }
                             else
                               {
-                                throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)((("message " + cmd) + " not understood")));
+                                Lscala/collection/mutable/BufferLike$class;.(Lscala/collection/mutable/BufferLike$class;::body$percent131$percent1()Lscala/runtime/Nothing$;)();
                               }
                           }
                       }
@@ -193,7 +193,7 @@ public abstract class Lscala/collection/mutable/BufferLike$class; {
                       }
                     else
                       {
-                        throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)((("message " + cmd) + " not understood")));
+                        Lscala/collection/mutable/BufferLike$class;.(Lscala/collection/mutable/BufferLike$class;::body$percent131$percent1()Lscala/runtime/Nothing$;)();
                       }
                   }
               }
@@ -229,14 +229,6 @@ public abstract class Lscala/collection/mutable/BufferLike$class; {
     }
   }
   
-  public static final Lscala/collection/mutable/Buffer; $plus$plus$colon(Lscala/collection/mutable/Buffer; $this, Lscala/collection/mutable/Traversable; xs) {
-    return $this.(Lscala/collection/mutable/BufferLike;::$plus$plus$eq$colon(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Buffer;)(xs);
-  }
-  
-  public static final Lscala/collection/mutable/Buffer; $plus$colon(Lscala/collection/mutable/Buffer; $this, Ljava/lang/Object; elem) {
-    return $this.(Lscala/collection/mutable/BufferLike;::$plus$eq$colon(Ljava/lang/Object;)Lscala/collection/mutable/Buffer;)(elem);
-  }
-  
   public static Lscala/collection/mutable/Buffer; $plus(Lscala/collection/mutable/Buffer; $this, Ljava/lang/Object; elem) {
     $this.(Lscala/collection/mutable/BufferLike;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Buffer;)(elem);
     return $this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/mutable/Buffer;);
@@ -247,8 +239,12 @@ public abstract class Lscala/collection/mutable/BufferLike$class; {
     return $this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/mutable/Buffer;);
   }
   
+  public static Lscala/collection/mutable/Buffer; $plus$plus(Lscala/collection/mutable/Buffer; $this, Lscala/collection/GenTraversableOnce; xs) {
+    return $this.(Lscala/collection/mutable/Cloneable;::clone()Ljava/lang/Object;)().<cast>(Lscala/collection/generic/Growable;).(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(xs.(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)()).<cast>(Lscala/collection/mutable/Buffer;);
+  }
+  
   public static Lscala/collection/mutable/Buffer; $plus$plus(Lscala/collection/mutable/Buffer; $this, Lscala/collection/TraversableOnce; xs) {
-    return $this.(Lscala/collection/mutable/Cloneable;::clone()Ljava/lang/Object;)().<cast>(Lscala/collection/generic/Growable;).(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(xs).<cast>(Lscala/collection/mutable/Buffer;);
+    return $this.(Lscala/collection/mutable/BufferLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/mutable/Buffer;)(xs);
   }
   
   public static Lscala/collection/mutable/Buffer; $minus(Lscala/collection/mutable/Buffer; $this, Ljava/lang/Object; elem) {
@@ -259,11 +255,19 @@ public abstract class Lscala/collection/mutable/BufferLike$class; {
     return $this.(Lscala/collection/mutable/Cloneable;::clone()Ljava/lang/Object;)().<cast>(Lscala/collection/mutable/BufferLike;).(Lscala/collection/mutable/BufferLike;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Buffer;)(elem1).(Lscala/collection/mutable/BufferLike;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Buffer;)(elem2).(Lscala/collection/generic/Shrinkable;::$minus$minus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Shrinkable;)(elems).<cast>(Lscala/collection/mutable/Buffer;);
   }
   
+  public static Lscala/collection/mutable/Buffer; $minus$minus(Lscala/collection/mutable/Buffer; $this, Lscala/collection/GenTraversableOnce; xs) {
+    return $this.(Lscala/collection/mutable/Cloneable;::clone()Ljava/lang/Object;)().<cast>(Lscala/collection/generic/Shrinkable;).(Lscala/collection/generic/Shrinkable;::$minus$minus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Shrinkable;)(xs.(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)()).<cast>(Lscala/collection/mutable/Buffer;);
+  }
+  
   public static Lscala/collection/mutable/Buffer; $minus$minus(Lscala/collection/mutable/Buffer; $this, Lscala/collection/TraversableOnce; xs) {
-    return $this.(Lscala/collection/mutable/Cloneable;::clone()Ljava/lang/Object;)().<cast>(Lscala/collection/generic/Shrinkable;).(Lscala/collection/generic/Shrinkable;::$minus$minus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Shrinkable;)(xs).<cast>(Lscala/collection/mutable/Buffer;);
+    return $this.(Lscala/collection/mutable/BufferLike;::$minus$minus(Lscala/collection/GenTraversableOnce;)Lscala/collection/mutable/Buffer;)(xs);
   }
   
   public static V; $init$(Lscala/collection/mutable/Buffer; $this) {
     
+  }
+  
+  private static final Lscala/runtime/Nothing$; body$percent131$percent1() {
+    throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)((("message " + cmd) + " not understood")));
   }
 }

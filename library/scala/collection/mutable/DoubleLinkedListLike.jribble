@@ -1,4 +1,4 @@
-public interface Lscala/collection/mutable/DoubleLinkedListLike; extends Lscala/collection/mutable/LinkedListLike;, Lscala/ScalaObject; {
+public interface Lscala/collection/mutable/DoubleLinkedListLike; extends Lscala/collection/mutable/SeqLike;, Lscala/collection/mutable/LinkedListLike;, Lscala/ScalaObject; {
   
   public V; scala$collection$mutable$DoubleLinkedListLike$$super$insert(Lscala/collection/mutable/Seq; that);
   
@@ -11,4 +11,14 @@ public interface Lscala/collection/mutable/DoubleLinkedListLike; extends Lscala/
   public V; insert(Lscala/collection/mutable/Seq; that);
   
   public V; remove();
+  
+  public Lscala/collection/mutable/Seq; drop(I; n);
+  
+  public Lscala/collection/mutable/Seq; tail();
+  
+  public Ljava/lang/Object; apply(I; n);
+  
+  public V; update(I; n, Ljava/lang/Object; x);
+  
+  public Lscala/Option; get(I; n);
 }

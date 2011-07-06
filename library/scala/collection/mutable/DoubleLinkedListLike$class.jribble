@@ -44,22 +44,85 @@ public abstract class Lscala/collection/mutable/DoubleLinkedListLike$class; {
   }
   
   public static V; remove(Lscala/collection/mutable/DoubleLinkedListLike; $this) {
-    if ($this.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().(Lscala/collection/TraversableOnce;::nonEmpty()Z;)())
+    if ($this.(Lscala/collection/TraversableOnce;::nonEmpty()Z;)())
       {
         $this.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/DoubleLinkedListLike;).(Lscala/collection/mutable/DoubleLinkedListLike;::prev_$eq(Lscala/collection/mutable/Seq;)V;)($this.(Lscala/collection/mutable/DoubleLinkedListLike;::prev()Lscala/collection/mutable/Seq;)());
+        if (($this.(Lscala/collection/mutable/DoubleLinkedListLike;::prev()Lscala/collection/mutable/Seq;)() != null))
+          {
+            $this.(Lscala/collection/mutable/DoubleLinkedListLike;::prev()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedListLike;).(Lscala/collection/mutable/LinkedListLike;::next_$eq(Lscala/collection/mutable/Seq;)V;)($this.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)());
+          }
+        else
+          {
+            
+          }
       }
     else
       {
         
       }
-    if ($this.(Lscala/collection/mutable/DoubleLinkedListLike;::prev()Lscala/collection/mutable/Seq;)().(Lscala/collection/TraversableOnce;::nonEmpty()Z;)())
+  }
+  
+  private static Ljava/lang/Object; atLocation(Lscala/collection/mutable/DoubleLinkedListLike; $this, I; n, Lscala/Function1; f, Lscala/Function0; onOutOfBounds) {
+    Ljava/lang/Object; $2$;
+    if ($this.(Lscala/collection/mutable/LinkedListLike;::isEmpty()Z;)())
       {
-        $this.(Lscala/collection/mutable/DoubleLinkedListLike;::prev()Lscala/collection/mutable/Seq;)().<cast>(Lscala/collection/mutable/LinkedListLike;).(Lscala/collection/mutable/LinkedListLike;::next_$eq(Lscala/collection/mutable/Seq;)V;)($this.(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)());
+        $2$ = onOutOfBounds.(Lscala/Function0;::apply()Ljava/lang/Object;)();
       }
     else
       {
-        
+        Lscala/collection/mutable/Seq; loc = $this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/mutable/Seq;);
+        I; left = n;
+        while$1: while(true) {
+          if ((left > 0))
+            {
+              {
+                loc = loc.<cast>(Lscala/collection/mutable/LinkedListLike;).(Lscala/collection/mutable/LinkedListLike;::next()Lscala/collection/mutable/Seq;)();
+                left = (left - 1);
+                Ljava/lang/Object; $3$;
+                if (loc.<cast>(Lscala/collection/mutable/LinkedListLike;).(Lscala/collection/mutable/LinkedListLike;::isEmpty()Z;)())
+                  {
+                    $3$ = onOutOfBounds.(Lscala/Function0;::apply()Ljava/lang/Object;)();
+                  }
+                else
+                  {
+                    $3$ = Lscala/runtime/BoxedUnit;.UNIT;
+                  }
+              }
+              continue while$1;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+        $2$ = f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(loc);
       }
+    return $2$;
+  }
+  
+  public static final Lscala/runtime/Nothing$; scala$collection$mutable$DoubleLinkedListLike$$outofbounds(Lscala/collection/mutable/DoubleLinkedListLike; $this, I; n) {
+    throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(n).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+  }
+  
+  public static Lscala/collection/mutable/Seq; drop(Lscala/collection/mutable/DoubleLinkedListLike; $this, I; n) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::drop(Lscala/collection/IterableLike;I;)Ljava/lang/Object;)($this, n).<cast>(Lscala/collection/mutable/Seq;);
+  }
+  
+  public static Lscala/collection/mutable/Seq; tail(Lscala/collection/mutable/DoubleLinkedListLike; $this) {
+    return $this.(Lscala/collection/mutable/DoubleLinkedListLike;::drop(I;)Lscala/collection/mutable/Seq;)(1);
+  }
+  
+  public static Ljava/lang/Object; apply(Lscala/collection/mutable/DoubleLinkedListLike; $this, I; n$1) {
+    return Lscala/collection/mutable/DoubleLinkedListLike$class;.(Lscala/collection/mutable/DoubleLinkedListLike$class;::atLocation(Lscala/collection/mutable/DoubleLinkedListLike;I;Lscala/Function1;Lscala/Function0;)Ljava/lang/Object;)($this, n$1, (new (Lscala/collection/mutable/DoubleLinkedListLike$$anonfun$apply$1;::this(Lscala/collection/mutable/DoubleLinkedListLike;)V;)($this)), (new (Lscala/collection/mutable/DoubleLinkedListLike$$anonfun$apply$2;::this(Lscala/collection/mutable/DoubleLinkedListLike;I;)V;)($this, n$1)));
+  }
+  
+  public static V; update(Lscala/collection/mutable/DoubleLinkedListLike; $this, I; n$2, Ljava/lang/Object; x$3) {
+    Lscala/collection/mutable/DoubleLinkedListLike$class;.(Lscala/collection/mutable/DoubleLinkedListLike$class;::atLocation(Lscala/collection/mutable/DoubleLinkedListLike;I;Lscala/Function1;Lscala/Function0;)Ljava/lang/Object;)($this, n$2, (new (Lscala/collection/mutable/DoubleLinkedListLike$$anonfun$update$1;::this(Lscala/collection/mutable/DoubleLinkedListLike;Ljava/lang/Object;)V;)($this, x$3)), (new (Lscala/collection/mutable/DoubleLinkedListLike$$anonfun$update$2;::this(Lscala/collection/mutable/DoubleLinkedListLike;I;)V;)($this, n$2)));
+  }
+  
+  public static Lscala/Option; get(Lscala/collection/mutable/DoubleLinkedListLike; $this, I; n) {
+    return Lscala/collection/mutable/DoubleLinkedListLike$class;.(Lscala/collection/mutable/DoubleLinkedListLike$class;::atLocation(Lscala/collection/mutable/DoubleLinkedListLike;I;Lscala/Function1;Lscala/Function0;)Ljava/lang/Object;)($this, n, (new (Lscala/collection/mutable/DoubleLinkedListLike$$anonfun$get$1;::this(Lscala/collection/mutable/DoubleLinkedListLike;)V;)($this)), (new (Lscala/collection/mutable/DoubleLinkedListLike$$anonfun$get$2;::this(Lscala/collection/mutable/DoubleLinkedListLike;)V;)($this))).<cast>(Lscala/Option;);
   }
   
   public static V; $init$(Lscala/collection/mutable/DoubleLinkedListLike; $this) {

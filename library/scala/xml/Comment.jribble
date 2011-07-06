@@ -1,4 +1,4 @@
-public class Lscala/xml/Comment; extends Lscala/xml/SpecialNode; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/Comment; extends Lscala/xml/SpecialNode; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   
   public Lscala/collection/Iterator; productIterator() {
@@ -7,10 +7,6 @@ public class Lscala/xml/Comment; extends Lscala/xml/SpecialNode; implements Lsca
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/Comment;::commentText()Ljava/lang/String;)();
   }
   
   private Ljava/lang/String; commentText$u0020;
@@ -41,6 +37,10 @@ public class Lscala/xml/Comment; extends Lscala/xml/SpecialNode; implements Lsca
   
   public Lscala/xml/Comment; copy(Ljava/lang/String; commentText) {
     return (new (Lscala/xml/Comment;::this(Ljava/lang/String;)V;)(commentText));
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/Comment;::commentText()Ljava/lang/String;)();
   }
   
   public Ljava/lang/String; productPrefix() {

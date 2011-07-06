@@ -1,0 +1,13 @@
+public final class Lscala/math/Equiv$$anon$4; extends Ljava/lang/Object; implements Lscala/math/Equiv; {
+  
+  public Z; equiv(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/math/Equiv$$anon$4;)cmp$2.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(x, y));
+  }
+  
+  private Lscala/Function2; cmp$2;
+  
+  public this(Lscala/Function2; cmp$2) {
+    this.(Lscala/math/Equiv$$anon$4;)cmp$2 = cmp$2;
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

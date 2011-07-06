@@ -1,0 +1,16 @@
+public interface Lscala/collection/GenIterableLike; extends Lscala/collection/GenTraversableLike;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/Iterator; iterator();
+  
+  public Z; sameElements(Lscala/collection/GenIterable; that);
+  
+  public Ljava/lang/Object; zip(Lscala/collection/GenIterable; that, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; zipWithIndex(Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; zipAll(Lscala/collection/GenIterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Z; isEmpty();
+  
+  public Ljava/lang/Object; head();
+}

@@ -1,4 +1,4 @@
-public class Lscala/xml/dtd/ParsedEntityDecl; extends Lscala/xml/dtd/EntityDecl; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/dtd/ParsedEntityDecl; extends Lscala/xml/dtd/EntityDecl; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public final static Lscala/Function1; tupled() { return Lscala/xml/dtd/ParsedEntityDecl$;.MODULE$.(Lscala/runtime/AbstractFunction2;::tupled()Lscala/Function1;)(); }
   public final static Lscala/Function1; curry() { return Lscala/xml/dtd/ParsedEntityDecl$;.MODULE$.(Lscala/runtime/AbstractFunction2;::curry()Lscala/Function1;)(); }
   public final static Lscala/Function1; curried() { return Lscala/xml/dtd/ParsedEntityDecl$;.MODULE$.(Lscala/runtime/AbstractFunction2;::curried()Lscala/Function1;)(); }
@@ -10,14 +10,6 @@ public class Lscala/xml/dtd/ParsedEntityDecl; extends Lscala/xml/dtd/EntityDecl;
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Lscala/xml/dtd/EntityDef; copy$default$2() {
-    return this.(Lscala/xml/dtd/ParsedEntityDecl;::entdef()Lscala/xml/dtd/EntityDef;)();
-  }
-  
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/dtd/ParsedEntityDecl;::name()Ljava/lang/String;)();
   }
   
   private Ljava/lang/String; name$u0020;
@@ -41,6 +33,14 @@ public class Lscala/xml/dtd/ParsedEntityDecl; extends Lscala/xml/dtd/EntityDecl;
     return (new (Lscala/xml/dtd/ParsedEntityDecl;::this(Ljava/lang/String;Lscala/xml/dtd/EntityDef;)V;)(name, entdef));
   }
   
+  public Lscala/xml/dtd/EntityDef; copy$default$2() {
+    return this.(Lscala/xml/dtd/ParsedEntityDecl;::entdef()Lscala/xml/dtd/EntityDef;)();
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/dtd/ParsedEntityDecl;::name()Ljava/lang/String;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -51,30 +51,37 @@ public class Lscala/xml/dtd/ParsedEntityDecl; extends Lscala/xml/dtd/EntityDecl;
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp17 = x$1;
-    Z; $13$;
+    Z; $26$;
     if (temp17.<instanceof>(Lscala/xml/dtd/ParsedEntityDecl;))
       {
         Lscala/xml/dtd/ParsedEntityDecl; temp18 = temp17.<cast>(Lscala/xml/dtd/ParsedEntityDecl;);
         Ljava/lang/String; temp19 = temp18.(Lscala/xml/dtd/ParsedEntityDecl;::name()Ljava/lang/String;)();
         Lscala/xml/dtd/EntityDef; temp20 = temp18.(Lscala/xml/dtd/ParsedEntityDecl;::entdef()Lscala/xml/dtd/EntityDef;)();
-        Lscala/xml/dtd/EntityDef; entdef$1 = temp20;
         Ljava/lang/String; name$4 = temp19;
-        Z; $14$;
+        Lscala/xml/dtd/EntityDef; entdef$1 = temp20;
+        Z; $27$;
         if (this.(Lscala/xml/dtd/ParsedEntityDecl;::gd4$1(Ljava/lang/String;Lscala/xml/dtd/EntityDef;)Z;)(name$4, entdef$1))
           {
-            $14$ = x$1.<cast>(Lscala/xml/dtd/ParsedEntityDecl;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/String; $28$;
+            Lscala/xml/dtd/EntityDef; $29$;
+            Z; $30$;
+            body$percent07: while(true) {
+              $30$ = x$1.<cast>(Lscala/xml/dtd/ParsedEntityDecl;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $27$ = $30$;
           }
         else
           {
-            $14$ = false;
+            $27$ = false;
           }
-        $13$ = $14$;
+        $26$ = $27$;
       }
     else
       {
-        $13$ = false;
+        $26$ = false;
       }
-    return ((this == x$1) || $13$);
+    return ((this == x$1) || $26$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -87,16 +94,16 @@ public class Lscala/xml/dtd/ParsedEntityDecl; extends Lscala/xml/dtd/EntityDecl;
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp21 = x$1;
-    I; $15$ = temp21;
-    Ljava/lang/Object; $16$;
-    switch ($15$) {
-      0: {
-        $16$ = this.(Lscala/xml/dtd/ParsedEntityDecl;::name()Ljava/lang/String;)();
+    I; $31$ = temp21;
+    Ljava/lang/Object; $32$;
+    switch ($31$) {
+      1: {
+        $32$ = this.(Lscala/xml/dtd/ParsedEntityDecl;::entdef()Lscala/xml/dtd/EntityDef;)();
         break;
       }
       
-      1: {
-        $16$ = this.(Lscala/xml/dtd/ParsedEntityDecl;::entdef()Lscala/xml/dtd/EntityDef;)();
+      0: {
+        $32$ = this.(Lscala/xml/dtd/ParsedEntityDecl;::name()Ljava/lang/String;)();
         break;
       }
       
@@ -106,7 +113,7 @@ public class Lscala/xml/dtd/ParsedEntityDecl; extends Lscala/xml/dtd/EntityDecl;
       }
       
     }
-    return $16$;
+    return $32$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

@@ -1,0 +1,32 @@
+public final class Lscala/collection/mutable/SeqLike$$anonfun$transform$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final V; apply(Ljava/lang/Object; el) {
+    this.(Lscala/collection/mutable/SeqLike$$anonfun$transform$1;)$outer$u0020.(Lscala/collection/mutable/SeqLike;::update(I;Ljava/lang/Object;)V;)(this.(Lscala/collection/mutable/SeqLike$$anonfun$transform$1;)i$1.(Lscala/runtime/IntRef;)elem, this.(Lscala/collection/mutable/SeqLike$$anonfun$transform$1;)f$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(el));
+    this.(Lscala/collection/mutable/SeqLike$$anonfun$transform$1;)i$1.(Lscala/runtime/IntRef;)elem = (this.(Lscala/collection/mutable/SeqLike$$anonfun$transform$1;)i$1.(Lscala/runtime/IntRef;)elem + 1);
+  }
+  
+  private Lscala/collection/mutable/SeqLike; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/mutable/SeqLike$$anonfun$transform$1;::apply(Ljava/lang/Object;)V;)(v1);
+    return Lscala/runtime/BoxedUnit;.UNIT;
+  }
+  
+  private Lscala/Function1; f$1;
+  
+  private Lscala/runtime/IntRef; i$1;
+  
+  public this(Lscala/collection/mutable/SeqLike; $outer, Lscala/Function1; f$1, Lscala/runtime/IntRef; i$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/SeqLike$$anonfun$transform$1;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/collection/mutable/SeqLike$$anonfun$transform$1;)f$1 = f$1;
+    this.(Lscala/collection/mutable/SeqLike$$anonfun$transform$1;)i$1 = i$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

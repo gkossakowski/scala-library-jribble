@@ -24,8 +24,8 @@ public abstract class Lscala/collection/SortedSetLike$class; {
     return $this.(Lscala/collection/SortedSetLike;::rangeImpl(Lscala/Option;Lscala/Option;)Lscala/collection/SortedSet;)((new (Lscala/Some;::this(Ljava/lang/Object;)V;)(from)), (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(until)));
   }
   
-  public static Z; subsetOf(Lscala/collection/SortedSetLike; $this, Lscala/collection/Set; that) {
-    Lscala/collection/Set; temp1 = that;
+  public static Z; subsetOf(Lscala/collection/SortedSetLike; $this, Lscala/collection/GenSet; that) {
+    Lscala/collection/GenSet; temp1 = that;
     Z; $1$;
     if (temp1.<instanceof>(Lscala/collection/SortedSet;))
       {
@@ -34,18 +34,24 @@ public abstract class Lscala/collection/SortedSetLike$class; {
         Z; $2$;
         if (Lscala/collection/SortedSetLike$class;.(Lscala/collection/SortedSetLike$class;::gd1$1(Lscala/collection/SortedSetLike;Lscala/collection/SortedSet;)Z;)($this, that))
           {
-            $2$ = temp2.(Lscala/collection/generic/Sorted;::hasAll(Lscala/collection/Iterator;)Z;)($this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)());
+            Lscala/collection/SortedSet; $3$;
+            Z; $4$;
+            body$percent01: while(true) {
+              $4$ = that.(Lscala/collection/generic/Sorted;::hasAll(Lscala/collection/Iterator;)Z;)($this.(Lscala/collection/GenSetLike;::iterator()Lscala/collection/Iterator;)());
+              break;
+            }
+            $2$ = $4$;
           }
         else
           {
-            Lscala/collection/Set; that = temp2;
-            $2$ = Lscala/collection/SortedSetLike$class;.(Lscala/collection/SortedSetLike$class;::body$percent1$percent1(Lscala/collection/Set;)Z;)(that);
+            Lscala/collection/GenSet; that = temp2;
+            $2$ = Lscala/collection/SortedSetLike$class;.(Lscala/collection/SortedSetLike$class;::body$percent11$percent1(Lscala/collection/GenSet;)Z;)(that);
           }
         $1$ = $2$;
       }
     else
       {
-        $1$ = Lscala/collection/SortedSetLike$class;.(Lscala/collection/SortedSetLike$class;::body$percent1$percent1(Lscala/collection/Set;)Z;)(temp1);
+        $1$ = Lscala/collection/SortedSetLike$class;.(Lscala/collection/SortedSetLike$class;::body$percent11$percent1(Lscala/collection/GenSet;)Z;)(temp1);
       }
     return $1$;
   }
@@ -58,7 +64,7 @@ public abstract class Lscala/collection/SortedSetLike$class; {
     
   }
   
-  private static final Z; body$percent1$percent1(Lscala/collection/Set; that) {
-    return $this.(Lscala/collection/SortedSetLike;::scala$collection$SortedSetLike$$super$subsetOf(Lscala/collection/Set;)Z;)(that);
+  private static final Z; body$percent11$percent1(Lscala/collection/GenSet; that) {
+    return $this.(Lscala/collection/SortedSetLike;::scala$collection$SortedSetLike$$super$subsetOf(Lscala/collection/GenSet;)Z;)(that);
   }
 }

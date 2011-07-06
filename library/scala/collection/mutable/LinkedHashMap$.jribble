@@ -1,12 +1,20 @@
-public final class Lscala/collection/mutable/LinkedHashMap$; extends Lscala/collection/generic/MutableMapFactory; implements Lscala/ScalaObject; {
+public final class Lscala/collection/mutable/LinkedHashMap$; extends Lscala/collection/generic/MutableMapFactory; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/collection/mutable/LinkedHashMap$; MODULE$ = new (Lscala/collection/mutable/LinkedHashMap$;::this()V;)();
   
   public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
-    return (new (Lscala/collection/generic/MapFactory$MapCanBuildFrom;::this(Lscala/collection/generic/MapFactory;)V;)(this));
+    return (new (Lscala/collection/generic/GenMapFactory$MapCanBuildFrom;::this(Lscala/collection/generic/GenMapFactory;)V;)(this));
   }
   
   public Lscala/collection/mutable/LinkedHashMap; empty() {
     return (new (Lscala/collection/mutable/LinkedHashMap;::this()V;)());
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/mutable/LinkedHashMap$;.MODULE$;
+  }
+  
+  public Lscala/collection/GenMap; empty() {
+    return this.(Lscala/collection/mutable/LinkedHashMap$;::empty()Lscala/collection/mutable/LinkedHashMap;)();
   }
   
   public Lscala/collection/Map; empty() {

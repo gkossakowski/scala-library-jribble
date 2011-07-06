@@ -1,9 +1,5 @@
 public abstract class Lscala/Function8$class; {
   
-  public static Ljava/lang/String; toString(Lscala/Function8; $this) {
-    return "<function8>";
-  }
-  
   public static Lscala/Function1; curried(Lscala/Function8; $this) {
     return (new (Lscala/Function8$$anonfun$curried$1;::this(Lscala/Function8;)V;)($this));
   }
@@ -14,6 +10,10 @@ public abstract class Lscala/Function8$class; {
   
   public static Lscala/Function1; tupled(Lscala/Function8; $this) {
     return (new (Lscala/Function8$$anonfun$tupled$1;::this(Lscala/Function8;)V;)($this));
+  }
+  
+  public static Ljava/lang/String; toString(Lscala/Function8; $this) {
+    return "<function8>";
   }
   
   public static V; $init$(Lscala/Function8; $this) {

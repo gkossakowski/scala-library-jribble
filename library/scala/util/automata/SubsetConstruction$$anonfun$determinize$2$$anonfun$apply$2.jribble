@@ -1,0 +1,49 @@
+public final class Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2$$anonfun$apply$2; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final V; apply(Lscala/Tuple2; x$2) {
+    Lscala/Tuple2; temp4 = x$2;
+    if ((temp4 != null))
+      {
+        Lscala/collection/immutable/BitSet; temp6 = temp4.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/BitSet;);
+        Lscala/collection/immutable/BitSet; value = temp6;
+        I; p = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2$$anonfun$apply$2;)$outer$u0020.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2;)indexMap$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/Map;).(Lscala/collection/MapLike;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(value));
+        if ((p != this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2$$anonfun$apply$2;)qDef$1))
+          {
+            this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2$$anonfun$apply$2;)ntrans$1.(Lscala/collection/mutable/HashMap;::update(Ljava/lang/Object;Ljava/lang/Object;)V;)(temp4.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(p));
+          }
+        else
+          {
+            
+          }
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp4));
+      }
+  }
+  
+  private Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2$$anonfun$apply$2;::apply(Lscala/Tuple2;)V;)(v1.<cast>(Lscala/Tuple2;));
+    return Lscala/runtime/BoxedUnit;.UNIT;
+  }
+  
+  private I; qDef$1;
+  
+  private Lscala/collection/mutable/HashMap; ntrans$1;
+  
+  public this(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2; $outer, I; qDef$1, Lscala/collection/mutable/HashMap; ntrans$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2$$anonfun$apply$2;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2$$anonfun$apply$2;)qDef$1 = qDef$1;
+    this.(Lscala/util/automata/SubsetConstruction$$anonfun$determinize$2$$anonfun$apply$2;)ntrans$1 = ntrans$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

@@ -1,4 +1,4 @@
-public class Lscala/xml/dtd/ContentModel$ElemName; extends Lscala/util/regexp/WordExp$Label; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/dtd/ContentModel$ElemName; extends Lscala/util/regexp/WordExp$Label; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   public Lscala/collection/Iterator; productIterator() {
     return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
@@ -6,10 +6,6 @@ public class Lscala/xml/dtd/ContentModel$ElemName; extends Lscala/util/regexp/Wo
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)();
   }
   
   private Ljava/lang/String; name$u0020;
@@ -26,34 +22,44 @@ public class Lscala/xml/dtd/ContentModel$ElemName; extends Lscala/util/regexp/Wo
     return (new (Lscala/xml/dtd/ContentModel$ElemName;::this(Ljava/lang/String;)V;)(name));
   }
   
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp1 = x$1;
-    Z; $43$;
+    Z; $47$;
     if (temp1.<instanceof>(Lscala/xml/dtd/ContentModel$ElemName;))
       {
         Lscala/xml/dtd/ContentModel$ElemName; temp2 = temp1.<cast>(Lscala/xml/dtd/ContentModel$ElemName;);
         Ljava/lang/String; temp3 = temp2.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)();
         Ljava/lang/String; name$1 = temp3;
-        Z; $44$;
+        Z; $48$;
         if (this.(Lscala/xml/dtd/ContentModel$ElemName;::gd1$1(Ljava/lang/String;)Z;)(name$1))
           {
-            $44$ = x$1.<cast>(Lscala/xml/dtd/ContentModel$ElemName;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/String; $49$;
+            Z; $50$;
+            body$percent01: while(true) {
+              $50$ = x$1.<cast>(Lscala/xml/dtd/ContentModel$ElemName;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $48$ = $50$;
           }
         else
           {
-            $44$ = false;
+            $48$ = false;
           }
-        $43$ = $44$;
+        $47$ = $48$;
       }
     else
       {
-        $43$ = false;
+        $47$ = false;
       }
-    return ((this == x$1) || $43$);
+    return ((this == x$1) || $47$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -66,16 +72,16 @@ public class Lscala/xml/dtd/ContentModel$ElemName; extends Lscala/util/regexp/Wo
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp4 = x$1;
-    Ljava/lang/Object; $45$;
+    Ljava/lang/Object; $51$;
     if ((temp4 == 0))
       {
-        $45$ = this.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)();
+        $51$ = this.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)();
       }
     else
       {
         throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
       }
-    return $45$;
+    return $51$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

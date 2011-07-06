@@ -1,4 +1,4 @@
-public final class Lscala/collection/immutable/ListSerializeEnd$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Product; {
+public final class Lscala/collection/immutable/ListSerializeEnd$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public static Lscala/collection/immutable/ListSerializeEnd$; MODULE$ = new (Lscala/collection/immutable/ListSerializeEnd$;::this()V;)();
   
   public Lscala/collection/Iterator; productIterator() {
@@ -7,6 +7,10 @@ public final class Lscala/collection/immutable/ListSerializeEnd$; extends Ljava/
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public final I; hashCode() {
+    return -1720972871;
   }
   
   public final Ljava/lang/String; toString() {
@@ -22,7 +26,7 @@ public final class Lscala/collection/immutable/ListSerializeEnd$; extends Ljava/
   }
   
   public Ljava/lang/Object; productElement(I; x$1) {
-    I; temp49 = x$1;
+    I; temp55 = x$1;
     throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
   }
   

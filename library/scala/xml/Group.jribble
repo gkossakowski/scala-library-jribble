@@ -1,4 +1,4 @@
-public final class Lscala/xml/Group; extends Lscala/xml/Node; implements Lscala/ScalaObject;, Lscala/Product; {
+public final class Lscala/xml/Group; extends Lscala/xml/Node; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   
   public Lscala/collection/Iterator; productIterator() {
@@ -7,10 +7,6 @@ public final class Lscala/xml/Group; extends Lscala/xml/Node; implements Lscala/
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Lscala/collection/Seq; copy$default$1() {
-    return this.(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)();
   }
   
   private Lscala/collection/Seq; nodes$u0020;
@@ -33,7 +29,7 @@ public final class Lscala/xml/Group; extends Lscala/xml/Node; implements Lscala/
     Z; $1$;
     if (temp4.<instanceof>(Lscala/xml/Group;))
       {
-        $1$ = this.(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::sameElements(Lscala/collection/Iterable;)Z;)(temp4.<cast>(Lscala/xml/Group;).(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)());
+        $1$ = this.(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::sameElements(Lscala/collection/GenIterable;)Z;)(temp4.<cast>(Lscala/xml/Group;).(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)());
       }
     else
       {
@@ -72,6 +68,10 @@ public final class Lscala/xml/Group; extends Lscala/xml/Node; implements Lscala/
   
   public Lscala/xml/Group; copy(Lscala/collection/Seq; nodes) {
     return (new (Lscala/xml/Group;::this(Lscala/collection/Seq;)V;)(nodes));
+  }
+  
+  public Lscala/collection/Seq; copy$default$1() {
+    return this.(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)();
   }
   
   public Ljava/lang/String; productPrefix() {

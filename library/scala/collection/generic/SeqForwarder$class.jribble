@@ -13,7 +13,7 @@ public abstract class Lscala/collection/generic/SeqForwarder$class; {
   }
   
   public static Z; isDefinedAt(Lscala/collection/generic/SeqForwarder; $this, I; x) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::isDefinedAt(I;)Z;)(x);
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/GenSeqLike;::isDefinedAt(I;)Z;)(x);
   }
   
   public static I; segmentLength(Lscala/collection/generic/SeqForwarder; $this, Lscala/Function1; p, I; from) {
@@ -21,11 +21,11 @@ public abstract class Lscala/collection/generic/SeqForwarder$class; {
   }
   
   public static I; prefixLength(Lscala/collection/generic/SeqForwarder; $this, Lscala/Function1; p) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::prefixLength(Lscala/Function1;)I;)(p);
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/GenSeqLike;::prefixLength(Lscala/Function1;)I;)(p);
   }
   
   public static I; indexWhere(Lscala/collection/generic/SeqForwarder; $this, Lscala/Function1; p) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::indexWhere(Lscala/Function1;)I;)(p);
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/GenSeqLike;::indexWhere(Lscala/Function1;)I;)(p);
   }
   
   public static I; indexWhere(Lscala/collection/generic/SeqForwarder; $this, Lscala/Function1; p, I; from) {
@@ -33,27 +33,27 @@ public abstract class Lscala/collection/generic/SeqForwarder$class; {
   }
   
   public static I; findIndexOf(Lscala/collection/generic/SeqForwarder; $this, Lscala/Function1; p) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::indexWhere(Lscala/Function1;)I;)(p);
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/GenSeqLike;::indexWhere(Lscala/Function1;)I;)(p);
   }
   
   public static I; indexOf(Lscala/collection/generic/SeqForwarder; $this, Ljava/lang/Object; elem) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::indexOf(Ljava/lang/Object;)I;)(elem);
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/GenSeqLike;::indexOf(Ljava/lang/Object;)I;)(elem);
   }
   
   public static I; indexOf(Lscala/collection/generic/SeqForwarder; $this, Ljava/lang/Object; elem, I; from) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::indexOf(Ljava/lang/Object;I;)I;)(elem, from);
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/GenSeqLike;::indexOf(Ljava/lang/Object;I;)I;)(elem, from);
   }
   
   public static I; lastIndexOf(Lscala/collection/generic/SeqForwarder; $this, Ljava/lang/Object; elem) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::lastIndexOf(Ljava/lang/Object;)I;)(elem);
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/GenSeqLike;::lastIndexOf(Ljava/lang/Object;)I;)(elem);
   }
   
   public static I; lastIndexOf(Lscala/collection/generic/SeqForwarder; $this, Ljava/lang/Object; elem, I; end) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::lastIndexOf(Ljava/lang/Object;I;)I;)(elem, end);
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/GenSeqLike;::lastIndexOf(Ljava/lang/Object;I;)I;)(elem, end);
   }
   
   public static I; lastIndexWhere(Lscala/collection/generic/SeqForwarder; $this, Lscala/Function1; p) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::lastIndexWhere(Lscala/Function1;)I;)(p);
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/GenSeqLike;::lastIndexWhere(Lscala/Function1;)I;)(p);
   }
   
   public static I; lastIndexWhere(Lscala/collection/generic/SeqForwarder; $this, Lscala/Function1; p, I; end) {
@@ -64,44 +64,44 @@ public abstract class Lscala/collection/generic/SeqForwarder$class; {
     return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::reverseIterator()Lscala/collection/Iterator;)();
   }
   
-  public static Z; startsWith(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/Seq; that, I; offset) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::startsWith(Lscala/collection/Seq;I;)Z;)(that, offset);
+  public static Z; startsWith(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/GenSeq; that, I; offset) {
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::startsWith(Lscala/collection/GenSeq;I;)Z;)(that, offset);
   }
   
-  public static Z; startsWith(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/Seq; that) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::startsWith(Lscala/collection/Seq;)Z;)(that);
+  public static Z; startsWith(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/GenSeq; that) {
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/GenSeqLike;::startsWith(Lscala/collection/GenSeq;)Z;)(that);
   }
   
-  public static Z; endsWith(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/Seq; that) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::endsWith(Lscala/collection/Seq;)Z;)(that);
+  public static Z; endsWith(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/GenSeq; that) {
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::endsWith(Lscala/collection/GenSeq;)Z;)(that);
   }
   
-  public static I; indexOfSlice(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/Seq; that) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::indexOfSlice(Lscala/collection/Seq;)I;)(that);
+  public static I; indexOfSlice(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/GenSeq; that) {
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::indexOfSlice(Lscala/collection/GenSeq;)I;)(that);
   }
   
-  public static I; indexOfSlice(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/Seq; that, I; from) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::indexOfSlice(Lscala/collection/Seq;I;)I;)(that, from);
+  public static I; indexOfSlice(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/GenSeq; that, I; from) {
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::indexOfSlice(Lscala/collection/GenSeq;I;)I;)(that, from);
   }
   
-  public static I; lastIndexOfSlice(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/Seq; that) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::lastIndexOfSlice(Lscala/collection/Seq;)I;)(that);
+  public static I; lastIndexOfSlice(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/GenSeq; that) {
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::lastIndexOfSlice(Lscala/collection/GenSeq;)I;)(that);
   }
   
-  public static I; lastIndexOfSlice(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/Seq; that, I; end) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::lastIndexOfSlice(Lscala/collection/Seq;I;)I;)(that, end);
+  public static I; lastIndexOfSlice(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/GenSeq; that, I; end) {
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::lastIndexOfSlice(Lscala/collection/GenSeq;I;)I;)(that, end);
   }
   
-  public static Z; containsSlice(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/Seq; that) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::containsSlice(Lscala/collection/Seq;)Z;)(that);
+  public static Z; containsSlice(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/GenSeq; that) {
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::containsSlice(Lscala/collection/GenSeq;)Z;)(that);
   }
   
   public static Z; contains(Lscala/collection/generic/SeqForwarder; $this, Ljava/lang/Object; elem) {
     return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::contains(Ljava/lang/Object;)Z;)(elem);
   }
   
-  public static Z; corresponds(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/Seq; that, Lscala/Function2; p) {
-    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::corresponds(Lscala/collection/Seq;Lscala/Function2;)Z;)(that, p);
+  public static Z; corresponds(Lscala/collection/generic/SeqForwarder; $this, Lscala/collection/GenSeq; that, Lscala/Function2; p) {
+    return $this.(Lscala/collection/generic/SeqForwarder;::underlying()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::corresponds(Lscala/collection/GenSeq;Lscala/Function2;)Z;)(that, p);
   }
   
   public static Lscala/collection/immutable/Range; indices(Lscala/collection/generic/SeqForwarder; $this) {

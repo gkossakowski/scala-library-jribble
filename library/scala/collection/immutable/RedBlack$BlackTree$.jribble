@@ -1,20 +1,20 @@
-public final class Lscala/collection/immutable/RedBlack$BlackTree$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/collection/immutable/RedBlack$BlackTree$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   
   public final Ljava/lang/String; toString() {
     return "BlackTree";
   }
   
   public Lscala/Option; unapply(Lscala/collection/immutable/RedBlack$BlackTree; x$0) {
-    Lscala/Option; $59$;
+    Lscala/Option; $114$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $59$ = Lscala/None$;.MODULE$;
+        $114$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $59$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::key()Ljava/lang/Object;)(), x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::value()Ljava/lang/Object;)(), x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::right()Lscala/collection/immutable/RedBlack$Tree;)()))));
+        $114$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::key()Ljava/lang/Object;)(), x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::value()Ljava/lang/Object;)(), x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::right()Lscala/collection/immutable/RedBlack$Tree;)()))));
       }
-    return $59$;
+    return $114$;
   }
   
   public Lscala/collection/immutable/RedBlack$BlackTree; apply(Ljava/lang/Object; key, Ljava/lang/Object; value, Lscala/collection/immutable/RedBlack$Tree; left, Lscala/collection/immutable/RedBlack$Tree; right) {

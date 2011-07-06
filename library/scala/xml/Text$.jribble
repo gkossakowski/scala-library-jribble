@@ -1,4 +1,4 @@
-public final class Lscala/xml/Text$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject; {
+public final class Lscala/xml/Text$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/Text$; MODULE$ = new (Lscala/xml/Text$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -20,6 +20,10 @@ public final class Lscala/xml/Text$; extends Lscala/runtime/AbstractFunction1; i
   
   public Lscala/xml/Text; apply(Ljava/lang/String; _data) {
     return (new (Lscala/xml/Text;::this(Ljava/lang/String;)V;)(_data));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/xml/Text$;.MODULE$;
   }
   
   public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {

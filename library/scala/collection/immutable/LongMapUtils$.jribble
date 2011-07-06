@@ -1,50 +1,55 @@
-public final class Lscala/collection/immutable/LongMapUtils$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/collection/immutable/LongMapUtils$; extends Ljava/lang/Object; implements Lscala/collection/generic/BitOperations$Long;, Lscala/ScalaObject; {
   public static Lscala/collection/immutable/LongMapUtils$; MODULE$ = new (Lscala/collection/immutable/LongMapUtils$;::this()V;)();
   
   public Z; zero(J; i, J; mask) {
-    return ((i & mask) == 0L);
+    return Lscala/collection/generic/BitOperations$Long$class;.(Lscala/collection/generic/BitOperations$Long$class;::zero(Lscala/collection/generic/BitOperations$Long;J;J;)Z;)(this, i, mask);
   }
   
   public J; mask(J; i, J; mask) {
-    return (i & (this.(Lscala/collection/immutable/LongMapUtils$;::complement(J;)J;)((mask - 1)) ^ mask));
+    return Lscala/collection/generic/BitOperations$Long$class;.(Lscala/collection/generic/BitOperations$Long$class;::mask(Lscala/collection/generic/BitOperations$Long;J;J;)J;)(this, i, mask);
   }
   
   public Z; hasMatch(J; key, J; prefix, J; m) {
-    return (this.(Lscala/collection/immutable/LongMapUtils$;::mask(J;J;)J;)(key, m) == prefix);
+    return Lscala/collection/generic/BitOperations$Long$class;.(Lscala/collection/generic/BitOperations$Long$class;::hasMatch(Lscala/collection/generic/BitOperations$Long;J;J;J;)Z;)(this, key, prefix, m);
   }
   
   public Z; unsignedCompare(J; i, J; j) {
-    return (((i < j) ^ (i < 0)) ^ (j < 0));
+    return Lscala/collection/generic/BitOperations$Long$class;.(Lscala/collection/generic/BitOperations$Long$class;::unsignedCompare(Lscala/collection/generic/BitOperations$Long;J;J;)Z;)(this, i, j);
   }
   
   public Z; shorter(J; m1, J; m2) {
-    return this.(Lscala/collection/immutable/LongMapUtils$;::unsignedCompare(J;J;)Z;)(m2, m1);
+    return Lscala/collection/generic/BitOperations$Long$class;.(Lscala/collection/generic/BitOperations$Long$class;::shorter(Lscala/collection/generic/BitOperations$Long;J;J;)Z;)(this, m1, m2);
   }
   
   public J; complement(J; i) {
-    return (-1 ^ i);
+    return Lscala/collection/generic/BitOperations$Long$class;.(Lscala/collection/generic/BitOperations$Long$class;::complement(Lscala/collection/generic/BitOperations$Long;J;)J;)(this, i);
   }
   
-  public J; branchMask(J; i, J; j) {
-    return this.(Lscala/collection/immutable/LongMapUtils$;::highestOneBit(J;)J;)((i ^ j));
+  public Lscala/collection/immutable/IndexedSeq; bits(J; num) {
+    return Lscala/collection/generic/BitOperations$Long$class;.(Lscala/collection/generic/BitOperations$Long$class;::bits(Lscala/collection/generic/BitOperations$Long;J;)Lscala/collection/immutable/IndexedSeq;)(this, num);
+  }
+  
+  public Ljava/lang/String; bitString(J; num, Ljava/lang/String; sep) {
+    return Lscala/collection/generic/BitOperations$Long$class;.(Lscala/collection/generic/BitOperations$Long$class;::bitString(Lscala/collection/generic/BitOperations$Long;J;Ljava/lang/String;)Ljava/lang/String;)(this, num, sep);
   }
   
   public J; highestOneBit(J; j) {
-    J; i = j;
-    i = (i | (i >>> 1));
-    i = (i | (i >>> 2));
-    i = (i | (i >>> 4));
-    i = (i | (i >>> 8));
-    i = (i | (i >>> 16));
-    i = (i | (i >>> 32));
-    return (i - (i >> 1));
+    return Lscala/collection/generic/BitOperations$Long$class;.(Lscala/collection/generic/BitOperations$Long$class;::highestOneBit(Lscala/collection/generic/BitOperations$Long;J;)J;)(this, j);
+  }
+  
+  public Ljava/lang/String; bitString$default$2() {
+    return Lscala/collection/generic/BitOperations$Long$class;.(Lscala/collection/generic/BitOperations$Long$class;::bitString$default$2(Lscala/collection/generic/BitOperations$Long;)Ljava/lang/String;)(this);
+  }
+  
+  public J; branchMask(J; i, J; j) {
+    return this.(Lscala/collection/generic/BitOperations$Long;::highestOneBit(J;)J;)((i ^ j));
   }
   
   public Lscala/collection/immutable/LongMap; join(J; p1, Lscala/collection/immutable/LongMap; t1, J; p2, Lscala/collection/immutable/LongMap; t2) {
     J; m = this.(Lscala/collection/immutable/LongMapUtils$;::branchMask(J;J;)J;)(p1, p2);
-    J; p = this.(Lscala/collection/immutable/LongMapUtils$;::mask(J;J;)J;)(p1, m);
+    J; p = this.(Lscala/collection/generic/BitOperations$Long;::mask(J;J;)J;)(p1, m);
     Lscala/collection/immutable/LongMap; $1$;
-    if (this.(Lscala/collection/immutable/LongMapUtils$;::zero(J;J;)Z;)(p1, m))
+    if (this.(Lscala/collection/generic/BitOperations$Long;::zero(J;J;)Z;)(p1, m))
       {
         $1$ = (new (Lscala/collection/immutable/LongMap$Bin;::this(J;J;Lscala/collection/immutable/LongMap;Lscala/collection/immutable/LongMap;)V;)(p, m, t1, t2));
       }
@@ -56,30 +61,41 @@ public final class Lscala/collection/immutable/LongMapUtils$; extends Ljava/lang
   }
   
   public Lscala/collection/immutable/LongMap; bin(J; prefix, J; mask, Lscala/collection/immutable/LongMap; left, Lscala/collection/immutable/LongMap; right) {
-    Lscala/collection/immutable/LongMap; tp1 = left;
-    Lscala/collection/immutable/LongMap; tp2 = right;
+    Lscala/Tuple2; temp1 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(left, right));
     Lscala/collection/immutable/LongMap; $2$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/LongMap$Nil$;.MODULE$, tp2))
+    if ((temp1 != null))
       {
-        $2$ = tp1;
-      }
-    else
-      {
+        Lscala/collection/immutable/LongMap; temp2 = temp1.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/LongMap;);
+        Lscala/collection/immutable/LongMap; temp3 = temp1.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/LongMap;);
         Lscala/collection/immutable/LongMap; $3$;
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/LongMap$Nil$;.MODULE$, tp1))
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/LongMap$Nil$;.MODULE$, temp3))
           {
-            $3$ = tp2;
+            $3$ = temp2;
           }
         else
           {
-            $3$ = (new (Lscala/collection/immutable/LongMap$Bin;::this(J;J;Lscala/collection/immutable/LongMap;Lscala/collection/immutable/LongMap;)V;)(prefix, mask, tp1, tp2));
+            Lscala/collection/immutable/LongMap; $4$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/LongMap$Nil$;.MODULE$, temp2))
+              {
+                $4$ = temp3;
+              }
+            else
+              {
+                $4$ = (new (Lscala/collection/immutable/LongMap$Bin;::this(J;J;Lscala/collection/immutable/LongMap;Lscala/collection/immutable/LongMap;)V;)(prefix, mask, temp2, temp3));
+              }
+            $3$ = $4$;
           }
         $2$ = $3$;
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp1));
       }
     return $2$;
   }
   
   public this() {
     (Ljava/lang/Object;::super()V;)();
+    Lscala/collection/generic/BitOperations$Long$class;.(Lscala/collection/generic/BitOperations$Long$class;::$init$(Lscala/collection/generic/BitOperations$Long;)V;)(this);
   }
 }

@@ -1,0 +1,36 @@
+public final class Lscala/collection/immutable/RedBlack$NonEmpty$$anonfun$1; extends Lscala/runtime/AbstractFunction2; implements Lscala/Serializable; {
+  
+  public final Lscala/collection/immutable/RedBlack$Tree; apply(Lscala/collection/immutable/RedBlack$Tree; tree, Lscala/collection/immutable/RedBlack$NonEmpty; node) {
+    Lscala/collection/immutable/RedBlack$Tree; $3$;
+    if (this.(Lscala/collection/immutable/RedBlack$NonEmpty$$anonfun$1;)leftMost$1)
+      {
+        $3$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty$$anonfun$1;)$outer$u0020.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$balanceLeft(Z;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(node.(Lscala/collection/immutable/RedBlack$Tree;::isBlack()Z;)(), node.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), node.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), tree, node.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)());
+      }
+    else
+      {
+        $3$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty$$anonfun$1;)$outer$u0020.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$balanceRight(Z;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(node.(Lscala/collection/immutable/RedBlack$Tree;::isBlack()Z;)(), node.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), node.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), node.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)(), tree);
+      }
+    return $3$;
+  }
+  
+  private Lscala/collection/immutable/RedBlack$NonEmpty; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {
+    return this.(Lscala/collection/immutable/RedBlack$NonEmpty$$anonfun$1;::apply(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$NonEmpty;)Lscala/collection/immutable/RedBlack$Tree;)(v1.<cast>(Lscala/collection/immutable/RedBlack$Tree;), v2.<cast>(Lscala/collection/immutable/RedBlack$NonEmpty;));
+  }
+  
+  private Z; leftMost$1;
+  
+  public this(Lscala/collection/immutable/RedBlack$NonEmpty; $outer, Z; leftMost$1) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/immutable/RedBlack$NonEmpty$$anonfun$1;)$outer$u0020 = $outer;
+      }
+    this.(Lscala/collection/immutable/RedBlack$NonEmpty$$anonfun$1;)leftMost$1 = leftMost$1;
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
+  }
+}

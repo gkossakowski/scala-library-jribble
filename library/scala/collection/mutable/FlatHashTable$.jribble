@@ -1,0 +1,29 @@
+public final class Lscala/collection/mutable/FlatHashTable$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/mutable/FlatHashTable$; MODULE$ = new (Lscala/collection/mutable/FlatHashTable$;::this()V;)();
+  
+  public I; defaultLoadFactor() {
+    return 450;
+  }
+  
+  public final I; loadFactorDenum() {
+    return 1000;
+  }
+  
+  public I; initialSize() {
+    return 16;
+  }
+  
+  public I; sizeForThreshold(I; size, I; _loadFactor) {
+    return ((size.<cast>(J;) * this.(Lscala/collection/mutable/FlatHashTable$;::loadFactorDenum()I;)()) / _loadFactor).<cast>(I;);
+  }
+  
+  public I; newThreshold(I; _loadFactor, I; size) {
+    I; lf = _loadFactor;
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;Lscala/Function0;)V;)((lf < (this.(Lscala/collection/mutable/FlatHashTable$;::loadFactorDenum()I;)() / 2)), (new (Lscala/collection/mutable/FlatHashTable$$anonfun$newThreshold$1;::this()V;)()));
+    return ((size.<cast>(J;) * lf) / this.(Lscala/collection/mutable/FlatHashTable$;::loadFactorDenum()I;)()).<cast>(I;);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

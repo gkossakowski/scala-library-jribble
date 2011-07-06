@@ -1,4 +1,4 @@
-public class Lscala/xml/dtd/DocType; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/xml/dtd/DocType; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public final static Lscala/Function1; tupled() { return Lscala/xml/dtd/DocType$;.MODULE$.(Lscala/runtime/AbstractFunction3;::tupled()Lscala/Function1;)(); }
   public final static Lscala/Function1; curry() { return Lscala/xml/dtd/DocType$;.MODULE$.(Lscala/runtime/AbstractFunction3;::curry()Lscala/Function1;)(); }
   public final static Lscala/Function1; curried() { return Lscala/xml/dtd/DocType$;.MODULE$.(Lscala/runtime/AbstractFunction3;::curried()Lscala/Function1;)(); }
@@ -10,18 +10,6 @@ public class Lscala/xml/dtd/DocType; extends Ljava/lang/Object; implements Lscal
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Lscala/collection/Seq; copy$default$3() {
-    return this.(Lscala/xml/dtd/DocType;::intSubset()Lscala/collection/Seq;)();
-  }
-  
-  public Lscala/xml/dtd/ExternalID; copy$default$2() {
-    return this.(Lscala/xml/dtd/DocType;::extID()Lscala/xml/dtd/ExternalID;)();
-  }
-  
-  public Ljava/lang/String; copy$default$1() {
-    return this.(Lscala/xml/dtd/DocType;::name()Ljava/lang/String;)();
   }
   
   private Ljava/lang/String; name$u0020;
@@ -50,6 +38,18 @@ public class Lscala/xml/dtd/DocType; extends Ljava/lang/Object; implements Lscal
     return (new (Lscala/xml/dtd/DocType;::this(Ljava/lang/String;Lscala/xml/dtd/ExternalID;Lscala/collection/Seq;)V;)(name, extID, intSubset));
   }
   
+  public Lscala/collection/Seq; copy$default$3() {
+    return this.(Lscala/xml/dtd/DocType;::intSubset()Lscala/collection/Seq;)();
+  }
+  
+  public Lscala/xml/dtd/ExternalID; copy$default$2() {
+    return this.(Lscala/xml/dtd/DocType;::extID()Lscala/xml/dtd/ExternalID;)();
+  }
+  
+  public Ljava/lang/String; copy$default$1() {
+    return this.(Lscala/xml/dtd/DocType;::name()Ljava/lang/String;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -63,13 +63,21 @@ public class Lscala/xml/dtd/DocType; extends Ljava/lang/Object; implements Lscal
         Ljava/lang/String; temp3 = temp2.(Lscala/xml/dtd/DocType;::name()Ljava/lang/String;)();
         Lscala/xml/dtd/ExternalID; temp4 = temp2.(Lscala/xml/dtd/DocType;::extID()Lscala/xml/dtd/ExternalID;)();
         Lscala/collection/Seq; temp5 = temp2.(Lscala/xml/dtd/DocType;::intSubset()Lscala/collection/Seq;)();
-        Lscala/collection/Seq; intSubset$1 = temp5;
-        Lscala/xml/dtd/ExternalID; extID$1 = temp4;
         Ljava/lang/String; name$1 = temp3;
+        Lscala/xml/dtd/ExternalID; extID$1 = temp4;
+        Lscala/collection/Seq; intSubset$1 = temp5;
         Z; $2$;
         if (this.(Lscala/xml/dtd/DocType;::gd1$1(Ljava/lang/String;Lscala/xml/dtd/ExternalID;Lscala/collection/Seq;)Z;)(name$1, extID$1, intSubset$1))
           {
-            $2$ = x$1.<cast>(Lscala/xml/dtd/DocType;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/String; $3$;
+            Lscala/xml/dtd/ExternalID; $4$;
+            Lscala/collection/Seq; $5$;
+            Z; $6$;
+            body$percent01: while(true) {
+              $6$ = x$1.<cast>(Lscala/xml/dtd/DocType;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $2$ = $6$;
           }
         else
           {
@@ -94,21 +102,21 @@ public class Lscala/xml/dtd/DocType; extends Ljava/lang/Object; implements Lscal
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp6 = x$1;
-    I; $3$ = temp6;
-    Ljava/lang/Object; $4$;
-    switch ($3$) {
-      0: {
-        $4$ = this.(Lscala/xml/dtd/DocType;::name()Ljava/lang/String;)();
-        break;
-      }
-      
+    I; $7$ = temp6;
+    Ljava/lang/Object; $8$;
+    switch ($7$) {
       1: {
-        $4$ = this.(Lscala/xml/dtd/DocType;::extID()Lscala/xml/dtd/ExternalID;)();
+        $8$ = this.(Lscala/xml/dtd/DocType;::extID()Lscala/xml/dtd/ExternalID;)();
         break;
       }
       
       2: {
-        $4$ = this.(Lscala/xml/dtd/DocType;::intSubset()Lscala/collection/Seq;)();
+        $8$ = this.(Lscala/xml/dtd/DocType;::intSubset()Lscala/collection/Seq;)();
+        break;
+      }
+      
+      0: {
+        $8$ = this.(Lscala/xml/dtd/DocType;::name()Ljava/lang/String;)();
         break;
       }
       
@@ -118,7 +126,7 @@ public class Lscala/xml/dtd/DocType; extends Ljava/lang/Object; implements Lscal
       }
       
     }
-    return $4$;
+    return $8$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {
@@ -126,16 +134,16 @@ public class Lscala/xml/dtd/DocType; extends Ljava/lang/Object; implements Lscal
   }
   
   private final Ljava/lang/String; intString$1() {
-    Ljava/lang/String; $5$;
+    Ljava/lang/String; $9$;
     if (this.(Lscala/xml/dtd/DocType;::intSubset()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::isEmpty()Z;)())
       {
-        $5$ = "";
+        $9$ = "";
       }
     else
       {
-        $5$ = this.(Lscala/xml/dtd/DocType;::intSubset()Lscala/collection/Seq;)().(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)("[", "", "]");
+        $9$ = this.(Lscala/xml/dtd/DocType;::intSubset()Lscala/collection/Seq;)().(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)("[", "", "]");
       }
-    return $5$;
+    return $9$;
   }
   
   private final Z; gd1$1(Ljava/lang/String; x$1, Lscala/xml/dtd/ExternalID; x$2, Lscala/collection/Seq; x$3) {

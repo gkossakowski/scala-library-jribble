@@ -1,5 +1,81 @@
-public final class Lscala/collection/immutable/NumericRange$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/collection/immutable/NumericRange$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/collection/immutable/NumericRange$; MODULE$ = new (Lscala/collection/immutable/NumericRange$;::this()V;)();
+  
+  public I; count(Ljava/lang/Object; start, Ljava/lang/Object; end, Ljava/lang/Object; step, Z; isInclusive, Lscala/math/Integral; num) {
+    Ljava/lang/Object; zero = num.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)();
+    Z; upward = num.(Lscala/math/Ordering;::lt(Ljava/lang/Object;Ljava/lang/Object;)Z;)(start, end);
+    Z; posStep = num.(Lscala/math/Ordering;::gt(Ljava/lang/Object;Ljava/lang/Object;)Z;)(step, zero);
+    I; $9$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(step, zero))
+      {
+        throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)("step cannot be 0."));
+      }
+    else
+      {
+        I; $10$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(start, end))
+          {
+            I; $11$;
+            if (isInclusive)
+              {
+                $11$ = 1;
+              }
+            else
+              {
+                $11$ = 0;
+              }
+            $10$ = $11$;
+          }
+        else
+          {
+            I; $12$;
+            if ((upward != posStep))
+              {
+                $12$ = 0;
+              }
+            else
+              {
+                Ljava/lang/Object; diff = num.(Lscala/math/Numeric;::minus(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(end, start);
+                J; jumps = num.(Lscala/math/Numeric;::toLong(Ljava/lang/Object;)J;)(num.(Lscala/math/Integral;::quot(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(diff, step));
+                J; remainder = num.(Lscala/math/Numeric;::toLong(Ljava/lang/Object;)J;)(num.(Lscala/math/Integral;::rem(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(diff, step));
+                I; $13$;
+                if ((!(isInclusive) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(zero, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(remainder))))
+                  {
+                    $13$ = 0;
+                  }
+                else
+                  {
+                    $13$ = 1;
+                  }
+                J; longCount = (jumps + $13$);
+                Z; isOverflow = ((longCount == 0) && (num.(Lscala/math/Ordering;::lt(Ljava/lang/Object;Ljava/lang/Object;)Z;)(num.(Lscala/math/Numeric;::plus(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(start, step), end) == upward));
+                if ((((longCount > 2147483647) || (longCount < 0L)) || isOverflow))
+                  {
+                    Ljava/lang/String; $14$;
+                    if (isInclusive)
+                      {
+                        $14$ = "to";
+                      }
+                    else
+                      {
+                        $14$ = "until";
+                      }
+                    Ljava/lang/String; word = $14$;
+                    Ljava/lang/String; descr = Lscala/collection/immutable/List$;.MODULE$.(Lscala/collection/immutable/List$;::apply(Lscala/collection/Seq;)Lscala/collection/immutable/List;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{start, word, end, "by", step})).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;)Ljava/lang/String;)(" ");
+                    throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)((descr + ": seqs cannot contain more than Int.MaxValue elements.")));
+                  }
+                else
+                  {
+                    
+                  }
+                $12$ = longCount.<cast>(I;);
+              }
+            $10$ = $12$;
+          }
+        $9$ = $10$;
+      }
+    return $9$;
+  }
   
   public Lscala/collection/immutable/NumericRange$Exclusive; apply(Ljava/lang/Object; start, Ljava/lang/Object; end, Ljava/lang/Object; step, Lscala/math/Integral; num) {
     return (new (Lscala/collection/immutable/NumericRange$Exclusive;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)V;)(start, end, step, num));
@@ -7,6 +83,10 @@ public final class Lscala/collection/immutable/NumericRange$; extends Ljava/lang
   
   public Lscala/collection/immutable/NumericRange$Inclusive; inclusive(Ljava/lang/Object; start, Ljava/lang/Object; end, Ljava/lang/Object; step, Lscala/math/Integral; num) {
     return (new (Lscala/collection/immutable/NumericRange$Inclusive;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)V;)(start, end, step, num));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/immutable/NumericRange$;.MODULE$;
   }
   
   public this() {

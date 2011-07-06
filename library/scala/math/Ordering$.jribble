@@ -1,20 +1,24 @@
-public final class Lscala/math/Ordering$; extends Ljava/lang/Object; implements Lscala/math/LowPriorityOrderingImplicits;, Lscala/ScalaObject; {
+public final class Lscala/math/Ordering$; extends Ljava/lang/Object; implements Lscala/math/LowPriorityOrderingImplicits;, Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/math/Ordering$; MODULE$ = new (Lscala/math/Ordering$;::this()V;)();
   
-  public Lscala/math/Ordering; ordered() {
-    return Lscala/math/LowPriorityOrderingImplicits$class;.(Lscala/math/LowPriorityOrderingImplicits$class;::ordered(Lscala/math/LowPriorityOrderingImplicits;)Lscala/math/Ordering;)(this);
+  public Lscala/math/Ordering; ordered(Lscala/Function1; evidence$1) {
+    return Lscala/math/LowPriorityOrderingImplicits$class;.(Lscala/math/LowPriorityOrderingImplicits$class;::ordered(Lscala/math/LowPriorityOrderingImplicits;Lscala/Function1;)Lscala/math/Ordering;)(this, evidence$1);
+  }
+  
+  public Lscala/math/Ordering; comparatorToOrdering(Ljava/util/Comparator; cmp) {
+    return Lscala/math/LowPriorityOrderingImplicits$class;.(Lscala/math/LowPriorityOrderingImplicits$class;::comparatorToOrdering(Lscala/math/LowPriorityOrderingImplicits;Ljava/util/Comparator;)Lscala/math/Ordering;)(this, cmp);
   }
   
   public Lscala/math/Ordering; apply(Lscala/math/Ordering; ord) {
     return ord;
   }
   
-  public Lscala/math/Ordering; fromLessThan(Lscala/Function2; cmp$1) {
-    return (new (Lscala/math/Ordering$$anon$5;::this(Lscala/Function2;)V;)(cmp$1));
+  public Lscala/math/Ordering; fromLessThan(Lscala/Function2; cmp$2) {
+    return (new (Lscala/math/Ordering$$anon$7;::this(Lscala/Function2;)V;)(cmp$2));
   }
   
-  public Lscala/math/Ordering; by(Lscala/Function1; f$2, Lscala/math/Ordering; evidence$1$1) {
-    return this.(Lscala/math/Ordering$;::fromLessThan(Lscala/Function2;)Lscala/math/Ordering;)((new (Lscala/math/Ordering$$anonfun$by$1;::this(Lscala/Function1;Lscala/math/Ordering;)V;)(f$2, evidence$1$1)));
+  public Lscala/math/Ordering; by(Lscala/Function1; f$2, Lscala/math/Ordering; ord$4) {
+    return this.(Lscala/math/Ordering$;::fromLessThan(Lscala/Function2;)Lscala/math/Ordering;)((new (Lscala/math/Ordering$$anonfun$by$1;::this(Lscala/Function1;Lscala/math/Ordering;)V;)(f$2, ord$4)));
   }
   
   public Lscala/math/Ordering; Option(Lscala/math/Ordering; ord$2) {
@@ -22,39 +26,43 @@ public final class Lscala/math/Ordering$; extends Ljava/lang/Object; implements 
   }
   
   public Lscala/math/Ordering; Iterable(Lscala/math/Ordering; ord$1) {
-    return (new (Lscala/math/Ordering$$anon$6;::this(Lscala/math/Ordering;)V;)(ord$1));
+    return (new (Lscala/math/Ordering$$anon$8;::this(Lscala/math/Ordering;)V;)(ord$1));
   }
   
   public Lscala/math/Ordering; Tuple2(Lscala/math/Ordering; ord1$8, Lscala/math/Ordering; ord2$8) {
-    return (new (Lscala/math/Ordering$$anon$7;::this(Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$8, ord2$8));
+    return (new (Lscala/math/Ordering$$anon$9;::this(Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$8, ord2$8));
   }
   
   public Lscala/math/Ordering; Tuple3(Lscala/math/Ordering; ord1$7, Lscala/math/Ordering; ord2$7, Lscala/math/Ordering; ord3$7) {
-    return (new (Lscala/math/Ordering$$anon$8;::this(Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$7, ord2$7, ord3$7));
+    return (new (Lscala/math/Ordering$$anon$10;::this(Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$7, ord2$7, ord3$7));
   }
   
   public Lscala/math/Ordering; Tuple4(Lscala/math/Ordering; ord1$6, Lscala/math/Ordering; ord2$6, Lscala/math/Ordering; ord3$6, Lscala/math/Ordering; ord4$6) {
-    return (new (Lscala/math/Ordering$$anon$9;::this(Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$6, ord2$6, ord3$6, ord4$6));
+    return (new (Lscala/math/Ordering$$anon$11;::this(Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$6, ord2$6, ord3$6, ord4$6));
   }
   
   public Lscala/math/Ordering; Tuple5(Lscala/math/Ordering; ord1$5, Lscala/math/Ordering; ord2$5, Lscala/math/Ordering; ord3$5, Lscala/math/Ordering; ord4$5, Lscala/math/Ordering; ord5$5) {
-    return (new (Lscala/math/Ordering$$anon$10;::this(Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$5, ord2$5, ord3$5, ord4$5, ord5$5));
+    return (new (Lscala/math/Ordering$$anon$12;::this(Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$5, ord2$5, ord3$5, ord4$5, ord5$5));
   }
   
   public Lscala/math/Ordering; Tuple6(Lscala/math/Ordering; ord1$4, Lscala/math/Ordering; ord2$4, Lscala/math/Ordering; ord3$4, Lscala/math/Ordering; ord4$4, Lscala/math/Ordering; ord5$4, Lscala/math/Ordering; ord6$4) {
-    return (new (Lscala/math/Ordering$$anon$11;::this(Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$4, ord2$4, ord3$4, ord4$4, ord5$4, ord6$4));
+    return (new (Lscala/math/Ordering$$anon$13;::this(Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$4, ord2$4, ord3$4, ord4$4, ord5$4, ord6$4));
   }
   
   public Lscala/math/Ordering; Tuple7(Lscala/math/Ordering; ord1$3, Lscala/math/Ordering; ord2$3, Lscala/math/Ordering; ord3$3, Lscala/math/Ordering; ord4$3, Lscala/math/Ordering; ord5$3, Lscala/math/Ordering; ord6$3, Lscala/math/Ordering; ord7$3) {
-    return (new (Lscala/math/Ordering$$anon$12;::this(Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$3, ord2$3, ord3$3, ord4$3, ord5$3, ord6$3, ord7$3));
+    return (new (Lscala/math/Ordering$$anon$14;::this(Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$3, ord2$3, ord3$3, ord4$3, ord5$3, ord6$3, ord7$3));
   }
   
   public Lscala/math/Ordering; Tuple8(Lscala/math/Ordering; ord1$2, Lscala/math/Ordering; ord2$2, Lscala/math/Ordering; ord3$2, Lscala/math/Ordering; ord4$2, Lscala/math/Ordering; ord5$2, Lscala/math/Ordering; ord6$2, Lscala/math/Ordering; ord7$2, Lscala/math/Ordering; ord8$2) {
-    return (new (Lscala/math/Ordering$$anon$13;::this(Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$2, ord2$2, ord3$2, ord4$2, ord5$2, ord6$2, ord7$2, ord8$2));
+    return (new (Lscala/math/Ordering$$anon$15;::this(Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$2, ord2$2, ord3$2, ord4$2, ord5$2, ord6$2, ord7$2, ord8$2));
   }
   
   public Lscala/math/Ordering; Tuple9(Lscala/math/Ordering; ord1$1, Lscala/math/Ordering; ord2$1, Lscala/math/Ordering; ord3$1, Lscala/math/Ordering; ord4$1, Lscala/math/Ordering; ord5$1, Lscala/math/Ordering; ord6$1, Lscala/math/Ordering; ord7$1, Lscala/math/Ordering; ord8$1, Lscala/math/Ordering; ord9$1) {
-    return (new (Lscala/math/Ordering$$anon$14;::this(Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$1, ord2$1, ord3$1, ord4$1, ord5$1, ord6$1, ord7$1, ord8$1, ord9$1));
+    return (new (Lscala/math/Ordering$$anon$16;::this(Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;Lscala/math/Ordering;)V;)(ord1$1, ord2$1, ord3$1, ord4$1, ord5$1, ord6$1, ord7$1, ord8$1, ord9$1));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/math/Ordering$;.MODULE$;
   }
   
   public this() {
