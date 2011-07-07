@@ -19,10 +19,6 @@ public abstract class Lscala/collection/immutable/IntMap; extends Ljava/lang/Obj
     return Lscala/collection/immutable/Map$class;.(Lscala/collection/immutable/Map$class;::withDefaultValue(Lscala/collection/immutable/Map;Ljava/lang/Object;)Lscala/collection/immutable/Map;)(this, d);
   }
   
-  public Lscala/collection/parallel/Combiner; parCombiner() {
-    return Lscala/collection/immutable/MapLike$class;.(Lscala/collection/immutable/MapLike$class;::parCombiner(Lscala/collection/immutable/MapLike;)Lscala/collection/parallel/Combiner;)(this);
-  }
-  
   public Lscala/collection/immutable/Map; $plus(Lscala/Tuple2; elem1, Lscala/Tuple2; elem2, Lscala/collection/Seq; elems) {
     return Lscala/collection/immutable/MapLike$class;.(Lscala/collection/immutable/MapLike$class;::$plus(Lscala/collection/immutable/MapLike;Lscala/Tuple2;Lscala/Tuple2;Lscala/collection/Seq;)Lscala/collection/immutable/Map;)(this, elem1, elem2, elems);
   }
