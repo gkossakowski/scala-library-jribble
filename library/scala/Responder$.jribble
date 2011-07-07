@@ -6,7 +6,7 @@ public final class Lscala/Responder$; extends Ljava/lang/Object; implements Lsca
   }
   
   public Z; exec(Lscala/Function0; x) {
-    x.(Lscala/Function0;::apply()Ljava/lang/Object;)();
+    x.(Lscala/Function0;::apply$mcV$sp()V;)();
     return true;
   }
   
@@ -22,7 +22,7 @@ public final class Lscala/Responder$; extends Ljava/lang/Object; implements Lsca
   
   public Lscala/Responder; loopWhile(Lscala/Function0; cond$1, Lscala/Responder; r$2) {
     Lscala/Responder; $1$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(cond$1.(Lscala/Function0;::apply()Ljava/lang/Object;)()))
+    if (cond$1.(Lscala/Function0;::apply$mcZ$sp()Z;)())
       {
         $1$ = r$2.(Lscala/Responder;::flatMap(Lscala/Function1;)Lscala/Responder;)((new (Lscala/Responder$$anonfun$loopWhile$1;::this(Lscala/Function0;Lscala/Responder;)V;)(cond$1, r$2)));
       }

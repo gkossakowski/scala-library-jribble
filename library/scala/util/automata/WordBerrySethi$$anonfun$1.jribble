@@ -1,14 +1,28 @@
-public final class Lscala/util/automata/WordBerrySethi$$anonfun$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+public final class Lscala/util/automata/WordBerrySethi$$anonfun$1; extends Lscala/runtime/AbstractFunction1$mcII$sp; implements Lscala/Serializable; {
   
-  public final Lscala/Tuple2; apply(Lscala/Tuple2; x$3) {
-    return x$3.(Lscala/Tuple2;::swap()Lscala/Tuple2;)();
+  public final I; apply(I; k) {
+    return this.(Lscala/util/automata/WordBerrySethi$$anonfun$1;::apply$mcII$sp(I;)I;)(k);
   }
   
+  public I; apply$mcII$sp(I; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/util/automata/WordBerrySethi$$anonfun$1;)$outer$u0020.(Lscala/util/automata/BaseBerrySethi;::finals()Lscala/collection/immutable/Map;)().(Lscala/collection/MapLike;::getOrElse(Ljava/lang/Object;Lscala/Function0;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(v1), (new (Lscala/util/automata/WordBerrySethi$$anonfun$1$$anonfun$apply$mcII$sp$1;::this(Lscala/util/automata/WordBerrySethi$$anonfun$1;)V;)(this))));
+  }
+  
+  private Lscala/util/automata/WordBerrySethi; $outer$u0020;
+  
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
-    return this.(Lscala/util/automata/WordBerrySethi$$anonfun$1;::apply(Lscala/Tuple2;)Lscala/Tuple2;)(v1.<cast>(Lscala/Tuple2;));
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/util/automata/WordBerrySethi$$anonfun$1;::apply(I;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1)));
   }
   
   public this(Lscala/util/automata/WordBerrySethi; $outer) {
-    (Lscala/runtime/AbstractFunction1;::super()V;)();
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/util/automata/WordBerrySethi$$anonfun$1;)$outer$u0020 = $outer;
+      }
+    (Lscala/runtime/AbstractFunction1$mcII$sp;::super()V;)();
   }
 }

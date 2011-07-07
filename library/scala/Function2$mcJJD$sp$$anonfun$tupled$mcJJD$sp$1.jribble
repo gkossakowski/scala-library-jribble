@@ -1,0 +1,34 @@
+public final class Lscala/Function2$mcJJD$sp$$anonfun$tupled$mcJJD$sp$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final J; apply(Lscala/Tuple2; x0$1) {
+    Lscala/Tuple2; temp124 = x0$1;
+    J; $36$;
+    if ((temp124 != null))
+      {
+        $36$ = this.(Lscala/Function2$mcJJD$sp$$anonfun$tupled$mcJJD$sp$1;)$outer$u0020.(Lscala/Function2$mcJJD$sp;::apply(J;D;)J;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToLong(Ljava/lang/Object;)J;)(temp124.(Lscala/Tuple2;::_1()Ljava/lang/Object;)()), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(temp124.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()));
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp124));
+      }
+    return $36$;
+  }
+  
+  private Lscala/Function2$mcJJD$sp; $outer$u0020;
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(this.(Lscala/Function2$mcJJD$sp$$anonfun$tupled$mcJJD$sp$1;::apply(Lscala/Tuple2;)J;)(v1.<cast>(Lscala/Tuple2;)));
+  }
+  
+  public this(Lscala/Function2$mcJJD$sp; $outer) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/Function2$mcJJD$sp$$anonfun$tupled$mcJJD$sp$1;)$outer$u0020 = $outer;
+      }
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

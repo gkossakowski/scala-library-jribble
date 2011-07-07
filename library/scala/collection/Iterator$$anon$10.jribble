@@ -395,7 +395,7 @@ public final class Lscala/collection/Iterator$$anon$10; extends Ljava/lang/Objec
     if (this.(Lscala/collection/Iterator$$anon$10;::hasNext()Z;)())
       {
         I; j = this.(Lscala/collection/Iterator$$anon$10;::i()I;)();
-        this.(Lscala/collection/Iterator$$anon$10;::i_$eq(I;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/collection/Iterator$$anon$10;)step$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/collection/Iterator$$anon$10;::i()I;)()))));
+        this.(Lscala/collection/Iterator$$anon$10;::i_$eq(I;)V;)(this.(Lscala/collection/Iterator$$anon$10;)step$1.(Lscala/Function1;::apply$mcII$sp(I;)I;)(this.(Lscala/collection/Iterator$$anon$10;::i()I;)()));
         $9$ = j;
       }
     else
@@ -444,8 +444,8 @@ public final class Lscala/collection/Iterator$$anon$10; extends Ljava/lang/Objec
     Lscala/collection/GenTraversableOnce$class;.(Lscala/collection/GenTraversableOnce$class;::$init$(Lscala/collection/GenTraversableOnce;)V;)(this);
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(Lscala/collection/Iterator$$anon$10;)up$u0020 = (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(step$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(start$1))) > start$1);
-    this.(Lscala/collection/Iterator$$anon$10;)down$u0020 = (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(step$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(start$1))) < start$1);
+    this.(Lscala/collection/Iterator$$anon$10;)up$u0020 = (step$1.(Lscala/Function1;::apply$mcII$sp(I;)I;)(start$1) > start$1);
+    this.(Lscala/collection/Iterator$$anon$10;)down$u0020 = (step$1.(Lscala/Function1;::apply$mcII$sp(I;)I;)(start$1) < start$1);
     this.(Lscala/collection/Iterator$$anon$10;)i$u0020 = start$1;
   }
 }

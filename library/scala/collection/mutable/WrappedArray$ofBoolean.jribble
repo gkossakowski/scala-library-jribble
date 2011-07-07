@@ -15,11 +15,15 @@ public final class Lscala/collection/mutable/WrappedArray$ofBoolean; extends Lsc
   }
   
   public Z; apply(I; index) {
-    return this.(Lscala/collection/mutable/WrappedArray$ofBoolean;::array()Z;[)()[index];
+    return this.(Lscala/collection/mutable/WrappedArray$ofBoolean;::apply$mcZI$sp(I;)Z;)(index);
   }
   
   public V; update(I; index, Z; elem) {
     this.(Lscala/collection/mutable/WrappedArray$ofBoolean;::array()Z;[)()[index] = elem;
+  }
+  
+  public Z; apply$mcZI$sp(I; v1) {
+    return this.(Lscala/collection/mutable/WrappedArray$ofBoolean;::array()Z;[)()[v1];
   }
   
   public V; update(I; index, Ljava/lang/Object; elem) {

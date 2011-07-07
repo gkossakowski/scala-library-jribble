@@ -1,7 +1,11 @@
-public final class Lscala/collection/BitSetLike$$anonfun$subsetOf$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+public final class Lscala/collection/BitSetLike$$anonfun$subsetOf$1; extends Lscala/runtime/AbstractFunction1$mcZI$sp; implements Lscala/Serializable; {
   
   public final Z; apply(I; idx) {
-    return ((this.(Lscala/collection/BitSetLike$$anonfun$subsetOf$1;)$outer$u0020.(Lscala/collection/BitSetLike;::word(I;)J;)(idx) & ~(this.(Lscala/collection/BitSetLike$$anonfun$subsetOf$1;)other$5.(Lscala/collection/BitSetLike;::word(I;)J;)(idx))) == 0L);
+    return this.(Lscala/collection/BitSetLike$$anonfun$subsetOf$1;::apply$mcZI$sp(I;)Z;)(idx);
+  }
+  
+  public Z; apply$mcZI$sp(I; v1) {
+    return ((this.(Lscala/collection/BitSetLike$$anonfun$subsetOf$1;)$outer$u0020.(Lscala/collection/BitSetLike;::word(I;)J;)(v1) & ~(this.(Lscala/collection/BitSetLike$$anonfun$subsetOf$1;)other$5.(Lscala/collection/BitSetLike;::word(I;)J;)(v1))) == 0L);
   }
   
   private Lscala/collection/BitSetLike; $outer$u0020;
@@ -22,6 +26,6 @@ public final class Lscala/collection/BitSetLike$$anonfun$subsetOf$1; extends Lsc
         this.(Lscala/collection/BitSetLike$$anonfun$subsetOf$1;)$outer$u0020 = $outer;
       }
     this.(Lscala/collection/BitSetLike$$anonfun$subsetOf$1;)other$5 = other$5;
-    (Lscala/runtime/AbstractFunction1;::super()V;)();
+    (Lscala/runtime/AbstractFunction1$mcZI$sp;::super()V;)();
   }
 }

@@ -17,7 +17,7 @@ public class Lscala/Tuple1; extends Ljava/lang/Object; implements Lscala/Product
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
   }
   
-  private Ljava/lang/Object; _1$u0020;
+  protected Ljava/lang/Object; _1$u0020;
   
   public Ljava/lang/Object; _1() {
     return this.(Lscala/Tuple1;)_1$u0020;
@@ -77,6 +77,46 @@ public class Lscala/Tuple1; extends Ljava/lang/Object; implements Lscala/Product
   
   public Z; canEqual(Ljava/lang/Object; x$1) {
     return x$1.<instanceof>(Lscala/Tuple1;);
+  }
+  
+  public D; _1$mcD$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(this.(Lscala/Tuple1;::_1()Ljava/lang/Object;)());
+  }
+  
+  public I; _1$mcI$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/Tuple1;::_1()Ljava/lang/Object;)());
+  }
+  
+  public J; _1$mcJ$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToLong(Ljava/lang/Object;)J;)(this.(Lscala/Tuple1;::_1()Ljava/lang/Object;)());
+  }
+  
+  public Lscala/Tuple1; copy$mDc$sp(D; _1) {
+    return (new (Lscala/Tuple1$mcD$sp;::this(D;)V;)(_1));
+  }
+  
+  public Lscala/Tuple1; copy$mIc$sp(I; _1) {
+    return (new (Lscala/Tuple1$mcI$sp;::this(I;)V;)(_1));
+  }
+  
+  public Lscala/Tuple1; copy$mJc$sp(J; _1) {
+    return (new (Lscala/Tuple1$mcJ$sp;::this(J;)V;)(_1));
+  }
+  
+  public D; copy$default$1$mcD$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(this.(Lscala/Tuple1;::copy$default$1()Ljava/lang/Object;)());
+  }
+  
+  public I; copy$default$1$mcI$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/Tuple1;::copy$default$1()Ljava/lang/Object;)());
+  }
+  
+  public J; copy$default$1$mcJ$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToLong(Ljava/lang/Object;)J;)(this.(Lscala/Tuple1;::copy$default$1()Ljava/lang/Object;)());
+  }
+  
+  public Z; specInstance$() {
+    return false;
   }
   
   private final Z; gd1$1(Ljava/lang/Object; x$1) {

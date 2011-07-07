@@ -1,7 +1,11 @@
-public final class Lscala/Array$$anonfun$ofDim$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+public final class Lscala/Array$$anonfun$ofDim$1; extends Lscala/runtime/AbstractFunction1$mcVI$sp; implements Lscala/Serializable; {
   
   public final V; apply(I; i) {
-    this.(Lscala/Array$$anonfun$ofDim$1;)arr$1[i] = this.(Lscala/Array$$anonfun$ofDim$1;)evidence$4$1.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)(this.(Lscala/Array$$anonfun$ofDim$1;)n2$1);
+    this.(Lscala/Array$$anonfun$ofDim$1;::apply$mcVI$sp(I;)V;)(i);
+  }
+  
+  public V; apply$mcVI$sp(I; v1) {
+    this.(Lscala/Array$$anonfun$ofDim$1;)arr$1[v1] = this.(Lscala/Array$$anonfun$ofDim$1;)evidence$4$1.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)(this.(Lscala/Array$$anonfun$ofDim$1;)n2$1);
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
@@ -19,6 +23,6 @@ public final class Lscala/Array$$anonfun$ofDim$1; extends Lscala/runtime/Abstrac
     this.(Lscala/Array$$anonfun$ofDim$1;)n2$1 = n2$1;
     this.(Lscala/Array$$anonfun$ofDim$1;)evidence$4$1 = evidence$4$1;
     this.(Lscala/Array$$anonfun$ofDim$1;)arr$1 = arr$1;
-    (Lscala/runtime/AbstractFunction1;::super()V;)();
+    (Lscala/runtime/AbstractFunction1$mcVI$sp;::super()V;)();
   }
 }

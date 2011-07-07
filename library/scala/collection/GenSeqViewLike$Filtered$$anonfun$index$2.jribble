@@ -1,9 +1,13 @@
-public final class Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+public final class Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2; extends Lscala/runtime/AbstractFunction1$mcVI$sp; implements Lscala/Serializable; {
   
   public final V; apply(I; i) {
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2;)$outer$u0020.(Lscala/collection/GenTraversableViewLike$Filtered;::pred()Lscala/Function1;)().(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2;)$outer$u0020.(Lscala/collection/GenSeqViewLike$Filtered;::scala$collection$GenSeqViewLike$Filtered$$$outer()Lscala/collection/GenSeqViewLike;)().(Lscala/collection/GenSeqLike;::apply(I;)Ljava/lang/Object;)(i))))
+    this.(Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2;::apply$mcVI$sp(I;)V;)(i);
+  }
+  
+  public V; apply$mcVI$sp(I; v1) {
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2;)$outer$u0020.(Lscala/collection/GenTraversableViewLike$Filtered;::pred()Lscala/Function1;)().(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2;)$outer$u0020.(Lscala/collection/GenSeqViewLike$Filtered;::scala$collection$GenSeqViewLike$Filtered$$$outer()Lscala/collection/GenSeqViewLike;)().(Lscala/collection/GenSeqLike;::apply(I;)Ljava/lang/Object;)(v1))))
       {
-        this.(Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2;)arr$1[this.(Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2;)len$1.(Lscala/runtime/IntRef;)elem] = i;
+        this.(Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2;)arr$1[this.(Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2;)len$1.(Lscala/runtime/IntRef;)elem] = v1;
         this.(Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2;)len$1.(Lscala/runtime/IntRef;)elem = (this.(Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2;)len$1.(Lscala/runtime/IntRef;)elem + 1);
       }
     else
@@ -34,6 +38,6 @@ public final class Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2; e
       }
     this.(Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2;)len$1 = len$1;
     this.(Lscala/collection/GenSeqViewLike$Filtered$$anonfun$index$2;)arr$1 = arr$1;
-    (Lscala/runtime/AbstractFunction1;::super()V;)();
+    (Lscala/runtime/AbstractFunction1$mcVI$sp;::super()V;)();
   }
 }

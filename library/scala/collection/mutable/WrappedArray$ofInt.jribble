@@ -15,11 +15,15 @@ public final class Lscala/collection/mutable/WrappedArray$ofInt; extends Lscala/
   }
   
   public I; apply(I; index) {
-    return this.(Lscala/collection/mutable/WrappedArray$ofInt;::array()I;[)()[index];
+    return this.(Lscala/collection/mutable/WrappedArray$ofInt;::apply$mcII$sp(I;)I;)(index);
   }
   
   public V; update(I; index, I; elem) {
     this.(Lscala/collection/mutable/WrappedArray$ofInt;::array()I;[)()[index] = elem;
+  }
+  
+  public I; apply$mcII$sp(I; v1) {
+    return this.(Lscala/collection/mutable/WrappedArray$ofInt;::array()I;[)()[v1];
   }
   
   public V; update(I; index, Ljava/lang/Object; elem) {

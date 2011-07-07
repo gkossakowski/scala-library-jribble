@@ -17,13 +17,13 @@ public class Lscala/Tuple2; extends Ljava/lang/Object; implements Lscala/Product
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
   }
   
-  private Ljava/lang/Object; _1$u0020;
+  protected Ljava/lang/Object; _1$u0020;
   
   public Ljava/lang/Object; _1() {
     return this.(Lscala/Tuple2;)_1$u0020;
   }
   
-  private Ljava/lang/Object; _2$u0020;
+  protected Ljava/lang/Object; _2$u0020;
   
   public Ljava/lang/Object; _2() {
     return this.(Lscala/Tuple2;)_2$u0020;
@@ -102,6 +102,202 @@ public class Lscala/Tuple2; extends Ljava/lang/Object; implements Lscala/Product
   
   public Z; canEqual(Ljava/lang/Object; x$1) {
     return x$1.<instanceof>(Lscala/Tuple2;);
+  }
+  
+  public D; _1$mcD$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(this.(Lscala/Tuple2;::_1()Ljava/lang/Object;)());
+  }
+  
+  public I; _1$mcI$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/Tuple2;::_1()Ljava/lang/Object;)());
+  }
+  
+  public J; _1$mcJ$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToLong(Ljava/lang/Object;)J;)(this.(Lscala/Tuple2;::_1()Ljava/lang/Object;)());
+  }
+  
+  public D; _2$mcD$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(this.(Lscala/Tuple2;::_2()Ljava/lang/Object;)());
+  }
+  
+  public I; _2$mcI$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/Tuple2;::_2()Ljava/lang/Object;)());
+  }
+  
+  public J; _2$mcJ$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToLong(Ljava/lang/Object;)J;)(this.(Lscala/Tuple2;::_2()Ljava/lang/Object;)());
+  }
+  
+  public Lscala/Tuple2; swap$mcDD$sp() {
+    return this.(Lscala/Tuple2;::swap()Lscala/Tuple2;)();
+  }
+  
+  public Lscala/Tuple2; swap$mcDI$sp() {
+    return this.(Lscala/Tuple2;::swap()Lscala/Tuple2;)();
+  }
+  
+  public Lscala/Tuple2; swap$mcDJ$sp() {
+    return this.(Lscala/Tuple2;::swap()Lscala/Tuple2;)();
+  }
+  
+  public Lscala/Tuple2; swap$mcID$sp() {
+    return this.(Lscala/Tuple2;::swap()Lscala/Tuple2;)();
+  }
+  
+  public Lscala/Tuple2; swap$mcII$sp() {
+    return this.(Lscala/Tuple2;::swap()Lscala/Tuple2;)();
+  }
+  
+  public Lscala/Tuple2; swap$mcIJ$sp() {
+    return this.(Lscala/Tuple2;::swap()Lscala/Tuple2;)();
+  }
+  
+  public Lscala/Tuple2; swap$mcJD$sp() {
+    return this.(Lscala/Tuple2;::swap()Lscala/Tuple2;)();
+  }
+  
+  public Lscala/Tuple2; swap$mcJI$sp() {
+    return this.(Lscala/Tuple2;::swap()Lscala/Tuple2;)();
+  }
+  
+  public Lscala/Tuple2; swap$mcJJ$sp() {
+    return this.(Lscala/Tuple2;::swap()Lscala/Tuple2;)();
+  }
+  
+  public Ljava/lang/Object; zip$mcDD$sp(Lscala/Function1; w1, Lscala/Function1; w2, Lscala/collection/generic/CanBuildFrom; cbf1) {
+    return this.(Lscala/Tuple2;::zip(Lscala/Function1;Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(w1, w2, cbf1);
+  }
+  
+  public Ljava/lang/Object; zip$mcDI$sp(Lscala/Function1; w1, Lscala/Function1; w2, Lscala/collection/generic/CanBuildFrom; cbf1) {
+    return this.(Lscala/Tuple2;::zip(Lscala/Function1;Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(w1, w2, cbf1);
+  }
+  
+  public Ljava/lang/Object; zip$mcDJ$sp(Lscala/Function1; w1, Lscala/Function1; w2, Lscala/collection/generic/CanBuildFrom; cbf1) {
+    return this.(Lscala/Tuple2;::zip(Lscala/Function1;Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(w1, w2, cbf1);
+  }
+  
+  public Ljava/lang/Object; zip$mcID$sp(Lscala/Function1; w1, Lscala/Function1; w2, Lscala/collection/generic/CanBuildFrom; cbf1) {
+    return this.(Lscala/Tuple2;::zip(Lscala/Function1;Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(w1, w2, cbf1);
+  }
+  
+  public Ljava/lang/Object; zip$mcII$sp(Lscala/Function1; w1, Lscala/Function1; w2, Lscala/collection/generic/CanBuildFrom; cbf1) {
+    return this.(Lscala/Tuple2;::zip(Lscala/Function1;Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(w1, w2, cbf1);
+  }
+  
+  public Ljava/lang/Object; zip$mcIJ$sp(Lscala/Function1; w1, Lscala/Function1; w2, Lscala/collection/generic/CanBuildFrom; cbf1) {
+    return this.(Lscala/Tuple2;::zip(Lscala/Function1;Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(w1, w2, cbf1);
+  }
+  
+  public Ljava/lang/Object; zip$mcJD$sp(Lscala/Function1; w1, Lscala/Function1; w2, Lscala/collection/generic/CanBuildFrom; cbf1) {
+    return this.(Lscala/Tuple2;::zip(Lscala/Function1;Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(w1, w2, cbf1);
+  }
+  
+  public Ljava/lang/Object; zip$mcJI$sp(Lscala/Function1; w1, Lscala/Function1; w2, Lscala/collection/generic/CanBuildFrom; cbf1) {
+    return this.(Lscala/Tuple2;::zip(Lscala/Function1;Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(w1, w2, cbf1);
+  }
+  
+  public Ljava/lang/Object; zip$mcJJ$sp(Lscala/Function1; w1, Lscala/Function1; w2, Lscala/collection/generic/CanBuildFrom; cbf1) {
+    return this.(Lscala/Tuple2;::zip(Lscala/Function1;Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(w1, w2, cbf1);
+  }
+  
+  public Lscala/Tuple2$Zipped; zipped$mcDD$sp(Lscala/Function1; w1, Lscala/Function1; w2) {
+    return this.(Lscala/Tuple2;::zipped(Lscala/Function1;Lscala/Function1;)Lscala/Tuple2$Zipped;)(w1, w2);
+  }
+  
+  public Lscala/Tuple2$Zipped; zipped$mcDI$sp(Lscala/Function1; w1, Lscala/Function1; w2) {
+    return this.(Lscala/Tuple2;::zipped(Lscala/Function1;Lscala/Function1;)Lscala/Tuple2$Zipped;)(w1, w2);
+  }
+  
+  public Lscala/Tuple2$Zipped; zipped$mcDJ$sp(Lscala/Function1; w1, Lscala/Function1; w2) {
+    return this.(Lscala/Tuple2;::zipped(Lscala/Function1;Lscala/Function1;)Lscala/Tuple2$Zipped;)(w1, w2);
+  }
+  
+  public Lscala/Tuple2$Zipped; zipped$mcID$sp(Lscala/Function1; w1, Lscala/Function1; w2) {
+    return this.(Lscala/Tuple2;::zipped(Lscala/Function1;Lscala/Function1;)Lscala/Tuple2$Zipped;)(w1, w2);
+  }
+  
+  public Lscala/Tuple2$Zipped; zipped$mcII$sp(Lscala/Function1; w1, Lscala/Function1; w2) {
+    return this.(Lscala/Tuple2;::zipped(Lscala/Function1;Lscala/Function1;)Lscala/Tuple2$Zipped;)(w1, w2);
+  }
+  
+  public Lscala/Tuple2$Zipped; zipped$mcIJ$sp(Lscala/Function1; w1, Lscala/Function1; w2) {
+    return this.(Lscala/Tuple2;::zipped(Lscala/Function1;Lscala/Function1;)Lscala/Tuple2$Zipped;)(w1, w2);
+  }
+  
+  public Lscala/Tuple2$Zipped; zipped$mcJD$sp(Lscala/Function1; w1, Lscala/Function1; w2) {
+    return this.(Lscala/Tuple2;::zipped(Lscala/Function1;Lscala/Function1;)Lscala/Tuple2$Zipped;)(w1, w2);
+  }
+  
+  public Lscala/Tuple2$Zipped; zipped$mcJI$sp(Lscala/Function1; w1, Lscala/Function1; w2) {
+    return this.(Lscala/Tuple2;::zipped(Lscala/Function1;Lscala/Function1;)Lscala/Tuple2$Zipped;)(w1, w2);
+  }
+  
+  public Lscala/Tuple2$Zipped; zipped$mcJJ$sp(Lscala/Function1; w1, Lscala/Function1; w2) {
+    return this.(Lscala/Tuple2;::zipped(Lscala/Function1;Lscala/Function1;)Lscala/Tuple2$Zipped;)(w1, w2);
+  }
+  
+  public Lscala/Tuple2; copy$mDDc$sp(D; _1, D; _2) {
+    return (new (Lscala/Tuple2$mcDD$sp;::this(D;D;)V;)(_1, _2));
+  }
+  
+  public Lscala/Tuple2; copy$mDIc$sp(D; _1, I; _2) {
+    return (new (Lscala/Tuple2$mcDI$sp;::this(D;I;)V;)(_1, _2));
+  }
+  
+  public Lscala/Tuple2; copy$mDJc$sp(D; _1, J; _2) {
+    return (new (Lscala/Tuple2$mcDJ$sp;::this(D;J;)V;)(_1, _2));
+  }
+  
+  public Lscala/Tuple2; copy$mIDc$sp(I; _1, D; _2) {
+    return (new (Lscala/Tuple2$mcID$sp;::this(I;D;)V;)(_1, _2));
+  }
+  
+  public Lscala/Tuple2; copy$mIIc$sp(I; _1, I; _2) {
+    return (new (Lscala/Tuple2$mcII$sp;::this(I;I;)V;)(_1, _2));
+  }
+  
+  public Lscala/Tuple2; copy$mIJc$sp(I; _1, J; _2) {
+    return (new (Lscala/Tuple2$mcIJ$sp;::this(I;J;)V;)(_1, _2));
+  }
+  
+  public Lscala/Tuple2; copy$mJDc$sp(J; _1, D; _2) {
+    return (new (Lscala/Tuple2$mcJD$sp;::this(J;D;)V;)(_1, _2));
+  }
+  
+  public Lscala/Tuple2; copy$mJIc$sp(J; _1, I; _2) {
+    return (new (Lscala/Tuple2$mcJI$sp;::this(J;I;)V;)(_1, _2));
+  }
+  
+  public Lscala/Tuple2; copy$mJJc$sp(J; _1, J; _2) {
+    return (new (Lscala/Tuple2$mcJJ$sp;::this(J;J;)V;)(_1, _2));
+  }
+  
+  public D; copy$default$1$mcD$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(this.(Lscala/Tuple2;::copy$default$1()Ljava/lang/Object;)());
+  }
+  
+  public I; copy$default$1$mcI$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/Tuple2;::copy$default$1()Ljava/lang/Object;)());
+  }
+  
+  public J; copy$default$1$mcJ$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToLong(Ljava/lang/Object;)J;)(this.(Lscala/Tuple2;::copy$default$1()Ljava/lang/Object;)());
+  }
+  
+  public D; copy$default$2$mcD$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToDouble(Ljava/lang/Object;)D;)(this.(Lscala/Tuple2;::copy$default$2()Ljava/lang/Object;)());
+  }
+  
+  public I; copy$default$2$mcI$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(this.(Lscala/Tuple2;::copy$default$2()Ljava/lang/Object;)());
+  }
+  
+  public J; copy$default$2$mcJ$sp() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToLong(Ljava/lang/Object;)J;)(this.(Lscala/Tuple2;::copy$default$2()Ljava/lang/Object;)());
+  }
+  
+  public Z; specInstance$() {
+    return false;
   }
   
   private final Z; gd1$1(Ljava/lang/Object; x$1, Ljava/lang/Object; x$2) {

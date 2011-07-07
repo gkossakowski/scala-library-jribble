@@ -1,17 +1,18 @@
 public final class Lscala/collection/SetLike$SubsetsItr$$anonfun$next$2; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
-  public final V; apply(I; j) {
-    this.(Lscala/collection/SetLike$SubsetsItr$$anonfun$next$2;)$outer$u0020.(Lscala/collection/SetLike$SubsetsItr;::scala$collection$SetLike$SubsetsItr$$idxs()I;[)()[j] = (this.(Lscala/collection/SetLike$SubsetsItr$$anonfun$next$2;)$outer$u0020.(Lscala/collection/SetLike$SubsetsItr;::scala$collection$SetLike$SubsetsItr$$idxs()I;[)()[(j - 1)] + 1);
+  public final Lscala/collection/mutable/Builder; apply(I; idx) {
+    return this.(Lscala/collection/SetLike$SubsetsItr$$anonfun$next$2;)buf$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/collection/SetLike$SubsetsItr$$anonfun$next$2;)$outer$u0020.(Lscala/collection/SetLike$SubsetsItr;)scala$collection$SetLike$SubsetsItr$$elms.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(idx));
   }
   
   private Lscala/collection/SetLike$SubsetsItr; $outer$u0020;
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
-    this.(Lscala/collection/SetLike$SubsetsItr$$anonfun$next$2;::apply(I;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1));
-    return Lscala/runtime/BoxedUnit;.UNIT;
+    return this.(Lscala/collection/SetLike$SubsetsItr$$anonfun$next$2;::apply(I;)Lscala/collection/mutable/Builder;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1));
   }
   
-  public this(Lscala/collection/SetLike$SubsetsItr; $outer) {
+  private Lscala/collection/mutable/Builder; buf$1;
+  
+  public this(Lscala/collection/SetLike$SubsetsItr; $outer, Lscala/collection/mutable/Builder; buf$1) {
     if (($outer == null))
       {
         throw (new (Ljava/lang/NullPointerException;::this()V;)());
@@ -20,6 +21,7 @@ public final class Lscala/collection/SetLike$SubsetsItr$$anonfun$next$2; extends
       {
         this.(Lscala/collection/SetLike$SubsetsItr$$anonfun$next$2;)$outer$u0020 = $outer;
       }
+    this.(Lscala/collection/SetLike$SubsetsItr$$anonfun$next$2;)buf$1 = buf$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }
