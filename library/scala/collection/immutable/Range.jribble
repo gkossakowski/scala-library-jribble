@@ -972,10 +972,6 @@ public class Lscala/collection/immutable/Range; extends Ljava/lang/Object; imple
     return this.(Lscala/collection/immutable/Range;)step$u0020;
   }
   
-  public Lscala/collection/parallel/immutable/ParRange; par() {
-    return (new (Lscala/collection/parallel/immutable/ParRange;::this(Lscala/collection/immutable/Range;)V;)(this));
-  }
-  
   private I; numRangeElements$u0020;
   
   private I; numRangeElements() {
@@ -1456,10 +1452,6 @@ public class Lscala/collection/immutable/Range; extends Ljava/lang/Object; imple
   
   public Ljava/lang/Object; last() {
     return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/collection/immutable/Range;::last()I;)());
-  }
-  
-  public Lscala/collection/Parallel; par() {
-    return this.(Lscala/collection/immutable/Range;::par()Lscala/collection/parallel/immutable/ParRange;)();
   }
   
   public this(I; start, I; end, I; step) {

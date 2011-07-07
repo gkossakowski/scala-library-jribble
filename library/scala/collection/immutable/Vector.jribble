@@ -1134,10 +1134,6 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
     return (this.(Lscala/collection/immutable/Vector;::endIndex()I;)() - this.(Lscala/collection/immutable/Vector;::startIndex()I;)());
   }
   
-  public Lscala/collection/parallel/immutable/ParVector; par() {
-    return (new (Lscala/collection/parallel/immutable/ParVector;::this(Lscala/collection/immutable/Vector;)V;)(this));
-  }
-  
   public I; lengthCompare(I; len) {
     return (this.(Lscala/collection/immutable/Vector;::length()I;)() - len);
   }
@@ -2075,10 +2071,6 @@ public final class Lscala/collection/immutable/Vector; extends Ljava/lang/Object
   
   public Lscala/collection/Iterator; iterator() {
     return this.(Lscala/collection/immutable/Vector;::iterator()Lscala/collection/immutable/VectorIterator;)();
-  }
-  
-  public Lscala/collection/Parallel; par() {
-    return this.(Lscala/collection/immutable/Vector;::par()Lscala/collection/parallel/immutable/ParVector;)();
   }
   
   public this(I; startIndex, I; endIndex, I; focus) {
