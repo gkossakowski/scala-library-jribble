@@ -73,10 +73,6 @@ public final class Lscala/collection/JavaConverters$; extends Ljava/lang/Object;
     return this.(Lscala/collection/JavaConverters$;::mapAsJavaMapConverter(Lscala/collection/Map;)Lscala/collection/JavaConverters$AsJava;)(m);
   }
   
-  public Lscala/collection/JavaConverters$AsJava; asJavaConcurrentMapConverter(Lscala/collection/mutable/ConcurrentMap; m$3) {
-    return (new (Lscala/collection/JavaConverters$AsJava;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$asJavaConcurrentMapConverter$1;::this(Lscala/collection/mutable/ConcurrentMap;)V;)(m$3))));
-  }
-  
   public Lscala/collection/JavaConverters$AsScala; asScalaIteratorConverter(Ljava/util/Iterator; i$3) {
     return (new (Lscala/collection/JavaConverters$AsScala;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$asScalaIteratorConverter$1;::this(Ljava/util/Iterator;)V;)(i$3))));
   }
@@ -115,18 +111,6 @@ public final class Lscala/collection/JavaConverters$; extends Ljava/lang/Object;
   
   public Lscala/collection/JavaConverters$AsScala; asScalaMapConverter(Ljava/util/Map; m) {
     return this.(Lscala/collection/JavaConverters$;::mapAsScalaMapConverter(Ljava/util/Map;)Lscala/collection/JavaConverters$AsScala;)(m);
-  }
-  
-  public Lscala/collection/JavaConverters$AsScala; asScalaConcurrentMapConverter(Ljava/util/concurrent/ConcurrentMap; m$5) {
-    return (new (Lscala/collection/JavaConverters$AsScala;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$asScalaConcurrentMapConverter$1;::this(Ljava/util/concurrent/ConcurrentMap;)V;)(m$5))));
-  }
-  
-  public Lscala/collection/JavaConverters$AsScala; propertiesAsScalaMapConverter(Ljava/util/Properties; p$2) {
-    return (new (Lscala/collection/JavaConverters$AsScala;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$propertiesAsScalaMapConverter$1;::this(Ljava/util/Properties;)V;)(p$2))));
-  }
-  
-  public Lscala/collection/JavaConverters$AsScala; asScalaMapConverter(Ljava/util/Properties; p) {
-    return this.(Lscala/collection/JavaConverters$;::propertiesAsScalaMapConverter(Ljava/util/Properties;)Lscala/collection/JavaConverters$AsScala;)(p);
   }
   
   public this() {
