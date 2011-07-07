@@ -138,9 +138,7 @@ public abstract class Lscala/collection/immutable/StringLike$class; {
   }
   
   public static Ljava/lang/String; replaceAllLiterally(Lscala/collection/immutable/StringLike; $this, Ljava/lang/String; literal, Ljava/lang/String; replacement) {
-    Ljava/lang/String; arg1 = Ljava/util/regex/Pattern;.(Ljava/util/regex/Pattern;::quote(Ljava/lang/String;)Ljava/lang/String;)(literal);
-    Ljava/lang/String; arg2 = Ljava/util/regex/Matcher;.(Ljava/util/regex/Matcher;::quoteReplacement(Ljava/lang/String;)Ljava/lang/String;)(replacement);
-    return $this.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)().(Ljava/lang/String;::replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)(arg1, arg2);
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
   }
   
   public static Ljava/lang/String; stripMargin(Lscala/collection/immutable/StringLike; $this, C; marginChar$1) {
