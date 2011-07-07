@@ -369,34 +369,34 @@ public final class Lscala/collection/Iterator$$anon$6; extends Ljava/lang/Object
   }
   
   public Lscala/Tuple2; next() {
-    Lscala/Tuple2; $29$;
+    Lscala/Tuple2; $28$;
     if (this.(Lscala/collection/Iterator$$anon$6;)$outer$u0020.(Lscala/collection/Iterator;::hasNext()Z;)())
+      {
+        Lscala/Tuple2; $29$;
+        if (this.(Lscala/collection/Iterator$$anon$6;)that$3.(Lscala/collection/Iterator;::hasNext()Z;)())
+          {
+            $29$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/Iterator$$anon$6;)$outer$u0020.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), this.(Lscala/collection/Iterator$$anon$6;)that$3.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)()));
+          }
+        else
+          {
+            $29$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/Iterator$$anon$6;)$outer$u0020.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), this.(Lscala/collection/Iterator$$anon$6;)thatElem$1));
+          }
+        $28$ = $29$;
+      }
+    else
       {
         Lscala/Tuple2; $30$;
         if (this.(Lscala/collection/Iterator$$anon$6;)that$3.(Lscala/collection/Iterator;::hasNext()Z;)())
           {
-            $30$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/Iterator$$anon$6;)$outer$u0020.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), this.(Lscala/collection/Iterator$$anon$6;)that$3.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)()));
+            $30$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/Iterator$$anon$6;)thisElem$1, this.(Lscala/collection/Iterator$$anon$6;)that$3.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)()));
           }
         else
           {
-            $30$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/Iterator$$anon$6;)$outer$u0020.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), this.(Lscala/collection/Iterator$$anon$6;)thatElem$1));
+            $30$ = Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::empty()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::next()Ljava/lang/Object;)().<cast>(Lscala/Tuple2;);
           }
-        $29$ = $30$;
+        $28$ = $30$;
       }
-    else
-      {
-        Lscala/Tuple2; $31$;
-        if (this.(Lscala/collection/Iterator$$anon$6;)that$3.(Lscala/collection/Iterator;::hasNext()Z;)())
-          {
-            $31$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/Iterator$$anon$6;)thisElem$1, this.(Lscala/collection/Iterator$$anon$6;)that$3.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)()));
-          }
-        else
-          {
-            $31$ = Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::empty()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::next()Ljava/lang/Object;)().<cast>(Lscala/Tuple2;);
-          }
-        $29$ = $31$;
-      }
-    return $29$;
+    return $28$;
   }
   
   private Lscala/collection/Iterator; $outer$u0020;
