@@ -767,41 +767,7 @@ public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; impl
   }
   
   public Ljava/lang/String; stringOf(Ljava/lang/Object; arg, I; maxElements$1) {
-    Ljava/lang/String; exceptionResult1;
-    try {
-      exceptionResult1 = this.(Lscala/runtime/ScalaRunTime$;::inner$1(Ljava/lang/Object;I;)Ljava/lang/String;)(arg, maxElements$1);
-    } catch(Ljava/lang/Throwable; ex$2) {
-      Ljava/lang/Throwable; temp86 = ex$2;
-      Ljava/lang/String; $59$;
-      if (temp86.<instanceof>(Ljava/lang/StackOverflowError;))
-        {
-          $59$ = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::body$percent09$percent1()Ljava/lang/String;)();
-        }
-      else
-        {
-          Ljava/lang/String; $60$;
-          if (temp86.<instanceof>(Ljava/lang/UnsupportedOperationException;))
-            {
-              $60$ = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::body$percent09$percent1()Ljava/lang/String;)();
-            }
-          else
-            {
-              Ljava/lang/String; $61$;
-              if (temp86.<instanceof>(Ljava/lang/AssertionError;))
-                {
-                  $61$ = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::body$percent09$percent1()Ljava/lang/String;)();
-                }
-              else
-                {
-                  throw ex$2;
-                }
-              $60$ = $61$;
-            }
-          $59$ = $60$;
-        }
-      exceptionResult1 = $59$;
-    }
-    return exceptionResult1;
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
   }
   
   public Ljava/lang/String; replStringOf(Ljava/lang/Object; arg, I; maxElements) {
