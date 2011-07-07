@@ -16,11 +16,11 @@ public final class Lscala/collection/Iterator$; extends Ljava/lang/Object; imple
   }
   
   public Lscala/collection/Iterator; fill(I; len$1, Lscala/Function0; elem$2) {
-    return (new (Lscala/collection/Iterator$$anon$7;::this(I;Lscala/Function0;)V;)(len$1, elem$2));
+    return (new (Lscala/collection/Iterator$$anon$8;::this(I;Lscala/Function0;)V;)(len$1, elem$2));
   }
   
   public Lscala/collection/Iterator; tabulate(I; end$1, Lscala/Function1; f$3) {
-    return (new (Lscala/collection/Iterator$$anon$8;::this(I;Lscala/Function1;)V;)(end$1, f$3));
+    return (new (Lscala/collection/Iterator$$anon$9;::this(I;Lscala/Function1;)V;)(end$1, f$3));
   }
   
   public Lscala/collection/Iterator; range(I; start, I; end) {
@@ -28,11 +28,11 @@ public final class Lscala/collection/Iterator$; extends Ljava/lang/Object; imple
   }
   
   public Lscala/collection/Iterator; range(I; start$2, I; end$3, I; step$2) {
-    return (new (Lscala/collection/Iterator$$anon$10;::this(I;I;I;)V;)(start$2, end$3, step$2));
+    return (new (Lscala/collection/Iterator$$anon$11;::this(I;I;I;)V;)(start$2, end$3, step$2));
   }
   
   public Lscala/collection/Iterator; iterate(Ljava/lang/Object; start$3, Lscala/Function1; f$4) {
-    return (new (Lscala/collection/Iterator$$anon$11;::this(Ljava/lang/Object;Lscala/Function1;)V;)(start$3, f$4));
+    return (new (Lscala/collection/Iterator$$anon$12;::this(Ljava/lang/Object;Lscala/Function1;)V;)(start$3, f$4));
   }
   
   public Lscala/collection/Iterator; from(I; start) {
@@ -40,19 +40,11 @@ public final class Lscala/collection/Iterator$; extends Ljava/lang/Object; imple
   }
   
   public Lscala/collection/Iterator; from(I; start$5, I; step$4) {
-    return (new (Lscala/collection/Iterator$$anon$12;::this(I;I;)V;)(start$5, step$4));
+    return (new (Lscala/collection/Iterator$$anon$13;::this(I;I;)V;)(start$5, step$4));
   }
   
   public Lscala/collection/Iterator; continually(Lscala/Function0; elem$3) {
-    return (new (Lscala/collection/Iterator$$anon$13;::this(Lscala/Function0;)V;)(elem$3));
-  }
-  
-  public Lscala/collection/Iterator$IteratorCanBuildFrom; iteratorCanBuildFrom() {
-    return (new (Lscala/collection/Iterator$IteratorCanBuildFrom;::this()V;)());
-  }
-  
-  public Lscala/collection/Iterator$IteratorIteratorOps; iteratorIteratorWrapper(Lscala/collection/Iterator; its) {
-    return (new (Lscala/collection/Iterator$IteratorIteratorOps;::this(Lscala/collection/Iterator;)V;)(its));
+    return (new (Lscala/collection/Iterator$$anon$14;::this(Lscala/Function0;)V;)(elem$3));
   }
   
   public Lscala/collection/Iterator; fromValues(Lscala/collection/Seq; xs) {
@@ -67,12 +59,12 @@ public final class Lscala/collection/Iterator$; extends Ljava/lang/Object; imple
     return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::genericArrayOps(Ljava/lang/Object;)Lscala/collection/mutable/ArrayOps;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::genericArrayOps(Ljava/lang/Object;)Lscala/collection/mutable/ArrayOps;)(xs).(Lscala/collection/IndexedSeqOptimized;::slice(I;I;)Ljava/lang/Object;)(start, (start + length))).(Lscala/collection/IndexedSeqLike;::iterator()Lscala/collection/Iterator;)();
   }
   
-  public Lscala/collection/Iterator; fromProduct(Lscala/Product; n$2) {
-    return (new (Lscala/collection/Iterator$$anon$15;::this(Lscala/Product;)V;)(n$2));
+  public Lscala/collection/Iterator; fromProduct(Lscala/Product; n$1) {
+    return (new (Lscala/collection/Iterator$$anon$15;::this(Lscala/Product;)V;)(n$1));
   }
   
   public Lscala/collection/Iterator; range(I; start$1, I; end$2, Lscala/Function1; step$1) {
-    return (new (Lscala/collection/Iterator$$anon$9;::this(I;I;Lscala/Function1;)V;)(start$1, end$2, step$1));
+    return (new (Lscala/collection/Iterator$$anon$10;::this(I;I;Lscala/Function1;)V;)(start$1, end$2, step$1));
   }
   
   public Lscala/collection/Iterator; from(I; start$4, Lscala/Function1; step$3) {

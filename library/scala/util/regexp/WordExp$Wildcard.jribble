@@ -1,4 +1,4 @@
-public class Lscala/util/regexp/WordExp$Wildcard; extends Lscala/util/regexp/Base$RegExp; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/util/regexp/WordExp$Wildcard; extends Lscala/util/regexp/Base$RegExp; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   protected I; bitmap$0 = 0;
   
@@ -34,6 +34,10 @@ public class Lscala/util/regexp/WordExp$Wildcard; extends Lscala/util/regexp/Bas
     this.(Lscala/util/regexp/WordExp$Wildcard;)pos$u0020 = x$1;
   }
   
+  public Lscala/util/regexp/WordExp$Wildcard; copy() {
+    return (new (Lscala/util/regexp/WordExp$Wildcard;::this(Lscala/util/regexp/WordExp;)V;)(this.(Lscala/util/regexp/WordExp$Wildcard;::scala$util$regexp$WordExp$Wildcard$$$outer()Lscala/util/regexp/WordExp;)()));
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -44,16 +48,16 @@ public class Lscala/util/regexp/WordExp$Wildcard; extends Lscala/util/regexp/Bas
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp5 = x$1;
-    Z; $4$;
+    Z; $7$;
     if ((temp5.<instanceof>(Lscala/util/regexp/WordExp$Wildcard;) && (temp5.<cast>(Lscala/util/regexp/WordExp$Wildcard;).(Lscala/util/regexp/WordExp$Wildcard;::scala$util$regexp$WordExp$Wildcard$$$outer()Lscala/util/regexp/WordExp;)() == this.(Lscala/util/regexp/WordExp$Wildcard;::scala$util$regexp$WordExp$Wildcard$$$outer()Lscala/util/regexp/WordExp;)())))
       {
-        $4$ = x$1.<cast>(Lscala/util/regexp/WordExp$Wildcard;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+        $7$ = x$1.<cast>(Lscala/util/regexp/WordExp$Wildcard;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
       }
     else
       {
-        $4$ = false;
+        $7$ = false;
       }
-    return ((this == x$1) || $4$);
+    return ((this == x$1) || $7$);
   }
   
   public Ljava/lang/String; productPrefix() {

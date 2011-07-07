@@ -1,6 +1,4 @@
-public interface Lscala/collection/interfaces/TraversableMethods; {
-  
-  public V; foreach(Lscala/Function1; f);
+public interface Lscala/collection/interfaces/TraversableMethods; extends Lscala/collection/interfaces/TraversableOnceMethods; {
   
   public Ljava/lang/Object; flatMap(Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf);
   
@@ -12,69 +10,9 @@ public interface Lscala/collection/interfaces/TraversableMethods; {
   
   public Ljava/lang/Object; scanRight(Ljava/lang/Object; z, Lscala/Function2; op, Lscala/collection/generic/CanBuildFrom; bf);
   
-  public Ljava/lang/Object; $plus$plus(Lscala/collection/TraversableOnce; xs, Lscala/collection/generic/CanBuildFrom; bf);
+  public Ljava/lang/Object; $plus$plus$colon(Lscala/collection/TraversableOnce; that, Lscala/collection/generic/CanBuildFrom; bf);
   
-  public V; copyToArray(Ljava/lang/Object; xs, I; start);
-  
-  public V; copyToArray(Ljava/lang/Object; xs, I; start, I; len);
-  
-  public V; copyToBuffer(Lscala/collection/mutable/Buffer; dest);
-  
-  public Ljava/lang/Object; toArray(Lscala/reflect/ClassManifest; evidence$1);
-  
-  public Lscala/collection/Iterable; toIterable();
-  
-  public Lscala/collection/immutable/List; toList();
-  
-  public Lscala/collection/Seq; toSeq();
-  
-  public Lscala/collection/immutable/Set; toSet();
-  
-  public Lscala/collection/immutable/Stream; toStream();
-  
-  public Lscala/collection/immutable/IndexedSeq; toIndexedSeq();
-  
-  public Lscala/collection/mutable/Buffer; toBuffer();
-  
-  public Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/mutable/StringBuilder; b);
-  
-  public Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/mutable/StringBuilder; b, Ljava/lang/String; sep);
-  
-  public Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/mutable/StringBuilder; b, Ljava/lang/String; start, Ljava/lang/String; sep, Ljava/lang/String; end);
-  
-  public Ljava/lang/String; mkString(Ljava/lang/String; sep);
-  
-  public Ljava/lang/String; mkString(Ljava/lang/String; start, Ljava/lang/String; sep, Ljava/lang/String; end);
-  
-  public Ljava/lang/String; mkString();
-  
-  public Ljava/lang/Object; $div$colon(Ljava/lang/Object; z, Lscala/Function2; op);
-  
-  public Ljava/lang/Object; $colon$bslash(Ljava/lang/Object; z, Lscala/Function2; op);
-  
-  public Ljava/lang/Object; foldLeft(Ljava/lang/Object; z, Lscala/Function2; op);
-  
-  public Ljava/lang/Object; foldRight(Ljava/lang/Object; z, Lscala/Function2; op);
-  
-  public Lscala/Option; reduceLeftOption(Lscala/Function2; op);
-  
-  public Ljava/lang/Object; reduceLeft(Lscala/Function2; op);
-  
-  public Lscala/Option; reduceRightOption(Lscala/Function2; op);
-  
-  public Ljava/lang/Object; reduceRight(Lscala/Function2; op);
-  
-  public Z; exists(Lscala/Function1; p);
-  
-  public Z; forall(Lscala/Function1; p);
-  
-  public Z; hasDefiniteSize();
-  
-  public Z; isEmpty();
-  
-  public Z; nonEmpty();
-  
-  public Lscala/Option; find(Lscala/Function1; p);
+  public Ljava/lang/Object; $plus$plus(Lscala/collection/GenTraversableOnce; that, Lscala/collection/generic/CanBuildFrom; bf);
   
   public Ljava/lang/Object; head();
   
@@ -94,13 +32,19 @@ public interface Lscala/collection/interfaces/TraversableMethods; {
   
   public Lscala/collection/Traversable; init();
   
+  public Lscala/collection/Iterator; inits();
+  
   public Lscala/collection/Traversable; slice(I; from, I; until);
   
   public Lscala/collection/Traversable; tail();
   
+  public Lscala/collection/Iterator; tails();
+  
   public Lscala/collection/Traversable; take(I; n);
   
   public Lscala/collection/Traversable; takeWhile(Lscala/Function1; p);
+  
+  public Lscala/collection/generic/FilterMonadic; withFilter(Lscala/Function1; p);
   
   public Lscala/collection/Map; groupBy(Lscala/Function1; f);
   
@@ -109,10 +53,6 @@ public interface Lscala/collection/interfaces/TraversableMethods; {
   public Lscala/Tuple2; span(Lscala/Function1; p);
   
   public Lscala/Tuple2; splitAt(I; n);
-  
-  public I; count(Lscala/Function1; p);
-  
-  public I; size();
   
   public Ljava/lang/String; stringPrefix();
   

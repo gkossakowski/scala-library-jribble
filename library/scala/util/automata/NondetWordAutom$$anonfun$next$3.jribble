@@ -1,7 +1,7 @@
-public final class Lscala/util/automata/NondetWordAutom$$anonfun$next$3; extends Lscala/runtime/AbstractFunction2; {
+public final class Lscala/util/automata/NondetWordAutom$$anonfun$next$3; extends Lscala/runtime/AbstractFunction2; implements Lscala/Serializable; {
   
   public final Lscala/collection/immutable/BitSet; apply(Lscala/collection/immutable/BitSet; x$2, Lscala/collection/immutable/BitSet; x$3) {
-    return x$2.(Lscala/collection/generic/Addable;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Addable;)(x$3).<cast>(Lscala/collection/immutable/BitSet;);
+    return x$2.(Lscala/collection/SetLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/Set;)(x$3).<cast>(Lscala/collection/immutable/BitSet;);
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {

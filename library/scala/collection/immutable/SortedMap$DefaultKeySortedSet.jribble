@@ -1,0 +1,215 @@
+public class Lscala/collection/immutable/SortedMap$DefaultKeySortedSet; extends Lscala/collection/SortedMapLike$DefaultKeySortedSet; implements Lscala/collection/immutable/SortedSet;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/immutable/SortedSet; empty() {
+    return Lscala/collection/immutable/SortedSet$class;.(Lscala/collection/immutable/SortedSet$class;::empty(Lscala/collection/immutable/SortedSet;)Lscala/collection/immutable/SortedSet;)(this);
+  }
+  
+  public Lscala/collection/generic/GenericCompanion; companion() {
+    return Lscala/collection/immutable/Set$class;.(Lscala/collection/immutable/Set$class;::companion(Lscala/collection/immutable/Set;)Lscala/collection/generic/GenericCompanion;)(this);
+  }
+  
+  public Lscala/collection/immutable/Set; toSet() {
+    return Lscala/collection/immutable/Set$class;.(Lscala/collection/immutable/Set$class;::toSet(Lscala/collection/immutable/Set;)Lscala/collection/immutable/Set;)(this);
+  }
+  
+  public Lscala/collection/immutable/Set; seq() {
+    return Lscala/collection/immutable/Set$class;.(Lscala/collection/immutable/Set$class;::seq(Lscala/collection/immutable/Set;)Lscala/collection/immutable/Set;)(this);
+  }
+  
+  public Lscala/collection/parallel/Combiner; parCombiner() {
+    return Lscala/collection/immutable/Set$class;.(Lscala/collection/immutable/Set$class;::parCombiner(Lscala/collection/immutable/Set;)Lscala/collection/parallel/Combiner;)(this);
+  }
+  
+  public Lscala/collection/immutable/SortedSet; $plus(Ljava/lang/Object; elem) {
+    Lscala/collection/immutable/SortedSet; $1$;
+    if (this.(Lscala/collection/GenSetLike;::apply(Ljava/lang/Object;)Z;)(elem))
+      {
+        $1$ = this;
+      }
+    else
+      {
+        $1$ = Lscala/collection/immutable/SortedSet$;.MODULE$.(Lscala/collection/generic/SortedSetFactory;::apply(Lscala/collection/Seq;Lscala/math/Ordering;)Lscala/collection/SortedSet;)(Lscala/collection/immutable/Nil$;.MODULE$, this.(Lscala/collection/SortedMapLike$DefaultKeySortedSet;::ordering()Lscala/math/Ordering;)()).(Lscala/collection/SetLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/Set;)(this).(Lscala/collection/SetLike;::$plus(Ljava/lang/Object;)Lscala/collection/Set;)(elem).<cast>(Lscala/collection/immutable/SortedSet;);
+      }
+    return $1$;
+  }
+  
+  public Lscala/collection/immutable/SortedSet; $minus(Ljava/lang/Object; elem) {
+    Lscala/collection/immutable/SortedSet; $2$;
+    if (this.(Lscala/collection/GenSetLike;::apply(Ljava/lang/Object;)Z;)(elem))
+      {
+        $2$ = Lscala/collection/immutable/SortedSet$;.MODULE$.(Lscala/collection/generic/SortedSetFactory;::apply(Lscala/collection/Seq;Lscala/math/Ordering;)Lscala/collection/SortedSet;)(Lscala/collection/immutable/Nil$;.MODULE$, this.(Lscala/collection/SortedMapLike$DefaultKeySortedSet;::ordering()Lscala/math/Ordering;)()).(Lscala/collection/SetLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/Set;)(this).(Lscala/collection/SetLike;::$minus(Ljava/lang/Object;)Lscala/collection/Set;)(elem).<cast>(Lscala/collection/immutable/SortedSet;);
+      }
+    else
+      {
+        $2$ = this;
+      }
+    return $2$;
+  }
+  
+  public Lscala/collection/immutable/SortedSet; rangeImpl(Lscala/Option; from, Lscala/Option; until) {
+    Lscala/collection/immutable/SortedMap; map = this.(Lscala/collection/immutable/SortedMap$DefaultKeySortedSet;::scala$collection$immutable$SortedMap$DefaultKeySortedSet$$$outer()Lscala/collection/immutable/SortedMap;)().(Lscala/collection/SortedMapLike;::rangeImpl(Lscala/Option;Lscala/Option;)Lscala/collection/SortedMap;)(from, until).<cast>(Lscala/collection/immutable/SortedMap;);
+    return (new (Lscala/collection/immutable/SortedMap$DefaultKeySortedSet;::this(Lscala/collection/immutable/SortedMap;)V;)(map));
+  }
+  
+  protected Lscala/collection/immutable/SortedMap; $outer$u0020;
+  
+  public Lscala/collection/immutable/SortedMap; scala$collection$immutable$SortedMap$DefaultKeySortedSet$$$outer() {
+    return this.(Lscala/collection/immutable/SortedMap$DefaultKeySortedSet;)$outer$u0020;
+  }
+  
+  public Lscala/collection/GenTraversable; toTraversable() {
+    return this.(Lscala/collection/TraversableLike;::toTraversable()Lscala/collection/Traversable;)();
+  }
+  
+  public Lscala/collection/GenMap; groupBy(Lscala/Function1; f) {
+    return this.(Lscala/collection/TraversableLike;::groupBy(Lscala/Function1;)Lscala/collection/immutable/Map;)(f);
+  }
+  
+  public Lscala/collection/generic/Subtractable; repr() {
+    return this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/generic/Subtractable;);
+  }
+  
+  public Lscala/collection/generic/Sorted; repr() {
+    return this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/generic/Sorted;);
+  }
+  
+  public Lscala/collection/TraversableView; view(I; from, I; until) {
+    return this.(Lscala/collection/IterableLike;::view(I;I;)Lscala/collection/IterableView;)(from, until);
+  }
+  
+  public Lscala/collection/TraversableView; view() {
+    return this.(Lscala/collection/IterableLike;::view()Lscala/collection/IterableView;)();
+  }
+  
+  public Lscala/collection/GenIterable; toIterable() {
+    return this.(Lscala/collection/IterableLike;::toIterable()Lscala/collection/Iterable;)();
+  }
+  
+  public Lscala/collection/Traversable; toCollection(Ljava/lang/Object; repr) {
+    return this.(Lscala/collection/IterableLike;::toCollection(Ljava/lang/Object;)Lscala/collection/Iterable;)(repr);
+  }
+  
+  public Lscala/collection/Traversable; thisCollection() {
+    return this.(Lscala/collection/IterableLike;::thisCollection()Lscala/collection/Iterable;)();
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/collection/GenSetLike;::apply(Ljava/lang/Object;)Z;)(v1));
+  }
+  
+  public Ljava/lang/Object; diff(Lscala/collection/GenSet; that) {
+    return this.(Lscala/collection/SetLike;::diff(Lscala/collection/GenSet;)Lscala/collection/Set;)(that);
+  }
+  
+  public Ljava/lang/Object; union(Lscala/collection/GenSet; that) {
+    return this.(Lscala/collection/SetLike;::union(Lscala/collection/GenSet;)Lscala/collection/Set;)(that);
+  }
+  
+  public Lscala/collection/GenSeq; toSeq() {
+    return this.(Lscala/collection/SetLike;::toSeq()Lscala/collection/Seq;)();
+  }
+  
+  public Lscala/collection/generic/Sorted; range(Ljava/lang/Object; from, Ljava/lang/Object; until) {
+    return this.(Lscala/collection/SortedSetLike;::range(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/SortedSet;)(from, until);
+  }
+  
+  public Lscala/collection/generic/Sorted; until(Ljava/lang/Object; until) {
+    return this.(Lscala/collection/SortedSetLike;::until(Ljava/lang/Object;)Lscala/collection/SortedSet;)(until);
+  }
+  
+  public Lscala/collection/generic/Sorted; from(Ljava/lang/Object; from) {
+    return this.(Lscala/collection/SortedSetLike;::from(Ljava/lang/Object;)Lscala/collection/SortedSet;)(from);
+  }
+  
+  public Lscala/collection/TraversableOnce; seq() {
+    return this.(Lscala/collection/immutable/Set;::seq()Lscala/collection/immutable/Set;)();
+  }
+  
+  public Lscala/collection/Traversable; seq() {
+    return this.(Lscala/collection/immutable/Set;::seq()Lscala/collection/immutable/Set;)();
+  }
+  
+  public Lscala/collection/Iterable; seq() {
+    return this.(Lscala/collection/immutable/Set;::seq()Lscala/collection/immutable/Set;)();
+  }
+  
+  public Lscala/collection/Set; seq() {
+    return this.(Lscala/collection/immutable/Set;::seq()Lscala/collection/immutable/Set;)();
+  }
+  
+  public Lscala/collection/immutable/Traversable; seq() {
+    return this.(Lscala/collection/immutable/Set;::seq()Lscala/collection/immutable/Set;)();
+  }
+  
+  public Lscala/collection/immutable/Iterable; seq() {
+    return this.(Lscala/collection/immutable/Set;::seq()Lscala/collection/immutable/Set;)();
+  }
+  
+  public Lscala/collection/GenSet; toSet() {
+    return this.(Lscala/collection/immutable/Set;::toSet()Lscala/collection/immutable/Set;)();
+  }
+  
+  public Lscala/collection/Set; empty() {
+    return this.(Lscala/collection/immutable/SortedSet;::empty()Lscala/collection/immutable/SortedSet;)();
+  }
+  
+  public Lscala/collection/GenSet; empty() {
+    return this.(Lscala/collection/immutable/SortedSet;::empty()Lscala/collection/immutable/SortedSet;)();
+  }
+  
+  public Lscala/collection/SortedSet; empty() {
+    return this.(Lscala/collection/immutable/SortedSet;::empty()Lscala/collection/immutable/SortedSet;)();
+  }
+  
+  public Lscala/collection/generic/Sorted; rangeImpl(Lscala/Option; from, Lscala/Option; until) {
+    return this.(Lscala/collection/immutable/SortedMap$DefaultKeySortedSet;::rangeImpl(Lscala/Option;Lscala/Option;)Lscala/collection/immutable/SortedSet;)(from, until);
+  }
+  
+  public Lscala/collection/SortedSet; rangeImpl(Lscala/Option; from, Lscala/Option; until) {
+    return this.(Lscala/collection/immutable/SortedMap$DefaultKeySortedSet;::rangeImpl(Lscala/Option;Lscala/Option;)Lscala/collection/immutable/SortedSet;)(from, until);
+  }
+  
+  public Ljava/lang/Object; $minus(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/immutable/SortedMap$DefaultKeySortedSet;::$minus(Ljava/lang/Object;)Lscala/collection/immutable/SortedSet;)(elem);
+  }
+  
+  public Lscala/collection/generic/Subtractable; $minus(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/immutable/SortedMap$DefaultKeySortedSet;::$minus(Ljava/lang/Object;)Lscala/collection/immutable/SortedSet;)(elem);
+  }
+  
+  public Lscala/collection/Set; $minus(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/immutable/SortedMap$DefaultKeySortedSet;::$minus(Ljava/lang/Object;)Lscala/collection/immutable/SortedSet;)(elem);
+  }
+  
+  public Lscala/collection/SortedSet; $minus(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/immutable/SortedMap$DefaultKeySortedSet;::$minus(Ljava/lang/Object;)Lscala/collection/immutable/SortedSet;)(elem);
+  }
+  
+  public Ljava/lang/Object; $plus(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/immutable/SortedMap$DefaultKeySortedSet;::$plus(Ljava/lang/Object;)Lscala/collection/immutable/SortedSet;)(elem);
+  }
+  
+  public Lscala/collection/Set; $plus(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/immutable/SortedMap$DefaultKeySortedSet;::$plus(Ljava/lang/Object;)Lscala/collection/immutable/SortedSet;)(elem);
+  }
+  
+  public Lscala/collection/SortedSet; $plus(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/immutable/SortedMap$DefaultKeySortedSet;::$plus(Ljava/lang/Object;)Lscala/collection/immutable/SortedSet;)(elem);
+  }
+  
+  public this(Lscala/collection/immutable/SortedMap; $outer) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/immutable/SortedMap$DefaultKeySortedSet;)$outer$u0020 = $outer;
+      }
+    (Lscala/collection/SortedMapLike$DefaultKeySortedSet;::super(Lscala/collection/SortedMapLike;)V;)($outer);
+    Lscala/collection/immutable/Traversable$class;.(Lscala/collection/immutable/Traversable$class;::$init$(Lscala/collection/immutable/Traversable;)V;)(this);
+    Lscala/collection/immutable/Iterable$class;.(Lscala/collection/immutable/Iterable$class;::$init$(Lscala/collection/immutable/Iterable;)V;)(this);
+    Lscala/collection/immutable/Set$class;.(Lscala/collection/immutable/Set$class;::$init$(Lscala/collection/immutable/Set;)V;)(this);
+    Lscala/collection/immutable/SortedSet$class;.(Lscala/collection/immutable/SortedSet$class;::$init$(Lscala/collection/immutable/SortedSet;)V;)(this);
+  }
+}

@@ -1,7 +1,7 @@
-public final class Lscala/collection/immutable/Stream$$anonfun$$plus$plus$1; extends Lscala/runtime/AbstractFunction0; {
+public final class Lscala/collection/immutable/Stream$$anonfun$$plus$plus$1; extends Lscala/runtime/AbstractFunction0; implements Lscala/Serializable; {
   
   public final Lscala/collection/immutable/Stream; apply() {
-    return this.(Lscala/collection/immutable/Stream$$anonfun$$plus$plus$1;)$outer$u0020.(Lscala/collection/immutable/Stream;::scala$collection$immutable$Stream$$asStream(Ljava/lang/Object;)Lscala/collection/immutable/Stream;)(this.(Lscala/collection/immutable/Stream$$anonfun$$plus$plus$1;)$outer$u0020.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/immutable/Stream;::$plus$plus(Lscala/collection/TraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/Stream$$anonfun$$plus$plus$1;)that$1, Lscala/collection/immutable/Stream$;.MODULE$.(Lscala/collection/immutable/Stream$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()));
+    return this.(Lscala/collection/immutable/Stream$$anonfun$$plus$plus$1;)$outer$u0020.(Lscala/collection/immutable/Stream;::scala$collection$immutable$Stream$$asStream(Ljava/lang/Object;)Lscala/collection/immutable/Stream;)(this.(Lscala/collection/immutable/Stream$$anonfun$$plus$plus$1;)$outer$u0020.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Stream;).(Lscala/collection/immutable/Stream;::$plus$plus(Lscala/collection/GenTraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/Stream$$anonfun$$plus$plus$1;)that$1, Lscala/collection/immutable/Stream$;.MODULE$.(Lscala/collection/immutable/Stream$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()));
   }
   
   private Lscala/collection/immutable/Stream; $outer$u0020;
@@ -10,9 +10,9 @@ public final class Lscala/collection/immutable/Stream$$anonfun$$plus$plus$1; ext
     return this.(Lscala/collection/immutable/Stream$$anonfun$$plus$plus$1;::apply()Lscala/collection/immutable/Stream;)();
   }
   
-  private Lscala/collection/TraversableOnce; that$1;
+  private Lscala/collection/GenTraversableOnce; that$1;
   
-  public this(Lscala/collection/immutable/Stream; $outer, Lscala/collection/TraversableOnce; that$1) {
+  public this(Lscala/collection/immutable/Stream; $outer, Lscala/collection/GenTraversableOnce; that$1) {
     if (($outer == null))
       {
         throw (new (Ljava/lang/NullPointerException;::this()V;)());

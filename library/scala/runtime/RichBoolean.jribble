@@ -1,4 +1,8 @@
-public final class Lscala/runtime/RichBoolean; extends Ljava/lang/Object; implements Lscala/Proxy;, Lscala/math/Ordered;, Lscala/ScalaObject; {
+public final class Lscala/runtime/RichBoolean; extends Ljava/lang/Object; implements Lscala/runtime/OrderedProxy;, Lscala/ScalaObject; {
+  
+  public I; compare(Ljava/lang/Object; y) {
+    return Lscala/runtime/OrderedProxy$class;.(Lscala/runtime/OrderedProxy$class;::compare(Lscala/runtime/OrderedProxy;Ljava/lang/Object;)I;)(this, y);
+  }
   
   public Z; $less(Ljava/lang/Object; that) {
     return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
@@ -32,42 +36,28 @@ public final class Lscala/runtime/RichBoolean; extends Ljava/lang/Object; implem
     return Lscala/Proxy$class;.(Lscala/Proxy$class;::toString(Lscala/Proxy;)Ljava/lang/String;)(this);
   }
   
-  private Z; x;
+  private Z; self$u0020;
+  
+  public Z; self() {
+    return this.(Lscala/runtime/RichBoolean;)self$u0020;
+  }
+  
+  private Lscala/math/Ordering; ord$u0020;
+  
+  protected Lscala/math/Ordering; ord() {
+    return this.(Lscala/runtime/RichBoolean;)ord$u0020;
+  }
   
   public Ljava/lang/Object; self() {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/runtime/RichBoolean;)x);
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/runtime/RichBoolean;::self()Z;)());
   }
   
-  public I; compare(Z; y) {
-    I; $1$;
-    if ((this.(Lscala/runtime/RichBoolean;)x == y))
-      {
-        $1$ = 0;
-      }
-    else
-      {
-        I; $2$;
-        if (this.(Lscala/runtime/RichBoolean;)x)
-          {
-            $2$ = 1;
-          }
-        else
-          {
-            $2$ = -1;
-          }
-        $1$ = $2$;
-      }
-    return $1$;
-  }
-  
-  public I; compare(Ljava/lang/Object; that) {
-    return this.(Lscala/runtime/RichBoolean;::compare(Z;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(that));
-  }
-  
-  public this(Z; x) {
-    this.(Lscala/runtime/RichBoolean;)x = x;
+  public this(Z; self) {
+    this.(Lscala/runtime/RichBoolean;)self$u0020 = self;
     (Ljava/lang/Object;::super()V;)();
     Lscala/Proxy$class;.(Lscala/Proxy$class;::$init$(Lscala/Proxy;)V;)(this);
     Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$init$(Lscala/math/Ordered;)V;)(this);
+    Lscala/runtime/OrderedProxy$class;.(Lscala/runtime/OrderedProxy$class;::$init$(Lscala/runtime/OrderedProxy;)V;)(this);
+    this.(Lscala/runtime/RichBoolean;)ord$u0020 = Lscala/math/Ordering$;.MODULE$.(Lscala/math/Ordering$;::apply(Lscala/math/Ordering;)Lscala/math/Ordering;)(Lscala/math/Ordering$Boolean$;.MODULE$);
   }
 }

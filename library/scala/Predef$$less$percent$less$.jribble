@@ -1,8 +1,12 @@
-public final class Lscala/Predef$$less$percent$less$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/Predef$$less$percent$less$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/Predef$$less$percent$less$; MODULE$ = new (Lscala/Predef$$less$percent$less$;::this()V;)();
   
   public Lscala/Predef$$less$percent$less; conformsOrViewsAs(Lscala/Function1; evidence$1$1) {
-    return (new (Lscala/Predef$$less$percent$less$$anon$3;::this(Lscala/Function1;)V;)(evidence$1$1));
+    return (new (Lscala/Predef$$less$percent$less$$anon$5;::this(Lscala/Function1;)V;)(evidence$1$1));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/Predef$$less$percent$less$;.MODULE$;
   }
   
   public this() {

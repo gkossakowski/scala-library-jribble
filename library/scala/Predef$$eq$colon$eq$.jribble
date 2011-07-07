@@ -1,8 +1,12 @@
-public final class Lscala/Predef$$eq$colon$eq$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/Predef$$eq$colon$eq$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/Predef$$eq$colon$eq$; MODULE$ = new (Lscala/Predef$$eq$colon$eq$;::this()V;)();
   
   public Lscala/Predef$$eq$colon$eq; tpEquals() {
-    return (new (Lscala/Predef$$eq$colon$eq$$anon$2;::this()V;)());
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;)scala$Predef$$singleton_$eq$colon$eq;
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/Predef$$eq$colon$eq$;.MODULE$;
   }
   
   public this() {

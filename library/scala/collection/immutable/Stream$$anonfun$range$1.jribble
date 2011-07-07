@@ -1,23 +1,29 @@
-public final class Lscala/collection/immutable/Stream$$anonfun$range$1; extends Lscala/runtime/AbstractFunction0; {
+public final class Lscala/collection/immutable/Stream$$anonfun$range$1; extends Lscala/runtime/AbstractFunction0; implements Lscala/Serializable; {
   
   public final Lscala/collection/immutable/Stream; apply() {
-    return Lscala/collection/immutable/Stream$;.MODULE$.(Lscala/collection/immutable/Stream$;::range(I;I;I;)Lscala/collection/immutable/Stream;)((this.(Lscala/collection/immutable/Stream$$anonfun$range$1;)start$3 + this.(Lscala/collection/immutable/Stream$$anonfun$range$1;)step$2), this.(Lscala/collection/immutable/Stream$$anonfun$range$1;)end$2, this.(Lscala/collection/immutable/Stream$$anonfun$range$1;)step$2);
+    return Lscala/collection/immutable/Stream$;.MODULE$.(Lscala/collection/immutable/Stream$;::range(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/immutable/Stream;)(this.(Lscala/collection/immutable/Stream$$anonfun$range$1;)num$1.(Lscala/math/Integral;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Integral$IntegralOps;)(this.(Lscala/collection/immutable/Stream$$anonfun$range$1;)start$3).(Lscala/math/Numeric$Ops;::$plus(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/immutable/Stream$$anonfun$range$1;)step$2), this.(Lscala/collection/immutable/Stream$$anonfun$range$1;)end$2, this.(Lscala/collection/immutable/Stream$$anonfun$range$1;)step$2, this.(Lscala/collection/immutable/Stream$$anonfun$range$1;)evidence$1$1);
   }
   
   public final Ljava/lang/Object; apply() {
     return this.(Lscala/collection/immutable/Stream$$anonfun$range$1;::apply()Lscala/collection/immutable/Stream;)();
   }
   
-  private I; start$3;
+  private Ljava/lang/Object; start$3;
   
-  private I; end$2;
+  private Ljava/lang/Object; end$2;
   
-  private I; step$2;
+  private Ljava/lang/Object; step$2;
   
-  public this(I; start$3, I; end$2, I; step$2) {
+  private Lscala/math/Integral; evidence$1$1;
+  
+  private Lscala/math/Integral; num$1;
+  
+  public this(Ljava/lang/Object; start$3, Ljava/lang/Object; end$2, Ljava/lang/Object; step$2, Lscala/math/Integral; evidence$1$1, Lscala/math/Integral; num$1) {
     this.(Lscala/collection/immutable/Stream$$anonfun$range$1;)start$3 = start$3;
     this.(Lscala/collection/immutable/Stream$$anonfun$range$1;)end$2 = end$2;
     this.(Lscala/collection/immutable/Stream$$anonfun$range$1;)step$2 = step$2;
+    this.(Lscala/collection/immutable/Stream$$anonfun$range$1;)evidence$1$1 = evidence$1$1;
+    this.(Lscala/collection/immutable/Stream$$anonfun$range$1;)num$1 = num$1;
     (Lscala/runtime/AbstractFunction0;::super()V;)();
   }
 }

@@ -4,6 +4,14 @@ public abstract class Lscala/collection/mutable/Iterable$class; {
     return Lscala/collection/mutable/Iterable$;.MODULE$;
   }
   
+  public static Lscala/collection/parallel/Combiner; parCombiner(Lscala/collection/mutable/Iterable; $this) {
+    return Lscala/collection/parallel/mutable/ParIterable$;.MODULE$.(Lscala/collection/parallel/mutable/ParIterable$;::newCombiner()Lscala/collection/parallel/Combiner;)();
+  }
+  
+  public static Lscala/collection/mutable/Iterable; seq(Lscala/collection/mutable/Iterable; $this) {
+    return $this;
+  }
+  
   public static V; $init$(Lscala/collection/mutable/Iterable; $this) {
     
   }

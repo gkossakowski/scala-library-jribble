@@ -1,9 +1,5 @@
 public abstract class Lscala/runtime/AbstractFunction7; extends Ljava/lang/Object; implements Lscala/Function7;, Lscala/ScalaObject; {
   
-  public Ljava/lang/String; toString() {
-    return Lscala/Function7$class;.(Lscala/Function7$class;::toString(Lscala/Function7;)Ljava/lang/String;)(this);
-  }
-  
   public Lscala/Function1; curried() {
     return Lscala/Function7$class;.(Lscala/Function7$class;::curried(Lscala/Function7;)Lscala/Function1;)(this);
   }
@@ -14,6 +10,10 @@ public abstract class Lscala/runtime/AbstractFunction7; extends Ljava/lang/Objec
   
   public Lscala/Function1; tupled() {
     return Lscala/Function7$class;.(Lscala/Function7$class;::tupled(Lscala/Function7;)Lscala/Function1;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/Function7$class;.(Lscala/Function7$class;::toString(Lscala/Function7;)Ljava/lang/String;)(this);
   }
   
   public this() {

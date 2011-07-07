@@ -1,6 +1,12 @@
-public interface Lscala/collection/TraversableViewLike$Transformed; extends Lscala/collection/TraversableView;, Lscala/ScalaObject; {
+public interface Lscala/collection/TraversableViewLike$Transformed; extends Lscala/collection/TraversableView;, Lscala/collection/GenTraversableViewLike$Transformed;, Lscala/ScalaObject; {
   
-  public Ljava/lang/Object; underlying();
+  public V; foreach(Lscala/Function1; f);
+  
+  public Lscala/Option; headOption();
+  
+  public Lscala/Option; lastOption();
+  
+  public Ljava/lang/String; stringPrefix();
   
   public Ljava/lang/String; toString();
   

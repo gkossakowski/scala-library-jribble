@@ -8,36 +8,6 @@ public class Lscala/collection/immutable/Range$Inclusive; extends Lscala/collect
     return (new (Lscala/collection/immutable/Range$Inclusive;::this(I;I;I;)V;)(start, end, step));
   }
   
-  public I; last() {
-    I; $22$;
-    if (((super.(Lscala/collection/immutable/Range;::step()I;)() == 1) || (super.(Lscala/collection/immutable/Range;::step()I;)() == -1)))
-      {
-        $22$ = super.(Lscala/collection/immutable/Range;::end()I;)();
-      }
-    else
-      {
-        $22$ = ((((super.(Lscala/collection/immutable/Range;::end()I;)().<cast>(J;) - super.(Lscala/collection/immutable/Range;::start()I;)().<cast>(J;)) / super.(Lscala/collection/immutable/Range;::step()I;)().<cast>(J;)) * super.(Lscala/collection/immutable/Range;::step()I;)().<cast>(J;)) + super.(Lscala/collection/immutable/Range;::start()I;)().<cast>(J;)).<cast>(I;);
-      }
-    return $22$;
-  }
-  
-  protected J; fullLength() {
-    J; $23$;
-    if ((((super.(Lscala/collection/immutable/Range;::end()I;)() > super.(Lscala/collection/immutable/Range;::start()I;)()) == (super.(Lscala/collection/immutable/Range;::step()I;)() > 0)) || (super.(Lscala/collection/immutable/Range;::start()I;)() == super.(Lscala/collection/immutable/Range;::end()I;)())))
-      {
-        $23$ = (((this.(Lscala/collection/immutable/Range$Inclusive;::last()I;)().<cast>(J;) - super.(Lscala/collection/immutable/Range;::start()I;)().<cast>(J;)) / super.(Lscala/collection/immutable/Range;::step()I;)().<cast>(J;)) + 1);
-      }
-    else
-      {
-        $23$ = 0L;
-      }
-    return $23$;
-  }
-  
-  public Ljava/lang/Object; last() {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/collection/immutable/Range$Inclusive;::last()I;)());
-  }
-  
   public this(I; start, I; end, I; step) {
     (Lscala/collection/immutable/Range;::super(I;I;I;)V;)(start, end, step);
   }

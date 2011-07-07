@@ -1,13 +1,20 @@
-public final class Lscala/Tuple2$Zipped$$anonfun$exists$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/Tuple2$Zipped$$anonfun$exists$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final V; apply(Ljava/lang/Object; el1) {
-    if ((!(this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)acc$1.(Lscala/runtime/BooleanRef;)elem) && this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)elems2$5.(Lscala/collection/Iterator;::hasNext()Z;)()))
+    if (this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)elems2$4.(Lscala/collection/Iterator;::hasNext()Z;)())
       {
-        this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)acc$1.(Lscala/runtime/BooleanRef;)elem = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)f$4.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(el1, this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)elems2$5.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)()));
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)f$5.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(el1, this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)elems2$4.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)())))
+          {
+            throw (new (Lscala/runtime/NonLocalReturnControl;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)nonLocalReturnKey4$1, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(true)));
+          }
+        else
+          {
+            
+          }
       }
     else
       {
-        
+        throw (new (Lscala/runtime/NonLocalReturnControl;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)nonLocalReturnKey4$1, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(false)));
       }
   }
   
@@ -16,16 +23,16 @@ public final class Lscala/Tuple2$Zipped$$anonfun$exists$1; extends Lscala/runtim
     return Lscala/runtime/BoxedUnit;.UNIT;
   }
   
-  private Lscala/Function2; f$4;
+  private Lscala/Function2; f$5;
   
-  private Lscala/runtime/BooleanRef; acc$1;
+  private Lscala/collection/Iterator; elems2$4;
   
-  private Lscala/collection/Iterator; elems2$5;
+  private Ljava/lang/Object; nonLocalReturnKey4$1;
   
-  public this(Lscala/Tuple2$Zipped; $outer, Lscala/Function2; f$4, Lscala/runtime/BooleanRef; acc$1, Lscala/collection/Iterator; elems2$5) {
-    this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)f$4 = f$4;
-    this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)acc$1 = acc$1;
-    this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)elems2$5 = elems2$5;
+  public this(Lscala/Tuple2$Zipped; $outer, Lscala/Function2; f$5, Lscala/collection/Iterator; elems2$4, Ljava/lang/Object; nonLocalReturnKey4$1) {
+    this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)f$5 = f$5;
+    this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)elems2$4 = elems2$4;
+    this.(Lscala/Tuple2$Zipped$$anonfun$exists$1;)nonLocalReturnKey4$1 = nonLocalReturnKey4$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

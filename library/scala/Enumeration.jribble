@@ -1,12 +1,4 @@
-public abstract class Lscala/Enumeration; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
-  
-  public this() {
-    (Lscala/Enumeration;::this(I;Lscala/collection/Seq;)V;)(0, Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/String;>{null}.<cast>(Ljava/lang/Object;[)));
-  }
-  
-  public this(Lscala/collection/Seq; names) {
-    (Lscala/Enumeration;::this(I;Lscala/collection/Seq;)V;)(0, names);
-  }
+public abstract class Lscala/Enumeration; extends Ljava/lang/Object; implements Lscala/Serializable;, Lscala/ScalaObject; {
   
   public Ljava/lang/Object; readResolve() {
     throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
@@ -51,7 +43,7 @@ public abstract class Lscala/Enumeration; extends Ljava/lang/Object; implements 
   public Lscala/Enumeration$ValueSet; values() {
     if (!(this.(Lscala/Enumeration;::scala$Enumeration$$vsetDefined()Z;)()))
       {
-        this.(Lscala/Enumeration;::vset_$eq(Lscala/Enumeration$ValueSet;)V;)((new (Lscala/Enumeration$ValueSet;::this(Lscala/Enumeration;Lscala/collection/immutable/BitSet;)V;)(this, Lscala/collection/immutable/BitSet$;.MODULE$.(Lscala/collection/immutable/BitSet$;::empty()Lscala/collection/immutable/BitSet;)().(Lscala/collection/generic/Addable;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Addable;)(this.(Lscala/Enumeration;::scala$Enumeration$$vmap()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::values()Lscala/collection/Iterable;)().(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/Enumeration$$anonfun$values$1;::this(Lscala/Enumeration;)V;)(this)), Lscala/collection/Iterable$;.MODULE$.(Lscala/collection/Iterable$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;)).<cast>(Lscala/collection/immutable/BitSet;))));
+        this.(Lscala/Enumeration;::vset_$eq(Lscala/Enumeration$ValueSet;)V;)((new (Lscala/Enumeration$ValueSet;::this(Lscala/Enumeration;Lscala/collection/immutable/SortedSet;)V;)(this, Lscala/collection/immutable/SortedSet$;.MODULE$.(Lscala/collection/immutable/SortedSet$;::empty(Lscala/math/Ordering;)Lscala/collection/immutable/SortedSet;)(Lscala/math/Ordering$Int$;.MODULE$).(Lscala/collection/SetLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/Set;)(this.(Lscala/Enumeration;::scala$Enumeration$$vmap()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::values()Lscala/collection/Iterable;)().(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/Enumeration$$anonfun$values$1;::this(Lscala/Enumeration;)V;)(this)), Lscala/collection/Iterable$;.MODULE$.(Lscala/collection/Iterable$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/GenTraversableOnce;)).<cast>(Lscala/collection/immutable/SortedSet;))));
         this.(Lscala/Enumeration;::scala$Enumeration$$vsetDefined_$eq(Z;)V;)(true);
       }
     else
@@ -81,7 +73,7 @@ public abstract class Lscala/Enumeration; extends Ljava/lang/Object; implements 
     this.(Lscala/Enumeration;)nextName$u0020 = x$1;
   }
   
-  public final Ljava/lang/String; scala$Enumeration$$nextNameOrElse(Lscala/Function0; orElse) {
+  public final Ljava/lang/String; scala$Enumeration$$nextNameOrNull() {
     Ljava/lang/String; $1$;
     if (this.(Lscala/Enumeration;::nextName()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::hasNext()Z;)())
       {
@@ -89,7 +81,7 @@ public abstract class Lscala/Enumeration; extends Ljava/lang/Object; implements 
       }
     else
       {
-        $1$ = orElse.(Lscala/Function0;::apply()Ljava/lang/Object;)().<cast>(Ljava/lang/String;);
+        $1$ = null;
       }
     return $1$;
   }
@@ -121,7 +113,7 @@ public abstract class Lscala/Enumeration; extends Ljava/lang/Object; implements 
   }
   
   protected final Lscala/Enumeration$Value; Value(I; i) {
-    return this.(Lscala/Enumeration;::Value(I;Ljava/lang/String;)Lscala/Enumeration$Value;)(i, this.(Lscala/Enumeration;::scala$Enumeration$$nextNameOrElse(Lscala/Function0;)Ljava/lang/String;)((new (Lscala/Enumeration$$anonfun$Value$1;::this(Lscala/Enumeration;)V;)(this))));
+    return this.(Lscala/Enumeration;::Value(I;Ljava/lang/String;)Lscala/Enumeration$Value;)(i, this.(Lscala/Enumeration;::scala$Enumeration$$nextNameOrNull()Ljava/lang/String;)());
   }
   
   protected final Lscala/Enumeration$Value; Value(Ljava/lang/String; name) {
@@ -136,8 +128,8 @@ public abstract class Lscala/Enumeration; extends Ljava/lang/Object; implements 
     throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
   }
   
-  public final Ljava/lang/String; scala$Enumeration$$nameOf(I; i$2) {
-    return this.(Lscala/Enumeration;::scala$Enumeration$$nmap()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::getOrElse(Ljava/lang/Object;Lscala/Function0;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i$2), (new (Lscala/Enumeration$$anonfun$scala$Enumeration$$nameOf$1;::this(Lscala/Enumeration;I;)V;)(this, i$2))).<cast>(Ljava/lang/String;);
+  public final Ljava/lang/String; scala$Enumeration$$nameOf(I; i$1) {
+    return this.(Lscala/Enumeration;::scala$Enumeration$$nmap()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::getOrElse(Ljava/lang/Object;Lscala/Function0;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i$1), (new (Lscala/Enumeration$$anonfun$scala$Enumeration$$nameOf$1;::this(Lscala/Enumeration;I;)V;)(this, i$1))).<cast>(Ljava/lang/String;);
   }
   
   private Lscala/Enumeration$ValueSet$; ValueSet$module;
@@ -145,45 +137,16 @@ public abstract class Lscala/Enumeration; extends Ljava/lang/Object; implements 
   public final Lscala/Enumeration$ValueSet$; ValueSet() {
     if ((this.(Lscala/Enumeration;)ValueSet$module == null))
       {
-        this.(Lscala/Enumeration;)ValueSet$module = (new (Lscala/Enumeration$ValueSet$;::this(Lscala/Enumeration;)V;)(this));
+        if ((this.(Lscala/Enumeration;)ValueSet$module == null))
+          {
+            this.(Lscala/Enumeration;)ValueSet$module = (new (Lscala/Enumeration$ValueSet$;::this(Lscala/Enumeration;)V;)(this));
+          }
       }
     return this.(Lscala/Enumeration;)ValueSet$module;
   }
   
-  public Ljava/lang/String; name() {
-    return this.(Lscala/Enumeration;::toString()Ljava/lang/String;)();
-  }
-  
-  public Lscala/Option; valueOf(Ljava/lang/String; s$2) {
-    return this.(Lscala/Enumeration;::values()Lscala/Enumeration$ValueSet;)().(Lscala/collection/IterableLike;::find(Lscala/Function1;)Lscala/Option;)((new (Lscala/Enumeration$$anonfun$valueOf$1;::this(Lscala/Enumeration;Ljava/lang/String;)V;)(this, s$2)));
-  }
-  
-  public final Lscala/collection/Iterator; iterator() {
-    return this.(Lscala/Enumeration;::values()Lscala/Enumeration$ValueSet;)().(Lscala/Enumeration$ValueSet;::iterator()Lscala/collection/Iterator;)();
-  }
-  
-  public V; foreach(Lscala/Function1; f) {
-    this.(Lscala/Enumeration;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)(f);
-  }
-  
-  public Z; forall(Lscala/Function1; p) {
-    return this.(Lscala/Enumeration;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::forall(Lscala/Function1;)Z;)(p);
-  }
-  
-  public Z; exists(Lscala/Function1; p) {
-    return this.(Lscala/Enumeration;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::exists(Lscala/Function1;)Z;)(p);
-  }
-  
-  public Lscala/collection/Iterator; map(Lscala/Function1; f) {
-    return this.(Lscala/Enumeration;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)(f);
-  }
-  
-  public Lscala/collection/Iterator; flatMap(Lscala/Function1; f) {
-    return this.(Lscala/Enumeration;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::flatMap(Lscala/Function1;)Lscala/collection/Iterator;)(f);
-  }
-  
-  public Lscala/collection/Iterator; filter(Lscala/Function1; p) {
-    return this.(Lscala/Enumeration;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::filter(Lscala/Function1;)Lscala/collection/Iterator;)(p);
+  public final Z; isValDef$1(Ljava/lang/reflect/Method; m$1, Ljava/lang/reflect/Field;[ fields$1) {
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::refArrayOps(Ljava/lang/Object;[)Lscala/collection/mutable/ArrayOps;)(fields$1.<cast>(Ljava/lang/Object;[)).(Lscala/collection/IndexedSeqOptimized;::exists(Lscala/Function1;)Z;)((new (Lscala/Enumeration$$anonfun$isValDef$1$1;::this(Lscala/Enumeration;Ljava/lang/reflect/Method;)V;)(this, m$1)));
   }
   
   public this(I; initial, Lscala/collection/Seq; names) {
@@ -195,5 +158,13 @@ public abstract class Lscala/Enumeration; extends Ljava/lang/Object; implements 
     this.(Lscala/Enumeration;)nextId$u0020 = initial;
     this.(Lscala/Enumeration;)nextName$u0020 = names.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
     this.(Lscala/Enumeration;)scala$Enumeration$$topId$u0020 = initial;
+  }
+  
+  public this() {
+    (Lscala/Enumeration;::this(I;Lscala/collection/Seq;)V;)(0, Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapRefArray(Ljava/lang/Object;[)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/String;>{}.<cast>(Ljava/lang/Object;[)));
+  }
+  
+  public this(Lscala/collection/Seq; names) {
+    (Lscala/Enumeration;::this(I;Lscala/collection/Seq;)V;)(0, names);
   }
 }

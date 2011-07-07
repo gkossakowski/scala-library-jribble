@@ -1,4 +1,4 @@
-public final class Lscala/util/control/TailCalls$Done$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/util/control/TailCalls$Done$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/util/control/TailCalls$Done$; MODULE$ = new (Lscala/util/control/TailCalls$Done$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/util/control/TailCalls$Done$; extends Ljava/lang/Objec
   }
   
   public Lscala/Option; unapply(Lscala/util/control/TailCalls$Done; x$0) {
-    Lscala/Option; $9$;
+    Lscala/Option; $14$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $9$ = Lscala/None$;.MODULE$;
+        $14$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $9$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/util/control/TailCalls$Done;::result()Ljava/lang/Object;)()));
+        $14$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/util/control/TailCalls$Done;::result()Ljava/lang/Object;)()));
       }
-    return $9$;
+    return $14$;
   }
   
   public Lscala/util/control/TailCalls$Done; apply(Ljava/lang/Object; result) {
     return (new (Lscala/util/control/TailCalls$Done;::this(Ljava/lang/Object;)V;)(result));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/util/control/TailCalls$Done$;.MODULE$;
   }
   
   public this() {

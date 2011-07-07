@@ -1,4 +1,4 @@
-public final class Lscala/reflect/ClassManifest$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/reflect/ClassManifest$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/reflect/ClassManifest$; MODULE$ = new (Lscala/reflect/ClassManifest$;::this()V;)();
   
   private Lscala/reflect/AnyValManifest; Byte$u0020;
@@ -86,58 +86,58 @@ public final class Lscala/reflect/ClassManifest$; extends Ljava/lang/Object; imp
   }
   
   public Lscala/reflect/ClassManifest; fromClass(Ljava/lang/Class; clazz) {
-    Ljava/lang/Class; temp14 = clazz;
+    Ljava/lang/Class; temp10 = clazz;
     Lscala/reflect/ClassManifest; $1$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(B;.class, temp14))
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(B;.class, temp10))
       {
         $1$ = this.(Lscala/reflect/ClassManifest$;::Byte()Lscala/reflect/AnyValManifest;)();
       }
     else
       {
         Lscala/reflect/ClassManifest; $2$;
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(S;.class, temp14))
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(S;.class, temp10))
           {
             $2$ = this.(Lscala/reflect/ClassManifest$;::Short()Lscala/reflect/AnyValManifest;)();
           }
         else
           {
             Lscala/reflect/ClassManifest; $3$;
-            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(C;.class, temp14))
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(C;.class, temp10))
               {
                 $3$ = this.(Lscala/reflect/ClassManifest$;::Char()Lscala/reflect/AnyValManifest;)();
               }
             else
               {
                 Lscala/reflect/ClassManifest; $4$;
-                if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(I;.class, temp14))
+                if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(I;.class, temp10))
                   {
                     $4$ = this.(Lscala/reflect/ClassManifest$;::Int()Lscala/reflect/AnyValManifest;)();
                   }
                 else
                   {
                     Lscala/reflect/ClassManifest; $5$;
-                    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(J;.class, temp14))
+                    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(J;.class, temp10))
                       {
                         $5$ = this.(Lscala/reflect/ClassManifest$;::Long()Lscala/reflect/AnyValManifest;)();
                       }
                     else
                       {
                         Lscala/reflect/ClassManifest; $6$;
-                        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(F;.class, temp14))
+                        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(F;.class, temp10))
                           {
                             $6$ = this.(Lscala/reflect/ClassManifest$;::Float()Lscala/reflect/AnyValManifest;)();
                           }
                         else
                           {
                             Lscala/reflect/ClassManifest; $7$;
-                            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(D;.class, temp14))
+                            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(D;.class, temp10))
                               {
                                 $7$ = this.(Lscala/reflect/ClassManifest$;::Double()Lscala/reflect/AnyValManifest;)();
                               }
                             else
                               {
                                 Lscala/reflect/ClassManifest; $8$;
-                                if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Z;.class, temp14))
+                                if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Z;.class, temp10))
                                   {
                                     $8$ = this.(Lscala/reflect/ClassManifest$;::Boolean()Lscala/reflect/AnyValManifest;)();
                                   }
@@ -176,37 +176,37 @@ public final class Lscala/reflect/ClassManifest$; extends Ljava/lang/Object; imp
   }
   
   public Lscala/reflect/ClassManifest; classType(Ljava/lang/Class; clazz) {
-    return (new (Lscala/reflect/ClassManifest$ClassTypeManifest;::this(Lscala/Option;Ljava/lang/Class;Lscala/collection/immutable/List;)V;)(Lscala/None$;.MODULE$, clazz, Lscala/collection/immutable/Nil$;.MODULE$));
+    return (new (Lscala/reflect/ClassTypeManifest;::this(Lscala/Option;Ljava/lang/Class;Lscala/collection/immutable/List;)V;)(Lscala/None$;.MODULE$, clazz, Lscala/collection/immutable/Nil$;.MODULE$));
   }
   
   public Lscala/reflect/ClassManifest; classType(Ljava/lang/Class; clazz, Lscala/reflect/OptManifest; arg1, Lscala/collection/Seq; args) {
     Lscala/None$; $10$ = Lscala/None$;.MODULE$;
     Ljava/lang/Class; $11$ = clazz;
-    Lscala/reflect/OptManifest; x$3 = arg1;
-    return (new (Lscala/reflect/ClassManifest$ClassTypeManifest;::this(Lscala/Option;Ljava/lang/Class;Lscala/collection/immutable/List;)V;)($10$, $11$, args.(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)().(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$3)));
+    Lscala/reflect/OptManifest; x$1 = arg1;
+    return (new (Lscala/reflect/ClassTypeManifest;::this(Lscala/Option;Ljava/lang/Class;Lscala/collection/immutable/List;)V;)($10$, $11$, args.(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)().(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$1)));
   }
   
   public Lscala/reflect/ClassManifest; classType(Lscala/reflect/OptManifest; prefix, Ljava/lang/Class; clazz, Lscala/collection/Seq; args) {
-    return (new (Lscala/reflect/ClassManifest$ClassTypeManifest;::this(Lscala/Option;Ljava/lang/Class;Lscala/collection/immutable/List;)V;)((new (Lscala/Some;::this(Ljava/lang/Object;)V;)(prefix)), clazz, args.(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)()));
+    return (new (Lscala/reflect/ClassTypeManifest;::this(Lscala/Option;Ljava/lang/Class;Lscala/collection/immutable/List;)V;)((new (Lscala/Some;::this(Ljava/lang/Object;)V;)(prefix)), clazz, args.(Lscala/collection/TraversableOnce;::toList()Lscala/collection/immutable/List;)()));
   }
   
   public Lscala/reflect/ClassManifest; arrayType(Lscala/reflect/OptManifest; arg) {
-    Lscala/reflect/OptManifest; temp24 = arg;
+    Lscala/reflect/OptManifest; temp20 = arg;
     Lscala/reflect/ClassManifest; $12$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/reflect/NoManifest$;.MODULE$, temp24))
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/reflect/NoManifest$;.MODULE$, temp20))
       {
         $12$ = this.(Lscala/reflect/ClassManifest$;::Object()Lscala/reflect/Manifest;)();
       }
     else
       {
         Lscala/reflect/ClassManifest; $13$;
-        if (temp24.<instanceof>(Lscala/reflect/ClassManifest;))
+        if (temp20.<instanceof>(Lscala/reflect/ClassManifest;))
           {
-            $13$ = temp24.<cast>(Lscala/reflect/ClassManifest;).(Lscala/reflect/ClassManifest;::arrayManifest()Lscala/reflect/ClassManifest;)();
+            $13$ = temp20.<cast>(Lscala/reflect/ClassManifest;).(Lscala/reflect/ClassManifest;::arrayManifest()Lscala/reflect/ClassManifest;)();
           }
         else
           {
-            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp24));
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp20));
           }
         $12$ = $13$;
       }
@@ -219,6 +219,10 @@ public final class Lscala/reflect/ClassManifest$; extends Ljava/lang/Object; imp
   
   public Lscala/reflect/ClassManifest; abstractType(Lscala/reflect/OptManifest; prefix$2, Ljava/lang/String; name$2, Lscala/reflect/ClassManifest; upperbound$1, Lscala/collection/Seq; args$2) {
     return (new (Lscala/reflect/ClassManifest$$anon$2;::this(Lscala/reflect/OptManifest;Ljava/lang/String;Lscala/reflect/ClassManifest;Lscala/collection/Seq;)V;)(prefix$2, name$2, upperbound$1, args$2));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/reflect/ClassManifest$;.MODULE$;
   }
   
   public this() {

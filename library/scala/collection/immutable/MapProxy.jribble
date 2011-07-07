@@ -12,7 +12,9 @@ public interface Lscala/collection/immutable/MapProxy; extends Lscala/collection
   
   public Lscala/collection/immutable/MapProxy; $plus(Lscala/Tuple2; elem1, Lscala/Tuple2; elem2, Lscala/collection/Seq; elems);
   
-  public Lscala/collection/immutable/MapProxy; $plus$plus(Lscala/collection/TraversableOnce; xs);
+  public Lscala/collection/immutable/MapProxy; $plus$plus(Lscala/collection/GenTraversableOnce; xs);
+  
+  public Lscala/collection/immutable/Set; keySet();
   
   public Lscala/collection/immutable/Map; filterKeys(Lscala/Function1; p);
   

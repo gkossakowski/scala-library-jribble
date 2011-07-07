@@ -1,18 +1,12 @@
-public interface Lscala/collection/IterableViewLike; extends Lscala/collection/Iterable;, Lscala/collection/IterableLike;, Lscala/collection/TraversableView;, Lscala/collection/TraversableViewLike;, Lscala/ScalaObject; {
+public interface Lscala/collection/IterableViewLike; extends Lscala/collection/Iterable;, Lscala/collection/IterableLike;, Lscala/collection/TraversableView;, Lscala/collection/TraversableViewLike;, Lscala/collection/GenIterableViewLike;, Lscala/ScalaObject; {
   
-  public Ljava/lang/Object; zip(Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf);
+  public Lscala/collection/IterableViewLike$Transformed; newZipped(Lscala/collection/GenIterable; that);
   
-  public Ljava/lang/Object; zipWithIndex(Lscala/collection/generic/CanBuildFrom; bf);
-  
-  public Ljava/lang/Object; zipAll(Lscala/collection/Iterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf);
-  
-  public Lscala/collection/IterableViewLike$Transformed; newZipped(Lscala/collection/Iterable; that);
-  
-  public Lscala/collection/IterableViewLike$Transformed; newZippedAll(Lscala/collection/Iterable; that, Ljava/lang/Object; _thisElem, Ljava/lang/Object; _thatElem);
+  public Lscala/collection/IterableViewLike$Transformed; newZippedAll(Lscala/collection/GenIterable; that, Ljava/lang/Object; _thisElem, Ljava/lang/Object; _thatElem);
   
   public Lscala/collection/IterableViewLike$Transformed; newForced(Lscala/Function0; xs);
   
-  public Lscala/collection/IterableViewLike$Transformed; newAppended(Lscala/collection/Traversable; that);
+  public Lscala/collection/IterableViewLike$Transformed; newAppended(Lscala/collection/GenTraversable; that);
   
   public Lscala/collection/IterableViewLike$Transformed; newMapped(Lscala/Function1; f);
   
@@ -20,11 +14,25 @@ public interface Lscala/collection/IterableViewLike; extends Lscala/collection/I
   
   public Lscala/collection/IterableViewLike$Transformed; newFiltered(Lscala/Function1; p);
   
-  public Lscala/collection/IterableViewLike$Transformed; newSliced(I; _from, I; _until);
+  public Lscala/collection/IterableViewLike$Transformed; newSliced(Lscala/collection/generic/SliceInterval; _endpoints);
   
   public Lscala/collection/IterableViewLike$Transformed; newDroppedWhile(Lscala/Function1; p);
   
   public Lscala/collection/IterableViewLike$Transformed; newTakenWhile(Lscala/Function1; p);
+  
+  public Lscala/collection/IterableViewLike$Transformed; newTaken(I; n);
+  
+  public Lscala/collection/IterableViewLike$Transformed; newDropped(I; n);
+  
+  public Lscala/collection/IterableView; drop(I; n);
+  
+  public Lscala/collection/IterableView; take(I; n);
+  
+  public Ljava/lang/Object; zip(Lscala/collection/GenIterable; that, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; zipWithIndex(Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; zipAll(Lscala/collection/GenIterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf);
   
   public Lscala/collection/Iterator; grouped(I; size);
   

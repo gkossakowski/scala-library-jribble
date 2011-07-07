@@ -1,28 +1,18 @@
-public interface Lscala/collection/TraversableViewLike; extends Lscala/collection/Traversable;, Lscala/collection/TraversableLike;, Lscala/ScalaObject; {
+public interface Lscala/collection/TraversableViewLike; extends Lscala/collection/Traversable;, Lscala/collection/TraversableLike;, Lscala/collection/ViewMkString;, Lscala/collection/GenTraversableViewLike;, Lscala/ScalaObject; {
   
   public Lscala/collection/mutable/Builder; newBuilder();
   
   public Ljava/lang/Object; underlying();
   
+  public Ljava/lang/String; viewIdentifier();
+  
+  public Ljava/lang/String; viewIdString();
+  
+  public Ljava/lang/String; stringPrefix();
+  
   public Ljava/lang/Object; force(Lscala/collection/generic/CanBuildFrom; bf);
   
-  public Lscala/collection/TraversableViewLike$Transformed; newForced(Lscala/Function0; xs);
-  
-  public Lscala/collection/TraversableViewLike$Transformed; newAppended(Lscala/collection/Traversable; that);
-  
-  public Lscala/collection/TraversableViewLike$Transformed; newMapped(Lscala/Function1; f);
-  
-  public Lscala/collection/TraversableViewLike$Transformed; newFlatMapped(Lscala/Function1; f);
-  
-  public Lscala/collection/TraversableViewLike$Transformed; newFiltered(Lscala/Function1; p);
-  
-  public Lscala/collection/TraversableViewLike$Transformed; newSliced(I; _from, I; _until);
-  
-  public Lscala/collection/TraversableViewLike$Transformed; newDroppedWhile(Lscala/Function1; p);
-  
-  public Lscala/collection/TraversableViewLike$Transformed; newTakenWhile(Lscala/Function1; p);
-  
-  public Ljava/lang/Object; $plus$plus(Lscala/collection/TraversableOnce; xs, Lscala/collection/generic/CanBuildFrom; bf);
+  public Ljava/lang/Object; $plus$plus(Lscala/collection/GenTraversableOnce; xs, Lscala/collection/generic/CanBuildFrom; bf);
   
   public Ljava/lang/Object; map(Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf);
   
@@ -30,7 +20,25 @@ public interface Lscala/collection/TraversableViewLike; extends Lscala/collectio
   
   public Ljava/lang/Object; flatMap(Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf);
   
-  public Lscala/collection/Seq; thisSeq();
+  public Lscala/collection/TraversableViewLike$Transformed; newForced(Lscala/Function0; xs);
+  
+  public Lscala/collection/TraversableViewLike$Transformed; newAppended(Lscala/collection/GenTraversable; that);
+  
+  public Lscala/collection/TraversableViewLike$Transformed; newMapped(Lscala/Function1; f);
+  
+  public Lscala/collection/TraversableViewLike$Transformed; newFlatMapped(Lscala/Function1; f);
+  
+  public Lscala/collection/TraversableViewLike$Transformed; newFiltered(Lscala/Function1; p);
+  
+  public Lscala/collection/TraversableViewLike$Transformed; newSliced(Lscala/collection/generic/SliceInterval; _endpoints);
+  
+  public Lscala/collection/TraversableViewLike$Transformed; newDroppedWhile(Lscala/Function1; p);
+  
+  public Lscala/collection/TraversableViewLike$Transformed; newTakenWhile(Lscala/Function1; p);
+  
+  public Lscala/collection/TraversableViewLike$Transformed; newTaken(I; n);
+  
+  public Lscala/collection/TraversableViewLike$Transformed; newDropped(I; n);
   
   public Lscala/collection/TraversableView; filter(Lscala/Function1; p);
   
@@ -60,5 +68,5 @@ public interface Lscala/collection/TraversableViewLike; extends Lscala/collectio
   
   public Lscala/collection/immutable/Map; groupBy(Lscala/Function1; f);
   
-  public Ljava/lang/String; stringPrefix();
+  public Ljava/lang/String; toString();
 }

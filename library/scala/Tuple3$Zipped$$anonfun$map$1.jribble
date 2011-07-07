@@ -1,31 +1,38 @@
-public final class Lscala/Tuple3$Zipped$$anonfun$map$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/Tuple3$Zipped$$anonfun$map$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
-  public final Ljava/lang/Object; apply(Ljava/lang/Object; el1) {
-    Ljava/lang/Object; $4$;
-    if ((this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)elems2$2.(Lscala/collection/Iterator;::hasNext()Z;)() && this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)elems3$2.(Lscala/collection/Iterator;::hasNext()Z;)()))
+  public final Lscala/collection/mutable/Builder; apply(Ljava/lang/Object; el1) {
+    Lscala/collection/mutable/Builder; $8$;
+    if ((this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)elems2$1.(Lscala/collection/Iterator;::hasNext()Z;)() && this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)elems3$1.(Lscala/collection/Iterator;::hasNext()Z;)()))
       {
-        $4$ = this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)b$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)f$1.(Lscala/Function3;::apply(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(el1, this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)elems2$2.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)elems3$2.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)()));
+        $8$ = this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)b$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)f$2.(Lscala/Function3;::apply(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(el1, this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)elems2$1.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)elems3$1.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)()));
       }
     else
       {
-        $4$ = Lscala/runtime/BoxedUnit;.UNIT;
+        throw (new (Lscala/runtime/NonLocalReturnControl;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)nonLocalReturnKey1$1, this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)b$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)()));
       }
-    return $4$;
+    return $8$;
   }
   
-  private Lscala/Function3; f$1;
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/Tuple3$Zipped$$anonfun$map$1;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(v1);
+  }
+  
+  private Lscala/Function3; f$2;
   
   private Lscala/collection/mutable/Builder; b$1;
   
-  private Lscala/collection/Iterator; elems2$2;
+  private Lscala/collection/Iterator; elems2$1;
   
-  private Lscala/collection/Iterator; elems3$2;
+  private Lscala/collection/Iterator; elems3$1;
   
-  public this(Lscala/Tuple3$Zipped; $outer, Lscala/Function3; f$1, Lscala/collection/mutable/Builder; b$1, Lscala/collection/Iterator; elems2$2, Lscala/collection/Iterator; elems3$2) {
-    this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)f$1 = f$1;
+  private Ljava/lang/Object; nonLocalReturnKey1$1;
+  
+  public this(Lscala/Tuple3$Zipped; $outer, Lscala/Function3; f$2, Lscala/collection/mutable/Builder; b$1, Lscala/collection/Iterator; elems2$1, Lscala/collection/Iterator; elems3$1, Ljava/lang/Object; nonLocalReturnKey1$1) {
+    this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)f$2 = f$2;
     this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)b$1 = b$1;
-    this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)elems2$2 = elems2$2;
-    this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)elems3$2 = elems3$2;
+    this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)elems2$1 = elems2$1;
+    this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)elems3$1 = elems3$1;
+    this.(Lscala/Tuple3$Zipped$$anonfun$map$1;)nonLocalReturnKey1$1 = nonLocalReturnKey1$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

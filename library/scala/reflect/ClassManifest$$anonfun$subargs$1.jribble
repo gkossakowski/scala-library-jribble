@@ -1,0 +1,51 @@
+public final class Lscala/reflect/ClassManifest$$anonfun$subargs$1; extends Lscala/runtime/AbstractFunction2; implements Lscala/Serializable; {
+  
+  public final Z; apply(Lscala/reflect/OptManifest; x0$1, Lscala/reflect/OptManifest; x1$1) {
+    Lscala/Tuple2; temp1 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x0$1, x1$1));
+    Z; $20$;
+    if ((temp1 != null))
+      {
+        Lscala/reflect/OptManifest; temp2 = temp1.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/reflect/OptManifest;);
+        Lscala/reflect/OptManifest; temp3 = temp1.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/reflect/OptManifest;);
+        Z; $21$;
+        if (temp2.<instanceof>(Lscala/reflect/ClassManifest;))
+          {
+            Lscala/reflect/ClassManifest; temp4 = temp2.<cast>(Lscala/reflect/ClassManifest;);
+            Z; $22$;
+            if (temp3.<instanceof>(Lscala/reflect/ClassManifest;))
+              {
+                $22$ = temp4.(Lscala/reflect/ClassManifest;::$less$colon$less(Lscala/reflect/ClassManifest;)Z;)(temp3.<cast>(Lscala/reflect/ClassManifest;));
+              }
+            else
+              {
+                Lscala/reflect/OptManifest; x = temp4;
+                Lscala/reflect/OptManifest; y = temp3;
+                $22$ = this.(Lscala/reflect/ClassManifest$$anonfun$subargs$1;::body$percent11$percent1(Lscala/reflect/OptManifest;Lscala/reflect/OptManifest;)Z;)(x, y);
+              }
+            $21$ = $22$;
+          }
+        else
+          {
+            $21$ = this.(Lscala/reflect/ClassManifest$$anonfun$subargs$1;::body$percent11$percent1(Lscala/reflect/OptManifest;Lscala/reflect/OptManifest;)Z;)(temp2, temp3);
+          }
+        $20$ = $21$;
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp1));
+      }
+    return $20$;
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/reflect/ClassManifest$$anonfun$subargs$1;::apply(Lscala/reflect/OptManifest;Lscala/reflect/OptManifest;)Z;)(v1.<cast>(Lscala/reflect/OptManifest;), v2.<cast>(Lscala/reflect/OptManifest;)));
+  }
+  
+  public this(Lscala/reflect/ClassManifest; $outer) {
+    (Lscala/runtime/AbstractFunction2;::super()V;)();
+  }
+  
+  private final Z; body$percent11$percent1(Lscala/reflect/OptManifest; x, Lscala/reflect/OptManifest; y) {
+    return ((x == Lscala/reflect/NoManifest$;.MODULE$) && (y == Lscala/reflect/NoManifest$;.MODULE$));
+  }
+}

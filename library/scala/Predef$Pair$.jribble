@@ -1,4 +1,4 @@
-public final class Lscala/Predef$Pair$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/Predef$Pair$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/Predef$Pair$; MODULE$ = new (Lscala/Predef$Pair$;::this()V;)();
   
   public Lscala/Tuple2; apply(Ljava/lang/Object; x, Ljava/lang/Object; y) {
@@ -7,6 +7,10 @@ public final class Lscala/Predef$Pair$; extends Ljava/lang/Object; implements Ls
   
   public Lscala/Option; unapply(Lscala/Tuple2; x) {
     return (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/Predef$Pair$;.MODULE$;
   }
   
   public this() {

@@ -1,0 +1,49 @@
+public final class Lscala/collection/mutable/ArrayStack$; extends Lscala/collection/generic/SeqFactory; implements Lscala/ScalaObject;, Lscala/Serializable; {
+  public static Lscala/collection/mutable/ArrayStack$; MODULE$ = new (Lscala/collection/mutable/ArrayStack$;::this()V;)();
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return this.(Lscala/collection/generic/GenTraversableFactory;::ReusableCBF()Lscala/collection/generic/GenTraversableFactory$ReusableCBF$;)();
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return (new (Lscala/collection/mutable/ArrayStack;::this()V;)());
+  }
+  
+  public Lscala/collection/mutable/ArrayStack; empty() {
+    return (new (Lscala/collection/mutable/ArrayStack;::this()V;)());
+  }
+  
+  public Lscala/collection/mutable/ArrayStack; apply(Lscala/collection/Seq; elems, Lscala/reflect/ClassManifest; evidence$1) {
+    Ljava/lang/Object;[ els = elems.(Lscala/collection/SeqLike;::reverse()Ljava/lang/Object;)().<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/collection/mutable/ArrayStack$$anonfun$1;::this()V;)()), Lscala/collection/package$;.MODULE$.(Lscala/collection/package$;::breakOut(Lscala/collection/generic/CanBuildFrom;)Lscala/collection/generic/CanBuildFrom;)(Lscala/Array$;.MODULE$.(Lscala/Array$;::canBuildFrom(Lscala/reflect/ClassManifest;)Lscala/collection/generic/CanBuildFrom;)(Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Object()Lscala/reflect/Manifest;)()))).<cast>(Ljava/lang/Object;[);
+    Lscala/collection/mutable/ArrayStack; $1$;
+    if ((els.<length> == 0))
+      {
+        $1$ = (new (Lscala/collection/mutable/ArrayStack;::this()V;)());
+      }
+    else
+      {
+        $1$ = (new (Lscala/collection/mutable/ArrayStack;::this(Ljava/lang/Object;[I;)V;)(els, els.<length>));
+      }
+    return $1$;
+  }
+  
+  public Ljava/lang/Object;[ growArray(Ljava/lang/Object;[ x) {
+    Ljava/lang/Object;[ y = new Ljava/lang/Object;[(x.<length> * 2)];
+    Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(x, 0, y, 0, x.<length>);
+    return y;
+  }
+  
+  public Ljava/lang/Object;[ clone(Ljava/lang/Object;[ x) {
+    Ljava/lang/Object;[ y = new Ljava/lang/Object;[x.<length>];
+    Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(x, 0, y, 0, x.<length>);
+    return y;
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/mutable/ArrayStack$;.MODULE$;
+  }
+  
+  public this() {
+    (Lscala/collection/generic/SeqFactory;::super()V;)();
+  }
+}

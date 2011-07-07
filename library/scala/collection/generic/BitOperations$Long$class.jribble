@@ -1,0 +1,53 @@
+public abstract class Lscala/collection/generic/BitOperations$Long$class; {
+  
+  public static Z; zero(Lscala/collection/generic/BitOperations$Long; $this, J; i, J; mask) {
+    return ((i & mask) == 0L);
+  }
+  
+  public static J; mask(Lscala/collection/generic/BitOperations$Long; $this, J; i, J; mask) {
+    return (i & ($this.(Lscala/collection/generic/BitOperations$Long;::complement(J;)J;)((mask - 1)) ^ mask));
+  }
+  
+  public static Z; hasMatch(Lscala/collection/generic/BitOperations$Long; $this, J; key, J; prefix, J; m) {
+    return ($this.(Lscala/collection/generic/BitOperations$Long;::mask(J;J;)J;)(key, m) == prefix);
+  }
+  
+  public static Z; unsignedCompare(Lscala/collection/generic/BitOperations$Long; $this, J; i, J; j) {
+    return (((i < j) ^ (i < 0L)) ^ (j < 0L));
+  }
+  
+  public static Z; shorter(Lscala/collection/generic/BitOperations$Long; $this, J; m1, J; m2) {
+    return $this.(Lscala/collection/generic/BitOperations$Long;::unsignedCompare(J;J;)Z;)(m2, m1);
+  }
+  
+  public static J; complement(Lscala/collection/generic/BitOperations$Long; $this, J; i) {
+    return (-1L ^ i);
+  }
+  
+  public static Lscala/collection/immutable/IndexedSeq; bits(Lscala/collection/generic/BitOperations$Long; $this, J; num$2) {
+    return Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::longWrapper(J;)Lscala/runtime/RichLong;)(63L).(Lscala/runtime/IntegralProxy;::to(Ljava/lang/Object;)Lscala/collection/immutable/NumericRange$Inclusive;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(0L)).(Lscala/collection/immutable/NumericRange;::by(Ljava/lang/Object;)Lscala/collection/immutable/NumericRange;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(-1L)).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/collection/generic/BitOperations$Long$$anonfun$bits$2;::this(Lscala/collection/generic/BitOperations$Long;J;)V;)($this, num$2)), Lscala/collection/immutable/IndexedSeq$;.MODULE$.(Lscala/collection/immutable/IndexedSeq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/immutable/IndexedSeq;);
+  }
+  
+  public static Ljava/lang/String; bitString(Lscala/collection/generic/BitOperations$Long; $this, J; num, Ljava/lang/String; sep) {
+    return $this.(Lscala/collection/generic/BitOperations$Long;::bits(J;)Lscala/collection/immutable/IndexedSeq;)(num).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/collection/generic/BitOperations$Long$$anonfun$bitString$2;::this(Lscala/collection/generic/BitOperations$Long;)V;)($this)), Lscala/collection/immutable/IndexedSeq$;.MODULE$.(Lscala/collection/immutable/IndexedSeq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;)Ljava/lang/String;)(sep);
+  }
+  
+  public static Ljava/lang/String; bitString$default$2(Lscala/collection/generic/BitOperations$Long; $this) {
+    return "";
+  }
+  
+  public static J; highestOneBit(Lscala/collection/generic/BitOperations$Long; $this, J; j) {
+    J; i = j;
+    i = (i | (i >>> 1));
+    i = (i | (i >>> 2));
+    i = (i | (i >>> 4));
+    i = (i | (i >>> 8));
+    i = (i | (i >>> 16));
+    i = (i | (i >>> 32));
+    return (i - (i >> 1));
+  }
+  
+  public static V; $init$(Lscala/collection/generic/BitOperations$Long; $this) {
+    
+  }
+}

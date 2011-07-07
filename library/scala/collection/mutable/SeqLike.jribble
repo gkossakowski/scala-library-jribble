@@ -1,4 +1,8 @@
-public interface Lscala/collection/mutable/SeqLike; extends Lscala/collection/SeqLike;, Lscala/collection/mutable/Cloneable; {
+public interface Lscala/collection/mutable/SeqLike; extends Lscala/collection/SeqLike;, Lscala/collection/mutable/Cloneable;, Lscala/collection/Parallelizable;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/parallel/Combiner; parCombiner();
   
   public V; update(I; idx, Ljava/lang/Object; elem);
+  
+  public Lscala/collection/mutable/SeqLike; transform(Lscala/Function1; f);
 }

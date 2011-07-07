@@ -1,6 +1,47 @@
 public final class Lscala/collection/mutable/HashTable$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
   public static Lscala/collection/mutable/HashTable$; MODULE$ = new (Lscala/collection/mutable/HashTable$;::this()V;)();
   
+  public final I; defaultLoadFactor() {
+    return 750;
+  }
+  
+  public final I; loadFactorDenum() {
+    return 1000;
+  }
+  
+  public final I; initialSize() {
+    return 16;
+  }
+  
+  public final I; initialThreshold(I; _loadFactor) {
+    return this.(Lscala/collection/mutable/HashTable$;::newThreshold(I;I;)I;)(_loadFactor, this.(Lscala/collection/mutable/HashTable$;::initialCapacity()I;)());
+  }
+  
+  public final I; initialCapacity() {
+    return this.(Lscala/collection/mutable/HashTable$;::capacity(I;)I;)(this.(Lscala/collection/mutable/HashTable$;::initialSize()I;)());
+  }
+  
+  public final I; newThreshold(I; _loadFactor, I; size) {
+    return ((size.<cast>(J;) * _loadFactor) / this.(Lscala/collection/mutable/HashTable$;::loadFactorDenum()I;)()).<cast>(I;);
+  }
+  
+  public final I; sizeForThreshold(I; _loadFactor, I; thr) {
+    return ((thr * this.(Lscala/collection/mutable/HashTable$;::loadFactorDenum()I;)()) / _loadFactor);
+  }
+  
+  public final I; capacity(I; expectedSize) {
+    I; $1$;
+    if ((expectedSize == 0))
+      {
+        $1$ = 1;
+      }
+    else
+      {
+        $1$ = this.(Lscala/collection/mutable/HashTable$;::powerOfTwo(I;)I;)(expectedSize);
+      }
+    return $1$;
+  }
+  
   public I; powerOfTwo(I; target) {
     I; c = (target - 1);
     c = (c | (c >> 1));

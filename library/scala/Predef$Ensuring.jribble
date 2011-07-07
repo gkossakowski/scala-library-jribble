@@ -11,8 +11,8 @@ public final class Lscala/Predef$Ensuring; extends Ljava/lang/Object; implements
     return this.(Lscala/Predef$Ensuring;::x()Ljava/lang/Object;)();
   }
   
-  public Ljava/lang/Object; ensuring(Z; cond, Ljava/lang/Object; msg$1) {
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;Lscala/Function0;)V;)(cond, (new (Lscala/Predef$Ensuring$$anonfun$ensuring$1;::this(Lscala/Predef$Ensuring;Ljava/lang/Object;)V;)(this, msg$1)));
+  public Ljava/lang/Object; ensuring(Z; cond, Lscala/Function0; msg) {
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;Lscala/Function0;)V;)(cond, msg);
     return this.(Lscala/Predef$Ensuring;::x()Ljava/lang/Object;)();
   }
   
@@ -21,8 +21,8 @@ public final class Lscala/Predef$Ensuring; extends Ljava/lang/Object; implements
     return this.(Lscala/Predef$Ensuring;::x()Ljava/lang/Object;)();
   }
   
-  public Ljava/lang/Object; ensuring(Lscala/Function1; cond, Ljava/lang/Object; msg$2) {
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;Lscala/Function0;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(cond.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/Predef$Ensuring;::x()Ljava/lang/Object;)())), (new (Lscala/Predef$Ensuring$$anonfun$ensuring$2;::this(Lscala/Predef$Ensuring;Ljava/lang/Object;)V;)(this, msg$2)));
+  public Ljava/lang/Object; ensuring(Lscala/Function1; cond, Lscala/Function0; msg) {
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;Lscala/Function0;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(cond.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/Predef$Ensuring;::x()Ljava/lang/Object;)())), msg);
     return this.(Lscala/Predef$Ensuring;::x()Ljava/lang/Object;)();
   }
   

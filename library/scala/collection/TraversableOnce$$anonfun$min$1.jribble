@@ -1,22 +1,22 @@
-public final class Lscala/collection/TraversableOnce$$anonfun$min$1; extends Lscala/runtime/AbstractFunction2; {
+public final class Lscala/collection/TraversableOnce$$anonfun$min$1; extends Lscala/runtime/AbstractFunction2; implements Lscala/Serializable; {
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; x, Ljava/lang/Object; y) {
-    Ljava/lang/Object; $4$;
-    if (this.(Lscala/collection/TraversableOnce$$anonfun$min$1;)cmp$1.(Lscala/math/Ordering;::lteq(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, y))
+    Ljava/lang/Object; $5$;
+    if (this.(Lscala/collection/TraversableOnce$$anonfun$min$1;)cmp$4.(Lscala/math/Ordering;::lteq(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, y))
       {
-        $4$ = x;
+        $5$ = x;
       }
     else
       {
-        $4$ = y;
+        $5$ = y;
       }
-    return $4$;
+    return $5$;
   }
   
-  private Lscala/math/Ordering; cmp$1;
+  private Lscala/math/Ordering; cmp$4;
   
-  public this(Lscala/collection/TraversableOnce; $outer, Lscala/math/Ordering; cmp$1) {
-    this.(Lscala/collection/TraversableOnce$$anonfun$min$1;)cmp$1 = cmp$1;
+  public this(Lscala/collection/TraversableOnce; $outer, Lscala/math/Ordering; cmp$4) {
+    this.(Lscala/collection/TraversableOnce$$anonfun$min$1;)cmp$4 = cmp$4;
     (Lscala/runtime/AbstractFunction2;::super()V;)();
   }
 }

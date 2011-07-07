@@ -1,17 +1,17 @@
-public final class Lscala/collection/SeqLike$$anonfun$contains$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/SeqLike$$anonfun$contains$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
-  public final Z; apply(Ljava/lang/Object; x$3) {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$3, this.(Lscala/collection/SeqLike$$anonfun$contains$1;)elem$4);
+  public final Z; apply(Ljava/lang/Object; x$12) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$12, this.(Lscala/collection/SeqLike$$anonfun$contains$1;)elem$1);
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
     return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/collection/SeqLike$$anonfun$contains$1;::apply(Ljava/lang/Object;)Z;)(v1));
   }
   
-  private Ljava/lang/Object; elem$4;
+  private Ljava/lang/Object; elem$1;
   
-  public this(Lscala/collection/SeqLike; $outer, Ljava/lang/Object; elem$4) {
-    this.(Lscala/collection/SeqLike$$anonfun$contains$1;)elem$4 = elem$4;
+  public this(Lscala/collection/SeqLike; $outer, Ljava/lang/Object; elem$1) {
+    this.(Lscala/collection/SeqLike$$anonfun$contains$1;)elem$1 = elem$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

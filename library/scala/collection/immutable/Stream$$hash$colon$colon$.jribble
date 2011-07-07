@@ -2,16 +2,16 @@ public final class Lscala/collection/immutable/Stream$$hash$colon$colon$; extend
   public static Lscala/collection/immutable/Stream$$hash$colon$colon$; MODULE$ = new (Lscala/collection/immutable/Stream$$hash$colon$colon$;::this()V;)();
   
   public Lscala/Option; unapply(Lscala/collection/immutable/Stream; xs) {
-    Lscala/Option; $28$;
+    Lscala/Option; $43$;
     if (xs.(Lscala/collection/IterableLike;::isEmpty()Z;)())
       {
-        $28$ = Lscala/None$;.MODULE$;
+        $43$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $28$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(xs.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)(), xs.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)()))));
+        $43$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(xs.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)(), xs.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)()))));
       }
-    return $28$;
+    return $43$;
   }
   
   public this() {

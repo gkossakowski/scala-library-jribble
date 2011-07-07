@@ -38,7 +38,7 @@ public final class Lscala/collection/immutable/Stream$; extends Lscala/collectio
   }
   
   public Lscala/collection/immutable/Stream; iterate(Ljava/lang/Object; start$2, Lscala/Function1; f$6) {
-    return (new (Lscala/collection/immutable/Stream$Cons;::this(Ljava/lang/Object;Lscala/Function0;)V;)(start$2, (new (Lscala/collection/immutable/Stream$$anonfun$iterate$1;::this(Ljava/lang/Object;Lscala/Function1;)V;)(start$2, f$6))));
+    return Lscala/collection/immutable/Stream$cons$;.MODULE$.(Lscala/collection/immutable/Stream$cons$;::apply(Ljava/lang/Object;Lscala/Function0;)Lscala/collection/immutable/Stream$Cons;)(start$2, (new (Lscala/collection/immutable/Stream$$anonfun$iterate$1;::this(Ljava/lang/Object;Lscala/Function1;)V;)(start$2, f$6)));
   }
   
   public Lscala/collection/immutable/Stream; iterate(Ljava/lang/Object; start, I; len, Lscala/Function1; f) {
@@ -46,7 +46,7 @@ public final class Lscala/collection/immutable/Stream$; extends Lscala/collectio
   }
   
   public Lscala/collection/immutable/Stream; from(I; start$1, I; step$1) {
-    return (new (Lscala/collection/immutable/Stream$Cons;::this(Ljava/lang/Object;Lscala/Function0;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(start$1), (new (Lscala/collection/immutable/Stream$$anonfun$from$1;::this(I;I;)V;)(start$1, step$1))));
+    return Lscala/collection/immutable/Stream$cons$;.MODULE$.(Lscala/collection/immutable/Stream$cons$;::apply(Ljava/lang/Object;Lscala/Function0;)Lscala/collection/immutable/Stream$Cons;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(start$1), (new (Lscala/collection/immutable/Stream$$anonfun$from$1;::this(I;I;)V;)(start$1, step$1)));
   }
   
   public Lscala/collection/immutable/Stream; from(I; start) {
@@ -54,50 +54,55 @@ public final class Lscala/collection/immutable/Stream$; extends Lscala/collectio
   }
   
   public Lscala/collection/immutable/Stream; continually(Lscala/Function0; elem$3) {
-    return (new (Lscala/collection/immutable/Stream$Cons;::this(Ljava/lang/Object;Lscala/Function0;)V;)(elem$3.(Lscala/Function0;::apply()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/Stream$$anonfun$continually$1;::this(Lscala/Function0;)V;)(elem$3))));
+    return Lscala/collection/immutable/Stream$cons$;.MODULE$.(Lscala/collection/immutable/Stream$cons$;::apply(Ljava/lang/Object;Lscala/Function0;)Lscala/collection/immutable/Stream$Cons;)(elem$3.(Lscala/Function0;::apply()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/Stream$$anonfun$continually$1;::this(Lscala/Function0;)V;)(elem$3)));
   }
   
   public Lscala/collection/immutable/Stream; fill(I; n$2, Lscala/Function0; elem$2) {
-    Lscala/collection/immutable/Stream; $18$;
+    Lscala/collection/immutable/Stream; $32$;
     if ((n$2 <= 0))
       {
-        $18$ = Lscala/collection/immutable/Stream$Empty$;.MODULE$;
+        $32$ = Lscala/collection/immutable/Stream$Empty$;.MODULE$;
       }
     else
       {
-        $18$ = (new (Lscala/collection/immutable/Stream$Cons;::this(Ljava/lang/Object;Lscala/Function0;)V;)(elem$2.(Lscala/Function0;::apply()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/Stream$$anonfun$fill$1;::this(I;Lscala/Function0;)V;)(n$2, elem$2))));
+        $32$ = Lscala/collection/immutable/Stream$cons$;.MODULE$.(Lscala/collection/immutable/Stream$cons$;::apply(Ljava/lang/Object;Lscala/Function0;)Lscala/collection/immutable/Stream$Cons;)(elem$2.(Lscala/Function0;::apply()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/Stream$$anonfun$fill$1;::this(I;Lscala/Function0;)V;)(n$2, elem$2)));
       }
-    return $18$;
+    return $32$;
   }
   
   public Lscala/collection/immutable/Stream; tabulate(I; n$3, Lscala/Function1; f$7) {
     return this.(Lscala/collection/immutable/Stream$;::loop$5(I;I;Lscala/Function1;)Lscala/collection/immutable/Stream;)(0, n$3, f$7);
   }
   
-  public Lscala/collection/immutable/Stream; range(I; start$3, I; end$2, I; step$2) {
-    Z; $19$;
-    if ((step$2 < 0))
+  public Lscala/collection/immutable/Stream; range(Ljava/lang/Object; start$3, Ljava/lang/Object; end$2, Ljava/lang/Object; step$2, Lscala/math/Integral; evidence$1$1) {
+    Lscala/math/Integral; num$1 = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::implicitly(Ljava/lang/Object;)Ljava/lang/Object;)(evidence$1$1).<cast>(Lscala/math/Integral;);
+    Z; $33$;
+    if (num$1.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(step$2).(Lscala/math/Ordering$Ops;::$less(Ljava/lang/Object;)Z;)(num$1.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)()))
       {
-        $19$ = (start$3 <= end$2);
+        $33$ = num$1.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(start$3).(Lscala/math/Ordering$Ops;::$less$eq(Ljava/lang/Object;)Z;)(end$2);
       }
     else
       {
-        $19$ = (end$2 <= start$3);
+        $33$ = num$1.(Lscala/math/Ordering;::mkOrderingOps(Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(end$2).(Lscala/math/Ordering$Ops;::$less$eq(Ljava/lang/Object;)Z;)(start$3);
       }
-    Lscala/collection/immutable/Stream; $20$;
-    if ($19$)
+    Lscala/collection/immutable/Stream; $34$;
+    if ($33$)
       {
-        $20$ = Lscala/collection/immutable/Stream$Empty$;.MODULE$;
+        $34$ = Lscala/collection/immutable/Stream$Empty$;.MODULE$;
       }
     else
       {
-        $20$ = (new (Lscala/collection/immutable/Stream$Cons;::this(Ljava/lang/Object;Lscala/Function0;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(start$3), (new (Lscala/collection/immutable/Stream$$anonfun$range$1;::this(I;I;I;)V;)(start$3, end$2, step$2))));
+        $34$ = Lscala/collection/immutable/Stream$cons$;.MODULE$.(Lscala/collection/immutable/Stream$cons$;::apply(Ljava/lang/Object;Lscala/Function0;)Lscala/collection/immutable/Stream$Cons;)(start$3, (new (Lscala/collection/immutable/Stream$$anonfun$range$1;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;Lscala/math/Integral;)V;)(start$3, end$2, step$2, evidence$1$1, num$1)));
       }
-    return $20$;
+    return $34$;
   }
   
-  public Lscala/collection/immutable/Stream$Cons; filteredTail(Lscala/collection/immutable/Stream; stream$1, Lscala/Function1; p$1) {
-    return (new (Lscala/collection/immutable/Stream$Cons;::this(Ljava/lang/Object;Lscala/Function0;)V;)(stream$1.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/Stream$$anonfun$filteredTail$1;::this(Lscala/collection/immutable/Stream;Lscala/Function1;)V;)(stream$1, p$1))));
+  public Lscala/collection/immutable/Stream$Cons; filteredTail(Lscala/collection/immutable/Stream; stream$2, Lscala/Function1; p$1) {
+    return Lscala/collection/immutable/Stream$cons$;.MODULE$.(Lscala/collection/immutable/Stream$cons$;::apply(Ljava/lang/Object;Lscala/Function0;)Lscala/collection/immutable/Stream$Cons;)(stream$2.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/Stream$$anonfun$filteredTail$1;::this(Lscala/collection/immutable/Stream;Lscala/Function1;)V;)(stream$2, p$1)));
+  }
+  
+  public Lscala/collection/immutable/Stream$Cons; collectedTail(Lscala/collection/immutable/Stream; stream$1, Lscala/PartialFunction; pf$1, Lscala/collection/generic/CanBuildFrom; bf$1) {
+    return Lscala/collection/immutable/Stream$cons$;.MODULE$.(Lscala/collection/immutable/Stream$cons$;::apply(Ljava/lang/Object;Lscala/Function0;)Lscala/collection/immutable/Stream$Cons;)(pf$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(stream$1.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)()), (new (Lscala/collection/immutable/Stream$$anonfun$collectedTail$1;::this(Lscala/collection/immutable/Stream;Lscala/PartialFunction;Lscala/collection/generic/CanBuildFrom;)V;)(stream$1, pf$1, bf$1)));
   }
   
   public Lscala/collection/immutable/Stream; fromIterator(Lscala/collection/Iterator; it) {
@@ -124,41 +129,41 @@ public final class Lscala/collection/immutable/Stream$; extends Lscala/collectio
     return this.(Lscala/collection/immutable/Stream$;::fill(I;Lscala/Function0;)Lscala/collection/immutable/Stream;)(n, (new (Lscala/collection/immutable/Stream$$anonfun$make$1;::this(Ljava/lang/Object;)V;)(elem$5)));
   }
   
-  public Lscala/collection/Traversable; range(I; start, I; end, I; step) {
-    return this.(Lscala/collection/immutable/Stream$;::range(I;I;I;)Lscala/collection/immutable/Stream;)(start, end, step);
+  public Lscala/collection/GenTraversable; range(Ljava/lang/Object; start, Ljava/lang/Object; end, Ljava/lang/Object; step, Lscala/math/Integral; evidence$2) {
+    return this.(Lscala/collection/immutable/Stream$;::range(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/immutable/Stream;)(start, end, step, evidence$2);
   }
   
-  public Lscala/collection/Traversable; tabulate(I; n, Lscala/Function1; f) {
+  public Lscala/collection/GenTraversable; tabulate(I; n, Lscala/Function1; f) {
     return this.(Lscala/collection/immutable/Stream$;::tabulate(I;Lscala/Function1;)Lscala/collection/immutable/Stream;)(n, f);
   }
   
-  public Lscala/collection/Traversable; fill(I; n, Lscala/Function0; elem) {
+  public Lscala/collection/GenTraversable; fill(I; n, Lscala/Function0; elem) {
     return this.(Lscala/collection/immutable/Stream$;::fill(I;Lscala/Function0;)Lscala/collection/immutable/Stream;)(n, elem);
   }
   
-  public Lscala/collection/Traversable; iterate(Ljava/lang/Object; start, I; len, Lscala/Function1; f) {
+  public Lscala/collection/GenTraversable; iterate(Ljava/lang/Object; start, I; len, Lscala/Function1; f) {
     return this.(Lscala/collection/immutable/Stream$;::iterate(Ljava/lang/Object;I;Lscala/Function1;)Lscala/collection/immutable/Stream;)(start, len, f);
   }
   
-  public Lscala/collection/Traversable; apply(Lscala/collection/Seq; elems) {
+  public Lscala/collection/GenTraversable; apply(Lscala/collection/Seq; elems) {
     return this.(Lscala/collection/immutable/Stream$;::apply(Lscala/collection/Seq;)Lscala/collection/immutable/Stream;)(elems);
   }
   
-  public Lscala/collection/Traversable; empty() {
+  public Lscala/collection/GenTraversable; empty() {
     return this.(Lscala/collection/immutable/Stream$;::empty()Lscala/collection/immutable/Stream;)();
   }
   
   public final Lscala/collection/immutable/Stream; loop$5(I; i$1, I; n$3, Lscala/Function1; f$7) {
-    Lscala/collection/immutable/Stream; $21$;
+    Lscala/collection/immutable/Stream; $35$;
     if ((i$1 >= n$3))
       {
-        $21$ = Lscala/collection/immutable/Stream$Empty$;.MODULE$;
+        $35$ = Lscala/collection/immutable/Stream$Empty$;.MODULE$;
       }
     else
       {
-        $21$ = (new (Lscala/collection/immutable/Stream$Cons;::this(Ljava/lang/Object;Lscala/Function0;)V;)(f$7.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i$1)), (new (Lscala/collection/immutable/Stream$$anonfun$loop$5$1;::this(I;Lscala/Function1;I;)V;)(n$3, f$7, i$1))));
+        $35$ = Lscala/collection/immutable/Stream$cons$;.MODULE$.(Lscala/collection/immutable/Stream$cons$;::apply(Ljava/lang/Object;Lscala/Function0;)Lscala/collection/immutable/Stream$Cons;)(f$7.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i$1)), (new (Lscala/collection/immutable/Stream$$anonfun$loop$5$1;::this(I;Lscala/Function1;I;)V;)(n$3, f$7, i$1)));
       }
-    return $21$;
+    return $35$;
   }
   
   public this() {

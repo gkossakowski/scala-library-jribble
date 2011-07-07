@@ -1,4 +1,4 @@
-public final class Lscala/collection/IterableLike$$anonfun$takeRight$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/IterableLike$$anonfun$takeRight$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; x) {
     if (this.(Lscala/collection/IterableLike$$anonfun$takeRight$1;)lead$1.(Lscala/collection/Iterator;::hasNext()Z;)())
@@ -9,16 +9,16 @@ public final class Lscala/collection/IterableLike$$anonfun$takeRight$1; extends 
       {
         this.(Lscala/collection/IterableLike$$anonfun$takeRight$1;)go$1.(Lscala/runtime/BooleanRef;)elem = true;
       }
-    Ljava/lang/Object; $2$;
+    Ljava/lang/Object; $3$;
     if (this.(Lscala/collection/IterableLike$$anonfun$takeRight$1;)go$1.(Lscala/runtime/BooleanRef;)elem)
       {
-        $2$ = this.(Lscala/collection/IterableLike$$anonfun$takeRight$1;)b$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
+        $3$ = this.(Lscala/collection/IterableLike$$anonfun$takeRight$1;)b$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
       }
     else
       {
-        $2$ = Lscala/runtime/BoxedUnit;.UNIT;
+        $3$ = Lscala/runtime/BoxedUnit;.UNIT;
       }
-    return $2$;
+    return $3$;
   }
   
   private Lscala/collection/mutable/Builder; b$1;

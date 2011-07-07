@@ -154,10 +154,6 @@ public final class Lscala/collection/immutable/VectorBuilder; extends Ljava/lang
     return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$eq(Lscala/collection/generic/Growable;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/Seq;)Lscala/collection/generic/Growable;)(this, elem1, elem2, elems);
   }
   
-  public Lscala/collection/generic/Growable; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
-    return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, xs);
-  }
-  
   private I; blockIndex$u0020;
   
   private I; blockIndex() {
@@ -195,6 +191,10 @@ public final class Lscala/collection/immutable/VectorBuilder; extends Ljava/lang
     return this;
   }
   
+  public Lscala/collection/immutable/VectorBuilder; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, xs).<cast>(Lscala/collection/immutable/VectorBuilder;);
+  }
+  
   public Lscala/collection/immutable/Vector; result() {
     I; size = (this.(Lscala/collection/immutable/VectorBuilder;::blockIndex()I;)() + this.(Lscala/collection/immutable/VectorBuilder;::lo()I;)());
     if ((size == 0))
@@ -227,6 +227,10 @@ public final class Lscala/collection/immutable/VectorBuilder; extends Ljava/lang
   
   public Ljava/lang/Object; result() {
     return this.(Lscala/collection/immutable/VectorBuilder;::result()Lscala/collection/immutable/Vector;)();
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    return this.(Lscala/collection/immutable/VectorBuilder;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/immutable/VectorBuilder;)(xs);
   }
   
   public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem) {

@@ -1,19 +1,19 @@
-public final class Lscala/collection/TraversableOnce$$anonfun$addString$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/TraversableOnce$$anonfun$addString$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; x) {
-    Ljava/lang/Object; $6$;
+    Ljava/lang/Object; $9$;
     if (this.(Lscala/collection/TraversableOnce$$anonfun$addString$1;)first$2.(Lscala/runtime/BooleanRef;)elem)
       {
         this.(Lscala/collection/TraversableOnce$$anonfun$addString$1;)b$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;)(x);
         this.(Lscala/collection/TraversableOnce$$anonfun$addString$1;)first$2.(Lscala/runtime/BooleanRef;)elem = false;
-        $6$ = Lscala/runtime/BoxedUnit;.UNIT;
+        $9$ = Lscala/runtime/BoxedUnit;.UNIT;
       }
     else
       {
         this.(Lscala/collection/TraversableOnce$$anonfun$addString$1;)b$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(this.(Lscala/collection/TraversableOnce$$anonfun$addString$1;)sep$1);
-        $6$ = this.(Lscala/collection/TraversableOnce$$anonfun$addString$1;)b$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;)(x);
+        $9$ = this.(Lscala/collection/TraversableOnce$$anonfun$addString$1;)b$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;)(x);
       }
-    return $6$;
+    return $9$;
   }
   
   private Lscala/collection/mutable/StringBuilder; b$1;

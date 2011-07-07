@@ -1,4 +1,4 @@
-public final class Lscala/None$; extends Lscala/Option; implements Lscala/ScalaObject;, Lscala/Product; {
+public final class Lscala/None$; extends Lscala/Option; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   public static Lscala/None$; MODULE$ = new (Lscala/None$;::this()V;)();
   
   public Z; isEmpty() {
@@ -7,6 +7,10 @@ public final class Lscala/None$; extends Lscala/Option; implements Lscala/ScalaO
   
   public Lscala/runtime/Nothing$; get() {
     throw (new (Ljava/util/NoSuchElementException;::this(Ljava/lang/String;)V;)("None.get"));
+  }
+  
+  public final I; hashCode() {
+    return 2433880;
   }
   
   public final Ljava/lang/String; toString() {

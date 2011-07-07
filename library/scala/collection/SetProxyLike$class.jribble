@@ -17,35 +17,35 @@ public abstract class Lscala/collection/SetProxyLike$class; {
   }
   
   public static Z; apply(Lscala/collection/SetProxyLike; $this, Ljava/lang/Object; elem) {
-    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/SetLike;).(Lscala/collection/SetLike;::apply(Ljava/lang/Object;)Z;)(elem);
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/GenSetLike;).(Lscala/collection/GenSetLike;::apply(Ljava/lang/Object;)Z;)(elem);
   }
   
-  public static Lscala/collection/Set; intersect(Lscala/collection/SetProxyLike; $this, Lscala/collection/Set; that) {
-    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/SetLike;).(Lscala/collection/SetLike;::intersect(Lscala/collection/Set;)Lscala/collection/Set;)(that);
+  public static Lscala/collection/Set; intersect(Lscala/collection/SetProxyLike; $this, Lscala/collection/GenSet; that) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/GenSetLike;).(Lscala/collection/GenSetLike;::intersect(Lscala/collection/GenSet;)Ljava/lang/Object;)(that).<cast>(Lscala/collection/Set;);
   }
   
-  public static Lscala/collection/Set; $amp(Lscala/collection/SetProxyLike; $this, Lscala/collection/Set; that) {
-    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/SetLike;).(Lscala/collection/SetLike;::$amp(Lscala/collection/Set;)Lscala/collection/Set;)(that);
+  public static Lscala/collection/Set; $amp(Lscala/collection/SetProxyLike; $this, Lscala/collection/GenSet; that) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/GenSetLike;).(Lscala/collection/GenSetLike;::$amp(Lscala/collection/GenSet;)Ljava/lang/Object;)(that).<cast>(Lscala/collection/Set;);
   }
   
-  public static Lscala/collection/Set; union(Lscala/collection/SetProxyLike; $this, Lscala/collection/Set; that) {
-    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/SetLike;).(Lscala/collection/SetLike;::union(Lscala/collection/Set;)Lscala/collection/Set;)(that);
+  public static Lscala/collection/Set; union(Lscala/collection/SetProxyLike; $this, Lscala/collection/GenSet; that) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/SetLike;).(Lscala/collection/SetLike;::union(Lscala/collection/GenSet;)Lscala/collection/Set;)(that);
   }
   
-  public static Lscala/collection/Set; $bar(Lscala/collection/SetProxyLike; $this, Lscala/collection/Set; that) {
-    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/SetLike;).(Lscala/collection/SetLike;::$bar(Lscala/collection/Set;)Lscala/collection/Set;)(that);
+  public static Lscala/collection/Set; $bar(Lscala/collection/SetProxyLike; $this, Lscala/collection/GenSet; that) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/GenSetLike;).(Lscala/collection/GenSetLike;::$bar(Lscala/collection/GenSet;)Ljava/lang/Object;)(that).<cast>(Lscala/collection/Set;);
   }
   
-  public static Lscala/collection/Set; diff(Lscala/collection/SetProxyLike; $this, Lscala/collection/Set; that) {
-    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/SetLike;).(Lscala/collection/SetLike;::diff(Lscala/collection/Set;)Lscala/collection/Set;)(that);
+  public static Lscala/collection/Set; diff(Lscala/collection/SetProxyLike; $this, Lscala/collection/GenSet; that) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/SetLike;).(Lscala/collection/SetLike;::diff(Lscala/collection/GenSet;)Lscala/collection/Set;)(that);
   }
   
-  public static Lscala/collection/Set; $amp$tilde(Lscala/collection/SetProxyLike; $this, Lscala/collection/Set; that) {
-    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/SetLike;).(Lscala/collection/SetLike;::$amp$tilde(Lscala/collection/Set;)Lscala/collection/Set;)(that);
+  public static Lscala/collection/Set; $amp$tilde(Lscala/collection/SetProxyLike; $this, Lscala/collection/GenSet; that) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/GenSetLike;).(Lscala/collection/GenSetLike;::$amp$tilde(Lscala/collection/GenSet;)Ljava/lang/Object;)(that).<cast>(Lscala/collection/Set;);
   }
   
-  public static Z; subsetOf(Lscala/collection/SetProxyLike; $this, Lscala/collection/Set; that) {
-    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/SetLike;).(Lscala/collection/SetLike;::subsetOf(Lscala/collection/Set;)Z;)(that);
+  public static Z; subsetOf(Lscala/collection/SetProxyLike; $this, Lscala/collection/GenSet; that) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/GenSetLike;).(Lscala/collection/GenSetLike;::subsetOf(Lscala/collection/GenSet;)Z;)(that);
   }
   
   public static V; $init$(Lscala/collection/SetProxyLike; $this) {

@@ -1,4 +1,4 @@
-public class Lscala/Tuple1; extends Ljava/lang/Object; implements Lscala/Product1;, Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/Tuple1; extends Ljava/lang/Object; implements Lscala/Product1;, Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   
   public I; productArity() {
@@ -17,10 +17,6 @@ public class Lscala/Tuple1; extends Ljava/lang/Object; implements Lscala/Product
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
   }
   
-  public Ljava/lang/Object; copy$default$1() {
-    return this.(Lscala/Tuple1;::_1()Ljava/lang/Object;)();
-  }
-  
   private Ljava/lang/Object; _1$u0020;
   
   public Ljava/lang/Object; _1() {
@@ -33,6 +29,10 @@ public class Lscala/Tuple1; extends Ljava/lang/Object; implements Lscala/Product
   
   public Lscala/Tuple1; copy(Ljava/lang/Object; _1) {
     return (new (Lscala/Tuple1;::this(Ljava/lang/Object;)V;)(_1));
+  }
+  
+  public Ljava/lang/Object; copy$default$1() {
+    return this.(Lscala/Tuple1;::_1()Ljava/lang/Object;)();
   }
   
   public I; hashCode() {
@@ -50,7 +50,13 @@ public class Lscala/Tuple1; extends Ljava/lang/Object; implements Lscala/Product
         Z; $2$;
         if (this.(Lscala/Tuple1;::gd1$1(Ljava/lang/Object;)Z;)(_1$1))
           {
-            $2$ = x$1.<cast>(Lscala/Tuple1;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/Object; $3$;
+            Z; $4$;
+            body$percent01: while(true) {
+              $4$ = x$1.<cast>(Lscala/Tuple1;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $2$ = $4$;
           }
         else
           {

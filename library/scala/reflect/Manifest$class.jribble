@@ -20,17 +20,7 @@ public abstract class Lscala/reflect/Manifest$class; {
       {
         Lscala/reflect/Manifest; temp4 = temp3.<cast>(Lscala/reflect/Manifest;);
         Lscala/reflect/Manifest; m = temp4;
-        Z; $4$;
-        if (Lscala/reflect/Manifest$class;.(Lscala/reflect/Manifest$class;::gd1$1(Lscala/reflect/Manifest;Lscala/reflect/Manifest;)Z;)($this, m))
-          {
-            Lscala/reflect/Manifest; m = temp4;
-            $4$ = ($this.(Lscala/reflect/ClassManifest;::$less$colon$less(Lscala/reflect/ClassManifest;)Z;)(m) && m.(Lscala/reflect/ClassManifest;::$less$colon$less(Lscala/reflect/ClassManifest;)Z;)($this));
-          }
-        else
-          {
-            $4$ = false;
-          }
-        $3$ = $4$;
+        $3$ = (((m.(Lscala/reflect/Manifest;::canEqual(Ljava/lang/Object;)Z;)($this) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/reflect/ClassManifest;::erasure()Ljava/lang/Class;)(), m.(Lscala/reflect/ClassManifest;::erasure()Ljava/lang/Class;)())) && $this.(Lscala/reflect/ClassManifest;::$less$colon$less(Lscala/reflect/ClassManifest;)Z;)(m)) && m.(Lscala/reflect/ClassManifest;::$less$colon$less(Lscala/reflect/ClassManifest;)Z;)($this));
       }
     else
       {
@@ -41,10 +31,6 @@ public abstract class Lscala/reflect/Manifest$class; {
   
   public static I; hashCode(Lscala/reflect/Manifest; $this) {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::hash(Ljava/lang/Object;)I;)($this.(Lscala/reflect/ClassManifest;::erasure()Ljava/lang/Class;)());
-  }
-  
-  private static final Z; gd1$1(Lscala/reflect/Manifest; $this, Lscala/reflect/Manifest; x$1) {
-    return x$1.(Lscala/reflect/Manifest;::canEqual(Ljava/lang/Object;)Z;)($this);
   }
   
   public static V; $init$(Lscala/reflect/Manifest; $this) {

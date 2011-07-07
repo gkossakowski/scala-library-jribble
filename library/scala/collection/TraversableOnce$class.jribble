@@ -2,7 +2,7 @@ public abstract class Lscala/collection/TraversableOnce$class; {
   
   public static Lscala/collection/immutable/List; reversed(Lscala/collection/TraversableOnce; $this) {
     Lscala/runtime/ObjectRef; elems$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(Lscala/collection/immutable/Nil$;.MODULE$));
-    $this.(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/TraversableOnce$$anonfun$reversed$1;::this(Lscala/collection/TraversableOnce;Lscala/runtime/ObjectRef;)V;)($this, elems$1)));
+    $this.(Lscala/collection/TraversableOnce;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/TraversableOnce$$anonfun$reversed$1;::this(Lscala/collection/TraversableOnce;Lscala/runtime/ObjectRef;)V;)($this, elems$1)));
     return elems$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/List;);
   }
   
@@ -22,6 +22,27 @@ public abstract class Lscala/collection/TraversableOnce$class; {
     return cnt$1.(Lscala/runtime/IntRef;)elem;
   }
   
+  public static Lscala/Option; collectFirst(Lscala/collection/TraversableOnce; $this, Lscala/PartialFunction; pf$1) {
+    Ljava/lang/Object; nonLocalReturnKey1$1 = (new (Ljava/lang/Object;::this()V;)());
+    Lscala/Option; exceptionResult1;
+    try {
+      $this.(Lscala/collection/GenTraversableOnce;::toIterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/TraversableOnce$$anonfun$collectFirst$1;::this(Lscala/collection/TraversableOnce;Lscala/PartialFunction;Ljava/lang/Object;)V;)($this, pf$1, nonLocalReturnKey1$1)));
+      exceptionResult1 = Lscala/None$;.MODULE$;
+    } catch(Lscala/runtime/NonLocalReturnControl; ex) {
+      Lscala/Option; $1$;
+      if ((ex.(Lscala/runtime/NonLocalReturnControl;::key()Ljava/lang/Object;)() == nonLocalReturnKey1$1))
+        {
+          $1$ = ex.(Lscala/runtime/NonLocalReturnControl;::value()Ljava/lang/Object;)().<cast>(Lscala/Option;);
+        }
+      else
+        {
+          throw ex;
+        }
+      exceptionResult1 = $1$;
+    }
+    return exceptionResult1;
+  }
+  
   public static Ljava/lang/Object; $div$colon(Lscala/collection/TraversableOnce; $this, Ljava/lang/Object; z, Lscala/Function2; op) {
     return $this.(Lscala/collection/TraversableOnce;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(z, op);
   }
@@ -30,9 +51,9 @@ public abstract class Lscala/collection/TraversableOnce$class; {
     return $this.(Lscala/collection/TraversableOnce;::foldRight(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(z, op);
   }
   
-  public static Ljava/lang/Object; foldLeft(Lscala/collection/TraversableOnce; $this, Ljava/lang/Object; z, Lscala/Function2; op$1) {
+  public static Ljava/lang/Object; foldLeft(Lscala/collection/TraversableOnce; $this, Ljava/lang/Object; z, Lscala/Function2; op$3) {
     Lscala/runtime/ObjectRef; result$2 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(z));
-    $this.(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/TraversableOnce$$anonfun$foldLeft$1;::this(Lscala/collection/TraversableOnce;Lscala/Function2;Lscala/runtime/ObjectRef;)V;)($this, op$1, result$2)));
+    $this.(Lscala/collection/TraversableOnce;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/TraversableOnce$$anonfun$foldLeft$1;::this(Lscala/collection/TraversableOnce;Lscala/Function2;Lscala/runtime/ObjectRef;)V;)($this, op$3, result$2)));
     return result$2.(Lscala/runtime/ObjectRef;)elem;
   }
   
@@ -40,7 +61,7 @@ public abstract class Lscala/collection/TraversableOnce$class; {
     return $this.(Lscala/collection/TraversableOnce;::reversed()Lscala/collection/immutable/List;)().(Lscala/collection/LinearSeqOptimized;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(z, (new (Lscala/collection/TraversableOnce$$anonfun$foldRight$1;::this(Lscala/collection/TraversableOnce;Lscala/Function2;)V;)($this, op$2)));
   }
   
-  public static Ljava/lang/Object; reduceLeft(Lscala/collection/TraversableOnce; $this, Lscala/Function2; op$3) {
+  public static Ljava/lang/Object; reduceLeft(Lscala/collection/TraversableOnce; $this, Lscala/Function2; op$4) {
     if ($this.(Lscala/collection/TraversableOnce;::isEmpty()Z;)())
       {
         throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)("empty.reduceLeft"));
@@ -51,11 +72,11 @@ public abstract class Lscala/collection/TraversableOnce$class; {
       }
     Lscala/runtime/BooleanRef; first$1 = (new (Lscala/runtime/BooleanRef;::this(Z;)V;)(true));
     Lscala/runtime/ObjectRef; acc$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(0)));
-    $this.(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1;::this(Lscala/collection/TraversableOnce;Lscala/Function2;Lscala/runtime/BooleanRef;Lscala/runtime/ObjectRef;)V;)($this, op$3, first$1, acc$1)));
+    $this.(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/TraversableOnce$$anonfun$reduceLeft$1;::this(Lscala/collection/TraversableOnce;Lscala/Function2;Lscala/runtime/BooleanRef;Lscala/runtime/ObjectRef;)V;)($this, op$4, first$1, acc$1)));
     return acc$1.(Lscala/runtime/ObjectRef;)elem;
   }
   
-  public static Ljava/lang/Object; reduceRight(Lscala/collection/TraversableOnce; $this, Lscala/Function2; op$4) {
+  public static Ljava/lang/Object; reduceRight(Lscala/collection/TraversableOnce; $this, Lscala/Function2; op$1) {
     if ($this.(Lscala/collection/TraversableOnce;::isEmpty()Z;)())
       {
         throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)("empty.reduceRight"));
@@ -64,23 +85,10 @@ public abstract class Lscala/collection/TraversableOnce$class; {
       {
         
       }
-    return $this.(Lscala/collection/TraversableOnce;::reversed()Lscala/collection/immutable/List;)().(Lscala/collection/LinearSeqOptimized;::reduceLeft(Lscala/Function2;)Ljava/lang/Object;)((new (Lscala/collection/TraversableOnce$$anonfun$reduceRight$1;::this(Lscala/collection/TraversableOnce;Lscala/Function2;)V;)($this, op$4)));
+    return $this.(Lscala/collection/TraversableOnce;::reversed()Lscala/collection/immutable/List;)().(Lscala/collection/LinearSeqOptimized;::reduceLeft(Lscala/Function2;)Ljava/lang/Object;)((new (Lscala/collection/TraversableOnce$$anonfun$reduceRight$1;::this(Lscala/collection/TraversableOnce;Lscala/Function2;)V;)($this, op$1)));
   }
   
   public static Lscala/Option; reduceLeftOption(Lscala/collection/TraversableOnce; $this, Lscala/Function2; op) {
-    Lscala/Option; $1$;
-    if ($this.(Lscala/collection/TraversableOnce;::isEmpty()Z;)())
-      {
-        $1$ = Lscala/None$;.MODULE$;
-      }
-    else
-      {
-        $1$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)($this.(Lscala/collection/TraversableOnce;::reduceLeft(Lscala/Function2;)Ljava/lang/Object;)(op)));
-      }
-    return $1$;
-  }
-  
-  public static Lscala/Option; reduceRightOption(Lscala/collection/TraversableOnce; $this, Lscala/Function2; op) {
     Lscala/Option; $2$;
     if ($this.(Lscala/collection/TraversableOnce;::isEmpty()Z;)())
       {
@@ -88,20 +96,49 @@ public abstract class Lscala/collection/TraversableOnce$class; {
       }
     else
       {
-        $2$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)($this.(Lscala/collection/TraversableOnce;::reduceRight(Lscala/Function2;)Ljava/lang/Object;)(op)));
+        $2$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)($this.(Lscala/collection/TraversableOnce;::reduceLeft(Lscala/Function2;)Ljava/lang/Object;)(op)));
       }
     return $2$;
   }
   
-  public static Ljava/lang/Object; sum(Lscala/collection/TraversableOnce; $this, Lscala/math/Numeric; num$1) {
-    return $this.(Lscala/collection/TraversableOnce;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(num$1.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)(), (new (Lscala/collection/TraversableOnce$$anonfun$sum$1;::this(Lscala/collection/TraversableOnce;Lscala/math/Numeric;)V;)($this, num$1)));
+  public static Lscala/Option; reduceRightOption(Lscala/collection/TraversableOnce; $this, Lscala/Function2; op) {
+    Lscala/Option; $3$;
+    if ($this.(Lscala/collection/TraversableOnce;::isEmpty()Z;)())
+      {
+        $3$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $3$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)($this.(Lscala/collection/TraversableOnce;::reduceRight(Lscala/Function2;)Ljava/lang/Object;)(op)));
+      }
+    return $3$;
   }
   
-  public static Ljava/lang/Object; product(Lscala/collection/TraversableOnce; $this, Lscala/math/Numeric; num$2) {
-    return $this.(Lscala/collection/TraversableOnce;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(num$2.(Lscala/math/Numeric;::one()Ljava/lang/Object;)(), (new (Lscala/collection/TraversableOnce$$anonfun$product$1;::this(Lscala/collection/TraversableOnce;Lscala/math/Numeric;)V;)($this, num$2)));
+  public static Ljava/lang/Object; reduce(Lscala/collection/TraversableOnce; $this, Lscala/Function2; op) {
+    return $this.(Lscala/collection/TraversableOnce;::reduceLeft(Lscala/Function2;)Ljava/lang/Object;)(op);
   }
   
-  public static Ljava/lang/Object; min(Lscala/collection/TraversableOnce; $this, Lscala/math/Ordering; cmp$1) {
+  public static Lscala/Option; reduceOption(Lscala/collection/TraversableOnce; $this, Lscala/Function2; op) {
+    return $this.(Lscala/collection/TraversableOnce;::reduceLeftOption(Lscala/Function2;)Lscala/Option;)(op);
+  }
+  
+  public static Ljava/lang/Object; fold(Lscala/collection/TraversableOnce; $this, Ljava/lang/Object; z, Lscala/Function2; op) {
+    return $this.(Lscala/collection/TraversableOnce;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(z, op);
+  }
+  
+  public static Ljava/lang/Object; aggregate(Lscala/collection/TraversableOnce; $this, Ljava/lang/Object; z, Lscala/Function2; seqop, Lscala/Function2; combop) {
+    return $this.(Lscala/collection/TraversableOnce;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(z, seqop);
+  }
+  
+  public static Ljava/lang/Object; sum(Lscala/collection/TraversableOnce; $this, Lscala/math/Numeric; num$2) {
+    return $this.(Lscala/collection/TraversableOnce;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(num$2.(Lscala/math/Numeric;::zero()Ljava/lang/Object;)(), (new (Lscala/collection/TraversableOnce$$anonfun$sum$1;::this(Lscala/collection/TraversableOnce;Lscala/math/Numeric;)V;)($this, num$2)));
+  }
+  
+  public static Ljava/lang/Object; product(Lscala/collection/TraversableOnce; $this, Lscala/math/Numeric; num$1) {
+    return $this.(Lscala/collection/TraversableOnce;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(num$1.(Lscala/math/Numeric;::one()Ljava/lang/Object;)(), (new (Lscala/collection/TraversableOnce$$anonfun$product$1;::this(Lscala/collection/TraversableOnce;Lscala/math/Numeric;)V;)($this, num$1)));
+  }
+  
+  public static Ljava/lang/Object; min(Lscala/collection/TraversableOnce; $this, Lscala/math/Ordering; cmp$4) {
     if ($this.(Lscala/collection/TraversableOnce;::isEmpty()Z;)())
       {
         throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)("empty.min"));
@@ -110,10 +147,10 @@ public abstract class Lscala/collection/TraversableOnce$class; {
       {
         
       }
-    return $this.(Lscala/collection/TraversableOnce;::reduceLeft(Lscala/Function2;)Ljava/lang/Object;)((new (Lscala/collection/TraversableOnce$$anonfun$min$1;::this(Lscala/collection/TraversableOnce;Lscala/math/Ordering;)V;)($this, cmp$1)));
+    return $this.(Lscala/collection/TraversableOnce;::reduceLeft(Lscala/Function2;)Ljava/lang/Object;)((new (Lscala/collection/TraversableOnce$$anonfun$min$1;::this(Lscala/collection/TraversableOnce;Lscala/math/Ordering;)V;)($this, cmp$4)));
   }
   
-  public static Ljava/lang/Object; max(Lscala/collection/TraversableOnce; $this, Lscala/math/Ordering; cmp$2) {
+  public static Ljava/lang/Object; max(Lscala/collection/TraversableOnce; $this, Lscala/math/Ordering; cmp$3) {
     if ($this.(Lscala/collection/TraversableOnce;::isEmpty()Z;)())
       {
         throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)("empty.max"));
@@ -122,11 +159,35 @@ public abstract class Lscala/collection/TraversableOnce$class; {
       {
         
       }
-    return $this.(Lscala/collection/TraversableOnce;::reduceLeft(Lscala/Function2;)Ljava/lang/Object;)((new (Lscala/collection/TraversableOnce$$anonfun$max$1;::this(Lscala/collection/TraversableOnce;Lscala/math/Ordering;)V;)($this, cmp$2)));
+    return $this.(Lscala/collection/TraversableOnce;::reduceLeft(Lscala/Function2;)Ljava/lang/Object;)((new (Lscala/collection/TraversableOnce$$anonfun$max$1;::this(Lscala/collection/TraversableOnce;Lscala/math/Ordering;)V;)($this, cmp$3)));
+  }
+  
+  public static Ljava/lang/Object; maxBy(Lscala/collection/TraversableOnce; $this, Lscala/Function1; f$2, Lscala/math/Ordering; cmp$2) {
+    if ($this.(Lscala/collection/TraversableOnce;::isEmpty()Z;)())
+      {
+        throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)("empty.maxBy"));
+      }
+    else
+      {
+        
+      }
+    return $this.(Lscala/collection/TraversableOnce;::reduceLeft(Lscala/Function2;)Ljava/lang/Object;)((new (Lscala/collection/TraversableOnce$$anonfun$maxBy$1;::this(Lscala/collection/TraversableOnce;Lscala/Function1;Lscala/math/Ordering;)V;)($this, f$2, cmp$2)));
+  }
+  
+  public static Ljava/lang/Object; minBy(Lscala/collection/TraversableOnce; $this, Lscala/Function1; f$1, Lscala/math/Ordering; cmp$1) {
+    if ($this.(Lscala/collection/TraversableOnce;::isEmpty()Z;)())
+      {
+        throw (new (Ljava/lang/UnsupportedOperationException;::this(Ljava/lang/String;)V;)("empty.minBy"));
+      }
+    else
+      {
+        
+      }
+    return $this.(Lscala/collection/TraversableOnce;::reduceLeft(Lscala/Function2;)Ljava/lang/Object;)((new (Lscala/collection/TraversableOnce$$anonfun$minBy$1;::this(Lscala/collection/TraversableOnce;Lscala/Function1;Lscala/math/Ordering;)V;)($this, f$1, cmp$1)));
   }
   
   public static V; copyToBuffer(Lscala/collection/TraversableOnce; $this, Lscala/collection/mutable/Buffer; dest) {
-    dest.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)($this);
+    dest.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)($this.(Lscala/collection/TraversableOnce;::seq()Lscala/collection/TraversableOnce;)());
   }
   
   public static V; copyToArray(Lscala/collection/TraversableOnce; $this, Ljava/lang/Object; xs, I; start) {
@@ -138,46 +199,46 @@ public abstract class Lscala/collection/TraversableOnce$class; {
   }
   
   public static Ljava/lang/Object; toArray(Lscala/collection/TraversableOnce; $this, Lscala/reflect/ClassManifest; evidence$1) {
-    Ljava/lang/Object; $3$;
-    if ($this.(Lscala/collection/TraversableOnce;::isTraversableAgain()Z;)())
+    Ljava/lang/Object; $4$;
+    if ($this.(Lscala/collection/GenTraversableOnce;::isTraversableAgain()Z;)())
       {
         Ljava/lang/Object; result = evidence$1.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)($this.(Lscala/collection/TraversableOnce;::size()I;)());
         $this.(Lscala/collection/TraversableOnce;::copyToArray(Ljava/lang/Object;I;)V;)(result, 0);
-        $3$ = result;
+        $4$ = result;
       }
     else
       {
-        $3$ = $this.(Lscala/collection/TraversableOnce;::toBuffer()Lscala/collection/mutable/Buffer;)().(Lscala/collection/TraversableOnce;::toArray(Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(evidence$1);
+        $4$ = $this.(Lscala/collection/TraversableOnce;::toBuffer()Lscala/collection/mutable/Buffer;)().(Lscala/collection/TraversableOnce;::toArray(Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(evidence$1);
       }
-    return $3$;
+    return $4$;
   }
   
   public static Lscala/collection/immutable/List; toList(Lscala/collection/TraversableOnce; $this) {
-    return (new (Lscala/collection/mutable/ListBuffer;::this()V;)()).(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)($this).<cast>(Lscala/collection/mutable/ListBuffer;).(Lscala/collection/mutable/ListBuffer;::toList()Lscala/collection/immutable/List;)();
+    return (new (Lscala/collection/mutable/ListBuffer;::this()V;)()).(Lscala/collection/mutable/ListBuffer;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/ListBuffer;)($this.(Lscala/collection/TraversableOnce;::seq()Lscala/collection/TraversableOnce;)()).(Lscala/collection/mutable/ListBuffer;::toList()Lscala/collection/immutable/List;)();
   }
   
   public static Lscala/collection/Iterable; toIterable(Lscala/collection/TraversableOnce; $this) {
-    return $this.(Lscala/collection/TraversableOnce;::toStream()Lscala/collection/immutable/Stream;)();
+    return $this.(Lscala/collection/GenTraversableOnce;::toStream()Lscala/collection/immutable/Stream;)();
   }
   
   public static Lscala/collection/Seq; toSeq(Lscala/collection/TraversableOnce; $this) {
-    return $this.(Lscala/collection/TraversableOnce;::toStream()Lscala/collection/immutable/Stream;)();
+    return $this.(Lscala/collection/GenTraversableOnce;::toStream()Lscala/collection/immutable/Stream;)();
   }
   
   public static Lscala/collection/immutable/IndexedSeq; toIndexedSeq(Lscala/collection/TraversableOnce; $this) {
-    return Lscala/collection/immutable/IndexedSeq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Lscala/runtime/Nothing$;>{})).(Lscala/collection/TraversableLike;::$plus$plus(Lscala/collection/TraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)($this, Lscala/collection/immutable/IndexedSeq$;.MODULE$.(Lscala/collection/immutable/IndexedSeq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/immutable/IndexedSeq;);
+    return Lscala/collection/immutable/IndexedSeq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(Lscala/collection/immutable/Nil$;.MODULE$).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::$plus$plus(Lscala/collection/GenTraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)($this.(Lscala/collection/TraversableOnce;::seq()Lscala/collection/TraversableOnce;)(), Lscala/collection/immutable/IndexedSeq$;.MODULE$.(Lscala/collection/immutable/IndexedSeq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/immutable/IndexedSeq;);
   }
   
   public static Lscala/collection/mutable/Buffer; toBuffer(Lscala/collection/TraversableOnce; $this) {
-    return (new (Lscala/collection/mutable/ArrayBuffer;::this()V;)()).(Lscala/collection/mutable/ArrayBuffer;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/ArrayBuffer;)($this);
+    return (new (Lscala/collection/mutable/ArrayBuffer;::this()V;)()).(Lscala/collection/mutable/ArrayBuffer;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/ArrayBuffer;)($this.(Lscala/collection/TraversableOnce;::seq()Lscala/collection/TraversableOnce;)());
   }
   
   public static Lscala/collection/immutable/Set; toSet(Lscala/collection/TraversableOnce; $this) {
-    return Lscala/collection/immutable/Set$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{})).<cast>(Lscala/collection/generic/Addable;).(Lscala/collection/generic/Addable;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Addable;)($this).<cast>(Lscala/collection/immutable/Set;);
+    return Lscala/collection/immutable/Set$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(Lscala/collection/immutable/Nil$;.MODULE$).<cast>(Lscala/collection/SetLike;).(Lscala/collection/SetLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/Set;)($this.(Lscala/collection/TraversableOnce;::seq()Lscala/collection/TraversableOnce;)()).<cast>(Lscala/collection/immutable/Set;);
   }
   
   public static Lscala/collection/immutable/Map; toMap(Lscala/collection/TraversableOnce; $this, Lscala/Predef$$less$colon$less; ev$1) {
-    Lscala/collection/mutable/Builder; b$2 = Lscala/collection/immutable/Map$;.MODULE$.(Lscala/collection/generic/MapFactory;::newBuilder()Lscala/collection/mutable/Builder;)();
+    Lscala/collection/mutable/Builder; b$2 = Lscala/collection/immutable/Map$;.MODULE$.(Lscala/collection/generic/GenMapFactory;::newBuilder()Lscala/collection/mutable/Builder;)();
     $this.(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/TraversableOnce$$anonfun$toMap$1;::this(Lscala/collection/TraversableOnce;Lscala/Predef$$less$colon$less;Lscala/collection/mutable/Builder;)V;)($this, ev$1, b$2)));
     return b$2.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Map;);
   }

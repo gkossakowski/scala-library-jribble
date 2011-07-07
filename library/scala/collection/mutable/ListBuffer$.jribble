@@ -1,12 +1,16 @@
-public final class Lscala/collection/mutable/ListBuffer$; extends Lscala/collection/generic/SeqFactory; implements Lscala/ScalaObject; {
+public final class Lscala/collection/mutable/ListBuffer$; extends Lscala/collection/generic/SeqFactory; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/collection/mutable/ListBuffer$; MODULE$ = new (Lscala/collection/mutable/ListBuffer$;::this()V;)();
   
   public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
-    return (new (Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;::this(Lscala/collection/generic/TraversableFactory;)V;)(this));
+    return this.(Lscala/collection/generic/GenTraversableFactory;::ReusableCBF()Lscala/collection/generic/GenTraversableFactory$ReusableCBF$;)();
   }
   
   public Lscala/collection/mutable/Builder; newBuilder() {
     return (new (Lscala/collection/mutable/GrowingBuilder;::this(Lscala/collection/generic/Growable;)V;)((new (Lscala/collection/mutable/ListBuffer;::this()V;)())));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/mutable/ListBuffer$;.MODULE$;
   }
   
   public this() {

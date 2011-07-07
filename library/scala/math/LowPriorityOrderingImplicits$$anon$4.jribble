@@ -44,8 +44,8 @@ public final class Lscala/math/LowPriorityOrderingImplicits$$anon$4; extends Lja
     return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::mkOrderingOps(Lscala/math/Ordering;Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this, lhs);
   }
   
-  public I; compare(Lscala/math/Ordered; x, Lscala/math/Ordered; y) {
-    return x.(Lscala/math/Ordered;::compare(Ljava/lang/Object;)I;)(y);
+  public I; compare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return this.(Lscala/math/LowPriorityOrderingImplicits$$anon$4;)evidence$1$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x).<cast>(Ljava/lang/Comparable;).(Ljava/lang/Comparable;::compareTo(Ljava/lang/Object;)I;)(y);
   }
   
   public Lscala/math/PartialOrdering; reverse() {
@@ -56,11 +56,10 @@ public final class Lscala/math/LowPriorityOrderingImplicits$$anon$4; extends Lja
     return this.(Lscala/math/Ordering;::tryCompare(Ljava/lang/Object;Ljava/lang/Object;)Lscala/Some;)(x, y);
   }
   
-  public I; compare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
-    return this.(Lscala/math/LowPriorityOrderingImplicits$$anon$4;::compare(Lscala/math/Ordered;Lscala/math/Ordered;)I;)(x.<cast>(Lscala/math/Ordered;), y.<cast>(Lscala/math/Ordered;));
-  }
+  private Lscala/Function1; evidence$1$1;
   
-  public this(Lscala/math/LowPriorityOrderingImplicits; $outer) {
+  public this(Lscala/math/LowPriorityOrderingImplicits; $outer, Lscala/Function1; evidence$1$1) {
+    this.(Lscala/math/LowPriorityOrderingImplicits$$anon$4;)evidence$1$1 = evidence$1$1;
     (Ljava/lang/Object;::super()V;)();
     Lscala/math/PartialOrdering$class;.(Lscala/math/PartialOrdering$class;::$init$(Lscala/math/PartialOrdering;)V;)(this);
     Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::$init$(Lscala/math/Ordering;)V;)(this);

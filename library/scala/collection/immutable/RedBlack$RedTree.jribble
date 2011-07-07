@@ -1,4 +1,4 @@
-public class Lscala/collection/immutable/RedBlack$RedTree; extends Lscala/collection/immutable/RedBlack$NonEmpty; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/collection/immutable/RedBlack$RedTree; extends Lscala/collection/immutable/RedBlack$NonEmpty; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   public Lscala/collection/Iterator; productIterator() {
     return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
@@ -6,22 +6,6 @@ public class Lscala/collection/immutable/RedBlack$RedTree; extends Lscala/collec
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Lscala/collection/immutable/RedBlack$Tree; copy$default$4() {
-    return this.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-  }
-  
-  public Lscala/collection/immutable/RedBlack$Tree; copy$default$3() {
-    return this.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$2() {
-    return this.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$1() {
-    return this.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)();
   }
   
   private Ljava/lang/Object; key$u0020;
@@ -56,6 +40,22 @@ public class Lscala/collection/immutable/RedBlack$RedTree; extends Lscala/collec
     return (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$RedTree;::scala$collection$immutable$RedBlack$RedTree$$$outer()Lscala/collection/immutable/RedBlack;)(), key, value, left, right));
   }
   
+  public Lscala/collection/immutable/RedBlack$Tree; copy$default$4() {
+    return this.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
+  }
+  
+  public Lscala/collection/immutable/RedBlack$Tree; copy$default$3() {
+    return this.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$2() {
+    return this.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$1() {
+    return this.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -65,35 +65,44 @@ public class Lscala/collection/immutable/RedBlack$RedTree; extends Lscala/collec
   }
   
   public Z; equals(Ljava/lang/Object; x$1) {
-    Ljava/lang/Object; temp176 = x$1;
-    Z; $51$;
-    if ((temp176.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;) && (temp176.<cast>(Lscala/collection/immutable/RedBlack$RedTree;).(Lscala/collection/immutable/RedBlack$RedTree;::scala$collection$immutable$RedBlack$RedTree$$$outer()Lscala/collection/immutable/RedBlack;)() == this.(Lscala/collection/immutable/RedBlack$RedTree;::scala$collection$immutable$RedBlack$RedTree$$$outer()Lscala/collection/immutable/RedBlack;)())))
+    Ljava/lang/Object; temp243 = x$1;
+    Z; $95$;
+    if ((temp243.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;) && (temp243.<cast>(Lscala/collection/immutable/RedBlack$RedTree;).(Lscala/collection/immutable/RedBlack$RedTree;::scala$collection$immutable$RedBlack$RedTree$$$outer()Lscala/collection/immutable/RedBlack;)() == this.(Lscala/collection/immutable/RedBlack$RedTree;::scala$collection$immutable$RedBlack$RedTree$$$outer()Lscala/collection/immutable/RedBlack;)())))
       {
-        Lscala/collection/immutable/RedBlack$RedTree; temp177 = temp176.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-        Ljava/lang/Object; temp178 = temp177.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)();
-        Ljava/lang/Object; temp179 = temp177.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)();
-        Lscala/collection/immutable/RedBlack$Tree; temp180 = temp177.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-        Lscala/collection/immutable/RedBlack$Tree; temp181 = temp177.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-        Lscala/collection/immutable/RedBlack$Tree; right$1 = temp181;
-        Lscala/collection/immutable/RedBlack$Tree; left$1 = temp180;
-        Ljava/lang/Object; value$1 = temp179;
-        Ljava/lang/Object; key$1 = temp178;
-        Z; $52$;
+        Lscala/collection/immutable/RedBlack$RedTree; temp244 = temp243.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
+        Ljava/lang/Object; temp245 = temp244.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)();
+        Ljava/lang/Object; temp246 = temp244.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)();
+        Lscala/collection/immutable/RedBlack$Tree; temp247 = temp244.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
+        Lscala/collection/immutable/RedBlack$Tree; temp248 = temp244.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
+        Ljava/lang/Object; key$1 = temp245;
+        Ljava/lang/Object; value$1 = temp246;
+        Lscala/collection/immutable/RedBlack$Tree; left$1 = temp247;
+        Lscala/collection/immutable/RedBlack$Tree; right$1 = temp248;
+        Z; $96$;
         if (this.(Lscala/collection/immutable/RedBlack$RedTree;::gd3$1(Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Z;)(key$1, value$1, left$1, right$1))
           {
-            $52$ = x$1.<cast>(Lscala/collection/immutable/RedBlack$RedTree;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/Object; $97$;
+            Ljava/lang/Object; $98$;
+            Lscala/collection/immutable/RedBlack$Tree; $99$;
+            Lscala/collection/immutable/RedBlack$Tree; $100$;
+            Z; $101$;
+            body$percent019: while(true) {
+              $101$ = x$1.<cast>(Lscala/collection/immutable/RedBlack$RedTree;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $96$ = $101$;
           }
         else
           {
-            $52$ = false;
+            $96$ = false;
           }
-        $51$ = $52$;
+        $95$ = $96$;
       }
     else
       {
-        $51$ = false;
+        $95$ = false;
       }
-    return ((this == x$1) || $51$);
+    return ((this == x$1) || $95$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -105,27 +114,27 @@ public class Lscala/collection/immutable/RedBlack$RedTree; extends Lscala/collec
   }
   
   public Ljava/lang/Object; productElement(I; x$1) {
-    I; temp182 = x$1;
-    I; $53$ = temp182;
-    Ljava/lang/Object; $54$;
-    switch ($53$) {
-      0: {
-        $54$ = this.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)();
+    I; temp249 = x$1;
+    I; $102$ = temp249;
+    Ljava/lang/Object; $103$;
+    switch ($102$) {
+      3: {
+        $103$ = this.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
         break;
       }
       
       1: {
-        $54$ = this.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)();
+        $103$ = this.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)();
         break;
       }
       
       2: {
-        $54$ = this.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
+        $103$ = this.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
         break;
       }
       
-      3: {
-        $54$ = this.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
+      0: {
+        $103$ = this.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)();
         break;
       }
       
@@ -135,7 +144,7 @@ public class Lscala/collection/immutable/RedBlack$RedTree; extends Lscala/collec
       }
       
     }
-    return $54$;
+    return $103$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

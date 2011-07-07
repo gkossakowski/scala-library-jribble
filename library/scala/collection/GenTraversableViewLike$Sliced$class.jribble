@@ -1,0 +1,35 @@
+public abstract class Lscala/collection/GenTraversableViewLike$Sliced$class; {
+  
+  public static I; from(Lscala/collection/GenTraversableViewLike$Sliced; $this) {
+    return $this.(Lscala/collection/GenTraversableViewLike$Sliced;::endpoints()Lscala/collection/generic/SliceInterval;)().(Lscala/collection/generic/SliceInterval;::from()I;)();
+  }
+  
+  public static I; until(Lscala/collection/GenTraversableViewLike$Sliced; $this) {
+    return $this.(Lscala/collection/GenTraversableViewLike$Sliced;::endpoints()Lscala/collection/generic/SliceInterval;)().(Lscala/collection/generic/SliceInterval;::until()I;)();
+  }
+  
+  public static V; foreach(Lscala/collection/GenTraversableViewLike$Sliced; $this, Lscala/Function1; f$1) {
+    Ljava/lang/Object; nonLocalReturnKey1$1 = (new (Ljava/lang/Object;::this()V;)());
+    try {
+      Lscala/runtime/IntRef; index$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(0));
+      $this.(Lscala/collection/GenTraversableViewLike$Sliced;::scala$collection$GenTraversableViewLike$Sliced$$$outer()Lscala/collection/GenTraversableViewLike;)().(Lscala/collection/generic/GenericTraversableTemplate;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/GenTraversableViewLike$Sliced$$anonfun$foreach$1;::this(Lscala/collection/GenTraversableViewLike$Sliced;Lscala/Function1;Lscala/runtime/IntRef;Ljava/lang/Object;)V;)($this, f$1, index$1, nonLocalReturnKey1$1)));
+    } catch(Lscala/runtime/NonLocalReturnControl; ex) {
+      if ((ex.(Lscala/runtime/NonLocalReturnControl;::key()Ljava/lang/Object;)() == nonLocalReturnKey1$1))
+        {
+          ex.(Lscala/runtime/NonLocalReturnControl;::value()Ljava/lang/Object;)().<cast>(Lscala/runtime/BoxedUnit;);
+        }
+      else
+        {
+          throw ex;
+        }
+    }
+  }
+  
+  public static final Ljava/lang/String; viewIdentifier(Lscala/collection/GenTraversableViewLike$Sliced; $this) {
+    return "S";
+  }
+  
+  public static V; $init$(Lscala/collection/GenTraversableViewLike$Sliced; $this) {
+    
+  }
+}

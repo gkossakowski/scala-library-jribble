@@ -1,0 +1,40 @@
+public class Lscala/collection/immutable/StreamIterator$LazyCell; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  protected I; bitmap$0 = 0;
+  
+  private Lscala/Function0; st;
+  
+  private Lscala/collection/immutable/Stream; v$u0020;
+  
+  public Lscala/collection/immutable/Stream; v() {
+    if (((this.(Lscala/collection/immutable/StreamIterator$LazyCell;)bitmap$0 & 1) == 0))
+      {
+        if (((this.(Lscala/collection/immutable/StreamIterator$LazyCell;)bitmap$0 & 1) == 0))
+          {
+            this.(Lscala/collection/immutable/StreamIterator$LazyCell;)v$u0020 = this.(Lscala/collection/immutable/StreamIterator$LazyCell;)st.(Lscala/Function0;::apply()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/Stream;);
+            this.(Lscala/collection/immutable/StreamIterator$LazyCell;)bitmap$0 = (this.(Lscala/collection/immutable/StreamIterator$LazyCell;)bitmap$0 | 1);
+          }
+        this.(Lscala/collection/immutable/StreamIterator$LazyCell;)st = null;
+      }
+    return this.(Lscala/collection/immutable/StreamIterator$LazyCell;)v$u0020;
+  }
+  
+  protected Lscala/collection/immutable/StreamIterator; $outer$u0020;
+  
+  public Lscala/collection/immutable/StreamIterator; scala$collection$immutable$StreamIterator$LazyCell$$$outer() {
+    return this.(Lscala/collection/immutable/StreamIterator$LazyCell;)$outer$u0020;
+  }
+  
+  public this(Lscala/collection/immutable/StreamIterator; $outer, Lscala/Function0; st) {
+    this.(Lscala/collection/immutable/StreamIterator$LazyCell;)st = st;
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/immutable/StreamIterator$LazyCell;)$outer$u0020 = $outer;
+      }
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

@@ -1,4 +1,4 @@
-public final class Lscala/collection/immutable/StringLike$$anonfun$stripMargin$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/immutable/StringLike$$anonfun$stripMargin$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final Lscala/collection/mutable/StringBuilder; apply(Ljava/lang/String; line) {
     I; len = line.(Ljava/lang/String;::length()I;)();
@@ -15,16 +15,16 @@ public final class Lscala/collection/immutable/StringLike$$anonfun$stripMargin$1
         }
       break;
     }
-    Ljava/lang/String; $13$;
+    Ljava/lang/String; $14$;
     if (((index < len) && (line.(Ljava/lang/String;::charAt(I;)C;)(index) == this.(Lscala/collection/immutable/StringLike$$anonfun$stripMargin$1;)marginChar$1)))
       {
-        $13$ = line.(Ljava/lang/String;::substring(I;)Ljava/lang/String;)((index + 1));
+        $14$ = line.(Ljava/lang/String;::substring(I;)Ljava/lang/String;)((index + 1));
       }
     else
       {
-        $13$ = line;
+        $14$ = line;
       }
-    return this.(Lscala/collection/immutable/StringLike$$anonfun$stripMargin$1;)buf$2.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)($13$);
+    return this.(Lscala/collection/immutable/StringLike$$anonfun$stripMargin$1;)buf$2.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)($14$);
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {

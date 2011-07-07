@@ -1,4 +1,4 @@
-public final class Lscala/collection/script/Update$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/collection/script/Update$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/collection/script/Update$; MODULE$ = new (Lscala/collection/script/Update$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/collection/script/Update$; extends Ljava/lang/Object; 
   }
   
   public Lscala/Option; unapply(Lscala/collection/script/Update; x$0) {
-    Lscala/Option; $14$;
+    Lscala/Option; $16$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $14$ = Lscala/None$;.MODULE$;
+        $16$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $14$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/collection/script/Update;::location()Lscala/collection/script/Location;)(), x$0.(Lscala/collection/script/Update;::elem()Ljava/lang/Object;)()))));
+        $16$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/collection/script/Update;::location()Lscala/collection/script/Location;)(), x$0.(Lscala/collection/script/Update;::elem()Ljava/lang/Object;)()))));
       }
-    return $14$;
+    return $16$;
   }
   
   public Lscala/collection/script/Update; apply(Lscala/collection/script/Location; location, Ljava/lang/Object; elem) {
     return (new (Lscala/collection/script/Update;::this(Lscala/collection/script/Location;Ljava/lang/Object;)V;)(location, elem));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/script/Update$;.MODULE$;
   }
   
   public this() {

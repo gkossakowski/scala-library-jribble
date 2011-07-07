@@ -1,19 +1,19 @@
-public final class Lscala/collection/immutable/MapLike$$anonfun$transform$2; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/immutable/MapLike$$anonfun$transform$2; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final Lscala/collection/mutable/Builder; apply(Lscala/Tuple2; x$6) {
-    Lscala/Tuple2; temp13 = x$6;
-    Lscala/collection/mutable/Builder; $5$;
-    if ((temp13 != null))
+    Lscala/Tuple2; temp16 = x$6;
+    Lscala/collection/mutable/Builder; $7$;
+    if ((temp16 != null))
       {
-        Ljava/lang/Object; temp14 = temp13.(Lscala/Tuple2;::_1()Ljava/lang/Object;)();
-        Ljava/lang/Object; key = temp14;
-        $5$ = this.(Lscala/collection/immutable/MapLike$$anonfun$transform$2;)b$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(key, this.(Lscala/collection/immutable/MapLike$$anonfun$transform$2;)f$2.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(key, temp13.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()))));
+        Ljava/lang/Object; temp17 = temp16.(Lscala/Tuple2;::_1()Ljava/lang/Object;)();
+        Ljava/lang/Object; key = temp17;
+        $7$ = this.(Lscala/collection/immutable/MapLike$$anonfun$transform$2;)b$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(key, this.(Lscala/collection/immutable/MapLike$$anonfun$transform$2;)f$2.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(key, temp16.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()))));
       }
     else
       {
-        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp13));
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp16));
       }
-    return $5$;
+    return $7$;
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {

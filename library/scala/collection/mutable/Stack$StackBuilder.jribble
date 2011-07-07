@@ -1,0 +1,69 @@
+public class Lscala/collection/mutable/Stack$StackBuilder; extends Ljava/lang/Object; implements Lscala/collection/mutable/Builder;, Lscala/ScalaObject; {
+  
+  public V; sizeHint(I; size) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint(Lscala/collection/mutable/Builder;I;)V;)(this, size);
+  }
+  
+  public V; sizeHint(Lscala/collection/TraversableLike; coll, I; delta) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint(Lscala/collection/mutable/Builder;Lscala/collection/TraversableLike;I;)V;)(this, coll, delta);
+  }
+  
+  public V; sizeHintBounded(I; size, Lscala/collection/TraversableLike; boundingColl) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHintBounded(Lscala/collection/mutable/Builder;I;Lscala/collection/TraversableLike;)V;)(this, size, boundingColl);
+  }
+  
+  public Lscala/collection/mutable/Builder; mapResult(Lscala/Function1; f) {
+    return Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::mapResult(Lscala/collection/mutable/Builder;Lscala/Function1;)Lscala/collection/mutable/Builder;)(this, f);
+  }
+  
+  public I; sizeHint$default$2() {
+    return Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint$default$2(Lscala/collection/mutable/Builder;)I;)(this);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
+    return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$eq(Lscala/collection/generic/Growable;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/Seq;)Lscala/collection/generic/Growable;)(this, elem1, elem2, elems);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, xs);
+  }
+  
+  private Lscala/collection/mutable/ListBuffer; lbuff$u0020;
+  
+  public Lscala/collection/mutable/ListBuffer; lbuff() {
+    return this.(Lscala/collection/mutable/Stack$StackBuilder;)lbuff$u0020;
+  }
+  
+  public Lscala/collection/mutable/Stack$StackBuilder; $plus$eq(Ljava/lang/Object; elem) {
+    this.(Lscala/collection/mutable/Stack$StackBuilder;::lbuff()Lscala/collection/mutable/ListBuffer;)().(Lscala/collection/mutable/ListBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ListBuffer;)(elem);
+    return this;
+  }
+  
+  public V; clear() {
+    this.(Lscala/collection/mutable/Stack$StackBuilder;::lbuff()Lscala/collection/mutable/ListBuffer;)().(Lscala/collection/mutable/ListBuffer;::clear()V;)();
+  }
+  
+  public Lscala/collection/mutable/Stack; result() {
+    Lscala/collection/immutable/List; lst = this.(Lscala/collection/mutable/Stack$StackBuilder;::lbuff()Lscala/collection/mutable/ListBuffer;)().(Lscala/collection/mutable/ListBuffer;::result()Lscala/collection/immutable/List;)();
+    return (new (Lscala/collection/mutable/Stack;::this(Lscala/collection/immutable/List;)V;)(lst));
+  }
+  
+  public Ljava/lang/Object; result() {
+    return this.(Lscala/collection/mutable/Stack$StackBuilder;::result()Lscala/collection/mutable/Stack;)();
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/Stack$StackBuilder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Stack$StackBuilder;)(elem);
+  }
+  
+  public Lscala/collection/mutable/Builder; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/mutable/Stack$StackBuilder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Stack$StackBuilder;)(elem);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$init$(Lscala/collection/generic/Growable;)V;)(this);
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::$init$(Lscala/collection/mutable/Builder;)V;)(this);
+    this.(Lscala/collection/mutable/Stack$StackBuilder;)lbuff$u0020 = (new (Lscala/collection/mutable/ListBuffer;::this()V;)());
+  }
+}

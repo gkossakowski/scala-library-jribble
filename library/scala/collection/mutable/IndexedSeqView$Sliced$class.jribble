@@ -1,18 +1,18 @@
 public abstract class Lscala/collection/mutable/IndexedSeqView$Sliced$class; {
   
+  public static I; length(Lscala/collection/mutable/IndexedSeqView$Sliced; $this) {
+    return $this.(Lscala/collection/GenTraversableViewLike$Sliced;::endpoints()Lscala/collection/generic/SliceInterval;)().(Lscala/collection/generic/SliceInterval;::width()I;)();
+  }
+  
   public static V; update(Lscala/collection/mutable/IndexedSeqView$Sliced; $this, I; idx, Ljava/lang/Object; elem) {
-    if (((idx + $this.(Lscala/collection/TraversableViewLike$Sliced;::from()I;)()) < $this.(Lscala/collection/TraversableViewLike$Sliced;::until()I;)()))
+    if (((idx + $this.(Lscala/collection/GenTraversableViewLike$Sliced;::from()I;)()) < $this.(Lscala/collection/GenTraversableViewLike$Sliced;::until()I;)()))
       {
-        $this.(Lscala/collection/mutable/IndexedSeqView$Sliced;::scala$collection$mutable$IndexedSeqView$Sliced$$$outer()Lscala/collection/mutable/IndexedSeqView;)().(Lscala/collection/mutable/IndexedSeqView;::update(I;Ljava/lang/Object;)V;)((idx + $this.(Lscala/collection/TraversableViewLike$Sliced;::from()I;)()), elem);
+        $this.(Lscala/collection/mutable/IndexedSeqView$Sliced;::scala$collection$mutable$IndexedSeqView$Sliced$$$outer()Lscala/collection/mutable/IndexedSeqView;)().(Lscala/collection/mutable/IndexedSeqView;::update(I;Ljava/lang/Object;)V;)((idx + $this.(Lscala/collection/GenTraversableViewLike$Sliced;::from()I;)()), elem);
       }
     else
       {
         throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(idx).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
       }
-  }
-  
-  public static Lscala/collection/mutable/IndexedSeqView$Transformed; slice(Lscala/collection/mutable/IndexedSeqView$Sliced; $this, I; from1, I; until1) {
-    return $this.(Lscala/collection/mutable/IndexedSeqView;::newSliced(I;I;)Lscala/collection/mutable/IndexedSeqView$Transformed;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(from1).(Lscala/runtime/RichInt;::max(I;)I;)(0), Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(until1).(Lscala/runtime/RichInt;::max(I;)I;)(0));
   }
   
   public static V; $init$(Lscala/collection/mutable/IndexedSeqView$Sliced; $this) {

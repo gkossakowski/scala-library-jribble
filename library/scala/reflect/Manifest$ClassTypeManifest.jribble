@@ -75,25 +75,25 @@ public class Lscala/reflect/Manifest$ClassTypeManifest; extends Ljava/lang/Objec
   }
   
   public Ljava/lang/String; toString() {
-    Ljava/lang/String; $5$;
+    Ljava/lang/String; $4$;
     if (this.(Lscala/reflect/Manifest$ClassTypeManifest;)prefix.(Lscala/Option;::isEmpty()Z;)())
       {
-        $5$ = "";
+        $4$ = "";
       }
     else
       {
-        $5$ = (this.(Lscala/reflect/Manifest$ClassTypeManifest;)prefix.(Lscala/Option;::get()Ljava/lang/Object;)().(Ljava/lang/Object;::toString()Ljava/lang/String;)() + "#");
+        $4$ = (this.(Lscala/reflect/Manifest$ClassTypeManifest;)prefix.(Lscala/Option;::get()Ljava/lang/Object;)().(Ljava/lang/Object;::toString()Ljava/lang/String;)() + "#");
       }
-    Ljava/lang/Object; $6$;
+    Ljava/lang/Object; $5$;
     if (this.(Lscala/reflect/Manifest$ClassTypeManifest;::erasure()Ljava/lang/Class;)().(Ljava/lang/Class;::isArray()Z;)())
       {
-        $6$ = "Array";
+        $5$ = "Array";
       }
     else
       {
-        $6$ = this.(Lscala/reflect/Manifest$ClassTypeManifest;::erasure()Ljava/lang/Class;)().(Ljava/lang/Class;::getName()Ljava/lang/String;)();
+        $5$ = this.(Lscala/reflect/Manifest$ClassTypeManifest;::erasure()Ljava/lang/Class;)().(Ljava/lang/Class;::getName()Ljava/lang/String;)();
       }
-    return (($5$ + $6$) + this.(Lscala/reflect/ClassManifest;::argString()Ljava/lang/String;)());
+    return (($4$ + $5$) + this.(Lscala/reflect/ClassManifest;::argString()Ljava/lang/String;)());
   }
   
   public Lscala/reflect/ClassManifest; arrayManifest() {

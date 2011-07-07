@@ -1,0 +1,35 @@
+public class Lscala/collection/generic/OrderedTraversableFactory$GenericCanBuildFrom; extends Ljava/lang/Object; implements Lscala/collection/generic/CanBuildFrom;, Lscala/ScalaObject; {
+  
+  private Lscala/math/Ordering; ord;
+  
+  public Lscala/collection/mutable/Builder; apply(Lscala/collection/Traversable; from) {
+    return from.<cast>(Lscala/collection/generic/GenericOrderedTraversableTemplate;).(Lscala/collection/generic/GenericOrderedTraversableTemplate;::genericOrderedBuilder(Lscala/math/Ordering;)Lscala/collection/mutable/Builder;)(this.(Lscala/collection/generic/OrderedTraversableFactory$GenericCanBuildFrom;)ord);
+  }
+  
+  public Lscala/collection/mutable/Builder; apply() {
+    return this.(Lscala/collection/generic/OrderedTraversableFactory$GenericCanBuildFrom;::scala$collection$generic$OrderedTraversableFactory$GenericCanBuildFrom$$$outer()Lscala/collection/generic/OrderedTraversableFactory;)().(Lscala/collection/generic/GenericOrderedCompanion;::newBuilder(Lscala/math/Ordering;)Lscala/collection/mutable/Builder;)(this.(Lscala/collection/generic/OrderedTraversableFactory$GenericCanBuildFrom;)ord);
+  }
+  
+  protected Lscala/collection/generic/OrderedTraversableFactory; $outer$u0020;
+  
+  public Lscala/collection/generic/OrderedTraversableFactory; scala$collection$generic$OrderedTraversableFactory$GenericCanBuildFrom$$$outer() {
+    return this.(Lscala/collection/generic/OrderedTraversableFactory$GenericCanBuildFrom;)$outer$u0020;
+  }
+  
+  public Lscala/collection/mutable/Builder; apply(Ljava/lang/Object; from) {
+    return this.(Lscala/collection/generic/OrderedTraversableFactory$GenericCanBuildFrom;::apply(Lscala/collection/Traversable;)Lscala/collection/mutable/Builder;)(from.<cast>(Lscala/collection/Traversable;));
+  }
+  
+  public this(Lscala/collection/generic/OrderedTraversableFactory; $outer, Lscala/math/Ordering; ord) {
+    this.(Lscala/collection/generic/OrderedTraversableFactory$GenericCanBuildFrom;)ord = ord;
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/generic/OrderedTraversableFactory$GenericCanBuildFrom;)$outer$u0020 = $outer;
+      }
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

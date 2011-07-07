@@ -1,4 +1,4 @@
-public final class Lscala/Either$RightProjection$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/Either$RightProjection$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/Either$RightProjection$; MODULE$ = new (Lscala/Either$RightProjection$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/Either$RightProjection$; extends Ljava/lang/Object; im
   }
   
   public Lscala/Option; unapply(Lscala/Either$RightProjection; x$0) {
-    Lscala/Option; $70$;
+    Lscala/Option; $79$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $70$ = Lscala/None$;.MODULE$;
+        $79$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $70$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/Either$RightProjection;::e()Lscala/Either;)()));
+        $79$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/Either$RightProjection;::e()Lscala/Either;)()));
       }
-    return $70$;
+    return $79$;
   }
   
   public Lscala/Either$RightProjection; apply(Lscala/Either; e) {
     return (new (Lscala/Either$RightProjection;::this(Lscala/Either;)V;)(e));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/Either$RightProjection$;.MODULE$;
   }
   
   public this() {

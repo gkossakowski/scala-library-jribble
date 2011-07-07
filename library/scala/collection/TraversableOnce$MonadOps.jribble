@@ -1,0 +1,25 @@
+public class Lscala/collection/TraversableOnce$MonadOps; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  private Lscala/collection/TraversableOnce; trav;
+  
+  public Lscala/collection/TraversableOnce; map(Lscala/Function1; f) {
+    return this.(Lscala/collection/TraversableOnce$MonadOps;)trav.(Lscala/collection/GenTraversableOnce;::toIterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)(f);
+  }
+  
+  public Lscala/collection/TraversableOnce; flatMap(Lscala/Function1; f) {
+    return this.(Lscala/collection/TraversableOnce$MonadOps;)trav.(Lscala/collection/GenTraversableOnce;::toIterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::flatMap(Lscala/Function1;)Lscala/collection/Iterator;)(f);
+  }
+  
+  public Lscala/collection/Iterator; withFilter(Lscala/Function1; p) {
+    return this.(Lscala/collection/TraversableOnce$MonadOps;)trav.(Lscala/collection/GenTraversableOnce;::toIterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::filter(Lscala/Function1;)Lscala/collection/Iterator;)(p);
+  }
+  
+  public Lscala/collection/TraversableOnce; filter(Lscala/Function1; p) {
+    return this.(Lscala/collection/TraversableOnce$MonadOps;::withFilter(Lscala/Function1;)Lscala/collection/Iterator;)(p);
+  }
+  
+  public this(Lscala/collection/TraversableOnce; trav) {
+    this.(Lscala/collection/TraversableOnce$MonadOps;)trav = trav;
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

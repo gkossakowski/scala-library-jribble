@@ -12,6 +12,12 @@ public abstract class Lscala/collection/IndexedSeqLike$class; {
     return (new (Lscala/collection/IndexedSeqLike$Elements;::this(Lscala/collection/IndexedSeqLike;I;I;)V;)($this, 0, $this.(Lscala/collection/SeqLike;::length()I;)()));
   }
   
+  public static Lscala/collection/mutable/Buffer; toBuffer(Lscala/collection/IndexedSeqLike; $this) {
+    Lscala/collection/mutable/ArrayBuffer; result = (new (Lscala/collection/mutable/ArrayBuffer;::this(I;)V;)($this.(Lscala/collection/SeqLike;::size()I;)()));
+    $this.(Lscala/collection/TraversableOnce;::copyToBuffer(Lscala/collection/mutable/Buffer;)V;)(result);
+    return result;
+  }
+  
   public static V; $init$(Lscala/collection/IndexedSeqLike; $this) {
     
   }

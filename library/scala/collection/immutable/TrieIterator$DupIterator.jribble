@@ -1,0 +1,68 @@
+public final class Lscala/collection/immutable/TrieIterator$DupIterator; extends Lscala/collection/immutable/TrieIterator; implements Lscala/ScalaObject; {
+  
+  private I; initDepth$u0020;
+  
+  public I; initDepth() {
+    return this.(Lscala/collection/immutable/TrieIterator$DupIterator;)initDepth$u0020;
+  }
+  
+  private Lscala/collection/immutable/Iterable;[[ initArrayStack$u0020;
+  
+  public Lscala/collection/immutable/Iterable;[[ initArrayStack() {
+    return this.(Lscala/collection/immutable/TrieIterator$DupIterator;)initArrayStack$u0020;
+  }
+  
+  private I;[ initPosStack$u0020;
+  
+  public I;[ initPosStack() {
+    return this.(Lscala/collection/immutable/TrieIterator$DupIterator;)initPosStack$u0020;
+  }
+  
+  private Lscala/collection/immutable/Iterable;[ initArrayD$u0020;
+  
+  public Lscala/collection/immutable/Iterable;[ initArrayD() {
+    return this.(Lscala/collection/immutable/TrieIterator$DupIterator;)initArrayD$u0020;
+  }
+  
+  private I; initPosD$u0020;
+  
+  public I; initPosD() {
+    return this.(Lscala/collection/immutable/TrieIterator$DupIterator;)initPosD$u0020;
+  }
+  
+  private Lscala/collection/Iterator; initSubIter$u0020;
+  
+  public Lscala/collection/Iterator; initSubIter() {
+    return this.(Lscala/collection/immutable/TrieIterator$DupIterator;)initSubIter$u0020;
+  }
+  
+  public final Ljava/lang/Object; getElem(Ljava/lang/Object; x) {
+    return this.(Lscala/collection/immutable/TrieIterator$DupIterator;)$outer$u0020.(Lscala/collection/immutable/TrieIterator;::getElem(Ljava/lang/Object;)Ljava/lang/Object;)(x);
+  }
+  
+  private Lscala/collection/immutable/TrieIterator; $outer$u0020;
+  
+  public this(Lscala/collection/immutable/TrieIterator; $outer, Lscala/collection/immutable/Iterable;[ xs) {
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/immutable/TrieIterator$DupIterator;)$outer$u0020 = $outer;
+      }
+    I; initDepth = $outer.(Lscala/collection/immutable/TrieIterator;)scala$collection$immutable$TrieIterator$$depth;
+    this.(Lscala/collection/immutable/TrieIterator$DupIterator;)initDepth$u0020 = initDepth;
+    Lscala/collection/immutable/Iterable;[[ initArrayStack = $outer.(Lscala/collection/immutable/TrieIterator;)scala$collection$immutable$TrieIterator$$arrayStack;
+    this.(Lscala/collection/immutable/TrieIterator$DupIterator;)initArrayStack$u0020 = initArrayStack;
+    I;[ initPosStack = $outer.(Lscala/collection/immutable/TrieIterator;)scala$collection$immutable$TrieIterator$$posStack;
+    this.(Lscala/collection/immutable/TrieIterator$DupIterator;)initPosStack$u0020 = initPosStack;
+    Lscala/collection/immutable/Iterable;[ initArrayD = $outer.(Lscala/collection/immutable/TrieIterator;)scala$collection$immutable$TrieIterator$$arrayD;
+    this.(Lscala/collection/immutable/TrieIterator$DupIterator;)initArrayD$u0020 = initArrayD;
+    I; initPosD = $outer.(Lscala/collection/immutable/TrieIterator;)scala$collection$immutable$TrieIterator$$posD;
+    this.(Lscala/collection/immutable/TrieIterator$DupIterator;)initPosD$u0020 = initPosD;
+    Lscala/collection/Iterator; initSubIter = $outer.(Lscala/collection/immutable/TrieIterator;)scala$collection$immutable$TrieIterator$$subIter;
+    this.(Lscala/collection/immutable/TrieIterator$DupIterator;)initSubIter$u0020 = initSubIter;
+    (Lscala/collection/immutable/TrieIterator;::super(Lscala/collection/immutable/Iterable;[)V;)(xs);
+  }
+}

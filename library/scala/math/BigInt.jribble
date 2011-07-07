@@ -1,4 +1,4 @@
-public class Lscala/math/BigInt; extends Lscala/math/ScalaNumber; implements Lscala/math/ScalaNumericConversions;, Lscala/ScalaObject; {
+public class Lscala/math/BigInt; extends Lscala/math/ScalaNumber; implements Lscala/math/ScalaNumericConversions;, Lscala/Serializable;, Lscala/ScalaObject; {
   public final static Lscala/math/BigInt; long2bigInt(J; x_0) { return Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::long2bigInt(J;)Lscala/math/BigInt;)(x_0); }
   public final static Lscala/math/BigInt; int2bigInt(I; x_0) { return Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::int2bigInt(I;)Lscala/math/BigInt;)(x_0); }
   public final static Lscala/math/BigInt; probablePrime(I; x_0, Lscala/util/Random; x_1) { return Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::probablePrime(I;Lscala/util/Random;)Lscala/math/BigInt;)(x_0, x_1); }
@@ -42,36 +42,12 @@ public class Lscala/math/BigInt; extends Lscala/math/ScalaNumber; implements Lsc
     return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::toDouble(Lscala/math/ScalaNumericConversions;)D;)(this);
   }
   
-  public Z; isValidByte() {
-    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidByte(Lscala/math/ScalaNumericConversions;)Z;)(this);
-  }
-  
-  public Z; isValidShort() {
-    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidShort(Lscala/math/ScalaNumericConversions;)Z;)(this);
-  }
-  
-  public Z; isValidInt() {
-    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidInt(Lscala/math/ScalaNumericConversions;)Z;)(this);
-  }
-  
-  public Z; isValidChar() {
-    return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::isValidChar(Lscala/math/ScalaNumericConversions;)Z;)(this);
-  }
-  
   public I; unifiedPrimitiveHashcode() {
     return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::unifiedPrimitiveHashcode(Lscala/math/ScalaNumericConversions;)I;)(this);
   }
   
   public Z; unifiedPrimitiveEquals(Ljava/lang/Object; x) {
     return Lscala/math/ScalaNumericConversions$class;.(Lscala/math/ScalaNumericConversions$class;::unifiedPrimitiveEquals(Lscala/math/ScalaNumericConversions;Ljava/lang/Object;)Z;)(this, x);
-  }
-  
-  public Lscala/math/BigInt; to$default$2() {
-    return Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::apply(I;)Lscala/math/BigInt;)(1);
-  }
-  
-  public Lscala/math/BigInt; until$default$2() {
-    return Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::apply(I;)Lscala/math/BigInt;)(1);
   }
   
   private Ljava/math/BigInteger; bigInteger$u0020;
@@ -82,7 +58,7 @@ public class Lscala/math/BigInt; extends Lscala/math/ScalaNumber; implements Lsc
   
   public I; hashCode() {
     I; $3$;
-    if ((this.(Lscala/math/BigInt;::$greater$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::MinLong()Lscala/math/BigInt;)()) && this.(Lscala/math/BigInt;::$less$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::MaxLong()Lscala/math/BigInt;)())))
+    if (this.(Lscala/math/BigInt;::isValidLong()Z;)())
       {
         $3$ = this.(Lscala/math/ScalaNumericConversions;::unifiedPrimitiveHashcode()I;)();
       }
@@ -109,11 +85,31 @@ public class Lscala/math/BigInt; extends Lscala/math/ScalaNumber; implements Lsc
           }
         else
           {
-            $5$ = ((this.(Lscala/math/BigInt;::$less$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::MaxLong()Lscala/math/BigInt;)()) && this.(Lscala/math/BigInt;::$greater$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::MinLong()Lscala/math/BigInt;)())) && this.(Lscala/math/ScalaNumericConversions;::unifiedPrimitiveEquals(Ljava/lang/Object;)Z;)(temp1));
+            $5$ = (this.(Lscala/math/BigInt;::isValidLong()Z;)() && this.(Lscala/math/ScalaNumericConversions;::unifiedPrimitiveEquals(Ljava/lang/Object;)Z;)(temp1));
           }
         $4$ = $5$;
       }
     return $4$;
+  }
+  
+  public Z; isValidByte() {
+    return (this.(Lscala/math/BigInt;::$greater$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::int2bigInt(I;)Lscala/math/BigInt;)(-128)) && this.(Lscala/math/BigInt;::$less$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::int2bigInt(I;)Lscala/math/BigInt;)(127)));
+  }
+  
+  public Z; isValidShort() {
+    return (this.(Lscala/math/BigInt;::$greater$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::int2bigInt(I;)Lscala/math/BigInt;)(-32768)) && this.(Lscala/math/BigInt;::$less$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::int2bigInt(I;)Lscala/math/BigInt;)(32767)));
+  }
+  
+  public Z; isValidChar() {
+    return (this.(Lscala/math/BigInt;::$greater$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::int2bigInt(I;)Lscala/math/BigInt;)(0)) && this.(Lscala/math/BigInt;::$less$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::int2bigInt(I;)Lscala/math/BigInt;)(65535)));
+  }
+  
+  public Z; isValidInt() {
+    return (this.(Lscala/math/BigInt;::$greater$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::int2bigInt(I;)Lscala/math/BigInt;)(-2147483648)) && this.(Lscala/math/BigInt;::$less$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::int2bigInt(I;)Lscala/math/BigInt;)(2147483647)));
+  }
+  
+  public Z; isValidLong() {
+    return (this.(Lscala/math/BigInt;::$greater$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::long2bigInt(J;)Lscala/math/BigInt;)(-9223372036854775808L)) && this.(Lscala/math/BigInt;::$less$eq(Lscala/math/BigInt;)Z;)(Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::long2bigInt(J;)Lscala/math/BigInt;)(9223372036854775807L)));
   }
   
   protected Z; isWhole() {
@@ -238,6 +234,10 @@ public class Lscala/math/BigInt; extends Lscala/math/ScalaNumber; implements Lsc
   }
   
   public Lscala/math/BigInt; $tilde() {
+    return this.(Lscala/math/BigInt;::unary_$tilde()Lscala/math/BigInt;)();
+  }
+  
+  public Lscala/math/BigInt; unary_$tilde() {
     return (new (Lscala/math/BigInt;::this(Ljava/math/BigInteger;)V;)(this.(Lscala/math/BigInt;::bigInteger()Ljava/math/BigInteger;)().(Ljava/math/BigInteger;::not()Ljava/math/BigInteger;)()));
   }
   
@@ -305,8 +305,16 @@ public class Lscala/math/BigInt; extends Lscala/math/ScalaNumber; implements Lsc
     return Lscala/collection/immutable/Range$BigInt$;.MODULE$.(Lscala/collection/immutable/Range$BigInt$;::apply(Lscala/math/BigInt;Lscala/math/BigInt;Lscala/math/BigInt;)Lscala/collection/immutable/NumericRange$Exclusive;)(this, end, step);
   }
   
+  public Lscala/math/BigInt; until$default$2() {
+    return Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::apply(I;)Lscala/math/BigInt;)(1);
+  }
+  
   public Lscala/collection/immutable/NumericRange$Inclusive; to(Lscala/math/BigInt; end, Lscala/math/BigInt; step) {
     return Lscala/collection/immutable/Range$BigInt$;.MODULE$.(Lscala/collection/immutable/Range$BigInt$;::inclusive(Lscala/math/BigInt;Lscala/math/BigInt;Lscala/math/BigInt;)Lscala/collection/immutable/NumericRange$Inclusive;)(this, end, step);
+  }
+  
+  public Lscala/math/BigInt; to$default$2() {
+    return Lscala/math/BigInt$;.MODULE$.(Lscala/math/BigInt$;::apply(I;)Lscala/math/BigInt;)(1);
   }
   
   public Ljava/lang/String; toString() {

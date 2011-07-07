@@ -1,0 +1,42 @@
+public final class Lscala/collection/generic/GenericTraversableTemplate$$anonfun$unzip3$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final Lscala/collection/mutable/Builder; apply(Ljava/lang/Object; xyz) {
+    Lscala/Tuple3; temp4 = this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$unzip3$1;)asTriple$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(xyz).<cast>(Lscala/Tuple3;);
+    Lscala/Tuple3; $2$;
+    if ((temp4 != null))
+      {
+        $2$ = (new (Lscala/Tuple3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(temp4.(Lscala/Tuple3;::_1()Ljava/lang/Object;)(), temp4.(Lscala/Tuple3;::_2()Ljava/lang/Object;)(), temp4.(Lscala/Tuple3;::_3()Ljava/lang/Object;)()));
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp4));
+      }
+    Lscala/Tuple3; x$2 = $2$;
+    Ljava/lang/Object; x = x$2.(Lscala/Tuple3;::_1()Ljava/lang/Object;)();
+    Ljava/lang/Object; y = x$2.(Lscala/Tuple3;::_2()Ljava/lang/Object;)();
+    Ljava/lang/Object; z = x$2.(Lscala/Tuple3;::_3()Ljava/lang/Object;)();
+    this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$unzip3$1;)b1$2.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(x);
+    this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$unzip3$1;)b2$2.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(y);
+    return this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$unzip3$1;)b3$1.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(z);
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$unzip3$1;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(v1);
+  }
+  
+  private Lscala/Function1; asTriple$1;
+  
+  private Lscala/collection/mutable/Builder; b1$2;
+  
+  private Lscala/collection/mutable/Builder; b2$2;
+  
+  private Lscala/collection/mutable/Builder; b3$1;
+  
+  public this(Lscala/collection/generic/GenericTraversableTemplate; $outer, Lscala/Function1; asTriple$1, Lscala/collection/mutable/Builder; b1$2, Lscala/collection/mutable/Builder; b2$2, Lscala/collection/mutable/Builder; b3$1) {
+    this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$unzip3$1;)asTriple$1 = asTriple$1;
+    this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$unzip3$1;)b1$2 = b1$2;
+    this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$unzip3$1;)b2$2 = b2$2;
+    this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$unzip3$1;)b3$1 = b3$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

@@ -1,7 +1,7 @@
 public abstract class Lscala/collection/DefaultMap$class; {
   
   public static Lscala/collection/Map; $plus(Lscala/collection/DefaultMap; $this, Lscala/Tuple2; kv) {
-    Lscala/collection/mutable/Builder; b = Lscala/collection/Map$;.MODULE$.(Lscala/collection/generic/MapFactory;::newBuilder()Lscala/collection/mutable/Builder;)();
+    Lscala/collection/mutable/Builder; b = Lscala/collection/Map$;.MODULE$.(Lscala/collection/generic/GenMapFactory;::newBuilder()Lscala/collection/mutable/Builder;)();
     b.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)($this);
     b.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(kv.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), kv.(Lscala/Tuple2;::_2()Ljava/lang/Object;)())));
     return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Map;);

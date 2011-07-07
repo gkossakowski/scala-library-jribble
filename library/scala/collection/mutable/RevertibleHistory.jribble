@@ -1,4 +1,4 @@
-public class Lscala/collection/mutable/RevertibleHistory; extends Lscala/collection/mutable/History; implements Lscala/collection/mutable/Undoable;, Lscala/ScalaObject; {
+public class Lscala/collection/mutable/RevertibleHistory; extends Lscala/collection/mutable/History; implements Lscala/collection/mutable/Undoable;, Lscala/Serializable;, Lscala/ScalaObject; {
   
   public V; undo() {
     Lscala/collection/immutable/List; old = this.(Lscala/collection/mutable/History;::log()Lscala/collection/mutable/Queue;)().(Lscala/collection/mutable/MutableList;::toList()Lscala/collection/immutable/List;)().(Lscala/collection/immutable/List;::reverse()Lscala/collection/immutable/List;)();

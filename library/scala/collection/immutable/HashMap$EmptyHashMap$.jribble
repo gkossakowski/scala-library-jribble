@@ -1,6 +1,10 @@
 public final class Lscala/collection/immutable/HashMap$EmptyHashMap$; extends Lscala/collection/immutable/HashMap; implements Lscala/ScalaObject; {
   public static Lscala/collection/immutable/HashMap$EmptyHashMap$; MODULE$ = new (Lscala/collection/immutable/HashMap$EmptyHashMap$;::this()V;)();
   
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/immutable/HashMap$EmptyHashMap$;.MODULE$;
+  }
+  
   public this() {
     (Lscala/collection/immutable/HashMap;::super()V;)();
   }

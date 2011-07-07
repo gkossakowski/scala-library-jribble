@@ -1,0 +1,19 @@
+public final class Lscala/collection/mutable/MutableList$; extends Lscala/collection/generic/SeqFactory; implements Lscala/ScalaObject;, Lscala/Serializable; {
+  public static Lscala/collection/mutable/MutableList$; MODULE$ = new (Lscala/collection/mutable/MutableList$;::this()V;)();
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
+    return this.(Lscala/collection/generic/GenTraversableFactory;::ReusableCBF()Lscala/collection/generic/GenTraversableFactory$ReusableCBF$;)();
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return (new (Lscala/collection/mutable/MutableList;::this()V;)());
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/mutable/MutableList$;.MODULE$;
+  }
+  
+  public this() {
+    (Lscala/collection/generic/SeqFactory;::super()V;)();
+  }
+}

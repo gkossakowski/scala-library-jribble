@@ -26,34 +26,34 @@ public abstract class Lscala/collection/BitSetLike$class; {
   }
   
   public static V; foreach(Lscala/collection/BitSetLike; $this, Lscala/Function1; f$1) {
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)($this.(Lscala/collection/BitSetLike;::nwords()I;)()).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/BitSetLike$$anonfun$foreach$1;::this(Lscala/collection/BitSetLike;Lscala/Function1;)V;)($this, f$1)));
+    Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)($this.(Lscala/collection/BitSetLike;::nwords()I;)()).(Lscala/collection/immutable/Range;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/BitSetLike$$anonfun$foreach$1;::this(Lscala/collection/BitSetLike;Lscala/Function1;)V;)($this, f$1)));
   }
   
   public static Lscala/collection/BitSetLike; $bar(Lscala/collection/BitSetLike; $this, Lscala/collection/BitSet; other$1) {
-    I; len = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)($this.(Lscala/collection/BitSetLike;::nwords()I;)()).(Lscala/runtime/RichInt;::max(I;)I;)(other$1.(Lscala/collection/BitSetLike;::nwords()I;)());
+    I; len = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)($this.(Lscala/collection/BitSetLike;::nwords()I;)()).(Lscala/runtime/RichInt;::max(I;)I;)(other$1.(Lscala/collection/BitSetLike;::nwords()I;)());
     J;[ words$1 = new J;[len];
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(len).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/BitSetLike$$anonfun$$bar$1;::this(Lscala/collection/BitSetLike;Lscala/collection/BitSet;J;[)V;)($this, other$1, words$1)));
+    Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(len).(Lscala/collection/immutable/Range;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/BitSetLike$$anonfun$$bar$1;::this(Lscala/collection/BitSetLike;Lscala/collection/BitSet;J;[)V;)($this, other$1, words$1)));
     return $this.(Lscala/collection/BitSetLike;::fromArray(J;[)Lscala/collection/BitSetLike;)(words$1);
   }
   
   public static Lscala/collection/BitSetLike; $amp(Lscala/collection/BitSetLike; $this, Lscala/collection/BitSet; other$2) {
-    I; len = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)($this.(Lscala/collection/BitSetLike;::nwords()I;)()).(Lscala/runtime/RichInt;::min(I;)I;)(other$2.(Lscala/collection/BitSetLike;::nwords()I;)());
+    I; len = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)($this.(Lscala/collection/BitSetLike;::nwords()I;)()).(Lscala/runtime/RichInt;::min(I;)I;)(other$2.(Lscala/collection/BitSetLike;::nwords()I;)());
     J;[ words$2 = new J;[len];
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(len).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/BitSetLike$$anonfun$$amp$1;::this(Lscala/collection/BitSetLike;Lscala/collection/BitSet;J;[)V;)($this, other$2, words$2)));
+    Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(len).(Lscala/collection/immutable/Range;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/BitSetLike$$anonfun$$amp$1;::this(Lscala/collection/BitSetLike;Lscala/collection/BitSet;J;[)V;)($this, other$2, words$2)));
     return $this.(Lscala/collection/BitSetLike;::fromArray(J;[)Lscala/collection/BitSetLike;)(words$2);
   }
   
   public static Lscala/collection/BitSetLike; $amp$tilde(Lscala/collection/BitSetLike; $this, Lscala/collection/BitSet; other$3) {
     I; len = $this.(Lscala/collection/BitSetLike;::nwords()I;)();
     J;[ words$3 = new J;[len];
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(len).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/BitSetLike$$anonfun$$amp$tilde$1;::this(Lscala/collection/BitSetLike;Lscala/collection/BitSet;J;[)V;)($this, other$3, words$3)));
+    Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(len).(Lscala/collection/immutable/Range;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/BitSetLike$$anonfun$$amp$tilde$1;::this(Lscala/collection/BitSetLike;Lscala/collection/BitSet;J;[)V;)($this, other$3, words$3)));
     return $this.(Lscala/collection/BitSetLike;::fromArray(J;[)Lscala/collection/BitSetLike;)(words$3);
   }
   
   public static Lscala/collection/BitSetLike; $up(Lscala/collection/BitSetLike; $this, Lscala/collection/BitSet; other$4) {
-    I; len = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)($this.(Lscala/collection/BitSetLike;::nwords()I;)()).(Lscala/runtime/RichInt;::max(I;)I;)(other$4.(Lscala/collection/BitSetLike;::nwords()I;)());
+    I; len = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)($this.(Lscala/collection/BitSetLike;::nwords()I;)()).(Lscala/runtime/RichInt;::max(I;)I;)(other$4.(Lscala/collection/BitSetLike;::nwords()I;)());
     J;[ words$4 = new J;[len];
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(len).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/BitSetLike$$anonfun$$up$1;::this(Lscala/collection/BitSetLike;Lscala/collection/BitSet;J;[)V;)($this, other$4, words$4)));
+    Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(len).(Lscala/collection/immutable/Range;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/BitSetLike$$anonfun$$up$1;::this(Lscala/collection/BitSetLike;Lscala/collection/BitSet;J;[)V;)($this, other$4, words$4)));
     return $this.(Lscala/collection/BitSetLike;::fromArray(J;[)Lscala/collection/BitSetLike;)(words$4);
   }
   
@@ -62,13 +62,13 @@ public abstract class Lscala/collection/BitSetLike$class; {
   }
   
   public static Z; subsetOf(Lscala/collection/BitSetLike; $this, Lscala/collection/BitSet; other$5) {
-    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)($this.(Lscala/collection/BitSetLike;::nwords()I;)()).<cast>(Lscala/collection/IterableLike;).(Lscala/collection/IterableLike;::forall(Lscala/Function1;)Z;)((new (Lscala/collection/BitSetLike$$anonfun$subsetOf$1;::this(Lscala/collection/BitSetLike;Lscala/collection/BitSet;)V;)($this, other$5)));
+    return Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)($this.(Lscala/collection/BitSetLike;::nwords()I;)()).(Lscala/collection/IterableLike;::forall(Lscala/Function1;)Z;)((new (Lscala/collection/BitSetLike$$anonfun$subsetOf$1;::this(Lscala/collection/BitSetLike;Lscala/collection/BitSet;)V;)($this, other$5)));
   }
   
   public static Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/BitSetLike; $this, Lscala/collection/mutable/StringBuilder; sb$1, Ljava/lang/String; start, Ljava/lang/String; sep$1, Ljava/lang/String; end) {
     sb$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(start);
     Lscala/runtime/ObjectRef; pre$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(""));
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(($this.(Lscala/collection/BitSetLike;::nwords()I;)() * Lscala/collection/BitSetLike$;.MODULE$.(Lscala/collection/BitSetLike$;::scala$collection$BitSetLike$$WordLength()I;)())).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/BitSetLike$$anonfun$addString$1;::this(Lscala/collection/BitSetLike;Lscala/collection/mutable/StringBuilder;Ljava/lang/String;Lscala/runtime/ObjectRef;)V;)($this, sb$1, sep$1, pre$1)));
+    Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(($this.(Lscala/collection/BitSetLike;::nwords()I;)() * Lscala/collection/BitSetLike$;.MODULE$.(Lscala/collection/BitSetLike$;::scala$collection$BitSetLike$$WordLength()I;)())).(Lscala/collection/immutable/Range;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/BitSetLike$$anonfun$addString$1;::this(Lscala/collection/BitSetLike;Lscala/collection/mutable/StringBuilder;Ljava/lang/String;Lscala/runtime/ObjectRef;)V;)($this, sb$1, sep$1, pre$1)));
     return sb$1.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(end);
   }
   

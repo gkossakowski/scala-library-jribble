@@ -1,0 +1,25 @@
+public final class Lscala/collection/SeqLike$CombinationsItr$$anonfun$init$2; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final V; apply(I; k) {
+    this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$init$2;)ns$1[k] = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$init$2;)r$1.(Lscala/runtime/IntRef;)elem).(Lscala/runtime/RichInt;::min(I;)I;)(this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$init$2;)cs$1[k]);
+    this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$init$2;)r$1.(Lscala/runtime/IntRef;)elem = (this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$init$2;)r$1.(Lscala/runtime/IntRef;)elem - this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$init$2;)ns$1[k]);
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$init$2;::apply(I;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1));
+    return Lscala/runtime/BoxedUnit;.UNIT;
+  }
+  
+  private I;[ cs$1;
+  
+  private I;[ ns$1;
+  
+  private Lscala/runtime/IntRef; r$1;
+  
+  public this(Lscala/collection/SeqLike$CombinationsItr; $outer, I;[ cs$1, I;[ ns$1, Lscala/runtime/IntRef; r$1) {
+    this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$init$2;)cs$1 = cs$1;
+    this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$init$2;)ns$1 = ns$1;
+    this.(Lscala/collection/SeqLike$CombinationsItr$$anonfun$init$2;)r$1 = r$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

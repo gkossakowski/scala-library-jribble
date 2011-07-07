@@ -7,18 +7,6 @@ public class Lscala/util/Random; extends Ljava/lang/Object; implements Lscala/Sc
     return this.(Lscala/util/Random;)self$u0020;
   }
   
-  public this(J; seed) {
-    (Lscala/util/Random;::this(Ljava/util/Random;)V;)((new (Ljava/util/Random;::this(J;)V;)(seed)));
-  }
-  
-  public this(I; seed) {
-    (Lscala/util/Random;::this(J;)V;)(seed.<cast>(J;));
-  }
-  
-  public this() {
-    (Lscala/util/Random;::this(Ljava/util/Random;)V;)((new (Ljava/util/Random;::this()V;)()));
-  }
-  
   public Z; nextBoolean() {
     return this.(Lscala/util/Random;::self()Ljava/util/Random;)().(Ljava/util/Random;::nextBoolean()Z;)();
   }
@@ -52,15 +40,12 @@ public class Lscala/util/Random; extends Ljava/lang/Object; implements Lscala/Sc
   }
   
   public Ljava/lang/String; nextString(I; length) {
-    return Lscala/collection/immutable/List$;.MODULE$.(Lscala/collection/generic/TraversableFactory;::fill(I;Lscala/Function0;)Lscala/collection/Traversable;)(length, (new (Lscala/util/Random$$anonfun$nextString$1;::this(Lscala/util/Random;)V;)(this))).(Lscala/collection/TraversableOnce;::mkString()Ljava/lang/String;)();
+    return Lscala/collection/immutable/List$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::fill(I;Lscala/Function0;)Lscala/collection/GenTraversable;)(length, (new (Lscala/util/Random$$anonfun$nextString$1;::this(Lscala/util/Random;)V;)(this))).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::mkString()Ljava/lang/String;)();
   }
   
   public C; nextPrintableChar() {
-    I; tp1 = 33;
-    I; tp2 = 126;
-    Lscala/Tuple2; x$1 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(tp1), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(tp2)));
-    I; low = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(x$1.(Lscala/Tuple2;::_1()Ljava/lang/Object;)());
-    I; high = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(x$1.(Lscala/Tuple2;::_2()Ljava/lang/Object;)());
+    I; low = 33;
+    I; high = 127;
     return (this.(Lscala/util/Random;::self()Ljava/util/Random;)().(Ljava/util/Random;::nextInt(I;)I;)((high - low)) + low).<cast>(C;);
   }
   
@@ -70,7 +55,7 @@ public class Lscala/util/Random; extends Ljava/lang/Object; implements Lscala/Sc
   
   public Lscala/collection/TraversableOnce; shuffle(Lscala/collection/TraversableOnce; xs, Lscala/collection/generic/CanBuildFrom; bf) {
     Lscala/collection/mutable/ArrayBuffer; buf$1 = (new (Lscala/collection/mutable/ArrayBuffer;::this()V;)()).(Lscala/collection/mutable/ArrayBuffer;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/ArrayBuffer;)(xs);
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(buf$1.(Lscala/collection/mutable/ResizableArray;::length()I;)()).(Lscala/runtime/RichInt;::to(I;)Lscala/collection/immutable/Range$Inclusive;)(2).(Lscala/collection/immutable/Range;::by(I;)Lscala/collection/immutable/Range;)(-1).(Lscala/collection/immutable/Range;::foreach(Lscala/Function1;)V;)((new (Lscala/util/Random$$anonfun$shuffle$1;::this(Lscala/util/Random;Lscala/collection/mutable/ArrayBuffer;)V;)(this, buf$1)));
+    Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(buf$1.(Lscala/collection/mutable/ResizableArray;::length()I;)()).(Lscala/runtime/RichInt;::to(I;)Lscala/collection/immutable/Range$Inclusive;)(2).(Lscala/collection/immutable/Range;::by(I;)Lscala/collection/immutable/Range;)(-1).(Lscala/collection/immutable/Range;::foreach(Lscala/Function1;)V;)((new (Lscala/util/Random$$anonfun$shuffle$1;::this(Lscala/util/Random;Lscala/collection/mutable/ArrayBuffer;)V;)(this, buf$1)));
     return bf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(xs).(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(buf$1).<cast>(Lscala/collection/mutable/Builder;).(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/TraversableOnce;);
   }
   
@@ -89,5 +74,17 @@ public class Lscala/util/Random; extends Ljava/lang/Object; implements Lscala/Sc
   public this(Ljava/util/Random; self) {
     this.(Lscala/util/Random;)self$u0020 = self;
     (Ljava/lang/Object;::super()V;)();
+  }
+  
+  public this(J; seed) {
+    (Lscala/util/Random;::this(Ljava/util/Random;)V;)((new (Ljava/util/Random;::this(J;)V;)(seed)));
+  }
+  
+  public this(I; seed) {
+    (Lscala/util/Random;::this(J;)V;)(seed.<cast>(J;));
+  }
+  
+  public this() {
+    (Lscala/util/Random;::this(Ljava/util/Random;)V;)((new (Ljava/util/Random;::this()V;)()));
   }
 }

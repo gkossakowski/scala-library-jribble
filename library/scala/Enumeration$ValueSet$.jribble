@@ -7,11 +7,11 @@ public final class Lscala/Enumeration$ValueSet$; extends Ljava/lang/Object; impl
   }
   
   public Lscala/Enumeration$ValueSet; apply(Lscala/collection/Seq; elems) {
-    return this.(Lscala/Enumeration$ValueSet$;::empty()Lscala/Enumeration$ValueSet;)().(Lscala/collection/generic/Addable;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Addable;)(elems).<cast>(Lscala/Enumeration$ValueSet;);
+    return this.(Lscala/Enumeration$ValueSet$;::empty()Lscala/Enumeration$ValueSet;)().(Lscala/collection/SetLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/Set;)(elems).<cast>(Lscala/Enumeration$ValueSet;);
   }
   
   public Lscala/collection/mutable/Builder; newBuilder() {
-    return (new (Lscala/collection/mutable/AddingBuilder;::this(Lscala/collection/generic/Addable;)V;)(this.(Lscala/Enumeration$ValueSet$;::empty()Lscala/Enumeration$ValueSet;)()));
+    return (new (Lscala/collection/mutable/SetBuilder;::this(Lscala/collection/Set;)V;)(this.(Lscala/Enumeration$ValueSet$;::empty()Lscala/Enumeration$ValueSet;)()));
   }
   
   public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
@@ -20,6 +20,6 @@ public final class Lscala/Enumeration$ValueSet$; extends Ljava/lang/Object; impl
   
   public this(Lscala/Enumeration; $outer) {
     (Ljava/lang/Object;::super()V;)();
-    this.(Lscala/Enumeration$ValueSet$;)empty$u0020 = (new (Lscala/Enumeration$ValueSet;::this(Lscala/Enumeration;Lscala/collection/immutable/BitSet;)V;)($outer, Lscala/collection/immutable/BitSet$;.MODULE$.(Lscala/collection/immutable/BitSet$;::empty()Lscala/collection/immutable/BitSet;)()));
+    this.(Lscala/Enumeration$ValueSet$;)empty$u0020 = (new (Lscala/Enumeration$ValueSet;::this(Lscala/Enumeration;Lscala/collection/immutable/SortedSet;)V;)($outer, Lscala/collection/immutable/SortedSet$;.MODULE$.(Lscala/collection/immutable/SortedSet$;::empty(Lscala/math/Ordering;)Lscala/collection/immutable/SortedSet;)(Lscala/math/Ordering$Int$;.MODULE$)));
   }
 }

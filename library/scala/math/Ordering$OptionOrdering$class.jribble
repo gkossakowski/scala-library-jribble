@@ -1,54 +1,64 @@
 public abstract class Lscala/math/Ordering$OptionOrdering$class; {
   
   public static I; compare(Lscala/math/Ordering$OptionOrdering; $this, Lscala/Option; x, Lscala/Option; y) {
-    Lscala/Option; tp3 = x;
-    Lscala/Option; tp4 = y;
+    Lscala/Tuple2; temp8 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x, y));
     I; $11$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, tp3))
+    if ((temp8 != null))
       {
+        Lscala/Option; temp9 = temp8.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/Option;);
+        Lscala/Option; temp10 = temp8.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/Option;);
         I; $12$;
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, tp4))
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp9))
           {
-            $12$ = 0;
+            I; $13$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp10))
+              {
+                $13$ = 0;
+              }
+            else
+              {
+                $13$ = -1;
+              }
+            $12$ = $13$;
           }
         else
           {
-            $12$ = -1;
+            I; $14$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp10))
+              {
+                $14$ = 1;
+              }
+            else
+              {
+                I; $15$;
+                if (temp10.<instanceof>(Lscala/Some;))
+                  {
+                    Lscala/Some; temp14 = temp10.<cast>(Lscala/Some;);
+                    Ljava/lang/Object; temp15 = temp14.(Lscala/Some;::x()Ljava/lang/Object;)();
+                    I; $16$;
+                    if (temp9.<instanceof>(Lscala/Some;))
+                      {
+                        $16$ = $this.(Lscala/math/Ordering$OptionOrdering;::optionOrdering()Lscala/math/Ordering;)().(Lscala/math/Ordering;::compare(Ljava/lang/Object;Ljava/lang/Object;)I;)(temp9.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)(), temp15);
+                      }
+                    else
+                      {
+                        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp8));
+                      }
+                    $15$ = $16$;
+                  }
+                else
+                  {
+                    throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp8));
+                  }
+                $14$ = $15$;
+              }
+            $12$ = $14$;
           }
         $11$ = $12$;
       }
     else
       {
-        I; $13$;
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, tp4))
-          {
-            $13$ = 1;
-          }
-        else
-          {
-            I; $14$;
-            if (tp4.<instanceof>(Lscala/Some;))
-              {
-                Lscala/Some; temp8 = tp4.<cast>(Lscala/Some;);
-                Ljava/lang/Object; temp9 = temp8.(Lscala/Some;::x()Ljava/lang/Object;)();
-                I; $15$;
-                if (tp3.<instanceof>(Lscala/Some;))
-                  {
-                    $15$ = $this.(Lscala/math/Ordering$OptionOrdering;::optionOrdering()Lscala/math/Ordering;)().(Lscala/math/Ordering;::compare(Ljava/lang/Object;Ljava/lang/Object;)I;)(tp3.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)(), temp9);
-                  }
-                else
-                  {
-                    throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp3, tp4))));
-                  }
-                $14$ = $15$;
-              }
-            else
-              {
-                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp3, tp4))));
-              }
-            $13$ = $14$;
-          }
-        $11$ = $13$;
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp8));
       }
     return $11$;
   }

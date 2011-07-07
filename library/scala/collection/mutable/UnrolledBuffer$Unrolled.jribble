@@ -1,0 +1,334 @@
+public class Lscala/collection/mutable/UnrolledBuffer$Unrolled; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  private I; size$u0020;
+  
+  public I; size() {
+    return this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)size$u0020;
+  }
+  
+  public V; size_$eq(I; x$1) {
+    this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)size$u0020 = x$1;
+  }
+  
+  private Ljava/lang/Object; array$u0020;
+  
+  public Ljava/lang/Object; array() {
+    return this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)array$u0020;
+  }
+  
+  public V; array_$eq(Ljava/lang/Object; x$1) {
+    this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)array$u0020 = x$1;
+  }
+  
+  private Lscala/collection/mutable/UnrolledBuffer$Unrolled; next$u0020;
+  
+  public Lscala/collection/mutable/UnrolledBuffer$Unrolled; next() {
+    return this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)next$u0020;
+  }
+  
+  public V; next_$eq(Lscala/collection/mutable/UnrolledBuffer$Unrolled; x$1) {
+    this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)next$u0020 = x$1;
+  }
+  
+  private Lscala/collection/mutable/UnrolledBuffer; buff$u0020;
+  
+  public Lscala/collection/mutable/UnrolledBuffer; buff() {
+    return this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)buff$u0020;
+  }
+  
+  private Lscala/reflect/ClassManifest; evidence$1;
+  
+  private I; nextlength() {
+    I; $4$;
+    if ((this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::buff()Lscala/collection/mutable/UnrolledBuffer;)() == null))
+      {
+        $4$ = Lscala/collection/mutable/UnrolledBuffer$;.MODULE$.(Lscala/collection/mutable/UnrolledBuffer$;::unrolledlength()I;)();
+      }
+    else
+      {
+        $4$ = this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::buff()Lscala/collection/mutable/UnrolledBuffer;)().(Lscala/collection/mutable/UnrolledBuffer;::calcNextLength(I;)I;)(Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)()));
+      }
+    return $4$;
+  }
+  
+  public final Lscala/collection/mutable/UnrolledBuffer$Unrolled; append(Ljava/lang/Object; elem) {
+    Lscala/collection/mutable/UnrolledBuffer$Unrolled; $5$;
+    if ((this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)() < Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)())))
+      {
+        Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_update(Ljava/lang/Object;I;Ljava/lang/Object;)V;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)(), this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)(), elem);
+        this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size_$eq(I;)V;)((this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)() + 1));
+        $5$ = this;
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next_$eq(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)V;)((new (Lscala/collection/mutable/UnrolledBuffer$Unrolled;::this(I;Ljava/lang/Object;Lscala/collection/mutable/UnrolledBuffer$Unrolled;Lscala/collection/mutable/UnrolledBuffer;Lscala/reflect/ClassManifest;)V;)(0, this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)evidence$1.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::nextlength()I;)()), null, this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::buff()Lscala/collection/mutable/UnrolledBuffer;)(), this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)evidence$1)));
+        $5$ = this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)().(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::append(Ljava/lang/Object;)Lscala/collection/mutable/UnrolledBuffer$Unrolled;)(elem);
+      }
+    return $5$;
+  }
+  
+  public V; foreach(Lscala/Function1; f) {
+    Lscala/collection/mutable/UnrolledBuffer$Unrolled; unrolled = this;
+    I; i = 0;
+    while$3: while(true) {
+      if ((unrolled != null))
+        {
+          {
+            Ljava/lang/Object; chunkarr = unrolled.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)();
+            I; chunksz = unrolled.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)();
+            while$4: while(true) {
+              if ((i < chunksz))
+                {
+                  {
+                    Ljava/lang/Object; elem = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_apply(Ljava/lang/Object;I;)Ljava/lang/Object;)(chunkarr, i);
+                    f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(elem);
+                    i = (i + 1);
+                  }
+                  continue while$4;
+                }
+              else
+                {
+                  
+                }
+              break;
+            }
+            i = 0;
+            unrolled = unrolled.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)();
+          }
+          continue while$3;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  public final Ljava/lang/Object; apply(I; idx) {
+    Ljava/lang/Object; $6$;
+    if ((idx < this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)()))
+      {
+        $6$ = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_apply(Ljava/lang/Object;I;)Ljava/lang/Object;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)(), idx);
+      }
+    else
+      {
+        $6$ = this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)().(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::apply(I;)Ljava/lang/Object;)((idx - this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)()));
+      }
+    return $6$;
+  }
+  
+  public final V; update(I; idx, Ljava/lang/Object; newelem) {
+    if ((idx < this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)()))
+      {
+        Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_update(Ljava/lang/Object;I;Ljava/lang/Object;)V;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)(), idx, newelem);
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)().(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::update(I;Ljava/lang/Object;)V;)((idx - this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)()), newelem);
+      }
+  }
+  
+  public final Lscala/collection/mutable/UnrolledBuffer$Unrolled; locate(I; idx) {
+    Lscala/collection/mutable/UnrolledBuffer$Unrolled; $7$;
+    if ((idx < this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)()))
+      {
+        $7$ = this;
+      }
+    else
+      {
+        $7$ = this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)().(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::locate(I;)Lscala/collection/mutable/UnrolledBuffer$Unrolled;)((idx - this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)()));
+      }
+    return $7$;
+  }
+  
+  public Lscala/collection/mutable/UnrolledBuffer$Unrolled; prepend(Ljava/lang/Object; elem) {
+    Lscala/collection/mutable/UnrolledBuffer$Unrolled; $8$;
+    if ((this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)() < Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)())))
+      {
+        this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::shiftright()V;)();
+        Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_update(Ljava/lang/Object;I;Ljava/lang/Object;)V;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)(), 0, elem);
+        this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size_$eq(I;)V;)((this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)() + 1));
+        $8$ = this;
+      }
+    else
+      {
+        Lscala/collection/mutable/UnrolledBuffer$Unrolled; newhead = (new (Lscala/collection/mutable/UnrolledBuffer$Unrolled;::this(Lscala/collection/mutable/UnrolledBuffer;Lscala/reflect/ClassManifest;)V;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::buff()Lscala/collection/mutable/UnrolledBuffer;)(), this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)evidence$1));
+        newhead.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::append(Ljava/lang/Object;)Lscala/collection/mutable/UnrolledBuffer$Unrolled;)(elem);
+        newhead.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next_$eq(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)V;)(this);
+        $8$ = newhead;
+      }
+    return $8$;
+  }
+  
+  private V; shiftright() {
+    I; i = (this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)() - 1);
+    while$5: while(true) {
+      if ((i >= 0))
+        {
+          {
+            Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_update(Ljava/lang/Object;I;Ljava/lang/Object;)V;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)(), (i + 1), Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_apply(Ljava/lang/Object;I;)Ljava/lang/Object;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)(), i));
+            i = (i - 1);
+          }
+          continue while$5;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  public final Ljava/lang/Object; remove(I; idx, Lscala/collection/mutable/UnrolledBuffer; buffer) {
+    Ljava/lang/Object; $9$;
+    if ((idx < this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)()))
+      {
+        Ljava/lang/Object; r = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_apply(Ljava/lang/Object;I;)Ljava/lang/Object;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)(), idx);
+        this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::shiftleft(I;)V;)(idx);
+        this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size_$eq(I;)V;)((this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)() - 1));
+        if (this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::tryMergeWithNext()Z;)())
+          {
+            buffer.(Lscala/collection/mutable/UnrolledBuffer;::lastPtr_$eq(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)V;)(this);
+          }
+        else
+          {
+            
+          }
+        $9$ = r;
+      }
+    else
+      {
+        $9$ = this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)().(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::remove(I;Lscala/collection/mutable/UnrolledBuffer;)Ljava/lang/Object;)((idx - this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)()), buffer);
+      }
+    return $9$;
+  }
+  
+  private V; shiftleft(I; leftb) {
+    I; i = leftb;
+    while$6: while(true) {
+      if ((i < (this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)() - 1)))
+        {
+          {
+            Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_update(Ljava/lang/Object;I;Ljava/lang/Object;)V;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)(), i, Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_apply(Ljava/lang/Object;I;)Ljava/lang/Object;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)(), (i + 1)));
+            i = (i + 1);
+          }
+          continue while$6;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::nullout(I;I;)V;)(i, (i + 1));
+  }
+  
+  protected Z; tryMergeWithNext() {
+    Z; $10$;
+    if (((this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)() != null) && ((this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)() + this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)().(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)()) < ((Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)()) * Lscala/collection/mutable/UnrolledBuffer$;.MODULE$.(Lscala/collection/mutable/UnrolledBuffer$;::waterline()I;)()) / Lscala/collection/mutable/UnrolledBuffer$;.MODULE$.(Lscala/collection/mutable/UnrolledBuffer$;::waterlineDelim()I;)()))))
+      {
+        Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)().(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)(), 0, this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)(), this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)(), this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)().(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)());
+        this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size_$eq(I;)V;)((this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)() + this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)().(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)()));
+        this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next_$eq(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)V;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)().(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)());
+        Z; $11$;
+        if ((this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)() == null))
+          {
+            $11$ = true;
+          }
+        else
+          {
+            $11$ = false;
+          }
+        $10$ = $11$;
+      }
+    else
+      {
+        $10$ = false;
+      }
+    return $10$;
+  }
+  
+  public final V; insertAll(I; idx, Lscala/collection/Traversable; t, Lscala/collection/mutable/UnrolledBuffer; buffer) {
+    if ((idx < this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)()))
+      {
+        Lscala/collection/mutable/UnrolledBuffer$Unrolled; newnextnode = (new (Lscala/collection/mutable/UnrolledBuffer$Unrolled;::this(I;Ljava/lang/Object;Lscala/collection/mutable/UnrolledBuffer$Unrolled;Lscala/collection/mutable/UnrolledBuffer;Lscala/reflect/ClassManifest;)V;)(0, this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)evidence$1.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)(Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)())), null, this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::buff()Lscala/collection/mutable/UnrolledBuffer;)(), this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)evidence$1));
+        Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)(), idx, newnextnode.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)(), 0, (this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)() - idx));
+        newnextnode.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size_$eq(I;)V;)((this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)() - idx));
+        newnextnode.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next_$eq(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)V;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)());
+        this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::nullout(I;I;)V;)(idx, this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)());
+        this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size_$eq(I;)V;)(idx);
+        this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next_$eq(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)V;)(null);
+        Lscala/runtime/ObjectRef; curr$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(this));
+        t.(Lscala/collection/generic/GenericTraversableTemplate;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/mutable/UnrolledBuffer$Unrolled$$anonfun$insertAll$1;::this(Lscala/collection/mutable/UnrolledBuffer$Unrolled;Lscala/runtime/ObjectRef;)V;)(this, curr$1)));
+        curr$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/mutable/UnrolledBuffer$Unrolled;).(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next_$eq(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)V;)(newnextnode);
+        if (curr$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/mutable/UnrolledBuffer$Unrolled;).(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::tryMergeWithNext()Z;)())
+          {
+            buffer.(Lscala/collection/mutable/UnrolledBuffer;::lastPtr_$eq(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)V;)(curr$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/mutable/UnrolledBuffer$Unrolled;));
+          }
+        else
+          {
+            
+          }
+      }
+    else
+      {
+        this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::insertAll(I;Lscala/collection/Traversable;Lscala/collection/mutable/UnrolledBuffer;)V;)((idx - this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)()), t, buffer);
+      }
+  }
+  
+  private V; nullout(I; from, I; until) {
+    I; idx = from;
+    while$7: while(true) {
+      if ((idx < until))
+        {
+          {
+            Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_update(Ljava/lang/Object;I;Ljava/lang/Object;)V;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)(), idx, null);
+            idx = (idx + 1);
+          }
+          continue while$7;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+  }
+  
+  public Z; bind(Lscala/collection/mutable/UnrolledBuffer$Unrolled; thathead) {
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;)V;)((this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)() == null));
+    this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next_$eq(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)V;)(thathead);
+    return this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::tryMergeWithNext()Z;)();
+  }
+  
+  public Ljava/lang/String; toString() {
+    Ljava/lang/Object; $12$;
+    if ((this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)() != null))
+      {
+        $12$ = this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::next()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)().(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::toString()Ljava/lang/String;)();
+      }
+    else
+      {
+        $12$ = "";
+      }
+    return ((Lscala/Predef$;.MODULE$.(Lscala/Predef$;::genericArrayOps(Ljava/lang/Object;)Lscala/collection/mutable/ArrayOps;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::genericArrayOps(Ljava/lang/Object;)Lscala/collection/mutable/ArrayOps;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)()).(Lscala/collection/IndexedSeqOptimized;::take(I;)Ljava/lang/Object;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::size()I;)())).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)((("Unrolled[" + Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;::array()Ljava/lang/Object;)()))) + "]("), ", ", ")") + " -> ") + $12$);
+  }
+  
+  public this(I; size, Ljava/lang/Object; array, Lscala/collection/mutable/UnrolledBuffer$Unrolled; next, Lscala/collection/mutable/UnrolledBuffer; buff, Lscala/reflect/ClassManifest; evidence$1) {
+    this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)size$u0020 = size;
+    this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)array$u0020 = array;
+    this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)next$u0020 = next;
+    this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)buff$u0020 = buff;
+    this.(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)evidence$1 = evidence$1;
+    (Ljava/lang/Object;::super()V;)();
+  }
+  
+  public this(Lscala/reflect/ClassManifest; evidence$2) {
+    (Lscala/collection/mutable/UnrolledBuffer$Unrolled;::this(I;Ljava/lang/Object;Lscala/collection/mutable/UnrolledBuffer$Unrolled;Lscala/collection/mutable/UnrolledBuffer;Lscala/reflect/ClassManifest;)V;)(0, evidence$2.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)(Lscala/collection/mutable/UnrolledBuffer$;.MODULE$.(Lscala/collection/mutable/UnrolledBuffer$;::unrolledlength()I;)()), null, null, evidence$2);
+  }
+  
+  public this(Lscala/collection/mutable/UnrolledBuffer; b, Lscala/reflect/ClassManifest; evidence$3) {
+    (Lscala/collection/mutable/UnrolledBuffer$Unrolled;::this(I;Ljava/lang/Object;Lscala/collection/mutable/UnrolledBuffer$Unrolled;Lscala/collection/mutable/UnrolledBuffer;Lscala/reflect/ClassManifest;)V;)(0, evidence$3.(Lscala/reflect/ClassManifest;::newArray(I;)Ljava/lang/Object;)(Lscala/collection/mutable/UnrolledBuffer$;.MODULE$.(Lscala/collection/mutable/UnrolledBuffer$;::unrolledlength()I;)()), null, b, evidence$3);
+  }
+}

@@ -1,4 +1,4 @@
-public final class Lscala/collection/immutable/LongMap$Bin$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/collection/immutable/LongMap$Bin$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/collection/immutable/LongMap$Bin$; MODULE$ = new (Lscala/collection/immutable/LongMap$Bin$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/collection/immutable/LongMap$Bin$; extends Ljava/lang/
   }
   
   public Lscala/Option; unapply(Lscala/collection/immutable/LongMap$Bin; x$0) {
-    Lscala/Option; $101$;
+    Lscala/Option; $106$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $101$ = Lscala/None$;.MODULE$;
+        $106$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $101$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(x$0.(Lscala/collection/immutable/LongMap$Bin;::prefix()J;)()), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(x$0.(Lscala/collection/immutable/LongMap$Bin;::mask()J;)()), x$0.(Lscala/collection/immutable/LongMap$Bin;::left()Lscala/collection/immutable/LongMap;)(), x$0.(Lscala/collection/immutable/LongMap$Bin;::right()Lscala/collection/immutable/LongMap;)()))));
+        $106$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(x$0.(Lscala/collection/immutable/LongMap$Bin;::prefix()J;)()), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(x$0.(Lscala/collection/immutable/LongMap$Bin;::mask()J;)()), x$0.(Lscala/collection/immutable/LongMap$Bin;::left()Lscala/collection/immutable/LongMap;)(), x$0.(Lscala/collection/immutable/LongMap$Bin;::right()Lscala/collection/immutable/LongMap;)()))));
       }
-    return $101$;
+    return $106$;
   }
   
   public Lscala/collection/immutable/LongMap$Bin; apply(J; prefix, J; mask, Lscala/collection/immutable/LongMap; left, Lscala/collection/immutable/LongMap; right) {
     return (new (Lscala/collection/immutable/LongMap$Bin;::this(J;J;Lscala/collection/immutable/LongMap;Lscala/collection/immutable/LongMap;)V;)(prefix, mask, left, right));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/immutable/LongMap$Bin$;.MODULE$;
   }
   
   public this() {

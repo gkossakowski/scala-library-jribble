@@ -1,4 +1,4 @@
-public interface Lscala/collection/SeqLike; extends Lscala/collection/IterableLike;, Lscala/ScalaObject; {
+public interface Lscala/collection/SeqLike; extends Lscala/collection/IterableLike;, Lscala/collection/GenSeqLike;, Lscala/collection/Parallelizable;, Lscala/ScalaObject; {
   
   public Lscala/collection/Seq; thisCollection();
   
@@ -8,33 +8,23 @@ public interface Lscala/collection/SeqLike; extends Lscala/collection/IterableLi
   
   public Ljava/lang/Object; apply(I; idx);
   
+  public Lscala/collection/parallel/Combiner; parCombiner();
+  
   public I; lengthCompare(I; len);
   
   public I; size();
   
-  public Z; isDefinedAt(I; idx);
-  
   public I; segmentLength(Lscala/Function1; p, I; from);
-  
-  public I; prefixLength(Lscala/Function1; p);
-  
-  public I; indexWhere(Lscala/Function1; p);
   
   public I; indexWhere(Lscala/Function1; p, I; from);
   
   public I; findIndexOf(Lscala/Function1; p);
   
-  public I; indexOf(Ljava/lang/Object; elem);
-  
-  public I; indexOf(Ljava/lang/Object; elem, I; from);
-  
-  public I; lastIndexOf(Ljava/lang/Object; elem);
-  
-  public I; lastIndexOf(Ljava/lang/Object; elem, I; end);
-  
-  public I; lastIndexWhere(Lscala/Function1; p);
-  
   public I; lastIndexWhere(Lscala/Function1; p, I; end);
+  
+  public Lscala/collection/Iterator; permutations();
+  
+  public Lscala/collection/Iterator; combinations(I; n);
   
   public Ljava/lang/Object; reverse();
   
@@ -44,31 +34,49 @@ public interface Lscala/collection/SeqLike; extends Lscala/collection/IterableLi
   
   public Lscala/collection/Iterator; reversedElements();
   
+  public Z; startsWith(Lscala/collection/GenSeq; that, I; offset);
+  
   public Z; startsWith(Lscala/collection/Seq; that, I; offset);
   
-  public Z; startsWith(Lscala/collection/Seq; that);
+  public Z; endsWith(Lscala/collection/GenSeq; that);
   
   public Z; endsWith(Lscala/collection/Seq; that);
   
+  public I; indexOfSlice(Lscala/collection/GenSeq; that);
+  
   public I; indexOfSlice(Lscala/collection/Seq; that);
+  
+  public I; indexOfSlice(Lscala/collection/GenSeq; that, I; from);
   
   public I; indexOfSlice(Lscala/collection/Seq; that, I; from);
   
+  public I; lastIndexOfSlice(Lscala/collection/GenSeq; that);
+  
   public I; lastIndexOfSlice(Lscala/collection/Seq; that);
   
+  public I; lastIndexOfSlice(Lscala/collection/GenSeq; that, I; end);
+  
   public I; lastIndexOfSlice(Lscala/collection/Seq; that, I; end);
+  
+  public Z; containsSlice(Lscala/collection/GenSeq; that);
   
   public Z; containsSlice(Lscala/collection/Seq; that);
   
   public Z; contains(Ljava/lang/Object; elem);
   
-  public Ljava/lang/Object; union(Lscala/collection/Seq; that, Lscala/collection/generic/CanBuildFrom; bf);
+  public Ljava/lang/Object; union(Lscala/collection/GenSeq; that, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; diff(Lscala/collection/GenSeq; that);
   
   public Ljava/lang/Object; diff(Lscala/collection/Seq; that);
+  
+  public Ljava/lang/Object; intersect(Lscala/collection/GenSeq; that);
   
   public Ljava/lang/Object; intersect(Lscala/collection/Seq; that);
   
   public Ljava/lang/Object; distinct();
+  
+  public Ljava/lang/Object; patch(I; from, Lscala/collection/GenSeq; patch, I; replaced, Lscala/collection/generic/CanBuildFrom; bf);
   
   public Ljava/lang/Object; patch(I; from, Lscala/collection/Seq; patch, I; replaced, Lscala/collection/generic/CanBuildFrom; bf);
   
@@ -79,6 +87,8 @@ public interface Lscala/collection/SeqLike; extends Lscala/collection/IterableLi
   public Ljava/lang/Object; $colon$plus(Ljava/lang/Object; elem, Lscala/collection/generic/CanBuildFrom; bf);
   
   public Ljava/lang/Object; padTo(I; len, Ljava/lang/Object; elem, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Z; corresponds(Lscala/collection/GenSeq; that, Lscala/Function2; p);
   
   public Z; corresponds(Lscala/collection/Seq; that, Lscala/Function2; p);
   
@@ -95,10 +105,6 @@ public interface Lscala/collection/SeqLike; extends Lscala/collection/IterableLi
   public Lscala/collection/SeqView; view();
   
   public Lscala/collection/SeqView; view(I; from, I; until);
-  
-  public I; hashCode();
-  
-  public Z; equals(Ljava/lang/Object; that);
   
   public Ljava/lang/String; toString();
   

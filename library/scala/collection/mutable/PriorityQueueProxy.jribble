@@ -12,7 +12,9 @@ public abstract class Lscala/collection/mutable/PriorityQueueProxy; extends Lsca
     return Lscala/Proxy$class;.(Lscala/Proxy$class;::toString(Lscala/Proxy;)Ljava/lang/String;)(this);
   }
   
-  public Lscala/math/Ordering; scala$collection$mutable$PriorityQueueProxy$$ord;
+  public final Lscala/math/Ordering; scala$collection$mutable$PriorityQueueProxy$$super$ord() {
+    return super.(Lscala/collection/mutable/PriorityQueue;::ord()Lscala/math/Ordering;)();
+  }
   
   public abstract Lscala/collection/mutable/PriorityQueue; self();
   
@@ -44,6 +46,10 @@ public abstract class Lscala/collection/mutable/PriorityQueueProxy; extends Lsca
   
   public Ljava/lang/Object; dequeue() {
     return this.(Lscala/collection/mutable/PriorityQueueProxy;::self()Lscala/collection/mutable/PriorityQueue;)().(Lscala/collection/mutable/PriorityQueue;::dequeue()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; head() {
+    return this.(Lscala/collection/mutable/PriorityQueueProxy;::self()Lscala/collection/mutable/PriorityQueue;)().(Lscala/collection/mutable/PriorityQueue;::head()Ljava/lang/Object;)();
   }
   
   public Ljava/lang/Object; max() {
@@ -83,7 +89,6 @@ public abstract class Lscala/collection/mutable/PriorityQueueProxy; extends Lsca
   }
   
   public this(Lscala/math/Ordering; ord) {
-    this.(Lscala/collection/mutable/PriorityQueueProxy;)scala$collection$mutable$PriorityQueueProxy$$ord = ord;
     (Lscala/collection/mutable/PriorityQueue;::super(Lscala/math/Ordering;)V;)(ord);
     Lscala/Proxy$class;.(Lscala/Proxy$class;::$init$(Lscala/Proxy;)V;)(this);
   }

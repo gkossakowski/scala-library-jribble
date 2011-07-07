@@ -60,17 +60,18 @@ public class Lscala/collection/mutable/ArrayBuilder$ofFloat; extends Lscala/coll
   }
   
   private V; ensureSize(I; size) {
-    if ((this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::capacity()I;)() == 0))
+    if (((this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::capacity()I;)() < size) || (this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::capacity()I;)() == 0)))
       {
-        this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::resize(I;)V;)(16);
-      }
-    else
-      {
-        
-      }
-    if ((this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::capacity()I;)() < size))
-      {
-        I; newsize = (this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::capacity()I;)() * 2);
+        I; $25$;
+        if ((this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::capacity()I;)() == 0))
+          {
+            $25$ = 16;
+          }
+        else
+          {
+            $25$ = (this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::capacity()I;)() * 2);
+          }
+        I; newsize = $25$;
         while$7: while(true) {
           if ((newsize < size))
             {
@@ -100,7 +101,7 @@ public class Lscala/collection/mutable/ArrayBuilder$ofFloat; extends Lscala/coll
   
   public Lscala/collection/mutable/ArrayBuilder$ofFloat; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
     Lscala/collection/TraversableOnce; temp25 = xs;
-    Lscala/collection/mutable/ArrayBuilder$ofFloat; $19$;
+    Lscala/collection/mutable/ArrayBuilder$ofFloat; $26$;
     if (temp25.<instanceof>(Lscala/collection/mutable/WrappedArray$ofFloat;))
       {
         Lscala/collection/mutable/WrappedArray$ofFloat; temp26 = temp25.<cast>(Lscala/collection/mutable/WrappedArray$ofFloat;);
@@ -108,13 +109,13 @@ public class Lscala/collection/mutable/ArrayBuilder$ofFloat; extends Lscala/coll
         this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::ensureSize(I;)V;)((this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::size()I;)() + xs.(Lscala/collection/mutable/WrappedArray$ofFloat;::length()I;)()));
         Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(xs.(Lscala/collection/mutable/WrappedArray$ofFloat;::array()F;[)(), 0, this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::elems()F;[)(), this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::size()I;)(), xs.(Lscala/collection/mutable/WrappedArray$ofFloat;::length()I;)());
         this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::size_$eq(I;)V;)((this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::size()I;)() + xs.(Lscala/collection/mutable/WrappedArray$ofFloat;::length()I;)()));
-        $19$ = this;
+        $26$ = this;
       }
     else
       {
-        $19$ = Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, xs).<cast>(Lscala/collection/mutable/ArrayBuilder$ofFloat;);
+        $26$ = Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, xs).<cast>(Lscala/collection/mutable/ArrayBuilder$ofFloat;);
       }
-    return $19$;
+    return $26$;
   }
   
   public V; clear() {
@@ -122,32 +123,32 @@ public class Lscala/collection/mutable/ArrayBuilder$ofFloat; extends Lscala/coll
   }
   
   public F;[ result() {
-    F;[ $20$;
+    F;[ $27$;
     if (((this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::capacity()I;)() != 0) && (this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::capacity()I;)() == this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::size()I;)())))
       {
-        $20$ = this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::elems()F;[)();
+        $27$ = this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::elems()F;[)();
       }
     else
       {
-        $20$ = this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::mkArray(I;)F;[)(this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::size()I;)());
+        $27$ = this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::mkArray(I;)F;[)(this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::size()I;)());
       }
-    return $20$;
+    return $27$;
   }
   
   public Z; equals(Ljava/lang/Object; other) {
     Ljava/lang/Object; temp27 = other;
-    Z; $21$;
+    Z; $28$;
     if (temp27.<instanceof>(Lscala/collection/mutable/ArrayBuilder$ofFloat;))
       {
         Lscala/collection/mutable/ArrayBuilder$ofFloat; temp28 = temp27.<cast>(Lscala/collection/mutable/ArrayBuilder$ofFloat;);
         Lscala/collection/mutable/ArrayBuilder$ofFloat; x = temp28;
-        $21$ = ((this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::size()I;)() == x.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::size()I;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::elems()F;[)(), x.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::elems()F;[)()));
+        $28$ = ((this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::size()I;)() == x.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::size()I;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::elems()F;[)(), x.(Lscala/collection/mutable/ArrayBuilder$ofFloat;::elems()F;[)()));
       }
     else
       {
-        $21$ = false;
+        $28$ = false;
       }
-    return $21$;
+    return $28$;
   }
   
   public Ljava/lang/String; toString() {

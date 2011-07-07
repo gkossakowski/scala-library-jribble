@@ -1,4 +1,4 @@
-public final class Lscala/Some$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/Some$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/Some$; MODULE$ = new (Lscala/Some$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/Some$; extends Ljava/lang/Object; implements Lscala/Sc
   }
   
   public Lscala/Option; unapply(Lscala/Some; x$0) {
-    Lscala/Option; $15$;
+    Lscala/Option; $19$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $15$ = Lscala/None$;.MODULE$;
+        $19$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $15$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/Some;::x()Ljava/lang/Object;)()));
+        $19$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/Some;::x()Ljava/lang/Object;)()));
       }
-    return $15$;
+    return $19$;
   }
   
   public Lscala/Some; apply(Ljava/lang/Object; x) {
     return (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/Some$;.MODULE$;
   }
   
   public this() {

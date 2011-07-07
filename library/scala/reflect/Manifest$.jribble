@@ -1,5 +1,9 @@
-public final class Lscala/reflect/Manifest$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/reflect/Manifest$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/reflect/Manifest$; MODULE$ = new (Lscala/reflect/Manifest$;::this()V;)();
+  
+  public final Ljava/lang/Class; scala$reflect$Manifest$$ObjectClass() {
+    return Ljava/lang/Object;.class;
+  }
   
   private Lscala/reflect/AnyValManifest; Byte$u0020;
   
@@ -85,8 +89,8 @@ public final class Lscala/reflect/Manifest$; extends Ljava/lang/Object; implemen
     return this.(Lscala/reflect/Manifest$;)Nothing$u0020;
   }
   
-  public Lscala/reflect/Manifest; singleType(Ljava/lang/Object; value$1) {
-    return (new (Lscala/reflect/Manifest$$anon$15;::this(Ljava/lang/Object;)V;)(value$1));
+  public Lscala/reflect/Manifest; singleType(Ljava/lang/Object; value) {
+    return (new (Lscala/reflect/Manifest$SingletonTypeManifest;::this(Ljava/lang/Object;)V;)(value));
   }
   
   public Lscala/reflect/Manifest; classType(Ljava/lang/Class; clazz) {
@@ -109,15 +113,19 @@ public final class Lscala/reflect/Manifest$; extends Ljava/lang/Object; implemen
   }
   
   public Lscala/reflect/Manifest; abstractType(Lscala/reflect/Manifest; prefix$1, Ljava/lang/String; name$1, Ljava/lang/Class; clazz$1, Lscala/collection/Seq; args$1) {
-    return (new (Lscala/reflect/Manifest$$anon$16;::this(Lscala/reflect/Manifest;Ljava/lang/String;Ljava/lang/Class;Lscala/collection/Seq;)V;)(prefix$1, name$1, clazz$1, args$1));
+    return (new (Lscala/reflect/Manifest$$anon$15;::this(Lscala/reflect/Manifest;Ljava/lang/String;Ljava/lang/Class;Lscala/collection/Seq;)V;)(prefix$1, name$1, clazz$1, args$1));
   }
   
   public Lscala/reflect/Manifest; wildcardType(Lscala/reflect/Manifest; lowerBound$1, Lscala/reflect/Manifest; upperBound$1) {
-    return (new (Lscala/reflect/Manifest$$anon$17;::this(Lscala/reflect/Manifest;Lscala/reflect/Manifest;)V;)(lowerBound$1, upperBound$1));
+    return (new (Lscala/reflect/Manifest$$anon$16;::this(Lscala/reflect/Manifest;Lscala/reflect/Manifest;)V;)(lowerBound$1, upperBound$1));
   }
   
   public Lscala/reflect/Manifest; intersectionType(Lscala/collection/Seq; parents$1) {
-    return (new (Lscala/reflect/Manifest$$anon$18;::this(Lscala/collection/Seq;)V;)(parents$1));
+    return (new (Lscala/reflect/Manifest$$anon$17;::this(Lscala/collection/Seq;)V;)(parents$1));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/reflect/Manifest$;.MODULE$;
   }
   
   public this() {

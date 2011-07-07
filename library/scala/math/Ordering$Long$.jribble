@@ -49,6 +49,10 @@ public final class Lscala/math/Ordering$Long$; extends Ljava/lang/Object; implem
     return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::mkOrderingOps(Lscala/math/Ordering;Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this, lhs);
   }
   
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/math/Ordering$Long$;.MODULE$;
+  }
+  
   public Lscala/math/PartialOrdering; reverse() {
     return this.(Lscala/math/Ordering;::reverse()Lscala/math/Ordering;)();
   }

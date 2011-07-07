@@ -1,0 +1,36 @@
+public final class Lscala/math/Equiv$; extends Ljava/lang/Object; implements Lscala/math/LowPriorityEquiv;, Lscala/ScalaObject; {
+  public static Lscala/math/Equiv$; MODULE$ = new (Lscala/math/Equiv$;::this()V;)();
+  
+  public Lscala/math/Equiv; universalEquiv() {
+    return Lscala/math/LowPriorityEquiv$class;.(Lscala/math/LowPriorityEquiv$class;::universalEquiv(Lscala/math/Equiv$;)Lscala/math/Equiv;)(this);
+  }
+  
+  public Lscala/math/Equiv; reference() {
+    return (new (Lscala/math/Equiv$$anon$1;::this()V;)());
+  }
+  
+  public Lscala/math/Equiv; universal() {
+    return (new (Lscala/math/Equiv$$anon$2;::this()V;)());
+  }
+  
+  public Lscala/math/Equiv; fromComparator(Ljava/util/Comparator; cmp$1) {
+    return (new (Lscala/math/Equiv$$anon$3;::this(Ljava/util/Comparator;)V;)(cmp$1));
+  }
+  
+  public Lscala/math/Equiv; fromFunction(Lscala/Function2; cmp$2) {
+    return (new (Lscala/math/Equiv$$anon$4;::this(Lscala/Function2;)V;)(cmp$2));
+  }
+  
+  public Lscala/math/Equiv; by(Lscala/Function1; f$1, Lscala/math/Equiv; evidence$1$1) {
+    return this.(Lscala/math/Equiv$;::fromFunction(Lscala/Function2;)Lscala/math/Equiv;)((new (Lscala/math/Equiv$$anonfun$by$1;::this(Lscala/Function1;Lscala/math/Equiv;)V;)(f$1, evidence$1$1)));
+  }
+  
+  public Lscala/math/Equiv; apply(Lscala/math/Equiv; evidence$2) {
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::implicitly(Ljava/lang/Object;)Ljava/lang/Object;)(evidence$2).<cast>(Lscala/math/Equiv;);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/math/LowPriorityEquiv$class;.(Lscala/math/LowPriorityEquiv$class;::$init$(Lscala/math/Equiv$;)V;)(this);
+  }
+}

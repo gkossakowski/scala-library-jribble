@@ -1,15 +1,23 @@
-public final class Lscala/collection/immutable/ListSet$; extends Lscala/collection/generic/ImmutableSetFactory; implements Lscala/ScalaObject; {
+public final class Lscala/collection/immutable/ListSet$; extends Lscala/collection/generic/ImmutableSetFactory; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/collection/immutable/ListSet$; MODULE$ = new (Lscala/collection/immutable/ListSet$;::this()V;)();
   
   public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
-    return this.(Lscala/collection/generic/SetFactory;::setCanBuildFrom()Lscala/collection/generic/CanBuildFrom;)();
+    return this.(Lscala/collection/generic/GenSetFactory;::setCanBuildFrom()Lscala/collection/generic/CanBuildFrom;)();
   }
   
   public Lscala/collection/immutable/ListSet; empty() {
-    return (new (Lscala/collection/immutable/ListSet;::this()V;)());
+    return Lscala/collection/immutable/ListSet$EmptyListSet$;.MODULE$;
   }
   
-  public Lscala/collection/Traversable; empty() {
+  public Lscala/collection/mutable/Builder; newBuilder() {
+    return (new (Lscala/collection/immutable/ListSet$ListSetBuilder;::this()V;)());
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/immutable/ListSet$;.MODULE$;
+  }
+  
+  public Lscala/collection/GenTraversable; empty() {
     return this.(Lscala/collection/immutable/ListSet$;::empty()Lscala/collection/immutable/ListSet;)();
   }
   

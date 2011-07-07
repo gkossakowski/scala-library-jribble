@@ -1,0 +1,80 @@
+public abstract class Lscala/collection/GenSetLike$class; {
+  
+  public static Z; apply(Lscala/collection/GenSetLike; $this, Ljava/lang/Object; elem) {
+    return $this.(Lscala/collection/GenSetLike;::contains(Ljava/lang/Object;)Z;)(elem);
+  }
+  
+  public static Ljava/lang/Object; intersect(Lscala/collection/GenSetLike; $this, Lscala/collection/GenSet; that) {
+    return $this.(Lscala/collection/GenTraversableLike;::filter(Lscala/Function1;)Ljava/lang/Object;)(that);
+  }
+  
+  public static Ljava/lang/Object; intersect(Lscala/collection/GenSetLike; $this, Lscala/collection/Set; that) {
+    return $this.(Lscala/collection/GenSetLike;::intersect(Lscala/collection/GenSet;)Ljava/lang/Object;)(that);
+  }
+  
+  public static Ljava/lang/Object; $amp(Lscala/collection/GenSetLike; $this, Lscala/collection/GenSet; that) {
+    return $this.(Lscala/collection/GenSetLike;::intersect(Lscala/collection/GenSet;)Ljava/lang/Object;)(that);
+  }
+  
+  public static Ljava/lang/Object; $amp(Lscala/collection/GenSetLike; $this, Lscala/collection/Set; that) {
+    return $this.(Lscala/collection/GenSetLike;::$amp(Lscala/collection/GenSet;)Ljava/lang/Object;)(that);
+  }
+  
+  public static Ljava/lang/Object; $bar(Lscala/collection/GenSetLike; $this, Lscala/collection/GenSet; that) {
+    return $this.(Lscala/collection/GenSetLike;::union(Lscala/collection/GenSet;)Ljava/lang/Object;)(that);
+  }
+  
+  public static Ljava/lang/Object; $bar(Lscala/collection/GenSetLike; $this, Lscala/collection/Set; that) {
+    return $this.(Lscala/collection/GenSetLike;::$bar(Lscala/collection/GenSet;)Ljava/lang/Object;)(that);
+  }
+  
+  public static Ljava/lang/Object; $amp$tilde(Lscala/collection/GenSetLike; $this, Lscala/collection/GenSet; that) {
+    return $this.(Lscala/collection/GenSetLike;::diff(Lscala/collection/GenSet;)Ljava/lang/Object;)(that);
+  }
+  
+  public static Ljava/lang/Object; $amp$tilde(Lscala/collection/GenSetLike; $this, Lscala/collection/Set; that) {
+    return $this.(Lscala/collection/GenSetLike;::$amp$tilde(Lscala/collection/GenSet;)Ljava/lang/Object;)(that);
+  }
+  
+  public static Z; subsetOf(Lscala/collection/GenSetLike; $this, Lscala/collection/GenSet; that) {
+    return $this.(Lscala/collection/GenTraversableOnce;::forall(Lscala/Function1;)Z;)(that);
+  }
+  
+  public static Z; subsetOf(Lscala/collection/GenSetLike; $this, Lscala/collection/Set; that) {
+    return $this.(Lscala/collection/GenSetLike;::subsetOf(Lscala/collection/GenSet;)Z;)(that);
+  }
+  
+  public static Z; equals(Lscala/collection/GenSetLike; $this, Ljava/lang/Object; that) {
+    Ljava/lang/Object; temp1 = that;
+    Z; $1$;
+    if (temp1.<instanceof>(Lscala/collection/GenSet;))
+      {
+        Lscala/collection/GenSet; temp2 = temp1.<cast>(Lscala/collection/GenSet;);
+        Lscala/collection/GenSet; that$1 = temp2;
+        $1$ = (($this == that$1) || ((that$1.(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)($this) && ($this.(Lscala/collection/GenTraversableLike;::size()I;)() == that$1.(Lscala/collection/GenTraversableLike;::size()I;)())) && Lscala/collection/GenSetLike$class;.(Lscala/collection/GenSetLike$class;::liftedTree1$1(Lscala/collection/GenSetLike;Lscala/collection/GenSet;)Z;)($this, that$1)));
+      }
+    else
+      {
+        $1$ = false;
+      }
+    return $1$;
+  }
+  
+  public static I; hashCode(Lscala/collection/GenSetLike; $this) {
+    return Lscala/util/MurmurHash$;.MODULE$.(Lscala/util/MurmurHash$;::symmetricHash(Lscala/collection/TraversableOnce;I;)I;)($this.(Lscala/collection/GenSetLike;::seq()Lscala/collection/Set;)(), Lscala/collection/Set$;.MODULE$.(Lscala/collection/Set$;::hashSeed()I;)());
+  }
+  
+  private static final Z; liftedTree1$1(Lscala/collection/GenSetLike; $this, Lscala/collection/GenSet; that$1) {
+    Z; exceptionResult1;
+    try {
+      exceptionResult1 = $this.(Lscala/collection/GenSetLike;::subsetOf(Lscala/collection/GenSet;)Z;)(that$1);
+    } catch(Ljava/lang/ClassCastException; ex) {
+      exceptionResult1 = false;
+    }
+    return exceptionResult1;
+  }
+  
+  public static V; $init$(Lscala/collection/GenSetLike; $this) {
+    
+  }
+}

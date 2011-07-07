@@ -34,25 +34,25 @@ public interface Lscala/collection/generic/SeqForwarder; extends Lscala/collecti
   
   public Lscala/collection/Iterator; reverseIterator();
   
-  public Z; startsWith(Lscala/collection/Seq; that, I; offset);
+  public Z; startsWith(Lscala/collection/GenSeq; that, I; offset);
   
-  public Z; startsWith(Lscala/collection/Seq; that);
+  public Z; startsWith(Lscala/collection/GenSeq; that);
   
-  public Z; endsWith(Lscala/collection/Seq; that);
+  public Z; endsWith(Lscala/collection/GenSeq; that);
   
-  public I; indexOfSlice(Lscala/collection/Seq; that);
+  public I; indexOfSlice(Lscala/collection/GenSeq; that);
   
-  public I; indexOfSlice(Lscala/collection/Seq; that, I; from);
+  public I; indexOfSlice(Lscala/collection/GenSeq; that, I; from);
   
-  public I; lastIndexOfSlice(Lscala/collection/Seq; that);
+  public I; lastIndexOfSlice(Lscala/collection/GenSeq; that);
   
-  public I; lastIndexOfSlice(Lscala/collection/Seq; that, I; end);
+  public I; lastIndexOfSlice(Lscala/collection/GenSeq; that, I; end);
   
-  public Z; containsSlice(Lscala/collection/Seq; that);
+  public Z; containsSlice(Lscala/collection/GenSeq; that);
   
   public Z; contains(Ljava/lang/Object; elem);
   
-  public Z; corresponds(Lscala/collection/Seq; that, Lscala/Function2; p);
+  public Z; corresponds(Lscala/collection/GenSeq; that, Lscala/Function2; p);
   
   public Lscala/collection/immutable/Range; indices();
 }

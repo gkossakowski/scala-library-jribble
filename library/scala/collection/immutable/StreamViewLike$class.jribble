@@ -8,8 +8,8 @@ public abstract class Lscala/collection/immutable/StreamViewLike$class; {
     return (new (Lscala/collection/immutable/StreamViewLike$$anon$1;::this(Lscala/collection/immutable/StreamViewLike;Lscala/Function0;)V;)($this, xs$1));
   }
   
-  public static Lscala/collection/immutable/StreamViewLike$Transformed; newAppended(Lscala/collection/immutable/StreamViewLike; $this, Lscala/collection/Traversable; that$3) {
-    return (new (Lscala/collection/immutable/StreamViewLike$$anon$2;::this(Lscala/collection/immutable/StreamViewLike;Lscala/collection/Traversable;)V;)($this, that$3));
+  public static Lscala/collection/immutable/StreamViewLike$Transformed; newAppended(Lscala/collection/immutable/StreamViewLike; $this, Lscala/collection/GenTraversable; that$3) {
+    return (new (Lscala/collection/immutable/StreamViewLike$$anon$2;::this(Lscala/collection/immutable/StreamViewLike;Lscala/collection/GenTraversable;)V;)($this, that$3));
   }
   
   public static Lscala/collection/immutable/StreamViewLike$Transformed; newMapped(Lscala/collection/immutable/StreamViewLike; $this, Lscala/Function1; f$2) {
@@ -24,8 +24,8 @@ public abstract class Lscala/collection/immutable/StreamViewLike$class; {
     return (new (Lscala/collection/immutable/StreamViewLike$$anon$5;::this(Lscala/collection/immutable/StreamViewLike;Lscala/Function1;)V;)($this, p$3));
   }
   
-  public static Lscala/collection/immutable/StreamViewLike$Transformed; newSliced(Lscala/collection/immutable/StreamViewLike; $this, I; _from$2, I; _until$1) {
-    return (new (Lscala/collection/immutable/StreamViewLike$$anon$6;::this(Lscala/collection/immutable/StreamViewLike;I;I;)V;)($this, _from$2, _until$1));
+  public static Lscala/collection/immutable/StreamViewLike$Transformed; newSliced(Lscala/collection/immutable/StreamViewLike; $this, Lscala/collection/generic/SliceInterval; _endpoints$1) {
+    return (new (Lscala/collection/immutable/StreamViewLike$$anon$6;::this(Lscala/collection/immutable/StreamViewLike;Lscala/collection/generic/SliceInterval;)V;)($this, _endpoints$1));
   }
   
   public static Lscala/collection/immutable/StreamViewLike$Transformed; newDroppedWhile(Lscala/collection/immutable/StreamViewLike; $this, Lscala/Function1; p$2) {
@@ -36,24 +36,28 @@ public abstract class Lscala/collection/immutable/StreamViewLike$class; {
     return (new (Lscala/collection/immutable/StreamViewLike$$anon$8;::this(Lscala/collection/immutable/StreamViewLike;Lscala/Function1;)V;)($this, p$1));
   }
   
-  public static Lscala/collection/immutable/StreamViewLike$Transformed; newZipped(Lscala/collection/immutable/StreamViewLike; $this, Lscala/collection/Iterable; that$2) {
-    return (new (Lscala/collection/immutable/StreamViewLike$$anon$9;::this(Lscala/collection/immutable/StreamViewLike;Lscala/collection/Iterable;)V;)($this, that$2));
+  public static Lscala/collection/immutable/StreamViewLike$Transformed; newZipped(Lscala/collection/immutable/StreamViewLike; $this, Lscala/collection/GenIterable; that$2) {
+    return (new (Lscala/collection/immutable/StreamViewLike$$anon$9;::this(Lscala/collection/immutable/StreamViewLike;Lscala/collection/GenIterable;)V;)($this, that$2));
   }
   
-  public static Lscala/collection/immutable/StreamViewLike$Transformed; newZippedAll(Lscala/collection/immutable/StreamViewLike; $this, Lscala/collection/Iterable; that$1, Ljava/lang/Object; _thisElem$1, Ljava/lang/Object; _thatElem$1) {
-    return (new (Lscala/collection/immutable/StreamViewLike$$anon$10;::this(Lscala/collection/immutable/StreamViewLike;Lscala/collection/Iterable;Ljava/lang/Object;Ljava/lang/Object;)V;)($this, that$1, _thisElem$1, _thatElem$1));
+  public static Lscala/collection/immutable/StreamViewLike$Transformed; newZippedAll(Lscala/collection/immutable/StreamViewLike; $this, Lscala/collection/GenIterable; that$1, Ljava/lang/Object; _thisElem$1, Ljava/lang/Object; _thatElem$1) {
+    return (new (Lscala/collection/immutable/StreamViewLike$$anon$10;::this(Lscala/collection/immutable/StreamViewLike;Lscala/collection/GenIterable;Ljava/lang/Object;Ljava/lang/Object;)V;)($this, that$1, _thisElem$1, _thatElem$1));
   }
   
   public static Lscala/collection/immutable/StreamViewLike$Transformed; newReversed(Lscala/collection/immutable/StreamViewLike; $this) {
     return (new (Lscala/collection/immutable/StreamViewLike$$anon$11;::this(Lscala/collection/immutable/StreamViewLike;)V;)($this));
   }
   
-  public static Lscala/collection/immutable/StreamViewLike$Transformed; newPatched(Lscala/collection/immutable/StreamViewLike; $this, I; _from$1, Lscala/collection/Seq; _patch$1, I; _replaced$1) {
-    return (new (Lscala/collection/immutable/StreamViewLike$$anon$12;::this(Lscala/collection/immutable/StreamViewLike;I;Lscala/collection/Seq;I;)V;)($this, _from$1, _patch$1, _replaced$1));
+  public static Lscala/collection/immutable/StreamViewLike$Transformed; newPatched(Lscala/collection/immutable/StreamViewLike; $this, I; _from$1, Lscala/collection/GenSeq; _patch$1, I; _replaced$1) {
+    return (new (Lscala/collection/immutable/StreamViewLike$$anon$12;::this(Lscala/collection/immutable/StreamViewLike;I;Lscala/collection/GenSeq;I;)V;)($this, _from$1, _patch$1, _replaced$1));
   }
   
   public static Lscala/collection/immutable/StreamViewLike$Transformed; newPrepended(Lscala/collection/immutable/StreamViewLike; $this, Ljava/lang/Object; elem$1) {
     return (new (Lscala/collection/immutable/StreamViewLike$$anon$13;::this(Lscala/collection/immutable/StreamViewLike;Ljava/lang/Object;)V;)($this, elem$1));
+  }
+  
+  public static Ljava/lang/String; stringPrefix(Lscala/collection/immutable/StreamViewLike; $this) {
+    return "StreamView";
   }
   
   public static V; $init$(Lscala/collection/immutable/StreamViewLike; $this) {

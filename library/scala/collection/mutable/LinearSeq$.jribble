@@ -2,7 +2,7 @@ public final class Lscala/collection/mutable/LinearSeq$; extends Lscala/collecti
   public static Lscala/collection/mutable/LinearSeq$; MODULE$ = new (Lscala/collection/mutable/LinearSeq$;::this()V;)();
   
   public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
-    return (new (Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;::this(Lscala/collection/generic/TraversableFactory;)V;)(this));
+    return this.(Lscala/collection/generic/GenTraversableFactory;::ReusableCBF()Lscala/collection/generic/GenTraversableFactory$ReusableCBF$;)();
   }
   
   public Lscala/collection/mutable/Builder; newBuilder() {

@@ -1,4 +1,14 @@
-public interface Lscala/collection/Traversable; extends Lscala/collection/TraversableLike;, Lscala/collection/generic/GenericTraversableTemplate;, Lscala/ScalaObject; {
+public interface Lscala/collection/Traversable; extends Lscala/collection/TraversableLike;, Lscala/collection/GenTraversable;, Lscala/collection/TraversableOnce;, Lscala/collection/generic/GenericTraversableTemplate;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/Traversable; scala$collection$Traversable$$super$flatten(Lscala/Function1; asTraversable);
+  
+  public Lscala/collection/Traversable; scala$collection$Traversable$$super$transpose(Lscala/Function1; asTraversable);
   
   public Lscala/collection/generic/GenericCompanion; companion();
+  
+  public Lscala/collection/Traversable; seq();
+  
+  public Lscala/collection/Traversable; flatten(Lscala/Function1; asTraversable);
+  
+  public Lscala/collection/Traversable; transpose(Lscala/Function1; asTraversable);
 }

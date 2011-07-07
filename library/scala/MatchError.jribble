@@ -1,19 +1,38 @@
 public final class Lscala/MatchError; extends Ljava/lang/RuntimeException; implements Lscala/ScalaObject; {
   
-  public this(Ljava/lang/Object; obj) {
-    Ljava/lang/String; $1$;
-    if ((null != obj))
+  private I; bitmap$priv$0 = 0;
+  
+  private Ljava/lang/Object; obj;
+  
+  private Ljava/lang/String; objString$u0020;
+  
+  private Ljava/lang/String; objString() {
+    if (((this.(Lscala/MatchError;)bitmap$priv$0 & 1) == 0))
       {
-        $1$ = obj.(Ljava/lang/Object;::toString()Ljava/lang/String;)();
+        if (((this.(Lscala/MatchError;)bitmap$priv$0 & 1) == 0))
+          {
+            Ljava/lang/String; $1$;
+            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/MatchError;)obj, null))
+              {
+                $1$ = "null";
+              }
+            else
+              {
+                $1$ = (((this.(Lscala/MatchError;)obj.(Ljava/lang/Object;::toString()Ljava/lang/String;)() + " (of class ") + this.(Lscala/MatchError;)obj.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)().(Ljava/lang/Class;::getName()Ljava/lang/String;)()) + ")");
+              }
+            this.(Lscala/MatchError;)objString$u0020 = $1$;
+            this.(Lscala/MatchError;)bitmap$priv$0 = (this.(Lscala/MatchError;)bitmap$priv$0 | 1);
+          }
       }
-    else
-      {
-        $1$ = "null";
-      }
-    (Lscala/MatchError;::this(Ljava/lang/String;)V;)($1$);
+    return this.(Lscala/MatchError;)objString$u0020;
   }
   
-  public this(Ljava/lang/String; msg) {
-    (Ljava/lang/RuntimeException;::super(Ljava/lang/String;)V;)(msg);
+  public Ljava/lang/String; getMessage() {
+    return this.(Lscala/MatchError;::objString()Ljava/lang/String;)();
+  }
+  
+  public this(Ljava/lang/Object; obj) {
+    this.(Lscala/MatchError;)obj = obj;
+    (Ljava/lang/RuntimeException;::super()V;)();
   }
 }

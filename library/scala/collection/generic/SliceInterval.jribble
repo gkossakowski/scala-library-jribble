@@ -1,0 +1,46 @@
+public class Lscala/collection/generic/SliceInterval; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public final static Lscala/collection/generic/SliceInterval; apply(I; x_0, I; x_1) { return Lscala/collection/generic/SliceInterval$;.MODULE$.(Lscala/collection/generic/SliceInterval$;::apply(I;I;)Lscala/collection/generic/SliceInterval;)(x_0, x_1); }
+  
+  
+  private I; from$u0020;
+  
+  public I; from() {
+    return this.(Lscala/collection/generic/SliceInterval;)from$u0020;
+  }
+  
+  private I; until$u0020;
+  
+  public I; until() {
+    return this.(Lscala/collection/generic/SliceInterval;)until$u0020;
+  }
+  
+  public I; width() {
+    return (this.(Lscala/collection/generic/SliceInterval;::until()I;)() - this.(Lscala/collection/generic/SliceInterval;::from()I;)());
+  }
+  
+  public Lscala/collection/generic/SliceInterval; recalculate(I; _from, I; _until) {
+    I; lo = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(_from).(Lscala/runtime/RichInt;::max(I;)I;)(0);
+    I; elems = Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::min(I;I;)I;)((_until - lo), this.(Lscala/collection/generic/SliceInterval;::width()I;)());
+    I; start = (this.(Lscala/collection/generic/SliceInterval;::from()I;)() + lo);
+    Lscala/collection/generic/SliceInterval; $1$;
+    if ((elems <= 0))
+      {
+        $1$ = (new (Lscala/collection/generic/SliceInterval;::this(I;I;)V;)(this.(Lscala/collection/generic/SliceInterval;::from()I;)(), this.(Lscala/collection/generic/SliceInterval;::from()I;)()));
+      }
+    else
+      {
+        $1$ = (new (Lscala/collection/generic/SliceInterval;::this(I;I;)V;)(start, (start + elems)));
+      }
+    return $1$;
+  }
+  
+  public Lscala/collection/generic/SliceInterval; recalculate(Lscala/collection/generic/SliceInterval; interval) {
+    return this.(Lscala/collection/generic/SliceInterval;::recalculate(I;I;)Lscala/collection/generic/SliceInterval;)(interval.(Lscala/collection/generic/SliceInterval;::from()I;)(), interval.(Lscala/collection/generic/SliceInterval;::until()I;)());
+  }
+  
+  public this(I; from, I; until) {
+    this.(Lscala/collection/generic/SliceInterval;)from$u0020 = from;
+    this.(Lscala/collection/generic/SliceInterval;)until$u0020 = until;
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

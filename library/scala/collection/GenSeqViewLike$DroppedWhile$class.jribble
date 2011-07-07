@@ -1,0 +1,27 @@
+public abstract class Lscala/collection/GenSeqViewLike$DroppedWhile$class; {
+  
+  public static I; start(Lscala/collection/GenSeqViewLike$DroppedWhile; $this) {
+    return $this.(Lscala/collection/GenSeqViewLike$DroppedWhile;::scala$collection$GenSeqViewLike$DroppedWhile$$$outer()Lscala/collection/GenSeqViewLike;)().(Lscala/collection/GenSeqLike;::prefixLength(Lscala/Function1;)I;)($this.(Lscala/collection/GenTraversableViewLike$DroppedWhile;::pred()Lscala/Function1;)());
+  }
+  
+  public static I; length(Lscala/collection/GenSeqViewLike$DroppedWhile; $this) {
+    return ($this.(Lscala/collection/GenSeqViewLike$DroppedWhile;::scala$collection$GenSeqViewLike$DroppedWhile$$$outer()Lscala/collection/GenSeqViewLike;)().(Lscala/collection/GenSeqLike;::length()I;)() - $this.(Lscala/collection/GenSeqViewLike$DroppedWhile;::start()I;)());
+  }
+  
+  public static Ljava/lang/Object; apply(Lscala/collection/GenSeqViewLike$DroppedWhile; $this, I; idx) {
+    Ljava/lang/Object; $6$;
+    if ((idx >= 0))
+      {
+        $6$ = $this.(Lscala/collection/GenSeqViewLike$DroppedWhile;::scala$collection$GenSeqViewLike$DroppedWhile$$$outer()Lscala/collection/GenSeqViewLike;)().(Lscala/collection/GenSeqLike;::apply(I;)Ljava/lang/Object;)((idx + $this.(Lscala/collection/GenSeqViewLike$DroppedWhile;::start()I;)()));
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(idx).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $6$;
+  }
+  
+  public static V; $init$(Lscala/collection/GenSeqViewLike$DroppedWhile; $this) {
+    
+  }
+}

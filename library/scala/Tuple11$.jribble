@@ -1,4 +1,4 @@
-public final class Lscala/Tuple11$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/Tuple11$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/Tuple11$; MODULE$ = new (Lscala/Tuple11$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/Tuple11$; extends Ljava/lang/Object; implements Lscala
   }
   
   public Lscala/Option; unapply(Lscala/Tuple11; x$0) {
-    Lscala/Option; $3$;
+    Lscala/Option; $15$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $3$ = Lscala/None$;.MODULE$;
+        $15$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $3$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple11;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/Tuple11;::_1()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_2()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_3()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_4()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_5()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_6()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_7()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_8()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_9()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_10()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_11()Ljava/lang/Object;)()))));
+        $15$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple11;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/Tuple11;::_1()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_2()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_3()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_4()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_5()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_6()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_7()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_8()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_9()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_10()Ljava/lang/Object;)(), x$0.(Lscala/Tuple11;::_11()Ljava/lang/Object;)()))));
       }
-    return $3$;
+    return $15$;
   }
   
   public Lscala/Tuple11; apply(Ljava/lang/Object; _1, Ljava/lang/Object; _2, Ljava/lang/Object; _3, Ljava/lang/Object; _4, Ljava/lang/Object; _5, Ljava/lang/Object; _6, Ljava/lang/Object; _7, Ljava/lang/Object; _8, Ljava/lang/Object; _9, Ljava/lang/Object; _10, Ljava/lang/Object; _11) {
     return (new (Lscala/Tuple11;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/Tuple11$;.MODULE$;
   }
   
   public this() {

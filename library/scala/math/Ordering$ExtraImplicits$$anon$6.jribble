@@ -1,0 +1,95 @@
+public final class Lscala/math/Ordering$ExtraImplicits$$anon$6; extends Ljava/lang/Object; implements Lscala/math/Ordering; {
+  
+  public Lscala/Some; tryCompare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::tryCompare(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Lscala/Some;)(this, x, y);
+  }
+  
+  public Z; lteq(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::lteq(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Z; gteq(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::gteq(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Z; lt(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::lt(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Z; gt(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::gt(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Z; equiv(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::equiv(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
+  }
+  
+  public Ljava/lang/Object; max(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::max(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this, x, y);
+  }
+  
+  public Ljava/lang/Object; min(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::min(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(this, x, y);
+  }
+  
+  public Lscala/math/Ordering; reverse() {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::reverse(Lscala/math/Ordering;)Lscala/math/Ordering;)(this);
+  }
+  
+  public Lscala/math/Ordering; on(Lscala/Function1; f) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::on(Lscala/math/Ordering;Lscala/Function1;)Lscala/math/Ordering;)(this, f);
+  }
+  
+  public Lscala/math/Ordering$Ops; mkOrderingOps(Ljava/lang/Object; lhs) {
+    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::mkOrderingOps(Lscala/math/Ordering;Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this, lhs);
+  }
+  
+  public I; compare(Lscala/collection/Seq; x, Lscala/collection/Seq; y) {
+    Lscala/collection/Iterator; xe = x.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    Lscala/collection/Iterator; ye = y.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    while$1: while(true) {
+      if ((xe.(Lscala/collection/Iterator;::hasNext()Z;)() && ye.(Lscala/collection/Iterator;::hasNext()Z;)()))
+        {
+          {
+            I; res = this.(Lscala/math/Ordering$ExtraImplicits$$anon$6;)ord$3.(Lscala/math/Ordering;::compare(Ljava/lang/Object;Ljava/lang/Object;)I;)(xe.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), ye.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
+            if ((res != 0))
+              {
+                return res;
+              }
+            else
+              {
+                
+              }
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return Lscala/math/Ordering$Boolean$;.MODULE$.(Lscala/math/Ordering$BooleanOrdering;::compare(Z;Z;)I;)(xe.(Lscala/collection/Iterator;::hasNext()Z;)(), ye.(Lscala/collection/Iterator;::hasNext()Z;)());
+  }
+  
+  public Lscala/math/PartialOrdering; reverse() {
+    return this.(Lscala/math/Ordering;::reverse()Lscala/math/Ordering;)();
+  }
+  
+  public Lscala/Option; tryCompare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return this.(Lscala/math/Ordering;::tryCompare(Ljava/lang/Object;Ljava/lang/Object;)Lscala/Some;)(x, y);
+  }
+  
+  public I; compare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return this.(Lscala/math/Ordering$ExtraImplicits$$anon$6;::compare(Lscala/collection/Seq;Lscala/collection/Seq;)I;)(x.<cast>(Lscala/collection/Seq;), y.<cast>(Lscala/collection/Seq;));
+  }
+  
+  private Lscala/math/Ordering; ord$3;
+  
+  public this(Lscala/math/Ordering$ExtraImplicits; $outer, Lscala/math/Ordering; ord$3) {
+    this.(Lscala/math/Ordering$ExtraImplicits$$anon$6;)ord$3 = ord$3;
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/math/PartialOrdering$class;.(Lscala/math/PartialOrdering$class;::$init$(Lscala/math/PartialOrdering;)V;)(this);
+    Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::$init$(Lscala/math/Ordering;)V;)(this);
+  }
+}

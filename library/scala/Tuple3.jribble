@@ -1,4 +1,4 @@
-public class Lscala/Tuple3; extends Ljava/lang/Object; implements Lscala/Product3;, Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/Tuple3; extends Ljava/lang/Object; implements Lscala/Product3;, Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   
   public I; productArity() {
@@ -15,18 +15,6 @@ public class Lscala/Tuple3; extends Ljava/lang/Object; implements Lscala/Product
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/Object; copy$default$3() {
-    return this.(Lscala/Tuple3;::_3()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$2() {
-    return this.(Lscala/Tuple3;::_2()Ljava/lang/Object;)();
-  }
-  
-  public Ljava/lang/Object; copy$default$1() {
-    return this.(Lscala/Tuple3;::_1()Ljava/lang/Object;)();
   }
   
   private Ljava/lang/Object; _1$u0020;
@@ -52,14 +40,7 @@ public class Lscala/Tuple3; extends Ljava/lang/Object; implements Lscala/Product
   }
   
   public Ljava/lang/Object; zip(Lscala/Function1; w1, Lscala/Function1; w2, Lscala/Function1; w3, Lscala/collection/generic/CanBuildFrom; cbf1) {
-    Lscala/collection/TraversableLike; coll1 = w1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/Tuple3;::_1()Ljava/lang/Object;)()).<cast>(Lscala/collection/TraversableLike;);
-    Lscala/collection/Iterable; coll2 = w2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/Tuple3;::_2()Ljava/lang/Object;)()).<cast>(Lscala/collection/Iterable;);
-    Lscala/collection/Iterable; coll3 = w3.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/Tuple3;::_3()Ljava/lang/Object;)()).<cast>(Lscala/collection/Iterable;);
-    Lscala/collection/mutable/Builder; b1$1 = cbf1.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(coll1.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
-    Lscala/collection/Iterator; elems2$1 = coll2.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    Lscala/collection/Iterator; elems3$1 = coll3.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
-    coll1.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/Tuple3$$anonfun$zip$1;::this(Lscala/Tuple3;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;Lscala/collection/Iterator;)V;)(this, b1$1, elems2$1, elems3$1)));
-    return b1$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+    return this.(Lscala/Tuple3;::zipped(Lscala/Function1;Lscala/Function1;Lscala/Function1;)Lscala/Tuple3$Zipped;)(w1, w2, w3).(Lscala/Tuple3$Zipped;::map(Lscala/Function3;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/Tuple3$$anonfun$zip$1;::this(Lscala/Tuple3;)V;)(this)), cbf1);
   }
   
   public Lscala/Tuple3$Zipped; zipped(Lscala/Function1; w1, Lscala/Function1; w2, Lscala/Function1; w3) {
@@ -68,6 +49,18 @@ public class Lscala/Tuple3; extends Ljava/lang/Object; implements Lscala/Product
   
   public Lscala/Tuple3; copy(Ljava/lang/Object; _1, Ljava/lang/Object; _2, Ljava/lang/Object; _3) {
     return (new (Lscala/Tuple3;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(_1, _2, _3));
+  }
+  
+  public Ljava/lang/Object; copy$default$3() {
+    return this.(Lscala/Tuple3;::_3()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$2() {
+    return this.(Lscala/Tuple3;::_2()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/Object; copy$default$1() {
+    return this.(Lscala/Tuple3;::_1()Ljava/lang/Object;)();
   }
   
   public I; hashCode() {
@@ -83,13 +76,21 @@ public class Lscala/Tuple3; extends Ljava/lang/Object; implements Lscala/Product
         Ljava/lang/Object; temp3 = temp2.(Lscala/Tuple3;::_1()Ljava/lang/Object;)();
         Ljava/lang/Object; temp4 = temp2.(Lscala/Tuple3;::_2()Ljava/lang/Object;)();
         Ljava/lang/Object; temp5 = temp2.(Lscala/Tuple3;::_3()Ljava/lang/Object;)();
-        Ljava/lang/Object; _3$1 = temp5;
-        Ljava/lang/Object; _2$1 = temp4;
         Ljava/lang/Object; _1$1 = temp3;
+        Ljava/lang/Object; _2$1 = temp4;
+        Ljava/lang/Object; _3$1 = temp5;
         Z; $2$;
         if (this.(Lscala/Tuple3;::gd1$1(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z;)(_1$1, _2$1, _3$1))
           {
-            $2$ = x$1.<cast>(Lscala/Tuple3;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/Object; $3$;
+            Ljava/lang/Object; $4$;
+            Ljava/lang/Object; $5$;
+            Z; $6$;
+            body$percent01: while(true) {
+              $6$ = x$1.<cast>(Lscala/Tuple3;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $2$ = $6$;
           }
         else
           {

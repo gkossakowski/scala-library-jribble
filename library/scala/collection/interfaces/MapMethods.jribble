@@ -30,13 +30,13 @@ public interface Lscala/collection/interfaces/MapMethods; extends Lscala/collect
   
   public Ljava/lang/Object; `default`(Ljava/lang/Object; key);
   
-  public Lscala/collection/DefaultMap; filterKeys(Lscala/Function1; p);
+  public Lscala/collection/Map; filterKeys(Lscala/Function1; p);
   
-  public Lscala/collection/DefaultMap; mapValues(Lscala/Function1; f);
+  public Lscala/collection/Map; mapValues(Lscala/Function1; f);
   
   public Lscala/collection/Map; updated(Ljava/lang/Object; key, Ljava/lang/Object; value);
   
   public Lscala/collection/Map; $plus(Lscala/Tuple2; elem1, Lscala/Tuple2; elem2, Lscala/collection/Seq; elems);
   
-  public Lscala/collection/Map; $plus$plus(Lscala/collection/TraversableOnce; xs);
+  public Lscala/collection/Map; $plus$plus(Lscala/collection/GenTraversableOnce; xs);
 }

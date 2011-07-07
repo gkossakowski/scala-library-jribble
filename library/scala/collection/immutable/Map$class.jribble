@@ -4,6 +4,14 @@ public abstract class Lscala/collection/immutable/Map$class; {
     return Lscala/collection/immutable/Map$;.MODULE$.(Lscala/collection/immutable/Map$;::empty()Lscala/collection/immutable/Map;)();
   }
   
+  public static Lscala/collection/immutable/Map; toMap(Lscala/collection/immutable/Map; $this, Lscala/Predef$$less$colon$less; ev) {
+    return $this;
+  }
+  
+  public static Lscala/collection/immutable/Map; seq(Lscala/collection/immutable/Map; $this) {
+    return $this;
+  }
+  
   public static Lscala/collection/immutable/Map; withDefault(Lscala/collection/immutable/Map; $this, Lscala/Function1; d) {
     return (new (Lscala/collection/immutable/Map$WithDefault;::this(Lscala/collection/immutable/Map;Lscala/Function1;)V;)($this, d));
   }

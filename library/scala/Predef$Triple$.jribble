@@ -1,4 +1,4 @@
-public final class Lscala/Predef$Triple$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/Predef$Triple$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/Predef$Triple$; MODULE$ = new (Lscala/Predef$Triple$;::this()V;)();
   
   public Lscala/Tuple3; apply(Ljava/lang/Object; x, Ljava/lang/Object; y, Ljava/lang/Object; z) {
@@ -7,6 +7,10 @@ public final class Lscala/Predef$Triple$; extends Ljava/lang/Object; implements 
   
   public Lscala/Option; unapply(Lscala/Tuple3; x) {
     return (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/Predef$Triple$;.MODULE$;
   }
   
   public this() {

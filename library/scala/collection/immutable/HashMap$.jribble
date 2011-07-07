@@ -1,68 +1,60 @@
-public final class Lscala/collection/immutable/HashMap$; extends Lscala/collection/generic/ImmutableMapFactory; implements Lscala/ScalaObject; {
+public final class Lscala/collection/immutable/HashMap$; extends Lscala/collection/generic/ImmutableMapFactory; implements Lscala/collection/generic/BitOperations$Int;, Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/collection/immutable/HashMap$; MODULE$ = new (Lscala/collection/immutable/HashMap$;::this()V;)();
   
+  public Z; zero(I; i, I; mask) {
+    return Lscala/collection/generic/BitOperations$Int$class;.(Lscala/collection/generic/BitOperations$Int$class;::zero(Lscala/collection/generic/BitOperations$Int;I;I;)Z;)(this, i, mask);
+  }
+  
+  public I; mask(I; i, I; mask) {
+    return Lscala/collection/generic/BitOperations$Int$class;.(Lscala/collection/generic/BitOperations$Int$class;::mask(Lscala/collection/generic/BitOperations$Int;I;I;)I;)(this, i, mask);
+  }
+  
+  public Z; hasMatch(I; key, I; prefix, I; m) {
+    return Lscala/collection/generic/BitOperations$Int$class;.(Lscala/collection/generic/BitOperations$Int$class;::hasMatch(Lscala/collection/generic/BitOperations$Int;I;I;I;)Z;)(this, key, prefix, m);
+  }
+  
+  public Z; unsignedCompare(I; i, I; j) {
+    return Lscala/collection/generic/BitOperations$Int$class;.(Lscala/collection/generic/BitOperations$Int$class;::unsignedCompare(Lscala/collection/generic/BitOperations$Int;I;I;)Z;)(this, i, j);
+  }
+  
+  public Z; shorter(I; m1, I; m2) {
+    return Lscala/collection/generic/BitOperations$Int$class;.(Lscala/collection/generic/BitOperations$Int$class;::shorter(Lscala/collection/generic/BitOperations$Int;I;I;)Z;)(this, m1, m2);
+  }
+  
+  public I; complement(I; i) {
+    return Lscala/collection/generic/BitOperations$Int$class;.(Lscala/collection/generic/BitOperations$Int$class;::complement(Lscala/collection/generic/BitOperations$Int;I;)I;)(this, i);
+  }
+  
+  public Lscala/collection/immutable/IndexedSeq; bits(I; num) {
+    return Lscala/collection/generic/BitOperations$Int$class;.(Lscala/collection/generic/BitOperations$Int$class;::bits(Lscala/collection/generic/BitOperations$Int;I;)Lscala/collection/immutable/IndexedSeq;)(this, num);
+  }
+  
+  public Ljava/lang/String; bitString(I; num, Ljava/lang/String; sep) {
+    return Lscala/collection/generic/BitOperations$Int$class;.(Lscala/collection/generic/BitOperations$Int$class;::bitString(Lscala/collection/generic/BitOperations$Int;I;Ljava/lang/String;)Ljava/lang/String;)(this, num, sep);
+  }
+  
+  public I; highestOneBit(I; j) {
+    return Lscala/collection/generic/BitOperations$Int$class;.(Lscala/collection/generic/BitOperations$Int$class;::highestOneBit(Lscala/collection/generic/BitOperations$Int;I;)I;)(this, j);
+  }
+  
+  public Ljava/lang/String; bitString$default$2() {
+    return Lscala/collection/generic/BitOperations$Int$class;.(Lscala/collection/generic/BitOperations$Int$class;::bitString$default$2(Lscala/collection/generic/BitOperations$Int;)Ljava/lang/String;)(this);
+  }
+  
   public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
-    return (new (Lscala/collection/generic/MapFactory$MapCanBuildFrom;::this(Lscala/collection/generic/MapFactory;)V;)(this));
+    return (new (Lscala/collection/generic/GenMapFactory$MapCanBuildFrom;::this(Lscala/collection/generic/GenMapFactory;)V;)(this));
   }
   
   public Lscala/collection/immutable/HashMap; empty() {
     return Lscala/collection/immutable/HashMap$EmptyHashMap$;.MODULE$;
   }
   
-  private I; bothsingle$u0020;
-  
-  public I; bothsingle() {
-    return this.(Lscala/collection/immutable/HashMap$;)bothsingle$u0020;
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/immutable/HashMap$;.MODULE$;
   }
   
-  public V; bothsingle_$eq(I; x$1) {
-    this.(Lscala/collection/immutable/HashMap$;)bothsingle$u0020 = x$1;
-  }
-  
-  private I; bothtries$u0020;
-  
-  public I; bothtries() {
-    return this.(Lscala/collection/immutable/HashMap$;)bothtries$u0020;
-  }
-  
-  public V; bothtries_$eq(I; x$1) {
-    this.(Lscala/collection/immutable/HashMap$;)bothtries$u0020 = x$1;
-  }
-  
-  private I; onetrie$u0020;
-  
-  public I; onetrie() {
-    return this.(Lscala/collection/immutable/HashMap$;)onetrie$u0020;
-  }
-  
-  public V; onetrie_$eq(I; x$1) {
-    this.(Lscala/collection/immutable/HashMap$;)onetrie$u0020 = x$1;
-  }
-  
-  private Z; check(Lscala/collection/immutable/HashMap; x, Lscala/collection/immutable/HashMap; y, Lscala/collection/immutable/HashMap; xy) {
-    Lscala/runtime/ObjectRef; xs$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(Lscala/collection/immutable/Set$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{})).<cast>(Lscala/collection/immutable/Set;)));
-    x.(Lscala/collection/immutable/HashMap;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/HashMap$$anonfun$check$1;::this(Lscala/runtime/ObjectRef;)V;)(xs$1)));
-    Lscala/runtime/ObjectRef; ys$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(Lscala/collection/immutable/Set$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{})).<cast>(Lscala/collection/immutable/Set;)));
-    y.(Lscala/collection/immutable/HashMap;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/HashMap$$anonfun$check$2;::this(Lscala/runtime/ObjectRef;)V;)(ys$1)));
-    Lscala/runtime/ObjectRef; union$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(Lscala/collection/immutable/Set$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{})).<cast>(Lscala/collection/immutable/Set;)));
-    xy.(Lscala/collection/immutable/HashMap;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/immutable/HashMap$$anonfun$check$3;::this(Lscala/runtime/ObjectRef;)V;)(union$1)));
-    Z; $2$;
-    if ((xs$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Set;).(Lscala/collection/generic/Addable;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Addable;)(ys$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Set;)) != union$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Set;)))
-      {
-        Lscala/Predef$;.MODULE$.(Lscala/Predef$;::println(Ljava/lang/Object;)V;)("Error.");
-        Lscala/Predef$;.MODULE$.(Lscala/Predef$;::println(Ljava/lang/Object;)V;)(x.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)());
-        Lscala/Predef$;.MODULE$.(Lscala/Predef$;::println(Ljava/lang/Object;)V;)(y.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)());
-        Lscala/Predef$;.MODULE$.(Lscala/Predef$;::println(Ljava/lang/Object;)V;)(xs$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Set;));
-        Lscala/Predef$;.MODULE$.(Lscala/Predef$;::println(Ljava/lang/Object;)V;)(ys$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Set;));
-        Lscala/Predef$;.MODULE$.(Lscala/Predef$;::println(Ljava/lang/Object;)V;)(xs$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Set;).(Lscala/collection/generic/Addable;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Addable;)(ys$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Set;)));
-        Lscala/Predef$;.MODULE$.(Lscala/Predef$;::println(Ljava/lang/Object;)V;)(union$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/Set;));
-        $2$ = false;
-      }
-    else
-      {
-        $2$ = true;
-      }
-    return $2$;
+  public Lscala/collection/GenMap; empty() {
+    return this.(Lscala/collection/immutable/HashMap$;::empty()Lscala/collection/immutable/HashMap;)();
   }
   
   public Lscala/collection/Map; empty() {
@@ -71,8 +63,6 @@ public final class Lscala/collection/immutable/HashMap$; extends Lscala/collecti
   
   public this() {
     (Lscala/collection/generic/ImmutableMapFactory;::super()V;)();
-    this.(Lscala/collection/immutable/HashMap$;)bothsingle$u0020 = 0;
-    this.(Lscala/collection/immutable/HashMap$;)bothtries$u0020 = 0;
-    this.(Lscala/collection/immutable/HashMap$;)onetrie$u0020 = 0;
+    Lscala/collection/generic/BitOperations$Int$class;.(Lscala/collection/generic/BitOperations$Int$class;::$init$(Lscala/collection/generic/BitOperations$Int;)V;)(this);
   }
 }

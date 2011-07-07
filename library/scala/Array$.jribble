@@ -1,4 +1,4 @@
-public final class Lscala/Array$; extends Lscala/FallbackArrayBuilding; implements Lscala/ScalaObject; {
+public final class Lscala/Array$; extends Lscala/FallbackArrayBuilding; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/Array$; MODULE$ = new (Lscala/Array$;::this()V;)();
   
   public Lscala/collection/generic/CanBuildFrom; canBuildFrom(Lscala/reflect/ClassManifest; m$1) {
@@ -132,7 +132,7 @@ public final class Lscala/Array$; extends Lscala/FallbackArrayBuilding; implemen
   
   public Ljava/lang/Object;[ ofDim(I; n1, I; n2$1, Lscala/reflect/ClassManifest; evidence$4$1) {
     Ljava/lang/Object;[ arr$1 = evidence$4$1.(Lscala/reflect/ClassManifest;::newArray2(I;)Ljava/lang/Object;[)(n1);
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range$ByOne;)(n1).(Lscala/collection/immutable/Range$ByOne;::foreach(Lscala/Function1;)V;)((new (Lscala/Array$$anonfun$ofDim$1;::this(I;Lscala/reflect/ClassManifest;Ljava/lang/Object;[)V;)(n2$1, evidence$4$1, arr$1)));
+    Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(n1).(Lscala/collection/immutable/Range;::foreach(Lscala/Function1;)V;)((new (Lscala/Array$$anonfun$ofDim$1;::this(I;Lscala/reflect/ClassManifest;Ljava/lang/Object;[)V;)(n2$1, evidence$4$1, arr$1)));
     return arr$1;
   }
   
@@ -245,7 +245,7 @@ public final class Lscala/Array$; extends Lscala/FallbackArrayBuilding; implemen
         
       }
     Lscala/collection/mutable/ArrayBuilder; b = this.(Lscala/Array$;::newBuilder(Lscala/reflect/ClassManifest;)Lscala/collection/mutable/ArrayBuilder;)(Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Int()Lscala/reflect/AnyValManifest;)());
-    b.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(Lscala/package$;.MODULE$.(Lscala/package$;::Range()Lscala/collection/immutable/Range$;)().(Lscala/collection/immutable/Range$;::count(I;I;I;Z;)I;)(start, end, step, false));
+    b.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(Lscala/collection/immutable/Range$;.MODULE$.(Lscala/collection/immutable/Range$;::count(I;I;I;Z;)I;)(start, end, step, false));
     I; i = start;
     while$4: while(true) {
       Z; $1$;
@@ -375,6 +375,10 @@ public final class Lscala/Array$; extends Lscala/FallbackArrayBuilding; implemen
   
   public Ljava/lang/Object;[[[[ fromFunction(Lscala/Function5; f$6, I; n1, I; n2$14, I; n3$10, I; n4$7, I; n5$4, Lscala/reflect/ClassManifest; evidence$25$1) {
     return this.(Lscala/Array$;::fromFunction(Lscala/Function1;I;Lscala/reflect/ClassManifest;)Ljava/lang/Object;)((new (Lscala/Array$$anonfun$fromFunction$4;::this(Lscala/Function5;I;I;I;I;Lscala/reflect/ClassManifest;)V;)(f$6, n2$14, n3$10, n4$7, n5$4, evidence$25$1)), n1, Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::arrayType(Lscala/reflect/OptManifest;)Lscala/reflect/ClassManifest;)(evidence$25$1))))).<cast>(Ljava/lang/Object;[[[[);
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/Array$;.MODULE$;
   }
   
   public this() {

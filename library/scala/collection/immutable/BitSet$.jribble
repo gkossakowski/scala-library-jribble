@@ -1,4 +1,4 @@
-public final class Lscala/collection/immutable/BitSet$; extends Ljava/lang/Object; implements Lscala/collection/generic/BitSetFactory;, Lscala/ScalaObject; {
+public final class Lscala/collection/immutable/BitSet$; extends Ljava/lang/Object; implements Lscala/collection/generic/BitSetFactory;, Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/collection/immutable/BitSet$; MODULE$ = new (Lscala/collection/immutable/BitSet$;::this()V;)();
   
   public Lscala/collection/BitSet; apply(Lscala/collection/Seq; elems) {
@@ -16,7 +16,7 @@ public final class Lscala/collection/immutable/BitSet$; extends Ljava/lang/Objec
   }
   
   public Lscala/collection/mutable/Builder; newBuilder() {
-    return (new (Lscala/collection/mutable/AddingBuilder;::this(Lscala/collection/generic/Addable;)V;)(this.(Lscala/collection/immutable/BitSet$;::empty()Lscala/collection/immutable/BitSet;)()));
+    return (new (Lscala/collection/mutable/SetBuilder;::this(Lscala/collection/Set;)V;)(this.(Lscala/collection/immutable/BitSet$;::empty()Lscala/collection/immutable/BitSet;)()));
   }
   
   public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
@@ -55,10 +55,8 @@ public final class Lscala/collection/immutable/BitSet$; extends Ljava/lang/Objec
     return $3$;
   }
   
-  private I; hashSeed$u0020;
-  
-  private I; hashSeed() {
-    return this.(Lscala/collection/immutable/BitSet$;)hashSeed$u0020;
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/immutable/BitSet$;.MODULE$;
   }
   
   public Lscala/collection/BitSet; empty() {
@@ -69,6 +67,5 @@ public final class Lscala/collection/immutable/BitSet$; extends Ljava/lang/Objec
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/generic/BitSetFactory$class;.(Lscala/collection/generic/BitSetFactory$class;::$init$(Lscala/collection/generic/BitSetFactory;)V;)(this);
     this.(Lscala/collection/immutable/BitSet$;)empty$u0020 = (new (Lscala/collection/immutable/BitSet$BitSet1;::this(J;)V;)(0L));
-    this.(Lscala/collection/immutable/BitSet$;)hashSeed$u0020 = "BitSet".(Ljava/lang/String;::hashCode()I;)();
   }
 }

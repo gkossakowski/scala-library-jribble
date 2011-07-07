@@ -1,16 +1,16 @@
-public final class Lscala/collection/TraversableLike$$anonfun$collect$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/TraversableLike$$anonfun$collect$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; x) {
-    Ljava/lang/Object; $7$;
+    Ljava/lang/Object; $10$;
     if (this.(Lscala/collection/TraversableLike$$anonfun$collect$1;)pf$1.(Lscala/PartialFunction;::isDefinedAt(Ljava/lang/Object;)Z;)(x))
       {
-        $7$ = this.(Lscala/collection/TraversableLike$$anonfun$collect$1;)b$4.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/collection/TraversableLike$$anonfun$collect$1;)pf$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x));
+        $10$ = this.(Lscala/collection/TraversableLike$$anonfun$collect$1;)b$4.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(this.(Lscala/collection/TraversableLike$$anonfun$collect$1;)pf$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x));
       }
     else
       {
-        $7$ = Lscala/runtime/BoxedUnit;.UNIT;
+        $10$ = Lscala/runtime/BoxedUnit;.UNIT;
       }
-    return $7$;
+    return $10$;
   }
   
   private Lscala/PartialFunction; pf$1;

@@ -2,11 +2,15 @@ public final class Lscala/collection/mutable/Map$; extends Lscala/collection/gen
   public static Lscala/collection/mutable/Map$; MODULE$ = new (Lscala/collection/mutable/Map$;::this()V;)();
   
   public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
-    return (new (Lscala/collection/generic/MapFactory$MapCanBuildFrom;::this(Lscala/collection/generic/MapFactory;)V;)(this));
+    return (new (Lscala/collection/generic/GenMapFactory$MapCanBuildFrom;::this(Lscala/collection/generic/GenMapFactory;)V;)(this));
   }
   
   public Lscala/collection/mutable/Map; empty() {
     return (new (Lscala/collection/mutable/HashMap;::this()V;)());
+  }
+  
+  public Lscala/collection/GenMap; empty() {
+    return this.(Lscala/collection/mutable/Map$;::empty()Lscala/collection/mutable/Map;)();
   }
   
   public Lscala/collection/Map; empty() {

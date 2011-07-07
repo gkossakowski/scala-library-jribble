@@ -1,0 +1,22 @@
+public class Lscala/collection/TraversableOnce$OnceCanBuildFrom; extends Ljava/lang/Object; implements Lscala/collection/generic/CanBuildFrom;, Lscala/ScalaObject; {
+  
+  public Lscala/collection/mutable/Builder; newIterator() {
+    return (new (Lscala/collection/mutable/ArrayBuffer;::this()V;)()).(Lscala/collection/mutable/Builder;::mapResult(Lscala/Function1;)Lscala/collection/mutable/Builder;)((new (Lscala/collection/TraversableOnce$OnceCanBuildFrom$$anonfun$newIterator$1;::this(Lscala/collection/TraversableOnce$OnceCanBuildFrom;)V;)(this)));
+  }
+  
+  public Lscala/collection/mutable/Builder; apply(Lscala/collection/TraversableOnce; from) {
+    return this.(Lscala/collection/TraversableOnce$OnceCanBuildFrom;::newIterator()Lscala/collection/mutable/Builder;)();
+  }
+  
+  public Lscala/collection/mutable/Builder; apply() {
+    return this.(Lscala/collection/TraversableOnce$OnceCanBuildFrom;::newIterator()Lscala/collection/mutable/Builder;)();
+  }
+  
+  public Lscala/collection/mutable/Builder; apply(Ljava/lang/Object; from) {
+    return this.(Lscala/collection/TraversableOnce$OnceCanBuildFrom;::apply(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Builder;)(from.<cast>(Lscala/collection/TraversableOnce;));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

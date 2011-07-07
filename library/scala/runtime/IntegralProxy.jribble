@@ -1,0 +1,57 @@
+public abstract class Lscala/runtime/IntegralProxy; extends Lscala/runtime/ScalaWholeNumberProxy; implements Lscala/runtime/RangedProxy;, Lscala/ScalaObject; {
+  
+  private I; bitmap$priv$0 = 0;
+  
+  private Lscala/math/Integral; evidence$3;
+  
+  private Lscala/math/Integral; num$u0020;
+  
+  private Lscala/math/Integral; num() {
+    if (((this.(Lscala/runtime/IntegralProxy;)bitmap$priv$0 & 1) == 0))
+      {
+        if (((this.(Lscala/runtime/IntegralProxy;)bitmap$priv$0 & 1) == 0))
+          {
+            this.(Lscala/runtime/IntegralProxy;)num$u0020 = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::implicitly(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/runtime/IntegralProxy;)evidence$3).<cast>(Lscala/math/Integral;);
+            this.(Lscala/runtime/IntegralProxy;)bitmap$priv$0 = (this.(Lscala/runtime/IntegralProxy;)bitmap$priv$0 | 1);
+          }
+      }
+    return this.(Lscala/runtime/IntegralProxy;)num$u0020;
+  }
+  
+  public Lscala/collection/immutable/NumericRange$Exclusive; until(Ljava/lang/Object; end) {
+    return Lscala/collection/immutable/NumericRange$;.MODULE$.(Lscala/collection/immutable/NumericRange$;::apply(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/immutable/NumericRange$Exclusive;)(this.(Lscala/Proxy$Typed;::self()Ljava/lang/Object;)(), end, this.(Lscala/runtime/IntegralProxy;::num()Lscala/math/Integral;)().(Lscala/math/Numeric;::one()Ljava/lang/Object;)(), this.(Lscala/runtime/IntegralProxy;)evidence$3);
+  }
+  
+  public Lscala/collection/immutable/NumericRange$Exclusive; until(Ljava/lang/Object; end, Ljava/lang/Object; step) {
+    return Lscala/collection/immutable/NumericRange$;.MODULE$.(Lscala/collection/immutable/NumericRange$;::apply(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/immutable/NumericRange$Exclusive;)(this.(Lscala/Proxy$Typed;::self()Ljava/lang/Object;)(), end, step, this.(Lscala/runtime/IntegralProxy;)evidence$3);
+  }
+  
+  public Lscala/collection/immutable/NumericRange$Inclusive; to(Ljava/lang/Object; end) {
+    return Lscala/collection/immutable/NumericRange$;.MODULE$.(Lscala/collection/immutable/NumericRange$;::inclusive(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/immutable/NumericRange$Inclusive;)(this.(Lscala/Proxy$Typed;::self()Ljava/lang/Object;)(), end, this.(Lscala/runtime/IntegralProxy;::num()Lscala/math/Integral;)().(Lscala/math/Numeric;::one()Ljava/lang/Object;)(), this.(Lscala/runtime/IntegralProxy;)evidence$3);
+  }
+  
+  public Lscala/collection/immutable/NumericRange$Inclusive; to(Ljava/lang/Object; end, Ljava/lang/Object; step) {
+    return Lscala/collection/immutable/NumericRange$;.MODULE$.(Lscala/collection/immutable/NumericRange$;::inclusive(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/immutable/NumericRange$Inclusive;)(this.(Lscala/Proxy$Typed;::self()Ljava/lang/Object;)(), end, step, this.(Lscala/runtime/IntegralProxy;)evidence$3);
+  }
+  
+  public Lscala/collection/immutable/IndexedSeq; to(Ljava/lang/Object; end, Ljava/lang/Object; step) {
+    return this.(Lscala/runtime/IntegralProxy;::to(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/NumericRange$Inclusive;)(end, step);
+  }
+  
+  public Ljava/lang/Object; to(Ljava/lang/Object; end) {
+    return this.(Lscala/runtime/IntegralProxy;::to(Ljava/lang/Object;)Lscala/collection/immutable/NumericRange$Inclusive;)(end);
+  }
+  
+  public Lscala/collection/immutable/IndexedSeq; until(Ljava/lang/Object; end, Ljava/lang/Object; step) {
+    return this.(Lscala/runtime/IntegralProxy;::until(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/NumericRange$Exclusive;)(end, step);
+  }
+  
+  public Ljava/lang/Object; until(Ljava/lang/Object; end) {
+    return this.(Lscala/runtime/IntegralProxy;::until(Ljava/lang/Object;)Lscala/collection/immutable/NumericRange$Exclusive;)(end);
+  }
+  
+  public this(Lscala/math/Integral; evidence$3) {
+    this.(Lscala/runtime/IntegralProxy;)evidence$3 = evidence$3;
+    (Lscala/runtime/ScalaWholeNumberProxy;::super(Lscala/math/Numeric;)V;)(evidence$3);
+  }
+}

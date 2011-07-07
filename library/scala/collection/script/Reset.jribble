@@ -1,4 +1,4 @@
-public class Lscala/collection/script/Reset; extends Ljava/lang/Object; implements Lscala/collection/script/Message;, Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/collection/script/Reset; extends Ljava/lang/Object; implements Lscala/collection/script/Message;, Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   
   public Lscala/collection/Iterator; productIterator() {
@@ -7,6 +7,10 @@ public class Lscala/collection/script/Reset; extends Ljava/lang/Object; implemen
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/script/Reset; copy() {
+    return (new (Lscala/collection/script/Reset;::this()V;)());
   }
   
   public I; hashCode() {
@@ -19,16 +23,16 @@ public class Lscala/collection/script/Reset; extends Ljava/lang/Object; implemen
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp16 = x$1;
-    Z; $13$;
+    Z; $25$;
     if (temp16.<instanceof>(Lscala/collection/script/Reset;))
       {
-        $13$ = x$1.<cast>(Lscala/collection/script/Reset;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+        $25$ = x$1.<cast>(Lscala/collection/script/Reset;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
       }
     else
       {
-        $13$ = false;
+        $25$ = false;
       }
-    return ((this == x$1) || $13$);
+    return ((this == x$1) || $25$);
   }
   
   public Ljava/lang/String; productPrefix() {

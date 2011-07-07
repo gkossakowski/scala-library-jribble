@@ -1,0 +1,18 @@
+public final class Lscala/collection/mutable/UnrolledBuffer$$anonfun$writeObject$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final V; apply(Ljava/lang/Object; elem) {
+    this.(Lscala/collection/mutable/UnrolledBuffer$$anonfun$writeObject$1;)out$1.(Ljava/io/ObjectOutputStream;::writeObject(Ljava/lang/Object;)V;)(elem);
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/collection/mutable/UnrolledBuffer$$anonfun$writeObject$1;::apply(Ljava/lang/Object;)V;)(v1);
+    return Lscala/runtime/BoxedUnit;.UNIT;
+  }
+  
+  private Ljava/io/ObjectOutputStream; out$1;
+  
+  public this(Lscala/collection/mutable/UnrolledBuffer; $outer, Ljava/io/ObjectOutputStream; out$1) {
+    this.(Lscala/collection/mutable/UnrolledBuffer$$anonfun$writeObject$1;)out$1 = out$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

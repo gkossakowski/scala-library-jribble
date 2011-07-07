@@ -1,5 +1,30 @@
-public class Lscala/collection/mutable/Queue; extends Lscala/collection/mutable/MutableList; implements Lscala/collection/mutable/Cloneable;, Lscala/ScalaObject; {
+public class Lscala/collection/mutable/Queue; extends Lscala/collection/mutable/MutableList; implements Lscala/collection/generic/GenericTraversableTemplate;, Lscala/collection/mutable/Cloneable;, Lscala/Serializable;, Lscala/ScalaObject; {
+  public final static Lscala/collection/generic/CanBuildFrom; canBuildFrom() { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/mutable/Queue$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)(); }
+  public final static Lscala/Some; unapplySeq(Lscala/collection/Seq; x_0) { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/SeqFactory;::unapplySeq(Lscala/collection/Seq;)Lscala/Some;)(x_0); }
+  public final static Lscala/collection/GenTraversable; iterate(Ljava/lang/Object; x_0, I; x_1, Lscala/Function1; x_2) { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::iterate(Ljava/lang/Object;I;Lscala/Function1;)Lscala/collection/GenTraversable;)(x_0, x_1, x_2); }
+  public final static Lscala/collection/GenTraversable; range(Ljava/lang/Object; x_0, Ljava/lang/Object; x_1, Ljava/lang/Object; x_2, Lscala/math/Integral; x_3) { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::range(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/GenTraversable;)(x_0, x_1, x_2, x_3); }
+  public final static Lscala/collection/GenTraversable; range(Ljava/lang/Object; x_0, Ljava/lang/Object; x_1, Lscala/math/Integral; x_2) { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::range(Ljava/lang/Object;Ljava/lang/Object;Lscala/math/Integral;)Lscala/collection/GenTraversable;)(x_0, x_1, x_2); }
+  public final static Lscala/collection/GenTraversable; tabulate(I; x_0, I; x_1, I; x_2, I; x_3, I; x_4, Lscala/Function5; x_5) { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::tabulate(I;I;I;I;I;Lscala/Function5;)Lscala/collection/GenTraversable;)(x_0, x_1, x_2, x_3, x_4, x_5); }
+  public final static Lscala/collection/GenTraversable; tabulate(I; x_0, I; x_1, I; x_2, I; x_3, Lscala/Function4; x_4) { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::tabulate(I;I;I;I;Lscala/Function4;)Lscala/collection/GenTraversable;)(x_0, x_1, x_2, x_3, x_4); }
+  public final static Lscala/collection/GenTraversable; tabulate(I; x_0, I; x_1, I; x_2, Lscala/Function3; x_3) { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::tabulate(I;I;I;Lscala/Function3;)Lscala/collection/GenTraversable;)(x_0, x_1, x_2, x_3); }
+  public final static Lscala/collection/GenTraversable; tabulate(I; x_0, I; x_1, Lscala/Function2; x_2) { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::tabulate(I;I;Lscala/Function2;)Lscala/collection/GenTraversable;)(x_0, x_1, x_2); }
+  public final static Lscala/collection/GenTraversable; tabulate(I; x_0, Lscala/Function1; x_1) { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::tabulate(I;Lscala/Function1;)Lscala/collection/GenTraversable;)(x_0, x_1); }
+  public final static Lscala/collection/GenTraversable; fill(I; x_0, I; x_1, I; x_2, I; x_3, I; x_4, Lscala/Function0; x_5) { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::fill(I;I;I;I;I;Lscala/Function0;)Lscala/collection/GenTraversable;)(x_0, x_1, x_2, x_3, x_4, x_5); }
+  public final static Lscala/collection/GenTraversable; fill(I; x_0, I; x_1, I; x_2, I; x_3, Lscala/Function0; x_4) { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::fill(I;I;I;I;Lscala/Function0;)Lscala/collection/GenTraversable;)(x_0, x_1, x_2, x_3, x_4); }
+  public final static Lscala/collection/GenTraversable; fill(I; x_0, I; x_1, I; x_2, Lscala/Function0; x_3) { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::fill(I;I;I;Lscala/Function0;)Lscala/collection/GenTraversable;)(x_0, x_1, x_2, x_3); }
+  public final static Lscala/collection/GenTraversable; fill(I; x_0, I; x_1, Lscala/Function0; x_2) { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::fill(I;I;Lscala/Function0;)Lscala/collection/GenTraversable;)(x_0, x_1, x_2); }
+  public final static Lscala/collection/GenTraversable; fill(I; x_0, Lscala/Function0; x_1) { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::fill(I;Lscala/Function0;)Lscala/collection/GenTraversable;)(x_0, x_1); }
+  public final static Lscala/collection/GenTraversable; concat(Lscala/collection/Seq; x_0) { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/GenTraversableFactory;::concat(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(x_0); }
+  public final static Lscala/collection/GenTraversable; empty() { return Lscala/collection/mutable/Queue$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::empty()Lscala/collection/GenTraversable;)(); }
   
+  
+  public Lscala/collection/generic/GenericCompanion; companion() {
+    return Lscala/collection/mutable/Queue$;.MODULE$;
+  }
+  
+  protected Lscala/collection/mutable/Builder; newBuilder() {
+    return this.(Lscala/collection/mutable/Queue;::companion()Lscala/collection/generic/GenericCompanion;)().(Lscala/collection/generic/GenericCompanion;::newBuilder()Lscala/collection/mutable/Builder;)();
+  }
   
   public V; enqueue(Lscala/collection/Seq; elems) {
     this.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(elems);
@@ -94,7 +119,7 @@ public class Lscala/collection/mutable/Queue; extends Lscala/collection/mutable/
     Lscala/collection/mutable/Seq; $4$;
     if (this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)().(Lscala/collection/mutable/LinkedListLike;::isEmpty()Z;)())
       {
-        $4$ = Lscala/collection/mutable/Seq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::empty()Lscala/collection/Traversable;)().<cast>(Lscala/collection/mutable/Seq;);
+        $4$ = Lscala/collection/mutable/Seq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::empty()Lscala/collection/GenTraversable;)().<cast>(Lscala/collection/mutable/Seq;);
       }
     else
       {
@@ -202,10 +227,17 @@ public class Lscala/collection/mutable/Queue; extends Lscala/collection/mutable/
   }
   
   public Ljava/lang/Object; front() {
-    return this.(Lscala/collection/mutable/MutableList;::first0()Lscala/collection/mutable/LinkedList;)().(Lscala/collection/mutable/LinkedListLike;::elem()Ljava/lang/Object;)();
+    return this.(Lscala/collection/mutable/MutableList;::head()Ljava/lang/Object;)();
   }
   
   public this() {
     (Lscala/collection/mutable/MutableList;::super()V;)();
+  }
+  
+  public this(Lscala/collection/mutable/LinkedList; fst, Lscala/collection/mutable/LinkedList; lst, I; lng) {
+    (Lscala/collection/mutable/Queue;::this()V;)();
+    this.(Lscala/collection/mutable/MutableList;::first0_$eq(Lscala/collection/mutable/LinkedList;)V;)(fst);
+    this.(Lscala/collection/mutable/MutableList;::last0_$eq(Lscala/collection/mutable/LinkedList;)V;)(lst);
+    this.(Lscala/collection/mutable/MutableList;::len_$eq(I;)V;)(lng);
   }
 }

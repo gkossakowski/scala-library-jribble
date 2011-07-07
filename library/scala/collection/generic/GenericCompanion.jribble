@@ -2,14 +2,23 @@ public abstract class Lscala/collection/generic/GenericCompanion; extends Ljava/
   
   public abstract Lscala/collection/mutable/Builder; newBuilder();
   
-  public Lscala/collection/Traversable; empty() {
-    return this.(Lscala/collection/generic/GenericCompanion;::newBuilder()Lscala/collection/mutable/Builder;)().(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Traversable;);
+  public Lscala/collection/GenTraversable; empty() {
+    return this.(Lscala/collection/generic/GenericCompanion;::newBuilder()Lscala/collection/mutable/Builder;)().(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/GenTraversable;);
   }
   
-  public Lscala/collection/Traversable; apply(Lscala/collection/Seq; elems) {
-    Lscala/collection/mutable/Builder; b = this.(Lscala/collection/generic/GenericCompanion;::newBuilder()Lscala/collection/mutable/Builder;)();
-    b.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(elems);
-    return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Traversable;);
+  public Lscala/collection/GenTraversable; apply(Lscala/collection/Seq; elems) {
+    Lscala/collection/GenTraversable; $1$;
+    if (elems.(Lscala/collection/IterableLike;::isEmpty()Z;)())
+      {
+        $1$ = this.(Lscala/collection/generic/GenericCompanion;::empty()Lscala/collection/GenTraversable;)();
+      }
+    else
+      {
+        Lscala/collection/mutable/Builder; b = this.(Lscala/collection/generic/GenericCompanion;::newBuilder()Lscala/collection/mutable/Builder;)();
+        b.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(elems);
+        $1$ = b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/GenTraversable;);
+      }
+    return $1$;
   }
   
   public this() {

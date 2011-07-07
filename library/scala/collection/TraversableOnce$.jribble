@@ -1,0 +1,19 @@
+public final class Lscala/collection/TraversableOnce$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/TraversableOnce$; MODULE$ = new (Lscala/collection/TraversableOnce$;::this()V;)();
+  
+  public Lscala/collection/TraversableOnce$OnceCanBuildFrom; traversableOnceCanBuildFrom() {
+    return (new (Lscala/collection/TraversableOnce$OnceCanBuildFrom;::this()V;)());
+  }
+  
+  public Lscala/collection/TraversableOnce$MonadOps; wrapTraversableOnce(Lscala/collection/TraversableOnce; trav) {
+    return (new (Lscala/collection/TraversableOnce$MonadOps;::this(Lscala/collection/TraversableOnce;)V;)(trav));
+  }
+  
+  public Lscala/collection/TraversableOnce$FlattenOps; flattenTraversableOnce(Lscala/collection/TraversableOnce; travs, Lscala/Function1; ev) {
+    return (new (Lscala/collection/TraversableOnce$FlattenOps;::this(Lscala/collection/TraversableOnce;)V;)(this.(Lscala/collection/TraversableOnce$;::wrapTraversableOnce(Lscala/collection/TraversableOnce;)Lscala/collection/TraversableOnce$MonadOps;)(travs).(Lscala/collection/TraversableOnce$MonadOps;::map(Lscala/Function1;)Lscala/collection/TraversableOnce;)(ev)));
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

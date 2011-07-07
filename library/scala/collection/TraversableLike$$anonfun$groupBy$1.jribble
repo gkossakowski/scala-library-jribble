@@ -1,7 +1,7 @@
-public final class Lscala/collection/TraversableLike$$anonfun$groupBy$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/TraversableLike$$anonfun$groupBy$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final Lscala/collection/mutable/Builder; apply(Ljava/lang/Object; elem) {
-    Ljava/lang/Object; key = this.(Lscala/collection/TraversableLike$$anonfun$groupBy$1;)f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(elem);
+    Ljava/lang/Object; key = this.(Lscala/collection/TraversableLike$$anonfun$groupBy$1;)f$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(elem);
     Lscala/collection/mutable/Builder; bldr = this.(Lscala/collection/TraversableLike$$anonfun$groupBy$1;)m$1.(Lscala/collection/mutable/MapLike;::getOrElseUpdate(Ljava/lang/Object;Lscala/Function0;)Ljava/lang/Object;)(key, (new (Lscala/collection/TraversableLike$$anonfun$groupBy$1$$anonfun$1;::this(Lscala/collection/TraversableLike$$anonfun$groupBy$1;)V;)(this))).<cast>(Lscala/collection/mutable/Builder;);
     return bldr.(Lscala/collection/mutable/Builder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(elem);
   }
@@ -16,11 +16,11 @@ public final class Lscala/collection/TraversableLike$$anonfun$groupBy$1; extends
     return this.(Lscala/collection/TraversableLike$$anonfun$groupBy$1;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(v1);
   }
   
-  private Lscala/Function1; f$2;
+  private Lscala/Function1; f$1;
   
   private Lscala/collection/mutable/Map; m$1;
   
-  public this(Lscala/collection/TraversableLike; $outer, Lscala/Function1; f$2, Lscala/collection/mutable/Map; m$1) {
+  public this(Lscala/collection/TraversableLike; $outer, Lscala/Function1; f$1, Lscala/collection/mutable/Map; m$1) {
     if (($outer == null))
       {
         throw (new (Ljava/lang/NullPointerException;::this()V;)());
@@ -29,7 +29,7 @@ public final class Lscala/collection/TraversableLike$$anonfun$groupBy$1; extends
       {
         this.(Lscala/collection/TraversableLike$$anonfun$groupBy$1;)$outer$u0020 = $outer;
       }
-    this.(Lscala/collection/TraversableLike$$anonfun$groupBy$1;)f$2 = f$2;
+    this.(Lscala/collection/TraversableLike$$anonfun$groupBy$1;)f$1 = f$1;
     this.(Lscala/collection/TraversableLike$$anonfun$groupBy$1;)m$1 = m$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }

@@ -1,4 +1,4 @@
-public class Lscala/util/regexp/Base$Star; extends Lscala/util/regexp/Base$RegExp; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/util/regexp/Base$Star; extends Lscala/util/regexp/Base$RegExp; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   protected I; bitmap$0 = 0;
   
@@ -8,10 +8,6 @@ public class Lscala/util/regexp/Base$Star; extends Lscala/util/regexp/Base$RegEx
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Lscala/util/regexp/Base$RegExp; copy$default$1() {
-    return this.(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)();
   }
   
   private Lscala/util/regexp/Base$RegExp; r$u0020;
@@ -38,6 +34,10 @@ public class Lscala/util/regexp/Base$Star; extends Lscala/util/regexp/Base$RegEx
     return (new (Lscala/util/regexp/Base$Star;::this(Lscala/util/regexp/Base;Lscala/util/regexp/Base$RegExp;)V;)(this.(Lscala/util/regexp/Base$Star;::scala$util$regexp$Base$Star$$$outer()Lscala/util/regexp/Base;)(), r));
   }
   
+  public Lscala/util/regexp/Base$RegExp; copy$default$1() {
+    return this.(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -57,7 +57,13 @@ public class Lscala/util/regexp/Base$Star; extends Lscala/util/regexp/Base$RegEx
         Z; $4$;
         if (this.(Lscala/util/regexp/Base$Star;::gd1$1(Lscala/util/regexp/Base$RegExp;)Z;)(r$1))
           {
-            $4$ = x$1.<cast>(Lscala/util/regexp/Base$Star;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Lscala/util/regexp/Base$RegExp; $5$;
+            Z; $6$;
+            body$percent01: while(true) {
+              $6$ = x$1.<cast>(Lscala/util/regexp/Base$Star;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $4$ = $6$;
           }
         else
           {
@@ -82,16 +88,16 @@ public class Lscala/util/regexp/Base$Star; extends Lscala/util/regexp/Base$RegEx
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp4 = x$1;
-    Ljava/lang/Object; $5$;
+    Ljava/lang/Object; $7$;
     if ((temp4 == 0))
       {
-        $5$ = this.(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)();
+        $7$ = this.(Lscala/util/regexp/Base$Star;::r()Lscala/util/regexp/Base$RegExp;)();
       }
     else
       {
         throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
       }
-    return $5$;
+    return $7$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

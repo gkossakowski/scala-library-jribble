@@ -1,0 +1,23 @@
+public final class Lscala/collection/mutable/PriorityQueue$; extends Lscala/collection/generic/OrderedTraversableFactory; implements Lscala/ScalaObject;, Lscala/Serializable; {
+  public static Lscala/collection/mutable/PriorityQueue$; MODULE$ = new (Lscala/collection/mutable/PriorityQueue$;::this()V;)();
+  
+  public Lscala/collection/mutable/PriorityQueue; newBuilder(Lscala/math/Ordering; ord) {
+    return (new (Lscala/collection/mutable/PriorityQueue;::this(Lscala/math/Ordering;)V;)(ord));
+  }
+  
+  public Lscala/collection/generic/CanBuildFrom; canBuildFrom(Lscala/math/Ordering; ord) {
+    return (new (Lscala/collection/generic/OrderedTraversableFactory$GenericCanBuildFrom;::this(Lscala/collection/generic/OrderedTraversableFactory;Lscala/math/Ordering;)V;)(this, ord));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/mutable/PriorityQueue$;.MODULE$;
+  }
+  
+  public Lscala/collection/mutable/Builder; newBuilder(Lscala/math/Ordering; ord) {
+    return this.(Lscala/collection/mutable/PriorityQueue$;::newBuilder(Lscala/math/Ordering;)Lscala/collection/mutable/PriorityQueue;)(ord);
+  }
+  
+  public this() {
+    (Lscala/collection/generic/OrderedTraversableFactory;::super()V;)();
+  }
+}

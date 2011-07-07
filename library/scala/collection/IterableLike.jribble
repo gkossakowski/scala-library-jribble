@@ -1,4 +1,4 @@
-public interface Lscala/collection/IterableLike; extends Lscala/Equals;, Lscala/collection/TraversableLike;, Lscala/ScalaObject; {
+public interface Lscala/collection/IterableLike; extends Lscala/Equals;, Lscala/collection/TraversableLike;, Lscala/collection/GenIterableLike;, Lscala/ScalaObject; {
   
   public Lscala/collection/Iterable; thisCollection();
   
@@ -24,9 +24,11 @@ public interface Lscala/collection/IterableLike; extends Lscala/Equals;, Lscala/
   
   public Ljava/lang/Object; head();
   
+  public Ljava/lang/Object; slice(I; from, I; until);
+  
   public Ljava/lang/Object; take(I; n);
   
-  public Ljava/lang/Object; slice(I; from, I; until);
+  public Ljava/lang/Object; drop(I; n);
   
   public Ljava/lang/Object; takeWhile(Lscala/Function1; p);
   
@@ -42,17 +44,21 @@ public interface Lscala/collection/IterableLike; extends Lscala/Equals;, Lscala/
   
   public V; copyToArray(Ljava/lang/Object; xs, I; start, I; len);
   
+  public Ljava/lang/Object; zip(Lscala/collection/GenIterable; that, Lscala/collection/generic/CanBuildFrom; bf);
+  
   public Ljava/lang/Object; zip(Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; zipAll(Lscala/collection/GenIterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf);
   
   public Ljava/lang/Object; zipAll(Lscala/collection/Iterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf);
   
   public Ljava/lang/Object; zipWithIndex(Lscala/collection/generic/CanBuildFrom; bf);
   
+  public Z; sameElements(Lscala/collection/GenIterable; that);
+  
   public Z; sameElements(Lscala/collection/Iterable; that);
   
   public Lscala/collection/immutable/Stream; toStream();
-  
-  public Lscala/collection/Seq; toSeq();
   
   public Z; canEqual(Ljava/lang/Object; that);
   

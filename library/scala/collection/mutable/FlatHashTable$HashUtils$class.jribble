@@ -1,0 +1,33 @@
+public abstract class Lscala/collection/mutable/FlatHashTable$HashUtils$class; {
+  
+  public static final I; sizeMapBucketBitSize(Lscala/collection/mutable/FlatHashTable$HashUtils; $this) {
+    return 5;
+  }
+  
+  public static final I; sizeMapBucketSize(Lscala/collection/mutable/FlatHashTable$HashUtils; $this) {
+    return (1 << $this.(Lscala/collection/mutable/FlatHashTable$HashUtils;::sizeMapBucketBitSize()I;)());
+  }
+  
+  public static I; elemHashCode(Lscala/collection/mutable/FlatHashTable$HashUtils; $this, Ljava/lang/Object; elem) {
+    I; $6$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(elem, null))
+      {
+        throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)("Flat hash tables cannot contain null elements."));
+      }
+    else
+      {
+        $6$ = elem.(Ljava/lang/Object;::hashCode()I;)();
+      }
+    return $6$;
+  }
+  
+  public static final I; improve(Lscala/collection/mutable/FlatHashTable$HashUtils; $this, I; hcode) {
+    I; i = (hcode * -1640532531);
+    i = Ljava/lang/Integer;.(Ljava/lang/Integer;::reverseBytes(I;)I;)(i);
+    return (i * -1640532531);
+  }
+  
+  public static V; $init$(Lscala/collection/mutable/FlatHashTable$HashUtils; $this) {
+    
+  }
+}

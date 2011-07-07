@@ -1,7 +1,7 @@
-public final class Lscala/math/Ordering$$anonfun$by$1; extends Lscala/runtime/AbstractFunction2; {
+public final class Lscala/math/Ordering$$anonfun$by$1; extends Lscala/runtime/AbstractFunction2; implements Lscala/Serializable; {
   
   public final Z; apply(Ljava/lang/Object; x, Ljava/lang/Object; y) {
-    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::implicitly(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/math/Ordering$$anonfun$by$1;)evidence$1$1).<cast>(Lscala/math/Ordering;).(Lscala/math/Ordering;::lt(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/math/Ordering$$anonfun$by$1;)f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x), this.(Lscala/math/Ordering$$anonfun$by$1;)f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(y));
+    return this.(Lscala/math/Ordering$$anonfun$by$1;)ord$4.(Lscala/math/Ordering;::lt(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/math/Ordering$$anonfun$by$1;)f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(x), this.(Lscala/math/Ordering$$anonfun$by$1;)f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(y));
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {
@@ -10,11 +10,11 @@ public final class Lscala/math/Ordering$$anonfun$by$1; extends Lscala/runtime/Ab
   
   private Lscala/Function1; f$2;
   
-  private Lscala/math/Ordering; evidence$1$1;
+  private Lscala/math/Ordering; ord$4;
   
-  public this(Lscala/Function1; f$2, Lscala/math/Ordering; evidence$1$1) {
+  public this(Lscala/Function1; f$2, Lscala/math/Ordering; ord$4) {
     this.(Lscala/math/Ordering$$anonfun$by$1;)f$2 = f$2;
-    this.(Lscala/math/Ordering$$anonfun$by$1;)evidence$1$1 = evidence$1$1;
+    this.(Lscala/math/Ordering$$anonfun$by$1;)ord$4 = ord$4;
     (Lscala/runtime/AbstractFunction2;::super()V;)();
   }
 }

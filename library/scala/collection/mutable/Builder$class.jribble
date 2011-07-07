@@ -1,9 +1,5 @@
 public abstract class Lscala/collection/mutable/Builder$class; {
   
-  public static I; sizeHint$default$2(Lscala/collection/mutable/Builder; $this) {
-    return 0;
-  }
-  
   public static V; sizeHint(Lscala/collection/mutable/Builder; $this, I; size) {
     
   }
@@ -19,10 +15,14 @@ public abstract class Lscala/collection/mutable/Builder$class; {
       }
   }
   
+  public static I; sizeHint$default$2(Lscala/collection/mutable/Builder; $this) {
+    return 0;
+  }
+  
   public static V; sizeHintBounded(Lscala/collection/mutable/Builder; $this, I; size, Lscala/collection/TraversableLike; boundingColl) {
     if (boundingColl.<instanceof>(Lscala/collection/mutable/IndexedSeqLike;))
       {
-        $this.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(size).(Lscala/runtime/RichInt;::min(I;)I;)(boundingColl.(Lscala/collection/TraversableOnce;::size()I;)()));
+        $this.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(size).(Lscala/runtime/RichInt;::min(I;)I;)(boundingColl.(Lscala/collection/TraversableOnce;::size()I;)()));
       }
     else
       {

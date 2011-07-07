@@ -38,8 +38,9 @@ public abstract class Lscala/collection/mutable/ResizableArray$class; {
   
   public static V; foreach(Lscala/collection/mutable/ResizableArray; $this, Lscala/Function1; f) {
     I; i = 0;
+    I; top = $this.(Lscala/collection/SeqLike;::size()I;)();
     while$1: while(true) {
-      if ((i < $this.(Lscala/collection/SeqLike;::size()I;)()))
+      if ((i < top))
         {
           {
             f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)($this.(Lscala/collection/mutable/ResizableArray;::array()Ljava/lang/Object;[)()[i]);
@@ -56,7 +57,7 @@ public abstract class Lscala/collection/mutable/ResizableArray$class; {
   }
   
   public static V; copyToArray(Lscala/collection/mutable/ResizableArray; $this, Ljava/lang/Object; xs, I; start, I; len) {
-    I; len1 = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)(len).(Lscala/runtime/RichInt;::min(I;)I;)((Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(xs) - start))).(Lscala/runtime/RichInt;::min(I;)I;)($this.(Lscala/collection/mutable/ResizableArray;::length()I;)());
+    I; len1 = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(len).(Lscala/runtime/RichInt;::min(I;)I;)((Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(xs) - start))).(Lscala/runtime/RichInt;::min(I;)I;)($this.(Lscala/collection/mutable/ResizableArray;::length()I;)());
     Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)($this.(Lscala/collection/mutable/ResizableArray;::array()Ljava/lang/Object;[)(), 0, xs, start, len1);
   }
   
@@ -96,7 +97,7 @@ public abstract class Lscala/collection/mutable/ResizableArray$class; {
           break;
         }
         Ljava/lang/Object;[ newar = new Ljava/lang/Object;[newsize];
-        Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)($this.(Lscala/collection/mutable/ResizableArray;::array()Ljava/lang/Object;[)(), 0, newar, 0, $this.(Lscala/collection/mutable/ResizableArray;::size0()I;)());
+        Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::arraycopy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)($this.(Lscala/collection/mutable/ResizableArray;::array()Ljava/lang/Object;[)(), 0, newar, 0, $this.(Lscala/collection/mutable/ResizableArray;::size0()I;)());
         $this.(Lscala/collection/mutable/ResizableArray;::array_$eq(Ljava/lang/Object;[)V;)(newar);
       }
     else
@@ -112,11 +113,11 @@ public abstract class Lscala/collection/mutable/ResizableArray$class; {
   }
   
   public static V; copy(Lscala/collection/mutable/ResizableArray; $this, I; m, I; n, I; len) {
-    Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)($this.(Lscala/collection/mutable/ResizableArray;::array()Ljava/lang/Object;[)(), m, $this.(Lscala/collection/mutable/ResizableArray;::array()Ljava/lang/Object;[)(), n, len);
+    Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::arraycopy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)($this.(Lscala/collection/mutable/ResizableArray;::array()Ljava/lang/Object;[)(), m, $this.(Lscala/collection/mutable/ResizableArray;::array()Ljava/lang/Object;[)(), n, len);
   }
   
   public static V; $init$(Lscala/collection/mutable/ResizableArray; $this) {
-    $this.(Lscala/collection/mutable/ResizableArray;::array_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intWrapper(I;)Lscala/runtime/RichInt;)($this.(Lscala/collection/mutable/ResizableArray;::initialSize()I;)()).(Lscala/runtime/RichInt;::max(I;)I;)(1)]);
+    $this.(Lscala/collection/mutable/ResizableArray;::array_$eq(Ljava/lang/Object;[)V;)(new Ljava/lang/Object;[Lscala/math/package$;.MODULE$.(Lscala/MathCommon;::max(I;I;)I;)($this.(Lscala/collection/mutable/ResizableArray;::initialSize()I;)(), 1)]);
     $this.(Lscala/collection/mutable/ResizableArray;::size0_$eq(I;)V;)(0);
   }
 }

@@ -1,12 +1,22 @@
 public final class Lscala/collection/Map$; extends Lscala/collection/generic/MapFactory; implements Lscala/ScalaObject; {
   public static Lscala/collection/Map$; MODULE$ = new (Lscala/collection/Map$;::this()V;)();
   
+  private I; hashSeed$u0020;
+  
+  public I; hashSeed() {
+    return this.(Lscala/collection/Map$;)hashSeed$u0020;
+  }
+  
   public Lscala/collection/immutable/Map; empty() {
     return Lscala/collection/immutable/Map$;.MODULE$.(Lscala/collection/immutable/Map$;::empty()Lscala/collection/immutable/Map;)();
   }
   
   public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
-    return (new (Lscala/collection/generic/MapFactory$MapCanBuildFrom;::this(Lscala/collection/generic/MapFactory;)V;)(this));
+    return (new (Lscala/collection/generic/GenMapFactory$MapCanBuildFrom;::this(Lscala/collection/generic/GenMapFactory;)V;)(this));
+  }
+  
+  public Lscala/collection/GenMap; empty() {
+    return this.(Lscala/collection/Map$;::empty()Lscala/collection/immutable/Map;)();
   }
   
   public Lscala/collection/Map; empty() {
@@ -15,5 +25,6 @@ public final class Lscala/collection/Map$; extends Lscala/collection/generic/Map
   
   public this() {
     (Lscala/collection/generic/MapFactory;::super()V;)();
+    this.(Lscala/collection/Map$;)hashSeed$u0020 = "Map".(Ljava/lang/String;::hashCode()I;)();
   }
 }

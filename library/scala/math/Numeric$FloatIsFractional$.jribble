@@ -5,48 +5,48 @@ public final class Lscala/math/Numeric$FloatIsFractional$; extends Ljava/lang/Ob
     return Lscala/math/Ordering$FloatOrdering$class;.(Lscala/math/Ordering$FloatOrdering$class;::compare(Lscala/math/Ordering$FloatOrdering;F;F;)I;)(this, x, y);
   }
   
-  public F; plus(F; x, F; y) {
-    return Lscala/math/Numeric$FloatIsFractional$class;.(Lscala/math/Numeric$FloatIsFractional$class;::plus(Lscala/math/Numeric$FloatIsFractional;F;F;)F;)(this, x, y);
-  }
-  
-  public F; minus(F; x, F; y) {
-    return Lscala/math/Numeric$FloatIsFractional$class;.(Lscala/math/Numeric$FloatIsFractional$class;::minus(Lscala/math/Numeric$FloatIsFractional;F;F;)F;)(this, x, y);
-  }
-  
-  public F; times(F; x, F; y) {
-    return Lscala/math/Numeric$FloatIsFractional$class;.(Lscala/math/Numeric$FloatIsFractional$class;::times(Lscala/math/Numeric$FloatIsFractional;F;F;)F;)(this, x, y);
-  }
-  
   public F; div(F; x, F; y) {
     return Lscala/math/Numeric$FloatIsFractional$class;.(Lscala/math/Numeric$FloatIsFractional$class;::div(Lscala/math/Numeric$FloatIsFractional;F;F;)F;)(this, x, y);
   }
   
+  public Lscala/math/Fractional$FractionalOps; mkNumericOps(Ljava/lang/Object; lhs) {
+    return Lscala/math/Fractional$class;.(Lscala/math/Fractional$class;::mkNumericOps(Lscala/math/Fractional;Ljava/lang/Object;)Lscala/math/Fractional$FractionalOps;)(this, lhs);
+  }
+  
+  public F; plus(F; x, F; y) {
+    return Lscala/math/Numeric$FloatIsConflicted$class;.(Lscala/math/Numeric$FloatIsConflicted$class;::plus(Lscala/math/Numeric$FloatIsConflicted;F;F;)F;)(this, x, y);
+  }
+  
+  public F; minus(F; x, F; y) {
+    return Lscala/math/Numeric$FloatIsConflicted$class;.(Lscala/math/Numeric$FloatIsConflicted$class;::minus(Lscala/math/Numeric$FloatIsConflicted;F;F;)F;)(this, x, y);
+  }
+  
+  public F; times(F; x, F; y) {
+    return Lscala/math/Numeric$FloatIsConflicted$class;.(Lscala/math/Numeric$FloatIsConflicted$class;::times(Lscala/math/Numeric$FloatIsConflicted;F;F;)F;)(this, x, y);
+  }
+  
   public F; negate(F; x) {
-    return Lscala/math/Numeric$FloatIsFractional$class;.(Lscala/math/Numeric$FloatIsFractional$class;::negate(Lscala/math/Numeric$FloatIsFractional;F;)F;)(this, x);
+    return Lscala/math/Numeric$FloatIsConflicted$class;.(Lscala/math/Numeric$FloatIsConflicted$class;::negate(Lscala/math/Numeric$FloatIsConflicted;F;)F;)(this, x);
   }
   
   public F; fromInt(I; x) {
-    return Lscala/math/Numeric$FloatIsFractional$class;.(Lscala/math/Numeric$FloatIsFractional$class;::fromInt(Lscala/math/Numeric$FloatIsFractional;I;)F;)(this, x);
+    return Lscala/math/Numeric$FloatIsConflicted$class;.(Lscala/math/Numeric$FloatIsConflicted$class;::fromInt(Lscala/math/Numeric$FloatIsConflicted;I;)F;)(this, x);
   }
   
   public I; toInt(F; x) {
-    return Lscala/math/Numeric$FloatIsFractional$class;.(Lscala/math/Numeric$FloatIsFractional$class;::toInt(Lscala/math/Numeric$FloatIsFractional;F;)I;)(this, x);
+    return Lscala/math/Numeric$FloatIsConflicted$class;.(Lscala/math/Numeric$FloatIsConflicted$class;::toInt(Lscala/math/Numeric$FloatIsConflicted;F;)I;)(this, x);
   }
   
   public J; toLong(F; x) {
-    return Lscala/math/Numeric$FloatIsFractional$class;.(Lscala/math/Numeric$FloatIsFractional$class;::toLong(Lscala/math/Numeric$FloatIsFractional;F;)J;)(this, x);
+    return Lscala/math/Numeric$FloatIsConflicted$class;.(Lscala/math/Numeric$FloatIsConflicted$class;::toLong(Lscala/math/Numeric$FloatIsConflicted;F;)J;)(this, x);
   }
   
   public F; toFloat(F; x) {
-    return Lscala/math/Numeric$FloatIsFractional$class;.(Lscala/math/Numeric$FloatIsFractional$class;::toFloat(Lscala/math/Numeric$FloatIsFractional;F;)F;)(this, x);
+    return Lscala/math/Numeric$FloatIsConflicted$class;.(Lscala/math/Numeric$FloatIsConflicted$class;::toFloat(Lscala/math/Numeric$FloatIsConflicted;F;)F;)(this, x);
   }
   
   public D; toDouble(F; x) {
-    return Lscala/math/Numeric$FloatIsFractional$class;.(Lscala/math/Numeric$FloatIsFractional$class;::toDouble(Lscala/math/Numeric$FloatIsFractional;F;)D;)(this, x);
-  }
-  
-  public Lscala/math/Fractional$FractionalOps; mkNumericOps(Ljava/lang/Object; lhs) {
-    return Lscala/math/Fractional$class;.(Lscala/math/Fractional$class;::mkNumericOps(Lscala/math/Fractional;Ljava/lang/Object;)Lscala/math/Fractional$FractionalOps;)(this, lhs);
+    return Lscala/math/Numeric$FloatIsConflicted$class;.(Lscala/math/Numeric$FloatIsConflicted$class;::toDouble(Lscala/math/Numeric$FloatIsConflicted;F;)D;)(this, x);
   }
   
   public Ljava/lang/Object; zero() {
@@ -109,6 +109,10 @@ public final class Lscala/math/Numeric$FloatIsFractional$; extends Ljava/lang/Ob
     return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::mkOrderingOps(Lscala/math/Ordering;Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this, lhs);
   }
   
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/math/Numeric$FloatIsFractional$;.MODULE$;
+  }
+  
   public Lscala/math/PartialOrdering; reverse() {
     return this.(Lscala/math/Ordering;::reverse()Lscala/math/Ordering;)();
   }
@@ -117,48 +121,48 @@ public final class Lscala/math/Numeric$FloatIsFractional$; extends Ljava/lang/Ob
     return this.(Lscala/math/Ordering;::tryCompare(Ljava/lang/Object;Ljava/lang/Object;)Lscala/Some;)(x, y);
   }
   
+  public D; toDouble(Ljava/lang/Object; x) {
+    return this.(Lscala/math/Numeric$FloatIsConflicted;::toDouble(F;)D;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x));
+  }
+  
+  public F; toFloat(Ljava/lang/Object; x) {
+    return this.(Lscala/math/Numeric$FloatIsConflicted;::toFloat(F;)F;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x));
+  }
+  
+  public J; toLong(Ljava/lang/Object; x) {
+    return this.(Lscala/math/Numeric$FloatIsConflicted;::toLong(F;)J;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x));
+  }
+  
+  public I; toInt(Ljava/lang/Object; x) {
+    return this.(Lscala/math/Numeric$FloatIsConflicted;::toInt(F;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x));
+  }
+  
+  public Ljava/lang/Object; fromInt(I; x) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(this.(Lscala/math/Numeric$FloatIsConflicted;::fromInt(I;)F;)(x));
+  }
+  
+  public Ljava/lang/Object; negate(Ljava/lang/Object; x) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(this.(Lscala/math/Numeric$FloatIsConflicted;::negate(F;)F;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x)));
+  }
+  
+  public Ljava/lang/Object; times(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(this.(Lscala/math/Numeric$FloatIsConflicted;::times(F;F;)F;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(y)));
+  }
+  
+  public Ljava/lang/Object; minus(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(this.(Lscala/math/Numeric$FloatIsConflicted;::minus(F;F;)F;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(y)));
+  }
+  
+  public Ljava/lang/Object; plus(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(this.(Lscala/math/Numeric$FloatIsConflicted;::plus(F;F;)F;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(y)));
+  }
+  
   public Lscala/math/Numeric$Ops; mkNumericOps(Ljava/lang/Object; lhs) {
     return this.(Lscala/math/Fractional;::mkNumericOps(Ljava/lang/Object;)Lscala/math/Fractional$FractionalOps;)(lhs);
   }
   
-  public D; toDouble(Ljava/lang/Object; x) {
-    return this.(Lscala/math/Numeric$FloatIsFractional;::toDouble(F;)D;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x));
-  }
-  
-  public F; toFloat(Ljava/lang/Object; x) {
-    return this.(Lscala/math/Numeric$FloatIsFractional;::toFloat(F;)F;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x));
-  }
-  
-  public J; toLong(Ljava/lang/Object; x) {
-    return this.(Lscala/math/Numeric$FloatIsFractional;::toLong(F;)J;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x));
-  }
-  
-  public I; toInt(Ljava/lang/Object; x) {
-    return this.(Lscala/math/Numeric$FloatIsFractional;::toInt(F;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x));
-  }
-  
-  public Ljava/lang/Object; fromInt(I; x) {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(this.(Lscala/math/Numeric$FloatIsFractional;::fromInt(I;)F;)(x));
-  }
-  
-  public Ljava/lang/Object; negate(Ljava/lang/Object; x) {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(this.(Lscala/math/Numeric$FloatIsFractional;::negate(F;)F;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x)));
-  }
-  
   public Ljava/lang/Object; div(Ljava/lang/Object; x, Ljava/lang/Object; y) {
     return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(this.(Lscala/math/Numeric$FloatIsFractional;::div(F;F;)F;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(y)));
-  }
-  
-  public Ljava/lang/Object; times(Ljava/lang/Object; x, Ljava/lang/Object; y) {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(this.(Lscala/math/Numeric$FloatIsFractional;::times(F;F;)F;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(y)));
-  }
-  
-  public Ljava/lang/Object; minus(Ljava/lang/Object; x, Ljava/lang/Object; y) {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(this.(Lscala/math/Numeric$FloatIsFractional;::minus(F;F;)F;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(y)));
-  }
-  
-  public Ljava/lang/Object; plus(Ljava/lang/Object; x, Ljava/lang/Object; y) {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToFloat(F;)Ljava/lang/Float;)(this.(Lscala/math/Numeric$FloatIsFractional;::plus(F;F;)F;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(x), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(y)));
   }
   
   public I; compare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
@@ -170,6 +174,7 @@ public final class Lscala/math/Numeric$FloatIsFractional$; extends Ljava/lang/Ob
     Lscala/math/PartialOrdering$class;.(Lscala/math/PartialOrdering$class;::$init$(Lscala/math/PartialOrdering;)V;)(this);
     Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::$init$(Lscala/math/Ordering;)V;)(this);
     Lscala/math/Numeric$class;.(Lscala/math/Numeric$class;::$init$(Lscala/math/Numeric;)V;)(this);
+    Lscala/math/Numeric$FloatIsConflicted$class;.(Lscala/math/Numeric$FloatIsConflicted$class;::$init$(Lscala/math/Numeric$FloatIsConflicted;)V;)(this);
     Lscala/math/Fractional$class;.(Lscala/math/Fractional$class;::$init$(Lscala/math/Fractional;)V;)(this);
     Lscala/math/Numeric$FloatIsFractional$class;.(Lscala/math/Numeric$FloatIsFractional$class;::$init$(Lscala/math/Numeric$FloatIsFractional;)V;)(this);
     Lscala/math/Ordering$FloatOrdering$class;.(Lscala/math/Ordering$FloatOrdering$class;::$init$(Lscala/math/Ordering$FloatOrdering;)V;)(this);

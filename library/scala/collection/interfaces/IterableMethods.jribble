@@ -4,17 +4,21 @@ public interface Lscala/collection/interfaces/IterableMethods; extends Lscala/co
   
   public Lscala/collection/Iterable; dropRight(I; n);
   
-  public Z; sameElements(Lscala/collection/Iterable; that);
+  public Lscala/collection/Iterator; grouped(I; size);
   
-  public Lscala/collection/Iterable; sortWith(Lscala/Function2; lt, Lscala/reflect/ClassManifest; m);
+  public Z; sameElements(Lscala/collection/GenIterable; that);
+  
+  public Lscala/collection/Iterator; sliding(I; size);
+  
+  public Lscala/collection/Iterator; sliding(I; size, I; step);
   
   public Lscala/collection/Iterable; takeRight(I; n);
   
-  public Ljava/lang/Object; zipAll(Lscala/collection/Iterable; that, Ljava/lang/Object; e1, Ljava/lang/Object; e2, Lscala/collection/generic/CanBuildFrom; bf);
+  public Ljava/lang/Object; zipAll(Lscala/collection/GenIterable; that, Ljava/lang/Object; e1, Ljava/lang/Object; e2, Lscala/collection/generic/CanBuildFrom; bf);
   
   public Ljava/lang/Object; zipWithIndex(Lscala/collection/generic/CanBuildFrom; bf);
   
-  public Ljava/lang/Object; zip(Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf);
+  public Ljava/lang/Object; zip(Lscala/collection/GenIterable; that, Lscala/collection/generic/CanBuildFrom; bf);
   
   public Lscala/collection/IterableView; view();
   

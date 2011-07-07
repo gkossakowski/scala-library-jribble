@@ -1,0 +1,26 @@
+public abstract class Lscala/collection/ViewMkString$class; {
+  
+  public static Lscala/collection/Seq; thisSeq(Lscala/collection/ViewMkString; $this) {
+    return (new (Lscala/collection/mutable/ArrayBuffer;::this()V;)()).(Lscala/collection/mutable/ArrayBuffer;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/ArrayBuffer;)($this.<cast>(Lscala/collection/TraversableOnce;)).(Lscala/collection/mutable/ArrayBuffer;::result()Lscala/collection/mutable/ArrayBuffer;)();
+  }
+  
+  public static Ljava/lang/String; mkString(Lscala/collection/ViewMkString; $this) {
+    return $this.<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;)Ljava/lang/String;)("");
+  }
+  
+  public static Ljava/lang/String; mkString(Lscala/collection/ViewMkString; $this, Ljava/lang/String; sep) {
+    return $this.<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)("", sep, "");
+  }
+  
+  public static Ljava/lang/String; mkString(Lscala/collection/ViewMkString; $this, Ljava/lang/String; start, Ljava/lang/String; sep, Ljava/lang/String; end) {
+    return $this.(Lscala/collection/ViewMkString;::thisSeq()Lscala/collection/Seq;)().(Lscala/collection/TraversableOnce;::addString(Lscala/collection/mutable/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)((new (Lscala/collection/mutable/StringBuilder;::this()V;)()), start, sep, end).(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)();
+  }
+  
+  public static Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/ViewMkString; $this, Lscala/collection/mutable/StringBuilder; b, Ljava/lang/String; start, Ljava/lang/String; sep, Ljava/lang/String; end) {
+    return b.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(start).(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("...").(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(end);
+  }
+  
+  public static V; $init$(Lscala/collection/ViewMkString; $this) {
+    
+  }
+}

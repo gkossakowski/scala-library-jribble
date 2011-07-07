@@ -1,144 +1,116 @@
-public final class Lscala/runtime/RichInt; extends Ljava/lang/Object; implements Lscala/Proxy;, Lscala/math/Ordered;, Lscala/ScalaObject; {
+public final class Lscala/runtime/RichInt; extends Lscala/runtime/ScalaNumberProxy; implements Lscala/runtime/RangedProxy;, Lscala/ScalaObject; {
   
-  public Z; $less(Ljava/lang/Object; that) {
-    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  private I; self$u0020;
+  
+  public I; self() {
+    return this.(Lscala/runtime/RichInt;)self$u0020;
   }
   
-  public Z; $greater(Ljava/lang/Object; that) {
-    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$greater(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  public Z; isWhole() {
+    return true;
   }
   
-  public Z; $less$eq(Ljava/lang/Object; that) {
-    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less$eq(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  public Lscala/collection/immutable/Range; until(I; end) {
+    return Lscala/collection/immutable/Range$;.MODULE$.(Lscala/collection/immutable/Range$;::apply(I;I;)Lscala/collection/immutable/Range;)(this.(Lscala/runtime/RichInt;::self()I;)(), end);
   }
   
-  public Z; $greater$eq(Ljava/lang/Object; that) {
-    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$greater$eq(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
+  public Lscala/collection/immutable/Range; until(I; end, I; step) {
+    return Lscala/collection/immutable/Range$;.MODULE$.(Lscala/collection/immutable/Range$;::apply(I;I;I;)Lscala/collection/immutable/Range;)(this.(Lscala/runtime/RichInt;::self()I;)(), end, step);
   }
   
-  public I; compareTo(Ljava/lang/Object; that) {
-    return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::compareTo(Lscala/math/Ordered;Ljava/lang/Object;)I;)(this, that);
+  public Lscala/collection/immutable/Range$Inclusive; to(I; end) {
+    return Lscala/collection/immutable/Range$;.MODULE$.(Lscala/collection/immutable/Range$;::inclusive(I;I;)Lscala/collection/immutable/Range$Inclusive;)(this.(Lscala/runtime/RichInt;::self()I;)(), end);
   }
   
-  public I; hashCode() {
-    return Lscala/Proxy$class;.(Lscala/Proxy$class;::hashCode(Lscala/Proxy;)I;)(this);
+  public Lscala/collection/immutable/Range$Inclusive; to(I; end, I; step) {
+    return Lscala/collection/immutable/Range$;.MODULE$.(Lscala/collection/immutable/Range$;::inclusive(I;I;I;)Lscala/collection/immutable/Range$Inclusive;)(this.(Lscala/runtime/RichInt;::self()I;)(), end, step);
   }
   
-  public Z; equals(Ljava/lang/Object; that) {
-    return Lscala/Proxy$class;.(Lscala/Proxy$class;::equals(Lscala/Proxy;Ljava/lang/Object;)Z;)(this, that);
-  }
-  
-  public Ljava/lang/String; toString() {
-    return Lscala/Proxy$class;.(Lscala/Proxy$class;::toString(Lscala/Proxy;)Ljava/lang/String;)(this);
-  }
-  
-  private I; start$u0020;
-  
-  public I; start() {
-    return this.(Lscala/runtime/RichInt;)start$u0020;
-  }
-  
-  public Ljava/lang/Object; self() {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/runtime/RichInt;::start()I;)());
-  }
-  
-  public I; compare(I; that) {
+  public I; min(I; that) {
     I; $1$;
-    if ((this.(Lscala/runtime/RichInt;::start()I;)() < that))
+    if ((this.(Lscala/runtime/RichInt;::self()I;)() < that))
       {
-        $1$ = -1;
+        $1$ = this.(Lscala/runtime/RichInt;::self()I;)();
       }
     else
       {
-        I; $2$;
-        if ((this.(Lscala/runtime/RichInt;::start()I;)() > that))
-          {
-            $2$ = 1;
-          }
-        else
-          {
-            $2$ = 0;
-          }
-        $1$ = $2$;
+        $1$ = that;
       }
     return $1$;
   }
   
-  public Lscala/collection/immutable/Range$ByOne; until(I; end) {
-    return Lscala/collection/immutable/Range$;.MODULE$.(Lscala/collection/immutable/Range$;::apply(I;I;)Lscala/collection/immutable/Range$ByOne;)(this.(Lscala/runtime/RichInt;::start()I;)(), end);
-  }
-  
-  public Lscala/collection/immutable/Range; until(I; end, I; step) {
-    return Lscala/collection/immutable/Range$;.MODULE$.(Lscala/collection/immutable/Range$;::apply(I;I;I;)Lscala/collection/immutable/Range;)(this.(Lscala/runtime/RichInt;::start()I;)(), end, step);
-  }
-  
-  public Lscala/collection/immutable/Range$Inclusive; to(I; end) {
-    return Lscala/collection/immutable/Range$;.MODULE$.(Lscala/collection/immutable/Range$;::inclusive(I;I;)Lscala/collection/immutable/Range$Inclusive;)(this.(Lscala/runtime/RichInt;::start()I;)(), end);
-  }
-  
-  public Lscala/collection/immutable/Range$Inclusive; to(I; end, I; step) {
-    return Lscala/collection/immutable/Range$;.MODULE$.(Lscala/collection/immutable/Range$;::inclusive(I;I;I;)Lscala/collection/immutable/Range$Inclusive;)(this.(Lscala/runtime/RichInt;::start()I;)(), end, step);
-  }
-  
-  public I; min(I; that) {
-    I; $3$;
-    if ((this.(Lscala/runtime/RichInt;::start()I;)() < that))
+  public I; max(I; that) {
+    I; $2$;
+    if ((this.(Lscala/runtime/RichInt;::self()I;)() > that))
       {
-        $3$ = this.(Lscala/runtime/RichInt;::start()I;)();
+        $2$ = this.(Lscala/runtime/RichInt;::self()I;)();
       }
     else
       {
-        $3$ = that;
+        $2$ = that;
+      }
+    return $2$;
+  }
+  
+  public I; abs() {
+    I; $3$;
+    if ((this.(Lscala/runtime/RichInt;::self()I;)() < 0))
+      {
+        $3$ = -(this.(Lscala/runtime/RichInt;::self()I;)());
+      }
+    else
+      {
+        $3$ = this.(Lscala/runtime/RichInt;::self()I;)();
       }
     return $3$;
   }
   
-  public I; max(I; that) {
-    I; $4$;
-    if ((this.(Lscala/runtime/RichInt;::start()I;)() > that))
-      {
-        $4$ = this.(Lscala/runtime/RichInt;::start()I;)();
-      }
-    else
-      {
-        $4$ = that;
-      }
-    return $4$;
-  }
-  
-  public I; abs() {
-    I; $5$;
-    if ((this.(Lscala/runtime/RichInt;::start()I;)() < 0))
-      {
-        $5$ = -(this.(Lscala/runtime/RichInt;::start()I;)());
-      }
-    else
-      {
-        $5$ = this.(Lscala/runtime/RichInt;::start()I;)();
-      }
-    return $5$;
-  }
-  
   public Ljava/lang/String; toBinaryString() {
-    return Ljava/lang/Integer;.(Ljava/lang/Integer;::toBinaryString(I;)Ljava/lang/String;)(this.(Lscala/runtime/RichInt;::start()I;)());
+    return Ljava/lang/Integer;.(Ljava/lang/Integer;::toBinaryString(I;)Ljava/lang/String;)(this.(Lscala/runtime/RichInt;::self()I;)());
   }
   
   public Ljava/lang/String; toHexString() {
-    return Ljava/lang/Integer;.(Ljava/lang/Integer;::toHexString(I;)Ljava/lang/String;)(this.(Lscala/runtime/RichInt;::start()I;)());
+    return Ljava/lang/Integer;.(Ljava/lang/Integer;::toHexString(I;)Ljava/lang/String;)(this.(Lscala/runtime/RichInt;::self()I;)());
   }
   
   public Ljava/lang/String; toOctalString() {
-    return Ljava/lang/Integer;.(Ljava/lang/Integer;::toOctalString(I;)Ljava/lang/String;)(this.(Lscala/runtime/RichInt;::start()I;)());
+    return Ljava/lang/Integer;.(Ljava/lang/Integer;::toOctalString(I;)Ljava/lang/String;)(this.(Lscala/runtime/RichInt;::self()I;)());
   }
   
-  public I; compare(Ljava/lang/Object; that) {
-    return this.(Lscala/runtime/RichInt;::compare(I;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(that));
+  public Ljava/lang/Object; abs() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/runtime/RichInt;::abs()I;)());
   }
   
-  public this(I; start) {
-    this.(Lscala/runtime/RichInt;)start$u0020 = start;
-    (Ljava/lang/Object;::super()V;)();
-    Lscala/Proxy$class;.(Lscala/Proxy$class;::$init$(Lscala/Proxy;)V;)(this);
-    Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$init$(Lscala/math/Ordered;)V;)(this);
+  public Ljava/lang/Object; max(Ljava/lang/Object; that) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/runtime/RichInt;::max(I;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(that)));
+  }
+  
+  public Ljava/lang/Object; min(Ljava/lang/Object; that) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/runtime/RichInt;::min(I;)I;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(that)));
+  }
+  
+  public Lscala/collection/immutable/IndexedSeq; to(Ljava/lang/Object; end, Ljava/lang/Object; step) {
+    return this.(Lscala/runtime/RichInt;::to(I;I;)Lscala/collection/immutable/Range$Inclusive;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(end), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(step));
+  }
+  
+  public Ljava/lang/Object; to(Ljava/lang/Object; end) {
+    return this.(Lscala/runtime/RichInt;::to(I;)Lscala/collection/immutable/Range$Inclusive;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(end));
+  }
+  
+  public Lscala/collection/immutable/IndexedSeq; until(Ljava/lang/Object; end, Ljava/lang/Object; step) {
+    return this.(Lscala/runtime/RichInt;::until(I;I;)Lscala/collection/immutable/Range;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(end), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(step));
+  }
+  
+  public Ljava/lang/Object; until(Ljava/lang/Object; end) {
+    return this.(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(end));
+  }
+  
+  public Ljava/lang/Object; self() {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/runtime/RichInt;::self()I;)());
+  }
+  
+  public this(I; self) {
+    this.(Lscala/runtime/RichInt;)self$u0020 = self;
+    (Lscala/runtime/ScalaNumberProxy;::super(Lscala/math/Numeric;)V;)(Lscala/math/Numeric$IntIsIntegral$;.MODULE$);
   }
 }

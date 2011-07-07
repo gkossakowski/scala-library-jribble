@@ -20,8 +20,8 @@ public abstract class Lscala/collection/TraversableProxyLike$class; {
     return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::hasDefiniteSize()Z;)();
   }
   
-  public static Ljava/lang/Object; $plus$plus(Lscala/collection/TraversableProxyLike; $this, Lscala/collection/TraversableOnce; xs, Lscala/collection/generic/CanBuildFrom; bf) {
-    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::$plus$plus(Lscala/collection/TraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(xs, bf);
+  public static Ljava/lang/Object; $plus$plus(Lscala/collection/TraversableProxyLike; $this, Lscala/collection/GenTraversableOnce; xs, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().(Lscala/collection/TraversableLike;::$plus$plus(Lscala/collection/GenTraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(xs, bf);
   }
   
   public static Ljava/lang/Object; map(Lscala/collection/TraversableProxyLike; $this, Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf) {

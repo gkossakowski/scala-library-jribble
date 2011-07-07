@@ -17,7 +17,7 @@ public abstract class Lscala/collection/generic/Sorted$class; {
   }
   
   public static Lscala/collection/generic/Sorted; to(Lscala/collection/generic/Sorted; $this, Ljava/lang/Object; to) {
-    Lscala/collection/Iterator; i = $this.(Lscala/collection/generic/Sorted;::keySet()Lscala/collection/SortedSet;)().(Lscala/collection/SortedSetLike;::from(Ljava/lang/Object;)Lscala/collection/SortedSet;)(to).(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    Lscala/collection/Iterator; i = $this.(Lscala/collection/generic/Sorted;::keySet()Lscala/collection/SortedSet;)().(Lscala/collection/SortedSetLike;::from(Ljava/lang/Object;)Lscala/collection/SortedSet;)(to).(Lscala/collection/GenSetLike;::iterator()Lscala/collection/Iterator;)();
     if (i.(Lscala/collection/Iterator;::isEmpty()Z;)())
       {
         return $this.(Lscala/collection/generic/Sorted;::repr()Lscala/collection/generic/Sorted;)();
@@ -49,7 +49,7 @@ public abstract class Lscala/collection/generic/Sorted$class; {
   }
   
   public static Z; hasAll(Lscala/collection/generic/Sorted; $this, Lscala/collection/Iterator; j) {
-    Lscala/collection/Iterator; i = $this.(Lscala/collection/generic/Sorted;::keySet()Lscala/collection/SortedSet;)().(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+    Lscala/collection/Iterator; i = $this.(Lscala/collection/generic/Sorted;::keySet()Lscala/collection/SortedSet;)().(Lscala/collection/GenSetLike;::iterator()Lscala/collection/Iterator;)();
     if (i.(Lscala/collection/Iterator;::isEmpty()Z;)())
       {
         return j.(Lscala/collection/Iterator;::isEmpty()Z;)();

@@ -1,0 +1,31 @@
+public abstract class Lscala/collection/GenSeqViewLike$Prepended$class; {
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/GenSeqViewLike$Prepended; $this) {
+    return Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::single(Ljava/lang/Object;)Lscala/collection/Iterator;)($this.(Lscala/collection/GenSeqViewLike$Prepended;::fst()Ljava/lang/Object;)()).(Lscala/collection/Iterator;::$plus$plus(Lscala/Function0;)Lscala/collection/Iterator;)((new (Lscala/collection/GenSeqViewLike$Prepended$$anonfun$iterator$1;::this(Lscala/collection/GenSeqViewLike$Prepended;)V;)($this)));
+  }
+  
+  public static I; length(Lscala/collection/GenSeqViewLike$Prepended; $this) {
+    return (1 + $this.(Lscala/collection/GenSeqViewLike$Prepended;::scala$collection$GenSeqViewLike$Prepended$$$outer()Lscala/collection/GenSeqViewLike;)().(Lscala/collection/GenSeqLike;::length()I;)());
+  }
+  
+  public static Ljava/lang/Object; apply(Lscala/collection/GenSeqViewLike$Prepended; $this, I; idx) {
+    Ljava/lang/Object; $13$;
+    if ((idx == 0))
+      {
+        $13$ = $this.(Lscala/collection/GenSeqViewLike$Prepended;::fst()Ljava/lang/Object;)();
+      }
+    else
+      {
+        $13$ = $this.(Lscala/collection/GenSeqViewLike$Prepended;::scala$collection$GenSeqViewLike$Prepended$$$outer()Lscala/collection/GenSeqViewLike;)().(Lscala/collection/GenSeqLike;::apply(I;)Ljava/lang/Object;)((idx - 1));
+      }
+    return $13$;
+  }
+  
+  public static final Ljava/lang/String; viewIdentifier(Lscala/collection/GenSeqViewLike$Prepended; $this) {
+    return "A";
+  }
+  
+  public static V; $init$(Lscala/collection/GenSeqViewLike$Prepended; $this) {
+    
+  }
+}

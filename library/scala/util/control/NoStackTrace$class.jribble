@@ -1,7 +1,16 @@
 public abstract class Lscala/util/control/NoStackTrace$class; {
   
   public static Ljava/lang/Throwable; fillInStackTrace(Lscala/util/control/NoStackTrace; $this) {
-    return $this.<cast>(Ljava/lang/Throwable;);
+    Ljava/lang/Throwable; $1$;
+    if (Lscala/util/control/NoStackTrace$;.MODULE$.(Lscala/util/control/NoStackTrace$;::noSuppression()Z;)())
+      {
+        $1$ = $this.(Lscala/util/control/NoStackTrace;::scala$util$control$NoStackTrace$$super$fillInStackTrace()Ljava/lang/Throwable;)();
+      }
+    else
+      {
+        $1$ = $this.<cast>(Ljava/lang/Throwable;);
+      }
+    return $1$;
   }
   
   public static V; $init$(Lscala/util/control/NoStackTrace; $this) {

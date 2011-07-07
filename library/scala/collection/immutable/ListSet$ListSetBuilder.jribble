@@ -1,0 +1,88 @@
+public class Lscala/collection/immutable/ListSet$ListSetBuilder; extends Ljava/lang/Object; implements Lscala/collection/mutable/Builder;, Lscala/ScalaObject; {
+  
+  public V; sizeHint(I; size) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint(Lscala/collection/mutable/Builder;I;)V;)(this, size);
+  }
+  
+  public V; sizeHint(Lscala/collection/TraversableLike; coll, I; delta) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint(Lscala/collection/mutable/Builder;Lscala/collection/TraversableLike;I;)V;)(this, coll, delta);
+  }
+  
+  public V; sizeHintBounded(I; size, Lscala/collection/TraversableLike; boundingColl) {
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHintBounded(Lscala/collection/mutable/Builder;I;Lscala/collection/TraversableLike;)V;)(this, size, boundingColl);
+  }
+  
+  public Lscala/collection/mutable/Builder; mapResult(Lscala/Function1; f) {
+    return Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::mapResult(Lscala/collection/mutable/Builder;Lscala/Function1;)Lscala/collection/mutable/Builder;)(this, f);
+  }
+  
+  public I; sizeHint$default$2() {
+    return Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::sizeHint$default$2(Lscala/collection/mutable/Builder;)I;)(this);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem1, Ljava/lang/Object; elem2, Lscala/collection/Seq; elems) {
+    return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$eq(Lscala/collection/generic/Growable;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/Seq;)Lscala/collection/generic/Growable;)(this, elem1, elem2, elems);
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$plus$eq(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, xs);
+  }
+  
+  private Lscala/collection/mutable/ListBuffer; elems$u0020;
+  
+  protected Lscala/collection/mutable/ListBuffer; elems() {
+    return this.(Lscala/collection/immutable/ListSet$ListSetBuilder;)elems$u0020;
+  }
+  
+  private Lscala/collection/mutable/HashSet; seen$u0020;
+  
+  protected Lscala/collection/mutable/HashSet; seen() {
+    return this.(Lscala/collection/immutable/ListSet$ListSetBuilder;)seen$u0020;
+  }
+  
+  public Lscala/collection/immutable/ListSet$ListSetBuilder; $plus$eq(Ljava/lang/Object; x) {
+    if (!(this.(Lscala/collection/immutable/ListSet$ListSetBuilder;::seen()Lscala/collection/mutable/HashSet;)().(Lscala/collection/GenSetLike;::apply(Ljava/lang/Object;)Z;)(x)))
+      {
+        this.(Lscala/collection/immutable/ListSet$ListSetBuilder;::elems()Lscala/collection/mutable/ListBuffer;)().(Lscala/collection/mutable/ListBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ListBuffer;)(x);
+        this.(Lscala/collection/immutable/ListSet$ListSetBuilder;::seen()Lscala/collection/mutable/HashSet;)().(Lscala/collection/mutable/HashSet;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/HashSet;)(x);
+      }
+    else
+      {
+        
+      }
+    return this;
+  }
+  
+  public V; clear() {
+    this.(Lscala/collection/immutable/ListSet$ListSetBuilder;::elems()Lscala/collection/mutable/ListBuffer;)().(Lscala/collection/mutable/ListBuffer;::clear()V;)();
+    this.(Lscala/collection/immutable/ListSet$ListSetBuilder;::seen()Lscala/collection/mutable/HashSet;)().(Lscala/collection/mutable/HashSet;::clear()V;)();
+  }
+  
+  public Lscala/collection/immutable/ListSet; result() {
+    return this.(Lscala/collection/immutable/ListSet$ListSetBuilder;::elems()Lscala/collection/mutable/ListBuffer;)().(Lscala/collection/generic/TraversableForwarder;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(Lscala/collection/immutable/ListSet$;.MODULE$.(Lscala/collection/immutable/ListSet$;::empty()Lscala/collection/immutable/ListSet;)(), (new (Lscala/collection/immutable/ListSet$ListSetBuilder$$anonfun$result$1;::this(Lscala/collection/immutable/ListSet$ListSetBuilder;)V;)(this))).<cast>(Lscala/collection/immutable/ListSet;);
+  }
+  
+  public Ljava/lang/Object; result() {
+    return this.(Lscala/collection/immutable/ListSet$ListSetBuilder;::result()Lscala/collection/immutable/ListSet;)();
+  }
+  
+  public Lscala/collection/generic/Growable; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/immutable/ListSet$ListSetBuilder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/immutable/ListSet$ListSetBuilder;)(elem);
+  }
+  
+  public Lscala/collection/mutable/Builder; $plus$eq(Ljava/lang/Object; elem) {
+    return this.(Lscala/collection/immutable/ListSet$ListSetBuilder;::$plus$eq(Ljava/lang/Object;)Lscala/collection/immutable/ListSet$ListSetBuilder;)(elem);
+  }
+  
+  public this(Lscala/collection/immutable/ListSet; initial) {
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$init$(Lscala/collection/generic/Growable;)V;)(this);
+    Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::$init$(Lscala/collection/mutable/Builder;)V;)(this);
+    this.(Lscala/collection/immutable/ListSet$ListSetBuilder;)elems$u0020 = (new (Lscala/collection/mutable/ListBuffer;::this()V;)()).(Lscala/collection/mutable/ListBuffer;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/mutable/ListBuffer;)(initial).(Lscala/collection/SeqLike;::reverse()Ljava/lang/Object;)().<cast>(Lscala/collection/mutable/ListBuffer;);
+    this.(Lscala/collection/immutable/ListSet$ListSetBuilder;)seen$u0020 = (new (Lscala/collection/mutable/HashSet;::this()V;)()).(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(initial).<cast>(Lscala/collection/mutable/HashSet;);
+  }
+  
+  public this() {
+    (Lscala/collection/immutable/ListSet$ListSetBuilder;::this(Lscala/collection/immutable/ListSet;)V;)(Lscala/collection/immutable/ListSet$;.MODULE$.(Lscala/collection/immutable/ListSet$;::empty()Lscala/collection/immutable/ListSet;)());
+  }
+}

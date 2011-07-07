@@ -1,4 +1,4 @@
-public final class Lscala/collection/immutable/IntMap$Bin$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/collection/immutable/IntMap$Bin$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/collection/immutable/IntMap$Bin$; MODULE$ = new (Lscala/collection/immutable/IntMap$Bin$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -6,20 +6,24 @@ public final class Lscala/collection/immutable/IntMap$Bin$; extends Ljava/lang/O
   }
   
   public Lscala/Option; unapply(Lscala/collection/immutable/IntMap$Bin; x$0) {
-    Lscala/Option; $107$;
+    Lscala/Option; $111$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $107$ = Lscala/None$;.MODULE$;
+        $111$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $107$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$0.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)()), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$0.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)()), x$0.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)(), x$0.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)()))));
+        $111$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$0.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)()), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$0.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)()), x$0.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)(), x$0.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)()))));
       }
-    return $107$;
+    return $111$;
   }
   
   public Lscala/collection/immutable/IntMap$Bin; apply(I; prefix, I; mask, Lscala/collection/immutable/IntMap; left, Lscala/collection/immutable/IntMap; right) {
     return (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(prefix, mask, left, right));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/immutable/IntMap$Bin$;.MODULE$;
   }
   
   public this() {

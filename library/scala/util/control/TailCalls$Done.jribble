@@ -1,4 +1,4 @@
-public class Lscala/util/control/TailCalls$Done; extends Lscala/util/control/TailCalls$TailRec; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/util/control/TailCalls$Done; extends Lscala/util/control/TailCalls$TailRec; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   public Lscala/collection/Iterator; productIterator() {
     return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
@@ -6,10 +6,6 @@ public class Lscala/util/control/TailCalls$Done; extends Lscala/util/control/Tai
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/Object; copy$default$1() {
-    return this.(Lscala/util/control/TailCalls$Done;::result()Ljava/lang/Object;)();
   }
   
   private Ljava/lang/Object; result$u0020;
@@ -22,6 +18,10 @@ public class Lscala/util/control/TailCalls$Done; extends Lscala/util/control/Tai
     return (new (Lscala/util/control/TailCalls$Done;::this(Ljava/lang/Object;)V;)(result));
   }
   
+  public Ljava/lang/Object; copy$default$1() {
+    return this.(Lscala/util/control/TailCalls$Done;::result()Ljava/lang/Object;)();
+  }
+  
   public I; hashCode() {
     return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
   }
@@ -32,28 +32,34 @@ public class Lscala/util/control/TailCalls$Done; extends Lscala/util/control/Tai
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp10 = x$1;
-    Z; $6$;
+    Z; $9$;
     if (temp10.<instanceof>(Lscala/util/control/TailCalls$Done;))
       {
         Lscala/util/control/TailCalls$Done; temp11 = temp10.<cast>(Lscala/util/control/TailCalls$Done;);
         Ljava/lang/Object; temp12 = temp11.(Lscala/util/control/TailCalls$Done;::result()Ljava/lang/Object;)();
         Ljava/lang/Object; result$1 = temp12;
-        Z; $7$;
+        Z; $10$;
         if (this.(Lscala/util/control/TailCalls$Done;::gd2$1(Ljava/lang/Object;)Z;)(result$1))
           {
-            $7$ = x$1.<cast>(Lscala/util/control/TailCalls$Done;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/Object; $11$;
+            Z; $12$;
+            body$percent04: while(true) {
+              $12$ = x$1.<cast>(Lscala/util/control/TailCalls$Done;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $10$ = $12$;
           }
         else
           {
-            $7$ = false;
+            $10$ = false;
           }
-        $6$ = $7$;
+        $9$ = $10$;
       }
     else
       {
-        $6$ = false;
+        $9$ = false;
       }
-    return ((this == x$1) || $6$);
+    return ((this == x$1) || $9$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -66,16 +72,16 @@ public class Lscala/util/control/TailCalls$Done; extends Lscala/util/control/Tai
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp13 = x$1;
-    Ljava/lang/Object; $8$;
+    Ljava/lang/Object; $13$;
     if ((temp13 == 0))
       {
-        $8$ = this.(Lscala/util/control/TailCalls$Done;::result()Ljava/lang/Object;)();
+        $13$ = this.(Lscala/util/control/TailCalls$Done;::result()Ljava/lang/Object;)();
       }
     else
       {
         throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
       }
-    return $8$;
+    return $13$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

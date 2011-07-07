@@ -4,22 +4,6 @@ public final class Lscala/math/Ordering$$anon$7; extends Ljava/lang/Object; impl
     return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::tryCompare(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Lscala/Some;)(this, x, y);
   }
   
-  public Z; lteq(Ljava/lang/Object; x, Ljava/lang/Object; y) {
-    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::lteq(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
-  }
-  
-  public Z; gteq(Ljava/lang/Object; x, Ljava/lang/Object; y) {
-    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::gteq(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
-  }
-  
-  public Z; lt(Ljava/lang/Object; x, Ljava/lang/Object; y) {
-    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::lt(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
-  }
-  
-  public Z; gt(Ljava/lang/Object; x, Ljava/lang/Object; y) {
-    return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::gt(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
-  }
-  
   public Z; equiv(Ljava/lang/Object; x, Ljava/lang/Object; y) {
     return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::equiv(Lscala/math/Ordering;Ljava/lang/Object;Ljava/lang/Object;)Z;)(this, x, y);
   }
@@ -44,26 +28,42 @@ public final class Lscala/math/Ordering$$anon$7; extends Ljava/lang/Object; impl
     return Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::mkOrderingOps(Lscala/math/Ordering;Ljava/lang/Object;)Lscala/math/Ordering$Ops;)(this, lhs);
   }
   
-  public I; compare(Lscala/Tuple2; x, Lscala/Tuple2; y) {
-    I; compare1 = this.(Lscala/math/Ordering$$anon$7;)ord1$8.(Lscala/math/Ordering;::compare(Ljava/lang/Object;Ljava/lang/Object;)I;)(x.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), y.(Lscala/Tuple2;::_1()Ljava/lang/Object;)());
-    if ((compare1 != 0))
+  public I; compare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    I; $17$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/math/Ordering$$anon$7;)cmp$2.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(x, y)))
       {
-        return compare1;
+        $17$ = -1;
       }
     else
       {
-        
+        I; $18$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/math/Ordering$$anon$7;)cmp$2.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(y, x)))
+          {
+            $18$ = 1;
+          }
+        else
+          {
+            $18$ = 0;
+          }
+        $17$ = $18$;
       }
-    I; compare2 = this.(Lscala/math/Ordering$$anon$7;)ord2$8.(Lscala/math/Ordering;::compare(Ljava/lang/Object;Ljava/lang/Object;)I;)(x.(Lscala/Tuple2;::_2()Ljava/lang/Object;)(), y.(Lscala/Tuple2;::_2()Ljava/lang/Object;)());
-    if ((compare2 != 0))
-      {
-        return compare2;
-      }
-    else
-      {
-        
-      }
-    return 0;
+    return $17$;
+  }
+  
+  public Z; lt(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/math/Ordering$$anon$7;)cmp$2.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(x, y));
+  }
+  
+  public Z; gt(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/math/Ordering$$anon$7;)cmp$2.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(y, x));
+  }
+  
+  public Z; gteq(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return !(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/math/Ordering$$anon$7;)cmp$2.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(x, y)));
+  }
+  
+  public Z; lteq(Ljava/lang/Object; x, Ljava/lang/Object; y) {
+    return !(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/math/Ordering$$anon$7;)cmp$2.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(y, x)));
   }
   
   public Lscala/math/PartialOrdering; reverse() {
@@ -74,17 +74,10 @@ public final class Lscala/math/Ordering$$anon$7; extends Ljava/lang/Object; impl
     return this.(Lscala/math/Ordering;::tryCompare(Ljava/lang/Object;Ljava/lang/Object;)Lscala/Some;)(x, y);
   }
   
-  public I; compare(Ljava/lang/Object; x, Ljava/lang/Object; y) {
-    return this.(Lscala/math/Ordering$$anon$7;::compare(Lscala/Tuple2;Lscala/Tuple2;)I;)(x.<cast>(Lscala/Tuple2;), y.<cast>(Lscala/Tuple2;));
-  }
+  private Lscala/Function2; cmp$2;
   
-  private Lscala/math/Ordering; ord1$8;
-  
-  private Lscala/math/Ordering; ord2$8;
-  
-  public this(Lscala/math/Ordering; ord1$8, Lscala/math/Ordering; ord2$8) {
-    this.(Lscala/math/Ordering$$anon$7;)ord1$8 = ord1$8;
-    this.(Lscala/math/Ordering$$anon$7;)ord2$8 = ord2$8;
+  public this(Lscala/Function2; cmp$2) {
+    this.(Lscala/math/Ordering$$anon$7;)cmp$2 = cmp$2;
     (Ljava/lang/Object;::super()V;)();
     Lscala/math/PartialOrdering$class;.(Lscala/math/PartialOrdering$class;::$init$(Lscala/math/PartialOrdering;)V;)(this);
     Lscala/math/Ordering$class;.(Lscala/math/Ordering$class;::$init$(Lscala/math/Ordering;)V;)(this);

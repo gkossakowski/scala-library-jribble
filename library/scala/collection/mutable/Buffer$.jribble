@@ -2,7 +2,7 @@ public final class Lscala/collection/mutable/Buffer$; extends Lscala/collection/
   public static Lscala/collection/mutable/Buffer$; MODULE$ = new (Lscala/collection/mutable/Buffer$;::this()V;)();
   
   public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
-    return (new (Lscala/collection/generic/TraversableFactory$GenericCanBuildFrom;::this(Lscala/collection/generic/TraversableFactory;)V;)(this));
+    return this.(Lscala/collection/generic/GenTraversableFactory;::ReusableCBF()Lscala/collection/generic/GenTraversableFactory$ReusableCBF$;)();
   }
   
   public Lscala/collection/mutable/Builder; newBuilder() {

@@ -1,20 +1,24 @@
-public final class Lscala/collection/mutable/ArrayOps$$anonfun$flatten$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/mutable/ArrayOps$$anonfun$flatten$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
-  public final Lscala/collection/mutable/Builder; apply(Ljava/lang/Object; xs) {
-    return this.(Lscala/collection/mutable/ArrayOps$$anonfun$flatten$1;)b$1.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::genericArrayOps(Ljava/lang/Object;)Lscala/collection/mutable/ArrayOps;)(this.(Lscala/collection/mutable/ArrayOps$$anonfun$flatten$1;)asArray$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(xs))).<cast>(Lscala/collection/mutable/Builder;);
+  public final I; apply(Ljava/lang/Object; x0$1) {
+    Ljava/lang/Object; temp1 = x0$1;
+    I; $2$;
+    if (temp1.<instanceof>(Lscala/collection/mutable/IndexedSeq;))
+      {
+        $2$ = temp1.<cast>(Lscala/collection/mutable/IndexedSeq;).(Lscala/collection/SeqLike;::size()I;)();
+      }
+    else
+      {
+        $2$ = 0;
+      }
+    return $2$;
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
-    return this.(Lscala/collection/mutable/ArrayOps$$anonfun$flatten$1;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)(v1);
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/collection/mutable/ArrayOps$$anonfun$flatten$1;::apply(Ljava/lang/Object;)I;)(v1));
   }
   
-  private Lscala/Function1; asArray$1;
-  
-  private Lscala/collection/mutable/Builder; b$1;
-  
-  public this(Lscala/collection/mutable/ArrayOps; $outer, Lscala/Function1; asArray$1, Lscala/collection/mutable/Builder; b$1) {
-    this.(Lscala/collection/mutable/ArrayOps$$anonfun$flatten$1;)asArray$1 = asArray$1;
-    this.(Lscala/collection/mutable/ArrayOps$$anonfun$flatten$1;)b$1 = b$1;
+  public this(Lscala/collection/mutable/ArrayOps; $outer) {
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

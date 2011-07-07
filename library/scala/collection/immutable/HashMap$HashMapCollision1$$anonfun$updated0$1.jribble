@@ -1,39 +1,15 @@
-public final class Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$updated0$1; extends Lscala/runtime/AbstractFunction1; {
+public final class Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$updated0$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
-  public final V; apply(Lscala/Tuple2; x$1) {
-    Lscala/Tuple2; temp1 = x$1;
-    if ((temp1 != null))
-      {
-        this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$updated0$1;)m$1.(Lscala/runtime/ObjectRef;)elem = this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$updated0$1;)m$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/HashMap;).(Lscala/collection/immutable/HashMap;::updated0(Ljava/lang/Object;I;I;Ljava/lang/Object;Lscala/Tuple2;)Lscala/collection/immutable/HashMap;)(temp1.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$updated0$1;)$outer$u0020.(Lscala/collection/immutable/HashMap$HashMapCollision1;::hash()I;)(), this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$updated0$1;)level$1, temp1.(Lscala/Tuple2;::_2()Ljava/lang/Object;)(), null);
-      }
-    else
-      {
-        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp1));
-      }
+  public final Z; apply(Lscala/Tuple2; check$ifrefutable$1) {
+    Lscala/Tuple2; temp1 = check$ifrefutable$1;
+    return (temp1 != null);
   }
-  
-  private Lscala/collection/immutable/HashMap$HashMapCollision1; $outer$u0020;
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
-    this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$updated0$1;::apply(Lscala/Tuple2;)V;)(v1.<cast>(Lscala/Tuple2;));
-    return Lscala/runtime/BoxedUnit;.UNIT;
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$updated0$1;::apply(Lscala/Tuple2;)Z;)(v1.<cast>(Lscala/Tuple2;)));
   }
   
-  private I; level$1;
-  
-  private Lscala/runtime/ObjectRef; m$1;
-  
-  public this(Lscala/collection/immutable/HashMap$HashMapCollision1; $outer, I; level$1, Lscala/runtime/ObjectRef; m$1) {
-    if (($outer == null))
-      {
-        throw (new (Ljava/lang/NullPointerException;::this()V;)());
-      }
-    else
-      {
-        this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$updated0$1;)$outer$u0020 = $outer;
-      }
-    this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$updated0$1;)level$1 = level$1;
-    this.(Lscala/collection/immutable/HashMap$HashMapCollision1$$anonfun$updated0$1;)m$1 = m$1;
+  public this(Lscala/collection/immutable/HashMap$HashMapCollision1; $outer) {
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

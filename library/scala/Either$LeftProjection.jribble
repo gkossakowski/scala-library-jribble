@@ -1,4 +1,4 @@
-public final class Lscala/Either$LeftProjection; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Product; {
+public final class Lscala/Either$LeftProjection; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   public Lscala/collection/Iterator; productIterator() {
     return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
@@ -6,10 +6,6 @@ public final class Lscala/Either$LeftProjection; extends Ljava/lang/Object; impl
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Lscala/Either; copy$default$1() {
-    return this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
   }
   
   private Lscala/Either; e$u0020;
@@ -20,14 +16,14 @@ public final class Lscala/Either$LeftProjection; extends Ljava/lang/Object; impl
   
   public Ljava/lang/Object; get() {
     Lscala/Either; temp34 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
-    Ljava/lang/Object; $22$;
+    Ljava/lang/Object; $26$;
     if (temp34.<instanceof>(Lscala/Left;))
       {
-        $22$ = temp34.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)();
+        $26$ = temp34.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)();
       }
     else
       {
-        Lscala/runtime/Nothing$; $23$;
+        Lscala/runtime/Nothing$; $27$;
         if (temp34.<instanceof>(Lscala/Right;))
           {
             throw (new (Ljava/util/NoSuchElementException;::this(Ljava/lang/String;)V;)("Either.left.value on Right"));
@@ -37,230 +33,234 @@ public final class Lscala/Either$LeftProjection; extends Ljava/lang/Object; impl
             throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp34));
           }
       }
-    return $22$;
+    return $26$;
   }
   
   public Ljava/lang/Object; foreach(Lscala/Function1; f) {
     Lscala/Either; temp39 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
-    Ljava/lang/Object; $24$;
+    Ljava/lang/Object; $28$;
     if (temp39.<instanceof>(Lscala/Left;))
       {
-        $24$ = f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp39.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)());
+        $28$ = f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp39.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)());
       }
     else
       {
-        Ljava/lang/Object; $25$;
+        Ljava/lang/Object; $29$;
         if (temp39.<instanceof>(Lscala/Right;))
           {
-            $25$ = Lscala/runtime/BoxedUnit;.UNIT;
+            $29$ = Lscala/runtime/BoxedUnit;.UNIT;
           }
         else
           {
             throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp39));
-          }
-        $24$ = $25$;
-      }
-    return $24$;
-  }
-  
-  public Ljava/lang/Object; getOrElse(Lscala/Function0; or) {
-    Lscala/Either; temp44 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
-    Ljava/lang/Object; $26$;
-    if (temp44.<instanceof>(Lscala/Left;))
-      {
-        $26$ = temp44.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)();
-      }
-    else
-      {
-        Ljava/lang/Object; $27$;
-        if (temp44.<instanceof>(Lscala/Right;))
-          {
-            $27$ = or.(Lscala/Function0;::apply()Ljava/lang/Object;)();
-          }
-        else
-          {
-            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp44));
-          }
-        $26$ = $27$;
-      }
-    return $26$;
-  }
-  
-  public Z; forall(Lscala/Function1; f) {
-    Lscala/Either; temp49 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
-    Z; $28$;
-    if (temp49.<instanceof>(Lscala/Left;))
-      {
-        $28$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp49.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)()));
-      }
-    else
-      {
-        Z; $29$;
-        if (temp49.<instanceof>(Lscala/Right;))
-          {
-            $29$ = true;
-          }
-        else
-          {
-            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp49));
           }
         $28$ = $29$;
       }
     return $28$;
   }
   
-  public Z; exists(Lscala/Function1; f) {
-    Lscala/Either; temp54 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
-    Z; $30$;
-    if (temp54.<instanceof>(Lscala/Left;))
+  public Ljava/lang/Object; getOrElse(Lscala/Function0; or) {
+    Lscala/Either; temp44 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
+    Ljava/lang/Object; $30$;
+    if (temp44.<instanceof>(Lscala/Left;))
       {
-        $30$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp54.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)()));
+        $30$ = temp44.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)();
       }
     else
       {
-        Z; $31$;
-        if (temp54.<instanceof>(Lscala/Right;))
+        Ljava/lang/Object; $31$;
+        if (temp44.<instanceof>(Lscala/Right;))
           {
-            $31$ = false;
+            $31$ = or.(Lscala/Function0;::apply()Ljava/lang/Object;)();
           }
         else
           {
-            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp54));
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp44));
           }
         $30$ = $31$;
       }
     return $30$;
   }
   
-  public Lscala/Either; flatMap(Lscala/Function1; f) {
-    Lscala/Either; temp59 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
-    Lscala/Either; $32$;
-    if (temp59.<instanceof>(Lscala/Left;))
+  public Z; forall(Lscala/Function1; f) {
+    Lscala/Either; temp49 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
+    Z; $32$;
+    if (temp49.<instanceof>(Lscala/Left;))
       {
-        $32$ = f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp59.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)()).<cast>(Lscala/Either;);
+        $32$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp49.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)()));
       }
     else
       {
-        Lscala/Either; $33$;
-        if (temp59.<instanceof>(Lscala/Right;))
+        Z; $33$;
+        if (temp49.<instanceof>(Lscala/Right;))
           {
-            $33$ = (new (Lscala/Right;::this(Ljava/lang/Object;)V;)(temp59.<cast>(Lscala/Right;).(Lscala/Right;::b()Ljava/lang/Object;)()));
+            $33$ = true;
           }
         else
           {
-            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp59));
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp49));
           }
         $32$ = $33$;
       }
     return $32$;
   }
   
-  public Lscala/Either; map(Lscala/Function1; f) {
-    Lscala/Either; temp64 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
-    Lscala/Either; $34$;
-    if (temp64.<instanceof>(Lscala/Left;))
+  public Z; exists(Lscala/Function1; f) {
+    Lscala/Either; temp54 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
+    Z; $34$;
+    if (temp54.<instanceof>(Lscala/Left;))
       {
-        $34$ = (new (Lscala/Left;::this(Ljava/lang/Object;)V;)(f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp64.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)())));
+        $34$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp54.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)()));
       }
     else
       {
-        Lscala/Either; $35$;
-        if (temp64.<instanceof>(Lscala/Right;))
+        Z; $35$;
+        if (temp54.<instanceof>(Lscala/Right;))
           {
-            $35$ = (new (Lscala/Right;::this(Ljava/lang/Object;)V;)(temp64.<cast>(Lscala/Right;).(Lscala/Right;::b()Ljava/lang/Object;)()));
+            $35$ = false;
           }
         else
           {
-            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp64));
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp54));
           }
         $34$ = $35$;
       }
     return $34$;
   }
   
+  public Lscala/Either; flatMap(Lscala/Function1; f) {
+    Lscala/Either; temp59 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
+    Lscala/Either; $36$;
+    if (temp59.<instanceof>(Lscala/Left;))
+      {
+        $36$ = f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp59.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)()).<cast>(Lscala/Either;);
+      }
+    else
+      {
+        Lscala/Either; $37$;
+        if (temp59.<instanceof>(Lscala/Right;))
+          {
+            $37$ = (new (Lscala/Right;::this(Ljava/lang/Object;)V;)(temp59.<cast>(Lscala/Right;).(Lscala/Right;::b()Ljava/lang/Object;)()));
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp59));
+          }
+        $36$ = $37$;
+      }
+    return $36$;
+  }
+  
+  public Lscala/Either; map(Lscala/Function1; f) {
+    Lscala/Either; temp64 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
+    Lscala/Either; $38$;
+    if (temp64.<instanceof>(Lscala/Left;))
+      {
+        $38$ = (new (Lscala/Left;::this(Ljava/lang/Object;)V;)(f.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(temp64.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)())));
+      }
+    else
+      {
+        Lscala/Either; $39$;
+        if (temp64.<instanceof>(Lscala/Right;))
+          {
+            $39$ = (new (Lscala/Right;::this(Ljava/lang/Object;)V;)(temp64.<cast>(Lscala/Right;).(Lscala/Right;::b()Ljava/lang/Object;)()));
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp64));
+          }
+        $38$ = $39$;
+      }
+    return $38$;
+  }
+  
   public Lscala/Option; filter(Lscala/Function1; p) {
     Lscala/Either; temp69 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
-    Lscala/Option; $36$;
+    Lscala/Option; $40$;
     if (temp69.<instanceof>(Lscala/Left;))
       {
         Lscala/Left; temp70 = temp69.<cast>(Lscala/Left;);
         Ljava/lang/Object; temp71 = temp70.(Lscala/Left;::a()Ljava/lang/Object;)();
         Ljava/lang/Object; a = temp71;
-        Lscala/Option; $37$;
+        Lscala/Option; $41$;
         if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(p.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(a)))
           {
-            $37$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Left;::this(Ljava/lang/Object;)V;)(a))));
+            $41$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Left;::this(Ljava/lang/Object;)V;)(a))));
           }
         else
           {
-            $37$ = Lscala/None$;.MODULE$;
+            $41$ = Lscala/None$;.MODULE$;
           }
-        $36$ = $37$;
-      }
-    else
-      {
-        Lscala/Option; $38$;
-        if (temp69.<instanceof>(Lscala/Right;))
-          {
-            $38$ = Lscala/None$;.MODULE$;
-          }
-        else
-          {
-            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp69));
-          }
-        $36$ = $38$;
-      }
-    return $36$;
-  }
-  
-  public Lscala/collection/Seq; toSeq() {
-    Lscala/Either; temp74 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
-    Lscala/collection/Seq; $39$;
-    if (temp74.<instanceof>(Lscala/Left;))
-      {
-        $39$ = Lscala/collection/Seq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/Traversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{temp74.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)()})).<cast>(Lscala/collection/Seq;);
-      }
-    else
-      {
-        Lscala/collection/Seq; $40$;
-        if (temp74.<instanceof>(Lscala/Right;))
-          {
-            $40$ = Lscala/collection/Seq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::empty()Lscala/collection/Traversable;)().<cast>(Lscala/collection/Seq;);
-          }
-        else
-          {
-            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp74));
-          }
-        $39$ = $40$;
-      }
-    return $39$;
-  }
-  
-  public Lscala/Option; toOption() {
-    Lscala/Either; temp79 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
-    Lscala/Option; $41$;
-    if (temp79.<instanceof>(Lscala/Left;))
-      {
-        $41$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(temp79.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)()));
+        $40$ = $41$;
       }
     else
       {
         Lscala/Option; $42$;
-        if (temp79.<instanceof>(Lscala/Right;))
+        if (temp69.<instanceof>(Lscala/Right;))
           {
             $42$ = Lscala/None$;.MODULE$;
           }
         else
           {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp69));
+          }
+        $40$ = $42$;
+      }
+    return $40$;
+  }
+  
+  public Lscala/collection/Seq; toSeq() {
+    Lscala/Either; temp74 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
+    Lscala/collection/Seq; $43$;
+    if (temp74.<instanceof>(Lscala/Left;))
+      {
+        $43$ = Lscala/collection/Seq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{temp74.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)()})).<cast>(Lscala/collection/Seq;);
+      }
+    else
+      {
+        Lscala/collection/Seq; $44$;
+        if (temp74.<instanceof>(Lscala/Right;))
+          {
+            $44$ = Lscala/collection/Seq$;.MODULE$.(Lscala/collection/generic/GenericCompanion;::empty()Lscala/collection/GenTraversable;)().<cast>(Lscala/collection/Seq;);
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp74));
+          }
+        $43$ = $44$;
+      }
+    return $43$;
+  }
+  
+  public Lscala/Option; toOption() {
+    Lscala/Either; temp79 = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
+    Lscala/Option; $45$;
+    if (temp79.<instanceof>(Lscala/Left;))
+      {
+        $45$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(temp79.<cast>(Lscala/Left;).(Lscala/Left;::a()Ljava/lang/Object;)()));
+      }
+    else
+      {
+        Lscala/Option; $46$;
+        if (temp79.<instanceof>(Lscala/Right;))
+          {
+            $46$ = Lscala/None$;.MODULE$;
+          }
+        else
+          {
             throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp79));
           }
-        $41$ = $42$;
+        $45$ = $46$;
       }
-    return $41$;
+    return $45$;
   }
   
   public Lscala/Either$LeftProjection; copy(Lscala/Either; e) {
     return (new (Lscala/Either$LeftProjection;::this(Lscala/Either;)V;)(e));
+  }
+  
+  public Lscala/Either; copy$default$1() {
+    return this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
   }
   
   public I; hashCode() {
@@ -273,28 +273,34 @@ public final class Lscala/Either$LeftProjection; extends Ljava/lang/Object; impl
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp84 = x$1;
-    Z; $43$;
+    Z; $47$;
     if (temp84.<instanceof>(Lscala/Either$LeftProjection;))
       {
         Lscala/Either$LeftProjection; temp85 = temp84.<cast>(Lscala/Either$LeftProjection;);
         Lscala/Either; temp86 = temp85.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
         Lscala/Either; e$1 = temp86;
-        Z; $44$;
+        Z; $48$;
         if (this.(Lscala/Either$LeftProjection;::gd3$1(Lscala/Either;)Z;)(e$1))
           {
-            $44$ = x$1.<cast>(Lscala/Either$LeftProjection;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Lscala/Either; $49$;
+            Z; $50$;
+            body$percent020: while(true) {
+              $50$ = x$1.<cast>(Lscala/Either$LeftProjection;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $48$ = $50$;
           }
         else
           {
-            $44$ = false;
+            $48$ = false;
           }
-        $43$ = $44$;
+        $47$ = $48$;
       }
     else
       {
-        $43$ = false;
+        $47$ = false;
       }
-    return ((this == x$1) || $43$);
+    return ((this == x$1) || $47$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -307,16 +313,16 @@ public final class Lscala/Either$LeftProjection; extends Ljava/lang/Object; impl
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp87 = x$1;
-    Ljava/lang/Object; $45$;
+    Ljava/lang/Object; $51$;
     if ((temp87 == 0))
       {
-        $45$ = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
+        $51$ = this.(Lscala/Either$LeftProjection;::e()Lscala/Either;)();
       }
     else
       {
         throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
       }
-    return $45$;
+    return $51$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

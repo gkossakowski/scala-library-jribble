@@ -1,0 +1,11 @@
+public final class Lscala/collection/immutable/Queue$EmptyQueue$; extends Lscala/collection/immutable/Queue; implements Lscala/ScalaObject; {
+  public static Lscala/collection/immutable/Queue$EmptyQueue$; MODULE$ = new (Lscala/collection/immutable/Queue$EmptyQueue$;::this()V;)();
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/immutable/Queue$EmptyQueue$;.MODULE$;
+  }
+  
+  public this() {
+    (Lscala/collection/immutable/Queue;::super(Lscala/collection/immutable/List;Lscala/collection/immutable/List;)V;)(Lscala/collection/immutable/Nil$;.MODULE$, Lscala/collection/immutable/Nil$;.MODULE$);
+  }
+}

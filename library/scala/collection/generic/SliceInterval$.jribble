@@ -1,0 +1,22 @@
+public final class Lscala/collection/generic/SliceInterval$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/generic/SliceInterval$; MODULE$ = new (Lscala/collection/generic/SliceInterval$;::this()V;)();
+  
+  public Lscala/collection/generic/SliceInterval; apply(I; from, I; until) {
+    I; lo = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(from).(Lscala/runtime/RichInt;::max(I;)I;)(0);
+    I; hi = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(until).(Lscala/runtime/RichInt;::max(I;)I;)(0);
+    Lscala/collection/generic/SliceInterval; $2$;
+    if ((hi <= lo))
+      {
+        $2$ = (new (Lscala/collection/generic/SliceInterval;::this(I;I;)V;)(lo, lo));
+      }
+    else
+      {
+        $2$ = (new (Lscala/collection/generic/SliceInterval;::this(I;I;)V;)(lo, hi));
+      }
+    return $2$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

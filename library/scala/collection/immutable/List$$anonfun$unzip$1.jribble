@@ -1,34 +1,44 @@
-public final class Lscala/collection/immutable/List$$anonfun$unzip$1; extends Lscala/runtime/AbstractFunction2; {
+public final class Lscala/collection/immutable/List$$anonfun$unzip$1; extends Lscala/runtime/AbstractFunction2; implements Lscala/Serializable; {
   
   public final Lscala/Tuple2; apply(Lscala/Tuple2; x0$1, Lscala/Tuple2; x1$1) {
-    Lscala/Tuple2; tp1 = x0$1;
-    Lscala/Tuple2; tp2 = x1$1;
-    Lscala/Tuple2; $26$;
-    if ((tp1 != null))
+    Lscala/Tuple2; temp27 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(x0$1, x1$1));
+    Lscala/Tuple2; $29$;
+    if ((temp27 != null))
       {
-        Ljava/lang/Object; temp27 = tp1.(Lscala/Tuple2;::_1()Ljava/lang/Object;)();
-        Ljava/lang/Object; temp28 = tp1.(Lscala/Tuple2;::_2()Ljava/lang/Object;)();
-        Lscala/Tuple2; $27$;
-        if ((tp2 != null))
+        Lscala/Tuple2; temp28 = temp27.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/Tuple2;);
+        Lscala/Tuple2; temp29 = temp27.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/Tuple2;);
+        Lscala/Tuple2; $30$;
+        if ((temp28 != null))
           {
-            Ljava/lang/Object; x = temp27;
-            Ljava/lang/Object; y = temp28;
-            Ljava/lang/Object; x$9 = x;
-            Lscala/collection/immutable/List; $28$ = tp2.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$9);
-            Ljava/lang/Object; x$10 = y;
-            $27$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)($28$, tp2.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$10)));
+            Ljava/lang/Object; temp30 = temp28.(Lscala/Tuple2;::_1()Ljava/lang/Object;)();
+            Ljava/lang/Object; temp31 = temp28.(Lscala/Tuple2;::_2()Ljava/lang/Object;)();
+            Lscala/Tuple2; $31$;
+            if ((temp29 != null))
+              {
+                Ljava/lang/Object; x = temp30;
+                Ljava/lang/Object; y = temp31;
+                Ljava/lang/Object; x$8 = x;
+                Lscala/collection/immutable/List; $32$ = temp29.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$8);
+                Ljava/lang/Object; x$9 = y;
+                $31$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)($32$, temp29.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$9)));
+              }
+            else
+              {
+                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp27));
+              }
+            $30$ = $31$;
           }
         else
           {
-            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp1, tp2))));
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp27));
           }
-        $26$ = $27$;
+        $29$ = $30$;
       }
     else
       {
-        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tp1, tp2))));
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp27));
       }
-    return $26$;
+    return $29$;
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {

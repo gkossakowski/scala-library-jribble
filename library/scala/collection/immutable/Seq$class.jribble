@@ -4,6 +4,18 @@ public abstract class Lscala/collection/immutable/Seq$class; {
     return Lscala/collection/immutable/Seq$;.MODULE$;
   }
   
+  public static Lscala/collection/immutable/Seq; toSeq(Lscala/collection/immutable/Seq; $this) {
+    return $this;
+  }
+  
+  public static Lscala/collection/immutable/Seq; seq(Lscala/collection/immutable/Seq; $this) {
+    return $this;
+  }
+  
+  public static Lscala/collection/parallel/Combiner; parCombiner(Lscala/collection/immutable/Seq; $this) {
+    return Lscala/collection/parallel/immutable/ParSeq$;.MODULE$.(Lscala/collection/parallel/immutable/ParSeq$;::newCombiner()Lscala/collection/parallel/Combiner;)();
+  }
+  
   public static V; $init$(Lscala/collection/immutable/Seq; $this) {
     
   }

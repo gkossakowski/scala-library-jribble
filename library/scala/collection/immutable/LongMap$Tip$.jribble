@@ -1,4 +1,4 @@
-public final class Lscala/collection/immutable/LongMap$Tip$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+public final class Lscala/collection/immutable/LongMap$Tip$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/collection/immutable/LongMap$Tip$; MODULE$ = new (Lscala/collection/immutable/LongMap$Tip$;::this()V;)();
   
   public final Ljava/lang/String; toString() {
@@ -20,6 +20,10 @@ public final class Lscala/collection/immutable/LongMap$Tip$; extends Ljava/lang/
   
   public Lscala/collection/immutable/LongMap$Tip; apply(J; key, Ljava/lang/Object; value) {
     return (new (Lscala/collection/immutable/LongMap$Tip;::this(J;Ljava/lang/Object;)V;)(key, value));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/immutable/LongMap$Tip$;.MODULE$;
   }
   
   public this() {

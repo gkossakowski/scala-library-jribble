@@ -4,7 +4,7 @@ public interface Lscala/collection/immutable/StreamViewLike; extends Lscala/coll
   
   public Lscala/collection/immutable/StreamViewLike$Transformed; newForced(Lscala/Function0; xs);
   
-  public Lscala/collection/immutable/StreamViewLike$Transformed; newAppended(Lscala/collection/Traversable; that);
+  public Lscala/collection/immutable/StreamViewLike$Transformed; newAppended(Lscala/collection/GenTraversable; that);
   
   public Lscala/collection/immutable/StreamViewLike$Transformed; newMapped(Lscala/Function1; f);
   
@@ -12,19 +12,21 @@ public interface Lscala/collection/immutable/StreamViewLike; extends Lscala/coll
   
   public Lscala/collection/immutable/StreamViewLike$Transformed; newFiltered(Lscala/Function1; p);
   
-  public Lscala/collection/immutable/StreamViewLike$Transformed; newSliced(I; _from, I; _until);
+  public Lscala/collection/immutable/StreamViewLike$Transformed; newSliced(Lscala/collection/generic/SliceInterval; _endpoints);
   
   public Lscala/collection/immutable/StreamViewLike$Transformed; newDroppedWhile(Lscala/Function1; p);
   
   public Lscala/collection/immutable/StreamViewLike$Transformed; newTakenWhile(Lscala/Function1; p);
   
-  public Lscala/collection/immutable/StreamViewLike$Transformed; newZipped(Lscala/collection/Iterable; that);
+  public Lscala/collection/immutable/StreamViewLike$Transformed; newZipped(Lscala/collection/GenIterable; that);
   
-  public Lscala/collection/immutable/StreamViewLike$Transformed; newZippedAll(Lscala/collection/Iterable; that, Ljava/lang/Object; _thisElem, Ljava/lang/Object; _thatElem);
+  public Lscala/collection/immutable/StreamViewLike$Transformed; newZippedAll(Lscala/collection/GenIterable; that, Ljava/lang/Object; _thisElem, Ljava/lang/Object; _thatElem);
   
   public Lscala/collection/immutable/StreamViewLike$Transformed; newReversed();
   
-  public Lscala/collection/immutable/StreamViewLike$Transformed; newPatched(I; _from, Lscala/collection/Seq; _patch, I; _replaced);
+  public Lscala/collection/immutable/StreamViewLike$Transformed; newPatched(I; _from, Lscala/collection/GenSeq; _patch, I; _replaced);
   
   public Lscala/collection/immutable/StreamViewLike$Transformed; newPrepended(Ljava/lang/Object; elem);
+  
+  public Ljava/lang/String; stringPrefix();
 }

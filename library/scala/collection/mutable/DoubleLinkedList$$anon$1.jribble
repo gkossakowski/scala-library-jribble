@@ -28,6 +28,10 @@ public final class Lscala/collection/mutable/DoubleLinkedList$$anon$1; extends L
     return Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$plus$plus$eq(Lscala/collection/generic/Growable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(this, xs);
   }
   
+  private Lscala/collection/mutable/DoubleLinkedList; emptyList() {
+    return (new (Lscala/collection/mutable/DoubleLinkedList;::this()V;)());
+  }
+  
   private Lscala/collection/mutable/DoubleLinkedList; current$u0020;
   
   private Lscala/collection/mutable/DoubleLinkedList; current() {
@@ -39,20 +43,19 @@ public final class Lscala/collection/mutable/DoubleLinkedList$$anon$1; extends L
   }
   
   public Lscala/collection/mutable/DoubleLinkedList$$anon$1; $plus$eq(Ljava/lang/Object; elem) {
-    Lscala/collection/mutable/DoubleLinkedList; tmp = (new (Lscala/collection/mutable/DoubleLinkedList;::this(Ljava/lang/Object;Lscala/collection/mutable/DoubleLinkedList;)V;)(elem, null));
-    if ((this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::current()Lscala/collection/mutable/DoubleLinkedList;)() != null))
+    if (this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::current()Lscala/collection/mutable/DoubleLinkedList;)().(Lscala/collection/mutable/LinkedListLike;::isEmpty()Z;)())
       {
-        this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::current()Lscala/collection/mutable/DoubleLinkedList;)().(Lscala/collection/mutable/DoubleLinkedListLike;::insert(Lscala/collection/mutable/Seq;)V;)(tmp);
+        this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::current_$eq(Lscala/collection/mutable/DoubleLinkedList;)V;)((new (Lscala/collection/mutable/DoubleLinkedList;::this(Ljava/lang/Object;Lscala/collection/mutable/DoubleLinkedList;)V;)(elem, this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::emptyList()Lscala/collection/mutable/DoubleLinkedList;)())));
       }
     else
       {
-        this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::current_$eq(Lscala/collection/mutable/DoubleLinkedList;)V;)(tmp);
+        this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::current()Lscala/collection/mutable/DoubleLinkedList;)().(Lscala/collection/mutable/DoubleLinkedListLike;::append(Lscala/collection/mutable/Seq;)Lscala/collection/mutable/Seq;)((new (Lscala/collection/mutable/DoubleLinkedList;::this(Ljava/lang/Object;Lscala/collection/mutable/DoubleLinkedList;)V;)(elem, this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::emptyList()Lscala/collection/mutable/DoubleLinkedList;)())));
       }
     return this;
   }
   
   public V; clear() {
-    this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::current_$eq(Lscala/collection/mutable/DoubleLinkedList;)V;)(null);
+    this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::current_$eq(Lscala/collection/mutable/DoubleLinkedList;)V;)(this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::emptyList()Lscala/collection/mutable/DoubleLinkedList;)());
   }
   
   public Lscala/collection/mutable/DoubleLinkedList; result() {
@@ -75,5 +78,6 @@ public final class Lscala/collection/mutable/DoubleLinkedList$$anon$1; extends L
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/generic/Growable$class;.(Lscala/collection/generic/Growable$class;::$init$(Lscala/collection/generic/Growable;)V;)(this);
     Lscala/collection/mutable/Builder$class;.(Lscala/collection/mutable/Builder$class;::$init$(Lscala/collection/mutable/Builder;)V;)(this);
+    this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;)current$u0020 = this.(Lscala/collection/mutable/DoubleLinkedList$$anon$1;::emptyList()Lscala/collection/mutable/DoubleLinkedList;)();
   }
 }

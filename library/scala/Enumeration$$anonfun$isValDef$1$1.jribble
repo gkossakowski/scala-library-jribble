@@ -1,0 +1,17 @@
+public final class Lscala/Enumeration$$anonfun$isValDef$1$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final Z; apply(Ljava/lang/reflect/Field; fd) {
+    return (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(fd.(Ljava/lang/reflect/Field;::getName()Ljava/lang/String;)(), this.(Lscala/Enumeration$$anonfun$isValDef$1$1;)m$1.(Ljava/lang/reflect/Method;::getName()Ljava/lang/String;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(fd.(Ljava/lang/reflect/Field;::getType()Ljava/lang/Class;)(), this.(Lscala/Enumeration$$anonfun$isValDef$1$1;)m$1.(Ljava/lang/reflect/Method;::getReturnType()Ljava/lang/Class;)()));
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/Enumeration$$anonfun$isValDef$1$1;::apply(Ljava/lang/reflect/Field;)Z;)(v1.<cast>(Ljava/lang/reflect/Field;)));
+  }
+  
+  private Ljava/lang/reflect/Method; m$1;
+  
+  public this(Lscala/Enumeration; $outer, Ljava/lang/reflect/Method; m$1) {
+    this.(Lscala/Enumeration$$anonfun$isValDef$1$1;)m$1 = m$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

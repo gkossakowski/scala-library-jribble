@@ -76,8 +76,8 @@ public abstract class Lscala/collection/MapProxyLike$class; {
     return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::$plus(Lscala/Tuple2;Lscala/Tuple2;Lscala/collection/Seq;)Lscala/collection/Map;)(kv1, kv2, kvs);
   }
   
-  public static Lscala/collection/Map; $plus$plus(Lscala/collection/MapProxyLike; $this, Lscala/collection/TraversableOnce; xs) {
-    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::$plus$plus(Lscala/collection/TraversableOnce;)Lscala/collection/Map;)(xs);
+  public static Lscala/collection/Map; $plus$plus(Lscala/collection/MapProxyLike; $this, Lscala/collection/GenTraversableOnce; xs) {
+    return $this.(Lscala/collection/TraversableProxyLike;::self()Lscala/collection/Traversable;)().<cast>(Lscala/collection/MapLike;).(Lscala/collection/MapLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/Map;)(xs);
   }
   
   public static Lscala/collection/Map; filterNot(Lscala/collection/MapProxyLike; $this, Lscala/Function1; p) {

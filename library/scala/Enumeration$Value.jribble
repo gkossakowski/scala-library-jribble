@@ -1,4 +1,4 @@
-public abstract class Lscala/Enumeration$Value; extends Ljava/lang/Object; implements Lscala/math/Ordered;, Lscala/ScalaObject; {
+public abstract class Lscala/Enumeration$Value; extends Ljava/lang/Object; implements Lscala/math/Ordered;, Lscala/Serializable;, Lscala/ScalaObject; {
   
   public Z; $less(Ljava/lang/Object; that) {
     return Lscala/math/Ordered$class;.(Lscala/math/Ordered$class;::$less(Lscala/math/Ordered;Ljava/lang/Object;)Z;)(this, that);
@@ -49,31 +49,7 @@ public abstract class Lscala/Enumeration$Value; extends Ljava/lang/Object; imple
   }
   
   public I; hashCode() {
-    return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::hash(I;)I;)(this.(Lscala/Enumeration$Value;::id()I;)());
-  }
-  
-  public I; mask32() {
-    if ((this.(Lscala/Enumeration$Value;::id()I;)() >= 32))
-      {
-        throw (new (Ljava/lang/IllegalArgumentException;::this()V;)());
-      }
-    else
-      {
-        
-      }
-    return (1 << this.(Lscala/Enumeration$Value;::id()I;)());
-  }
-  
-  public J; mask64() {
-    if ((this.(Lscala/Enumeration$Value;::id()I;)() >= 64))
-      {
-        throw (new (Ljava/lang/IllegalArgumentException;::this()V;)());
-      }
-    else
-      {
-        
-      }
-    return (1L << this.(Lscala/Enumeration$Value;::id()I;)());
+    return this.(Lscala/Enumeration$Value;::id()I;)();
   }
   
   protected Lscala/Enumeration; $outer$u0020;

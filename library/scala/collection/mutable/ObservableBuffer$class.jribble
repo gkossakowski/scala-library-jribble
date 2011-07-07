@@ -6,6 +6,11 @@ public abstract class Lscala/collection/mutable/ObservableBuffer$class; {
     return $this;
   }
   
+  public static Lscala/collection/mutable/ObservableBuffer; $plus$plus$eq(Lscala/collection/mutable/ObservableBuffer; $this, Lscala/collection/TraversableOnce; xs) {
+    xs.(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/mutable/ObservableBuffer$$anonfun$$plus$plus$eq$1;::this(Lscala/collection/mutable/ObservableBuffer;)V;)($this)));
+    return $this;
+  }
+  
   public static Lscala/collection/mutable/ObservableBuffer; $plus$eq$colon(Lscala/collection/mutable/ObservableBuffer; $this, Ljava/lang/Object; element$2) {
     $this.(Lscala/collection/mutable/ObservableBuffer;::scala$collection$mutable$ObservableBuffer$$super$$plus$eq$colon(Ljava/lang/Object;)Lscala/collection/mutable/ObservableBuffer;)(element$2);
     $this.(Lscala/collection/mutable/Publisher;::publish(Ljava/lang/Object;)V;)((new (Lscala/collection/mutable/ObservableBuffer$$anon$2;::this(Lscala/collection/mutable/ObservableBuffer;Ljava/lang/Object;)V;)($this, element$2)));

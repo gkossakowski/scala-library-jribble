@@ -1,0 +1,29 @@
+public abstract class Lscala/App$class; {
+  
+  public static Ljava/lang/String;[ args(Lscala/App; $this) {
+    return $this.(Lscala/App;::scala$App$$_args()Ljava/lang/String;[)();
+  }
+  
+  public static V; delayedInit(Lscala/App; $this, Lscala/Function0; body) {
+    $this.(Lscala/App;::scala$App$$initCode()Lscala/collection/mutable/ListBuffer;)().(Lscala/collection/mutable/ListBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ListBuffer;)(body);
+  }
+  
+  public static V; main(Lscala/App; $this, Ljava/lang/String;[ args) {
+    $this.(Lscala/App;::scala$App$$_args_$eq(Ljava/lang/String;[)V;)(args);
+    $this.(Lscala/App;::scala$App$$initCode()Lscala/collection/mutable/ListBuffer;)().(Lscala/collection/generic/TraversableForwarder;::foreach(Lscala/Function1;)V;)((new (Lscala/App$$anonfun$main$1;::this(Lscala/App;)V;)($this)));
+    if (Lscala/util/Properties$;.MODULE$.(Lscala/util/PropertiesTrait;::propIsSet(Ljava/lang/String;)Z;)("scala.time"))
+      {
+        J; total = (Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::currentTime()J;)() - $this.(Lscala/App;::executionStart()J;)());
+        Lscala/Console$;.MODULE$.(Lscala/Console$;::println(Ljava/lang/Object;)V;)((("[total " + Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(total)) + "ms]"));
+      }
+    else
+      {
+        
+      }
+  }
+  
+  public static V; $init$(Lscala/App; $this) {
+    $this.(Lscala/App;::scala$App$_setter_$executionStart_$eq(J;)V;)(Lscala/compat/Platform$;.MODULE$.(Lscala/compat/Platform$;::currentTime()J;)());
+    $this.(Lscala/App;::scala$App$_setter_$scala$App$$initCode_$eq(Lscala/collection/mutable/ListBuffer;)V;)((new (Lscala/collection/mutable/ListBuffer;::this()V;)()));
+  }
+}

@@ -1,0 +1,35 @@
+public class Lscala/collection/generic/ClassManifestTraversableFactory$GenericCanBuildFrom; extends Ljava/lang/Object; implements Lscala/collection/generic/CanBuildFrom;, Lscala/ScalaObject; {
+  
+  private Lscala/reflect/ClassManifest; manif;
+  
+  public Lscala/collection/mutable/Builder; apply(Lscala/collection/Traversable; from) {
+    return from.<cast>(Lscala/collection/generic/GenericClassManifestTraversableTemplate;).(Lscala/collection/generic/GenericClassManifestTraversableTemplate;::genericClassManifestBuilder(Lscala/reflect/ClassManifest;)Lscala/collection/mutable/Builder;)(this.(Lscala/collection/generic/ClassManifestTraversableFactory$GenericCanBuildFrom;)manif);
+  }
+  
+  public Lscala/collection/mutable/Builder; apply() {
+    return this.(Lscala/collection/generic/ClassManifestTraversableFactory$GenericCanBuildFrom;::scala$collection$generic$ClassManifestTraversableFactory$GenericCanBuildFrom$$$outer()Lscala/collection/generic/ClassManifestTraversableFactory;)().(Lscala/collection/generic/GenericClassManifestCompanion;::newBuilder(Lscala/reflect/ClassManifest;)Lscala/collection/mutable/Builder;)(this.(Lscala/collection/generic/ClassManifestTraversableFactory$GenericCanBuildFrom;)manif);
+  }
+  
+  protected Lscala/collection/generic/ClassManifestTraversableFactory; $outer$u0020;
+  
+  public Lscala/collection/generic/ClassManifestTraversableFactory; scala$collection$generic$ClassManifestTraversableFactory$GenericCanBuildFrom$$$outer() {
+    return this.(Lscala/collection/generic/ClassManifestTraversableFactory$GenericCanBuildFrom;)$outer$u0020;
+  }
+  
+  public Lscala/collection/mutable/Builder; apply(Ljava/lang/Object; from) {
+    return this.(Lscala/collection/generic/ClassManifestTraversableFactory$GenericCanBuildFrom;::apply(Lscala/collection/Traversable;)Lscala/collection/mutable/Builder;)(from.<cast>(Lscala/collection/Traversable;));
+  }
+  
+  public this(Lscala/collection/generic/ClassManifestTraversableFactory; $outer, Lscala/reflect/ClassManifest; manif) {
+    this.(Lscala/collection/generic/ClassManifestTraversableFactory$GenericCanBuildFrom;)manif = manif;
+    if (($outer == null))
+      {
+        throw (new (Ljava/lang/NullPointerException;::this()V;)());
+      }
+    else
+      {
+        this.(Lscala/collection/generic/ClassManifestTraversableFactory$GenericCanBuildFrom;)$outer$u0020 = $outer;
+      }
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

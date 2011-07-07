@@ -1,4 +1,4 @@
-public class Lscala/collection/immutable/LongMap$Bin; extends Lscala/collection/immutable/LongMap; implements Lscala/ScalaObject;, Lscala/Product; {
+public class Lscala/collection/immutable/LongMap$Bin; extends Lscala/collection/immutable/LongMap; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   public Lscala/collection/Iterator; productIterator() {
     return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
@@ -6,22 +6,6 @@ public class Lscala/collection/immutable/LongMap$Bin; extends Lscala/collection/
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Lscala/collection/immutable/LongMap; copy$default$4() {
-    return this.(Lscala/collection/immutable/LongMap$Bin;::right()Lscala/collection/immutable/LongMap;)();
-  }
-  
-  public Lscala/collection/immutable/LongMap; copy$default$3() {
-    return this.(Lscala/collection/immutable/LongMap$Bin;::left()Lscala/collection/immutable/LongMap;)();
-  }
-  
-  public J; copy$default$2() {
-    return this.(Lscala/collection/immutable/LongMap$Bin;::mask()J;)();
-  }
-  
-  public J; copy$default$1() {
-    return this.(Lscala/collection/immutable/LongMap$Bin;::prefix()J;)();
   }
   
   private J; prefix$u0020;
@@ -49,20 +33,36 @@ public class Lscala/collection/immutable/LongMap$Bin; extends Lscala/collection/
   }
   
   public Lscala/collection/immutable/LongMap; bin(Lscala/collection/immutable/LongMap; left, Lscala/collection/immutable/LongMap; right) {
-    Lscala/collection/immutable/LongMap; $98$;
+    Lscala/collection/immutable/LongMap; $103$;
     if (((this.(Lscala/collection/immutable/LongMap$Bin;::left()Lscala/collection/immutable/LongMap;)() == left) && (this.(Lscala/collection/immutable/LongMap$Bin;::right()Lscala/collection/immutable/LongMap;)() == right)))
       {
-        $98$ = this;
+        $103$ = this;
       }
     else
       {
-        $98$ = (new (Lscala/collection/immutable/LongMap$Bin;::this(J;J;Lscala/collection/immutable/LongMap;Lscala/collection/immutable/LongMap;)V;)(this.(Lscala/collection/immutable/LongMap$Bin;::prefix()J;)(), this.(Lscala/collection/immutable/LongMap$Bin;::mask()J;)(), left, right));
+        $103$ = (new (Lscala/collection/immutable/LongMap$Bin;::this(J;J;Lscala/collection/immutable/LongMap;Lscala/collection/immutable/LongMap;)V;)(this.(Lscala/collection/immutable/LongMap$Bin;::prefix()J;)(), this.(Lscala/collection/immutable/LongMap$Bin;::mask()J;)(), left, right));
       }
-    return $98$;
+    return $103$;
   }
   
   public Lscala/collection/immutable/LongMap$Bin; copy(J; prefix, J; mask, Lscala/collection/immutable/LongMap; left, Lscala/collection/immutable/LongMap; right) {
     return (new (Lscala/collection/immutable/LongMap$Bin;::this(J;J;Lscala/collection/immutable/LongMap;Lscala/collection/immutable/LongMap;)V;)(prefix, mask, left, right));
+  }
+  
+  public Lscala/collection/immutable/LongMap; copy$default$4() {
+    return this.(Lscala/collection/immutable/LongMap$Bin;::right()Lscala/collection/immutable/LongMap;)();
+  }
+  
+  public Lscala/collection/immutable/LongMap; copy$default$3() {
+    return this.(Lscala/collection/immutable/LongMap$Bin;::left()Lscala/collection/immutable/LongMap;)();
+  }
+  
+  public J; copy$default$2() {
+    return this.(Lscala/collection/immutable/LongMap$Bin;::mask()J;)();
+  }
+  
+  public J; copy$default$1() {
+    return this.(Lscala/collection/immutable/LongMap$Bin;::prefix()J;)();
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -74,27 +74,27 @@ public class Lscala/collection/immutable/LongMap$Bin; extends Lscala/collection/
   }
   
   public Ljava/lang/Object; productElement(I; x$1) {
-    I; temp8 = x$1;
-    I; $99$ = temp8;
-    Ljava/lang/Object; $100$;
-    switch ($99$) {
-      0: {
-        $100$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(this.(Lscala/collection/immutable/LongMap$Bin;::prefix()J;)());
+    I; temp11 = x$1;
+    I; $104$ = temp11;
+    Ljava/lang/Object; $105$;
+    switch ($104$) {
+      3: {
+        $105$ = this.(Lscala/collection/immutable/LongMap$Bin;::right()Lscala/collection/immutable/LongMap;)();
         break;
       }
       
       1: {
-        $100$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(this.(Lscala/collection/immutable/LongMap$Bin;::mask()J;)());
+        $105$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(this.(Lscala/collection/immutable/LongMap$Bin;::mask()J;)());
         break;
       }
       
       2: {
-        $100$ = this.(Lscala/collection/immutable/LongMap$Bin;::left()Lscala/collection/immutable/LongMap;)();
+        $105$ = this.(Lscala/collection/immutable/LongMap$Bin;::left()Lscala/collection/immutable/LongMap;)();
         break;
       }
       
-      3: {
-        $100$ = this.(Lscala/collection/immutable/LongMap$Bin;::right()Lscala/collection/immutable/LongMap;)();
+      0: {
+        $105$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(this.(Lscala/collection/immutable/LongMap$Bin;::prefix()J;)());
         break;
       }
       
@@ -104,7 +104,7 @@ public class Lscala/collection/immutable/LongMap$Bin; extends Lscala/collection/
       }
       
     }
-    return $100$;
+    return $105$;
   }
   
   public this(J; prefix, J; mask, Lscala/collection/immutable/LongMap; left, Lscala/collection/immutable/LongMap; right) {

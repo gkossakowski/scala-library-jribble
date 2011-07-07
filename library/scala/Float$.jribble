@@ -1,0 +1,50 @@
+public final class Lscala/Float$; extends Ljava/lang/Object; implements Lscala/AnyValCompanion;, Lscala/ScalaObject; {
+  public static Lscala/Float$; MODULE$ = new (Lscala/Float$;::this()V;)();
+  
+  public final F; MinPositiveValue() {
+    return 1.4E-45F;
+  }
+  
+  public final F; NaN() {
+    return NaNF;
+  }
+  
+  public final F; PositiveInfinity() {
+    return InfinityF;
+  }
+  
+  public final F; NegativeInfinity() {
+    return -InfinityF;
+  }
+  
+  public final F; Epsilon() {
+    return 1.4E-45F;
+  }
+  
+  private final F; MinValue$u0020;
+  
+  public final F; MinValue() {
+    return this.(Lscala/Float$;)MinValue$u0020;
+  }
+  
+  public final F; MaxValue() {
+    return 3.4028235E38F;
+  }
+  
+  public Ljava/lang/Float; box(F; x) {
+    return Ljava/lang/Float;.(Ljava/lang/Float;::valueOf(F;)Ljava/lang/Float;)(x);
+  }
+  
+  public F; unbox(Ljava/lang/Object; x) {
+    return x.<cast>(Ljava/lang/Float;).(Ljava/lang/Float;::floatValue()F;)();
+  }
+  
+  public Ljava/lang/String; toString() {
+    return "object scala.Float";
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(Lscala/Float$;)MinValue$u0020 = -(3.4028235E38F);
+  }
+}

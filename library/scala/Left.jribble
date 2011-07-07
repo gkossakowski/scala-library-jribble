@@ -1,4 +1,4 @@
-public final class Lscala/Left; extends Lscala/Either; implements Lscala/ScalaObject;, Lscala/Product; {
+public final class Lscala/Left; extends Lscala/Either; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
   
   
   public Lscala/collection/Iterator; productIterator() {
@@ -7,10 +7,6 @@ public final class Lscala/Left; extends Lscala/Either; implements Lscala/ScalaOb
   
   public Lscala/collection/Iterator; productElements() {
     return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
-  }
-  
-  public Ljava/lang/Object; copy$default$1() {
-    return this.(Lscala/Left;::a()Ljava/lang/Object;)();
   }
   
   private Ljava/lang/Object; a$u0020;
@@ -29,6 +25,10 @@ public final class Lscala/Left; extends Lscala/Either; implements Lscala/ScalaOb
   
   public Lscala/Left; copy(Ljava/lang/Object; a) {
     return (new (Lscala/Left;::this(Ljava/lang/Object;)V;)(a));
+  }
+  
+  public Ljava/lang/Object; copy$default$1() {
+    return this.(Lscala/Left;::a()Ljava/lang/Object;)();
   }
   
   public I; hashCode() {
@@ -50,7 +50,13 @@ public final class Lscala/Left; extends Lscala/Either; implements Lscala/ScalaOb
         Z; $10$;
         if (this.(Lscala/Left;::gd1$1(Ljava/lang/Object;)Z;)(a$1))
           {
-            $10$ = x$1.<cast>(Lscala/Left;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+            Ljava/lang/Object; $11$;
+            Z; $12$;
+            body$percent05: while(true) {
+              $12$ = x$1.<cast>(Lscala/Left;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $10$ = $12$;
           }
         else
           {
@@ -75,16 +81,16 @@ public final class Lscala/Left; extends Lscala/Either; implements Lscala/ScalaOb
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp24 = x$1;
-    Ljava/lang/Object; $11$;
+    Ljava/lang/Object; $13$;
     if ((temp24 == 0))
       {
-        $11$ = this.(Lscala/Left;::a()Ljava/lang/Object;)();
+        $13$ = this.(Lscala/Left;::a()Ljava/lang/Object;)();
       }
     else
       {
         throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
       }
-    return $11$;
+    return $13$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

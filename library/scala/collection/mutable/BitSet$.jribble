@@ -1,4 +1,4 @@
-public final class Lscala/collection/mutable/BitSet$; extends Ljava/lang/Object; implements Lscala/collection/generic/BitSetFactory;, Lscala/ScalaObject; {
+public final class Lscala/collection/mutable/BitSet$; extends Ljava/lang/Object; implements Lscala/collection/generic/BitSetFactory;, Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/collection/mutable/BitSet$; MODULE$ = new (Lscala/collection/mutable/BitSet$;::this()V;)();
   
   public Lscala/collection/BitSet; apply(Lscala/collection/Seq; elems) {
@@ -19,6 +19,10 @@ public final class Lscala/collection/mutable/BitSet$; extends Ljava/lang/Object;
   
   public Lscala/collection/generic/CanBuildFrom; canBuildFrom() {
     return this.(Lscala/collection/generic/BitSetFactory;::bitsetCanBuildFrom()Lscala/collection/generic/CanBuildFrom;)();
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/mutable/BitSet$;.MODULE$;
   }
   
   public Lscala/collection/BitSet; empty() {

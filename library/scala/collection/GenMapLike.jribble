@@ -1,0 +1,18 @@
+public interface Lscala/collection/GenMapLike; extends Lscala/collection/GenIterableLike;, Lscala/Equals;, Lscala/collection/Parallelizable;, Lscala/ScalaObject; {
+  
+  public Ljava/lang/Object; `default`(Ljava/lang/Object; key);
+  
+  public Lscala/Option; get(Ljava/lang/Object; key);
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; key);
+  
+  public Lscala/collection/Map; seq();
+  
+  public Lscala/collection/GenMap; $plus(Lscala/Tuple2; kv);
+  
+  public Ljava/lang/Object; $minus(Ljava/lang/Object; key);
+  
+  public I; hashCode();
+  
+  public Z; equals(Ljava/lang/Object; that);
+}

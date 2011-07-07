@@ -1,0 +1,52 @@
+public interface Lscala/collection/GenTraversableLike; extends Lscala/collection/GenTraversableOnce;, Lscala/collection/Parallelizable;, Lscala/ScalaObject; {
+  
+  public Ljava/lang/Object; repr();
+  
+  public I; size();
+  
+  public Ljava/lang/Object; head();
+  
+  public Z; isTraversableAgain();
+  
+  public Ljava/lang/Object; tail();
+  
+  public Ljava/lang/Object; scan(Ljava/lang/Object; z, Lscala/Function2; op, Lscala/collection/generic/CanBuildFrom; cbf);
+  
+  public Ljava/lang/Object; scanLeft(Ljava/lang/Object; z, Lscala/Function2; op, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; scanRight(Ljava/lang/Object; z, Lscala/Function2; op, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public V; foreach(Lscala/Function1; f);
+  
+  public Ljava/lang/Object; map(Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; collect(Lscala/PartialFunction; pf, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; flatMap(Lscala/Function1; f, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; $plus$plus(Lscala/collection/GenTraversableOnce; that, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; filter(Lscala/Function1; pred);
+  
+  public Ljava/lang/Object; filterNot(Lscala/Function1; pred);
+  
+  public Lscala/Tuple2; partition(Lscala/Function1; pred);
+  
+  public Lscala/collection/GenMap; groupBy(Lscala/Function1; f);
+  
+  public Ljava/lang/Object; take(I; n);
+  
+  public Ljava/lang/Object; drop(I; n);
+  
+  public Ljava/lang/Object; slice(I; unc_from, I; unc_until);
+  
+  public Lscala/Tuple2; splitAt(I; n);
+  
+  public Ljava/lang/Object; takeWhile(Lscala/Function1; pred);
+  
+  public Lscala/Tuple2; span(Lscala/Function1; pred);
+  
+  public Ljava/lang/Object; dropWhile(Lscala/Function1; pred);
+  
+  public Ljava/lang/String; stringPrefix();
+}
