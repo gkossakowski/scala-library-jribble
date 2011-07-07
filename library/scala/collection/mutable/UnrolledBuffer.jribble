@@ -1332,36 +1332,6 @@ public class Lscala/collection/mutable/UnrolledBuffer; extends Ljava/lang/Object
       }
   }
   
-  private V; writeObject(Ljava/io/ObjectOutputStream; out$1) {
-    out$1.(Ljava/io/ObjectOutputStream;::defaultWriteObject()V;)();
-    out$1.(Ljava/io/ObjectOutputStream;::writeInt(I;)V;)(this.(Lscala/collection/mutable/UnrolledBuffer;::sz()I;)());
-    this.(Lscala/collection/mutable/UnrolledBuffer;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/mutable/UnrolledBuffer$$anonfun$writeObject$1;::this(Lscala/collection/mutable/UnrolledBuffer;Ljava/io/ObjectOutputStream;)V;)(this, out$1)));
-  }
-  
-  private V; readObject(Ljava/io/ObjectInputStream; in) {
-    in.(Ljava/io/ObjectInputStream;::defaultReadObject()V;)();
-    I; num = in.(Ljava/io/ObjectInputStream;::readInt()I;)();
-    this.(Lscala/collection/mutable/UnrolledBuffer;::headPtr_$eq(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)V;)(this.(Lscala/collection/mutable/UnrolledBuffer;::newUnrolled()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)());
-    this.(Lscala/collection/mutable/UnrolledBuffer;::lastPtr_$eq(Lscala/collection/mutable/UnrolledBuffer$Unrolled;)V;)(this.(Lscala/collection/mutable/UnrolledBuffer;::headPtr()Lscala/collection/mutable/UnrolledBuffer$Unrolled;)());
-    this.(Lscala/collection/mutable/UnrolledBuffer;::sz_$eq(I;)V;)(0);
-    I; i = 0;
-    while$2: while(true) {
-      if ((i < num))
-        {
-          {
-            this.(Lscala/collection/mutable/UnrolledBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/UnrolledBuffer;)(in.(Ljava/io/ObjectInputStream;::readObject()Ljava/lang/Object;)());
-            i = (i + 1);
-          }
-          continue while$2;
-        }
-      else
-        {
-          
-        }
-      break;
-    }
-  }
-  
   public Ljava/lang/String; stringPrefix() {
     return "UnrolledBuffer";
   }
