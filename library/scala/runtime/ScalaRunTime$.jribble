@@ -498,7 +498,7 @@ public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; impl
   public Ljava/lang/Object;[ toObjectArray(Ljava/lang/Object; src$1) {
     I; length = this.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(src$1);
     Ljava/lang/Object;[ dest$1 = new Ljava/lang/Object;[length];
-    Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(length).(Lscala/collection/immutable/Range;::foreach(Lscala/Function1;)V;)((new (Lscala/runtime/ScalaRunTime$$anonfun$toObjectArray$1;::this(Ljava/lang/Object;Ljava/lang/Object;[)V;)(src$1, dest$1)));
+    Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(length).(Lscala/collection/immutable/Range;::foreach$mVc$sp(Lscala/Function1;)V;)((new (Lscala/runtime/ScalaRunTime$$anonfun$toObjectArray$1;::this(Ljava/lang/Object;Ljava/lang/Object;[)V;)(src$1, dest$1)));
     return dest$1;
   }
   
@@ -1134,15 +1134,15 @@ public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; impl
     (Ljava/lang/Object;::super()V;)();
   }
   
+  private final Ljava/lang/String; body$percent09$percent1() {
+    return ("" + arg);
+  }
+  
   private final Ljava/lang/String; body$percent95$percent1(Lscala/Product; x) {
     return x.(Lscala/Product;::productIterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/runtime/ScalaRunTime$$anonfun$inner$1$4;::this(I;)V;)(maxElements$1))).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)("(", ",", ")");
   }
   
   private final Ljava/lang/String; body$percent105$percent1(Ljava/lang/Object; x) {
     return x.(Ljava/lang/Object;::toString()Ljava/lang/String;)();
-  }
-  
-  private final Ljava/lang/String; body$percent09$percent1() {
-    return ("" + arg);
   }
 }

@@ -1,14 +1,14 @@
-public final class Lscala/xml/PrettyPrinter$$anonfun$doPreserve$2; extends Lscala/runtime/AbstractFunction0; implements Lscala/Serializable; {
+public final class Lscala/xml/PrettyPrinter$$anonfun$doPreserve$2; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
-  public final Z; apply() {
-    return false;
+  public final Z; apply(Lscala/collection/Seq; x$9) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$9.(Lscala/collection/SeqLike;::toString()Ljava/lang/String;)(), Lscala/xml/XML$;.MODULE$.(Lscala/xml/XML$;::preserve()Ljava/lang/String;)());
   }
   
-  public final Ljava/lang/Object; apply() {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/xml/PrettyPrinter$$anonfun$doPreserve$2;::apply()Z;)());
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/xml/PrettyPrinter$$anonfun$doPreserve$2;::apply(Lscala/collection/Seq;)Z;)(v1.<cast>(Lscala/collection/Seq;)));
   }
   
   public this(Lscala/xml/PrettyPrinter; $outer) {
-    (Lscala/runtime/AbstractFunction0;::super()V;)();
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

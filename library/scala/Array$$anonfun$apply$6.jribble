@@ -1,22 +1,22 @@
 public final class Lscala/Array$$anonfun$apply$6; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
-  public final V; apply(I; x) {
-    this.(Lscala/Array$$anonfun$apply$6;)array$6[this.(Lscala/Array$$anonfun$apply$6;)i$6.(Lscala/runtime/IntRef;)elem] = x;
-    this.(Lscala/Array$$anonfun$apply$6;)i$6.(Lscala/runtime/IntRef;)elem = (this.(Lscala/Array$$anonfun$apply$6;)i$6.(Lscala/runtime/IntRef;)elem + 1);
+  public final V; apply(Z; x) {
+    this.(Lscala/Array$$anonfun$apply$6;)array$2[this.(Lscala/Array$$anonfun$apply$6;)i$2.(Lscala/runtime/IntRef;)elem] = x;
+    this.(Lscala/Array$$anonfun$apply$6;)i$2.(Lscala/runtime/IntRef;)elem = (this.(Lscala/Array$$anonfun$apply$6;)i$2.(Lscala/runtime/IntRef;)elem + 1);
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
-    this.(Lscala/Array$$anonfun$apply$6;::apply(I;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1));
+    this.(Lscala/Array$$anonfun$apply$6;::apply(Z;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(v1));
     return Lscala/runtime/BoxedUnit;.UNIT;
   }
   
-  private I;[ array$6;
+  private Z;[ array$2;
   
-  private Lscala/runtime/IntRef; i$6;
+  private Lscala/runtime/IntRef; i$2;
   
-  public this(I;[ array$6, Lscala/runtime/IntRef; i$6) {
-    this.(Lscala/Array$$anonfun$apply$6;)array$6 = array$6;
-    this.(Lscala/Array$$anonfun$apply$6;)i$6 = i$6;
+  public this(Z;[ array$2, Lscala/runtime/IntRef; i$2) {
+    this.(Lscala/Array$$anonfun$apply$6;)array$2 = array$2;
+    this.(Lscala/Array$$anonfun$apply$6;)i$2 = i$2;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

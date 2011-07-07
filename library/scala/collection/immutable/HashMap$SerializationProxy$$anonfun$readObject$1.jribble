@@ -1,6 +1,10 @@
-public final class Lscala/collection/immutable/HashMap$SerializationProxy$$anonfun$readObject$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+public final class Lscala/collection/immutable/HashMap$SerializationProxy$$anonfun$readObject$1; extends Lscala/runtime/AbstractFunction1$mcVI$sp; implements Lscala/Serializable; {
   
   public final V; apply(I; i) {
+    this.(Lscala/collection/immutable/HashMap$SerializationProxy$$anonfun$readObject$1;::apply$mcVI$sp(I;)V;)(i);
+  }
+  
+  public V; apply$mcVI$sp(I; v1) {
     Ljava/lang/Object; key = this.(Lscala/collection/immutable/HashMap$SerializationProxy$$anonfun$readObject$1;)in$1.(Ljava/io/ObjectInputStream;::readObject()Ljava/lang/Object;)();
     Ljava/lang/Object; value = this.(Lscala/collection/immutable/HashMap$SerializationProxy$$anonfun$readObject$1;)in$1.(Ljava/io/ObjectInputStream;::readObject()Ljava/lang/Object;)();
     this.(Lscala/collection/immutable/HashMap$SerializationProxy$$anonfun$readObject$1;)$outer$u0020.(Lscala/collection/immutable/HashMap$SerializationProxy;::scala$collection$immutable$HashMap$SerializationProxy$$orig_$eq(Lscala/collection/immutable/HashMap;)V;)(this.(Lscala/collection/immutable/HashMap$SerializationProxy$$anonfun$readObject$1;)$outer$u0020.(Lscala/collection/immutable/HashMap$SerializationProxy;::scala$collection$immutable$HashMap$SerializationProxy$$orig()Lscala/collection/immutable/HashMap;)().(Lscala/collection/immutable/HashMap;::updated(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/HashMap;)(key, value));
@@ -25,6 +29,6 @@ public final class Lscala/collection/immutable/HashMap$SerializationProxy$$anonf
         this.(Lscala/collection/immutable/HashMap$SerializationProxy$$anonfun$readObject$1;)$outer$u0020 = $outer;
       }
     this.(Lscala/collection/immutable/HashMap$SerializationProxy$$anonfun$readObject$1;)in$1 = in$1;
-    (Lscala/runtime/AbstractFunction1;::super()V;)();
+    (Lscala/runtime/AbstractFunction1$mcVI$sp;::super()V;)();
   }
 }

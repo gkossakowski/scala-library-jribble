@@ -15,11 +15,15 @@ public final class Lscala/collection/mutable/WrappedArray$ofUnit; extends Lscala
   }
   
   public V; apply(I; index) {
-    this.(Lscala/collection/mutable/WrappedArray$ofUnit;::array()Lscala/runtime/BoxedUnit;[)()[index];
+    this.(Lscala/collection/mutable/WrappedArray$ofUnit;::apply$mcVI$sp(I;)V;)(index);
   }
   
   public V; update(I; index, Lscala/runtime/BoxedUnit; elem) {
     this.(Lscala/collection/mutable/WrappedArray$ofUnit;::array()Lscala/runtime/BoxedUnit;[)()[index] = elem;
+  }
+  
+  public V; apply$mcVI$sp(I; v1) {
+    this.(Lscala/collection/mutable/WrappedArray$ofUnit;::array()Lscala/runtime/BoxedUnit;[)()[v1];
   }
   
   public V; update(I; index, Ljava/lang/Object; elem) {

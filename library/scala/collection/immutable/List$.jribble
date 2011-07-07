@@ -18,8 +18,8 @@ public final class Lscala/collection/immutable/List$; extends Lscala/collection/
   }
   
   public Lscala/collection/immutable/List; range(I; start, I; end, Lscala/Function1; step) {
-    Z; up = (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(step.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(start))) > start);
-    Z; down = (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(step.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(start))) < start);
+    Z; up = (step.(Lscala/Function1;::apply$mcII$sp(I;)I;)(start) > start);
+    Z; down = (step.(Lscala/Function1;::apply$mcII$sp(I;)I;)(start) < start);
     Lscala/collection/mutable/ListBuffer; b = (new (Lscala/collection/mutable/ListBuffer;::this()V;)());
     I; i = start;
     while$15: while(true) {
@@ -27,7 +27,7 @@ public final class Lscala/collection/immutable/List$; extends Lscala/collection/
         {
           {
             b.(Lscala/collection/mutable/ListBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ListBuffer;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i));
-            I; next = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(step.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i)));
+            I; next = step.(Lscala/Function1;::apply$mcII$sp(I;)I;)(i);
             if ((i == next))
               {
                 throw (new (Ljava/lang/IllegalArgumentException;::this(Ljava/lang/String;)V;)(("the step function did not make any progress on " + Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(i))));

@@ -1,17 +1,17 @@
-public final class Lscala/xml/Utility$$anonfun$4; extends Lscala/runtime/AbstractFunction0; implements Lscala/Serializable; {
+public final class Lscala/xml/Utility$$anonfun$4; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
-  public final C; apply() {
-    return this.(Lscala/xml/Utility$$anonfun$4;)c$1.(Lscala/runtime/CharRef;)elem;
+  public final Z; apply(Lscala/xml/MetaData; m) {
+    return Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(m.(Lscala/xml/MetaData;::key()Ljava/lang/String;)()).(Lscala/math/Ordered;::$greater(Ljava/lang/Object;)Z;)(this.(Lscala/xml/Utility$$anonfun$4;)key$1);
   }
   
-  public final Ljava/lang/Object; apply() {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(this.(Lscala/xml/Utility$$anonfun$4;::apply()C;)());
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/xml/Utility$$anonfun$4;::apply(Lscala/xml/MetaData;)Z;)(v1.<cast>(Lscala/xml/MetaData;)));
   }
   
-  private Lscala/runtime/CharRef; c$1;
+  private Ljava/lang/String; key$1;
   
-  public this(Lscala/runtime/CharRef; c$1) {
-    this.(Lscala/xml/Utility$$anonfun$4;)c$1 = c$1;
-    (Lscala/runtime/AbstractFunction0;::super()V;)();
+  public this(Ljava/lang/String; key$1) {
+    this.(Lscala/xml/Utility$$anonfun$4;)key$1 = key$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
   }
 }

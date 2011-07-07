@@ -1,0 +1,24 @@
+public final class Lscala/xml/Utility$Escapes$$anonfun$5; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final Lscala/Tuple2; apply(Lscala/Tuple2; x0$1) {
+    Lscala/Tuple2; temp32 = x0$1;
+    Lscala/Tuple2; $33$;
+    if ((temp32 != null))
+      {
+        $33$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::any2ArrowAssoc(Ljava/lang/Object;)Lscala/Predef$ArrowAssoc;)(temp32.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()).(Lscala/Predef$ArrowAssoc;::$minus$greater(Ljava/lang/Object;)Lscala/Tuple2;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)("&%s;").(Lscala/collection/immutable/StringLike;::format(Lscala/collection/Seq;)Ljava/lang/String;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::genericWrapArray(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(<Ljava/lang/Object;>{temp32.(Lscala/Tuple2;::_1()Ljava/lang/Object;)()})));
+      }
+    else
+      {
+        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp32));
+      }
+    return $33$;
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    return this.(Lscala/xml/Utility$Escapes$$anonfun$5;::apply(Lscala/Tuple2;)Lscala/Tuple2;)(v1.<cast>(Lscala/Tuple2;));
+  }
+  
+  public this() {
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

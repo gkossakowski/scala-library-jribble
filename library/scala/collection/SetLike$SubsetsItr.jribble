@@ -398,7 +398,7 @@ public class Lscala/collection/SetLike$SubsetsItr; extends Ljava/lang/Object; im
         
       }
     Lscala/collection/mutable/Builder; buf$1 = this.(Lscala/collection/SetLike$SubsetsItr;::scala$collection$SetLike$SubsetsItr$$$outer()Lscala/collection/SetLike;)().(Lscala/collection/SetLike;::newBuilder()Lscala/collection/mutable/Builder;)();
-    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intArrayOps(I;[)Lscala/collection/mutable/ArrayOps;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intArrayOps(I;[)Lscala/collection/mutable/ArrayOps;)(this.(Lscala/collection/SetLike$SubsetsItr;::scala$collection$SetLike$SubsetsItr$$idxs()I;[)()).(Lscala/collection/IndexedSeqOptimized;::slice(I;I;)Ljava/lang/Object;)(0, this.(Lscala/collection/SetLike$SubsetsItr;)len).<cast>(I;[)).(Lscala/collection/IndexedSeqOptimized;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/SetLike$SubsetsItr$$anonfun$next$1;::this(Lscala/collection/SetLike$SubsetsItr;Lscala/collection/mutable/Builder;)V;)(this, buf$1)));
+    Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intArrayOps(I;[)Lscala/collection/mutable/ArrayOps;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::intArrayOps(I;[)Lscala/collection/mutable/ArrayOps;)(this.(Lscala/collection/SetLike$SubsetsItr;::scala$collection$SetLike$SubsetsItr$$idxs()I;[)()).(Lscala/collection/IndexedSeqOptimized;::slice(I;I;)Ljava/lang/Object;)(0, this.(Lscala/collection/SetLike$SubsetsItr;)len).<cast>(I;[)).(Lscala/collection/IndexedSeqOptimized;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/SetLike$SubsetsItr$$anonfun$next$2;::this(Lscala/collection/SetLike$SubsetsItr;Lscala/collection/mutable/Builder;)V;)(this, buf$1)));
     Lscala/collection/Set; result = buf$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)().<cast>(Lscala/collection/Set;);
     I; i = (this.(Lscala/collection/SetLike$SubsetsItr;)len - 1);
     while$1: while(true) {
@@ -423,7 +423,7 @@ public class Lscala/collection/SetLike$SubsetsItr; extends Ljava/lang/Object; im
           I; ev$1 = i;
           this.(Lscala/collection/SetLike$SubsetsItr;::scala$collection$SetLike$SubsetsItr$$idxs()I;[)()[ev$1] = (this.(Lscala/collection/SetLike$SubsetsItr;::scala$collection$SetLike$SubsetsItr$$idxs()I;[)()[ev$1] + 1);
         }
-        Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)((i + 1)).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(this.(Lscala/collection/SetLike$SubsetsItr;)len).(Lscala/collection/immutable/Range;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/SetLike$SubsetsItr$$anonfun$next$2;::this(Lscala/collection/SetLike$SubsetsItr;)V;)(this)));
+        Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)((i + 1)).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(this.(Lscala/collection/SetLike$SubsetsItr;)len).(Lscala/collection/immutable/Range;::foreach$mVc$sp(Lscala/Function1;)V;)((new (Lscala/collection/SetLike$SubsetsItr$$anonfun$next$1;::this(Lscala/collection/SetLike$SubsetsItr;)V;)(this)));
       }
     return result;
   }

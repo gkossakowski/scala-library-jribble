@@ -182,7 +182,7 @@ public class Lscala/xml/PrettyPrinter; extends Ljava/lang/Object; implements Lsc
   }
   
   private Z; doPreserve(Lscala/xml/Node; node) {
-    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(node.(Lscala/xml/Node;::attribute(Ljava/lang/String;Ljava/lang/String;)Lscala/Option;)(Lscala/xml/XML$;.MODULE$.(Lscala/xml/XML$;::namespace()Ljava/lang/String;)(), Lscala/xml/XML$;.MODULE$.(Lscala/xml/XML$;::space()Ljava/lang/String;)()).(Lscala/Option;::map(Lscala/Function1;)Lscala/Option;)((new (Lscala/xml/PrettyPrinter$$anonfun$doPreserve$1;::this(Lscala/xml/PrettyPrinter;)V;)(this))).(Lscala/Option;::getOrElse(Lscala/Function0;)Ljava/lang/Object;)((new (Lscala/xml/PrettyPrinter$$anonfun$doPreserve$2;::this(Lscala/xml/PrettyPrinter;)V;)(this))));
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(node.(Lscala/xml/Node;::attribute(Ljava/lang/String;Ljava/lang/String;)Lscala/Option;)(Lscala/xml/XML$;.MODULE$.(Lscala/xml/XML$;::namespace()Ljava/lang/String;)(), Lscala/xml/XML$;.MODULE$.(Lscala/xml/XML$;::space()Ljava/lang/String;)()).(Lscala/Option;::map(Lscala/Function1;)Lscala/Option;)((new (Lscala/xml/PrettyPrinter$$anonfun$doPreserve$2;::this(Lscala/xml/PrettyPrinter;)V;)(this))).(Lscala/Option;::getOrElse(Lscala/Function0;)Ljava/lang/Object;)((new (Lscala/xml/PrettyPrinter$$anonfun$doPreserve$1;::this(Lscala/xml/PrettyPrinter;)V;)(this))));
   }
   
   public V; traverse(Lscala/xml/Node; node, Lscala/xml/NamespaceBinding; pscope, I; ind) {
@@ -260,7 +260,7 @@ public class Lscala/xml/PrettyPrinter; extends Ljava/lang/Object; implements Lsc
                                   }
                                 Lscala/Tuple2; x$10 = $2$;
                                 Ljava/lang/String; stg = x$10.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Ljava/lang/String;);
-                                I; len2 = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(x$10.(Lscala/Tuple2;::_2()Ljava/lang/Object;)());
+                                I; len2 = x$10.(Lscala/Tuple2;::_2$mcI$sp()I;)();
                                 Ljava/lang/String; etg = this.(Lscala/xml/PrettyPrinter;::endTag(Lscala/xml/Node;)Ljava/lang/String;)(node);
                                 if ((stg.(Ljava/lang/String;::length()I;)() < (this.(Lscala/xml/PrettyPrinter;)width - this.(Lscala/xml/PrettyPrinter;::cur()I;)())))
                                   {

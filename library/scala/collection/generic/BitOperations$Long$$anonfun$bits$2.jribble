@@ -1,7 +1,11 @@
-public final class Lscala/collection/generic/BitOperations$Long$$anonfun$bits$2; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+public final class Lscala/collection/generic/BitOperations$Long$$anonfun$bits$2; extends Lscala/runtime/AbstractFunction1$mcZJ$sp; implements Lscala/Serializable; {
   
   public final Z; apply(J; i) {
-    return (((this.(Lscala/collection/generic/BitOperations$Long$$anonfun$bits$2;)num$2 >> i) & 1L) != 0L);
+    return this.(Lscala/collection/generic/BitOperations$Long$$anonfun$bits$2;::apply$mcZJ$sp(J;)Z;)(i);
+  }
+  
+  public Z; apply$mcZJ$sp(J; v1) {
+    return (((this.(Lscala/collection/generic/BitOperations$Long$$anonfun$bits$2;)num$2 >> v1) & 1L) != 0L);
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
@@ -12,6 +16,6 @@ public final class Lscala/collection/generic/BitOperations$Long$$anonfun$bits$2;
   
   public this(Lscala/collection/generic/BitOperations$Long; $outer, J; num$2) {
     this.(Lscala/collection/generic/BitOperations$Long$$anonfun$bits$2;)num$2 = num$2;
-    (Lscala/runtime/AbstractFunction1;::super()V;)();
+    (Lscala/runtime/AbstractFunction1$mcZJ$sp;::super()V;)();
   }
 }

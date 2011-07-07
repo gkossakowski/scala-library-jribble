@@ -1,22 +1,26 @@
-public final class Lscala/Array$$anonfun$apply$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+public final class Lscala/Array$$anonfun$apply$1; extends Lscala/runtime/AbstractFunction1$mcVI$sp; implements Lscala/Serializable; {
   
-  public final V; apply(Ljava/lang/Object; x) {
-    Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_update(Ljava/lang/Object;I;Ljava/lang/Object;)V;)(this.(Lscala/Array$$anonfun$apply$1;)array$1, this.(Lscala/Array$$anonfun$apply$1;)i$1.(Lscala/runtime/IntRef;)elem, x);
-    this.(Lscala/Array$$anonfun$apply$1;)i$1.(Lscala/runtime/IntRef;)elem = (this.(Lscala/Array$$anonfun$apply$1;)i$1.(Lscala/runtime/IntRef;)elem + 1);
+  public final V; apply(I; x) {
+    this.(Lscala/Array$$anonfun$apply$1;::apply$mcVI$sp(I;)V;)(x);
+  }
+  
+  public V; apply$mcVI$sp(I; v1) {
+    this.(Lscala/Array$$anonfun$apply$1;)array$6[this.(Lscala/Array$$anonfun$apply$1;)i$6.(Lscala/runtime/IntRef;)elem] = v1;
+    this.(Lscala/Array$$anonfun$apply$1;)i$6.(Lscala/runtime/IntRef;)elem = (this.(Lscala/Array$$anonfun$apply$1;)i$6.(Lscala/runtime/IntRef;)elem + 1);
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
-    this.(Lscala/Array$$anonfun$apply$1;::apply(Ljava/lang/Object;)V;)(v1);
+    this.(Lscala/Array$$anonfun$apply$1;::apply(I;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(v1));
     return Lscala/runtime/BoxedUnit;.UNIT;
   }
   
-  private Ljava/lang/Object; array$1;
+  private I;[ array$6;
   
-  private Lscala/runtime/IntRef; i$1;
+  private Lscala/runtime/IntRef; i$6;
   
-  public this(Ljava/lang/Object; array$1, Lscala/runtime/IntRef; i$1) {
-    this.(Lscala/Array$$anonfun$apply$1;)array$1 = array$1;
-    this.(Lscala/Array$$anonfun$apply$1;)i$1 = i$1;
-    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  public this(I;[ array$6, Lscala/runtime/IntRef; i$6) {
+    this.(Lscala/Array$$anonfun$apply$1;)array$6 = array$6;
+    this.(Lscala/Array$$anonfun$apply$1;)i$6 = i$6;
+    (Lscala/runtime/AbstractFunction1$mcVI$sp;::super()V;)();
   }
 }

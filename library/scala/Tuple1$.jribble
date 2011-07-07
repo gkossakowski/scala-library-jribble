@@ -26,6 +26,57 @@ public final class Lscala/Tuple1$; extends Ljava/lang/Object; implements Lscala/
     return Lscala/Tuple1$;.MODULE$;
   }
   
+  public Lscala/Tuple1; apply$mDc$sp(D; _1) {
+    return (new (Lscala/Tuple1$mcD$sp;::this(D;)V;)(_1));
+  }
+  
+  public Lscala/Tuple1; apply$mIc$sp(I; _1) {
+    return (new (Lscala/Tuple1$mcI$sp;::this(I;)V;)(_1));
+  }
+  
+  public Lscala/Tuple1; apply$mJc$sp(J; _1) {
+    return (new (Lscala/Tuple1$mcJ$sp;::this(J;)V;)(_1));
+  }
+  
+  public Lscala/Option; unapply$mDc$sp(Lscala/Tuple1; x$0) {
+    Lscala/Option; $6$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $6$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $6$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToDouble(D;)Ljava/lang/Double;)(x$0.(Lscala/Tuple1;::_1$mcD$sp()D;)())));
+      }
+    return $6$;
+  }
+  
+  public Lscala/Option; unapply$mIc$sp(Lscala/Tuple1; x$0) {
+    Lscala/Option; $7$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $7$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $7$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$0.(Lscala/Tuple1;::_1$mcI$sp()I;)())));
+      }
+    return $7$;
+  }
+  
+  public Lscala/Option; unapply$mJc$sp(Lscala/Tuple1; x$0) {
+    Lscala/Option; $8$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $8$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $8$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(x$0.(Lscala/Tuple1;::_1$mcJ$sp()J;)())));
+      }
+    return $8$;
+  }
+  
   public this() {
     (Ljava/lang/Object;::super()V;)();
   }

@@ -1,22 +1,26 @@
-public final class Lscala/Array$$anonfun$apply$2; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+public final class Lscala/Array$$anonfun$apply$2; extends Lscala/runtime/AbstractFunction1$mcVJ$sp; implements Lscala/Serializable; {
   
-  public final V; apply(Z; x) {
-    this.(Lscala/Array$$anonfun$apply$2;)array$2[this.(Lscala/Array$$anonfun$apply$2;)i$2.(Lscala/runtime/IntRef;)elem] = x;
-    this.(Lscala/Array$$anonfun$apply$2;)i$2.(Lscala/runtime/IntRef;)elem = (this.(Lscala/Array$$anonfun$apply$2;)i$2.(Lscala/runtime/IntRef;)elem + 1);
+  public final V; apply(J; x) {
+    this.(Lscala/Array$$anonfun$apply$2;::apply$mcVJ$sp(J;)V;)(x);
+  }
+  
+  public V; apply$mcVJ$sp(J; v1) {
+    this.(Lscala/Array$$anonfun$apply$2;)array$7[this.(Lscala/Array$$anonfun$apply$2;)i$7.(Lscala/runtime/IntRef;)elem] = v1;
+    this.(Lscala/Array$$anonfun$apply$2;)i$7.(Lscala/runtime/IntRef;)elem = (this.(Lscala/Array$$anonfun$apply$2;)i$7.(Lscala/runtime/IntRef;)elem + 1);
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
-    this.(Lscala/Array$$anonfun$apply$2;::apply(Z;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(v1));
+    this.(Lscala/Array$$anonfun$apply$2;::apply(J;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToLong(Ljava/lang/Object;)J;)(v1));
     return Lscala/runtime/BoxedUnit;.UNIT;
   }
   
-  private Z;[ array$2;
+  private J;[ array$7;
   
-  private Lscala/runtime/IntRef; i$2;
+  private Lscala/runtime/IntRef; i$7;
   
-  public this(Z;[ array$2, Lscala/runtime/IntRef; i$2) {
-    this.(Lscala/Array$$anonfun$apply$2;)array$2 = array$2;
-    this.(Lscala/Array$$anonfun$apply$2;)i$2 = i$2;
-    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  public this(J;[ array$7, Lscala/runtime/IntRef; i$7) {
+    this.(Lscala/Array$$anonfun$apply$2;)array$7 = array$7;
+    this.(Lscala/Array$$anonfun$apply$2;)i$7 = i$7;
+    (Lscala/runtime/AbstractFunction1$mcVJ$sp;::super()V;)();
   }
 }

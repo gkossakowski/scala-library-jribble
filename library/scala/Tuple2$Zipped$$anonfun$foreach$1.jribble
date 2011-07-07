@@ -1,16 +1,16 @@
 public final class Lscala/Tuple2$Zipped$$anonfun$foreach$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; el1) {
-    Ljava/lang/Object; $11$;
+    Ljava/lang/Object; $20$;
     if (this.(Lscala/Tuple2$Zipped$$anonfun$foreach$1;)elems2$5.(Lscala/collection/Iterator;::hasNext()Z;)())
       {
-        $11$ = this.(Lscala/Tuple2$Zipped$$anonfun$foreach$1;)f$1.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(el1, this.(Lscala/Tuple2$Zipped$$anonfun$foreach$1;)elems2$5.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
+        $20$ = this.(Lscala/Tuple2$Zipped$$anonfun$foreach$1;)f$1.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(el1, this.(Lscala/Tuple2$Zipped$$anonfun$foreach$1;)elems2$5.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
       }
     else
       {
         throw (new (Lscala/runtime/NonLocalReturnControl;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/Tuple2$Zipped$$anonfun$foreach$1;)nonLocalReturnKey5$1, Lscala/runtime/BoxedUnit;.UNIT));
       }
-    return $11$;
+    return $20$;
   }
   
   private Lscala/Function2; f$1;

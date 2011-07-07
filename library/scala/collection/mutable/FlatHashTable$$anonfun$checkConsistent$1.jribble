@@ -1,9 +1,13 @@
-public final class Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsistent$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+public final class Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsistent$1; extends Lscala/runtime/AbstractFunction1$mcVI$sp; implements Lscala/Serializable; {
   
-  public final V; apply(I; i$1) {
-    if (((this.(Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsistent$1;)$outer$u0020.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[i$1] != null) && !(this.(Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsistent$1;)$outer$u0020.(Lscala/collection/mutable/FlatHashTable;::containsEntry(Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsistent$1;)$outer$u0020.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[i$1]))))
+  public final V; apply(I; i) {
+    this.(Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsistent$1;::apply$mcVI$sp(I;)V;)(i);
+  }
+  
+  public V; apply$mcVI$sp(I; v1$1) {
+    if (((this.(Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsistent$1;)$outer$u0020.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[v1$1] != null) && !(this.(Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsistent$1;)$outer$u0020.(Lscala/collection/mutable/FlatHashTable;::containsEntry(Ljava/lang/Object;)Z;)(this.(Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsistent$1;)$outer$u0020.(Lscala/collection/mutable/FlatHashTable;::table()Ljava/lang/Object;[)()[v1$1]))))
       {
-        Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;Lscala/Function0;)V;)(false, (new (Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsistent$1$$anonfun$apply$1;::this(Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsistent$1;I;)V;)(this, i$1)));
+        Lscala/Predef$;.MODULE$.(Lscala/Predef$;::assert(Z;Lscala/Function0;)V;)(false, (new (Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsistent$1$$anonfun$apply$mcVI$sp$1;::this(Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsistent$1;I;)V;)(this, v1$1)));
       }
     else
       {
@@ -31,6 +35,6 @@ public final class Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsist
       {
         this.(Lscala/collection/mutable/FlatHashTable$$anonfun$checkConsistent$1;)$outer$u0020 = $outer;
       }
-    (Lscala/runtime/AbstractFunction1;::super()V;)();
+    (Lscala/runtime/AbstractFunction1$mcVI$sp;::super()V;)();
   }
 }
