@@ -509,22 +509,6 @@ public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; impl
     return arr$1;
   }
   
-  public Ljava/lang/reflect/Method; ensureAccessible(Ljava/lang/reflect/Method; m) {
-    if (!(m.(Ljava/lang/reflect/AccessibleObject;::isAccessible()Z;)()))
-      {
-        try {
-          m.(Ljava/lang/reflect/AccessibleObject;::setAccessible(Z;)V;)(true);
-        } catch(Ljava/lang/SecurityException; $WILDCARD) {
-          
-        }
-      }
-    else
-      {
-        
-      }
-    return m;
-  }
-  
   public Ljava/lang/Object; checkInitialized(Ljava/lang/Object; x) {
     Ljava/lang/Object; $44$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x, null))
@@ -840,7 +824,7 @@ public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; impl
   }
   
   private final Z; isScalaClass$1(Ljava/lang/Object; x) {
-    return Lscala/Option$;.MODULE$.(Lscala/Option$;::apply(Ljava/lang/Object;)Lscala/Option;)(x.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)().(Ljava/lang/Class;::getPackage()Ljava/lang/Package;)()).(Lscala/Option;::exists(Lscala/Function1;)Z;)((new (Lscala/runtime/ScalaRunTime$$anonfun$isScalaClass$1$1;::this()V;)()));
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("gwt/jribble cannot handle this"));
   }
   
   private final Z; isTuple$1(Ljava/lang/Object; x) {
