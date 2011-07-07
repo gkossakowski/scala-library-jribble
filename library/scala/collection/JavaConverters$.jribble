@@ -65,10 +65,6 @@ public final class Lscala/collection/JavaConverters$; extends Ljava/lang/Object;
     return this.(Lscala/collection/JavaConverters$;::mutableMapAsJavaMapConverter(Lscala/collection/mutable/Map;)Lscala/collection/JavaConverters$AsJava;)(m);
   }
   
-  public Lscala/collection/JavaConverters$AsJavaDictionary; asJavaDictionaryConverter(Lscala/collection/mutable/Map; m) {
-    return (new (Lscala/collection/JavaConverters$AsJavaDictionary;::this(Lscala/collection/mutable/Map;)V;)(m));
-  }
-  
   public Lscala/collection/JavaConverters$AsJava; mapAsJavaMapConverter(Lscala/collection/Map; m$2) {
     return (new (Lscala/collection/JavaConverters$AsJava;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$mapAsJavaMapConverter$1;::this(Lscala/collection/Map;)V;)(m$2))));
   }
@@ -123,10 +119,6 @@ public final class Lscala/collection/JavaConverters$; extends Ljava/lang/Object;
   
   public Lscala/collection/JavaConverters$AsScala; asScalaConcurrentMapConverter(Ljava/util/concurrent/ConcurrentMap; m$5) {
     return (new (Lscala/collection/JavaConverters$AsScala;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$asScalaConcurrentMapConverter$1;::this(Ljava/util/concurrent/ConcurrentMap;)V;)(m$5))));
-  }
-  
-  public Lscala/collection/JavaConverters$AsScala; dictionaryAsScalaMapConverter(Ljava/util/Dictionary; p$1) {
-    return (new (Lscala/collection/JavaConverters$AsScala;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$dictionaryAsScalaMapConverter$1;::this(Ljava/util/Dictionary;)V;)(p$1))));
   }
   
   public Lscala/collection/JavaConverters$AsScala; propertiesAsScalaMapConverter(Ljava/util/Properties; p$2) {
