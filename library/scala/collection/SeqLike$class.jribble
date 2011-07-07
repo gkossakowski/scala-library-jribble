@@ -8,10 +8,6 @@ public abstract class Lscala/collection/SeqLike$class; {
     return repr.<cast>(Lscala/collection/Seq;);
   }
   
-  public static Lscala/collection/parallel/Combiner; parCombiner(Lscala/collection/SeqLike; $this) {
-    return Lscala/collection/parallel/ParSeq$;.MODULE$.(Lscala/collection/parallel/ParSeq$;::newCombiner()Lscala/collection/parallel/Combiner;)();
-  }
-  
   public static I; lengthCompare(Lscala/collection/SeqLike; $this, I; len) {
     I; i = 0;
     Lscala/collection/Iterator; it = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();

@@ -4,10 +4,6 @@ public abstract class Lscala/collection/SetLike$class; {
     return (new (Lscala/collection/mutable/SetBuilder;::this(Lscala/collection/Set;)V;)($this.(Lscala/collection/SetLike;::empty()Lscala/collection/Set;)()));
   }
   
-  public static Lscala/collection/parallel/Combiner; parCombiner(Lscala/collection/SetLike; $this) {
-    return Lscala/collection/parallel/ParSet$;.MODULE$.(Lscala/collection/parallel/ParSet$;::newCombiner()Lscala/collection/parallel/Combiner;)();
-  }
-  
   public static Lscala/collection/Seq; toSeq(Lscala/collection/SetLike; $this) {
     return $this.(Lscala/collection/SetLike;::toBuffer()Lscala/collection/mutable/Buffer;)();
   }

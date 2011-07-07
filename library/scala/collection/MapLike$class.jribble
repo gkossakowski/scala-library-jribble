@@ -131,10 +131,6 @@ public abstract class Lscala/collection/MapLike$class; {
     return result;
   }
   
-  public static Lscala/collection/parallel/Combiner; parCombiner(Lscala/collection/MapLike; $this) {
-    return Lscala/collection/parallel/ParMap$;.MODULE$.(Lscala/collection/parallel/ParMap$;::newCombiner()Lscala/collection/parallel/Combiner;)();
-  }
-  
   public static Lscala/collection/mutable/StringBuilder; addString(Lscala/collection/MapLike; $this, Lscala/collection/mutable/StringBuilder; b, Ljava/lang/String; start, Ljava/lang/String; sep, Ljava/lang/String; end) {
     return $this.(Lscala/collection/MapLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/collection/MapLike$$anonfun$addString$1;::this(Lscala/collection/MapLike;)V;)($this))).(Lscala/collection/TraversableOnce;::addString(Lscala/collection/mutable/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(b, start, sep, end);
   }

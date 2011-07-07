@@ -1,9 +1,5 @@
 public abstract class Lscala/collection/mutable/SeqLike$class; {
   
-  public static Lscala/collection/parallel/Combiner; parCombiner(Lscala/collection/mutable/SeqLike; $this) {
-    return Lscala/collection/parallel/mutable/ParSeq$;.MODULE$.(Lscala/collection/parallel/mutable/ParSeq$;::newCombiner()Lscala/collection/parallel/Combiner;)();
-  }
-  
   public static Lscala/collection/mutable/SeqLike; transform(Lscala/collection/mutable/SeqLike; $this, Lscala/Function1; f$1) {
     Lscala/runtime/IntRef; i$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(0));
     $this.(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/mutable/SeqLike$$anonfun$transform$1;::this(Lscala/collection/mutable/SeqLike;Lscala/Function1;Lscala/runtime/IntRef;)V;)($this, f$1, i$1)));

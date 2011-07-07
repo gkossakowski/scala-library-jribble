@@ -12,10 +12,6 @@ public abstract class Lscala/collection/TraversableLike$class; {
     return repr.<cast>(Lscala/collection/Traversable;);
   }
   
-  public static Lscala/collection/parallel/Combiner; parCombiner(Lscala/collection/TraversableLike; $this) {
-    return Lscala/collection/parallel/ParIterable$;.MODULE$.(Lscala/collection/parallel/ParIterable$;::newCombiner()Lscala/collection/parallel/Combiner;)();
-  }
-  
   public static Z; isEmpty(Lscala/collection/TraversableLike; $this) {
     Lscala/runtime/BooleanRef; result$1 = (new (Lscala/runtime/BooleanRef;::this(Z;)V;)(true));
     Lscala/collection/Traversable$;.MODULE$.(Lscala/collection/Traversable$;::breaks()Lscala/util/control/Breaks;)().(Lscala/util/control/Breaks;::breakable(Lscala/Function0;)V;)((new (Lscala/collection/TraversableLike$$anonfun$isEmpty$1;::this(Lscala/collection/TraversableLike;Lscala/runtime/BooleanRef;)V;)($this, result$1)));
