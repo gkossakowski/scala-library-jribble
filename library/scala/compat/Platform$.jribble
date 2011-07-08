@@ -2,19 +2,19 @@ public final class Lscala/compat/Platform$; extends Ljava/lang/Object; implement
   public static Lscala/compat/Platform$; MODULE$ = new (Lscala/compat/Platform$;::this()V;)();
   
   public V; arraycopy(Ljava/lang/Object; src, I; srcPos, Ljava/lang/Object; dest, I; destPos, I; length) {
-    Ljava/lang/System;.(Ljava/lang/System;::arraycopy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(src, srcPos, dest, destPos, length);
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
   }
   
   public Ljava/lang/Object; createArray(Ljava/lang/Class; elemClass, I; length) {
-    return Ljava/lang/reflect/Array;.(Ljava/lang/reflect/Array;::newInstance(Ljava/lang/Class;I;)Ljava/lang/Object;)(elemClass, length);
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
   }
   
   public V; arrayclear(I;[ arr) {
-    Ljava/util/Arrays;.(Ljava/util/Arrays;::fill(I;[I;)V;)(arr, 0);
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
   }
   
   public Ljava/lang/Class; getClassForName(Ljava/lang/String; name) {
-    return Ljava/lang/Class;.(Ljava/lang/Class;::forName(Ljava/lang/String;)Ljava/lang/Class;)(name);
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
   }
   
   private Ljava/lang/String; EOL$u0020;
@@ -24,15 +24,15 @@ public final class Lscala/compat/Platform$; extends Ljava/lang/Object; implement
   }
   
   public J; currentTime() {
-    return Ljava/lang/System;.(Ljava/lang/System;::currentTimeMillis()J;)();
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
   }
   
   public V; collectGarbage() {
-    Ljava/lang/System;.(Ljava/lang/System;::gc()V;)();
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
   }
   
   public Ljava/lang/String; defaultCharsetName() {
-    return Ljava/nio/charset/Charset;.(Ljava/nio/charset/Charset;::defaultCharset()Ljava/nio/charset/Charset;)().(Ljava/nio/charset/Charset;::name()Ljava/lang/String;)();
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
   }
   
   public this() {
