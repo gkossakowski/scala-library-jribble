@@ -1,0 +1,401 @@
+public final class Lscala/util/MurmurHash$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/util/MurmurHash$; MODULE$ = new (Lscala/util/MurmurHash$;::this()V;)();
+  
+  private final I; visibleMagic() {
+    return -1759636613;
+  }
+  
+  private final I; hiddenMagicA() {
+    return -1789642873;
+  }
+  
+  private final I; hiddenMagicB() {
+    return 718793509;
+  }
+  
+  private final I; visibleMixer() {
+    return 1390208809;
+  }
+  
+  private final I; hiddenMixerA() {
+    return 2071795100;
+  }
+  
+  private final I; hiddenMixerB() {
+    return 1808688022;
+  }
+  
+  private final I; finalMixer1() {
+    return -2048144789;
+  }
+  
+  private final I; finalMixer2() {
+    return -1028477387;
+  }
+  
+  private final I; seedString() {
+    return -137723950;
+  }
+  
+  private final I; seedArray() {
+    return 1007110753;
+  }
+  
+  private I;[ storedMagicA$u0020;
+  
+  public I;[ storedMagicA() {
+    return this.(Lscala/util/MurmurHash$;)storedMagicA$u0020;
+  }
+  
+  private I;[ storedMagicB$u0020;
+  
+  public I;[ storedMagicB() {
+    return this.(Lscala/util/MurmurHash$;)storedMagicB$u0020;
+  }
+  
+  public I; startHash(I; seed) {
+    return (seed ^ -1759636613);
+  }
+  
+  public I; startMagicA() {
+    return -1789642873;
+  }
+  
+  public I; startMagicB() {
+    return 718793509;
+  }
+  
+  public I; extendHash(I; hash, I; value, I; magicA, I; magicB) {
+    return (((hash ^ (Ljava/lang/Integer;.(Ljava/lang/Integer;::rotateLeft(I;I;)I;)((value * magicA), 11) * magicB)) * 3) + 1390208809);
+  }
+  
+  public I; nextMagicA(I; magicA) {
+    return ((magicA * 5) + 2071795100);
+  }
+  
+  public I; nextMagicB(I; magicB) {
+    return ((magicB * 5) + 1808688022);
+  }
+  
+  public I; finalizeHash(I; hash) {
+    I; i = (hash ^ (hash >> 16));
+    i = (i * -2048144789);
+    i = (i ^ (i >> 13));
+    i = (i * -1028477387);
+    i = (i ^ (i >> 16));
+    return i;
+  }
+  
+  public I; arrayHash(Ljava/lang/Object; a) {
+    I; h = this.(Lscala/util/MurmurHash$;::startHash(I;)I;)((Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(a) * 1007110753));
+    I; c = -1789642873;
+    I; k = 718793509;
+    I; j = 0;
+    while$1: while(true) {
+      if ((j < Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(a)))
+        {
+          {
+            h = this.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)(h, Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::hash(Ljava/lang/Object;)I;)(Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::array_apply(Ljava/lang/Object;I;)Ljava/lang/Object;)(a, j)), c, k);
+            c = this.(Lscala/util/MurmurHash$;::nextMagicA(I;)I;)(c);
+            k = this.(Lscala/util/MurmurHash$;::nextMagicB(I;)I;)(k);
+            j = (j + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return this.(Lscala/util/MurmurHash$;::finalizeHash(I;)I;)(h);
+  }
+  
+  public I; stringHash(Ljava/lang/String; s) {
+    I; h = this.(Lscala/util/MurmurHash$;::startHash(I;)I;)((s.(Ljava/lang/String;::length()I;)() * -137723950));
+    I; c = -1789642873;
+    I; k = 718793509;
+    I; j = 0;
+    while$2: while(true) {
+      if (((j + 1) < s.(Ljava/lang/String;::length()I;)()))
+        {
+          {
+            I; i = ((s.(Ljava/lang/String;::charAt(I;)C;)(j) << 16) + s.(Ljava/lang/String;::charAt(I;)C;)((j + 1)));
+            h = this.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)(h, i, c, k);
+            c = this.(Lscala/util/MurmurHash$;::nextMagicA(I;)I;)(c);
+            k = this.(Lscala/util/MurmurHash$;::nextMagicB(I;)I;)(k);
+            j = (j + 2);
+          }
+          continue while$2;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    if ((j < s.(Ljava/lang/String;::length()I;)()))
+      {
+        h = this.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)(h, s.(Ljava/lang/String;::charAt(I;)C;)(j).<cast>(I;), c, k);
+      }
+    else
+      {
+        
+      }
+    return this.(Lscala/util/MurmurHash$;::finalizeHash(I;)I;)(h);
+  }
+  
+  public I; symmetricHash(Lscala/collection/TraversableOnce; xs, I; seed) {
+    Lscala/runtime/IntRef; a$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(0));
+    Lscala/runtime/IntRef; b$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(0));
+    Lscala/runtime/IntRef; n$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(0));
+    Lscala/runtime/IntRef; c$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(1));
+    xs.(Lscala/collection/TraversableOnce;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/util/MurmurHash$$anonfun$symmetricHash$1;::this(Lscala/runtime/IntRef;Lscala/runtime/IntRef;Lscala/runtime/IntRef;Lscala/runtime/IntRef;)V;)(a$1, b$1, n$1, c$1)));
+    I; h = this.(Lscala/util/MurmurHash$;::startHash(I;)I;)((seed * n$1.(Lscala/runtime/IntRef;)elem));
+    h = this.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)(h, a$1.(Lscala/runtime/IntRef;)elem, this.(Lscala/util/MurmurHash$;::storedMagicA()I;[)()[0], this.(Lscala/util/MurmurHash$;::storedMagicB()I;[)()[0]);
+    h = this.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)(h, b$1.(Lscala/runtime/IntRef;)elem, this.(Lscala/util/MurmurHash$;::storedMagicA()I;[)()[1], this.(Lscala/util/MurmurHash$;::storedMagicB()I;[)()[1]);
+    h = this.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)(h, c$1.(Lscala/runtime/IntRef;)elem, this.(Lscala/util/MurmurHash$;::storedMagicA()I;[)()[2], this.(Lscala/util/MurmurHash$;::storedMagicB()I;[)()[2]);
+    return this.(Lscala/util/MurmurHash$;::finalizeHash(I;)I;)(h);
+  }
+  
+  public I; arrayHash$mVc$sp(Lscala/runtime/BoxedUnit;[ a) {
+    I; h = this.(Lscala/util/MurmurHash$;::startHash(I;)I;)((a.<length> * 1007110753));
+    I; c = -1789642873;
+    I; k = 718793509;
+    I; j = 0;
+    while$1: while(true) {
+      if ((j < a.<length>))
+        {
+          {
+            h = this.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)(h, 0, c, k);
+            c = this.(Lscala/util/MurmurHash$;::nextMagicA(I;)I;)(c);
+            k = this.(Lscala/util/MurmurHash$;::nextMagicB(I;)I;)(k);
+            j = (j + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return this.(Lscala/util/MurmurHash$;::finalizeHash(I;)I;)(h);
+  }
+  
+  public I; arrayHash$mZc$sp(Z;[ a) {
+    I; h = this.(Lscala/util/MurmurHash$;::startHash(I;)I;)((a.<length> * 1007110753));
+    I; c = -1789642873;
+    I; k = 718793509;
+    I; j = 0;
+    while$1: while(true) {
+      if ((j < a.<length>))
+        {
+          {
+            I; $2$ = h;
+            I; $1$;
+            if (a[j])
+              {
+                $1$ = 1231;
+              }
+            else
+              {
+                $1$ = 1237;
+              }
+            h = this.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)($2$, $1$, c, k);
+            c = this.(Lscala/util/MurmurHash$;::nextMagicA(I;)I;)(c);
+            k = this.(Lscala/util/MurmurHash$;::nextMagicB(I;)I;)(k);
+            j = (j + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return this.(Lscala/util/MurmurHash$;::finalizeHash(I;)I;)(h);
+  }
+  
+  public I; arrayHash$mBc$sp(B;[ a) {
+    I; h = this.(Lscala/util/MurmurHash$;::startHash(I;)I;)((a.<length> * 1007110753));
+    I; c = -1789642873;
+    I; k = 718793509;
+    I; j = 0;
+    while$1: while(true) {
+      if ((j < a.<length>))
+        {
+          {
+            h = this.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)(h, a[j].<cast>(B;).<cast>(I;), c, k);
+            c = this.(Lscala/util/MurmurHash$;::nextMagicA(I;)I;)(c);
+            k = this.(Lscala/util/MurmurHash$;::nextMagicB(I;)I;)(k);
+            j = (j + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return this.(Lscala/util/MurmurHash$;::finalizeHash(I;)I;)(h);
+  }
+  
+  public I; arrayHash$mSc$sp(S;[ a) {
+    I; h = this.(Lscala/util/MurmurHash$;::startHash(I;)I;)((a.<length> * 1007110753));
+    I; c = -1789642873;
+    I; k = 718793509;
+    I; j = 0;
+    while$1: while(true) {
+      if ((j < a.<length>))
+        {
+          {
+            h = this.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)(h, a[j].<cast>(S;).<cast>(I;), c, k);
+            c = this.(Lscala/util/MurmurHash$;::nextMagicA(I;)I;)(c);
+            k = this.(Lscala/util/MurmurHash$;::nextMagicB(I;)I;)(k);
+            j = (j + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return this.(Lscala/util/MurmurHash$;::finalizeHash(I;)I;)(h);
+  }
+  
+  public I; arrayHash$mCc$sp(C;[ a) {
+    I; h = this.(Lscala/util/MurmurHash$;::startHash(I;)I;)((a.<length> * 1007110753));
+    I; c = -1789642873;
+    I; k = 718793509;
+    I; j = 0;
+    while$1: while(true) {
+      if ((j < a.<length>))
+        {
+          {
+            h = this.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)(h, a[j].<cast>(C;).<cast>(I;), c, k);
+            c = this.(Lscala/util/MurmurHash$;::nextMagicA(I;)I;)(c);
+            k = this.(Lscala/util/MurmurHash$;::nextMagicB(I;)I;)(k);
+            j = (j + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return this.(Lscala/util/MurmurHash$;::finalizeHash(I;)I;)(h);
+  }
+  
+  public I; arrayHash$mIc$sp(I;[ a) {
+    I; h = this.(Lscala/util/MurmurHash$;::startHash(I;)I;)((a.<length> * 1007110753));
+    I; c = -1789642873;
+    I; k = 718793509;
+    I; j = 0;
+    while$1: while(true) {
+      if ((j < a.<length>))
+        {
+          {
+            h = this.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)(h, a[j], c, k);
+            c = this.(Lscala/util/MurmurHash$;::nextMagicA(I;)I;)(c);
+            k = this.(Lscala/util/MurmurHash$;::nextMagicB(I;)I;)(k);
+            j = (j + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return this.(Lscala/util/MurmurHash$;::finalizeHash(I;)I;)(h);
+  }
+  
+  public I; arrayHash$mJc$sp(J;[ a) {
+    I; h = this.(Lscala/util/MurmurHash$;::startHash(I;)I;)((a.<length> * 1007110753));
+    I; c = -1789642873;
+    I; k = 718793509;
+    I; j = 0;
+    while$1: while(true) {
+      if ((j < a.<length>))
+        {
+          {
+            h = this.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)(h, Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::hash(J;)I;)(a[j]), c, k);
+            c = this.(Lscala/util/MurmurHash$;::nextMagicA(I;)I;)(c);
+            k = this.(Lscala/util/MurmurHash$;::nextMagicB(I;)I;)(k);
+            j = (j + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return this.(Lscala/util/MurmurHash$;::finalizeHash(I;)I;)(h);
+  }
+  
+  public I; arrayHash$mFc$sp(F;[ a) {
+    I; h = this.(Lscala/util/MurmurHash$;::startHash(I;)I;)((a.<length> * 1007110753));
+    I; c = -1789642873;
+    I; k = 718793509;
+    I; j = 0;
+    while$1: while(true) {
+      if ((j < a.<length>))
+        {
+          {
+            h = this.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)(h, Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::hash(F;)I;)(a[j]), c, k);
+            c = this.(Lscala/util/MurmurHash$;::nextMagicA(I;)I;)(c);
+            k = this.(Lscala/util/MurmurHash$;::nextMagicB(I;)I;)(k);
+            j = (j + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return this.(Lscala/util/MurmurHash$;::finalizeHash(I;)I;)(h);
+  }
+  
+  public I; arrayHash$mDc$sp(D;[ a) {
+    I; h = this.(Lscala/util/MurmurHash$;::startHash(I;)I;)((a.<length> * 1007110753));
+    I; c = -1789642873;
+    I; k = 718793509;
+    I; j = 0;
+    while$1: while(true) {
+      if ((j < a.<length>))
+        {
+          {
+            h = this.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)(h, Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::hash(D;)I;)(a[j]), c, k);
+            c = this.(Lscala/util/MurmurHash$;::nextMagicA(I;)I;)(c);
+            k = this.(Lscala/util/MurmurHash$;::nextMagicB(I;)I;)(k);
+            j = (j + 1);
+          }
+          continue while$1;
+        }
+      else
+        {
+          
+        }
+      break;
+    }
+    return this.(Lscala/util/MurmurHash$;::finalizeHash(I;)I;)(h);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(Lscala/util/MurmurHash$;)storedMagicA$u0020 = Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::iterate(Ljava/lang/Object;Lscala/Function1;)Lscala/collection/Iterator;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(-1789642873), (new (Lscala/util/MurmurHash$$anonfun$1;::this()V;)())).(Lscala/collection/Iterator;::take(I;)Lscala/collection/Iterator;)(23).(Lscala/collection/TraversableOnce;::toArray(Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Int()Lscala/reflect/AnyValManifest;)()).<cast>(I;[);
+    this.(Lscala/util/MurmurHash$;)storedMagicB$u0020 = Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::iterate(Ljava/lang/Object;Lscala/Function1;)Lscala/collection/Iterator;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(718793509), (new (Lscala/util/MurmurHash$$anonfun$2;::this()V;)())).(Lscala/collection/Iterator;::take(I;)Lscala/collection/Iterator;)(23).(Lscala/collection/TraversableOnce;::toArray(Lscala/reflect/ClassManifest;)Ljava/lang/Object;)(Lscala/reflect/Manifest$;.MODULE$.(Lscala/reflect/Manifest$;::Int()Lscala/reflect/AnyValManifest;)()).<cast>(I;[);
+  }
+}
