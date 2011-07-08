@@ -459,7 +459,7 @@ public abstract class Lscala/collection/immutable/RedBlack$NonEmpty; extends Lsc
       }
     else
       {
-        Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)(("Defect: invariance violation; expected black, got " + t));
+        throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)(("Defect: invariance violation; expected black, got " + t)));
       }
     return $35$;
   }
@@ -1011,7 +1011,7 @@ public abstract class Lscala/collection/immutable/RedBlack$NonEmpty; extends Lsc
   }
   
   private final Lscala/runtime/Nothing$; body$percent32$percent1() {
-    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)(("Defect: invariance violation at " + this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)()));
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)(("Defect: invariance violation at " + this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)())));
   }
   
   private final Lscala/collection/immutable/RedBlack$NonEmpty; body$percent22$percent1() {
@@ -1059,6 +1059,6 @@ public abstract class Lscala/collection/immutable/RedBlack$NonEmpty; extends Lsc
   }
   
   private final Lscala/runtime/Nothing$; body$percent33$percent1() {
-    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)(("Defect: invariance violation at " + this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)()));
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)(("Defect: invariance violation at " + this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)())));
   }
 }
