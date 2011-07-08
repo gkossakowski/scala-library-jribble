@@ -1262,7 +1262,7 @@ public abstract class Lscala/collection/immutable/LongMap; extends Ljava/lang/Ob
               }
             else
               {
-                Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("Key not found");
+                throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("Key not found"));
               }
             $36$ = $37$;
           }
@@ -1271,7 +1271,7 @@ public abstract class Lscala/collection/immutable/LongMap; extends Ljava/lang/Ob
             Lscala/runtime/Nothing$; $38$;
             if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/LongMap$Nil$;.MODULE$, temp114))
               {
-                Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("key not found");
+                throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("key not found"));
               }
             else
               {

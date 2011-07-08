@@ -434,7 +434,7 @@ public abstract class Lscala/collection/immutable/IntMapIterator; extends Ljava/
             Lscala/runtime/Nothing$; $8$;
             if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp12))
               {
-                Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("Empty maps not allowed as subtrees");
+                throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("Empty maps not allowed as subtrees"));
               }
             else
               {

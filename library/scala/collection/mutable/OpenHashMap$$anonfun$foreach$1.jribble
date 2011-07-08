@@ -3,7 +3,7 @@ public final class Lscala/collection/mutable/OpenHashMap$$anonfun$foreach$1; ext
   public final V; apply(Lscala/collection/mutable/OpenHashMap$OpenEntry; entry) {
     if ((this.(Lscala/collection/mutable/OpenHashMap$$anonfun$foreach$1;)$outer$u0020.(Lscala/collection/mutable/OpenHashMap;)scala$collection$mutable$OpenHashMap$$modCount != this.(Lscala/collection/mutable/OpenHashMap$$anonfun$foreach$1;)startModCount$1))
       {
-        Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("Concurrent Modification");
+        throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("Concurrent Modification"));
       }
     else
       {

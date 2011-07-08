@@ -988,7 +988,7 @@ public abstract class Lscala/collection/immutable/RedBlack$NonEmpty; extends Lsc
         Lscala/runtime/Nothing$; $88$;
         if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/Nil$;.MODULE$, temp227))
           {
-            Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("Defect: unexpected empty zipper while computing range");
+            throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("Defect: unexpected empty zipper while computing range"));
           }
         else
           {

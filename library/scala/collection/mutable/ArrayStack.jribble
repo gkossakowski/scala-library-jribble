@@ -1108,7 +1108,7 @@ public class Lscala/collection/mutable/ArrayStack; extends Ljava/lang/Object; im
   public Ljava/lang/Object; pop() {
     if ((this.(Lscala/collection/mutable/ArrayStack;::scala$collection$mutable$ArrayStack$$index()I;)() == 0))
       {
-        Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("Stack empty");
+        throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("Stack empty"));
       }
     else
       {
