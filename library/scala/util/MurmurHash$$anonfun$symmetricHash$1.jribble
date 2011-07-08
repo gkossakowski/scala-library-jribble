@@ -1,0 +1,38 @@
+public final class Lscala/util/MurmurHash$$anonfun$symmetricHash$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
+  
+  public final V; apply(Ljava/lang/Object; i) {
+    I; h = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::hash(Ljava/lang/Object;)I;)(i);
+    this.(Lscala/util/MurmurHash$$anonfun$symmetricHash$1;)a$1.(Lscala/runtime/IntRef;)elem = (this.(Lscala/util/MurmurHash$$anonfun$symmetricHash$1;)a$1.(Lscala/runtime/IntRef;)elem + h);
+    this.(Lscala/util/MurmurHash$$anonfun$symmetricHash$1;)b$1.(Lscala/runtime/IntRef;)elem = (this.(Lscala/util/MurmurHash$$anonfun$symmetricHash$1;)b$1.(Lscala/runtime/IntRef;)elem ^ h);
+    if ((h != 0))
+      {
+        this.(Lscala/util/MurmurHash$$anonfun$symmetricHash$1;)c$1.(Lscala/runtime/IntRef;)elem = (this.(Lscala/util/MurmurHash$$anonfun$symmetricHash$1;)c$1.(Lscala/runtime/IntRef;)elem * h);
+      }
+    else
+      {
+        
+      }
+    this.(Lscala/util/MurmurHash$$anonfun$symmetricHash$1;)n$1.(Lscala/runtime/IntRef;)elem = (this.(Lscala/util/MurmurHash$$anonfun$symmetricHash$1;)n$1.(Lscala/runtime/IntRef;)elem + 1);
+  }
+  
+  public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/util/MurmurHash$$anonfun$symmetricHash$1;::apply(Ljava/lang/Object;)V;)(v1);
+    return Lscala/runtime/BoxedUnit;.UNIT;
+  }
+  
+  private Lscala/runtime/IntRef; a$1;
+  
+  private Lscala/runtime/IntRef; b$1;
+  
+  private Lscala/runtime/IntRef; n$1;
+  
+  private Lscala/runtime/IntRef; c$1;
+  
+  public this(Lscala/runtime/IntRef; a$1, Lscala/runtime/IntRef; b$1, Lscala/runtime/IntRef; n$1, Lscala/runtime/IntRef; c$1) {
+    this.(Lscala/util/MurmurHash$$anonfun$symmetricHash$1;)a$1 = a$1;
+    this.(Lscala/util/MurmurHash$$anonfun$symmetricHash$1;)b$1 = b$1;
+    this.(Lscala/util/MurmurHash$$anonfun$symmetricHash$1;)n$1 = n$1;
+    this.(Lscala/util/MurmurHash$$anonfun$symmetricHash$1;)c$1 = c$1;
+    (Lscala/runtime/AbstractFunction1;::super()V;)();
+  }
+}

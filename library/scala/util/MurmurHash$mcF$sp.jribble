@@ -1,0 +1,46 @@
+public class Lscala/util/MurmurHash$mcF$sp; extends Lscala/util/MurmurHash; implements Lscala/Function1$mcVF$sp; {
+  
+  public Lscala/Function1; compose(Lscala/Function1; g) {
+    return Lscala/Function1$mcVF$sp$class;.(Lscala/Function1$mcVF$sp$class;::compose(Lscala/Function1$mcVF$sp;Lscala/Function1;)Lscala/Function1;)(this, g);
+  }
+  
+  public Lscala/Function1; compose$mcVF$sp(Lscala/Function1; g) {
+    return Lscala/Function1$mcVF$sp$class;.(Lscala/Function1$mcVF$sp$class;::compose$mcVF$sp(Lscala/Function1$mcVF$sp;Lscala/Function1;)Lscala/Function1;)(this, g);
+  }
+  
+  public Lscala/Function1; andThen(Lscala/Function1; g) {
+    return Lscala/Function1$mcVF$sp$class;.(Lscala/Function1$mcVF$sp$class;::andThen(Lscala/Function1$mcVF$sp;Lscala/Function1;)Lscala/Function1;)(this, g);
+  }
+  
+  public Lscala/Function1; andThen$mcVF$sp(Lscala/Function1; g) {
+    return Lscala/Function1$mcVF$sp$class;.(Lscala/Function1$mcVF$sp$class;::andThen$mcVF$sp(Lscala/Function1$mcVF$sp;Lscala/Function1;)Lscala/Function1;)(this, g);
+  }
+  
+  private I; seed;
+  
+  public V; apply(F; t) {
+    this.(Lscala/util/MurmurHash$mcF$sp;::apply$mcF$sp(F;)V;)(t);
+  }
+  
+  public V; apply$mcF$sp(F; t) {
+    this.(Lscala/util/MurmurHash;::scala$util$MurmurHash$$h_$eq(I;)V;)(Lscala/util/MurmurHash$;.MODULE$.(Lscala/util/MurmurHash$;::extendHash(I;I;I;I;)I;)(this.(Lscala/util/MurmurHash;::scala$util$MurmurHash$$h()I;)(), Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::hash(F;)I;)(t), this.(Lscala/util/MurmurHash;::scala$util$MurmurHash$$c()I;)(), this.(Lscala/util/MurmurHash;::scala$util$MurmurHash$$k()I;)()));
+    this.(Lscala/util/MurmurHash;::scala$util$MurmurHash$$c_$eq(I;)V;)(Lscala/util/MurmurHash$;.MODULE$.(Lscala/util/MurmurHash$;::nextMagicA(I;)I;)(this.(Lscala/util/MurmurHash;::scala$util$MurmurHash$$c()I;)()));
+    this.(Lscala/util/MurmurHash;::scala$util$MurmurHash$$k_$eq(I;)V;)(Lscala/util/MurmurHash$;.MODULE$.(Lscala/util/MurmurHash$;::nextMagicB(I;)I;)(this.(Lscala/util/MurmurHash;::scala$util$MurmurHash$$k()I;)()));
+    this.(Lscala/util/MurmurHash;::scala$util$MurmurHash$$hashed_$eq(Z;)V;)(false);
+  }
+  
+  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
+    this.(Lscala/util/MurmurHash$mcF$sp;::apply(F;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(v1));
+    return Lscala/runtime/BoxedUnit;.UNIT;
+  }
+  
+  public V; apply(Ljava/lang/Object; t) {
+    this.(Lscala/util/MurmurHash$mcF$sp;::apply(F;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToFloat(Ljava/lang/Object;)F;)(t));
+  }
+  
+  public this(I; seed) {
+    this.(Lscala/util/MurmurHash$mcF$sp;)seed = seed;
+    (Lscala/util/MurmurHash;::super(I;)V;)(seed);
+    Lscala/Function1$mcVF$sp$class;.(Lscala/Function1$mcVF$sp$class;::$init$(Lscala/Function1$mcVF$sp;)V;)(this);
+  }
+}
