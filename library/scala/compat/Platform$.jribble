@@ -1,0 +1,42 @@
+public final class Lscala/compat/Platform$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/compat/Platform$; MODULE$ = new (Lscala/compat/Platform$;::this()V;)();
+  
+  public V; arraycopy(Ljava/lang/Object; src, I; srcPos, Ljava/lang/Object; dest, I; destPos, I; length) {
+    Ljava/lang/System;.(Ljava/lang/System;::arraycopy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(src, srcPos, dest, destPos, length);
+  }
+  
+  public Ljava/lang/Object; createArray(Ljava/lang/Class; elemClass, I; length) {
+    return Ljava/lang/reflect/Array;.(Ljava/lang/reflect/Array;::newInstance(Ljava/lang/Class;I;)Ljava/lang/Object;)(elemClass, length);
+  }
+  
+  public V; arrayclear(I;[ arr) {
+    Ljava/util/Arrays;.(Ljava/util/Arrays;::fill(I;[I;)V;)(arr, 0);
+  }
+  
+  public Ljava/lang/Class; getClassForName(Ljava/lang/String; name) {
+    return Ljava/lang/Class;.(Ljava/lang/Class;::forName(Ljava/lang/String;)Ljava/lang/Class;)(name);
+  }
+  
+  private Ljava/lang/String; EOL$u0020;
+  
+  public Ljava/lang/String; EOL() {
+    return this.(Lscala/compat/Platform$;)EOL$u0020;
+  }
+  
+  public J; currentTime() {
+    return Ljava/lang/System;.(Ljava/lang/System;::currentTimeMillis()J;)();
+  }
+  
+  public V; collectGarbage() {
+    Ljava/lang/System;.(Ljava/lang/System;::gc()V;)();
+  }
+  
+  public Ljava/lang/String; defaultCharsetName() {
+    return Ljava/nio/charset/Charset;.(Ljava/nio/charset/Charset;::defaultCharset()Ljava/nio/charset/Charset;)().(Ljava/nio/charset/Charset;::name()Ljava/lang/String;)();
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(Lscala/compat/Platform$;)EOL$u0020 = Lscala/util/Properties$;.MODULE$.(Lscala/util/PropertiesTrait;::lineSeparator()Ljava/lang/String;)();
+  }
+}
