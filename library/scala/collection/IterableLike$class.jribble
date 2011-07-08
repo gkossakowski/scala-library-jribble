@@ -180,7 +180,7 @@ public abstract class Lscala/collection/IterableLike$class; {
     b$1.(Lscala/collection/mutable/Builder;::sizeHintBounded(I;Lscala/collection/TraversableLike;)V;)(n, $this);
     Lscala/collection/Iterator; lead$1 = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::drop(I;)Lscala/collection/Iterator;)(n);
     Lscala/runtime/BooleanRef; go$1 = (new (Lscala/runtime/BooleanRef;::this(Z;)V;)(false));
-    $this.(Lscala/collection/Parallelizable;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/IterableLike$$anonfun$takeRight$1;::this(Lscala/collection/IterableLike;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;Lscala/runtime/BooleanRef;)V;)($this, b$1, lead$1, go$1)));
+    $this.(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/IterableLike$$anonfun$takeRight$1;::this(Lscala/collection/IterableLike;Lscala/collection/mutable/Builder;Lscala/collection/Iterator;Lscala/runtime/BooleanRef;)V;)($this, b$1, lead$1, go$1)));
     return b$1.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
   }
   

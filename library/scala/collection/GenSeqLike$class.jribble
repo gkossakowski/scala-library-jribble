@@ -50,7 +50,7 @@ public abstract class Lscala/collection/GenSeqLike$class; {
   
   public static I; hashCode(Lscala/collection/GenSeqLike; $this) {
     Lscala/util/MurmurHash; h = (new (Lscala/util/MurmurHash;::this(I;)V;)(Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::hashSeed()I;)()));
-    $this.(Lscala/collection/Parallelizable;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)(h);
+    $this.(Lscala/collection/GenTraversableLike;::foreach(Lscala/Function1;)V;)(h);
     return h.(Lscala/util/MurmurHash;::hash()I;)();
   }
   

@@ -136,7 +136,7 @@ public abstract class Lscala/collection/SeqLike$class; {
   
   public static Ljava/lang/Object; reverseMap(Lscala/collection/SeqLike; $this, Lscala/Function1; f$1, Lscala/collection/generic/CanBuildFrom; bf) {
     Lscala/runtime/ObjectRef; xs$2 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)(Lscala/collection/immutable/Nil$;.MODULE$));
-    $this.(Lscala/collection/Parallelizable;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/SeqLike$$anonfun$reverseMap$1;::this(Lscala/collection/SeqLike;Lscala/runtime/ObjectRef;)V;)($this, xs$2)));
+    $this.(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/SeqLike$$anonfun$reverseMap$1;::this(Lscala/collection/SeqLike;Lscala/runtime/ObjectRef;)V;)($this, xs$2)));
     Lscala/collection/mutable/Builder; b$2 = bf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)($this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
     xs$2.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/immutable/List;).(Lscala/collection/LinearSeqOptimized;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/SeqLike$$anonfun$reverseMap$2;::this(Lscala/collection/SeqLike;Lscala/Function1;Lscala/collection/mutable/Builder;)V;)($this, f$1, b$2)));
     return b$2.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
@@ -449,7 +449,7 @@ public abstract class Lscala/collection/SeqLike$class; {
     I; len = $this.(Lscala/collection/SeqLike;::length()I;)();
     Lscala/collection/mutable/ArraySeq; arr$1 = (new (Lscala/collection/mutable/ArraySeq;::this(I;)V;)(len));
     Lscala/runtime/IntRef; i$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(0));
-    $this.(Lscala/collection/Parallelizable;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/SeqLike$$anonfun$sorted$1;::this(Lscala/collection/SeqLike;Lscala/collection/mutable/ArraySeq;Lscala/runtime/IntRef;)V;)($this, arr$1, i$1)));
+    $this.(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/SeqLike$$anonfun$sorted$1;::this(Lscala/collection/SeqLike;Lscala/collection/mutable/ArraySeq;Lscala/runtime/IntRef;)V;)($this, arr$1, i$1)));
     Ljava/util/Arrays;.(Ljava/util/Arrays;::sort(Ljava/lang/Object;[Ljava/util/Comparator;)V;)(arr$1.(Lscala/collection/mutable/ArraySeq;::array()Ljava/lang/Object;[)(), ord);
     Lscala/collection/mutable/Builder; b$6 = $this.(Lscala/collection/TraversableLike;::newBuilder()Lscala/collection/mutable/Builder;)();
     b$6.(Lscala/collection/mutable/Builder;::sizeHint(I;)V;)(len);

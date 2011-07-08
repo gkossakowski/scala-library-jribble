@@ -57,7 +57,7 @@ public abstract class Lscala/collection/TraversableLike$class; {
   }
   
   public static Ljava/lang/Object; $plus$plus$colon(Lscala/collection/TraversableLike; $this, Lscala/collection/Traversable; that, Lscala/collection/generic/CanBuildFrom; bf) {
-    return that.(Lscala/collection/TraversableLike;::$plus$plus(Lscala/collection/GenTraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)($this.(Lscala/collection/Parallelizable;::seq()Lscala/collection/TraversableOnce;)(), Lscala/collection/package$;.MODULE$.(Lscala/collection/package$;::breakOut(Lscala/collection/generic/CanBuildFrom;)Lscala/collection/generic/CanBuildFrom;)(bf));
+    return that.(Lscala/collection/TraversableLike;::$plus$plus(Lscala/collection/GenTraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)($this, Lscala/collection/package$;.MODULE$.(Lscala/collection/package$;::breakOut(Lscala/collection/generic/CanBuildFrom;)Lscala/collection/generic/CanBuildFrom;)(bf));
   }
   
   public static Ljava/lang/Object; map(Lscala/collection/TraversableLike; $this, Lscala/Function1; f$3, Lscala/collection/generic/CanBuildFrom; bf) {
@@ -207,7 +207,7 @@ public abstract class Lscala/collection/TraversableLike$class; {
     Lscala/runtime/BooleanRef; follow$1 = (new (Lscala/runtime/BooleanRef;::this(Z;)V;)(false));
     Lscala/collection/mutable/Builder; b$8 = $this.(Lscala/collection/TraversableLike;::newBuilder()Lscala/collection/mutable/Builder;)();
     b$8.(Lscala/collection/mutable/Builder;::sizeHint(Lscala/collection/TraversableLike;I;)V;)($this, -1);
-    $this.(Lscala/collection/Parallelizable;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/TraversableLike$$anonfun$init$1;::this(Lscala/collection/TraversableLike;Lscala/runtime/ObjectRef;Lscala/runtime/BooleanRef;Lscala/collection/mutable/Builder;)V;)($this, lst$2, follow$1, b$8)));
+    $this.(Lscala/collection/TraversableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/TraversableLike$$anonfun$init$1;::this(Lscala/collection/TraversableLike;Lscala/runtime/ObjectRef;Lscala/runtime/BooleanRef;Lscala/collection/mutable/Builder;)V;)($this, lst$2, follow$1, b$8)));
     return b$8.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
   }
   
