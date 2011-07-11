@@ -382,7 +382,7 @@ public final class Lscala/collection/Iterator$$anon$9; extends Ljava/lang/Object
     Ljava/lang/Object; $7$;
     if (this.(Lscala/collection/Iterator$$anon$9;::hasNext()Z;)())
       {
-        Ljava/lang/Object; result = this.(Lscala/collection/Iterator$$anon$9;)f$3.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/collection/Iterator$$anon$9;::i()I;)()));
+        Ljava/lang/Object; result = this.(Lscala/collection/Iterator$$anon$9;)f$4.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/collection/Iterator$$anon$9;::i()I;)()));
         this.(Lscala/collection/Iterator$$anon$9;::i_$eq(I;)V;)((this.(Lscala/collection/Iterator$$anon$9;::i()I;)() + 1));
         $7$ = result;
       }
@@ -419,11 +419,11 @@ public final class Lscala/collection/Iterator$$anon$9; extends Ljava/lang/Object
   
   private I; end$1;
   
-  private Lscala/Function1; f$3;
+  private Lscala/Function1; f$4;
   
-  public this(I; end$1, Lscala/Function1; f$3) {
+  public this(I; end$1, Lscala/Function1; f$4) {
     this.(Lscala/collection/Iterator$$anon$9;)end$1 = end$1;
-    this.(Lscala/collection/Iterator$$anon$9;)f$3 = f$3;
+    this.(Lscala/collection/Iterator$$anon$9;)f$4 = f$4;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/GenTraversableOnce$class;.(Lscala/collection/GenTraversableOnce$class;::$init$(Lscala/collection/GenTraversableOnce;)V;)(this);
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);

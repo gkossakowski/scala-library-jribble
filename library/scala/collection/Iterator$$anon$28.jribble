@@ -364,44 +364,48 @@ public final class Lscala/collection/Iterator$$anon$28; extends Ljava/lang/Objec
     return Lscala/collection/GenTraversableOnce$class;.(Lscala/collection/GenTraversableOnce$class;::$div$colon$bslash(Lscala/collection/GenTraversableOnce;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(this, z, op);
   }
   
-  private I; count$u0020;
+  private Z; dropped$u0020;
   
-  private I; count() {
-    return this.(Lscala/collection/Iterator$$anon$28;)count$u0020;
+  private Z; dropped() {
+    return this.(Lscala/collection/Iterator$$anon$28;)dropped$u0020;
   }
   
-  private V; count_$eq(I; x$1) {
-    this.(Lscala/collection/Iterator$$anon$28;)count$u0020 = x$1;
+  private V; dropped_$eq(Z; x$1) {
+    this.(Lscala/collection/Iterator$$anon$28;)dropped$u0020 = x$1;
   }
   
-  public Z; hasNext() {
-    return (this.(Lscala/collection/Iterator$$anon$28;)$outer$u0020.(Lscala/collection/Iterator;::hasNext()Z;)() || (this.(Lscala/collection/Iterator$$anon$28;::count()I;)() < this.(Lscala/collection/Iterator$$anon$28;)len$2));
-  }
-  
-  public Ljava/lang/Object; next() {
-    this.(Lscala/collection/Iterator$$anon$28;::count_$eq(I;)V;)((this.(Lscala/collection/Iterator$$anon$28;::count()I;)() + 1));
-    Ljava/lang/Object; $26$;
-    if (this.(Lscala/collection/Iterator$$anon$28;)$outer$u0020.(Lscala/collection/Iterator;::hasNext()Z;)())
+  private V; skip() {
+    if (!(this.(Lscala/collection/Iterator$$anon$28;::dropped()Z;)()))
       {
-        $26$ = this.(Lscala/collection/Iterator$$anon$28;)$outer$u0020.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+        while$6: while(true) {
+          if ((this.(Lscala/collection/Iterator$$anon$28;)self$4.(Lscala/collection/Iterator;::hasNext()Z;)() && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/collection/Iterator$$anon$28;)p$3.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/Iterator$$anon$28;)self$4.(Lscala/collection/BufferedIterator;::head()Ljava/lang/Object;)()))))
+            {
+              this.(Lscala/collection/Iterator$$anon$28;)self$4.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+              continue while$6;
+            }
+          else
+            {
+              
+            }
+          break;
+        }
+        this.(Lscala/collection/Iterator$$anon$28;::dropped_$eq(Z;)V;)(true);
       }
     else
       {
-        Ljava/lang/Object; $27$;
-        if ((this.(Lscala/collection/Iterator$$anon$28;::count()I;)() <= this.(Lscala/collection/Iterator$$anon$28;)len$2))
-          {
-            $27$ = this.(Lscala/collection/Iterator$$anon$28;)elem$4;
-          }
-        else
-          {
-            $27$ = Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::empty()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
-          }
-        $26$ = $27$;
+        
       }
-    return $26$;
   }
   
-  private Lscala/collection/Iterator; $outer$u0020;
+  public Z; hasNext() {
+    this.(Lscala/collection/Iterator$$anon$28;::skip()V;)();
+    return this.(Lscala/collection/Iterator$$anon$28;)self$4.(Lscala/collection/Iterator;::hasNext()Z;)();
+  }
+  
+  public Ljava/lang/Object; next() {
+    this.(Lscala/collection/Iterator$$anon$28;::skip()V;)();
+    return this.(Lscala/collection/Iterator$$anon$28;)self$4.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+  }
   
   public Lscala/collection/GenMap; toMap(Lscala/Predef$$less$colon$less; ev) {
     return this.(Lscala/collection/TraversableOnce;::toMap(Lscala/Predef$$less$colon$less;)Lscala/collection/immutable/Map;)(ev);
@@ -427,25 +431,17 @@ public final class Lscala/collection/Iterator$$anon$28; extends Ljava/lang/Objec
     return this.(Lscala/collection/Iterator;::seq()Lscala/collection/Iterator;)();
   }
   
-  private I; len$2;
+  private Lscala/Function1; p$3;
   
-  private Ljava/lang/Object; elem$4;
+  private Lscala/collection/BufferedIterator; self$4;
   
-  public this(Lscala/collection/Iterator; $outer, I; len$2, Ljava/lang/Object; elem$4) {
-    if (($outer == null))
-      {
-        throw (new (Ljava/lang/NullPointerException;::this()V;)());
-      }
-    else
-      {
-        this.(Lscala/collection/Iterator$$anon$28;)$outer$u0020 = $outer;
-      }
-    this.(Lscala/collection/Iterator$$anon$28;)len$2 = len$2;
-    this.(Lscala/collection/Iterator$$anon$28;)elem$4 = elem$4;
+  public this(Lscala/collection/Iterator; $outer, Lscala/Function1; p$3, Lscala/collection/BufferedIterator; self$4) {
+    this.(Lscala/collection/Iterator$$anon$28;)p$3 = p$3;
+    this.(Lscala/collection/Iterator$$anon$28;)self$4 = self$4;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/GenTraversableOnce$class;.(Lscala/collection/GenTraversableOnce$class;::$init$(Lscala/collection/GenTraversableOnce;)V;)(this);
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(Lscala/collection/Iterator$$anon$28;)count$u0020 = 0;
+    this.(Lscala/collection/Iterator$$anon$28;)dropped$u0020 = false;
   }
 }

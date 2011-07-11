@@ -1,16 +1,19 @@
 public abstract class Lscala/collection/generic/GenTraversableFactory; extends Lscala/collection/generic/GenericCompanion; implements Lscala/ScalaObject; {
   
-  private Lscala/collection/generic/GenTraversableFactory$ReusableCBF$; ReusableCBF$module;
+  protected I; bitmap$0 = 0;
   
-  public final Lscala/collection/generic/GenTraversableFactory$ReusableCBF$; ReusableCBF() {
-    if ((this.(Lscala/collection/generic/GenTraversableFactory;)ReusableCBF$module == null))
+  private Lscala/collection/generic/GenTraversableFactory$reusableCBF; ReusableCBF$u0020;
+  
+  public Lscala/collection/generic/GenTraversableFactory$reusableCBF; ReusableCBF() {
+    if (((this.(Lscala/collection/generic/GenTraversableFactory;)bitmap$0 & 1) == 0))
       {
-        if ((this.(Lscala/collection/generic/GenTraversableFactory;)ReusableCBF$module == null))
+        if (((this.(Lscala/collection/generic/GenTraversableFactory;)bitmap$0 & 1) == 0))
           {
-            this.(Lscala/collection/generic/GenTraversableFactory;)ReusableCBF$module = (new (Lscala/collection/generic/GenTraversableFactory$ReusableCBF$;::this(Lscala/collection/generic/GenTraversableFactory;)V;)(this));
+            this.(Lscala/collection/generic/GenTraversableFactory;)ReusableCBF$u0020 = (new (Lscala/collection/generic/GenTraversableFactory$reusableCBF;::this(Lscala/collection/generic/GenTraversableFactory;)V;)(this));
+            this.(Lscala/collection/generic/GenTraversableFactory;)bitmap$0 = (this.(Lscala/collection/generic/GenTraversableFactory;)bitmap$0 | 1);
           }
       }
-    return this.(Lscala/collection/generic/GenTraversableFactory;)ReusableCBF$module;
+    return this.(Lscala/collection/generic/GenTraversableFactory;)ReusableCBF$u0020;
   }
   
   public Lscala/collection/GenTraversable; concat(Lscala/collection/Seq; xss) {

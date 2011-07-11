@@ -1,4 +1,4 @@
-public class Lscala/collection/Iterator$Leading$1; extends Ljava/lang/Object; implements Lscala/collection/Iterator;, Lscala/ScalaObject; {
+public final class Lscala/collection/Iterator$$anon$30; extends Ljava/lang/Object; implements Lscala/collection/Iterator; {
   
   public Lscala/collection/Iterator; seq() {
     return Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::seq(Lscala/collection/Iterator;)Lscala/collection/Iterator;)(this);
@@ -364,63 +364,27 @@ public class Lscala/collection/Iterator$Leading$1; extends Ljava/lang/Object; im
     return Lscala/collection/GenTraversableOnce$class;.(Lscala/collection/GenTraversableOnce$class;::$div$colon$bslash(Lscala/collection/GenTraversableOnce;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(this, z, op);
   }
   
-  private Z; isDone$u0020;
+  private I; idx$u0020;
   
-  private Z; isDone() {
-    return this.(Lscala/collection/Iterator$Leading$1;)isDone$u0020;
+  public I; idx() {
+    return this.(Lscala/collection/Iterator$$anon$30;)idx$u0020;
   }
   
-  private V; isDone_$eq(Z; x$1) {
-    this.(Lscala/collection/Iterator$Leading$1;)isDone$u0020 = x$1;
-  }
-  
-  private Lscala/collection/mutable/Queue; lookahead$u0020;
-  
-  public Lscala/collection/mutable/Queue; lookahead() {
-    return this.(Lscala/collection/Iterator$Leading$1;)lookahead$u0020;
-  }
-  
-  public Z; advance() {
-    this.(Lscala/collection/Iterator$Leading$1;::lookahead()Lscala/collection/mutable/Queue;)().(Lscala/collection/mutable/MutableList;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/MutableList;)(this.(Lscala/collection/Iterator$Leading$1;)self$3.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
-    return ((this.(Lscala/collection/Iterator$Leading$1;)self$3.(Lscala/collection/Iterator;::hasNext()Z;)() && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/collection/Iterator$Leading$1;)p$6.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/Iterator$Leading$1;)self$3.(Lscala/collection/BufferedIterator;::head()Ljava/lang/Object;)()))) && true);
-  }
-  
-  public V; finish() {
-    while$5: while(true) {
-      if (this.(Lscala/collection/Iterator$Leading$1;::advance()Z;)())
-        {
-          continue while$5;
-        }
-      else
-        {
-          
-        }
-      break;
-    }
-    this.(Lscala/collection/Iterator$Leading$1;::isDone_$eq(Z;)V;)(true);
+  public V; idx_$eq(I; x$1) {
+    this.(Lscala/collection/Iterator$$anon$30;)idx$u0020 = x$1;
   }
   
   public Z; hasNext() {
-    return (this.(Lscala/collection/Iterator$Leading$1;::lookahead()Lscala/collection/mutable/Queue;)().(Lscala/collection/TraversableOnce;::nonEmpty()Z;)() || this.(Lscala/collection/Iterator$Leading$1;::advance()Z;)());
+    return this.(Lscala/collection/Iterator$$anon$30;)$outer$u0020.(Lscala/collection/Iterator;::hasNext()Z;)();
   }
   
-  public Ljava/lang/Object; next() {
-    if (this.(Lscala/collection/Iterator$Leading$1;::lookahead()Lscala/collection/mutable/Queue;)().(Lscala/collection/mutable/MutableList;::isEmpty()Z;)())
-      {
-        Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/collection/Iterator$Leading$1;::advance()Z;)());
-      }
-    else
-      {
-        
-      }
-    return this.(Lscala/collection/Iterator$Leading$1;::lookahead()Lscala/collection/mutable/Queue;)().(Lscala/collection/mutable/Queue;::dequeue()Ljava/lang/Object;)();
+  public Lscala/Tuple2; next() {
+    Lscala/Tuple2; ret = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/Iterator$$anon$30;)$outer$u0020.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/collection/Iterator$$anon$30;::idx()I;)())));
+    this.(Lscala/collection/Iterator$$anon$30;::idx_$eq(I;)V;)((this.(Lscala/collection/Iterator$$anon$30;::idx()I;)() + 1));
+    return ret;
   }
   
-  protected Lscala/collection/Iterator; $outer$u0020;
-  
-  public Lscala/collection/Iterator; scala$collection$Iterator$Leading$$$outer() {
-    return this.(Lscala/collection/Iterator$Leading$1;)$outer$u0020;
-  }
+  private Lscala/collection/Iterator; $outer$u0020;
   
   public Lscala/collection/GenMap; toMap(Lscala/Predef$$less$colon$less; ev) {
     return this.(Lscala/collection/TraversableOnce;::toMap(Lscala/Predef$$less$colon$less;)Lscala/collection/immutable/Map;)(ev);
@@ -446,26 +410,23 @@ public class Lscala/collection/Iterator$Leading$1; extends Ljava/lang/Object; im
     return this.(Lscala/collection/Iterator;::seq()Lscala/collection/Iterator;)();
   }
   
-  private Lscala/Function1; p$6;
+  public Ljava/lang/Object; next() {
+    return this.(Lscala/collection/Iterator$$anon$30;::next()Lscala/Tuple2;)();
+  }
   
-  private Lscala/collection/BufferedIterator; self$3;
-  
-  public this(Lscala/collection/Iterator; $outer, Lscala/Function1; p$6, Lscala/collection/BufferedIterator; self$3) {
+  public this(Lscala/collection/Iterator; $outer) {
     if (($outer == null))
       {
         throw (new (Ljava/lang/NullPointerException;::this()V;)());
       }
     else
       {
-        this.(Lscala/collection/Iterator$Leading$1;)$outer$u0020 = $outer;
+        this.(Lscala/collection/Iterator$$anon$30;)$outer$u0020 = $outer;
       }
-    this.(Lscala/collection/Iterator$Leading$1;)p$6 = p$6;
-    this.(Lscala/collection/Iterator$Leading$1;)self$3 = self$3;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/GenTraversableOnce$class;.(Lscala/collection/GenTraversableOnce$class;::$init$(Lscala/collection/GenTraversableOnce;)V;)(this);
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(Lscala/collection/Iterator$Leading$1;)isDone$u0020 = false;
-    this.(Lscala/collection/Iterator$Leading$1;)lookahead$u0020 = (new (Lscala/collection/mutable/Queue;::this()V;)());
+    this.(Lscala/collection/Iterator$$anon$30;)idx$u0020 = 0;
   }
 }
