@@ -508,7 +508,7 @@ public abstract class Lscala/collection/immutable/TrieIterator; extends Ljava/la
   }
   
   private Lscala/Tuple2; splitArray(Lscala/collection/immutable/Iterable;[ ad) {
-    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
+    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("whack! you stepped on broken handling of jribble backend."));
   }
   
   public Z; hasNext() {
