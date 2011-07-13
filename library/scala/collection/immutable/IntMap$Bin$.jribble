@@ -6,16 +6,16 @@ public final class Lscala/collection/immutable/IntMap$Bin$; extends Ljava/lang/O
   }
   
   public Lscala/Option; unapply(Lscala/collection/immutable/IntMap$Bin; x$0) {
-    Lscala/Option; $111$;
+    Lscala/Option; $79$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $111$ = Lscala/None$;.MODULE$;
+        $79$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $111$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$0.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)()), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$0.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)()), x$0.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)(), x$0.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)()))));
+        $79$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$0.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)()), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$0.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)()), x$0.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)(), x$0.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)()))));
       }
-    return $111$;
+    return $79$;
   }
   
   public Lscala/collection/immutable/IntMap$Bin; apply(I; prefix, I; mask, Lscala/collection/immutable/IntMap; left, Lscala/collection/immutable/IntMap; right) {

@@ -1681,72 +1681,7 @@ public abstract class Lscala/collection/immutable/List; extends Ljava/lang/Objec
   }
   
   private final Lscala/collection/immutable/List; ms$1(Lscala/collection/immutable/List; lst, Lscala/Function2; lt$1) {
-    Lscala/collection/immutable/List; temp11 = lst;
-    Lscala/collection/immutable/List; $15$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/Nil$;.MODULE$, temp11))
-      {
-        $15$ = lst;
-      }
-    else
-      {
-        Lscala/collection/immutable/List; $16$;
-        if (temp11.<instanceof>(Lscala/collection/immutable/$colon$colon;))
-          {
-            Lscala/collection/immutable/$colon$colon; temp13 = temp11.<cast>(Lscala/collection/immutable/$colon$colon;);
-            Ljava/lang/Object; temp14 = temp13.(Lscala/collection/immutable/$colon$colon;::hd$1()Ljava/lang/Object;)();
-            Lscala/collection/immutable/List; temp15 = temp13.(Lscala/collection/immutable/$colon$colon;::tl$1()Lscala/collection/immutable/List;)();
-            Lscala/collection/immutable/List; $17$;
-            if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/Nil$;.MODULE$, temp15))
-              {
-                $17$ = lst;
-              }
-            else
-              {
-                Lscala/collection/immutable/List; $18$;
-                if (temp15.<instanceof>(Lscala/collection/immutable/$colon$colon;))
-                  {
-                    Lscala/collection/immutable/$colon$colon; temp17 = temp15.<cast>(Lscala/collection/immutable/$colon$colon;);
-                    Ljava/lang/Object; temp18 = temp17.(Lscala/collection/immutable/$colon$colon;::hd$1()Ljava/lang/Object;)();
-                    Lscala/collection/immutable/List; $19$;
-                    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/Nil$;.MODULE$, temp17.(Lscala/collection/immutable/$colon$colon;::tl$1()Lscala/collection/immutable/List;)()))
-                      {
-                        Ljava/lang/Object; x = temp14;
-                        Ljava/lang/Object; y = temp18;
-                        Lscala/collection/immutable/List; $20$;
-                        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(lt$1.(Lscala/Function2;::apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(x, y)))
-                          {
-                            $20$ = lst;
-                          }
-                        else
-                          {
-                            Ljava/lang/Object; x$6 = y;
-                            Ljava/lang/Object; x$5 = x;
-                            $20$ = Lscala/collection/immutable/Nil$;.MODULE$.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$5).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$6);
-                          }
-                        $19$ = $20$;
-                      }
-                    else
-                      {
-                        Lscala/collection/immutable/List; lst = temp13;
-                        $19$ = this.(Lscala/collection/immutable/List;::body$percent31$percent1(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;)(lst);
-                      }
-                    $18$ = $19$;
-                  }
-                else
-                  {
-                    $18$ = this.(Lscala/collection/immutable/List;::body$percent31$percent1(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;)(temp13);
-                  }
-                $17$ = $18$;
-              }
-            $16$ = $17$;
-          }
-        else
-          {
-            $16$ = this.(Lscala/collection/immutable/List;::body$percent31$percent1(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;)(temp11);
-          }
-        $15$ = $16$;
-      }
-    return $15$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   public this() {
@@ -1776,24 +1711,5 @@ public abstract class Lscala/collection/immutable/List; extends Ljava/lang/Objec
     Lscala/collection/immutable/LinearSeq$class;.(Lscala/collection/immutable/LinearSeq$class;::$init$(Lscala/collection/immutable/LinearSeq;)V;)(this);
     Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
     Lscala/collection/LinearSeqOptimized$class;.(Lscala/collection/LinearSeqOptimized$class;::$init$(Lscala/collection/LinearSeqOptimized;)V;)(this);
-  }
-  
-  private final Lscala/collection/immutable/List; body$percent31$percent1(Lscala/collection/immutable/List; lst) {
-    Lscala/Tuple2; temp8 = this.(Lscala/collection/immutable/List;::split$1(Lscala/collection/immutable/List;)Lscala/Tuple2;)(lst);
-    Lscala/Tuple2; $21$;
-    if ((temp8 != null))
-      {
-        $21$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(temp8.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), temp8.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()));
-      }
-    else
-      {
-        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp8));
-      }
-    Lscala/Tuple2; x$7 = $21$;
-    Lscala/collection/immutable/List; l1 = x$7.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;);
-    Lscala/collection/immutable/List; l2 = x$7.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;);
-    Lscala/collection/immutable/List; l1s = this.(Lscala/collection/immutable/List;::ms$1(Lscala/collection/immutable/List;Lscala/Function2;)Lscala/collection/immutable/List;)(l1, lt$1);
-    Lscala/collection/immutable/List; l2s = this.(Lscala/collection/immutable/List;::ms$1(Lscala/collection/immutable/List;Lscala/Function2;)Lscala/collection/immutable/List;)(l2, lt$1);
-    return this.(Lscala/collection/immutable/List;::merge$1(Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/Function2;)Lscala/collection/immutable/List;)(l1s, l2s, lt$1);
   }
 }

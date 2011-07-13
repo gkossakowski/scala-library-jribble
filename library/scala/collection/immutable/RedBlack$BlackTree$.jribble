@@ -5,16 +5,16 @@ public final class Lscala/collection/immutable/RedBlack$BlackTree$; extends Ljav
   }
   
   public Lscala/Option; unapply(Lscala/collection/immutable/RedBlack$BlackTree; x$0) {
-    Lscala/Option; $114$;
+    Lscala/Option; $51$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $114$ = Lscala/None$;.MODULE$;
+        $51$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $114$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::key()Ljava/lang/Object;)(), x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::value()Ljava/lang/Object;)(), x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::right()Lscala/collection/immutable/RedBlack$Tree;)()))));
+        $51$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::key()Ljava/lang/Object;)(), x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::value()Ljava/lang/Object;)(), x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), x$0.(Lscala/collection/immutable/RedBlack$BlackTree;::right()Lscala/collection/immutable/RedBlack$Tree;)()))));
       }
-    return $114$;
+    return $51$;
   }
   
   public Lscala/collection/immutable/RedBlack$BlackTree; apply(Ljava/lang/Object; key, Ljava/lang/Object; value, Lscala/collection/immutable/RedBlack$Tree; left, Lscala/collection/immutable/RedBlack$Tree; right) {

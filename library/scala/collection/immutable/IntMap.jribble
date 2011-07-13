@@ -1582,347 +1582,11 @@ public abstract class Lscala/collection/immutable/IntMap; extends Ljava/lang/Obj
   }
   
   public Lscala/collection/immutable/IntMap; unionWith(Lscala/collection/immutable/IntMap; that, Lscala/Function3; f$1) {
-    Lscala/Tuple2; temp168 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this, that));
-    Lscala/collection/immutable/IntMap; $64$;
-    if ((temp168 != null))
-      {
-        Lscala/collection/immutable/IntMap; temp169 = temp168.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/IntMap;);
-        Lscala/collection/immutable/IntMap; temp170 = temp168.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/IntMap;);
-        Lscala/collection/immutable/IntMap; $65$;
-        if (temp169.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
-          {
-            Lscala/collection/immutable/IntMap$Bin; temp171 = temp169.<cast>(Lscala/collection/immutable/IntMap$Bin;);
-            I; temp172 = temp171.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)();
-            I; temp173 = temp171.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)();
-            Lscala/collection/immutable/IntMap; temp174 = temp171.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)();
-            Lscala/collection/immutable/IntMap; temp175 = temp171.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)();
-            Lscala/collection/immutable/IntMap; $66$;
-            if (temp170.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
-              {
-                Lscala/collection/immutable/IntMap$Bin; temp176 = temp170.<cast>(Lscala/collection/immutable/IntMap$Bin;);
-                I; temp177 = temp176.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)();
-                I; temp178 = temp176.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)();
-                Lscala/collection/immutable/IntMap; temp179 = temp176.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)();
-                Lscala/collection/immutable/IntMap; temp180 = temp176.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)();
-                I; p1 = temp172;
-                I; m1 = temp173;
-                Lscala/collection/immutable/IntMap; l1 = temp174;
-                Lscala/collection/immutable/IntMap; r1 = temp175;
-                Lscala/collection/immutable/IntMap$Bin; that = temp176;
-                I; p2 = temp177;
-                I; m2 = temp178;
-                Lscala/collection/immutable/IntMap; l2 = temp179;
-                Lscala/collection/immutable/IntMap; r2 = temp180;
-                Lscala/collection/immutable/IntMap; $67$;
-                if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/generic/BitOperations$Int;::shorter(I;I;)Z;)(m1, m2))
-                  {
-                    Lscala/collection/immutable/IntMap; $68$;
-                    if (!(Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/generic/BitOperations$Int;::hasMatch(I;I;I;)Z;)(p2, p1, m1)))
-                      {
-                        $68$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::join(I;Lscala/collection/immutable/IntMap;I;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(p1, this, p2, that);
-                      }
-                    else
-                      {
-                        Lscala/collection/immutable/IntMap; $69$;
-                        if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/generic/BitOperations$Int;::zero(I;I;)Z;)(p2, m1))
-                          {
-                            $69$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(p1, m1, l1.(Lscala/collection/immutable/IntMap;::unionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(that, f$1), r1));
-                          }
-                        else
-                          {
-                            $69$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(p1, m1, l1, r1.(Lscala/collection/immutable/IntMap;::unionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(that, f$1)));
-                          }
-                        $68$ = $69$;
-                      }
-                    $67$ = $68$;
-                  }
-                else
-                  {
-                    Lscala/collection/immutable/IntMap; $70$;
-                    if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/generic/BitOperations$Int;::shorter(I;I;)Z;)(m2, m1))
-                      {
-                        Lscala/collection/immutable/IntMap; $71$;
-                        if (!(Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/generic/BitOperations$Int;::hasMatch(I;I;I;)Z;)(p1, p2, m2)))
-                          {
-                            $71$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::join(I;Lscala/collection/immutable/IntMap;I;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(p1, this, p2, that);
-                          }
-                        else
-                          {
-                            Lscala/collection/immutable/IntMap; $72$;
-                            if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/generic/BitOperations$Int;::zero(I;I;)Z;)(p1, m2))
-                              {
-                                $72$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(p2, m2, this.(Lscala/collection/immutable/IntMap;::unionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(l2, f$1), r2));
-                              }
-                            else
-                              {
-                                $72$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(p2, m2, l2, this.(Lscala/collection/immutable/IntMap;::unionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(r2, f$1)));
-                              }
-                            $71$ = $72$;
-                          }
-                        $70$ = $71$;
-                      }
-                    else
-                      {
-                        Lscala/collection/immutable/IntMap; $73$;
-                        if ((p1 == p2))
-                          {
-                            $73$ = (new (Lscala/collection/immutable/IntMap$Bin;::this(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)V;)(p1, m1, l1.(Lscala/collection/immutable/IntMap;::unionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(l2, f$1), r1.(Lscala/collection/immutable/IntMap;::unionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(r2, f$1)));
-                          }
-                        else
-                          {
-                            $73$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::join(I;Lscala/collection/immutable/IntMap;I;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(p1, this, p2, that);
-                          }
-                        $70$ = $73$;
-                      }
-                    $67$ = $70$;
-                  }
-                $66$ = $67$;
-              }
-            else
-              {
-                Lscala/collection/immutable/IntMap; $74$;
-                if (temp170.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
-                  {
-                    Lscala/collection/immutable/IntMap$Tip; temp181 = temp170.<cast>(Lscala/collection/immutable/IntMap$Tip;);
-                    I; temp182 = temp181.(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
-                    Ljava/lang/Object; temp183 = temp181.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)();
-                    Lscala/collection/immutable/IntMap; x = temp171;
-                    I; key$2 = temp182;
-                    Ljava/lang/Object; value = temp183;
-                    $74$ = this.(Lscala/collection/immutable/IntMap;::body$percent216$percent1(Lscala/collection/immutable/IntMap;I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(x, key$2, value);
-                  }
-                else
-                  {
-                    Lscala/collection/immutable/IntMap; $75$;
-                    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp170))
-                      {
-                        Lscala/collection/immutable/IntMap; x = temp171;
-                        $75$ = this.(Lscala/collection/immutable/IntMap;::body$percent42$percent1(Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(x);
-                      }
-                    else
-                      {
-                        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp168));
-                      }
-                    $74$ = $75$;
-                  }
-                $66$ = $74$;
-              }
-            $65$ = $66$;
-          }
-        else
-          {
-            Lscala/collection/immutable/IntMap; $76$;
-            if (temp169.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
-              {
-                Lscala/collection/immutable/IntMap$Tip; temp185 = temp169.<cast>(Lscala/collection/immutable/IntMap$Tip;);
-                I; temp186 = temp185.(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
-                I; key$1 = temp186;
-                $76$ = temp170.(Lscala/collection/immutable/IntMap;::updateWith(I;Ljava/lang/Object;Lscala/Function2;)Lscala/collection/immutable/IntMap;)(key$1, temp185.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/IntMap$$anonfun$unionWith$1;::this(Lscala/collection/immutable/IntMap;Lscala/Function3;I;)V;)(this, f$1, key$1)));
-              }
-            else
-              {
-                Lscala/collection/immutable/IntMap; $77$;
-                if (temp170.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
-                  {
-                    Lscala/collection/immutable/IntMap$Tip; temp188 = temp170.<cast>(Lscala/collection/immutable/IntMap$Tip;);
-                    $77$ = this.(Lscala/collection/immutable/IntMap;::body$percent216$percent1(Lscala/collection/immutable/IntMap;I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(temp169, temp188.(Lscala/collection/immutable/IntMap$Tip;::key()I;)(), temp188.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)());
-                  }
-                else
-                  {
-                    Lscala/collection/immutable/IntMap; $78$;
-                    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp169))
-                      {
-                        $78$ = temp170;
-                      }
-                    else
-                      {
-                        Lscala/collection/immutable/IntMap; $79$;
-                        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp170))
-                          {
-                            $79$ = this.(Lscala/collection/immutable/IntMap;::body$percent42$percent1(Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(temp169);
-                          }
-                        else
-                          {
-                            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp168));
-                          }
-                        $78$ = $79$;
-                      }
-                    $77$ = $78$;
-                  }
-                $76$ = $77$;
-              }
-            $65$ = $76$;
-          }
-        $64$ = $65$;
-      }
-    else
-      {
-        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp168));
-      }
-    return $64$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   public Lscala/collection/immutable/IntMap; intersectionWith(Lscala/collection/immutable/IntMap; that, Lscala/Function3; f) {
-    Lscala/Tuple2; temp201 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this, that));
-    Lscala/collection/immutable/IntMap; $80$;
-    if ((temp201 != null))
-      {
-        Lscala/collection/immutable/IntMap; temp202 = temp201.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/IntMap;);
-        Lscala/collection/immutable/IntMap; temp203 = temp201.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/IntMap;);
-        Lscala/collection/immutable/IntMap; $81$;
-        if (temp202.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
-          {
-            Lscala/collection/immutable/IntMap$Bin; temp204 = temp202.<cast>(Lscala/collection/immutable/IntMap$Bin;);
-            I; temp205 = temp204.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)();
-            I; temp206 = temp204.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)();
-            Lscala/collection/immutable/IntMap; temp207 = temp204.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)();
-            Lscala/collection/immutable/IntMap; temp208 = temp204.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)();
-            Lscala/collection/immutable/IntMap; $82$;
-            if (temp203.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
-              {
-                Lscala/collection/immutable/IntMap$Bin; temp209 = temp203.<cast>(Lscala/collection/immutable/IntMap$Bin;);
-                I; temp210 = temp209.(Lscala/collection/immutable/IntMap$Bin;::prefix()I;)();
-                I; temp211 = temp209.(Lscala/collection/immutable/IntMap$Bin;::mask()I;)();
-                Lscala/collection/immutable/IntMap; temp212 = temp209.(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)();
-                Lscala/collection/immutable/IntMap; temp213 = temp209.(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)();
-                I; p1 = temp205;
-                I; m1 = temp206;
-                Lscala/collection/immutable/IntMap; l1 = temp207;
-                Lscala/collection/immutable/IntMap; r1 = temp208;
-                Lscala/collection/immutable/IntMap$Bin; that = temp209;
-                I; p2 = temp210;
-                I; m2 = temp211;
-                Lscala/collection/immutable/IntMap; l2 = temp212;
-                Lscala/collection/immutable/IntMap; r2 = temp213;
-                Lscala/collection/immutable/IntMap; $83$;
-                if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/generic/BitOperations$Int;::shorter(I;I;)Z;)(m1, m2))
-                  {
-                    Lscala/collection/immutable/IntMap; $84$;
-                    if (!(Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/generic/BitOperations$Int;::hasMatch(I;I;I;)Z;)(p2, p1, m1)))
-                      {
-                        $84$ = Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
-                      }
-                    else
-                      {
-                        Lscala/collection/immutable/IntMap; $85$;
-                        if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/generic/BitOperations$Int;::zero(I;I;)Z;)(p2, m1))
-                          {
-                            $85$ = l1.(Lscala/collection/immutable/IntMap;::intersectionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(that, f);
-                          }
-                        else
-                          {
-                            $85$ = r1.(Lscala/collection/immutable/IntMap;::intersectionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(that, f);
-                          }
-                        $84$ = $85$;
-                      }
-                    $83$ = $84$;
-                  }
-                else
-                  {
-                    Lscala/collection/immutable/IntMap; $86$;
-                    if ((m1 == m2))
-                      {
-                        $86$ = Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/immutable/IntMapUtils$;::bin(I;I;Lscala/collection/immutable/IntMap;Lscala/collection/immutable/IntMap;)Lscala/collection/immutable/IntMap;)(p1, m1, l1.(Lscala/collection/immutable/IntMap;::intersectionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(l2, f), r1.(Lscala/collection/immutable/IntMap;::intersectionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(r2, f));
-                      }
-                    else
-                      {
-                        Lscala/collection/immutable/IntMap; $87$;
-                        if (!(Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/generic/BitOperations$Int;::hasMatch(I;I;I;)Z;)(p1, p2, m2)))
-                          {
-                            $87$ = Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
-                          }
-                        else
-                          {
-                            Lscala/collection/immutable/IntMap; $88$;
-                            if (Lscala/collection/immutable/IntMapUtils$;.MODULE$.(Lscala/collection/generic/BitOperations$Int;::zero(I;I;)Z;)(p1, m2))
-                              {
-                                $88$ = this.(Lscala/collection/immutable/IntMap;::intersectionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(l2, f);
-                              }
-                            else
-                              {
-                                $88$ = this.(Lscala/collection/immutable/IntMap;::intersectionWith(Lscala/collection/immutable/IntMap;Lscala/Function3;)Lscala/collection/immutable/IntMap;)(r2, f);
-                              }
-                            $87$ = $88$;
-                          }
-                        $86$ = $87$;
-                      }
-                    $83$ = $86$;
-                  }
-                $82$ = $83$;
-              }
-            else
-              {
-                Lscala/collection/immutable/IntMap; $89$;
-                if (temp203.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
-                  {
-                    Lscala/collection/immutable/IntMap$Tip; temp214 = temp203.<cast>(Lscala/collection/immutable/IntMap$Tip;);
-                    I; temp215 = temp214.(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
-                    Ljava/lang/Object; temp216 = temp214.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)();
-                    I; key = temp215;
-                    Ljava/lang/Object; value = temp216;
-                    $89$ = this.(Lscala/collection/immutable/IntMap;::body$percent217$percent1(I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(key, value);
-                  }
-                else
-                  {
-                    $89$ = this.(Lscala/collection/immutable/IntMap;::body$percent34$percent1()Lscala/collection/immutable/IntMap;)();
-                  }
-                $82$ = $89$;
-              }
-            $81$ = $82$;
-          }
-        else
-          {
-            Lscala/collection/immutable/IntMap; $90$;
-            if (temp202.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
-              {
-                Lscala/collection/immutable/IntMap$Tip; temp217 = temp202.<cast>(Lscala/collection/immutable/IntMap$Tip;);
-                I; temp218 = temp217.(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
-                I; key = temp218;
-                Lscala/collection/immutable/IntMap; that = temp203;
-                Lscala/Option; temp193 = that.(Lscala/collection/immutable/IntMap;::get(I;)Lscala/Option;)(key);
-                Lscala/collection/immutable/IntMap; $91$;
-                if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp193))
-                  {
-                    $91$ = Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
-                  }
-                else
-                  {
-                    Lscala/collection/immutable/IntMap; $92$;
-                    if (temp193.<instanceof>(Lscala/Some;))
-                      {
-                        $92$ = (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, f.(Lscala/Function3;::apply(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(key), temp217.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)(), temp193.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)())));
-                      }
-                    else
-                      {
-                        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp193));
-                      }
-                    $91$ = $92$;
-                  }
-                $90$ = $91$;
-              }
-            else
-              {
-                Lscala/collection/immutable/IntMap; $93$;
-                if (temp203.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
-                  {
-                    Lscala/collection/immutable/IntMap$Tip; temp220 = temp203.<cast>(Lscala/collection/immutable/IntMap$Tip;);
-                    $93$ = this.(Lscala/collection/immutable/IntMap;::body$percent217$percent1(I;Ljava/lang/Object;)Lscala/collection/immutable/IntMap;)(temp220.(Lscala/collection/immutable/IntMap$Tip;::key()I;)(), temp220.(Lscala/collection/immutable/IntMap$Tip;::value()Ljava/lang/Object;)());
-                  }
-                else
-                  {
-                    $93$ = this.(Lscala/collection/immutable/IntMap;::body$percent34$percent1()Lscala/collection/immutable/IntMap;)();
-                  }
-                $90$ = $93$;
-              }
-            $81$ = $90$;
-          }
-        $80$ = $81$;
-      }
-    else
-      {
-        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp201));
-      }
-    return $80$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   public Lscala/collection/immutable/IntMap; intersection(Lscala/collection/immutable/IntMap; that) {
@@ -1935,21 +1599,21 @@ public abstract class Lscala/collection/immutable/IntMap; extends Ljava/lang/Obj
   
   public final I; firstKey() {
     Lscala/collection/immutable/IntMap; temp223 = this;
-    I; $94$;
+    I; $64$;
     if (temp223.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
       {
-        $94$ = temp223.<cast>(Lscala/collection/immutable/IntMap$Bin;).(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::firstKey()I;)();
+        $64$ = temp223.<cast>(Lscala/collection/immutable/IntMap$Bin;).(Lscala/collection/immutable/IntMap$Bin;::left()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::firstKey()I;)();
       }
     else
       {
-        I; $95$;
+        I; $65$;
         if (temp223.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
           {
-            $95$ = temp223.<cast>(Lscala/collection/immutable/IntMap$Tip;).(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
+            $65$ = temp223.<cast>(Lscala/collection/immutable/IntMap$Tip;).(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
           }
         else
           {
-            Lscala/runtime/Nothing$; $96$;
+            Lscala/runtime/Nothing$; $66$;
             if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp223))
               {
                 throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("Empty set"));
@@ -1959,28 +1623,28 @@ public abstract class Lscala/collection/immutable/IntMap; extends Ljava/lang/Obj
                 throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp223));
               }
           }
-        $94$ = $95$;
+        $64$ = $65$;
       }
-    return $94$;
+    return $64$;
   }
   
   public final I; lastKey() {
     Lscala/collection/immutable/IntMap; temp233 = this;
-    I; $97$;
+    I; $67$;
     if (temp233.<instanceof>(Lscala/collection/immutable/IntMap$Bin;))
       {
-        $97$ = temp233.<cast>(Lscala/collection/immutable/IntMap$Bin;).(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::lastKey()I;)();
+        $67$ = temp233.<cast>(Lscala/collection/immutable/IntMap$Bin;).(Lscala/collection/immutable/IntMap$Bin;::right()Lscala/collection/immutable/IntMap;)().(Lscala/collection/immutable/IntMap;::lastKey()I;)();
       }
     else
       {
-        I; $98$;
+        I; $68$;
         if (temp233.<instanceof>(Lscala/collection/immutable/IntMap$Tip;))
           {
-            $98$ = temp233.<cast>(Lscala/collection/immutable/IntMap$Tip;).(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
+            $68$ = temp233.<cast>(Lscala/collection/immutable/IntMap$Tip;).(Lscala/collection/immutable/IntMap$Tip;::key()I;)();
           }
         else
           {
-            Lscala/runtime/Nothing$; $99$;
+            Lscala/runtime/Nothing$; $69$;
             if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/IntMap$Nil$;.MODULE$, temp233))
               {
                 throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("Empty set"));
@@ -1990,9 +1654,9 @@ public abstract class Lscala/collection/immutable/IntMap; extends Ljava/lang/Obj
                 throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp233));
               }
           }
-        $97$ = $98$;
+        $67$ = $68$;
       }
-    return $97$;
+    return $67$;
   }
   
   public Lscala/collection/GenSet; toSet() {
@@ -2170,40 +1834,5 @@ public abstract class Lscala/collection/immutable/IntMap; extends Ljava/lang/Obj
     Lscala/collection/Map$class;.(Lscala/collection/Map$class;::$init$(Lscala/collection/Map;)V;)(this);
     Lscala/collection/immutable/MapLike$class;.(Lscala/collection/immutable/MapLike$class;::$init$(Lscala/collection/immutable/MapLike;)V;)(this);
     Lscala/collection/immutable/Map$class;.(Lscala/collection/immutable/Map$class;::$init$(Lscala/collection/immutable/Map;)V;)(this);
-  }
-  
-  private final Lscala/collection/immutable/IntMap; body$percent34$percent1() {
-    return Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
-  }
-  
-  private final Lscala/collection/immutable/IntMap; body$percent217$percent1(I; key, Ljava/lang/Object; value) {
-    Lscala/Option; temp197 = this.(Lscala/collection/immutable/IntMap;::get(I;)Lscala/Option;)(key);
-    Lscala/collection/immutable/IntMap; $100$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp197))
-      {
-        $100$ = Lscala/collection/immutable/IntMap$Nil$;.MODULE$;
-      }
-    else
-      {
-        Lscala/collection/immutable/IntMap; $101$;
-        if (temp197.<instanceof>(Lscala/Some;))
-          {
-            $101$ = (new (Lscala/collection/immutable/IntMap$Tip;::this(I;Ljava/lang/Object;)V;)(key, f.(Lscala/Function3;::apply(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(key), temp197.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)(), value)));
-          }
-        else
-          {
-            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp197));
-          }
-        $100$ = $101$;
-      }
-    return $100$;
-  }
-  
-  private final Lscala/collection/immutable/IntMap; body$percent216$percent1(Lscala/collection/immutable/IntMap; x, I; key$2, Ljava/lang/Object; value) {
-    return x.(Lscala/collection/immutable/IntMap;::updateWith(I;Ljava/lang/Object;Lscala/Function2;)Lscala/collection/immutable/IntMap;)(key$2, value, (new (Lscala/collection/immutable/IntMap$$anonfun$unionWith$2;::this(Lscala/collection/immutable/IntMap;Lscala/Function3;I;)V;)(this, f$1, key$2)));
-  }
-  
-  private final Lscala/collection/immutable/IntMap; body$percent42$percent1(Lscala/collection/immutable/IntMap; x) {
-    return x;
   }
 }

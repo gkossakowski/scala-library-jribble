@@ -97,14 +97,14 @@ public abstract class Lscala/collection/Iterator$class; {
   
   public static Lscala/Tuple2; span(Lscala/collection/Iterator; $this, Lscala/Function1; p$6) {
     Lscala/collection/BufferedIterator; self$3 = $this.(Lscala/collection/Iterator;::buffered()Lscala/collection/BufferedIterator;)();
-    Lscala/collection/Iterator; leading$1 = (new (Lscala/collection/Iterator$$anon$26;::this(Lscala/collection/Iterator;Lscala/Function1;Lscala/collection/BufferedIterator;)V;)($this, p$6, self$3));
-    Lscala/collection/Iterator; trailing = (new (Lscala/collection/Iterator$$anon$27;::this(Lscala/collection/Iterator;Lscala/collection/BufferedIterator;Lscala/collection/Iterator;)V;)($this, self$3, leading$1));
+    Lscala/collection/Iterator$Leading$1; leading$1 = (new (Lscala/collection/Iterator$Leading$1;::this(Lscala/collection/Iterator;Lscala/Function1;Lscala/collection/BufferedIterator;)V;)($this, p$6, self$3));
+    Lscala/collection/Iterator; trailing = (new (Lscala/collection/Iterator$$anon$26;::this(Lscala/collection/Iterator;Lscala/collection/BufferedIterator;Lscala/collection/Iterator$Leading$1;)V;)($this, self$3, leading$1));
     return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(leading$1, trailing));
   }
   
   public static Lscala/collection/Iterator; dropWhile(Lscala/collection/Iterator; $this, Lscala/Function1; p$3) {
     Lscala/collection/BufferedIterator; self$4 = $this.(Lscala/collection/Iterator;::buffered()Lscala/collection/BufferedIterator;)();
-    return (new (Lscala/collection/Iterator$$anon$28;::this(Lscala/collection/Iterator;Lscala/Function1;Lscala/collection/BufferedIterator;)V;)($this, p$3, self$4));
+    return (new (Lscala/collection/Iterator$$anon$27;::this(Lscala/collection/Iterator;Lscala/Function1;Lscala/collection/BufferedIterator;)V;)($this, p$3, self$4));
   }
   
   public static Lscala/collection/Iterator; zip(Lscala/collection/Iterator; $this, Lscala/collection/Iterator; that$2) {
@@ -112,11 +112,11 @@ public abstract class Lscala/collection/Iterator$class; {
   }
   
   public static Lscala/collection/Iterator; padTo(Lscala/collection/Iterator; $this, I; len$2, Ljava/lang/Object; elem$4) {
-    return (new (Lscala/collection/Iterator$$anon$29;::this(Lscala/collection/Iterator;I;Ljava/lang/Object;)V;)($this, len$2, elem$4));
+    return (new (Lscala/collection/Iterator$$anon$28;::this(Lscala/collection/Iterator;I;Ljava/lang/Object;)V;)($this, len$2, elem$4));
   }
   
   public static Lscala/collection/Iterator; zipWithIndex(Lscala/collection/Iterator; $this) {
-    return (new (Lscala/collection/Iterator$$anon$30;::this(Lscala/collection/Iterator;)V;)($this));
+    return (new (Lscala/collection/Iterator$$anon$29;::this(Lscala/collection/Iterator;)V;)($this));
   }
   
   public static Lscala/collection/Iterator; zipAll(Lscala/collection/Iterator; $this, Lscala/collection/Iterator; that$3, Ljava/lang/Object; thisElem$1, Ljava/lang/Object; thatElem$1) {

@@ -1137,42 +1137,7 @@ public class Lscala/collection/immutable/Queue; extends Ljava/lang/Object; imple
   }
   
   public Lscala/Tuple2; dequeue() {
-    Lscala/collection/immutable/List; temp1 = this.(Lscala/collection/immutable/Queue;::out()Lscala/collection/immutable/List;)();
-    Lscala/Tuple2; $7$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/Nil$;.MODULE$, temp1))
-      {
-        Lscala/Tuple2; $8$;
-        if (this.(Lscala/collection/immutable/Queue;::gd1$1()Z;)())
-          {
-            Lscala/Tuple2; $9$;
-            body$percent01: while(true) {
-              Lscala/collection/immutable/List; rev = this.(Lscala/collection/immutable/Queue;::in()Lscala/collection/immutable/List;)().(Lscala/collection/immutable/List;::reverse()Lscala/collection/immutable/List;)();
-              $9$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(rev.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/Queue;::this(Lscala/collection/immutable/List;Lscala/collection/immutable/List;)V;)(Lscala/collection/immutable/Nil$;.MODULE$, rev.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;)))));
-              break;
-            }
-            $8$ = $9$;
-          }
-        else
-          {
-            this.(Lscala/collection/immutable/Queue;::body$percent21$percent1()Lscala/runtime/Nothing$;)();
-          }
-        $7$ = $8$;
-      }
-    else
-      {
-        Lscala/Tuple2; $10$;
-        if (temp1.<instanceof>(Lscala/collection/immutable/$colon$colon;))
-          {
-            Lscala/collection/immutable/$colon$colon; temp3 = temp1.<cast>(Lscala/collection/immutable/$colon$colon;);
-            $10$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(temp3.(Lscala/collection/immutable/$colon$colon;::hd$1()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/Queue;::this(Lscala/collection/immutable/List;Lscala/collection/immutable/List;)V;)(this.(Lscala/collection/immutable/Queue;::in()Lscala/collection/immutable/List;)(), temp3.(Lscala/collection/immutable/$colon$colon;::tl$1()Lscala/collection/immutable/List;)()))));
-          }
-        else
-          {
-            this.(Lscala/collection/immutable/Queue;::body$percent21$percent1()Lscala/runtime/Nothing$;)();
-          }
-        $7$ = $10$;
-      }
-    return $7$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   public Ljava/lang/Object; front() {
@@ -1326,9 +1291,5 @@ public class Lscala/collection/immutable/Queue; extends Ljava/lang/Object; imple
     Lscala/collection/LinearSeqLike$class;.(Lscala/collection/LinearSeqLike$class;::$init$(Lscala/collection/LinearSeqLike;)V;)(this);
     Lscala/collection/LinearSeq$class;.(Lscala/collection/LinearSeq$class;::$init$(Lscala/collection/LinearSeq;)V;)(this);
     Lscala/collection/immutable/LinearSeq$class;.(Lscala/collection/immutable/LinearSeq$class;::$init$(Lscala/collection/immutable/LinearSeq;)V;)(this);
-  }
-  
-  private final Lscala/runtime/Nothing$; body$percent21$percent1() {
-    throw (new (Ljava/util/NoSuchElementException;::this(Ljava/lang/String;)V;)("dequeue on empty queue"));
   }
 }

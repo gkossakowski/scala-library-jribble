@@ -364,41 +364,24 @@ public final class Lscala/collection/Iterator$$anon$29; extends Ljava/lang/Objec
     return Lscala/collection/GenTraversableOnce$class;.(Lscala/collection/GenTraversableOnce$class;::$div$colon$bslash(Lscala/collection/GenTraversableOnce;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(this, z, op);
   }
   
-  private I; count$u0020;
+  private I; idx$u0020;
   
-  private I; count() {
-    return this.(Lscala/collection/Iterator$$anon$29;)count$u0020;
+  public I; idx() {
+    return this.(Lscala/collection/Iterator$$anon$29;)idx$u0020;
   }
   
-  private V; count_$eq(I; x$1) {
-    this.(Lscala/collection/Iterator$$anon$29;)count$u0020 = x$1;
+  public V; idx_$eq(I; x$1) {
+    this.(Lscala/collection/Iterator$$anon$29;)idx$u0020 = x$1;
   }
   
   public Z; hasNext() {
-    return (this.(Lscala/collection/Iterator$$anon$29;)$outer$u0020.(Lscala/collection/Iterator;::hasNext()Z;)() || (this.(Lscala/collection/Iterator$$anon$29;::count()I;)() < this.(Lscala/collection/Iterator$$anon$29;)len$2));
+    return this.(Lscala/collection/Iterator$$anon$29;)$outer$u0020.(Lscala/collection/Iterator;::hasNext()Z;)();
   }
   
-  public Ljava/lang/Object; next() {
-    this.(Lscala/collection/Iterator$$anon$29;::count_$eq(I;)V;)((this.(Lscala/collection/Iterator$$anon$29;::count()I;)() + 1));
-    Ljava/lang/Object; $27$;
-    if (this.(Lscala/collection/Iterator$$anon$29;)$outer$u0020.(Lscala/collection/Iterator;::hasNext()Z;)())
-      {
-        $27$ = this.(Lscala/collection/Iterator$$anon$29;)$outer$u0020.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
-      }
-    else
-      {
-        Ljava/lang/Object; $28$;
-        if ((this.(Lscala/collection/Iterator$$anon$29;::count()I;)() <= this.(Lscala/collection/Iterator$$anon$29;)len$2))
-          {
-            $28$ = this.(Lscala/collection/Iterator$$anon$29;)elem$4;
-          }
-        else
-          {
-            $28$ = Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::empty()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
-          }
-        $27$ = $28$;
-      }
-    return $27$;
+  public Lscala/Tuple2; next() {
+    Lscala/Tuple2; ret = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/Iterator$$anon$29;)$outer$u0020.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)(), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(this.(Lscala/collection/Iterator$$anon$29;::idx()I;)())));
+    this.(Lscala/collection/Iterator$$anon$29;::idx_$eq(I;)V;)((this.(Lscala/collection/Iterator$$anon$29;::idx()I;)() + 1));
+    return ret;
   }
   
   private Lscala/collection/Iterator; $outer$u0020;
@@ -427,11 +410,11 @@ public final class Lscala/collection/Iterator$$anon$29; extends Ljava/lang/Objec
     return this.(Lscala/collection/Iterator;::seq()Lscala/collection/Iterator;)();
   }
   
-  private I; len$2;
+  public Ljava/lang/Object; next() {
+    return this.(Lscala/collection/Iterator$$anon$29;::next()Lscala/Tuple2;)();
+  }
   
-  private Ljava/lang/Object; elem$4;
-  
-  public this(Lscala/collection/Iterator; $outer, I; len$2, Ljava/lang/Object; elem$4) {
+  public this(Lscala/collection/Iterator; $outer) {
     if (($outer == null))
       {
         throw (new (Ljava/lang/NullPointerException;::this()V;)());
@@ -440,12 +423,10 @@ public final class Lscala/collection/Iterator$$anon$29; extends Ljava/lang/Objec
       {
         this.(Lscala/collection/Iterator$$anon$29;)$outer$u0020 = $outer;
       }
-    this.(Lscala/collection/Iterator$$anon$29;)len$2 = len$2;
-    this.(Lscala/collection/Iterator$$anon$29;)elem$4 = elem$4;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/GenTraversableOnce$class;.(Lscala/collection/GenTraversableOnce$class;::$init$(Lscala/collection/GenTraversableOnce;)V;)(this);
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(Lscala/collection/Iterator$$anon$29;)count$u0020 = 0;
+    this.(Lscala/collection/Iterator$$anon$29;)idx$u0020 = 0;
   }
 }
