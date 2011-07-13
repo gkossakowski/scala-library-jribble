@@ -32,34 +32,34 @@ public class Lscala/xml/PrettyPrinter$Para; extends Lscala/xml/PrettyPrinter$Ite
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp7 = x$1;
-    Z; $14$;
+    Z; $12$;
     if ((temp7.<instanceof>(Lscala/xml/PrettyPrinter$Para;) && (temp7.<cast>(Lscala/xml/PrettyPrinter$Para;).(Lscala/xml/PrettyPrinter$Para;::scala$xml$PrettyPrinter$Para$$$outer()Lscala/xml/PrettyPrinter;)() == this.(Lscala/xml/PrettyPrinter$Para;::scala$xml$PrettyPrinter$Para$$$outer()Lscala/xml/PrettyPrinter;)())))
       {
         Lscala/xml/PrettyPrinter$Para; temp8 = temp7.<cast>(Lscala/xml/PrettyPrinter$Para;);
         Ljava/lang/String; temp9 = temp8.(Lscala/xml/PrettyPrinter$Para;::s()Ljava/lang/String;)();
         Ljava/lang/String; s$2 = temp9;
-        Z; $15$;
+        Z; $13$;
         if (this.(Lscala/xml/PrettyPrinter$Para;::gd2$1(Ljava/lang/String;)Z;)(s$2))
           {
-            Ljava/lang/String; $16$;
-            Z; $17$;
+            Ljava/lang/String; $14$;
+            Z; $15$;
             body$percent04: while(true) {
-              $17$ = x$1.<cast>(Lscala/xml/PrettyPrinter$Para;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              $15$ = x$1.<cast>(Lscala/xml/PrettyPrinter$Para;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
               break;
             }
-            $15$ = $17$;
+            $13$ = $15$;
           }
         else
           {
-            $15$ = false;
+            $13$ = false;
           }
-        $14$ = $15$;
+        $12$ = $13$;
       }
     else
       {
-        $14$ = false;
+        $12$ = false;
       }
-    return ((this == x$1) || $14$);
+    return ((this == x$1) || $12$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -72,16 +72,16 @@ public class Lscala/xml/PrettyPrinter$Para; extends Lscala/xml/PrettyPrinter$Ite
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp10 = x$1;
-    Ljava/lang/Object; $18$;
+    Ljava/lang/Object; $16$;
     if ((temp10 == 0))
       {
-        $18$ = this.(Lscala/xml/PrettyPrinter$Para;::s()Ljava/lang/String;)();
+        $16$ = this.(Lscala/xml/PrettyPrinter$Para;::s()Ljava/lang/String;)();
       }
     else
       {
         throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
       }
-    return $18$;
+    return $16$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

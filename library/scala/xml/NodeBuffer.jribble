@@ -1,94 +1,10 @@
 public class Lscala/xml/NodeBuffer; extends Lscala/collection/mutable/ArrayBuffer; implements Lscala/ScalaObject; {
   
   public Lscala/xml/NodeBuffer; $amp$plus(Ljava/lang/Object; o) {
-    {
-      Ljava/lang/Object; temp1 = o;
-      Ljava/lang/Object; $1$;
-      if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp1, null))
-        {
-          $1$ = Lscala/runtime/BoxedUnit;.UNIT;
-        }
-      else
-        {
-          Ljava/lang/Object; $2$;
-          if (temp1.<instanceof>(Lscala/runtime/BoxedUnit;))
-            {
-              $2$ = Lscala/runtime/BoxedUnit;.UNIT;
-            }
-          else
-            {
-              Ljava/lang/Object; $3$;
-              if (temp1.<instanceof>(Lscala/xml/Text;))
-                {
-                  Lscala/xml/Text; temp4 = temp1.<cast>(Lscala/xml/Text;);
-                  Ljava/lang/Object; $4$;
-                  if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp4.(Lscala/xml/Text;::_data()Ljava/lang/String;)(), ""))
-                    {
-                      $4$ = Lscala/runtime/BoxedUnit;.UNIT;
-                    }
-                  else
-                    {
-                      Lscala/xml/Node; n = temp4;
-                      $4$ = this.(Lscala/xml/NodeBuffer;::body$percent21$percent1(Lscala/xml/Node;)Ljava/lang/Object;)(n);
-                    }
-                  $3$ = $4$;
-                }
-              else
-                {
-                  Ljava/lang/Object; $5$;
-                  if (temp1.<instanceof>(Lscala/collection/Iterator;))
-                    {
-                      {
-                        temp1.<cast>(Lscala/collection/Iterator;).(Lscala/collection/Iterator;::foreach(Lscala/Function1;)V;)((new (Lscala/xml/NodeBuffer$$anonfun$$amp$plus$1;::this(Lscala/xml/NodeBuffer;)V;)(this)));
-                      }
-                      $5$ = Lscala/runtime/BoxedUnit;.UNIT;
-                    }
-                  else
-                    {
-                      Ljava/lang/Object; $6$;
-                      if (temp1.<instanceof>(Lscala/xml/Node;))
-                        {
-                          $6$ = this.(Lscala/xml/NodeBuffer;::body$percent21$percent1(Lscala/xml/Node;)Ljava/lang/Object;)(temp1.<cast>(Lscala/xml/Node;));
-                        }
-                      else
-                        {
-                          Lscala/collection/mutable/ArrayBuffer; $7$;
-                          if (temp1.<instanceof>(Lscala/collection/Iterable;))
-                            {
-                              $7$ = this.(Lscala/xml/NodeBuffer;::$amp$plus(Ljava/lang/Object;)Lscala/xml/NodeBuffer;)(temp1.<cast>(Lscala/collection/Iterable;).(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)());
-                            }
-                          else
-                            {
-                              Lscala/collection/mutable/ArrayBuffer; $8$;
-                              if (Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::isArray(Ljava/lang/Object;I;)Z;)(temp1, 1))
-                                {
-                                  $8$ = this.(Lscala/xml/NodeBuffer;::$amp$plus(Ljava/lang/Object;)Lscala/xml/NodeBuffer;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::genericArrayOps(Ljava/lang/Object;)Lscala/collection/mutable/ArrayOps;)(temp1).(Lscala/collection/IndexedSeqLike;::iterator()Lscala/collection/Iterator;)());
-                                }
-                              else
-                                {
-                                  $8$ = super.(Lscala/collection/mutable/ArrayBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ArrayBuffer;)((new (Lscala/xml/Atom;::this(Ljava/lang/Object;)V;)(temp1)));
-                                }
-                              $7$ = $8$;
-                            }
-                          $6$ = $7$;
-                        }
-                      $5$ = $6$;
-                    }
-                  $3$ = $5$;
-                }
-              $2$ = $3$;
-            }
-          $1$ = $2$;
-        }
-    }
-    return this;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   public this() {
     (Lscala/collection/mutable/ArrayBuffer;::super()V;)();
-  }
-  
-  private final Ljava/lang/Object; body$percent21$percent1(Lscala/xml/Node; n) {
-    return super.(Lscala/collection/mutable/ArrayBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ArrayBuffer;)(n);
   }
 }

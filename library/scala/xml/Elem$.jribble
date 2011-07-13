@@ -6,26 +6,7 @@ public final class Lscala/xml/Elem$; extends Ljava/lang/Object; implements Lscal
   }
   
   public Lscala/Option; unapplySeq(Lscala/xml/Node; n) {
-    Lscala/xml/Node; temp1 = n;
-    Lscala/Option; $1$;
-    if (temp1.<instanceof>(Lscala/xml/SpecialNode;))
-      {
-        $1$ = Lscala/xml/Elem$;.MODULE$.(Lscala/xml/Elem$;::body$percent01$percent1()Lscala/Option;)();
-      }
-    else
-      {
-        Lscala/Option; $2$;
-        if (temp1.<instanceof>(Lscala/xml/Group;))
-          {
-            $2$ = Lscala/xml/Elem$;.MODULE$.(Lscala/xml/Elem$;::body$percent01$percent1()Lscala/Option;)();
-          }
-        else
-          {
-            $2$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple5;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(n.(Lscala/xml/Node;::prefix()Ljava/lang/String;)(), n.(Lscala/xml/Node;::label()Ljava/lang/String;)(), n.(Lscala/xml/Node;::attributes()Lscala/xml/MetaData;)(), n.(Lscala/xml/Node;::scope()Lscala/xml/NamespaceBinding;)(), n.(Lscala/xml/Node;::child()Lscala/collection/Seq;)()))));
-          }
-        $1$ = $2$;
-      }
-    return $1$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   protected Ljava/lang/Object; readResolve() {
@@ -34,9 +15,5 @@ public final class Lscala/xml/Elem$; extends Ljava/lang/Object; implements Lscal
   
   public this() {
     (Ljava/lang/Object;::super()V;)();
-  }
-  
-  private final Lscala/Option; body$percent01$percent1() {
-    return Lscala/None$;.MODULE$;
   }
 }

@@ -2,18 +2,18 @@ public final class Lscala/xml/dtd/ElementValidator$$anonfun$find$2$1; extends Ls
   
   public final Z; apply(Lscala/util/regexp/Base$RegExp; x0$5) {
     Lscala/util/regexp/Base$RegExp; temp37 = x0$5;
-    Z; $21$;
+    Z; $18$;
     if (temp37.<instanceof>(Lscala/util/regexp/WordExp$Letter;))
       {
         Lscala/util/regexp/WordExp$Letter; temp38 = temp37.<cast>(Lscala/util/regexp/WordExp$Letter;);
         Lscala/xml/dtd/ContentModel$ElemName; temp39 = temp38.(Lscala/util/regexp/WordExp$Letter;::a()Lscala/util/regexp/WordExp$Label;)().<cast>(Lscala/xml/dtd/ContentModel$ElemName;);
-        $21$ = ((temp39 != null) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/xml/dtd/ElementValidator$$anonfun$find$2$1;)Key$2, temp39.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)()));
+        $18$ = ((temp39 != null) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/xml/dtd/ElementValidator$$anonfun$find$2$1;)Key$2, temp39.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)()));
       }
     else
       {
-        $21$ = false;
+        $18$ = false;
       }
-    return $21$;
+    return $18$;
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1) {

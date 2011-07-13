@@ -580,34 +580,7 @@ public abstract class Lscala/xml/MetaData; extends Ljava/lang/Object; implements
   public abstract Lscala/collection/Seq; value();
   
   public Ljava/lang/String; prefixedKey() {
-    Lscala/xml/MetaData; temp8 = this;
-    Ljava/lang/String; $8$;
-    if (temp8.<instanceof>(Lscala/xml/Attribute;))
-      {
-        Lscala/xml/Attribute; temp9 = temp8.<cast>(Lscala/xml/Attribute;);
-        Lscala/xml/Attribute; x = temp9;
-        Ljava/lang/String; $9$;
-        if (this.(Lscala/xml/MetaData;::gd1$1(Lscala/xml/Attribute;)Z;)(x))
-          {
-            Lscala/xml/Attribute; $10$;
-            Ljava/lang/String; $11$;
-            body$percent03: while(true) {
-              $11$ = ((x.(Lscala/xml/Attribute;::pre()Ljava/lang/String;)() + ":") + this.(Lscala/xml/MetaData;::key()Ljava/lang/String;)());
-              break;
-            }
-            $9$ = $11$;
-          }
-        else
-          {
-            $9$ = this.(Lscala/xml/MetaData;::body$percent12$percent1()Ljava/lang/String;)();
-          }
-        $8$ = $9$;
-      }
-    else
-      {
-        $8$ = this.(Lscala/xml/MetaData;::body$percent12$percent1()Ljava/lang/String;)();
-      }
-    return $8$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   public Lscala/collection/immutable/Map; asAttrMap() {
@@ -725,9 +698,5 @@ public abstract class Lscala/xml/MetaData; extends Ljava/lang/Object; implements
     Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::$init$(Lscala/collection/IterableLike;)V;)(this);
     Lscala/collection/Iterable$class;.(Lscala/collection/Iterable$class;::$init$(Lscala/collection/Iterable;)V;)(this);
     Lscala/xml/Equality$class;.(Lscala/xml/Equality$class;::$init$(Lscala/xml/Equality;)V;)(this);
-  }
-  
-  private final Ljava/lang/String; body$percent12$percent1() {
-    return this.(Lscala/xml/MetaData;::key()Ljava/lang/String;)();
   }
 }

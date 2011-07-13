@@ -32,34 +32,34 @@ public class Lscala/xml/dtd/ContentModel$ElemName; extends Lscala/util/regexp/Wo
   
   public Z; equals(Ljava/lang/Object; x$1) {
     Ljava/lang/Object; temp1 = x$1;
-    Z; $47$;
+    Z; $42$;
     if (temp1.<instanceof>(Lscala/xml/dtd/ContentModel$ElemName;))
       {
         Lscala/xml/dtd/ContentModel$ElemName; temp2 = temp1.<cast>(Lscala/xml/dtd/ContentModel$ElemName;);
         Ljava/lang/String; temp3 = temp2.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)();
         Ljava/lang/String; name$1 = temp3;
-        Z; $48$;
+        Z; $43$;
         if (this.(Lscala/xml/dtd/ContentModel$ElemName;::gd1$1(Ljava/lang/String;)Z;)(name$1))
           {
-            Ljava/lang/String; $49$;
-            Z; $50$;
+            Ljava/lang/String; $44$;
+            Z; $45$;
             body$percent01: while(true) {
-              $50$ = x$1.<cast>(Lscala/xml/dtd/ContentModel$ElemName;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              $45$ = x$1.<cast>(Lscala/xml/dtd/ContentModel$ElemName;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
               break;
             }
-            $48$ = $50$;
+            $43$ = $45$;
           }
         else
           {
-            $48$ = false;
+            $43$ = false;
           }
-        $47$ = $48$;
+        $42$ = $43$;
       }
     else
       {
-        $47$ = false;
+        $42$ = false;
       }
-    return ((this == x$1) || $47$);
+    return ((this == x$1) || $42$);
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -72,16 +72,16 @@ public class Lscala/xml/dtd/ContentModel$ElemName; extends Lscala/util/regexp/Wo
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp4 = x$1;
-    Ljava/lang/Object; $51$;
+    Ljava/lang/Object; $46$;
     if ((temp4 == 0))
       {
-        $51$ = this.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)();
+        $46$ = this.(Lscala/xml/dtd/ContentModel$ElemName;::name()Ljava/lang/String;)();
       }
     else
       {
         throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
       }
-    return $51$;
+    return $46$;
   }
   
   public Z; canEqual(Ljava/lang/Object; x$1) {

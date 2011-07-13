@@ -385,29 +385,29 @@ public final class Lscala/collection/Iterator$$anon$7; extends Ljava/lang/Object
   }
   
   public Z; hasNext() {
-    Z; $35$;
+    Z; $34$;
     if ((this.(Lscala/collection/Iterator$$anon$7;::i()I;)() < this.(Lscala/collection/Iterator$$anon$7;)from$1))
       {
-        $35$ = this.(Lscala/collection/Iterator$$anon$7;::origElems()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::hasNext()Z;)();
+        $34$ = this.(Lscala/collection/Iterator$$anon$7;::origElems()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::hasNext()Z;)();
       }
     else
       {
-        $35$ = (this.(Lscala/collection/Iterator$$anon$7;)patchElems$1.(Lscala/collection/Iterator;::hasNext()Z;)() || this.(Lscala/collection/Iterator$$anon$7;::origElems()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::hasNext()Z;)());
+        $34$ = (this.(Lscala/collection/Iterator$$anon$7;)patchElems$1.(Lscala/collection/Iterator;::hasNext()Z;)() || this.(Lscala/collection/Iterator$$anon$7;::origElems()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::hasNext()Z;)());
       }
-    return $35$;
+    return $34$;
   }
   
   public Ljava/lang/Object; next() {
-    Ljava/lang/Object; $36$;
+    Ljava/lang/Object; $35$;
     if (((this.(Lscala/collection/Iterator$$anon$7;::i()I;)() < this.(Lscala/collection/Iterator$$anon$7;)from$1) || !(this.(Lscala/collection/Iterator$$anon$7;)patchElems$1.(Lscala/collection/Iterator;::hasNext()Z;)())))
       {
-        $36$ = this.(Lscala/collection/Iterator$$anon$7;::origElems()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+        $35$ = this.(Lscala/collection/Iterator$$anon$7;::origElems()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
       }
     else
       {
-        $36$ = this.(Lscala/collection/Iterator$$anon$7;)patchElems$1.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+        $35$ = this.(Lscala/collection/Iterator$$anon$7;)patchElems$1.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
       }
-    Ljava/lang/Object; result = $36$;
+    Ljava/lang/Object; result = $35$;
     this.(Lscala/collection/Iterator$$anon$7;::i_$eq(I;)V;)((this.(Lscala/collection/Iterator$$anon$7;::i()I;)() + 1));
     if ((this.(Lscala/collection/Iterator$$anon$7;::i()I;)() == this.(Lscala/collection/Iterator$$anon$7;)from$1))
       {

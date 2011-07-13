@@ -10,37 +10,7 @@ public final class Lscala/collection/immutable/LongMap$Nil$; extends Lscala/coll
   }
   
   public Z; equals(Ljava/lang/Object; that) {
-    Ljava/lang/Object; temp6 = that;
-    Z; $96$;
-    if (temp6.<instanceof>(Ljava/lang/Object;))
-      {
-        Ljava/lang/Object; temp7 = temp6;
-        Z; $97$;
-        if (this.(Lscala/collection/immutable/LongMap$Nil$;::gd1$1(Ljava/lang/Object;)Z;)(temp7))
-          {
-            $97$ = true;
-          }
-        else
-          {
-            Z; $98$;
-            if (temp7.<instanceof>(Lscala/collection/immutable/LongMap;))
-              {
-                $98$ = false;
-              }
-            else
-              {
-                Ljava/lang/Object; that = temp7;
-                $98$ = Lscala/collection/immutable/LongMap$Nil$;.MODULE$.(Lscala/collection/immutable/LongMap$Nil$;::body$percent22$percent1(Ljava/lang/Object;)Z;)(that);
-              }
-            $97$ = $98$;
-          }
-        $96$ = $97$;
-      }
-    else
-      {
-        $96$ = Lscala/collection/immutable/LongMap$Nil$;.MODULE$.(Lscala/collection/immutable/LongMap$Nil$;::body$percent22$percent1(Ljava/lang/Object;)Z;)(temp6);
-      }
-    return $96$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   public Ljava/lang/String; productPrefix() {
@@ -67,9 +37,5 @@ public final class Lscala/collection/immutable/LongMap$Nil$; extends Lscala/coll
   public this() {
     (Lscala/collection/immutable/LongMap;::super()V;)();
     Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
-  }
-  
-  private final Z; body$percent22$percent1(Ljava/lang/Object; that) {
-    return Lscala/collection/GenMapLike$class;.(Lscala/collection/GenMapLike$class;::equals(Lscala/collection/GenMapLike;Ljava/lang/Object;)Z;)(this, that);
   }
 }

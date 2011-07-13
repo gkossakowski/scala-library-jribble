@@ -1033,35 +1033,7 @@ public final class Lscala/collection/mutable/ArrayLike$$anon$1; extends Ljava/la
   }
   
   public Ljava/lang/Object; apply(I; idx) {
-    Ljava/lang/Object; temp1 = this.(Lscala/collection/mutable/ArrayLike$$anon$1;)$outer$u0020.(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(idx);
-    Ljava/lang/Object; $5$;
-    if (temp1.<instanceof>(Ljava/lang/Object;))
-      {
-        Ljava/lang/Object; temp2 = temp1;
-        Ljava/lang/Object; x = temp2;
-        Ljava/lang/Object; $6$;
-        if (this.(Lscala/collection/mutable/ArrayLike$$anon$1;::gd1$1(Ljava/lang/Object;)Z;)(x))
-          {
-            Ljava/lang/Object; $7$;
-            Lscala/collection/IndexedSeq; $8$;
-            body$percent01: while(true) {
-              $8$ = Lscala/collection/mutable/WrappedArray$;.MODULE$.(Lscala/collection/mutable/WrappedArray$;::make(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(x).(Lscala/collection/mutable/ArrayLike;::deep()Lscala/collection/IndexedSeq;)();
-              break;
-            }
-            $6$ = $8$;
-          }
-        else
-          {
-            Ljava/lang/Object; x = temp2;
-            $6$ = this.(Lscala/collection/mutable/ArrayLike$$anon$1;::body$percent11$percent1(Ljava/lang/Object;)Ljava/lang/Object;)(x);
-          }
-        $5$ = $6$;
-      }
-    else
-      {
-        $5$ = this.(Lscala/collection/mutable/ArrayLike$$anon$1;::body$percent11$percent1(Ljava/lang/Object;)Ljava/lang/Object;)(temp1);
-      }
-    return $5$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   public Ljava/lang/String; stringPrefix() {
@@ -1196,9 +1168,5 @@ public final class Lscala/collection/mutable/ArrayLike$$anon$1; extends Ljava/la
     Lscala/collection/Seq$class;.(Lscala/collection/Seq$class;::$init$(Lscala/collection/Seq;)V;)(this);
     Lscala/collection/IndexedSeqLike$class;.(Lscala/collection/IndexedSeqLike$class;::$init$(Lscala/collection/IndexedSeqLike;)V;)(this);
     Lscala/collection/IndexedSeq$class;.(Lscala/collection/IndexedSeq$class;::$init$(Lscala/collection/IndexedSeq;)V;)(this);
-  }
-  
-  private final Ljava/lang/Object; body$percent11$percent1(Ljava/lang/Object; x) {
-    return x;
   }
 }

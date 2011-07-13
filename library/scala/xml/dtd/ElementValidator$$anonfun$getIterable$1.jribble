@@ -1,38 +1,7 @@
 public final class Lscala/xml/dtd/ElementValidator$$anonfun$getIterable$1; extends Lscala/runtime/AbstractFunction1; implements Lscala/Serializable; {
   
   public final Z; apply(Lscala/xml/Node; x0$2) {
-    Lscala/xml/Node; temp10 = x0$2;
-    Z; $11$;
-    if (temp10.<instanceof>(Lscala/xml/SpecialNode;))
-      {
-        Lscala/xml/SpecialNode; temp11 = temp10.<cast>(Lscala/xml/SpecialNode;);
-        Lscala/xml/SpecialNode; y = temp11;
-        Lscala/xml/SpecialNode; temp8 = y;
-        Z; $12$;
-        if (temp8.<instanceof>(Lscala/xml/Atom;))
-          {
-            Z; $13$;
-            if (this.(Lscala/xml/dtd/ElementValidator$$anonfun$getIterable$1;::gd3$1(Lscala/xml/Atom;)Z;)(temp8.<cast>(Lscala/xml/Atom;)))
-              {
-                $13$ = false;
-              }
-            else
-              {
-                $13$ = this.(Lscala/xml/dtd/ElementValidator$$anonfun$getIterable$1;::body$percent12$percent1()Z;)();
-              }
-            $12$ = $13$;
-          }
-        else
-          {
-            $12$ = this.(Lscala/xml/dtd/ElementValidator$$anonfun$getIterable$1;::body$percent12$percent1()Z;)();
-          }
-        $11$ = $12$;
-      }
-    else
-      {
-        $11$ = (temp10.(Lscala/xml/Node;::namespace()Ljava/lang/String;)() == null);
-      }
-    return $11$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   private Lscala/xml/dtd/ElementValidator; $outer$u0020;
@@ -58,9 +27,5 @@ public final class Lscala/xml/dtd/ElementValidator$$anonfun$getIterable$1; exten
       }
     this.(Lscala/xml/dtd/ElementValidator$$anonfun$getIterable$1;)skipPCDATA$1 = skipPCDATA$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();
-  }
-  
-  private final Z; body$percent12$percent1() {
-    return !(this.(Lscala/xml/dtd/ElementValidator$$anonfun$getIterable$1;)skipPCDATA$1);
   }
 }

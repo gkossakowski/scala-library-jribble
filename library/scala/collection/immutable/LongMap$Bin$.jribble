@@ -6,16 +6,16 @@ public final class Lscala/collection/immutable/LongMap$Bin$; extends Ljava/lang/
   }
   
   public Lscala/Option; unapply(Lscala/collection/immutable/LongMap$Bin; x$0) {
-    Lscala/Option; $106$;
+    Lscala/Option; $71$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $106$ = Lscala/None$;.MODULE$;
+        $71$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $106$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(x$0.(Lscala/collection/immutable/LongMap$Bin;::prefix()J;)()), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(x$0.(Lscala/collection/immutable/LongMap$Bin;::mask()J;)()), x$0.(Lscala/collection/immutable/LongMap$Bin;::left()Lscala/collection/immutable/LongMap;)(), x$0.(Lscala/collection/immutable/LongMap$Bin;::right()Lscala/collection/immutable/LongMap;)()))));
+        $71$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(x$0.(Lscala/collection/immutable/LongMap$Bin;::prefix()J;)()), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(x$0.(Lscala/collection/immutable/LongMap$Bin;::mask()J;)()), x$0.(Lscala/collection/immutable/LongMap$Bin;::left()Lscala/collection/immutable/LongMap;)(), x$0.(Lscala/collection/immutable/LongMap$Bin;::right()Lscala/collection/immutable/LongMap;)()))));
       }
-    return $106$;
+    return $71$;
   }
   
   public Lscala/collection/immutable/LongMap$Bin; apply(J; prefix, J; mask, Lscala/collection/immutable/LongMap; left, Lscala/collection/immutable/LongMap; right) {

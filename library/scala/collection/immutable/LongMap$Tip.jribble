@@ -21,16 +21,16 @@ public class Lscala/collection/immutable/LongMap$Tip; extends Lscala/collection/
   }
   
   public Lscala/collection/immutable/LongMap$Tip; withValue(Ljava/lang/Object; s) {
-    Lscala/collection/immutable/LongMap$Tip; $99$;
+    Lscala/collection/immutable/LongMap$Tip; $64$;
     if ((s == this.(Lscala/collection/immutable/LongMap$Tip;::value()Ljava/lang/Object;)()))
       {
-        $99$ = this;
+        $64$ = this;
       }
     else
       {
-        $99$ = (new (Lscala/collection/immutable/LongMap$Tip;::this(J;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/LongMap$Tip;::key()J;)(), s));
+        $64$ = (new (Lscala/collection/immutable/LongMap$Tip;::this(J;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/LongMap$Tip;::key()J;)(), s));
       }
-    return $99$;
+    return $64$;
   }
   
   public Lscala/collection/immutable/LongMap$Tip; copy(J; key, Ljava/lang/Object; value) {
@@ -55,16 +55,16 @@ public class Lscala/collection/immutable/LongMap$Tip; extends Lscala/collection/
   
   public Ljava/lang/Object; productElement(I; x$1) {
     I; temp10 = x$1;
-    I; $100$ = temp10;
-    Ljava/lang/Object; $101$;
-    switch ($100$) {
+    I; $65$ = temp10;
+    Ljava/lang/Object; $66$;
+    switch ($65$) {
       1: {
-        $101$ = this.(Lscala/collection/immutable/LongMap$Tip;::value()Ljava/lang/Object;)();
+        $66$ = this.(Lscala/collection/immutable/LongMap$Tip;::value()Ljava/lang/Object;)();
         break;
       }
       
       0: {
-        $101$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(this.(Lscala/collection/immutable/LongMap$Tip;::key()J;)());
+        $66$ = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToLong(J;)Ljava/lang/Long;)(this.(Lscala/collection/immutable/LongMap$Tip;::key()J;)());
         break;
       }
       
@@ -74,7 +74,7 @@ public class Lscala/collection/immutable/LongMap$Tip; extends Lscala/collection/
       }
       
     }
-    return $101$;
+    return $66$;
   }
   
   public this(J; key, Ljava/lang/Object; value) {

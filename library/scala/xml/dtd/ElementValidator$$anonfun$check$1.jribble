@@ -24,7 +24,7 @@ public final class Lscala/xml/dtd/ElementValidator$$anonfun$check$1; extends Lsc
                         Ljava/lang/String; fixedValue = temp28;
                         if (this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1;::gd4$1(Ljava/lang/String;Lscala/xml/MetaData;)Z;)(fixedValue, attr$1))
                           {
-                            Ljava/lang/String; $16$;
+                            Ljava/lang/String; $13$;
                             body$percent14: while(true) {
                               this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1;)$outer$u0020.(Lscala/xml/dtd/ElementValidator;::scala$xml$dtd$ElementValidator$$exc_$eq(Lscala/collection/immutable/List;)V;)(this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1;)$outer$u0020.(Lscala/xml/dtd/ElementValidator;::scala$xml$dtd$ElementValidator$$exc()Lscala/collection/immutable/List;)().(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(Lscala/xml/dtd/MakeValidationException$;.MODULE$.(Lscala/xml/dtd/MakeValidationException$;::fromFixedAttribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lscala/xml/dtd/ValidationException;)(attr$1.(Lscala/xml/MetaData;::key()Ljava/lang/String;)(), fixedValue, this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1;::attrStr$1(Lscala/xml/MetaData;)Ljava/lang/String;)(attr$1))));
                               break;
@@ -77,16 +77,16 @@ public final class Lscala/xml/dtd/ElementValidator$$anonfun$check$1; extends Lsc
       this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1;)$outer$u0020.(Lscala/xml/dtd/ElementValidator;::adecls()Lscala/collection/immutable/List;)().(Lscala/collection/IterableLike;::zipWithIndex(Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(Lscala/collection/immutable/List$;.MODULE$.(Lscala/collection/immutable/List$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/LinearSeqOptimized;).(Lscala/collection/LinearSeqOptimized;::find(Lscala/Function1;)Lscala/Option;)((new (Lscala/xml/dtd/ElementValidator$$anonfun$check$1$$anonfun$find$1$1;::this(Lscala/xml/dtd/ElementValidator$$anonfun$check$1;Ljava/lang/String;Ljava/lang/Object;)V;)(this, Key$1, nonLocalReturnKey1$1)));
       exceptionResult1 = Lscala/None$;.MODULE$;
     } catch(Lscala/runtime/NonLocalReturnControl; ex) {
-      Lscala/Option; $17$;
+      Lscala/Option; $14$;
       if ((ex.(Lscala/runtime/NonLocalReturnControl;::key()Ljava/lang/Object;)() == nonLocalReturnKey1$1))
         {
-          $17$ = ex.(Lscala/runtime/NonLocalReturnControl;::value()Ljava/lang/Object;)().<cast>(Lscala/Option;);
+          $14$ = ex.(Lscala/runtime/NonLocalReturnControl;::value()Ljava/lang/Object;)().<cast>(Lscala/Option;);
         }
       else
         {
           throw ex;
         }
-      exceptionResult1 = $17$;
+      exceptionResult1 = $14$;
     }
     return exceptionResult1;
   }

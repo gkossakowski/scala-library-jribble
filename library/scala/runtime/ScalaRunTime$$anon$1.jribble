@@ -25,39 +25,39 @@ public final class Lscala/runtime/ScalaRunTime$$anon$1; extends Lscala/runtime/S
   }
   
   public Ljava/lang/Object; Catch(Lscala/PartialFunction; handler) {
-    Ljava/lang/Object; $93$;
+    Ljava/lang/Object; $70$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/runtime/ScalaRunTime$$anon$1;::exception()Ljava/lang/Throwable;)(), null))
       {
-        $93$ = this.(Lscala/runtime/ScalaRunTime$$anon$1;::result()Ljava/lang/Object;)();
+        $70$ = this.(Lscala/runtime/ScalaRunTime$$anon$1;::result()Ljava/lang/Object;)();
       }
     else
       {
-        Ljava/lang/Object; $94$;
+        Ljava/lang/Object; $71$;
         if (handler.(Lscala/PartialFunction;::isDefinedAt(Ljava/lang/Object;)Z;)(this.(Lscala/runtime/ScalaRunTime$$anon$1;::exception()Ljava/lang/Throwable;)()))
           {
-            $94$ = handler.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/runtime/ScalaRunTime$$anon$1;::exception()Ljava/lang/Throwable;)());
+            $71$ = handler.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/runtime/ScalaRunTime$$anon$1;::exception()Ljava/lang/Throwable;)());
           }
         else
           {
             throw this.(Lscala/runtime/ScalaRunTime$$anon$1;::exception()Ljava/lang/Throwable;)();
           }
-        $93$ = $94$;
+        $70$ = $71$;
       }
-    return $93$;
+    return $70$;
   }
   
   public Ljava/lang/Object; Finally(Lscala/Function0; fin) {
     fin.(Lscala/Function0;::apply$mcV$sp()V;)();
-    Ljava/lang/Object; $95$;
+    Ljava/lang/Object; $72$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/runtime/ScalaRunTime$$anon$1;::exception()Ljava/lang/Throwable;)(), null))
       {
-        $95$ = this.(Lscala/runtime/ScalaRunTime$$anon$1;::result()Ljava/lang/Object;)();
+        $72$ = this.(Lscala/runtime/ScalaRunTime$$anon$1;::result()Ljava/lang/Object;)();
       }
     else
       {
         throw this.(Lscala/runtime/ScalaRunTime$$anon$1;::exception()Ljava/lang/Throwable;)();
       }
-    return $95$;
+    return $72$;
   }
   
   private Lscala/Function0; block$1;
@@ -69,25 +69,25 @@ public final class Lscala/runtime/ScalaRunTime$$anon$1; extends Lscala/runtime/S
       exceptionResult2 = null;
     } catch(Ljava/lang/Throwable; ex$1) {
       Ljava/lang/Throwable; temp59 = ex$1;
-      Ljava/lang/Throwable; $96$;
+      Ljava/lang/Throwable; $73$;
       if (temp59.<instanceof>(Lscala/util/control/ControlThrowable;))
         {
           throw temp59.<cast>(Lscala/util/control/ControlThrowable;).<cast>(Ljava/lang/Throwable;);
         }
       else
         {
-          Ljava/lang/Throwable; $97$;
+          Ljava/lang/Throwable; $74$;
           if ((temp59 != null))
             {
-              $97$ = temp59;
+              $74$ = temp59;
             }
           else
             {
               throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp59));
             }
-          $96$ = $97$;
+          $73$ = $74$;
         }
-      exceptionResult2 = $96$;
+      exceptionResult2 = $73$;
     }
     return exceptionResult2;
   }

@@ -2,29 +2,29 @@ public final class Lscala/collection/immutable/List$$anonfun$rights$1; extends L
   
   public final Lscala/collection/immutable/List; apply(Lscala/Either; e, Lscala/collection/immutable/List; bs) {
     Lscala/Either; temp39 = e;
-    Lscala/collection/immutable/List; $35$;
+    Lscala/collection/immutable/List; $28$;
     if (temp39.<instanceof>(Lscala/Left;))
       {
-        $35$ = bs;
+        $28$ = bs;
       }
     else
       {
-        Lscala/collection/immutable/List; $36$;
+        Lscala/collection/immutable/List; $29$;
         if (temp39.<instanceof>(Lscala/Right;))
           {
             Lscala/Right; temp42 = temp39.<cast>(Lscala/Right;);
             Ljava/lang/Object; temp43 = temp42.(Lscala/Right;::b()Ljava/lang/Object;)();
             Ljava/lang/Object; b = temp43;
             Ljava/lang/Object; x$11 = b;
-            $36$ = bs.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$11);
+            $29$ = bs.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$11);
           }
         else
           {
             throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp39));
           }
-        $35$ = $36$;
+        $28$ = $29$;
       }
-    return $35$;
+    return $28$;
   }
   
   public final Ljava/lang/Object; apply(Ljava/lang/Object; v1, Ljava/lang/Object; v2) {

@@ -5,16 +5,16 @@ public final class Lscala/xml/PrettyPrinter$Box$; extends Lscala/runtime/Abstrac
   }
   
   public Lscala/Option; unapply(Lscala/xml/PrettyPrinter$Box; x$0) {
-    Lscala/Option; $13$;
+    Lscala/Option; $11$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
       {
-        $13$ = Lscala/None$;.MODULE$;
+        $11$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $13$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$0.(Lscala/xml/PrettyPrinter$Box;::col()I;)()), x$0.(Lscala/xml/PrettyPrinter$Box;::s()Ljava/lang/String;)()))));
+        $11$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)((new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$0.(Lscala/xml/PrettyPrinter$Box;::col()I;)()), x$0.(Lscala/xml/PrettyPrinter$Box;::s()Ljava/lang/String;)()))));
       }
-    return $13$;
+    return $11$;
   }
   
   public Lscala/xml/PrettyPrinter$Box; apply(I; col, Ljava/lang/String; s) {

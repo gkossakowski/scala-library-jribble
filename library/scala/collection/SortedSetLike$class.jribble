@@ -25,35 +25,7 @@ public abstract class Lscala/collection/SortedSetLike$class; {
   }
   
   public static Z; subsetOf(Lscala/collection/SortedSetLike; $this, Lscala/collection/GenSet; that) {
-    Lscala/collection/GenSet; temp1 = that;
-    Z; $1$;
-    if (temp1.<instanceof>(Lscala/collection/SortedSet;))
-      {
-        Lscala/collection/SortedSet; temp2 = temp1.<cast>(Lscala/collection/SortedSet;);
-        Lscala/collection/SortedSet; that = temp2;
-        Z; $2$;
-        if (Lscala/collection/SortedSetLike$class;.(Lscala/collection/SortedSetLike$class;::gd1$1(Lscala/collection/SortedSetLike;Lscala/collection/SortedSet;)Z;)($this, that))
-          {
-            Lscala/collection/SortedSet; $3$;
-            Z; $4$;
-            body$percent01: while(true) {
-              $4$ = that.(Lscala/collection/generic/Sorted;::hasAll(Lscala/collection/Iterator;)Z;)($this.(Lscala/collection/GenSetLike;::iterator()Lscala/collection/Iterator;)());
-              break;
-            }
-            $2$ = $4$;
-          }
-        else
-          {
-            Lscala/collection/GenSet; that = temp2;
-            $2$ = Lscala/collection/SortedSetLike$class;.(Lscala/collection/SortedSetLike$class;::body$percent11$percent1(Lscala/collection/GenSet;)Z;)(that);
-          }
-        $1$ = $2$;
-      }
-    else
-      {
-        $1$ = Lscala/collection/SortedSetLike$class;.(Lscala/collection/SortedSetLike$class;::body$percent11$percent1(Lscala/collection/GenSet;)Z;)(temp1);
-      }
-    return $1$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   private static final Z; gd1$1(Lscala/collection/SortedSetLike; $this, Lscala/collection/SortedSet; x$1) {
@@ -62,9 +34,5 @@ public abstract class Lscala/collection/SortedSetLike$class; {
   
   public static V; $init$(Lscala/collection/SortedSetLike; $this) {
     
-  }
-  
-  private static final Z; body$percent11$percent1(Lscala/collection/GenSet; that) {
-    return $this.(Lscala/collection/SortedSetLike;::scala$collection$SortedSetLike$$super$subsetOf(Lscala/collection/GenSet;)Z;)(that);
   }
 }

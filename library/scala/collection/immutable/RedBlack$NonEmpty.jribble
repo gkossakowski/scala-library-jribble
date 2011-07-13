@@ -35,149 +35,79 @@ public abstract class Lscala/collection/immutable/RedBlack$NonEmpty; extends Lsc
   }
   
   public final Lscala/collection/immutable/RedBlack$NonEmpty; scala$collection$immutable$RedBlack$NonEmpty$$balanceLeft(Z; isBlack, Ljava/lang/Object; z, Ljava/lang/Object; zv, Lscala/collection/immutable/RedBlack$Tree; l, Lscala/collection/immutable/RedBlack$Tree; d) {
-    Lscala/collection/immutable/RedBlack$Tree; temp7 = l;
-    Lscala/collection/immutable/RedBlack$NonEmpty; $6$;
-    if (temp7.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
+  }
+  
+  public final Lscala/collection/immutable/RedBlack$NonEmpty; scala$collection$immutable$RedBlack$NonEmpty$$balanceRight(Z; isBlack, Ljava/lang/Object; x, Ljava/lang/Object; xv, Lscala/collection/immutable/RedBlack$Tree; a, Lscala/collection/immutable/RedBlack$Tree; r) {
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
+  }
+  
+  public Lscala/collection/immutable/RedBlack$Tree; upd(Ljava/lang/Object; k, Ljava/lang/Object; v) {
+    Lscala/collection/immutable/RedBlack$Tree; $6$;
+    if (this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::isSmaller(Ljava/lang/Object;Ljava/lang/Object;)Z;)(k, this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)()))
       {
-        Lscala/collection/immutable/RedBlack$RedTree; temp8 = temp7.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-        Ljava/lang/Object; temp9 = temp8.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)();
-        Ljava/lang/Object; temp10 = temp8.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)();
-        Lscala/collection/immutable/RedBlack$Tree; temp11 = temp8.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-        Lscala/collection/immutable/RedBlack$Tree; temp12 = temp8.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-        Lscala/collection/immutable/RedBlack$NonEmpty; $7$;
-        if (temp11.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-          {
-            Lscala/collection/immutable/RedBlack$RedTree; temp13 = temp11.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-            $7$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp9, temp10, (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp13.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)(), temp13.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)(), temp13.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), temp13.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)())), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), z, zv, temp12, d))));
-          }
-        else
-          {
-            Lscala/collection/immutable/RedBlack$NonEmpty; $8$;
-            if (temp12.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-              {
-                Lscala/collection/immutable/RedBlack$RedTree; temp18 = temp12.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                $8$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp18.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)(), temp18.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp9, temp10, temp11, temp18.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)())), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), z, zv, temp18.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)(), d))));
-              }
-            else
-              {
-                $8$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent21$percent1()Lscala/collection/immutable/RedBlack$NonEmpty;)();
-              }
-            $7$ = $8$;
-          }
-        $6$ = $7$;
+        $6$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$balanceLeft(Z;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(this.(Lscala/collection/immutable/RedBlack$Tree;::isBlack()Z;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::upd(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(k, v), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)());
       }
     else
       {
-        $6$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent21$percent1()Lscala/collection/immutable/RedBlack$NonEmpty;)();
+        Lscala/collection/immutable/RedBlack$Tree; $7$;
+        if (this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::isSmaller(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), k))
+          {
+            $7$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$balanceRight(Z;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(this.(Lscala/collection/immutable/RedBlack$Tree;::isBlack()Z;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::upd(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(k, v));
+          }
+        else
+          {
+            $7$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::scala$collection$immutable$RedBlack$$mkTree(Z;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(this.(Lscala/collection/immutable/RedBlack$Tree;::isBlack()Z;)(), k, v, this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)());
+          }
+        $6$ = $7$;
       }
     return $6$;
   }
   
-  public final Lscala/collection/immutable/RedBlack$NonEmpty; scala$collection$immutable$RedBlack$NonEmpty$$balanceRight(Z; isBlack, Ljava/lang/Object; x, Ljava/lang/Object; xv, Lscala/collection/immutable/RedBlack$Tree; a, Lscala/collection/immutable/RedBlack$Tree; r) {
-    Lscala/collection/immutable/RedBlack$Tree; temp23 = r;
-    Lscala/collection/immutable/RedBlack$NonEmpty; $9$;
-    if (temp23.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-      {
-        Lscala/collection/immutable/RedBlack$RedTree; temp24 = temp23.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-        Ljava/lang/Object; temp25 = temp24.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)();
-        Ljava/lang/Object; temp26 = temp24.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)();
-        Lscala/collection/immutable/RedBlack$Tree; temp27 = temp24.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-        Lscala/collection/immutable/RedBlack$Tree; temp28 = temp24.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-        Lscala/collection/immutable/RedBlack$NonEmpty; $10$;
-        if (temp27.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-          {
-            Lscala/collection/immutable/RedBlack$RedTree; temp29 = temp27.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-            $10$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp29.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)(), temp29.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, a, temp29.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)())), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp25, temp26, temp29.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)(), temp28))));
-          }
-        else
-          {
-            Lscala/collection/immutable/RedBlack$NonEmpty; $11$;
-            if (temp28.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-              {
-                Lscala/collection/immutable/RedBlack$RedTree; temp34 = temp28.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                $11$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp25, temp26, (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, a, temp27)), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp34.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)(), temp34.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)(), temp34.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), temp34.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)()))));
-              }
-            else
-              {
-                $11$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent22$percent1()Lscala/collection/immutable/RedBlack$NonEmpty;)();
-              }
-            $10$ = $11$;
-          }
-        $9$ = $10$;
-      }
-    else
-      {
-        $9$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent22$percent1()Lscala/collection/immutable/RedBlack$NonEmpty;)();
-      }
-    return $9$;
-  }
-  
-  public Lscala/collection/immutable/RedBlack$Tree; upd(Ljava/lang/Object; k, Ljava/lang/Object; v) {
-    Lscala/collection/immutable/RedBlack$Tree; $12$;
-    if (this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::isSmaller(Ljava/lang/Object;Ljava/lang/Object;)Z;)(k, this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)()))
-      {
-        $12$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$balanceLeft(Z;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(this.(Lscala/collection/immutable/RedBlack$Tree;::isBlack()Z;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::upd(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(k, v), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)());
-      }
-    else
-      {
-        Lscala/collection/immutable/RedBlack$Tree; $13$;
-        if (this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::isSmaller(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), k))
-          {
-            $13$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$balanceRight(Z;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(this.(Lscala/collection/immutable/RedBlack$Tree;::isBlack()Z;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::upd(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(k, v));
-          }
-        else
-          {
-            $13$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::scala$collection$immutable$RedBlack$$mkTree(Z;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(this.(Lscala/collection/immutable/RedBlack$Tree;::isBlack()Z;)(), k, v, this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)());
-          }
-        $12$ = $13$;
-      }
-    return $12$;
-  }
-  
   public Lscala/collection/immutable/RedBlack$Tree; del(Ljava/lang/Object; k$1) {
     Ljava/lang/Object; temp186 = k$1;
-    Lscala/collection/immutable/RedBlack$Tree; $14$;
+    Lscala/collection/immutable/RedBlack$Tree; $8$;
     if (this.(Lscala/collection/immutable/RedBlack$NonEmpty;::gd1$1(Ljava/lang/Object;)Z;)(k$1))
       {
-        Lscala/collection/immutable/RedBlack$NonEmpty; $15$;
+        Lscala/collection/immutable/RedBlack$NonEmpty; $9$;
         body$percent013: while(true) {
-          $15$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::delLeft$1(Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$NonEmpty;)(k$1);
+          $9$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::delLeft$1(Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$NonEmpty;)(k$1);
           break;
         }
-        $14$ = $15$;
+        $8$ = $9$;
       }
     else
       {
-        Lscala/collection/immutable/RedBlack$Tree; $16$;
+        Lscala/collection/immutable/RedBlack$Tree; $10$;
         if (this.(Lscala/collection/immutable/RedBlack$NonEmpty;::gd2$1(Ljava/lang/Object;)Z;)(k$1))
           {
-            Lscala/collection/immutable/RedBlack$NonEmpty; $17$;
+            Lscala/collection/immutable/RedBlack$NonEmpty; $11$;
             body$percent113: while(true) {
-              $17$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::delRight$1(Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$NonEmpty;)(k$1);
+              $11$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::delRight$1(Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$NonEmpty;)(k$1);
               break;
             }
-            $16$ = $17$;
+            $10$ = $11$;
           }
         else
           {
-            $16$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::append$1(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)());
+            $10$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::append$1(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)());
           }
-        $14$ = $16$;
+        $8$ = $10$;
       }
-    return $14$;
+    return $8$;
   }
   
   public Lscala/collection/immutable/RedBlack$NonEmpty; smallest() {
-    Lscala/collection/immutable/RedBlack$NonEmpty; $18$;
+    Lscala/collection/immutable/RedBlack$NonEmpty; $12$;
     if (this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::isEmpty()Z;)())
       {
-        $18$ = this;
+        $12$ = this;
       }
     else
       {
-        $18$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::smallest()Lscala/collection/immutable/RedBlack$NonEmpty;)();
+        $12$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::smallest()Lscala/collection/immutable/RedBlack$NonEmpty;)();
       }
-    return $18$;
+    return $12$;
   }
   
   public Lscala/collection/immutable/Stream; toStream() {
@@ -243,34 +173,34 @@ public abstract class Lscala/collection/immutable/RedBlack$NonEmpty; extends Lsc
       }
     Lscala/collection/immutable/RedBlack$Tree; newLeft = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::rng(Lscala/Option;Lscala/Option;)Lscala/collection/immutable/RedBlack$Tree;)(from, Lscala/None$;.MODULE$);
     Lscala/collection/immutable/RedBlack$Tree; newRight = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::rng(Lscala/Option;Lscala/Option;)Lscala/collection/immutable/RedBlack$Tree;)(Lscala/None$;.MODULE$, until);
-    Lscala/collection/immutable/RedBlack$Tree; $19$;
+    Lscala/collection/immutable/RedBlack$Tree; $13$;
     if (((newLeft == this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)()) && (newRight == this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)())))
       {
-        $19$ = this;
+        $13$ = this;
       }
     else
       {
-        Lscala/collection/immutable/RedBlack$Tree; $20$;
+        Lscala/collection/immutable/RedBlack$Tree; $14$;
         if ((newLeft == this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::Empty()Lscala/collection/immutable/RedBlack$Empty$;)()))
           {
-            $20$ = newRight.(Lscala/collection/immutable/RedBlack$Tree;::upd(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)());
+            $14$ = newRight.(Lscala/collection/immutable/RedBlack$Tree;::upd(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)());
           }
         else
           {
-            Lscala/collection/immutable/RedBlack$Tree; $21$;
+            Lscala/collection/immutable/RedBlack$Tree; $15$;
             if ((newRight == this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::Empty()Lscala/collection/immutable/RedBlack$Empty$;)()))
               {
-                $21$ = newLeft.(Lscala/collection/immutable/RedBlack$Tree;::upd(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)());
+                $15$ = newLeft.(Lscala/collection/immutable/RedBlack$Tree;::upd(Ljava/lang/Object;Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)());
               }
             else
               {
-                $21$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::rebalance(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(newLeft, newRight);
+                $15$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::rebalance(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(newLeft, newRight);
               }
-            $20$ = $21$;
+            $14$ = $15$;
           }
-        $19$ = $20$;
+        $13$ = $14$;
       }
-    return $19$;
+    return $13$;
   }
   
   private Lscala/Tuple4; compareDepth(Lscala/collection/immutable/RedBlack$Tree; left, Lscala/collection/immutable/RedBlack$Tree; right) {
@@ -281,68 +211,68 @@ public abstract class Lscala/collection/immutable/RedBlack$NonEmpty; extends Lsc
     Lscala/collection/immutable/RedBlack$Tree; blkNewLeft = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::scala$collection$immutable$RedBlack$$blacken(Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(newLeft);
     Lscala/collection/immutable/RedBlack$Tree; blkNewRight = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::scala$collection$immutable$RedBlack$$blacken(Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(newRight);
     Lscala/Tuple4; temp237 = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::compareDepth(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/Tuple4;)(blkNewLeft, blkNewRight);
-    Lscala/Tuple4; $22$;
+    Lscala/Tuple4; $16$;
     if ((temp237 != null))
       {
-        $22$ = (new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(temp237.(Lscala/Tuple4;::_1()Ljava/lang/Object;)(), temp237.(Lscala/Tuple4;::_2()Ljava/lang/Object;)(), temp237.(Lscala/Tuple4;::_3()Ljava/lang/Object;)(), temp237.(Lscala/Tuple4;::_4()Ljava/lang/Object;)()));
+        $16$ = (new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(temp237.(Lscala/Tuple4;::_1()Ljava/lang/Object;)(), temp237.(Lscala/Tuple4;::_2()Ljava/lang/Object;)(), temp237.(Lscala/Tuple4;::_3()Ljava/lang/Object;)(), temp237.(Lscala/Tuple4;::_4()Ljava/lang/Object;)()));
       }
     else
       {
         throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp237));
       }
-    Lscala/Tuple4; x$10 = $22$;
+    Lscala/Tuple4; x$10 = $16$;
     Lscala/collection/immutable/List; zipper = x$10.(Lscala/Tuple4;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;);
     Z; levelled = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(x$10.(Lscala/Tuple4;::_2()Ljava/lang/Object;)());
     Z; leftMost$1 = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(x$10.(Lscala/Tuple4;::_3()Ljava/lang/Object;)());
     I; smallerDepth = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(x$10.(Lscala/Tuple4;::_4()Ljava/lang/Object;)());
-    Lscala/collection/immutable/RedBlack$Tree; $23$;
+    Lscala/collection/immutable/RedBlack$Tree; $17$;
     if (levelled)
       {
-        $23$ = (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), blkNewLeft, blkNewRight));
+        $17$ = (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), blkNewLeft, blkNewRight));
       }
     else
       {
         Lscala/collection/immutable/List; zipFrom = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::findDepth$1(Lscala/collection/immutable/List;I;)Lscala/collection/immutable/List;)(zipper, smallerDepth);
-        Lscala/collection/immutable/RedBlack$RedTree; $24$;
+        Lscala/collection/immutable/RedBlack$RedTree; $18$;
         if (leftMost$1)
           {
-            $24$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), blkNewLeft, zipFrom.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$Tree;)));
+            $18$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), blkNewLeft, zipFrom.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$Tree;)));
           }
         else
           {
-            $24$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), zipFrom.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$Tree;), blkNewRight));
+            $18$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), zipFrom.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$Tree;), blkNewRight));
           }
-        Lscala/collection/immutable/RedBlack$RedTree; union = $24$;
+        Lscala/collection/immutable/RedBlack$RedTree; union = $18$;
         Lscala/collection/immutable/RedBlack$Tree; zippedTree = zipFrom.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/LinearSeqOptimized;).(Lscala/collection/LinearSeqOptimized;::foldLeft(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(union, (new (Lscala/collection/immutable/RedBlack$NonEmpty$$anonfun$1;::this(Lscala/collection/immutable/RedBlack$NonEmpty;Z;)V;)(this, leftMost$1))).<cast>(Lscala/collection/immutable/RedBlack$Tree;);
-        $23$ = zippedTree;
+        $17$ = zippedTree;
       }
-    return $23$;
+    return $17$;
   }
   
   public Ljava/lang/Object; first() {
-    Ljava/lang/Object; $25$;
+    Ljava/lang/Object; $19$;
     if (this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::isEmpty()Z;)())
       {
-        $25$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)();
+        $19$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)();
       }
     else
       {
-        $25$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::first()Ljava/lang/Object;)();
+        $19$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::first()Ljava/lang/Object;)();
       }
-    return $25$;
+    return $19$;
   }
   
   public Ljava/lang/Object; last() {
-    Ljava/lang/Object; $26$;
+    Ljava/lang/Object; $20$;
     if (this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::isEmpty()Z;)())
       {
-        $26$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)();
+        $20$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)();
       }
     else
       {
-        $26$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::last()Ljava/lang/Object;)();
+        $20$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::last()Ljava/lang/Object;)();
       }
-    return $26$;
+    return $20$;
   }
   
   public I; count() {
@@ -354,429 +284,62 @@ public abstract class Lscala/collection/immutable/RedBlack$NonEmpty; extends Lsc
   }
   
   private final Lscala/collection/immutable/RedBlack$NonEmpty; balance$1(Ljava/lang/Object; x, Ljava/lang/Object; xv, Lscala/collection/immutable/RedBlack$Tree; tl, Lscala/collection/immutable/RedBlack$Tree; tr) {
-    Lscala/Tuple2; temp39 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tl, tr));
-    Lscala/collection/immutable/RedBlack$NonEmpty; $27$;
-    if ((temp39 != null))
-      {
-        Lscala/collection/immutable/RedBlack$Tree; temp40 = temp39.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$Tree;);
-        Lscala/collection/immutable/RedBlack$Tree; temp41 = temp39.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$Tree;);
-        Lscala/collection/immutable/RedBlack$NonEmpty; $28$;
-        if (temp40.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-          {
-            Lscala/collection/immutable/RedBlack$RedTree; temp42 = temp40.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-            Ljava/lang/Object; temp43 = temp42.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)();
-            Ljava/lang/Object; temp44 = temp42.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)();
-            Lscala/collection/immutable/RedBlack$Tree; temp45 = temp42.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-            Lscala/collection/immutable/RedBlack$Tree; temp46 = temp42.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-            Lscala/collection/immutable/RedBlack$NonEmpty; $29$;
-            if (temp41.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-              {
-                Lscala/collection/immutable/RedBlack$RedTree; temp47 = temp41.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                $29$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp43, temp44, temp45, temp46)), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp47.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)(), temp47.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)(), temp47.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), temp47.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)()))));
-              }
-            else
-              {
-                Lscala/collection/immutable/RedBlack$NonEmpty; $30$;
-                if (temp45.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-                  {
-                    Lscala/collection/immutable/RedBlack$RedTree; temp52 = temp45.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                    $30$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp43, temp44, (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp52.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)(), temp52.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)(), temp52.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), temp52.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)())), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, temp46, temp41))));
-                  }
-                else
-                  {
-                    Lscala/collection/immutable/RedBlack$NonEmpty; $31$;
-                    if (temp46.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-                      {
-                        Lscala/collection/immutable/RedBlack$RedTree; temp57 = temp46.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                        $31$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp57.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)(), temp57.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp43, temp44, temp45, temp57.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)())), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, temp57.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)(), temp41))));
-                      }
-                    else
-                      {
-                        Lscala/collection/immutable/RedBlack$Tree; a = temp42;
-                        Lscala/collection/immutable/RedBlack$Tree; b = temp41;
-                        $31$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent51$percent1(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(a, b);
-                      }
-                    $30$ = $31$;
-                  }
-                $29$ = $30$;
-              }
-            $28$ = $29$;
-          }
-        else
-          {
-            Lscala/collection/immutable/RedBlack$NonEmpty; $32$;
-            if (temp41.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-              {
-                Lscala/collection/immutable/RedBlack$RedTree; temp62 = temp41.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                Ljava/lang/Object; temp63 = temp62.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)();
-                Ljava/lang/Object; temp64 = temp62.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)();
-                Lscala/collection/immutable/RedBlack$Tree; temp65 = temp62.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-                Lscala/collection/immutable/RedBlack$Tree; temp66 = temp62.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-                Lscala/collection/immutable/RedBlack$NonEmpty; $33$;
-                if (temp66.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-                  {
-                    Lscala/collection/immutable/RedBlack$RedTree; temp67 = temp66.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                    $33$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp63, temp64, (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, temp40, temp65)), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp67.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)(), temp67.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)(), temp67.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), temp67.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)()))));
-                  }
-                else
-                  {
-                    Lscala/collection/immutable/RedBlack$NonEmpty; $34$;
-                    if (temp65.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-                      {
-                        Lscala/collection/immutable/RedBlack$RedTree; temp72 = temp65.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                        $34$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp72.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)(), temp72.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, temp40, temp72.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)())), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp63, temp64, temp72.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)(), temp66))));
-                      }
-                    else
-                      {
-                        $34$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent51$percent1(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(temp40, temp62);
-                      }
-                    $33$ = $34$;
-                  }
-                $32$ = $33$;
-              }
-            else
-              {
-                $32$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent51$percent1(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(temp40, temp41);
-              }
-            $28$ = $32$;
-          }
-        $27$ = $28$;
-      }
-    else
-      {
-        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp39));
-      }
-    return $27$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   private final Lscala/collection/immutable/RedBlack$RedTree; subl$1(Lscala/collection/immutable/RedBlack$Tree; t) {
     Lscala/collection/immutable/RedBlack$Tree; temp77 = t;
-    Lscala/collection/immutable/RedBlack$RedTree; $35$;
+    Lscala/collection/immutable/RedBlack$RedTree; $21$;
     if (temp77.<instanceof>(Lscala/collection/immutable/RedBlack$BlackTree;))
       {
         Lscala/collection/immutable/RedBlack$BlackTree; temp78 = temp77.<cast>(Lscala/collection/immutable/RedBlack$BlackTree;);
-        $35$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp78.(Lscala/collection/immutable/RedBlack$BlackTree;::key()Ljava/lang/Object;)(), temp78.(Lscala/collection/immutable/RedBlack$BlackTree;::value()Ljava/lang/Object;)(), temp78.(Lscala/collection/immutable/RedBlack$BlackTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), temp78.(Lscala/collection/immutable/RedBlack$BlackTree;::right()Lscala/collection/immutable/RedBlack$Tree;)()));
+        $21$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp78.(Lscala/collection/immutable/RedBlack$BlackTree;::key()Ljava/lang/Object;)(), temp78.(Lscala/collection/immutable/RedBlack$BlackTree;::value()Ljava/lang/Object;)(), temp78.(Lscala/collection/immutable/RedBlack$BlackTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), temp78.(Lscala/collection/immutable/RedBlack$BlackTree;::right()Lscala/collection/immutable/RedBlack$Tree;)()));
       }
     else
       {
         Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)(("Defect: invariance violation; expected black, got " + t));
       }
-    return $35$;
+    return $21$;
   }
   
   private final Lscala/collection/immutable/RedBlack$NonEmpty; balLeft$1(Ljava/lang/Object; x, Ljava/lang/Object; xv, Lscala/collection/immutable/RedBlack$Tree; tl, Lscala/collection/immutable/RedBlack$Tree; tr) {
-    Lscala/Tuple2; temp83 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tl, tr));
-    Lscala/collection/immutable/RedBlack$NonEmpty; $36$;
-    if ((temp83 != null))
-      {
-        Lscala/collection/immutable/RedBlack$Tree; temp84 = temp83.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$Tree;);
-        Lscala/collection/immutable/RedBlack$Tree; temp85 = temp83.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$Tree;);
-        Lscala/collection/immutable/RedBlack$NonEmpty; $37$;
-        if (temp84.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-          {
-            Lscala/collection/immutable/RedBlack$RedTree; temp86 = temp84.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-            $37$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp86.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)(), temp86.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)(), temp86.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), temp86.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)())), temp85));
-          }
-        else
-          {
-            Lscala/collection/immutable/RedBlack$NonEmpty; $38$;
-            if (temp85.<instanceof>(Lscala/collection/immutable/RedBlack$BlackTree;))
-              {
-                Lscala/collection/immutable/RedBlack$BlackTree; temp91 = temp85.<cast>(Lscala/collection/immutable/RedBlack$BlackTree;);
-                $38$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::balance$1(Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(x, xv, temp84, (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp91.(Lscala/collection/immutable/RedBlack$BlackTree;::key()Ljava/lang/Object;)(), temp91.(Lscala/collection/immutable/RedBlack$BlackTree;::value()Ljava/lang/Object;)(), temp91.(Lscala/collection/immutable/RedBlack$BlackTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), temp91.(Lscala/collection/immutable/RedBlack$BlackTree;::right()Lscala/collection/immutable/RedBlack$Tree;)())));
-              }
-            else
-              {
-                Lscala/collection/immutable/RedBlack$NonEmpty; $39$;
-                if (temp85.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-                  {
-                    Lscala/collection/immutable/RedBlack$RedTree; temp96 = temp85.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                    Ljava/lang/Object; temp97 = temp96.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)();
-                    Ljava/lang/Object; temp98 = temp96.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)();
-                    Lscala/collection/immutable/RedBlack$Tree; temp99 = temp96.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-                    Lscala/collection/immutable/RedBlack$Tree; temp100 = temp96.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-                    Lscala/collection/immutable/RedBlack$NonEmpty; $40$;
-                    if (temp99.<instanceof>(Lscala/collection/immutable/RedBlack$BlackTree;))
-                      {
-                        Lscala/collection/immutable/RedBlack$BlackTree; temp101 = temp99.<cast>(Lscala/collection/immutable/RedBlack$BlackTree;);
-                        $40$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp101.(Lscala/collection/immutable/RedBlack$BlackTree;::key()Ljava/lang/Object;)(), temp101.(Lscala/collection/immutable/RedBlack$BlackTree;::value()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, temp84, temp101.(Lscala/collection/immutable/RedBlack$BlackTree;::left()Lscala/collection/immutable/RedBlack$Tree;)())), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::balance$1(Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(temp97, temp98, temp101.(Lscala/collection/immutable/RedBlack$BlackTree;::right()Lscala/collection/immutable/RedBlack$Tree;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::subl$1(Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$RedTree;)(temp100))));
-                      }
-                    else
-                      {
-                        this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent32$percent1()Lscala/runtime/Nothing$;)();
-                      }
-                    $39$ = $40$;
-                  }
-                else
-                  {
-                    this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent32$percent1()Lscala/runtime/Nothing$;)();
-                  }
-                $38$ = $39$;
-              }
-            $37$ = $38$;
-          }
-        $36$ = $37$;
-      }
-    else
-      {
-        this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent32$percent1()Lscala/runtime/Nothing$;)();
-      }
-    return $36$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   private final Lscala/collection/immutable/RedBlack$NonEmpty; balRight$1(Ljava/lang/Object; x, Ljava/lang/Object; xv, Lscala/collection/immutable/RedBlack$Tree; tl, Lscala/collection/immutable/RedBlack$Tree; tr) {
-    Lscala/Tuple2; temp106 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tl, tr));
-    Lscala/collection/immutable/RedBlack$NonEmpty; $41$;
-    if ((temp106 != null))
-      {
-        Lscala/collection/immutable/RedBlack$Tree; temp107 = temp106.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$Tree;);
-        Lscala/collection/immutable/RedBlack$Tree; temp108 = temp106.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$Tree;);
-        Lscala/collection/immutable/RedBlack$NonEmpty; $42$;
-        if (temp108.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-          {
-            Lscala/collection/immutable/RedBlack$RedTree; temp109 = temp108.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-            $42$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, temp107, (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp109.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)(), temp109.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)(), temp109.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), temp109.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)()))));
-          }
-        else
-          {
-            Lscala/collection/immutable/RedBlack$NonEmpty; $43$;
-            if (temp107.<instanceof>(Lscala/collection/immutable/RedBlack$BlackTree;))
-              {
-                Lscala/collection/immutable/RedBlack$BlackTree; temp114 = temp107.<cast>(Lscala/collection/immutable/RedBlack$BlackTree;);
-                $43$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::balance$1(Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(x, xv, (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp114.(Lscala/collection/immutable/RedBlack$BlackTree;::key()Ljava/lang/Object;)(), temp114.(Lscala/collection/immutable/RedBlack$BlackTree;::value()Ljava/lang/Object;)(), temp114.(Lscala/collection/immutable/RedBlack$BlackTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), temp114.(Lscala/collection/immutable/RedBlack$BlackTree;::right()Lscala/collection/immutable/RedBlack$Tree;)())), temp108);
-              }
-            else
-              {
-                Lscala/collection/immutable/RedBlack$NonEmpty; $44$;
-                if (temp107.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-                  {
-                    Lscala/collection/immutable/RedBlack$RedTree; temp119 = temp107.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                    Ljava/lang/Object; temp120 = temp119.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)();
-                    Ljava/lang/Object; temp121 = temp119.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)();
-                    Lscala/collection/immutable/RedBlack$Tree; temp122 = temp119.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-                    Lscala/collection/immutable/RedBlack$Tree; temp123 = temp119.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-                    Lscala/collection/immutable/RedBlack$NonEmpty; $45$;
-                    if (temp123.<instanceof>(Lscala/collection/immutable/RedBlack$BlackTree;))
-                      {
-                        Lscala/collection/immutable/RedBlack$BlackTree; temp124 = temp123.<cast>(Lscala/collection/immutable/RedBlack$BlackTree;);
-                        $45$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp124.(Lscala/collection/immutable/RedBlack$BlackTree;::key()Ljava/lang/Object;)(), temp124.(Lscala/collection/immutable/RedBlack$BlackTree;::value()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::balance$1(Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(temp120, temp121, this.(Lscala/collection/immutable/RedBlack$NonEmpty;::subl$1(Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$RedTree;)(temp122), temp124.(Lscala/collection/immutable/RedBlack$BlackTree;::left()Lscala/collection/immutable/RedBlack$Tree;)()), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, temp124.(Lscala/collection/immutable/RedBlack$BlackTree;::right()Lscala/collection/immutable/RedBlack$Tree;)(), temp108))));
-                      }
-                    else
-                      {
-                        this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent33$percent1()Lscala/runtime/Nothing$;)();
-                      }
-                    $44$ = $45$;
-                  }
-                else
-                  {
-                    this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent33$percent1()Lscala/runtime/Nothing$;)();
-                  }
-                $43$ = $44$;
-              }
-            $42$ = $43$;
-          }
-        $41$ = $42$;
-      }
-    else
-      {
-        this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent33$percent1()Lscala/runtime/Nothing$;)();
-      }
-    return $41$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   private final Lscala/collection/immutable/RedBlack$NonEmpty; delLeft$1(Ljava/lang/Object; k$1) {
     Lscala/collection/immutable/RedBlack$Tree; temp129 = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-    Lscala/collection/immutable/RedBlack$NonEmpty; $46$;
+    Lscala/collection/immutable/RedBlack$NonEmpty; $22$;
     if (temp129.<instanceof>(Lscala/collection/immutable/RedBlack$BlackTree;))
       {
-        $46$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::balLeft$1(Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::del(Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(k$1), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)());
+        $22$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::balLeft$1(Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::del(Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(k$1), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)());
       }
     else
       {
-        $46$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::del(Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(k$1), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)()));
+        $22$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::del(Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(k$1), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)()));
       }
-    return $46$;
+    return $22$;
   }
   
   private final Lscala/collection/immutable/RedBlack$NonEmpty; delRight$1(Ljava/lang/Object; k$1) {
     Lscala/collection/immutable/RedBlack$Tree; temp135 = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-    Lscala/collection/immutable/RedBlack$NonEmpty; $47$;
+    Lscala/collection/immutable/RedBlack$NonEmpty; $23$;
     if (temp135.<instanceof>(Lscala/collection/immutable/RedBlack$BlackTree;))
       {
-        $47$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::balRight$1(Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::del(Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(k$1));
+        $23$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::balRight$1(Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::del(Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(k$1));
       }
     else
       {
-        $47$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::del(Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(k$1)));
+        $23$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::key()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::value()Ljava/lang/Object;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)(), this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)().(Lscala/collection/immutable/RedBlack$Tree;::del(Ljava/lang/Object;)Lscala/collection/immutable/RedBlack$Tree;)(k$1)));
       }
-    return $47$;
+    return $23$;
   }
   
   private final Lscala/collection/immutable/RedBlack$Tree; append$1(Lscala/collection/immutable/RedBlack$Tree; tl, Lscala/collection/immutable/RedBlack$Tree; tr) {
-    Lscala/Tuple2; temp153 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(tl, tr));
-    Lscala/collection/immutable/RedBlack$Tree; $48$;
-    if ((temp153 != null))
-      {
-        Lscala/collection/immutable/RedBlack$Tree; temp154 = temp153.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$Tree;);
-        Lscala/collection/immutable/RedBlack$Tree; temp155 = temp153.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$Tree;);
-        Lscala/collection/immutable/RedBlack$Tree; $49$;
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::Empty()Lscala/collection/immutable/RedBlack$Empty$;)(), temp154))
-          {
-            $49$ = temp155;
-          }
-        else
-          {
-            Lscala/collection/immutable/RedBlack$Tree; $50$;
-            fail$percent2: while(true) {
-              Lscala/collection/immutable/RedBlack$Tree; $51$;
-              if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::Empty()Lscala/collection/immutable/RedBlack$Empty$;)(), temp155))
-                {
-                  $51$ = temp154;
-                }
-              else
-                {
-                  Lscala/collection/immutable/RedBlack$Tree; $52$;
-                  fail$percent1: while(true) {
-                    Lscala/collection/immutable/RedBlack$Tree; $53$;
-                    if (temp155.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-                      {
-                        Lscala/collection/immutable/RedBlack$RedTree; temp156 = temp155.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                        Ljava/lang/Object; temp157 = temp156.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)();
-                        Ljava/lang/Object; temp158 = temp156.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)();
-                        Lscala/collection/immutable/RedBlack$Tree; temp159 = temp156.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-                        Lscala/collection/immutable/RedBlack$Tree; temp160 = temp156.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-                        Lscala/collection/immutable/RedBlack$Tree; $54$;
-                        if (temp154.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-                          {
-                            Lscala/collection/immutable/RedBlack$RedTree; temp161 = temp154.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                            Ljava/lang/Object; temp162 = temp161.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)();
-                            Ljava/lang/Object; temp163 = temp161.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)();
-                            Lscala/collection/immutable/RedBlack$Tree; temp164 = temp161.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-                            Lscala/collection/immutable/RedBlack$Tree; temp165 = temp161.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-                            Ljava/lang/Object; x = temp162;
-                            Ljava/lang/Object; xv = temp163;
-                            Lscala/collection/immutable/RedBlack$Tree; a = temp164;
-                            Lscala/collection/immutable/RedBlack$Tree; b = temp165;
-                            Ljava/lang/Object; y = temp157;
-                            Ljava/lang/Object; yv = temp158;
-                            Lscala/collection/immutable/RedBlack$Tree; c = temp159;
-                            Lscala/collection/immutable/RedBlack$Tree; d = temp160;
-                            Lscala/collection/immutable/RedBlack$Tree; temp141 = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::append$1(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(b, c);
-                            Lscala/collection/immutable/RedBlack$Tree; $55$;
-                            if (temp141.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-                              {
-                                Lscala/collection/immutable/RedBlack$RedTree; temp142 = temp141.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                                $55$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp142.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)(), temp142.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, a, temp142.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)())), (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), y, yv, temp142.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)(), d))));
-                              }
-                            else
-                              {
-                                $55$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, a, (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), y, yv, temp141, d))));
-                              }
-                            $54$ = $55$;
-                          }
-                        else
-                          {
-                            $54$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp157, temp158, this.(Lscala/collection/immutable/RedBlack$NonEmpty;::append$1(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(temp154, temp159), temp160));
-                          }
-                        $53$ = $54$;
-                      }
-                    else
-                      {
-                        Lscala/collection/immutable/RedBlack$Tree; $56$;
-                        if (temp155.<instanceof>(Lscala/collection/immutable/RedBlack$BlackTree;))
-                          {
-                            Lscala/collection/immutable/RedBlack$BlackTree; temp166 = temp155.<cast>(Lscala/collection/immutable/RedBlack$BlackTree;);
-                            Ljava/lang/Object; temp167 = temp166.(Lscala/collection/immutable/RedBlack$BlackTree;::key()Ljava/lang/Object;)();
-                            Ljava/lang/Object; temp168 = temp166.(Lscala/collection/immutable/RedBlack$BlackTree;::value()Ljava/lang/Object;)();
-                            Lscala/collection/immutable/RedBlack$Tree; temp169 = temp166.(Lscala/collection/immutable/RedBlack$BlackTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-                            Lscala/collection/immutable/RedBlack$Tree; temp170 = temp166.(Lscala/collection/immutable/RedBlack$BlackTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-                            Lscala/collection/immutable/RedBlack$Tree; $57$;
-                            if (temp154.<instanceof>(Lscala/collection/immutable/RedBlack$BlackTree;))
-                              {
-                                Lscala/collection/immutable/RedBlack$BlackTree; temp171 = temp154.<cast>(Lscala/collection/immutable/RedBlack$BlackTree;);
-                                Ljava/lang/Object; temp172 = temp171.(Lscala/collection/immutable/RedBlack$BlackTree;::key()Ljava/lang/Object;)();
-                                Ljava/lang/Object; temp173 = temp171.(Lscala/collection/immutable/RedBlack$BlackTree;::value()Ljava/lang/Object;)();
-                                Lscala/collection/immutable/RedBlack$Tree; temp174 = temp171.(Lscala/collection/immutable/RedBlack$BlackTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-                                Lscala/collection/immutable/RedBlack$Tree; temp175 = temp171.(Lscala/collection/immutable/RedBlack$BlackTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-                                Ljava/lang/Object; x = temp172;
-                                Ljava/lang/Object; xv = temp173;
-                                Lscala/collection/immutable/RedBlack$Tree; a = temp174;
-                                Lscala/collection/immutable/RedBlack$Tree; b = temp175;
-                                Ljava/lang/Object; y = temp167;
-                                Ljava/lang/Object; yv = temp168;
-                                Lscala/collection/immutable/RedBlack$Tree; c = temp169;
-                                Lscala/collection/immutable/RedBlack$Tree; d = temp170;
-                                Lscala/collection/immutable/RedBlack$Tree; temp147 = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::append$1(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(b, c);
-                                Lscala/collection/immutable/RedBlack$Tree; $58$;
-                                if (temp147.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-                                  {
-                                    Lscala/collection/immutable/RedBlack$RedTree; temp148 = temp147.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                                    $58$ = (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), temp148.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)(), temp148.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)(), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, a, temp148.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)())), (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), y, yv, temp148.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)(), d))));
-                                  }
-                                else
-                                  {
-                                    $58$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::balLeft$1(Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(x, xv, a, (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), y, yv, temp147, d)));
-                                  }
-                                $57$ = $58$;
-                              }
-                            else
-                              {
-                                Lscala/collection/immutable/RedBlack$Tree; $59$;
-                                if (temp154.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-                                  {
-                                    Lscala/collection/immutable/RedBlack$RedTree; temp176 = temp154.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                                    Ljava/lang/Object; temp177 = temp176.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)();
-                                    Ljava/lang/Object; temp178 = temp176.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)();
-                                    Lscala/collection/immutable/RedBlack$Tree; temp179 = temp176.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-                                    Lscala/collection/immutable/RedBlack$Tree; temp180 = temp176.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-                                    Ljava/lang/Object; x = temp177;
-                                    Ljava/lang/Object; xv = temp178;
-                                    Lscala/collection/immutable/RedBlack$Tree; a = temp179;
-                                    Lscala/collection/immutable/RedBlack$Tree; b = temp180;
-                                    Lscala/collection/immutable/RedBlack$Tree; c = temp166;
-                                    $59$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent52$percent1(Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(x, xv, a, b, c);
-                                  }
-                                else
-                                  {
-                                    throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp153));
-                                  }
-                                $57$ = $59$;
-                              }
-                            $56$ = $57$;
-                          }
-                        else
-                          {
-                            Lscala/collection/immutable/RedBlack$Tree; $60$;
-                            if (temp154.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-                              {
-                                Lscala/collection/immutable/RedBlack$RedTree; temp181 = temp154.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                                $60$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent52$percent1(Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(temp181.(Lscala/collection/immutable/RedBlack$RedTree;::key()Ljava/lang/Object;)(), temp181.(Lscala/collection/immutable/RedBlack$RedTree;::value()Ljava/lang/Object;)(), temp181.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)(), temp181.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)(), temp155);
-                              }
-                            else
-                              {
-                                throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp153));
-                              }
-                            $56$ = $60$;
-                          }
-                        $53$ = $56$;
-                      }
-                    $52$ = $53$;
-                    break;
-                  }
-                  $51$ = $52$;
-                }
-              $50$ = $51$;
-              break;
-            }
-            $49$ = $50$;
-          }
-        $48$ = $49$;
-      }
-    else
-      {
-        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp153));
-      }
-    return $48$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   private final Z; gd1$1(Ljava/lang/Object; k$1) {
@@ -788,208 +351,79 @@ public abstract class Lscala/collection/immutable/RedBlack$NonEmpty; extends Lsc
   }
   
   private final Lscala/collection/immutable/List; unzip$1(Lscala/collection/immutable/List; zipper, Z; leftMost) {
-    Lscala/collection/immutable/RedBlack$Tree; $61$;
+    Lscala/collection/immutable/RedBlack$Tree; $24$;
     if (leftMost)
       {
-        $61$ = zipper.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$NonEmpty;).(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)();
+        $24$ = zipper.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$NonEmpty;).(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)();
       }
     else
       {
-        $61$ = zipper.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$NonEmpty;).(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)();
+        $24$ = zipper.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$NonEmpty;).(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)();
       }
-    Lscala/collection/immutable/RedBlack$Tree; next = $61$;
+    Lscala/collection/immutable/RedBlack$Tree; next = $24$;
     Lscala/collection/immutable/RedBlack$Tree; temp187 = next;
-    Lscala/collection/immutable/List; $62$;
+    Lscala/collection/immutable/List; $25$;
     if (temp187.<instanceof>(Lscala/collection/immutable/RedBlack$NonEmpty;))
       {
         Lscala/collection/immutable/RedBlack$NonEmpty; temp188 = temp187.<cast>(Lscala/collection/immutable/RedBlack$NonEmpty;);
         Lscala/collection/immutable/RedBlack$NonEmpty; node = temp188;
         Lscala/collection/immutable/RedBlack$NonEmpty; x$1 = node;
-        $62$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::unzip$1(Lscala/collection/immutable/List;Z;)Lscala/collection/immutable/List;)(zipper.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$1), leftMost);
+        $25$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::unzip$1(Lscala/collection/immutable/List;Z;)Lscala/collection/immutable/List;)(zipper.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$1), leftMost);
       }
     else
       {
-        Lscala/collection/immutable/List; $63$;
+        Lscala/collection/immutable/List; $26$;
         if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::Empty()Lscala/collection/immutable/RedBlack$Empty$;)(), temp187))
           {
-            $63$ = zipper;
+            $26$ = zipper;
           }
         else
           {
-            Lscala/runtime/Nothing$; $64$;
+            Lscala/runtime/Nothing$; $27$;
             fail$percent3: while(true) {
-              $64$ = throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp187));
+              $27$ = throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp187));
             }
-            $63$ = $64$;
+            $26$ = $27$;
           }
-        $62$ = $63$;
+        $25$ = $26$;
       }
-    return $62$;
+    return $25$;
   }
   
   private final Lscala/Tuple4; unzipBoth$1(Lscala/collection/immutable/RedBlack$Tree; left, Lscala/collection/immutable/RedBlack$Tree; right, Lscala/collection/immutable/List; leftZipper, Lscala/collection/immutable/List; rightZipper, I; smallerDepth) {
-    Lscala/Tuple2; temp189 = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(left, right));
-    Lscala/Tuple4; $65$;
-    if ((temp189 != null))
-      {
-        Lscala/collection/immutable/RedBlack$Tree; temp190 = temp189.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$Tree;);
-        Lscala/collection/immutable/RedBlack$Tree; temp191 = temp189.(Lscala/Tuple2;::_2()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/RedBlack$Tree;);
-        Lscala/Tuple4; $66$;
-        if (temp190.<instanceof>(Lscala/collection/immutable/RedBlack$BlackTree;))
-          {
-            Lscala/collection/immutable/RedBlack$BlackTree; temp192 = temp190.<cast>(Lscala/collection/immutable/RedBlack$BlackTree;);
-            Lscala/Tuple4; $67$;
-            if (temp191.<instanceof>(Lscala/collection/immutable/RedBlack$BlackTree;))
-              {
-                Lscala/collection/immutable/RedBlack$BlackTree; temp197 = temp191.<cast>(Lscala/collection/immutable/RedBlack$BlackTree;);
-                Lscala/collection/immutable/RedBlack$BlackTree; l = temp192;
-                Lscala/collection/immutable/RedBlack$BlackTree; r = temp197;
-                Lscala/collection/immutable/RedBlack$Tree; $68$ = l.(Lscala/collection/immutable/RedBlack$BlackTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-                Lscala/collection/immutable/RedBlack$Tree; $69$ = r.(Lscala/collection/immutable/RedBlack$BlackTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-                Lscala/collection/immutable/RedBlack$BlackTree; x$2 = l;
-                Lscala/collection/immutable/List; $70$ = leftZipper.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$2);
-                Lscala/collection/immutable/RedBlack$BlackTree; x$3 = r;
-                $67$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::unzipBoth$1(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/List;Lscala/collection/immutable/List;I;)Lscala/Tuple4;)($68$, $69$, $70$, rightZipper.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$3), (smallerDepth + 1));
-              }
-            else
-              {
-                Lscala/Tuple4; $71$;
-                if (temp191.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-                  {
-                    Lscala/collection/immutable/RedBlack$RedTree; temp202 = temp191.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                    Lscala/collection/immutable/RedBlack$RedTree; r = temp202;
-                    $71$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent28$percent1(Lscala/collection/immutable/RedBlack$RedTree;)Lscala/Tuple4;)(r);
-                  }
-                else
-                  {
-                    Lscala/Tuple4; $72$;
-                    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::Empty()Lscala/collection/immutable/RedBlack$Empty$;)(), temp191))
-                      {
-                        Lscala/collection/immutable/RedBlack$BlackTree; l = temp192;
-                        Z; leftMost = false;
-                        Lscala/collection/immutable/RedBlack$BlackTree; x$9 = l;
-                        $72$ = (new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::unzip$1(Lscala/collection/immutable/List;Z;)Lscala/collection/immutable/List;)(leftZipper.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$9), leftMost), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(false), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(leftMost), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(smallerDepth)));
-                      }
-                    else
-                      {
-                        Lscala/runtime/Nothing$; $73$;
-                        fail$percent4: while(true) {
-                          $73$ = throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp189));
-                        }
-                        $72$ = $73$;
-                      }
-                    $71$ = $72$;
-                  }
-                $67$ = $71$;
-              }
-            $66$ = $67$;
-          }
-        else
-          {
-            Lscala/Tuple4; $74$;
-            if (temp190.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-              {
-                Lscala/collection/immutable/RedBlack$RedTree; temp207 = temp190.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                Lscala/Tuple4; $75$;
-                if (temp191.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-                  {
-                    Lscala/collection/immutable/RedBlack$RedTree; temp212 = temp191.<cast>(Lscala/collection/immutable/RedBlack$RedTree;);
-                    Lscala/collection/immutable/RedBlack$RedTree; l = temp207;
-                    Lscala/collection/immutable/RedBlack$RedTree; r = temp212;
-                    Lscala/collection/immutable/RedBlack$Tree; $76$ = l.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-                    Lscala/collection/immutable/RedBlack$Tree; $77$ = r.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-                    Lscala/collection/immutable/RedBlack$RedTree; x$4 = l;
-                    Lscala/collection/immutable/List; $78$ = leftZipper.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$4);
-                    Lscala/collection/immutable/RedBlack$RedTree; x$5 = r;
-                    $75$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::unzipBoth$1(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/List;Lscala/collection/immutable/List;I;)Lscala/Tuple4;)($76$, $77$, $78$, rightZipper.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$5), smallerDepth);
-                  }
-                else
-                  {
-                    Lscala/collection/immutable/RedBlack$RedTree; l = temp207;
-                    Lscala/collection/immutable/RedBlack$Tree; $79$ = l.(Lscala/collection/immutable/RedBlack$RedTree;::right()Lscala/collection/immutable/RedBlack$Tree;)();
-                    Lscala/collection/immutable/RedBlack$Tree; $80$ = right;
-                    Lscala/collection/immutable/RedBlack$RedTree; x$7 = l;
-                    $75$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::unzipBoth$1(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/List;Lscala/collection/immutable/List;I;)Lscala/Tuple4;)($79$, $80$, leftZipper.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$7), rightZipper, smallerDepth);
-                  }
-                $74$ = $75$;
-              }
-            else
-              {
-                Lscala/Tuple4; $81$;
-                if (temp191.<instanceof>(Lscala/collection/immutable/RedBlack$RedTree;))
-                  {
-                    $81$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::body$percent28$percent1(Lscala/collection/immutable/RedBlack$RedTree;)Lscala/Tuple4;)(temp191.<cast>(Lscala/collection/immutable/RedBlack$RedTree;));
-                  }
-                else
-                  {
-                    Lscala/Tuple4; $82$;
-                    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::Empty()Lscala/collection/immutable/RedBlack$Empty$;)(), temp191))
-                      {
-                        Lscala/Tuple4; $83$;
-                        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::Empty()Lscala/collection/immutable/RedBlack$Empty$;)(), temp190))
-                          {
-                            $83$ = (new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/collection/immutable/Nil$;.MODULE$, Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(true), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(false), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(smallerDepth)));
-                          }
-                        else
-                          {
-                            Lscala/Tuple4; $84$;
-                            fail$percent7: while(true) {
-                              $84$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::fail$percent6$percent1()Lscala/Tuple4;)();
-                              break;
-                            }
-                            $83$ = $84$;
-                          }
-                        $82$ = $83$;
-                      }
-                    else
-                      {
-                        $82$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::fail$percent6$percent1()Lscala/Tuple4;)();
-                      }
-                    $81$ = $82$;
-                  }
-                $74$ = $81$;
-              }
-            $66$ = $74$;
-          }
-        $65$ = $66$;
-      }
-    else
-      {
-        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp189));
-      }
-    return $65$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   private final Lscala/collection/immutable/List; findDepth$1(Lscala/collection/immutable/List; zipper, I; depth) {
     Lscala/collection/immutable/List; temp227 = zipper;
-    Lscala/collection/immutable/List; $85$;
+    Lscala/collection/immutable/List; $28$;
     if (temp227.<instanceof>(Lscala/collection/immutable/$colon$colon;))
       {
         Lscala/collection/immutable/$colon$colon; temp228 = temp227.<cast>(Lscala/collection/immutable/$colon$colon;);
         Lscala/collection/immutable/List; temp230 = temp228.(Lscala/collection/immutable/$colon$colon;::tl$1()Lscala/collection/immutable/List;)();
-        Lscala/collection/immutable/List; $86$;
+        Lscala/collection/immutable/List; $29$;
         if (temp228.(Lscala/collection/immutable/$colon$colon;::hd$1()Ljava/lang/Object;)().<instanceof>(Lscala/collection/immutable/RedBlack$BlackTree;))
           {
-            Lscala/collection/immutable/List; $87$;
+            Lscala/collection/immutable/List; $30$;
             if ((depth == 1))
               {
-                $87$ = zipper;
+                $30$ = zipper;
               }
             else
               {
-                $87$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::findDepth$1(Lscala/collection/immutable/List;I;)Lscala/collection/immutable/List;)(temp230, (depth - 1));
+                $30$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::findDepth$1(Lscala/collection/immutable/List;I;)Lscala/collection/immutable/List;)(temp230, (depth - 1));
               }
-            $86$ = $87$;
+            $29$ = $30$;
           }
         else
           {
-            $86$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::findDepth$1(Lscala/collection/immutable/List;I;)Lscala/collection/immutable/List;)(temp230, depth);
+            $29$ = this.(Lscala/collection/immutable/RedBlack$NonEmpty;::findDepth$1(Lscala/collection/immutable/List;I;)Lscala/collection/immutable/List;)(temp230, depth);
           }
-        $85$ = $86$;
+        $28$ = $29$;
       }
     else
       {
-        Lscala/runtime/Nothing$; $88$;
+        Lscala/runtime/Nothing$; $31$;
         if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/collection/immutable/Nil$;.MODULE$, temp227))
           {
             Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("Defect: unexpected empty zipper while computing range");
@@ -999,72 +433,10 @@ public abstract class Lscala/collection/immutable/RedBlack$NonEmpty; extends Lsc
             throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp227));
           }
       }
-    return $85$;
+    return $28$;
   }
   
   public this(Lscala/collection/immutable/RedBlack; $outer) {
     (Lscala/collection/immutable/RedBlack$Tree;::super(Lscala/collection/immutable/RedBlack;)V;)($outer);
-  }
-  
-  private final Lscala/Tuple4; body$percent28$percent1(Lscala/collection/immutable/RedBlack$RedTree; r) {
-    Lscala/collection/immutable/RedBlack$Tree; $89$ = left;
-    Lscala/collection/immutable/RedBlack$Tree; $90$ = r.(Lscala/collection/immutable/RedBlack$RedTree;::left()Lscala/collection/immutable/RedBlack$Tree;)();
-    Lscala/collection/immutable/List; $91$ = leftZipper;
-    Lscala/collection/immutable/RedBlack$RedTree; x$6 = r;
-    return this.(Lscala/collection/immutable/RedBlack$NonEmpty;::unzipBoth$1(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/List;Lscala/collection/immutable/List;I;)Lscala/Tuple4;)($89$, $90$, $91$, rightZipper.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$6), smallerDepth);
-  }
-  
-  private final Lscala/runtime/Nothing$; body$percent32$percent1() {
-    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)(("Defect: invariance violation at " + this.(Lscala/collection/immutable/RedBlack$NonEmpty;::right()Lscala/collection/immutable/RedBlack$Tree;)()));
-  }
-  
-  private final Lscala/collection/immutable/RedBlack$NonEmpty; body$percent22$percent1() {
-    return this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::scala$collection$immutable$RedBlack$$mkTree(Z;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(isBlack, x, xv, a, r);
-  }
-  
-  private final Lscala/collection/immutable/RedBlack$Tree; body$percent52$percent1(Ljava/lang/Object; x, Ljava/lang/Object; xv, Lscala/collection/immutable/RedBlack$Tree; a, Lscala/collection/immutable/RedBlack$Tree; b, Lscala/collection/immutable/RedBlack$Tree; c) {
-    return (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, a, this.(Lscala/collection/immutable/RedBlack$NonEmpty;::append$1(Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$Tree;)(b, c)));
-  }
-  
-  private final Lscala/Tuple4; fail$percent6$percent1() {
-    Lscala/Tuple4; $92$;
-    if (temp191.<instanceof>(Lscala/collection/immutable/RedBlack$BlackTree;))
-      {
-        Lscala/collection/immutable/RedBlack$BlackTree; temp222 = temp191.<cast>(Lscala/collection/immutable/RedBlack$BlackTree;);
-        Lscala/Tuple4; $93$;
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::Empty()Lscala/collection/immutable/RedBlack$Empty$;)(), temp190))
-          {
-            Lscala/collection/immutable/RedBlack$BlackTree; r = temp222;
-            Z; leftMost = true;
-            Lscala/collection/immutable/RedBlack$BlackTree; x$8 = r;
-            $93$ = (new (Lscala/Tuple4;::this(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::unzip$1(Lscala/collection/immutable/List;Z;)Lscala/collection/immutable/List;)(rightZipper.(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$8), leftMost), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(false), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(leftMost), Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(smallerDepth)));
-          }
-        else
-          {
-            Lscala/runtime/Nothing$; $94$;
-            fail$percent5: while(true) {
-              $94$ = throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp189));
-            }
-            $93$ = $94$;
-          }
-        $92$ = $93$;
-      }
-    else
-      {
-        throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp189));
-      }
-    return $92$;
-  }
-  
-  private final Lscala/collection/immutable/RedBlack$NonEmpty; body$percent51$percent1(Lscala/collection/immutable/RedBlack$Tree; a, Lscala/collection/immutable/RedBlack$Tree; b) {
-    return (new (Lscala/collection/immutable/RedBlack$BlackTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)(), x, xv, a, b));
-  }
-  
-  private final Lscala/collection/immutable/RedBlack$NonEmpty; body$percent21$percent1() {
-    return this.(Lscala/collection/immutable/RedBlack$NonEmpty;::scala$collection$immutable$RedBlack$NonEmpty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::scala$collection$immutable$RedBlack$$mkTree(Z;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)Lscala/collection/immutable/RedBlack$NonEmpty;)(isBlack, z, zv, l, d);
-  }
-  
-  private final Lscala/runtime/Nothing$; body$percent33$percent1() {
-    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)(("Defect: invariance violation at " + this.(Lscala/collection/immutable/RedBlack$NonEmpty;::left()Lscala/collection/immutable/RedBlack$Tree;)()));
   }
 }

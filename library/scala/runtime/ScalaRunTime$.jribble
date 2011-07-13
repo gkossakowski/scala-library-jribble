@@ -783,55 +783,21 @@ public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; impl
   }
   
   public Ljava/lang/String; stringOf(Ljava/lang/Object; arg, I; maxElements$1) {
-    Ljava/lang/String; exceptionResult1;
-    try {
-      exceptionResult1 = this.(Lscala/runtime/ScalaRunTime$;::inner$1(Ljava/lang/Object;I;)Ljava/lang/String;)(arg, maxElements$1);
-    } catch(Ljava/lang/Throwable; ex$2) {
-      Ljava/lang/Throwable; temp86 = ex$2;
-      Ljava/lang/String; $59$;
-      if (temp86.<instanceof>(Ljava/lang/StackOverflowError;))
-        {
-          $59$ = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::body$percent09$percent1()Ljava/lang/String;)();
-        }
-      else
-        {
-          Ljava/lang/String; $60$;
-          if (temp86.<instanceof>(Ljava/lang/UnsupportedOperationException;))
-            {
-              $60$ = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::body$percent09$percent1()Ljava/lang/String;)();
-            }
-          else
-            {
-              Ljava/lang/String; $61$;
-              if (temp86.<instanceof>(Ljava/lang/AssertionError;))
-                {
-                  $61$ = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::body$percent09$percent1()Ljava/lang/String;)();
-                }
-              else
-                {
-                  throw ex$2;
-                }
-              $60$ = $61$;
-            }
-          $59$ = $60$;
-        }
-      exceptionResult1 = $59$;
-    }
-    return exceptionResult1;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   public Ljava/lang/String; replStringOf(Ljava/lang/Object; arg, I; maxElements) {
     Ljava/lang/String; s = this.(Lscala/runtime/ScalaRunTime$;::stringOf(Ljava/lang/Object;I;)Ljava/lang/String;)(arg, maxElements);
-    Ljava/lang/String; $62$;
+    Ljava/lang/String; $59$;
     if (s.(Ljava/lang/String;::contains(Ljava/lang/CharSequence;)Z;)("\012"))
       {
-        $62$ = "\012";
+        $59$ = "\012";
       }
     else
       {
-        $62$ = "";
+        $59$ = "";
       }
-    Ljava/lang/String; nl = $62$;
+    Ljava/lang/String; nl = $59$;
     return ((nl + s) + "\012");
   }
   
@@ -849,109 +815,109 @@ public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; impl
   
   private final Z; useOwnToString$1(Ljava/lang/Object; x) {
     Ljava/lang/Object; temp63 = x;
-    Z; $63$;
+    Z; $60$;
     if (temp63.<instanceof>(Lscala/xml/Node;))
       {
-        $63$ = true;
+        $60$ = true;
       }
     else
       {
-        Z; $64$;
+        Z; $61$;
         if (temp63.<instanceof>(Lscala/xml/MetaData;))
           {
-            $64$ = true;
+            $61$ = true;
           }
         else
           {
-            Z; $65$;
+            Z; $62$;
             if (temp63.<instanceof>(Lscala/collection/immutable/Range;))
               {
-                $65$ = true;
+                $62$ = true;
               }
             else
               {
-                Z; $66$;
+                Z; $63$;
                 if (temp63.<instanceof>(Lscala/collection/immutable/NumericRange;))
                   {
-                    $66$ = true;
+                    $63$ = true;
                   }
                 else
                   {
-                    Z; $67$;
+                    Z; $64$;
                     if (temp63.<instanceof>(Lscala/collection/generic/Sorted;))
                       {
-                        $67$ = true;
+                        $64$ = true;
                       }
                     else
                       {
-                        Z; $68$;
+                        Z; $65$;
                         if (temp63.<instanceof>(Lscala/collection/immutable/StringLike;))
                           {
-                            $68$ = true;
+                            $65$ = true;
                           }
                         else
                           {
-                            Z; $69$;
+                            Z; $66$;
                             if (temp63.<instanceof>(Lscala/collection/TraversableView;))
                               {
-                                $69$ = true;
+                                $66$ = true;
                               }
                             else
                               {
-                                Z; $70$;
+                                Z; $67$;
                                 if (temp63.<instanceof>(Lscala/collection/Traversable;))
                                   {
                                     Lscala/collection/Traversable; temp71 = temp63.<cast>(Lscala/collection/Traversable;);
                                     Lscala/collection/Traversable; x = temp71;
-                                    $70$ = (!(x.(Lscala/collection/TraversableLike;::hasDefiniteSize()Z;)()) || !(this.(Lscala/runtime/ScalaRunTime$;::isScalaClass$1(Ljava/lang/Object;)Z;)(x)));
+                                    $67$ = (!(x.(Lscala/collection/TraversableLike;::hasDefiniteSize()Z;)()) || !(this.(Lscala/runtime/ScalaRunTime$;::isScalaClass$1(Ljava/lang/Object;)Z;)(x)));
                                   }
                                 else
                                   {
-                                    $70$ = false;
+                                    $67$ = false;
                                   }
-                                $69$ = $70$;
+                                $66$ = $67$;
                               }
-                            $68$ = $69$;
+                            $65$ = $66$;
                           }
-                        $67$ = $68$;
+                        $64$ = $65$;
                       }
-                    $66$ = $67$;
+                    $63$ = $64$;
                   }
-                $65$ = $66$;
+                $62$ = $63$;
               }
-            $64$ = $65$;
+            $61$ = $62$;
           }
-        $63$ = $64$;
+        $60$ = $61$;
       }
-    return $63$;
+    return $60$;
   }
   
   public final Ljava/lang/String; mapInner$1(Ljava/lang/Object; arg, I; maxElements$1) {
     Ljava/lang/Object; temp72 = arg;
-    Ljava/lang/String; $71$;
+    Ljava/lang/String; $68$;
     if (temp72.<instanceof>(Lscala/Tuple2;))
       {
         Lscala/Tuple2; temp73 = temp72.<cast>(Lscala/Tuple2;);
-        $71$ = ((this.(Lscala/runtime/ScalaRunTime$;::inner$1(Ljava/lang/Object;I;)Ljava/lang/String;)(temp73.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), maxElements$1) + " -> ") + this.(Lscala/runtime/ScalaRunTime$;::inner$1(Ljava/lang/Object;I;)Ljava/lang/String;)(temp73.(Lscala/Tuple2;::_2()Ljava/lang/Object;)(), maxElements$1));
+        $68$ = ((this.(Lscala/runtime/ScalaRunTime$;::inner$1(Ljava/lang/Object;I;)Ljava/lang/String;)(temp73.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), maxElements$1) + " -> ") + this.(Lscala/runtime/ScalaRunTime$;::inner$1(Ljava/lang/Object;I;)Ljava/lang/String;)(temp73.(Lscala/Tuple2;::_2()Ljava/lang/Object;)(), maxElements$1));
       }
     else
       {
-        $71$ = this.(Lscala/runtime/ScalaRunTime$;::inner$1(Ljava/lang/Object;I;)Ljava/lang/String;)(arg, maxElements$1);
+        $68$ = this.(Lscala/runtime/ScalaRunTime$;::inner$1(Ljava/lang/Object;I;)Ljava/lang/String;)(arg, maxElements$1);
       }
-    return $71$;
+    return $68$;
   }
   
   private final Ljava/lang/String; arrayToString$1(Ljava/lang/Object; x, I; maxElements$1) {
-    Ljava/lang/String; $72$;
+    Ljava/lang/String; $69$;
     if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x.(Ljava/lang/Object;::getClass()Ljava/lang/Class;)().(Ljava/lang/Class;::getComponentType()Ljava/lang/Class;)(), Lscala/runtime/BoxedUnit;.class))
       {
-        $72$ = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(this.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(x)).(Lscala/runtime/RichInt;::min(I;)I;)(maxElements$1)).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/runtime/ScalaRunTime$$anonfun$arrayToString$1$1;::this()V;)()), Lscala/collection/immutable/IndexedSeq$;.MODULE$.(Lscala/collection/immutable/IndexedSeq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)("Array(", ", ", ")");
+        $69$ = Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(0).(Lscala/runtime/RichInt;::until(I;)Lscala/collection/immutable/Range;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::intWrapper(I;)Lscala/runtime/RichInt;)(this.(Lscala/runtime/ScalaRunTime$;::array_length(Ljava/lang/Object;)I;)(x)).(Lscala/runtime/RichInt;::min(I;)I;)(maxElements$1)).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/runtime/ScalaRunTime$$anonfun$arrayToString$1$1;::this()V;)()), Lscala/collection/immutable/IndexedSeq$;.MODULE$.(Lscala/collection/immutable/IndexedSeq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)("Array(", ", ", ")");
       }
     else
       {
-        $72$ = Lscala/collection/mutable/WrappedArray$;.MODULE$.(Lscala/collection/mutable/WrappedArray$;::make(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(x).(Lscala/collection/IndexedSeqOptimized;::take(I;)Ljava/lang/Object;)(maxElements$1).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/runtime/ScalaRunTime$$anonfun$arrayToString$1$2;::this(I;)V;)(maxElements$1)), Lscala/collection/mutable/WrappedArray$;.MODULE$.(Lscala/collection/mutable/WrappedArray$;::canBuildFrom(Lscala/reflect/ClassManifest;)Lscala/collection/generic/CanBuildFrom;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;)Lscala/reflect/ClassManifest;)(Ljava/lang/String;.class))).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)("Array(", ", ", ")");
+        $69$ = Lscala/collection/mutable/WrappedArray$;.MODULE$.(Lscala/collection/mutable/WrappedArray$;::make(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;)(x).(Lscala/collection/IndexedSeqOptimized;::take(I;)Ljava/lang/Object;)(maxElements$1).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/runtime/ScalaRunTime$$anonfun$arrayToString$1$2;::this(I;)V;)(maxElements$1)), Lscala/collection/mutable/WrappedArray$;.MODULE$.(Lscala/collection/mutable/WrappedArray$;::canBuildFrom(Lscala/reflect/ClassManifest;)Lscala/collection/generic/CanBuildFrom;)(Lscala/reflect/ClassManifest$;.MODULE$.(Lscala/reflect/ClassManifest$;::classType(Ljava/lang/Class;)Lscala/reflect/ClassManifest;)(Ljava/lang/String;.class))).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)("Array(", ", ", ")");
       }
-    return $72$;
+    return $69$;
   }
   
   private final Z; gd2$1(Ljava/lang/Object; x$1) {
@@ -971,178 +937,10 @@ public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; impl
   }
   
   public final Ljava/lang/String; inner$1(Ljava/lang/Object; arg, I; maxElements$1) {
-    Ljava/lang/Object; temp76 = arg;
-    Ljava/lang/String; $73$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp76, null))
-      {
-        $73$ = "null";
-      }
-    else
-      {
-        Ljava/lang/String; $74$;
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp76, ""))
-          {
-            $74$ = "\"\"";
-          }
-        else
-          {
-            Ljava/lang/String; $75$;
-            if (temp76.<instanceof>(Ljava/lang/String;))
-              {
-                Ljava/lang/String; temp79 = temp76.<cast>(Ljava/lang/String;);
-                Ljava/lang/String; x = temp79;
-                Ljava/lang/String; $76$;
-                if ((Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::charWrapper(C;)Lscala/runtime/RichChar;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(x).(Lscala/collection/IndexedSeqOptimized;::head()Ljava/lang/Object;)())).(Lscala/runtime/RichChar;::isWhitespace()Z;)() || Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::charWrapper(C;)Lscala/runtime/RichChar;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(x).(Lscala/collection/IndexedSeqOptimized;::last()Ljava/lang/Object;)())).(Lscala/runtime/RichChar;::isWhitespace()Z;)()))
-                  {
-                    $76$ = (("\"" + x) + "\"");
-                  }
-                else
-                  {
-                    $76$ = x;
-                  }
-                $75$ = $76$;
-              }
-            else
-              {
-                Ljava/lang/Object; x = temp76;
-                Ljava/lang/String; $77$;
-                if (this.(Lscala/runtime/ScalaRunTime$;::gd2$1(Ljava/lang/Object;)Z;)(x))
-                  {
-                    Ljava/lang/Object; $78$;
-                    Ljava/lang/String; $79$;
-                    body$percent36: while(true) {
-                      $79$ = x.(Ljava/lang/Object;::toString()Ljava/lang/String;)();
-                      break;
-                    }
-                    $77$ = $79$;
-                  }
-                else
-                  {
-                    Ljava/lang/String; $80$;
-                    if (temp76.<instanceof>(Ljava/lang/Object;))
-                      {
-                        Ljava/lang/Object; temp80 = temp76;
-                        Ljava/lang/Object; x = temp80;
-                        Ljava/lang/String; $81$;
-                        if (this.(Lscala/runtime/ScalaRunTime$;::gd3$1(Ljava/lang/Object;)Z;)(x))
-                          {
-                            Ljava/lang/Object; $82$;
-                            Ljava/lang/String; $83$;
-                            body$percent46: while(true) {
-                              $83$ = this.(Lscala/runtime/ScalaRunTime$;::arrayToString$1(Ljava/lang/Object;I;)Ljava/lang/String;)(x, maxElements$1);
-                              break;
-                            }
-                            $81$ = $83$;
-                          }
-                        else
-                          {
-                            Ljava/lang/String; $84$;
-                            if (temp80.<instanceof>(Lscala/collection/Map;))
-                              {
-                                Lscala/collection/Map; x = temp80.<cast>(Lscala/collection/Map;);
-                                $84$ = x.(Lscala/collection/MapLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::take(I;)Lscala/collection/Iterator;)(maxElements$1).(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/runtime/ScalaRunTime$$anonfun$inner$1$1;::this(I;)V;)(maxElements$1))).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)((x.(Lscala/collection/MapLike;::stringPrefix()Ljava/lang/String;)() + "("), ", ", ")");
-                              }
-                            else
-                              {
-                                Ljava/lang/String; $85$;
-                                if (temp80.<instanceof>(Lscala/collection/Iterable;))
-                                  {
-                                    Lscala/collection/Iterable; x = temp80.<cast>(Lscala/collection/Iterable;);
-                                    $85$ = x.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::take(I;)Lscala/collection/Iterator;)(maxElements$1).(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/runtime/ScalaRunTime$$anonfun$inner$1$2;::this(I;)V;)(maxElements$1))).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)((x.(Lscala/collection/TraversableLike;::stringPrefix()Ljava/lang/String;)() + "("), ", ", ")");
-                                  }
-                                else
-                                  {
-                                    Ljava/lang/String; $86$;
-                                    if (temp80.<instanceof>(Lscala/collection/Traversable;))
-                                      {
-                                        Lscala/collection/Traversable; x = temp80.<cast>(Lscala/collection/Traversable;);
-                                        $86$ = x.(Lscala/collection/TraversableLike;::take(I;)Ljava/lang/Object;)(maxElements$1).<cast>(Lscala/collection/TraversableLike;).(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/runtime/ScalaRunTime$$anonfun$inner$1$3;::this(I;)V;)(maxElements$1)), Lscala/collection/Traversable$;.MODULE$.(Lscala/collection/Traversable$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)((x.(Lscala/collection/TraversableLike;::stringPrefix()Ljava/lang/String;)() + "("), ", ", ")");
-                                      }
-                                    else
-                                      {
-                                        Ljava/lang/String; $87$;
-                                        if (temp80.<instanceof>(Lscala/Product1;))
-                                          {
-                                            Lscala/Product1; x = temp80.<cast>(Lscala/Product1;);
-                                            Ljava/lang/String; $88$;
-                                            if (this.(Lscala/runtime/ScalaRunTime$;::gd4$1(Lscala/Product1;)Z;)(x))
-                                              {
-                                                Lscala/Product1; $89$;
-                                                Ljava/lang/String; $90$;
-                                                body$percent86: while(true) {
-                                                  $90$ = (("(" + this.(Lscala/runtime/ScalaRunTime$;::inner$1(Ljava/lang/Object;I;)Ljava/lang/String;)(x.(Lscala/Product1;::_1()Ljava/lang/Object;)(), maxElements$1)) + ",)");
-                                                  break;
-                                                }
-                                                $88$ = $90$;
-                                              }
-                                            else
-                                              {
-                                                Lscala/Product; x = temp80.<cast>(Lscala/Product;);
-                                                Ljava/lang/String; $91$;
-                                                if (this.(Lscala/runtime/ScalaRunTime$;::gd5$1(Lscala/Product;)Z;)(x))
-                                                  {
-                                                    $91$ = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::body$percent95$percent1(Lscala/Product;)Ljava/lang/String;)(x);
-                                                  }
-                                                else
-                                                  {
-                                                    Ljava/lang/Object; x = temp80;
-                                                    $91$ = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::body$percent105$percent1(Ljava/lang/Object;)Ljava/lang/String;)(x);
-                                                  }
-                                                $88$ = $91$;
-                                              }
-                                            $87$ = $88$;
-                                          }
-                                        else
-                                          {
-                                            Ljava/lang/String; $92$;
-                                            if ((temp80.<instanceof>(Lscala/Product;) && this.(Lscala/runtime/ScalaRunTime$;::gd5$1(Lscala/Product;)Z;)(temp80.<cast>(Lscala/Product;))))
-                                              {
-                                                $92$ = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::body$percent95$percent1(Lscala/Product;)Ljava/lang/String;)(temp80.<cast>(Lscala/Product;));
-                                              }
-                                            else
-                                              {
-                                                $92$ = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::body$percent105$percent1(Ljava/lang/Object;)Ljava/lang/String;)(temp80);
-                                              }
-                                            $87$ = $92$;
-                                          }
-                                        $86$ = $87$;
-                                      }
-                                    $85$ = $86$;
-                                  }
-                                $84$ = $85$;
-                              }
-                            $81$ = $84$;
-                          }
-                        $80$ = $81$;
-                      }
-                    else
-                      {
-                        $80$ = Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::body$percent105$percent1(Ljava/lang/Object;)Ljava/lang/String;)(temp76);
-                      }
-                    $77$ = $80$;
-                  }
-                $75$ = $77$;
-              }
-            $74$ = $75$;
-          }
-        $73$ = $74$;
-      }
-    return $73$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   public this() {
     (Ljava/lang/Object;::super()V;)();
-  }
-  
-  private final Ljava/lang/String; body$percent09$percent1() {
-    return ("" + arg);
-  }
-  
-  private final Ljava/lang/String; body$percent95$percent1(Lscala/Product; x) {
-    return x.(Lscala/Product;::productIterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::map(Lscala/Function1;)Lscala/collection/Iterator;)((new (Lscala/runtime/ScalaRunTime$$anonfun$inner$1$4;::this(I;)V;)(maxElements$1))).(Lscala/collection/TraversableOnce;::mkString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;)("(", ",", ")");
-  }
-  
-  private final Ljava/lang/String; body$percent105$percent1(Ljava/lang/Object; x) {
-    return x.(Ljava/lang/Object;::toString()Ljava/lang/String;)();
   }
 }

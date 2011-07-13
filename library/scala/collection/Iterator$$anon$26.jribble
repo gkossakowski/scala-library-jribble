@@ -1,5 +1,7 @@
 public final class Lscala/collection/Iterator$$anon$26; extends Ljava/lang/Object; implements Lscala/collection/Iterator; {
   
+  private I; bitmap$priv$0 = 0;
+  
   public Lscala/collection/Iterator; seq() {
     return Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::seq(Lscala/collection/Iterator;)Lscala/collection/Iterator;)(this);
   }
@@ -166,10 +168,6 @@ public final class Lscala/collection/Iterator$$anon$26; extends Ljava/lang/Objec
   
   public Lscala/collection/immutable/Stream; toStream() {
     return Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::toStream(Lscala/collection/Iterator;)Lscala/collection/immutable/Stream;)(this);
-  }
-  
-  public Ljava/lang/String; toString() {
-    return Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::toString(Lscala/collection/Iterator;)Ljava/lang/String;)(this);
   }
   
   public Lscala/collection/Iterator; append(Lscala/collection/Iterator; that) {
@@ -364,56 +362,33 @@ public final class Lscala/collection/Iterator$$anon$26; extends Ljava/lang/Objec
     return Lscala/collection/GenTraversableOnce$class;.(Lscala/collection/GenTraversableOnce$class;::$div$colon$bslash(Lscala/collection/GenTraversableOnce;Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(this, z, op);
   }
   
-  private Z; isDone$u0020;
+  private Lscala/collection/BufferedIterator; it$u0020;
   
-  private Z; isDone() {
-    return this.(Lscala/collection/Iterator$$anon$26;)isDone$u0020;
-  }
-  
-  private V; isDone_$eq(Z; x$1) {
-    this.(Lscala/collection/Iterator$$anon$26;)isDone$u0020 = x$1;
-  }
-  
-  private Lscala/collection/mutable/Queue; lookahead$u0020;
-  
-  public Lscala/collection/mutable/Queue; lookahead() {
-    return this.(Lscala/collection/Iterator$$anon$26;)lookahead$u0020;
-  }
-  
-  public Z; advance() {
-    this.(Lscala/collection/Iterator$$anon$26;::lookahead()Lscala/collection/mutable/Queue;)().(Lscala/collection/mutable/MutableList;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/MutableList;)(this.(Lscala/collection/Iterator$$anon$26;)self$3.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
-    return ((this.(Lscala/collection/Iterator$$anon$26;)self$3.(Lscala/collection/Iterator;::hasNext()Z;)() && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToBoolean(Ljava/lang/Object;)Z;)(this.(Lscala/collection/Iterator$$anon$26;)p$6.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(this.(Lscala/collection/Iterator$$anon$26;)self$3.(Lscala/collection/BufferedIterator;::head()Ljava/lang/Object;)()))) && true);
-  }
-  
-  public V; finish() {
-    while$5: while(true) {
-      if (this.(Lscala/collection/Iterator$$anon$26;::advance()Z;)())
-        {
-          continue while$5;
-        }
-      else
-        {
-          
-        }
-      break;
-    }
-    this.(Lscala/collection/Iterator$$anon$26;::isDone_$eq(Z;)V;)(true);
+  private Lscala/collection/BufferedIterator; it() {
+    if (((this.(Lscala/collection/Iterator$$anon$26;)bitmap$priv$0 & 1) == 0))
+      {
+        if (((this.(Lscala/collection/Iterator$$anon$26;)bitmap$priv$0 & 1) == 0))
+          {
+            this.(Lscala/collection/Iterator$$anon$26;)leading$1.(Lscala/collection/Iterator$Leading$1;::finish()V;)();
+            this.(Lscala/collection/Iterator$$anon$26;)it$u0020 = this.(Lscala/collection/Iterator$$anon$26;)self$3;
+            this.(Lscala/collection/Iterator$$anon$26;)bitmap$priv$0 = (this.(Lscala/collection/Iterator$$anon$26;)bitmap$priv$0 | 1);
+          }
+        this.(Lscala/collection/Iterator$$anon$26;)self$3 = null;
+        this.(Lscala/collection/Iterator$$anon$26;)leading$1 = null;
+      }
+    return this.(Lscala/collection/Iterator$$anon$26;)it$u0020;
   }
   
   public Z; hasNext() {
-    return (this.(Lscala/collection/Iterator$$anon$26;::lookahead()Lscala/collection/mutable/Queue;)().(Lscala/collection/TraversableOnce;::nonEmpty()Z;)() || this.(Lscala/collection/Iterator$$anon$26;::advance()Z;)());
+    return this.(Lscala/collection/Iterator$$anon$26;::it()Lscala/collection/BufferedIterator;)().(Lscala/collection/Iterator;::hasNext()Z;)();
   }
   
   public Ljava/lang/Object; next() {
-    if (this.(Lscala/collection/Iterator$$anon$26;::lookahead()Lscala/collection/mutable/Queue;)().(Lscala/collection/mutable/MutableList;::isEmpty()Z;)())
-      {
-        Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(this.(Lscala/collection/Iterator$$anon$26;::advance()Z;)());
-      }
-    else
-      {
-        
-      }
-    return this.(Lscala/collection/Iterator$$anon$26;::lookahead()Lscala/collection/mutable/Queue;)().(Lscala/collection/mutable/Queue;::dequeue()Ljava/lang/Object;)();
+    return this.(Lscala/collection/Iterator$$anon$26;::it()Lscala/collection/BufferedIterator;)().(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+  }
+  
+  public Ljava/lang/String; toString() {
+    return "unknown-if-empty iterator";
   }
   
   public Lscala/collection/GenMap; toMap(Lscala/Predef$$less$colon$less; ev) {
@@ -440,18 +415,16 @@ public final class Lscala/collection/Iterator$$anon$26; extends Ljava/lang/Objec
     return this.(Lscala/collection/Iterator;::seq()Lscala/collection/Iterator;)();
   }
   
-  private Lscala/Function1; p$6;
-  
   private Lscala/collection/BufferedIterator; self$3;
   
-  public this(Lscala/collection/Iterator; $outer, Lscala/Function1; p$6, Lscala/collection/BufferedIterator; self$3) {
-    this.(Lscala/collection/Iterator$$anon$26;)p$6 = p$6;
+  private Lscala/collection/Iterator$Leading$1; leading$1;
+  
+  public this(Lscala/collection/Iterator; $outer, Lscala/collection/BufferedIterator; self$3, Lscala/collection/Iterator$Leading$1; leading$1) {
     this.(Lscala/collection/Iterator$$anon$26;)self$3 = self$3;
+    this.(Lscala/collection/Iterator$$anon$26;)leading$1 = leading$1;
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/GenTraversableOnce$class;.(Lscala/collection/GenTraversableOnce$class;::$init$(Lscala/collection/GenTraversableOnce;)V;)(this);
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
     Lscala/collection/Iterator$class;.(Lscala/collection/Iterator$class;::$init$(Lscala/collection/Iterator;)V;)(this);
-    this.(Lscala/collection/Iterator$$anon$26;)isDone$u0020 = false;
-    this.(Lscala/collection/Iterator$$anon$26;)lookahead$u0020 = (new (Lscala/collection/mutable/Queue;::this()V;)());
   }
 }

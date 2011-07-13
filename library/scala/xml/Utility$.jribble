@@ -103,70 +103,14 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
   }
   
   public Lscala/collection/Seq; trimProper(Lscala/xml/Node; x) {
-    Lscala/xml/Node; temp10 = x;
-    Lscala/Option; temp11 = Lscala/xml/Elem$;.MODULE$.(Lscala/xml/Elem$;::unapplySeq(Lscala/xml/Node;)Lscala/Option;)(temp10);
-    Lscala/collection/Seq; $4$;
-    if (!(temp11.(Lscala/Option;::isEmpty()Z;)()))
-      {
-        Lscala/Tuple5; temp12 = temp11.(Lscala/Option;::get()Ljava/lang/Object;)().<cast>(Lscala/Tuple5;);
-        Ljava/lang/String; temp13 = temp12.(Lscala/Tuple5;::_1()Ljava/lang/Object;)().<cast>(Ljava/lang/String;);
-        Ljava/lang/String; temp14 = temp12.(Lscala/Tuple5;::_2()Ljava/lang/Object;)().<cast>(Ljava/lang/String;);
-        Lscala/xml/MetaData; temp15 = temp12.(Lscala/Tuple5;::_3()Ljava/lang/Object;)().<cast>(Lscala/xml/MetaData;);
-        Lscala/xml/NamespaceBinding; temp16 = temp12.(Lscala/Tuple5;::_4()Ljava/lang/Object;)().<cast>(Lscala/xml/NamespaceBinding;);
-        Lscala/collection/Seq; temp17 = temp12.(Lscala/Tuple5;::_5()Ljava/lang/Object;)().<cast>(Lscala/collection/Seq;);
-        Z; $5$;
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp17, null))
-          {
-            $5$ = false;
-          }
-        else
-          {
-            $5$ = (temp17.(Lscala/collection/SeqLike;::lengthCompare(I;)I;)(0) >= 0);
-          }
-        Lscala/collection/Seq; $6$;
-        if ($5$)
-          {
-            $6$ = Lscala/xml/Elem$;.MODULE$.(Lscala/xml/Elem$;::apply(Ljava/lang/String;Ljava/lang/String;Lscala/xml/MetaData;Lscala/xml/NamespaceBinding;Lscala/collection/Seq;)Lscala/xml/Elem;)(temp13, temp14, temp15, temp16, temp17.(Lscala/collection/TraversableLike;::flatMap(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/xml/Utility$$anonfun$trimProper$1;::this()V;)()), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/Seq;));
-          }
-        else
-          {
-            Lscala/collection/Seq; $7$;
-            if (temp10.<instanceof>(Lscala/xml/Text;))
-              {
-                Lscala/xml/Text; temp19 = temp10.<cast>(Lscala/xml/Text;);
-                Ljava/lang/String; temp20 = temp19.(Lscala/xml/Text;::_data()Ljava/lang/String;)();
-                Ljava/lang/String; s = temp20;
-                $7$ = Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent11$percent1(Ljava/lang/String;)Lscala/collection/Seq;)(s);
-              }
-            else
-              {
-                $7$ = Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent21$percent1()Lscala/collection/Seq;)();
-              }
-            $6$ = $7$;
-          }
-        $4$ = $6$;
-      }
-    else
-      {
-        Lscala/collection/Seq; $8$;
-        if (temp10.<instanceof>(Lscala/xml/Text;))
-          {
-            $8$ = Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent11$percent1(Ljava/lang/String;)Lscala/collection/Seq;)(temp10.<cast>(Lscala/xml/Text;).(Lscala/xml/Text;::_data()Ljava/lang/String;)());
-          }
-        else
-          {
-            $8$ = Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent21$percent1()Lscala/collection/Seq;)();
-          }
-        $4$ = $8$;
-      }
-    return $4$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   public Lscala/xml/MetaData; sort(Lscala/xml/MetaData; md) {
-    Lscala/xml/MetaData; $9$;
+    Lscala/xml/MetaData; $4$;
     if (((md == Lscala/xml/Null$;.MODULE$) || (md.(Lscala/xml/MetaData;::next()Lscala/xml/MetaData;)() == Lscala/xml/Null$;.MODULE$)))
       {
-        $9$ = md;
+        $4$ = md;
       }
     else
       {
@@ -176,48 +120,13 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
         Lscala/xml/MetaData; qual$1 = smaller.(Lscala/xml/MetaData;::append(Lscala/xml/MetaData;Lscala/xml/NamespaceBinding;)Lscala/xml/MetaData;)(Lscala/xml/Null$;.MODULE$, smaller.(Lscala/xml/MetaData;::append$default$2()Lscala/xml/NamespaceBinding;)());
         Lscala/xml/MetaData; x$6 = md.(Lscala/xml/MetaData;::copy(Lscala/xml/MetaData;)Lscala/xml/MetaData;)(greater);
         Lscala/xml/NamespaceBinding; x$7 = qual$1.(Lscala/xml/MetaData;::append$default$2()Lscala/xml/NamespaceBinding;)();
-        $9$ = qual$1.(Lscala/xml/MetaData;::append(Lscala/xml/MetaData;Lscala/xml/NamespaceBinding;)Lscala/xml/MetaData;)(x$6, x$7);
+        $4$ = qual$1.(Lscala/xml/MetaData;::append(Lscala/xml/MetaData;Lscala/xml/NamespaceBinding;)Lscala/xml/MetaData;)(x$6, x$7);
       }
-    return $9$;
+    return $4$;
   }
   
   public Lscala/xml/Node; sort(Lscala/xml/Node; n) {
-    Lscala/xml/Node; temp23 = n;
-    Lscala/Option; temp24 = Lscala/xml/Elem$;.MODULE$.(Lscala/xml/Elem$;::unapplySeq(Lscala/xml/Node;)Lscala/Option;)(temp23);
-    Lscala/xml/Node; $10$;
-    if (!(temp24.(Lscala/Option;::isEmpty()Z;)()))
-      {
-        Lscala/Tuple5; temp25 = temp24.(Lscala/Option;::get()Ljava/lang/Object;)().<cast>(Lscala/Tuple5;);
-        Ljava/lang/String; temp26 = temp25.(Lscala/Tuple5;::_1()Ljava/lang/Object;)().<cast>(Ljava/lang/String;);
-        Ljava/lang/String; temp27 = temp25.(Lscala/Tuple5;::_2()Ljava/lang/Object;)().<cast>(Ljava/lang/String;);
-        Lscala/xml/MetaData; temp28 = temp25.(Lscala/Tuple5;::_3()Ljava/lang/Object;)().<cast>(Lscala/xml/MetaData;);
-        Lscala/xml/NamespaceBinding; temp29 = temp25.(Lscala/Tuple5;::_4()Ljava/lang/Object;)().<cast>(Lscala/xml/NamespaceBinding;);
-        Lscala/collection/Seq; temp30 = temp25.(Lscala/Tuple5;::_5()Ljava/lang/Object;)().<cast>(Lscala/collection/Seq;);
-        Z; $11$;
-        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(temp30, null))
-          {
-            $11$ = false;
-          }
-        else
-          {
-            $11$ = (temp30.(Lscala/collection/SeqLike;::lengthCompare(I;)I;)(0) >= 0);
-          }
-        Lscala/xml/Node; $12$;
-        if ($11$)
-          {
-            $12$ = Lscala/xml/Elem$;.MODULE$.(Lscala/xml/Elem$;::apply(Ljava/lang/String;Ljava/lang/String;Lscala/xml/MetaData;Lscala/xml/NamespaceBinding;Lscala/collection/Seq;)Lscala/xml/Elem;)(temp26, temp27, this.(Lscala/xml/Utility$;::sort(Lscala/xml/MetaData;)Lscala/xml/MetaData;)(temp28), temp29, temp30.(Lscala/collection/TraversableLike;::map(Lscala/Function1;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)((new (Lscala/xml/Utility$$anonfun$sort$1;::this()V;)()), Lscala/collection/Seq$;.MODULE$.(Lscala/collection/Seq$;::canBuildFrom()Lscala/collection/generic/CanBuildFrom;)()).<cast>(Lscala/collection/Seq;));
-          }
-        else
-          {
-            $12$ = Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent12$percent1()Lscala/xml/Node;)();
-          }
-        $10$ = $12$;
-      }
-    else
-      {
-        $10$ = Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent12$percent1()Lscala/xml/Node;)();
-      }
-    return $10$;
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   public final Ljava/lang/String; escape(Ljava/lang/String; text$1) {
@@ -233,56 +142,56 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
           {
             {
               C; temp35 = text.(Ljava/lang/String;::charAt(I;)C;)(pos);
-              I; $13$ = temp35.<cast>(I;);
-              Ljava/lang/Object; $14$;
-              switch ($13$) {
+              I; $5$ = temp35.<cast>(I;);
+              Ljava/lang/Object; $6$;
+              switch ($5$) {
                 10: {
-                  $14$ = s.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('\n');
+                  $6$ = s.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('\n');
                   break;
                 }
                 
                 60: {
-                  $14$ = s.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("&lt;");
+                  $6$ = s.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("&lt;");
                   break;
                 }
                 
                 38: {
-                  $14$ = s.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("&amp;");
+                  $6$ = s.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("&amp;");
                   break;
                 }
                 
                 9: {
-                  $14$ = s.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('\t');
+                  $6$ = s.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('\t');
                   break;
                 }
                 
                 13: {
-                  $14$ = s.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('\r');
+                  $6$ = s.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('\r');
                   break;
                 }
                 
                 34: {
-                  $14$ = s.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("&quot;");
+                  $6$ = s.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("&quot;");
                   break;
                 }
                 
                 62: {
-                  $14$ = s.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("&gt;");
+                  $6$ = s.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("&gt;");
                   break;
                 }
                 
                 default: {
                   C; c = temp35;
-                  Ljava/lang/Object; $15$;
+                  Ljava/lang/Object; $7$;
                   if ((c >= ' '))
                     {
-                      $15$ = s.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(c);
+                      $7$ = s.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(c);
                     }
                   else
                     {
-                      $15$ = Lscala/runtime/BoxedUnit;.UNIT;
+                      $7$ = Lscala/runtime/BoxedUnit;.UNIT;
                     }
-                  $14$ = $15$;
+                  $6$ = $7$;
                   break;
                 }
                 
@@ -324,34 +233,34 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
   
   public Lscala/collection/mutable/StringBuilder; toXML(Lscala/xml/Node; x$8, Lscala/xml/NamespaceBinding; pscope, Lscala/collection/mutable/StringBuilder; sb$2, Z; stripComments$2, Z; decodeEntities$2, Z; preserveWhitespace$2, Z; minimizeTags$2) {
     Lscala/xml/Node; temp38 = x$8;
-    Lscala/collection/mutable/StringBuilder; $16$;
+    Lscala/collection/mutable/StringBuilder; $8$;
     if (temp38.<instanceof>(Lscala/xml/Comment;))
       {
-        Lscala/collection/mutable/StringBuilder; $17$;
+        Lscala/collection/mutable/StringBuilder; $9$;
         if (!(stripComments$2))
           {
-            $17$ = temp38.<cast>(Lscala/xml/Comment;).(Lscala/xml/Comment;::buildString(Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(sb$2);
+            $9$ = temp38.<cast>(Lscala/xml/Comment;).(Lscala/xml/Comment;::buildString(Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(sb$2);
           }
         else
           {
-            $17$ = sb$2;
+            $9$ = sb$2;
           }
-        $16$ = $17$;
+        $8$ = $9$;
       }
     else
       {
-        Lscala/collection/mutable/StringBuilder; $18$;
+        Lscala/collection/mutable/StringBuilder; $10$;
         if (temp38.<instanceof>(Lscala/xml/SpecialNode;))
           {
-            $18$ = temp38.<cast>(Lscala/xml/SpecialNode;).(Lscala/xml/SpecialNode;::buildString(Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(sb$2);
+            $10$ = temp38.<cast>(Lscala/xml/SpecialNode;).(Lscala/xml/SpecialNode;::buildString(Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(sb$2);
           }
         else
           {
-            Lscala/collection/mutable/StringBuilder; $19$;
+            Lscala/collection/mutable/StringBuilder; $11$;
             if (temp38.<instanceof>(Lscala/xml/Group;))
               {
                 temp38.<cast>(Lscala/xml/Group;).(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/xml/Utility$$anonfun$toXML$1;::this(Lscala/xml/Node;Lscala/collection/mutable/StringBuilder;Z;Z;Z;Z;)V;)(x$8, sb$2, stripComments$2, decodeEntities$2, preserveWhitespace$2, minimizeTags$2)));
-                $19$ = sb$2;
+                $11$ = sb$2;
               }
             else
               {
@@ -366,10 +275,10 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
                     
                   }
                 x$8.(Lscala/xml/Node;::scope()Lscala/xml/NamespaceBinding;)().(Lscala/xml/NamespaceBinding;::buildString(Lscala/collection/mutable/StringBuilder;Lscala/xml/NamespaceBinding;)V;)(sb$2, pscope);
-                Lscala/collection/mutable/StringBuilder; $20$;
+                Lscala/collection/mutable/StringBuilder; $12$;
                 if ((x$8.(Lscala/xml/Node;::child()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::isEmpty()Z;)() && minimizeTags$2))
                   {
-                    $20$ = sb$2.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(" />");
+                    $12$ = sb$2.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(" />");
                   }
                 else
                   {
@@ -377,15 +286,15 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
                     this.(Lscala/xml/Utility$;::sequenceToXML(Lscala/collection/Seq;Lscala/xml/NamespaceBinding;Lscala/collection/mutable/StringBuilder;Z;Z;Z;Z;)V;)(x$8.(Lscala/xml/Node;::child()Lscala/collection/Seq;)(), x$8.(Lscala/xml/Node;::scope()Lscala/xml/NamespaceBinding;)(), sb$2, stripComments$2, decodeEntities$2, preserveWhitespace$2, minimizeTags$2);
                     sb$2.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)("</");
                     x$8.(Lscala/xml/Node;::nameToString(Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(sb$2);
-                    $20$ = sb$2.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('>');
+                    $12$ = sb$2.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)('>');
                   }
-                $19$ = $20$;
+                $11$ = $12$;
               }
-            $18$ = $19$;
+            $10$ = $11$;
           }
-        $16$ = $18$;
+        $8$ = $10$;
       }
-    return $16$;
+    return $8$;
   }
   
   public Z; toXML$default$7() {
@@ -474,16 +383,16 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
   
   public final Lscala/Option; prefix(Ljava/lang/String; name) {
     I; temp44 = name.(Ljava/lang/String;::indexOf(I;)I;)(58);
-    Lscala/Option; $21$;
+    Lscala/Option; $13$;
     if ((temp44 == -1))
       {
-        $21$ = Lscala/None$;.MODULE$;
+        $13$ = Lscala/None$;.MODULE$;
       }
     else
       {
-        $21$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(name.(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)(0, temp44)));
+        $13$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(name.(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)(0, temp44)));
       }
-    return $21$;
+    return $13$;
   }
   
   public I; hashCode(Ljava/lang/String; pre, Ljava/lang/String; label, I; attribHashCode, I; scpeHash, Lscala/collection/Seq; children) {
@@ -500,16 +409,16 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
   }
   
   public Lscala/collection/mutable/StringBuilder; appendQuoted(Ljava/lang/String; s, Lscala/collection/mutable/StringBuilder; sb) {
-    C; $22$;
+    C; $14$;
     if (Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(s).(Lscala/collection/SeqLike;::contains(Ljava/lang/Object;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)('\"')))
       {
-        $22$ = '\'';
+        $14$ = '\'';
       }
     else
       {
-        $22$ = '\"';
+        $14$ = '\"';
       }
-    C; ch = $22$;
+    C; ch = $14$;
     return sb.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(ch).(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(s).(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(ch);
   }
   
@@ -520,26 +429,26 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
   }
   
   public Ljava/lang/String; getName(Ljava/lang/String; s, I; index) {
-    Ljava/lang/String; $23$;
+    Ljava/lang/String; $15$;
     if ((index >= s.(Ljava/lang/String;::length()I;)()))
       {
-        $23$ = null;
+        $15$ = null;
       }
     else
       {
         Ljava/lang/String; xs = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(s).(Lscala/collection/IndexedSeqOptimized;::drop(I;)Ljava/lang/Object;)(index).<cast>(Ljava/lang/String;);
-        Ljava/lang/String; $24$;
+        Ljava/lang/String; $16$;
         if ((Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(xs).(Lscala/collection/TraversableOnce;::nonEmpty()Z;)() && this.(Lscala/xml/parsing/TokenTests;::isNameStart(C;)Z;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(xs).(Lscala/collection/IndexedSeqOptimized;::head()Ljava/lang/Object;)()))))
           {
-            $24$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(xs).(Lscala/collection/IndexedSeqOptimized;::takeWhile(Lscala/Function1;)Ljava/lang/Object;)((new (Lscala/xml/Utility$$anonfun$getName$1;::this()V;)())).<cast>(Ljava/lang/String;);
+            $16$ = Lscala/Predef$;.MODULE$.(Lscala/Predef$;::augmentString(Ljava/lang/String;)Lscala/collection/immutable/StringOps;)(xs).(Lscala/collection/IndexedSeqOptimized;::takeWhile(Lscala/Function1;)Ljava/lang/Object;)((new (Lscala/xml/Utility$$anonfun$getName$1;::this()V;)())).<cast>(Ljava/lang/String;);
           }
         else
           {
-            $24$ = "";
+            $16$ = "";
           }
-        $23$ = $24$;
+        $15$ = $16$;
       }
-    return $23$;
+    return $15$;
   }
   
   public Ljava/lang/String; checkAttributeValue(Ljava/lang/String; value) {
@@ -550,8 +459,8 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
           {
             {
               C; temp46 = value.(Ljava/lang/String;::charAt(I;)C;)(i);
-              I; $25$ = temp46.<cast>(I;);
-              switch ($25$) {
+              I; $17$ = temp46.<cast>(I;);
+              switch ($17$) {
                 60: {
                   return "< not allowed in attribute value";
                   break;
@@ -609,16 +518,16 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
         {
           {
             Lscala/runtime/CharRef; c$1 = (new (Lscala/runtime/CharRef;::this(C;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(it$1.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)())));
-            Ljava/lang/Object; $26$;
+            Ljava/lang/Object; $18$;
             if ((c$1.(Lscala/runtime/CharRef;)elem == '&'))
               {
                 c$1.(Lscala/runtime/CharRef;)elem = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(it$1.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
-                Ljava/lang/Object; $27$;
+                Ljava/lang/Object; $19$;
                 if ((c$1.(Lscala/runtime/CharRef;)elem == '#'))
                   {
                     c$1.(Lscala/runtime/CharRef;)elem = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToChar(Ljava/lang/Object;)C;)(it$1.(Lscala/collection/Iterator;::next()Ljava/lang/Object;)());
                     Ljava/lang/String; theChar = this.(Lscala/xml/Utility$;::parseCharRef(Lscala/Function0;Lscala/Function0;Lscala/Function1;Lscala/Function1;)Ljava/lang/String;)((new (Lscala/xml/Utility$$anonfun$1;::this(Lscala/runtime/CharRef;)V;)(c$1)), (new (Lscala/xml/Utility$$anonfun$2;::this(Lscala/collection/Iterator;Lscala/runtime/CharRef;)V;)(it$1, c$1)), (new (Lscala/xml/Utility$$anonfun$6;::this()V;)()), (new (Lscala/xml/Utility$$anonfun$7;::this()V;)()));
-                    $27$ = sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(theChar);
+                    $19$ = sb.(Lscala/collection/mutable/StringBuilder;::append(Ljava/lang/String;)Lscala/collection/mutable/StringBuilder;)(theChar);
                   }
                 else
                   {
@@ -650,7 +559,7 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
                     Ljava/lang/String; ref = rfb.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)();
                     rfb.(Lscala/collection/mutable/StringBuilder;::setLength(I;)V;)(0);
                     Lscala/collection/mutable/StringBuilder; temp47 = this.(Lscala/xml/Utility$;::unescape(Ljava/lang/String;Lscala/collection/mutable/StringBuilder;)Lscala/collection/mutable/StringBuilder;)(ref, sb);
-                    Ljava/lang/Object; $28$;
+                    Ljava/lang/Object; $20$;
                     if ((temp47 == null))
                       {
                         if ((sb.(Lscala/collection/mutable/StringBuilder;::length()I;)() > 0))
@@ -662,19 +571,19 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
                           {
                             
                           }
-                        $28$ = nb.(Lscala/collection/mutable/ArrayBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ArrayBuffer;)((new (Lscala/xml/EntityRef;::this(Ljava/lang/String;)V;)(sb.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)())));
+                        $20$ = nb.(Lscala/collection/mutable/ArrayBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ArrayBuffer;)((new (Lscala/xml/EntityRef;::this(Ljava/lang/String;)V;)(sb.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)())));
                       }
                     else
                       {
-                        $28$ = Lscala/runtime/BoxedUnit;.UNIT;
+                        $20$ = Lscala/runtime/BoxedUnit;.UNIT;
                       }
-                    $27$ = $28$;
+                    $19$ = $20$;
                   }
-                $26$ = $27$;
+                $18$ = $19$;
               }
             else
               {
-                $26$ = sb.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(c$1.(Lscala/runtime/CharRef;)elem);
+                $18$ = sb.(Lscala/collection/mutable/StringBuilder;::append(C;)Lscala/collection/mutable/StringBuilder;)(c$1.(Lscala/runtime/CharRef;)elem);
               }
           }
           continue while$4;
@@ -688,14 +597,14 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
     if ((sb.(Lscala/collection/mutable/StringBuilder;::length()I;)() > 0))
       {
         Lscala/xml/Text; x = (new (Lscala/xml/Text;::this(Ljava/lang/String;)V;)(sb.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)()));
-        Lscala/collection/mutable/ArrayBuffer; $29$;
+        Lscala/collection/mutable/ArrayBuffer; $21$;
         if ((nb.(Lscala/collection/mutable/ResizableArray;::length()I;)() == 0))
           {
             return x;
           }
         else
           {
-            $29$ = nb.(Lscala/collection/mutable/ArrayBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ArrayBuffer;)(x);
+            $21$ = nb.(Lscala/collection/mutable/ArrayBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ArrayBuffer;)(x);
           }
       }
     else
@@ -706,258 +615,11 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
   }
   
   public Ljava/lang/String; parseCharRef(Lscala/Function0; ch, Lscala/Function0; nextch, Lscala/Function1; reportSyntaxError, Lscala/Function1; reportTruncatedError) {
-    nextch.(Lscala/Function0;::apply$mcV$sp()V;)();
-    Z; hex = ((ch.(Lscala/Function0;::apply$mcC$sp()C;)() == 'x') && true);
-    I; $30$;
-    if (hex)
-      {
-        $30$ = 16;
-      }
-    else
-      {
-        $30$ = 10;
-      }
-    I; base = $30$;
-    I; i = 0;
-    while$6: while(true) {
-      if ((ch.(Lscala/Function0;::apply$mcC$sp()C;)() != ';'))
-        {
-          {
-            {
-              C; temp49 = ch.(Lscala/Function0;::apply$mcC$sp()C;)();
-              I; $31$ = temp49.<cast>(I;);
-              Ljava/lang/Object; $32$;
-              switch ($31$) {
-                69: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent18$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                101: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent18$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                56: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent012$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                52: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent012$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                57: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent012$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                102: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent18$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                70: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent18$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                65: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent18$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                97: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent18$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                53: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent012$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                54: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent012$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                49: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent012$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                98: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent18$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                66: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent18$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                48: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent012$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                50: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent012$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                67: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent18$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                99: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent18$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                26: {
-                  $32$ = reportTruncatedError.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)("");
-                  break;
-                }
-                
-                55: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent012$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                51: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent012$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                68: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent18$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                100: {
-                  {
-                    Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::body$percent18$percent1()V;)();
-                  }
-                  $32$ = Lscala/runtime/BoxedUnit;.UNIT;
-                  break;
-                }
-                
-                default: {
-                  $32$ = reportSyntaxError.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)((("character \'" + Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToCharacter(C;)Ljava/lang/Character;)(ch.(Lscala/Function0;::apply$mcC$sp()C;)())) + "\' not allowed in char ref\012"));
-                  break;
-                }
-                
-              }
-            }
-            nextch.(Lscala/Function0;::apply$mcV$sp()V;)();
-          }
-          continue while$6;
-        }
-      else
-        {
-          
-        }
-      break;
-    }
-    return (new (Ljava/lang/String;::this(I;[I;I;)V;)(Lscala/Array$;.MODULE$.(Lscala/Array$;::apply(I;Lscala/collection/Seq;)I;[)(i, Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapIntArray(I;[)Lscala/collection/mutable/WrappedArray;)(<I;>{})), 0, 1));
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   public this() {
     (Ljava/lang/Object;::super()V;)();
     Lscala/xml/parsing/TokenTests$class;.(Lscala/xml/parsing/TokenTests$class;::$init$(Lscala/xml/parsing/TokenTests;)V;)(this);
-  }
-  
-  private final V; body$percent18$percent1() {
-    if (!(hex))
-      {
-        reportSyntaxError.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)("hex char not allowed in decimal char ref\012Did you mean to write &#x ?");
-      }
-    else
-      {
-        i = ((i * base) + Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::charWrapper(C;)Lscala/runtime/RichChar;)(ch.(Lscala/Function0;::apply$mcC$sp()C;)()).(Lscala/runtime/RichChar;::asDigit()I;)());
-      }
-  }
-  
-  private final Lscala/collection/Seq; body$percent21$percent1() {
-    return x;
-  }
-  
-  private final Lscala/collection/Seq; body$percent11$percent1(Ljava/lang/String; s) {
-    return (new (Lscala/xml/TextBuffer;::this()V;)()).(Lscala/xml/TextBuffer;::append(Lscala/collection/Seq;)Lscala/xml/TextBuffer;)(Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::wrapString(Ljava/lang/String;)Lscala/collection/immutable/WrappedString;)(s)).(Lscala/xml/TextBuffer;::toText()Lscala/collection/Seq;)();
-  }
-  
-  private final Lscala/xml/Node; body$percent12$percent1() {
-    return n;
-  }
-  
-  private final V; body$percent012$percent1() {
-    i = ((i * base) + Lscala/Predef$;.MODULE$.(Lscala/LowPriorityImplicits;::charWrapper(C;)Lscala/runtime/RichChar;)(ch.(Lscala/Function0;::apply$mcC$sp()C;)()).(Lscala/runtime/RichChar;::asDigit()I;)());
   }
 }

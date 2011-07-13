@@ -1,29 +1,29 @@
 public abstract class Lscala/xml/Attribute$class; {
   
   public static Lscala/xml/MetaData; remove(Lscala/xml/Attribute; $this, Ljava/lang/String; key) {
-    Lscala/xml/MetaData; $9$;
+    Lscala/xml/MetaData; $5$;
     if ((!($this.(Lscala/xml/Attribute;::isPrefixed()Z;)()) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/xml/Attribute;::key()Ljava/lang/String;)(), key)))
       {
-        $9$ = $this.(Lscala/xml/Attribute;::next()Lscala/xml/MetaData;)();
+        $5$ = $this.(Lscala/xml/Attribute;::next()Lscala/xml/MetaData;)();
       }
     else
       {
-        $9$ = $this.(Lscala/xml/Attribute;::copy(Lscala/xml/MetaData;)Lscala/xml/Attribute;)($this.(Lscala/xml/Attribute;::next()Lscala/xml/MetaData;)().(Lscala/xml/MetaData;::remove(Ljava/lang/String;)Lscala/xml/MetaData;)(key)).<cast>(Lscala/xml/MetaData;);
+        $5$ = $this.(Lscala/xml/Attribute;::copy(Lscala/xml/MetaData;)Lscala/xml/Attribute;)($this.(Lscala/xml/Attribute;::next()Lscala/xml/MetaData;)().(Lscala/xml/MetaData;::remove(Ljava/lang/String;)Lscala/xml/MetaData;)(key)).<cast>(Lscala/xml/MetaData;);
       }
-    return $9$;
+    return $5$;
   }
   
   public static Lscala/xml/MetaData; remove(Lscala/xml/Attribute; $this, Ljava/lang/String; namespace, Lscala/xml/NamespaceBinding; scope, Ljava/lang/String; key) {
-    Lscala/xml/MetaData; $10$;
+    Lscala/xml/MetaData; $6$;
     if ((($this.(Lscala/xml/Attribute;::isPrefixed()Z;)() && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/xml/Attribute;::key()Ljava/lang/String;)(), key)) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(scope.(Lscala/xml/NamespaceBinding;::getURI(Ljava/lang/String;)Ljava/lang/String;)($this.(Lscala/xml/Attribute;::pre()Ljava/lang/String;)()), namespace)))
       {
-        $10$ = $this.(Lscala/xml/Attribute;::next()Lscala/xml/MetaData;)();
+        $6$ = $this.(Lscala/xml/Attribute;::next()Lscala/xml/MetaData;)();
       }
     else
       {
-        $10$ = $this.(Lscala/xml/Attribute;::next()Lscala/xml/MetaData;)().(Lscala/xml/MetaData;::remove(Ljava/lang/String;Lscala/xml/NamespaceBinding;Ljava/lang/String;)Lscala/xml/MetaData;)(namespace, scope, key);
+        $6$ = $this.(Lscala/xml/Attribute;::next()Lscala/xml/MetaData;)().(Lscala/xml/MetaData;::remove(Ljava/lang/String;Lscala/xml/NamespaceBinding;Ljava/lang/String;)Lscala/xml/MetaData;)(namespace, scope, key);
       }
-    return $10$;
+    return $6$;
   }
   
   public static Z; isPrefixed(Lscala/xml/Attribute; $this) {
@@ -31,16 +31,16 @@ public abstract class Lscala/xml/Attribute$class; {
   }
   
   public static Z; wellformed(Lscala/xml/Attribute; $this, Lscala/xml/NamespaceBinding; scope) {
-    Ljava/lang/String; $11$;
+    Ljava/lang/String; $7$;
     if ($this.(Lscala/xml/Attribute;::isPrefixed()Z;)())
       {
-        $11$ = scope.(Lscala/xml/NamespaceBinding;::getURI(Ljava/lang/String;)Ljava/lang/String;)($this.(Lscala/xml/Attribute;::pre()Ljava/lang/String;)());
+        $7$ = scope.(Lscala/xml/NamespaceBinding;::getURI(Ljava/lang/String;)Ljava/lang/String;)($this.(Lscala/xml/Attribute;::pre()Ljava/lang/String;)());
       }
     else
       {
-        $11$ = null;
+        $7$ = null;
       }
-    Ljava/lang/String; arg = $11$;
+    Ljava/lang/String; arg = $7$;
     return (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)($this.(Lscala/xml/Attribute;::next()Lscala/xml/MetaData;)().(Lscala/xml/MetaData;::apply(Ljava/lang/String;Lscala/xml/NamespaceBinding;Ljava/lang/String;)Lscala/collection/Seq;)(arg, scope, $this.(Lscala/xml/Attribute;::key()Ljava/lang/String;)()), null) && $this.(Lscala/xml/Attribute;::next()Lscala/xml/MetaData;)().(Lscala/xml/MetaData;::wellformed(Lscala/xml/NamespaceBinding;)Z;)(scope));
   }
   

@@ -336,28 +336,28 @@ public final class Lscala/collection/immutable/List$; extends Lscala/collection/
   }
   
   private final Lscala/collection/immutable/List; loop$4(Lscala/collection/immutable/List; ys, Lscala/collection/immutable/List; xs$1, Lscala/Function1; f$2) {
-    Lscala/collection/immutable/List; $26$;
+    Lscala/collection/immutable/List; $19$;
     if (ys.(Lscala/collection/IterableLike;::isEmpty()Z;)())
       {
-        $26$ = xs$1;
+        $19$ = xs$1;
       }
     else
       {
         Ljava/lang/Object; head0 = ys.(Lscala/collection/IterableLike;::head()Ljava/lang/Object;)();
         Ljava/lang/Object; head1 = f$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(head0);
-        Lscala/collection/immutable/List; $27$;
+        Lscala/collection/immutable/List; $20$;
         if ((head1 == head0))
           {
-            $27$ = this.(Lscala/collection/immutable/List$;::loop$4(Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/Function1;)Lscala/collection/immutable/List;)(ys.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;), xs$1, f$2);
+            $20$ = this.(Lscala/collection/immutable/List$;::loop$4(Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/Function1;)Lscala/collection/immutable/List;)(ys.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;), xs$1, f$2);
           }
         else
           {
             Ljava/lang/Object; x$16 = head1;
             Lscala/collection/immutable/List; ys1 = this.(Lscala/collection/immutable/List$;::mapConserve(Lscala/collection/immutable/List;Lscala/Function1;)Lscala/collection/immutable/List;)(ys.(Lscala/collection/TraversableLike;::tail()Ljava/lang/Object;)().<cast>(Lscala/collection/immutable/List;), f$2).(Lscala/collection/immutable/List;::$colon$colon(Ljava/lang/Object;)Lscala/collection/immutable/List;)(x$16);
-            Lscala/collection/immutable/List; $28$;
+            Lscala/collection/immutable/List; $21$;
             if ((xs$1 == ys))
               {
-                $28$ = ys1;
+                $21$ = ys1;
               }
             else
               {
@@ -378,13 +378,13 @@ public final class Lscala/collection/immutable/List$; extends Lscala/collection/
                     }
                   break;
                 }
-                $28$ = b.(Lscala/collection/mutable/ListBuffer;::prependToList(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;)(ys1);
+                $21$ = b.(Lscala/collection/mutable/ListBuffer;::prependToList(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;)(ys1);
               }
-            $27$ = $28$;
+            $20$ = $21$;
           }
-        $26$ = $27$;
+        $19$ = $20$;
       }
-    return $26$;
+    return $19$;
   }
   
   public this() {

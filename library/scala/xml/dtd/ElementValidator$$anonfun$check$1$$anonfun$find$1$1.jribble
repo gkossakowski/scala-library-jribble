@@ -2,12 +2,12 @@ public final class Lscala/xml/dtd/ElementValidator$$anonfun$check$1$$anonfun$fin
   
   public final Z; apply(Lscala/Tuple2; x0$3) {
     Lscala/Tuple2; temp12 = x0$3;
-    Z; $14$;
+    Z; $11$;
     if ((temp12 != null))
       {
         Lscala/xml/dtd/AttrDecl; temp13 = temp12.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Lscala/xml/dtd/AttrDecl;);
         I; temp14 = Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::unboxToInt(Ljava/lang/Object;)I;)(temp12.(Lscala/Tuple2;::_2()Ljava/lang/Object;)());
-        Z; $15$;
+        Z; $12$;
         if (((temp13 != null) && Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1$$anonfun$find$1$1;)Key$1, temp13.(Lscala/xml/dtd/AttrDecl;::name()Ljava/lang/String;)())))
           {
             this.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1$$anonfun$find$1$1;)$outer$u0020.(Lscala/xml/dtd/ElementValidator$$anonfun$check$1;)ok$1.(Lscala/runtime/ObjectRef;)elem.<cast>(Lscala/collection/mutable/BitSet;).(Lscala/collection/mutable/BitSet;::$plus$eq(I;)Lscala/collection/mutable/BitSet;)(temp14);
@@ -15,15 +15,15 @@ public final class Lscala/xml/dtd/ElementValidator$$anonfun$check$1$$anonfun$fin
           }
         else
           {
-            $15$ = false;
+            $12$ = false;
           }
-        $14$ = $15$;
+        $11$ = $12$;
       }
     else
       {
-        $14$ = false;
+        $11$ = false;
       }
-    return $14$;
+    return $11$;
   }
   
   private Lscala/xml/dtd/ElementValidator$$anonfun$check$1; $outer$u0020;

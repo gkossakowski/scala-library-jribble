@@ -186,114 +186,7 @@ public class Lscala/xml/PrettyPrinter; extends Ljava/lang/Object; implements Lsc
   }
   
   public V; traverse(Lscala/xml/Node; node, Lscala/xml/NamespaceBinding; pscope, I; ind) {
-    Lscala/xml/Node; temp23 = node;
-    if (temp23.<instanceof>(Lscala/xml/Text;))
-      {
-        if (this.(Lscala/xml/PrettyPrinter;::gd3$1(Ljava/lang/String;)Z;)(temp23.<cast>(Lscala/xml/Text;).(Lscala/xml/Text;::_data()Ljava/lang/String;)()))
-          {
-            
-          }
-        else
-          {
-            this.(Lscala/xml/PrettyPrinter;::body$percent13$percent1()V;)();
-          }
-      }
-    else
-      {
-        if (temp23.<instanceof>(Lscala/xml/Atom;))
-          {
-            this.(Lscala/xml/PrettyPrinter;::body$percent13$percent1()V;)();
-          }
-        else
-          {
-            if (temp23.<instanceof>(Lscala/xml/Comment;))
-              {
-                this.(Lscala/xml/PrettyPrinter;::body$percent13$percent1()V;)();
-              }
-            else
-              {
-                if (temp23.<instanceof>(Lscala/xml/EntityRef;))
-                  {
-                    this.(Lscala/xml/PrettyPrinter;::body$percent13$percent1()V;)();
-                  }
-                else
-                  {
-                    if (temp23.<instanceof>(Lscala/xml/ProcInstr;))
-                      {
-                        this.(Lscala/xml/PrettyPrinter;::body$percent13$percent1()V;)();
-                      }
-                    else
-                      {
-                        if (temp23.<instanceof>(Lscala/xml/Group;))
-                          {
-                            this.(Lscala/xml/PrettyPrinter;::traverse(Lscala/collection/Iterator;Lscala/xml/NamespaceBinding;I;)V;)(temp23.<cast>(Lscala/xml/Group;).(Lscala/xml/Group;::nodes()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)(), pscope, ind);
-                          }
-                        else
-                          {
-                            Lscala/collection/mutable/StringBuilder; sb = (new (Lscala/collection/mutable/StringBuilder;::this()V;)());
-                            Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::toXML(Lscala/xml/Node;Lscala/xml/NamespaceBinding;Lscala/collection/mutable/StringBuilder;Z;Z;Z;Z;)Lscala/collection/mutable/StringBuilder;)(node, pscope, sb, false, Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::toXML$default$5()Z;)(), Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::toXML$default$6()Z;)(), Lscala/xml/Utility$;.MODULE$.(Lscala/xml/Utility$;::toXML$default$7()Z;)());
-                            Ljava/lang/String; $1$;
-                            if (this.(Lscala/xml/PrettyPrinter;::doPreserve(Lscala/xml/Node;)Z;)(node))
-                              {
-                                $1$ = sb.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)();
-                              }
-                            else
-                              {
-                                $1$ = Lscala/xml/TextBuffer$;.MODULE$.(Lscala/xml/TextBuffer$;::fromString(Ljava/lang/String;)Lscala/xml/TextBuffer;)(sb.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)()).(Lscala/xml/TextBuffer;::toText()Lscala/collection/Seq;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(0).<cast>(Lscala/xml/Atom;).(Lscala/xml/Atom;::data()Ljava/lang/Object;)().<cast>(Ljava/lang/String;);
-                              }
-                            Ljava/lang/String; test = $1$;
-                            if ((this.(Lscala/xml/PrettyPrinter;::childrenAreLeaves(Lscala/xml/Node;)Z;)(node) && this.(Lscala/xml/PrettyPrinter;::fits(Ljava/lang/String;)Z;)(test)))
-                              {
-                                this.(Lscala/xml/PrettyPrinter;::makeBox(I;Ljava/lang/String;)V;)(ind, test);
-                              }
-                            else
-                              {
-                                Lscala/Tuple2; temp20 = this.(Lscala/xml/PrettyPrinter;::startTag(Lscala/xml/Node;Lscala/xml/NamespaceBinding;)Lscala/Tuple2;)(node, pscope);
-                                Lscala/Tuple2; $2$;
-                                if ((temp20 != null))
-                                  {
-                                    $2$ = (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(temp20.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), temp20.(Lscala/Tuple2;::_2()Ljava/lang/Object;)()));
-                                  }
-                                else
-                                  {
-                                    throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp20));
-                                  }
-                                Lscala/Tuple2; x$10 = $2$;
-                                Ljava/lang/String; stg = x$10.(Lscala/Tuple2;::_1()Ljava/lang/Object;)().<cast>(Ljava/lang/String;);
-                                I; len2 = x$10.(Lscala/Tuple2;::_2$mcI$sp()I;)();
-                                Ljava/lang/String; etg = this.(Lscala/xml/PrettyPrinter;::endTag(Lscala/xml/Node;)Ljava/lang/String;)(node);
-                                if ((stg.(Ljava/lang/String;::length()I;)() < (this.(Lscala/xml/PrettyPrinter;)width - this.(Lscala/xml/PrettyPrinter;::cur()I;)())))
-                                  {
-                                    this.(Lscala/xml/PrettyPrinter;::makeBox(I;Ljava/lang/String;)V;)(ind, stg);
-                                    this.(Lscala/xml/PrettyPrinter;::makeBreak()V;)();
-                                    this.(Lscala/xml/PrettyPrinter;::traverse(Lscala/collection/Iterator;Lscala/xml/NamespaceBinding;I;)V;)(node.(Lscala/xml/Node;::child()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)(), node.(Lscala/xml/Node;::scope()Lscala/xml/NamespaceBinding;)(), (ind + this.(Lscala/xml/PrettyPrinter;)step));
-                                    this.(Lscala/xml/PrettyPrinter;::makeBox(I;Ljava/lang/String;)V;)(ind, etg);
-                                  }
-                                else
-                                  {
-                                    if ((len2 < (this.(Lscala/xml/PrettyPrinter;)width - this.(Lscala/xml/PrettyPrinter;::cur()I;)())))
-                                      {
-                                        this.(Lscala/xml/PrettyPrinter;::makeBox(I;Ljava/lang/String;)V;)(ind, stg.(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)(0, len2));
-                                        this.(Lscala/xml/PrettyPrinter;::makeBreak()V;)();
-                                        this.(Lscala/xml/PrettyPrinter;::makeBox(I;Ljava/lang/String;)V;)(ind, stg.(Ljava/lang/String;::substring(I;I;)Ljava/lang/String;)(len2, stg.(Ljava/lang/String;::length()I;)()));
-                                        this.(Lscala/xml/PrettyPrinter;::makeBreak()V;)();
-                                        this.(Lscala/xml/PrettyPrinter;::traverse(Lscala/collection/Iterator;Lscala/xml/NamespaceBinding;I;)V;)(node.(Lscala/xml/Node;::child()Lscala/collection/Seq;)().(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)(), node.(Lscala/xml/Node;::scope()Lscala/xml/NamespaceBinding;)(), (ind + this.(Lscala/xml/PrettyPrinter;)step));
-                                        this.(Lscala/xml/PrettyPrinter;::makeBox(I;Ljava/lang/String;)V;)(this.(Lscala/xml/PrettyPrinter;::cur()I;)(), etg);
-                                        this.(Lscala/xml/PrettyPrinter;::makeBreak()V;)();
-                                      }
-                                    else
-                                      {
-                                        this.(Lscala/xml/PrettyPrinter;::makeBox(I;Ljava/lang/String;)V;)(ind, test);
-                                        this.(Lscala/xml/PrettyPrinter;::makeBreak()V;)();
-                                      }
-                                  }
-                              }
-                          }
-                      }
-                  }
-              }
-          }
-      }
+    Lscala/sys/package$;.MODULE$.(Lscala/sys/package$;::error(Ljava/lang/String;)Lscala/runtime/Nothing$;)("whack! you stepped on broken handling of jribble backend.");
   }
   
   protected V; traverse(Lscala/collection/Iterator; it, Lscala/xml/NamespaceBinding; scope$1, I; ind$1) {
@@ -356,34 +249,34 @@ public class Lscala/xml/PrettyPrinter; extends Ljava/lang/Object; implements Lsc
   
   public final Z; isLeaf$1(Lscala/xml/Node; l) {
     Lscala/xml/Node; temp11 = l;
-    Z; $3$;
+    Z; $1$;
     if (temp11.<instanceof>(Lscala/xml/Atom;))
       {
-        $3$ = true;
+        $1$ = true;
       }
     else
       {
-        Z; $4$;
+        Z; $2$;
         if (temp11.<instanceof>(Lscala/xml/Comment;))
           {
-            $4$ = true;
+            $2$ = true;
           }
         else
           {
-            Z; $5$;
+            Z; $3$;
             if (temp11.<instanceof>(Lscala/xml/EntityRef;))
               {
-                $5$ = true;
+                $3$ = true;
               }
             else
               {
-                $5$ = temp11.<instanceof>(Lscala/xml/ProcInstr;);
+                $3$ = temp11.<instanceof>(Lscala/xml/ProcInstr;);
               }
-            $4$ = $5$;
+            $2$ = $3$;
           }
-        $3$ = $4$;
+        $1$ = $2$;
       }
-    return $3$;
+    return $1$;
   }
   
   private final Z; gd3$1(Ljava/lang/String; x$1) {
@@ -396,9 +289,5 @@ public class Lscala/xml/PrettyPrinter; extends Ljava/lang/Object; implements Lsc
     (Ljava/lang/Object;::super()V;)();
     this.(Lscala/xml/PrettyPrinter;)items$u0020 = Lscala/collection/immutable/Nil$;.MODULE$;
     this.(Lscala/xml/PrettyPrinter;)cur$u0020 = 0;
-  }
-  
-  private final V; body$percent13$percent1() {
-    this.(Lscala/xml/PrettyPrinter;::makeBox(I;Ljava/lang/String;)V;)(ind, node.(Lscala/xml/Node;::toString()Ljava/lang/String;)().(Ljava/lang/String;::trim()Ljava/lang/String;)());
   }
 }
