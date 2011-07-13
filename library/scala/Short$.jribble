@@ -1,0 +1,27 @@
+public final class Lscala/Short$; extends Ljava/lang/Object; implements Lscala/AnyValCompanion;, Lscala/ScalaObject; {
+  public static Lscala/Short$; MODULE$ = new (Lscala/Short$;::this()V;)();
+  
+  public final S; MinValue() {
+    return -32768;
+  }
+  
+  public final S; MaxValue() {
+    return 32767;
+  }
+  
+  public Ljava/lang/Short; box(S; x) {
+    return Ljava/lang/Short;.(Ljava/lang/Short;::valueOf(S;)Ljava/lang/Short;)(x);
+  }
+  
+  public S; unbox(Ljava/lang/Object; x) {
+    return x.<cast>(Ljava/lang/Short;).(Ljava/lang/Short;::shortValue()S;)();
+  }
+  
+  public Ljava/lang/String; toString() {
+    return "object scala.Short";
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

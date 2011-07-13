@@ -1,0 +1,50 @@
+public final class Lscala/Double$; extends Ljava/lang/Object; implements Lscala/AnyValCompanion;, Lscala/ScalaObject; {
+  public static Lscala/Double$; MODULE$ = new (Lscala/Double$;::this()V;)();
+  
+  public final D; MinPositiveValue() {
+    return 4.9E-324D;
+  }
+  
+  public final D; NaN() {
+    return NaND;
+  }
+  
+  public final D; PositiveInfinity() {
+    return InfinityD;
+  }
+  
+  public final D; NegativeInfinity() {
+    return -InfinityD;
+  }
+  
+  public final D; Epsilon() {
+    return 4.9E-324D;
+  }
+  
+  private final D; MinValue$u0020;
+  
+  public final D; MinValue() {
+    return this.(Lscala/Double$;)MinValue$u0020;
+  }
+  
+  public final D; MaxValue() {
+    return 1.7976931348623157E308D;
+  }
+  
+  public Ljava/lang/Double; box(D; x) {
+    return Ljava/lang/Double;.(Ljava/lang/Double;::valueOf(D;)Ljava/lang/Double;)(x);
+  }
+  
+  public D; unbox(Ljava/lang/Object; x) {
+    return x.<cast>(Ljava/lang/Double;).(Ljava/lang/Double;::doubleValue()D;)();
+  }
+  
+  public Ljava/lang/String; toString() {
+    return "object scala.Double";
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+    this.(Lscala/Double$;)MinValue$u0020 = -(1.7976931348623157E308D);
+  }
+}
