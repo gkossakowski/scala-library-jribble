@@ -1,0 +1,27 @@
+public final class Lscala/Long$; extends Ljava/lang/Object; implements Lscala/AnyValCompanion;, Lscala/ScalaObject; {
+  public static Lscala/Long$; MODULE$ = new (Lscala/Long$;::this()V;)();
+  
+  public final J; MinValue() {
+    return -9223372036854775808L;
+  }
+  
+  public final J; MaxValue() {
+    return 9223372036854775807L;
+  }
+  
+  public Ljava/lang/Long; box(J; x) {
+    return Ljava/lang/Long;.(Ljava/lang/Long;::valueOf(J;)Ljava/lang/Long;)(x);
+  }
+  
+  public J; unbox(Ljava/lang/Object; x) {
+    return x.<cast>(Ljava/lang/Long;).(Ljava/lang/Long;::longValue()J;)();
+  }
+  
+  public Ljava/lang/String; toString() {
+    return "object scala.Long";
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}
