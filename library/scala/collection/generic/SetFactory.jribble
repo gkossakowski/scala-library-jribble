@@ -1,31 +1,6 @@
 public abstract class Lscala/collection/generic/SetFactory; extends Lscala/collection/generic/GenSetFactory; implements Lscala/collection/generic/GenericSeqCompanion;, Lscala/ScalaObject; {
   
-  public final Lscala/collection/Traversable; scala$collection$generic$GenericSeqCompanion$$super$empty() {
-    return super.(Lscala/collection/generic/GenericCompanion;::empty()Lscala/collection/GenTraversable;)().<cast>(Lscala/collection/Traversable;);
-  }
-  
-  public final Lscala/collection/Traversable; scala$collection$generic$GenericSeqCompanion$$super$apply(Lscala/collection/Seq; elems) {
-    return super.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(elems).<cast>(Lscala/collection/Traversable;);
-  }
-  
-  public Lscala/collection/Traversable; empty() {
-    return Lscala/collection/generic/GenericSeqCompanion$class;.(Lscala/collection/generic/GenericSeqCompanion$class;::empty(Lscala/collection/generic/GenericSeqCompanion;)Lscala/collection/Traversable;)(this);
-  }
-  
-  public Lscala/collection/Traversable; apply(Lscala/collection/Seq; elems) {
-    return Lscala/collection/generic/GenericSeqCompanion$class;.(Lscala/collection/generic/GenericSeqCompanion$class;::apply(Lscala/collection/generic/GenericSeqCompanion;Lscala/collection/Seq;)Lscala/collection/Traversable;)(this, elems);
-  }
-  
-  public Lscala/collection/Set; empty() {
-    return super.(Lscala/collection/generic/GenericCompanion;::empty()Lscala/collection/GenTraversable;)().<cast>(Lscala/collection/Set;);
-  }
-  
-  public Lscala/collection/Set; apply(Lscala/collection/Seq; elems) {
-    return super.(Lscala/collection/generic/GenericCompanion;::apply(Lscala/collection/Seq;)Lscala/collection/GenTraversable;)(elems).<cast>(Lscala/collection/Set;);
-  }
-  
   public this() {
     (Lscala/collection/generic/GenSetFactory;::super()V;)();
-    Lscala/collection/generic/GenericSeqCompanion$class;.(Lscala/collection/generic/GenericSeqCompanion$class;::$init$(Lscala/collection/generic/GenericSeqCompanion;)V;)(this);
   }
 }

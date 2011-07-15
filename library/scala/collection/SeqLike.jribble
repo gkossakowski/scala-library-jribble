@@ -36,31 +36,17 @@ public interface Lscala/collection/SeqLike; extends Lscala/collection/IterableLi
   
   public Z; startsWith(Lscala/collection/GenSeq; that, I; offset);
   
-  public Z; startsWith(Lscala/collection/Seq; that, I; offset);
-  
   public Z; endsWith(Lscala/collection/GenSeq; that);
-  
-  public Z; endsWith(Lscala/collection/Seq; that);
   
   public I; indexOfSlice(Lscala/collection/GenSeq; that);
   
-  public I; indexOfSlice(Lscala/collection/Seq; that);
-  
   public I; indexOfSlice(Lscala/collection/GenSeq; that, I; from);
-  
-  public I; indexOfSlice(Lscala/collection/Seq; that, I; from);
   
   public I; lastIndexOfSlice(Lscala/collection/GenSeq; that);
   
-  public I; lastIndexOfSlice(Lscala/collection/Seq; that);
-  
   public I; lastIndexOfSlice(Lscala/collection/GenSeq; that, I; end);
   
-  public I; lastIndexOfSlice(Lscala/collection/Seq; that, I; end);
-  
   public Z; containsSlice(Lscala/collection/GenSeq; that);
-  
-  public Z; containsSlice(Lscala/collection/Seq; that);
   
   public Z; contains(Ljava/lang/Object; elem);
   
@@ -68,17 +54,11 @@ public interface Lscala/collection/SeqLike; extends Lscala/collection/IterableLi
   
   public Ljava/lang/Object; diff(Lscala/collection/GenSeq; that);
   
-  public Ljava/lang/Object; diff(Lscala/collection/Seq; that);
-  
   public Ljava/lang/Object; intersect(Lscala/collection/GenSeq; that);
-  
-  public Ljava/lang/Object; intersect(Lscala/collection/Seq; that);
   
   public Ljava/lang/Object; distinct();
   
   public Ljava/lang/Object; patch(I; from, Lscala/collection/GenSeq; patch, I; replaced, Lscala/collection/generic/CanBuildFrom; bf);
-  
-  public Ljava/lang/Object; patch(I; from, Lscala/collection/Seq; patch, I; replaced, Lscala/collection/generic/CanBuildFrom; bf);
   
   public Ljava/lang/Object; updated(I; index, Ljava/lang/Object; elem, Lscala/collection/generic/CanBuildFrom; bf);
   
@@ -89,8 +69,6 @@ public interface Lscala/collection/SeqLike; extends Lscala/collection/IterableLi
   public Ljava/lang/Object; padTo(I; len, Ljava/lang/Object; elem, Lscala/collection/generic/CanBuildFrom; bf);
   
   public Z; corresponds(Lscala/collection/GenSeq; that, Lscala/Function2; p);
-  
-  public Z; corresponds(Lscala/collection/Seq; that, Lscala/Function2; p);
   
   public Ljava/lang/Object; sortWith(Lscala/Function2; lt);
   

@@ -404,20 +404,8 @@ public final class Lscala/collection/immutable/MapProxy$$anon$2; extends Ljava/l
     return Lscala/collection/SetLike$class;.(Lscala/collection/SetLike$class;::$plus$plus(Lscala/collection/SetLike;Lscala/collection/GenTraversableOnce;)Lscala/collection/Set;)(this, elems);
   }
   
-  public Lscala/collection/Set; $plus$plus(Lscala/collection/TraversableOnce; elems) {
-    return Lscala/collection/SetLike$class;.(Lscala/collection/SetLike$class;::$plus$plus(Lscala/collection/SetLike;Lscala/collection/TraversableOnce;)Lscala/collection/Set;)(this, elems);
-  }
-  
   public Lscala/collection/Set; $times$times(Lscala/collection/Set; that) {
     return Lscala/collection/SetLike$class;.(Lscala/collection/SetLike$class;::$times$times(Lscala/collection/SetLike;Lscala/collection/Set;)Lscala/collection/Set;)(this, that);
-  }
-  
-  public Lscala/collection/Set; union(Lscala/collection/Set; that) {
-    return Lscala/collection/SetLike$class;.(Lscala/collection/SetLike$class;::union(Lscala/collection/SetLike;Lscala/collection/Set;)Lscala/collection/Set;)(this, that);
-  }
-  
-  public Lscala/collection/Set; diff(Lscala/collection/Set; that) {
-    return Lscala/collection/SetLike$class;.(Lscala/collection/SetLike$class;::diff(Lscala/collection/SetLike;Lscala/collection/Set;)Lscala/collection/Set;)(this, that);
   }
   
   public Lscala/collection/Iterator; subsets(I; len) {
@@ -434,30 +422,6 @@ public final class Lscala/collection/immutable/MapProxy$$anon$2; extends Ljava/l
   
   public Lscala/collection/generic/Subtractable; $minus$minus(Lscala/collection/GenTraversableOnce; xs) {
     return Lscala/collection/generic/Subtractable$class;.(Lscala/collection/generic/Subtractable$class;::$minus$minus(Lscala/collection/generic/Subtractable;Lscala/collection/GenTraversableOnce;)Lscala/collection/generic/Subtractable;)(this, xs);
-  }
-  
-  public Lscala/collection/generic/Subtractable; $minus$minus(Lscala/collection/TraversableOnce; xs) {
-    return Lscala/collection/generic/Subtractable$class;.(Lscala/collection/generic/Subtractable$class;::$minus$minus(Lscala/collection/generic/Subtractable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Subtractable;)(this, xs);
-  }
-  
-  public Ljava/lang/Object; intersect(Lscala/collection/Set; that) {
-    return Lscala/collection/GenSetLike$class;.(Lscala/collection/GenSetLike$class;::intersect(Lscala/collection/GenSetLike;Lscala/collection/Set;)Ljava/lang/Object;)(this, that);
-  }
-  
-  public Ljava/lang/Object; $amp(Lscala/collection/Set; that) {
-    return Lscala/collection/GenSetLike$class;.(Lscala/collection/GenSetLike$class;::$amp(Lscala/collection/GenSetLike;Lscala/collection/Set;)Ljava/lang/Object;)(this, that);
-  }
-  
-  public Ljava/lang/Object; $bar(Lscala/collection/Set; that) {
-    return Lscala/collection/GenSetLike$class;.(Lscala/collection/GenSetLike$class;::$bar(Lscala/collection/GenSetLike;Lscala/collection/Set;)Ljava/lang/Object;)(this, that);
-  }
-  
-  public Ljava/lang/Object; $amp$tilde(Lscala/collection/Set; that) {
-    return Lscala/collection/GenSetLike$class;.(Lscala/collection/GenSetLike$class;::$amp$tilde(Lscala/collection/GenSetLike;Lscala/collection/Set;)Ljava/lang/Object;)(this, that);
-  }
-  
-  public Z; subsetOf(Lscala/collection/Set; that) {
-    return Lscala/collection/GenSetLike$class;.(Lscala/collection/GenSetLike$class;::subsetOf(Lscala/collection/GenSetLike;Lscala/collection/Set;)Z;)(this, that);
   }
   
   public Z; apply$mcZD$sp(D; v1) {
@@ -764,18 +728,6 @@ public final class Lscala/collection/immutable/MapProxy$$anon$2; extends Ljava/l
     return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::toCollection(Lscala/collection/IterableLike;Ljava/lang/Object;)Lscala/collection/Iterable;)(this, repr);
   }
   
-  public Ljava/lang/Object; zip(Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf) {
-    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::zip(Lscala/collection/IterableLike;Lscala/collection/Iterable;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, that, bf);
-  }
-  
-  public Ljava/lang/Object; zipAll(Lscala/collection/Iterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf) {
-    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::zipAll(Lscala/collection/IterableLike;Lscala/collection/Iterable;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, that, thisElem, thatElem, bf);
-  }
-  
-  public Z; sameElements(Lscala/collection/Iterable; that) {
-    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::sameElements(Lscala/collection/IterableLike;Lscala/collection/Iterable;)Z;)(this, that);
-  }
-  
   public Z; canEqual(Ljava/lang/Object; that) {
     return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::canEqual(Lscala/collection/IterableLike;Ljava/lang/Object;)Z;)(this, that);
   }
@@ -796,22 +748,6 @@ public final class Lscala/collection/immutable/MapProxy$$anon$2; extends Ljava/l
     return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::projection(Lscala/collection/IterableLike;)Lscala/collection/IterableView;)(this);
   }
   
-  public final Lscala/collection/Traversable; scala$collection$Traversable$$super$flatten(Lscala/Function1; asTraversable) {
-    return Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::flatten(Lscala/collection/generic/GenericTraversableTemplate;Lscala/Function1;)Lscala/collection/GenTraversable;)(this, asTraversable).<cast>(Lscala/collection/Traversable;);
-  }
-  
-  public final Lscala/collection/Traversable; scala$collection$Traversable$$super$transpose(Lscala/Function1; asTraversable) {
-    return Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::transpose(Lscala/collection/generic/GenericTraversableTemplate;Lscala/Function1;)Lscala/collection/GenTraversable;)(this, asTraversable).<cast>(Lscala/collection/Traversable;);
-  }
-  
-  public Lscala/collection/Traversable; flatten(Lscala/Function1; asTraversable) {
-    return Lscala/collection/Traversable$class;.(Lscala/collection/Traversable$class;::flatten(Lscala/collection/Traversable;Lscala/Function1;)Lscala/collection/Traversable;)(this, asTraversable);
-  }
-  
-  public Lscala/collection/Traversable; transpose(Lscala/Function1; asTraversable) {
-    return Lscala/collection/Traversable$class;.(Lscala/collection/Traversable$class;::transpose(Lscala/collection/Traversable;Lscala/Function1;)Lscala/collection/Traversable;)(this, asTraversable);
-  }
-  
   public Lscala/collection/mutable/Builder; genericBuilder() {
     return Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::genericBuilder(Lscala/collection/generic/GenericTraversableTemplate;)Lscala/collection/mutable/Builder;)(this);
   }
@@ -830,10 +766,6 @@ public final class Lscala/collection/immutable/MapProxy$$anon$2; extends Ljava/l
   
   public Lscala/collection/GenTraversable; transpose(Lscala/Function1; asTraversable) {
     return Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::transpose(Lscala/collection/generic/GenericTraversableTemplate;Lscala/Function1;)Lscala/collection/GenTraversable;)(this, asTraversable);
-  }
-  
-  public Ljava/lang/Object; $plus$plus(Lscala/collection/TraversableOnce; that, Lscala/collection/generic/CanBuildFrom; bf) {
-    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$plus$plus(Lscala/collection/TraversableLike;Lscala/collection/TraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, that, bf);
   }
   
   public Ljava/lang/Object; $plus$plus$colon(Lscala/collection/TraversableOnce; that, Lscala/collection/generic/CanBuildFrom; bf) {

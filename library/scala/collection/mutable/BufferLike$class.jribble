@@ -97,10 +97,6 @@ public abstract class Lscala/collection/mutable/BufferLike$class; {
     return $this.(Lscala/collection/mutable/Cloneable;::clone()Ljava/lang/Object;)().<cast>(Lscala/collection/generic/Growable;).(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(xs.(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)()).<cast>(Lscala/collection/mutable/Buffer;);
   }
   
-  public static Lscala/collection/mutable/Buffer; $plus$plus(Lscala/collection/mutable/Buffer; $this, Lscala/collection/TraversableOnce; xs) {
-    return $this.(Lscala/collection/mutable/BufferLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/mutable/Buffer;)(xs);
-  }
-  
   public static Lscala/collection/mutable/Buffer; $minus(Lscala/collection/mutable/Buffer; $this, Ljava/lang/Object; elem) {
     return $this.(Lscala/collection/mutable/Cloneable;::clone()Ljava/lang/Object;)().<cast>(Lscala/collection/mutable/BufferLike;).(Lscala/collection/mutable/BufferLike;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/Buffer;)(elem);
   }
@@ -111,10 +107,6 @@ public abstract class Lscala/collection/mutable/BufferLike$class; {
   
   public static Lscala/collection/mutable/Buffer; $minus$minus(Lscala/collection/mutable/Buffer; $this, Lscala/collection/GenTraversableOnce; xs) {
     return $this.(Lscala/collection/mutable/Cloneable;::clone()Ljava/lang/Object;)().<cast>(Lscala/collection/generic/Shrinkable;).(Lscala/collection/generic/Shrinkable;::$minus$minus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Shrinkable;)(xs.(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)()).<cast>(Lscala/collection/mutable/Buffer;);
-  }
-  
-  public static Lscala/collection/mutable/Buffer; $minus$minus(Lscala/collection/mutable/Buffer; $this, Lscala/collection/TraversableOnce; xs) {
-    return $this.(Lscala/collection/mutable/BufferLike;::$minus$minus(Lscala/collection/GenTraversableOnce;)Lscala/collection/mutable/Buffer;)(xs);
   }
   
   public static V; $init$(Lscala/collection/mutable/Buffer; $this) {
