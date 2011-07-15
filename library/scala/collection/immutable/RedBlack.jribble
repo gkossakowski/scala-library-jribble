@@ -1,5 +1,7 @@
 public abstract class Lscala/collection/immutable/RedBlack; extends Ljava/lang/Object; implements Lscala/Serializable;, Lscala/ScalaObject; {
   
+  protected I; bitmap$0 = 0;
+  
   public abstract Z; isSmaller(Ljava/lang/Object; x, Ljava/lang/Object; y);
   
   public final Lscala/collection/immutable/RedBlack$Tree; scala$collection$immutable$RedBlack$$blacken(Lscala/collection/immutable/RedBlack$Tree; t) {
@@ -30,17 +32,31 @@ public abstract class Lscala/collection/immutable/RedBlack; extends Ljava/lang/O
     return $2$;
   }
   
-  private Lscala/collection/immutable/RedBlack$Empty$; Empty$module;
+  private Lscala/collection/immutable/RedBlack$Empty_$; Empty_$module;
   
-  public final Lscala/collection/immutable/RedBlack$Empty$; Empty() {
-    if ((this.(Lscala/collection/immutable/RedBlack;)Empty$module == null))
+  public final Lscala/collection/immutable/RedBlack$Empty_$; Empty_() {
+    if ((this.(Lscala/collection/immutable/RedBlack;)Empty_$module == null))
       {
-        if ((this.(Lscala/collection/immutable/RedBlack;)Empty$module == null))
+        if ((this.(Lscala/collection/immutable/RedBlack;)Empty_$module == null))
           {
-            this.(Lscala/collection/immutable/RedBlack;)Empty$module = (new (Lscala/collection/immutable/RedBlack$Empty$;::this(Lscala/collection/immutable/RedBlack;)V;)(this));
+            this.(Lscala/collection/immutable/RedBlack;)Empty_$module = (new (Lscala/collection/immutable/RedBlack$Empty_$;::this(Lscala/collection/immutable/RedBlack;)V;)(this));
           }
       }
-    return this.(Lscala/collection/immutable/RedBlack;)Empty$module;
+    return this.(Lscala/collection/immutable/RedBlack;)Empty_$module;
+  }
+  
+  private Lscala/collection/immutable/RedBlack$Empty_; Empty$u0020;
+  
+  public Lscala/collection/immutable/RedBlack$Empty_; Empty() {
+    if (((this.(Lscala/collection/immutable/RedBlack;)bitmap$0 & 1) == 0))
+      {
+        if (((this.(Lscala/collection/immutable/RedBlack;)bitmap$0 & 1) == 0))
+          {
+            this.(Lscala/collection/immutable/RedBlack;)Empty$u0020 = (new (Lscala/collection/immutable/RedBlack$Empty_;::this(Lscala/collection/immutable/RedBlack;)V;)(this));
+            this.(Lscala/collection/immutable/RedBlack;)bitmap$0 = (this.(Lscala/collection/immutable/RedBlack;)bitmap$0 | 1);
+          }
+      }
+    return this.(Lscala/collection/immutable/RedBlack;)Empty$u0020;
   }
   
   private Lscala/collection/immutable/RedBlack$RedTree$; RedTree$module;
