@@ -37,10 +37,6 @@ public abstract class Lscala/collection/TraversableLike$class; {
     return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
   }
   
-  public static Ljava/lang/Object; $plus$plus(Lscala/collection/TraversableLike; $this, Lscala/collection/TraversableOnce; that, Lscala/collection/generic/CanBuildFrom; bf) {
-    return $this.(Lscala/collection/TraversableLike;::$plus$plus(Lscala/collection/GenTraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(that, bf);
-  }
-  
   public static Ljava/lang/Object; $plus$plus$colon(Lscala/collection/TraversableLike; $this, Lscala/collection/TraversableOnce; that, Lscala/collection/generic/CanBuildFrom; bf) {
     Lscala/collection/mutable/Builder; b = bf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)($this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
     if (that.<instanceof>(Lscala/collection/IndexedSeqLike;))

@@ -55,10 +55,6 @@ public abstract class Lscala/collection/mutable/SetLike$class; {
     return $this.(Lscala/collection/mutable/SetLike;::clone()Lscala/collection/mutable/Set;)().(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(xs.(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)()).<cast>(Lscala/collection/mutable/Set;);
   }
   
-  public static Lscala/collection/mutable/Set; $plus$plus(Lscala/collection/mutable/SetLike; $this, Lscala/collection/TraversableOnce; xs) {
-    return $this.(Lscala/collection/mutable/SetLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/mutable/Set;)(xs);
-  }
-  
   public static Lscala/collection/mutable/Set; $minus(Lscala/collection/mutable/SetLike; $this, Ljava/lang/Object; elem) {
     return $this.(Lscala/collection/mutable/SetLike;::clone()Lscala/collection/mutable/Set;)().(Lscala/collection/mutable/SetLike;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/SetLike;)(elem).<cast>(Lscala/collection/mutable/Set;);
   }
@@ -69,10 +65,6 @@ public abstract class Lscala/collection/mutable/SetLike$class; {
   
   public static Lscala/collection/mutable/Set; $minus$minus(Lscala/collection/mutable/SetLike; $this, Lscala/collection/GenTraversableOnce; xs) {
     return $this.(Lscala/collection/mutable/SetLike;::clone()Lscala/collection/mutable/Set;)().(Lscala/collection/generic/Shrinkable;::$minus$minus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Shrinkable;)(xs.(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)()).<cast>(Lscala/collection/mutable/Set;);
-  }
-  
-  public static Lscala/collection/mutable/Set; $minus$minus(Lscala/collection/mutable/SetLike; $this, Lscala/collection/TraversableOnce; xs) {
-    return $this.(Lscala/collection/mutable/SetLike;::$minus$minus(Lscala/collection/GenTraversableOnce;)Lscala/collection/mutable/Set;)(xs);
   }
   
   public static V; $less$less(Lscala/collection/mutable/SetLike; $this, Lscala/collection/script/Message; cmd) {

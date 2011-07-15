@@ -8,40 +8,20 @@ public abstract class Lscala/collection/GenSetLike$class; {
     return $this.(Lscala/collection/GenTraversableLike;::filter(Lscala/Function1;)Ljava/lang/Object;)(that);
   }
   
-  public static Ljava/lang/Object; intersect(Lscala/collection/GenSetLike; $this, Lscala/collection/Set; that) {
-    return $this.(Lscala/collection/GenSetLike;::intersect(Lscala/collection/GenSet;)Ljava/lang/Object;)(that);
-  }
-  
   public static Ljava/lang/Object; $amp(Lscala/collection/GenSetLike; $this, Lscala/collection/GenSet; that) {
     return $this.(Lscala/collection/GenSetLike;::intersect(Lscala/collection/GenSet;)Ljava/lang/Object;)(that);
-  }
-  
-  public static Ljava/lang/Object; $amp(Lscala/collection/GenSetLike; $this, Lscala/collection/Set; that) {
-    return $this.(Lscala/collection/GenSetLike;::$amp(Lscala/collection/GenSet;)Ljava/lang/Object;)(that);
   }
   
   public static Ljava/lang/Object; $bar(Lscala/collection/GenSetLike; $this, Lscala/collection/GenSet; that) {
     return $this.(Lscala/collection/GenSetLike;::union(Lscala/collection/GenSet;)Ljava/lang/Object;)(that);
   }
   
-  public static Ljava/lang/Object; $bar(Lscala/collection/GenSetLike; $this, Lscala/collection/Set; that) {
-    return $this.(Lscala/collection/GenSetLike;::$bar(Lscala/collection/GenSet;)Ljava/lang/Object;)(that);
-  }
-  
   public static Ljava/lang/Object; $amp$tilde(Lscala/collection/GenSetLike; $this, Lscala/collection/GenSet; that) {
     return $this.(Lscala/collection/GenSetLike;::diff(Lscala/collection/GenSet;)Ljava/lang/Object;)(that);
   }
   
-  public static Ljava/lang/Object; $amp$tilde(Lscala/collection/GenSetLike; $this, Lscala/collection/Set; that) {
-    return $this.(Lscala/collection/GenSetLike;::$amp$tilde(Lscala/collection/GenSet;)Ljava/lang/Object;)(that);
-  }
-  
   public static Z; subsetOf(Lscala/collection/GenSetLike; $this, Lscala/collection/GenSet; that) {
     return $this.(Lscala/collection/GenTraversableOnce;::forall(Lscala/Function1;)Z;)(that);
-  }
-  
-  public static Z; subsetOf(Lscala/collection/GenSetLike; $this, Lscala/collection/Set; that) {
-    return $this.(Lscala/collection/GenSetLike;::subsetOf(Lscala/collection/GenSet;)Z;)(that);
   }
   
   public static Z; equals(Lscala/collection/GenSetLike; $this, Ljava/lang/Object; that) {

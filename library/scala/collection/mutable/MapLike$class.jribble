@@ -30,10 +30,6 @@ public abstract class Lscala/collection/mutable/MapLike$class; {
     return $this.(Lscala/collection/mutable/MapLike;::clone()Lscala/collection/mutable/Map;)().(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(xs.(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)()).<cast>(Lscala/collection/mutable/Map;);
   }
   
-  public static Lscala/collection/mutable/Map; $plus$plus(Lscala/collection/mutable/MapLike; $this, Lscala/collection/TraversableOnce; xs) {
-    return $this.(Lscala/collection/mutable/MapLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/mutable/Map;)(xs);
-  }
-  
   public static Lscala/Option; remove(Lscala/collection/mutable/MapLike; $this, Ljava/lang/Object; key) {
     Lscala/Option; r = $this.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key);
     $this.(Lscala/collection/mutable/MapLike;::$minus$eq(Ljava/lang/Object;)Lscala/collection/mutable/MapLike;)(key);
@@ -101,10 +97,6 @@ public abstract class Lscala/collection/mutable/MapLike$class; {
   
   public static Lscala/collection/mutable/Map; $minus$minus(Lscala/collection/mutable/MapLike; $this, Lscala/collection/GenTraversableOnce; xs) {
     return $this.(Lscala/collection/mutable/MapLike;::clone()Lscala/collection/mutable/Map;)().(Lscala/collection/generic/Shrinkable;::$minus$minus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Shrinkable;)(xs.(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)()).<cast>(Lscala/collection/mutable/Map;);
-  }
-  
-  public static Lscala/collection/mutable/Map; $minus$minus(Lscala/collection/mutable/MapLike; $this, Lscala/collection/TraversableOnce; xs) {
-    return $this.(Lscala/collection/mutable/MapLike;::$minus$minus(Lscala/collection/GenTraversableOnce;)Lscala/collection/mutable/Map;)(xs);
   }
   
   public static V; $init$(Lscala/collection/mutable/MapLike; $this) {
