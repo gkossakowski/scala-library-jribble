@@ -20,56 +20,56 @@ public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; impl
   public Ljava/lang/Class; anyValClass(Ljava/lang/Object; value) {
     Ljava/lang/Object; temp1 = value;
     Ljava/lang/Class; $1$;
-    if (temp1.<instanceof>(B;))
+    if (temp1.<instanceof>(Ljava/lang/Byte;))
       {
         $1$ = Ljava/lang/Byte;.TYPE;
       }
     else
       {
         Ljava/lang/Class; $2$;
-        if (temp1.<instanceof>(S;))
+        if (temp1.<instanceof>(Ljava/lang/Short;))
           {
             $2$ = Ljava/lang/Short;.TYPE;
           }
         else
           {
             Ljava/lang/Class; $3$;
-            if (temp1.<instanceof>(C;))
+            if (temp1.<instanceof>(Ljava/lang/Character;))
               {
                 $3$ = Ljava/lang/Character;.TYPE;
               }
             else
               {
                 Ljava/lang/Class; $4$;
-                if (temp1.<instanceof>(I;))
+                if (temp1.<instanceof>(Ljava/lang/Integer;))
                   {
                     $4$ = Ljava/lang/Integer;.TYPE;
                   }
                 else
                   {
                     Ljava/lang/Class; $5$;
-                    if (temp1.<instanceof>(J;))
+                    if (temp1.<instanceof>(Ljava/lang/Long;))
                       {
                         $5$ = Ljava/lang/Long;.TYPE;
                       }
                     else
                       {
                         Ljava/lang/Class; $6$;
-                        if (temp1.<instanceof>(F;))
+                        if (temp1.<instanceof>(Ljava/lang/Float;))
                           {
                             $6$ = Ljava/lang/Float;.TYPE;
                           }
                         else
                           {
                             Ljava/lang/Class; $7$;
-                            if (temp1.<instanceof>(D;))
+                            if (temp1.<instanceof>(Ljava/lang/Double;))
                               {
                                 $7$ = Ljava/lang/Double;.TYPE;
                               }
                             else
                               {
                                 Ljava/lang/Class; $8$;
-                                if (temp1.<instanceof>(Z;))
+                                if (temp1.<instanceof>(Ljava/lang/Boolean;))
                                   {
                                     $8$ = Ljava/lang/Boolean;.TYPE;
                                   }
