@@ -1,36 +1,29 @@
-public final class Lscala/xml/Text$; extends Lscala/runtime/AbstractFunction1; implements Lscala/ScalaObject;, Lscala/Serializable; {
+public final class Lscala/xml/Text$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
   public static Lscala/xml/Text$; MODULE$ = new (Lscala/xml/Text$;::this()V;)();
   
-  public final Ljava/lang/String; toString() {
-    return "Text";
+  public Lscala/xml/Text; apply(Ljava/lang/String; data) {
+    return (new (Lscala/xml/Text;::this(Ljava/lang/String;)V;)(data));
   }
   
-  public Lscala/Option; unapply(Lscala/xml/Text; x$0) {
-    Lscala/Option; $2$;
-    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+  public Lscala/Option; unapply(Ljava/lang/Object; other) {
+    Ljava/lang/Object; temp1 = other;
+    Lscala/Option; $1$;
+    if (temp1.<instanceof>(Lscala/xml/Text;))
       {
-        $2$ = Lscala/None$;.MODULE$;
+        $1$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(temp1.<cast>(Lscala/xml/Text;).(Lscala/xml/Atom;::data()Ljava/lang/Object;)()));
       }
     else
       {
-        $2$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/xml/Text;::_data()Ljava/lang/String;)()));
+        $1$ = Lscala/None$;.MODULE$;
       }
-    return $2$;
-  }
-  
-  public Lscala/xml/Text; apply(Ljava/lang/String; _data) {
-    return (new (Lscala/xml/Text;::this(Ljava/lang/String;)V;)(_data));
+    return $1$;
   }
   
   protected Ljava/lang/Object; readResolve() {
     return Lscala/xml/Text$;.MODULE$;
   }
   
-  public Ljava/lang/Object; apply(Ljava/lang/Object; v1) {
-    return this.(Lscala/xml/Text$;::apply(Ljava/lang/String;)Lscala/xml/Text;)(v1.<cast>(Ljava/lang/String;));
-  }
-  
   public this() {
-    (Lscala/runtime/AbstractFunction1;::super()V;)();
+    (Ljava/lang/Object;::super()V;)();
   }
 }

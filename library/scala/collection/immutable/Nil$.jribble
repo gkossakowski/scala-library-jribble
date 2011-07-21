@@ -16,9 +16,9 @@ public final class Lscala/collection/immutable/Nil$; extends Lscala/collection/i
   public Z; equals(Ljava/lang/Object; that) {
     Ljava/lang/Object; temp21 = that;
     Z; $15$;
-    if (temp21.<instanceof>(Lscala/collection/Seq;))
+    if (temp21.<instanceof>(Lscala/collection/GenSeq;))
       {
-        $15$ = temp21.<cast>(Lscala/collection/Seq;).(Lscala/collection/IterableLike;::isEmpty()Z;)();
+        $15$ = temp21.<cast>(Lscala/collection/GenSeq;).(Lscala/collection/GenIterableLike;::isEmpty()Z;)();
       }
     else
       {

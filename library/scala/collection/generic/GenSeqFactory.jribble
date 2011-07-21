@@ -1,5 +1,9 @@
 public abstract class Lscala/collection/generic/GenSeqFactory; extends Lscala/collection/generic/GenTraversableFactory; implements Lscala/ScalaObject; {
   
+  public Lscala/Some; unapplySeq(Lscala/collection/GenSeq; x) {
+    return (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x));
+  }
+  
   public this() {
     (Lscala/collection/generic/GenTraversableFactory;::super()V;)();
   }

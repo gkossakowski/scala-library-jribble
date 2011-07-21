@@ -31,6 +31,10 @@ public abstract class Lscala/collection/SetLike$class; {
     return elems.(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::$div$colon(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(x$1, (new (Lscala/collection/SetLike$$anonfun$$plus$plus$1;::this(Lscala/collection/SetLike;)V;)($this))).<cast>(Lscala/collection/Set;);
   }
   
+  public static Lscala/collection/Set; $plus$plus(Lscala/collection/SetLike; $this, Lscala/collection/TraversableOnce; elems) {
+    return $this.(Lscala/collection/SetLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/Set;)(elems);
+  }
+  
   public static Z; isEmpty(Lscala/collection/SetLike; $this) {
     return ($this.(Lscala/collection/TraversableOnce;::size()I;)() == 0);
   }
@@ -43,8 +47,16 @@ public abstract class Lscala/collection/SetLike$class; {
     return $this.(Lscala/collection/SetLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/Set;)(that);
   }
   
+  public static Lscala/collection/Set; union(Lscala/collection/SetLike; $this, Lscala/collection/Set; that) {
+    return $this.(Lscala/collection/SetLike;::union(Lscala/collection/GenSet;)Lscala/collection/Set;)(that);
+  }
+  
   public static Lscala/collection/Set; diff(Lscala/collection/SetLike; $this, Lscala/collection/GenSet; that) {
     return $this.(Lscala/collection/generic/Subtractable;::$minus$minus(Lscala/collection/GenTraversableOnce;)Lscala/collection/generic/Subtractable;)(that).<cast>(Lscala/collection/Set;);
+  }
+  
+  public static Lscala/collection/Set; diff(Lscala/collection/SetLike; $this, Lscala/collection/Set; that) {
+    return $this.(Lscala/collection/SetLike;::diff(Lscala/collection/GenSet;)Lscala/collection/Set;)(that);
   }
   
   public static Lscala/collection/Iterator; subsets(Lscala/collection/SetLike; $this, I; len) {

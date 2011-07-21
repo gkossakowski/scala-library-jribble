@@ -46,6 +46,10 @@ public class Lscala/collection/mutable/ListMap; extends Ljava/lang/Object; imple
     return Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::$plus$plus(Lscala/collection/mutable/MapLike;Lscala/collection/GenTraversableOnce;)Lscala/collection/mutable/Map;)(this, xs);
   }
   
+  public Lscala/collection/mutable/Map; $plus$plus(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::$plus$plus(Lscala/collection/mutable/MapLike;Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Map;)(this, xs);
+  }
+  
   public Lscala/Option; remove(Ljava/lang/Object; key) {
     return Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::remove(Lscala/collection/mutable/MapLike;Ljava/lang/Object;)Lscala/Option;)(this, key);
   }
@@ -84,6 +88,10 @@ public class Lscala/collection/mutable/ListMap; extends Ljava/lang/Object; imple
   
   public Lscala/collection/mutable/Map; $minus$minus(Lscala/collection/GenTraversableOnce; xs) {
     return Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::$minus$minus(Lscala/collection/mutable/MapLike;Lscala/collection/GenTraversableOnce;)Lscala/collection/mutable/Map;)(this, xs);
+  }
+  
+  public Lscala/collection/mutable/Map; $minus$minus(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::$minus$minus(Lscala/collection/mutable/MapLike;Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Map;)(this, xs);
   }
   
   public final Ljava/lang/Object; scala$collection$mutable$Cloneable$$super$clone() {
@@ -182,6 +190,10 @@ public class Lscala/collection/mutable/ListMap; extends Ljava/lang/Object; imple
     return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::mapElements(Lscala/collection/MapLike;Lscala/Function1;)Lscala/collection/Map;)(this, f);
   }
   
+  public Lscala/collection/Map; $plus$plus(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::$plus$plus(Lscala/collection/MapLike;Lscala/collection/TraversableOnce;)Lscala/collection/Map;)(this, xs);
+  }
+  
   public Lscala/collection/Map; filterNot(Lscala/Function1; p) {
     return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::filterNot(Lscala/collection/MapLike;Lscala/Function1;)Lscala/collection/Map;)(this, p);
   }
@@ -204,6 +216,10 @@ public class Lscala/collection/mutable/ListMap; extends Ljava/lang/Object; imple
   
   public Ljava/lang/String; toString() {
     return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::toString(Lscala/collection/MapLike;)Ljava/lang/String;)(this);
+  }
+  
+  public Lscala/collection/generic/Subtractable; $minus$minus(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/generic/Subtractable$class;.(Lscala/collection/generic/Subtractable$class;::$minus$minus(Lscala/collection/generic/Subtractable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Subtractable;)(this, xs);
   }
   
   public Lscala/PartialFunction; orElse(Lscala/PartialFunction; that) {
@@ -558,6 +574,10 @@ public class Lscala/collection/mutable/ListMap; extends Ljava/lang/Object; imple
     return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::toIterable(Lscala/collection/IterableLike;)Lscala/collection/Iterable;)(this);
   }
   
+  public Lscala/collection/Iterator; toIterator() {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::toIterator(Lscala/collection/IterableLike;)Lscala/collection/Iterator;)(this);
+  }
+  
   public Ljava/lang/Object; head() {
     return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::head(Lscala/collection/IterableLike;)Ljava/lang/Object;)(this);
   }
@@ -606,8 +626,16 @@ public class Lscala/collection/mutable/ListMap; extends Ljava/lang/Object; imple
     return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::zip(Lscala/collection/IterableLike;Lscala/collection/GenIterable;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, that, bf);
   }
   
+  public Ljava/lang/Object; zip(Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::zip(Lscala/collection/IterableLike;Lscala/collection/Iterable;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, that, bf);
+  }
+  
   public Ljava/lang/Object; zipAll(Lscala/collection/GenIterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf) {
     return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::zipAll(Lscala/collection/IterableLike;Lscala/collection/GenIterable;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, that, thisElem, thatElem, bf);
+  }
+  
+  public Ljava/lang/Object; zipAll(Lscala/collection/Iterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::zipAll(Lscala/collection/IterableLike;Lscala/collection/Iterable;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, that, thisElem, thatElem, bf);
   }
   
   public Ljava/lang/Object; zipWithIndex(Lscala/collection/generic/CanBuildFrom; bf) {
@@ -616,6 +644,10 @@ public class Lscala/collection/mutable/ListMap; extends Ljava/lang/Object; imple
   
   public Z; sameElements(Lscala/collection/GenIterable; that) {
     return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::sameElements(Lscala/collection/IterableLike;Lscala/collection/GenIterable;)Z;)(this, that);
+  }
+  
+  public Z; sameElements(Lscala/collection/Iterable; that) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::sameElements(Lscala/collection/IterableLike;Lscala/collection/Iterable;)Z;)(this, that);
   }
   
   public Lscala/collection/immutable/Stream; toStream() {
@@ -650,6 +682,22 @@ public class Lscala/collection/mutable/ListMap; extends Ljava/lang/Object; imple
     return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::projection(Lscala/collection/IterableLike;)Lscala/collection/IterableView;)(this);
   }
   
+  public final Lscala/collection/Traversable; scala$collection$Traversable$$super$flatten(Lscala/Function1; asTraversable) {
+    return Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::flatten(Lscala/collection/generic/GenericTraversableTemplate;Lscala/Function1;)Lscala/collection/GenTraversable;)(this, asTraversable).<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public final Lscala/collection/Traversable; scala$collection$Traversable$$super$transpose(Lscala/Function1; asTraversable) {
+    return Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::transpose(Lscala/collection/generic/GenericTraversableTemplate;Lscala/Function1;)Lscala/collection/GenTraversable;)(this, asTraversable).<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public Lscala/collection/Traversable; flatten(Lscala/Function1; asTraversable) {
+    return Lscala/collection/Traversable$class;.(Lscala/collection/Traversable$class;::flatten(Lscala/collection/Traversable;Lscala/Function1;)Lscala/collection/Traversable;)(this, asTraversable);
+  }
+  
+  public Lscala/collection/Traversable; transpose(Lscala/Function1; asTraversable) {
+    return Lscala/collection/Traversable$class;.(Lscala/collection/Traversable$class;::transpose(Lscala/collection/Traversable;Lscala/Function1;)Lscala/collection/Traversable;)(this, asTraversable);
+  }
+  
   public Lscala/collection/mutable/Builder; genericBuilder() {
     return Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::genericBuilder(Lscala/collection/generic/GenericTraversableTemplate;)Lscala/collection/mutable/Builder;)(this);
   }
@@ -680,6 +728,10 @@ public class Lscala/collection/mutable/ListMap; extends Ljava/lang/Object; imple
   
   public Ljava/lang/Object; $plus$plus(Lscala/collection/GenTraversableOnce; that, Lscala/collection/generic/CanBuildFrom; bf) {
     return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$plus$plus(Lscala/collection/TraversableLike;Lscala/collection/GenTraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, that, bf);
+  }
+  
+  public Ljava/lang/Object; $plus$plus(Lscala/collection/TraversableOnce; that, Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$plus$plus(Lscala/collection/TraversableLike;Lscala/collection/TraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, that, bf);
   }
   
   public Ljava/lang/Object; $plus$plus$colon(Lscala/collection/TraversableOnce; that, Lscala/collection/generic/CanBuildFrom; bf) {
@@ -776,10 +828,6 @@ public class Lscala/collection/mutable/ListMap; extends Ljava/lang/Object; imple
   
   public Lscala/collection/Traversable; toTraversable() {
     return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::toTraversable(Lscala/collection/TraversableLike;)Lscala/collection/Traversable;)(this);
-  }
-  
-  public Lscala/collection/Iterator; toIterator() {
-    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::toIterator(Lscala/collection/TraversableLike;)Lscala/collection/Iterator;)(this);
   }
   
   public Lscala/collection/generic/FilterMonadic; withFilter(Lscala/Function1; p) {

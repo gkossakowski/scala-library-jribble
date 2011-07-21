@@ -22,6 +22,8 @@ public interface Lscala/collection/SetLike; extends Lscala/collection/IterableLi
   
   public Lscala/collection/Set; $plus$plus(Lscala/collection/GenTraversableOnce; elems);
   
+  public Lscala/collection/Set; $plus$plus(Lscala/collection/TraversableOnce; elems);
+  
   public Lscala/collection/Set; $minus(Ljava/lang/Object; elem);
   
   public Z; isEmpty();
@@ -30,7 +32,11 @@ public interface Lscala/collection/SetLike; extends Lscala/collection/IterableLi
   
   public Lscala/collection/Set; union(Lscala/collection/GenSet; that);
   
+  public Lscala/collection/Set; union(Lscala/collection/Set; that);
+  
   public Lscala/collection/Set; diff(Lscala/collection/GenSet; that);
+  
+  public Lscala/collection/Set; diff(Lscala/collection/Set; that);
   
   public Lscala/collection/Iterator; subsets(I; len);
   

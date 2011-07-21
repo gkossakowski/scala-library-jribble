@@ -8,6 +8,14 @@ public abstract class Lscala/collection/Traversable$class; {
     return $this;
   }
   
+  public static Lscala/collection/Traversable; flatten(Lscala/collection/Traversable; $this, Lscala/Function1; asTraversable) {
+    return $this.(Lscala/collection/Traversable;::scala$collection$Traversable$$super$flatten(Lscala/Function1;)Lscala/collection/Traversable;)(asTraversable);
+  }
+  
+  public static Lscala/collection/Traversable; transpose(Lscala/collection/Traversable; $this, Lscala/Function1; asTraversable) {
+    return $this.(Lscala/collection/Traversable;::scala$collection$Traversable$$super$transpose(Lscala/Function1;)Lscala/collection/Traversable;)(asTraversable);
+  }
+  
   public static V; $init$(Lscala/collection/Traversable; $this) {
     
   }

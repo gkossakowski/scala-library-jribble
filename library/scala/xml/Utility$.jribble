@@ -564,7 +564,7 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
                       {
                         if ((sb.(Lscala/collection/mutable/StringBuilder;::length()I;)() > 0))
                           {
-                            nb.(Lscala/collection/mutable/ArrayBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ArrayBuffer;)((new (Lscala/xml/Text;::this(Ljava/lang/String;)V;)(sb.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)())));
+                            nb.(Lscala/collection/mutable/ArrayBuffer;::$plus$eq(Ljava/lang/Object;)Lscala/collection/mutable/ArrayBuffer;)(Lscala/xml/Text$;.MODULE$.(Lscala/xml/Text$;::apply(Ljava/lang/String;)Lscala/xml/Text;)(sb.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)()));
                             sb.(Lscala/collection/mutable/StringBuilder;::setLength(I;)V;)(0);
                           }
                         else
@@ -596,7 +596,7 @@ public final class Lscala/xml/Utility$; extends Ljava/lang/Object; implements Ls
     }
     if ((sb.(Lscala/collection/mutable/StringBuilder;::length()I;)() > 0))
       {
-        Lscala/xml/Text; x = (new (Lscala/xml/Text;::this(Ljava/lang/String;)V;)(sb.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)()));
+        Lscala/xml/Text; x = Lscala/xml/Text$;.MODULE$.(Lscala/xml/Text$;::apply(Ljava/lang/String;)Lscala/xml/Text;)(sb.(Lscala/collection/mutable/StringBuilder;::toString()Ljava/lang/String;)());
         Lscala/collection/mutable/ArrayBuffer; $21$;
         if ((nb.(Lscala/collection/mutable/ResizableArray;::length()I;)() == 0))
           {

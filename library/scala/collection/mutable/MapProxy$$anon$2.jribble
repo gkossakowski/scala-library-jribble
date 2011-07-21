@@ -440,6 +440,10 @@ public final class Lscala/collection/mutable/MapProxy$$anon$2; extends Ljava/lan
     Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::update(Lscala/collection/mutable/MapLike;Ljava/lang/Object;Ljava/lang/Object;)V;)(this, key, value);
   }
   
+  public Lscala/collection/mutable/Map; $plus$plus(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::$plus$plus(Lscala/collection/mutable/MapLike;Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Map;)(this, xs);
+  }
+  
   public Lscala/Option; remove(Ljava/lang/Object; key) {
     return Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::remove(Lscala/collection/mutable/MapLike;Ljava/lang/Object;)Lscala/Option;)(this, key);
   }
@@ -478,6 +482,10 @@ public final class Lscala/collection/mutable/MapProxy$$anon$2; extends Ljava/lan
   
   public Lscala/collection/mutable/Map; $minus$minus(Lscala/collection/GenTraversableOnce; xs) {
     return Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::$minus$minus(Lscala/collection/mutable/MapLike;Lscala/collection/GenTraversableOnce;)Lscala/collection/mutable/Map;)(this, xs);
+  }
+  
+  public Lscala/collection/mutable/Map; $minus$minus(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::$minus$minus(Lscala/collection/mutable/MapLike;Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Map;)(this, xs);
   }
   
   public final Ljava/lang/Object; scala$collection$mutable$Cloneable$$super$clone() {
@@ -522,6 +530,14 @@ public final class Lscala/collection/mutable/MapProxy$$anon$2; extends Ljava/lan
   
   public Lscala/collection/Map; mapElements(Lscala/Function1; f) {
     return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::mapElements(Lscala/collection/MapLike;Lscala/Function1;)Lscala/collection/Map;)(this, f);
+  }
+  
+  public Lscala/collection/Map; $plus$plus(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/MapLike$class;.(Lscala/collection/MapLike$class;::$plus$plus(Lscala/collection/MapLike;Lscala/collection/TraversableOnce;)Lscala/collection/Map;)(this, xs);
+  }
+  
+  public Lscala/collection/generic/Subtractable; $minus$minus(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/generic/Subtractable$class;.(Lscala/collection/generic/Subtractable$class;::$minus$minus(Lscala/collection/generic/Subtractable;Lscala/collection/TraversableOnce;)Lscala/collection/generic/Subtractable;)(this, xs);
   }
   
   public Lscala/PartialFunction; orElse(Lscala/PartialFunction; that) {
@@ -840,6 +856,18 @@ public final class Lscala/collection/mutable/MapProxy$$anon$2; extends Ljava/lan
     return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::toCollection(Lscala/collection/IterableLike;Ljava/lang/Object;)Lscala/collection/Iterable;)(this, repr);
   }
   
+  public Ljava/lang/Object; zip(Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::zip(Lscala/collection/IterableLike;Lscala/collection/Iterable;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, that, bf);
+  }
+  
+  public Ljava/lang/Object; zipAll(Lscala/collection/Iterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::zipAll(Lscala/collection/IterableLike;Lscala/collection/Iterable;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, that, thisElem, thatElem, bf);
+  }
+  
+  public Z; sameElements(Lscala/collection/Iterable; that) {
+    return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::sameElements(Lscala/collection/IterableLike;Lscala/collection/Iterable;)Z;)(this, that);
+  }
+  
   public Z; canEqual(Ljava/lang/Object; that) {
     return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::canEqual(Lscala/collection/IterableLike;Ljava/lang/Object;)Z;)(this, that);
   }
@@ -860,6 +888,22 @@ public final class Lscala/collection/mutable/MapProxy$$anon$2; extends Ljava/lan
     return Lscala/collection/IterableLike$class;.(Lscala/collection/IterableLike$class;::projection(Lscala/collection/IterableLike;)Lscala/collection/IterableView;)(this);
   }
   
+  public final Lscala/collection/Traversable; scala$collection$Traversable$$super$flatten(Lscala/Function1; asTraversable) {
+    return Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::flatten(Lscala/collection/generic/GenericTraversableTemplate;Lscala/Function1;)Lscala/collection/GenTraversable;)(this, asTraversable).<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public final Lscala/collection/Traversable; scala$collection$Traversable$$super$transpose(Lscala/Function1; asTraversable) {
+    return Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::transpose(Lscala/collection/generic/GenericTraversableTemplate;Lscala/Function1;)Lscala/collection/GenTraversable;)(this, asTraversable).<cast>(Lscala/collection/Traversable;);
+  }
+  
+  public Lscala/collection/Traversable; flatten(Lscala/Function1; asTraversable) {
+    return Lscala/collection/Traversable$class;.(Lscala/collection/Traversable$class;::flatten(Lscala/collection/Traversable;Lscala/Function1;)Lscala/collection/Traversable;)(this, asTraversable);
+  }
+  
+  public Lscala/collection/Traversable; transpose(Lscala/Function1; asTraversable) {
+    return Lscala/collection/Traversable$class;.(Lscala/collection/Traversable$class;::transpose(Lscala/collection/Traversable;Lscala/Function1;)Lscala/collection/Traversable;)(this, asTraversable);
+  }
+  
   public Lscala/collection/mutable/Builder; genericBuilder() {
     return Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::genericBuilder(Lscala/collection/generic/GenericTraversableTemplate;)Lscala/collection/mutable/Builder;)(this);
   }
@@ -878,6 +922,10 @@ public final class Lscala/collection/mutable/MapProxy$$anon$2; extends Ljava/lan
   
   public Lscala/collection/GenTraversable; transpose(Lscala/Function1; asTraversable) {
     return Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::transpose(Lscala/collection/generic/GenericTraversableTemplate;Lscala/Function1;)Lscala/collection/GenTraversable;)(this, asTraversable);
+  }
+  
+  public Ljava/lang/Object; $plus$plus(Lscala/collection/TraversableOnce; that, Lscala/collection/generic/CanBuildFrom; bf) {
+    return Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$plus$plus(Lscala/collection/TraversableLike;Lscala/collection/TraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(this, that, bf);
   }
   
   public Ljava/lang/Object; $plus$plus$colon(Lscala/collection/TraversableOnce; that, Lscala/collection/generic/CanBuildFrom; bf) {

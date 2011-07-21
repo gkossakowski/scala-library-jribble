@@ -29,6 +29,10 @@ public abstract class Lscala/collection/immutable/SortedMap$class; {
     return xs.(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::$div$colon(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(x$1, (new (Lscala/collection/immutable/SortedMap$$anonfun$$plus$plus$1;::this(Lscala/collection/immutable/SortedMap;)V;)($this))).<cast>(Lscala/collection/immutable/SortedMap;);
   }
   
+  public static Lscala/collection/immutable/SortedMap; $plus$plus(Lscala/collection/immutable/SortedMap; $this, Lscala/collection/TraversableOnce; xs) {
+    return $this.(Lscala/collection/immutable/SortedMap;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/immutable/SortedMap;)(xs);
+  }
+  
   public static V; $init$(Lscala/collection/immutable/SortedMap; $this) {
     
   }

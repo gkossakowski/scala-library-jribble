@@ -66,12 +66,21 @@ public class Lscala/collection/immutable/HashSet$HashTrieSet; extends Lscala/col
     Lscala/collection/immutable/HashSet; $10$;
     if (((this.(Lscala/collection/immutable/HashSet$HashTrieSet;::bitmap()I;)() & mask) != 0))
       {
-        Lscala/collection/immutable/HashSet;[ elemsNew = new Lscala/collection/immutable/HashSet;[this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)().<length>];
-        Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)(), 0, elemsNew, 0, this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)().<length>);
         Lscala/collection/immutable/HashSet; sub = this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)()[offset];
         Lscala/collection/immutable/HashSet; subNew = sub.(Lscala/collection/immutable/HashSet;::updated0(Ljava/lang/Object;I;I;)Lscala/collection/immutable/HashSet;)(key, hash, (level + 5));
-        elemsNew[offset] = subNew;
-        $10$ = (new (Lscala/collection/immutable/HashSet$HashTrieSet;::this(I;Lscala/collection/immutable/HashSet;[I;)V;)(this.(Lscala/collection/immutable/HashSet$HashTrieSet;::bitmap()I;)(), elemsNew, (this.(Lscala/collection/immutable/HashSet$HashTrieSet;::size()I;)() + (subNew.(Lscala/collection/immutable/HashSet;::size()I;)() - sub.(Lscala/collection/immutable/HashSet;::size()I;)()))));
+        Lscala/collection/immutable/HashSet; $11$;
+        if ((sub == subNew))
+          {
+            $11$ = this;
+          }
+        else
+          {
+            Lscala/collection/immutable/HashSet;[ elemsNew = new Lscala/collection/immutable/HashSet;[this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)().<length>];
+            Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)(), 0, elemsNew, 0, this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)().<length>);
+            elemsNew[offset] = subNew;
+            $11$ = (new (Lscala/collection/immutable/HashSet$HashTrieSet;::this(I;Lscala/collection/immutable/HashSet;[I;)V;)(this.(Lscala/collection/immutable/HashSet$HashTrieSet;::bitmap()I;)(), elemsNew, (this.(Lscala/collection/immutable/HashSet$HashTrieSet;::size()I;)() + (subNew.(Lscala/collection/immutable/HashSet;::size()I;)() - sub.(Lscala/collection/immutable/HashSet;::size()I;)()))));
+          }
+        $10$ = $11$;
       }
     else
       {
@@ -89,45 +98,54 @@ public class Lscala/collection/immutable/HashSet$HashTrieSet; extends Lscala/col
     I; index = ((hash >> level) & 31);
     I; mask = (1 << index);
     I; offset = Ljava/lang/Integer;.(Ljava/lang/Integer;::bitCount(I;)I;)((this.(Lscala/collection/immutable/HashSet$HashTrieSet;::bitmap()I;)() & (mask - 1)));
-    Lscala/collection/immutable/HashSet; $11$;
+    Lscala/collection/immutable/HashSet; $12$;
     if (((this.(Lscala/collection/immutable/HashSet$HashTrieSet;::bitmap()I;)() & mask) != 0))
       {
         Lscala/collection/immutable/HashSet; sub = this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)()[offset];
         Lscala/collection/immutable/HashSet; subNew = sub.(Lscala/collection/immutable/HashSet;::removed0(Ljava/lang/Object;I;I;)Lscala/collection/immutable/HashSet;)(key, hash, (level + 5));
-        Lscala/collection/immutable/HashSet; $12$;
-        if (subNew.(Lscala/collection/SetLike;::isEmpty()Z;)())
+        Lscala/collection/immutable/HashSet; $13$;
+        if ((sub == subNew))
           {
-            I; bitmapNew = (this.(Lscala/collection/immutable/HashSet$HashTrieSet;::bitmap()I;)() ^ mask);
-            Lscala/collection/immutable/HashSet; $13$;
-            if ((bitmapNew != 0))
-              {
-                Lscala/collection/immutable/HashSet;[ elemsNew = new Lscala/collection/immutable/HashSet;[(this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)().<length> - 1)];
-                Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)(), 0, elemsNew, 0, offset);
-                Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)(), (offset + 1), elemsNew, offset, ((this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)().<length> - offset) - 1));
-                I; sizeNew = (this.(Lscala/collection/immutable/HashSet$HashTrieSet;::size()I;)() - sub.(Lscala/collection/immutable/HashSet;::size()I;)());
-                $13$ = (new (Lscala/collection/immutable/HashSet$HashTrieSet;::this(I;Lscala/collection/immutable/HashSet;[I;)V;)(bitmapNew, elemsNew, sizeNew));
-              }
-            else
-              {
-                $13$ = Lscala/collection/immutable/HashSet$;.MODULE$.(Lscala/collection/immutable/HashSet$;::empty()Lscala/collection/immutable/HashSet;)();
-              }
-            $12$ = $13$;
+            $13$ = this;
           }
         else
           {
-            Lscala/collection/immutable/HashSet;[ elemsNew = new Lscala/collection/immutable/HashSet;[this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)().<length>];
-            Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)(), 0, elemsNew, 0, this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)().<length>);
-            elemsNew[offset] = subNew;
-            I; sizeNew = (this.(Lscala/collection/immutable/HashSet$HashTrieSet;::size()I;)() + (subNew.(Lscala/collection/immutable/HashSet;::size()I;)() - sub.(Lscala/collection/immutable/HashSet;::size()I;)()));
-            $12$ = (new (Lscala/collection/immutable/HashSet$HashTrieSet;::this(I;Lscala/collection/immutable/HashSet;[I;)V;)(this.(Lscala/collection/immutable/HashSet$HashTrieSet;::bitmap()I;)(), elemsNew, sizeNew));
+            Lscala/collection/immutable/HashSet; $14$;
+            if (subNew.(Lscala/collection/SetLike;::isEmpty()Z;)())
+              {
+                I; bitmapNew = (this.(Lscala/collection/immutable/HashSet$HashTrieSet;::bitmap()I;)() ^ mask);
+                Lscala/collection/immutable/HashSet; $15$;
+                if ((bitmapNew != 0))
+                  {
+                    Lscala/collection/immutable/HashSet;[ elemsNew = new Lscala/collection/immutable/HashSet;[(this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)().<length> - 1)];
+                    Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)(), 0, elemsNew, 0, offset);
+                    Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)(), (offset + 1), elemsNew, offset, ((this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)().<length> - offset) - 1));
+                    I; sizeNew = (this.(Lscala/collection/immutable/HashSet$HashTrieSet;::size()I;)() - sub.(Lscala/collection/immutable/HashSet;::size()I;)());
+                    $15$ = (new (Lscala/collection/immutable/HashSet$HashTrieSet;::this(I;Lscala/collection/immutable/HashSet;[I;)V;)(bitmapNew, elemsNew, sizeNew));
+                  }
+                else
+                  {
+                    $15$ = Lscala/collection/immutable/HashSet$;.MODULE$.(Lscala/collection/immutable/HashSet$;::empty()Lscala/collection/immutable/HashSet;)();
+                  }
+                $14$ = $15$;
+              }
+            else
+              {
+                Lscala/collection/immutable/HashSet;[ elemsNew = new Lscala/collection/immutable/HashSet;[this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)().<length>];
+                Lscala/Array$;.MODULE$.(Lscala/Array$;::copy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)(), 0, elemsNew, 0, this.(Lscala/collection/immutable/HashSet$HashTrieSet;::elems()Lscala/collection/immutable/HashSet;[)().<length>);
+                elemsNew[offset] = subNew;
+                I; sizeNew = (this.(Lscala/collection/immutable/HashSet$HashTrieSet;::size()I;)() + (subNew.(Lscala/collection/immutable/HashSet;::size()I;)() - sub.(Lscala/collection/immutable/HashSet;::size()I;)()));
+                $14$ = (new (Lscala/collection/immutable/HashSet$HashTrieSet;::this(I;Lscala/collection/immutable/HashSet;[I;)V;)(this.(Lscala/collection/immutable/HashSet$HashTrieSet;::bitmap()I;)(), elemsNew, sizeNew));
+              }
+            $13$ = $14$;
           }
-        $11$ = $12$;
+        $12$ = $13$;
       }
     else
       {
-        $11$ = this;
+        $12$ = this;
       }
-    return $11$;
+    return $12$;
   }
   
   public Lscala/collection/immutable/TrieIterator; iterator() {

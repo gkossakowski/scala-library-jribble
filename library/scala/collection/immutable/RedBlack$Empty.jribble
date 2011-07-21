@@ -1,0 +1,78 @@
+public class Lscala/collection/immutable/RedBlack$Empty; extends Lscala/collection/immutable/RedBlack$Tree; implements Lscala/ScalaObject; {
+  
+  public Z; isEmpty() {
+    return true;
+  }
+  
+  public Z; isBlack() {
+    return true;
+  }
+  
+  public Lscala/collection/immutable/RedBlack$Tree; lookup(Ljava/lang/Object; k) {
+    return this;
+  }
+  
+  public Lscala/collection/immutable/RedBlack$Tree; upd(Ljava/lang/Object; k, Ljava/lang/Object; v) {
+    return (new (Lscala/collection/immutable/RedBlack$RedTree;::this(Lscala/collection/immutable/RedBlack;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/RedBlack$Tree;Lscala/collection/immutable/RedBlack$Tree;)V;)(this.(Lscala/collection/immutable/RedBlack$Empty;::scala$collection$immutable$RedBlack$Empty$$$outer()Lscala/collection/immutable/RedBlack;)(), k, v, this.(Lscala/collection/immutable/RedBlack$Empty;::scala$collection$immutable$RedBlack$Empty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::Empty()Lscala/collection/immutable/RedBlack$Empty;)(), this.(Lscala/collection/immutable/RedBlack$Empty;::scala$collection$immutable$RedBlack$Empty$$$outer()Lscala/collection/immutable/RedBlack;)().(Lscala/collection/immutable/RedBlack;::Empty()Lscala/collection/immutable/RedBlack$Empty;)()));
+  }
+  
+  public Lscala/collection/immutable/RedBlack$Tree; del(Ljava/lang/Object; k) {
+    return this;
+  }
+  
+  public Lscala/collection/immutable/RedBlack$NonEmpty; smallest() {
+    throw (new (Ljava/util/NoSuchElementException;::this(Ljava/lang/String;)V;)("empty map"));
+  }
+  
+  public Lscala/collection/Iterator; iterator() {
+    return Lscala/collection/Iterator$;.MODULE$.(Lscala/collection/Iterator$;::empty()Lscala/collection/Iterator;)();
+  }
+  
+  public Lscala/collection/immutable/Stream; toStream() {
+    return Lscala/collection/immutable/Stream$;.MODULE$.(Lscala/collection/immutable/Stream$;::empty()Lscala/collection/immutable/Stream;)();
+  }
+  
+  public V; foreach(Lscala/Function2; f) {
+    
+  }
+  
+  public Lscala/Tuple2; visit(Ljava/lang/Object; input, Lscala/Function3; f) {
+    return (new (Lscala/Tuple2;::this(Ljava/lang/Object;Ljava/lang/Object;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToBoolean(Z;)Ljava/lang/Boolean;)(true), input));
+  }
+  
+  public Lscala/collection/immutable/RedBlack$Empty; rng(Lscala/Option; from, Lscala/Option; until) {
+    return this;
+  }
+  
+  public Lscala/runtime/Nothing$; first() {
+    throw (new (Ljava/util/NoSuchElementException;::this(Ljava/lang/String;)V;)("empty map"));
+  }
+  
+  public Lscala/runtime/Nothing$; last() {
+    throw (new (Ljava/util/NoSuchElementException;::this(Ljava/lang/String;)V;)("empty map"));
+  }
+  
+  public I; count() {
+    return 0;
+  }
+  
+  public Lscala/collection/immutable/RedBlack; scala$collection$immutable$RedBlack$Empty$$$outer() {
+    return this.(Lscala/collection/immutable/RedBlack$Tree;)$outer$u0020;
+  }
+  
+  public Ljava/lang/Object; last() {
+    this.(Lscala/collection/immutable/RedBlack$Empty;::last()Lscala/runtime/Nothing$;)();
+  }
+  
+  public Ljava/lang/Object; first() {
+    this.(Lscala/collection/immutable/RedBlack$Empty;::first()Lscala/runtime/Nothing$;)();
+  }
+  
+  public Lscala/collection/immutable/RedBlack$Tree; rng(Lscala/Option; from, Lscala/Option; until) {
+    return this.(Lscala/collection/immutable/RedBlack$Empty;::rng(Lscala/Option;Lscala/Option;)Lscala/collection/immutable/RedBlack$Empty;)(from, until);
+  }
+  
+  public this(Lscala/collection/immutable/RedBlack; $outer) {
+    (Lscala/collection/immutable/RedBlack$Tree;::super(Lscala/collection/immutable/RedBlack;)V;)($outer);
+  }
+}

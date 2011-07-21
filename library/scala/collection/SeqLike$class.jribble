@@ -179,6 +179,10 @@ public abstract class Lscala/collection/SeqLike$class; {
     return !(j.(Lscala/collection/Iterator;::hasNext()Z;)());
   }
   
+  public static Z; startsWith(Lscala/collection/SeqLike; $this, Lscala/collection/Seq; that, I; offset) {
+    return $this.(Lscala/collection/SeqLike;::startsWith(Lscala/collection/GenSeq;I;)Z;)(that, offset);
+  }
+  
   public static Z; endsWith(Lscala/collection/SeqLike; $this, Lscala/collection/GenSeq; that) {
     Lscala/collection/Iterator; i = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::drop(I;)Lscala/collection/Iterator;)(($this.(Lscala/collection/SeqLike;::length()I;)() - that.(Lscala/collection/GenSeqLike;::length()I;)()));
     Lscala/collection/Iterator; j = that.(Lscala/collection/GenIterableLike;::iterator()Lscala/collection/Iterator;)();
@@ -204,8 +208,16 @@ public abstract class Lscala/collection/SeqLike$class; {
     return !(j.(Lscala/collection/Iterator;::hasNext()Z;)());
   }
   
+  public static Z; endsWith(Lscala/collection/SeqLike; $this, Lscala/collection/Seq; that) {
+    return $this.(Lscala/collection/SeqLike;::endsWith(Lscala/collection/GenSeq;)Z;)(that);
+  }
+  
   public static I; indexOfSlice(Lscala/collection/SeqLike; $this, Lscala/collection/GenSeq; that) {
     return $this.(Lscala/collection/SeqLike;::indexOfSlice(Lscala/collection/GenSeq;I;)I;)(that, 0);
+  }
+  
+  public static I; indexOfSlice(Lscala/collection/SeqLike; $this, Lscala/collection/Seq; that) {
+    return $this.(Lscala/collection/SeqLike;::indexOfSlice(Lscala/collection/GenSeq;)I;)(that);
   }
   
   public static I; indexOfSlice(Lscala/collection/SeqLike; $this, Lscala/collection/GenSeq; that, I; from) {
@@ -246,16 +258,32 @@ public abstract class Lscala/collection/SeqLike$class; {
     return $8$;
   }
   
+  public static I; indexOfSlice(Lscala/collection/SeqLike; $this, Lscala/collection/Seq; that, I; from) {
+    return $this.(Lscala/collection/SeqLike;::indexOfSlice(Lscala/collection/GenSeq;I;)I;)(that, from);
+  }
+  
   public static I; lastIndexOfSlice(Lscala/collection/SeqLike; $this, Lscala/collection/GenSeq; that) {
     return $this.(Lscala/collection/SeqLike;::lastIndexOfSlice(Lscala/collection/GenSeq;I;)I;)(that, $this.(Lscala/collection/SeqLike;::length()I;)());
+  }
+  
+  public static I; lastIndexOfSlice(Lscala/collection/SeqLike; $this, Lscala/collection/Seq; that) {
+    return $this.(Lscala/collection/SeqLike;::lastIndexOfSlice(Lscala/collection/GenSeq;)I;)(that);
   }
   
   public static I; lastIndexOfSlice(Lscala/collection/SeqLike; $this, Lscala/collection/GenSeq; that, I; end) {
     return Lscala/collection/SeqLike$;.MODULE$.(Lscala/collection/SeqLike$;::lastIndexOf(Lscala/collection/Seq;I;I;Lscala/collection/Seq;I;I;I;)I;)($this.(Lscala/collection/SeqLike;::thisCollection()Lscala/collection/Seq;)(), 0, $this.(Lscala/collection/SeqLike;::length()I;)(), that.(Lscala/collection/GenSeq;::seq()Lscala/collection/Seq;)(), 0, that.(Lscala/collection/GenSeqLike;::length()I;)(), end);
   }
   
+  public static I; lastIndexOfSlice(Lscala/collection/SeqLike; $this, Lscala/collection/Seq; that, I; end) {
+    return $this.(Lscala/collection/SeqLike;::lastIndexOfSlice(Lscala/collection/GenSeq;I;)I;)(that, end);
+  }
+  
   public static Z; containsSlice(Lscala/collection/SeqLike; $this, Lscala/collection/GenSeq; that) {
     return ($this.(Lscala/collection/SeqLike;::indexOfSlice(Lscala/collection/GenSeq;)I;)(that) != -1);
+  }
+  
+  public static Z; containsSlice(Lscala/collection/SeqLike; $this, Lscala/collection/Seq; that) {
+    return $this.(Lscala/collection/SeqLike;::containsSlice(Lscala/collection/GenSeq;)Z;)(that);
   }
   
   public static Z; contains(Lscala/collection/SeqLike; $this, Ljava/lang/Object; elem$1) {
@@ -273,11 +301,19 @@ public abstract class Lscala/collection/SeqLike$class; {
     return b$3.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
   }
   
+  public static Ljava/lang/Object; diff(Lscala/collection/SeqLike; $this, Lscala/collection/Seq; that) {
+    return $this.(Lscala/collection/SeqLike;::diff(Lscala/collection/GenSeq;)Ljava/lang/Object;)(that);
+  }
+  
   public static Ljava/lang/Object; intersect(Lscala/collection/SeqLike; $this, Lscala/collection/GenSeq; that) {
     Lscala/collection/mutable/Map; occ$2 = Lscala/collection/SeqLike$class;.(Lscala/collection/SeqLike$class;::occCounts(Lscala/collection/SeqLike;Lscala/collection/Seq;)Lscala/collection/mutable/Map;)($this, that.(Lscala/collection/GenSeq;::seq()Lscala/collection/Seq;)());
     Lscala/collection/mutable/Builder; b$4 = $this.(Lscala/collection/TraversableLike;::newBuilder()Lscala/collection/mutable/Builder;)();
     $this.(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/SeqLike$$anonfun$intersect$1;::this(Lscala/collection/SeqLike;Lscala/collection/mutable/Map;Lscala/collection/mutable/Builder;)V;)($this, occ$2, b$4)));
     return b$4.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public static Ljava/lang/Object; intersect(Lscala/collection/SeqLike; $this, Lscala/collection/Seq; that) {
+    return $this.(Lscala/collection/SeqLike;::intersect(Lscala/collection/GenSeq;)Ljava/lang/Object;)(that);
   }
   
   private static Lscala/collection/mutable/Map; occCounts(Lscala/collection/SeqLike; $this, Lscala/collection/Seq; sq) {
@@ -312,6 +348,10 @@ public abstract class Lscala/collection/SeqLike$class; {
     b.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)(patch.(Lscala/collection/GenSeq;::seq()Lscala/collection/Seq;)());
     b.(Lscala/collection/generic/Growable;::$plus$plus$eq(Lscala/collection/TraversableOnce;)Lscala/collection/generic/Growable;)($this.(Lscala/collection/SeqLike;::toCollection(Ljava/lang/Object;)Lscala/collection/Seq;)(rest).(Lscala/collection/SeqLike;::view()Lscala/collection/SeqView;)().(Lscala/collection/IterableViewLike;::drop(I;)Lscala/collection/IterableView;)(replaced));
     return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
+  }
+  
+  public static Ljava/lang/Object; patch(Lscala/collection/SeqLike; $this, I; from, Lscala/collection/Seq; patch, I; replaced, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/SeqLike;::patch(I;Lscala/collection/GenSeq;I;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(from, patch, replaced, bf);
   }
   
   public static Ljava/lang/Object; updated(Lscala/collection/SeqLike; $this, I; index, Ljava/lang/Object; elem, Lscala/collection/generic/CanBuildFrom; bf) {
@@ -395,6 +435,10 @@ public abstract class Lscala/collection/SeqLike$class; {
       break;
     }
     return (!(i.(Lscala/collection/Iterator;::hasNext()Z;)()) && !(j.(Lscala/collection/Iterator;::hasNext()Z;)()));
+  }
+  
+  public static Z; corresponds(Lscala/collection/SeqLike; $this, Lscala/collection/Seq; that, Lscala/Function2; p) {
+    return $this.(Lscala/collection/SeqLike;::corresponds(Lscala/collection/GenSeq;Lscala/Function2;)Z;)(that, p);
   }
   
   public static Ljava/lang/Object; sortWith(Lscala/collection/SeqLike; $this, Lscala/Function2; lt) {

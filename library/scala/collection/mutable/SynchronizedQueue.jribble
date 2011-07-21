@@ -20,6 +20,14 @@ public class Lscala/collection/mutable/SynchronizedQueue; extends Lscala/collect
     return super.(Lscala/collection/mutable/Queue;::dequeue()Ljava/lang/Object;)();
   }
   
+  public Lscala/Option; dequeueFirst(Lscala/Function1; p) {
+    return super.(Lscala/collection/mutable/Queue;::dequeueFirst(Lscala/Function1;)Lscala/Option;)(p).<cast>(Lscala/Option;);
+  }
+  
+  public Lscala/collection/mutable/Seq; dequeueAll(Lscala/Function1; p) {
+    return super.(Lscala/collection/mutable/Queue;::dequeueAll(Lscala/Function1;)Lscala/collection/mutable/Seq;)(p).<cast>(Lscala/collection/mutable/Seq;);
+  }
+  
   public Ljava/lang/Object; front() {
     return super.(Lscala/collection/mutable/Queue;::front()Ljava/lang/Object;)();
   }

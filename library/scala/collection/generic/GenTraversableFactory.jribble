@@ -2,14 +2,14 @@ public abstract class Lscala/collection/generic/GenTraversableFactory; extends L
   
   protected I; bitmap$0 = 0;
   
-  private Lscala/collection/generic/GenTraversableFactory$reusableCBF; ReusableCBF$u0020;
+  private Lscala/collection/generic/GenTraversableFactory$GenericCanBuildFrom; ReusableCBF$u0020;
   
-  public Lscala/collection/generic/GenTraversableFactory$reusableCBF; ReusableCBF() {
+  public Lscala/collection/generic/GenTraversableFactory$GenericCanBuildFrom; ReusableCBF() {
     if (((this.(Lscala/collection/generic/GenTraversableFactory;)bitmap$0 & 1) == 0))
       {
         if (((this.(Lscala/collection/generic/GenTraversableFactory;)bitmap$0 & 1) == 0))
           {
-            this.(Lscala/collection/generic/GenTraversableFactory;)ReusableCBF$u0020 = (new (Lscala/collection/generic/GenTraversableFactory$reusableCBF;::this(Lscala/collection/generic/GenTraversableFactory;)V;)(this));
+            this.(Lscala/collection/generic/GenTraversableFactory;)ReusableCBF$u0020 = (new (Lscala/collection/generic/GenTraversableFactory$ReusableCBF;::this(Lscala/collection/generic/GenTraversableFactory;)V;)(this));
             this.(Lscala/collection/generic/GenTraversableFactory;)bitmap$0 = (this.(Lscala/collection/generic/GenTraversableFactory;)bitmap$0 | 1);
           }
       }

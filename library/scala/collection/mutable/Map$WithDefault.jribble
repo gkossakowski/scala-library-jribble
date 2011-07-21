@@ -28,6 +28,10 @@ public class Lscala/collection/mutable/Map$WithDefault; extends Lscala/collectio
     return Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::$plus$plus(Lscala/collection/mutable/MapLike;Lscala/collection/GenTraversableOnce;)Lscala/collection/mutable/Map;)(this, xs);
   }
   
+  public Lscala/collection/mutable/Map; $plus$plus(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::$plus$plus(Lscala/collection/mutable/MapLike;Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Map;)(this, xs);
+  }
+  
   public Lscala/Option; remove(Ljava/lang/Object; key) {
     return Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::remove(Lscala/collection/mutable/MapLike;Ljava/lang/Object;)Lscala/Option;)(this, key);
   }
@@ -66,6 +70,10 @@ public class Lscala/collection/mutable/Map$WithDefault; extends Lscala/collectio
   
   public Lscala/collection/mutable/Map; $minus$minus(Lscala/collection/GenTraversableOnce; xs) {
     return Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::$minus$minus(Lscala/collection/mutable/MapLike;Lscala/collection/GenTraversableOnce;)Lscala/collection/mutable/Map;)(this, xs);
+  }
+  
+  public Lscala/collection/mutable/Map; $minus$minus(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/mutable/MapLike$class;.(Lscala/collection/mutable/MapLike$class;::$minus$minus(Lscala/collection/mutable/MapLike;Lscala/collection/TraversableOnce;)Lscala/collection/mutable/Map;)(this, xs);
   }
   
   public final Ljava/lang/Object; scala$collection$mutable$Cloneable$$super$clone() {

@@ -32,6 +32,8 @@ public interface Lscala/collection/GenSeqLike; extends Lscala/collection/GenIter
   
   public Z; startsWith(Lscala/collection/GenSeq; that);
   
+  public Z; startsWith(Lscala/collection/Seq; that);
+  
   public Z; startsWith(Lscala/collection/GenSeq; that, I; offset);
   
   public Z; endsWith(Lscala/collection/GenSeq; that);
@@ -51,6 +53,8 @@ public interface Lscala/collection/GenSeqLike; extends Lscala/collection/GenIter
   public Lscala/collection/GenSeq; toSeq();
   
   public Ljava/lang/Object; union(Lscala/collection/GenSeq; that, Lscala/collection/generic/CanBuildFrom; bf);
+  
+  public Ljava/lang/Object; union(Lscala/collection/Seq; that, Lscala/collection/generic/CanBuildFrom; bf);
   
   public Ljava/lang/Object; diff(Lscala/collection/GenSeq; that);
   
