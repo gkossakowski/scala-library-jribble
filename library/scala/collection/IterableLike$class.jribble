@@ -40,6 +40,10 @@ public abstract class Lscala/collection/IterableLike$class; {
     return $this.(Lscala/collection/IterableLike;::thisCollection()Lscala/collection/Iterable;)();
   }
   
+  public static Lscala/collection/Iterator; toIterator(Lscala/collection/IterableLike; $this) {
+    return $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
+  }
+  
   public static Ljava/lang/Object; head(Lscala/collection/IterableLike; $this) {
     return $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
   }
@@ -254,6 +258,10 @@ public abstract class Lscala/collection/IterableLike$class; {
     return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
   }
   
+  public static Ljava/lang/Object; zip(Lscala/collection/IterableLike; $this, Lscala/collection/Iterable; that, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/IterableLike;::zip(Lscala/collection/GenIterable;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(that, bf);
+  }
+  
   public static Ljava/lang/Object; zipAll(Lscala/collection/IterableLike; $this, Lscala/collection/GenIterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf) {
     Lscala/collection/mutable/Builder; b = bf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)($this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
     Lscala/collection/Iterator; these = $this.(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)();
@@ -297,6 +305,10 @@ public abstract class Lscala/collection/IterableLike$class; {
     return b.(Lscala/collection/mutable/Builder;::result()Ljava/lang/Object;)();
   }
   
+  public static Ljava/lang/Object; zipAll(Lscala/collection/IterableLike; $this, Lscala/collection/Iterable; that, Ljava/lang/Object; thisElem, Ljava/lang/Object; thatElem, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/IterableLike;::zipAll(Lscala/collection/GenIterable;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(that, thisElem, thatElem, bf);
+  }
+  
   public static Ljava/lang/Object; zipWithIndex(Lscala/collection/IterableLike; $this, Lscala/collection/generic/CanBuildFrom; bf) {
     Lscala/collection/mutable/Builder; b$2 = bf.(Lscala/collection/generic/CanBuildFrom;::apply(Ljava/lang/Object;)Lscala/collection/mutable/Builder;)($this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)());
     Lscala/runtime/IntRef; i$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(0));
@@ -327,6 +339,10 @@ public abstract class Lscala/collection/IterableLike$class; {
       break;
     }
     return (!(these.(Lscala/collection/Iterator;::hasNext()Z;)()) && !(those.(Lscala/collection/Iterator;::hasNext()Z;)()));
+  }
+  
+  public static Z; sameElements(Lscala/collection/IterableLike; $this, Lscala/collection/Iterable; that) {
+    return $this.(Lscala/collection/IterableLike;::sameElements(Lscala/collection/GenIterable;)Z;)(that);
   }
   
   public static Lscala/collection/immutable/Stream; toStream(Lscala/collection/IterableLike; $this) {

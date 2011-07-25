@@ -16,6 +16,10 @@ public class Lscala/collection/immutable/Map$WithDefault; extends Lscala/collect
     return Lscala/collection/immutable/MapLike$class;.(Lscala/collection/immutable/MapLike$class;::$plus$plus(Lscala/collection/immutable/MapLike;Lscala/collection/GenTraversableOnce;)Lscala/collection/immutable/Map;)(this, xs);
   }
   
+  public Lscala/collection/immutable/Map; $plus$plus(Lscala/collection/TraversableOnce; xs) {
+    return Lscala/collection/immutable/MapLike$class;.(Lscala/collection/immutable/MapLike$class;::$plus$plus(Lscala/collection/immutable/MapLike;Lscala/collection/TraversableOnce;)Lscala/collection/immutable/Map;)(this, xs);
+  }
+  
   public Lscala/collection/immutable/Map; filterKeys(Lscala/Function1; p) {
     return Lscala/collection/immutable/MapLike$class;.(Lscala/collection/immutable/MapLike$class;::filterKeys(Lscala/collection/immutable/MapLike;Lscala/Function1;)Lscala/collection/immutable/Map;)(this, p);
   }

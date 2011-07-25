@@ -111,6 +111,10 @@ public abstract class Lscala/collection/MapLike$class; {
     return xs.(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::$div$colon(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(x$5, (new (Lscala/collection/MapLike$$anonfun$$plus$plus$1;::this(Lscala/collection/MapLike;)V;)($this))).<cast>(Lscala/collection/Map;);
   }
   
+  public static Lscala/collection/Map; $plus$plus(Lscala/collection/MapLike; $this, Lscala/collection/TraversableOnce; xs) {
+    return $this.(Lscala/collection/MapLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/Map;)(xs);
+  }
+  
   public static Lscala/collection/Map; filterNot(Lscala/collection/MapLike; $this, Lscala/Function1; p$2) {
     Lscala/runtime/ObjectRef; res$1 = (new (Lscala/runtime/ObjectRef;::this(Ljava/lang/Object;)V;)($this.(Lscala/collection/TraversableLike;::repr()Ljava/lang/Object;)().<cast>(Lscala/collection/Map;)));
     $this.(Lscala/collection/IterableLike;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/MapLike$$anonfun$filterNot$1;::this(Lscala/collection/MapLike;Lscala/Function1;Lscala/runtime/ObjectRef;)V;)($this, p$2, res$1)));

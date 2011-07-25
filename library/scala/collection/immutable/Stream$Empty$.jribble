@@ -1,4 +1,4 @@
-public final class Lscala/collection/immutable/Stream$Empty$; extends Lscala/collection/immutable/Stream; implements Lscala/ScalaObject; {
+public final class Lscala/collection/immutable/Stream$Empty$; extends Lscala/collection/immutable/Stream; implements Lscala/Serializable;, Lscala/ScalaObject; {
   public static Lscala/collection/immutable/Stream$Empty$; MODULE$ = new (Lscala/collection/immutable/Stream$Empty$;::this()V;)();
   
   public Z; isEmpty() {
@@ -15,6 +15,10 @@ public final class Lscala/collection/immutable/Stream$Empty$; extends Lscala/col
   
   public Z; tailDefined() {
     return false;
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/immutable/Stream$Empty$;.MODULE$;
   }
   
   public Lscala/collection/LinearSeqOptimized; tail() {

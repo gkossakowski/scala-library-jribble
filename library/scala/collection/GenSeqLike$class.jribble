@@ -36,8 +36,16 @@ public abstract class Lscala/collection/GenSeqLike$class; {
     return $this.(Lscala/collection/GenSeqLike;::startsWith(Lscala/collection/GenSeq;I;)Z;)(that, 0);
   }
   
+  public static Z; startsWith(Lscala/collection/GenSeqLike; $this, Lscala/collection/Seq; that) {
+    return $this.(Lscala/collection/GenSeqLike;::startsWith(Lscala/collection/GenSeq;)Z;)(that);
+  }
+  
   public static Ljava/lang/Object; union(Lscala/collection/GenSeqLike; $this, Lscala/collection/GenSeq; that, Lscala/collection/generic/CanBuildFrom; bf) {
     return $this.(Lscala/collection/GenTraversableLike;::$plus$plus(Lscala/collection/GenTraversableOnce;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(that, bf);
+  }
+  
+  public static Ljava/lang/Object; union(Lscala/collection/GenSeqLike; $this, Lscala/collection/Seq; that, Lscala/collection/generic/CanBuildFrom; bf) {
+    return $this.(Lscala/collection/GenSeqLike;::union(Lscala/collection/GenSeq;Lscala/collection/generic/CanBuildFrom;)Ljava/lang/Object;)(that, bf);
   }
   
   public static I; hashCode(Lscala/collection/GenSeqLike; $this) {

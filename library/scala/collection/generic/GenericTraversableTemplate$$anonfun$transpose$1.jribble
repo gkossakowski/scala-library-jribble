@@ -2,7 +2,7 @@ public final class Lscala/collection/generic/GenericTraversableTemplate$$anonfun
   
   public final V; apply(Ljava/lang/Object; xs) {
     Lscala/runtime/IntRef; i$1 = (new (Lscala/runtime/IntRef;::this(I;)V;)(0));
-    this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1;)asTraversable$2.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(xs).<cast>(Lscala/collection/TraversableOnce;).(Lscala/collection/TraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1$$anonfun$apply$1;::this(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1;Lscala/runtime/IntRef;)V;)(this, i$1)));
+    this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1;)asTraversable$1.(Lscala/Function1;::apply(Ljava/lang/Object;)Ljava/lang/Object;)(xs).<cast>(Lscala/collection/GenTraversableOnce;).(Lscala/collection/GenTraversableOnce;::foreach(Lscala/Function1;)V;)((new (Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1$$anonfun$apply$1;::this(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1;Lscala/runtime/IntRef;)V;)(this, i$1)));
     if ((i$1.(Lscala/runtime/IntRef;)elem != this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1;)headSize$1))
       {
         Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::fail$1(Lscala/collection/generic/GenericTraversableTemplate;)Lscala/runtime/Nothing$;)(this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1;)$outer$u0020);
@@ -24,13 +24,13 @@ public final class Lscala/collection/generic/GenericTraversableTemplate$$anonfun
     return Lscala/runtime/BoxedUnit;.UNIT;
   }
   
-  private Lscala/Function1; asTraversable$2;
+  private Lscala/Function1; asTraversable$1;
   
   public I; headSize$1;
   
   public Lscala/collection/IndexedSeq; bs$1;
   
-  public this(Lscala/collection/generic/GenericTraversableTemplate; $outer, Lscala/Function1; asTraversable$2, I; headSize$1, Lscala/collection/IndexedSeq; bs$1) {
+  public this(Lscala/collection/generic/GenericTraversableTemplate; $outer, Lscala/Function1; asTraversable$1, I; headSize$1, Lscala/collection/IndexedSeq; bs$1) {
     if (($outer == null))
       {
         throw (new (Ljava/lang/NullPointerException;::this()V;)());
@@ -39,7 +39,7 @@ public final class Lscala/collection/generic/GenericTraversableTemplate$$anonfun
       {
         this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1;)$outer$u0020 = $outer;
       }
-    this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1;)asTraversable$2 = asTraversable$2;
+    this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1;)asTraversable$1 = asTraversable$1;
     this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1;)headSize$1 = headSize$1;
     this.(Lscala/collection/generic/GenericTraversableTemplate$$anonfun$transpose$1;)bs$1 = bs$1;
     (Lscala/runtime/AbstractFunction1;::super()V;)();

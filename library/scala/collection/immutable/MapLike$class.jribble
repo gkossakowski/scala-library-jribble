@@ -13,6 +13,10 @@ public abstract class Lscala/collection/immutable/MapLike$class; {
     return xs.(Lscala/collection/GenTraversableOnce;::seq()Lscala/collection/TraversableOnce;)().(Lscala/collection/TraversableOnce;::$div$colon(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;)(x$1, (new (Lscala/collection/immutable/MapLike$$anonfun$$plus$plus$1;::this(Lscala/collection/immutable/MapLike;)V;)($this))).<cast>(Lscala/collection/immutable/Map;);
   }
   
+  public static Lscala/collection/immutable/Map; $plus$plus(Lscala/collection/immutable/MapLike; $this, Lscala/collection/TraversableOnce; xs) {
+    return $this.(Lscala/collection/immutable/MapLike;::$plus$plus(Lscala/collection/GenTraversableOnce;)Lscala/collection/immutable/Map;)(xs);
+  }
+  
   public static Lscala/collection/immutable/Map; filterKeys(Lscala/collection/immutable/MapLike; $this, Lscala/Function1; p$1) {
     return (new (Lscala/collection/immutable/MapLike$$anon$1;::this(Lscala/collection/immutable/MapLike;Lscala/Function1;)V;)($this, p$1));
   }

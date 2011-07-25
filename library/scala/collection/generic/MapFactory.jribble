@@ -2,6 +2,10 @@ public abstract class Lscala/collection/generic/MapFactory; extends Lscala/colle
   
   public abstract Lscala/collection/Map; empty();
   
+  public Lscala/collection/Map; apply(Lscala/collection/Seq; elems) {
+    return super.(Lscala/collection/generic/GenMapFactory;::apply(Lscala/collection/Seq;)Lscala/collection/GenMap;)(elems).<cast>(Lscala/collection/Map;);
+  }
+  
   public this() {
     (Lscala/collection/generic/GenMapFactory;::super()V;)();
   }
