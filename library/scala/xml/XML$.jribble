@@ -124,7 +124,7 @@ public final class Lscala/xml/XML$; extends Ljava/lang/Object; implements Lscala
   public final V; write(Ljava/io/Writer; w, Lscala/xml/Node; node, Ljava/lang/String; enc, Z; xmlDecl, Lscala/xml/dtd/DocType; doctype) {
     if (xmlDecl)
       {
-        w.(Ljava/io/Writer;::write(Ljava/lang/String;)V;)((("<?xml version=\'1.0\' encoding=\'" + enc) + "\'?>\012"));
+        w.(Ljava/io/Writer;::write(Ljava/lang/String;)V;)((("<?xml version=\'1.0\' encoding=\'" + enc) + "\'?>\n"));
       }
     else
       {
@@ -132,7 +132,7 @@ public final class Lscala/xml/XML$; extends Ljava/lang/Object; implements Lscala
       }
     if ((doctype != null))
       {
-        w.(Ljava/io/Writer;::write(Ljava/lang/String;)V;)((doctype.(Lscala/xml/dtd/DocType;::toString()Ljava/lang/String;)() + "\012"));
+        w.(Ljava/io/Writer;::write(Ljava/lang/String;)V;)((doctype.(Lscala/xml/dtd/DocType;::toString()Ljava/lang/String;)() + "\n"));
       }
     else
       {

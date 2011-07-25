@@ -789,16 +789,16 @@ public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; impl
   public Ljava/lang/String; replStringOf(Ljava/lang/Object; arg, I; maxElements) {
     Ljava/lang/String; s = this.(Lscala/runtime/ScalaRunTime$;::stringOf(Ljava/lang/Object;I;)Ljava/lang/String;)(arg, maxElements);
     Ljava/lang/String; $59$;
-    if (s.(Ljava/lang/String;::contains(Ljava/lang/CharSequence;)Z;)("\012"))
+    if (s.(Ljava/lang/String;::contains(Ljava/lang/CharSequence;)Z;)("\n"))
       {
-        $59$ = "\012";
+        $59$ = "\n";
       }
     else
       {
         $59$ = "";
       }
     Ljava/lang/String; nl = $59$;
-    return ((nl + s) + "\012");
+    return ((nl + s) + "\n");
   }
   
   private final Z; gd1$1(Lscala/Product; x$1, Lscala/Product; x$3) {
