@@ -539,7 +539,7 @@ public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; impl
   }
   
   public Lscala/runtime/ScalaRunTime$Try; Try(Lscala/Function0; block$1) {
-    return (new (Lscala/runtime/ScalaRunTime$$anon$1;::this(Lscala/Function0;)V;)(block$1));
+    return (new (Lscala/runtime/ScalaRunTime$$anon$2;::this(Lscala/Function0;)V;)(block$1));
   }
   
   public Ljava/lang/String; _toString(Lscala/Product; x) {
@@ -582,6 +582,10 @@ public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; impl
     return $45$;
   }
   
+  public Lscala/collection/Iterator; typedProductIterator(Lscala/Product; x$3) {
+    return (new (Lscala/runtime/ScalaRunTime$$anon$1;::this(Lscala/Product;)V;)(x$3));
+  }
+  
   public Z; inlinedEquals(Ljava/lang/Object; x, Ljava/lang/Object; y) {
     Z; $46$;
     if ((x == y))
@@ -622,7 +626,7 @@ public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; impl
     return $46$;
   }
   
-  public Z; _equals(Lscala/Product; x$3, Ljava/lang/Object; y) {
+  public Z; _equals(Lscala/Product; x$4, Ljava/lang/Object; y) {
     Ljava/lang/Object; temp61 = y;
     Z; $50$;
     if (temp61.<instanceof>(Lscala/Product;))
@@ -630,12 +634,12 @@ public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; impl
         Lscala/Product; temp62 = temp61.<cast>(Lscala/Product;);
         Lscala/Product; y = temp62;
         Z; $51$;
-        if (this.(Lscala/runtime/ScalaRunTime$;::gd1$1(Lscala/Product;Lscala/Product;)Z;)(y, x$3))
+        if (this.(Lscala/runtime/ScalaRunTime$;::gd1$1(Lscala/Product;Lscala/Product;)Z;)(y, x$4))
           {
             Lscala/Product; $52$;
             Z; $53$;
             body$percent07: while(true) {
-              $53$ = x$3.(Lscala/Product;::productIterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::sameElements(Lscala/collection/Iterator;)Z;)(y.(Lscala/Product;::productIterator()Lscala/collection/Iterator;)());
+              $53$ = x$4.(Lscala/Product;::productIterator()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::sameElements(Lscala/collection/Iterator;)Z;)(y.(Lscala/Product;::productIterator()Lscala/collection/Iterator;)());
               break;
             }
             $51$ = $53$;
@@ -801,8 +805,8 @@ public final class Lscala/runtime/ScalaRunTime$; extends Ljava/lang/Object; impl
     return ((nl + s) + "\n");
   }
   
-  private final Z; gd1$1(Lscala/Product; x$1, Lscala/Product; x$3) {
-    return (x$3.(Lscala/Product;::productArity()I;)() == x$1.(Lscala/Product;::productArity()I;)());
+  private final Z; gd1$1(Lscala/Product; x$1, Lscala/Product; x$4) {
+    return (x$4.(Lscala/Product;::productArity()I;)() == x$1.(Lscala/Product;::productArity()I;)());
   }
   
   private final Z; isScalaClass$1(Ljava/lang/Object; x) {
