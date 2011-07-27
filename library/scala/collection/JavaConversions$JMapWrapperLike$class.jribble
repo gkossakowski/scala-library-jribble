@@ -1,0 +1,87 @@
+public abstract class Lscala/collection/JavaConversions$JMapWrapperLike$class; {
+  
+  public static I; size(Lscala/collection/JavaConversions$JMapWrapperLike; $this) {
+    return $this.(Lscala/collection/JavaConversions$JMapWrapperLike;::underlying()Ljava/util/Map;)().(Ljava/util/Map;::size()I;)();
+  }
+  
+  public static Lscala/Option; get(Lscala/collection/JavaConversions$JMapWrapperLike; $this, Ljava/lang/Object; k) {
+    Ljava/lang/Object; v = $this.(Lscala/collection/JavaConversions$JMapWrapperLike;::underlying()Ljava/util/Map;)().(Ljava/util/Map;::get(Ljava/lang/Object;)Ljava/lang/Object;)(k);
+    Lscala/Option; $114$;
+    if ((v != null))
+      {
+        $114$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(v));
+      }
+    else
+      {
+        Lscala/Option; $115$;
+        if ($this.(Lscala/collection/JavaConversions$JMapWrapperLike;::underlying()Ljava/util/Map;)().(Ljava/util/Map;::containsKey(Ljava/lang/Object;)Z;)(k))
+          {
+            $115$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(null));
+          }
+        else
+          {
+            $115$ = Lscala/None$;.MODULE$;
+          }
+        $114$ = $115$;
+      }
+    return $114$;
+  }
+  
+  public static Lscala/collection/JavaConversions$JMapWrapperLike; $plus$eq(Lscala/collection/JavaConversions$JMapWrapperLike; $this, Lscala/Tuple2; kv) {
+    $this.(Lscala/collection/JavaConversions$JMapWrapperLike;::underlying()Ljava/util/Map;)().(Ljava/util/Map;::put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(kv.(Lscala/Tuple2;::_1()Ljava/lang/Object;)(), kv.(Lscala/Tuple2;::_2()Ljava/lang/Object;)());
+    return $this;
+  }
+  
+  public static Lscala/collection/JavaConversions$JMapWrapperLike; $minus$eq(Lscala/collection/JavaConversions$JMapWrapperLike; $this, Ljava/lang/Object; key) {
+    $this.(Lscala/collection/JavaConversions$JMapWrapperLike;::underlying()Ljava/util/Map;)().(Ljava/util/Map;::remove(Ljava/lang/Object;)Ljava/lang/Object;)(key);
+    return $this;
+  }
+  
+  public static Lscala/Option; put(Lscala/collection/JavaConversions$JMapWrapperLike; $this, Ljava/lang/Object; k, Ljava/lang/Object; v) {
+    Ljava/lang/Object; r = $this.(Lscala/collection/JavaConversions$JMapWrapperLike;::underlying()Ljava/util/Map;)().(Ljava/util/Map;::put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(k, v);
+    Lscala/Option; $116$;
+    if ((r != null))
+      {
+        $116$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(r));
+      }
+    else
+      {
+        $116$ = Lscala/None$;.MODULE$;
+      }
+    return $116$;
+  }
+  
+  public static V; update(Lscala/collection/JavaConversions$JMapWrapperLike; $this, Ljava/lang/Object; k, Ljava/lang/Object; v) {
+    $this.(Lscala/collection/JavaConversions$JMapWrapperLike;::underlying()Ljava/util/Map;)().(Ljava/util/Map;::put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;)(k, v);
+  }
+  
+  public static Lscala/Option; remove(Lscala/collection/JavaConversions$JMapWrapperLike; $this, Ljava/lang/Object; k) {
+    Ljava/lang/Object; r = $this.(Lscala/collection/JavaConversions$JMapWrapperLike;::underlying()Ljava/util/Map;)().(Ljava/util/Map;::remove(Ljava/lang/Object;)Ljava/lang/Object;)(k);
+    Lscala/Option; $117$;
+    if ((r != null))
+      {
+        $117$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(r));
+      }
+    else
+      {
+        $117$ = Lscala/None$;.MODULE$;
+      }
+    return $117$;
+  }
+  
+  public static Lscala/collection/Iterator; iterator(Lscala/collection/JavaConversions$JMapWrapperLike; $this) {
+    return (new (Lscala/collection/JavaConversions$JMapWrapperLike$$anon$2;::this(Lscala/collection/JavaConversions$JMapWrapperLike;)V;)($this));
+  }
+  
+  public static V; clear(Lscala/collection/JavaConversions$JMapWrapperLike; $this) {
+    $this.(Lscala/collection/JavaConversions$JMapWrapperLike;::underlying()Ljava/util/Map;)().(Ljava/util/Map;::clear()V;)();
+  }
+  
+  public static Lscala/collection/mutable/Map; empty(Lscala/collection/JavaConversions$JMapWrapperLike; $this) {
+    return null;
+  }
+  
+  public static V; $init$(Lscala/collection/JavaConversions$JMapWrapperLike; $this) {
+    
+  }
+}

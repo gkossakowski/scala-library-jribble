@@ -1,0 +1,46 @@
+public class Lscala/collection/JavaConversions$MapWrapper; extends Ljava/util/AbstractMap; implements Lscala/ScalaObject; {
+  
+  public Lscala/collection/Map; scala$collection$JavaConversions$MapWrapper$$underlying;
+  
+  public I; size() {
+    return this.(Lscala/collection/JavaConversions$MapWrapper;)scala$collection$JavaConversions$MapWrapper$$underlying.(Lscala/collection/TraversableOnce;::size()I;)();
+  }
+  
+  public Ljava/lang/Object; get(Ljava/lang/Object; key) {
+    Ljava/lang/Object; exceptionResult2;
+    try {
+      Lscala/Option; temp102 = this.(Lscala/collection/JavaConversions$MapWrapper;)scala$collection$JavaConversions$MapWrapper$$underlying.(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key);
+      Ljava/lang/Object; $73$;
+      if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp102))
+        {
+          $73$ = null;
+        }
+      else
+        {
+          Ljava/lang/Object; $74$;
+          if (temp102.<instanceof>(Lscala/Some;))
+            {
+              $74$ = temp102.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)();
+            }
+          else
+            {
+              throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp102));
+            }
+          $73$ = $74$;
+        }
+      exceptionResult2 = $73$;
+    } catch(Ljava/lang/ClassCastException; ex) {
+      exceptionResult2 = null;
+    }
+    return exceptionResult2;
+  }
+  
+  public Ljava/util/Set; entrySet() {
+    return (new (Lscala/collection/JavaConversions$MapWrapper$$anon$1;::this(Lscala/collection/JavaConversions$MapWrapper;)V;)(this));
+  }
+  
+  public this(Lscala/collection/Map; underlying) {
+    this.(Lscala/collection/JavaConversions$MapWrapper;)scala$collection$JavaConversions$MapWrapper$$underlying = underlying;
+    (Ljava/util/AbstractMap;::super()V;)();
+  }
+}

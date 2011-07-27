@@ -1,0 +1,32 @@
+public final class Lscala/collection/JavaConversions$DictionaryWrapper$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
+  public static Lscala/collection/JavaConversions$DictionaryWrapper$; MODULE$ = new (Lscala/collection/JavaConversions$DictionaryWrapper$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "DictionaryWrapper";
+  }
+  
+  public Lscala/Option; unapply(Lscala/collection/JavaConversions$DictionaryWrapper; x$0) {
+    Lscala/Option; $103$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $103$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $103$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/collection/JavaConversions$DictionaryWrapper;::underlying()Lscala/collection/mutable/Map;)()));
+      }
+    return $103$;
+  }
+  
+  public Lscala/collection/JavaConversions$DictionaryWrapper; apply(Lscala/collection/mutable/Map; underlying) {
+    return (new (Lscala/collection/JavaConversions$DictionaryWrapper;::this(Lscala/collection/mutable/Map;)V;)(underlying));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/JavaConversions$DictionaryWrapper$;.MODULE$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

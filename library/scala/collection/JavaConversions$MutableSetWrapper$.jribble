@@ -1,0 +1,32 @@
+public final class Lscala/collection/JavaConversions$MutableSetWrapper$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
+  public static Lscala/collection/JavaConversions$MutableSetWrapper$; MODULE$ = new (Lscala/collection/JavaConversions$MutableSetWrapper$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "MutableSetWrapper";
+  }
+  
+  public Lscala/Option; unapply(Lscala/collection/JavaConversions$MutableSetWrapper; x$0) {
+    Lscala/Option; $68$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $68$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $68$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/collection/JavaConversions$MutableSetWrapper;::underlying()Lscala/collection/mutable/Set;)()));
+      }
+    return $68$;
+  }
+  
+  public Lscala/collection/JavaConversions$MutableSetWrapper; apply(Lscala/collection/mutable/Set; underlying) {
+    return (new (Lscala/collection/JavaConversions$MutableSetWrapper;::this(Lscala/collection/mutable/Set;)V;)(underlying));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/JavaConversions$MutableSetWrapper$;.MODULE$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

@@ -1,0 +1,13 @@
+public class Lscala/collection/JavaConversions$ToIteratorWrapper; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  
+  private Lscala/collection/Iterator; underlying;
+  
+  public Lscala/collection/JavaConversions$IteratorWrapper; asJava() {
+    return (new (Lscala/collection/JavaConversions$IteratorWrapper;::this(Lscala/collection/Iterator;)V;)(this.(Lscala/collection/JavaConversions$ToIteratorWrapper;)underlying));
+  }
+  
+  public this(Lscala/collection/Iterator; underlying) {
+    this.(Lscala/collection/JavaConversions$ToIteratorWrapper;)underlying = underlying;
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

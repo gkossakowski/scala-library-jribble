@@ -1,0 +1,197 @@
+public class Lscala/collection/JavaConversions$DictionaryWrapper; extends Ljava/util/Dictionary; implements Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  private Lscala/collection/mutable/Map; underlying$u0020;
+  
+  public Lscala/collection/mutable/Map; underlying() {
+    return this.(Lscala/collection/JavaConversions$DictionaryWrapper;)underlying$u0020;
+  }
+  
+  public I; size() {
+    return this.(Lscala/collection/JavaConversions$DictionaryWrapper;::underlying()Lscala/collection/mutable/Map;)().(Lscala/collection/TraversableOnce;::size()I;)();
+  }
+  
+  public Z; isEmpty() {
+    return this.(Lscala/collection/JavaConversions$DictionaryWrapper;::underlying()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::isEmpty()Z;)();
+  }
+  
+  public Ljava/util/Enumeration; keys() {
+    return Lscala/collection/JavaConversions$;.MODULE$.(Lscala/collection/JavaConversions$;::asJavaEnumeration(Lscala/collection/Iterator;)Ljava/util/Enumeration;)(this.(Lscala/collection/JavaConversions$DictionaryWrapper;::underlying()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::keysIterator()Lscala/collection/Iterator;)());
+  }
+  
+  public Ljava/util/Enumeration; elements() {
+    return Lscala/collection/JavaConversions$;.MODULE$.(Lscala/collection/JavaConversions$;::asJavaEnumeration(Lscala/collection/Iterator;)Ljava/util/Enumeration;)(this.(Lscala/collection/JavaConversions$DictionaryWrapper;::underlying()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::valuesIterator()Lscala/collection/Iterator;)());
+  }
+  
+  public Ljava/lang/Object; get(Ljava/lang/Object; key) {
+    Ljava/lang/Object; exceptionResult5;
+    try {
+      Lscala/Option; temp135 = this.(Lscala/collection/JavaConversions$DictionaryWrapper;::underlying()Lscala/collection/mutable/Map;)().(Lscala/collection/MapLike;::get(Ljava/lang/Object;)Lscala/Option;)(key);
+      Ljava/lang/Object; $92$;
+      if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp135))
+        {
+          $92$ = null;
+        }
+      else
+        {
+          Ljava/lang/Object; $93$;
+          if (temp135.<instanceof>(Lscala/Some;))
+            {
+              $93$ = temp135.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)();
+            }
+          else
+            {
+              throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp135));
+            }
+          $92$ = $93$;
+        }
+      exceptionResult5 = $92$;
+    } catch(Ljava/lang/ClassCastException; ex) {
+      exceptionResult5 = null;
+    }
+    return exceptionResult5;
+  }
+  
+  public Ljava/lang/Object; put(Ljava/lang/Object; key, Ljava/lang/Object; value) {
+    Lscala/Option; temp139 = this.(Lscala/collection/JavaConversions$DictionaryWrapper;::underlying()Lscala/collection/mutable/Map;)().(Lscala/collection/mutable/MapLike;::put(Ljava/lang/Object;Ljava/lang/Object;)Lscala/Option;)(key, value);
+    Ljava/lang/Object; $94$;
+    if (temp139.<instanceof>(Lscala/Some;))
+      {
+        $94$ = temp139.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)();
+      }
+    else
+      {
+        Ljava/lang/Object; $95$;
+        if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp139))
+          {
+            $95$ = null;
+          }
+        else
+          {
+            throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp139));
+          }
+        $94$ = $95$;
+      }
+    return $94$;
+  }
+  
+  public Ljava/lang/Object; remove(Ljava/lang/Object; key) {
+    Ljava/lang/Object; exceptionResult6;
+    try {
+      Lscala/Option; temp143 = this.(Lscala/collection/JavaConversions$DictionaryWrapper;::underlying()Lscala/collection/mutable/Map;)().(Lscala/collection/mutable/MapLike;::remove(Ljava/lang/Object;)Lscala/Option;)(key);
+      Ljava/lang/Object; $96$;
+      if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(Lscala/None$;.MODULE$, temp143))
+        {
+          $96$ = null;
+        }
+      else
+        {
+          Ljava/lang/Object; $97$;
+          if (temp143.<instanceof>(Lscala/Some;))
+            {
+              $97$ = temp143.<cast>(Lscala/Some;).(Lscala/Some;::x()Ljava/lang/Object;)();
+            }
+          else
+            {
+              throw (new (Lscala/MatchError;::this(Ljava/lang/Object;)V;)(temp143));
+            }
+          $96$ = $97$;
+        }
+      exceptionResult6 = $96$;
+    } catch(Ljava/lang/ClassCastException; ex) {
+      exceptionResult6 = null;
+    }
+    return exceptionResult6;
+  }
+  
+  public Lscala/collection/JavaConversions$DictionaryWrapper; copy(Lscala/collection/mutable/Map; underlying) {
+    return (new (Lscala/collection/JavaConversions$DictionaryWrapper;::this(Lscala/collection/mutable/Map;)V;)(underlying));
+  }
+  
+  public Lscala/collection/mutable/Map; copy$default$1() {
+    return this.(Lscala/collection/JavaConversions$DictionaryWrapper;::underlying()Lscala/collection/mutable/Map;)();
+  }
+  
+  public I; hashCode() {
+    return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp147 = x$1;
+    Z; $98$;
+    if (temp147.<instanceof>(Lscala/collection/JavaConversions$DictionaryWrapper;))
+      {
+        Lscala/collection/JavaConversions$DictionaryWrapper; temp148 = temp147.<cast>(Lscala/collection/JavaConversions$DictionaryWrapper;);
+        Lscala/collection/mutable/Map; temp149 = temp148.(Lscala/collection/JavaConversions$DictionaryWrapper;::underlying()Lscala/collection/mutable/Map;)();
+        Lscala/collection/mutable/Map; underlying$7 = temp149;
+        Z; $99$;
+        if (this.(Lscala/collection/JavaConversions$DictionaryWrapper;::gd7$1(Lscala/collection/mutable/Map;)Z;)(underlying$7))
+          {
+            Lscala/collection/mutable/Map; $100$;
+            Z; $101$;
+            body$percent059: while(true) {
+              $101$ = x$1.<cast>(Lscala/collection/JavaConversions$DictionaryWrapper;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $99$ = $101$;
+          }
+        else
+          {
+            $99$ = false;
+          }
+        $98$ = $99$;
+      }
+    else
+      {
+        $98$ = false;
+      }
+    return ((this == x$1) || $98$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "DictionaryWrapper";
+  }
+  
+  public I; productArity() {
+    return 1;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp150 = x$1;
+    Ljava/lang/Object; $102$;
+    if ((temp150 == 0))
+      {
+        $102$ = this.(Lscala/collection/JavaConversions$DictionaryWrapper;::underlying()Lscala/collection/mutable/Map;)();
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $102$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/collection/JavaConversions$DictionaryWrapper;);
+  }
+  
+  private final Z; gd7$1(Lscala/collection/mutable/Map; x$1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/collection/JavaConversions$DictionaryWrapper;::underlying()Lscala/collection/mutable/Map;)());
+  }
+  
+  public this(Lscala/collection/mutable/Map; underlying) {
+    this.(Lscala/collection/JavaConversions$DictionaryWrapper;)underlying$u0020 = underlying;
+    (Ljava/util/Dictionary;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

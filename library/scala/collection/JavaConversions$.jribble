@@ -1,0 +1,456 @@
+public final class Lscala/collection/JavaConversions$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/JavaConversions$; MODULE$ = new (Lscala/collection/JavaConversions$;::this()V;)();
+  
+  public Ljava/util/Iterator; asJavaIterator(Lscala/collection/Iterator; i) {
+    Lscala/collection/Iterator; temp1 = i;
+    Ljava/util/Iterator; $1$;
+    if (temp1.<instanceof>(Lscala/collection/JavaConversions$JIteratorWrapper;))
+      {
+        $1$ = temp1.<cast>(Lscala/collection/JavaConversions$JIteratorWrapper;).(Lscala/collection/JavaConversions$JIteratorWrapper;::underlying()Ljava/util/Iterator;)();
+      }
+    else
+      {
+        $1$ = (new (Lscala/collection/JavaConversions$IteratorWrapper;::this(Lscala/collection/Iterator;)V;)(i));
+      }
+    return $1$;
+  }
+  
+  public Ljava/util/Iterator; asIterator(Lscala/collection/Iterator; i) {
+    return this.(Lscala/collection/JavaConversions$;::asJavaIterator(Lscala/collection/Iterator;)Ljava/util/Iterator;)(i);
+  }
+  
+  public Ljava/util/Enumeration; asJavaEnumeration(Lscala/collection/Iterator; i) {
+    Lscala/collection/Iterator; temp4 = i;
+    Ljava/util/Enumeration; $2$;
+    if (temp4.<instanceof>(Lscala/collection/JavaConversions$JEnumerationWrapper;))
+      {
+        $2$ = temp4.<cast>(Lscala/collection/JavaConversions$JEnumerationWrapper;).(Lscala/collection/JavaConversions$JEnumerationWrapper;::underlying()Ljava/util/Enumeration;)();
+      }
+    else
+      {
+        $2$ = (new (Lscala/collection/JavaConversions$IteratorWrapper;::this(Lscala/collection/Iterator;)V;)(i));
+      }
+    return $2$;
+  }
+  
+  public Ljava/util/Enumeration; asEnumeration(Lscala/collection/Iterator; i) {
+    return this.(Lscala/collection/JavaConversions$;::asJavaEnumeration(Lscala/collection/Iterator;)Ljava/util/Enumeration;)(i);
+  }
+  
+  public Ljava/lang/Iterable; asJavaIterable(Lscala/collection/Iterable; i) {
+    Lscala/collection/Iterable; temp7 = i;
+    Ljava/lang/Iterable; $3$;
+    if (temp7.<instanceof>(Lscala/collection/JavaConversions$JIterableWrapper;))
+      {
+        $3$ = temp7.<cast>(Lscala/collection/JavaConversions$JIterableWrapper;).(Lscala/collection/JavaConversions$JIterableWrapper;::underlying()Ljava/lang/Iterable;)();
+      }
+    else
+      {
+        $3$ = (new (Lscala/collection/JavaConversions$IterableWrapper;::this(Lscala/collection/Iterable;)V;)(i));
+      }
+    return $3$;
+  }
+  
+  public Ljava/lang/Iterable; asIterable(Lscala/collection/Iterable; i) {
+    return this.(Lscala/collection/JavaConversions$;::asJavaIterable(Lscala/collection/Iterable;)Ljava/lang/Iterable;)(i);
+  }
+  
+  public Ljava/util/Collection; asJavaCollection(Lscala/collection/Iterable; i) {
+    Lscala/collection/Iterable; temp10 = i;
+    Ljava/util/Collection; $4$;
+    if (temp10.<instanceof>(Lscala/collection/JavaConversions$JCollectionWrapper;))
+      {
+        $4$ = temp10.<cast>(Lscala/collection/JavaConversions$JCollectionWrapper;).(Lscala/collection/JavaConversions$JCollectionWrapper;::underlying()Ljava/util/Collection;)();
+      }
+    else
+      {
+        $4$ = (new (Lscala/collection/JavaConversions$IterableWrapper;::this(Lscala/collection/Iterable;)V;)(i));
+      }
+    return $4$;
+  }
+  
+  public Ljava/util/Collection; asCollection(Lscala/collection/Iterable; i) {
+    return this.(Lscala/collection/JavaConversions$;::asJavaCollection(Lscala/collection/Iterable;)Ljava/util/Collection;)(i);
+  }
+  
+  public Ljava/util/List; bufferAsJavaList(Lscala/collection/mutable/Buffer; b) {
+    Lscala/collection/mutable/Buffer; temp13 = b;
+    Ljava/util/List; $5$;
+    if (temp13.<instanceof>(Lscala/collection/JavaConversions$JListWrapper;))
+      {
+        $5$ = temp13.<cast>(Lscala/collection/JavaConversions$JListWrapper;).(Lscala/collection/JavaConversions$JListWrapper;::underlying()Ljava/util/List;)();
+      }
+    else
+      {
+        $5$ = (new (Lscala/collection/JavaConversions$MutableBufferWrapper;::this(Lscala/collection/mutable/Buffer;)V;)(b));
+      }
+    return $5$;
+  }
+  
+  public Ljava/util/List; asJavaList(Lscala/collection/mutable/Buffer; b) {
+    return this.(Lscala/collection/JavaConversions$;::bufferAsJavaList(Lscala/collection/mutable/Buffer;)Ljava/util/List;)(b);
+  }
+  
+  public Ljava/util/List; asList(Lscala/collection/mutable/Buffer; b) {
+    return this.(Lscala/collection/JavaConversions$;::bufferAsJavaList(Lscala/collection/mutable/Buffer;)Ljava/util/List;)(b);
+  }
+  
+  public Ljava/util/List; mutableSeqAsJavaList(Lscala/collection/mutable/Seq; b) {
+    Lscala/collection/mutable/Seq; temp16 = b;
+    Ljava/util/List; $6$;
+    if (temp16.<instanceof>(Lscala/collection/JavaConversions$JListWrapper;))
+      {
+        $6$ = temp16.<cast>(Lscala/collection/JavaConversions$JListWrapper;).(Lscala/collection/JavaConversions$JListWrapper;::underlying()Ljava/util/List;)();
+      }
+    else
+      {
+        $6$ = (new (Lscala/collection/JavaConversions$MutableSeqWrapper;::this(Lscala/collection/mutable/Seq;)V;)(b));
+      }
+    return $6$;
+  }
+  
+  public Ljava/util/List; asJavaList(Lscala/collection/mutable/Seq; b) {
+    return this.(Lscala/collection/JavaConversions$;::mutableSeqAsJavaList(Lscala/collection/mutable/Seq;)Ljava/util/List;)(b);
+  }
+  
+  public Ljava/util/List; asList(Lscala/collection/mutable/Seq; b) {
+    return this.(Lscala/collection/JavaConversions$;::mutableSeqAsJavaList(Lscala/collection/mutable/Seq;)Ljava/util/List;)(b);
+  }
+  
+  public Ljava/util/List; seqAsJavaList(Lscala/collection/Seq; b) {
+    Lscala/collection/Seq; temp19 = b;
+    Ljava/util/List; $7$;
+    if (temp19.<instanceof>(Lscala/collection/JavaConversions$JListWrapper;))
+      {
+        $7$ = temp19.<cast>(Lscala/collection/JavaConversions$JListWrapper;).(Lscala/collection/JavaConversions$JListWrapper;::underlying()Ljava/util/List;)();
+      }
+    else
+      {
+        $7$ = (new (Lscala/collection/JavaConversions$SeqWrapper;::this(Lscala/collection/Seq;)V;)(b));
+      }
+    return $7$;
+  }
+  
+  public Ljava/util/List; asJavaList(Lscala/collection/Seq; b) {
+    return this.(Lscala/collection/JavaConversions$;::seqAsJavaList(Lscala/collection/Seq;)Ljava/util/List;)(b);
+  }
+  
+  public Ljava/util/List; asList(Lscala/collection/Seq; b) {
+    return this.(Lscala/collection/JavaConversions$;::seqAsJavaList(Lscala/collection/Seq;)Ljava/util/List;)(b);
+  }
+  
+  public Ljava/util/Set; mutableSetAsJavaSet(Lscala/collection/mutable/Set; s) {
+    Lscala/collection/mutable/Set; temp22 = s;
+    Ljava/util/Set; $8$;
+    if (temp22.<instanceof>(Lscala/collection/JavaConversions$JSetWrapper;))
+      {
+        $8$ = temp22.<cast>(Lscala/collection/JavaConversions$JSetWrapper;).(Lscala/collection/JavaConversions$JSetWrapper;::underlying()Ljava/util/Set;)();
+      }
+    else
+      {
+        $8$ = (new (Lscala/collection/JavaConversions$MutableSetWrapper;::this(Lscala/collection/mutable/Set;)V;)(s));
+      }
+    return $8$;
+  }
+  
+  public Ljava/util/Set; asJavaSet(Lscala/collection/mutable/Set; s) {
+    return this.(Lscala/collection/JavaConversions$;::mutableSetAsJavaSet(Lscala/collection/mutable/Set;)Ljava/util/Set;)(s);
+  }
+  
+  public Ljava/util/Set; asSet(Lscala/collection/mutable/Set; s) {
+    return this.(Lscala/collection/JavaConversions$;::mutableSetAsJavaSet(Lscala/collection/mutable/Set;)Ljava/util/Set;)(s);
+  }
+  
+  public Ljava/util/Set; setAsJavaSet(Lscala/collection/Set; s) {
+    Lscala/collection/Set; temp25 = s;
+    Ljava/util/Set; $9$;
+    if (temp25.<instanceof>(Lscala/collection/JavaConversions$JSetWrapper;))
+      {
+        $9$ = temp25.<cast>(Lscala/collection/JavaConversions$JSetWrapper;).(Lscala/collection/JavaConversions$JSetWrapper;::underlying()Ljava/util/Set;)();
+      }
+    else
+      {
+        $9$ = (new (Lscala/collection/JavaConversions$SetWrapper;::this(Lscala/collection/Set;)V;)(s));
+      }
+    return $9$;
+  }
+  
+  public Ljava/util/Set; asJavaSet(Lscala/collection/Set; s) {
+    return this.(Lscala/collection/JavaConversions$;::setAsJavaSet(Lscala/collection/Set;)Ljava/util/Set;)(s);
+  }
+  
+  public Ljava/util/Set; asSet(Lscala/collection/Set; s) {
+    return this.(Lscala/collection/JavaConversions$;::setAsJavaSet(Lscala/collection/Set;)Ljava/util/Set;)(s);
+  }
+  
+  public Ljava/util/Map; mutableMapAsJavaMap(Lscala/collection/mutable/Map; m) {
+    Lscala/collection/mutable/Map; temp28 = m;
+    Ljava/util/Map; $10$;
+    if (temp28.<instanceof>(Lscala/collection/JavaConversions$JMapWrapper;))
+      {
+        $10$ = temp28.<cast>(Lscala/collection/JavaConversions$JMapWrapper;).(Lscala/collection/JavaConversions$JMapWrapper;::underlying()Ljava/util/Map;)();
+      }
+    else
+      {
+        $10$ = (new (Lscala/collection/JavaConversions$MutableMapWrapper;::this(Lscala/collection/mutable/Map;)V;)(m));
+      }
+    return $10$;
+  }
+  
+  public Ljava/util/Map; asJavaMap(Lscala/collection/mutable/Map; m) {
+    return this.(Lscala/collection/JavaConversions$;::mutableMapAsJavaMap(Lscala/collection/mutable/Map;)Ljava/util/Map;)(m);
+  }
+  
+  public Ljava/util/Map; asMap(Lscala/collection/mutable/Map; m) {
+    return this.(Lscala/collection/JavaConversions$;::mutableMapAsJavaMap(Lscala/collection/mutable/Map;)Ljava/util/Map;)(m);
+  }
+  
+  public Ljava/util/Dictionary; asJavaDictionary(Lscala/collection/mutable/Map; m) {
+    Lscala/collection/mutable/Map; temp31 = m;
+    Ljava/util/Dictionary; $11$;
+    if (temp31.<instanceof>(Lscala/collection/JavaConversions$JDictionaryWrapper;))
+      {
+        $11$ = temp31.<cast>(Lscala/collection/JavaConversions$JDictionaryWrapper;).(Lscala/collection/JavaConversions$JDictionaryWrapper;::underlying()Ljava/util/Dictionary;)();
+      }
+    else
+      {
+        $11$ = (new (Lscala/collection/JavaConversions$DictionaryWrapper;::this(Lscala/collection/mutable/Map;)V;)(m));
+      }
+    return $11$;
+  }
+  
+  public Ljava/util/Dictionary; asDictionary(Lscala/collection/mutable/Map; m) {
+    return this.(Lscala/collection/JavaConversions$;::asJavaDictionary(Lscala/collection/mutable/Map;)Ljava/util/Dictionary;)(m);
+  }
+  
+  public Ljava/util/Map; mapAsJavaMap(Lscala/collection/Map; m) {
+    Lscala/collection/Map; temp34 = m;
+    Ljava/util/Map; $12$;
+    if (temp34.<instanceof>(Lscala/collection/JavaConversions$JMapWrapper;))
+      {
+        $12$ = temp34.<cast>(Lscala/collection/JavaConversions$JMapWrapper;).(Lscala/collection/JavaConversions$JMapWrapper;::underlying()Ljava/util/Map;)();
+      }
+    else
+      {
+        $12$ = (new (Lscala/collection/JavaConversions$MapWrapper;::this(Lscala/collection/Map;)V;)(m));
+      }
+    return $12$;
+  }
+  
+  public Ljava/util/Map; asJavaMap(Lscala/collection/Map; m) {
+    return this.(Lscala/collection/JavaConversions$;::mapAsJavaMap(Lscala/collection/Map;)Ljava/util/Map;)(m);
+  }
+  
+  public Ljava/util/Map; asMap(Lscala/collection/Map; m) {
+    return this.(Lscala/collection/JavaConversions$;::mapAsJavaMap(Lscala/collection/Map;)Ljava/util/Map;)(m);
+  }
+  
+  public Ljava/util/concurrent/ConcurrentMap; asJavaConcurrentMap(Lscala/collection/mutable/ConcurrentMap; m) {
+    Lscala/collection/mutable/ConcurrentMap; temp37 = m;
+    Ljava/util/concurrent/ConcurrentMap; $13$;
+    if (temp37.<instanceof>(Lscala/collection/JavaConversions$JConcurrentMapWrapper;))
+      {
+        $13$ = temp37.<cast>(Lscala/collection/JavaConversions$JConcurrentMapWrapper;).(Lscala/collection/JavaConversions$JConcurrentMapWrapper;::underlying()Ljava/util/concurrent/ConcurrentMap;)();
+      }
+    else
+      {
+        $13$ = (new (Lscala/collection/JavaConversions$ConcurrentMapWrapper;::this(Lscala/collection/mutable/ConcurrentMap;)V;)(m));
+      }
+    return $13$;
+  }
+  
+  public Ljava/util/concurrent/ConcurrentMap; asConcurrentMap(Lscala/collection/mutable/ConcurrentMap; m) {
+    return this.(Lscala/collection/JavaConversions$;::asJavaConcurrentMap(Lscala/collection/mutable/ConcurrentMap;)Ljava/util/concurrent/ConcurrentMap;)(m);
+  }
+  
+  public Lscala/collection/Iterator; asScalaIterator(Ljava/util/Iterator; i) {
+    Ljava/util/Iterator; temp40 = i;
+    Lscala/collection/Iterator; $14$;
+    if (temp40.<instanceof>(Lscala/collection/JavaConversions$IteratorWrapper;))
+      {
+        $14$ = temp40.<cast>(Lscala/collection/JavaConversions$IteratorWrapper;).(Lscala/collection/JavaConversions$IteratorWrapper;::underlying()Lscala/collection/Iterator;)();
+      }
+    else
+      {
+        $14$ = (new (Lscala/collection/JavaConversions$JIteratorWrapper;::this(Ljava/util/Iterator;)V;)(i));
+      }
+    return $14$;
+  }
+  
+  public Lscala/collection/Iterator; asIterator(Ljava/util/Iterator; i) {
+    return this.(Lscala/collection/JavaConversions$;::asScalaIterator(Ljava/util/Iterator;)Lscala/collection/Iterator;)(i);
+  }
+  
+  public Lscala/collection/Iterator; enumerationAsScalaIterator(Ljava/util/Enumeration; i) {
+    Ljava/util/Enumeration; temp43 = i;
+    Lscala/collection/Iterator; $15$;
+    if (temp43.<instanceof>(Lscala/collection/JavaConversions$IteratorWrapper;))
+      {
+        $15$ = temp43.<cast>(Lscala/collection/JavaConversions$IteratorWrapper;).(Lscala/collection/JavaConversions$IteratorWrapper;::underlying()Lscala/collection/Iterator;)();
+      }
+    else
+      {
+        $15$ = (new (Lscala/collection/JavaConversions$JEnumerationWrapper;::this(Ljava/util/Enumeration;)V;)(i));
+      }
+    return $15$;
+  }
+  
+  public Lscala/collection/Iterator; asIterator(Ljava/util/Enumeration; i) {
+    return this.(Lscala/collection/JavaConversions$;::enumerationAsScalaIterator(Ljava/util/Enumeration;)Lscala/collection/Iterator;)(i);
+  }
+  
+  public Lscala/collection/Iterable; iterableAsScalaIterable(Ljava/lang/Iterable; i) {
+    Ljava/lang/Iterable; temp46 = i;
+    Lscala/collection/Iterable; $16$;
+    if (temp46.<instanceof>(Lscala/collection/JavaConversions$IterableWrapper;))
+      {
+        $16$ = temp46.<cast>(Lscala/collection/JavaConversions$IterableWrapper;).(Lscala/collection/JavaConversions$IterableWrapper;::underlying()Lscala/collection/Iterable;)();
+      }
+    else
+      {
+        $16$ = (new (Lscala/collection/JavaConversions$JIterableWrapper;::this(Ljava/lang/Iterable;)V;)(i));
+      }
+    return $16$;
+  }
+  
+  public Lscala/collection/Iterable; asScalaIterable(Ljava/lang/Iterable; i) {
+    return this.(Lscala/collection/JavaConversions$;::iterableAsScalaIterable(Ljava/lang/Iterable;)Lscala/collection/Iterable;)(i);
+  }
+  
+  public Lscala/collection/Iterable; asIterable(Ljava/lang/Iterable; i) {
+    return this.(Lscala/collection/JavaConversions$;::iterableAsScalaIterable(Ljava/lang/Iterable;)Lscala/collection/Iterable;)(i);
+  }
+  
+  public Lscala/collection/Iterable; collectionAsScalaIterable(Ljava/util/Collection; i) {
+    Ljava/util/Collection; temp49 = i;
+    Lscala/collection/Iterable; $17$;
+    if (temp49.<instanceof>(Lscala/collection/JavaConversions$IterableWrapper;))
+      {
+        $17$ = temp49.<cast>(Lscala/collection/JavaConversions$IterableWrapper;).(Lscala/collection/JavaConversions$IterableWrapper;::underlying()Lscala/collection/Iterable;)();
+      }
+    else
+      {
+        $17$ = (new (Lscala/collection/JavaConversions$JCollectionWrapper;::this(Ljava/util/Collection;)V;)(i));
+      }
+    return $17$;
+  }
+  
+  public Lscala/collection/Iterable; asScalaIterable(Ljava/util/Collection; i) {
+    return this.(Lscala/collection/JavaConversions$;::collectionAsScalaIterable(Ljava/util/Collection;)Lscala/collection/Iterable;)(i);
+  }
+  
+  public Lscala/collection/Iterable; asIterable(Ljava/util/Collection; i) {
+    return this.(Lscala/collection/JavaConversions$;::collectionAsScalaIterable(Ljava/util/Collection;)Lscala/collection/Iterable;)(i);
+  }
+  
+  public Lscala/collection/mutable/Buffer; asScalaBuffer(Ljava/util/List; l) {
+    Ljava/util/List; temp52 = l;
+    Lscala/collection/mutable/Buffer; $18$;
+    if (temp52.<instanceof>(Lscala/collection/JavaConversions$MutableBufferWrapper;))
+      {
+        $18$ = temp52.<cast>(Lscala/collection/JavaConversions$MutableBufferWrapper;).(Lscala/collection/JavaConversions$MutableBufferWrapper;::underlying()Lscala/collection/mutable/Buffer;)();
+      }
+    else
+      {
+        $18$ = (new (Lscala/collection/JavaConversions$JListWrapper;::this(Ljava/util/List;)V;)(l));
+      }
+    return $18$;
+  }
+  
+  public Lscala/collection/mutable/Buffer; asBuffer(Ljava/util/List; l) {
+    return this.(Lscala/collection/JavaConversions$;::asScalaBuffer(Ljava/util/List;)Lscala/collection/mutable/Buffer;)(l);
+  }
+  
+  public Lscala/collection/mutable/Set; asScalaSet(Ljava/util/Set; s) {
+    Ljava/util/Set; temp55 = s;
+    Lscala/collection/mutable/Set; $19$;
+    if (temp55.<instanceof>(Lscala/collection/JavaConversions$MutableSetWrapper;))
+      {
+        $19$ = temp55.<cast>(Lscala/collection/JavaConversions$MutableSetWrapper;).(Lscala/collection/JavaConversions$MutableSetWrapper;::underlying()Lscala/collection/mutable/Set;)();
+      }
+    else
+      {
+        $19$ = (new (Lscala/collection/JavaConversions$JSetWrapper;::this(Ljava/util/Set;)V;)(s));
+      }
+    return $19$;
+  }
+  
+  public Lscala/collection/mutable/Set; asSet(Ljava/util/Set; s) {
+    return this.(Lscala/collection/JavaConversions$;::asScalaSet(Ljava/util/Set;)Lscala/collection/mutable/Set;)(s);
+  }
+  
+  public Lscala/collection/mutable/Map; mapAsScalaMap(Ljava/util/Map; m) {
+    Ljava/util/Map; temp58 = m;
+    Lscala/collection/mutable/Map; $20$;
+    if (temp58.<instanceof>(Lscala/collection/JavaConversions$MutableMapWrapper;))
+      {
+        $20$ = temp58.<cast>(Lscala/collection/JavaConversions$MutableMapWrapper;).(Lscala/collection/JavaConversions$MutableMapWrapper;::underlying()Lscala/collection/mutable/Map;)();
+      }
+    else
+      {
+        $20$ = (new (Lscala/collection/JavaConversions$JMapWrapper;::this(Ljava/util/Map;)V;)(m));
+      }
+    return $20$;
+  }
+  
+  public Lscala/collection/mutable/Map; asScalaMap(Ljava/util/Map; m) {
+    return this.(Lscala/collection/JavaConversions$;::mapAsScalaMap(Ljava/util/Map;)Lscala/collection/mutable/Map;)(m);
+  }
+  
+  public Lscala/collection/mutable/Map; asMap(Ljava/util/Map; m) {
+    return this.(Lscala/collection/JavaConversions$;::mapAsScalaMap(Ljava/util/Map;)Lscala/collection/mutable/Map;)(m);
+  }
+  
+  public Lscala/collection/mutable/ConcurrentMap; asScalaConcurrentMap(Ljava/util/concurrent/ConcurrentMap; m) {
+    Ljava/util/concurrent/ConcurrentMap; temp61 = m;
+    Lscala/collection/mutable/ConcurrentMap; $21$;
+    if (temp61.<instanceof>(Lscala/collection/JavaConversions$ConcurrentMapWrapper;))
+      {
+        $21$ = temp61.<cast>(Lscala/collection/JavaConversions$ConcurrentMapWrapper;).(Lscala/collection/JavaConversions$ConcurrentMapWrapper;::underlying()Lscala/collection/mutable/ConcurrentMap;)();
+      }
+    else
+      {
+        $21$ = (new (Lscala/collection/JavaConversions$JConcurrentMapWrapper;::this(Ljava/util/concurrent/ConcurrentMap;)V;)(m));
+      }
+    return $21$;
+  }
+  
+  public Lscala/collection/mutable/ConcurrentMap; asConcurrentMap(Ljava/util/concurrent/ConcurrentMap; m) {
+    return this.(Lscala/collection/JavaConversions$;::asScalaConcurrentMap(Ljava/util/concurrent/ConcurrentMap;)Lscala/collection/mutable/ConcurrentMap;)(m);
+  }
+  
+  public Lscala/collection/mutable/Map; dictionaryAsScalaMap(Ljava/util/Dictionary; p) {
+    Ljava/util/Dictionary; temp63 = p;
+    Lscala/collection/mutable/Map; $22$;
+    if (temp63.<instanceof>(Lscala/collection/JavaConversions$DictionaryWrapper;))
+      {
+        $22$ = temp63.<cast>(Lscala/collection/JavaConversions$DictionaryWrapper;).(Lscala/collection/JavaConversions$DictionaryWrapper;::underlying()Lscala/collection/mutable/Map;)();
+      }
+    else
+      {
+        $22$ = (new (Lscala/collection/JavaConversions$JDictionaryWrapper;::this(Ljava/util/Dictionary;)V;)(p));
+      }
+    return $22$;
+  }
+  
+  public Lscala/collection/mutable/Map; asMap(Ljava/util/Dictionary; p) {
+    return this.(Lscala/collection/JavaConversions$;::dictionaryAsScalaMap(Ljava/util/Dictionary;)Lscala/collection/mutable/Map;)(p);
+  }
+  
+  public Lscala/collection/mutable/Map; propertiesAsScalaMap(Ljava/util/Properties; p) {
+    Ljava/util/Properties; temp66 = p;
+    return (new (Lscala/collection/JavaConversions$JPropertiesWrapper;::this(Ljava/util/Properties;)V;)(p));
+  }
+  
+  public Lscala/collection/mutable/Map; asScalaMap(Ljava/util/Properties; p) {
+    return this.(Lscala/collection/JavaConversions$;::propertiesAsScalaMap(Ljava/util/Properties;)Lscala/collection/mutable/Map;)(p);
+  }
+  
+  public Lscala/collection/mutable/Map; asMap(Ljava/util/Properties; p) {
+    return this.(Lscala/collection/JavaConversions$;::propertiesAsScalaMap(Ljava/util/Properties;)Lscala/collection/mutable/Map;)(p);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}
