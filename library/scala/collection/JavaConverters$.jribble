@@ -1,0 +1,119 @@
+public final class Lscala/collection/JavaConverters$; extends Ljava/lang/Object; implements Lscala/ScalaObject; {
+  public static Lscala/collection/JavaConverters$; MODULE$ = new (Lscala/collection/JavaConverters$;::this()V;)();
+  
+  public Lscala/collection/JavaConverters$AsJava; asJavaIteratorConverter(Lscala/collection/Iterator; i$1) {
+    return (new (Lscala/collection/JavaConverters$AsJava;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$asJavaIteratorConverter$1;::this(Lscala/collection/Iterator;)V;)(i$1))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsJavaEnumeration; asJavaEnumerationConverter(Lscala/collection/Iterator; i) {
+    return (new (Lscala/collection/JavaConverters$AsJavaEnumeration;::this(Lscala/collection/Iterator;)V;)(i));
+  }
+  
+  public Lscala/collection/JavaConverters$AsJava; asJavaIterableConverter(Lscala/collection/Iterable; i$2) {
+    return (new (Lscala/collection/JavaConverters$AsJava;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$asJavaIterableConverter$1;::this(Lscala/collection/Iterable;)V;)(i$2))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsJavaCollection; asJavaCollectionConverter(Lscala/collection/Iterable; i) {
+    return (new (Lscala/collection/JavaConverters$AsJavaCollection;::this(Lscala/collection/Iterable;)V;)(i));
+  }
+  
+  public Lscala/collection/JavaConverters$AsJava; bufferAsJavaListConverter(Lscala/collection/mutable/Buffer; b$1) {
+    return (new (Lscala/collection/JavaConverters$AsJava;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$bufferAsJavaListConverter$1;::this(Lscala/collection/mutable/Buffer;)V;)(b$1))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsJava; mutableSeqAsJavaListConverter(Lscala/collection/mutable/Seq; b$2) {
+    return (new (Lscala/collection/JavaConverters$AsJava;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$mutableSeqAsJavaListConverter$1;::this(Lscala/collection/mutable/Seq;)V;)(b$2))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsJava; seqAsJavaListConverter(Lscala/collection/Seq; b$3) {
+    return (new (Lscala/collection/JavaConverters$AsJava;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$seqAsJavaListConverter$1;::this(Lscala/collection/Seq;)V;)(b$3))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsJava; asJavaListConverter(Lscala/collection/mutable/Buffer; b) {
+    return this.(Lscala/collection/JavaConverters$;::bufferAsJavaListConverter(Lscala/collection/mutable/Buffer;)Lscala/collection/JavaConverters$AsJava;)(b);
+  }
+  
+  public Lscala/collection/JavaConverters$AsJava; asJavaListConverter(Lscala/collection/mutable/Seq; b) {
+    return this.(Lscala/collection/JavaConverters$;::mutableSeqAsJavaListConverter(Lscala/collection/mutable/Seq;)Lscala/collection/JavaConverters$AsJava;)(b);
+  }
+  
+  public Lscala/collection/JavaConverters$AsJava; asJavaListConverter(Lscala/collection/Seq; b) {
+    return this.(Lscala/collection/JavaConverters$;::seqAsJavaListConverter(Lscala/collection/Seq;)Lscala/collection/JavaConverters$AsJava;)(b);
+  }
+  
+  public Lscala/collection/JavaConverters$AsJava; mutableSetAsJavaSetConverter(Lscala/collection/mutable/Set; s$1) {
+    return (new (Lscala/collection/JavaConverters$AsJava;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$mutableSetAsJavaSetConverter$1;::this(Lscala/collection/mutable/Set;)V;)(s$1))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsJava; asJavaSetConverter(Lscala/collection/mutable/Set; s) {
+    return this.(Lscala/collection/JavaConverters$;::mutableSetAsJavaSetConverter(Lscala/collection/mutable/Set;)Lscala/collection/JavaConverters$AsJava;)(s);
+  }
+  
+  public Lscala/collection/JavaConverters$AsJava; setAsJavaSetConverter(Lscala/collection/Set; s$2) {
+    return (new (Lscala/collection/JavaConverters$AsJava;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$setAsJavaSetConverter$1;::this(Lscala/collection/Set;)V;)(s$2))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsJava; asJavaSetConverter(Lscala/collection/Set; s) {
+    return this.(Lscala/collection/JavaConverters$;::setAsJavaSetConverter(Lscala/collection/Set;)Lscala/collection/JavaConverters$AsJava;)(s);
+  }
+  
+  public Lscala/collection/JavaConverters$AsJava; mutableMapAsJavaMapConverter(Lscala/collection/mutable/Map; m$1) {
+    return (new (Lscala/collection/JavaConverters$AsJava;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$mutableMapAsJavaMapConverter$1;::this(Lscala/collection/mutable/Map;)V;)(m$1))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsJava; asJavaMapConverter(Lscala/collection/mutable/Map; m) {
+    return this.(Lscala/collection/JavaConverters$;::mutableMapAsJavaMapConverter(Lscala/collection/mutable/Map;)Lscala/collection/JavaConverters$AsJava;)(m);
+  }
+  
+  public Lscala/collection/JavaConverters$AsJava; mapAsJavaMapConverter(Lscala/collection/Map; m$2) {
+    return (new (Lscala/collection/JavaConverters$AsJava;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$mapAsJavaMapConverter$1;::this(Lscala/collection/Map;)V;)(m$2))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsJava; asJavaMapConverter(Lscala/collection/Map; m) {
+    return this.(Lscala/collection/JavaConverters$;::mapAsJavaMapConverter(Lscala/collection/Map;)Lscala/collection/JavaConverters$AsJava;)(m);
+  }
+  
+  public Lscala/collection/JavaConverters$AsScala; asScalaIteratorConverter(Ljava/util/Iterator; i$3) {
+    return (new (Lscala/collection/JavaConverters$AsScala;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$asScalaIteratorConverter$1;::this(Ljava/util/Iterator;)V;)(i$3))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsScala; enumerationAsScalaIteratorConverter(Ljava/util/Enumeration; i$4) {
+    return (new (Lscala/collection/JavaConverters$AsScala;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$enumerationAsScalaIteratorConverter$1;::this(Ljava/util/Enumeration;)V;)(i$4))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsScala; iterableAsScalaIterableConverter(Ljava/lang/Iterable; i$5) {
+    return (new (Lscala/collection/JavaConverters$AsScala;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$iterableAsScalaIterableConverter$1;::this(Ljava/lang/Iterable;)V;)(i$5))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsScala; asScalaIterableConverter(Ljava/lang/Iterable; i) {
+    return this.(Lscala/collection/JavaConverters$;::iterableAsScalaIterableConverter(Ljava/lang/Iterable;)Lscala/collection/JavaConverters$AsScala;)(i);
+  }
+  
+  public Lscala/collection/JavaConverters$AsScala; collectionAsScalaIterableConverter(Ljava/util/Collection; i$6) {
+    return (new (Lscala/collection/JavaConverters$AsScala;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$collectionAsScalaIterableConverter$1;::this(Ljava/util/Collection;)V;)(i$6))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsScala; asScalaIterableConverter(Ljava/util/Collection; i) {
+    return this.(Lscala/collection/JavaConverters$;::collectionAsScalaIterableConverter(Ljava/util/Collection;)Lscala/collection/JavaConverters$AsScala;)(i);
+  }
+  
+  public Lscala/collection/JavaConverters$AsScala; asScalaBufferConverter(Ljava/util/List; l$1) {
+    return (new (Lscala/collection/JavaConverters$AsScala;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$asScalaBufferConverter$1;::this(Ljava/util/List;)V;)(l$1))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsScala; asScalaSetConverter(Ljava/util/Set; s$3) {
+    return (new (Lscala/collection/JavaConverters$AsScala;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$asScalaSetConverter$1;::this(Ljava/util/Set;)V;)(s$3))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsScala; mapAsScalaMapConverter(Ljava/util/Map; m$4) {
+    return (new (Lscala/collection/JavaConverters$AsScala;::this(Lscala/Function0;)V;)((new (Lscala/collection/JavaConverters$$anonfun$mapAsScalaMapConverter$1;::this(Ljava/util/Map;)V;)(m$4))));
+  }
+  
+  public Lscala/collection/JavaConverters$AsScala; asScalaMapConverter(Ljava/util/Map; m) {
+    return this.(Lscala/collection/JavaConverters$;::mapAsScalaMapConverter(Ljava/util/Map;)Lscala/collection/JavaConverters$AsScala;)(m);
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}
