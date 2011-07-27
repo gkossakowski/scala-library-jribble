@@ -1,0 +1,87 @@
+public class Lscala/collection/JavaConversions$MutableSeqWrapper; extends Ljava/util/AbstractList; implements Lscala/collection/JavaConversions$IterableWrapperTrait;, Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public I; size() {
+    return Lscala/collection/JavaConversions$IterableWrapperTrait$class;.(Lscala/collection/JavaConversions$IterableWrapperTrait$class;::size(Lscala/collection/JavaConversions$IterableWrapperTrait;)I;)(this);
+  }
+  
+  public Lscala/collection/JavaConversions$IteratorWrapper; iterator() {
+    return Lscala/collection/JavaConversions$IterableWrapperTrait$class;.(Lscala/collection/JavaConversions$IterableWrapperTrait$class;::iterator(Lscala/collection/JavaConversions$IterableWrapperTrait;)Lscala/collection/JavaConversions$IteratorWrapper;)(this);
+  }
+  
+  public Z; isEmpty() {
+    return Lscala/collection/JavaConversions$IterableWrapperTrait$class;.(Lscala/collection/JavaConversions$IterableWrapperTrait$class;::isEmpty(Lscala/collection/JavaConversions$IterableWrapperTrait;)Z;)(this);
+  }
+  
+  private Lscala/collection/mutable/Seq; underlying$u0020;
+  
+  public Lscala/collection/mutable/Seq; underlying() {
+    return this.(Lscala/collection/JavaConversions$MutableSeqWrapper;)underlying$u0020;
+  }
+  
+  public Ljava/lang/Object; get(I; i) {
+    return this.(Lscala/collection/JavaConversions$MutableSeqWrapper;::underlying()Lscala/collection/mutable/Seq;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i);
+  }
+  
+  public Ljava/lang/Object; set(I; i, Ljava/lang/Object; elem) {
+    Ljava/lang/Object; p = this.(Lscala/collection/JavaConversions$MutableSeqWrapper;::underlying()Lscala/collection/mutable/Seq;)().(Lscala/collection/SeqLike;::apply(I;)Ljava/lang/Object;)(i);
+    this.(Lscala/collection/JavaConversions$MutableSeqWrapper;::underlying()Lscala/collection/mutable/Seq;)().(Lscala/collection/mutable/SeqLike;::update(I;Ljava/lang/Object;)V;)(i, elem);
+    return p;
+  }
+  
+  public Lscala/collection/JavaConversions$MutableSeqWrapper; copy(Lscala/collection/mutable/Seq; underlying) {
+    return (new (Lscala/collection/JavaConversions$MutableSeqWrapper;::this(Lscala/collection/mutable/Seq;)V;)(underlying));
+  }
+  
+  public Lscala/collection/mutable/Seq; copy$default$1() {
+    return this.(Lscala/collection/JavaConversions$MutableSeqWrapper;::underlying()Lscala/collection/mutable/Seq;)();
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "MutableSeqWrapper";
+  }
+  
+  public I; productArity() {
+    return 1;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp92 = x$1;
+    Ljava/lang/Object; $61$;
+    if ((temp92 == 0))
+      {
+        $61$ = this.(Lscala/collection/JavaConversions$MutableSeqWrapper;::underlying()Lscala/collection/mutable/Seq;)();
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $61$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/collection/JavaConversions$MutableSeqWrapper;);
+  }
+  
+  public Ljava/util/Iterator; iterator() {
+    return this.(Lscala/collection/JavaConversions$IterableWrapperTrait;::iterator()Lscala/collection/JavaConversions$IteratorWrapper;)();
+  }
+  
+  public Lscala/collection/Iterable; underlying() {
+    return this.(Lscala/collection/JavaConversions$MutableSeqWrapper;::underlying()Lscala/collection/mutable/Seq;)();
+  }
+  
+  public this(Lscala/collection/mutable/Seq; underlying) {
+    this.(Lscala/collection/JavaConversions$MutableSeqWrapper;)underlying$u0020 = underlying;
+    (Ljava/util/AbstractList;::super()V;)();
+    Lscala/collection/JavaConversions$IterableWrapperTrait$class;.(Lscala/collection/JavaConversions$IterableWrapperTrait$class;::$init$(Lscala/collection/JavaConversions$IterableWrapperTrait;)V;)(this);
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

@@ -1,0 +1,32 @@
+public final class Lscala/collection/JavaConversions$MutableMapWrapper$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
+  public static Lscala/collection/JavaConversions$MutableMapWrapper$; MODULE$ = new (Lscala/collection/JavaConversions$MutableMapWrapper$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "MutableMapWrapper";
+  }
+  
+  public Lscala/Option; unapply(Lscala/collection/JavaConversions$MutableMapWrapper; x$0) {
+    Lscala/Option; $80$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $80$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $80$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/collection/JavaConversions$MutableMapWrapper;::underlying()Lscala/collection/mutable/Map;)()));
+      }
+    return $80$;
+  }
+  
+  public Lscala/collection/JavaConversions$MutableMapWrapper; apply(Lscala/collection/mutable/Map; underlying) {
+    return (new (Lscala/collection/JavaConversions$MutableMapWrapper;::this(Lscala/collection/mutable/Map;)V;)(underlying));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/JavaConversions$MutableMapWrapper$;.MODULE$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

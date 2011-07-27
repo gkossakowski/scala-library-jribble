@@ -1,0 +1,32 @@
+public final class Lscala/collection/JavaConversions$JListWrapper$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
+  public static Lscala/collection/JavaConversions$JListWrapper$; MODULE$ = new (Lscala/collection/JavaConversions$JListWrapper$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "JListWrapper";
+  }
+  
+  public Lscala/Option; unapply(Lscala/collection/JavaConversions$JListWrapper; x$0) {
+    Lscala/Option; $66$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $66$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $66$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/collection/JavaConversions$JListWrapper;::underlying()Ljava/util/List;)()));
+      }
+    return $66$;
+  }
+  
+  public Lscala/collection/JavaConversions$JListWrapper; apply(Ljava/util/List; underlying) {
+    return (new (Lscala/collection/JavaConversions$JListWrapper;::this(Ljava/util/List;)V;)(underlying));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/JavaConversions$JListWrapper$;.MODULE$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}

@@ -1,0 +1,18 @@
+public abstract class Lscala/collection/JavaConversions$IterableWrapperTrait$class; {
+  
+  public static I; size(Lscala/collection/JavaConversions$IterableWrapperTrait; $this) {
+    return $this.(Lscala/collection/JavaConversions$IterableWrapperTrait;::underlying()Lscala/collection/Iterable;)().(Lscala/collection/TraversableOnce;::size()I;)();
+  }
+  
+  public static Lscala/collection/JavaConversions$IteratorWrapper; iterator(Lscala/collection/JavaConversions$IterableWrapperTrait; $this) {
+    return (new (Lscala/collection/JavaConversions$IteratorWrapper;::this(Lscala/collection/Iterator;)V;)($this.(Lscala/collection/JavaConversions$IterableWrapperTrait;::underlying()Lscala/collection/Iterable;)().(Lscala/collection/IterableLike;::iterator()Lscala/collection/Iterator;)()));
+  }
+  
+  public static Z; isEmpty(Lscala/collection/JavaConversions$IterableWrapperTrait; $this) {
+    return $this.(Lscala/collection/JavaConversions$IterableWrapperTrait;::underlying()Lscala/collection/Iterable;)().(Lscala/collection/IterableLike;::isEmpty()Z;)();
+  }
+  
+  public static V; $init$(Lscala/collection/JavaConversions$IterableWrapperTrait; $this) {
+    
+  }
+}

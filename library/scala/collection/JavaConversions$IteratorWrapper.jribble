@@ -1,0 +1,124 @@
+public class Lscala/collection/JavaConversions$IteratorWrapper; extends Ljava/lang/Object; implements Ljava/util/Iterator;, Ljava/util/Enumeration;, Lscala/ScalaObject;, Lscala/Product;, Lscala/Serializable; {
+  
+  public Lscala/collection/Iterator; productIterator() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productIterator(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  public Lscala/collection/Iterator; productElements() {
+    return Lscala/Product$class;.(Lscala/Product$class;::productElements(Lscala/Product;)Lscala/collection/Iterator;)(this);
+  }
+  
+  private Lscala/collection/Iterator; underlying$u0020;
+  
+  public Lscala/collection/Iterator; underlying() {
+    return this.(Lscala/collection/JavaConversions$IteratorWrapper;)underlying$u0020;
+  }
+  
+  public Z; hasNext() {
+    return this.(Lscala/collection/JavaConversions$IteratorWrapper;::underlying()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::hasNext()Z;)();
+  }
+  
+  public Ljava/lang/Object; next() {
+    return this.(Lscala/collection/JavaConversions$IteratorWrapper;::underlying()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+  }
+  
+  public Z; hasMoreElements() {
+    return this.(Lscala/collection/JavaConversions$IteratorWrapper;::underlying()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::hasNext()Z;)();
+  }
+  
+  public Ljava/lang/Object; nextElement() {
+    return this.(Lscala/collection/JavaConversions$IteratorWrapper;::underlying()Lscala/collection/Iterator;)().(Lscala/collection/Iterator;::next()Ljava/lang/Object;)();
+  }
+  
+  public Lscala/runtime/Nothing$; remove() {
+    throw (new (Ljava/lang/UnsupportedOperationException;::this()V;)());
+  }
+  
+  public Lscala/collection/JavaConversions$IteratorWrapper; copy(Lscala/collection/Iterator; underlying) {
+    return (new (Lscala/collection/JavaConversions$IteratorWrapper;::this(Lscala/collection/Iterator;)V;)(underlying));
+  }
+  
+  public Lscala/collection/Iterator; copy$default$1() {
+    return this.(Lscala/collection/JavaConversions$IteratorWrapper;::underlying()Lscala/collection/Iterator;)();
+  }
+  
+  public I; hashCode() {
+    return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_hashCode(Lscala/Product;)I;)(this);
+  }
+  
+  public Ljava/lang/String; toString() {
+    return Lscala/runtime/ScalaRunTime$;.MODULE$.(Lscala/runtime/ScalaRunTime$;::_toString(Lscala/Product;)Ljava/lang/String;)(this);
+  }
+  
+  public Z; equals(Ljava/lang/Object; x$1) {
+    Ljava/lang/Object; temp67 = x$1;
+    Z; $23$;
+    if (temp67.<instanceof>(Lscala/collection/JavaConversions$IteratorWrapper;))
+      {
+        Lscala/collection/JavaConversions$IteratorWrapper; temp68 = temp67.<cast>(Lscala/collection/JavaConversions$IteratorWrapper;);
+        Lscala/collection/Iterator; temp69 = temp68.(Lscala/collection/JavaConversions$IteratorWrapper;::underlying()Lscala/collection/Iterator;)();
+        Lscala/collection/Iterator; underlying$1 = temp69;
+        Z; $24$;
+        if (this.(Lscala/collection/JavaConversions$IteratorWrapper;::gd1$1(Lscala/collection/Iterator;)Z;)(underlying$1))
+          {
+            Lscala/collection/Iterator; $25$;
+            Z; $26$;
+            body$percent024: while(true) {
+              $26$ = x$1.<cast>(Lscala/collection/JavaConversions$IteratorWrapper;).(Lscala/Equals;::canEqual(Ljava/lang/Object;)Z;)(this);
+              break;
+            }
+            $24$ = $26$;
+          }
+        else
+          {
+            $24$ = false;
+          }
+        $23$ = $24$;
+      }
+    else
+      {
+        $23$ = false;
+      }
+    return ((this == x$1) || $23$);
+  }
+  
+  public Ljava/lang/String; productPrefix() {
+    return "IteratorWrapper";
+  }
+  
+  public I; productArity() {
+    return 1;
+  }
+  
+  public Ljava/lang/Object; productElement(I; x$1) {
+    I; temp70 = x$1;
+    Ljava/lang/Object; $27$;
+    if ((temp70 == 0))
+      {
+        $27$ = this.(Lscala/collection/JavaConversions$IteratorWrapper;::underlying()Lscala/collection/Iterator;)();
+      }
+    else
+      {
+        throw (new (Ljava/lang/IndexOutOfBoundsException;::this(Ljava/lang/String;)V;)(Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::boxToInteger(I;)Ljava/lang/Integer;)(x$1).(Ljava/lang/Object;::toString()Ljava/lang/String;)()));
+      }
+    return $27$;
+  }
+  
+  public Z; canEqual(Ljava/lang/Object; x$1) {
+    return x$1.<instanceof>(Lscala/collection/JavaConversions$IteratorWrapper;);
+  }
+  
+  public V; remove() {
+    this.(Lscala/collection/JavaConversions$IteratorWrapper;::remove()Lscala/runtime/Nothing$;)();
+  }
+  
+  private final Z; gd1$1(Lscala/collection/Iterator; x$1) {
+    return Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$1, this.(Lscala/collection/JavaConversions$IteratorWrapper;::underlying()Lscala/collection/Iterator;)());
+  }
+  
+  public this(Lscala/collection/Iterator; underlying) {
+    this.(Lscala/collection/JavaConversions$IteratorWrapper;)underlying$u0020 = underlying;
+    (Ljava/lang/Object;::super()V;)();
+    Lscala/Product$class;.(Lscala/Product$class;::$init$(Lscala/Product;)V;)(this);
+  }
+}

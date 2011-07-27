@@ -1,0 +1,32 @@
+public final class Lscala/collection/JavaConversions$IteratorWrapper$; extends Ljava/lang/Object; implements Lscala/ScalaObject;, Lscala/Serializable; {
+  public static Lscala/collection/JavaConversions$IteratorWrapper$; MODULE$ = new (Lscala/collection/JavaConversions$IteratorWrapper$;::this()V;)();
+  
+  public final Ljava/lang/String; toString() {
+    return "IteratorWrapper";
+  }
+  
+  public Lscala/Option; unapply(Lscala/collection/JavaConversions$IteratorWrapper; x$0) {
+    Lscala/Option; $28$;
+    if (Lscala/runtime/BoxesRunTime;.(Lscala/runtime/BoxesRunTime;::equals(Ljava/lang/Object;Ljava/lang/Object;)Z;)(x$0, null))
+      {
+        $28$ = Lscala/None$;.MODULE$;
+      }
+    else
+      {
+        $28$ = (new (Lscala/Some;::this(Ljava/lang/Object;)V;)(x$0.(Lscala/collection/JavaConversions$IteratorWrapper;::underlying()Lscala/collection/Iterator;)()));
+      }
+    return $28$;
+  }
+  
+  public Lscala/collection/JavaConversions$IteratorWrapper; apply(Lscala/collection/Iterator; underlying) {
+    return (new (Lscala/collection/JavaConversions$IteratorWrapper;::this(Lscala/collection/Iterator;)V;)(underlying));
+  }
+  
+  protected Ljava/lang/Object; readResolve() {
+    return Lscala/collection/JavaConversions$IteratorWrapper$;.MODULE$;
+  }
+  
+  public this() {
+    (Ljava/lang/Object;::super()V;)();
+  }
+}
