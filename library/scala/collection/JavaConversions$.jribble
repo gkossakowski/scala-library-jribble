@@ -205,24 +205,6 @@ public final class Lscala/collection/JavaConversions$; extends Ljava/lang/Object
     return this.(Lscala/collection/JavaConversions$;::mutableMapAsJavaMap(Lscala/collection/mutable/Map;)Ljava/util/Map;)(m);
   }
   
-  public Ljava/util/Dictionary; asJavaDictionary(Lscala/collection/mutable/Map; m) {
-    Lscala/collection/mutable/Map; temp31 = m;
-    Ljava/util/Dictionary; $11$;
-    if (temp31.<instanceof>(Lscala/collection/JavaConversions$JDictionaryWrapper;))
-      {
-        $11$ = temp31.<cast>(Lscala/collection/JavaConversions$JDictionaryWrapper;).(Lscala/collection/JavaConversions$JDictionaryWrapper;::underlying()Ljava/util/Dictionary;)();
-      }
-    else
-      {
-        $11$ = (new (Lscala/collection/JavaConversions$DictionaryWrapper;::this(Lscala/collection/mutable/Map;)V;)(m));
-      }
-    return $11$;
-  }
-  
-  public Ljava/util/Dictionary; asDictionary(Lscala/collection/mutable/Map; m) {
-    return this.(Lscala/collection/JavaConversions$;::asJavaDictionary(Lscala/collection/mutable/Map;)Ljava/util/Dictionary;)(m);
-  }
-  
   public Ljava/util/Map; mapAsJavaMap(Lscala/collection/Map; m) {
     Lscala/collection/Map; temp34 = m;
     Ljava/util/Map; $12$;
@@ -243,24 +225,6 @@ public final class Lscala/collection/JavaConversions$; extends Ljava/lang/Object
   
   public Ljava/util/Map; asMap(Lscala/collection/Map; m) {
     return this.(Lscala/collection/JavaConversions$;::mapAsJavaMap(Lscala/collection/Map;)Ljava/util/Map;)(m);
-  }
-  
-  public Ljava/util/concurrent/ConcurrentMap; asJavaConcurrentMap(Lscala/collection/mutable/ConcurrentMap; m) {
-    Lscala/collection/mutable/ConcurrentMap; temp37 = m;
-    Ljava/util/concurrent/ConcurrentMap; $13$;
-    if (temp37.<instanceof>(Lscala/collection/JavaConversions$JConcurrentMapWrapper;))
-      {
-        $13$ = temp37.<cast>(Lscala/collection/JavaConversions$JConcurrentMapWrapper;).(Lscala/collection/JavaConversions$JConcurrentMapWrapper;::underlying()Ljava/util/concurrent/ConcurrentMap;)();
-      }
-    else
-      {
-        $13$ = (new (Lscala/collection/JavaConversions$ConcurrentMapWrapper;::this(Lscala/collection/mutable/ConcurrentMap;)V;)(m));
-      }
-    return $13$;
-  }
-  
-  public Ljava/util/concurrent/ConcurrentMap; asConcurrentMap(Lscala/collection/mutable/ConcurrentMap; m) {
-    return this.(Lscala/collection/JavaConversions$;::asJavaConcurrentMap(Lscala/collection/mutable/ConcurrentMap;)Ljava/util/concurrent/ConcurrentMap;)(m);
   }
   
   public Lscala/collection/Iterator; asScalaIterator(Ljava/util/Iterator; i) {
@@ -399,55 +363,6 @@ public final class Lscala/collection/JavaConversions$; extends Ljava/lang/Object
   
   public Lscala/collection/mutable/Map; asMap(Ljava/util/Map; m) {
     return this.(Lscala/collection/JavaConversions$;::mapAsScalaMap(Ljava/util/Map;)Lscala/collection/mutable/Map;)(m);
-  }
-  
-  public Lscala/collection/mutable/ConcurrentMap; asScalaConcurrentMap(Ljava/util/concurrent/ConcurrentMap; m) {
-    Ljava/util/concurrent/ConcurrentMap; temp61 = m;
-    Lscala/collection/mutable/ConcurrentMap; $21$;
-    if (temp61.<instanceof>(Lscala/collection/JavaConversions$ConcurrentMapWrapper;))
-      {
-        $21$ = temp61.<cast>(Lscala/collection/JavaConversions$ConcurrentMapWrapper;).(Lscala/collection/JavaConversions$ConcurrentMapWrapper;::underlying()Lscala/collection/mutable/ConcurrentMap;)();
-      }
-    else
-      {
-        $21$ = (new (Lscala/collection/JavaConversions$JConcurrentMapWrapper;::this(Ljava/util/concurrent/ConcurrentMap;)V;)(m));
-      }
-    return $21$;
-  }
-  
-  public Lscala/collection/mutable/ConcurrentMap; asConcurrentMap(Ljava/util/concurrent/ConcurrentMap; m) {
-    return this.(Lscala/collection/JavaConversions$;::asScalaConcurrentMap(Ljava/util/concurrent/ConcurrentMap;)Lscala/collection/mutable/ConcurrentMap;)(m);
-  }
-  
-  public Lscala/collection/mutable/Map; dictionaryAsScalaMap(Ljava/util/Dictionary; p) {
-    Ljava/util/Dictionary; temp63 = p;
-    Lscala/collection/mutable/Map; $22$;
-    if (temp63.<instanceof>(Lscala/collection/JavaConversions$DictionaryWrapper;))
-      {
-        $22$ = temp63.<cast>(Lscala/collection/JavaConversions$DictionaryWrapper;).(Lscala/collection/JavaConversions$DictionaryWrapper;::underlying()Lscala/collection/mutable/Map;)();
-      }
-    else
-      {
-        $22$ = (new (Lscala/collection/JavaConversions$JDictionaryWrapper;::this(Ljava/util/Dictionary;)V;)(p));
-      }
-    return $22$;
-  }
-  
-  public Lscala/collection/mutable/Map; asMap(Ljava/util/Dictionary; p) {
-    return this.(Lscala/collection/JavaConversions$;::dictionaryAsScalaMap(Ljava/util/Dictionary;)Lscala/collection/mutable/Map;)(p);
-  }
-  
-  public Lscala/collection/mutable/Map; propertiesAsScalaMap(Ljava/util/Properties; p) {
-    Ljava/util/Properties; temp66 = p;
-    return (new (Lscala/collection/JavaConversions$JPropertiesWrapper;::this(Ljava/util/Properties;)V;)(p));
-  }
-  
-  public Lscala/collection/mutable/Map; asScalaMap(Ljava/util/Properties; p) {
-    return this.(Lscala/collection/JavaConversions$;::propertiesAsScalaMap(Ljava/util/Properties;)Lscala/collection/mutable/Map;)(p);
-  }
-  
-  public Lscala/collection/mutable/Map; asMap(Ljava/util/Properties; p) {
-    return this.(Lscala/collection/JavaConversions$;::propertiesAsScalaMap(Ljava/util/Properties;)Lscala/collection/mutable/Map;)(p);
   }
   
   public this() {
