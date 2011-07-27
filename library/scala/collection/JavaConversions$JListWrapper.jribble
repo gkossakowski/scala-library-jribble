@@ -124,10 +124,6 @@ public class Lscala/collection/JavaConversions$JListWrapper; extends Ljava/lang/
     return Lscala/collection/mutable/Seq$class;.(Lscala/collection/mutable/Seq$class;::seq(Lscala/collection/mutable/Seq;)Lscala/collection/mutable/Seq;)(this);
   }
   
-  public Lscala/collection/parallel/Combiner; parCombiner() {
-    return Lscala/collection/mutable/SeqLike$class;.(Lscala/collection/mutable/SeqLike$class;::parCombiner(Lscala/collection/mutable/SeqLike;)Lscala/collection/parallel/Combiner;)(this);
-  }
-  
   public Lscala/collection/mutable/SeqLike; transform(Lscala/Function1; f) {
     return Lscala/collection/mutable/SeqLike$class;.(Lscala/collection/mutable/SeqLike$class;::transform(Lscala/collection/mutable/SeqLike;Lscala/Function1;)Lscala/collection/mutable/SeqLike;)(this, f);
   }
@@ -1000,10 +996,6 @@ public class Lscala/collection/JavaConversions$JListWrapper; extends Ljava/lang/
     return Lscala/collection/GenTraversableLike$class;.(Lscala/collection/GenTraversableLike$class;::isTraversableAgain(Lscala/collection/GenTraversableLike;)Z;)(this);
   }
   
-  public Lscala/collection/Parallel; par() {
-    return Lscala/collection/Parallelizable$class;.(Lscala/collection/Parallelizable$class;::par(Lscala/collection/Parallelizable;)Lscala/collection/Parallel;)(this);
-  }
-  
   public Lscala/collection/immutable/List; reversed() {
     return Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::reversed(Lscala/collection/TraversableOnce;)Lscala/collection/immutable/List;)(this);
   }
@@ -1364,7 +1356,6 @@ public class Lscala/collection/JavaConversions$JListWrapper; extends Ljava/lang/
     (Ljava/lang/Object;::super()V;)();
     Lscala/collection/GenTraversableOnce$class;.(Lscala/collection/GenTraversableOnce$class;::$init$(Lscala/collection/GenTraversableOnce;)V;)(this);
     Lscala/collection/TraversableOnce$class;.(Lscala/collection/TraversableOnce$class;::$init$(Lscala/collection/TraversableOnce;)V;)(this);
-    Lscala/collection/Parallelizable$class;.(Lscala/collection/Parallelizable$class;::$init$(Lscala/collection/Parallelizable;)V;)(this);
     Lscala/collection/GenTraversableLike$class;.(Lscala/collection/GenTraversableLike$class;::$init$(Lscala/collection/GenTraversableLike;)V;)(this);
     Lscala/collection/TraversableLike$class;.(Lscala/collection/TraversableLike$class;::$init$(Lscala/collection/TraversableLike;)V;)(this);
     Lscala/collection/generic/GenericTraversableTemplate$class;.(Lscala/collection/generic/GenericTraversableTemplate$class;::$init$(Lscala/collection/generic/GenericTraversableTemplate;)V;)(this);
