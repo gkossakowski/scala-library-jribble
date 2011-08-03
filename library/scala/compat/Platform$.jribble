@@ -2,7 +2,7 @@ public final class Lscala/compat/Platform$; extends Ljava/lang/Object; implement
   public static Lscala/compat/Platform$; MODULE$ = new (Lscala/compat/Platform$;::this()V;)();
   
   public V; arraycopy(Ljava/lang/Object; src, I; srcPos, Ljava/lang/Object; dest, I; destPos, I; length) {
-    throw (new (Ljava/lang/RuntimeException;::this(Ljava/lang/String;)V;)("to be defined"));
+    Ljava/lang/System;.(Ljava/lang/System;::arraycopy(Ljava/lang/Object;I;Ljava/lang/Object;I;I;)V;)(src, srcPos, dest, destPos, length);
   }
   
   public Ljava/lang/Object; createArray(Ljava/lang/Class; elemClass, I; length) {
